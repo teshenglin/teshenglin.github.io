@@ -3,6 +3,41 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://teshenglin.github.io/categories/calculus/</loc>
+    <lastmod>2019-10-27T20:32:32+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://teshenglin.github.io/categories/</loc>
+    <lastmod>2019-10-27T20:32:32+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://teshenglin.github.io/categories/computational-mathematics/</loc>
+    <lastmod>2019-10-27T20:32:32+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://teshenglin.github.io/post/</loc>
+    <lastmod>2019-10-27T20:32:32+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://teshenglin.github.io/</loc>
+    <lastmod>2019-10-27T20:32:32+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://teshenglin.github.io/post/derivative_evaluate/</loc>
+    <lastmod>2019-10-27T20:32:32+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://teshenglin.github.io/post/limit_evaluate/</loc>
+    <lastmod>2019-10-27T20:32:32+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://teshenglin.github.io/publication_types/2/</loc>
     <lastmod>2018-07-27T17:59:48+08:00</lastmod>
   </url>
@@ -34,11 +69,6 @@
   
   <url>
     <loc>http://teshenglin.github.io/authors/t.-s.-lin-and-s.-kalliadasis/</loc>
-    <lastmod>2018-07-27T17:59:48+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://teshenglin.github.io/</loc>
     <lastmod>2018-07-27T17:59:48+08:00</lastmod>
   </url>
   
@@ -239,14 +269,6 @@
   
   <url>
     <loc>http://teshenglin.github.io/authors/admin/</loc>
-  </url>
-  
-  <url>
-    <loc>http://teshenglin.github.io/categories/</loc>
-  </url>
-  
-  <url>
-    <loc>http://teshenglin.github.io/post/</loc>
   </url>
   
   <url>
