@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>L. Kondic and U. Thiele | Te-Sheng Lin</title>
+    <link>http://teshenglin.github.io/authors/l.-kondic-and-u.-thiele/</link>
+      <atom:link href="http://teshenglin.github.io/authors/l.-kondic-and-u.-thiele/index.xml" rel="self" type="application/rss+xml" />
+    <description>L. Kondic and U. Thiele</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 27 Aug 2013 18:17:07 +0800</lastBuildDate>
+    <image>
+      <url>http://teshenglin.github.io/img/icon-192.png</url>
+      <title>L. Kondic and U. Thiele</title>
+      <link>http://teshenglin.github.io/authors/l.-kondic-and-u.-thiele/</link>
+    </image>
+    
+    <item>
+      <title>Note on the hydrodynamic description of thin nematic films: strong anchoring model</title>
+      <link>http://teshenglin.github.io/publication/13_pof_lcakt/</link>
+      <pubDate>Tue, 27 Aug 2013 18:17:07 +0800</pubDate>
+      <guid>http://teshenglin.github.io/publication/13_pof_lcakt/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

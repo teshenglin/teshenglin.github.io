@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>A. J. Archer | Te-Sheng Lin</title>
+    <link>http://teshenglin.github.io/authors/a.-j.-archer/</link>
+      <atom:link href="http://teshenglin.github.io/authors/a.-j.-archer/index.xml" rel="self" type="application/rss+xml" />
+    <description>A. J. Archer</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 27 Aug 2013 18:17:07 +0800</lastBuildDate>
+    <image>
+      <url>http://teshenglin.github.io/img/icon-192.png</url>
+      <title>A. J. Archer</title>
+      <link>http://teshenglin.github.io/authors/a.-j.-archer/</link>
+    </image>
+    
+    <item>
+      <title>Note on the hydrodynamic description of thin nematic films: strong anchoring model</title>
+      <link>http://teshenglin.github.io/publication/13_pof_lcakt/</link>
+      <pubDate>Tue, 27 Aug 2013 18:17:07 +0800</pubDate>
+      <guid>http://teshenglin.github.io/publication/13_pof_lcakt/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

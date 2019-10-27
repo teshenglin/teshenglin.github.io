@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>U. Thiele and L. J. Cummings | Te-Sheng Lin</title>
+    <link>http://teshenglin.github.io/authors/u.-thiele-and-l.-j.-cummings/</link>
+      <atom:link href="http://teshenglin.github.io/authors/u.-thiele-and-l.-j.-cummings/index.xml" rel="self" type="application/rss+xml" />
+    <description>U. Thiele and L. J. Cummings</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Thu, 27 Jun 2013 17:58:35 +0800</lastBuildDate>
+    <image>
+      <url>http://teshenglin.github.io/img/icon-192.png</url>
+      <title>U. Thiele and L. J. Cummings</title>
+      <link>http://teshenglin.github.io/authors/u.-thiele-and-l.-j.-cummings/</link>
+    </image>
+    
+    <item>
+      <title>Modelling spreading dynamics of nematic liquid crystals in three spatial dimensions</title>
+      <link>http://teshenglin.github.io/publication/13_jfm_lktc/</link>
+      <pubDate>Thu, 27 Jun 2013 17:58:35 +0800</pubDate>
+      <guid>http://teshenglin.github.io/publication/13_jfm_lktc/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

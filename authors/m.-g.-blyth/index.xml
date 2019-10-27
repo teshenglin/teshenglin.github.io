@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>M. G. Blyth | Te-Sheng Lin</title>
+    <link>http://teshenglin.github.io/authors/m.-g.-blyth/</link>
+      <atom:link href="http://teshenglin.github.io/authors/m.-g.-blyth/index.xml" rel="self" type="application/rss+xml" />
+    <description>M. G. Blyth</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 27 Jul 2018 17:59:48 +0800</lastBuildDate>
+    <image>
+      <url>http://teshenglin.github.io/img/icon-192.png</url>
+      <title>M. G. Blyth</title>
+      <link>http://teshenglin.github.io/authors/m.-g.-blyth/</link>
+    </image>
+    
+    <item>
+      <title>Two-dimensional pulse dynamics and the formation of bound states on electrified falling films</title>
+      <link>http://teshenglin.github.io/publication/18_jfm_btlk/</link>
+      <pubDate>Fri, 27 Jul 2018 17:59:48 +0800</pubDate>
+      <guid>http://teshenglin.github.io/publication/18_jfm_btlk/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

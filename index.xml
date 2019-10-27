@@ -2,15 +2,135 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Te-Sheng Lin</title>
-    <link>/</link>
-      <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <link>http://teshenglin.github.io/</link>
+      <atom:link href="http://teshenglin.github.io/index.xml" rel="self" type="application/rss+xml" />
     <description>Te-Sheng Lin</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 27 Jul 2018 17:59:48 +0800</lastBuildDate>
     <image>
-      <url>/img/icon-192.png</url>
+      <url>http://teshenglin.github.io/img/icon-192.png</url>
       <title>Te-Sheng Lin</title>
-      <link>/</link>
+      <link>http://teshenglin.github.io/</link>
     </image>
+    
+    <item>
+      <title>Two-dimensional pulse dynamics and the formation of bound states on electrified falling films</title>
+      <link>http://teshenglin.github.io/publication/18_jfm_btlk/</link>
+      <pubDate>Fri, 27 Jul 2018 17:59:48 +0800</pubDate>
+      <guid>http://teshenglin.github.io/publication/18_jfm_btlk/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Continuation methods for time-periodic travelling-wave solutions to evolution equations</title>
+      <link>http://teshenglin.github.io/publication/18_aml_ltbk/</link>
+      <pubDate>Wed, 27 Jun 2018 17:59:41 +0800</pubDate>
+      <guid>http://teshenglin.github.io/publication/18_aml_ltbk/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Bifurcation analysis of the behavior of partially wetting liquids on a rotating cylinder</title>
+      <link>http://teshenglin.github.io/publication/16_pof_lrtt/</link>
+      <pubDate>Sat, 27 Aug 2016 17:59:32 +0800</pubDate>
+      <guid>http://teshenglin.github.io/publication/16_pof_lrtt/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Instabilities of layers of deposited molecules on chemically stripe patterned substrates: Ridges vs. drops</title>
+      <link>http://teshenglin.github.io/publication/15_lang_hlhtg/</link>
+      <pubDate>Sun, 27 Sep 2015 17:59:16 +0800</pubDate>
+      <guid>http://teshenglin.github.io/publication/15_lang_hlhtg/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Three-dimensional coating flow of nematic liquid crystal on an inclined substrate</title>
+      <link>http://teshenglin.github.io/publication/15_ejam_lclk/</link>
+      <pubDate>Mon, 27 Apr 2015 17:59:06 +0800</pubDate>
+      <guid>http://teshenglin.github.io/publication/15_ejam_lclk/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Coherent structures in non-local dispersive active-dissipative systems</title>
+      <link>http://teshenglin.github.io/publication/15_sjam_lpkpt/</link>
+      <pubDate>Fri, 27 Mar 2015 17:59:24 +0800</pubDate>
+      <guid>http://teshenglin.github.io/publication/15_sjam_lpkpt/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Modeling flow of nematic liquid crystal down an incline</title>
+      <link>http://teshenglin.github.io/publication/14_jem_lclk/</link>
+      <pubDate>Thu, 27 Mar 2014 17:58:56 +0800</pubDate>
+      <guid>http://teshenglin.github.io/publication/14_jem_lclk/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Numerical study of a non-local weakly nonlinear model for a liquid film sheared by a turbulent gas</title>
+      <link>http://teshenglin.github.io/publication/14_iutam_ltk/</link>
+      <pubDate>Mon, 27 Jan 2014 17:58:45 +0800</pubDate>
+      <guid>http://teshenglin.github.io/publication/14_iutam_ltk/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Note on the hydrodynamic description of thin nematic films: strong anchoring model</title>
+      <link>http://teshenglin.github.io/publication/13_pof_lcakt/</link>
+      <pubDate>Tue, 27 Aug 2013 18:17:07 +0800</pubDate>
+      <guid>http://teshenglin.github.io/publication/13_pof_lcakt/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Modelling spreading dynamics of nematic liquid crystals in three spatial dimensions</title>
+      <link>http://teshenglin.github.io/publication/13_jfm_lktc/</link>
+      <pubDate>Thu, 27 Jun 2013 17:58:35 +0800</pubDate>
+      <guid>http://teshenglin.github.io/publication/13_jfm_lktc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Thin films flowing down inverted substrates: Three-dimensional flow</title>
+      <link>http://teshenglin.github.io/publication/12_pof_lkf/</link>
+      <pubDate>Mon, 27 Feb 2012 17:49:39 +0800</pubDate>
+      <guid>http://teshenglin.github.io/publication/12_pof_lkf/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Defect modeling in spreading nematic droplets</title>
+      <link>http://teshenglin.github.io/publication/12_pre_lkc/</link>
+      <pubDate>Fri, 27 Jan 2012 17:49:39 +0800</pubDate>
+      <guid>http://teshenglin.github.io/publication/12_pre_lkc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Modeling and simulations of the spreading and destabilization of nematic droplets</title>
+      <link>http://teshenglin.github.io/publication/11_pof_clk/</link>
+      <pubDate>Fri, 01 Apr 2011 00:00:00 +0000</pubDate>
+      <guid>http://teshenglin.github.io/publication/11_pof_clk/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Thin films flowing down inverted substrates: two dimensional flow</title>
+      <link>http://teshenglin.github.io/publication/10_pof_lk/</link>
+      <pubDate>Mon, 24 May 2010 00:00:00 +0000</pubDate>
+      <guid>http://teshenglin.github.io/publication/10_pof_lk/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A simple Dufort-Frankel type scheme for the Gross-Pitaevskii equation of Bose-Einstein condensates on different geometries</title>
+      <link>http://teshenglin.github.io/publication/04_nmpde_lhl/</link>
+      <pubDate>Thu, 26 Feb 2004 00:00:00 +0000</pubDate>
+      <guid>http://teshenglin.github.io/publication/04_nmpde_lhl/</guid>
+      <description></description>
+    </item>
     
   </channel>
 </rss>

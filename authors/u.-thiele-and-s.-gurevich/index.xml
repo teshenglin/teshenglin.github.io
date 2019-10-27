@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>U. Thiele and S. Gurevich | Te-Sheng Lin</title>
+    <link>http://teshenglin.github.io/authors/u.-thiele-and-s.-gurevich/</link>
+      <atom:link href="http://teshenglin.github.io/authors/u.-thiele-and-s.-gurevich/index.xml" rel="self" type="application/rss+xml" />
+    <description>U. Thiele and S. Gurevich</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 27 Sep 2015 17:59:16 +0800</lastBuildDate>
+    <image>
+      <url>http://teshenglin.github.io/img/icon-192.png</url>
+      <title>U. Thiele and S. Gurevich</title>
+      <link>http://teshenglin.github.io/authors/u.-thiele-and-s.-gurevich/</link>
+    </image>
+    
+    <item>
+      <title>Instabilities of layers of deposited molecules on chemically stripe patterned substrates: Ridges vs. drops</title>
+      <link>http://teshenglin.github.io/publication/15_lang_hlhtg/</link>
+      <pubDate>Sun, 27 Sep 2015 17:59:16 +0800</pubDate>
+      <guid>http://teshenglin.github.io/publication/15_lang_hlhtg/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
