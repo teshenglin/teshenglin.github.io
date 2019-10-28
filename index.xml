@@ -5,7 +5,7 @@
     <link>http://teshenglin.github.io/</link>
       <atom:link href="http://teshenglin.github.io/index.xml" rel="self" type="application/rss+xml" />
     <description>Te-Sheng Lin</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 27 Oct 2019 20:32:32 +0800</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 28 Oct 2019 00:00:00 +0100</lastBuildDate>
     <image>
       <url>http://teshenglin.github.io/img/icon-192.png</url>
       <title>Te-Sheng Lin</title>
@@ -13,11 +13,52 @@
     </image>
     
     <item>
+      <title>Asymptotes</title>
+      <link>http://teshenglin.github.io/courses/calculus/asymptotes/</link>
+      <pubDate>Mon, 28 Oct 2019 00:00:00 +0100</pubDate>
+      <guid>http://teshenglin.github.io/courses/calculus/asymptotes/</guid>
+      <description>
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/_HUjJHhBkv8&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>Chain rule</title>
+      <link>http://teshenglin.github.io/courses/calculus/chain_rule/</link>
+      <pubDate>Mon, 28 Oct 2019 00:00:00 +0100</pubDate>
+      <guid>http://teshenglin.github.io/courses/calculus/chain_rule/</guid>
+      <description>
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/MrlCRjqfmXU&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>l&#39;Hospital&#39;s rule</title>
+      <link>http://teshenglin.github.io/courses/calculus/lhospital/</link>
+      <pubDate>Mon, 28 Oct 2019 00:00:00 +0100</pubDate>
+      <guid>http://teshenglin.github.io/courses/calculus/lhospital/</guid>
+      <description>
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/7Tlpeqxln38&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+    <item>
       <title>用電腦算微分</title>
       <link>http://teshenglin.github.io/post/derivative_evaluate/</link>
       <pubDate>Sun, 27 Oct 2019 20:32:32 +0800</pubDate>
       <guid>http://teshenglin.github.io/post/derivative_evaluate/</guid>
       <description>
+
+http://teshenglin.github.io/post/limit_evaluate/
 
 &lt;p&gt;接著我們要講的是用數值計算來算函數的微分值. 已知一個函數 $f(x)$ 在某個點 $a$ 的微分值定義是&lt;/p&gt;
 
@@ -307,6 +348,14 @@ $$
 &lt;li&gt;&lt;p&gt;在數值計算上有所謂的捨入誤差, 這是用有限位元來表達無限位數一定會有的差異.&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
+    </item>
+    
+    <item>
+      <title>Fast spectral solver for Poisson equation in an annular domain</title>
+      <link>http://teshenglin.github.io/publication/19_amsa_lhh/</link>
+      <pubDate>Sat, 27 Jul 2019 17:59:48 +0800</pubDate>
+      <guid>http://teshenglin.github.io/publication/19_amsa_lhh/</guid>
+      <description></description>
     </item>
     
     <item>

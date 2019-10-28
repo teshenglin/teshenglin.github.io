@@ -5,12 +5,28 @@
     <link>http://teshenglin.github.io/authors/</link>
       <atom:link href="http://teshenglin.github.io/authors/index.xml" rel="self" type="application/rss+xml" />
     <description>Authors</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 27 Jul 2018 17:59:48 +0800</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 27 Jul 2019 17:59:48 +0800</lastBuildDate>
     <image>
       <url>http://teshenglin.github.io/img/icon-192.png</url>
       <title>Authors</title>
       <link>http://teshenglin.github.io/authors/</link>
     </image>
+    
+    <item>
+      <title>C.-Y. He and W.-F. Hu</title>
+      <link>http://teshenglin.github.io/authors/c.-y.-he-and-w.-f.-hu/</link>
+      <pubDate>Sat, 27 Jul 2019 17:59:48 +0800</pubDate>
+      <guid>http://teshenglin.github.io/authors/c.-y.-he-and-w.-f.-hu/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>T.-S. Lin</title>
+      <link>http://teshenglin.github.io/authors/t.-s.-lin/</link>
+      <pubDate>Sat, 27 Jul 2019 17:59:48 +0800</pubDate>
+      <guid>http://teshenglin.github.io/authors/t.-s.-lin/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>D. Tseluiko</title>
@@ -41,14 +57,6 @@
       <link>http://teshenglin.github.io/authors/m.-g.-blyth-and-s.-kalliadasis/</link>
       <pubDate>Wed, 27 Jun 2018 17:59:41 +0800</pubDate>
       <guid>http://teshenglin.github.io/authors/m.-g.-blyth-and-s.-kalliadasis/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>T.-S. Lin</title>
-      <link>http://teshenglin.github.io/authors/t.-s.-lin/</link>
-      <pubDate>Wed, 27 Jun 2018 17:59:41 +0800</pubDate>
-      <guid>http://teshenglin.github.io/authors/t.-s.-lin/</guid>
       <description></description>
     </item>
     
@@ -225,7 +233,7 @@
       <link>http://teshenglin.github.io/authors/admin/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://teshenglin.github.io/authors/admin/</guid>
-      <description>&lt;p&gt;Te-Sheng Lin is an assistant professor of applied Mathematics at National Chiao Tung University.&lt;/p&gt;
+      <description>&lt;p&gt;I am an assistant professor of Applied Mathematics at National Chiao Tung University, Taiwan.&lt;/p&gt;
 </description>
     </item>
     

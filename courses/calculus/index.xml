@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Calculus | Te-Sheng Lin</title>
+    <link>http://teshenglin.github.io/courses/calculus/</link>
+      <atom:link href="http://teshenglin.github.io/courses/calculus/index.xml" rel="self" type="application/rss+xml" />
+    <description>Calculus</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 29 Oct 2019 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>http://teshenglin.github.io/img/icon-192.png</url>
+      <title>Calculus</title>
+      <link>http://teshenglin.github.io/courses/calculus/</link>
+    </image>
+    
+    <item>
+      <title>Asymptotes</title>
+      <link>http://teshenglin.github.io/courses/calculus/asymptotes/</link>
+      <pubDate>Mon, 28 Oct 2019 00:00:00 +0100</pubDate>
+      <guid>http://teshenglin.github.io/courses/calculus/asymptotes/</guid>
+      <description>
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/_HUjJHhBkv8&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>Chain rule</title>
+      <link>http://teshenglin.github.io/courses/calculus/chain_rule/</link>
+      <pubDate>Mon, 28 Oct 2019 00:00:00 +0100</pubDate>
+      <guid>http://teshenglin.github.io/courses/calculus/chain_rule/</guid>
+      <description>
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/MrlCRjqfmXU&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>l&#39;Hospital&#39;s rule</title>
+      <link>http://teshenglin.github.io/courses/calculus/lhospital/</link>
+      <pubDate>Mon, 28 Oct 2019 00:00:00 +0100</pubDate>
+      <guid>http://teshenglin.github.io/courses/calculus/lhospital/</guid>
+      <description>
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/7Tlpeqxln38&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+  </channel>
+</rss>

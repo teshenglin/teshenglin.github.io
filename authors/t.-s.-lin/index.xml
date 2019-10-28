@@ -5,12 +5,20 @@
     <link>http://teshenglin.github.io/authors/t.-s.-lin/</link>
       <atom:link href="http://teshenglin.github.io/authors/t.-s.-lin/index.xml" rel="self" type="application/rss+xml" />
     <description>T.-S. Lin</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Wed, 27 Jun 2018 17:59:41 +0800</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 27 Jul 2019 17:59:48 +0800</lastBuildDate>
     <image>
       <url>http://teshenglin.github.io/img/icon-192.png</url>
       <title>T.-S. Lin</title>
       <link>http://teshenglin.github.io/authors/t.-s.-lin/</link>
     </image>
+    
+    <item>
+      <title>Fast spectral solver for Poisson equation in an annular domain</title>
+      <link>http://teshenglin.github.io/publication/19_amsa_lhh/</link>
+      <pubDate>Sat, 27 Jul 2019 17:59:48 +0800</pubDate>
+      <guid>http://teshenglin.github.io/publication/19_amsa_lhh/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Continuation methods for time-periodic travelling-wave solutions to evolution equations</title>
