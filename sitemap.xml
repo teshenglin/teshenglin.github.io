@@ -3,16 +3,6 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://teshenglin.github.io/courses/taught/</loc>
-    <lastmod>2019-10-28T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://teshenglin.github.io/courses/students/</loc>
-    <lastmod>2019-10-29T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://teshenglin.github.io/courses/calculus/</loc>
     <lastmod>2019-10-29T00:00:00+00:00</lastmod>
   </url>
@@ -35,6 +25,21 @@
   <url>
     <loc>http://teshenglin.github.io/</loc>
     <lastmod>2019-10-28T00:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://teshenglin.github.io/courses/taught/</loc>
+    <lastmod>2019-10-28T00:00:00+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://teshenglin.github.io/courses/students/</loc>
+    <lastmod>2019-10-28T00:00:00+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://teshenglin.github.io/courses/</loc>
+    <lastmod>2019-10-28T00:00:00+08:00</lastmod>
   </url>
   
   <url>
@@ -322,10 +327,6 @@
   
   <url>
     <loc>http://teshenglin.github.io/tags/</loc>
-  </url>
-  
-  <url>
-    <loc>http://teshenglin.github.io/courses/</loc>
   </url>
   
 </urlset>
