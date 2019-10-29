@@ -28,10 +28,10 @@
   
     
   
-  <meta name="description" content="Assistant Professor">
+  <meta name="description" content="這裡我們要介紹如何用電腦算極限, 以及我們來看一下當我們真的這樣做的時候有可能會發生什麼問題. sinc function 首先我們要介紹一個特別的函數, $sinc(x)$, 定義如下: $$">
 
   
-  <link rel="alternate" hreflang="en-us" href="http://teshenglin.github.io/authors/d.-tseluiko/">
+  <link rel="alternate" hreflang="en-us" href="http://teshenglin.github.io/post/2019_limit_evaluate/">
 
   
 
@@ -93,14 +93,12 @@
 
 
   
-  <link rel="alternate" href="/authors/d.-tseluiko/index.xml" type="application/rss+xml" title="Te-Sheng Lin">
-  
 
   <link rel="manifest" href="/index.webmanifest">
   <link rel="icon" type="image/png" href="/img/icon-32.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
 
-  <link rel="canonical" href="http://teshenglin.github.io/authors/d.-tseluiko/">
+  <link rel="canonical" href="http://teshenglin.github.io/post/2019_limit_evaluate/">
 
   
   
@@ -113,18 +111,65 @@
   <meta property="twitter:card" content="summary">
   
   <meta property="og:site_name" content="Te-Sheng Lin">
-  <meta property="og:url" content="http://teshenglin.github.io/authors/d.-tseluiko/">
-  <meta property="og:title" content="D. Tseluiko | Te-Sheng Lin">
-  <meta property="og:description" content="Assistant Professor"><meta property="og:image" content="http://teshenglin.github.io/img/icon-192.png">
+  <meta property="og:url" content="http://teshenglin.github.io/post/2019_limit_evaluate/">
+  <meta property="og:title" content="用電腦算極限 | Te-Sheng Lin">
+  <meta property="og:description" content="這裡我們要介紹如何用電腦算極限, 以及我們來看一下當我們真的這樣做的時候有可能會發生什麼問題. sinc function 首先我們要介紹一個特別的函數, $sinc(x)$, 定義如下: $$"><meta property="og:image" content="http://teshenglin.github.io/img/icon-192.png">
   <meta property="twitter:image" content="http://teshenglin.github.io/img/icon-192.png"><meta property="og:locale" content="en-us">
   
-    <meta property="og:updated_time" content="2018-07-27T17:59:48&#43;08:00">
+    
+      <meta property="article:published_time" content="2019-10-27T00:00:00&#43;00:00">
+    
+    <meta property="article:modified_time" content="2019-10-27T00:00:00&#43;00:00">
   
 
   
 
 
+    
 
+
+
+
+
+
+  
+
+
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "http://teshenglin.github.io/post/2019_limit_evaluate/"
+  },
+  "headline": "用電腦算極限",
+  
+  "datePublished": "2019-10-27T00:00:00Z",
+  "dateModified": "2019-10-27T00:00:00Z",
+  
+  "author": {
+    "@type": "Person",
+    "name": "Te-Sheng Lin (林得勝)"
+  },
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "Te-Sheng Lin",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "http://teshenglin.github.io/img/icon-512.png"
+    }
+  },
+  "description": "這裡我們要介紹如何用電腦算極限, 以及我們來看一下當我們真的這樣做的時候有可能會發生什麼問題. sinc function 首先我們要介紹一個特別的函數, $sinc(x)$, 定義如下: $$"
+}
+</script>
+
+  
 
   
 
@@ -132,10 +177,13 @@
   
 
 
+  
 
 
 
-  <title>D. Tseluiko | Te-Sheng Lin</title>
+
+
+  <title>用電腦算極限 | Te-Sheng Lin</title>
 
 </head>
 
@@ -324,50 +372,413 @@
 </nav>
 
 
+  <article class="article">
+
   
 
-<div class="universal-wrapper pt-3">
-  <h1>D. Tseluiko</h1>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+<div class="article-container pt-3">
+  <h1>用電腦算極限</h1>
+
+  
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    Oct 27, 2019
+  </span>
+  
+
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    2 min read
+  </span>
+  
+
+  
+  
+  
+  <span class="middot-divider"></span>
+  <a href="/post/2019_limit_evaluate/#disqus_thread"></a>
+  
+
+  
+  
+  <span class="middot-divider"></span>
+  <span class="article-categories">
+    <i class="fas fa-folder mr-1"></i><a href="/categories/calculus/">Calculus</a>, <a href="/categories/computational-mathematics/">Computational Mathematics</a></span>
+  
+
+</div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
 </div>
 
 
-<section id="profile-page" class="pt-5">
-  <div class="container">
-    
-    
+
+  <div class="article-container">
+
+    <div class="article-style">
+      
+
+<p>這裡我們要介紹如何用電腦算極限, 以及我們來看一下當我們真的這樣做的時候有可能會發生什麼問題.</p>
+
+<h2 id="sinc-function">sinc function</h2>
+
+<p>首先我們要介紹一個特別的函數, $sinc(x)$, 定義如下:
+$$
+sinc(x) = \frac{\sin(x)}{x}, \quad x\ne 0.
+$$
+很明顯可以看出來當 $x=0$ 的時候分母會等於零, 是一件壞事, 所以把 $x=0$ 這個點先拿掉.</p>
+
+<p>比較有趣的是我們可以把這個函數畫出來. 首先我們在 $[-20, 20]$ 這個區間取 $1000$ 個點, 然後帶入上面 $sinc$ 函數的定義, 再把所有點連起來看看.</p>
+
+<p><strong>Remark:</strong> 有件事需要先說明一下, 由於我們是在 $[-20, 20]$ 這個區間均勻的取偶數個點, 所以會有 $500$ 個正數以及 $500$ 個負數, 重點是保證不會取到 $x=0$ 這個點, 所以沒有問題. 相反的, 如果取奇數個點就一定會取到 $x=0$, 那就會有函數無定義的問題了.</p>
+
+<p><img src="/post/figs/output_3_0.svg" alt="svg" /></p>
+
+<p>我們很輕易可以看出來, 連起來的線還蠻&rdquo;光滑&rdquo;的. 函數值在 $x=0$ 附近似乎不會趨近正無窮大或負無窮大, 也沒有跳躍的現象. 接著我們試著在 $x=0$ 附近放大一點看看, 我們在 $[-0.1, 0.1]$ 這個區間取 $1000$ 個點, 然後帶入 $sinc$ 函數的定義再把它畫出來:</p>
+
+<p><img src="/post/figs/output_5_0.svg" alt="svg" /></p>
+
+<p>看起來真的很光滑!! 而且似乎當 $x$ 很靠近 $0$ 時, $sinc(x)$ 的值很靠近 $1$.</p>
+
+<p>接著我們取一個會越來越靠近 $0$ 的數列, 然後看一下當把 $sinc$ 函數在這個數列的點上取值時, 其值會不會越來越靠近 $1$.  我們取以下數列:</p>
+
+<pre><code>20-element Array{Float64,1}:
+ 0.36787944117144233
+ 0.1353352832366127
+ 0.049787068367863944
+ 0.01831563888873418
+ 0.006737946999085467
+ 0.0024787521766663585
+ 0.0009118819655545162
+ 0.00033546262790251185
+ 0.00012340980408667956
+ 4.539992976248485e-5
+ 1.670170079024566e-5
+ 6.14421235332821e-6
+ 2.2603294069810542e-6
+ 8.315287191035679e-7
+ 3.059023205018258e-7
+ 1.1253517471925912e-7
+ 4.139937718785167e-8
+ 1.522997974471263e-8
+ 5.602796437537268e-9
+ 2.061153622438558e-9
+</code></pre>
+
+<p>算一下 $sinc$ 函數在這些點上面的值, 並觀察他的趨勢:</p>
+
+<pre><code>20-element Array{Float64,1}:
+ 0.9775962588920379
+ 0.9969501878216637
+ 0.9995869258359702
+ 0.9999440904998019
+ 0.9999924333622158
+ 0.9999989759649225
+ 0.9999998614118859
+ 0.9999999812441376
+ 0.9999999974616701
+ 0.9999999996564743
+ 0.9999999999535089
+ 0.9999999999937081
+ 0.9999999999991485
+ 0.9999999999998848
+ 0.9999999999999845
+ 0.9999999999999979
+ 0.9999999999999997
+ 1.0
+ 1.0
+ 1.0
+</code></pre>
+
+<p>赫然發現算到後來就等於 $1$ 了!! 所以我們發現</p>
+
+<p>$$
+\lim_{x\to 0} sinc(x) = \lim_{x\to 0} \frac{\sin(x)}{x} = 1.
+$$</p>
+
+<p>不過有一點點詭異的是, 在剛剛的計算裡我們最多也只是取到離 $1$ 很近的點而已, 但是算出來的結果卻是 $1$. 難道不只是 $sinc(0)=1$, 我們也有 $sinc(2.061153622438558*10^{-9})=1$ 嗎?</p>
+
+<p>事實上並不是這樣. 電腦有所謂的捨入誤差(rounding error). 這是因為電腦需要用有限位數來表達無窮小數, 所以一定要捨棄後面的位數. 我們把算出來的數字減去 $1$ 看看:</p>
+
+<pre><code>20-element Array{Float64,1}:
+ -0.02240374110796206
+ -0.0030498121783363308
+ -0.000413074164029803
+ -5.590950019807028e-5
+ -7.566637784228725e-6
+ -1.0240350775125862e-6
+ -1.3858811409583893e-7
+ -1.8755862418728952e-8
+ -2.5383298796199938e-9
+ -3.435256523687258e-10
+ -4.649114426769074e-11
+ -6.291855925155687e-12
+ -8.515410598874951e-13
+ -1.1524114995609125e-13
+ -1.554312234475219e-14
+ -2.1094237467877974e-15
+ -3.3306690738754696e-16
+  0.0
+  0.0
+  0.0
+</code></pre>
+
+<p>我們可以發現這個數字最小可以到大約 $10^{-16}$, 之後就變成 $0$ 了. 也就是說我們目前用個這個程式語言其捨入誤差大約就是 $10^{-16}$.</p>
+
+<h3 id="summary">Summary:</h3>
+
+<p>稍微總結一下目前我們看到的:</p>
+
+<ul>
+<li><p>我們用程式跑數值發現 $sinc(x\to 0)=1$, 所以我們可以定義 sinc 函數為
+$$
+sinc(x) =
+\begin{cases}
+\frac{\sin(x)}{x}, \quad x\ne 0 \\<br />
+1, \quad x=0.
+\end{cases}
+$$
+在這樣的定義之下 $sinc$ 函數是個<code>連續函數</code>.</p></li>
+
+<li><p>在數值計算上有所謂的捨入誤差, 這是用有限位元來表達無限位數一定會有的差異.</p></li>
+
+<li><p>更多關於 $sinc$ 函數的性質可以參考 <a href="https://en.wikipedia.org/wiki/Sinc_function" target="_blank">wiki</a> 上的介紹.</p></li>
+</ul>
+
+    </div>
 
     
+
+
+
+
+
+
+
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=http://teshenglin.github.io/post/2019_limit_evaluate/&amp;text=%e7%94%a8%e9%9b%bb%e8%85%a6%e7%ae%97%e6%a5%b5%e9%99%90" target="_blank" rel="noopener" class="share-btn-twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=http://teshenglin.github.io/post/2019_limit_evaluate/&amp;t=%e7%94%a8%e9%9b%bb%e8%85%a6%e7%ae%97%e6%a5%b5%e9%99%90" target="_blank" rel="noopener" class="share-btn-facebook">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="mailto:?subject=%e7%94%a8%e9%9b%bb%e8%85%a6%e7%ae%97%e6%a5%b5%e9%99%90&amp;body=http://teshenglin.github.io/post/2019_limit_evaluate/" target="_blank" rel="noopener" class="share-btn-email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+  
+  
+    
+  
+  
+  <div class="media author-card content-widget-hr">
+    
+      
+      <img class="portrait mr-3" src="/authors/admin/avatar_hua0d4d4b24f4da3a102e4452ac738b95f_109236_250x250_fill_q90_lanczos_center.jpg" alt="Avatar">
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="http://teshenglin.github.io/">Te-Sheng Lin (林得勝)</a></h5>
+      <h6 class="card-subtitle">Assistant Professor</h6>
+      <p class="card-text">The focus of my research is concerned with the development of analytical and computational tools for the problems that arises in fluid dynamics, currently in thin liquid films, and further to communicate with scientists from other disciplines to solve engineering problems in practice.</p>
+      <ul class="network-icon" aria-hidden="true">
+  
     
     
-    <div class="article-widget content-widget-hr">
-      <h3>Latest</h3>
-      <ul>
-        
-        <li>
-          <a href="/publication/18_jfm_btlk/">Two-dimensional pulse dynamics and the formation of bound states on electrified falling films</a>
-        </li>
-        
-        <li>
-          <a href="/publication/18_aml_ltbk/">Continuation methods for time-periodic travelling-wave solutions to evolution equations</a>
-        </li>
-        
-        <li>
-          <a href="/publication/16_pof_lrtt/">Bifurcation analysis of the behavior of partially wetting liquids on a rotating cylinder</a>
-        </li>
-        
-        <li>
-          <a href="/publication/15_sjam_lpkpt/">Coherent structures in non-local dispersive active-dissipative systems</a>
-        </li>
-        
-        <li>
-          <a href="/publication/14_iutam_ltk/">Numerical study of a non-local weakly nonlinear model for a liquid film sheared by a turbulent gas</a>
-        </li>
-        
-      </ul>
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://scholar.google.com.tw/citations?user=diXYXkwAAAAJ" target="_blank" rel="noopener">
+        <i class="ai ai-google-scholar"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.researchgate.net/profile/Te-Sheng_Lin" target="_blank" rel="noopener">
+        <i class="ai ai-researchgate"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://github.com/teshenglin" target="_blank" rel="noopener">
+        <i class="fab fa-github"></i>
+      </a>
+    </li>
+  
+</ul>
+
     </div>
-    
   </div>
+
+
+
+
+<section id="comments">
+  
+    
+<div id="disqus_thread"></div>
+<script>
+  let disqus_config = function () {
+    
+    
+    
+  };
+  (function() {
+    if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+      document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+      return;
+    }
+    var d = document, s = d.createElement('script'); s.async = true;
+    s.src = 'https://' + "tesheng" + '.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+  
 </section>
+
+
+
+
+
+
+  
+  
+
+
+
+  </div>
+</article>
 
       
 

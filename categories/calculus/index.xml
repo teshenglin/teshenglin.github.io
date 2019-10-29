@@ -5,7 +5,7 @@
     <link>http://teshenglin.github.io/categories/calculus/</link>
       <atom:link href="http://teshenglin.github.io/categories/calculus/index.xml" rel="self" type="application/rss+xml" />
     <description>Calculus</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 27 Oct 2019 20:32:32 +0800</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 29 Oct 2019 00:00:00 +0000</lastBuildDate>
     <image>
       <url>http://teshenglin.github.io/img/icon-192.png</url>
       <title>Calculus</title>
@@ -13,13 +13,126 @@
     </image>
     
     <item>
-      <title>用電腦算微分</title>
-      <link>http://teshenglin.github.io/post/derivative_evaluate/</link>
-      <pubDate>Sun, 27 Oct 2019 20:32:32 +0800</pubDate>
-      <guid>http://teshenglin.github.io/post/derivative_evaluate/</guid>
+      <title>Slant asymptotes</title>
+      <link>http://teshenglin.github.io/post/2019_slant_-_asymp/</link>
+      <pubDate>Tue, 29 Oct 2019 00:00:00 +0000</pubDate>
+      <guid>http://teshenglin.github.io/post/2019_slant_-_asymp/</guid>
       <description>
 
-&lt;p&gt;前情提要: &lt;a href=&#34;http://teshenglin.github.io/post/limit_evaluate&#34;&gt;用電腦算極限&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;這裡我們要介紹 slant asymptotes, 也就是所謂的斜漸近線.&lt;/p&gt;
+
+&lt;h2 id=&#34;slant-asymptotes&#34;&gt;slant asymptotes&lt;/h2&gt;
+
+&lt;p&gt;斜漸近線定義如下:&lt;/p&gt;
+
+&lt;p&gt;The line $y=mx+b$, $m\ne 0$, is called a slant asymptote if
+$$
+\lim_{x\to\infty} [f(x) - (mx+b)] = 0.
+$$&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Remark:&lt;/strong&gt; 亦可將上列式子中改為 $x\to-\infty$. 滿足此條件的也是斜漸近線. 所以斜漸近線最多有兩條.&lt;/p&gt;
+
+&lt;h3 id=&#34;長除法&#34;&gt;長除法&lt;/h3&gt;
+
+&lt;p&gt;要求得斜漸近線的方法其中之一是長除法. 例如以下這個函數
+$$
+f(x) = \frac{4x^3-10x^2-11x+1}{x^2-3x}
+$$
+將這個函數的分子與分母做長除法發現
+$$
+4x^3-10x^2-11x+1 = (4x+2)(x^2-3x) + (-5x+1)
+$$
+也就是說
+$$
+f(x) = (4x+2) + \frac{-5x+1}{x^2-3x}
+$$
+這樣我們很明顯可以看出來
+$$
+\lim_{x\to\pm\infty} [f(x) - (4x+2)] = \lim_{x\to\pm\infty} \frac{-5x+1}{x^2-3x} = 0.
+$$
+所以 $y=4x+2$ 就是這個函數的斜漸近線.&lt;/p&gt;
+
+&lt;h3 id=&#34;直接法&#34;&gt;直接法&lt;/h3&gt;
+
+&lt;p&gt;不過如果遇到無法做長除法的函數, 以上的招數就失效了. 例如
+$$
+g(x) = \sqrt{x^2-1}+3,
+$$
+就無法以長除法來找斜漸近線.&lt;/p&gt;
+
+&lt;p&gt;我們先觀察一下原本斜漸近線的定義, 然後很快就可以發現, 如果 $y=mx+b$ 是一條斜漸近線則我們有
+$$
+\lim_{x\to\infty} \frac{f(x)}{x} = m.
+$$
+所以透過以上這個式子我們可以找到斜漸近線中的第一個參數 $m$. 知道這個參數之後我們一樣再把原本定義改寫一下則有
+$$
+\lim_{x\to\infty} [f(x) - mx] = b.
+$$
+利用這個式子就可以找到斜漸近線中的第二個參數 $b$.&lt;/p&gt;
+
+&lt;p&gt;我們以上面的 $g(x)$ 函數為例來找一下它的斜漸近線.&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;首先第一步我們先看一下 $g$ 在正負無窮遠的行為:
+$$
+\lim_{x\to\infty} g(x) = \infty, \quad \lim_{x\to-\infty} g(x) = \infty.
+$$
+發現它會趨近無窮大, 所以有機會有斜漸近線.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Remark:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;如果趨近一個常數那就會得到橫漸近線 (horizontal asymptotes), 那就沒有斜漸近線.&lt;/li&gt;
+&lt;li&gt;如果極限不是正負無窮大其中之一, 那也不可能會有斜漸近線.&lt;/li&gt;
+&lt;li&gt;以上都是在講單邊 ($x\to\infty$, 或是 $x\to -\infty$), 有可能兩邊行為完全不一樣.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;接著我們試著求出 $m$:
+$$
+\lim_{x\to\infty} \frac{g(x)}{x} = \lim_{x\to\infty} \frac{\sqrt{x^2-1}+3}{x} = 1.
+$$
+所以 $m=1$. 接著我們求解 $b$:
+$$
+\lim_{x\to\infty} [g(x) - mx] = \lim_{x\to\infty} \left[\sqrt{x^2-1}+3 - x\right] = 3.
+$$
+所以 $b=3$.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Remark:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;同樣做法可以得到 $x\to -\infty$ 時我們有 $m=-1$, $b=3$.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;因此我們得到 $g(x)$ 在正無窮遠處的斜漸近線為 $y=x+3$, 在負無窮遠處的斜漸近線為 $y=-x+3$.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&#34;summary&#34;&gt;Summary:&lt;/h3&gt;
+
+&lt;p&gt;總結一下:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;斜漸近線可以用長除法或直接法求得.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;不過不管長除法或直接法都是求出斜漸近線的計算過程. 實際上不管用哪種方法做, 長除法, 直接法, 或是當你很有經驗時可以一眼看出來, 要&lt;strong&gt;證明&lt;/strong&gt;你所得到的直線是斜漸近線就是要驗證最初的定義是否正確. 也就是要驗證以下這個式子是對的:
+$$
+\lim_{x\to\infty} [f(x) - (mx+b)] = 0.
+$$&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>用電腦算微分</title>
+      <link>http://teshenglin.github.io/post/2019_derivate_evaluate/</link>
+      <pubDate>Sun, 27 Oct 2019 00:00:00 +0000</pubDate>
+      <guid>http://teshenglin.github.io/post/2019_derivate_evaluate/</guid>
+      <description>
+
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    前情提要: &lt;a href=&#34;http://teshenglin.github.io/post/2019_limit_evaluate&#34;&gt;用電腦算極限&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
 
 &lt;p&gt;接著我們要講的是用數值計算來算函數的微分值. 已知一個函數 $f(x)$ 在某個點 $a$ 的微分值定義是&lt;/p&gt;
 
@@ -136,7 +249,7 @@ $$&lt;/p&gt;
 
 &lt;p&gt;我們把它畫出來看看, 橫軸是 $h$, 縱軸是 $\left|\frac{(\pi+h)^2-\pi^2}{h}-2\pi\right|$&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;output_22_0.svg&#34; alt=&#34;svg&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://teshenglin.github.io/post/figs/output_22_0.svg&#34; alt=&#34;svg&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;那誤差最小值出現在什麼時候呢?&lt;/p&gt;
 
@@ -179,16 +292,16 @@ $$&lt;/p&gt;&lt;/li&gt;
     
     <item>
       <title>用電腦算極限</title>
-      <link>http://teshenglin.github.io/post/limit_evaluate/</link>
-      <pubDate>Sun, 27 Oct 2019 20:32:32 +0800</pubDate>
-      <guid>http://teshenglin.github.io/post/limit_evaluate/</guid>
+      <link>http://teshenglin.github.io/post/2019_limit_evaluate/</link>
+      <pubDate>Sun, 27 Oct 2019 00:00:00 +0000</pubDate>
+      <guid>http://teshenglin.github.io/post/2019_limit_evaluate/</guid>
       <description>
 
-&lt;p&gt;這裡我們要介紹如何用電腦算極限.&lt;/p&gt;
+&lt;p&gt;這裡我們要介紹如何用電腦算極限, 以及我們來看一下當我們真的這樣做的時候有可能會發生什麼問題.&lt;/p&gt;
 
 &lt;h2 id=&#34;sinc-function&#34;&gt;sinc function&lt;/h2&gt;
 
-&lt;p&gt;首先我們要介紹一個特別的函數, sinc(x), 定義如下:
+&lt;p&gt;首先我們要介紹一個特別的函數, $sinc(x)$, 定義如下:
 $$
 sinc(x) = \frac{\sin(x)}{x}, \quad x\ne 0.
 $$
@@ -196,13 +309,13 @@ $$
 
 &lt;p&gt;比較有趣的是我們可以把這個函數畫出來. 首先我們在 $[-20, 20]$ 這個區間取 $1000$ 個點, 然後帶入上面 $sinc$ 函數的定義, 再把所有點連起來看看.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Remark:&lt;/strong&gt; 有件事需要先說明一下, 由於我們是在 $[-20, 20]$ 這個區間均勻的取偶數個點, 所以會有 $500$ 個正數以及 $500$ 個負數, 重點是保證不會取到 $x=0$ 這個點, 所以沒有問題. 相反的, 如果取奇數個點就一定會取到 $x=0$, 那就會有無定義的問題了.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Remark:&lt;/strong&gt; 有件事需要先說明一下, 由於我們是在 $[-20, 20]$ 這個區間均勻的取偶數個點, 所以會有 $500$ 個正數以及 $500$ 個負數, 重點是保證不會取到 $x=0$ 這個點, 所以沒有問題. 相反的, 如果取奇數個點就一定會取到 $x=0$, 那就會有函數無定義的問題了.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;output_3_0.svg&#34; alt=&#34;svg&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://teshenglin.github.io/post/figs/output_3_0.svg&#34; alt=&#34;svg&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;我們很輕易可以看出來, 連起來的線還蠻&amp;rdquo;光滑&amp;rdquo;的. 函數值在 $x=0$ 附近似乎不會趨近正無窮大或負無窮大, 也沒有跳躍的現象. 接著我們試著在 $x=0$ 附近放大一點看看, 我們在 $[-0.1, 0.1]$ 這個區間取 $1000$ 個點, 然後帶入 $sinc$ 函數的定義再把它畫出來:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;output_5_0.svg&#34; alt=&#34;svg&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://teshenglin.github.io/post/figs/output_5_0.svg&#34; alt=&#34;svg&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;看起來真的很光滑!! 而且似乎當 $x$ 很靠近 $0$ 時, $sinc(x)$ 的值很靠近 $1$.&lt;/p&gt;
 
@@ -304,9 +417,11 @@ sinc(x) =
 1, \quad x=0.
 \end{cases}
 $$
-在這樣的定義之下 $sinc$ 函數是個&lt;strong&gt;連續函數&lt;/strong&gt;.&lt;/p&gt;&lt;/li&gt;
+在這樣的定義之下 $sinc$ 函數是個&lt;code&gt;連續函數&lt;/code&gt;.&lt;/p&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;在數值計算上有所謂的捨入誤差, 這是用有限位元來表達無限位數一定會有的差異.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;更多關於 $sinc$ 函數的性質可以參考 &lt;a href=&#34;https://en.wikipedia.org/wiki/Sinc_function&#34; target=&#34;_blank&#34;&gt;wiki&lt;/a&gt; 上的介紹.&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
