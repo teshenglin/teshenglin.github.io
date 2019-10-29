@@ -5,12 +5,36 @@
     <link>http://teshenglin.github.io/authors/l.-kondic/</link>
       <atom:link href="http://teshenglin.github.io/authors/l.-kondic/index.xml" rel="self" type="application/rss+xml" />
     <description>L. Kondic</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Thu, 27 Jun 2013 17:58:35 +0800</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 27 Apr 2015 17:59:06 +0800</lastBuildDate>
     <image>
       <url>http://teshenglin.github.io/img/icon-192.png</url>
       <title>L. Kondic</title>
       <link>http://teshenglin.github.io/authors/l.-kondic/</link>
     </image>
+    
+    <item>
+      <title>Three-dimensional coating flow of nematic liquid crystal on an inclined substrate</title>
+      <link>http://teshenglin.github.io/publication/15_ejam_lclk/</link>
+      <pubDate>Mon, 27 Apr 2015 17:59:06 +0800</pubDate>
+      <guid>http://teshenglin.github.io/publication/15_ejam_lclk/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Modeling flow of nematic liquid crystal down an incline</title>
+      <link>http://teshenglin.github.io/publication/14_jem_lclk/</link>
+      <pubDate>Thu, 27 Mar 2014 17:58:56 +0800</pubDate>
+      <guid>http://teshenglin.github.io/publication/14_jem_lclk/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Note on the hydrodynamic description of thin nematic films: strong anchoring model</title>
+      <link>http://teshenglin.github.io/publication/13_pof_lcakt/</link>
+      <pubDate>Tue, 27 Aug 2013 18:17:07 +0800</pubDate>
+      <guid>http://teshenglin.github.io/publication/13_pof_lcakt/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Modelling spreading dynamics of nematic liquid crystals in three spatial dimensions</title>
@@ -21,10 +45,34 @@
     </item>
     
     <item>
+      <title>Thin films flowing down inverted substrates: Three-dimensional flow</title>
+      <link>http://teshenglin.github.io/publication/12_pof_lkf/</link>
+      <pubDate>Mon, 27 Feb 2012 17:49:39 +0800</pubDate>
+      <guid>http://teshenglin.github.io/publication/12_pof_lkf/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Defect modeling in spreading nematic droplets</title>
       <link>http://teshenglin.github.io/publication/12_pre_lkc/</link>
       <pubDate>Fri, 27 Jan 2012 17:49:39 +0800</pubDate>
       <guid>http://teshenglin.github.io/publication/12_pre_lkc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Modeling and simulations of the spreading and destabilization of nematic droplets</title>
+      <link>http://teshenglin.github.io/publication/11_pof_clk/</link>
+      <pubDate>Fri, 01 Apr 2011 00:00:00 +0000</pubDate>
+      <guid>http://teshenglin.github.io/publication/11_pof_clk/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Thin films flowing down inverted substrates: two dimensional flow</title>
+      <link>http://teshenglin.github.io/publication/10_pof_lk/</link>
+      <pubDate>Mon, 24 May 2010 00:00:00 +0000</pubDate>
+      <guid>http://teshenglin.github.io/publication/10_pof_lk/</guid>
       <description></description>
     </item>
     

@@ -5,7 +5,7 @@
     <link>http://teshenglin.github.io/authors/s.-kalliadasis/</link>
       <atom:link href="http://teshenglin.github.io/authors/s.-kalliadasis/index.xml" rel="self" type="application/rss+xml" />
     <description>S. Kalliadasis</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 27 Mar 2015 17:59:24 +0800</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 27 Jul 2018 17:59:48 +0800</lastBuildDate>
     <image>
       <url>http://teshenglin.github.io/img/icon-192.png</url>
       <title>S. Kalliadasis</title>
@@ -13,10 +13,34 @@
     </image>
     
     <item>
+      <title>Two-dimensional pulse dynamics and the formation of bound states on electrified falling films</title>
+      <link>http://teshenglin.github.io/publication/18_jfm_btlk/</link>
+      <pubDate>Fri, 27 Jul 2018 17:59:48 +0800</pubDate>
+      <guid>http://teshenglin.github.io/publication/18_jfm_btlk/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Continuation methods for time-periodic travelling-wave solutions to evolution equations</title>
+      <link>http://teshenglin.github.io/publication/18_aml_ltbk/</link>
+      <pubDate>Wed, 27 Jun 2018 17:59:41 +0800</pubDate>
+      <guid>http://teshenglin.github.io/publication/18_aml_ltbk/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Coherent structures in non-local dispersive active-dissipative systems</title>
       <link>http://teshenglin.github.io/publication/15_sjam_lpkpt/</link>
       <pubDate>Fri, 27 Mar 2015 17:59:24 +0800</pubDate>
       <guid>http://teshenglin.github.io/publication/15_sjam_lpkpt/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Numerical study of a non-local weakly nonlinear model for a liquid film sheared by a turbulent gas</title>
+      <link>http://teshenglin.github.io/publication/14_iutam_ltk/</link>
+      <pubDate>Mon, 27 Jan 2014 17:58:45 +0800</pubDate>
+      <guid>http://teshenglin.github.io/publication/14_iutam_ltk/</guid>
       <description></description>
     </item>
     

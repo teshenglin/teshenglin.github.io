@@ -19,7 +19,7 @@
       <guid>http://teshenglin.github.io/post/derivative_evaluate/</guid>
       <description>
 
-http://teshenglin.github.io/post/limit_evaluate/
+&lt;p&gt;前情提要: &lt;a href=&#34;http://teshenglin.github.io/post/limit_evaluate&#34;&gt;用電腦算極限&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;接著我們要講的是用數值計算來算函數的微分值. 已知一個函數 $f(x)$ 在某個點 $a$ 的微分值定義是&lt;/p&gt;
 
