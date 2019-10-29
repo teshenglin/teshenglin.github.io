@@ -25,9 +25,12 @@
   &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;p&gt;接著我們要講的是用數值計算來算函數的微分值. 已知一個函數 $f(x)$ 在某個點 $a$ 的微分值定義是&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;這裡我們要講的是用數值計算來算函數的微分值.&lt;/p&gt;
+&lt;/blockquote&gt;
 
-&lt;p&gt;$$
+&lt;p&gt;已知一個函數 $f(x)$ 在某個點 $a$ 的微分值定義是
+$$
 f&amp;rsquo;(a) = \lim_{h\to 0} \frac{f(a+h)-f(a)}{h}.
 $$&lt;/p&gt;
 
@@ -188,9 +191,11 @@ $$&lt;/p&gt;&lt;/li&gt;
       <guid>http://teshenglin.github.io/post/2019_limit_evaluate/</guid>
       <description>
 
-&lt;p&gt;這裡我們要介紹如何用電腦算極限, 以及我們來看一下當我們真的這樣做的時候有可能會發生什麼問題.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;這裡我們要介紹如何用電腦算極限, 以及我們來看一下當我們真的這樣做的時候有可能會發生什麼問題. 我們以 $sinc$ 函數為例來做說明.&lt;/p&gt;
+&lt;/blockquote&gt;
 
-&lt;h2 id=&#34;sinc-function&#34;&gt;sinc function&lt;/h2&gt;
+&lt;h3 id=&#34;sinc-function&#34;&gt;sinc function&lt;/h3&gt;
 
 &lt;p&gt;首先我們要介紹一個特別的函數, $sinc(x)$, 定義如下:
 $$

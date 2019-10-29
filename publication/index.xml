@@ -5,12 +5,20 @@
     <link>http://teshenglin.github.io/publication/</link>
       <atom:link href="http://teshenglin.github.io/publication/index.xml" rel="self" type="application/rss+xml" />
     <description>Publications</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 27 Jul 2019 17:59:48 +0800</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 29 Oct 2019 17:59:48 +0800</lastBuildDate>
     <image>
       <url>http://teshenglin.github.io/img/icon-192.png</url>
       <title>Publications</title>
       <link>http://teshenglin.github.io/publication/</link>
     </image>
+    
+    <item>
+      <title>Chaotic swimming of phoretic self-propelled particles</title>
+      <link>http://teshenglin.github.io/publication/19_prl_hlrm/</link>
+      <pubDate>Tue, 29 Oct 2019 17:59:48 +0800</pubDate>
+      <guid>http://teshenglin.github.io/publication/19_prl_hlrm/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Fast spectral solver for Poisson equation in an annular domain</title>

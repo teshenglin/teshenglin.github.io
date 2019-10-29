@@ -28,10 +28,10 @@
   
     
   
-  <meta name="description" content="Assistant Professor">
+  <meta name="description" content="這裡我們要討論一個函數的最大值以及最小值. 首先我們有極值定理 Theorem: Extreme value theorem If $f$ is a real-valued continuous function on the closed interval $[a,b]$, then $f$ must attain a maximum and a minimum. 所以對於定義在封閉區間的連續函">
 
   
-  <link rel="alternate" hreflang="en-us" href="http://teshenglin.github.io/publication_types/3/">
+  <link rel="alternate" hreflang="en-us" href="http://teshenglin.github.io/post/2019_maxmin/">
 
   
 
@@ -93,14 +93,12 @@
 
 
   
-  <link rel="alternate" href="/publication_types/3/index.xml" type="application/rss+xml" title="Te-Sheng Lin">
-  
 
   <link rel="manifest" href="/index.webmanifest">
   <link rel="icon" type="image/png" href="/img/icon-32.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
 
-  <link rel="canonical" href="http://teshenglin.github.io/publication_types/3/">
+  <link rel="canonical" href="http://teshenglin.github.io/post/2019_maxmin/">
 
   
   
@@ -113,18 +111,65 @@
   <meta property="twitter:card" content="summary">
   
   <meta property="og:site_name" content="Te-Sheng Lin">
-  <meta property="og:url" content="http://teshenglin.github.io/publication_types/3/">
-  <meta property="og:title" content="3 | Te-Sheng Lin">
-  <meta property="og:description" content="Assistant Professor"><meta property="og:image" content="http://teshenglin.github.io/img/icon-192.png">
+  <meta property="og:url" content="http://teshenglin.github.io/post/2019_maxmin/">
+  <meta property="og:title" content="Maximum and minimum of a function | Te-Sheng Lin">
+  <meta property="og:description" content="這裡我們要討論一個函數的最大值以及最小值. 首先我們有極值定理 Theorem: Extreme value theorem If $f$ is a real-valued continuous function on the closed interval $[a,b]$, then $f$ must attain a maximum and a minimum. 所以對於定義在封閉區間的連續函"><meta property="og:image" content="http://teshenglin.github.io/img/icon-192.png">
   <meta property="twitter:image" content="http://teshenglin.github.io/img/icon-192.png"><meta property="og:locale" content="en-us">
   
-    <meta property="og:updated_time" content="2019-10-29T17:59:48&#43;08:00">
+    
+      <meta property="article:published_time" content="2019-10-29T00:00:00&#43;00:00">
+    
+    <meta property="article:modified_time" content="2019-10-29T00:00:00&#43;00:00">
   
 
   
 
 
+    
 
+
+
+
+
+
+  
+
+
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "http://teshenglin.github.io/post/2019_maxmin/"
+  },
+  "headline": "Maximum and minimum of a function",
+  
+  "datePublished": "2019-10-29T00:00:00Z",
+  "dateModified": "2019-10-29T00:00:00Z",
+  
+  "author": {
+    "@type": "Person",
+    "name": "Te-Sheng Lin (林得勝)"
+  },
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "Te-Sheng Lin",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "http://teshenglin.github.io/img/icon-512.png"
+    }
+  },
+  "description": "這裡我們要討論一個函數的最大值以及最小值. 首先我們有極值定理 Theorem: Extreme value theorem If $f$ is a real-valued continuous function on the closed interval $[a,b]$, then $f$ must attain a maximum and a minimum. 所以對於定義在封閉區間的連續函"
+}
+</script>
+
+  
 
   
 
@@ -132,10 +177,13 @@
   
 
 
+  
 
 
 
-  <title>3 | Te-Sheng Lin</title>
+
+
+  <title>Maximum and minimum of a function | Te-Sheng Lin</title>
 
 </head>
 
@@ -324,63 +372,338 @@
 </nav>
 
 
+  <article class="article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+<div class="article-container pt-3">
+  <h1>Maximum and minimum of a function</h1>
+
+  
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    Oct 29, 2019
+  </span>
+  
+
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    2 min read
+  </span>
+  
+
+  
+  
+  
+  <span class="middot-divider"></span>
+  <a href="/post/2019_maxmin/#disqus_thread"></a>
+  
+
+  
+  
+  <span class="middot-divider"></span>
+  <span class="article-categories">
+    <i class="fas fa-folder mr-1"></i><a href="/categories/calculus/">Calculus</a></span>
+  
+
+</div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style">
+      
+
+<blockquote>
+<p>這裡我們要討論一個函數的最大值以及最小值.</p>
+</blockquote>
+
+<p>首先我們有極值定理</p>
+
+<blockquote>
+<h2 id="theorem-extreme-value-theorem">Theorem: Extreme value theorem</h2>
+
+<p>If $f$ is a real-valued continuous function on the closed interval $[a,b]$, then $f$ must attain a maximum and a minimum.</p>
+</blockquote>
+
+<p>所以對於定義在封閉區間的連續函數, 必定會有極值. 接下來我們看一下實際上我們怎麼把極值找出來.</p>
+
+<p>在微積分課本裡有所謂的封閉區間法, 如下:</p>
+
+<h2 id="the-closed-interval-method">The closed interval method</h2>
+
+<pre><code class="language-mermaid">graph TD;
+  B[f is `continuous` on a `closed interval`]--&gt;A;
+  B--&gt;C;
+  A[Determine the critical points]--&gt;|f'=0| D(The largest value at these points is the abs. max. and the smallest value is the abs. min.);
+  A--&gt;|f' not exists| D;
+  C[Determine the end points]--&gt;D;
+</code></pre>
+
+<p>這個方法的原理跟做法都很簡單, 我這邊就不多做說明.</p>
+
+<p>不過我要做一些補充. 事實上這個方法要能用還有一個很重要的假設是<code>假設這個函數只在有限個地方微分不存在</code>. 如果一個函數在無窮多地方微分不存在, 雖然最大值還會是 &ldquo;微分等於 0&rdquo;, &ldquo;微分不存在&rdquo;, &ldquo;端點&rdquo; 這些地方的函數值中找最大的. 不過實作上會找不完. 所以等於是沒有用.</p>
+
+<p>當然這樣的假設看起來很正常, 難道有函數是連續的, 但是在無窮多地方微分不存在嗎? 很不幸的也很幸運的, 真的有! 其中有一個很特別的函數叫做 <a href="https://en.wikipedia.org/wiki/Weierstrass_function" target="_blank">Weierstrass function</a>. 它是定義在實數軸上的函數, 在每個點都連續, 但是同時在任何一個點微分都不存在. 所以如果套用 the closed interval method 在這函數上會發現所有的點都是 critical point, 所以套用之後還是必須要找出所有點中函數值最大的. 完全沒有簡化到.</p>
+
+<h3 id="question-1-是否存在連續-但是在每個點微分都等於-0-的函數">Question 1: 是否存在連續, 但是在每個點微分都等於 0 的函數?</h3>
+
+<p>當然有! 常數函數就是. 不過這個很好 check 最大最小值所以沒什麼問題.</p>
+
+<h3 id="question-2-是否存在連續-但是在每個點微分都等於-0-的非常數函數-non-constant-function">Question 2: 是否存在連續, 但是在每個點微分都等於 0 的非常數函數(non-constant function)?</h3>
+
+<p>I will leave it as an exercise.</p>
+
+<p><br></p>
+
+<p>最後再補充一點, 函數在某個點連續但是微分不存在有幾種情形:</p>
+
+<ol>
+<li><p>尖點. 例如 $f(x) = |x|$ 在 $x=0$ 時.</p></li>
+
+<li><p>垂直切線. 例如 $f(x) = \sqrt[3]{x}$ 在 $x=0$ 時.</p></li>
+
+<li><p>微分定義中的極限不存在. 例如 $f(x) = x\sin(x)$ 在 $x=0$ 時.</p></li>
+</ol>
+
+    </div>
+
+    
+
+
+
+
+
+
+
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=http://teshenglin.github.io/post/2019_maxmin/&amp;text=Maximum%20and%20minimum%20of%20a%20function" target="_blank" rel="noopener" class="share-btn-twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=http://teshenglin.github.io/post/2019_maxmin/&amp;t=Maximum%20and%20minimum%20of%20a%20function" target="_blank" rel="noopener" class="share-btn-facebook">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="mailto:?subject=Maximum%20and%20minimum%20of%20a%20function&amp;body=http://teshenglin.github.io/post/2019_maxmin/" target="_blank" rel="noopener" class="share-btn-email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
   
 
 
 
 
 
-
-
-
-
-
-
-
-  
 
   
   
   
     
   
-<div class="universal-wrapper pt-3">
-  <h1>3</h1>
-
   
-
-  
-</div>
-
-
-
-<div class="universal-wrapper">
-  
-
-  
-  
-  <div>
-    <h2><a href="/publication/19_prl_hlrm/">Chaotic swimming of phoretic self-propelled particles</a></h2>
-    <div class="article-style">
+  <div class="media author-card content-widget-hr">
+    
       
-      Swimming of a rigid phoretic particle in an isotropic fluid is studied numerically as a function of the dimensionless solute emission rate (or Peclet number Pe). The particle sets into motion at a critical Pe. Whereas the particle trajectory is …
+      <img class="portrait mr-3" src="/authors/admin/avatar_hua0d4d4b24f4da3a102e4452ac738b95f_109236_250x250_fill_q90_lanczos_center.jpg" alt="Avatar">
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="http://teshenglin.github.io/">Te-Sheng Lin (林得勝)</a></h5>
+      <h6 class="card-subtitle">Assistant Professor</h6>
+      <p class="card-text">The focus of my research is concerned with the development of analytical and computational tools for the problems that arises in fluid dynamics, currently in thin liquid films, and further to communicate with scientists from other disciplines to solve engineering problems in practice.</p>
+      <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+    
+    
+    
+    
       
+    
+    <li>
+      <a href="https://scholar.google.com.tw/citations?user=diXYXkwAAAAJ" target="_blank" rel="noopener">
+        <i class="ai ai-google-scholar"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.researchgate.net/profile/Te-Sheng_Lin" target="_blank" rel="noopener">
+        <i class="ai ai-researchgate"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://github.com/teshenglin" target="_blank" rel="noopener">
+        <i class="fab fa-github"></i>
+      </a>
+    </li>
+  
+</ul>
+
     </div>
   </div>
+
+
+
+
+<section id="comments">
   
-  <div>
-    <h2><a href="/publication/19_amsa_lhh/">Fast spectral solver for Poisson equation in an annular domain</a></h2>
-    <div class="article-style">
-      
-      A simple and efficient spectral method is formulated to solve Poisson equation in an annular domain. The solver relies on the Fourier expansion, where the differential equations for the Fourier coefficients are solved using an ultraspherical spectral …
-      
-    </div>
+    
+<div id="disqus_thread"></div>
+<script>
+  let disqus_config = function () {
+    
+    
+    
+  };
+  (function() {
+    if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+      document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+      return;
+    }
+    var d = document, s = d.createElement('script'); s.async = true;
+    s.src = 'https://' + "https-teshenglin-github-io" + '.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+  
+</section>
+
+
+
+
+
+
+  
+  
+
+
+
   </div>
-  
-
-  
-
-</div>
+</article>
 
       
 

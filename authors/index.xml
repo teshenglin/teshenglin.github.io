@@ -5,7 +5,7 @@
     <link>http://teshenglin.github.io/authors/</link>
       <atom:link href="http://teshenglin.github.io/authors/index.xml" rel="self" type="application/rss+xml" />
     <description>Authors</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 27 Jul 2019 17:59:48 +0800</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 29 Oct 2019 17:59:48 +0800</lastBuildDate>
     <image>
       <url>http://teshenglin.github.io/img/icon-192.png</url>
       <title>Authors</title>
@@ -13,17 +13,25 @@
     </image>
     
     <item>
-      <title>C.-Y. He</title>
-      <link>http://teshenglin.github.io/authors/c.-y.-he/</link>
-      <pubDate>Sat, 27 Jul 2019 17:59:48 +0800</pubDate>
-      <guid>http://teshenglin.github.io/authors/c.-y.-he/</guid>
+      <title>C. Misbah</title>
+      <link>http://teshenglin.github.io/authors/c.-misbah/</link>
+      <pubDate>Tue, 29 Oct 2019 17:59:48 +0800</pubDate>
+      <guid>http://teshenglin.github.io/authors/c.-misbah/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>S. Rafai</title>
+      <link>http://teshenglin.github.io/authors/s.-rafai/</link>
+      <pubDate>Tue, 29 Oct 2019 17:59:48 +0800</pubDate>
+      <guid>http://teshenglin.github.io/authors/s.-rafai/</guid>
       <description></description>
     </item>
     
     <item>
       <title>T.-S. Lin</title>
       <link>http://teshenglin.github.io/authors/t.-s.-lin/</link>
-      <pubDate>Sat, 27 Jul 2019 17:59:48 +0800</pubDate>
+      <pubDate>Tue, 29 Oct 2019 17:59:48 +0800</pubDate>
       <guid>http://teshenglin.github.io/authors/t.-s.-lin/</guid>
       <description></description>
     </item>
@@ -31,8 +39,16 @@
     <item>
       <title>W.-F. Hu</title>
       <link>http://teshenglin.github.io/authors/w.-f.-hu/</link>
-      <pubDate>Sat, 27 Jul 2019 17:59:48 +0800</pubDate>
+      <pubDate>Tue, 29 Oct 2019 17:59:48 +0800</pubDate>
       <guid>http://teshenglin.github.io/authors/w.-f.-hu/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>C.-Y. He</title>
+      <link>http://teshenglin.github.io/authors/c.-y.-he/</link>
+      <pubDate>Sat, 27 Jul 2019 17:59:48 +0800</pubDate>
+      <guid>http://teshenglin.github.io/authors/c.-y.-he/</guid>
       <description></description>
     </item>
     
