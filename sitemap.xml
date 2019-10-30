@@ -3,18 +3,13 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://teshenglin.github.io/courses/calculus/</loc>
-    <lastmod>2019-10-29T10:20:13+08:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://teshenglin.github.io/publication_types/3/</loc>
     <lastmod>2019-10-30T09:09:14+08:00</lastmod>
   </url>
   
   <url>
     <loc>http://teshenglin.github.io/authors/</loc>
-    <lastmod>2019-10-30T16:06:12+08:00</lastmod>
+    <lastmod>2019-10-31T06:22:46+08:00</lastmod>
   </url>
   
   <url>
@@ -44,7 +39,7 @@
   
   <url>
     <loc>http://teshenglin.github.io/</loc>
-    <lastmod>2019-10-30T16:06:12+08:00</lastmod>
+    <lastmod>2019-10-31T06:22:46+08:00</lastmod>
   </url>
   
   <url>
@@ -54,7 +49,7 @@
   
   <url>
     <loc>http://teshenglin.github.io/authors/admin/</loc>
-    <lastmod>2019-10-30T16:06:12+08:00</lastmod>
+    <lastmod>2019-10-31T06:22:46+08:00</lastmod>
   </url>
   
   <url>
@@ -93,6 +88,16 @@
   </url>
   
   <url>
+    <loc>http://teshenglin.github.io/tags/julia/</loc>
+    <lastmod>2019-10-31T06:22:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://teshenglin.github.io/post/2019_julia/</loc>
+    <lastmod>2019-10-31T06:22:46+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://teshenglin.github.io/tags/latex/</loc>
     <lastmod>2019-10-30T16:06:12+08:00</lastmod>
   </url>
@@ -119,32 +124,17 @@
   
   <url>
     <loc>http://teshenglin.github.io/tags/</loc>
-    <lastmod>2019-10-30T16:06:12+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://teshenglin.github.io/courses/calculus/asymptotes/</loc>
-    <lastmod>2019-10-29T10:20:13+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://teshenglin.github.io/courses/calculus/chain_rule/</loc>
-    <lastmod>2019-10-29T10:20:13+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://teshenglin.github.io/courses/calculus/lhospital/</loc>
-    <lastmod>2019-10-29T10:20:13+08:00</lastmod>
+    <lastmod>2019-10-31T06:22:46+08:00</lastmod>
   </url>
   
   <url>
     <loc>http://teshenglin.github.io/courses/taught/</loc>
-    <lastmod>2019-10-29T10:20:13+08:00</lastmod>
+    <lastmod>2019-10-31T06:22:46+08:00</lastmod>
   </url>
   
   <url>
     <loc>http://teshenglin.github.io/courses/students/</loc>
-    <lastmod>2019-10-29T10:20:13+08:00</lastmod>
+    <lastmod>2019-10-31T06:22:46+08:00</lastmod>
   </url>
   
   <url>

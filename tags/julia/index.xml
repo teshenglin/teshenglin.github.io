@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>julia | Te-Sheng Lin</title>
+    <link>http://teshenglin.github.io/tags/julia/</link>
+      <atom:link href="http://teshenglin.github.io/tags/julia/index.xml" rel="self" type="application/rss+xml" />
+    <description>julia</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 29 Oct 2019 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>http://teshenglin.github.io/img/icon-192.png</url>
+      <title>julia</title>
+      <link>http://teshenglin.github.io/tags/julia/</link>
+    </image>
+    
+    <item>
+      <title>Julia 學習筆記</title>
+      <link>http://teshenglin.github.io/post/2019_julia/</link>
+      <pubDate>Tue, 29 Oct 2019 00:00:00 +0000</pubDate>
+      <guid>http://teshenglin.github.io/post/2019_julia/</guid>
+      <description>
+
+&lt;blockquote&gt;
+&lt;p&gt;這裡我們要介紹 julia 這個程式語言. 這是一個非常新的語言, 在 2009 年才問世, 遠比 1990 年出生的 python 來的年輕許多. 不過由於它又&lt;strong&gt;&lt;em&gt;快&lt;/em&gt;&lt;/strong&gt;又&lt;strong&gt;&lt;em&gt;簡單&lt;/em&gt;&lt;/strong&gt;, 又&lt;strong&gt;&lt;em&gt;不用錢&lt;/em&gt;&lt;/strong&gt;, 使得目前有越來越多人開始使用這個新語言. 相信未來會更加普及.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;julia-安裝&#34;&gt;Julia 安裝&lt;/h2&gt;
+
+&lt;p&gt;在 &lt;a href=&#34;https://julialang.org&#34; target=&#34;_blank&#34;&gt;Julia 官方網站&lt;/a&gt; 上可以下載各系統平台的安裝包裹. 下載安裝後即可運行.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;如果平常會寫各式程式語言, 也可以考慮安裝 &lt;a href=&#34;https://atom.io&#34; target=&#34;_blank&#34;&gt;atom&lt;/a&gt; 編輯器. 它是 github 開發的免費編輯器, 不管 Mac, windows 或是 Linux 都有支援. 我自己有使用 atom 來寫 &lt;code&gt;julia&lt;/code&gt;, &lt;code&gt;fortran&lt;/code&gt;, &lt;code&gt;html&lt;/code&gt; 等.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;如果只想試用一下的話可以試試 &lt;a href=&#34;https://repl.it/languages/julia&#34; target=&#34;_blank&#34;&gt;repl.it&lt;/a&gt; 這個線上編輯器. 它可以讓你在線上編輯並執行一些簡單的 julia 程式.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;jupyter-notebook-安裝&#34;&gt;Jupyter notebook 安裝&lt;/h2&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Jupyter notebook 是個互動式筆記本, 很容易可以逐行執行並且做到資料視覺化, 並且支援多種主流的直譯語言像是 &lt;code&gt;Julia&lt;/code&gt;, &lt;code&gt;python&lt;/code&gt;, &lt;code&gt;R&lt;/code&gt;. 有一說是 jupyter 這個字事實上就是由 julia, python 以及 R 這三個字組合而成.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;安裝 Jupyter notebook 有兩種方式. 第一種是直接由 julia 安裝. 步驟如下&lt;/p&gt;
+
+&lt;p&gt;在 julia 輸入 &lt;code&gt;]&lt;/code&gt; 進入套件管理命令提示. 然後會長得像這樣&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-julia&#34;&gt;(v1.1) pkg&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;接著輸入 &lt;code&gt;status&lt;/code&gt; 可以看到現在已經安裝的套件.&lt;/p&gt;
+
+&lt;p&gt;我們要安裝 IJulia, 所以輸入&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-julia&#34;&gt;(v1.1) pkg&amp;gt; add IJulia
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;安裝完後要退出套件管理則是 BackSpace 鍵或是 Ctrl+C 都可以.&lt;/p&gt;
+
+&lt;p&gt;要打開 notebook 需要退出套件管理, 並在 julia 命令提示字元下輸入&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-julia&#34;&gt;julia&amp;gt; using IJulia
+julia&amp;gt; notebook()
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;這樣 Jupyter notebook 就會在你的瀏覽器中打開.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;若還是有不清楚的地方請見 &lt;a href=&#34;https://medium.com/@jamescchuang/實戰安裝及建置-julia-開發環境-6dc8c0d14c2a&#34; target=&#34;_blank&#34;&gt;安裝及建置 Julia 開發環境實戰教學&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;安裝 Jupyter notebook 的第二種方式則是透過 anaconda. 先裝完 julia 後下載 anaconda 安裝, 即可快樂使用.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;若還是有不清楚的地方請見 &lt;a href=&#34;https://medium.com/datainpoint/jupyter-kernels-3151a6408bab&#34; target=&#34;_blank&#34;&gt;打造 Jupyter Notebook 資料科學環境&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;julia-基本簡介與語法教學&#34;&gt;Julia 基本簡介與語法教學&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Julia Taiwan發起人杜岳華的 slideshare: &lt;a href=&#34;https://www.slideshare.net/ssuserd6984b/coscup-introduction-to-julia&#34; target=&#34;_blank&#34;&gt;Introduction to Julia&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://hackmd.io/@7WeiUEuJSBKp7WCRouAWVg/r106dSpkb/%2FIwZgbAHApgnARgMwLQAYAmKxICxQMZpICGGATEjHtgOwwwrRwCsEQA%3D%3D?type=book&#34; target=&#34;_blank&#34;&gt;Julia 中文官方文件草稿&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
