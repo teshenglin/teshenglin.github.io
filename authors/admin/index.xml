@@ -13,6 +13,79 @@
     </image>
     
     <item>
+      <title>Markdown 學習筆記</title>
+      <link>http://teshenglin.github.io/post/2019_markdown/</link>
+      <pubDate>Tue, 29 Oct 2019 00:00:00 +0000</pubDate>
+      <guid>http://teshenglin.github.io/post/2019_markdown/</guid>
+      <description>
+
+&lt;blockquote&gt;
+&lt;p&gt;這裡我們要介紹 markdown 這個語言. 它非常簡單易學, 有時我們只是想打個小文件, 就幾頁而已不想要開 latex 或是 word 之類的文字編輯軟體, 這時候就非常適合以 markdown 來編寫. 另外其實越來越多的程式語言也支援 markdown 編寫. 比如這個網頁裡的 post 就都是以 markdown 做的.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;markdown-安裝&#34;&gt;Markdown 安裝&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;我自己是使用 mac, 我用的是 &lt;a href=&#34;https://macdown.uranusjr.com&#34; target=&#34;_blank&#34;&gt;MacDown&lt;/a&gt; 這個軟體.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Windows 使用者可以參考&lt;a href=&#34;https://www.itread01.com/content/1547118008.html&#34; target=&#34;_blank&#34;&gt;這篇&lt;/a&gt; 裡面有非常多 markdown 編輯器的選擇. 也有人推薦 &lt;a href=&#34;https://www.typora.io&#34; target=&#34;_blank&#34;&gt;typora&lt;/a&gt;.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;如果平常會寫各式程式語言, 也可以考慮使用 &lt;a href=&#34;https://atom.io&#34; target=&#34;_blank&#34;&gt;atom&lt;/a&gt; 編輯器. 它是 github 開發的免費編輯器, 不管 Mac, windows 或是 Linux 都有支援. 我自己也有使用 atom 來寫 &lt;code&gt;julia&lt;/code&gt;, &lt;code&gt;fortran&lt;/code&gt;, &lt;code&gt;html&lt;/code&gt; 等.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;如果連安裝都不想的話我推薦 &lt;a href=&#34;https://notes.dosilovic.com&#34; target=&#34;_blank&#34;&gt;markdown notes&lt;/a&gt; 這個線上編輯器. 它支援線上即時編寫, 可以線上存檔, 也可以下載成 markdown 以及 PDF.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;另一個線上編輯器: &lt;a href=&#34;https://upmath.me&#34; target=&#34;_blank&#34;&gt;upmath&lt;/a&gt;, 依樣支援線上即時編寫, 可以存成 html 直接幫你產生網頁.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;不過我要稍微說明一下, 不管使用哪種編輯器, markdown 主要語法都差不多. 不過在輸出上會有一些細微的差異. 這點就要自己使用後才會感受得到差別.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;markdown-語法教學&#34;&gt;Markdown 語法教學&lt;/h2&gt;
+
+&lt;p&gt;以下列舉一些 markdown 教學的線上資源&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://wastemobile.gitbooks.io/gitbook-chinese/content/format/markdown.html&#34; target=&#34;_blank&#34;&gt;Markdown gitbook&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://tiida54.github.io/2018/01/03/3分鐘學會Markdown常用語法/&#34; target=&#34;_blank&#34;&gt;3分鐘學會 Markdown 常用語法&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://commonmark.org/help/&#34; target=&#34;_blank&#34;&gt;1分鐘學會 Markdown&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://docs.microsoft.com/zh-tw/contribute/how-to-write-use-markdown&#34; target=&#34;_blank&#34;&gt;如何使用 Markdown 來撰寫 Docs&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;latex-語法教學&#34;&gt;Latex 語法教學&lt;/h2&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Markdown 一個很重要功能(至少對我而言)就是它支援 $\LaTeX$ 語法. Latex 數學排版系統是科學界中非常重要的一種系統. 它使得研究員在撰寫學術文章時能輕易地做好排版. 尤其是科學文章中常有大量數學符號, 這些符號的編排以及顯示是 Latex 系統一大強項.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;如果只是要以 Markdown 來寫一些簡單包含數學符號的文章, 還不需要學整個 Latex 系統. 我們只要會一些語法就好. 以下整理一些線上資源供參考&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://walkccc.github.io/blog/2018/02/17/Techniques/latex-syntax/&#34; target=&#34;_blank&#34;&gt;LaTeX 語法整理&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://oeis.org/wiki/List_of_LaTeX_mathematical_symbols&#34; target=&#34;_blank&#34;&gt;List of LaTeX mathematical symbols&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.overleaf.com/learn/latex/Integrals,_sums_and_limits&#34; target=&#34;_blank&#34;&gt;Integrals, sums and limits&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;所有介於兩個 &lt;code&gt;$&lt;/code&gt; 字元之間的內容將會被視為 TeX 數學公式處理。開頭的 &lt;code&gt;$&lt;/code&gt; 右側必須立刻接上任意文字，而結尾 &lt;code&gt;$&lt;/code&gt; 的左側同樣也必須緊挨著文字。如果使用兩個&lt;code&gt;$$&lt;/code&gt;則會將數學公式換行居中. 例如以下 markdown 程式碼&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$$\frac{\sin(x)}{x}$$
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;顯示為
+$$\frac{\sin(x)}{x}$$&lt;/p&gt;
+
+&lt;hr /&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Maximum and minimum of a function</title>
       <link>http://teshenglin.github.io/post/2019_maxmin/</link>
       <pubDate>Tue, 29 Oct 2019 00:00:00 +0000</pubDate>
@@ -59,7 +132,7 @@
 
 &lt;p&gt;I will leave it as an exercise.&lt;/p&gt;
 
-&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;hr /&gt;
 
 &lt;p&gt;最後再補充一點, 函數在某個點連續但是微分不存在有幾種情形:&lt;/p&gt;
 
@@ -70,6 +143,8 @@
 
 &lt;li&gt;&lt;p&gt;微分定義中的極限不存在. 例如 $f(x) = x\sin(x)$ 在 $x=0$ 時.&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
+
+&lt;hr /&gt;
 </description>
     </item>
     
@@ -94,6 +169,8 @@ $$&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Remark:&lt;/strong&gt; 亦可將上列式子中改為 $x\to-\infty$. 滿足此條件的也是斜漸近線. 所以斜漸近線最多有兩條.&lt;/p&gt;
 
+&lt;hr /&gt;
+
 &lt;h3 id=&#34;section-1-1-長除法&#34;&gt;Section 1.1: 長除法&lt;/h3&gt;
 
 &lt;p&gt;要求得斜漸近線的方法其中之一是長除法. 例如以下這個函數
@@ -113,6 +190,8 @@ $$
 \lim_{x\to\pm\infty} [f(x) - (4x+2)] = \lim_{x\to\pm\infty} \frac{-5x+1}{x^2-3x} = 0.
 $$
 所以 $y=4x+2$ 就是這個函數的斜漸近線.&lt;/p&gt;
+
+&lt;hr /&gt;
 
 &lt;h3 id=&#34;section-1-2-直接法&#34;&gt;Section 1.2: 直接法&lt;/h3&gt;
 
@@ -168,6 +247,8 @@ $$
 &lt;li&gt;&lt;p&gt;因此我們得到 $g(x)$ 在正無窮遠處的斜漸近線為 $y=x+3$, 在負無窮遠處的斜漸近線為 $y=-x+3$.&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
+&lt;hr /&gt;
+
 &lt;h3 id=&#34;section-1-3-summary&#34;&gt;Section 1.3: Summary&lt;/h3&gt;
 
 &lt;p&gt;總結一下:&lt;/p&gt;
@@ -181,6 +262,8 @@ $$
 \lim_{x\to\infty} [f(x) - (mx+b)] = 0.
 $$
 如果是對的, 你就得到它了.&lt;/p&gt;
+
+&lt;hr /&gt;
 </description>
     </item>
     
@@ -278,6 +361,8 @@ $$&lt;/p&gt;
 
 &lt;p&gt;的確, 當 $x$ 越來越靠近 $\pi$ 時這個估計出來的微分值離 $2\pi$ 的距離越來越小.&lt;/p&gt;
 
+&lt;hr /&gt;
+
 &lt;p&gt;&lt;strong&gt;Question:&lt;/strong&gt; 用數值計算微分能有多精確? 這個誤差能不能一直遞減下去?&lt;/p&gt;
 
 &lt;p&gt;接著我們取更多靠近 $0$ 的點來計算微分的極限值, 我們列出其與真實值 $2\pi$ 之間的差, 並且把它畫出來.&lt;/p&gt;
@@ -341,6 +426,8 @@ $$
 
 &lt;p&gt;而當 $h=10^{-13}$ 時, 算出來的數字會多了大約 $\frac{10^{-16}}{10^{-13}} = 10^{-3}$. 跟我們之前所發現的完全吻合!!&lt;/p&gt;
 
+&lt;hr /&gt;
+
 &lt;h3 id=&#34;summary&#34;&gt;Summary:&lt;/h3&gt;
 
 &lt;p&gt;最後總結一下:&lt;/p&gt;
@@ -353,6 +440,8 @@ $$&lt;/p&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;不過計算時 $h$ 值不能無限取小, 需考慮到捨入誤差的影響.&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;hr /&gt;
 </description>
     </item>
     
@@ -472,6 +561,8 @@ $$&lt;/p&gt;
 
 &lt;p&gt;我們可以發現這個數字最小可以到大約 $10^{-16}$, 之後就變成 $0$ 了. 也就是說我們目前用個這個程式語言其捨入誤差大約就是 $10^{-16}$.&lt;/p&gt;
 
+&lt;hr /&gt;
+
 &lt;h3 id=&#34;summary&#34;&gt;Summary:&lt;/h3&gt;
 
 &lt;p&gt;稍微總結一下目前我們看到的:&lt;/p&gt;
@@ -491,6 +582,8 @@ $$
 
 &lt;li&gt;&lt;p&gt;更多關於 $sinc$ 函數的性質可以參考 &lt;a href=&#34;https://en.wikipedia.org/wiki/Sinc_function&#34; target=&#34;_blank&#34;&gt;wiki&lt;/a&gt; 上的介紹.&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;hr /&gt;
 </description>
     </item>
     

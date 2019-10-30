@@ -33,6 +33,8 @@ $$&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Remark:&lt;/strong&gt; 亦可將上列式子中改為 $x\to-\infty$. 滿足此條件的也是斜漸近線. 所以斜漸近線最多有兩條.&lt;/p&gt;
 
+&lt;hr /&gt;
+
 &lt;h3 id=&#34;section-1-1-長除法&#34;&gt;Section 1.1: 長除法&lt;/h3&gt;
 
 &lt;p&gt;要求得斜漸近線的方法其中之一是長除法. 例如以下這個函數
@@ -52,6 +54,8 @@ $$
 \lim_{x\to\pm\infty} [f(x) - (4x+2)] = \lim_{x\to\pm\infty} \frac{-5x+1}{x^2-3x} = 0.
 $$
 所以 $y=4x+2$ 就是這個函數的斜漸近線.&lt;/p&gt;
+
+&lt;hr /&gt;
 
 &lt;h3 id=&#34;section-1-2-直接法&#34;&gt;Section 1.2: 直接法&lt;/h3&gt;
 
@@ -107,6 +111,8 @@ $$
 &lt;li&gt;&lt;p&gt;因此我們得到 $g(x)$ 在正無窮遠處的斜漸近線為 $y=x+3$, 在負無窮遠處的斜漸近線為 $y=-x+3$.&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
+&lt;hr /&gt;
+
 &lt;h3 id=&#34;section-1-3-summary&#34;&gt;Section 1.3: Summary&lt;/h3&gt;
 
 &lt;p&gt;總結一下:&lt;/p&gt;
@@ -120,6 +126,8 @@ $$
 \lim_{x\to\infty} [f(x) - (mx+b)] = 0.
 $$
 如果是對的, 你就得到它了.&lt;/p&gt;
+
+&lt;hr /&gt;
 </description>
     </item>
     

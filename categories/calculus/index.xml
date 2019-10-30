@@ -59,7 +59,7 @@
 
 &lt;p&gt;I will leave it as an exercise.&lt;/p&gt;
 
-&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;hr /&gt;
 
 &lt;p&gt;最後再補充一點, 函數在某個點連續但是微分不存在有幾種情形:&lt;/p&gt;
 
@@ -70,6 +70,8 @@
 
 &lt;li&gt;&lt;p&gt;微分定義中的極限不存在. 例如 $f(x) = x\sin(x)$ 在 $x=0$ 時.&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
+
+&lt;hr /&gt;
 </description>
     </item>
     
@@ -94,6 +96,8 @@ $$&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Remark:&lt;/strong&gt; 亦可將上列式子中改為 $x\to-\infty$. 滿足此條件的也是斜漸近線. 所以斜漸近線最多有兩條.&lt;/p&gt;
 
+&lt;hr /&gt;
+
 &lt;h3 id=&#34;section-1-1-長除法&#34;&gt;Section 1.1: 長除法&lt;/h3&gt;
 
 &lt;p&gt;要求得斜漸近線的方法其中之一是長除法. 例如以下這個函數
@@ -113,6 +117,8 @@ $$
 \lim_{x\to\pm\infty} [f(x) - (4x+2)] = \lim_{x\to\pm\infty} \frac{-5x+1}{x^2-3x} = 0.
 $$
 所以 $y=4x+2$ 就是這個函數的斜漸近線.&lt;/p&gt;
+
+&lt;hr /&gt;
 
 &lt;h3 id=&#34;section-1-2-直接法&#34;&gt;Section 1.2: 直接法&lt;/h3&gt;
 
@@ -168,6 +174,8 @@ $$
 &lt;li&gt;&lt;p&gt;因此我們得到 $g(x)$ 在正無窮遠處的斜漸近線為 $y=x+3$, 在負無窮遠處的斜漸近線為 $y=-x+3$.&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
+&lt;hr /&gt;
+
 &lt;h3 id=&#34;section-1-3-summary&#34;&gt;Section 1.3: Summary&lt;/h3&gt;
 
 &lt;p&gt;總結一下:&lt;/p&gt;
@@ -181,6 +189,8 @@ $$
 \lim_{x\to\infty} [f(x) - (mx+b)] = 0.
 $$
 如果是對的, 你就得到它了.&lt;/p&gt;
+
+&lt;hr /&gt;
 </description>
     </item>
     
@@ -278,6 +288,8 @@ $$&lt;/p&gt;
 
 &lt;p&gt;的確, 當 $x$ 越來越靠近 $\pi$ 時這個估計出來的微分值離 $2\pi$ 的距離越來越小.&lt;/p&gt;
 
+&lt;hr /&gt;
+
 &lt;p&gt;&lt;strong&gt;Question:&lt;/strong&gt; 用數值計算微分能有多精確? 這個誤差能不能一直遞減下去?&lt;/p&gt;
 
 &lt;p&gt;接著我們取更多靠近 $0$ 的點來計算微分的極限值, 我們列出其與真實值 $2\pi$ 之間的差, 並且把它畫出來.&lt;/p&gt;
@@ -341,6 +353,8 @@ $$
 
 &lt;p&gt;而當 $h=10^{-13}$ 時, 算出來的數字會多了大約 $\frac{10^{-16}}{10^{-13}} = 10^{-3}$. 跟我們之前所發現的完全吻合!!&lt;/p&gt;
 
+&lt;hr /&gt;
+
 &lt;h3 id=&#34;summary&#34;&gt;Summary:&lt;/h3&gt;
 
 &lt;p&gt;最後總結一下:&lt;/p&gt;
@@ -353,6 +367,8 @@ $$&lt;/p&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;不過計算時 $h$ 值不能無限取小, 需考慮到捨入誤差的影響.&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;hr /&gt;
 </description>
     </item>
     
@@ -472,6 +488,8 @@ $$&lt;/p&gt;
 
 &lt;p&gt;我們可以發現這個數字最小可以到大約 $10^{-16}$, 之後就變成 $0$ 了. 也就是說我們目前用個這個程式語言其捨入誤差大約就是 $10^{-16}$.&lt;/p&gt;
 
+&lt;hr /&gt;
+
 &lt;h3 id=&#34;summary&#34;&gt;Summary:&lt;/h3&gt;
 
 &lt;p&gt;稍微總結一下目前我們看到的:&lt;/p&gt;
@@ -491,6 +509,8 @@ $$
 
 &lt;li&gt;&lt;p&gt;更多關於 $sinc$ 函數的性質可以參考 &lt;a href=&#34;https://en.wikipedia.org/wiki/Sinc_function&#34; target=&#34;_blank&#34;&gt;wiki&lt;/a&gt; 上的介紹.&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;hr /&gt;
 </description>
     </item>
     

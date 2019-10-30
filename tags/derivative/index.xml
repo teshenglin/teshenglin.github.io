@@ -106,6 +106,8 @@ $$&lt;/p&gt;
 
 &lt;p&gt;的確, 當 $x$ 越來越靠近 $\pi$ 時這個估計出來的微分值離 $2\pi$ 的距離越來越小.&lt;/p&gt;
 
+&lt;hr /&gt;
+
 &lt;p&gt;&lt;strong&gt;Question:&lt;/strong&gt; 用數值計算微分能有多精確? 這個誤差能不能一直遞減下去?&lt;/p&gt;
 
 &lt;p&gt;接著我們取更多靠近 $0$ 的點來計算微分的極限值, 我們列出其與真實值 $2\pi$ 之間的差, 並且把它畫出來.&lt;/p&gt;
@@ -169,6 +171,8 @@ $$
 
 &lt;p&gt;而當 $h=10^{-13}$ 時, 算出來的數字會多了大約 $\frac{10^{-16}}{10^{-13}} = 10^{-3}$. 跟我們之前所發現的完全吻合!!&lt;/p&gt;
 
+&lt;hr /&gt;
+
 &lt;h3 id=&#34;summary&#34;&gt;Summary:&lt;/h3&gt;
 
 &lt;p&gt;最後總結一下:&lt;/p&gt;
@@ -181,6 +185,8 @@ $$&lt;/p&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;不過計算時 $h$ 值不能無限取小, 需考慮到捨入誤差的影響.&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;hr /&gt;
 </description>
     </item>
     
