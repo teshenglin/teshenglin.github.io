@@ -45,6 +45,17 @@
     </item>
     
     <item>
+      <title></title>
+      <link>http://teshenglin.github.io/authors/admin/</link>
+      <pubDate>Tue, 29 Oct 2019 00:00:00 +0000</pubDate>
+      <guid>http://teshenglin.github.io/authors/admin/</guid>
+      <description>&lt;p&gt;I am an assistant professor of &lt;a href=&#34;http://www.math.nctu.edu.tw&#34; target=&#34;_blank&#34;&gt;Department of Applied Mathematics&lt;/a&gt; at &lt;a href=&#34;http://www.nctu.edu.tw&#34; target=&#34;_blank&#34;&gt;National Chiao Tung University, Taiwan&lt;/a&gt;. The focus of my research is concerned with the development of analytical and computational tools for the problems that arises in fluid dynamics, currently in thin liquid films, and further to communicate with scientists from other disciplines to solve engineering problems in practice.&lt;/p&gt;
+
+&lt;p&gt;I received my PhD in Applied Mathematics from &lt;a href=&#34;https://math.njit.edu&#34; target=&#34;_blank&#34;&gt;Department of Mathematical Sciences&lt;/a&gt;, New Jersey Institute of Technology, where I worked with &lt;a href=&#34;http://web.njit.edu/~kondic&#34; target=&#34;_blank&#34;&gt;Lou Kondic&lt;/a&gt; and &lt;a href=&#34;http://cfsm.njit.edu&#34; target=&#34;_blank&#34;&gt;Linda J. Cummings&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>C.-Y. He</title>
       <link>http://teshenglin.github.io/authors/c.-y.-he/</link>
       <pubDate>Sat, 27 Jul 2019 17:59:48 +0800</pubDate>
@@ -186,17 +197,6 @@
       <pubDate>Thu, 26 Feb 2004 00:00:00 +0000</pubDate>
       <guid>http://teshenglin.github.io/authors/m.-c.-lai/</guid>
       <description></description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>http://teshenglin.github.io/authors/admin/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://teshenglin.github.io/authors/admin/</guid>
-      <description>&lt;p&gt;I am an assistant professor of &lt;a href=&#34;http://www.math.nctu.edu.tw&#34; target=&#34;_blank&#34;&gt;Department of Applied Mathematics&lt;/a&gt; at &lt;a href=&#34;http://www.nctu.edu.tw&#34; target=&#34;_blank&#34;&gt;National Chiao Tung University, Taiwan&lt;/a&gt;. The focus of my research is concerned with the development of analytical and computational tools for the problems that arises in fluid dynamics, currently in thin liquid films, and further to communicate with scientists from other disciplines to solve engineering problems in practice.&lt;/p&gt;
-
-&lt;p&gt;I received my PhD in Applied Mathematics from &lt;a href=&#34;https://math.njit.edu&#34; target=&#34;_blank&#34;&gt;Department of Mathematical Sciences&lt;/a&gt;, New Jersey Institute of Technology, where I worked with &lt;a href=&#34;http://web.njit.edu/~kondic&#34; target=&#34;_blank&#34;&gt;Lou Kondic&lt;/a&gt; and &lt;a href=&#34;http://cfsm.njit.edu&#34; target=&#34;_blank&#34;&gt;Linda J. Cummings&lt;/a&gt;.&lt;/p&gt;
-</description>
     </item>
     
   </channel>

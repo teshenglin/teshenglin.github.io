@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>function | Te-Sheng Lin</title>
+    <link>http://teshenglin.github.io/tags/function/</link>
+      <atom:link href="http://teshenglin.github.io/tags/function/index.xml" rel="self" type="application/rss+xml" />
+    <description>function</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 29 Oct 2019 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>http://teshenglin.github.io/img/icon-192.png</url>
+      <title>function</title>
+      <link>http://teshenglin.github.io/tags/function/</link>
+    </image>
+    
+    <item>
+      <title>Maximum and minimum of a function</title>
+      <link>http://teshenglin.github.io/post/2019_maxmin/</link>
+      <pubDate>Tue, 29 Oct 2019 00:00:00 +0000</pubDate>
+      <guid>http://teshenglin.github.io/post/2019_maxmin/</guid>
+      <description>
+
+&lt;blockquote&gt;
+&lt;p&gt;這裡我們要討論一個函數的最大值以及最小值.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;首先我們有極值定理&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;h2 id=&#34;theorem-extreme-value-theorem&#34;&gt;Theorem: Extreme value theorem&lt;/h2&gt;
+
+&lt;p&gt;If $f$ is a real-valued continuous function on the closed interval $[a,b]$, then $f$ must attain a maximum and a minimum.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;所以對於定義在封閉區間的連續函數, 必定會有極值. 接下來我們看一下實際上我們怎麼把極值找出來.&lt;/p&gt;
+
+&lt;p&gt;在微積分課本裡有所謂的封閉區間法, 如下:&lt;/p&gt;
+
+&lt;h2 id=&#34;the-closed-interval-method&#34;&gt;The closed interval method&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-mermaid&#34;&gt;graph TD;
+  B[f is `continuous` on a `closed interval`]--&amp;gt;A;
+  B--&amp;gt;C;
+  A[Determine the critical points]--&amp;gt;|f&#39;=0| D(The largest value at these points is the abs. max. and the smallest value is the abs. min.);
+  A--&amp;gt;|f&#39; not exists| D;
+  C[Determine the end points]--&amp;gt;D;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;這個方法的原理跟做法都很簡單, 我這邊就不多做說明.&lt;/p&gt;
+
+&lt;p&gt;不過我要做一些補充. 事實上這個方法要能用還有一個很重要的假設是&lt;code&gt;假設這個函數只在有限個地方微分不存在&lt;/code&gt;. 如果一個函數在無窮多地方微分不存在, 雖然最大值還會是 &amp;ldquo;微分等於 0&amp;rdquo;, &amp;ldquo;微分不存在&amp;rdquo;, &amp;ldquo;端點&amp;rdquo; 這些地方的函數值中找最大的. 不過實作上會找不完. 所以等於是沒有用.&lt;/p&gt;
+
+&lt;p&gt;當然這樣的假設看起來很正常, 難道有函數是連續的, 但是在無窮多地方微分不存在嗎? 很不幸的也很幸運的, 真的有! 其中有一個很特別的函數叫做 &lt;a href=&#34;https://en.wikipedia.org/wiki/Weierstrass_function&#34; target=&#34;_blank&#34;&gt;Weierstrass function&lt;/a&gt;. 它是定義在實數軸上的函數, 在每個點都連續, 但是同時在任何一個點微分都不存在. 所以如果套用 the closed interval method 在這函數上會發現所有的點都是 critical point, 所以套用之後還是必須要找出所有點中函數值最大的. 完全沒有簡化到.&lt;/p&gt;
+
+&lt;h3 id=&#34;question-1-是否存在連續-但是在每個點微分都等於-0-的函數&#34;&gt;Question 1: 是否存在連續, 但是在每個點微分都等於 0 的函數?&lt;/h3&gt;
+
+&lt;p&gt;當然有! 常數函數就是. 不過這個很好 check 最大最小值所以沒什麼問題.&lt;/p&gt;
+
+&lt;h3 id=&#34;question-2-是否存在連續-但是在每個點微分都等於-0-的非常數函數-non-constant-function&#34;&gt;Question 2: 是否存在連續, 但是在每個點微分都等於 0 的非常數函數(non-constant function)?&lt;/h3&gt;
+
+&lt;p&gt;I will leave it as an exercise.&lt;/p&gt;
+
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+
+&lt;p&gt;最後再補充一點, 函數在某個點連續但是微分不存在有幾種情形:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;尖點. 例如 $f(x) = |x|$ 在 $x=0$ 時.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;垂直切線. 例如 $f(x) = \sqrt[3]{x}$ 在 $x=0$ 時.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;微分定義中的極限不存在. 例如 $f(x) = x\sin(x)$ 在 $x=0$ 時.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>用電腦算微分</title>
+      <link>http://teshenglin.github.io/post/2019_derivate_evaluate/</link>
+      <pubDate>Sun, 27 Oct 2019 00:00:00 +0000</pubDate>
+      <guid>http://teshenglin.github.io/post/2019_derivate_evaluate/</guid>
+      <description>
+
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    前情提要: &lt;a href=&#34;http://teshenglin.github.io/post/2019_limit_evaluate&#34;&gt;用電腦算極限&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;這裡我們要講的是用數值計算來算函數的微分值.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;已知一個函數 $f(x)$ 在某個點 $a$ 的微分值定義是
+$$
+f&amp;rsquo;(a) = \lim_{h\to 0} \frac{f(a+h)-f(a)}{h}.
+$$&lt;/p&gt;
+
+&lt;p&gt;我們用一個簡單的例子試試看. 假設我們想求 $f(x)=x^2$ 在 $x=\pi$ 的微分. 根據定義我們有&lt;/p&gt;
+
+&lt;p&gt;$$
+f&amp;rsquo;(\pi) = \lim_{h\to 0} \frac{(\pi+h)^2-\pi^2}{h}.
+$$&lt;/p&gt;
+
+&lt;p&gt;接著我們將 $h$ 取靠近 $0$ 的 $1000$ 的點並帶入上列這個式子試著來算其極限值.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;1000×2 Array{Float64,2}:
+ 1.0    7.28319
+ 0.999  7.28219
+ 0.998  7.28119
+ 0.997  7.28019
+ 0.996  7.27919
+ 0.995  7.27819
+ 0.994  7.27719
+ 0.993  7.27619
+ 0.992  7.27519
+ 0.991  7.27419
+ 0.99   7.27319
+ 0.989  7.27219
+ 0.988  7.27119
+ ⋮
+ 0.012  6.29519
+ 0.011  6.29419
+ 0.01   6.29319
+ 0.009  6.29219
+ 0.008  6.29119
+ 0.007  6.29019
+ 0.006  6.28919
+ 0.005  6.28819
+ 0.004  6.28719
+ 0.003  6.28619
+ 0.002  6.28519
+ 0.001  6.28419
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;上列數字左邊是 $h$ 值, 右邊為估計的微分值. 我們發現的確這個數字會越來越接近真實的解, 也就是 $2\pi$, 約等於 $6.283185307179586$.&lt;/p&gt;
+
+&lt;p&gt;接著我們算一下這個值與真實值 $2\pi$ 之間的差, 我們取其絕對值來表示&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;1000×2 Array{Float64,2}:
+ 1.0    1.0
+ 0.999  0.999
+ 0.998  0.998
+ 0.997  0.997
+ 0.996  0.996
+ 0.995  0.995
+ 0.994  0.994
+ 0.993  0.993
+ 0.992  0.992
+ 0.991  0.991
+ 0.99   0.99
+ 0.989  0.989
+ 0.988  0.988
+ ⋮
+ 0.012  0.012
+ 0.011  0.011
+ 0.01   0.01
+ 0.009  0.009
+ 0.008  0.008
+ 0.007  0.007
+ 0.006  0.006
+ 0.005  0.005
+ 0.004  0.004
+ 0.003  0.003
+ 0.002  0.002
+ 0.001  0.001
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;的確, 當 $x$ 越來越靠近 $\pi$ 時這個估計出來的微分值離 $2\pi$ 的距離越來越小.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Question:&lt;/strong&gt; 用數值計算微分能有多精確? 這個誤差能不能一直遞減下去?&lt;/p&gt;
+
+&lt;p&gt;接著我們取更多靠近 $0$ 的點來計算微分的極限值, 我們列出其與真實值 $2\pi$ 之間的差, 並且把它畫出來.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;241×2 Array{Float64,2}:
+ 0.00673795   0.00673795
+ 0.00609675   0.00609675
+ 0.00551656   0.00551656
+ 0.00499159   0.00499159
+ 0.00451658   0.00451658
+ 0.00408677   0.00408677
+ 0.00369786   0.00369786
+ 0.00334597   0.00334597
+ 0.00302755   0.00302755
+ 0.00273944   0.00273944
+ 0.00247875   0.00247875
+ 0.00224287   0.00224287
+ 0.00202943   0.00202943
+ ⋮
+ 7.64159e-13  0.000179905
+ 6.9144e-13   0.000756556
+ 6.25641e-13  9.69264e-5
+ 5.66103e-13  0.00196331
+ 5.12231e-13  0.00285478
+ 4.63486e-13  0.00227874
+ 4.1938e-13   0.0016747
+ 3.7947e-13   0.00576551
+ 3.43359e-13  0.00259406
+ 3.10684e-13  0.000421242
+ 2.81119e-13  0.00220945
+ 2.54367e-13  0.001922
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;觀察最後一列數字發現, 當 $h=2.54367*10^{-13}$ 時, 估計出來的微分值與真實值差了 $0.001922$ 這麼多!!&lt;/p&gt;
+
+&lt;p&gt;我們把它畫出來看看, 橫軸是 $h$, 縱軸是 $\left|\frac{(\pi+h)^2-\pi^2}{h}-2\pi\right|$&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://teshenglin.github.io/post/figs/output_22_0.svg&#34; alt=&#34;svg&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;那誤差最小值出現在什麼時候呢?&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;1×2 Array{Float64,2}:
+ 5.05653e-8  7.25251e-9
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;我們發現當 $h=5.05653*10^{-8}$ 時, 其估計出來的微分值離真實值誤差最小, 其誤差為 $7.25251*10^{-9}$.&lt;/p&gt;
+
+&lt;p&gt;不過, WHY?? 為什麼誤差不會一直往下遞減? 其實這也是因為捨入誤差的關西.&lt;/p&gt;
+
+&lt;p&gt;觀察一下我們的式子
+$$
+\frac{f(a+h)-f(a)}{h}
+$$
+當我們在用數值計算這個式子的時候其實並不完全是這樣子, 在分子應該會有捨入誤差在, 也就是說, 其實我們看到的數字應該是以下這個式子算出來的
+$$
+\frac{f(a+h)-f(a) + \epsilon}{h}
+$$
+其中的 $\epsilon$ 就是捨入誤差. 所以, 我們計算的時候會多出了 $\frac{\epsilon}{h}$ 這麼多.&lt;/p&gt;
+
+&lt;p&gt;如果依我們之前所算的 $\epsilon\approx 10^{-16}$, 那當 $h=10^{-8}$ 時, 算出來的數字會多了大約 $\frac{10^{-16}}{10^{-8}} = 10^{-8}$.&lt;/p&gt;
+
+&lt;p&gt;而當 $h=10^{-13}$ 時, 算出來的數字會多了大約 $\frac{10^{-16}}{10^{-13}} = 10^{-3}$. 跟我們之前所發現的完全吻合!!&lt;/p&gt;
+
+&lt;h3 id=&#34;summary&#34;&gt;Summary:&lt;/h3&gt;
+
+&lt;p&gt;最後總結一下:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;我們可以用數值計算來估計一個函數在某點的微分值
+$$
+f&amp;rsquo;(a) = \lim_{h\to 0} \frac{f(a+h)-f(a)}{h}.
+$$&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;不過計算時 $h$ 值不能無限取小, 需考慮到捨入誤差的影響.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>用電腦算極限</title>
+      <link>http://teshenglin.github.io/post/2019_limit_evaluate/</link>
+      <pubDate>Sun, 27 Oct 2019 00:00:00 +0000</pubDate>
+      <guid>http://teshenglin.github.io/post/2019_limit_evaluate/</guid>
+      <description>
+
+&lt;blockquote&gt;
+&lt;p&gt;這裡我們要介紹如何用電腦算極限, 以及我們來看一下當我們真的這樣做的時候有可能會發生什麼問題. 我們以 $sinc$ 函數為例來做說明.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&#34;sinc-function&#34;&gt;sinc function&lt;/h3&gt;
+
+&lt;p&gt;首先我們要介紹一個特別的函數, $sinc(x)$, 定義如下:
+$$
+sinc(x) = \frac{\sin(x)}{x}, \quad x\ne 0.
+$$
+很明顯可以看出來當 $x=0$ 的時候分母會等於零, 是一件壞事, 所以把 $x=0$ 這個點先拿掉.&lt;/p&gt;
+
+&lt;p&gt;比較有趣的是我們可以把這個函數畫出來. 首先我們在 $[-20, 20]$ 這個區間取 $1000$ 個點, 然後帶入上面 $sinc$ 函數的定義, 再把所有點連起來看看.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Remark:&lt;/strong&gt; 有件事需要先說明一下, 由於我們是在 $[-20, 20]$ 這個區間均勻的取偶數個點, 所以會有 $500$ 個正數以及 $500$ 個負數, 重點是保證不會取到 $x=0$ 這個點, 所以沒有問題. 相反的, 如果取奇數個點就一定會取到 $x=0$, 那就會有函數無定義的問題了.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://teshenglin.github.io/post/figs/output_3_0.svg&#34; alt=&#34;svg&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;我們很輕易可以看出來, 連起來的線還蠻&amp;rdquo;光滑&amp;rdquo;的. 函數值在 $x=0$ 附近似乎不會趨近正無窮大或負無窮大, 也沒有跳躍的現象. 接著我們試著在 $x=0$ 附近放大一點看看, 我們在 $[-0.1, 0.1]$ 這個區間取 $1000$ 個點, 然後帶入 $sinc$ 函數的定義再把它畫出來:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://teshenglin.github.io/post/figs/output_5_0.svg&#34; alt=&#34;svg&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;看起來真的很光滑!! 而且似乎當 $x$ 很靠近 $0$ 時, $sinc(x)$ 的值很靠近 $1$.&lt;/p&gt;
+
+&lt;p&gt;接著我們取一個會越來越靠近 $0$ 的數列, 然後看一下當把 $sinc$ 函數在這個數列的點上取值時, 其值會不會越來越靠近 $1$.  我們取以下數列:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;20-element Array{Float64,1}:
+ 0.36787944117144233
+ 0.1353352832366127
+ 0.049787068367863944
+ 0.01831563888873418
+ 0.006737946999085467
+ 0.0024787521766663585
+ 0.0009118819655545162
+ 0.00033546262790251185
+ 0.00012340980408667956
+ 4.539992976248485e-5
+ 1.670170079024566e-5
+ 6.14421235332821e-6
+ 2.2603294069810542e-6
+ 8.315287191035679e-7
+ 3.059023205018258e-7
+ 1.1253517471925912e-7
+ 4.139937718785167e-8
+ 1.522997974471263e-8
+ 5.602796437537268e-9
+ 2.061153622438558e-9
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;算一下 $sinc$ 函數在這些點上面的值, 並觀察他的趨勢:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;20-element Array{Float64,1}:
+ 0.9775962588920379
+ 0.9969501878216637
+ 0.9995869258359702
+ 0.9999440904998019
+ 0.9999924333622158
+ 0.9999989759649225
+ 0.9999998614118859
+ 0.9999999812441376
+ 0.9999999974616701
+ 0.9999999996564743
+ 0.9999999999535089
+ 0.9999999999937081
+ 0.9999999999991485
+ 0.9999999999998848
+ 0.9999999999999845
+ 0.9999999999999979
+ 0.9999999999999997
+ 1.0
+ 1.0
+ 1.0
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;赫然發現算到後來就等於 $1$ 了!! 所以我們發現&lt;/p&gt;
+
+&lt;p&gt;$$
+\lim_{x\to 0} sinc(x) = \lim_{x\to 0} \frac{\sin(x)}{x} = 1.
+$$&lt;/p&gt;
+
+&lt;p&gt;不過有一點點詭異的是, 在剛剛的計算裡我們最多也只是取到離 $1$ 很近的點而已, 但是算出來的結果卻是 $1$. 難道不只是 $sinc(0)=1$, 我們也有 $sinc(2.061153622438558*10^{-9})=1$ 嗎?&lt;/p&gt;
+
+&lt;p&gt;事實上並不是這樣. 電腦有所謂的捨入誤差(rounding error). 這是因為電腦需要用有限位數來表達無窮小數, 所以一定要捨棄後面的位數. 我們把算出來的數字減去 $1$ 看看:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;20-element Array{Float64,1}:
+ -0.02240374110796206
+ -0.0030498121783363308
+ -0.000413074164029803
+ -5.590950019807028e-5
+ -7.566637784228725e-6
+ -1.0240350775125862e-6
+ -1.3858811409583893e-7
+ -1.8755862418728952e-8
+ -2.5383298796199938e-9
+ -3.435256523687258e-10
+ -4.649114426769074e-11
+ -6.291855925155687e-12
+ -8.515410598874951e-13
+ -1.1524114995609125e-13
+ -1.554312234475219e-14
+ -2.1094237467877974e-15
+ -3.3306690738754696e-16
+  0.0
+  0.0
+  0.0
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;我們可以發現這個數字最小可以到大約 $10^{-16}$, 之後就變成 $0$ 了. 也就是說我們目前用個這個程式語言其捨入誤差大約就是 $10^{-16}$.&lt;/p&gt;
+
+&lt;h3 id=&#34;summary&#34;&gt;Summary:&lt;/h3&gt;
+
+&lt;p&gt;稍微總結一下目前我們看到的:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;我們用程式跑數值發現 $sinc(x\to 0)=1$, 所以我們可以定義 sinc 函數為
+$$
+sinc(x) =
+\begin{cases}
+\frac{\sin(x)}{x}, \quad x\ne 0 \\&lt;br /&gt;
+1, \quad x=0.
+\end{cases}
+$$
+在這樣的定義之下 $sinc$ 函數是個&lt;code&gt;連續函數&lt;/code&gt;.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;在數值計算上有所謂的捨入誤差, 這是用有限位元來表達無限位數一定會有的差異.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;更多關於 $sinc$ 函數的性質可以參考 &lt;a href=&#34;https://en.wikipedia.org/wiki/Sinc_function&#34; target=&#34;_blank&#34;&gt;wiki&lt;/a&gt; 上的介紹.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

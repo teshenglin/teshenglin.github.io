@@ -5,12 +5,140 @@
     <link>http://teshenglin.github.io/tags/</link>
       <atom:link href="http://teshenglin.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <description>Tags</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 29 Oct 2019 00:00:00 +0000</lastBuildDate>
     <image>
       <url>http://teshenglin.github.io/img/icon-192.png</url>
       <title>Tags</title>
       <link>http://teshenglin.github.io/tags/</link>
     </image>
+    
+    <item>
+      <title>asymptote</title>
+      <link>http://teshenglin.github.io/tags/asymptote/</link>
+      <pubDate>Tue, 29 Oct 2019 00:00:00 +0000</pubDate>
+      <guid>http://teshenglin.github.io/tags/asymptote/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>continuous</title>
+      <link>http://teshenglin.github.io/tags/continuous/</link>
+      <pubDate>Tue, 29 Oct 2019 00:00:00 +0000</pubDate>
+      <guid>http://teshenglin.github.io/tags/continuous/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>differentiable</title>
+      <link>http://teshenglin.github.io/tags/differentiable/</link>
+      <pubDate>Tue, 29 Oct 2019 00:00:00 +0000</pubDate>
+      <guid>http://teshenglin.github.io/tags/differentiable/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>extreme</title>
+      <link>http://teshenglin.github.io/tags/extreme/</link>
+      <pubDate>Tue, 29 Oct 2019 00:00:00 +0000</pubDate>
+      <guid>http://teshenglin.github.io/tags/extreme/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>function</title>
+      <link>http://teshenglin.github.io/tags/function/</link>
+      <pubDate>Tue, 29 Oct 2019 00:00:00 +0000</pubDate>
+      <guid>http://teshenglin.github.io/tags/function/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>derivative</title>
+      <link>http://teshenglin.github.io/tags/derivative/</link>
+      <pubDate>Sun, 27 Oct 2019 00:00:00 +0000</pubDate>
+      <guid>http://teshenglin.github.io/tags/derivative/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>limit</title>
+      <link>http://teshenglin.github.io/tags/limit/</link>
+      <pubDate>Sun, 27 Oct 2019 00:00:00 +0000</pubDate>
+      <guid>http://teshenglin.github.io/tags/limit/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>rounding error</title>
+      <link>http://teshenglin.github.io/tags/rounding-error/</link>
+      <pubDate>Sun, 27 Oct 2019 00:00:00 +0000</pubDate>
+      <guid>http://teshenglin.github.io/tags/rounding-error/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>contact line</title>
+      <link>http://teshenglin.github.io/tags/contact-line/</link>
+      <pubDate>Mon, 27 Feb 2012 17:49:39 +0800</pubDate>
+      <guid>http://teshenglin.github.io/tags/contact-line/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>lubrication approximation</title>
+      <link>http://teshenglin.github.io/tags/lubrication-approximation/</link>
+      <pubDate>Mon, 27 Feb 2012 17:49:39 +0800</pubDate>
+      <guid>http://teshenglin.github.io/tags/lubrication-approximation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>thin films</title>
+      <link>http://teshenglin.github.io/tags/thin-films/</link>
+      <pubDate>Mon, 27 Feb 2012 17:49:39 +0800</pubDate>
+      <guid>http://teshenglin.github.io/tags/thin-films/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>nematic liquid crystals</title>
+      <link>http://teshenglin.github.io/tags/nematic-liquid-crystals/</link>
+      <pubDate>Fri, 01 Apr 2011 00:00:00 +0000</pubDate>
+      <guid>http://teshenglin.github.io/tags/nematic-liquid-crystals/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Bose-Einstein condensation</title>
+      <link>http://teshenglin.github.io/tags/bose-einstein-condensation/</link>
+      <pubDate>Thu, 26 Feb 2004 00:00:00 +0000</pubDate>
+      <guid>http://teshenglin.github.io/tags/bose-einstein-condensation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Dufort-Frankel scheme</title>
+      <link>http://teshenglin.github.io/tags/dufort-frankel-scheme/</link>
+      <pubDate>Thu, 26 Feb 2004 00:00:00 +0000</pubDate>
+      <guid>http://teshenglin.github.io/tags/dufort-frankel-scheme/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Gross-Pitaevskii equation</title>
+      <link>http://teshenglin.github.io/tags/gross-pitaevskii-equation/</link>
+      <pubDate>Thu, 26 Feb 2004 00:00:00 +0000</pubDate>
+      <guid>http://teshenglin.github.io/tags/gross-pitaevskii-equation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>nonlinear Schrodinger equation</title>
+      <link>http://teshenglin.github.io/tags/nonlinear-schrodinger-equation/</link>
+      <pubDate>Thu, 26 Feb 2004 00:00:00 +0000</pubDate>
+      <guid>http://teshenglin.github.io/tags/nonlinear-schrodinger-equation/</guid>
+      <description></description>
+    </item>
     
   </channel>
 </rss>
