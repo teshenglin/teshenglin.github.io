@@ -2,29 +2,29 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>3 | Te-Sheng Lin</title>
-    <link>http://teshenglin.github.io/publication_types/3/</link>
-      <atom:link href="http://teshenglin.github.io/publication_types/3/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://teshenglin.github.io/publication_types/3/</link>
+      <atom:link href="https://teshenglin.github.io/publication_types/3/index.xml" rel="self" type="application/rss+xml" />
     <description>3</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 29 Oct 2019 17:59:48 +0800</lastBuildDate>
     <image>
-      <url>http://teshenglin.github.io/img/icon-192.png</url>
+      <url>https://teshenglin.github.io/img/icon-192.png</url>
       <title>3</title>
-      <link>http://teshenglin.github.io/publication_types/3/</link>
+      <link>https://teshenglin.github.io/publication_types/3/</link>
     </image>
     
     <item>
       <title>Chaotic swimming of phoretic self-propelled particles</title>
-      <link>http://teshenglin.github.io/publication/19_prl_hlrm/</link>
+      <link>https://teshenglin.github.io/publication/19_prl_hlrm/</link>
       <pubDate>Tue, 29 Oct 2019 17:59:48 +0800</pubDate>
-      <guid>http://teshenglin.github.io/publication/19_prl_hlrm/</guid>
+      <guid>https://teshenglin.github.io/publication/19_prl_hlrm/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Fast spectral solver for Poisson equation in an annular domain</title>
-      <link>http://teshenglin.github.io/publication/19_amsa_lhh/</link>
+      <link>https://teshenglin.github.io/publication/19_amsa_lhh/</link>
       <pubDate>Sat, 27 Jul 2019 17:59:48 +0800</pubDate>
-      <guid>http://teshenglin.github.io/publication/19_amsa_lhh/</guid>
+      <guid>https://teshenglin.github.io/publication/19_amsa_lhh/</guid>
       <description></description>
     </item>
     

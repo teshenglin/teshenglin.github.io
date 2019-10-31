@@ -2,37 +2,37 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories | Te-Sheng Lin</title>
-    <link>http://teshenglin.github.io/categories/</link>
-      <atom:link href="http://teshenglin.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://teshenglin.github.io/categories/</link>
+      <atom:link href="https://teshenglin.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     <description>Categories</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 29 Oct 2019 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>http://teshenglin.github.io/img/icon-192.png</url>
+      <url>https://teshenglin.github.io/img/icon-192.png</url>
       <title>Categories</title>
-      <link>http://teshenglin.github.io/categories/</link>
+      <link>https://teshenglin.github.io/categories/</link>
     </image>
     
     <item>
       <title>Calculus</title>
-      <link>http://teshenglin.github.io/categories/calculus/</link>
+      <link>https://teshenglin.github.io/categories/calculus/</link>
       <pubDate>Tue, 29 Oct 2019 00:00:00 +0000</pubDate>
-      <guid>http://teshenglin.github.io/categories/calculus/</guid>
+      <guid>https://teshenglin.github.io/categories/calculus/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Computational Mathematics</title>
-      <link>http://teshenglin.github.io/categories/computational-mathematics/</link>
+      <link>https://teshenglin.github.io/categories/computational-mathematics/</link>
       <pubDate>Sun, 27 Oct 2019 00:00:00 +0000</pubDate>
-      <guid>http://teshenglin.github.io/categories/computational-mathematics/</guid>
+      <guid>https://teshenglin.github.io/categories/computational-mathematics/</guid>
       <description></description>
     </item>
     
     <item>
       <title>numerical methods</title>
-      <link>http://teshenglin.github.io/categories/numerical-methods/</link>
+      <link>https://teshenglin.github.io/categories/numerical-methods/</link>
       <pubDate>Thu, 26 Feb 2004 00:00:00 +0000</pubDate>
-      <guid>http://teshenglin.github.io/categories/numerical-methods/</guid>
+      <guid>https://teshenglin.github.io/categories/numerical-methods/</guid>
       <description></description>
     </item>
     

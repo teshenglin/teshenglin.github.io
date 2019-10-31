@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>1 | Te-Sheng Lin</title>
-    <link>http://teshenglin.github.io/publication_types/1/</link>
-      <atom:link href="http://teshenglin.github.io/publication_types/1/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://teshenglin.github.io/publication_types/1/</link>
+      <atom:link href="https://teshenglin.github.io/publication_types/1/index.xml" rel="self" type="application/rss+xml" />
     <description>1</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 27 Jan 2014 17:58:45 +0800</lastBuildDate>
     <image>
-      <url>http://teshenglin.github.io/img/icon-192.png</url>
+      <url>https://teshenglin.github.io/img/icon-192.png</url>
       <title>1</title>
-      <link>http://teshenglin.github.io/publication_types/1/</link>
+      <link>https://teshenglin.github.io/publication_types/1/</link>
     </image>
     
     <item>
       <title>Numerical study of a non-local weakly nonlinear model for a liquid film sheared by a turbulent gas</title>
-      <link>http://teshenglin.github.io/publication/14_iutam_ltk/</link>
+      <link>https://teshenglin.github.io/publication/14_iutam_ltk/</link>
       <pubDate>Mon, 27 Jan 2014 17:58:45 +0800</pubDate>
-      <guid>http://teshenglin.github.io/publication/14_iutam_ltk/</guid>
+      <guid>https://teshenglin.github.io/publication/14_iutam_ltk/</guid>
       <description></description>
     </item>
     

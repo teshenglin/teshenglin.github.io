@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>nematic liquid crystals | Te-Sheng Lin</title>
-    <link>http://teshenglin.github.io/tags/nematic-liquid-crystals/</link>
-      <atom:link href="http://teshenglin.github.io/tags/nematic-liquid-crystals/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://teshenglin.github.io/tags/nematic-liquid-crystals/</link>
+      <atom:link href="https://teshenglin.github.io/tags/nematic-liquid-crystals/index.xml" rel="self" type="application/rss+xml" />
     <description>nematic liquid crystals</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 01 Apr 2011 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>http://teshenglin.github.io/img/icon-192.png</url>
+      <url>https://teshenglin.github.io/img/icon-192.png</url>
       <title>nematic liquid crystals</title>
-      <link>http://teshenglin.github.io/tags/nematic-liquid-crystals/</link>
+      <link>https://teshenglin.github.io/tags/nematic-liquid-crystals/</link>
     </image>
     
     <item>
       <title>Modeling and simulations of the spreading and destabilization of nematic droplets</title>
-      <link>http://teshenglin.github.io/publication/11_pof_clk/</link>
+      <link>https://teshenglin.github.io/publication/11_pof_clk/</link>
       <pubDate>Fri, 01 Apr 2011 00:00:00 +0000</pubDate>
-      <guid>http://teshenglin.github.io/publication/11_pof_clk/</guid>
+      <guid>https://teshenglin.github.io/publication/11_pof_clk/</guid>
       <description></description>
     </item>
     

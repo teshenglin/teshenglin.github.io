@@ -2,29 +2,29 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Te-Sheng Lin</title>
-    <link>http://teshenglin.github.io/</link>
-      <atom:link href="http://teshenglin.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://teshenglin.github.io/</link>
+      <atom:link href="https://teshenglin.github.io/index.xml" rel="self" type="application/rss+xml" />
     <description>Te-Sheng Lin</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 29 Oct 2019 17:59:48 +0800</lastBuildDate>
     <image>
-      <url>http://teshenglin.github.io/img/icon-192.png</url>
+      <url>https://teshenglin.github.io/img/icon-192.png</url>
       <title>Te-Sheng Lin</title>
-      <link>http://teshenglin.github.io/</link>
+      <link>https://teshenglin.github.io/</link>
     </image>
     
     <item>
       <title>Chaotic swimming of phoretic self-propelled particles</title>
-      <link>http://teshenglin.github.io/publication/19_prl_hlrm/</link>
+      <link>https://teshenglin.github.io/publication/19_prl_hlrm/</link>
       <pubDate>Tue, 29 Oct 2019 17:59:48 +0800</pubDate>
-      <guid>http://teshenglin.github.io/publication/19_prl_hlrm/</guid>
+      <guid>https://teshenglin.github.io/publication/19_prl_hlrm/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Julia 學習筆記</title>
-      <link>http://teshenglin.github.io/post/2019_julia/</link>
+      <link>https://teshenglin.github.io/post/2019_julia/</link>
       <pubDate>Tue, 29 Oct 2019 00:00:00 +0000</pubDate>
-      <guid>http://teshenglin.github.io/post/2019_julia/</guid>
+      <guid>https://teshenglin.github.io/post/2019_julia/</guid>
       <description>
 
 &lt;blockquote&gt;
@@ -101,9 +101,9 @@ julia&amp;gt; notebook()
     
     <item>
       <title>Markdown 學習筆記</title>
-      <link>http://teshenglin.github.io/post/2019_markdown/</link>
+      <link>https://teshenglin.github.io/post/2019_markdown/</link>
       <pubDate>Tue, 29 Oct 2019 00:00:00 +0000</pubDate>
-      <guid>http://teshenglin.github.io/post/2019_markdown/</guid>
+      <guid>https://teshenglin.github.io/post/2019_markdown/</guid>
       <description>
 
 &lt;blockquote&gt;
@@ -174,9 +174,9 @@ $$\frac{\sin(x)}{x}$$&lt;/p&gt;
     
     <item>
       <title>Maximum and minimum of a function</title>
-      <link>http://teshenglin.github.io/post/2019_maxmin/</link>
+      <link>https://teshenglin.github.io/post/2019_maxmin/</link>
       <pubDate>Tue, 29 Oct 2019 00:00:00 +0000</pubDate>
-      <guid>http://teshenglin.github.io/post/2019_maxmin/</guid>
+      <guid>https://teshenglin.github.io/post/2019_maxmin/</guid>
       <description>
 
 &lt;blockquote&gt;
@@ -237,9 +237,9 @@ $$\frac{\sin(x)}{x}$$&lt;/p&gt;
     
     <item>
       <title>Slant asymptotes</title>
-      <link>http://teshenglin.github.io/post/2019_slant_asymp/</link>
+      <link>https://teshenglin.github.io/post/2019_slant_asymp/</link>
       <pubDate>Tue, 29 Oct 2019 00:00:00 +0000</pubDate>
-      <guid>http://teshenglin.github.io/post/2019_slant_asymp/</guid>
+      <guid>https://teshenglin.github.io/post/2019_slant_asymp/</guid>
       <description>
 
 &lt;blockquote&gt;
@@ -356,9 +356,9 @@ $$
     
     <item>
       <title>Courses taught</title>
-      <link>http://teshenglin.github.io/courses/taught/</link>
+      <link>https://teshenglin.github.io/courses/taught/</link>
       <pubDate>Mon, 28 Oct 2019 00:00:00 +0800</pubDate>
-      <guid>http://teshenglin.github.io/courses/taught/</guid>
+      <guid>https://teshenglin.github.io/courses/taught/</guid>
       <description>
 
 &lt;hr /&gt;
@@ -459,9 +459,9 @@ $$
     
     <item>
       <title>Student supervised</title>
-      <link>http://teshenglin.github.io/courses/students/</link>
+      <link>https://teshenglin.github.io/courses/students/</link>
       <pubDate>Mon, 28 Oct 2019 00:00:00 +0800</pubDate>
-      <guid>http://teshenglin.github.io/courses/students/</guid>
+      <guid>https://teshenglin.github.io/courses/students/</guid>
       <description>
 
 &lt;hr /&gt;
@@ -494,14 +494,14 @@ $$
     
     <item>
       <title>用電腦算微分</title>
-      <link>http://teshenglin.github.io/post/2019_derivate_evaluate/</link>
+      <link>https://teshenglin.github.io/post/2019_derivate_evaluate/</link>
       <pubDate>Sun, 27 Oct 2019 00:00:00 +0000</pubDate>
-      <guid>http://teshenglin.github.io/post/2019_derivate_evaluate/</guid>
+      <guid>https://teshenglin.github.io/post/2019_derivate_evaluate/</guid>
       <description>
 
 &lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
-    前情提要: &lt;a href=&#34;http://teshenglin.github.io/post/2019_limit_evaluate&#34;&gt;用電腦算極限&lt;/a&gt;
+    前情提要: &lt;a href=&#34;https://teshenglin.github.io/post/2019_limit_evaluate&#34;&gt;用電腦算極限&lt;/a&gt;
   &lt;/div&gt;
 &lt;/div&gt;
 
@@ -625,7 +625,7 @@ $$&lt;/p&gt;
 
 &lt;p&gt;我們把它畫出來看看, 橫軸是 $h$, 縱軸是 $\left|\frac{(\pi+h)^2-\pi^2}{h}-2\pi\right|$&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://teshenglin.github.io/post/figs/output_22_0.svg&#34; alt=&#34;svg&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://teshenglin.github.io/post/figs/output_22_0.svg&#34; alt=&#34;svg&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;那誤差最小值出現在什麼時候呢?&lt;/p&gt;
 
@@ -672,9 +672,9 @@ $$&lt;/p&gt;&lt;/li&gt;
     
     <item>
       <title>用電腦算極限</title>
-      <link>http://teshenglin.github.io/post/2019_limit_evaluate/</link>
+      <link>https://teshenglin.github.io/post/2019_limit_evaluate/</link>
       <pubDate>Sun, 27 Oct 2019 00:00:00 +0000</pubDate>
-      <guid>http://teshenglin.github.io/post/2019_limit_evaluate/</guid>
+      <guid>https://teshenglin.github.io/post/2019_limit_evaluate/</guid>
       <description>
 
 &lt;blockquote&gt;
@@ -693,11 +693,11 @@ $$
 
 &lt;p&gt;&lt;strong&gt;Remark:&lt;/strong&gt; 有件事需要先說明一下, 由於我們是在 $[-20, 20]$ 這個區間均勻的取偶數個點, 所以會有 $500$ 個正數以及 $500$ 個負數, 重點是保證不會取到 $x=0$ 這個點, 所以沒有問題. 相反的, 如果取奇數個點就一定會取到 $x=0$, 那就會有函數無定義的問題了.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://teshenglin.github.io/post/figs/output_3_0.svg&#34; alt=&#34;svg&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://teshenglin.github.io/post/figs/output_3_0.svg&#34; alt=&#34;svg&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;我們很輕易可以看出來, 連起來的線還蠻&amp;rdquo;光滑&amp;rdquo;的. 函數值在 $x=0$ 附近似乎不會趨近正無窮大或負無窮大, 也沒有跳躍的現象. 接著我們試著在 $x=0$ 附近放大一點看看, 我們在 $[-0.1, 0.1]$ 這個區間取 $1000$ 個點, 然後帶入 $sinc$ 函數的定義再把它畫出來:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://teshenglin.github.io/post/figs/output_5_0.svg&#34; alt=&#34;svg&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://teshenglin.github.io/post/figs/output_5_0.svg&#34; alt=&#34;svg&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;看起來真的很光滑!! 而且似乎當 $x$ 很靠近 $0$ 時, $sinc(x)$ 的值很靠近 $1$.&lt;/p&gt;
 
@@ -814,137 +814,137 @@ $$
     
     <item>
       <title>Fast spectral solver for Poisson equation in an annular domain</title>
-      <link>http://teshenglin.github.io/publication/19_amsa_lhh/</link>
+      <link>https://teshenglin.github.io/publication/19_amsa_lhh/</link>
       <pubDate>Sat, 27 Jul 2019 17:59:48 +0800</pubDate>
-      <guid>http://teshenglin.github.io/publication/19_amsa_lhh/</guid>
+      <guid>https://teshenglin.github.io/publication/19_amsa_lhh/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Two-dimensional pulse dynamics and the formation of bound states on electrified falling films</title>
-      <link>http://teshenglin.github.io/publication/18_jfm_btlk/</link>
+      <link>https://teshenglin.github.io/publication/18_jfm_btlk/</link>
       <pubDate>Fri, 27 Jul 2018 17:59:48 +0800</pubDate>
-      <guid>http://teshenglin.github.io/publication/18_jfm_btlk/</guid>
+      <guid>https://teshenglin.github.io/publication/18_jfm_btlk/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Continuation methods for time-periodic travelling-wave solutions to evolution equations</title>
-      <link>http://teshenglin.github.io/publication/18_aml_ltbk/</link>
+      <link>https://teshenglin.github.io/publication/18_aml_ltbk/</link>
       <pubDate>Wed, 27 Jun 2018 17:59:41 +0800</pubDate>
-      <guid>http://teshenglin.github.io/publication/18_aml_ltbk/</guid>
+      <guid>https://teshenglin.github.io/publication/18_aml_ltbk/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Bifurcation analysis of the behavior of partially wetting liquids on a rotating cylinder</title>
-      <link>http://teshenglin.github.io/publication/16_pof_lrtt/</link>
+      <link>https://teshenglin.github.io/publication/16_pof_lrtt/</link>
       <pubDate>Sat, 27 Aug 2016 17:59:32 +0800</pubDate>
-      <guid>http://teshenglin.github.io/publication/16_pof_lrtt/</guid>
+      <guid>https://teshenglin.github.io/publication/16_pof_lrtt/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Instabilities of layers of deposited molecules on chemically stripe patterned substrates: Ridges vs. drops</title>
-      <link>http://teshenglin.github.io/publication/15_lang_hlhtg/</link>
+      <link>https://teshenglin.github.io/publication/15_lang_hlhtg/</link>
       <pubDate>Sun, 27 Sep 2015 17:59:16 +0800</pubDate>
-      <guid>http://teshenglin.github.io/publication/15_lang_hlhtg/</guid>
+      <guid>https://teshenglin.github.io/publication/15_lang_hlhtg/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Three-dimensional coating flow of nematic liquid crystal on an inclined substrate</title>
-      <link>http://teshenglin.github.io/publication/15_ejam_lclk/</link>
+      <link>https://teshenglin.github.io/publication/15_ejam_lclk/</link>
       <pubDate>Mon, 27 Apr 2015 17:59:06 +0800</pubDate>
-      <guid>http://teshenglin.github.io/publication/15_ejam_lclk/</guid>
+      <guid>https://teshenglin.github.io/publication/15_ejam_lclk/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Coherent structures in non-local dispersive active-dissipative systems</title>
-      <link>http://teshenglin.github.io/publication/15_sjam_lpkpt/</link>
+      <link>https://teshenglin.github.io/publication/15_sjam_lpkpt/</link>
       <pubDate>Fri, 27 Mar 2015 17:59:24 +0800</pubDate>
-      <guid>http://teshenglin.github.io/publication/15_sjam_lpkpt/</guid>
+      <guid>https://teshenglin.github.io/publication/15_sjam_lpkpt/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Modeling flow of nematic liquid crystal down an incline</title>
-      <link>http://teshenglin.github.io/publication/14_jem_lclk/</link>
+      <link>https://teshenglin.github.io/publication/14_jem_lclk/</link>
       <pubDate>Thu, 27 Mar 2014 17:58:56 +0800</pubDate>
-      <guid>http://teshenglin.github.io/publication/14_jem_lclk/</guid>
+      <guid>https://teshenglin.github.io/publication/14_jem_lclk/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Numerical study of a non-local weakly nonlinear model for a liquid film sheared by a turbulent gas</title>
-      <link>http://teshenglin.github.io/publication/14_iutam_ltk/</link>
+      <link>https://teshenglin.github.io/publication/14_iutam_ltk/</link>
       <pubDate>Mon, 27 Jan 2014 17:58:45 +0800</pubDate>
-      <guid>http://teshenglin.github.io/publication/14_iutam_ltk/</guid>
+      <guid>https://teshenglin.github.io/publication/14_iutam_ltk/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Note on the hydrodynamic description of thin nematic films: strong anchoring model</title>
-      <link>http://teshenglin.github.io/publication/13_pof_lcakt/</link>
+      <link>https://teshenglin.github.io/publication/13_pof_lcakt/</link>
       <pubDate>Tue, 27 Aug 2013 18:17:07 +0800</pubDate>
-      <guid>http://teshenglin.github.io/publication/13_pof_lcakt/</guid>
+      <guid>https://teshenglin.github.io/publication/13_pof_lcakt/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Modelling spreading dynamics of nematic liquid crystals in three spatial dimensions</title>
-      <link>http://teshenglin.github.io/publication/13_jfm_lktc/</link>
+      <link>https://teshenglin.github.io/publication/13_jfm_lktc/</link>
       <pubDate>Thu, 27 Jun 2013 17:58:35 +0800</pubDate>
-      <guid>http://teshenglin.github.io/publication/13_jfm_lktc/</guid>
+      <guid>https://teshenglin.github.io/publication/13_jfm_lktc/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Thin films flowing down inverted substrates: Three-dimensional flow</title>
-      <link>http://teshenglin.github.io/publication/12_pof_lkf/</link>
+      <link>https://teshenglin.github.io/publication/12_pof_lkf/</link>
       <pubDate>Mon, 27 Feb 2012 17:49:39 +0800</pubDate>
-      <guid>http://teshenglin.github.io/publication/12_pof_lkf/</guid>
+      <guid>https://teshenglin.github.io/publication/12_pof_lkf/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Defect modeling in spreading nematic droplets</title>
-      <link>http://teshenglin.github.io/publication/12_pre_lkc/</link>
+      <link>https://teshenglin.github.io/publication/12_pre_lkc/</link>
       <pubDate>Fri, 27 Jan 2012 17:49:39 +0800</pubDate>
-      <guid>http://teshenglin.github.io/publication/12_pre_lkc/</guid>
+      <guid>https://teshenglin.github.io/publication/12_pre_lkc/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Modeling and simulations of the spreading and destabilization of nematic droplets</title>
-      <link>http://teshenglin.github.io/publication/11_pof_clk/</link>
+      <link>https://teshenglin.github.io/publication/11_pof_clk/</link>
       <pubDate>Fri, 01 Apr 2011 00:00:00 +0000</pubDate>
-      <guid>http://teshenglin.github.io/publication/11_pof_clk/</guid>
+      <guid>https://teshenglin.github.io/publication/11_pof_clk/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Thin films flowing down inverted substrates: two dimensional flow</title>
-      <link>http://teshenglin.github.io/publication/10_pof_lk/</link>
+      <link>https://teshenglin.github.io/publication/10_pof_lk/</link>
       <pubDate>Mon, 24 May 2010 00:00:00 +0000</pubDate>
-      <guid>http://teshenglin.github.io/publication/10_pof_lk/</guid>
+      <guid>https://teshenglin.github.io/publication/10_pof_lk/</guid>
       <description></description>
     </item>
     
     <item>
       <title>A simple Dufort-Frankel type scheme for the Gross-Pitaevskii equation of Bose-Einstein condensates on different geometries</title>
-      <link>http://teshenglin.github.io/publication/04_nmpde_lhl/</link>
+      <link>https://teshenglin.github.io/publication/04_nmpde_lhl/</link>
       <pubDate>Thu, 26 Feb 2004 00:00:00 +0000</pubDate>
-      <guid>http://teshenglin.github.io/publication/04_nmpde_lhl/</guid>
+      <guid>https://teshenglin.github.io/publication/04_nmpde_lhl/</guid>
       <description></description>
     </item>
     
     <item>
       <title></title>
-      <link>http://teshenglin.github.io/courses/2016fall_colloquium/</link>
+      <link>https://teshenglin.github.io/courses/2016fall_colloquium/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://teshenglin.github.io/courses/2016fall_colloquium/</guid>
+      <guid>https://teshenglin.github.io/courses/2016fall_colloquium/</guid>
       <description>&lt;html&gt;
 &lt;head&gt;
 &lt;title&gt;2016 NCTU Applied Math. Colloquium&lt;/title&gt;
@@ -1405,9 +1405,9 @@ color:#FF0000;
     
     <item>
       <title></title>
-      <link>http://teshenglin.github.io/courses/2016spring_colloquium/</link>
+      <link>https://teshenglin.github.io/courses/2016spring_colloquium/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://teshenglin.github.io/courses/2016spring_colloquium/</guid>
+      <guid>https://teshenglin.github.io/courses/2016spring_colloquium/</guid>
       <description>&lt;html&gt;
 &lt;head&gt;
 &lt;title&gt;2016 NCTU Applied Math. Colloquium&lt;/title&gt;
@@ -1895,9 +1895,9 @@ color:#FF0000;
     
     <item>
       <title></title>
-      <link>http://teshenglin.github.io/courses/2019fall_colloquium/</link>
+      <link>https://teshenglin.github.io/courses/2019fall_colloquium/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://teshenglin.github.io/courses/2019fall_colloquium/</guid>
+      <guid>https://teshenglin.github.io/courses/2019fall_colloquium/</guid>
       <description>&lt;html&gt;
 &lt;head&gt;
 &lt;title&gt;2019 NCTU Applied Math. Colloquium&lt;/title&gt;

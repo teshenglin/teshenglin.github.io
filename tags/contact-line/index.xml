@@ -2,37 +2,37 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>contact line | Te-Sheng Lin</title>
-    <link>http://teshenglin.github.io/tags/contact-line/</link>
-      <atom:link href="http://teshenglin.github.io/tags/contact-line/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://teshenglin.github.io/tags/contact-line/</link>
+      <atom:link href="https://teshenglin.github.io/tags/contact-line/index.xml" rel="self" type="application/rss+xml" />
     <description>contact line</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 27 Feb 2012 17:49:39 +0800</lastBuildDate>
     <image>
-      <url>http://teshenglin.github.io/img/icon-192.png</url>
+      <url>https://teshenglin.github.io/img/icon-192.png</url>
       <title>contact line</title>
-      <link>http://teshenglin.github.io/tags/contact-line/</link>
+      <link>https://teshenglin.github.io/tags/contact-line/</link>
     </image>
     
     <item>
       <title>Thin films flowing down inverted substrates: Three-dimensional flow</title>
-      <link>http://teshenglin.github.io/publication/12_pof_lkf/</link>
+      <link>https://teshenglin.github.io/publication/12_pof_lkf/</link>
       <pubDate>Mon, 27 Feb 2012 17:49:39 +0800</pubDate>
-      <guid>http://teshenglin.github.io/publication/12_pof_lkf/</guid>
+      <guid>https://teshenglin.github.io/publication/12_pof_lkf/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Modeling and simulations of the spreading and destabilization of nematic droplets</title>
-      <link>http://teshenglin.github.io/publication/11_pof_clk/</link>
+      <link>https://teshenglin.github.io/publication/11_pof_clk/</link>
       <pubDate>Fri, 01 Apr 2011 00:00:00 +0000</pubDate>
-      <guid>http://teshenglin.github.io/publication/11_pof_clk/</guid>
+      <guid>https://teshenglin.github.io/publication/11_pof_clk/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Thin films flowing down inverted substrates: two dimensional flow</title>
-      <link>http://teshenglin.github.io/publication/10_pof_lk/</link>
+      <link>https://teshenglin.github.io/publication/10_pof_lk/</link>
       <pubDate>Mon, 24 May 2010 00:00:00 +0000</pubDate>
-      <guid>http://teshenglin.github.io/publication/10_pof_lk/</guid>
+      <guid>https://teshenglin.github.io/publication/10_pof_lk/</guid>
       <description></description>
     </item>
     

@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>C.-Y. Huang | Te-Sheng Lin</title>
-    <link>http://teshenglin.github.io/authors/c.-y.-huang/</link>
-      <atom:link href="http://teshenglin.github.io/authors/c.-y.-huang/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://teshenglin.github.io/authors/c.-y.-huang/</link>
+      <atom:link href="https://teshenglin.github.io/authors/c.-y.-huang/index.xml" rel="self" type="application/rss+xml" />
     <description>C.-Y. Huang</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Thu, 26 Feb 2004 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>http://teshenglin.github.io/img/icon-192.png</url>
+      <url>https://teshenglin.github.io/img/icon-192.png</url>
       <title>C.-Y. Huang</title>
-      <link>http://teshenglin.github.io/authors/c.-y.-huang/</link>
+      <link>https://teshenglin.github.io/authors/c.-y.-huang/</link>
     </image>
     
     <item>
       <title>A simple Dufort-Frankel type scheme for the Gross-Pitaevskii equation of Bose-Einstein condensates on different geometries</title>
-      <link>http://teshenglin.github.io/publication/04_nmpde_lhl/</link>
+      <link>https://teshenglin.github.io/publication/04_nmpde_lhl/</link>
       <pubDate>Thu, 26 Feb 2004 00:00:00 +0000</pubDate>
-      <guid>http://teshenglin.github.io/publication/04_nmpde_lhl/</guid>
+      <guid>https://teshenglin.github.io/publication/04_nmpde_lhl/</guid>
       <description></description>
     </item>
     

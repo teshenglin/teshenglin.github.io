@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>function | Te-Sheng Lin</title>
-    <link>http://teshenglin.github.io/tags/function/</link>
-      <atom:link href="http://teshenglin.github.io/tags/function/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://teshenglin.github.io/tags/function/</link>
+      <atom:link href="https://teshenglin.github.io/tags/function/index.xml" rel="self" type="application/rss+xml" />
     <description>function</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 29 Oct 2019 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>http://teshenglin.github.io/img/icon-192.png</url>
+      <url>https://teshenglin.github.io/img/icon-192.png</url>
       <title>function</title>
-      <link>http://teshenglin.github.io/tags/function/</link>
+      <link>https://teshenglin.github.io/tags/function/</link>
     </image>
     
     <item>
       <title>Maximum and minimum of a function</title>
-      <link>http://teshenglin.github.io/post/2019_maxmin/</link>
+      <link>https://teshenglin.github.io/post/2019_maxmin/</link>
       <pubDate>Tue, 29 Oct 2019 00:00:00 +0000</pubDate>
-      <guid>http://teshenglin.github.io/post/2019_maxmin/</guid>
+      <guid>https://teshenglin.github.io/post/2019_maxmin/</guid>
       <description>
 
 &lt;blockquote&gt;
@@ -77,14 +77,14 @@
     
     <item>
       <title>用電腦算微分</title>
-      <link>http://teshenglin.github.io/post/2019_derivate_evaluate/</link>
+      <link>https://teshenglin.github.io/post/2019_derivate_evaluate/</link>
       <pubDate>Sun, 27 Oct 2019 00:00:00 +0000</pubDate>
-      <guid>http://teshenglin.github.io/post/2019_derivate_evaluate/</guid>
+      <guid>https://teshenglin.github.io/post/2019_derivate_evaluate/</guid>
       <description>
 
 &lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
-    前情提要: &lt;a href=&#34;http://teshenglin.github.io/post/2019_limit_evaluate&#34;&gt;用電腦算極限&lt;/a&gt;
+    前情提要: &lt;a href=&#34;https://teshenglin.github.io/post/2019_limit_evaluate&#34;&gt;用電腦算極限&lt;/a&gt;
   &lt;/div&gt;
 &lt;/div&gt;
 
@@ -208,7 +208,7 @@ $$&lt;/p&gt;
 
 &lt;p&gt;我們把它畫出來看看, 橫軸是 $h$, 縱軸是 $\left|\frac{(\pi+h)^2-\pi^2}{h}-2\pi\right|$&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://teshenglin.github.io/post/figs/output_22_0.svg&#34; alt=&#34;svg&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://teshenglin.github.io/post/figs/output_22_0.svg&#34; alt=&#34;svg&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;那誤差最小值出現在什麼時候呢?&lt;/p&gt;
 
@@ -255,9 +255,9 @@ $$&lt;/p&gt;&lt;/li&gt;
     
     <item>
       <title>用電腦算極限</title>
-      <link>http://teshenglin.github.io/post/2019_limit_evaluate/</link>
+      <link>https://teshenglin.github.io/post/2019_limit_evaluate/</link>
       <pubDate>Sun, 27 Oct 2019 00:00:00 +0000</pubDate>
-      <guid>http://teshenglin.github.io/post/2019_limit_evaluate/</guid>
+      <guid>https://teshenglin.github.io/post/2019_limit_evaluate/</guid>
       <description>
 
 &lt;blockquote&gt;
@@ -276,11 +276,11 @@ $$
 
 &lt;p&gt;&lt;strong&gt;Remark:&lt;/strong&gt; 有件事需要先說明一下, 由於我們是在 $[-20, 20]$ 這個區間均勻的取偶數個點, 所以會有 $500$ 個正數以及 $500$ 個負數, 重點是保證不會取到 $x=0$ 這個點, 所以沒有問題. 相反的, 如果取奇數個點就一定會取到 $x=0$, 那就會有函數無定義的問題了.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://teshenglin.github.io/post/figs/output_3_0.svg&#34; alt=&#34;svg&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://teshenglin.github.io/post/figs/output_3_0.svg&#34; alt=&#34;svg&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;我們很輕易可以看出來, 連起來的線還蠻&amp;rdquo;光滑&amp;rdquo;的. 函數值在 $x=0$ 附近似乎不會趨近正無窮大或負無窮大, 也沒有跳躍的現象. 接著我們試著在 $x=0$ 附近放大一點看看, 我們在 $[-0.1, 0.1]$ 這個區間取 $1000$ 個點, 然後帶入 $sinc$ 函數的定義再把它畫出來:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://teshenglin.github.io/post/figs/output_5_0.svg&#34; alt=&#34;svg&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://teshenglin.github.io/post/figs/output_5_0.svg&#34; alt=&#34;svg&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;看起來真的很光滑!! 而且似乎當 $x$ 很靠近 $0$ 時, $sinc(x)$ 的值很靠近 $1$.&lt;/p&gt;
 

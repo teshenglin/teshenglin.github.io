@@ -2,26 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>derivative | Te-Sheng Lin</title>
-    <link>http://teshenglin.github.io/tags/derivative/</link>
-      <atom:link href="http://teshenglin.github.io/tags/derivative/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://teshenglin.github.io/tags/derivative/</link>
+      <atom:link href="https://teshenglin.github.io/tags/derivative/index.xml" rel="self" type="application/rss+xml" />
     <description>derivative</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 27 Oct 2019 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>http://teshenglin.github.io/img/icon-192.png</url>
+      <url>https://teshenglin.github.io/img/icon-192.png</url>
       <title>derivative</title>
-      <link>http://teshenglin.github.io/tags/derivative/</link>
+      <link>https://teshenglin.github.io/tags/derivative/</link>
     </image>
     
     <item>
       <title>用電腦算微分</title>
-      <link>http://teshenglin.github.io/post/2019_derivate_evaluate/</link>
+      <link>https://teshenglin.github.io/post/2019_derivate_evaluate/</link>
       <pubDate>Sun, 27 Oct 2019 00:00:00 +0000</pubDate>
-      <guid>http://teshenglin.github.io/post/2019_derivate_evaluate/</guid>
+      <guid>https://teshenglin.github.io/post/2019_derivate_evaluate/</guid>
       <description>
 
 &lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
-    前情提要: &lt;a href=&#34;http://teshenglin.github.io/post/2019_limit_evaluate&#34;&gt;用電腦算極限&lt;/a&gt;
+    前情提要: &lt;a href=&#34;https://teshenglin.github.io/post/2019_limit_evaluate&#34;&gt;用電腦算極限&lt;/a&gt;
   &lt;/div&gt;
 &lt;/div&gt;
 
@@ -145,7 +145,7 @@ $$&lt;/p&gt;
 
 &lt;p&gt;我們把它畫出來看看, 橫軸是 $h$, 縱軸是 $\left|\frac{(\pi+h)^2-\pi^2}{h}-2\pi\right|$&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://teshenglin.github.io/post/figs/output_22_0.svg&#34; alt=&#34;svg&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://teshenglin.github.io/post/figs/output_22_0.svg&#34; alt=&#34;svg&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;那誤差最小值出現在什麼時候呢?&lt;/p&gt;
 
