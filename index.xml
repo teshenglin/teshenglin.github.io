@@ -5,12 +5,63 @@
     <link>https://teshenglin.github.io/</link>
       <atom:link href="https://teshenglin.github.io/index.xml" rel="self" type="application/rss+xml" />
     <description>Te-Sheng Lin</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 29 Oct 2019 17:59:48 +0800</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Thu, 31 Oct 2019 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://teshenglin.github.io/img/icon-192.png</url>
       <title>Te-Sheng Lin</title>
       <link>https://teshenglin.github.io/</link>
     </image>
+    
+    <item>
+      <title>git 學習筆記</title>
+      <link>https://teshenglin.github.io/post/2019_git/</link>
+      <pubDate>Thu, 31 Oct 2019 00:00:00 +0000</pubDate>
+      <guid>https://teshenglin.github.io/post/2019_git/</guid>
+      <description>
+
+&lt;blockquote&gt;
+&lt;p&gt;這裡我們要介紹 git 這個分散式版本控制軟體. 有人可能會聽過 &amp;lsquo;github&amp;rsquo;. 不過這邊要提醒一下 git 跟 github 是不一樣的兩件事. 簡單的說 git 是一個軟體, 而 github 則是提供線上 git 服務的公司.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;git-安裝&#34;&gt;git 安裝&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;git-教學網頁&#34;&gt;git 教學網頁&lt;/h2&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://gitbook.tw&#34; target=&#34;_blank&#34;&gt;為你自己學 Git&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://goo.gl/gAvBBp&#34; target=&#34;_blank&#34;&gt;git fetch 與 git pull 的區別&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;git-基本指令&#34;&gt;git 基本指令:&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;做完某個段落後&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;git add .
+git commit -m &amp;quot;我做了XXX&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;丟上github&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;git push
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;從github下載更新版本&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;git pull
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+</description>
+    </item>
     
     <item>
       <title>Chaotic swimming of phoretic self-propelled particles</title>
@@ -37,15 +88,17 @@
 
 &lt;p&gt;在 &lt;a href=&#34;https://julialang.org&#34; target=&#34;_blank&#34;&gt;Julia 官方網站&lt;/a&gt; 上可以下載各系統平台的安裝包裹. 下載安裝後即可運行.&lt;/p&gt;
 
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;如果平常會寫各式程式語言, 也可以考慮安裝 &lt;a href=&#34;https://atom.io&#34; target=&#34;_blank&#34;&gt;atom&lt;/a&gt; 編輯器. 它是 github 開發的免費編輯器, 不管 Mac, windows 或是 Linux 都有支援. 我自己有使用 atom 來寫 &lt;code&gt;julia&lt;/code&gt;, &lt;code&gt;fortran&lt;/code&gt;, &lt;code&gt;html&lt;/code&gt; 等.&lt;/p&gt;&lt;/li&gt;
+&lt;p&gt;Julia 安裝教學影片可參考 &lt;a href=&#34;https://youtu.be/v7XeveI19CM&#34; target=&#34;_blank&#34;&gt;Julia課程環境簡介 on Youtube&lt;/a&gt;&lt;/p&gt;
 
+&lt;ul&gt;
 &lt;li&gt;&lt;p&gt;如果只想試用一下的話可以試試 &lt;a href=&#34;https://repl.it/languages/julia&#34; target=&#34;_blank&#34;&gt;repl.it&lt;/a&gt; 這個線上編輯器. 它可以讓你在線上編輯並執行一些簡單的 julia 程式.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;如果平常會寫各式程式語言, 可以考慮加安裝 &lt;a href=&#34;https://atom.io&#34; target=&#34;_blank&#34;&gt;atom&lt;/a&gt; 編輯器. 它是 github 開發的免費編輯器, 不管 Mac, windows 或是 Linux 都有支援. 我自己有使用 atom 來寫 &lt;code&gt;julia&lt;/code&gt;, &lt;code&gt;fortran&lt;/code&gt;, &lt;code&gt;html&lt;/code&gt; 等.&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;hr /&gt;
 
-&lt;h2 id=&#34;jupyter-notebook-安裝&#34;&gt;Jupyter notebook 安裝&lt;/h2&gt;
+&lt;h3 id=&#34;jupyter-notebook-安裝&#34;&gt;Jupyter notebook 安裝&lt;/h3&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;Jupyter notebook 是個互動式筆記本, 很容易可以逐行執行並且做到資料視覺化, 並且支援多種主流的直譯語言像是 &lt;code&gt;Julia&lt;/code&gt;, &lt;code&gt;python&lt;/code&gt;, &lt;code&gt;R&lt;/code&gt;. 有一說是 jupyter 這個字事實上就是由 julia, python 以及 R 這三個字組合而成.&lt;/p&gt;
@@ -83,6 +136,18 @@ julia&amp;gt; notebook()
 
 &lt;ul&gt;
 &lt;li&gt;若還是有不清楚的地方請見 &lt;a href=&#34;https://medium.com/datainpoint/jupyter-kernels-3151a6408bab&#34; target=&#34;_blank&#34;&gt;打造 Jupyter Notebook 資料科學環境&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;youtube-上的-julia-超新手教學&#34;&gt;Youtube 上的 Julia 超新手教學&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/JuliaLangTW/julia_tutorials_for_dummy&#34; target=&#34;_blank&#34;&gt;Julia Taiwan 超新手教學之一 on github&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://youtu.be/zzrctueO6JY&#34; target=&#34;_blank&#34;&gt;Julia Taiwan 超新手教學之二 on Youtube&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://youtu.be/W7R5dxGrxlk&#34; target=&#34;_blank&#34;&gt;Julia Taiwan 超新手教學之三 on Youtube&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;hr /&gt;
