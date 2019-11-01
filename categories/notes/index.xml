@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>notes | Te-Sheng Lin</title>
+    <link>https://teshenglin.github.io/categories/notes/</link>
+      <atom:link href="https://teshenglin.github.io/categories/notes/index.xml" rel="self" type="application/rss+xml" />
+    <description>notes</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Thu, 31 Oct 2019 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://teshenglin.github.io/img/icon-192.png</url>
+      <title>notes</title>
+      <link>https://teshenglin.github.io/categories/notes/</link>
+    </image>
+    
+    <item>
+      <title>git 學習筆記</title>
+      <link>https://teshenglin.github.io/post/2019_git/</link>
+      <pubDate>Thu, 31 Oct 2019 00:00:00 +0000</pubDate>
+      <guid>https://teshenglin.github.io/post/2019_git/</guid>
+      <description>
+
+&lt;blockquote&gt;
+&lt;p&gt;這裡我們要介紹 git 這個分散式版本控制軟體. 有人可能會聽過 &amp;lsquo;github&amp;rsquo;. 不過這邊要提醒一下 git 跟 github 是不一樣的兩件事. 簡單的說 git 是一個軟體, 而 github 則是提供線上 git 服務的公司.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;git-安裝&#34;&gt;git 安裝&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;git-教學網頁&#34;&gt;git 教學網頁&lt;/h2&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://gitbook.tw&#34; target=&#34;_blank&#34;&gt;為你自己學 Git&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://goo.gl/gAvBBp&#34; target=&#34;_blank&#34;&gt;git fetch 與 git pull 的區別&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;git-基本指令&#34;&gt;git 基本指令:&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;做完某個段落後&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;git add .
+git commit -m &amp;quot;我做了XXX&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;丟上github&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;git push
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;從github下載更新版本&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;git pull
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Julia 學習筆記</title>
+      <link>https://teshenglin.github.io/post/2019_julia/</link>
+      <pubDate>Tue, 29 Oct 2019 00:00:00 +0000</pubDate>
+      <guid>https://teshenglin.github.io/post/2019_julia/</guid>
+      <description>
+
+&lt;blockquote&gt;
+&lt;p&gt;這裡我們要介紹 julia 這個程式語言. 這是一個非常新的語言, 在 2009 年才問世, 遠比 1990 年出生的 python 來的年輕許多. 不過由於它又&lt;strong&gt;&lt;em&gt;快&lt;/em&gt;&lt;/strong&gt;又&lt;strong&gt;&lt;em&gt;簡單&lt;/em&gt;&lt;/strong&gt;, 又&lt;strong&gt;&lt;em&gt;不用錢&lt;/em&gt;&lt;/strong&gt;, 使得目前有越來越多人開始使用這個新語言. 相信未來會更加普及.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;julia-安裝&#34;&gt;Julia 安裝&lt;/h2&gt;
+
+&lt;p&gt;在 &lt;a href=&#34;https://julialang.org&#34; target=&#34;_blank&#34;&gt;Julia 官方網站&lt;/a&gt; 上可以下載各系統平台的安裝包裹. 下載安裝後即可運行.&lt;/p&gt;
+
+&lt;p&gt;Julia 安裝教學影片可參考 &lt;a href=&#34;https://youtu.be/v7XeveI19CM&#34; target=&#34;_blank&#34;&gt;Julia課程環境簡介 on Youtube&lt;/a&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;如果只想試用一下的話可以試試 &lt;a href=&#34;https://repl.it/languages/julia&#34; target=&#34;_blank&#34;&gt;repl.it&lt;/a&gt; 這個線上編輯器. 它可以讓你在線上編輯並執行一些簡單的 julia 程式.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;如果平常會寫各式程式語言, 可以考慮加安裝 &lt;a href=&#34;https://atom.io&#34; target=&#34;_blank&#34;&gt;atom&lt;/a&gt; 編輯器. 它是 github 開發的免費編輯器, 不管 Mac, windows 或是 Linux 都有支援. 我自己有使用 atom 來寫 &lt;code&gt;julia&lt;/code&gt;, &lt;code&gt;fortran&lt;/code&gt;, &lt;code&gt;html&lt;/code&gt; 等.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&#34;jupyter-notebook-安裝&#34;&gt;Jupyter notebook 安裝&lt;/h3&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Jupyter notebook 是個互動式筆記本, 很容易可以逐行執行並且做到資料視覺化, 並且支援多種主流的直譯語言像是 &lt;code&gt;Julia&lt;/code&gt;, &lt;code&gt;python&lt;/code&gt;, &lt;code&gt;R&lt;/code&gt;. 有一說是 jupyter 這個字事實上就是由 julia, python 以及 R 這三個字組合而成.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;安裝 Jupyter notebook 有兩種方式. 第一種是直接由 julia 安裝. 步驟如下&lt;/p&gt;
+
+&lt;p&gt;在 julia 輸入 &lt;code&gt;]&lt;/code&gt; 進入套件管理命令提示. 然後會長得像這樣&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-julia&#34;&gt;(v1.1) pkg&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;接著輸入 &lt;code&gt;status&lt;/code&gt; 可以看到現在已經安裝的套件.&lt;/p&gt;
+
+&lt;p&gt;我們要安裝 IJulia, 所以輸入&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-julia&#34;&gt;(v1.1) pkg&amp;gt; add IJulia
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;安裝完後要退出套件管理則是 BackSpace 鍵或是 Ctrl+C 都可以.&lt;/p&gt;
+
+&lt;p&gt;要打開 notebook 需要退出套件管理, 並在 julia 命令提示字元下輸入&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-julia&#34;&gt;julia&amp;gt; using IJulia
+julia&amp;gt; notebook()
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;這樣 Jupyter notebook 就會在你的瀏覽器中打開.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;若還是有不清楚的地方請見 &lt;a href=&#34;https://medium.com/@jamescchuang/實戰安裝及建置-julia-開發環境-6dc8c0d14c2a&#34; target=&#34;_blank&#34;&gt;安裝及建置 Julia 開發環境實戰教學&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;安裝 Jupyter notebook 的第二種方式則是透過 anaconda. 先裝完 julia 後下載 anaconda 安裝, 即可快樂使用.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;若還是有不清楚的地方請見 &lt;a href=&#34;https://medium.com/datainpoint/jupyter-kernels-3151a6408bab&#34; target=&#34;_blank&#34;&gt;打造 Jupyter Notebook 資料科學環境&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;youtube-上的-julia-超新手教學&#34;&gt;Youtube 上的 Julia 超新手教學&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/JuliaLangTW/julia_tutorials_for_dummy&#34; target=&#34;_blank&#34;&gt;Julia Taiwan 超新手教學之一 on github&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://youtu.be/zzrctueO6JY&#34; target=&#34;_blank&#34;&gt;Julia Taiwan 超新手教學之二 on Youtube&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://youtu.be/W7R5dxGrxlk&#34; target=&#34;_blank&#34;&gt;Julia Taiwan 超新手教學之三 on Youtube&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;julia-基本簡介與語法教學&#34;&gt;Julia 基本簡介與語法教學&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Julia Taiwan發起人杜岳華的 slideshare: &lt;a href=&#34;https://www.slideshare.net/ssuserd6984b/coscup-introduction-to-julia&#34; target=&#34;_blank&#34;&gt;Introduction to Julia&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://hackmd.io/@7WeiUEuJSBKp7WCRouAWVg/r106dSpkb/%2FIwZgbAHApgnARgMwLQAYAmKxICxQMZpICGGATEjHtgOwwwrRwCsEQA%3D%3D?type=book&#34; target=&#34;_blank&#34;&gt;Julia 中文官方文件草稿&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Markdown 學習筆記</title>
+      <link>https://teshenglin.github.io/post/2019_markdown/</link>
+      <pubDate>Tue, 29 Oct 2019 00:00:00 +0000</pubDate>
+      <guid>https://teshenglin.github.io/post/2019_markdown/</guid>
+      <description>
+
+&lt;blockquote&gt;
+&lt;p&gt;這裡我們要介紹 markdown 這個語言. 它非常簡單易學, 有時我們只是想打個小文件, 就幾頁而已不想要開 latex 或是 word 之類的文字編輯軟體, 這時候就非常適合以 markdown 來編寫. 另外其實越來越多的程式語言也支援 markdown 編寫. 比如這個網頁裡的 post 就都是以 markdown 做的.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;markdown-安裝&#34;&gt;Markdown 安裝&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;我自己是使用 mac, 我用的是 &lt;a href=&#34;https://macdown.uranusjr.com&#34; target=&#34;_blank&#34;&gt;MacDown&lt;/a&gt; 這個軟體.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Windows 使用者可以參考&lt;a href=&#34;https://www.itread01.com/content/1547118008.html&#34; target=&#34;_blank&#34;&gt;這篇&lt;/a&gt; 裡面有非常多 markdown 編輯器的選擇. 也有人推薦 &lt;a href=&#34;https://www.typora.io&#34; target=&#34;_blank&#34;&gt;typora&lt;/a&gt;.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;如果平常會寫各式程式語言, 也可以考慮使用 &lt;a href=&#34;https://atom.io&#34; target=&#34;_blank&#34;&gt;atom&lt;/a&gt; 編輯器. 它是 github 開發的免費編輯器, 不管 Mac, windows 或是 Linux 都有支援. 我自己也有使用 atom 來寫 &lt;code&gt;julia&lt;/code&gt;, &lt;code&gt;fortran&lt;/code&gt;, &lt;code&gt;html&lt;/code&gt; 等.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;如果連安裝都不想的話我推薦 &lt;a href=&#34;https://notes.dosilovic.com&#34; target=&#34;_blank&#34;&gt;markdown notes&lt;/a&gt; 這個線上編輯器. 它支援線上即時編寫, 可以線上存檔, 也可以下載成 markdown 以及 PDF.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;另一個線上編輯器: &lt;a href=&#34;https://upmath.me&#34; target=&#34;_blank&#34;&gt;upmath&lt;/a&gt;, 依樣支援線上即時編寫, 可以存成 html 直接幫你產生網頁.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;不過我要稍微說明一下, 不管使用哪種編輯器, markdown 主要語法都差不多. 不過在輸出上會有一些細微的差異. 這點就要自己使用後才會感受得到差別.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;markdown-語法教學&#34;&gt;Markdown 語法教學&lt;/h2&gt;
+
+&lt;p&gt;以下列舉一些 markdown 教學的線上資源&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://wastemobile.gitbooks.io/gitbook-chinese/content/format/markdown.html&#34; target=&#34;_blank&#34;&gt;Markdown gitbook&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://tiida54.github.io/2018/01/03/3分鐘學會Markdown常用語法/&#34; target=&#34;_blank&#34;&gt;3分鐘學會 Markdown 常用語法&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://commonmark.org/help/&#34; target=&#34;_blank&#34;&gt;1分鐘學會 Markdown&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://docs.microsoft.com/zh-tw/contribute/how-to-write-use-markdown&#34; target=&#34;_blank&#34;&gt;如何使用 Markdown 來撰寫 Docs&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;latex-語法教學&#34;&gt;Latex 語法教學&lt;/h2&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Markdown 一個很重要功能(至少對我而言)就是它支援 $\LaTeX$ 語法. Latex 數學排版系統是科學界中非常重要的一種系統. 它使得研究員在撰寫學術文章時能輕易地做好排版. 尤其是科學文章中常有大量數學符號, 這些符號的編排以及顯示是 Latex 系統一大強項.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;如果只是要以 Markdown 來寫一些簡單包含數學符號的文章, 還不需要學整個 Latex 系統. 我們只要會一些語法就好. 以下整理一些線上資源供參考&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://walkccc.github.io/blog/2018/02/17/Techniques/latex-syntax/&#34; target=&#34;_blank&#34;&gt;LaTeX 語法整理&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://oeis.org/wiki/List_of_LaTeX_mathematical_symbols&#34; target=&#34;_blank&#34;&gt;List of LaTeX mathematical symbols&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.overleaf.com/learn/latex/Integrals,_sums_and_limits&#34; target=&#34;_blank&#34;&gt;Integrals, sums and limits&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;所有介於兩個 &lt;code&gt;$&lt;/code&gt; 字元之間的內容將會被視為 TeX 數學公式處理。開頭的 &lt;code&gt;$&lt;/code&gt; 右側必須立刻接上任意文字，而結尾 &lt;code&gt;$&lt;/code&gt; 的左側同樣也必須緊挨著文字。如果使用兩個&lt;code&gt;$$&lt;/code&gt;則會將數學公式換行居中. 例如以下 markdown 程式碼&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$$\frac{\sin(x)}{x}$$
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;顯示為
+$$\frac{\sin(x)}{x}$$&lt;/p&gt;
+
+&lt;hr /&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
