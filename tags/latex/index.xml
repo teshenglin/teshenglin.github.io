@@ -28,9 +28,19 @@
 &lt;h2 id=&#34;markdown-安裝&#34;&gt;Markdown 安裝&lt;/h2&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;p&gt;我自己是使用 mac, 我用的是 &lt;a href=&#34;https://macdown.uranusjr.com&#34; target=&#34;_blank&#34;&gt;MacDown&lt;/a&gt; 這個軟體.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;我自己是使用 mac, 我用的是 &lt;a href=&#34;https://macdown.uranusjr.com&#34; target=&#34;_blank&#34;&gt;MacDown&lt;/a&gt; 這個軟體.&lt;/p&gt;
 
-&lt;li&gt;&lt;p&gt;Windows 使用者可以參考&lt;a href=&#34;https://www.itread01.com/content/1547118008.html&#34; target=&#34;_blank&#34;&gt;這篇&lt;/a&gt; 裡面有非常多 markdown 編輯器的選擇. 也有人推薦 &lt;a href=&#34;https://www.typora.io&#34; target=&#34;_blank&#34;&gt;typora&lt;/a&gt;.&lt;/p&gt;&lt;/li&gt;
+&lt;ul&gt;
+&lt;li&gt;安裝完 &lt;em&gt;Macdown&lt;/em&gt; 之後需要到 &lt;code&gt;Preference/Rendering&lt;/code&gt; 中標選 &lt;em&gt;tex-like math&lt;/em&gt; 以及他下一行的 &lt;em&gt;use dollar sign as xxxx&lt;/em&gt;, 才可使用 tex 語法.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Windows 使用者可以參考&lt;a href=&#34;https://www.itread01.com/content/1547118008.html&#34; target=&#34;_blank&#34;&gt;這篇&lt;/a&gt; 裡面有非常多 markdown 編輯器的選擇. 也有人推薦 &lt;a href=&#34;https://www.typora.io&#34; target=&#34;_blank&#34;&gt;Typora&lt;/a&gt;.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Typora 主要特色是他&lt;strong&gt;所見即所得&lt;/strong&gt;, 所以邊寫邊看自己打出來的版面怎樣. 比較乾淨, 不需要將畫面切分成左右兩半一半程式一半預覽. 學起來也很簡單.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://free.com.tw/typora/&#34; target=&#34;_blank&#34;&gt;Typora 免費極簡 Markdown 編輯器&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.itread01.com/content/1546144745.html&#34; target=&#34;_blank&#34;&gt;markdown神器 -Typora使用教程筆記&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;如果平常會寫各式程式語言, 也可以考慮使用 &lt;a href=&#34;https://atom.io&#34; target=&#34;_blank&#34;&gt;atom&lt;/a&gt; 編輯器. 它是 github 開發的免費編輯器, 不管 Mac, windows 或是 Linux 都有支援. 我自己也有使用 atom 來寫 &lt;code&gt;julia&lt;/code&gt;, &lt;code&gt;fortran&lt;/code&gt;, &lt;code&gt;html&lt;/code&gt; 等.&lt;/p&gt;&lt;/li&gt;
 

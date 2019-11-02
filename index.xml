@@ -25,39 +25,84 @@
 
 &lt;hr /&gt;
 
-&lt;h2 id=&#34;git-安裝&#34;&gt;git 安裝&lt;/h2&gt;
-
-&lt;hr /&gt;
-
 &lt;h2 id=&#34;git-教學網頁&#34;&gt;git 教學網頁&lt;/h2&gt;
 
-&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://gitbook.tw&#34; target=&#34;_blank&#34;&gt;為你自己學 Git&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;p&gt;我非常推薦 &lt;a href=&#34;https://gitbook.tw&#34; target=&#34;_blank&#34;&gt;為你自己學 Git&lt;/a&gt;, 尤其務必熟讀以下三章, 才算是對 git 有最基本的認識.&lt;/p&gt;
 
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://goo.gl/gAvBBp&#34; target=&#34;_blank&#34;&gt;git fetch 與 git pull 的區別&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;二、Git Windows/Mac/Linux 環境安裝&lt;/li&gt;
+&lt;li&gt;四、設定 Git&lt;/li&gt;
+&lt;li&gt;五、開始使用 Git&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;hr /&gt;
 
-&lt;h2 id=&#34;git-基本指令&#34;&gt;git 基本指令:&lt;/h2&gt;
+&lt;h2 id=&#34;git-基本指令-terminal-終端機&#34;&gt;git 基本指令 (terminal 終端機):&lt;/h2&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;p&gt;做完某個段落後&lt;/p&gt;
+&lt;li&gt;&lt;p&gt;做完某個段落後, 將檔案 XXX 移進暫存區&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;git add XXX
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;或是將剛剛所有編輯過的檔案一起移
+進暫存區&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;git add .
-git commit -m &amp;quot;我做了XXX&amp;quot;
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/code&gt;&lt;/pre&gt;
 
-&lt;li&gt;&lt;p&gt;丟上github&lt;/p&gt;
+&lt;p&gt;接著將暫存區的檔案移至儲存褲 (repo), 並且記註做了什麼事&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;git commit -m &amp;quot;我做了XXX&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;github-教學網頁&#34;&gt;github 教學網頁&lt;/h2&gt;
+
+&lt;p&gt;如同我最初說的, github 是一個支援 git 的網站, 可以讓你擺放你程式的原始碼, 基本服務是免費的, 有一些更進階的功能則需要付費.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://progressbar.tw/posts/3&#34; target=&#34;_blank&#34;&gt;開始使用 GitHub， 註冊與建立repo&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;也可以使用 &lt;a href=&#34;https://bitbucket.org&#34; target=&#34;_blank&#34;&gt;bitcuket&lt;/a&gt;, 一樣是個讓你把原始碼放上雲端的免費服務.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;git-github-基本指令-terminal-終端機&#34;&gt;git &amp;lt;-&amp;gt; github 基本指令 (terminal 終端機):&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;丟上雲端 (github 或 bitbucket)&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;git push
 &lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
 
-&lt;li&gt;&lt;p&gt;從github下載更新版本&lt;/p&gt;
+&lt;li&gt;&lt;p&gt;從雲端下載最新版本&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;git pull
 &lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;簡單工作示意圖:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-mermaid&#34;&gt;graph TD;
+  A[工作資料夾]--&amp;gt;|add| B;
+  B(本機 local 暫存區)--&amp;gt;|commit| C;
+  D--&amp;gt;|pull| C;
+  C(本機 local repo)--&amp;gt;|push| D{雲端 repo};
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;git-觀念釐清&#34;&gt;git 觀念釐清&lt;/h2&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;https://goo.gl/gAvBBp&#34; target=&#34;_blank&#34;&gt;git fetch 與 git pull 的區別&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
 
 &lt;hr /&gt;
 </description>
@@ -180,9 +225,19 @@ julia&amp;gt; notebook()
 &lt;h2 id=&#34;markdown-安裝&#34;&gt;Markdown 安裝&lt;/h2&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;p&gt;我自己是使用 mac, 我用的是 &lt;a href=&#34;https://macdown.uranusjr.com&#34; target=&#34;_blank&#34;&gt;MacDown&lt;/a&gt; 這個軟體.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;我自己是使用 mac, 我用的是 &lt;a href=&#34;https://macdown.uranusjr.com&#34; target=&#34;_blank&#34;&gt;MacDown&lt;/a&gt; 這個軟體.&lt;/p&gt;
 
-&lt;li&gt;&lt;p&gt;Windows 使用者可以參考&lt;a href=&#34;https://www.itread01.com/content/1547118008.html&#34; target=&#34;_blank&#34;&gt;這篇&lt;/a&gt; 裡面有非常多 markdown 編輯器的選擇. 也有人推薦 &lt;a href=&#34;https://www.typora.io&#34; target=&#34;_blank&#34;&gt;typora&lt;/a&gt;.&lt;/p&gt;&lt;/li&gt;
+&lt;ul&gt;
+&lt;li&gt;安裝完 &lt;em&gt;Macdown&lt;/em&gt; 之後需要到 &lt;code&gt;Preference/Rendering&lt;/code&gt; 中標選 &lt;em&gt;tex-like math&lt;/em&gt; 以及他下一行的 &lt;em&gt;use dollar sign as xxxx&lt;/em&gt;, 才可使用 tex 語法.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Windows 使用者可以參考&lt;a href=&#34;https://www.itread01.com/content/1547118008.html&#34; target=&#34;_blank&#34;&gt;這篇&lt;/a&gt; 裡面有非常多 markdown 編輯器的選擇. 也有人推薦 &lt;a href=&#34;https://www.typora.io&#34; target=&#34;_blank&#34;&gt;Typora&lt;/a&gt;.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Typora 主要特色是他&lt;strong&gt;所見即所得&lt;/strong&gt;, 所以邊寫邊看自己打出來的版面怎樣. 比較乾淨, 不需要將畫面切分成左右兩半一半程式一半預覽. 學起來也很簡單.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://free.com.tw/typora/&#34; target=&#34;_blank&#34;&gt;Typora 免費極簡 Markdown 編輯器&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.itread01.com/content/1546144745.html&#34; target=&#34;_blank&#34;&gt;markdown神器 -Typora使用教程筆記&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;如果平常會寫各式程式語言, 也可以考慮使用 &lt;a href=&#34;https://atom.io&#34; target=&#34;_blank&#34;&gt;atom&lt;/a&gt; 編輯器. 它是 github 開發的免費編輯器, 不管 Mac, windows 或是 Linux 都有支援. 我自己也有使用 atom 來寫 &lt;code&gt;julia&lt;/code&gt;, &lt;code&gt;fortran&lt;/code&gt;, &lt;code&gt;html&lt;/code&gt; 等.&lt;/p&gt;&lt;/li&gt;
 
