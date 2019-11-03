@@ -67,6 +67,12 @@
 &lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://docs.microsoft.com/zh-tw/contribute/how-to-write-use-markdown&#34; target=&#34;_blank&#34;&gt;如何使用 Markdown 來撰寫 Docs&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
+&lt;p&gt;markdown 有一個很酷的語法是可以做 diagram, 在 typora 這個編輯器有支援: &lt;a href=&#34;https://support.typora.io/Draw-Diagrams-With-Markdown/&#34; target=&#34;_blank&#34;&gt;Draw Diagrams With Markdown&lt;/a&gt;. 不過我自己是一直試不出來.&lt;/p&gt;
+
+&lt;p&gt;我自己所使用的 macdown 也號稱有支援, 不過其實只有某些特別的版本能用而已, 有點可惜.&lt;/p&gt;
+
+&lt;p&gt;如果是用 atom 的話則是要安裝 &lt;a href=&#34;https://shd101wyy.github.io/markdown-preview-enhanced/#/&#34; target=&#34;_blank&#34;&gt;markdown-preview-enhanced&lt;/a&gt; 這個 package. 我自己試過, 非常棒.&lt;/p&gt;
+
 &lt;hr /&gt;
 
 &lt;h2 id=&#34;latex-語法教學&#34;&gt;Latex 語法教學&lt;/h2&gt;
@@ -81,6 +87,7 @@
 &lt;li&gt;&lt;a href=&#34;https://walkccc.github.io/blog/2018/02/17/Techniques/latex-syntax/&#34; target=&#34;_blank&#34;&gt;LaTeX 語法整理&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://oeis.org/wiki/List_of_LaTeX_mathematical_symbols&#34; target=&#34;_blank&#34;&gt;List of LaTeX mathematical symbols&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://www.overleaf.com/learn/latex/Integrals,_sums_and_limits&#34; target=&#34;_blank&#34;&gt;Integrals, sums and limits&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://en.wikibooks.org/wiki/LaTeX/Mathematics#Matrices_and_arrays&#34; target=&#34;_blank&#34;&gt;matrices and arrays&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;所有介於兩個 &lt;code&gt;$&lt;/code&gt; 字元之間的內容將會被視為 TeX 數學公式處理。開頭的 &lt;code&gt;$&lt;/code&gt; 右側必須立刻接上任意文字，而結尾 &lt;code&gt;$&lt;/code&gt; 的左側同樣也必須緊挨著文字。如果使用兩個&lt;code&gt;$$&lt;/code&gt;則會將數學公式換行居中. 例如以下 markdown 程式碼&lt;/p&gt;
