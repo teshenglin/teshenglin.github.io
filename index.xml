@@ -264,11 +264,15 @@ julia&amp;gt; notebook()
 &lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://docs.microsoft.com/zh-tw/contribute/how-to-write-use-markdown&#34; target=&#34;_blank&#34;&gt;如何使用 Markdown 來撰寫 Docs&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;markdown 有一個很酷的語法是可以做 diagram, 在 typora 這個編輯器有支援: &lt;a href=&#34;https://support.typora.io/Draw-Diagrams-With-Markdown/&#34; target=&#34;_blank&#34;&gt;Draw Diagrams With Markdown&lt;/a&gt;. 不過我自己是一直試不出來.&lt;/p&gt;
+&lt;p&gt;markdown 有一個很酷的語法是可以做 diagram, 在 typora 這個編輯器有支援: &lt;a href=&#34;https://support.typora.io/Draw-Diagrams-With-Markdown/&#34; target=&#34;_blank&#34;&gt;Draw Diagrams With Markdown&lt;/a&gt;.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;不過要稍微注意一下, 不要直接複製貼上介紹網頁裡的 diagram 程式到 typora 裡, 會跑不出來. 正確做法是, 比如說要做以下這個 sequence diagram, 那在 typora 裡打 ```sequence, 然後就會跑出一個框框讓你把程式貼進去. 程式貼入後圖就跑出來了.&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;p&gt;我自己所使用的 macdown 也號稱有支援, 不過其實只有某些特別的版本能用而已, 有點可惜.&lt;/p&gt;
 
-&lt;p&gt;如果是用 atom 的話則是要安裝 &lt;a href=&#34;https://shd101wyy.github.io/markdown-preview-enhanced/#/&#34; target=&#34;_blank&#34;&gt;markdown-preview-enhanced&lt;/a&gt; 這個 package. 我自己試過, 非常棒.&lt;/p&gt;
+&lt;p&gt;如果是用 atom 的話則是要安裝 &lt;a href=&#34;https://shd101wyy.github.io/markdown-preview-enhanced/#/&#34; target=&#34;_blank&#34;&gt;markdown-preview-enhanced&lt;/a&gt; 這個 package. 我自己試過, 支援各種 diagram, 非常棒.&lt;/p&gt;
 
 &lt;hr /&gt;
 
@@ -2220,7 +2224,7 @@ color:#FF0000;
                     &lt;br /&gt;
                     (&lt;strong&gt;曾正男&lt;/strong&gt;, 國立政治大學應用數學系.)
                     &lt;br /&gt;
-                    &lt;strong&gt;&lt;a href=&#34;#jnt&#34;&gt;TBA&lt;/a&gt;&lt;/strong&gt;
+                    &lt;strong&gt;&lt;a href=&#34;#jnt&#34;&gt;A gentle introduction to numerical error&lt;/a&gt;&lt;/strong&gt;
                 &lt;/td&gt;
             &lt;/tr&gt;
             &lt;tr&gt;
@@ -2385,12 +2389,12 @@ In this talk I will first give an overview what is known. If there is time I wil
 
             &lt;tr&gt;
                 &lt;td&gt;Nov. 19, &lt;strong&gt;&lt;a name=&#34;jnt&#34;&gt;Jeng-Nan Tseng&lt;/a&gt;&lt;/strong&gt;&lt;/td&gt;
-                &lt;td&gt;&lt;strong&gt;Title: &#34;TBA&#34;&lt;/strong&gt;
+                &lt;td&gt;&lt;strong&gt;Title: &#34;A gentleintroduction to numerical error&#34;&lt;/strong&gt;
                     &lt;br /&gt;
                     &lt;br /&gt;
                     &lt;strong&gt;Abstract:&lt;/strong&gt;
                     &lt;br /&gt;
-                    &lt;p&gt;TBA&lt;/p&gt;
+                    &lt;p&gt;To understand and manipulate the numerical error is an important issue in scientific computing. The behavior of errors is various and interesting. Errors are not always a bad things in applications. In this lecture, I will introduce some interesting and unexpected examples. Moreover, some useful applications designed by the numerical error will be shown.&lt;/p&gt;
                 &lt;/td&gt;
             &lt;/tr&gt;
             &lt;tr&gt;

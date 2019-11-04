@@ -1303,7 +1303,7 @@ color:#FF0000;
                     &lt;br /&gt;
                     (&lt;strong&gt;曾正男&lt;/strong&gt;, 國立政治大學應用數學系.)
                     &lt;br /&gt;
-                    &lt;strong&gt;&lt;a href=&#34;#jnt&#34;&gt;TBA&lt;/a&gt;&lt;/strong&gt;
+                    &lt;strong&gt;&lt;a href=&#34;#jnt&#34;&gt;A gentle introduction to numerical error&lt;/a&gt;&lt;/strong&gt;
                 &lt;/td&gt;
             &lt;/tr&gt;
             &lt;tr&gt;
@@ -1468,12 +1468,12 @@ In this talk I will first give an overview what is known. If there is time I wil
 
             &lt;tr&gt;
                 &lt;td&gt;Nov. 19, &lt;strong&gt;&lt;a name=&#34;jnt&#34;&gt;Jeng-Nan Tseng&lt;/a&gt;&lt;/strong&gt;&lt;/td&gt;
-                &lt;td&gt;&lt;strong&gt;Title: &#34;TBA&#34;&lt;/strong&gt;
+                &lt;td&gt;&lt;strong&gt;Title: &#34;A gentleintroduction to numerical error&#34;&lt;/strong&gt;
                     &lt;br /&gt;
                     &lt;br /&gt;
                     &lt;strong&gt;Abstract:&lt;/strong&gt;
                     &lt;br /&gt;
-                    &lt;p&gt;TBA&lt;/p&gt;
+                    &lt;p&gt;To understand and manipulate the numerical error is an important issue in scientific computing. The behavior of errors is various and interesting. Errors are not always a bad things in applications. In this lecture, I will introduce some interesting and unexpected examples. Moreover, some useful applications designed by the numerical error will be shown.&lt;/p&gt;
                 &lt;/td&gt;
             &lt;/tr&gt;
             &lt;tr&gt;
