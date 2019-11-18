@@ -5,12 +5,44 @@
     <link>https://teshenglin.github.io/tags/</link>
       <atom:link href="https://teshenglin.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <description>Tags</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Thu, 31 Oct 2019 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 04 Nov 2019 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://teshenglin.github.io/img/icon-192.png</url>
       <title>Tags</title>
       <link>https://teshenglin.github.io/tags/</link>
     </image>
+    
+    <item>
+      <title>continuous</title>
+      <link>https://teshenglin.github.io/tags/continuous/</link>
+      <pubDate>Mon, 04 Nov 2019 00:00:00 +0000</pubDate>
+      <guid>https://teshenglin.github.io/tags/continuous/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>differentiable</title>
+      <link>https://teshenglin.github.io/tags/differentiable/</link>
+      <pubDate>Mon, 04 Nov 2019 00:00:00 +0000</pubDate>
+      <guid>https://teshenglin.github.io/tags/differentiable/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>iteration_method</title>
+      <link>https://teshenglin.github.io/tags/iteration_method/</link>
+      <pubDate>Mon, 04 Nov 2019 00:00:00 +0000</pubDate>
+      <guid>https://teshenglin.github.io/tags/iteration_method/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>root_finding</title>
+      <link>https://teshenglin.github.io/tags/root_finding/</link>
+      <pubDate>Mon, 04 Nov 2019 00:00:00 +0000</pubDate>
+      <guid>https://teshenglin.github.io/tags/root_finding/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>git</title>
@@ -25,22 +57,6 @@
       <link>https://teshenglin.github.io/tags/asymptote/</link>
       <pubDate>Tue, 29 Oct 2019 00:00:00 +0000</pubDate>
       <guid>https://teshenglin.github.io/tags/asymptote/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>continuous</title>
-      <link>https://teshenglin.github.io/tags/continuous/</link>
-      <pubDate>Tue, 29 Oct 2019 00:00:00 +0000</pubDate>
-      <guid>https://teshenglin.github.io/tags/continuous/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>differentiable</title>
-      <link>https://teshenglin.github.io/tags/differentiable/</link>
-      <pubDate>Tue, 29 Oct 2019 00:00:00 +0000</pubDate>
-      <guid>https://teshenglin.github.io/tags/differentiable/</guid>
       <description></description>
     </item>
     

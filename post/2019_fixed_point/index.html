@@ -28,10 +28,10 @@
   
     
   
-  <meta name="description" content="Assistant Professor">
+  <meta name="description" content="這裡我們介紹固定點迭代法 (Fixed point iteration) 首先我們介紹什麼是固定點 (Fixed point) Definition: Fixed point A fixed point of a function $f(x)$ is a number $c$ in its domain such that $f(x)=c$. 所以簡單來說, 把固定點這個數字丟進函數後會">
 
   
-  <link rel="alternate" hreflang="en-us" href="https://teshenglin.github.io/authors/">
+  <link rel="alternate" hreflang="en-us" href="https://teshenglin.github.io/post/2019_fixed_point/">
 
   
 
@@ -98,14 +98,12 @@
 
 
   
-  <link rel="alternate" href="/authors/index.xml" type="application/rss+xml" title="Te-Sheng Lin">
-  
 
   <link rel="manifest" href="/index.webmanifest">
   <link rel="icon" type="image/png" href="/img/icon-32.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
 
-  <link rel="canonical" href="https://teshenglin.github.io/authors/">
+  <link rel="canonical" href="https://teshenglin.github.io/post/2019_fixed_point/">
 
   
   
@@ -118,18 +116,65 @@
   <meta property="twitter:card" content="summary">
   
   <meta property="og:site_name" content="Te-Sheng Lin">
-  <meta property="og:url" content="https://teshenglin.github.io/authors/">
-  <meta property="og:title" content="Authors | Te-Sheng Lin">
-  <meta property="og:description" content="Assistant Professor"><meta property="og:image" content="https://teshenglin.github.io/img/icon-192.png">
+  <meta property="og:url" content="https://teshenglin.github.io/post/2019_fixed_point/">
+  <meta property="og:title" content="Fixed point iteration | Te-Sheng Lin">
+  <meta property="og:description" content="這裡我們介紹固定點迭代法 (Fixed point iteration) 首先我們介紹什麼是固定點 (Fixed point) Definition: Fixed point A fixed point of a function $f(x)$ is a number $c$ in its domain such that $f(x)=c$. 所以簡單來說, 把固定點這個數字丟進函數後會"><meta property="og:image" content="https://teshenglin.github.io/img/icon-192.png">
   <meta property="twitter:image" content="https://teshenglin.github.io/img/icon-192.png"><meta property="og:locale" content="en-us">
   
-    <meta property="og:updated_time" content="2019-11-04T00:00:00&#43;00:00">
+    
+      <meta property="article:published_time" content="2019-11-04T00:00:00&#43;00:00">
+    
+    <meta property="article:modified_time" content="2019-11-18T09:46:25&#43;08:00">
   
 
   
 
 
+    
 
+
+
+
+
+
+  
+
+
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://teshenglin.github.io/post/2019_fixed_point/"
+  },
+  "headline": "Fixed point iteration",
+  
+  "datePublished": "2019-11-04T00:00:00Z",
+  "dateModified": "2019-11-18T09:46:25+08:00",
+  
+  "author": {
+    "@type": "Person",
+    "name": "Te-Sheng Lin (林得勝)"
+  },
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "Te-Sheng Lin",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://teshenglin.github.io/img/icon-512.png"
+    }
+  },
+  "description": "這裡我們介紹固定點迭代法 (Fixed point iteration) 首先我們介紹什麼是固定點 (Fixed point) Definition: Fixed point A fixed point of a function $f(x)$ is a number $c$ in its domain such that $f(x)=c$. 所以簡單來說, 把固定點這個數字丟進函數後會"
+}
+</script>
+
+  
 
   
 
@@ -137,10 +182,13 @@
   
 
 
+  
 
 
 
-  <title>Authors | Te-Sheng Lin</title>
+
+
+  <title>Fixed point iteration | Te-Sheng Lin</title>
 
 </head>
 
@@ -329,86 +377,417 @@
 </nav>
 
 
-  
-
-
-
-
-
-
-
-
-
-
-
+  <article class="article">
 
   
 
+
+
+
+
+
+
+
+
+
+
+
+  
+
   
   
+  
+<div class="article-container pt-3">
+  <h1>Fixed point iteration</h1>
+
+  
+
   
     
-  
-<div class="universal-wrapper pt-3">
-  <h1>Authors</h1>
+
+
+<div class="article-metadata">
 
   
+  
+  
+  
+  <div>
+    
+
+
+
+  
+  <span><a href="/authors/admin/">Te-Sheng Lin (林得勝)</a></span>
+
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+          Last updated on
+      
+    
+    Nov 18, 2019
+  </span>
+  
+
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    2 min read
+  </span>
+  
+
+  
+  
+  
+  <span class="middot-divider"></span>
+  <a href="/post/2019_fixed_point/#disqus_thread"></a>
+  
+
+  
+  
+  <span class="middot-divider"></span>
+  <span class="article-categories">
+    <i class="fas fa-folder mr-1"></i><a href="/categories/calculus/">Calculus</a>, <a href="/categories/computational-mathematics/">Computational Mathematics</a></span>
+  
+
+</div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   
 </div>
 
 
 
-<div class="universal-wrapper">
+  <div class="article-container">
+
+    <div class="article-style">
+      
+
+<blockquote>
+<p>這裡我們介紹固定點迭代法 (Fixed point iteration)</p>
+</blockquote>
+
+<p>首先我們介紹什麼是固定點 (Fixed point)</p>
+
+<blockquote>
+<h2 id="definition-fixed-point">Definition: Fixed point</h2>
+
+<p>A fixed point of a function $f(x)$ is a number $c$ in its domain such that $f(x)=c$.</p>
+</blockquote>
+
+<p>所以簡單來說, 把固定點這個數字丟進函數後會得到同樣的一個數字. 所以稱之為固定點.</p>
+
+<p>那固定點重要性其一是在數值計算上有一種迭代方式叫做固定點迭代(Fixed point iteration). 假設我們想要求某個函數的固定點, 也就是滿足 $c=f(c )$ 的這些 $c$, 那我們可以定義一個迭代式
+$$
+x_{n+1} = f(x_n).
+$$</p>
+
+<p>如果夠幸運的, $\{x_{n}\}$ 這串數字收斂了, 那把它收斂到的數字稱為 $\bar{c}$ 我們就有 $\bar{c}=f(\bar{c})$, 也就是固定點.</p>
+
+<p>舉個例子來說, 假設我們想要解 $x=\cos(x)$ 這個方程式, 那我們可以定義一個固定點迭代為
+$$
+x_{n+1} = \cos(x_n).
+$$</p>
+
+<p>這樣的話如果數列收斂那我們就解出來了!! 不過這裡有兩個問題.</p>
+
+<ol>
+<li><p>為什麼這個數列會收斂?</p></li>
+
+<li><p>原方程式的固定點迭代其實有無窮多種改寫方式, 例如也可寫為 $x_{n+1} = \cos^{-1}(x_n)$. 如果收斂的話一樣會是原方程式的解. 那, 哪種改寫方式最好呢?</p></li>
+</ol>
+
+<p>我們有以下這個定理</p>
+
+<blockquote>
+<h2 id="theorem">Theorem</h2>
+
+<p>If $f:[a, b]\to [a,b]$ is a differentiable function such that
+$$ |f&rsquo;(x)|\leq \alpha&lt;1, \quad \forall x\in[a, b],$$
+then $f$ has exactly one fixed point $c$ and the fixed point iteration converges to $c$.</p>
+</blockquote>
+
+<p>這個證明很簡單.</p>
+
+<blockquote>
+<h3 id="proof">Proof</h3>
+
+<h3 id="sketch-not-complete-please-full-in-the-details-by-yourself">(Sketch, not complete, please full-in the details by yourself)</h3>
+
+<h4 id="existence">existence</h4>
+
+<p>Since the domain and the range of $f$ are both $[a, b]$, by Intermediate Value Theorem, there exists $c$ such that $c=f(c )$.</p>
+
+<h4 id="uniqueness">uniqueness</h4>
+
+<p>If there exits another fixed point $\bar{c}$, $\bar{c}\ne c$, such that $\bar{c}=f(\bar{c} )$, then according to Mean Value Theorem(MVT), there exits $z$ such that $$f&rsquo;(z) = \frac{f(c ) - f(\bar{c})}{c-\bar{c}} = 1,$$ which violate the assumption that $|f&rsquo;|\leq \alpha&lt;1$. So the fixed point is unique.</p>
+
+<h4 id="convergence-of-fixed-point-iteration">convergence of fixed point iteration</h4>
+
+<p>Finally, again, based on MVT we have
+$$|x_{n+1} - c| = |f(x_n) - f(c )| = |f&rsquo;(c_i)(x_n-c)|\leq\alpha |x_n-c|\leq\alpha^n|x_1-c|\to 0.$$</p>
+</blockquote>
+
+<p>所以如果在固定點 $c$ 的微分小於 $1$, 那就存在一個包含 $c$ 的小區間使得函數的微分都在這區間內小於 $1$, 那根據這定理固定點迭代就會收斂.</p>
+
+<hr />
+
+<p>固定點迭代是求根問題(root finding problems)中很重要的一種迭代方式. 舉個例子來說, 假設我們想要找 $g(x)$ 這個函數的根, 那我們可以定義
+$$
+f(x) = x + g(x).
+$$
+這樣的話 $f$ 的固定點就會是 $g$ 的根了. 不過跟上面一樣, 這樣的定義方式有無窮多種, 哪種是最好的? 其中一個最有名的就是牛頓法 (Newton&rsquo;s method):</p>
+
+<blockquote>
+<h2 id="newton-s-iteration">Newton&rsquo;s iteration</h2>
+
+<p>$$x_{n+1} = x_n - \frac{g(x_n)}{g&rsquo;(x_n)}.$$</p>
+</blockquote>
+
+<p>我們可以定義 $f(x) = x - \frac{g(x)}{g&rsquo;(x)}$, 這樣上面這個式子就是個固定點迭代. 接著我們可以發現, 如果 $c$ 是 $g$ 函數的根, 也就是 $g(c )=0$, 那 $f&rsquo;(c ) = 0$. 所以根據上面的定理就存在某個包含 $c$ 的小區間使得迭代會收斂.</p>
+
+<p>更進一步我們可以利用泰勒展開式(Taylor&rsquo;s series expansion) 來證明牛頓法事實上有二次收斂,
+$$
+|x_{n+1} - c| \approx \beta |x_n-c|^2.
+$$
+這個證明我們這邊就先略過不寫. 不過接著我們來看一下牛頓法究竟有多快. (&ndash;To be finished)</p>
+
+<hr />
+
+    </div>
+
+    
+
+
+
+
+
+<div class="article-tags">
   
-
-  <ul>
-    
-    
-      
-      <li><a href="https://teshenglin.github.io/authors/admin/">Te-Sheng Lin (林得勝)</a></li>
-    
-      
-      <li><a href="https://teshenglin.github.io/authors/c.-misbah/">C. Misbah</a></li>
-    
-      
-      <li><a href="https://teshenglin.github.io/authors/s.-rafai/">S. Rafai</a></li>
-    
-      
-      <li><a href="https://teshenglin.github.io/authors/t.-s.-lin/">T.-S. Lin</a></li>
-    
-      
-      <li><a href="https://teshenglin.github.io/authors/w.-f.-hu/">W.-F. Hu</a></li>
-    
-      
-      <li><a href="https://teshenglin.github.io/authors/c.-y.-he/">C.-Y. He</a></li>
-    
-      
-      <li><a href="https://teshenglin.github.io/authors/d.-tseluiko/">D. Tseluiko</a></li>
-    
-      
-      <li><a href="https://teshenglin.github.io/authors/m.-g.-blyth/">M. G. Blyth</a></li>
-    
-      
-      <li><a href="https://teshenglin.github.io/authors/s.-kalliadasis/">S. Kalliadasis</a></li>
-    
-      
-      <li><a href="https://teshenglin.github.io/authors/s.-rogers/">S. Rogers</a></li>
-    
-  </ul>
-
+  <a class="badge badge-light" href="/tags/continuous/">continuous</a>
   
-<nav>
-  <ul class="pagination justify-content-center">
-    
-    
-    <li class="page-item"><a class="page-link" href="/authors/page/2/">&raquo;</a></li>
-    
-  </ul>
-</nav>
-
-
+  <a class="badge badge-light" href="/tags/differentiable/">differentiable</a>
+  
+  <a class="badge badge-light" href="/tags/iteration_method/">iteration_method</a>
+  
+  <a class="badge badge-light" href="/tags/root_finding/">root_finding</a>
+  
 </div>
+
+
+
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=https://teshenglin.github.io/post/2019_fixed_point/&amp;text=Fixed%20point%20iteration" target="_blank" rel="noopener" class="share-btn-twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=https://teshenglin.github.io/post/2019_fixed_point/&amp;t=Fixed%20point%20iteration" target="_blank" rel="noopener" class="share-btn-facebook">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="mailto:?subject=Fixed%20point%20iteration&amp;body=https://teshenglin.github.io/post/2019_fixed_point/" target="_blank" rel="noopener" class="share-btn-email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+  
+
+
+
+
+
+
+  
+  
+  
+    
+  
+  
+  <div class="media author-card content-widget-hr">
+    
+      
+      <img class="portrait mr-3" src="/authors/admin/avatar_hua0d4d4b24f4da3a102e4452ac738b95f_109236_250x250_fill_q90_lanczos_center.jpg" alt="Avatar">
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="https://teshenglin.github.io/">Te-Sheng Lin (林得勝)</a></h5>
+      <h6 class="card-subtitle">Assistant Professor</h6>
+      <p class="card-text">The focus of my research is concerned with the development of analytical and computational tools for the problems that arises in fluid dynamics, currently in thin liquid films, and further to communicate with scientists from other disciplines to solve engineering problems in practice.</p>
+      <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://scholar.google.com.tw/citations?user=diXYXkwAAAAJ" target="_blank" rel="noopener">
+        <i class="ai ai-google-scholar"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.researchgate.net/profile/Te-Sheng_Lin" target="_blank" rel="noopener">
+        <i class="ai ai-researchgate"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://github.com/teshenglin" target="_blank" rel="noopener">
+        <i class="fab fa-github"></i>
+      </a>
+    </li>
+  
+</ul>
+
+    </div>
+  </div>
+
+
+
+
+<section id="comments">
+  
+    
+<div id="disqus_thread"></div>
+<script>
+  let disqus_config = function () {
+    
+    
+    
+  };
+  (function() {
+    if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+      document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+      return;
+    }
+    var d = document, s = d.createElement('script'); s.async = true;
+    s.src = 'https://' + "https-teshenglin-github-io" + '.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+  
+</section>
+
+
+
+
+
+
+  
+  
+  <div class="article-widget content-widget-hr">
+    <h3>Related</h3>
+    <ul>
+      
+      <li><a href="/post/2019_maxmin/">Maximum and minimum of a function</a></li>
+      
+    </ul>
+  </div>
+  
+
+
+
+  </div>
+</article>
 
       
 

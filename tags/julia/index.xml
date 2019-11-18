@@ -29,12 +29,67 @@
 
 &lt;p&gt;在 &lt;a href=&#34;https://julialang.org&#34; target=&#34;_blank&#34;&gt;Julia 官方網站&lt;/a&gt; 上可以下載各系統平台的安裝包裹. 下載安裝後即可運行.&lt;/p&gt;
 
-&lt;p&gt;Julia 安裝教學影片可參考 &lt;a href=&#34;https://youtu.be/v7XeveI19CM&#34; target=&#34;_blank&#34;&gt;Julia課程環境簡介 on Youtube&lt;/a&gt;&lt;/p&gt;
-
 &lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Julia 安裝教學影片可參考 &lt;a href=&#34;https://youtu.be/v7XeveI19CM&#34; target=&#34;_blank&#34;&gt;Julia課程環境簡介 on Youtube&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
 &lt;li&gt;&lt;p&gt;如果只想試用一下的話可以試試 &lt;a href=&#34;https://repl.it/languages/julia&#34; target=&#34;_blank&#34;&gt;repl.it&lt;/a&gt; 這個線上編輯器. 它可以讓你在線上編輯並執行一些簡單的 julia 程式.&lt;/p&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;如果平常會寫各式程式語言, 可以考慮加安裝 &lt;a href=&#34;https://atom.io&#34; target=&#34;_blank&#34;&gt;atom&lt;/a&gt; 編輯器. 它是 github 開發的免費編輯器, 不管 Mac, windows 或是 Linux 都有支援. 我自己有使用 atom 來寫 &lt;code&gt;julia&lt;/code&gt;, &lt;code&gt;fortran&lt;/code&gt;, &lt;code&gt;html&lt;/code&gt; 等.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;julia-基本簡介與語法教學&#34;&gt;Julia 基本簡介與語法教學&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://en.wikibooks.org/wiki/Introducing_Julia&#34; target=&#34;_blank&#34;&gt;Julia: wikibook&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Julia Taiwan發起人杜岳華的 slideshare: &lt;a href=&#34;https://www.slideshare.net/ssuserd6984b/coscup-introduction-to-julia&#34; target=&#34;_blank&#34;&gt;Introduction to Julia&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://hackmd.io/@7WeiUEuJSBKp7WCRouAWVg/r106dSpkb/%2FIwZgbAHApgnARgMwLQAYAmKxICxQMZpICGGATEjHtgOwwwrRwCsEQA%3D%3D?type=book&#34; target=&#34;_blank&#34;&gt;Julia 中文官方文件草稿&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&#34;julia-基本簡介&#34;&gt;Julia 基本簡介&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;查詢版本資訊&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-julia&#34;&gt;julia&amp;gt; versioninfo()
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;套件(package)管理&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-julia&#34;&gt;julia&amp;gt; ]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;然後就會進入套件管理系統&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-julia&#34;&gt;(vX.X) pkg&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;查詢已安裝套件&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-julia&#34;&gt;(vX.X) pkg&amp;gt; status
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;更新套件&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-julia&#34;&gt;(vX.X) pkg&amp;gt; update
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;跳出系統請按鍵盤上的&lt;strong&gt;刪除鍵&lt;/strong&gt;.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;查詢指令(如matlab中的help)&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-julia&#34;&gt;julia&amp;gt; ?
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;然後就會變成查詢的視窗&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-julia&#34;&gt;help?&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;hr /&gt;
@@ -76,7 +131,15 @@ julia&amp;gt; notebook()
 &lt;p&gt;安裝 Jupyter notebook 的第二種方式則是透過 anaconda. 先裝完 julia 後下載 anaconda 安裝, 即可快樂使用.&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;若還是有不清楚的地方請見 &lt;a href=&#34;https://medium.com/datainpoint/jupyter-kernels-3151a6408bab&#34; target=&#34;_blank&#34;&gt;打造 Jupyter Notebook 資料科學環境&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;若還是有不清楚的地方請見 &lt;a href=&#34;https://medium.com/datainpoint/jupyter-kernels-3151a6408bab&#34; target=&#34;_blank&#34;&gt;打造 Jupyter Notebook 資料科學環境&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;目前已經有 jupyter notebook 的升級版, 稱為 jupyter lab. 以 conda 安裝完成後在 julia 命令提示字元下輸入&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-julia&#34;&gt;julia&amp;gt; using IJulia
+julia&amp;gt; jupyterlab()
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;這樣 Jupyter lab 就會在你的瀏覽器中打開.&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;hr /&gt;
@@ -89,16 +152,6 @@ julia&amp;gt; notebook()
 &lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://youtu.be/zzrctueO6JY&#34; target=&#34;_blank&#34;&gt;Julia Taiwan 超新手教學之二 on Youtube&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://youtu.be/W7R5dxGrxlk&#34; target=&#34;_blank&#34;&gt;Julia Taiwan 超新手教學之三 on Youtube&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&#34;julia-基本簡介與語法教學&#34;&gt;Julia 基本簡介與語法教學&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Julia Taiwan發起人杜岳華的 slideshare: &lt;a href=&#34;https://www.slideshare.net/ssuserd6984b/coscup-introduction-to-julia&#34; target=&#34;_blank&#34;&gt;Introduction to Julia&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://hackmd.io/@7WeiUEuJSBKp7WCRouAWVg/r106dSpkb/%2FIwZgbAHApgnARgMwLQAYAmKxICxQMZpICGGATEjHtgOwwwrRwCsEQA%3D%3D?type=book&#34; target=&#34;_blank&#34;&gt;Julia 中文官方文件草稿&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;hr /&gt;
