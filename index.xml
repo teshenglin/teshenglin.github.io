@@ -2395,7 +2395,7 @@ color:#FF0000;
                     &lt;br /&gt;
                     (&lt;strong&gt;劉青松&lt;/strong&gt;, 國立高雄大學應用數學系.)
                     &lt;br /&gt;
-                    &lt;strong&gt;&lt;a href=&#34;#csl&#34;&gt;TBA&lt;/a&gt;&lt;/strong&gt;
+                    &lt;strong&gt;&lt;a href=&#34;#csl&#34;&gt;The numerical methods for nonlinear eigenvalue problems&lt;/a&gt;&lt;/strong&gt;
                 &lt;/td&gt;
             &lt;/tr&gt;
             &lt;tr&gt;
@@ -2562,12 +2562,12 @@ In this talk I will first give an overview what is known. If there is time I wil
             &lt;/tr&gt;
             &lt;tr&gt;
                 &lt;td&gt;Dec. 3, &lt;strong&gt;&lt;a name=&#34;csl&#34;&gt;Ching-Sung Liu&lt;/a&gt;&lt;/strong&gt;&lt;/td&gt;
-                &lt;td&gt;&lt;strong&gt;Title: &#34;TBA&#34;&lt;/strong&gt;
+                &lt;td&gt;&lt;strong&gt;Title: &#34;The numerical methods for nonlinear eigenvalue problems&#34;&lt;/strong&gt;
                     &lt;br /&gt;
                     &lt;br /&gt;
                     &lt;strong&gt;Abstract:&lt;/strong&gt;
                     &lt;br /&gt;
-                    &lt;p&gt;TBA&lt;/p&gt;
+                    &lt;p&gt;In this talk, we will introduce nonlinear eigenvalue problems, including tensor eigenvalue problems and nonlinear Schrödinger equations. We will discuss its numerical methods and some numerical results. A great advantage of this method is that it converges quadratically and is positivity preserving in the sense that the vectors approximating the Perron vector (or the ground state vector) are strictly positive in each iteration.&lt;/p&gt;
                 &lt;/td&gt;
             &lt;/tr&gt;
             &lt;tr&gt;
