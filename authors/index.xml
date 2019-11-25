@@ -5,7 +5,7 @@
     <link>https://teshenglin.github.io/authors/</link>
       <atom:link href="https://teshenglin.github.io/authors/index.xml" rel="self" type="application/rss+xml" />
     <description>Authors</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 04 Nov 2019 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Thu, 21 Nov 2019 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://teshenglin.github.io/img/icon-192.png</url>
       <title>Authors</title>
@@ -15,12 +15,28 @@
     <item>
       <title></title>
       <link>https://teshenglin.github.io/authors/admin/</link>
-      <pubDate>Mon, 04 Nov 2019 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 21 Nov 2019 00:00:00 +0000</pubDate>
       <guid>https://teshenglin.github.io/authors/admin/</guid>
       <description>&lt;p&gt;I am an assistant professor of &lt;a href=&#34;http://www.math.nctu.edu.tw&#34; target=&#34;_blank&#34;&gt;Department of Applied Mathematics&lt;/a&gt; at &lt;a href=&#34;http://www.nctu.edu.tw&#34; target=&#34;_blank&#34;&gt;National Chiao Tung University, Taiwan&lt;/a&gt;. The focus of my research is concerned with the development of analytical and computational tools for the problems that arises in fluid dynamics, currently in thin liquid films, and further to communicate with scientists from other disciplines to solve engineering problems in practice.&lt;/p&gt;
 
 &lt;p&gt;I received my PhD in Applied Mathematics from &lt;a href=&#34;https://math.njit.edu&#34; target=&#34;_blank&#34;&gt;Department of Mathematical Sciences&lt;/a&gt;, New Jersey Institute of Technology, where I worked with &lt;a href=&#34;http://web.njit.edu/~kondic&#34; target=&#34;_blank&#34;&gt;Lou Kondic&lt;/a&gt; and &lt;a href=&#34;http://cfsm.njit.edu&#34; target=&#34;_blank&#34;&gt;Linda J. Cummings&lt;/a&gt;.&lt;/p&gt;
 </description>
+    </item>
+    
+    <item>
+      <title>鄒X傑</title>
+      <link>https://teshenglin.github.io/authors/%E9%84%92x%E5%82%91/</link>
+      <pubDate>Thu, 21 Nov 2019 00:00:00 +0000</pubDate>
+      <guid>https://teshenglin.github.io/authors/%E9%84%92x%E5%82%91/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>黃X鈞</title>
+      <link>https://teshenglin.github.io/authors/%E9%BB%83x%E9%88%9E/</link>
+      <pubDate>Thu, 21 Nov 2019 00:00:00 +0000</pubDate>
+      <guid>https://teshenglin.github.io/authors/%E9%BB%83x%E9%88%9E/</guid>
+      <description></description>
     </item>
     
     <item>

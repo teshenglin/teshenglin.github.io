@@ -5,12 +5,100 @@
     <link>https://teshenglin.github.io/authors/admin/</link>
       <atom:link href="https://teshenglin.github.io/authors/admin/index.xml" rel="self" type="application/rss+xml" />
     <description>Te-Sheng Lin</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 04 Nov 2019 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Thu, 21 Nov 2019 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://teshenglin.github.io/img/icon-192.png</url>
       <title>Te-Sheng Lin</title>
       <link>https://teshenglin.github.io/authors/admin/</link>
     </image>
+    
+    <item>
+      <title>Where should a pilot start descent?</title>
+      <link>https://teshenglin.github.io/post/2019_cal_s3p5/</link>
+      <pubDate>Thu, 21 Nov 2019 00:00:00 +0000</pubDate>
+      <guid>https://teshenglin.github.io/post/2019_cal_s3p5/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;Applied Project in Sec.3.5, Calculus by Stewart&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://i.stack.imgur.com/ImsaT.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;An approach path for an aircraft landing is shown in the figure and satisfies the following conditions:&lt;/p&gt;
+
+&lt;p&gt;(i). The cruising altitude is $h$ when descent starts at a horizontal distance $\ell$ from touchdown at the origin.&lt;/p&gt;
+
+&lt;p&gt;(ii). The pilot must maintain a constant horizontal speed $v$ throughout descent.&lt;/p&gt;
+
+&lt;p&gt;(iii). The absolute value of the vertical acceleration should not exceed a
+constant $k$ (which is much less than the acceleration due to gravity)&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Question 1: Find a cubic polynomial $P(x) = ax^3 + bx^2 + cx + d$ that satisfies condition (i) by imposing suitable conditions on $P(x)$ and $P’(x)$ at the start of descent and at touchdown.&lt;/p&gt;
+
+&lt;p&gt;Answer: &lt;br /&gt;
+At the start of descent:
+$$
+P(\ell) = al^3 +b\ell^2 +c\ell+d = h, \qquad P’(\ell) = 3a\ell^2 +2b\ell+c = 0.
+$$
+At touchdown:
+$$
+P(0) = 0 \Longrightarrow d = 0, \qquad P’(0)=0 \Longrightarrow c=0.
+$$
+Solve for $a$, $b$ in terms of $h$, $\ell$ we find
+$$
+P(x) = −\frac{2h}{\ell^3}x^3 + \frac{3h}{\ell^2}x^2.
+$$&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Question 2: Use conditions (ii) and (iii) to show that $\frac{6hv^2}{\ell^2}\le k$.&lt;/p&gt;
+
+&lt;p&gt;Answer: &lt;br /&gt;
+From (ii), a constant horizontal speed $v$ is assumed throughout descent, we can then express $x$ as
+$$
+x = \ell - vt, \qquad t\in[0, \frac{\ell}{v}],
+$$
+where the minus sign indicating flying to the left. The polynomial $P$ can then be re-written in terms of variable $t$ as
+$$
+P(t) = −\frac{2h}{\ell^3}(\ell - vt)^3 + \frac{3h}{\ell^2}(\ell - vt)^2, \qquad
+\frac{d^2t}{dt^2}P(t) = −\frac{12hv^2}{\ell^3}(\ell - vt) + \frac{6hv^2}{\ell^2}.
+$$
+Therefore, the vertical acceleration $a$ is
+$$
+a(t) = \left|−\frac{12hv^3}{\ell^3}(\ell - vt) + \frac{6hv^2}{\ell^2}\right| = \left|\frac{12hv^3}{\ell^3}\,t - \frac{6hv^2}{\ell^2}\right|, \qquad t\in[0, \frac{\ell}{v}].
+$$
+It can be check, from the Extreme Value Theorem and closed interval method, that $a$ attains it&amp;rsquo;s maximum value and the value is $\frac{6hv^2}{\ell^2}$.
+From condition (iii), we therefore have
+$$
+\frac{6hv^2}{\ell} \le k.
+$$&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Question 3: Suppose that an airline decides not to allow vertical acceleration of a plane to exceed $k = 860(mi/h^2)$. If the cruising altitude of a plane is $35,000(ft)$ and the speed is $300(mi/h)$, how far away from the airport should the pilot start descent?&lt;/p&gt;
+
+&lt;p&gt;Answer:&lt;br /&gt;
+Given $P(x) = −\frac{2h}{\ell^3}x^3 + \frac{3h}{\ell^2}x^2$, suppose the pilot starts to descend when the plane is $\ell(mi)$ from the airport.
+In Q2. we know that $\frac{6hv^2}{\ell^2}\le k$. So,
+$$
+v=300(mi/h), \qquad h=35000(ft) ≈ 6.628(mi), \qquad k=860(mi/h^2)
+$$
+$$
+\frac{6\times 6.628\times (300)^2}{\ell^2} \le 860, \quad \Longrightarrow \quad
+64.511 \le \ell.
+$$
+That is, the pilot should start to decend when the plane is $62.511(mi)$ away from the airport.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Question 4: Graph the approach path if the conditions stated in Problem 3 are satisfied.&lt;/p&gt;
+
+&lt;p&gt;Answer:\&lt;/p&gt;
+
+&lt;p&gt;To be finished.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Fixed point iteration</title>

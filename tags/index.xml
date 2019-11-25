@@ -5,12 +5,36 @@
     <link>https://teshenglin.github.io/tags/</link>
       <atom:link href="https://teshenglin.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <description>Tags</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 04 Nov 2019 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Thu, 21 Nov 2019 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://teshenglin.github.io/img/icon-192.png</url>
       <title>Tags</title>
       <link>https://teshenglin.github.io/tags/</link>
     </image>
+    
+    <item>
+      <title>applied project</title>
+      <link>https://teshenglin.github.io/tags/applied-project/</link>
+      <pubDate>Thu, 21 Nov 2019 00:00:00 +0000</pubDate>
+      <guid>https://teshenglin.github.io/tags/applied-project/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>derivative</title>
+      <link>https://teshenglin.github.io/tags/derivative/</link>
+      <pubDate>Thu, 21 Nov 2019 00:00:00 +0000</pubDate>
+      <guid>https://teshenglin.github.io/tags/derivative/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>polynomial</title>
+      <link>https://teshenglin.github.io/tags/polynomial/</link>
+      <pubDate>Thu, 21 Nov 2019 00:00:00 +0000</pubDate>
+      <guid>https://teshenglin.github.io/tags/polynomial/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>continuous</title>
@@ -97,14 +121,6 @@
       <link>https://teshenglin.github.io/tags/markdown/</link>
       <pubDate>Tue, 29 Oct 2019 00:00:00 +0000</pubDate>
       <guid>https://teshenglin.github.io/tags/markdown/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>derivative</title>
-      <link>https://teshenglin.github.io/tags/derivative/</link>
-      <pubDate>Sun, 27 Oct 2019 00:00:00 +0000</pubDate>
-      <guid>https://teshenglin.github.io/tags/derivative/</guid>
       <description></description>
     </item>
     
