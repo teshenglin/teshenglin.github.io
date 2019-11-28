@@ -1330,7 +1330,7 @@ color:#FF0000;
                     &lt;br /&gt;
                     (&lt;strong&gt;謝佳佑&lt;/strong&gt;, 香港中文大學數學系.)
                     &lt;br /&gt;
-                    &lt;strong&gt;&lt;a href=&#34;#cyh&#34;&gt;TBA&lt;/a&gt;&lt;/strong&gt;
+                    &lt;strong&gt;&lt;a href=&#34;#cyh&#34;&gt;Singular Solutions to Some Semilinear Elliptic Equations: An Approach of Born-Infeld Approximation&lt;/a&gt;&lt;/strong&gt;
                 &lt;/td&gt;
             &lt;/tr&gt;
             &lt;tr&gt;
@@ -1346,29 +1346,10 @@ color:#FF0000;
                     &lt;br /&gt;
                     &lt;strong&gt;Li Wang&lt;/strong&gt;, Department of Mathematics and Department of Computer Science and Engineering, University of Texas at Arlington, USA.
                     &lt;br /&gt;
-                    &lt;strong&gt;&lt;a href=&#34;#lw&#34;&gt;TBA&lt;/a&gt;&lt;/strong&gt;
+                    &lt;strong&gt;&lt;a href=&#34;#lw&#34;&gt;Probabilistic Structure Learning for EEG/MEG Source Imaging with Hierarchical Graph Prior&lt;/a&gt;&lt;/strong&gt;
                 &lt;/td&gt;
             &lt;/tr&gt;
 
-            &lt;tr&gt;
-                &lt;td&gt;December 24&lt;/td&gt;
-                &lt;td&gt;&lt;strong&gt;TBA&lt;/strong&gt;
-                &lt;/td&gt;
-            &lt;/tr&gt;
-            &lt;tr&gt;
-                &lt;td&gt;December 31&lt;/td&gt;
-                &lt;td&gt;&lt;strong&gt;TBA&lt;/strong&gt;
-                &lt;/td&gt;
-            &lt;/tr&gt;
-            &lt;tr&gt;
-                &lt;td&gt;January 7&lt;/td&gt;
-                &lt;td&gt;&lt;strong&gt;Hsun-Wen Chang&lt;/strong&gt;, Department of Computer Science and Engineering, Tatung University.
-                    &lt;br /&gt;
-                    (&lt;strong&gt;張薰文&lt;/strong&gt;, 大同大學資訊工程學系.)
-                    &lt;br /&gt;
-                    &lt;strong&gt;&lt;a href=&#34;#csl&#34;&gt;TBA&lt;/a&gt;&lt;/strong&gt;
-                &lt;/td&gt;
-            &lt;/tr&gt;
         &lt;/table&gt;
 
         &lt;hr /&gt;
@@ -1498,12 +1479,12 @@ In this talk I will first give an overview what is known. If there is time I wil
             &lt;/tr&gt;
             &lt;tr&gt;
                 &lt;td&gt;Dec. 10, &lt;strong&gt;&lt;a name=&#34;cyh&#34;&gt;C.-Y. Hsieh&lt;/a&gt;&lt;/strong&gt;&lt;/td&gt;
-                &lt;td&gt;&lt;strong&gt;Title: &#34;TBA&#34;&lt;/strong&gt;
+                &lt;td&gt;&lt;strong&gt;Title: &#34;Singular Solutions to Some Semilinear Elliptic Equations: An Approach of Born-Infeld Approximation&#34;&lt;/strong&gt;
                     &lt;br /&gt;
                     &lt;br /&gt;
                     &lt;strong&gt;Abstract:&lt;/strong&gt;
                     &lt;br /&gt;
-                    &lt;p&gt;TBA&lt;/p&gt;
+                    &lt;p&gt;We construct singular solutions to a semilinear elliptic equation with exponential nonlinearity on a bounded domain in $\mathbb{R}^2$. To show the existence of singular solutions, we introduce an inverse problem and utilize a Born-Infeld approximation scheme. Ruling out a possible occurrence of bubbling phenomenon, we show that as the Born-Infeld parameter tends to infinity, solutions of the inverse problem on a subdomain with finitely many holes can be used to approximate singular solutions to the original problem. Our work rigorously justifies the Born-Infeld-Higgs approximation to the abelian Maxwell-Higgs theory. This is a joint work with Yong Yu and Ho Man Tai (CUHK).&lt;/p&gt;
                 &lt;/td&gt;
             &lt;/tr&gt;
             &lt;tr&gt;
@@ -1518,27 +1499,14 @@ In this talk I will first give an overview what is known. If there is time I wil
             &lt;/tr&gt;
             &lt;tr&gt;
                 &lt;td&gt;Dec. 17, &lt;strong&gt;&lt;a name=&#34;lw&#34;&gt;Li Wang&lt;/a&gt;&lt;/strong&gt;&lt;/td&gt;
-                &lt;td&gt;&lt;strong&gt;Title: &#34;TBA&#34;&lt;/strong&gt;
+                &lt;td&gt;&lt;strong&gt;Title: &#34;Probabilistic Structure Learning for EEG/MEG Source Imaging with Hierarchical Graph Prior&#34;&lt;/strong&gt;
                     &lt;br /&gt;
                     &lt;br /&gt;
                     &lt;strong&gt;Abstract:&lt;/strong&gt;
                     &lt;br /&gt;
-                    &lt;p&gt;TBA&lt;/p&gt;
+                    &lt;p&gt;Brain source imaging is an important method for noninvasively characterizing brain activity using Electroencephalogram (EEG) or Magnetoencephalography (MEG) recordings. Traditional EEG/MEG Source Imaging (ESI) methods usually assume that either source activities at different time points are unrelated, or that similar spatiotemporal patterns exist across an entire study period. The former assumption makes ESI analyses sensitive to noise, while the latter renders ESI analyses unable to account for time-varying patterns of activity. To effectively deal with noise while maintaining flexibility and continuity among brain activation patterns, we propose a novel probabilistic ESI model based on a hierarchical graph prior. In our method, a spanning tree constraint is imposed to ensure that activity patterns have spatiotemporal continuity. An efficient algorithm based on alternating convex search is presented to solve the proposed model and is provably convergent. Comprehensive numerical studies using synthetic data on a real brain model are conducted under different levels of signal-to-noise ratio (SNR) from both sensor and source spaces. We also examine the EEG/MEG data from two real applications, in which our ESI reconstructions are neurologically plausible. All results demonstrate significant improvements of the proposed algorithm over the benchmark methods in terms of source localization performance, especially at high noise levels. &lt;/p&gt;
                 &lt;/td&gt;
             &lt;/tr&gt;
-            &lt;tr&gt;
-                &lt;td&gt;Jan. 7, &lt;strong&gt;&lt;a name=&#34;hwc&#34;&gt;Hsun-Wen Chang&lt;/a&gt;&lt;/strong&gt;&lt;/td&gt;
-                &lt;td&gt;&lt;strong&gt;Title: &#34;TBA&#34;&lt;/strong&gt;
-                    &lt;br /&gt;
-                    &lt;br /&gt;
-                    &lt;strong&gt;Abstract:&lt;/strong&gt;
-                    &lt;br /&gt;
-                    &lt;p&gt;TBA&lt;/p&gt;
-                &lt;/td&gt;
-            &lt;/tr&gt;
-
-
-
 
             &lt;/table&gt;
 
