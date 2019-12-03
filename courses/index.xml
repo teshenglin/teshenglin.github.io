@@ -1349,15 +1349,6 @@ color:#FF0000;
                     &lt;strong&gt;&lt;a href=&#34;#lw&#34;&gt;Probabilistic Structure Learning for EEG/MEG Source Imaging with Hierarchical Graph Prior&lt;/a&gt;&lt;/strong&gt;
                 &lt;/td&gt;
             &lt;/tr&gt;
-            &lt;tr&gt;
-                &lt;td&gt;December 24&lt;/td&gt;
-                &lt;td&gt;&lt;strong&gt;Peter Jau-Shyong Shiue&lt;/strong&gt;, Department of Mathematical Sciences, University of Nevada, Las Vegas.
-                    &lt;br /&gt;
-                    (&lt;strong&gt;薛昭雄&lt;/strong&gt;)
-                    &lt;br /&gt;
-                    &lt;strong&gt;&lt;a href=&#34;#ps&#34;&gt;TBA&lt;/a&gt;&lt;/strong&gt;
-                &lt;/td&gt;
-            &lt;/tr&gt;
 
         &lt;/table&gt;
 
@@ -1514,15 +1505,6 @@ In this talk I will first give an overview what is known. If there is time I wil
                     &lt;strong&gt;Abstract:&lt;/strong&gt;
                     &lt;br /&gt;
                     &lt;p&gt;Brain source imaging is an important method for noninvasively characterizing brain activity using Electroencephalogram (EEG) or Magnetoencephalography (MEG) recordings. Traditional EEG/MEG Source Imaging (ESI) methods usually assume that either source activities at different time points are unrelated, or that similar spatiotemporal patterns exist across an entire study period. The former assumption makes ESI analyses sensitive to noise, while the latter renders ESI analyses unable to account for time-varying patterns of activity. To effectively deal with noise while maintaining flexibility and continuity among brain activation patterns, we propose a novel probabilistic ESI model based on a hierarchical graph prior. In our method, a spanning tree constraint is imposed to ensure that activity patterns have spatiotemporal continuity. An efficient algorithm based on alternating convex search is presented to solve the proposed model and is provably convergent. Comprehensive numerical studies using synthetic data on a real brain model are conducted under different levels of signal-to-noise ratio (SNR) from both sensor and source spaces. We also examine the EEG/MEG data from two real applications, in which our ESI reconstructions are neurologically plausible. All results demonstrate significant improvements of the proposed algorithm over the benchmark methods in terms of source localization performance, especially at high noise levels. &lt;/p&gt;
-                &lt;/td&gt;
-            &lt;/tr&gt;&lt;tr&gt;
-                &lt;td&gt;Dec. 24, &lt;strong&gt;&lt;a name=&#34;ps&#34;&gt;Peter Jau-Shyong Shiue&lt;/a&gt;&lt;/strong&gt;&lt;/td&gt;
-                &lt;td&gt;&lt;strong&gt;Title: &#34;TBA&#34;&lt;/strong&gt;
-                    &lt;br /&gt;
-                    &lt;br /&gt;
-                    &lt;strong&gt;Abstract:&lt;/strong&gt;
-                    &lt;br /&gt;
-                    &lt;p&gt;TBA. &lt;/p&gt;
                 &lt;/td&gt;
             &lt;/tr&gt;
 
