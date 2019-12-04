@@ -215,13 +215,17 @@ $$
 
 &lt;h2 id=&#34;git-教學網頁&#34;&gt;git 教學網頁&lt;/h2&gt;
 
-&lt;p&gt;我非常推薦 &lt;a href=&#34;https://gitbook.tw&#34; target=&#34;_blank&#34;&gt;為你自己學 Git&lt;/a&gt;, 尤其務必熟讀以下三章, 才算是對 git 有最基本的認識.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;我非常推薦 &lt;a href=&#34;https://gitbook.tw&#34; target=&#34;_blank&#34;&gt;為你自己學 Git&lt;/a&gt;, 尤其務必熟讀以下三章, 才算是對 git 有最基本的認識.&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;二、Git Windows/Mac/Linux 環境安裝&lt;/li&gt;
 &lt;li&gt;四、設定 Git&lt;/li&gt;
 &lt;li&gt;五、開始使用 Git&lt;/li&gt;
-&lt;/ul&gt;
+&lt;/ul&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://www.slideshare.net/appleboy/introduction-to-git-11436559&#34; target=&#34;_blank&#34;&gt;快速上手 git 版本控制, slideshare&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
 
 &lt;hr /&gt;
 
@@ -247,14 +251,20 @@ $$
 
 &lt;hr /&gt;
 
-&lt;h2 id=&#34;github-教學網頁&#34;&gt;github 教學網頁&lt;/h2&gt;
+&lt;h2 id=&#34;支援-git-的網站&#34;&gt;支援 git 的網站&lt;/h2&gt;
+
+&lt;h3 id=&#34;github&#34;&gt;github&lt;/h3&gt;
 
 &lt;p&gt;如同我最初說的, github 是一個支援 git 的網站, 可以讓你擺放你程式的原始碼, 基本服務是免費的, 有一些更進階的功能則需要付費.&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://progressbar.tw/posts/3&#34; target=&#34;_blank&#34;&gt;開始使用 GitHub， 註冊與建立repo&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://progressbar.tw/posts/3&#34; target=&#34;_blank&#34;&gt;開始使用 GitHub， 註冊與建立repo&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;li&gt;&lt;p&gt;也可以使用 &lt;a href=&#34;https://bitbucket.org&#34; target=&#34;_blank&#34;&gt;bitcuket&lt;/a&gt;, 一樣是個讓你把原始碼放上雲端的免費服務.&lt;/p&gt;&lt;/li&gt;
+&lt;h3 id=&#34;bitcuket&#34;&gt;bitcuket&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;也可以使用 &lt;a href=&#34;https://bitbucket.org&#34; target=&#34;_blank&#34;&gt;bitcuket&lt;/a&gt;, 一樣是個讓你把原始碼放上雲端的免費服務.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;hr /&gt;
