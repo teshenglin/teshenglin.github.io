@@ -5,12 +5,44 @@
     <link>https://teshenglin.github.io/authors/admin/</link>
       <atom:link href="https://teshenglin.github.io/authors/admin/index.xml" rel="self" type="application/rss+xml" />
     <description>Te-Sheng Lin</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Thu, 21 Nov 2019 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Thu, 05 Dec 2019 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://teshenglin.github.io/img/icon-192.png</url>
       <title>Te-Sheng Lin</title>
       <link>https://teshenglin.github.io/authors/admin/</link>
     </image>
+    
+    <item>
+      <title>不定積分的悖論？</title>
+      <link>https://teshenglin.github.io/post/2019_indef_integ/</link>
+      <pubDate>Thu, 05 Dec 2019 00:00:00 +0000</pubDate>
+      <guid>https://teshenglin.github.io/post/2019_indef_integ/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;這幾天有個朋友問我一個關於不定積分的問題, 看起來很詭異. 我們一起來看看.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;我們以分部積分(integration by part)來求 $\tan$ 的不定積分 $\int \tan(x)\,dx$.&lt;/p&gt;
+
+&lt;p&gt;首先我們知道 $\tan(x) = \frac{\sin(x)}{\cos(x)}$, 接著我們來做分部積分, 假設
+$$
+u = \frac{1}{\cos(x)}, \quad dv = \sin(x)dx.
+$$
+因此我們知道
+$$
+du = \frac{\sin(x)}{\cos^2(x)}dx, \quad v = -\cos(x).
+$$
+根據分部積分公式我們得到
+$$
+\int \tan(x)\,dx  = \frac{1}{\cos(x)}\left(-\cos(x)\right) - \int (-\cos(x))\frac{\sin(x)}{\cos^2(x)}dx
+= -1 + \int\tan(x)\,dx.
+$$
+等號最左邊跟最右邊都有 $\int\tan(x)\,dx$, 同時減掉我們就得到 $0 = -1$. 太神奇了!!&lt;/p&gt;
+
+&lt;p&gt;所以問題是, 這中間究竟哪裏有問題？&lt;/p&gt;
+
+&lt;hr /&gt;
+</description>
+    </item>
     
     <item>
       <title>Where should a pilot start descent?</title>
@@ -1043,38 +1075,6 @@ $$
 
 &lt;li&gt;&lt;p&gt;更多關於 $sinc$ 函數的性質可以參考 &lt;a href=&#34;https://en.wikipedia.org/wiki/Sinc_function&#34; target=&#34;_blank&#34;&gt;wiki&lt;/a&gt; 上的介紹.&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
-
-&lt;hr /&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>不定積分的悖論？</title>
-      <link>https://teshenglin.github.io/post/2019_indefinite_integral/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://teshenglin.github.io/post/2019_indefinite_integral/</guid>
-      <description>&lt;blockquote&gt;
-&lt;p&gt;這幾天有個朋友問我一個關於不定積分的問題, 看起來很詭異. 我們一起來看看.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;我們以分部積分(integration by part)來求 $\tan$ 的不定積分 $\int \tan(x)\,dx$.&lt;/p&gt;
-
-&lt;p&gt;首先我們知道 $\tan(x) = \frac{\sin(x)}{\cos(x)}$, 接著我們來做分部積分, 假設
-$$
-u = \frac{1}{\cos(x)}, \quad dv = \sin(x)dx.
-$$
-因此我們知道
-$$
-du = \frac{\sin(x)}{\cos^2(x)}dx, \quad v = -\cos(x).
-$$
-根據分部積分公式我們得到
-$$
-\int \tan(x)\,dx  = \frac{1}{\cos(x)}\left(-\cos(x)\right) - \int (-\cos(x))\frac{\sin(x)}{\cos^2(x)}dx
-= -1 + \int\tan(x)\,dx.
-$$
-等號最左邊跟最右邊都有 $\int\tan(x)\,dx$, 同時減掉我們就得到 $0 = -1$. 太神奇了!!&lt;/p&gt;
-
-&lt;p&gt;所以問題是, 這中間究竟哪裏有問題？&lt;/p&gt;
 
 &lt;hr /&gt;
 </description>
