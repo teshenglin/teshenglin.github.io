@@ -463,6 +463,14 @@
   </url>
   
   <url>
+    <loc>https://teshenglin.github.io/tags/antiderivative/</loc>
+  </url>
+  
+  <url>
+    <loc>https://teshenglin.github.io/tags/indefinite-integral/</loc>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/post/</loc>
     <lastmod>2019-05-06T17:54:11+01:00</lastmod>
   </url>
@@ -480,6 +488,10 @@
   <url>
     <loc>https://teshenglin.github.io/courses/</loc>
     <lastmod>2019-10-29T10:20:13+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://teshenglin.github.io/post/2019_indefinite_integral/</loc>
   </url>
   
 </urlset>
