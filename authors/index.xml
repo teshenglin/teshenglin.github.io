@@ -5,12 +5,36 @@
     <link>https://teshenglin.github.io/authors/</link>
       <atom:link href="https://teshenglin.github.io/authors/index.xml" rel="self" type="application/rss+xml" />
     <description>Authors</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Wed, 04 Dec 2019 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 09 Dec 2019 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://teshenglin.github.io/img/icon-192.png</url>
       <title>Authors</title>
       <link>https://teshenglin.github.io/authors/</link>
     </image>
+    
+    <item>
+      <title>M.-C. Lai</title>
+      <link>https://teshenglin.github.io/authors/m.-c.-lai/</link>
+      <pubDate>Mon, 09 Dec 2019 00:00:00 +0000</pubDate>
+      <guid>https://teshenglin.github.io/authors/m.-c.-lai/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>T.-S. Lin</title>
+      <link>https://teshenglin.github.io/authors/t.-s.-lin/</link>
+      <pubDate>Mon, 09 Dec 2019 00:00:00 +0000</pubDate>
+      <guid>https://teshenglin.github.io/authors/t.-s.-lin/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>W.-F. Hu</title>
+      <link>https://teshenglin.github.io/authors/w.-f.-hu/</link>
+      <pubDate>Mon, 09 Dec 2019 00:00:00 +0000</pubDate>
+      <guid>https://teshenglin.github.io/authors/w.-f.-hu/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title></title>
@@ -21,6 +45,22 @@
 
 &lt;p&gt;I received my PhD in Applied Mathematics from &lt;a href=&#34;https://math.njit.edu&#34; target=&#34;_blank&#34;&gt;Department of Mathematical Sciences&lt;/a&gt;, New Jersey Institute of Technology, where I worked with &lt;a href=&#34;http://web.njit.edu/~kondic&#34; target=&#34;_blank&#34;&gt;Lou Kondic&lt;/a&gt; and &lt;a href=&#34;http://cfsm.njit.edu&#34; target=&#34;_blank&#34;&gt;Linda J. Cummings&lt;/a&gt;.&lt;/p&gt;
 </description>
+    </item>
+    
+    <item>
+      <title>C. Misbah</title>
+      <link>https://teshenglin.github.io/authors/c.-misbah/</link>
+      <pubDate>Tue, 03 Dec 2019 00:00:00 +0000</pubDate>
+      <guid>https://teshenglin.github.io/authors/c.-misbah/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>S. Rafai</title>
+      <link>https://teshenglin.github.io/authors/s.-rafai/</link>
+      <pubDate>Tue, 03 Dec 2019 00:00:00 +0000</pubDate>
+      <guid>https://teshenglin.github.io/authors/s.-rafai/</guid>
+      <description></description>
     </item>
     
     <item>
@@ -40,38 +80,6 @@
     </item>
     
     <item>
-      <title>C. Misbah</title>
-      <link>https://teshenglin.github.io/authors/c.-misbah/</link>
-      <pubDate>Tue, 29 Oct 2019 17:59:48 +0800</pubDate>
-      <guid>https://teshenglin.github.io/authors/c.-misbah/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>S. Rafai</title>
-      <link>https://teshenglin.github.io/authors/s.-rafai/</link>
-      <pubDate>Tue, 29 Oct 2019 17:59:48 +0800</pubDate>
-      <guid>https://teshenglin.github.io/authors/s.-rafai/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>T.-S. Lin</title>
-      <link>https://teshenglin.github.io/authors/t.-s.-lin/</link>
-      <pubDate>Tue, 29 Oct 2019 17:59:48 +0800</pubDate>
-      <guid>https://teshenglin.github.io/authors/t.-s.-lin/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>W.-F. Hu</title>
-      <link>https://teshenglin.github.io/authors/w.-f.-hu/</link>
-      <pubDate>Tue, 29 Oct 2019 17:59:48 +0800</pubDate>
-      <guid>https://teshenglin.github.io/authors/w.-f.-hu/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>C.-Y. He</title>
       <link>https://teshenglin.github.io/authors/c.-y.-he/</link>
       <pubDate>Sat, 27 Jul 2019 17:59:48 +0800</pubDate>
@@ -82,8 +90,24 @@
     <item>
       <title>D. Tseluiko</title>
       <link>https://teshenglin.github.io/authors/d.-tseluiko/</link>
-      <pubDate>Fri, 27 Jul 2018 17:59:48 +0800</pubDate>
+      <pubDate>Fri, 31 May 2019 00:00:00 +0000</pubDate>
       <guid>https://teshenglin.github.io/authors/d.-tseluiko/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>M. Alesemi</title>
+      <link>https://teshenglin.github.io/authors/m.-alesemi/</link>
+      <pubDate>Fri, 31 May 2019 00:00:00 +0000</pubDate>
+      <guid>https://teshenglin.github.io/authors/m.-alesemi/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>U. Thiele</title>
+      <link>https://teshenglin.github.io/authors/u.-thiele/</link>
+      <pubDate>Fri, 31 May 2019 00:00:00 +0000</pubDate>
+      <guid>https://teshenglin.github.io/authors/u.-thiele/</guid>
       <description></description>
     </item>
     
@@ -108,14 +132,6 @@
       <link>https://teshenglin.github.io/authors/s.-rogers/</link>
       <pubDate>Sat, 27 Aug 2016 17:59:32 +0800</pubDate>
       <guid>https://teshenglin.github.io/authors/s.-rogers/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>U. Thiele</title>
-      <link>https://teshenglin.github.io/authors/u.-thiele/</link>
-      <pubDate>Sat, 27 Aug 2016 17:59:32 +0800</pubDate>
-      <guid>https://teshenglin.github.io/authors/u.-thiele/</guid>
       <description></description>
     </item>
     
@@ -204,14 +220,6 @@
       <link>https://teshenglin.github.io/authors/c.-y.-huang/</link>
       <pubDate>Thu, 26 Feb 2004 00:00:00 +0000</pubDate>
       <guid>https://teshenglin.github.io/authors/c.-y.-huang/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>M.-C. Lai</title>
-      <link>https://teshenglin.github.io/authors/m.-c.-lai/</link>
-      <pubDate>Thu, 26 Feb 2004 00:00:00 +0000</pubDate>
-      <guid>https://teshenglin.github.io/authors/m.-c.-lai/</guid>
       <description></description>
     </item>
     

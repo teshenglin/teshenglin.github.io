@@ -5,7 +5,7 @@
     <link>https://teshenglin.github.io/authors/w.-f.-hu/</link>
       <atom:link href="https://teshenglin.github.io/authors/w.-f.-hu/index.xml" rel="self" type="application/rss+xml" />
     <description>W.-F. Hu</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 29 Oct 2019 17:59:48 +0800</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 09 Dec 2019 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://teshenglin.github.io/img/icon-192.png</url>
       <title>W.-F. Hu</title>
@@ -13,10 +13,26 @@
     </image>
     
     <item>
+      <title>Electrohydrodynamic Quincke rotation for a solid particle</title>
+      <link>https://teshenglin.github.io/publication/19_hll/</link>
+      <pubDate>Mon, 09 Dec 2019 00:00:00 +0000</pubDate>
+      <guid>https://teshenglin.github.io/publication/19_hll/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Chaotic swimming of phoretic self-propelled particles</title>
       <link>https://teshenglin.github.io/publication/19_prl_hlrm/</link>
-      <pubDate>Tue, 29 Oct 2019 17:59:48 +0800</pubDate>
+      <pubDate>Tue, 03 Dec 2019 00:00:00 +0000</pubDate>
       <guid>https://teshenglin.github.io/publication/19_prl_hlrm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A direct Poisson solver in spherical geometry with an application to diffusiophoretic problems</title>
+      <link>https://teshenglin.github.io/publication/19_hlm/</link>
+      <pubDate>Sat, 05 Oct 2019 00:00:00 +0000</pubDate>
+      <guid>https://teshenglin.github.io/publication/19_hlm/</guid>
       <description></description>
     </item>
     

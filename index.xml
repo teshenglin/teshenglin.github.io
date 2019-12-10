@@ -5,12 +5,20 @@
     <link>https://teshenglin.github.io/</link>
       <atom:link href="https://teshenglin.github.io/index.xml" rel="self" type="application/rss+xml" />
     <description>Te-Sheng Lin</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Wed, 04 Dec 2019 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 09 Dec 2019 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://teshenglin.github.io/img/icon-192.png</url>
       <title>Te-Sheng Lin</title>
       <link>https://teshenglin.github.io/</link>
     </image>
+    
+    <item>
+      <title>Electrohydrodynamic Quincke rotation for a solid particle</title>
+      <link>https://teshenglin.github.io/publication/19_hll/</link>
+      <pubDate>Mon, 09 Dec 2019 00:00:00 +0000</pubDate>
+      <guid>https://teshenglin.github.io/publication/19_hll/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>不定積分的悖論？</title>
@@ -42,6 +50,14 @@ $$
 
 &lt;hr /&gt;
 </description>
+    </item>
+    
+    <item>
+      <title>Chaotic swimming of phoretic self-propelled particles</title>
+      <link>https://teshenglin.github.io/publication/19_prl_hlrm/</link>
+      <pubDate>Tue, 03 Dec 2019 00:00:00 +0000</pubDate>
+      <guid>https://teshenglin.github.io/publication/19_prl_hlrm/</guid>
+      <description></description>
     </item>
     
     <item>
@@ -336,14 +352,6 @@ $$
 
 &lt;hr /&gt;
 </description>
-    </item>
-    
-    <item>
-      <title>Chaotic swimming of phoretic self-propelled particles</title>
-      <link>https://teshenglin.github.io/publication/19_prl_hlrm/</link>
-      <pubDate>Tue, 29 Oct 2019 17:59:48 +0800</pubDate>
-      <guid>https://teshenglin.github.io/publication/19_prl_hlrm/</guid>
-      <description></description>
     </item>
     
     <item>
@@ -1227,10 +1235,26 @@ $$
     </item>
     
     <item>
+      <title>A direct Poisson solver in spherical geometry with an application to diffusiophoretic problems</title>
+      <link>https://teshenglin.github.io/publication/19_hlm/</link>
+      <pubDate>Sat, 05 Oct 2019 00:00:00 +0000</pubDate>
+      <guid>https://teshenglin.github.io/publication/19_hlm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Fast spectral solver for Poisson equation in an annular domain</title>
       <link>https://teshenglin.github.io/publication/19_amsa_lhh/</link>
       <pubDate>Sat, 27 Jul 2019 17:59:48 +0800</pubDate>
       <guid>https://teshenglin.github.io/publication/19_amsa_lhh/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Effect of driving on coarsening dynamics in phase-separating systems</title>
+      <link>https://teshenglin.github.io/publication/19_talt/</link>
+      <pubDate>Fri, 31 May 2019 00:00:00 +0000</pubDate>
+      <guid>https://teshenglin.github.io/publication/19_talt/</guid>
       <description></description>
     </item>
     
