@@ -28,10 +28,10 @@
   
     
   
-  <meta name="description" content="這裡我們要介紹 markdown 這個語言. 它非常簡單易學, 有時我們只是想打個小文件, 就幾頁而已不想要開 latex 或是 word 之類的文字編輯軟體, 這時候就非常適合以 markdown 來編寫">
+  <meta name="description" content="在微積分課程裡我們有學到積分的&rsquo;中點法&rsquo;, &lsquo;梯形法&rsquo;以及&rsquo;辛普森法&rsquo;">
 
   
-  <link rel="alternate" hreflang="en-us" href="https://teshenglin.github.io/post/2019_markdown/">
+  <link rel="alternate" hreflang="en-us" href="https://teshenglin.github.io/post/2019_numerical_integration/">
 
   
 
@@ -103,7 +103,7 @@
   <link rel="icon" type="image/png" href="/img/icon-32.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
 
-  <link rel="canonical" href="https://teshenglin.github.io/post/2019_markdown/">
+  <link rel="canonical" href="https://teshenglin.github.io/post/2019_numerical_integration/">
 
   
   
@@ -116,13 +116,13 @@
   <meta property="twitter:card" content="summary">
   
   <meta property="og:site_name" content="Te-Sheng Lin">
-  <meta property="og:url" content="https://teshenglin.github.io/post/2019_markdown/">
-  <meta property="og:title" content="Markdown 學習筆記 | Te-Sheng Lin">
-  <meta property="og:description" content="這裡我們要介紹 markdown 這個語言. 它非常簡單易學, 有時我們只是想打個小文件, 就幾頁而已不想要開 latex 或是 word 之類的文字編輯軟體, 這時候就非常適合以 markdown 來編寫"><meta property="og:image" content="https://teshenglin.github.io/img/icon-192.png">
+  <meta property="og:url" content="https://teshenglin.github.io/post/2019_numerical_integration/">
+  <meta property="og:title" content="數值積分初探 | Te-Sheng Lin">
+  <meta property="og:description" content="在微積分課程裡我們有學到積分的&rsquo;中點法&rsquo;, &lsquo;梯形法&rsquo;以及&rsquo;辛普森法&rsquo;"><meta property="og:image" content="https://teshenglin.github.io/img/icon-192.png">
   <meta property="twitter:image" content="https://teshenglin.github.io/img/icon-192.png"><meta property="og:locale" content="en-us">
   
     
-      <meta property="article:published_time" content="2019-10-29T00:00:00&#43;00:00">
+      <meta property="article:published_time" content="2019-12-11T00:00:00&#43;00:00">
     
     <meta property="article:modified_time" content="2019-12-11T14:41:46&#43;08:00">
   
@@ -150,11 +150,11 @@
   "@type": "BlogPosting",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://teshenglin.github.io/post/2019_markdown/"
+    "@id": "https://teshenglin.github.io/post/2019_numerical_integration/"
   },
-  "headline": "Markdown 學習筆記",
+  "headline": "數值積分初探",
   
-  "datePublished": "2019-10-29T00:00:00Z",
+  "datePublished": "2019-12-11T00:00:00Z",
   "dateModified": "2019-12-11T14:41:46+08:00",
   
   "author": {
@@ -170,7 +170,7 @@
       "url": "https://teshenglin.github.io/img/icon-512.png"
     }
   },
-  "description": "這裡我們要介紹 markdown 這個語言. 它非常簡單易學, 有時我們只是想打個小文件, 就幾頁而已不想要開 latex 或是 word 之類的文字編輯軟體, 這時候就非常適合以 markdown 來編寫"
+  "description": "在微積分課程裡我們有學到積分的\u0026rsquo;中點法\u0026rsquo;, \u0026lsquo;梯形法\u0026rsquo;以及\u0026rsquo;辛普森法\u0026rsquo;"
 }
 </script>
 
@@ -188,7 +188,7 @@
 
 
 
-  <title>Markdown 學習筆記 | Te-Sheng Lin</title>
+  <title>數值積分初探 | Te-Sheng Lin</title>
 
 </head>
 
@@ -398,7 +398,7 @@
   
   
 <div class="article-container pt-3">
-  <h1>Markdown 學習筆記</h1>
+  <h1>數值積分初探</h1>
 
   
 
@@ -449,14 +449,14 @@
   
   
   <span class="middot-divider"></span>
-  <a href="/post/2019_markdown/#disqus_thread"></a>
+  <a href="/post/2019_numerical_integration/#disqus_thread"></a>
   
 
   
   
   <span class="middot-divider"></span>
   <span class="article-categories">
-    <i class="fas fa-folder mr-1"></i><a href="/categories/notes/">notes</a></span>
+    <i class="fas fa-folder mr-1"></i><a href="/categories/calculus/">Calculus</a>, <a href="/categories/computational-mathematics/">Computational Mathematics</a></span>
   
 
 </div>
@@ -487,96 +487,193 @@
       
 
 <blockquote>
-<p>這裡我們要介紹 markdown 這個語言. 它非常簡單易學, 有時我們只是想打個小文件, 就幾頁而已不想要開 latex 或是 word 之類的文字編輯軟體, 這時候就非常適合以 markdown 來編寫. 另外其實越來越多的程式語言也支援 markdown 編寫. 比如這個網頁裡的 post 就都是以 markdown 做的.</p>
+<p>在微積分課程裡我們有學到積分的&rsquo;中點法&rsquo;, &lsquo;梯形法&rsquo;以及&rsquo;辛普森法&rsquo;. 這裡我們簡介一些基本概念並且引進高斯積分法.</p>
 </blockquote>
 
-<hr />
-
-<h2 id="markdown-安裝">Markdown 安裝</h2>
-
-<ul>
-<li><p>我自己是使用 mac, 我用的是 <a href="https://macdown.uranusjr.com" target="_blank">MacDown</a> 這個軟體.</p>
-
-<ul>
-<li>安裝完 <em>Macdown</em> 之後需要到 <code>Preference/Rendering</code> 中標選 <em>tex-like math</em> 以及他下一行的 <em>use dollar sign as xxxx</em>, 才可使用 tex 語法.</li>
-</ul></li>
-
-<li><p>Windows 使用者可以參考<a href="https://www.itread01.com/content/1547118008.html" target="_blank">這篇</a> 裡面有非常多 markdown 編輯器的選擇. 也有人推薦 <a href="https://www.typora.io" target="_blank">Typora</a>.</p>
-
-<ul>
-<li>Typora 主要特色是他<strong>所見即所得</strong>, 所以邊寫邊看自己打出來的版面怎樣. 比較乾淨, 不需要將畫面切分成左右兩半一半程式一半預覽. 學起來也很簡單.</li>
-<li><a href="https://free.com.tw/typora/" target="_blank">Typora 免費極簡 Markdown 編輯器</a></li>
-<li><a href="https://www.itread01.com/content/1546144745.html" target="_blank">markdown神器 -Typora使用教程筆記</a></li>
-</ul></li>
-
-<li><p>如果平常會寫各式程式語言, 也可以考慮使用 <a href="https://atom.io" target="_blank">atom</a> 編輯器. 它是 github 開發的免費編輯器, 不管 Mac, windows 或是 Linux 都有支援. 我自己也有使用 atom 來寫 <code>julia</code>, <code>fortran</code>, <code>html</code> 等.</p></li>
-
-<li><p>如果連安裝都不想的話我推薦 <a href="https://notes.dosilovic.com" target="_blank">markdown notes</a> 這個線上編輯器. 它支援線上即時編寫, 可以線上存檔, 也可以下載成 markdown 以及 PDF.</p></li>
-
-<li><p>另一個線上編輯器: <a href="https://upmath.me" target="_blank">upmath</a>, 依樣支援線上即時編寫, 可以存成 html 直接幫你產生網頁.</p></li>
-</ul>
-
-<p>不過我要稍微說明一下, 不管使用哪種編輯器, markdown 主要語法都差不多. 不過在輸出上會有一些細微的差異. 這點就要自己使用後才會感受得到差別.</p>
+<h4 id="goal-任意給定一可積分函數-f-x-x-in-1-1-我們想要算-int-1-1-f-x-dx">Goal: 任意給定一可積分函數 $f(x)$, $x\in[-1, 1]$, 我們想要算 $\int^1_{-1} f(x)\,dx$.</h4>
 
 <hr />
 
-<h2 id="markdown-語法教學">Markdown 語法教學</h2>
-
-<p>以下列舉一些 markdown 教學的線上資源</p>
-
-<ul>
-<li><p><a href="https://commonmark.org/help/" target="_blank">1分鐘學會 Markdown</a></p></li>
-
-<li><p><a href="https://wastemobile.gitbooks.io/gitbook-chinese/content/format/markdown.html" target="_blank">Markdown gitbook</a></p></li>
-
-<li><p><a href="https://tiida54.github.io/2018/01/03/3分鐘學會Markdown常用語法/" target="_blank">3分鐘學會 Markdown 常用語法</a></p></li>
-
-<li><p><a href="https://docs.microsoft.com/zh-tw/contribute/how-to-write-use-markdown" target="_blank">如何使用 Markdown 來撰寫 Docs</a></p></li>
-</ul>
-
-<p>markdown 有一個很酷的語法是可以做 diagram, 在 typora 這個編輯器有支援: <a href="https://support.typora.io/Draw-Diagrams-With-Markdown/" target="_blank">Draw Diagrams With Markdown</a>.</p>
-
-<ul>
-<li>不過要稍微注意一下, 不要直接複製貼上介紹網頁裡的 diagram 程式到 typora 裡, 會跑不出來. 正確做法是, 比如說要做以下這個 sequence diagram, 那在 typora 裡打 ```sequence, 然後就會跑出一個框框讓你把程式貼進去. 程式貼入後圖就跑出來了.</li>
-</ul>
-
-<p>我自己所使用的 macdown 也號稱有支援, 不過其實只有某些特別的版本能用而已, 有點可惜.</p>
-
-<p>如果是用 atom 的話則是要安裝 <a href="https://shd101wyy.github.io/markdown-preview-enhanced/#/" target="_blank">markdown-preview-enhanced</a> 這個 package. 我自己試過, 支援各種 diagram, 非常棒.</p>
+<p><strong>Remark:</strong> 對任一個積分式 $\int^b_{a} g(x)\,dx$ 我們皆可用變數變換來將此積分轉到 $[-1, 1]$ 這個區間. 所以我們只需考慮 $[-1, 1]$ 即可.</p>
 
 <hr />
 
-<h2 id="markdown-語法補充">Markdown 語法補充</h2>
+<p>首先我們討論一下哪種方法比較準. 一個最簡單的判斷方法是看積分法能不能將多項式算準.</p>
+
+<p>我們考慮三種積分法:</p>
+
+<ol>
+<li><p>Midpoint rule: $\int^1_{-1}f(x)\,dx\approx 2f(0)$</p></li>
+
+<li><p>Trapezoidal rule: $\int^1_{-1}f(x)\,dx\approx f(-1)+f(1)$</p></li>
+
+<li><p>Simpson&rsquo;s rule: $\int^1_{-1}f(x)\,dx\approx \frac{1}{3}(f(-1)+4f(0)+f(1))$</p></li>
+</ol>
 
 <ul>
-<li>在 markdown 文字間插入空白無法單純使用空白鍵, 在 mac 裡是 option+space, 其他可見 <a href="https://stackoverflow.com/a/54174466" target="_blank">Use non-breaking spaces</a></li>
-<li>在 markdown 裡將文字置中只能用 html 語法 <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/center" target="_blank">Centered Text</a></li>
+<li><p>我們先檢驗常數函數: $\int^1_{-1} 1\,dx=2$. 很快我們就可以發現以上三種方法都可以得出完全正確的答案.</p></li>
+
+<li><p>接著我們檢驗一次函數: $\int^1_{-1} x\,dx=0$. 一樣, 三種方法都得出正確答案.</p></li>
+
+<li><p>二次函數: $\int^1_{-1} x^2\,dx=\frac{2}{3}$. 對於二次函數我們發現, 中點法以及梯形法都無法算出正確答案, 只有辛普森法能成功.</p></li>
+
+<li><p>三次函數: $\int^1_{-1} x^3\,dx=0$. 對於三次函數我們只檢驗辛普森法, 發現三次函數辛普森法也能算準.</p></li>
+
+<li><p>四次函數: $\int^1_{-1} x^4\,dx=\frac{2}{5}$. 對於四次函數, 辛普森法就算錯了.</p></li>
 </ul>
 
-<hr />
+<p><strong>小結論</strong></p>
 
-<h2 id="latex-語法教學">Latex 語法教學</h2>
+<ol>
+<li>中點跟梯形法準確率相同, 能準確的算出任意一次多項式的積分值.</li>
+<li>辛普森法比中點及梯形法更準確, 並且它能準確的算出任意三次多項式的積分值.</li>
+</ol>
+
+<hr />
 
 <blockquote>
-<p>Markdown 一個很重要功能(至少對我而言)就是它支援 $\LaTeX$ 語法. Latex 數學排版系統是科學界中非常重要的一種系統. 它使得研究員在撰寫學術文章時能輕易地做好排版. 尤其是科學文章中常有大量數學符號, 這些符號的編排以及顯示是 Latex 系統一大強項.</p>
+<p>接著我們稍微推廣一下, 並且介紹所謂的&rsquo;高斯積分&rsquo;.</p>
 </blockquote>
 
-<p>如果只是要以 Markdown 來寫一些簡單包含數學符號的文章, 還不需要學整個 Latex 系統. 我們只要會一些語法就好. 以下整理一些線上資源供參考</p>
+<p><strong>Question:</strong> 假設我們現在想要用函數在 $x=0$ 這個點的值來估算積分, 那係數要取多少會最好?</p>
 
-<ul>
-<li><a href="https://walkccc.github.io/blog/2018/02/17/Techniques/latex-syntax/" target="_blank">LaTeX 語法整理</a></li>
-<li><a href="https://oeis.org/wiki/List_of_LaTeX_mathematical_symbols" target="_blank">List of LaTeX mathematical symbols</a></li>
-<li><a href="https://www.overleaf.com/learn/latex/Integrals,_sums_and_limits" target="_blank">Integrals, sums and limits</a></li>
-<li><a href="https://en.wikibooks.org/wiki/LaTeX/Mathematics#Matrices_and_arrays" target="_blank">matrices and arrays</a></li>
-</ul>
+<p>也就是說我們假設
+$$\int^1_{-1}f(x)\,dx\approx A_0f(0),$$
+其中 $A_0$ 是個常數. 那 $A_0$ 要選哪個數字, 這個積分公式才會算的最準?</p>
 
-<p>所有介於兩個 <code>$</code> 字元之間的內容將會被視為 TeX 數學公式處理。開頭的 <code>$</code> 右側必須立刻接上任意文字，而結尾 <code>$</code> 的左側同樣也必須緊挨著文字。如果使用兩個<code>$$</code>則會將數學公式換行居中. 例如以下 markdown 程式碼</p>
+<p>依照我們之前的想法, 要讓積分式準就是要讓他把多項式算準. 所以我們希望他至少能把常數函數算準. 這樣的話很容易就看出 $A_0=2$, 也就是&rsquo;中點法&rsquo;.</p>
 
-<pre><code>$$\frac{\sin(x)}{x}$$
-</code></pre>
+<p><strong>Question:</strong> 假設我們現在想要用函數在 $x=-1$ 以及 $x=1$ 這兩個點的值來估算積分, 那係數要取多少會最好?</p>
 
-<p>顯示為
-$$\frac{\sin(x)}{x}$$</p>
+<p>也就是說我們假設
+$$\int^1_{-1}f(x)\,dx\approx \alpha f(-1)+\beta f(1),$$
+其中 $\alpha, \beta$ 是常數.</p>
+
+<p>我們有兩個未知數, 所以我們希望他至少能把常數及一次函數算準. 這樣的話我們可以列出方程式:
+$$
+\alpha + \beta = 2, \quad -\alpha + \beta = 0.
+$$
+解方程式我們得到 $\alpha=\beta=1$, 也就是梯形法.</p>
+
+<p><strong>Question:</strong> 假設我們現在只想用兩個點的值來估算積分, 那怎樣做會最好?</p>
+
+<p>也就是說我們假設
+$$\int^1_{-1}f(x)\,dx\approx A_0 f(x_0)+A_1 f(x_1),$$
+其中 $A_0, A_1, x_0, x_1$ 都待決定.</p>
+
+<p>我們有四個未知數, 所以理想狀況下應該能從常數到三次多項式都能算準, 依此可以列出四個方程式:
+$$
+\begin{aligned}
+A_0 + A_1 &amp;= 2 \\<br />
+A_0x_0 + A_1x_1 &amp;= 0 \\<br />
+A_0x^2_0 + A_1x^2_1 &amp;= \frac{2}{3} \\<br />
+A_0x^3_0 + A_1x^3_1 &amp;= 0.
+\end{aligned}
+$$
+解方程式我們得到 $A_0=A_1=1$, $x_0=-\frac{1}{\sqrt{3}}$, $x_1=\frac{1}{\sqrt{3}}$. 也就是說</p>
+
+<p>$$
+\int^1_{-1} f(x)\,dx \approx f\left(-\frac{1}{\sqrt{3}}\right)+ f\left(\frac{1}{\sqrt{3}}\right).
+$$
+這就是所謂的兩點高斯積分公式 (two-point Gaussian quadrature formula).</p>
+
+<hr />
+
+<blockquote>
+<p>最後我們看一下以數值積分來估算的例子.</p>
+</blockquote>
+
+<p>我們想計算 $\int^1_{-1} e^x\,dx$, 當然我們知道答案是 $e^1-e^{-1}$, 不過我們想要知道若以上列幾種方法估算會有多準確.</p>
+
+<p><strong>Remark:</strong> 一般來說我們會先將所要積分的範圍分成 $n$ 等分, 接著在每一等分上使用上列積分法. 這就是微積分課本中所介紹的合成積分法 (composite integral rules). 實作上的細節我們就不在這裡討論.</p>
+
+<p>我們將 $[-1, 1]$ 區間均勻分成 $n$ 等分, 再用三種不同積分法來估算積分值. 下表列出不同積分法在不同區間數所得之值與實際值之間的絕對誤差.</p>
+
+<table>
+<thead>
+<tr>
+<th>n\Method</th>
+<th>Midpoint</th>
+<th>Trapezoidal</th>
+<th>Simpson&rsquo;s</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>10</td>
+<td>3.91e-3</td>
+<td>7.83e-3</td>
+<td>2.08e-5</td>
+</tr>
+
+<tr>
+<td>100</td>
+<td>3.92e-5</td>
+<td>7.83e-5</td>
+<td>2.09e-9</td>
+</tr>
+
+<tr>
+<td>1000</td>
+<td>3.92e-7</td>
+<td>7.83e-7</td>
+<td>2.10e-13</td>
+</tr>
+</tbody>
+</table>
+
+<p>我們可以看到, 中點以及梯形法誤差皆是以 $O(n^{-2})$ 來下降, 也就是點數變十倍時誤差會降一百倍, 而辛普森法則是 $O(n^{-4})$.</p>
+
+<p>接著我們試試看用高斯積分來做, 這裡我們就不分小區間, 直接做整個 $[-1, 1]$ 區間. 多個點的高斯積分的公式可在 <a href="https://en.wikipedia.org/wiki/Gaussian_quadrature" target="_blank">wiki</a> 找到. 我們將 $m$-point 高斯積分所得之值與實際值之間的絕對誤差列於下表</p>
+
+<table>
+<thead>
+<tr>
+<th>m\Method</th>
+<th>Gaussian quadrature rule</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>2</td>
+<td>7.71e-3</td>
+</tr>
+
+<tr>
+<td>3</td>
+<td>6.55e-5</td>
+</tr>
+
+<tr>
+<td>4</td>
+<td>2.95e-7</td>
+</tr>
+
+<tr>
+<td>5</td>
+<td>8.25e-10</td>
+</tr>
+
+<tr>
+<td>6</td>
+<td>1.56e-12</td>
+</tr>
+
+<tr>
+<td>7</td>
+<td>2.66e-15</td>
+</tr>
+
+<tr>
+<td>8</td>
+<td>4.44e-16</td>
+</tr>
+</tbody>
+</table>
+
+<p>可以看到我們用 8 個點就可以將這個積分準確估計到誤差接近機器的捨入誤差 (rounding error).</p>
 
 <hr />
 
@@ -590,9 +687,9 @@ $$\frac{\sin(x)}{x}$$</p>
 
 <div class="article-tags">
   
-  <a class="badge badge-light" href="/tags/markdown/">markdown</a>
+  <a class="badge badge-light" href="/tags/numerical_integration/">numerical_integration</a>
   
-  <a class="badge badge-light" href="/tags/latex/">latex</a>
+  <a class="badge badge-light" href="/tags/quadrature/">quadrature</a>
   
 </div>
 
@@ -609,7 +706,7 @@ $$\frac{\sin(x)}{x}$$</p>
       
       
       <li>
-        <a href="https://twitter.com/intent/tweet?url=https://teshenglin.github.io/post/2019_markdown/&amp;text=Markdown%20%e5%ad%b8%e7%bf%92%e7%ad%86%e8%a8%98" target="_blank" rel="noopener" class="share-btn-twitter">
+        <a href="https://twitter.com/intent/tweet?url=https://teshenglin.github.io/post/2019_numerical_integration/&amp;text=%e6%95%b8%e5%80%bc%e7%a9%8d%e5%88%86%e5%88%9d%e6%8e%a2" target="_blank" rel="noopener" class="share-btn-twitter">
           <i class="fab fa-twitter"></i>
         </a>
       </li>
@@ -622,7 +719,7 @@ $$\frac{\sin(x)}{x}$$</p>
       
       
       <li>
-        <a href="https://www.facebook.com/sharer.php?u=https://teshenglin.github.io/post/2019_markdown/&amp;t=Markdown%20%e5%ad%b8%e7%bf%92%e7%ad%86%e8%a8%98" target="_blank" rel="noopener" class="share-btn-facebook">
+        <a href="https://www.facebook.com/sharer.php?u=https://teshenglin.github.io/post/2019_numerical_integration/&amp;t=%e6%95%b8%e5%80%bc%e7%a9%8d%e5%88%86%e5%88%9d%e6%8e%a2" target="_blank" rel="noopener" class="share-btn-facebook">
           <i class="fab fa-facebook-f"></i>
         </a>
       </li>
@@ -635,7 +732,7 @@ $$\frac{\sin(x)}{x}$$</p>
       
       
       <li>
-        <a href="mailto:?subject=Markdown%20%e5%ad%b8%e7%bf%92%e7%ad%86%e8%a8%98&amp;body=https://teshenglin.github.io/post/2019_markdown/" target="_blank" rel="noopener" class="share-btn-email">
+        <a href="mailto:?subject=%e6%95%b8%e5%80%bc%e7%a9%8d%e5%88%86%e5%88%9d%e6%8e%a2&amp;body=https://teshenglin.github.io/post/2019_numerical_integration/" target="_blank" rel="noopener" class="share-btn-email">
           <i class="fas fa-envelope"></i>
         </a>
       </li>

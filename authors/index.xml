@@ -5,12 +5,23 @@
     <link>https://teshenglin.github.io/authors/</link>
       <atom:link href="https://teshenglin.github.io/authors/index.xml" rel="self" type="application/rss+xml" />
     <description>Authors</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 09 Dec 2019 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Wed, 11 Dec 2019 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://teshenglin.github.io/img/icon-192.png</url>
       <title>Authors</title>
       <link>https://teshenglin.github.io/authors/</link>
     </image>
+    
+    <item>
+      <title></title>
+      <link>https://teshenglin.github.io/authors/admin/</link>
+      <pubDate>Wed, 11 Dec 2019 00:00:00 +0000</pubDate>
+      <guid>https://teshenglin.github.io/authors/admin/</guid>
+      <description>&lt;p&gt;I am an assistant professor of &lt;a href=&#34;http://www.math.nctu.edu.tw&#34; target=&#34;_blank&#34;&gt;Department of Applied Mathematics&lt;/a&gt; at &lt;a href=&#34;http://www.nctu.edu.tw&#34; target=&#34;_blank&#34;&gt;National Chiao Tung University, Taiwan&lt;/a&gt;. The focus of my research is concerned with the development of analytical and computational tools for the problems that arises in fluid dynamics, currently in thin liquid films, and further to communicate with scientists from other disciplines to solve engineering problems in practice.&lt;/p&gt;
+
+&lt;p&gt;I received my PhD in Applied Mathematics from &lt;a href=&#34;https://math.njit.edu&#34; target=&#34;_blank&#34;&gt;Department of Mathematical Sciences&lt;/a&gt;, New Jersey Institute of Technology, where I worked with &lt;a href=&#34;http://web.njit.edu/~kondic&#34; target=&#34;_blank&#34;&gt;Lou Kondic&lt;/a&gt; and &lt;a href=&#34;http://cfsm.njit.edu&#34; target=&#34;_blank&#34;&gt;Linda J. Cummings&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>M.-C. Lai</title>
@@ -34,17 +45,6 @@
       <pubDate>Mon, 09 Dec 2019 00:00:00 +0000</pubDate>
       <guid>https://teshenglin.github.io/authors/w.-f.-hu/</guid>
       <description></description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://teshenglin.github.io/authors/admin/</link>
-      <pubDate>Wed, 04 Dec 2019 00:00:00 +0000</pubDate>
-      <guid>https://teshenglin.github.io/authors/admin/</guid>
-      <description>&lt;p&gt;I am an assistant professor of &lt;a href=&#34;http://www.math.nctu.edu.tw&#34; target=&#34;_blank&#34;&gt;Department of Applied Mathematics&lt;/a&gt; at &lt;a href=&#34;http://www.nctu.edu.tw&#34; target=&#34;_blank&#34;&gt;National Chiao Tung University, Taiwan&lt;/a&gt;. The focus of my research is concerned with the development of analytical and computational tools for the problems that arises in fluid dynamics, currently in thin liquid films, and further to communicate with scientists from other disciplines to solve engineering problems in practice.&lt;/p&gt;
-
-&lt;p&gt;I received my PhD in Applied Mathematics from &lt;a href=&#34;https://math.njit.edu&#34; target=&#34;_blank&#34;&gt;Department of Mathematical Sciences&lt;/a&gt;, New Jersey Institute of Technology, where I worked with &lt;a href=&#34;http://web.njit.edu/~kondic&#34; target=&#34;_blank&#34;&gt;Lou Kondic&lt;/a&gt; and &lt;a href=&#34;http://cfsm.njit.edu&#34; target=&#34;_blank&#34;&gt;Linda J. Cummings&lt;/a&gt;.&lt;/p&gt;
-</description>
     </item>
     
     <item>

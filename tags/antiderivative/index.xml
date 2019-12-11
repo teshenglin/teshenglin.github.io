@@ -41,6 +41,58 @@ $$
 &lt;p&gt;所以問題是, 這中間究竟哪裏有問題？&lt;/p&gt;
 
 &lt;hr /&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;不定積分 (indefinite integral) 以及反導函數 (antiderivative function) 是在講同一個東西. 可見 &lt;a href=&#34;https://en.wikipedia.org/wiki/Antiderivative&#34; target=&#34;_blank&#34;&gt;wiki&lt;/a&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;hr /&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;我們最熟悉的數學符號, &amp;lsquo;等號&amp;rsquo;, &amp;lsquo;$=$&amp;rsquo;, 其實在不同的情況下有不同的定義. 雖然都是要表達相等的意思, 不過究竟是怎樣的相等還是有一些小細節需要注意的.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;在不定積分中的等號究竟是什麼意思? 我們都知道 $\cos$ 的反導函數是 $\sin$, 寫成不定積分就是&lt;/p&gt;
+
+&lt;p&gt;$$
+\int\cos(x)\,dx = \sin(x)+c,
+$$
+其中 $c$ 是任意常數. 那上列這個式子的等號是什麼意思?&lt;/p&gt;
+
+&lt;p&gt;我們都知道 $\sin(x)$ 加上任意常數, 其微分都會是 $\cos(x)$, 所以我們才有這個式子. 也就是說, 上面這個等號就是這個意思!!&lt;/p&gt;
+
+&lt;p&gt;再說清楚一點, 當我們寫 $\int f(x)\,dx = F(x)$ 時意思就是 $F&amp;rsquo;(x) = f(x)$.&lt;/p&gt;
+
+&lt;p&gt;所以回到原文最後一個式子, 我把它在這裡重列一次
+$$
+\int \tan(x)\,dx  = -1 + \int\tan(x)\,dx.
+$$
+如果我們把 $\tan$ 的反導函數稱為 $F$, 也就是 $\int\tan(x)\,dx = F(x)$. 那這個式子可以改寫成
+$$
+\int \tan(x)\,dx  = -1 + F(x).
+$$
+我們知道這個式子也是對的因為 $(F(x)-1)&amp;rsquo; = \tan(x)$. 所以從這個角度來說, 這整個式子就都沒有問題了.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;所以最後一個問題是, 我們可以把東西減掉嗎? 舉例來說,
+$$
+\begin{aligned}
+\int\cos(x)\,dx &amp;amp;= \sin(x)+1, \\&lt;br /&gt;
+\int\cos(x)\,dx &amp;amp;= \sin(x).
+\end{aligned}
+$$
+兩式一減我們就得到 $0=1$ 了!!&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;BUT,&lt;/strong&gt; 事實上這樣寫是錯的. 再小心一點做的話你會發現兩式相減我們應該是得到
+$$
+\int 0\,dx = 1.
+$$
+從這裡來看的話, $1$ 的微分是 $0$, 那就完全沒有問題了.&lt;/p&gt;
+
+&lt;hr /&gt;
 </description>
     </item>
     
