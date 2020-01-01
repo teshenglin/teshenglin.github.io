@@ -28,10 +28,10 @@
   
     
   
-  <meta name="description" content="這裡我們要介紹 julia 這個程式語言. 這是一個非常新的語言, 在 2009 年才問世, 遠比 1990 年出生的 python 來的年輕許多. 不過由於它又快又簡單, 又不用錢, 使得目前有越">
+  <meta name="description" content="底下的幾個例子我們將學習怎麼使用繪圖指令. 畫圖的時候我們會用到 Plots 這個 package，因此在第一行我們需要加上： using Plots 以下我們舉幾個簡單的範例來">
 
   
-  <link rel="alternate" hreflang="en-us" href="https://teshenglin.github.io/post/2019_julia/">
+  <link rel="alternate" hreflang="en-us" href="https://teshenglin.github.io/post/2020_julia_plots/">
 
   
 
@@ -103,7 +103,7 @@
   <link rel="icon" type="image/png" href="/img/icon-32.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
 
-  <link rel="canonical" href="https://teshenglin.github.io/post/2019_julia/">
+  <link rel="canonical" href="https://teshenglin.github.io/post/2020_julia_plots/">
 
   
   
@@ -116,13 +116,13 @@
   <meta property="twitter:card" content="summary">
   
   <meta property="og:site_name" content="Te-Sheng Lin">
-  <meta property="og:url" content="https://teshenglin.github.io/post/2019_julia/">
-  <meta property="og:title" content="Julia 學習筆記 | Te-Sheng Lin">
-  <meta property="og:description" content="這裡我們要介紹 julia 這個程式語言. 這是一個非常新的語言, 在 2009 年才問世, 遠比 1990 年出生的 python 來的年輕許多. 不過由於它又快又簡單, 又不用錢, 使得目前有越"><meta property="og:image" content="https://teshenglin.github.io/img/icon-192.png">
+  <meta property="og:url" content="https://teshenglin.github.io/post/2020_julia_plots/">
+  <meta property="og:title" content="Julia 學習筆記 - 畫圖 | Te-Sheng Lin">
+  <meta property="og:description" content="底下的幾個例子我們將學習怎麼使用繪圖指令. 畫圖的時候我們會用到 Plots 這個 package，因此在第一行我們需要加上： using Plots 以下我們舉幾個簡單的範例來"><meta property="og:image" content="https://teshenglin.github.io/img/icon-192.png">
   <meta property="twitter:image" content="https://teshenglin.github.io/img/icon-192.png"><meta property="og:locale" content="en-us">
   
     
-      <meta property="article:published_time" content="2019-10-29T00:00:00&#43;00:00">
+      <meta property="article:published_time" content="2020-01-01T00:00:00&#43;00:00">
     
     <meta property="article:modified_time" content="2020-01-01T21:33:34&#43;08:00">
   
@@ -150,11 +150,11 @@
   "@type": "BlogPosting",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://teshenglin.github.io/post/2019_julia/"
+    "@id": "https://teshenglin.github.io/post/2020_julia_plots/"
   },
-  "headline": "Julia 學習筆記",
+  "headline": "Julia 學習筆記 - 畫圖",
   
-  "datePublished": "2019-10-29T00:00:00Z",
+  "datePublished": "2020-01-01T00:00:00Z",
   "dateModified": "2020-01-01T21:33:34+08:00",
   
   "author": {
@@ -170,7 +170,7 @@
       "url": "https://teshenglin.github.io/img/icon-512.png"
     }
   },
-  "description": "這裡我們要介紹 julia 這個程式語言. 這是一個非常新的語言, 在 2009 年才問世, 遠比 1990 年出生的 python 來的年輕許多. 不過由於它又快又簡單, 又不用錢, 使得目前有越"
+  "description": "底下的幾個例子我們將學習怎麼使用繪圖指令. 畫圖的時候我們會用到 Plots 這個 package，因此在第一行我們需要加上： using Plots 以下我們舉幾個簡單的範例來"
 }
 </script>
 
@@ -188,7 +188,7 @@
 
 
 
-  <title>Julia 學習筆記 | Te-Sheng Lin</title>
+  <title>Julia 學習筆記 - 畫圖 | Te-Sheng Lin</title>
 
 </head>
 
@@ -398,7 +398,7 @@
   
   
 <div class="article-container pt-3">
-  <h1>Julia 學習筆記</h1>
+  <h1>Julia 學習筆記 - 畫圖</h1>
 
   
 
@@ -441,7 +441,7 @@
   
   <span class="middot-divider"></span>
   <span class="article-reading-time">
-    2 min read
+    4 min read
   </span>
   
 
@@ -449,7 +449,7 @@
   
   
   <span class="middot-divider"></span>
-  <a href="/post/2019_julia/#disqus_thread"></a>
+  <a href="/post/2020_julia_plots/#disqus_thread"></a>
   
 
   
@@ -487,141 +487,231 @@
       
 
 <blockquote>
-<p>這裡我們要介紹 julia 這個程式語言. 這是一個非常新的語言, 在 2009 年才問世, 遠比 1990 年出生的 python 來的年輕許多. 不過由於它又<strong><em>快</em></strong>又<strong><em>簡單</em></strong>, 又<strong><em>不用錢</em></strong>, 使得目前有越來越多人開始使用這個新語言. 相信未來會更加普及.</p>
+<p>底下的幾個例子我們將學習怎麼使用繪圖指令.</p>
 </blockquote>
 
-<hr />
+<p>畫圖的時候我們會用到 <code>Plots</code> 這個 package，因此在第一行我們需要加上：</p>
 
-<h2 id="julia-安裝">Julia 安裝</h2>
+<pre><code class="language-julia">using Plots
+</code></pre>
 
-<p>在 <a href="https://julialang.org" target="_blank">Julia 官方網站</a> 上可以下載各系統平台的安裝包裹. 下載安裝後即可運行.</p>
+<p>以下我們舉幾個簡單的範例來看看如何操作.</p>
 
-<ul>
-<li><p>Julia 安裝教學影片可參考 <a href="https://youtu.be/v7XeveI19CM" target="_blank">Julia課程環境簡介 on Youtube</a></p></li>
-
-<li><p>如果只想試用一下的話可以試試 <a href="https://repl.it/languages/julia" target="_blank">repl.it</a> 這個線上編輯器. 它可以讓你在線上編輯並執行一些簡單的 julia 程式.</p></li>
-
-<li><p>如果平常會寫各式程式語言, 可以考慮加安裝 <a href="https://atom.io" target="_blank">atom</a> 編輯器. 它是 github 開發的免費編輯器, 不管 Mac, windows 或是 Linux 都有支援. 我自己有使用 atom 來寫 <code>julia</code>, <code>fortran</code>, <code>html</code> 等.</p></li>
-</ul>
+<p>不過 <code>Plots</code> 這個 package 完整的說明請見 <a href="http://docs.juliaplots.org/latest/" target="_blank">Plots</a></p>
 
 <hr />
 
-<h2 id="julia-基本簡介與語法教學">Julia 基本簡介與語法教學</h2>
+<h2 id="example-1-1-基本函數">Example 1.1 基本函數</h2>
 
-<ul>
-<li><p><a href="https://en.wikibooks.org/wiki/Introducing_Julia" target="_blank">Julia: wikibook</a></p></li>
+<p>這是一個畫出 $\sin(x)$ 的例子。在 plot 指令中我們指定三件事:</p>
 
-<li><p><a href="https://learnxinyminutes.com/docs/julia" target="_blank">Learn X in Y minutes, where X=Julia</a></p></li>
+<ol>
+<li>告訴他我們要畫 $y = \sin(x)$ 這個函數。</li>
+<li>再來要指定函數的範圍 $-2\pi &lt; x &lt; \pi$。</li>
+<li>最後用 label 標註函數圖形。注意要把標註的文字放在 &ldquo; &rdquo; 中。</li>
+</ol>
 
-<li><p>Julia Taiwan發起人杜岳華的 slideshare: <a href="https://www.slideshare.net/ssuserd6984b/coscup-introduction-to-julia" target="_blank">Introduction to Julia</a></p></li>
+<p>另外，也可以畫 $e^x$、$arcsin(x)$ 這些基本函數。</p>
 
-<li><p><a href="https://hackmd.io/@7WeiUEuJSBKp7WCRouAWVg/r106dSpkb/%2FIwZgbAHApgnARgMwLQAYAmKxICxQMZpICGGATEjHtgOwwwrRwCsEQA%3D%3D?type=book" target="_blank">Julia 中文官方文件草稿</a></p></li>
-</ul>
+<pre><code class="language-julia">plot(sin, -pi, pi, label=&quot;sine function&quot;)
+</code></pre>
 
-<hr />
+<p><img src="/post/figs/output_5_01.svg" alt="svg" /></p>
 
-<h3 id="julia-基本簡介">Julia 基本簡介</h3>
+<h2 id="example-1-2-基本函數">Example 1.2 基本函數</h2>
 
-<ul>
-<li><p>查詢版本資訊</p>
+<p>這是一個畫出 $\sin^{-1}(x)$ 的例子，有幾件事需要注意：</p>
 
-<pre><code class="language-julia">julia&gt; versioninfo()
+<ol>
+<li>$\sin(x)$ 的反函數 $arcsin(x)$ 的指令為 asin。</li>
+
+<li><p>函數的範圍為 $-1 &lt; x &lt; 1$。</p>
+
+<pre><code class="language-julia">plot(asin, -1, 1, label=&quot;arcsine function&quot;)
 </code></pre></li>
+</ol>
 
-<li><p>套件(package)管理</p>
+<p><img src="/post/figs/output_7_0.svg" alt="svg" /></p>
 
-<pre><code class="language-julia">julia&gt; ]
+<hr />
+
+<h2 id="example-2">Example 2</h2>
+
+<p>接著我們看三維圖形的例子。這個例子中我們要畫出三圍中的一條曲線</p>
+
+<p>$$\left(x(t), y(t), z(t)\right) = (t\cos t, t\sin t, t), \quad t\in[0, 8\pi].$$</p>
+
+<ol>
+<li>先將 $8\pi$ 切成 N 等分, 間距為 $\Delta t = 8\pi/N$.
+
+<ol>
+<li>在 julia 中可使用 unicode 變數名稱, 比如 $\Delta$ 打法是 <code>\Delta</code> 接著按 tab 鍵, $\pi$ 則是 <code>\Pi</code>.</li>
+</ol></li>
+<li>定義 $n$ 是一個 $(N+1)\times 1$ 的向量，n = [0, 1, 2, &hellip;,N]。</li>
+<li>定義 $t_i$ 是 $\Delta t\times n$</li>
+<li>$x = t_i .*\cos .(ti)$，注意向量相乘以及函數在向量的取值都需要加個<code>.</code>。</li>
+<li>y 與 z 的值與 x 的值定義方法類似。</li>
+</ol>
+
+<p>由 (x,y,z) 的定義方式我們知道它是一個螺旋線，螺旋的半徑從 0 一直增加到 $8 \pi$。角度也是從 0 到 $8 \pi$，所以總共繞了4圈。
+在 plot 指令中我們用 marker 選擇圖形的樣式為圓圈(circle)，legend=false 代表不標記圖形。</p>
+
+<pre><code class="language-julia">N = 200;
+Δt = 8*π/N;
+n= 0.0:N;
+ti = Δt*n
+x = ti.*cos.(ti);
+y = ti.*sin.(ti);
+z = ti;
+plot(x, y, z, marker=:circle, legend=false)
 </code></pre>
 
-<p>然後就會進入套件管理系統</p>
+<p><img src="/post/figs/output_9_0.svg" alt="svg" /></p>
 
-<pre><code class="language-julia">(vX.X) pkg&gt;
+<p>另外, 可以用 <code>camera</code> 這個指令來調整 3D 視角, 裡面數字是角度 (方位角azimuth, 高度角altitude).</p>
+
+<pre><code class="language-julia">plot(x, y, z, marker=:circle, legend=false, camera = (30, 80))
 </code></pre>
 
-<p>查詢已安裝套件</p>
+<p><img src="/post/figs/output_11_0.svg" alt="svg" /></p>
 
-<pre><code class="language-julia">(vX.X) pkg&gt; status
-</code></pre>
+<p>我們也可以使用指令 <code>plotd3d</code>.</p>
 
-<p>更新套件</p>
+<ul>
+<li><p>我們設定 linewidth (lw) 等於 2 以及 legend (leg) 等於 false 表示不標記圖形.</p>
 
-<pre><code class="language-julia">(vX.X) pkg&gt; update
-</code></pre>
-
-<p>跳出系統請按鍵盤上的<strong>刪除鍵</strong>.</p></li>
-
-<li><p>查詢指令(如matlab中的help)</p>
-
-<pre><code class="language-julia">julia&gt; ?
-</code></pre>
-
-<p>然後就會變成查詢的視窗</p>
-
-<pre><code class="language-julia">help?&gt;
+<pre><code class="language-julia">plot3d(x, y, z, lw=2, leg=false)
 </code></pre></li>
 </ul>
 
-<hr />
-
-<h3 id="jupyter-notebook-安裝">Jupyter notebook 安裝</h3>
-
-<blockquote>
-<p>Jupyter notebook 是個互動式筆記本, 很容易可以逐行執行並且做到資料視覺化, 並且支援多種主流的直譯語言像是 <code>Julia</code>, <code>python</code>, <code>R</code>. 有一說是 jupyter 這個字事實上就是由 julia, python 以及 R 這三個字組合而成.</p>
-</blockquote>
-
-<p>安裝 Jupyter notebook 有兩種方式. 第一種是直接由 julia 安裝. 步驟如下</p>
-
-<p>在 julia 輸入 <code>]</code> 進入套件管理命令提示. 然後會長得像這樣</p>
-
-<pre><code class="language-julia">(v1.1) pkg&gt;
-</code></pre>
-
-<p>接著輸入 <code>status</code> 可以看到現在已經安裝的套件.</p>
-
-<p>我們要安裝 IJulia, 所以輸入</p>
-
-<pre><code class="language-julia">(v1.1) pkg&gt; add IJulia
-</code></pre>
-
-<p>安裝完後要退出套件管理則是 BackSpace 鍵或是 Ctrl+C 都可以.</p>
-
-<p>要打開 notebook 需要退出套件管理, 並在 julia 命令提示字元下輸入</p>
-
-<pre><code class="language-julia">julia&gt; using IJulia
-julia&gt; notebook()
-</code></pre>
-
-<p>這樣 Jupyter notebook 就會在你的瀏覽器中打開.</p>
-
-<ul>
-<li>若還是有不清楚的地方請見 <a href="https://medium.com/@jamescchuang/實戰安裝及建置-julia-開發環境-6dc8c0d14c2a" target="_blank">安裝及建置 Julia 開發環境實戰教學</a></li>
-</ul>
-
-<p>安裝 Jupyter notebook 的第二種方式則是透過 anaconda. 先裝完 julia 後下載 anaconda 安裝, 即可快樂使用.</p>
-
-<ul>
-<li><p>若還是有不清楚的地方請見 <a href="https://medium.com/datainpoint/jupyter-kernels-3151a6408bab" target="_blank">打造 Jupyter Notebook 資料科學環境</a></p></li>
-
-<li><p>目前已經有 jupyter notebook 的升級版, 稱為 jupyter lab. 以 conda 安裝完成後在 julia 命令提示字元下輸入</p>
-
-<pre><code class="language-julia">julia&gt; using IJulia
-julia&gt; jupyterlab()
-</code></pre>
-
-<p>這樣 Jupyter lab 就會在你的瀏覽器中打開.</p></li>
-</ul>
+<p><img src="/post/figs/output_13_0.svg" alt="svg" /></p>
 
 <hr />
 
-<h2 id="youtube-上的-julia-超新手教學">Youtube 上的 Julia 超新手教學</h2>
+<h2 id="example-3">Example 3</h2>
+
+<p>這個例子中，我們將學到怎麼在一個畫好的圖形上再加上另一個圖形。
+我們嘗試一個簡單的例子，</p>
+
+<ol>
+<li>第一個圖形，x 座標是取整數 1 到 10。y 軸取 0 到 1 之間的亂數，共十個小數。再來，用 plot 指令將第一個圖形畫出。</li>
+
+<li><p>第二個圖形，使用相同的 x 座標，函數值 z 取亂數。將第二個函數圖形與第一個圖形重疊，我們需要指令 plot!</p>
+
+<pre><code class="language-julia">x = 1:10; y = rand(10);
+plot(x,y)
+z = rand(10)
+plot!(x,z)
+</code></pre></li>
+</ol>
+
+<p><img src="/post/figs/output_15_0.svg" alt="svg" /></p>
+
+<hr />
+
+<h2 id="example-4">Example 4</h2>
+
+<p>在一個圖形中同時畫出兩個函數，除了上述的方法之外我們還可以這麼做： 直接把兩個函數值定義成一個矩陣</p>
+
+<ol>
+<li>定義 x 是整數 1 到 10。</li>
+<li>定義函數值 y 是一個 10*2 的矩陣，矩陣的第一行代表第一個函數的值，而矩陣的第二行代表第二個函數的值。y值的取法為 0 到 1 之間的亂數，為小數。</li>
+</ol>
+
+<p>使用 plot 將兩個函數值同時畫出，用 title 設定圖形標題，lw=3 設定線段寬度。</p>
+
+<p>用 label=[&ldquo;Line 1&rdquo; &ldquo;Line 2&rdquo;] 標記函數名稱，須注意順序：
+Line 1 會標記 y 的第一個函數值，Line 2 會標記 y 的第二個函數值。</p>
+
+<p>x 軸的名稱有兩種設定方式，</p>
+
+<ol>
+<li>在 plot 指令中加入：xlabel = &ldquo;My x label&rdquo;。 (xlabel 後面不用&rdquo;!&ldquo;)</li>
+
+<li><p>或是在 plot 指令的下一行用 xlabel!(&ldquo;My x label&rdquo;) 加入。(xlabel! 後面要用&rdquo;!&ldquo;)</p>
+
+<pre><code class="language-julia">x = 1:10; y = rand(10,2);
+plot(x,y,title=&quot;Two Lines&quot;,label=[&quot;Line 1&quot; &quot;Line 2&quot;],lw=3,xlabel = &quot;My x label&quot;)
+</code></pre></li>
+</ol>
+
+<p><img src="/post/figs/output_17_0.svg" alt="svg" /></p>
+
+<pre><code class="language-julia">x = 1:10; y = rand(10,2);
+plot(x,y,title=&quot;Two Lines&quot;,label=[&quot;Line 1&quot; &quot;Line 2&quot;],lw=3)
+xlabel!(&quot;My x label&quot;)
+</code></pre>
+
+<p><img src="/post/figs/output_18_0.svg" alt="svg" /></p>
+
+<hr />
+
+<h2 id="example-5">Example 5</h2>
+
+<p>如果函數取點的方法不同，能不能畫在同一張圖形中呢？
+我們看下面的例子：</p>
+
+<ol>
+<li>y 這個矩陣裡包含兩筆資料，x 的取點都是整數 1 到 10。所以可以用 &ldquo;一個&rdquo; 指令把兩筆資料畫出來。令這張圖叫做 p</li>
+
+<li><p>z 這筆資料為 0 到 1 中的 19 個亂數，xx 的取點也是19個在 [1, 10] 的均勻取點。所以我們用 plot! 指令，先畫出 p, 再把 z 這筆資料畫上去。</p>
+
+<pre><code class="language-julia">x = 1:10; y = rand(10,2);
+p = plot(x,y)
+
+xx = 1:19
+z = rand(19)
+plot!(p,xx,z)
+</code></pre></li>
+</ol>
+
+<p><img src="/post/figs/output_20_0.svg" alt="svg" /></p>
+
+<p><strong>NOTE:</strong> 利用 <code>plot(x,y,xx,z)</code> 這樣的指令是行不通的!</p>
+
+<p><strong>Remark:</strong> 另外，畫圖也可以用 <code>PyPlot</code> 這個 package，有很多有趣的效果可以用。</p>
+
+<p>更多範例請見 <a href="http://blog.maxkit.com.tw/2019/06/julia-data-visulization.html" target="_blank">Julia Data Visualization</a></p>
+
+<hr />
+
+<h2 id="example-6-曲面">Example 6 - 曲面</h2>
+
+<p>這個例子我們示範如何畫曲面 $(x, y, h(x,y))$, where $h(x,y) = exp(-(x^2+y^2))$.</p>
 
 <ul>
-<li><p><a href="https://github.com/JuliaLangTW/julia_tutorials_for_dummy" target="_blank">Julia Taiwan 超新手教學之一 on github</a></p></li>
+<li>首先, 我們設定 x 與 y 的範圍 $[-1, 1]$.</li>
+<li>接著我們設定函數 &ldquo;h&rdquo;</li>
 
-<li><p><a href="https://youtu.be/zzrctueO6JY" target="_blank">Julia Taiwan 超新手教學之二 on Youtube</a></p></li>
+<li><p>最後, 我們利用指令 <code>surface</code> 來畫曲面.</p>
 
-<li><p><a href="https://youtu.be/W7R5dxGrxlk" target="_blank">Julia Taiwan 超新手教學之三 on Youtube</a></p></li>
+<pre><code class="language-julia">x=-1:0.01:1;
+y=-1:0.01:1;
+h(x,y)=exp.(-(x^2+y^2));
+surface(x,y,h)
+</code></pre></li>
 </ul>
+
+<p><img src="/post/figs/output_23_0.svg" alt="svg" /></p>
+
+<hr />
+
+<h2 id="example-7-動畫">Example 7: 動畫</h2>
+
+<p>如果要將很多圖片合在一起做成動畫也是可以, 以下這個簡單例子將動畫存成一個 gif 檔.</p>
+
+<p>更多細節請見 <a href="https://docs.juliaplots.org/latest/animations/" target="_blank">julia_plots_animations</a></p>
+
+<pre><code class="language-julia">p = plot([sin, cos], zeros(0), leg=false)
+anim = Animation()
+for x = range(0, stop=10π, length=100)
+    push!(p, x, Float64[sin(x), cos(x)])
+    frame(anim)
+end
+gif(anim, &quot;sine_cosine.gif&quot;)
+</code></pre>
+
+<p><img src="/post/figs/sine_cosine.gif" /></p>
 
 <hr />
 
@@ -652,7 +742,7 @@ julia&gt; jupyterlab()
       
       
       <li>
-        <a href="https://twitter.com/intent/tweet?url=https://teshenglin.github.io/post/2019_julia/&amp;text=Julia%20%e5%ad%b8%e7%bf%92%e7%ad%86%e8%a8%98" target="_blank" rel="noopener" class="share-btn-twitter">
+        <a href="https://twitter.com/intent/tweet?url=https://teshenglin.github.io/post/2020_julia_plots/&amp;text=Julia%20%e5%ad%b8%e7%bf%92%e7%ad%86%e8%a8%98%20-%20%e7%95%ab%e5%9c%96" target="_blank" rel="noopener" class="share-btn-twitter">
           <i class="fab fa-twitter"></i>
         </a>
       </li>
@@ -665,7 +755,7 @@ julia&gt; jupyterlab()
       
       
       <li>
-        <a href="https://www.facebook.com/sharer.php?u=https://teshenglin.github.io/post/2019_julia/&amp;t=Julia%20%e5%ad%b8%e7%bf%92%e7%ad%86%e8%a8%98" target="_blank" rel="noopener" class="share-btn-facebook">
+        <a href="https://www.facebook.com/sharer.php?u=https://teshenglin.github.io/post/2020_julia_plots/&amp;t=Julia%20%e5%ad%b8%e7%bf%92%e7%ad%86%e8%a8%98%20-%20%e7%95%ab%e5%9c%96" target="_blank" rel="noopener" class="share-btn-facebook">
           <i class="fab fa-facebook-f"></i>
         </a>
       </li>
@@ -678,7 +768,7 @@ julia&gt; jupyterlab()
       
       
       <li>
-        <a href="mailto:?subject=Julia%20%e5%ad%b8%e7%bf%92%e7%ad%86%e8%a8%98&amp;body=https://teshenglin.github.io/post/2019_julia/" target="_blank" rel="noopener" class="share-btn-email">
+        <a href="mailto:?subject=Julia%20%e5%ad%b8%e7%bf%92%e7%ad%86%e8%a8%98%20-%20%e7%95%ab%e5%9c%96&amp;body=https://teshenglin.github.io/post/2020_julia_plots/" target="_blank" rel="noopener" class="share-btn-email">
           <i class="fas fa-envelope"></i>
         </a>
       </li>
@@ -815,6 +905,17 @@ julia&gt; jupyterlab()
 
 
   
+  
+  <div class="article-widget content-widget-hr">
+    <h3>Related</h3>
+    <ul>
+      
+      <li><a href="/post/2020_julia_timing/">Julia 學習筆記 - 計時</a></li>
+      
+      <li><a href="/post/2019_julia/">Julia 學習筆記</a></li>
+      
+    </ul>
+  </div>
   
 
 

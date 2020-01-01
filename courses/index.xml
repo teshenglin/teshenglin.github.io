@@ -1349,6 +1349,15 @@ color:#FF0000;
                     &lt;strong&gt;&lt;a href=&#34;#lw&#34;&gt;Probabilistic Structure Learning for EEG/MEG Source Imaging with Hierarchical Graph Prior&lt;/a&gt;&lt;/strong&gt;
                 &lt;/td&gt;
             &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;December 24&lt;/td&gt;
+                &lt;td&gt;&lt;strong&gt;Lien-Yung Kao&lt;/strong&gt;, Department of Mathematics, University of Chicago.
+                    &lt;br /&gt;
+                    (&lt;strong&gt;高連庸&lt;/strong&gt;, 芝加哥大學數學系.)
+                    &lt;br /&gt;
+                    &lt;strong&gt;&lt;a href=&#34;#lyk&#34;&gt;Dynamics, Geometry and Rigidity&lt;/a&gt;&lt;/strong&gt;
+                &lt;/td&gt;
+            &lt;/tr&gt;
 
         &lt;/table&gt;
 
@@ -1505,6 +1514,16 @@ In this talk I will first give an overview what is known. If there is time I wil
                     &lt;strong&gt;Abstract:&lt;/strong&gt;
                     &lt;br /&gt;
                     &lt;p&gt;Brain source imaging is an important method for noninvasively characterizing brain activity using Electroencephalogram (EEG) or Magnetoencephalography (MEG) recordings. Traditional EEG/MEG Source Imaging (ESI) methods usually assume that either source activities at different time points are unrelated, or that similar spatiotemporal patterns exist across an entire study period. The former assumption makes ESI analyses sensitive to noise, while the latter renders ESI analyses unable to account for time-varying patterns of activity. To effectively deal with noise while maintaining flexibility and continuity among brain activation patterns, we propose a novel probabilistic ESI model based on a hierarchical graph prior. In our method, a spanning tree constraint is imposed to ensure that activity patterns have spatiotemporal continuity. An efficient algorithm based on alternating convex search is presented to solve the proposed model and is provably convergent. Comprehensive numerical studies using synthetic data on a real brain model are conducted under different levels of signal-to-noise ratio (SNR) from both sensor and source spaces. We also examine the EEG/MEG data from two real applications, in which our ESI reconstructions are neurologically plausible. All results demonstrate significant improvements of the proposed algorithm over the benchmark methods in terms of source localization performance, especially at high noise levels. &lt;/p&gt;
+                &lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;Dec. 24, &lt;strong&gt;&lt;a name=&#34;lyk&#34;&gt;Lien-Yung Kao&lt;/a&gt;&lt;/strong&gt;&lt;/td&gt;
+                &lt;td&gt;&lt;strong&gt;Title: &#34;Dynamics, Geometry and Rigidity&#34;&lt;/strong&gt;
+                    &lt;br /&gt;
+                    &lt;br /&gt;
+                    &lt;strong&gt;Abstract:&lt;/strong&gt;
+                    &lt;br /&gt;
+                    &lt;p&gt;In this talk, we aim to have a glance of the spark between dynamics and geometry. I will start from ``what are dynamical systems&#39;&#39; and try to answer ``how could dynamics tell us about the geometry.&#34; Along the way, I will introduce works of Sinai (2014 Abel Prize winner), Margulis (1978 Fields medalist), Thurston (1982 Fields medalist), McMullen (1998 Fields medalist), Mirzakhani (2014 Fields medalist), and some of my recent works on entropy rigidity and pressure metrics.&lt;/p&gt;
                 &lt;/td&gt;
             &lt;/tr&gt;
 

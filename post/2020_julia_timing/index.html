@@ -28,10 +28,10 @@
   
     
   
-  <meta name="description" content="這裡我們要介紹 julia 這個程式語言. 這是一個非常新的語言, 在 2009 年才問世, 遠比 1990 年出生的 python 來的年輕許多. 不過由於它又快又簡單, 又不用錢, 使得目前有越">
+  <meta name="description" content="這裡我們要介紹 julia 計算程式執行時間的指令. 簡單來說，julia 計算程式運行效能有幾個指令： @time 顯示出程式運行的秒數以及記憶體的使用狀況 @timed 顯示程式">
 
   
-  <link rel="alternate" hreflang="en-us" href="https://teshenglin.github.io/post/2019_julia/">
+  <link rel="alternate" hreflang="en-us" href="https://teshenglin.github.io/post/2020_julia_timing/">
 
   
 
@@ -103,7 +103,7 @@
   <link rel="icon" type="image/png" href="/img/icon-32.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
 
-  <link rel="canonical" href="https://teshenglin.github.io/post/2019_julia/">
+  <link rel="canonical" href="https://teshenglin.github.io/post/2020_julia_timing/">
 
   
   
@@ -116,13 +116,13 @@
   <meta property="twitter:card" content="summary">
   
   <meta property="og:site_name" content="Te-Sheng Lin">
-  <meta property="og:url" content="https://teshenglin.github.io/post/2019_julia/">
-  <meta property="og:title" content="Julia 學習筆記 | Te-Sheng Lin">
-  <meta property="og:description" content="這裡我們要介紹 julia 這個程式語言. 這是一個非常新的語言, 在 2009 年才問世, 遠比 1990 年出生的 python 來的年輕許多. 不過由於它又快又簡單, 又不用錢, 使得目前有越"><meta property="og:image" content="https://teshenglin.github.io/img/icon-192.png">
+  <meta property="og:url" content="https://teshenglin.github.io/post/2020_julia_timing/">
+  <meta property="og:title" content="Julia 學習筆記 - 計時 | Te-Sheng Lin">
+  <meta property="og:description" content="這裡我們要介紹 julia 計算程式執行時間的指令. 簡單來說，julia 計算程式運行效能有幾個指令： @time 顯示出程式運行的秒數以及記憶體的使用狀況 @timed 顯示程式"><meta property="og:image" content="https://teshenglin.github.io/img/icon-192.png">
   <meta property="twitter:image" content="https://teshenglin.github.io/img/icon-192.png"><meta property="og:locale" content="en-us">
   
     
-      <meta property="article:published_time" content="2019-10-29T00:00:00&#43;00:00">
+      <meta property="article:published_time" content="2020-01-01T00:00:00&#43;00:00">
     
     <meta property="article:modified_time" content="2020-01-01T21:33:34&#43;08:00">
   
@@ -150,11 +150,11 @@
   "@type": "BlogPosting",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://teshenglin.github.io/post/2019_julia/"
+    "@id": "https://teshenglin.github.io/post/2020_julia_timing/"
   },
-  "headline": "Julia 學習筆記",
+  "headline": "Julia 學習筆記 - 計時",
   
-  "datePublished": "2019-10-29T00:00:00Z",
+  "datePublished": "2020-01-01T00:00:00Z",
   "dateModified": "2020-01-01T21:33:34+08:00",
   
   "author": {
@@ -170,7 +170,7 @@
       "url": "https://teshenglin.github.io/img/icon-512.png"
     }
   },
-  "description": "這裡我們要介紹 julia 這個程式語言. 這是一個非常新的語言, 在 2009 年才問世, 遠比 1990 年出生的 python 來的年輕許多. 不過由於它又快又簡單, 又不用錢, 使得目前有越"
+  "description": "這裡我們要介紹 julia 計算程式執行時間的指令. 簡單來說，julia 計算程式運行效能有幾個指令： @time 顯示出程式運行的秒數以及記憶體的使用狀況 @timed 顯示程式"
 }
 </script>
 
@@ -188,7 +188,7 @@
 
 
 
-  <title>Julia 學習筆記 | Te-Sheng Lin</title>
+  <title>Julia 學習筆記 - 計時 | Te-Sheng Lin</title>
 
 </head>
 
@@ -398,7 +398,7 @@
   
   
 <div class="article-container pt-3">
-  <h1>Julia 學習筆記</h1>
+  <h1>Julia 學習筆記 - 計時</h1>
 
   
 
@@ -449,7 +449,7 @@
   
   
   <span class="middot-divider"></span>
-  <a href="/post/2019_julia/#disqus_thread"></a>
+  <a href="/post/2020_julia_timing/#disqus_thread"></a>
   
 
   
@@ -487,143 +487,241 @@
       
 
 <blockquote>
-<p>這裡我們要介紹 julia 這個程式語言. 這是一個非常新的語言, 在 2009 年才問世, 遠比 1990 年出生的 python 來的年輕許多. 不過由於它又<strong><em>快</em></strong>又<strong><em>簡單</em></strong>, 又<strong><em>不用錢</em></strong>, 使得目前有越來越多人開始使用這個新語言. 相信未來會更加普及.</p>
+<p>這裡我們要介紹 julia 計算程式執行時間的指令.</p>
 </blockquote>
 
-<hr />
-
-<h2 id="julia-安裝">Julia 安裝</h2>
-
-<p>在 <a href="https://julialang.org" target="_blank">Julia 官方網站</a> 上可以下載各系統平台的安裝包裹. 下載安裝後即可運行.</p>
+<p>簡單來說，julia 計算程式運行效能有幾個指令：</p>
 
 <ul>
-<li><p>Julia 安裝教學影片可參考 <a href="https://youtu.be/v7XeveI19CM" target="_blank">Julia課程環境簡介 on Youtube</a></p></li>
-
-<li><p>如果只想試用一下的話可以試試 <a href="https://repl.it/languages/julia" target="_blank">repl.it</a> 這個線上編輯器. 它可以讓你在線上編輯並執行一些簡單的 julia 程式.</p></li>
-
-<li><p>如果平常會寫各式程式語言, 可以考慮加安裝 <a href="https://atom.io" target="_blank">atom</a> 編輯器. 它是 github 開發的免費編輯器, 不管 Mac, windows 或是 Linux 都有支援. 我自己有使用 atom 來寫 <code>julia</code>, <code>fortran</code>, <code>html</code> 等.</p></li>
+<li><code>@time</code> 顯示出程式運行的秒數以及記憶體的使用狀況</li>
+<li><code>@timed</code> 顯示程式執行回傳值，秒數以及記憶體的使用狀況</li>
+<li><code>@timev</code> 顯示<code>@time</code>一樣的資訊，最後顯示程式執行回傳值</li>
+<li><code>@elapsed</code> 顯示出某程式運行的秒數</li>
 </ul>
 
-<hr />
+<p><strong>BUT,</strong> 真正要計算程式效能, 還是推薦用 <code>BenchmarkTools.jl</code> 這個 package.</p>
 
-<h2 id="julia-基本簡介與語法教學">Julia 基本簡介與語法教學</h2>
+<p>以下範例中我們需要使用兩個 package: <code>LinearAlgebra</code> 以及 <code>BenchmarkTools</code></p>
 
-<ul>
-<li><p><a href="https://en.wikibooks.org/wiki/Introducing_Julia" target="_blank">Julia: wikibook</a></p></li>
-
-<li><p><a href="https://learnxinyminutes.com/docs/julia" target="_blank">Learn X in Y minutes, where X=Julia</a></p></li>
-
-<li><p>Julia Taiwan發起人杜岳華的 slideshare: <a href="https://www.slideshare.net/ssuserd6984b/coscup-introduction-to-julia" target="_blank">Introduction to Julia</a></p></li>
-
-<li><p><a href="https://hackmd.io/@7WeiUEuJSBKp7WCRouAWVg/r106dSpkb/%2FIwZgbAHApgnARgMwLQAYAmKxICxQMZpICGGATEjHtgOwwwrRwCsEQA%3D%3D?type=book" target="_blank">Julia 中文官方文件草稿</a></p></li>
-</ul>
+<pre><code class="language-julia">using LinearAlgebra
+using BenchmarkTools
+</code></pre>
 
 <hr />
 
-<h3 id="julia-基本簡介">Julia 基本簡介</h3>
+<h2 id="example-1-matrix-matrix-multiplication">Example 1: Matrix-matrix multiplication</h2>
 
-<ul>
-<li><p>查詢版本資訊</p>
+<p>我們以矩陣乘法 $C=A\times B$ 為例：$A:n\times p$, $B:p\times m$, $C:n\times m$</p>
 
-<pre><code class="language-julia">julia&gt; versioninfo()
-</code></pre></li>
+<p>f1 這個函數會產生兩個隨機矩陣 $A$, $B$ 並且將他們相乘:</p>
 
-<li><p>套件(package)管理</p>
-
-<pre><code class="language-julia">julia&gt; ]
+<pre><code class="language-julia">function f1(n, p, m)
+   A=rand(n,p)
+   B=rand(p,m)
+   C=zeros(Float64,n,m)
+   for i in 1:n
+      for j in 1:m
+         for k in 1:p
+            C[i,j] = C[i,j]+A[i,k]*B[k,j]
+         end
+       end
+    end
+end
 </code></pre>
 
-<p>然後就會進入套件管理系統</p>
-
-<pre><code class="language-julia">(vX.X) pkg&gt;
+<pre><code>f1 (generic function with 1 method)
 </code></pre>
 
-<p>查詢已安裝套件</p>
+<p>我們先試試看以 julia 既有的計算時間指令來看結果如何</p>
 
-<pre><code class="language-julia">(vX.X) pkg&gt; status
+<pre><code class="language-julia">@time f1(100,10,200)
 </code></pre>
 
-<p>更新套件</p>
-
-<pre><code class="language-julia">(vX.X) pkg&gt; update
+<pre><code>  0.076423 seconds (161.79 k allocations: 8.380 MiB)
 </code></pre>
 
-<p>跳出系統請按鍵盤上的<strong>刪除鍵</strong>.</p></li>
-
-<li><p>查詢指令(如matlab中的help)</p>
-
-<pre><code class="language-julia">julia&gt; ?
+<pre><code class="language-julia">@timed f1(100,10,200)
 </code></pre>
 
-<p>然後就會變成查詢的視窗</p>
+<pre><code>(nothing, 0.000448109, 184496, 0.0, Base.GC_Diff(184496, 1, 0, 5, 2, 0, 0, 0, 0))
+</code></pre>
 
-<pre><code class="language-julia">help?&gt;
-</code></pre></li>
-</ul>
+<pre><code class="language-julia">@timev f1(100,10,200)
+</code></pre>
+
+<pre><code>  0.005932 seconds (8 allocations: 180.172 KiB, 92.28% gc time)
+elapsed time (ns): 5931535
+gc time (ns):      5473727
+bytes allocated:   184496
+pool allocs:       5
+non-pool GC allocs:2
+malloc() calls:    1
+GC pauses:         1
+</code></pre>
+
+<pre><code class="language-julia">@elapsed f1(100,10,200)
+</code></pre>
+
+<pre><code>0.000561533
+</code></pre>
+
+<p>這些指令的表現如同一開始我們所介紹的, 顯示出程式執行時間以及其他資訊.</p>
+
+<p>不過一般而言一個程式在第一次跑及之後幾次跑的運行效能會不同, 這是由於初始化的關係. 所以我們通常要跑好幾次來算平均, 已得知一個程式的真正效能.</p>
+
+<p><code>benchmark</code> 就提供了這樣的功用, 他會跑好幾次程式, 並且計算最大最小時間.</p>
+
+<pre><code class="language-julia">@benchmark f1(100,10,200)
+</code></pre>
+
+<pre><code>BenchmarkTools.Trial:
+  memory estimate:  180.02 KiB
+  allocs estimate:  4
+  --------------
+  minimum time:     437.243 μs (0.00% GC)
+  median time:      485.922 μs (0.00% GC)
+  mean time:        513.114 μs (3.90% GC)
+  maximum time:     44.383 ms (98.89% GC)
+  --------------
+  samples:          9711
+  evals/sample:     1
+</code></pre>
+
+<p>接著我們看一下如果用 <code>LinearAlgebra</code> 裡的矩陣乘法指令效能如何.</p>
+
+<pre><code class="language-julia">function f2(n, p, m)
+    A=rand(n,p)
+    B=rand(p,m)
+    C=zeros(Float64,n,m)
+    mul!(C,A,B);
+end
+</code></pre>
+
+<pre><code>f2 (generic function with 1 method)
+</code></pre>
+
+<pre><code class="language-julia">@benchmark f2(100,10,200)
+</code></pre>
+
+<pre><code>BenchmarkTools.Trial:
+  memory estimate:  180.02 KiB
+  allocs estimate:  4
+  --------------
+  minimum time:     41.088 μs (0.00% GC)
+  median time:      91.270 μs (0.00% GC)
+  mean time:        106.954 μs (19.04% GC)
+  maximum time:     45.286 ms (99.75% GC)
+  --------------
+  samples:          10000
+  evals/sample:     1
+</code></pre>
+
+<p>看起來似乎比我們自己寫的 for-loop 效能好一些.</p>
 
 <hr />
 
-<h3 id="jupyter-notebook-安裝">Jupyter notebook 安裝</h3>
+<h2 id="type-stability">type-stability</h2>
 
-<blockquote>
-<p>Jupyter notebook 是個互動式筆記本, 很容易可以逐行執行並且做到資料視覺化, 並且支援多種主流的直譯語言像是 <code>Julia</code>, <code>python</code>, <code>R</code>. 有一說是 jupyter 這個字事實上就是由 julia, python 以及 R 這三個字組合而成.</p>
-</blockquote>
+<p>julia 語言號稱效能非常好, 不過常常我們自己寫一個 julia 程式發現跑得沒有很快, 這通常是由於所謂的 “型別穩定性 type-stability”. 這樣的問題可以藉由以下幾個 julia 內建的巨集程式來診斷.</p>
 
-<p>安裝 Jupyter notebook 有兩種方式. 第一種是直接由 julia 安裝. 步驟如下</p>
-
-<p>在 julia 輸入 <code>]</code> 進入套件管理命令提示. 然後會長得像這樣</p>
-
-<pre><code class="language-julia">(v1.1) pkg&gt;
+<pre><code class="language-julia">@code_warntype f1(10,10,10)
 </code></pre>
 
-<p>接著輸入 <code>status</code> 可以看到現在已經安裝的套件.</p>
-
-<p>我們要安裝 IJulia, 所以輸入</p>
-
-<pre><code class="language-julia">(v1.1) pkg&gt; add IJulia
+<pre><code class="language-julia">@code_typed f1(10,10,10)
 </code></pre>
 
-<p>安裝完後要退出套件管理則是 BackSpace 鍵或是 Ctrl+C 都可以.</p>
-
-<p>要打開 notebook 需要退出套件管理, 並在 julia 命令提示字元下輸入</p>
-
-<pre><code class="language-julia">julia&gt; using IJulia
-julia&gt; notebook()
+<pre><code class="language-julia">@code_native f1(10,10,10)
 </code></pre>
 
-<p>這樣 Jupyter notebook 就會在你的瀏覽器中打開.</p>
-
-<ul>
-<li>若還是有不清楚的地方請見 <a href="https://medium.com/@jamescchuang/實戰安裝及建置-julia-開發環境-6dc8c0d14c2a" target="_blank">安裝及建置 Julia 開發環境實戰教學</a></li>
-</ul>
-
-<p>安裝 Jupyter notebook 的第二種方式則是透過 anaconda. 先裝完 julia 後下載 anaconda 安裝, 即可快樂使用.</p>
-
-<ul>
-<li><p>若還是有不清楚的地方請見 <a href="https://medium.com/datainpoint/jupyter-kernels-3151a6408bab" target="_blank">打造 Jupyter Notebook 資料科學環境</a></p></li>
-
-<li><p>目前已經有 jupyter notebook 的升級版, 稱為 jupyter lab. 以 conda 安裝完成後在 julia 命令提示字元下輸入</p>
-
-<pre><code class="language-julia">julia&gt; using IJulia
-julia&gt; jupyterlab()
-</code></pre>
-
-<p>這樣 Jupyter lab 就會在你的瀏覽器中打開.</p></li>
-</ul>
+<p>這方面更深入的說明可見 <a href="https://docs.julialang.org/en/v1/manual/performance-tips/" target="_blank">julia: performance tips</a></p>
 
 <hr />
 
-<h2 id="youtube-上的-julia-超新手教學">Youtube 上的 Julia 超新手教學</h2>
+<h2 id="example-2-vector-2-norm">Example 2: Vector 2-norm</h2>
 
-<ul>
-<li><p><a href="https://github.com/JuliaLangTW/julia_tutorials_for_dummy" target="_blank">Julia Taiwan 超新手教學之一 on github</a></p></li>
+<p>接著我們看一下算向量 2-norm 的效能, 一樣我們比較一下自己寫的以及 call 函數的方式.</p>
 
-<li><p><a href="https://youtu.be/zzrctueO6JY" target="_blank">Julia Taiwan 超新手教學之二 on Youtube</a></p></li>
+<pre><code class="language-julia">function t1(n)
+    vec = rand(1,n);
+    vec*vec';
+end
+</code></pre>
 
-<li><p><a href="https://youtu.be/W7R5dxGrxlk" target="_blank">Julia Taiwan 超新手教學之三 on Youtube</a></p></li>
-</ul>
+<pre><code>t1 (generic function with 1 method)
+</code></pre>
+
+<pre><code class="language-julia">@benchmark t1(10^5)
+</code></pre>
+
+<pre><code>BenchmarkTools.Trial:
+  memory estimate:  781.42 KiB
+  allocs estimate:  3
+  --------------
+  minimum time:     423.973 μs (0.00% GC)
+  median time:      504.538 μs (0.00% GC)
+  mean time:        606.699 μs (9.87% GC)
+  maximum time:     47.376 ms (98.43% GC)
+  --------------
+  samples:          8213
+  evals/sample:     1
+</code></pre>
+
+<pre><code class="language-julia">function t2(n)
+    vec = rand(1,n);
+    sum(abs2, vec);
+end
+</code></pre>
+
+<pre><code>t2 (generic function with 1 method)
+</code></pre>
+
+<pre><code class="language-julia">@benchmark t2(10^5)
+</code></pre>
+
+<pre><code>BenchmarkTools.Trial:
+  memory estimate:  781.33 KiB
+  allocs estimate:  2
+  --------------
+  minimum time:     141.160 μs (0.00% GC)
+  median time:      195.940 μs (0.00% GC)
+  mean time:        335.496 μs (19.51% GC)
+  maximum time:     64.500 ms (99.17% GC)
+  --------------
+  samples:          10000
+  evals/sample:     1
+</code></pre>
 
 <hr />
+
+<h2 id="example-3-solving-linear-system">Example 3: Solving linear system</h2>
+
+<p>這裡我們看一下解線性系統, 也就是 matlab 常見的&rdquo;左除&rdquo;, 的效率如何.</p>
+
+<pre><code class="language-julia">function s1(n)
+    A=rand(n,n);
+    b=rand(n);
+    A\b;
+end
+</code></pre>
+
+<pre><code>s1 (generic function with 1 method)
+</code></pre>
+
+<pre><code class="language-julia">@benchmark s1(1000)
+</code></pre>
+
+<pre><code>BenchmarkTools.Trial:
+  memory estimate:  15.28 MiB
+  allocs estimate:  8
+  --------------
+  minimum time:     13.463 ms (0.00% GC)
+  median time:      16.817 ms (10.20% GC)
+  mean time:        18.148 ms (9.36% GC)
+  maximum time:     64.226 ms (77.63% GC)
+  --------------
+  samples:          276
+  evals/sample:     1
+</code></pre>
 
     </div>
 
@@ -652,7 +750,7 @@ julia&gt; jupyterlab()
       
       
       <li>
-        <a href="https://twitter.com/intent/tweet?url=https://teshenglin.github.io/post/2019_julia/&amp;text=Julia%20%e5%ad%b8%e7%bf%92%e7%ad%86%e8%a8%98" target="_blank" rel="noopener" class="share-btn-twitter">
+        <a href="https://twitter.com/intent/tweet?url=https://teshenglin.github.io/post/2020_julia_timing/&amp;text=Julia%20%e5%ad%b8%e7%bf%92%e7%ad%86%e8%a8%98%20-%20%e8%a8%88%e6%99%82" target="_blank" rel="noopener" class="share-btn-twitter">
           <i class="fab fa-twitter"></i>
         </a>
       </li>
@@ -665,7 +763,7 @@ julia&gt; jupyterlab()
       
       
       <li>
-        <a href="https://www.facebook.com/sharer.php?u=https://teshenglin.github.io/post/2019_julia/&amp;t=Julia%20%e5%ad%b8%e7%bf%92%e7%ad%86%e8%a8%98" target="_blank" rel="noopener" class="share-btn-facebook">
+        <a href="https://www.facebook.com/sharer.php?u=https://teshenglin.github.io/post/2020_julia_timing/&amp;t=Julia%20%e5%ad%b8%e7%bf%92%e7%ad%86%e8%a8%98%20-%20%e8%a8%88%e6%99%82" target="_blank" rel="noopener" class="share-btn-facebook">
           <i class="fab fa-facebook-f"></i>
         </a>
       </li>
@@ -678,7 +776,7 @@ julia&gt; jupyterlab()
       
       
       <li>
-        <a href="mailto:?subject=Julia%20%e5%ad%b8%e7%bf%92%e7%ad%86%e8%a8%98&amp;body=https://teshenglin.github.io/post/2019_julia/" target="_blank" rel="noopener" class="share-btn-email">
+        <a href="mailto:?subject=Julia%20%e5%ad%b8%e7%bf%92%e7%ad%86%e8%a8%98%20-%20%e8%a8%88%e6%99%82&amp;body=https://teshenglin.github.io/post/2020_julia_timing/" target="_blank" rel="noopener" class="share-btn-email">
           <i class="fas fa-envelope"></i>
         </a>
       </li>
@@ -815,6 +913,17 @@ julia&gt; jupyterlab()
 
 
   
+  
+  <div class="article-widget content-widget-hr">
+    <h3>Related</h3>
+    <ul>
+      
+      <li><a href="/post/2020_julia_plots/">Julia 學習筆記 - 畫圖</a></li>
+      
+      <li><a href="/post/2019_julia/">Julia 學習筆記</a></li>
+      
+    </ul>
+  </div>
   
 
 
