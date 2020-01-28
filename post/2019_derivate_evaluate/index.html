@@ -28,7 +28,7 @@
   
     
   
-  <meta name="description" content="前情提要: 用電腦算極限 這裡我們要講的是用數值計算來算函數的微分值. 已知一個函數 $f(x)$ 在某個點 $a$ 的微分值定義是 $$ f&rsquo;(a) = \lim_{h\to 0} \frac{f(a&#43;h)-f(a)}{h}. $$ 我們用一個簡單的例子試">
+  <meta name="description" content="這裡我們要講的是用數值計算來算函數的微分值. 已知一個函數 $f(x)$ 在某個點 $a$ 的微分值定義是 $$ f&rsquo;(a) = \lim_{h\to 0} \frac{f(a&#43;h)-f(a)}{h}. $$ 我們用一個簡單的例子試試看. 假設我們想求 $f(x)=x^2$ 在">
 
   
   <link rel="alternate" hreflang="en-us" href="https://teshenglin.github.io/post/2019_derivate_evaluate/">
@@ -118,7 +118,7 @@
   <meta property="og:site_name" content="Te-Sheng Lin">
   <meta property="og:url" content="https://teshenglin.github.io/post/2019_derivate_evaluate/">
   <meta property="og:title" content="用電腦算微分 | Te-Sheng Lin">
-  <meta property="og:description" content="前情提要: 用電腦算極限 這裡我們要講的是用數值計算來算函數的微分值. 已知一個函數 $f(x)$ 在某個點 $a$ 的微分值定義是 $$ f&rsquo;(a) = \lim_{h\to 0} \frac{f(a&#43;h)-f(a)}{h}. $$ 我們用一個簡單的例子試"><meta property="og:image" content="https://teshenglin.github.io/img/icon-192.png">
+  <meta property="og:description" content="這裡我們要講的是用數值計算來算函數的微分值. 已知一個函數 $f(x)$ 在某個點 $a$ 的微分值定義是 $$ f&rsquo;(a) = \lim_{h\to 0} \frac{f(a&#43;h)-f(a)}{h}. $$ 我們用一個簡單的例子試試看. 假設我們想求 $f(x)=x^2$ 在"><meta property="og:image" content="https://teshenglin.github.io/img/icon-192.png">
   <meta property="twitter:image" content="https://teshenglin.github.io/img/icon-192.png"><meta property="og:locale" content="en-us">
   
     
@@ -170,7 +170,7 @@
       "url": "https://teshenglin.github.io/img/icon-512.png"
     }
   },
-  "description": "前情提要: 用電腦算極限 這裡我們要講的是用數值計算來算函數的微分值. 已知一個函數 $f(x)$ 在某個點 $a$ 的微分值定義是 $$ f\u0026rsquo;(a) = \\lim_{h\\to 0} \\frac{f(a+h)-f(a)}{h}. $$ 我們用一個簡單的例子試"
+  "description": "這裡我們要講的是用數值計算來算函數的微分值. 已知一個函數 $f(x)$ 在某個點 $a$ 的微分值定義是 $$ f\u0026rsquo;(a) = \\lim_{h\\to 0} \\frac{f(a+h)-f(a)}{h}. $$ 我們用一個簡單的例子試試看. 假設我們想求 $f(x)=x^2$ 在"
 }
 </script>
 
@@ -484,31 +484,19 @@
   <div class="article-container">
 
     <div class="article-style">
-      
-
-<div class="alert alert-note">
-  <div>
-    前情提要: <a href="/post/2019_limit_evaluate">用電腦算極限</a>
-  </div>
-</div>
-
+      <!-- raw HTML omitted -->
 <blockquote>
 <p>這裡我們要講的是用數值計算來算函數的微分值.</p>
 </blockquote>
-
 <p>已知一個函數 $f(x)$ 在某個點 $a$ 的微分值定義是
 $$
 f&rsquo;(a) = \lim_{h\to 0} \frac{f(a+h)-f(a)}{h}.
 $$</p>
-
 <p>我們用一個簡單的例子試試看. 假設我們想求 $f(x)=x^2$ 在 $x=\pi$ 的微分. 根據定義我們有</p>
-
 <p>$$
 f&rsquo;(\pi) = \lim_{h\to 0} \frac{(\pi+h)^2-\pi^2}{h}.
 $$</p>
-
 <p>接著我們將 $h$ 取靠近 $0$ 的 $1000$ 的點並帶入上列這個式子試著來算其極限值.</p>
-
 <pre><code>1000×2 Array{Float64,2}:
  1.0    7.28319
  0.999  7.28219
@@ -537,11 +525,8 @@ $$</p>
  0.002  6.28519
  0.001  6.28419
 </code></pre>
-
 <p>上列數字左邊是 $h$ 值, 右邊為估計的微分值. 我們發現的確這個數字會越來越接近真實的解, 也就是 $2\pi$, 約等於 $6.283185307179586$.</p>
-
 <p>接著我們算一下這個值與真實值 $2\pi$ 之間的差, 我們取其絕對值來表示</p>
-
 <pre><code>1000×2 Array{Float64,2}:
  1.0    1.0
  0.999  0.999
@@ -570,15 +555,10 @@ $$</p>
  0.002  0.002
  0.001  0.001
 </code></pre>
-
 <p>的確, 當 $x$ 越來越靠近 $\pi$ 時這個估計出來的微分值離 $2\pi$ 的距離越來越小.</p>
-
-<hr />
-
+<hr>
 <p><strong>Question:</strong> 用數值計算微分能有多精確? 這個誤差能不能一直遞減下去?</p>
-
 <p>接著我們取更多靠近 $0$ 的點來計算微分的極限值, 我們列出其與真實值 $2\pi$ 之間的差, 並且把它畫出來.</p>
-
 <pre><code>241×2 Array{Float64,2}:
  0.00673795   0.00673795
  0.00609675   0.00609675
@@ -607,23 +587,15 @@ $$</p>
  2.81119e-13  0.00220945
  2.54367e-13  0.001922
 </code></pre>
-
 <p>觀察最後一列數字發現, 當 $h=2.54367*10^{-13}$ 時, 估計出來的微分值與真實值差了 $0.001922$ 這麼多!!</p>
-
 <p>我們把它畫出來看看, 橫軸是 $h$, 縱軸是 $\left|\frac{(\pi+h)^2-\pi^2}{h}-2\pi\right|$</p>
-
-<p><img src="/post/figs/output_22_0.svg" alt="svg" /></p>
-
+<p><img src="/post/figs/output_22_0.svg" alt="svg"></p>
 <p>那誤差最小值出現在什麼時候呢?</p>
-
 <pre><code>1×2 Array{Float64,2}:
  5.05653e-8  7.25251e-9
 </code></pre>
-
-<p>我們發現當 $h=5.05653*10^{-8}$ 時, 其估計出來的微分值離真實值誤差最小, 其誤差為 $7.25251*10^{-9}$.</p>
-
+<p>我們發現當 $h=5.05653<em>10^{-8}$ 時, 其估計出來的微分值離真實值誤差最小, 其誤差為 $7.25251</em>10^{-9}$.</p>
 <p>不過, WHY?? 為什麼誤差不會一直往下遞減? 其實這也是因為捨入誤差的關西.</p>
-
 <p>觀察一下我們的式子
 $$
 \frac{f(a+h)-f(a)}{h}
@@ -633,27 +605,23 @@ $$
 \frac{f(a+h)-f(a) + \epsilon}{h}
 $$
 其中的 $\epsilon$ 就是捨入誤差. 所以, 我們計算的時候會多出了 $\frac{\epsilon}{h}$ 這麼多.</p>
-
 <p>如果依我們之前所算的 $\epsilon\approx 10^{-16}$, 那當 $h=10^{-8}$ 時, 算出來的數字會多了大約 $\frac{10^{-16}}{10^{-8}} = 10^{-8}$.</p>
-
 <p>而當 $h=10^{-13}$ 時, 算出來的數字會多了大約 $\frac{10^{-16}}{10^{-13}} = 10^{-3}$. 跟我們之前所發現的完全吻合!!</p>
-
-<hr />
-
+<hr>
 <h3 id="summary">Summary:</h3>
-
 <p>最後總結一下:</p>
-
 <ul>
-<li><p>我們可以用數值計算來估計一個函數在某點的微分值
+<li>
+<p>我們可以用數值計算來估計一個函數在某點的微分值
 $$
 f&rsquo;(a) = \lim_{h\to 0} \frac{f(a+h)-f(a)}{h}.
-$$</p></li>
-
-<li><p>不過計算時 $h$ 值不能無限取小, 需考慮到捨入誤差的影響.</p></li>
+$$</p>
+</li>
+<li>
+<p>不過計算時 $h$ 值不能無限取小, 需考慮到捨入誤差的影響.</p>
+</li>
 </ul>
-
-<hr />
+<hr>
 
     </div>
 

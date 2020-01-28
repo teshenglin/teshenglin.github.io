@@ -17,61 +17,44 @@
       <link>https://teshenglin.github.io/post/2019_maxmin/</link>
       <pubDate>Tue, 29 Oct 2019 00:00:00 +0000</pubDate>
       <guid>https://teshenglin.github.io/post/2019_maxmin/</guid>
-      <description>
-
-&lt;blockquote&gt;
+      <description>&lt;blockquote&gt;
 &lt;p&gt;這裡我們要討論一個函數的最大值以及最小值.&lt;/p&gt;
 &lt;/blockquote&gt;
-
 &lt;p&gt;首先我們有極值定理&lt;/p&gt;
-
 &lt;blockquote&gt;
 &lt;h2 id=&#34;theorem-extreme-value-theorem&#34;&gt;Theorem: Extreme value theorem&lt;/h2&gt;
-
 &lt;p&gt;If $f$ is a real-valued continuous function on the closed interval $[a,b]$, then $f$ must attain a maximum and a minimum.&lt;/p&gt;
 &lt;/blockquote&gt;
-
 &lt;p&gt;所以對於定義在封閉區間的連續函數, 必定會有極值. 接下來我們看一下實際上我們怎麼把極值找出來.&lt;/p&gt;
-
 &lt;p&gt;在微積分課本裡有所謂的封閉區間法, 如下:&lt;/p&gt;
-
 &lt;h2 id=&#34;the-closed-interval-method&#34;&gt;The closed interval method&lt;/h2&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-mermaid&#34;&gt;graph TD;
+&lt;pre&gt;&lt;code class=&#34;language-mermaid&#34; data-lang=&#34;mermaid&#34;&gt;graph TD;
   B[f is `continuous` on a `closed interval`]--&amp;gt;A;
   B--&amp;gt;C;
   A[Determine the critical points]--&amp;gt;|f&#39;=0| D(The largest value at these points is the abs. max. and the smallest value is the abs. min.);
   A--&amp;gt;|f&#39; not exists| D;
   C[Determine the end points]--&amp;gt;D;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;這個方法的原理跟做法都很簡單, 我這邊就不多做說明.&lt;/p&gt;
-
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;這個方法的原理跟做法都很簡單, 我這邊就不多做說明.&lt;/p&gt;
 &lt;p&gt;不過我要做一些補充. 事實上這個方法要能用還有一個很重要的假設是&lt;code&gt;假設這個函數只在有限個地方微分不存在&lt;/code&gt;. 如果一個函數在無窮多地方微分不存在, 雖然最大值還會是 &amp;ldquo;微分等於 0&amp;rdquo;, &amp;ldquo;微分不存在&amp;rdquo;, &amp;ldquo;端點&amp;rdquo; 這些地方的函數值中找最大的. 不過實作上會找不完. 所以等於是沒有用.&lt;/p&gt;
-
-&lt;p&gt;當然這樣的假設看起來很正常, 難道有函數是連續的, 但是在無窮多地方微分不存在嗎? 很不幸的也很幸運的, 真的有! 其中有一個很特別的函數叫做 &lt;a href=&#34;https://en.wikipedia.org/wiki/Weierstrass_function&#34; target=&#34;_blank&#34;&gt;Weierstrass function&lt;/a&gt;. 它是定義在實數軸上的函數, 在每個點都連續, 但是同時在任何一個點微分都不存在. 所以如果套用 the closed interval method 在這函數上會發現所有的點都是 critical point, 所以套用之後還是必須要找出所有點中函數值最大的. 完全沒有簡化到.&lt;/p&gt;
-
+&lt;p&gt;當然這樣的假設看起來很正常, 難道有函數是連續的, 但是在無窮多地方微分不存在嗎? 很不幸的也很幸運的, 真的有! 其中有一個很特別的函數叫做 &lt;a href=&#34;https://en.wikipedia.org/wiki/Weierstrass_function&#34;&gt;Weierstrass function&lt;/a&gt;. 它是定義在實數軸上的函數, 在每個點都連續, 但是同時在任何一個點微分都不存在. 所以如果套用 the closed interval method 在這函數上會發現所有的點都是 critical point, 所以套用之後還是必須要找出所有點中函數值最大的. 完全沒有簡化到.&lt;/p&gt;
 &lt;h3 id=&#34;question-1-是否存在連續-但是在每個點微分都等於-0-的函數&#34;&gt;Question 1: 是否存在連續, 但是在每個點微分都等於 0 的函數?&lt;/h3&gt;
-
 &lt;p&gt;當然有! 常數函數就是. 不過這個很好 check 最大最小值所以沒什麼問題.&lt;/p&gt;
-
-&lt;h3 id=&#34;question-2-是否存在連續-但是在每個點微分都等於-0-的非常數函數-non-constant-function&#34;&gt;Question 2: 是否存在連續, 但是在每個點微分都等於 0 的非常數函數(non-constant function)?&lt;/h3&gt;
-
+&lt;h3 id=&#34;question-2-是否存在連續-但是在每個點微分都等於-0-的非常數函數non-constant-function&#34;&gt;Question 2: 是否存在連續, 但是在每個點微分都等於 0 的非常數函數(non-constant function)?&lt;/h3&gt;
 &lt;p&gt;I will leave it as an exercise.&lt;/p&gt;
-
-&lt;hr /&gt;
-
+&lt;hr&gt;
 &lt;p&gt;最後再補充一點, 函數在某個點連續但是微分不存在有幾種情形:&lt;/p&gt;
-
 &lt;ol&gt;
-&lt;li&gt;&lt;p&gt;尖點. 例如 $f(x) = |x|$ 在 $x=0$ 時.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;垂直切線. 例如 $f(x) = \sqrt[3]{x}$ 在 $x=0$ 時.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;微分定義中的極限不存在. 例如 $f(x) = x\sin(x)$ 在 $x=0$ 時.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;尖點. 例如 $f(x) = |x|$ 在 $x=0$ 時.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;垂直切線. 例如 $f(x) = \sqrt[3]{x}$ 在 $x=0$ 時.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;微分定義中的極限不存在. 例如 $f(x) = x\sin(x)$ 在 $x=0$ 時.&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ol&gt;
-
-&lt;hr /&gt;
+&lt;hr&gt;
 </description>
     </item>
     

@@ -484,61 +484,44 @@
   <div class="article-container">
 
     <div class="article-style">
-      
-
-<blockquote>
+      <blockquote>
 <p>這裡我們要討論一個函數的最大值以及最小值.</p>
 </blockquote>
-
 <p>首先我們有極值定理</p>
-
 <blockquote>
 <h2 id="theorem-extreme-value-theorem">Theorem: Extreme value theorem</h2>
-
 <p>If $f$ is a real-valued continuous function on the closed interval $[a,b]$, then $f$ must attain a maximum and a minimum.</p>
 </blockquote>
-
 <p>所以對於定義在封閉區間的連續函數, 必定會有極值. 接下來我們看一下實際上我們怎麼把極值找出來.</p>
-
 <p>在微積分課本裡有所謂的封閉區間法, 如下:</p>
-
 <h2 id="the-closed-interval-method">The closed interval method</h2>
-
-<pre><code class="language-mermaid">graph TD;
+<pre><code class="language-mermaid" data-lang="mermaid">graph TD;
   B[f is `continuous` on a `closed interval`]--&gt;A;
   B--&gt;C;
   A[Determine the critical points]--&gt;|f'=0| D(The largest value at these points is the abs. max. and the smallest value is the abs. min.);
   A--&gt;|f' not exists| D;
   C[Determine the end points]--&gt;D;
-</code></pre>
-
-<p>這個方法的原理跟做法都很簡單, 我這邊就不多做說明.</p>
-
+</code></pre><p>這個方法的原理跟做法都很簡單, 我這邊就不多做說明.</p>
 <p>不過我要做一些補充. 事實上這個方法要能用還有一個很重要的假設是<code>假設這個函數只在有限個地方微分不存在</code>. 如果一個函數在無窮多地方微分不存在, 雖然最大值還會是 &ldquo;微分等於 0&rdquo;, &ldquo;微分不存在&rdquo;, &ldquo;端點&rdquo; 這些地方的函數值中找最大的. 不過實作上會找不完. 所以等於是沒有用.</p>
-
-<p>當然這樣的假設看起來很正常, 難道有函數是連續的, 但是在無窮多地方微分不存在嗎? 很不幸的也很幸運的, 真的有! 其中有一個很特別的函數叫做 <a href="https://en.wikipedia.org/wiki/Weierstrass_function" target="_blank">Weierstrass function</a>. 它是定義在實數軸上的函數, 在每個點都連續, 但是同時在任何一個點微分都不存在. 所以如果套用 the closed interval method 在這函數上會發現所有的點都是 critical point, 所以套用之後還是必須要找出所有點中函數值最大的. 完全沒有簡化到.</p>
-
+<p>當然這樣的假設看起來很正常, 難道有函數是連續的, 但是在無窮多地方微分不存在嗎? 很不幸的也很幸運的, 真的有! 其中有一個很特別的函數叫做 <a href="https://en.wikipedia.org/wiki/Weierstrass_function">Weierstrass function</a>. 它是定義在實數軸上的函數, 在每個點都連續, 但是同時在任何一個點微分都不存在. 所以如果套用 the closed interval method 在這函數上會發現所有的點都是 critical point, 所以套用之後還是必須要找出所有點中函數值最大的. 完全沒有簡化到.</p>
 <h3 id="question-1-是否存在連續-但是在每個點微分都等於-0-的函數">Question 1: 是否存在連續, 但是在每個點微分都等於 0 的函數?</h3>
-
 <p>當然有! 常數函數就是. 不過這個很好 check 最大最小值所以沒什麼問題.</p>
-
-<h3 id="question-2-是否存在連續-但是在每個點微分都等於-0-的非常數函數-non-constant-function">Question 2: 是否存在連續, 但是在每個點微分都等於 0 的非常數函數(non-constant function)?</h3>
-
+<h3 id="question-2-是否存在連續-但是在每個點微分都等於-0-的非常數函數non-constant-function">Question 2: 是否存在連續, 但是在每個點微分都等於 0 的非常數函數(non-constant function)?</h3>
 <p>I will leave it as an exercise.</p>
-
-<hr />
-
+<hr>
 <p>最後再補充一點, 函數在某個點連續但是微分不存在有幾種情形:</p>
-
 <ol>
-<li><p>尖點. 例如 $f(x) = |x|$ 在 $x=0$ 時.</p></li>
-
-<li><p>垂直切線. 例如 $f(x) = \sqrt[3]{x}$ 在 $x=0$ 時.</p></li>
-
-<li><p>微分定義中的極限不存在. 例如 $f(x) = x\sin(x)$ 在 $x=0$ 時.</p></li>
+<li>
+<p>尖點. 例如 $f(x) = |x|$ 在 $x=0$ 時.</p>
+</li>
+<li>
+<p>垂直切線. 例如 $f(x) = \sqrt[3]{x}$ 在 $x=0$ 時.</p>
+</li>
+<li>
+<p>微分定義中的極限不存在. 例如 $f(x) = x\sin(x)$ 在 $x=0$ 時.</p>
+</li>
 </ol>
-
-<hr />
+<hr>
 
     </div>
 

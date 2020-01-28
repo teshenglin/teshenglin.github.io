@@ -17,121 +17,100 @@
       <link>https://teshenglin.github.io/post/2019_numerical_integration/</link>
       <pubDate>Wed, 11 Dec 2019 00:00:00 +0000</pubDate>
       <guid>https://teshenglin.github.io/post/2019_numerical_integration/</guid>
-      <description>
-
-&lt;blockquote&gt;
-&lt;p&gt;在微積分課程裡我們有學到積分的&amp;rsquo;中點法&amp;rsquo;, &amp;lsquo;梯形法&amp;rsquo;以及&amp;rsquo;辛普森法&amp;rsquo;. 這裡我們簡介一些基本概念並且引進高斯積分法.&lt;/p&gt;
+      <description>&lt;blockquote&gt;
+&lt;p&gt;在微積分課程裡我們有學到積分的&#39;中點法&amp;rsquo;, &amp;lsquo;梯形法&#39;以及&#39;辛普森法&amp;rsquo;. 這裡我們簡介一些基本概念並且引進高斯積分法.&lt;/p&gt;
 &lt;/blockquote&gt;
-
-&lt;h4 id=&#34;goal-任意給定一可積分函數-f-x-x-in-1-1-我們想要算-int-1-1-f-x-dx&#34;&gt;Goal: 任意給定一可積分函數 $f(x)$, $x\in[-1, 1]$, 我們想要算 $\int^1_{-1} f(x)\,dx$.&lt;/h4&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;&lt;strong&gt;Remark:&lt;/strong&gt; 對任一個積分式 $\int^b_{a} g(x)\,dx$ 我們皆可用變數變換來將此積分轉到 $[-1, 1]$ 這個區間. 所以我們只需考慮 $[-1, 1]$ 即可.&lt;/p&gt;
-
-&lt;hr /&gt;
-
+&lt;h4 id=&#34;goal-任意給定一可積分函數-fx-xin-1-1-我們想要算-int1_-1-fxdx&#34;&gt;Goal: 任意給定一可積分函數 $f(x)$, $x\in[-1, 1]$, 我們想要算 $\int^1_{-1} f(x),dx$.&lt;/h4&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Remark:&lt;/strong&gt; 對任一個積分式 $\int^b_{a} g(x),dx$ 我們皆可用變數變換來將此積分轉到 $[-1, 1]$ 這個區間. 所以我們只需考慮 $[-1, 1]$ 即可.&lt;/p&gt;
+&lt;hr&gt;
 &lt;p&gt;首先我們討論一下哪種方法比較準. 一個最簡單的判斷方法是看積分法能不能將多項式算準.&lt;/p&gt;
-
 &lt;p&gt;我們考慮三種積分法:&lt;/p&gt;
-
 &lt;ol&gt;
-&lt;li&gt;&lt;p&gt;Midpoint rule: $\int^1_{-1}f(x)\,dx\approx 2f(0)$&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Trapezoidal rule: $\int^1_{-1}f(x)\,dx\approx f(-1)+f(1)$&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Simpson&amp;rsquo;s rule: $\int^1_{-1}f(x)\,dx\approx \frac{1}{3}(f(-1)+4f(0)+f(1))$&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Midpoint rule: $\int^1_{-1}f(x),dx\approx 2f(0)$&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Trapezoidal rule: $\int^1_{-1}f(x),dx\approx f(-1)+f(1)$&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Simpson&#39;s rule: $\int^1_{-1}f(x),dx\approx \frac{1}{3}(f(-1)+4f(0)+f(1))$&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ol&gt;
-
 &lt;ul&gt;
-&lt;li&gt;&lt;p&gt;我們先檢驗常數函數: $\int^1_{-1} 1\,dx=2$. 很快我們就可以發現以上三種方法都可以得出完全正確的答案.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;接著我們檢驗一次函數: $\int^1_{-1} x\,dx=0$. 一樣, 三種方法都得出正確答案.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;二次函數: $\int^1_{-1} x^2\,dx=\frac{2}{3}$. 對於二次函數我們發現, 中點法以及梯形法都無法算出正確答案, 只有辛普森法能成功.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;三次函數: $\int^1_{-1} x^3\,dx=0$. 對於三次函數我們只檢驗辛普森法, 發現三次函數辛普森法也能算準.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;四次函數: $\int^1_{-1} x^4\,dx=\frac{2}{5}$. 對於四次函數, 辛普森法就算錯了.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;我們先檢驗常數函數: $\int^1_{-1} 1,dx=2$. 很快我們就可以發現以上三種方法都可以得出完全正確的答案.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;接著我們檢驗一次函數: $\int^1_{-1} x,dx=0$. 一樣, 三種方法都得出正確答案.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;二次函數: $\int^1_{-1} x^2,dx=\frac{2}{3}$. 對於二次函數我們發現, 中點法以及梯形法都無法算出正確答案, 只有辛普森法能成功.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;三次函數: $\int^1_{-1} x^3,dx=0$. 對於三次函數我們只檢驗辛普森法, 發現三次函數辛普森法也能算準.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;四次函數: $\int^1_{-1} x^4,dx=\frac{2}{5}$. 對於四次函數, 辛普森法就算錯了.&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
-
 &lt;p&gt;&lt;strong&gt;小結論&lt;/strong&gt;&lt;/p&gt;
-
 &lt;ol&gt;
 &lt;li&gt;中點跟梯形法準確率相同, 能準確的算出任意一次多項式的積分值.&lt;/li&gt;
 &lt;li&gt;辛普森法比中點及梯形法更準確, 並且它能準確的算出任意三次多項式的積分值.&lt;/li&gt;
 &lt;/ol&gt;
-
-&lt;hr /&gt;
-
+&lt;hr&gt;
 &lt;blockquote&gt;
-&lt;p&gt;接著我們稍微推廣一下, 並且介紹所謂的&amp;rsquo;高斯積分&amp;rsquo;.&lt;/p&gt;
+&lt;p&gt;接著我們稍微推廣一下, 並且介紹所謂的&#39;高斯積分&amp;rsquo;.&lt;/p&gt;
 &lt;/blockquote&gt;
-
 &lt;p&gt;&lt;strong&gt;Question:&lt;/strong&gt; 假設我們現在想要用函數在 $x=0$ 這個點的值來估算積分, 那係數要取多少會最好?&lt;/p&gt;
-
 &lt;p&gt;也就是說我們假設
-$$\int^1_{-1}f(x)\,dx\approx A_0f(0),$$
+$$\int^1_{-1}f(x),dx\approx A_0f(0),$$
 其中 $A_0$ 是個常數. 那 $A_0$ 要選哪個數字, 這個積分公式才會算的最準?&lt;/p&gt;
-
-&lt;p&gt;依照我們之前的想法, 要讓積分式準就是要讓他把多項式算準. 所以我們希望他至少能把常數函數算準. 這樣的話很容易就看出 $A_0=2$, 也就是&amp;rsquo;中點法&amp;rsquo;.&lt;/p&gt;
-
+&lt;p&gt;依照我們之前的想法, 要讓積分式準就是要讓他把多項式算準. 所以我們希望他至少能把常數函數算準. 這樣的話很容易就看出 $A_0=2$, 也就是&#39;中點法&amp;rsquo;.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Question:&lt;/strong&gt; 假設我們現在想要用函數在 $x=-1$ 以及 $x=1$ 這兩個點的值來估算積分, 那係數要取多少會最好?&lt;/p&gt;
-
 &lt;p&gt;也就是說我們假設
-$$\int^1_{-1}f(x)\,dx\approx \alpha f(-1)+\beta f(1),$$
+$$\int^1_{-1}f(x),dx\approx \alpha f(-1)+\beta f(1),$$
 其中 $\alpha, \beta$ 是常數.&lt;/p&gt;
-
 &lt;p&gt;我們有兩個未知數, 所以我們希望他至少能把常數及一次函數算準. 這樣的話我們可以列出方程式:
 $$
 \alpha + \beta = 2, \quad -\alpha + \beta = 0.
 $$
 解方程式我們得到 $\alpha=\beta=1$, 也就是梯形法.&lt;/p&gt;
-
 &lt;p&gt;&lt;strong&gt;Question:&lt;/strong&gt; 假設我們現在只想用兩個點的值來估算積分, 那怎樣做會最好?&lt;/p&gt;
-
 &lt;p&gt;也就是說我們假設
-$$\int^1_{-1}f(x)\,dx\approx A_0 f(x_0)+A_1 f(x_1),$$
+$$\int^1_{-1}f(x),dx\approx A_0 f(x_0)+A_1 f(x_1),$$
 其中 $A_0, A_1, x_0, x_1$ 都待決定.&lt;/p&gt;
-
 &lt;p&gt;我們有四個未知數, 所以理想狀況下應該能從常數到三次多項式都能算準, 依此可以列出四個方程式:
 $$
 \begin{aligned}
-A_0 + A_1 &amp;amp;= 2 \\&lt;br /&gt;
-A_0x_0 + A_1x_1 &amp;amp;= 0 \\&lt;br /&gt;
-A_0x^2_0 + A_1x^2_1 &amp;amp;= \frac{2}{3} \\&lt;br /&gt;
+A_0 + A_1 &amp;amp;= 2 \\\&lt;br&gt;
+A_0x_0 + A_1x_1 &amp;amp;= 0 \\\&lt;br&gt;
+A_0x^2_0 + A_1x^2_1 &amp;amp;= \frac{2}{3} \\\&lt;br&gt;
 A_0x^3_0 + A_1x^3_1 &amp;amp;= 0.
 \end{aligned}
 $$
 解方程式我們得到 $A_0=A_1=1$, $x_0=-\frac{1}{\sqrt{3}}$, $x_1=\frac{1}{\sqrt{3}}$. 也就是說&lt;/p&gt;
-
 &lt;p&gt;$$
-\int^1_{-1} f(x)\,dx \approx f\left(-\frac{1}{\sqrt{3}}\right)+ f\left(\frac{1}{\sqrt{3}}\right).
+\int^1_{-1} f(x),dx \approx f\left(-\frac{1}{\sqrt{3}}\right)+ f\left(\frac{1}{\sqrt{3}}\right).
 $$
 這就是所謂的兩點高斯積分公式 (two-point Gaussian quadrature formula).&lt;/p&gt;
-
-&lt;hr /&gt;
-
+&lt;hr&gt;
 &lt;blockquote&gt;
 &lt;p&gt;最後我們看一下以數值積分來估算的例子.&lt;/p&gt;
 &lt;/blockquote&gt;
-
-&lt;p&gt;我們想計算 $\int^1_{-1} e^x\,dx$, 當然我們知道答案是 $e^1-e^{-1}$, 不過我們想要知道若以上列幾種方法估算會有多準確.&lt;/p&gt;
-
+&lt;p&gt;我們想計算 $\int^1_{-1} e^x,dx$, 當然我們知道答案是 $e^1-e^{-1}$, 不過我們想要知道若以上列幾種方法估算會有多準確.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Remark:&lt;/strong&gt; 一般來說我們會先將所要積分的範圍分成 $n$ 等分, 接著在每一等分上使用上列積分法. 這就是微積分課本中所介紹的合成積分法 (composite integral rules). 實作上的細節我們就不在這裡討論.&lt;/p&gt;
-
 &lt;p&gt;我們將 $[-1, 1]$ 區間均勻分成 $n$ 等分, 再用三種不同積分法來估算積分值. 下表列出不同積分法在不同區間數所得之值與實際值之間的絕對誤差.&lt;/p&gt;
-
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
 &lt;th&gt;n\Method&lt;/th&gt;
 &lt;th&gt;Midpoint&lt;/th&gt;
 &lt;th&gt;Trapezoidal&lt;/th&gt;
-&lt;th&gt;Simpson&amp;rsquo;s&lt;/th&gt;
+&lt;th&gt;Simpson&#39;s&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
-
 &lt;tbody&gt;
 &lt;tr&gt;
 &lt;td&gt;10&lt;/td&gt;
@@ -139,14 +118,12 @@ $$
 &lt;td&gt;7.83e-3&lt;/td&gt;
 &lt;td&gt;2.08e-5&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
 &lt;td&gt;100&lt;/td&gt;
 &lt;td&gt;3.92e-5&lt;/td&gt;
 &lt;td&gt;7.83e-5&lt;/td&gt;
 &lt;td&gt;2.09e-9&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
 &lt;td&gt;1000&lt;/td&gt;
 &lt;td&gt;3.92e-7&lt;/td&gt;
@@ -155,11 +132,8 @@ $$
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-
 &lt;p&gt;我們可以看到, 中點以及梯形法誤差皆是以 $O(n^{-2})$ 來下降, 也就是點數變十倍時誤差會降一百倍, 而辛普森法則是 $O(n^{-4})$.&lt;/p&gt;
-
-&lt;p&gt;接著我們試試看用高斯積分來做, 這裡我們就不分小區間, 直接做整個 $[-1, 1]$ 區間. 多個點的高斯積分的公式可在 &lt;a href=&#34;https://en.wikipedia.org/wiki/Gaussian_quadrature&#34; target=&#34;_blank&#34;&gt;wiki&lt;/a&gt; 找到. 我們將 $m$-point 高斯積分所得之值與實際值之間的絕對誤差列於下表&lt;/p&gt;
-
+&lt;p&gt;接著我們試試看用高斯積分來做, 這裡我們就不分小區間, 直接做整個 $[-1, 1]$ 區間. 多個點的高斯積分的公式可在 &lt;a href=&#34;https://en.wikipedia.org/wiki/Gaussian_quadrature&#34;&gt;wiki&lt;/a&gt; 找到. 我們將 $m$-point 高斯積分所得之值與實際值之間的絕對誤差列於下表&lt;/p&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -167,48 +141,39 @@ $$
 &lt;th&gt;Gaussian quadrature rule&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
-
 &lt;tbody&gt;
 &lt;tr&gt;
 &lt;td&gt;2&lt;/td&gt;
 &lt;td&gt;7.71e-3&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
 &lt;td&gt;3&lt;/td&gt;
 &lt;td&gt;6.55e-5&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
 &lt;td&gt;4&lt;/td&gt;
 &lt;td&gt;2.95e-7&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
 &lt;td&gt;5&lt;/td&gt;
 &lt;td&gt;8.25e-10&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
 &lt;td&gt;6&lt;/td&gt;
 &lt;td&gt;1.56e-12&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
 &lt;td&gt;7&lt;/td&gt;
 &lt;td&gt;2.66e-15&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
 &lt;td&gt;8&lt;/td&gt;
 &lt;td&gt;4.44e-16&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-
 &lt;p&gt;可以看到我們用 8 個點就可以將這個積分準確估計到誤差接近機器的捨入誤差 (rounding error).&lt;/p&gt;
-
-&lt;hr /&gt;
+&lt;hr&gt;
 </description>
     </item>
     

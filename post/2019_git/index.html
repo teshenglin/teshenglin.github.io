@@ -484,104 +484,67 @@
   <div class="article-container">
 
     <div class="article-style">
-      
-
-<blockquote>
+      <blockquote>
 <p>這裡我們要介紹 git 這個分散式版本控制軟體. 有人可能會聽過 &lsquo;github&rsquo;. 不過這邊要提醒一下 git 跟 github 是不一樣的兩件事. 簡單的說 git 是一個軟體, 而 github 則是提供線上 git 服務的公司.</p>
 </blockquote>
-
-<hr />
-
+<hr>
 <h2 id="git-教學網頁">git 教學網頁</h2>
-
 <ol>
-<li><p>我非常推薦 <a href="https://gitbook.tw" target="_blank">為你自己學 Git</a>, 尤其務必熟讀以下三章, 才算是對 git 有最基本的認識.</p>
-
+<li>我非常推薦 <a href="https://gitbook.tw">為你自己學 Git</a>, 尤其務必熟讀以下三章, 才算是對 git 有最基本的認識.</li>
+</ol>
 <ul>
 <li>二、Git Windows/Mac/Linux 環境安裝</li>
 <li>四、設定 Git</li>
 <li>五、開始使用 Git</li>
-</ul></li>
-
-<li><p><a href="https://www.slideshare.net/appleboy/introduction-to-git-11436559" target="_blank">快速上手 git 版本控制, slideshare</a></p></li>
+</ul>
+<ol start="2">
+<li><a href="https://www.slideshare.net/appleboy/introduction-to-git-11436559">快速上手 git 版本控制, slideshare</a></li>
 </ol>
-
-<hr />
-
+<hr>
 <h2 id="git-基本指令-terminal-終端機">git 基本指令 (terminal 終端機):</h2>
-
 <ul>
-<li><p>做完某個段落後, 將檔案 XXX 移進暫存區</p>
-
+<li>做完某個段落後, 將檔案 XXX 移進暫存區</li>
+</ul>
 <pre><code>git add XXX
-</code></pre>
-
-<p>或是將剛剛所有編輯過的檔案一起移
+</code></pre><p>或是將剛剛所有編輯過的檔案一起移
 進暫存區</p>
-
 <pre><code>git add .
-</code></pre>
-
-<p>接著將暫存區的檔案移至儲存褲 (repo), 並且記註做了什麼事</p>
-
+</code></pre><p>接著將暫存區的檔案移至儲存褲 (repo), 並且記註做了什麼事</p>
 <pre><code>git commit -m &quot;我做了XXX&quot;
-</code></pre></li>
-</ul>
-
-<hr />
-
+</code></pre><hr>
 <h2 id="支援-git-的網站">支援 git 的網站</h2>
-
 <h3 id="github">github</h3>
-
 <p>如同我最初說的, github 是一個支援 git 的網站, 可以讓你擺放你程式的原始碼, 基本服務是免費的, 有一些更進階的功能則需要付費.</p>
-
 <ul>
-<li><a href="https://progressbar.tw/posts/3" target="_blank">開始使用 GitHub， 註冊與建立repo</a></li>
+<li><a href="https://progressbar.tw/posts/3">開始使用 GitHub， 註冊與建立repo</a></li>
 </ul>
-
 <h3 id="bitcuket">bitcuket</h3>
-
 <ul>
-<li>也可以使用 <a href="https://bitbucket.org" target="_blank">bitcuket</a>, 一樣是個讓你把原始碼放上雲端的免費服務.</li>
+<li>也可以使用 <a href="https://bitbucket.org">bitcuket</a>, 一樣是個讓你把原始碼放上雲端的免費服務.</li>
 </ul>
-
-<hr />
-
-<h2 id="git-github-基本指令-terminal-終端機">git &lt;-&gt; github 基本指令 (terminal 終端機):</h2>
-
+<hr>
+<h2 id="git---github-基本指令-terminal-終端機">git &lt;-&gt; github 基本指令 (terminal 終端機):</h2>
 <ul>
-<li><p>丟上雲端 (github 或 bitbucket)</p>
-
+<li>丟上雲端 (github 或 bitbucket)</li>
+</ul>
 <pre><code>git push
-</code></pre></li>
-
-<li><p>從雲端下載最新版本</p>
-
-<pre><code>git pull
-</code></pre></li>
+</code></pre><ul>
+<li>從雲端下載最新版本</li>
 </ul>
-
-<hr />
-
+<pre><code>git pull
+</code></pre><hr>
 <p>簡單工作示意圖:</p>
-
-<pre><code class="language-mermaid">graph TD;
+<pre><code class="language-mermaid" data-lang="mermaid">graph TD;
   A[工作資料夾]--&gt;|add| B;
   B(本機 local 暫存區)--&gt;|commit| C;
   D--&gt;|pull| C;
   C(本機 local repo)--&gt;|push| D{雲端 repo};
-</code></pre>
-
-<hr />
-
+</code></pre><hr>
 <h2 id="git-觀念釐清">git 觀念釐清</h2>
-
 <ol>
-<li><a href="https://goo.gl/gAvBBp" target="_blank">git fetch 與 git pull 的區別</a></li>
+<li><a href="https://goo.gl/gAvBBp">git fetch 與 git pull 的區別</a></li>
 </ol>
-
-<hr />
+<hr>
 
     </div>
 

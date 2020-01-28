@@ -487,23 +487,15 @@
       <blockquote>
 <p>Applied Project in Sec.3.5, Calculus by Stewart</p>
 </blockquote>
-
-<p><img src="https://i.stack.imgur.com/ImsaT.png" alt="" /></p>
-
+<p><img src="https://i.stack.imgur.com/ImsaT.png" alt=""></p>
 <p>An approach path for an aircraft landing is shown in the figure and satisfies the following conditions:</p>
-
 <p>(i) The cruising altitude is $h$ when descent starts at a horizontal distance $\ell$ from touchdown at the origin.</p>
-
 <p>(ii) The pilot must maintain a constant horizontal speed $v$ throughout descent.</p>
-
 <p>(iii) The absolute value of the vertical acceleration should not exceed a
 constant $k$ (which is much less than the acceleration due to gravity)</p>
-
-<hr />
-
+<hr>
 <p><strong>Question 1:</strong> Find a cubic polynomial $P(x) = ax^3 + bx^2 + cx + d$ that satisfies condition (i) by imposing suitable conditions on $P(x)$ and $P’(x)$ at the start of descent and at touchdown.</p>
-
-<p><strong>Answer:</strong> <br />
+<p><strong>Answer:</strong> \<br>
 At the start of descent:
 $$
 P(\ell) = al^3 +b\ell^2 +c\ell+d = h, \qquad P’(\ell) = 3a\ell^2 +2b\ell+c = 0.
@@ -516,12 +508,9 @@ Solve for $a$, $b$ in terms of $h$, $\ell$ we find
 $$
 P(x) = −\frac{2h}{\ell^3}x^3 + \frac{3h}{\ell^2}x^2.
 $$</p>
-
-<hr />
-
+<hr>
 <p><strong>Question 2:</strong> Use conditions (ii) and (iii) to show that $\frac{6hv^2}{\ell^2}\le k$.</p>
-
-<p><strong>Answer:</strong> <br />
+<p><strong>Answer:</strong> \<br>
 From (ii), a constant horizontal speed $v$ is assumed throughout descent, we can then express $x$ as
 $$
 x = \ell - vt, \qquad t\in[0, \frac{\ell}{v}],
@@ -533,19 +522,16 @@ P(t) = −\frac{2h}{\ell^3}(\ell - vt)^3 + \frac{3h}{\ell^2}(\ell - vt)^2, \qqua
 $$
 Therefore, the vertical acceleration $a$ is
 $$
-a(t) = \left|−\frac{12hv^2}{\ell^3}(\ell - vt) + \frac{6hv^2}{\ell^2}\right| = \left|\frac{12hv^3}{\ell^3}\,t - \frac{6hv^2}{\ell^2}\right|, \qquad t\in[0, \frac{\ell}{v}].
+a(t) = \left|−\frac{12hv^2}{\ell^3}(\ell - vt) + \frac{6hv^2}{\ell^2}\right| = \left|\frac{12hv^3}{\ell^3},t - \frac{6hv^2}{\ell^2}\right|, \qquad t\in[0, \frac{\ell}{v}].
 $$
-It can be check, from the Extreme Value Theorem and closed interval method, that $a$ attains it&rsquo;s maximum value $\frac{6hv^2}{\ell^2}$.
+It can be check, from the Extreme Value Theorem and closed interval method, that $a$ attains it's maximum value $\frac{6hv^2}{\ell^2}$.
 From condition (iii), we therefore have
 $$
 \frac{6hv^2}{\ell} \le k.
 $$</p>
-
-<hr />
-
+<hr>
 <p><strong>Question 3:</strong> Suppose that an airline decides not to allow vertical acceleration of a plane to exceed $k = 860$(mi/h$^2$). If the cruising altitude of a plane is $35,000$(ft) and the speed is $300$(mi/h), how far away from the airport should the pilot start descent?</p>
-
-<p><strong>Answer:</strong> <br />
+<p><strong>Answer:</strong> \<br>
 Given $P(x) = −\frac{2h}{\ell^3}x^3 + \frac{3h}{\ell^2}x^2$, suppose the pilot starts to descend when the plane is $\ell$(mi) from the airport. In Q2. we know that $\frac{6hv^2}{\ell^2}\le k$. So,
 $$
 v=300\mbox{(mi/h)}, \qquad h=35000\mbox{(ft)} ≈ 6.628\mbox{(mi)}, \qquad k=860\mbox{(mi/h$^2$)},
@@ -555,26 +541,20 @@ $$
 \ell \ge 64.511.
 $$
 That is, the pilot should start to decend when the plane is $62.511$(mi) away from the airport.</p>
-
-<hr />
-
+<hr>
 <p><strong>Question 4:</strong> Graph the approach path if the conditions stated in Problem 3 are satisfied.</p>
-
 <p><strong>Answer:</strong></p>
-
-<pre><code class="language-julia"># Example code in julia
-using Plots
-v = 300;
-h = 6.628;
-l = 65;
-N = 100;
-dx = l/N;
-x = 0.0:N; x = dx*x;
-P = -(2*h/l^3)*x.^3 + (3*h/l^2)*x.^2;
-plot(x, P, lw=3, xlabel = &quot;x&quot;, ylabel = &quot;y&quot;, title=&quot;approach path&quot;, legend=false)
-</code></pre>
-
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-julia" data-lang="julia"><span style="color:#75715e"># Example code in julia</span>
+<span style="color:#66d9ef">using</span> Plots<span style="color:#f92672"></span>
+v<span style="color:#f92672"></span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">300</span>;
+h<span style="color:#f92672"></span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">6.628</span>;
+l<span style="color:#f92672"></span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">65</span>;
+N<span style="color:#f92672"></span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">100</span>;
+dx<span style="color:#f92672"></span> <span style="color:#f92672">=</span> l<span style="color:#f92672"></span><span style="color:#f92672">/</span>N<span style="color:#f92672"></span>;
+x<span style="color:#f92672"></span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.0</span><span style="color:#f92672">:</span>N<span style="color:#f92672"></span>; x<span style="color:#f92672"></span> <span style="color:#f92672">=</span> dx<span style="color:#f92672"></span><span style="color:#f92672">*</span>x<span style="color:#f92672"></span>;
+P<span style="color:#f92672"></span> <span style="color:#f92672">=</span> <span style="color:#f92672">-</span>(<span style="color:#ae81ff">2</span><span style="color:#f92672">*</span>h<span style="color:#f92672"></span><span style="color:#f92672">/</span>l<span style="color:#f92672"></span><span style="color:#f92672">^</span><span style="color:#ae81ff">3</span>)<span style="color:#f92672">*</span>x<span style="color:#f92672"></span><span style="color:#f92672">.^</span><span style="color:#ae81ff">3</span> <span style="color:#f92672">+</span> (<span style="color:#ae81ff">3</span><span style="color:#f92672">*</span>h<span style="color:#f92672"></span><span style="color:#f92672">/</span>l<span style="color:#f92672"></span><span style="color:#f92672">^</span><span style="color:#ae81ff">2</span>)<span style="color:#f92672">*</span>x<span style="color:#f92672"></span><span style="color:#f92672">.^</span><span style="color:#ae81ff">2</span>;
+plot<span style="color:#f92672"></span>(x<span style="color:#f92672"></span>, P<span style="color:#f92672"></span>, lw<span style="color:#f92672"></span><span style="color:#f92672">=</span><span style="color:#ae81ff">3</span>, xlabel<span style="color:#f92672"></span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">x</span><span style="color:#e6db74">&#34;</span>, ylabel<span style="color:#f92672"></span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">y</span><span style="color:#e6db74">&#34;</span>, title<span style="color:#f92672"></span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">a</span><span style="color:#e6db74">p</span><span style="color:#e6db74">p</span><span style="color:#e6db74">r</span><span style="color:#e6db74">o</span><span style="color:#e6db74">a</span><span style="color:#e6db74">c</span><span style="color:#e6db74">h</span><span style="color:#e6db74"> </span><span style="color:#e6db74">p</span><span style="color:#e6db74">a</span><span style="color:#e6db74">t</span><span style="color:#e6db74">h</span><span style="color:#e6db74">&#34;</span>, legend<span style="color:#f92672"></span><span style="color:#f92672">=</span><span style="color:#66d9ef">false</span>)
+</code></pre></div>
 
 
   
