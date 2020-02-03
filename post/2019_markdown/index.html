@@ -124,7 +124,7 @@
     
       <meta property="article:published_time" content="2019-10-29T00:00:00&#43;00:00">
     
-    <meta property="article:modified_time" content="2019-12-11T14:41:46&#43;08:00">
+    <meta property="article:modified_time" content="2020-02-03T15:01:47&#43;08:00">
   
 
   
@@ -155,7 +155,7 @@
   "headline": "Markdown 學習筆記",
   
   "datePublished": "2019-10-29T00:00:00Z",
-  "dateModified": "2019-12-11T14:41:46+08:00",
+  "dateModified": "2020-02-03T15:01:47+08:00",
   
   "author": {
     "@type": "Person",
@@ -432,7 +432,7 @@
           Last updated on
       
     
-    Dec 11, 2019
+    Feb 3, 2020
   </span>
   
 
@@ -484,83 +484,102 @@
   <div class="article-container">
 
     <div class="article-style">
-      <blockquote>
+      
+
+<blockquote>
 <p>這裡我們要介紹 markdown 這個語言. 它非常簡單易學, 有時我們只是想打個小文件, 就幾頁而已不想要開 latex 或是 word 之類的文字編輯軟體, 這時候就非常適合以 markdown 來編寫. 另外其實越來越多的程式語言也支援 markdown 編寫. 比如這個網頁裡的 post 就都是以 markdown 做的.</p>
 </blockquote>
-<hr>
+
+<hr />
+
 <h2 id="markdown-安裝">Markdown 安裝</h2>
+
 <ul>
-<li>
-<p>我自己是使用 mac, 我用的是 <a href="https://macdown.uranusjr.com">MacDown</a> 這個軟體.</p>
+<li><p>我自己是使用 mac, 我用的是 <a href="https://macdown.uranusjr.com" target="_blank">MacDown</a> 這個軟體.</p>
+
 <ul>
 <li>安裝完 <em>Macdown</em> 之後需要到 <code>Preference/Rendering</code> 中標選 <em>tex-like math</em> 以及他下一行的 <em>use dollar sign as xxxx</em>, 才可使用 tex 語法.</li>
-</ul>
-</li>
-<li>
-<p>Windows 使用者可以參考<a href="https://www.itread01.com/content/1547118008.html">這篇</a> 裡面有非常多 markdown 編輯器的選擇. 也有人推薦 <a href="https://www.typora.io">Typora</a>.</p>
+</ul></li>
+
+<li><p>最近我用的是 <a href="https://typora.io" target="_blank">Typora</a> 這個軟體, 它支援各作業系統, 不管 mac 或 windows 都可以用.</p>
+
 <ul>
 <li>Typora 主要特色是他<strong>所見即所得</strong>, 所以邊寫邊看自己打出來的版面怎樣. 比較乾淨, 不需要將畫面切分成左右兩半一半程式一半預覽. 學起來也很簡單.</li>
-<li><a href="https://free.com.tw/typora/">Typora 免費極簡 Markdown 編輯器</a></li>
-<li><a href="https://www.itread01.com/content/1546144745.html">markdown神器 -Typora使用教程筆記</a></li>
+<li>安裝完 <em>Typora</em> 之後到 <code>Preference/Markdown</code> 中標選 <em>inline math</em>, 才可使用 tex 語法.</li>
+<li><a href="https://free.com.tw/typora/" target="_blank">Typora 免費極簡 Markdown 編輯器</a></li>
+<li><a href="https://www.itread01.com/content/1546144745.html" target="_blank">markdown神器 -Typora使用教程筆記</a></li>
+</ul></li>
+
+<li><p>如果平常會寫各式程式語言, 也可以考慮使用 <a href="https://atom.io" target="_blank">atom</a> 編輯器. 它是 github 開發的免費編輯器, 不管 Mac, windows 或是 Linux 都有支援. 我自己也有使用 atom 來寫 <code>julia</code>, <code>fortran</code>, <code>html</code> 等.</p></li>
+
+<li><p>如果連安裝都不想的話我推薦 <a href="https://notes.dosilovic.com" target="_blank">markdown notes</a> 這個線上編輯器. 它支援線上即時編寫, 可以線上存檔, 也可以下載成 markdown 以及 PDF.</p></li>
+
+<li><p>另一個線上編輯器: <a href="https://upmath.me" target="_blank">upmath</a>, 依樣支援線上即時編寫, 可以存成 html 直接幫你產生網頁.</p></li>
 </ul>
-</li>
-<li>
-<p>如果平常會寫各式程式語言, 也可以考慮使用 <a href="https://atom.io">atom</a> 編輯器. 它是 github 開發的免費編輯器, 不管 Mac, windows 或是 Linux 都有支援. 我自己也有使用 atom 來寫 <code>julia</code>, <code>fortran</code>, <code>html</code> 等.</p>
-</li>
-<li>
-<p>如果連安裝都不想的話我推薦 <a href="https://notes.dosilovic.com">markdown notes</a> 這個線上編輯器. 它支援線上即時編寫, 可以線上存檔, 也可以下載成 markdown 以及 PDF.</p>
-</li>
-<li>
-<p>另一個線上編輯器: <a href="https://upmath.me">upmath</a>, 依樣支援線上即時編寫, 可以存成 html 直接幫你產生網頁.</p>
-</li>
-</ul>
+
 <p>不過我要稍微說明一下, 不管使用哪種編輯器, markdown 主要語法都差不多. 不過在輸出上會有一些細微的差異. 這點就要自己使用後才會感受得到差別.</p>
-<hr>
+
+<hr />
+
 <h2 id="markdown-語法教學">Markdown 語法教學</h2>
+
 <p>以下列舉一些 markdown 教學的線上資源</p>
+
 <ul>
-<li>
-<p><a href="https://commonmark.org/help/">1分鐘學會 Markdown</a></p>
-</li>
-<li>
-<p><a href="https://wastemobile.gitbooks.io/gitbook-chinese/content/format/markdown.html">Markdown gitbook</a></p>
-</li>
-<li>
-<p><a href="https://tiida54.github.io/2018/01/03/3%E5%88%86%E9%90%98%E5%AD%B8%E6%9C%83Markdown%E5%B8%B8%E7%94%A8%E8%AA%9E%E6%B3%95/">3分鐘學會 Markdown 常用語法</a></p>
-</li>
-<li>
-<p><a href="https://docs.microsoft.com/zh-tw/contribute/how-to-write-use-markdown">如何使用 Markdown 來撰寫 Docs</a></p>
-</li>
+<li><p><a href="https://commonmark.org/help/" target="_blank">1分鐘學會 Markdown</a></p></li>
+
+<li><p><a href="https://wastemobile.gitbooks.io/gitbook-chinese/content/format/markdown.html" target="_blank">Markdown gitbook</a></p></li>
+
+<li><p><a href="https://tiida54.github.io/2018/01/03/3分鐘學會Markdown常用語法/" target="_blank">3分鐘學會 Markdown 常用語法</a></p></li>
+
+<li><p><a href="https://docs.microsoft.com/zh-tw/contribute/how-to-write-use-markdown" target="_blank">如何使用 Markdown 來撰寫 Docs</a></p></li>
 </ul>
-<p>markdown 有一個很酷的語法是可以做 diagram, 在 typora 這個編輯器有支援: <a href="https://support.typora.io/Draw-Diagrams-With-Markdown/">Draw Diagrams With Markdown</a>.</p>
+
+<p>markdown 有一個很酷的語法是可以做 diagram, 在 typora 這個編輯器有支援: <a href="https://support.typora.io/Draw-Diagrams-With-Markdown/" target="_blank">Draw Diagrams With Markdown</a>.</p>
+
 <ul>
 <li>不過要稍微注意一下, 不要直接複製貼上介紹網頁裡的 diagram 程式到 typora 裡, 會跑不出來. 正確做法是, 比如說要做以下這個 sequence diagram, 那在 typora 裡打 ```sequence, 然後就會跑出一個框框讓你把程式貼進去. 程式貼入後圖就跑出來了.</li>
 </ul>
+
 <p>我自己所使用的 macdown 也號稱有支援, 不過其實只有某些特別的版本能用而已, 有點可惜.</p>
-<p>如果是用 atom 的話則是要安裝 <a href="https://shd101wyy.github.io/markdown-preview-enhanced/#/">markdown-preview-enhanced</a> 這個 package. 我自己試過, 支援各種 diagram, 非常棒.</p>
-<hr>
+
+<p>如果是用 atom 的話則是要安裝 <a href="https://shd101wyy.github.io/markdown-preview-enhanced/#/" target="_blank">markdown-preview-enhanced</a> 這個 package. 我自己試過, 支援各種 diagram, 非常棒.</p>
+
+<hr />
+
 <h2 id="markdown-語法補充">Markdown 語法補充</h2>
+
 <ul>
-<li>在 markdown 文字間插入空白無法單純使用空白鍵, 在 mac 裡是 option+space, 其他可見 <a href="https://stackoverflow.com/a/54174466">Use non-breaking spaces</a></li>
-<li>在 markdown 裡將文字置中只能用 html 語法 <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/center">Centered Text</a></li>
+<li>在 markdown 文字間插入空白無法單純使用空白鍵, 在 mac 裡是 option+space, 其他可見 <a href="https://stackoverflow.com/a/54174466" target="_blank">Use non-breaking spaces</a></li>
+<li>在 markdown 裡將文字置中只能用 html 語法 <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/center" target="_blank">Centered Text</a></li>
 </ul>
-<hr>
+
+<hr />
+
 <h2 id="latex-語法教學">Latex 語法教學</h2>
+
 <blockquote>
 <p>Markdown 一個很重要功能(至少對我而言)就是它支援 $\LaTeX$ 語法. Latex 數學排版系統是科學界中非常重要的一種系統. 它使得研究員在撰寫學術文章時能輕易地做好排版. 尤其是科學文章中常有大量數學符號, 這些符號的編排以及顯示是 Latex 系統一大強項.</p>
 </blockquote>
+
 <p>如果只是要以 Markdown 來寫一些簡單包含數學符號的文章, 還不需要學整個 Latex 系統. 我們只要會一些語法就好. 以下整理一些線上資源供參考</p>
+
 <ul>
-<li><a href="https://walkccc.github.io/blog/2018/02/17/Techniques/latex-syntax/">LaTeX 語法整理</a></li>
-<li><a href="https://oeis.org/wiki/List_of_LaTeX_mathematical_symbols">List of LaTeX mathematical symbols</a></li>
-<li><a href="https://www.overleaf.com/learn/latex/Integrals,_sums_and_limits">Integrals, sums and limits</a></li>
-<li><a href="https://en.wikibooks.org/wiki/LaTeX/Mathematics#Matrices_and_arrays">matrices and arrays</a></li>
+<li><a href="https://walkccc.github.io/blog/2018/02/17/Techniques/latex-syntax/" target="_blank">LaTeX 語法整理</a></li>
+<li><a href="https://oeis.org/wiki/List_of_LaTeX_mathematical_symbols" target="_blank">List of LaTeX mathematical symbols</a></li>
+<li><a href="https://www.overleaf.com/learn/latex/Integrals,_sums_and_limits" target="_blank">Integrals, sums and limits</a></li>
+<li><a href="https://en.wikibooks.org/wiki/LaTeX/Mathematics#Matrices_and_arrays" target="_blank">matrices and arrays</a></li>
 </ul>
+
 <p>所有介於兩個 <code>$</code> 字元之間的內容將會被視為 TeX 數學公式處理。開頭的 <code>$</code> 右側必須立刻接上任意文字，而結尾 <code>$</code> 的左側同樣也必須緊挨著文字。如果使用兩個<code>$$</code>則會將數學公式換行居中. 例如以下 markdown 程式碼</p>
+
 <pre><code>$$\frac{\sin(x)}{x}$$
-</code></pre><p>顯示為
+</code></pre>
+
+<p>顯示為
 $$\frac{\sin(x)}{x}$$</p>
-<hr>
+
+<hr />
 
     </div>
 

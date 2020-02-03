@@ -20,58 +20,91 @@
       <description>&lt;blockquote&gt;
 &lt;p&gt;Applied Project 2 in Sec.4.7, Calculus by Stewart&lt;/p&gt;
 &lt;/blockquote&gt;
+
 &lt;p&gt;Small birds like finches alternate between flapping their wings and keeping them folded while gliding. In this project we analyze this phenomenon and try to determine how frequently a bird should flap its wings. Some of the principles are the same as for fixed-wing aircraft and so we begin by considering how required power and energy depend on the speed of airplanes.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://media.cheggcdn.com/study/ad0/ad0cd741-aa85-4256-a058-b49a8ef42198/715030-4.7-4IAP21.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;hr&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://media.cheggcdn.com/study/ad0/ad0cd741-aa85-4256-a058-b49a8ef42198/715030-4.7-4IAP21.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
 &lt;p&gt;&lt;strong&gt;Question 1:&lt;/strong&gt; The power needed to propel an airplane forward at velocity​ $v$ is&lt;/p&gt;
+
 &lt;p&gt;$$
 P = Av^3 + \frac{BL^2}{v}
 $$&lt;/p&gt;
+
 &lt;p&gt;where $A$ and $B$ are positive constants specific to the particular aircraft and $L$ is the lift, the upward force supporting the weight of the plane. Find the speed that minimizes the required power.&lt;/p&gt;
+
 &lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
+
 &lt;p&gt;$$
-\frac{d P}{dv} = 3Av^2 - \frac{BL^2}{v^2} = 0 , \Longrightarrow , v_P = \sqrt[4]{\frac{BL^2}{3A}}
+\frac{d P}{dv} = 3Av^2 - \frac{BL^2}{v^2} = 0 \, \Longrightarrow \, v_P = \sqrt[4]{\frac{BL^2}{3A}}
 $$&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Question 2:&lt;/strong&gt;	The speed found in Problem 1 minimizes power but a faster speed might use less fuel. The energy needed to propel the airplane a unit distance is​ $E = P/v$ . At what speed is energy minimized?&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;strong&gt;Question 2:&lt;/strong&gt; The speed found in Problem 1 minimizes power but a faster speed might use less fuel. The energy needed to propel the airplane a unit distance is​ $E = P/v$ . At what speed is energy minimized?&lt;/p&gt;
+
 &lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
+
 &lt;p&gt;$$
-\frac{d E}{dv} = 2Av - \frac{2BL^2}{v^3} = 0 ,\Longrightarrow , v_E = \sqrt[4]{\frac{BL^2}{A}}
+\frac{d E}{dv} = 2Av - \frac{2BL^2}{v^3} = 0 \,\Longrightarrow \, v_E = \sqrt[4]{\frac{BL^2}{A}}
 $$&lt;/p&gt;
-&lt;hr&gt;
+
+&lt;hr /&gt;
+
 &lt;p&gt;&lt;strong&gt;Question 3:&lt;/strong&gt; Hows much faster is the speed for minimum energy than the speed for minimum power?&lt;/p&gt;
+
 &lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
+
 &lt;p&gt;$$
 \frac{v_E}{v_P} = \sqrt[4]{3}
 $$&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Question 4:&lt;/strong&gt;  In applying the equation of Problem 1 to bird flight we split the term $Av^3$ ​into two parts:​ $A_b v^3$ ​for the bird&#39;s body and​ $A_w v^3$ ​for its wings. Let​ $x$ be the fraction of flying time spent in flapping mode. If $m$ is the bird&#39;s mass and all the lift occurs during flapping, then the lift is $mg/x$ and so the power needed during flapping is&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;strong&gt;Question 4:&lt;/strong&gt;  In applying the equation of Problem 1 to bird flight we split the term $Av^3$ ​into two parts:​ $A_b v^3$ ​for the bird&amp;rsquo;s body and​ $A_w v^3$ ​for its wings. Let​ $x$ be the fraction of flying time spent in flapping mode. If $m$ is the bird&amp;rsquo;s mass and all the lift occurs during flapping, then the lift is $mg/x$ and so the power needed during flapping is&lt;/p&gt;
+
 &lt;p&gt;$$
 P_f = (A_b+A_w)v^3 + \frac{B(mg/x)^2}{v}
 $$&lt;/p&gt;
+
 &lt;p&gt;The power while wings are folded is $P_o = A_b v^3$. Find the average power over an entire flight cycle.&lt;/p&gt;
+
 &lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
+
 &lt;p&gt;$$
 P_a = x P_f + (1-x) P_o = A_b v^3 + A_w v^3 x + \frac{B m^2 g^2}{xv}
 $$&lt;/p&gt;
-&lt;hr&gt;
+
+&lt;hr /&gt;
+
 &lt;p&gt;&lt;strong&gt;Question 5:&lt;/strong&gt;  For what value of​ $x$ is the average power a minimum? What can you conclude if the bird flies slowly? What can you conclude if the bird flies faster and faster?&lt;/p&gt;
+
 &lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
+
 &lt;p&gt;$$
-\frac{d P_a}{dx} = A_w v^3 - \frac{B m^2 g^2}{x^2v} = 0 , \Longrightarrow , x = \frac{mg}{v^2}\sqrt{\frac{B}{A_w}}
+\frac{d P_a}{dx} = A_w v^3 - \frac{B m^2 g^2}{x^2v} = 0 \, \Longrightarrow \, x = \frac{mg}{v^2}\sqrt{\frac{B}{A_w}}
 $$&lt;/p&gt;
+
 &lt;p&gt;It can be seen that $x$ is inverse proportional to $v^2$, so,&lt;/p&gt;
+
 &lt;ul&gt;
 &lt;li&gt;鳥飛的慢,拍翅時間佔總體飛行時間上升&lt;/li&gt;
 &lt;li&gt;鳥飛的快,滑翔時間佔總體飛行時間上升&lt;/li&gt;
 &lt;/ul&gt;
-&lt;hr&gt;
+
+&lt;hr /&gt;
+
 &lt;p&gt;&lt;strong&gt;Question 6:&lt;/strong&gt;  The average energy over a cycle is $E_a = P_a/v$. What value of $x$​ minimizes $E_a$?&lt;/p&gt;
+
 &lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
+
 &lt;p&gt;$$
-\frac{d E}{dx} = A_w v^2 - \frac{B m^2 g^2}{x^2v^2} = 0 , \Longrightarrow , x = \frac{mg}{v^2}\sqrt{\frac{B}{A_w}}
+\frac{d E}{dx} = A_w v^2 - \frac{B m^2 g^2}{x^2v^2} = 0 \, \Longrightarrow \, x = \frac{mg}{v^2}\sqrt{\frac{B}{A_w}}
 $$&lt;/p&gt;
-&lt;hr&gt;
+
+&lt;hr /&gt;
 </description>
     </item>
     
@@ -80,146 +113,236 @@ $$&lt;/p&gt;
       <link>https://teshenglin.github.io/post/2020_julia_plots/</link>
       <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
       <guid>https://teshenglin.github.io/post/2020_julia_plots/</guid>
-      <description>&lt;blockquote&gt;
+      <description>
+
+&lt;blockquote&gt;
 &lt;p&gt;底下的幾個例子我們將學習怎麼使用繪圖指令.&lt;/p&gt;
 &lt;/blockquote&gt;
+
 &lt;p&gt;畫圖的時候我們會用到 &lt;code&gt;Plots&lt;/code&gt; 這個 package，因此在第一行我們需要加上：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;using&lt;/span&gt; Plots&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;以下我們舉幾個簡單的範例來看看如何操作.&lt;/p&gt;
-&lt;p&gt;不過 &lt;code&gt;Plots&lt;/code&gt; 這個 package 完整的說明請見 &lt;a href=&#34;http://docs.juliaplots.org/latest/&#34;&gt;Plots&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;example-11-基本函數&#34;&gt;Example 1.1 基本函數&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-julia&#34;&gt;using Plots
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;以下我們舉幾個簡單的範例來看看如何操作.&lt;/p&gt;
+
+&lt;p&gt;不過 &lt;code&gt;Plots&lt;/code&gt; 這個 package 完整的說明請見 &lt;a href=&#34;http://docs.juliaplots.org/latest/&#34; target=&#34;_blank&#34;&gt;Plots&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;example-1-1-基本函數&#34;&gt;Example 1.1 基本函數&lt;/h2&gt;
+
 &lt;p&gt;這是一個畫出 $\sin(x)$ 的例子。在 plot 指令中我們指定三件事:&lt;/p&gt;
+
 &lt;ol&gt;
 &lt;li&gt;告訴他我們要畫 $y = \sin(x)$ 這個函數。&lt;/li&gt;
 &lt;li&gt;再來要指定函數的範圍 $-2\pi &amp;lt; x &amp;lt; \pi$。&lt;/li&gt;
-&lt;li&gt;最後用 label 標註函數圖形。注意要把標註的文字放在 &amp;quot; &amp;quot; 中。&lt;/li&gt;
+&lt;li&gt;最後用 label 標註函數圖形。注意要把標註的文字放在 &amp;ldquo; &amp;rdquo; 中。&lt;/li&gt;
 &lt;/ol&gt;
+
 &lt;p&gt;另外，也可以畫 $e^x$、$arcsin(x)$ 這些基本函數。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;plot&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;(sin&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;, &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;pi, pi, label&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;s&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;i&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;n&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;e&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;f&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;u&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;n&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;c&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;t&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;i&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;o&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;n&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;)
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://teshenglin.github.io/post/figs/output_5_01.svg&#34; alt=&#34;svg&#34;&gt;&lt;/p&gt;
-&lt;h2 id=&#34;example-12-基本函數&#34;&gt;Example 1.2 基本函數&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-julia&#34;&gt;plot(sin, -pi, pi, label=&amp;quot;sine function&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://teshenglin.github.io/post/figs/output_5_01.svg&#34; alt=&#34;svg&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;example-1-2-基本函數&#34;&gt;Example 1.2 基本函數&lt;/h2&gt;
+
 &lt;p&gt;這是一個畫出 $\sin^{-1}(x)$ 的例子，有幾件事需要注意：&lt;/p&gt;
+
 &lt;ol&gt;
 &lt;li&gt;$\sin(x)$ 的反函數 $arcsin(x)$ 的指令為 asin。&lt;/li&gt;
-&lt;li&gt;函數的範圍為 $-1 &amp;lt; x &amp;lt; 1$。&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;函數的範圍為 $-1 &amp;lt; x &amp;lt; 1$。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-julia&#34;&gt;plot(asin, -1, 1, label=&amp;quot;arcsine function&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
 &lt;/ol&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;plot&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;(asin&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;, &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;, label&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;a&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;r&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;c&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;s&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;i&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;n&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;e&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;f&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;u&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;n&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;c&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;t&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;i&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;o&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;n&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;)
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://teshenglin.github.io/post/figs/output_7_0.svg&#34; alt=&#34;svg&#34;&gt;&lt;/p&gt;
-&lt;hr&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://teshenglin.github.io/post/figs/output_7_0.svg&#34; alt=&#34;svg&#34; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
 &lt;h2 id=&#34;example-2&#34;&gt;Example 2&lt;/h2&gt;
+
 &lt;p&gt;接著我們看三維圖形的例子。這個例子中我們要畫出三圍中的一條曲線&lt;/p&gt;
+
 &lt;p&gt;$$\left(x(t), y(t), z(t)\right) = (t\cos t, t\sin t, t), \quad t\in[0, 8\pi].$$&lt;/p&gt;
+
 &lt;ol&gt;
 &lt;li&gt;先將 $8\pi$ 切成 N 等分, 間距為 $\Delta t = 8\pi/N$.
+
 &lt;ol&gt;
 &lt;li&gt;在 julia 中可使用 unicode 變數名稱, 比如 $\Delta$ 打法是 &lt;code&gt;\Delta&lt;/code&gt; 接著按 tab 鍵, $\pi$ 則是 &lt;code&gt;\Pi&lt;/code&gt;.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
 &lt;li&gt;定義 $n$ 是一個 $(N+1)\times 1$ 的向量，n = [0, 1, 2, &amp;hellip;,N]。&lt;/li&gt;
 &lt;li&gt;定義 $t_i$ 是 $\Delta t\times n$&lt;/li&gt;
 &lt;li&gt;$x = t_i .*\cos .(ti)$，注意向量相乘以及函數在向量的取值都需要加個&lt;code&gt;.&lt;/code&gt;。&lt;/li&gt;
 &lt;li&gt;y 與 z 的值與 x 的值定義方法類似。&lt;/li&gt;
 &lt;/ol&gt;
+
 &lt;p&gt;由 (x,y,z) 的定義方式我們知道它是一個螺旋線，螺旋的半徑從 0 一直增加到 $8 \pi$。角度也是從 0 到 $8 \pi$，所以總共繞了4圈。
 在 plot 指令中我們用 marker 選擇圖形的樣式為圓圈(circle)，legend=false 代表不標記圖形。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;N&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;200&lt;/span&gt;;
-Δt&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;8&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;π&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;N&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;;
-n&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0.0&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;N&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;;
-ti&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; Δt&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;n&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;
-x&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; ti&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.*&lt;/span&gt;cos&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;(ti&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;);
-y&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; ti&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.*&lt;/span&gt;sin&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;(ti&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;);
-z&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; ti&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;;
-plot&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;(x&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;, y&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;, z&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;, marker&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;circle&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;, legend&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;false&lt;/span&gt;)
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://teshenglin.github.io/post/figs/output_9_0.svg&#34; alt=&#34;svg&#34;&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-julia&#34;&gt;N = 200;
+Δt = 8*π/N;
+n= 0.0:N;
+ti = Δt*n
+x = ti.*cos.(ti);
+y = ti.*sin.(ti);
+z = ti;
+plot(x, y, z, marker=:circle, legend=false)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://teshenglin.github.io/post/figs/output_9_0.svg&#34; alt=&#34;svg&#34; /&gt;&lt;/p&gt;
+
 &lt;p&gt;另外, 可以用 &lt;code&gt;camera&lt;/code&gt; 這個指令來調整 3D 視角, 裡面數字是角度 (方位角azimuth, 高度角altitude).&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;plot&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;(x&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;, y&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;, z&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;, marker&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;circle&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;, legend&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;false&lt;/span&gt;, camera&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; (&lt;span style=&#34;color:#ae81ff&#34;&gt;30&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;80&lt;/span&gt;))
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://teshenglin.github.io/post/figs/output_11_0.svg&#34; alt=&#34;svg&#34;&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-julia&#34;&gt;plot(x, y, z, marker=:circle, legend=false, camera = (30, 80))
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://teshenglin.github.io/post/figs/output_11_0.svg&#34; alt=&#34;svg&#34; /&gt;&lt;/p&gt;
+
 &lt;p&gt;我們也可以使用指令 &lt;code&gt;plotd3d&lt;/code&gt;.&lt;/p&gt;
+
 &lt;ul&gt;
-&lt;li&gt;我們設定 linewidth (lw) 等於 2 以及 legend (leg) 等於 false 表示不標記圖形.&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;我們設定 linewidth (lw) 等於 2 以及 legend (leg) 等於 false 表示不標記圖形.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-julia&#34;&gt;plot3d(x, y, z, lw=2, leg=false)
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;plot3d&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;(x&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;, y&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;, z&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;, lw&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;, leg&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;false&lt;/span&gt;)
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://teshenglin.github.io/post/figs/output_13_0.svg&#34; alt=&#34;svg&#34;&gt;&lt;/p&gt;
-&lt;hr&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://teshenglin.github.io/post/figs/output_13_0.svg&#34; alt=&#34;svg&#34; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
 &lt;h2 id=&#34;example-3&#34;&gt;Example 3&lt;/h2&gt;
+
 &lt;p&gt;這個例子中，我們將學到怎麼在一個畫好的圖形上再加上另一個圖形。
 我們嘗試一個簡單的例子，&lt;/p&gt;
+
 &lt;ol&gt;
 &lt;li&gt;第一個圖形，x 座標是取整數 1 到 10。y 軸取 0 到 1 之間的亂數，共十個小數。再來，用 plot 指令將第一個圖形畫出。&lt;/li&gt;
-&lt;li&gt;第二個圖形，使用相同的 x 座標，函數值 z 取亂數。將第二個函數圖形與第一個圖形重疊，我們需要指令 plot!&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;第二個圖形，使用相同的 x 座標，函數值 z 取亂數。將第二個函數圖形與第一個圖形重疊，我們需要指令 plot!&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-julia&#34;&gt;x = 1:10; y = rand(10);
+plot(x,y)
+z = rand(10)
+plot!(x,z)
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
 &lt;/ol&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;x&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;; y&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; rand&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;);
-plot&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;(x&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;,y&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;)
-z&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; rand&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;)
-plot!&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;(x&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;,z&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;)
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://teshenglin.github.io/post/figs/output_15_0.svg&#34; alt=&#34;svg&#34;&gt;&lt;/p&gt;
-&lt;hr&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://teshenglin.github.io/post/figs/output_15_0.svg&#34; alt=&#34;svg&#34; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
 &lt;h2 id=&#34;example-4&#34;&gt;Example 4&lt;/h2&gt;
+
 &lt;p&gt;在一個圖形中同時畫出兩個函數，除了上述的方法之外我們還可以這麼做： 直接把兩個函數值定義成一個矩陣&lt;/p&gt;
+
 &lt;ol&gt;
 &lt;li&gt;定義 x 是整數 1 到 10。&lt;/li&gt;
 &lt;li&gt;定義函數值 y 是一個 10*2 的矩陣，矩陣的第一行代表第一個函數的值，而矩陣的第二行代表第二個函數的值。y值的取法為 0 到 1 之間的亂數，為小數。&lt;/li&gt;
 &lt;/ol&gt;
+
 &lt;p&gt;使用 plot 將兩個函數值同時畫出，用 title 設定圖形標題，lw=3 設定線段寬度。&lt;/p&gt;
+
 &lt;p&gt;用 label=[&amp;ldquo;Line 1&amp;rdquo; &amp;ldquo;Line 2&amp;rdquo;] 標記函數名稱，須注意順序：
 Line 1 會標記 y 的第一個函數值，Line 2 會標記 y 的第二個函數值。&lt;/p&gt;
+
 &lt;p&gt;x 軸的名稱有兩種設定方式，&lt;/p&gt;
+
 &lt;ol&gt;
-&lt;li&gt;在 plot 指令中加入：xlabel = &amp;ldquo;My x label&amp;rdquo;。 (xlabel 後面不用&amp;rdquo;!&amp;quot;)&lt;/li&gt;
-&lt;li&gt;或是在 plot 指令的下一行用 xlabel!(&amp;ldquo;My x label&amp;rdquo;) 加入。(xlabel! 後面要用&amp;rdquo;!&amp;quot;)&lt;/li&gt;
+&lt;li&gt;在 plot 指令中加入：xlabel = &amp;ldquo;My x label&amp;rdquo;。 (xlabel 後面不用&amp;rdquo;!&amp;ldquo;)&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;或是在 plot 指令的下一行用 xlabel!(&amp;ldquo;My x label&amp;rdquo;) 加入。(xlabel! 後面要用&amp;rdquo;!&amp;ldquo;)&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-julia&#34;&gt;x = 1:10; y = rand(10,2);
+plot(x,y,title=&amp;quot;Two Lines&amp;quot;,label=[&amp;quot;Line 1&amp;quot; &amp;quot;Line 2&amp;quot;],lw=3,xlabel = &amp;quot;My x label&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
 &lt;/ol&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;x&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;; y&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; rand&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;);
-plot&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;(x&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;,y&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;,title&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;T&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;w&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;o&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;L&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;i&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;n&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;e&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;s&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;,label&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;[&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;L&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;i&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;n&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;e&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;L&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;i&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;n&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;e&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;2&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;],lw&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;,xlabel&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;M&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;y&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;x&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;l&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;a&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;b&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;e&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;l&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;)
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://teshenglin.github.io/post/figs/output_17_0.svg&#34; alt=&#34;svg&#34;&gt;&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;x&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;; y&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; rand&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;);
-plot&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;(x&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;,y&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;,title&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;T&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;w&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;o&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;L&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;i&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;n&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;e&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;s&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;,label&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;[&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;L&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;i&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;n&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;e&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;L&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;i&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;n&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;e&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;2&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;],lw&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;)
-xlabel!&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;M&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;y&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;x&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;l&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;a&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;b&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;e&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;l&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;)
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://teshenglin.github.io/post/figs/output_18_0.svg&#34; alt=&#34;svg&#34;&gt;&lt;/p&gt;
-&lt;hr&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://teshenglin.github.io/post/figs/output_17_0.svg&#34; alt=&#34;svg&#34; /&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-julia&#34;&gt;x = 1:10; y = rand(10,2);
+plot(x,y,title=&amp;quot;Two Lines&amp;quot;,label=[&amp;quot;Line 1&amp;quot; &amp;quot;Line 2&amp;quot;],lw=3)
+xlabel!(&amp;quot;My x label&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://teshenglin.github.io/post/figs/output_18_0.svg&#34; alt=&#34;svg&#34; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
 &lt;h2 id=&#34;example-5&#34;&gt;Example 5&lt;/h2&gt;
+
 &lt;p&gt;如果函數取點的方法不同，能不能畫在同一張圖形中呢？
 我們看下面的例子：&lt;/p&gt;
+
 &lt;ol&gt;
 &lt;li&gt;y 這個矩陣裡包含兩筆資料，x 的取點都是整數 1 到 10。所以可以用 &amp;ldquo;一個&amp;rdquo; 指令把兩筆資料畫出來。令這張圖叫做 p&lt;/li&gt;
-&lt;li&gt;z 這筆資料為 0 到 1 中的 19 個亂數，xx 的取點也是19個在 [1, 10] 的均勻取點。所以我們用 plot! 指令，先畫出 p, 再把 z 這筆資料畫上去。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;x&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;; y&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; rand&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;);
-p&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; plot&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;(x&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;,y&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;)
 
-xx&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;19&lt;/span&gt;
-z&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; rand&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;19&lt;/span&gt;)
-plot!&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;(p&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;,xx&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;,z&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;)
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://teshenglin.github.io/post/figs/output_20_0.svg&#34; alt=&#34;svg&#34;&gt;&lt;/p&gt;
+&lt;li&gt;&lt;p&gt;z 這筆資料為 0 到 1 中的 19 個亂數，xx 的取點也是19個在 [1, 10] 的均勻取點。所以我們用 plot! 指令，先畫出 p, 再把 z 這筆資料畫上去。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-julia&#34;&gt;x = 1:10; y = rand(10,2);
+p = plot(x,y)
+
+xx = 1:19
+z = rand(19)
+plot!(p,xx,z)
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://teshenglin.github.io/post/figs/output_20_0.svg&#34; alt=&#34;svg&#34; /&gt;&lt;/p&gt;
+
 &lt;p&gt;&lt;strong&gt;NOTE:&lt;/strong&gt; 利用 &lt;code&gt;plot(x,y,xx,z)&lt;/code&gt; 這樣的指令是行不通的!&lt;/p&gt;
+
 &lt;p&gt;&lt;strong&gt;Remark:&lt;/strong&gt; 另外，畫圖也可以用 &lt;code&gt;PyPlot&lt;/code&gt; 這個 package，有很多有趣的效果可以用。&lt;/p&gt;
-&lt;p&gt;更多範例請見 &lt;a href=&#34;http://blog.maxkit.com.tw/2019/06/julia-data-visulization.html&#34;&gt;Julia Data Visualization&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;example-6---曲面&#34;&gt;Example 6 - 曲面&lt;/h2&gt;
+
+&lt;p&gt;更多範例請見 &lt;a href=&#34;http://blog.maxkit.com.tw/2019/06/julia-data-visulization.html&#34; target=&#34;_blank&#34;&gt;Julia Data Visualization&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;example-6-曲面&#34;&gt;Example 6 - 曲面&lt;/h2&gt;
+
 &lt;p&gt;這個例子我們示範如何畫曲面 $(x, y, h(x,y))$, where $h(x,y) = exp(-(x^2+y^2))$.&lt;/p&gt;
+
 &lt;ul&gt;
 &lt;li&gt;首先, 我們設定 x 與 y 的範圍 $[-1, 1]$.&lt;/li&gt;
 &lt;li&gt;接著我們設定函數 &amp;ldquo;h&amp;rdquo;&lt;/li&gt;
-&lt;li&gt;最後, 我們利用指令 &lt;code&gt;surface&lt;/code&gt; 來畫曲面.&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;最後, 我們利用指令 &lt;code&gt;surface&lt;/code&gt; 來畫曲面.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-julia&#34;&gt;x=-1:0.01:1;
+y=-1:0.01:1;
+h(x,y)=exp.(-(x^2+y^2));
+surface(x,y,h)
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;x&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0.01&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;;
-y&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0.01&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;;
-h&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;(x&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;,y&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;)&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;exp&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;(&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;(x&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;^&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;y&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;^&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;));
-surface&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;(x&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;,y&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;,h&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;)
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://teshenglin.github.io/post/figs/output_23_0.svg&#34; alt=&#34;svg&#34;&gt;&lt;/p&gt;
-&lt;hr&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://teshenglin.github.io/post/figs/output_23_0.svg&#34; alt=&#34;svg&#34; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
 &lt;h2 id=&#34;example-7-動畫&#34;&gt;Example 7: 動畫&lt;/h2&gt;
+
 &lt;p&gt;如果要將很多圖片合在一起做成動畫也是可以, 以下這個簡單例子將動畫存成一個 gif 檔.&lt;/p&gt;
-&lt;p&gt;更多細節請見 &lt;a href=&#34;https://docs.juliaplots.org/latest/animations/&#34;&gt;julia_plots_animations&lt;/a&gt;&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;p&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; plot&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;([sin&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;, cos&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;], zeros&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;), leg&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;false&lt;/span&gt;)
-anim&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; Animation&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;()
-&lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; x&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; range&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;, stop&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;π, length&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;100&lt;/span&gt;)
-    push!&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;(p&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;, x&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;, &lt;span style=&#34;color:#66d9ef&#34;&gt;Float64&lt;/span&gt;[sin&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;(x&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;), cos&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;(x&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;)])
-    frame&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;(anim&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;)
-&lt;span style=&#34;color:#66d9ef&#34;&gt;end&lt;/span&gt;
-gif&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;(anim&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;s&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;i&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;n&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;e&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;_&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;c&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;o&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;s&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;i&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;n&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;e&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;g&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;i&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;f&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;)
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
-&lt;hr&gt;
+
+&lt;p&gt;更多細節請見 &lt;a href=&#34;https://docs.juliaplots.org/latest/animations/&#34; target=&#34;_blank&#34;&gt;julia_plots_animations&lt;/a&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-julia&#34;&gt;p = plot([sin, cos], zeros(0), leg=false)
+anim = Animation()
+for x = range(0, stop=10π, length=100)
+    push!(p, x, Float64[sin(x), cos(x)])
+    frame(anim)
+end
+gif(anim, &amp;quot;sine_cosine.gif&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://teshenglin.github.io/post/figs/sine_cosine.gif&#34; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
 </description>
     </item>
     
@@ -228,47 +351,72 @@ gif&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;(anim&lt;span style=&#
       <link>https://teshenglin.github.io/post/2020_julia_timing/</link>
       <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
       <guid>https://teshenglin.github.io/post/2020_julia_timing/</guid>
-      <description>&lt;blockquote&gt;
+      <description>
+
+&lt;blockquote&gt;
 &lt;p&gt;這裡我們要介紹 julia 計算程式執行時間的指令.&lt;/p&gt;
 &lt;/blockquote&gt;
+
 &lt;p&gt;簡單來說，julia 計算程式運行效能有幾個指令：&lt;/p&gt;
+
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;@time&lt;/code&gt; 顯示出程式運行的秒數以及記憶體的使用狀況&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;@timed&lt;/code&gt; 顯示程式執行回傳值，秒數以及記憶體的使用狀況&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;@timev&lt;/code&gt; 顯示&lt;code&gt;@time&lt;/code&gt;一樣的資訊，最後顯示程式執行回傳值&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;@elapsed&lt;/code&gt; 顯示出某程式運行的秒數&lt;/li&gt;
 &lt;/ul&gt;
+
 &lt;p&gt;&lt;strong&gt;BUT,&lt;/strong&gt; 真正要計算程式效能, 還是推薦用 &lt;code&gt;BenchmarkTools.jl&lt;/code&gt; 這個 package.&lt;/p&gt;
+
 &lt;p&gt;以下範例中我們需要使用兩個 package: &lt;code&gt;LinearAlgebra&lt;/code&gt; 以及 &lt;code&gt;BenchmarkTools&lt;/code&gt;&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;using&lt;/span&gt; LinearAlgebra&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;
-&lt;span style=&#34;color:#66d9ef&#34;&gt;using&lt;/span&gt; BenchmarkTools&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-julia&#34;&gt;using LinearAlgebra
+using BenchmarkTools
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;hr /&gt;
+
 &lt;h2 id=&#34;example-1-matrix-matrix-multiplication&#34;&gt;Example 1: Matrix-matrix multiplication&lt;/h2&gt;
+
 &lt;p&gt;我們以矩陣乘法 $C=A\times B$ 為例：$A:n\times p$, $B:p\times m$, $C:n\times m$&lt;/p&gt;
+
 &lt;p&gt;f1 這個函數會產生兩個隨機矩陣 $A$, $B$ 並且將他們相乘:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt; f1&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;(n&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;, p&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;, m&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;)
-   A&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;rand&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;(n&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;,p&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;)
-   B&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;rand&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;(p&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;,m&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;)
-   C&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;zeros&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;Float64&lt;/span&gt;,n&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;,m&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;)
-   &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; i&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;in&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;n&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;
-      &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; j&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;in&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;m&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;
-         &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; k&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;in&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;p&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;
-            C&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;[i&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;,j&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;] &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; C&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;[i&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;,j&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;]&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;A&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;[i&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;,k&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;]&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;B&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;[k&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;,j&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;]
-         &lt;span style=&#34;color:#66d9ef&#34;&gt;end&lt;/span&gt;
-       &lt;span style=&#34;color:#66d9ef&#34;&gt;end&lt;/span&gt;
-    &lt;span style=&#34;color:#66d9ef&#34;&gt;end&lt;/span&gt;
-&lt;span style=&#34;color:#66d9ef&#34;&gt;end&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;pre&gt;&lt;code&gt;f1 (generic function with 1 method)
+
+&lt;pre&gt;&lt;code class=&#34;language-julia&#34;&gt;function f1(n, p, m)
+   A=rand(n,p)
+   B=rand(p,m)
+   C=zeros(Float64,n,m)
+   for i in 1:n
+      for j in 1:m
+         for k in 1:p
+            C[i,j] = C[i,j]+A[i,k]*B[k,j]
+         end
+       end
+    end
+end
 &lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;f1 (generic function with 1 method)
+&lt;/code&gt;&lt;/pre&gt;
+
 &lt;p&gt;我們先試試看以 julia 既有的計算時間指令來看結果如何&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;@time&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt; f1&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;100&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;200&lt;/span&gt;)
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;pre&gt;&lt;code&gt;  0.076423 seconds (161.79 k allocations: 8.380 MiB)
+
+&lt;pre&gt;&lt;code class=&#34;language-julia&#34;&gt;@time f1(100,10,200)
 &lt;/code&gt;&lt;/pre&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;@timed&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt; f1&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;100&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;200&lt;/span&gt;)
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;pre&gt;&lt;code&gt;(nothing, 0.000448109, 184496, 0.0, Base.GC_Diff(184496, 1, 0, 5, 2, 0, 0, 0, 0))
+
+&lt;pre&gt;&lt;code&gt;  0.076423 seconds (161.79 k allocations: 8.380 MiB)
 &lt;/code&gt;&lt;/pre&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;@timev&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt; f1&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;100&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;200&lt;/span&gt;)
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;pre&gt;&lt;code&gt;  0.005932 seconds (8 allocations: 180.172 KiB, 92.28% gc time)
+
+&lt;pre&gt;&lt;code class=&#34;language-julia&#34;&gt;@timed f1(100,10,200)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;(nothing, 0.000448109, 184496, 0.0, Base.GC_Diff(184496, 1, 0, 5, 2, 0, 0, 0, 0))
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-julia&#34;&gt;@timev f1(100,10,200)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;  0.005932 seconds (8 allocations: 180.172 KiB, 92.28% gc time)
 elapsed time (ns): 5931535
 gc time (ns):      5473727
 bytes allocated:   184496
@@ -277,14 +425,23 @@ non-pool GC allocs:2
 malloc() calls:    1
 GC pauses:         1
 &lt;/code&gt;&lt;/pre&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;@elapsed&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt; f1&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;100&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;200&lt;/span&gt;)
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;pre&gt;&lt;code&gt;0.000561533
+
+&lt;pre&gt;&lt;code class=&#34;language-julia&#34;&gt;@elapsed f1(100,10,200)
 &lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;0.000561533
+&lt;/code&gt;&lt;/pre&gt;
+
 &lt;p&gt;這些指令的表現如同一開始我們所介紹的, 顯示出程式執行時間以及其他資訊.&lt;/p&gt;
+
 &lt;p&gt;不過一般而言一個程式在第一次跑及之後幾次跑的運行效能會不同, 這是由於初始化的關係. 所以我們通常要跑好幾次來算平均, 已得知一個程式的真正效能.&lt;/p&gt;
+
 &lt;p&gt;&lt;code&gt;benchmark&lt;/code&gt; 就提供了這樣的功用, 他會跑好幾次程式, 並且計算最大最小時間.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;@benchmark&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt; f1&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;100&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;200&lt;/span&gt;)
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;pre&gt;&lt;code&gt;BenchmarkTools.Trial:
+
+&lt;pre&gt;&lt;code class=&#34;language-julia&#34;&gt;@benchmark f1(100,10,200)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;BenchmarkTools.Trial:
   memory estimate:  180.02 KiB
   allocs estimate:  4
   --------------
@@ -296,17 +453,24 @@ GC pauses:         1
   samples:          9711
   evals/sample:     1
 &lt;/code&gt;&lt;/pre&gt;
+
 &lt;p&gt;接著我們看一下如果用 &lt;code&gt;LinearAlgebra&lt;/code&gt; 裡的矩陣乘法指令效能如何.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt; f2&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;(n&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;, p&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;, m&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;)
-    A&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;rand&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;(n&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;,p&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;)
-    B&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;rand&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;(p&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;,m&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;)
-    C&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;zeros&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;Float64&lt;/span&gt;,n&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;,m&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;)
-    mul!&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;(C&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;,A&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;,B&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;);
-&lt;span style=&#34;color:#66d9ef&#34;&gt;end&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;pre&gt;&lt;code&gt;f2 (generic function with 1 method)
+
+&lt;pre&gt;&lt;code class=&#34;language-julia&#34;&gt;function f2(n, p, m)
+    A=rand(n,p)
+    B=rand(p,m)
+    C=zeros(Float64,n,m)
+    mul!(C,A,B);
+end
 &lt;/code&gt;&lt;/pre&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;@benchmark&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt; f2&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;100&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;200&lt;/span&gt;)
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;pre&gt;&lt;code&gt;BenchmarkTools.Trial:
+
+&lt;pre&gt;&lt;code&gt;f2 (generic function with 1 method)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-julia&#34;&gt;@benchmark f2(100,10,200)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;BenchmarkTools.Trial:
   memory estimate:  180.02 KiB
   allocs estimate:  4
   --------------
@@ -318,25 +482,45 @@ GC pauses:         1
   samples:          10000
   evals/sample:     1
 &lt;/code&gt;&lt;/pre&gt;
+
 &lt;p&gt;看起來似乎比我們自己寫的 for-loop 效能好一些.&lt;/p&gt;
-&lt;hr&gt;
+
+&lt;hr /&gt;
+
 &lt;h2 id=&#34;type-stability&#34;&gt;type-stability&lt;/h2&gt;
+
 &lt;p&gt;julia 語言號稱效能非常好, 不過常常我們自己寫一個 julia 程式發現跑得沒有很快, 這通常是由於所謂的 “型別穩定性 type-stability”. 這樣的問題可以藉由以下幾個 julia 內建的巨集程式來診斷.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;@code_warntype&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt; f1&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;)
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;@code_typed&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt; f1&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;)
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;@code_native&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt; f1&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;)
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;這方面更深入的說明可見 &lt;a href=&#34;https://docs.julialang.org/en/v1/manual/performance-tips/&#34;&gt;julia: performance tips&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;example-2-vector-2-norm&#34;&gt;Example 2: Vector 2-norm&lt;/h2&gt;
-&lt;p&gt;接著我們看一下算向量 2-norm 的效能, 一樣我們比較一下自己寫的以及 call 函數的方式.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt; t1&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;(n&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;)
-    vec&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; rand&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;,n&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;);
-    vec&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;vec&lt;span style=&#34;color:#f92672&#34;&gt;&amp;#39;&lt;/span&gt;;
-&lt;span style=&#34;color:#66d9ef&#34;&gt;end&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;pre&gt;&lt;code&gt;t1 (generic function with 1 method)
+
+&lt;pre&gt;&lt;code class=&#34;language-julia&#34;&gt;@code_warntype f1(10,10,10)
 &lt;/code&gt;&lt;/pre&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;@benchmark&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt; t1&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;^&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;5&lt;/span&gt;)
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;pre&gt;&lt;code&gt;BenchmarkTools.Trial:
+
+&lt;pre&gt;&lt;code class=&#34;language-julia&#34;&gt;@code_typed f1(10,10,10)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-julia&#34;&gt;@code_native f1(10,10,10)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;這方面更深入的說明可見 &lt;a href=&#34;https://docs.julialang.org/en/v1/manual/performance-tips/&#34; target=&#34;_blank&#34;&gt;julia: performance tips&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;example-2-vector-2-norm&#34;&gt;Example 2: Vector 2-norm&lt;/h2&gt;
+
+&lt;p&gt;接著我們看一下算向量 2-norm 的效能, 一樣我們比較一下自己寫的以及 call 函數的方式.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-julia&#34;&gt;function t1(n)
+    vec = rand(1,n);
+    vec*vec&#39;;
+end
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;t1 (generic function with 1 method)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-julia&#34;&gt;@benchmark t1(10^5)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;BenchmarkTools.Trial:
   memory estimate:  781.42 KiB
   allocs estimate:  3
   --------------
@@ -348,14 +532,20 @@ GC pauses:         1
   samples:          8213
   evals/sample:     1
 &lt;/code&gt;&lt;/pre&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt; t2&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;(n&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;)
-    vec&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; rand&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;,n&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;);
-    sum&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;(abs2&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;, vec&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;);
-&lt;span style=&#34;color:#66d9ef&#34;&gt;end&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;pre&gt;&lt;code&gt;t2 (generic function with 1 method)
+
+&lt;pre&gt;&lt;code class=&#34;language-julia&#34;&gt;function t2(n)
+    vec = rand(1,n);
+    sum(abs2, vec);
+end
 &lt;/code&gt;&lt;/pre&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;@benchmark&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt; t2&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;^&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;5&lt;/span&gt;)
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;pre&gt;&lt;code&gt;BenchmarkTools.Trial:
+
+&lt;pre&gt;&lt;code&gt;t2 (generic function with 1 method)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-julia&#34;&gt;@benchmark t2(10^5)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;BenchmarkTools.Trial:
   memory estimate:  781.33 KiB
   allocs estimate:  2
   --------------
@@ -367,18 +557,27 @@ GC pauses:         1
   samples:          10000
   evals/sample:     1
 &lt;/code&gt;&lt;/pre&gt;
-&lt;hr&gt;
+
+&lt;hr /&gt;
+
 &lt;h2 id=&#34;example-3-solving-linear-system&#34;&gt;Example 3: Solving linear system&lt;/h2&gt;
-&lt;p&gt;這裡我們看一下解線性系統, 也就是 matlab 常見的&amp;quot;左除&amp;rdquo;, 的效率如何.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt; s1&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;(n&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;)
-    A&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;rand&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;(n&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;,n&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;);
-    b&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;rand&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;(n&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;);
-    A&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;\&lt;/span&gt;b&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;;
-&lt;span style=&#34;color:#66d9ef&#34;&gt;end&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;pre&gt;&lt;code&gt;s1 (generic function with 1 method)
+
+&lt;p&gt;這裡我們看一下解線性系統, 也就是 matlab 常見的&amp;rdquo;左除&amp;rdquo;, 的效率如何.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-julia&#34;&gt;function s1(n)
+    A=rand(n,n);
+    b=rand(n);
+    A\b;
+end
 &lt;/code&gt;&lt;/pre&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;@benchmark&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt; s1&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;1000&lt;/span&gt;)
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;pre&gt;&lt;code&gt;BenchmarkTools.Trial:
+
+&lt;pre&gt;&lt;code&gt;s1 (generic function with 1 method)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-julia&#34;&gt;@benchmark s1(1000)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;BenchmarkTools.Trial:
   memory estimate:  15.28 MiB
   allocs estimate:  8
   --------------
@@ -390,7 +589,8 @@ GC pauses:         1
   samples:          276
   evals/sample:     1
 &lt;/code&gt;&lt;/pre&gt;
-&lt;hr&gt;
+
+&lt;hr /&gt;
 </description>
     </item>
     
@@ -402,69 +602,107 @@ GC pauses:         1
       <description>&lt;blockquote&gt;
 &lt;p&gt;Applied Project 1 in Sec.4.7, Calculus by Stewart&lt;/p&gt;
 &lt;/blockquote&gt;
+
 &lt;p&gt;Given a cylindrical can with fixed volume $v$, we want to find the height $h$ and radius $r$ that minimize the cost of metal to make the can.&lt;/p&gt;
+
 &lt;p&gt;If we disregard any waste metal in the manufacturing process, then the problem is to minimize the surface area of the cylinder. It can be found that the solution of this problem is $h=2r$; this is, the height should be the same as the diameter.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;But,&lt;/strong&gt; for most of the cans in the supermarket, the height is usually greater than the diameter and the ratio $h/r$ varies from $2$ up to about $3.8$. Let&#39;s see if we can explain this phenomenon.&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;img src=&#34;https://media.cheggcdn.com/study/e3e/e3e1a59a-d0be-46e7-8557-07e775d84b81/715030-4.7-1IAP11.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;But,&lt;/strong&gt; for most of the cans in the supermarket, the height is usually greater than the diameter and the ratio $h/r$ varies from $2$ up to about $3.8$. Let&amp;rsquo;s see if we can explain this phenomenon.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://media.cheggcdn.com/study/e3e/e3e1a59a-d0be-46e7-8557-07e775d84b81/715030-4.7-1IAP11.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
 &lt;p&gt;&lt;strong&gt;Question 1:&lt;/strong&gt; The material for the cans is cut from sheets of metal. The cylindrical sides are formed by bending rectangles; these rectangles are cut from the sheet with little or no waste.&lt;/p&gt;
+
 &lt;p&gt;But if the top and bottom discs are cut from squares of side $2r$, this leaves considerable waste metal, which may be recycled but has little or no value to the can makers. If this is the case, find the ratio $h/r$ for which the amount of metal used is minimized.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt; \&lt;br&gt;
+
+&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt; &lt;br /&gt;
 For a cylindrical can we have the relation between $v$, $r$ and $h$ as&lt;/p&gt;
+
 &lt;p&gt;$$
 v = r^2\pi h \Longrightarrow h = \frac{v}{r^2\pi}.
 $$&lt;/p&gt;
+
 &lt;p&gt;The total metal used, $M$, consists of the cylindrical side and two squares (with area $4r^2$) that makes the top and bottom discs. Written everything in terms of $r$ we have&lt;/p&gt;
+
 &lt;p&gt;$$
 M = 2r\pi h + 2\times 4 r^2 = 2r\pi\left(\frac{v}{r^2\pi}\right) + 8r^2 = \frac{2v}{r} + 8 r^2.
 $$&lt;/p&gt;
+
 &lt;p&gt;When $\frac{dM}{dr}=0$, there exists a minimum value&lt;/p&gt;
+
 &lt;p&gt;$$
 \frac{dM}{dr} = -\frac{2v}{r^2} + 16r=0 \Longrightarrow v = 8r^3.
 $$&lt;/p&gt;
+
 &lt;p&gt;So we find that, with the minimum metal used,&lt;/p&gt;
+
 &lt;p&gt;$$
 h = \frac{v}{r^2\pi} = \frac{8r}{\pi} \Longrightarrow \frac{h}{r} = \frac{8}{\pi}\approx 2.55
 $$&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Question 2:&lt;/strong&gt;	A more efficient packing of the discs is obtained by dividing the metal sheet into hexagons and cutting the circular lids and bases from the hexagons. If this strategy is adopted, find the ratio $h/r$ for which the amount of metal used is minimized.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt; \&lt;br&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;strong&gt;Question 2:&lt;/strong&gt; A more efficient packing of the discs is obtained by dividing the metal sheet into hexagons and cutting the circular lids and bases from the hexagons. If this strategy is adopted, find the ratio $h/r$ for which the amount of metal used is minimized.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt; &lt;br /&gt;
 The total metal used, $M$, consists of the cylindrical side and two hexagons that makes the top and bottom discs:&lt;/p&gt;
+
 &lt;p&gt;$$
 M = 2r\pi h + 2\left[\frac{1}{2}\left(\frac{2r}{\sqrt{3}}\right)6r\right] = \frac{2v}{r} + 4\sqrt{3} r^2.
 $$&lt;/p&gt;
+
 &lt;p&gt;When $\frac{dM}{dr}=0$, there exists a minimum value&lt;/p&gt;
+
 &lt;p&gt;$$
 \frac{dM}{dr} = -\frac{2v}{r^2} + 8\sqrt{3}r=0 \Longrightarrow v = 4\sqrt{3}r^3.
 $$&lt;/p&gt;
+
 &lt;p&gt;So we find that, with the minimum metal used,&lt;/p&gt;
+
 &lt;p&gt;$$
 h = \frac{v}{r^2\pi} = \frac{4\sqrt{3}r}{\pi} \Longrightarrow \frac{h}{r} = \frac{4\sqrt{3}}{\pi}\approx 2.21
 $$&lt;/p&gt;
-&lt;hr&gt;
+
+&lt;hr /&gt;
+
 &lt;p&gt;&lt;strong&gt;Question 3:&lt;/strong&gt; In addition to the cost of the metal, we need to incorporate the manufacturing of the can into the cost.&lt;/p&gt;
+
 &lt;ul&gt;
 &lt;li&gt;Assuming that most of the expense is incurred in joining the sides.&lt;/li&gt;
 &lt;/ul&gt;
+
 &lt;p&gt;For a cylindrical can, we need to bend a rectangle and joinging the sides together (with length $h$) to make the cylindrical shell. Also we need to join the two discs to the shell (each disc with length $2\pi r$). So the cost in joining is $k(h + 4\pi r)$ where $k$ is the reciprocal of the length that can be joined for the cost of one unit area of metal.&lt;/p&gt;
+
 &lt;p&gt;If we cut the discs from hexagons as in Question 2, then the total cost consists of the cost of the metal and the cost in joinging the sides, that is proportional to $4\sqrt{3}r^2 + 2\pi r h + k(4\pi r + h)$.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt; \&lt;br&gt;
+
+&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt; &lt;br /&gt;
 Denote the total cost by $f$ and rewrite it as a function of $r$:
 $$
 f( r )  = 4\sqrt{3}r^2 + 2\pi r \left(\frac{v}{r^2\pi}\right) + k\left(4\pi r + \frac{v}{r^2\pi}\right) = 4\sqrt{3}r^2 + \frac{2v}{r} + k\left(4\pi r + \frac{v}{r^2\pi}\right).
 $$&lt;/p&gt;
+
 &lt;p&gt;When $\frac{df}{dr}=0$, there exists a minimum value&lt;/p&gt;
+
 &lt;p&gt;$$
 \frac{df}{dr} = 8\sqrt{3}r -\frac{2v}{r^2} + k\left(4\pi - \frac{2v}{r^3\pi}\right) =0 \Longrightarrow 8\sqrt{3}r + 4\pi k = \left(\frac{2}{r^2} + \frac{2k}{r^3\pi}\right)v.
 $$&lt;/p&gt;
+
 &lt;p&gt;So we find that, with the minimum metal used,&lt;/p&gt;
+
 &lt;p&gt;$$
 \frac{h}{r} = \frac{v}{r^3\pi} = \frac{4\sqrt{3}r + 2k\pi}{\pi r + k}.
 $$&lt;/p&gt;
-&lt;hr&gt;
+
+&lt;hr /&gt;
+
 &lt;p&gt;&lt;strong&gt;Question 4:&lt;/strong&gt; What happened when a can is large or joining is cheap, and what happened when the can is small or joining is costly?&lt;/p&gt;
+
 &lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt; \&lt;/p&gt;
+
 &lt;p&gt;For a cylinder with fixed volume $v$:&lt;/p&gt;
+
 &lt;ul&gt;
 &lt;li&gt;When joining is cheap, $0&amp;lt;k\ll 1$, we have
 $$
@@ -475,7 +713,9 @@ $$
 \frac{h}{r} = \frac{4\sqrt{3}r + 2k\pi}{\pi r + k} \to 2\pi\approx 6.28.
 $$&lt;/li&gt;
 &lt;/ul&gt;
+
 &lt;p&gt;If $k$ is fixed, we need to firstly find the relation between the volume $v$ and the ratio $h/r$.&lt;/p&gt;
+
 &lt;p&gt;For convenience of notation we define $R=h/r$. Then we rewrite $r$ as a function of $v$ and $R$ as
 $$
 r = \sqrt[3]{\frac{v}{\pi R}}.
@@ -484,6 +724,7 @@ With careful calculation we obtain
 $$
 \frac{\sqrt[3]{v}}{k} = \frac{\sqrt[3]{\pi R}(2\pi - R)}{\pi R - 4\sqrt{3}}.
 $$&lt;/p&gt;
+
 &lt;ul&gt;
 &lt;li&gt;When a can is large, $v\gg 1$, we have that the denominator of the term of the right hand side should approaches $0$, that is,
 $$
@@ -494,7 +735,8 @@ $$
 2\pi - R \to 0 \Longrightarrow \frac{h}{r} = R \to 2\pi\approx 6.28.
 $$&lt;/li&gt;
 &lt;/ul&gt;
-&lt;hr&gt;
+
+&lt;hr /&gt;
 </description>
     </item>
     
@@ -503,100 +745,121 @@ $$&lt;/li&gt;
       <link>https://teshenglin.github.io/post/2019_numerical_integration/</link>
       <pubDate>Wed, 11 Dec 2019 00:00:00 +0000</pubDate>
       <guid>https://teshenglin.github.io/post/2019_numerical_integration/</guid>
-      <description>&lt;blockquote&gt;
-&lt;p&gt;在微積分課程裡我們有學到積分的&#39;中點法&amp;rsquo;, &amp;lsquo;梯形法&#39;以及&#39;辛普森法&amp;rsquo;. 這裡我們簡介一些基本概念並且引進高斯積分法.&lt;/p&gt;
+      <description>
+
+&lt;blockquote&gt;
+&lt;p&gt;在微積分課程裡我們有學到積分的&amp;rsquo;中點法&amp;rsquo;, &amp;lsquo;梯形法&amp;rsquo;以及&amp;rsquo;辛普森法&amp;rsquo;. 這裡我們簡介一些基本概念並且引進高斯積分法.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h4 id=&#34;goal-任意給定一可積分函數-fx-xin-1-1-我們想要算-int1_-1-fxdx&#34;&gt;Goal: 任意給定一可積分函數 $f(x)$, $x\in[-1, 1]$, 我們想要算 $\int^1_{-1} f(x),dx$.&lt;/h4&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Remark:&lt;/strong&gt; 對任一個積分式 $\int^b_{a} g(x),dx$ 我們皆可用變數變換來將此積分轉到 $[-1, 1]$ 這個區間. 所以我們只需考慮 $[-1, 1]$ 即可.&lt;/p&gt;
-&lt;hr&gt;
+
+&lt;h4 id=&#34;goal-任意給定一可積分函數-f-x-x-in-1-1-我們想要算-int-1-1-f-x-dx&#34;&gt;Goal: 任意給定一可積分函數 $f(x)$, $x\in[-1, 1]$, 我們想要算 $\int^1_{-1} f(x)\,dx$.&lt;/h4&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;strong&gt;Remark:&lt;/strong&gt; 對任一個積分式 $\int^b_{a} g(x)\,dx$ 我們皆可用變數變換來將此積分轉到 $[-1, 1]$ 這個區間. 所以我們只需考慮 $[-1, 1]$ 即可.&lt;/p&gt;
+
+&lt;hr /&gt;
+
 &lt;p&gt;首先我們討論一下哪種方法比較準. 一個最簡單的判斷方法是看積分法能不能將多項式算準.&lt;/p&gt;
+
 &lt;p&gt;我們考慮三種積分法:&lt;/p&gt;
+
 &lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;Midpoint rule: $\int^1_{-1}f(x),dx\approx 2f(0)$&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Trapezoidal rule: $\int^1_{-1}f(x),dx\approx f(-1)+f(1)$&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Simpson&#39;s rule: $\int^1_{-1}f(x),dx\approx \frac{1}{3}(f(-1)+4f(0)+f(1))$&lt;/p&gt;
-&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Midpoint rule: $\int^1_{-1}f(x)\,dx\approx 2f(0)$&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Trapezoidal rule: $\int^1_{-1}f(x)\,dx\approx f(-1)+f(1)$&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Simpson&amp;rsquo;s rule: $\int^1_{-1}f(x)\,dx\approx \frac{1}{3}(f(-1)+4f(0)+f(1))$&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
+
 &lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;我們先檢驗常數函數: $\int^1_{-1} 1,dx=2$. 很快我們就可以發現以上三種方法都可以得出完全正確的答案.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;接著我們檢驗一次函數: $\int^1_{-1} x,dx=0$. 一樣, 三種方法都得出正確答案.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;二次函數: $\int^1_{-1} x^2,dx=\frac{2}{3}$. 對於二次函數我們發現, 中點法以及梯形法都無法算出正確答案, 只有辛普森法能成功.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;三次函數: $\int^1_{-1} x^3,dx=0$. 對於三次函數我們只檢驗辛普森法, 發現三次函數辛普森法也能算準.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;四次函數: $\int^1_{-1} x^4,dx=\frac{2}{5}$. 對於四次函數, 辛普森法就算錯了.&lt;/p&gt;
-&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;我們先檢驗常數函數: $\int^1_{-1} 1\,dx=2$. 很快我們就可以發現以上三種方法都可以得出完全正確的答案.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;接著我們檢驗一次函數: $\int^1_{-1} x\,dx=0$. 一樣, 三種方法都得出正確答案.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;二次函數: $\int^1_{-1} x^2\,dx=\frac{2}{3}$. 對於二次函數我們發現, 中點法以及梯形法都無法算出正確答案, 只有辛普森法能成功.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;三次函數: $\int^1_{-1} x^3\,dx=0$. 對於三次函數我們只檢驗辛普森法, 發現三次函數辛普森法也能算準.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;四次函數: $\int^1_{-1} x^4\,dx=\frac{2}{5}$. 對於四次函數, 辛普森法就算錯了.&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
+
 &lt;p&gt;&lt;strong&gt;小結論&lt;/strong&gt;&lt;/p&gt;
+
 &lt;ol&gt;
 &lt;li&gt;中點跟梯形法準確率相同, 能準確的算出任意一次多項式的積分值.&lt;/li&gt;
 &lt;li&gt;辛普森法比中點及梯形法更準確, 並且它能準確的算出任意三次多項式的積分值.&lt;/li&gt;
 &lt;/ol&gt;
-&lt;hr&gt;
+
+&lt;hr /&gt;
+
 &lt;blockquote&gt;
-&lt;p&gt;接著我們稍微推廣一下, 並且介紹所謂的&#39;高斯積分&amp;rsquo;.&lt;/p&gt;
+&lt;p&gt;接著我們稍微推廣一下, 並且介紹所謂的&amp;rsquo;高斯積分&amp;rsquo;.&lt;/p&gt;
 &lt;/blockquote&gt;
+
 &lt;p&gt;&lt;strong&gt;Question:&lt;/strong&gt; 假設我們現在想要用函數在 $x=0$ 這個點的值來估算積分, 那係數要取多少會最好?&lt;/p&gt;
+
 &lt;p&gt;也就是說我們假設
-$$\int^1_{-1}f(x),dx\approx A_0f(0),$$
+$$\int^1_{-1}f(x)\,dx\approx A_0f(0),$$
 其中 $A_0$ 是個常數. 那 $A_0$ 要選哪個數字, 這個積分公式才會算的最準?&lt;/p&gt;
-&lt;p&gt;依照我們之前的想法, 要讓積分式準就是要讓他把多項式算準. 所以我們希望他至少能把常數函數算準. 這樣的話很容易就看出 $A_0=2$, 也就是&#39;中點法&amp;rsquo;.&lt;/p&gt;
+
+&lt;p&gt;依照我們之前的想法, 要讓積分式準就是要讓他把多項式算準. 所以我們希望他至少能把常數函數算準. 這樣的話很容易就看出 $A_0=2$, 也就是&amp;rsquo;中點法&amp;rsquo;.&lt;/p&gt;
+
 &lt;p&gt;&lt;strong&gt;Question:&lt;/strong&gt; 假設我們現在想要用函數在 $x=-1$ 以及 $x=1$ 這兩個點的值來估算積分, 那係數要取多少會最好?&lt;/p&gt;
+
 &lt;p&gt;也就是說我們假設
-$$\int^1_{-1}f(x),dx\approx \alpha f(-1)+\beta f(1),$$
+$$\int^1_{-1}f(x)\,dx\approx \alpha f(-1)+\beta f(1),$$
 其中 $\alpha, \beta$ 是常數.&lt;/p&gt;
+
 &lt;p&gt;我們有兩個未知數, 所以我們希望他至少能把常數及一次函數算準. 這樣的話我們可以列出方程式:
 $$
 \alpha + \beta = 2, \quad -\alpha + \beta = 0.
 $$
 解方程式我們得到 $\alpha=\beta=1$, 也就是梯形法.&lt;/p&gt;
+
 &lt;p&gt;&lt;strong&gt;Question:&lt;/strong&gt; 假設我們現在只想用兩個點的值來估算積分, 那怎樣做會最好?&lt;/p&gt;
+
 &lt;p&gt;也就是說我們假設
-$$\int^1_{-1}f(x),dx\approx A_0 f(x_0)+A_1 f(x_1),$$
+$$\int^1_{-1}f(x)\,dx\approx A_0 f(x_0)+A_1 f(x_1),$$
 其中 $A_0, A_1, x_0, x_1$ 都待決定.&lt;/p&gt;
+
 &lt;p&gt;我們有四個未知數, 所以理想狀況下應該能從常數到三次多項式都能算準, 依此可以列出四個方程式:
 $$
 \begin{aligned}
-A_0 + A_1 &amp;amp;= 2 \\\&lt;br&gt;
-A_0x_0 + A_1x_1 &amp;amp;= 0 \\\&lt;br&gt;
-A_0x^2_0 + A_1x^2_1 &amp;amp;= \frac{2}{3} \\\&lt;br&gt;
+A_0 + A_1 &amp;amp;= 2 \\&lt;br /&gt;
+A_0x_0 + A_1x_1 &amp;amp;= 0 \\&lt;br /&gt;
+A_0x^2_0 + A_1x^2_1 &amp;amp;= \frac{2}{3} \\&lt;br /&gt;
 A_0x^3_0 + A_1x^3_1 &amp;amp;= 0.
 \end{aligned}
 $$
 解方程式我們得到 $A_0=A_1=1$, $x_0=-\frac{1}{\sqrt{3}}$, $x_1=\frac{1}{\sqrt{3}}$. 也就是說&lt;/p&gt;
+
 &lt;p&gt;$$
-\int^1_{-1} f(x),dx \approx f\left(-\frac{1}{\sqrt{3}}\right)+ f\left(\frac{1}{\sqrt{3}}\right).
+\int^1_{-1} f(x)\,dx \approx f\left(-\frac{1}{\sqrt{3}}\right)+ f\left(\frac{1}{\sqrt{3}}\right).
 $$
 這就是所謂的兩點高斯積分公式 (two-point Gaussian quadrature formula).&lt;/p&gt;
-&lt;hr&gt;
+
+&lt;hr /&gt;
+
 &lt;blockquote&gt;
 &lt;p&gt;最後我們看一下以數值積分來估算的例子.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;我們想計算 $\int^1_{-1} e^x,dx$, 當然我們知道答案是 $e^1-e^{-1}$, 不過我們想要知道若以上列幾種方法估算會有多準確.&lt;/p&gt;
+
+&lt;p&gt;我們想計算 $\int^1_{-1} e^x\,dx$, 當然我們知道答案是 $e^1-e^{-1}$, 不過我們想要知道若以上列幾種方法估算會有多準確.&lt;/p&gt;
+
 &lt;p&gt;&lt;strong&gt;Remark:&lt;/strong&gt; 一般來說我們會先將所要積分的範圍分成 $n$ 等分, 接著在每一等分上使用上列積分法. 這就是微積分課本中所介紹的合成積分法 (composite integral rules). 實作上的細節我們就不在這裡討論.&lt;/p&gt;
+
 &lt;p&gt;我們將 $[-1, 1]$ 區間均勻分成 $n$ 等分, 再用三種不同積分法來估算積分值. 下表列出不同積分法在不同區間數所得之值與實際值之間的絕對誤差.&lt;/p&gt;
+
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
 &lt;th&gt;n\Method&lt;/th&gt;
 &lt;th&gt;Midpoint&lt;/th&gt;
 &lt;th&gt;Trapezoidal&lt;/th&gt;
-&lt;th&gt;Simpson&#39;s&lt;/th&gt;
+&lt;th&gt;Simpson&amp;rsquo;s&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
+
 &lt;tbody&gt;
 &lt;tr&gt;
 &lt;td&gt;10&lt;/td&gt;
@@ -604,12 +867,14 @@ $$
 &lt;td&gt;7.83e-3&lt;/td&gt;
 &lt;td&gt;2.08e-5&lt;/td&gt;
 &lt;/tr&gt;
+
 &lt;tr&gt;
 &lt;td&gt;100&lt;/td&gt;
 &lt;td&gt;3.92e-5&lt;/td&gt;
 &lt;td&gt;7.83e-5&lt;/td&gt;
 &lt;td&gt;2.09e-9&lt;/td&gt;
 &lt;/tr&gt;
+
 &lt;tr&gt;
 &lt;td&gt;1000&lt;/td&gt;
 &lt;td&gt;3.92e-7&lt;/td&gt;
@@ -618,8 +883,11 @@ $$
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
+
 &lt;p&gt;我們可以看到, 中點以及梯形法誤差皆是以 $O(n^{-2})$ 來下降, 也就是點數變十倍時誤差會降一百倍, 而辛普森法則是 $O(n^{-4})$.&lt;/p&gt;
-&lt;p&gt;接著我們試試看用高斯積分來做, 這裡我們就不分小區間, 直接做整個 $[-1, 1]$ 區間. 多個點的高斯積分的公式可在 &lt;a href=&#34;https://en.wikipedia.org/wiki/Gaussian_quadrature&#34;&gt;wiki&lt;/a&gt; 找到. 我們將 $m$-point 高斯積分所得之值與實際值之間的絕對誤差列於下表&lt;/p&gt;
+
+&lt;p&gt;接著我們試試看用高斯積分來做, 這裡我們就不分小區間, 直接做整個 $[-1, 1]$ 區間. 多個點的高斯積分的公式可在 &lt;a href=&#34;https://en.wikipedia.org/wiki/Gaussian_quadrature&#34; target=&#34;_blank&#34;&gt;wiki&lt;/a&gt; 找到. 我們將 $m$-point 高斯積分所得之值與實際值之間的絕對誤差列於下表&lt;/p&gt;
+
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -627,39 +895,48 @@ $$
 &lt;th&gt;Gaussian quadrature rule&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
+
 &lt;tbody&gt;
 &lt;tr&gt;
 &lt;td&gt;2&lt;/td&gt;
 &lt;td&gt;7.71e-3&lt;/td&gt;
 &lt;/tr&gt;
+
 &lt;tr&gt;
 &lt;td&gt;3&lt;/td&gt;
 &lt;td&gt;6.55e-5&lt;/td&gt;
 &lt;/tr&gt;
+
 &lt;tr&gt;
 &lt;td&gt;4&lt;/td&gt;
 &lt;td&gt;2.95e-7&lt;/td&gt;
 &lt;/tr&gt;
+
 &lt;tr&gt;
 &lt;td&gt;5&lt;/td&gt;
 &lt;td&gt;8.25e-10&lt;/td&gt;
 &lt;/tr&gt;
+
 &lt;tr&gt;
 &lt;td&gt;6&lt;/td&gt;
 &lt;td&gt;1.56e-12&lt;/td&gt;
 &lt;/tr&gt;
+
 &lt;tr&gt;
 &lt;td&gt;7&lt;/td&gt;
 &lt;td&gt;2.66e-15&lt;/td&gt;
 &lt;/tr&gt;
+
 &lt;tr&gt;
 &lt;td&gt;8&lt;/td&gt;
 &lt;td&gt;4.44e-16&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
+
 &lt;p&gt;可以看到我們用 8 個點就可以將這個積分準確估計到誤差接近機器的捨入誤差 (rounding error).&lt;/p&gt;
-&lt;hr&gt;
+
+&lt;hr /&gt;
 </description>
     </item>
     
@@ -679,7 +956,9 @@ $$
       <description>&lt;blockquote&gt;
 &lt;p&gt;這幾天有個朋友問我一個關於不定積分的問題, 看起來很詭異. 我們一起來看看.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;我們以分部積分(integration by part)來求 $\tan$ 的不定積分 $\int \tan(x),dx$.&lt;/p&gt;
+
+&lt;p&gt;我們以分部積分(integration by part)來求 $\tan$ 的不定積分 $\int \tan(x)\,dx$.&lt;/p&gt;
+
 &lt;p&gt;首先我們知道 $\tan(x) = \frac{\sin(x)}{\cos(x)}$, 接著我們來做分部積分, 假設
 $$
 u = \frac{1}{\cos(x)}, \quad dv = \sin(x)dx.
@@ -690,51 +969,66 @@ du = \frac{\sin(x)}{\cos^2(x)}dx, \quad v = -\cos(x).
 $$
 根據分部積分公式我們得到
 $$
-\int \tan(x),dx  = \frac{1}{\cos(x)}\left(-\cos(x)\right) - \int (-\cos(x))\frac{\sin(x)}{\cos^2(x)}dx
-= -1 + \int\tan(x),dx.
+\int \tan(x)\,dx  = \frac{1}{\cos(x)}\left(-\cos(x)\right) - \int (-\cos(x))\frac{\sin(x)}{\cos^2(x)}dx
+= -1 + \int\tan(x)\,dx.
 $$
-等號最左邊跟最右邊都有 $\int\tan(x),dx$, 同時減掉我們就得到 $0 = -1$. 太神奇了!!&lt;/p&gt;
+等號最左邊跟最右邊都有 $\int\tan(x)\,dx$, 同時減掉我們就得到 $0 = -1$. 太神奇了!!&lt;/p&gt;
+
 &lt;p&gt;所以問題是, 這中間究竟哪裏有問題？&lt;/p&gt;
-&lt;hr&gt;
+
+&lt;hr /&gt;
+
 &lt;blockquote&gt;
-&lt;p&gt;不定積分 (indefinite integral) 以及反導函數 (antiderivative function) 是在講同一個東西. 可見 &lt;a href=&#34;https://en.wikipedia.org/wiki/Antiderivative&#34;&gt;wiki&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;不定積分 (indefinite integral) 以及反導函數 (antiderivative function) 是在講同一個東西. 可見 &lt;a href=&#34;https://en.wikipedia.org/wiki/Antiderivative&#34; target=&#34;_blank&#34;&gt;wiki&lt;/a&gt;.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;hr&gt;
+
+&lt;hr /&gt;
+
 &lt;blockquote&gt;
 &lt;p&gt;我們最熟悉的數學符號, &amp;lsquo;等號&amp;rsquo;, &amp;lsquo;$=$&amp;rsquo;, 其實在不同的情況下有不同的定義. 雖然都是要表達相等的意思, 不過究竟是怎樣的相等還是有一些小細節需要注意的.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;hr&gt;
+
+&lt;hr /&gt;
+
 &lt;p&gt;在不定積分中的等號究竟是什麼意思? 我們都知道 $\cos$ 的反導函數是 $\sin$, 寫成不定積分就是&lt;/p&gt;
+
 &lt;p&gt;$$
-\int\cos(x),dx = \sin(x)+c,
+\int\cos(x)\,dx = \sin(x)+c,
 $$
 其中 $c$ 是任意常數. 那上列這個式子的等號是什麼意思?&lt;/p&gt;
+
 &lt;p&gt;我們都知道 $\sin(x)$ 加上任意常數, 其微分都會是 $\cos(x)$, 所以我們才有這個式子. 也就是說, 上面這個等號就是這個意思!!&lt;/p&gt;
-&lt;p&gt;再說清楚一點, 當我們寫 $\int f(x),dx = F(x)$ 時意思就是 $F&amp;rsquo;(x) = f(x)$.&lt;/p&gt;
+
+&lt;p&gt;再說清楚一點, 當我們寫 $\int f(x)\,dx = F(x)$ 時意思就是 $F&amp;rsquo;(x) = f(x)$.&lt;/p&gt;
+
 &lt;p&gt;所以回到原文最後一個式子, 我把它在這裡重列一次
 $$
-\int \tan(x),dx  = -1 + \int\tan(x),dx.
+\int \tan(x)\,dx  = -1 + \int\tan(x)\,dx.
 $$
-如果我們把 $\tan$ 的反導函數稱為 $F$, 也就是 $\int\tan(x),dx = F(x)$. 那這個式子可以改寫成
+如果我們把 $\tan$ 的反導函數稱為 $F$, 也就是 $\int\tan(x)\,dx = F(x)$. 那這個式子可以改寫成
 $$
-\int \tan(x),dx  = -1 + F(x).
+\int \tan(x)\,dx  = -1 + F(x).
 $$
 我們知道這個式子也是對的因為 $(F(x)-1)&amp;rsquo; = \tan(x)$. 所以從這個角度來說, 這整個式子就都沒有問題了.&lt;/p&gt;
-&lt;hr&gt;
+
+&lt;hr /&gt;
+
 &lt;p&gt;所以最後一個問題是, 我們可以把東西減掉嗎? 舉例來說,
 $$
 \begin{aligned}
-\int\cos(x),dx &amp;amp;= \sin(x)+1, \\\&lt;br&gt;
-\int\cos(x),dx &amp;amp;= \sin(x).
+\int\cos(x)\,dx &amp;amp;= \sin(x)+1, \\&lt;br /&gt;
+\int\cos(x)\,dx &amp;amp;= \sin(x).
 \end{aligned}
 $$
 兩式一減我們就得到 $0=1$ 了!!&lt;/p&gt;
+
 &lt;p&gt;&lt;strong&gt;BUT,&lt;/strong&gt; 事實上這樣寫是錯的. 再小心一點做的話你會發現兩式相減我們應該是得到
 $$
-\int 0,dx = 1.
+\int 0\,dx = 1.
 $$
 從這裡來看的話, $1$ 的微分是 $0$, 那就完全沒有問題了.&lt;/p&gt;
-&lt;hr&gt;
+
+&lt;hr /&gt;
 </description>
     </item>
     
@@ -754,15 +1048,23 @@ $$
       <description>&lt;blockquote&gt;
 &lt;p&gt;Applied Project in Sec.3.5, Calculus by Stewart&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;&lt;img src=&#34;https://i.stack.imgur.com/ImsaT.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://i.stack.imgur.com/ImsaT.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
 &lt;p&gt;An approach path for an aircraft landing is shown in the figure and satisfies the following conditions:&lt;/p&gt;
+
 &lt;p&gt;(i) The cruising altitude is $h$ when descent starts at a horizontal distance $\ell$ from touchdown at the origin.&lt;/p&gt;
+
 &lt;p&gt;(ii) The pilot must maintain a constant horizontal speed $v$ throughout descent.&lt;/p&gt;
+
 &lt;p&gt;(iii) The absolute value of the vertical acceleration should not exceed a
 constant $k$ (which is much less than the acceleration due to gravity)&lt;/p&gt;
-&lt;hr&gt;
+
+&lt;hr /&gt;
+
 &lt;p&gt;&lt;strong&gt;Question 1:&lt;/strong&gt; Find a cubic polynomial $P(x) = ax^3 + bx^2 + cx + d$ that satisfies condition (i) by imposing suitable conditions on $P(x)$ and $P’(x)$ at the start of descent and at touchdown.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt; \&lt;br&gt;
+
+&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt; &lt;br /&gt;
 At the start of descent:
 $$
 P(\ell) = al^3 +b\ell^2 +c\ell+d = h, \qquad P’(\ell) = 3a\ell^2 +2b\ell+c = 0.
@@ -775,9 +1077,12 @@ Solve for $a$, $b$ in terms of $h$, $\ell$ we find
 $$
 P(x) = −\frac{2h}{\ell^3}x^3 + \frac{3h}{\ell^2}x^2.
 $$&lt;/p&gt;
-&lt;hr&gt;
+
+&lt;hr /&gt;
+
 &lt;p&gt;&lt;strong&gt;Question 2:&lt;/strong&gt; Use conditions (ii) and (iii) to show that $\frac{6hv^2}{\ell^2}\le k$.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt; \&lt;br&gt;
+
+&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt; &lt;br /&gt;
 From (ii), a constant horizontal speed $v$ is assumed throughout descent, we can then express $x$ as
 $$
 x = \ell - vt, \qquad t\in[0, \frac{\ell}{v}],
@@ -789,16 +1094,19 @@ P(t) = −\frac{2h}{\ell^3}(\ell - vt)^3 + \frac{3h}{\ell^2}(\ell - vt)^2, \qqua
 $$
 Therefore, the vertical acceleration $a$ is
 $$
-a(t) = \left|−\frac{12hv^2}{\ell^3}(\ell - vt) + \frac{6hv^2}{\ell^2}\right| = \left|\frac{12hv^3}{\ell^3},t - \frac{6hv^2}{\ell^2}\right|, \qquad t\in[0, \frac{\ell}{v}].
+a(t) = \left|−\frac{12hv^2}{\ell^3}(\ell - vt) + \frac{6hv^2}{\ell^2}\right| = \left|\frac{12hv^3}{\ell^3}\,t - \frac{6hv^2}{\ell^2}\right|, \qquad t\in[0, \frac{\ell}{v}].
 $$
-It can be check, from the Extreme Value Theorem and closed interval method, that $a$ attains it&#39;s maximum value $\frac{6hv^2}{\ell^2}$.
+It can be check, from the Extreme Value Theorem and closed interval method, that $a$ attains it&amp;rsquo;s maximum value $\frac{6hv^2}{\ell^2}$.
 From condition (iii), we therefore have
 $$
 \frac{6hv^2}{\ell} \le k.
 $$&lt;/p&gt;
-&lt;hr&gt;
+
+&lt;hr /&gt;
+
 &lt;p&gt;&lt;strong&gt;Question 3:&lt;/strong&gt; Suppose that an airline decides not to allow vertical acceleration of a plane to exceed $k = 860$(mi/h$^2$). If the cruising altitude of a plane is $35,000$(ft) and the speed is $300$(mi/h), how far away from the airport should the pilot start descent?&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt; \&lt;br&gt;
+
+&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt; &lt;br /&gt;
 Given $P(x) = −\frac{2h}{\ell^3}x^3 + \frac{3h}{\ell^2}x^2$, suppose the pilot starts to descend when the plane is $\ell$(mi) from the airport. In Q2. we know that $\frac{6hv^2}{\ell^2}\le k$. So,
 $$
 v=300\mbox{(mi/h)}, \qquad h=35000\mbox{(ft)} ≈ 6.628\mbox{(mi)}, \qquad k=860\mbox{(mi/h$^2$)},
@@ -808,20 +1116,26 @@ $$
 \ell \ge 64.511.
 $$
 That is, the pilot should start to decend when the plane is $62.511$(mi) away from the airport.&lt;/p&gt;
-&lt;hr&gt;
+
+&lt;hr /&gt;
+
 &lt;p&gt;&lt;strong&gt;Question 4:&lt;/strong&gt; Graph the approach path if the conditions stated in Problem 3 are satisfied.&lt;/p&gt;
+
 &lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# Example code in julia&lt;/span&gt;
-&lt;span style=&#34;color:#66d9ef&#34;&gt;using&lt;/span&gt; Plots&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;
-v&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;300&lt;/span&gt;;
-h&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;6.628&lt;/span&gt;;
-l&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;65&lt;/span&gt;;
-N&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;100&lt;/span&gt;;
-dx&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; l&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;N&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;;
-x&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0.0&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;N&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;; x&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; dx&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;x&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;;
-P&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;h&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;l&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;^&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;)&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;x&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.^&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; (&lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;h&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;l&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;^&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;)&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;x&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.^&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;;
-plot&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;(x&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;, P&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;, lw&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;, xlabel&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;x&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;, ylabel&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;y&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;, title&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;a&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;p&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;p&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;r&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;o&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;a&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;c&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;h&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;p&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;a&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;t&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;h&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;, legend&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;false&lt;/span&gt;)
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-julia&#34;&gt;# Example code in julia
+using Plots
+v = 300;
+h = 6.628;
+l = 65;
+N = 100;
+dx = l/N;
+x = 0.0:N; x = dx*x;
+P = -(2*h/l^3)*x.^3 + (3*h/l^2)*x.^2;
+plot(x, P, lw=3, xlabel = &amp;quot;x&amp;quot;, ylabel = &amp;quot;y&amp;quot;, title=&amp;quot;approach path&amp;quot;, legend=false)
+&lt;/code&gt;&lt;/pre&gt;
+
+
 
 
   
@@ -860,77 +1174,109 @@ plot&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;(x&lt;span style=&#34
       <link>https://teshenglin.github.io/post/2019_fixed_point/</link>
       <pubDate>Mon, 04 Nov 2019 00:00:00 +0000</pubDate>
       <guid>https://teshenglin.github.io/post/2019_fixed_point/</guid>
-      <description>&lt;blockquote&gt;
+      <description>
+
+&lt;blockquote&gt;
 &lt;p&gt;這裡我們介紹固定點迭代法 (Fixed point iteration)&lt;/p&gt;
 &lt;/blockquote&gt;
+
 &lt;p&gt;首先我們介紹什麼是固定點 (Fixed point)&lt;/p&gt;
+
 &lt;blockquote&gt;
 &lt;h2 id=&#34;definition-fixed-point&#34;&gt;Definition: Fixed point&lt;/h2&gt;
-&lt;p&gt;A fixed point of a function $f(x)$ is a number $c$ in its domain such that $f(c)=c$.&lt;/p&gt;
+
+&lt;p&gt;A fixed point of a function $f(x)$ is a number $c$ in its domain such that $f&amp;copy;=c$.&lt;/p&gt;
 &lt;/blockquote&gt;
+
 &lt;p&gt;所以簡單來說, 把固定點這個數字丟進函數後會得到同樣的一個數字. 所以稱之為固定點.&lt;/p&gt;
+
 &lt;p&gt;那固定點重要性其一是在數值計算上有一種迭代方式叫做固定點迭代(Fixed point iteration). 假設我們想要求某個函數的固定點, 也就是滿足 $c=f(c )$ 的這些 $c$, 那我們可以定義一個迭代式
 $$
 x_{n+1} = f(x_n).
 $$&lt;/p&gt;
+
 &lt;p&gt;如果夠幸運的, $\{x_{n}\}$ 這串數字收斂了, 那把它收斂到的數字稱為 $\bar{c}$ 我們就有 $\bar{c}=f(\bar{c})$, 也就是固定點.&lt;/p&gt;
+
 &lt;p&gt;舉個例子來說, 假設我們想要解 $x=\cos(x)$ 這個方程式, 那我們可以定義一個固定點迭代為
 $$
 x_{n+1} = \cos(x_n).
 $$&lt;/p&gt;
+
 &lt;p&gt;這樣的話如果數列收斂, $\{x_{n}\}\to \bar{x}$, 那我們就有 $\bar{x}=\cos(\bar{x})$, 那就解出來了!!&lt;/p&gt;
+
 &lt;p&gt;不過這裡有兩個問題.&lt;/p&gt;
+
 &lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;為什麼這個數列會收斂?&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;原方程式的固定點迭代其實有無窮多種改寫方式, 例如也可寫為 $x_{n+1} = \cos^{-1}(x_n)$. 如果收斂的話一樣會是原方程式的解. 那, 哪種改寫方式最好呢?&lt;/p&gt;
-&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;為什麼這個數列會收斂?&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;原方程式的固定點迭代其實有無窮多種改寫方式, 例如也可寫為 $x_{n+1} = \cos^{-1}(x_n)$. 如果收斂的話一樣會是原方程式的解. 那, 哪種改寫方式最好呢?&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
+
 &lt;p&gt;我們有以下這個定理&lt;/p&gt;
+
 &lt;blockquote&gt;
 &lt;h2 id=&#34;theorem&#34;&gt;Theorem&lt;/h2&gt;
+
 &lt;p&gt;If $f:[a, b]\to [a,b]$ is a differentiable function such that
 $$ |f&amp;rsquo;(x)|\leq \alpha&amp;lt;1, \quad \forall x\in[a, b],$$
 then $f$ has exactly one fixed point $c$ and the fixed point iteration converges to $c$.&lt;/p&gt;
 &lt;/blockquote&gt;
+
 &lt;p&gt;這個證明很簡單.&lt;/p&gt;
+
 &lt;blockquote&gt;
 &lt;h3 id=&#34;proof&#34;&gt;Proof&lt;/h3&gt;
+
 &lt;h3 id=&#34;sketch-not-complete-please-full-in-the-details-by-yourself&#34;&gt;(Sketch, not complete, please full-in the details by yourself)&lt;/h3&gt;
+
 &lt;h4 id=&#34;existence&#34;&gt;existence&lt;/h4&gt;
+
 &lt;p&gt;Since the domain and the range of $f$ are both $[a, b]$, by Intermediate Value Theorem, there exists $c$ such that $c=f(c ).$&lt;/p&gt;
+
 &lt;h4 id=&#34;uniqueness&#34;&gt;uniqueness&lt;/h4&gt;
-&lt;p&gt;If there exits another fixed point $\bar{c}$, $\bar{c}\ne c$, such that $\bar{c}=f(\bar{c} )$, then according to Mean Value Theorem(MVT), there exits $z$ between $c$ and $\bar{c}$ such that $$f&amp;rsquo;(z) = \frac{f(c ) - f(\bar{c})}{c-\bar{c}}=\frac{c - \bar{c}}{c-\bar{c}} = 1,$$ which violate the assumption that $|f&#39;|\leq \alpha&amp;lt;1$. So the fixed point is unique.&lt;/p&gt;
+
+&lt;p&gt;If there exits another fixed point $\bar{c}$, $\bar{c}\ne c$, such that $\bar{c}=f(\bar{c} )$, then according to Mean Value Theorem(MVT), there exits $z$ between $c$ and $\bar{c}$ such that $$f&amp;rsquo;(z) = \frac{f(c ) - f(\bar{c})}{c-\bar{c}}=\frac{c - \bar{c}}{c-\bar{c}} = 1,$$ which violate the assumption that $|f&amp;rsquo;|\leq \alpha&amp;lt;1$. So the fixed point is unique.&lt;/p&gt;
+
 &lt;h4 id=&#34;convergence-of-fixed-point-iteration&#34;&gt;convergence of fixed point iteration&lt;/h4&gt;
+
 &lt;p&gt;Based on MVT we have
 $$|x_{n+1} - c| = |f(x_n) - f(c )| = |f&amp;rsquo;(c_i)(x_n-c)|\leq\alpha |x_n-c|\leq\alpha^n|x_1-c|\to 0.$$&lt;/p&gt;
 &lt;/blockquote&gt;
+
 &lt;p&gt;所以如果在函數固定點 $c$ 的微分小於 $1$, 那就存在一個包含 $c$ 的小區間使得函數的微分都在這區間內小於 $1$, 那根據這定理固定點迭代就會收斂.&lt;/p&gt;
-&lt;hr&gt;
+
+&lt;hr /&gt;
+
 &lt;p&gt;固定點迭代是求根問題(root finding problems)中很重要的一種迭代方式. 舉個例子來說, 假設我們想要找 $g(x)$ 這個函數的根, 那我們可以定義
 $$
 f(x) = x + g(x).
 $$
 這樣的話 $f$ 的固定點就會是 $g$ 的根了. 不過這種最簡單的改寫方式完全不保證會收斂.&lt;/p&gt;
-&lt;p&gt;那要如何改寫才會比較好呢? 其中一個最有名的就是牛頓法 (Newton&#39;s method):&lt;/p&gt;
+
+&lt;p&gt;那要如何改寫才會比較好呢? 其中一個最有名的就是牛頓法 (Newton&amp;rsquo;s method):&lt;/p&gt;
+
 &lt;blockquote&gt;
-&lt;h2 id=&#34;newtons-iteration&#34;&gt;Newton&#39;s iteration&lt;/h2&gt;
+&lt;h2 id=&#34;newton-s-iteration&#34;&gt;Newton&amp;rsquo;s iteration&lt;/h2&gt;
+
 &lt;p&gt;$$x_{n+1} = x_n - \frac{g(x_n)}{g&amp;rsquo;(x_n)}.$$&lt;/p&gt;
 &lt;/blockquote&gt;
+
 &lt;p&gt;我們可以定義 $f(x) = x - \frac{g(x)}{g&amp;rsquo;(x)}$, 這樣上面這個式子就是個固定點迭代. 接著我們可以發現, 如果 $c$ 是 $g$ 函數的根, 也就是 $g(c )=0$, 那 $f&amp;rsquo;(c ) = 0$. 所以根據上面的定理就存在某個包含 $c$ 的小區間使得迭代會收斂.&lt;/p&gt;
-&lt;p&gt;更進一步我們可以利用泰勒展開式(Taylor&#39;s series expansion) 來證明牛頓法事實上有二次收斂,
+
+&lt;p&gt;更進一步我們可以利用泰勒展開式(Taylor&amp;rsquo;s series expansion) 來證明牛頓法事實上有二次收斂,
 $$
 |x_{n+1} - c| \approx \beta |x_n-c|^2.
 $$
 這個證明我們這邊就先略過不寫. 不過接著我們來看一下牛頓法究竟有多快. (&amp;ndash;To be finished)&lt;/p&gt;
-&lt;hr&gt;
+
+&lt;hr /&gt;
+
 &lt;p&gt;依之前的例子我們想要解 $x=\cos(x)$, $x\in[0, \pi]$. 最簡單的固定點迭代為
 $$
 x_{n+1} = \cos(x_n),
 $$
 也就是求 $g(x) = \cos(x)-x$ 的根. 我們以 $x_0=1$ 當初始值, 發現需要 $80$ 個迭代才能使誤差在 $10^{-14}$ 之下.&lt;/p&gt;
+
 &lt;pre&gt;&lt;code&gt;    x_new= 0.5403023058681398		error= 0.31725090997825367
     x_new= 0.8575532158463934		error= 0.2032634253486143
     x_new= 0.6542897904977791		error= 0.13919056824478648
@@ -943,43 +1289,46 @@ $$
     x_new= 0.7390851332151531		error= 1.2545520178264269e-14
     x_new= 0.7390851332151657		error= 8.43769498715119e-15
     Total number of iterations=80
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;若是使用牛頓法迭代則迭代式為
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;若是使用牛頓法迭代則迭代式為
 $$
 x_{n+1} = x_n + \frac{cos(x_n)- x_n}{\sin(x_n)+1}.
 $$
 一樣以 $x_0=1$ 當初始值, 發現只需要 $4$ 個迭代就能使誤差在 $10^{-14}$ 之下. 比上個例子快上許多.&lt;/p&gt;
+
 &lt;pre&gt;&lt;code&gt;    x_new= 0.7503638678402439		error= 0.018923073822117442
     x_new= 0.7391128909113617		error= 4.6455898990771516e-5
     x_new= 0.739085133385284		error= 2.847205804457076e-10
     x_new= 0.7390851332151607		error= 0.0
     Total number of iterations=4
-&lt;/code&gt;&lt;/pre&gt;&lt;hr&gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;hr /&gt;
+
 &lt;h3 id=&#34;summary&#34;&gt;Summary:&lt;/h3&gt;
+
 &lt;p&gt;最後總結一下:&lt;/p&gt;
+
 &lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;固定點迭代要收斂, 至少在固定點的微分值必須比 $1$ 小.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;要取迭代函數, 如果知道如何對函數微分, 以牛頓法 &lt;a href=&#34;https://en.wikipedia.org/wiki/Newton%27s_method&#34;&gt;Newton&#39;s method&lt;/a&gt; 來取通常會有不錯的效果.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;若無法得知微分函數, 可以用數值微分來逼近真實微分, 這樣會得到割線法 &lt;a href=&#34;https://en.wikipedia.org/wiki/Secant_method&#34;&gt;secant method&lt;/a&gt;, 收斂速度比牛頓法慢一點點.&lt;/p&gt;
-&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;固定點迭代要收斂, 至少在固定點的微分值必須比 $1$ 小.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;要取迭代函數, 如果知道如何對函數微分, 以牛頓法 &lt;a href=&#34;https://en.wikipedia.org/wiki/Newton%27s_method&#34; target=&#34;_blank&#34;&gt;Newton&amp;rsquo;s method&lt;/a&gt; 來取通常會有不錯的效果.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;若無法得知微分函數, 可以用數值微分來逼近真實微分, 這樣會得到割線法 &lt;a href=&#34;https://en.wikipedia.org/wiki/Secant_method&#34; target=&#34;_blank&#34;&gt;secant method&lt;/a&gt;, 收斂速度比牛頓法慢一點點.&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
+
 &lt;p&gt;&lt;strong&gt;Remark:&lt;/strong&gt;&lt;/p&gt;
+
 &lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;固定點定理保證在區間裡任意取點當初使迭代都會收斂, 不過要滿足定理的條件很強, 實務上不容易做到.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;例如牛頓法, 我們能證明一定存在某個區間滿足固定點定理, 不過實際上這個區間有多大並不知道. 因此一般在討論牛頓法時都會要求初始值要離實際要求的固定點&amp;quot;夠近&amp;rdquo;. 至於&amp;quot;夠近&amp;quot;什麼意思就只能用嘗試的.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;由於牛頓法不保證收斂, 因此實務上要求根時會與一些保證收斂的方法, 如二分逼進法 &lt;a href=&#34;https://en.wikipedia.org/wiki/Bisection_method&#34;&gt;bisection method&lt;/a&gt; 來合作. 如 &lt;a href=&#34;https://en.wikipedia.org/wiki/Brent%27s_method&#34;&gt;Brent-Dekker method&lt;/a&gt;. 這樣既能保證收斂, 又兼有收斂快速的優點.&lt;/p&gt;
-&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;固定點定理保證在區間裡任意取點當初使迭代都會收斂, 不過要滿足定理的條件很強, 實務上不容易做到.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;例如牛頓法, 我們能證明一定存在某個區間滿足固定點定理, 不過實際上這個區間有多大並不知道. 因此一般在討論牛頓法時都會要求初始值要離實際要求的固定點&amp;rdquo;夠近&amp;rdquo;. 至於&amp;rdquo;夠近&amp;rdquo;什麼意思就只能用嘗試的.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;由於牛頓法不保證收斂, 因此實務上要求根時會與一些保證收斂的方法, 如二分逼進法 &lt;a href=&#34;https://en.wikipedia.org/wiki/Bisection_method&#34; target=&#34;_blank&#34;&gt;bisection method&lt;/a&gt; 來合作. 如 &lt;a href=&#34;https://en.wikipedia.org/wiki/Brent%27s_method&#34; target=&#34;_blank&#34;&gt;Brent-Dekker method&lt;/a&gt;. 這樣既能保證收斂, 又兼有收斂快速的優點.&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;hr&gt;
+
+&lt;hr /&gt;
 </description>
     </item>
     
@@ -988,67 +1337,104 @@ $$
       <link>https://teshenglin.github.io/post/2019_git/</link>
       <pubDate>Thu, 31 Oct 2019 00:00:00 +0000</pubDate>
       <guid>https://teshenglin.github.io/post/2019_git/</guid>
-      <description>&lt;blockquote&gt;
+      <description>
+
+&lt;blockquote&gt;
 &lt;p&gt;這裡我們要介紹 git 這個分散式版本控制軟體. 有人可能會聽過 &amp;lsquo;github&amp;rsquo;. 不過這邊要提醒一下 git 跟 github 是不一樣的兩件事. 簡單的說 git 是一個軟體, 而 github 則是提供線上 git 服務的公司.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;hr&gt;
+
+&lt;hr /&gt;
+
 &lt;h2 id=&#34;git-教學網頁&#34;&gt;git 教學網頁&lt;/h2&gt;
+
 &lt;ol&gt;
-&lt;li&gt;我非常推薦 &lt;a href=&#34;https://gitbook.tw&#34;&gt;為你自己學 Git&lt;/a&gt;, 尤其務必熟讀以下三章, 才算是對 git 有最基本的認識.&lt;/li&gt;
-&lt;/ol&gt;
+&lt;li&gt;&lt;p&gt;我非常推薦 &lt;a href=&#34;https://gitbook.tw&#34; target=&#34;_blank&#34;&gt;為你自己學 Git&lt;/a&gt;, 尤其務必熟讀以下三章, 才算是對 git 有最基本的認識.&lt;/p&gt;
+
 &lt;ul&gt;
 &lt;li&gt;二、Git Windows/Mac/Linux 環境安裝&lt;/li&gt;
 &lt;li&gt;四、設定 Git&lt;/li&gt;
 &lt;li&gt;五、開始使用 Git&lt;/li&gt;
-&lt;/ul&gt;
-&lt;ol start=&#34;2&#34;&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.slideshare.net/appleboy/introduction-to-git-11436559&#34;&gt;快速上手 git 版本控制, slideshare&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://www.slideshare.net/appleboy/introduction-to-git-11436559&#34; target=&#34;_blank&#34;&gt;快速上手 git 版本控制, slideshare&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
-&lt;hr&gt;
+
+&lt;hr /&gt;
+
 &lt;h2 id=&#34;git-基本指令-terminal-終端機&#34;&gt;git 基本指令 (terminal 終端機):&lt;/h2&gt;
+
 &lt;ul&gt;
-&lt;li&gt;做完某個段落後, 將檔案 XXX 移進暫存區&lt;/li&gt;
-&lt;/ul&gt;
+&lt;li&gt;&lt;p&gt;做完某個段落後, 將檔案 XXX 移進暫存區&lt;/p&gt;
+
 &lt;pre&gt;&lt;code&gt;git add XXX
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;或是將剛剛所有編輯過的檔案一起移
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;或是將剛剛所有編輯過的檔案一起移
 進暫存區&lt;/p&gt;
+
 &lt;pre&gt;&lt;code&gt;git add .
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;接著將暫存區的檔案移至儲存褲 (repo), 並且記註做了什麼事&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;接著將暫存區的檔案移至儲存褲 (repo), 並且記註做了什麼事&lt;/p&gt;
+
 &lt;pre&gt;&lt;code&gt;git commit -m &amp;quot;我做了XXX&amp;quot;
-&lt;/code&gt;&lt;/pre&gt;&lt;hr&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
 &lt;h2 id=&#34;支援-git-的網站&#34;&gt;支援 git 的網站&lt;/h2&gt;
+
 &lt;h3 id=&#34;github&#34;&gt;github&lt;/h3&gt;
+
 &lt;p&gt;如同我最初說的, github 是一個支援 git 的網站, 可以讓你擺放你程式的原始碼, 基本服務是免費的, 有一些更進階的功能則需要付費.&lt;/p&gt;
+
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://progressbar.tw/posts/3&#34;&gt;開始使用 GitHub， 註冊與建立repo&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://progressbar.tw/posts/3&#34; target=&#34;_blank&#34;&gt;開始使用 GitHub， 註冊與建立repo&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
+
 &lt;h3 id=&#34;bitcuket&#34;&gt;bitcuket&lt;/h3&gt;
+
 &lt;ul&gt;
-&lt;li&gt;也可以使用 &lt;a href=&#34;https://bitbucket.org&#34;&gt;bitcuket&lt;/a&gt;, 一樣是個讓你把原始碼放上雲端的免費服務.&lt;/li&gt;
+&lt;li&gt;也可以使用 &lt;a href=&#34;https://bitbucket.org&#34; target=&#34;_blank&#34;&gt;bitcuket&lt;/a&gt;, 一樣是個讓你把原始碼放上雲端的免費服務.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;git---github-基本指令-terminal-終端機&#34;&gt;git &amp;lt;-&amp;gt; github 基本指令 (terminal 終端機):&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;git-github-基本指令-terminal-終端機&#34;&gt;git &amp;lt;-&amp;gt; github 基本指令 (terminal 終端機):&lt;/h2&gt;
+
 &lt;ul&gt;
-&lt;li&gt;丟上雲端 (github 或 bitbucket)&lt;/li&gt;
-&lt;/ul&gt;
+&lt;li&gt;&lt;p&gt;丟上雲端 (github 或 bitbucket)&lt;/p&gt;
+
 &lt;pre&gt;&lt;code&gt;git push
-&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
-&lt;li&gt;從雲端下載最新版本&lt;/li&gt;
-&lt;/ul&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;從雲端下載最新版本&lt;/p&gt;
+
 &lt;pre&gt;&lt;code&gt;git pull
-&lt;/code&gt;&lt;/pre&gt;&lt;hr&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
 &lt;p&gt;簡單工作示意圖:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-mermaid&#34; data-lang=&#34;mermaid&#34;&gt;graph TD;
+
+&lt;pre&gt;&lt;code class=&#34;language-mermaid&#34;&gt;graph TD;
   A[工作資料夾]--&amp;gt;|add| B;
   B(本機 local 暫存區)--&amp;gt;|commit| C;
   D--&amp;gt;|pull| C;
   C(本機 local repo)--&amp;gt;|push| D{雲端 repo};
-&lt;/code&gt;&lt;/pre&gt;&lt;hr&gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;hr /&gt;
+
 &lt;h2 id=&#34;git-觀念釐清&#34;&gt;git 觀念釐清&lt;/h2&gt;
+
 &lt;ol&gt;
-&lt;li&gt;&lt;a href=&#34;https://goo.gl/gAvBBp&#34;&gt;git fetch 與 git pull 的區別&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://goo.gl/gAvBBp&#34; target=&#34;_blank&#34;&gt;git fetch 與 git pull 的區別&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
-&lt;hr&gt;
+
+&lt;hr /&gt;
 </description>
     </item>
     
@@ -1057,127 +1443,173 @@ $$
       <link>https://teshenglin.github.io/post/2019_julia/</link>
       <pubDate>Tue, 29 Oct 2019 00:00:00 +0000</pubDate>
       <guid>https://teshenglin.github.io/post/2019_julia/</guid>
-      <description>&lt;blockquote&gt;
-&lt;p&gt;這裡我們要介紹 julia 這個程式語言. 這是一個非常新的語言, 在 2009 年才問世, 遠比 1990 年出生的 python 來的年輕許多. 不過由於它又&lt;em&gt;&lt;strong&gt;快&lt;/strong&gt;&lt;/em&gt;又&lt;em&gt;&lt;strong&gt;簡單&lt;/strong&gt;&lt;/em&gt;, 又&lt;em&gt;&lt;strong&gt;不用錢&lt;/strong&gt;&lt;/em&gt;, 使得目前有越來越多人開始使用這個新語言. 相信未來會更加普及.&lt;/p&gt;
+      <description>
+
+&lt;blockquote&gt;
+&lt;p&gt;這裡我們要介紹 julia 這個程式語言. 這是一個非常新的語言, 在 2009 年才問世, 遠比 1990 年出生的 python 來的年輕許多. 不過由於它又&lt;strong&gt;&lt;em&gt;快&lt;/em&gt;&lt;/strong&gt;又&lt;strong&gt;&lt;em&gt;簡單&lt;/em&gt;&lt;/strong&gt;, 又&lt;strong&gt;&lt;em&gt;不用錢&lt;/em&gt;&lt;/strong&gt;, 使得目前有越來越多人開始使用這個新語言. 相信未來會更加普及.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;hr&gt;
+
+&lt;hr /&gt;
+
 &lt;h2 id=&#34;julia-安裝&#34;&gt;Julia 安裝&lt;/h2&gt;
-&lt;p&gt;在 &lt;a href=&#34;https://julialang.org&#34;&gt;Julia 官方網站&lt;/a&gt; 上可以下載各系統平台的安裝包裹. 下載安裝後即可運行.&lt;/p&gt;
+
+&lt;p&gt;在 &lt;a href=&#34;https://julialang.org&#34; target=&#34;_blank&#34;&gt;Julia 官方網站&lt;/a&gt; 上可以下載各系統平台的安裝包裹. 下載安裝後即可運行.&lt;/p&gt;
+
 &lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Julia 安裝教學影片可參考 &lt;a href=&#34;https://youtu.be/v7XeveI19CM&#34;&gt;Julia課程環境簡介 on Youtube&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;如果只想試用一下的話可以試試 &lt;a href=&#34;https://repl.it/languages/julia&#34;&gt;repl.it&lt;/a&gt; 這個線上編輯器. 它可以讓你在線上編輯並執行一些簡單的 julia 程式.&lt;/p&gt;
-&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Julia 安裝教學影片可參考 &lt;a href=&#34;https://youtu.be/v7XeveI19CM&#34; target=&#34;_blank&#34;&gt;Julia課程環境簡介 on Youtube&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;如果只想試用一下的話可以試試 &lt;a href=&#34;https://repl.it/languages/julia&#34; target=&#34;_blank&#34;&gt;repl.it&lt;/a&gt; 這個線上編輯器. 它可以讓你在線上編輯並執行一些簡單的 julia 程式.&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
+
 &lt;p&gt;除了 julia 主程式外, 我也建議加裝 &lt;code&gt;Jupyter notebook&lt;/code&gt;(或 &lt;code&gt;Jupyter lab&lt;/code&gt;) 以及 &lt;code&gt;Atom&lt;/code&gt;. 讓你 coding 更方便.&lt;/p&gt;
-&lt;hr&gt;
+
+&lt;hr /&gt;
+
 &lt;h3 id=&#34;julia-基本簡介&#34;&gt;Julia 基本簡介&lt;/h3&gt;
+
 &lt;ul&gt;
-&lt;li&gt;查詢版本資訊&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;查詢版本資訊&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-julia&#34;&gt;julia&amp;gt; versioninfo()
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;套件(package)管理&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-julia&#34;&gt;julia&amp;gt; ]
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;julia&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; versioninfo&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;()
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
-&lt;li&gt;套件(package)管理&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;julia&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; ]
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;然後就會進入套件管理系統&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;(vX&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;X&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;) pkg&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;查詢已安裝套件&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;(vX&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;X&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;) pkg&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; status&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;更新套件&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;(vX&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;X&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;) pkg&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; update&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;跳出系統請按鍵盤上的&lt;strong&gt;刪除鍵&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;然後就會進入套件管理系統&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-julia&#34;&gt;pkg&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;查詢已安裝套件&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-julia&#34;&gt;pkg&amp;gt; status
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;更新套件&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-julia&#34;&gt;pkg&amp;gt; update
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;跳出系統請按鍵盤上的&lt;strong&gt;刪除鍵&lt;/strong&gt;.&lt;/p&gt;
+
 &lt;ul&gt;
-&lt;li&gt;查詢指令(如matlab中的help)&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;查詢指令(如matlab中的help)&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-julia&#34;&gt;julia&amp;gt; ?
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;julia&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;?&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;然後就會變成查詢的視窗&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;help&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;?&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
+
+&lt;p&gt;然後就會變成查詢的視窗&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-julia&#34;&gt;help?&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;hr /&gt;
+
 &lt;h2 id=&#34;jupyter-notebook-安裝&#34;&gt;Jupyter notebook 安裝&lt;/h2&gt;
+
 &lt;blockquote&gt;
 &lt;p&gt;Jupyter notebook 是個互動式筆記本, 很容易可以逐行執行並且做到資料視覺化, 並且支援多種主流的直譯語言像是 &lt;code&gt;Julia&lt;/code&gt;, &lt;code&gt;python&lt;/code&gt;, &lt;code&gt;R&lt;/code&gt;. 有一說是 jupyter 這個字事實上就是由 julia, python 以及 R 這三個字組合而成.&lt;/p&gt;
 &lt;/blockquote&gt;
+
 &lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;安裝 Jupyter notebook 有兩種方式. 第一種是直接由 julia 安裝. 步驟如下&lt;/p&gt;
+&lt;li&gt;&lt;p&gt;安裝 Jupyter notebook 有兩種方式. 第一種是直接由 julia 安裝. 步驟如下&lt;/p&gt;
+
 &lt;p&gt;在 julia 輸入 &lt;code&gt;]&lt;/code&gt; 進入套件管理命令提示. 然後會長得像這樣&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;(v1&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;) pkg&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;接著輸入 &lt;code&gt;status&lt;/code&gt; 可以看到現在已經安裝的套件.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-julia&#34;&gt;pkg&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;接著輸入 &lt;code&gt;status&lt;/code&gt; 可以看到現在已經安裝的套件.&lt;/p&gt;
+
 &lt;p&gt;我們要安裝 IJulia, 所以輸入&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;(v1&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;) pkg&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; add&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt; IJulia&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;安裝完後要退出套件管理則是 BackSpace 鍵或是 Ctrl+C 都可以.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-julia&#34;&gt;pkg&amp;gt; add IJulia
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;安裝完後要退出套件管理則是 BackSpace 鍵或是 Ctrl+C 都可以.&lt;/p&gt;
+
 &lt;p&gt;要打開 notebook 需要退出套件管理, 並在 julia 命令提示字元下輸入&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;julia&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;using&lt;/span&gt; IJulia&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;
-julia&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; notebook&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;()
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;這樣 Jupyter notebook 就會在你的瀏覽器中打開.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-julia&#34;&gt;julia&amp;gt; using IJulia
+julia&amp;gt; notebook()
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;這樣 Jupyter notebook 就會在你的瀏覽器中打開.&lt;/p&gt;
+
 &lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;若還是有不清楚的地方請見 &lt;a href=&#34;https://medium.com/@jamescchuang/%E5%AF%A6%E6%88%B0%E5%AE%89%E8%A3%9D%E5%8F%8A%E5%BB%BA%E7%BD%AE-julia-%E9%96%8B%E7%99%BC%E7%92%B0%E5%A2%83-6dc8c0d14c2a&#34;&gt;安裝及建置 Julia 開發環境實戰教學&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;目前已經有 jupyter notebook 的升級版, 稱為 jupyter lab. 在 julia 命令提示字元下輸入&lt;/p&gt;
-&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;若還是有不清楚的地方請見 &lt;a href=&#34;https://medium.com/@jamescchuang/實戰安裝及建置-julia-開發環境-6dc8c0d14c2a&#34; target=&#34;_blank&#34;&gt;安裝及建置 Julia 開發環境實戰教學&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;目前已經有 jupyter notebook 的升級版, 稱為 jupyter lab. 在 julia 命令提示字元下輸入&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-julia&#34;&gt;julia&amp;gt; using IJulia
+julia&amp;gt; jupyterlab()
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;julia&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;using&lt;/span&gt; IJulia&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;
-julia&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; jupyterlab&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;()
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;這樣 Jupyter lab 就會在你的瀏覽器中打開.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;安裝 Jupyter notebook 的第二種方式則是透過 anaconda. 先裝完 julia 後下載 anaconda 安裝, 即可快樂使用.&lt;/p&gt;
-&lt;/li&gt;
+
+&lt;p&gt;這樣 Jupyter lab 就會在你的瀏覽器中打開.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;安裝 Jupyter notebook 的第二種方式則是透過 anaconda. 先裝完 julia 後下載 anaconda 安裝, 即可快樂使用.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;若還是有不清楚的地方請見 &lt;a href=&#34;https://medium.com/datainpoint/jupyter-kernels-3151a6408bab&#34; target=&#34;_blank&#34;&gt;打造 Jupyter Notebook 資料科學環境&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
 &lt;/ol&gt;
-&lt;ul&gt;
-&lt;li&gt;若還是有不清楚的地方請見 &lt;a href=&#34;https://medium.com/datainpoint/jupyter-kernels-3151a6408bab&#34;&gt;打造 Jupyter Notebook 資料科學環境&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
+
+&lt;hr /&gt;
+
 &lt;h2 id=&#34;在-atom-中操作-julia&#34;&gt;在 Atom 中操作 Julia&lt;/h2&gt;
+
 &lt;blockquote&gt;
-&lt;p&gt;如果平常會寫各式程式語言, 可以考慮加安裝 &lt;a href=&#34;https://atom.io&#34;&gt;atom&lt;/a&gt; 編輯器. 它是 github 開發的免費編輯器, 不管 Mac, windows 或是 Linux 都有支援. 我自己有使用 atom 來寫 &lt;code&gt;julia&lt;/code&gt;, &lt;code&gt;fortran&lt;/code&gt;, &lt;code&gt;html&lt;/code&gt; 等.&lt;/p&gt;
+&lt;p&gt;如果平常會寫各式程式語言, 可以考慮加安裝 &lt;a href=&#34;https://atom.io&#34; target=&#34;_blank&#34;&gt;atom&lt;/a&gt; 編輯器. 它是 github 開發的免費編輯器, 不管 Mac, windows 或是 Linux 都有支援. 我自己有使用 atom 來寫 &lt;code&gt;julia&lt;/code&gt;, &lt;code&gt;fortran&lt;/code&gt;, &lt;code&gt;html&lt;/code&gt; 等.&lt;/p&gt;
 &lt;/blockquote&gt;
+
 &lt;p&gt;要在 Atom 裡操作 Julia 簡單說就是要裝以下幾個 package:&lt;/p&gt;
+
 &lt;ol&gt;
 &lt;li&gt;&lt;code&gt;ink&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;julia-client&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;language-julia&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;uber juno&lt;/code&gt;&lt;/li&gt;
 &lt;/ol&gt;
+
 &lt;p&gt;然後就可以用了!!&lt;/p&gt;
+
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.itread01.com/content/1550260279.html?fbclid=IwAR3bBrHTvjF3Y5TJrZsElriJfO2fbyoM751XMfjLYOE0TLl31JA3LSpe8KQ&#34;&gt;在 Atom 中操作 Julia&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.itread01.com/content/1550260279.html?fbclid=IwAR3bBrHTvjF3Y5TJrZsElriJfO2fbyoM751XMfjLYOE0TLl31JA3LSpe8KQ&#34; target=&#34;_blank&#34;&gt;在 Atom 中操作 Julia&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;hr&gt;
+
+&lt;hr /&gt;
+
 &lt;h2 id=&#34;julia-基本簡介與語法教學&#34;&gt;Julia 基本簡介與語法教學&lt;/h2&gt;
+
 &lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;https://en.wikibooks.org/wiki/Introducing_Julia&#34;&gt;Julia: wikibook&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;https://learnxinyminutes.com/docs/julia&#34;&gt;Learn X in Y minutes, where X=Julia&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Julia Taiwan發起人杜岳華的 slideshare: &lt;a href=&#34;https://www.slideshare.net/ssuserd6984b/coscup-introduction-to-julia&#34;&gt;Introduction to Julia&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;https://hackmd.io/@7WeiUEuJSBKp7WCRouAWVg/r106dSpkb/%2FIwZgbAHApgnARgMwLQAYAmKxICxQMZpICGGATEjHtgOwwwrRwCsEQA%3D%3D?type=book&#34;&gt;Julia 中文官方文件草稿&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://en.wikibooks.org/wiki/Introducing_Julia&#34; target=&#34;_blank&#34;&gt;Julia: wikibook&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://learnxinyminutes.com/docs/julia&#34; target=&#34;_blank&#34;&gt;Learn X in Y minutes, where X=Julia&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Julia Taiwan發起人杜岳華的 slideshare: &lt;a href=&#34;https://www.slideshare.net/ssuserd6984b/coscup-introduction-to-julia&#34; target=&#34;_blank&#34;&gt;Introduction to Julia&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://hackmd.io/@7WeiUEuJSBKp7WCRouAWVg/r106dSpkb/%2FIwZgbAHApgnARgMwLQAYAmKxICxQMZpICGGATEjHtgOwwwrRwCsEQA%3D%3D?type=book&#34; target=&#34;_blank&#34;&gt;Julia 中文官方文件草稿&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;hr&gt;
+
+&lt;hr /&gt;
+
 &lt;h2 id=&#34;youtube-上的-julia-超新手教學&#34;&gt;Youtube 上的 Julia 超新手教學&lt;/h2&gt;
+
 &lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;https://github.com/JuliaLangTW/julia_tutorials_for_dummy&#34;&gt;Julia Taiwan 超新手教學之一 on github&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;https://youtu.be/zzrctueO6JY&#34;&gt;Julia Taiwan 超新手教學之二 on Youtube&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;https://youtu.be/W7R5dxGrxlk&#34;&gt;Julia Taiwan 超新手教學之三 on Youtube&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/JuliaLangTW/julia_tutorials_for_dummy&#34; target=&#34;_blank&#34;&gt;Julia Taiwan 超新手教學之一 on github&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://youtu.be/zzrctueO6JY&#34; target=&#34;_blank&#34;&gt;Julia Taiwan 超新手教學之二 on Youtube&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://youtu.be/W7R5dxGrxlk&#34; target=&#34;_blank&#34;&gt;Julia Taiwan 超新手教學之三 on Youtube&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;hr&gt;
+
+&lt;hr /&gt;
 </description>
     </item>
     
@@ -1186,83 +1618,102 @@ julia&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;&lt;span style=&#34;
       <link>https://teshenglin.github.io/post/2019_markdown/</link>
       <pubDate>Tue, 29 Oct 2019 00:00:00 +0000</pubDate>
       <guid>https://teshenglin.github.io/post/2019_markdown/</guid>
-      <description>&lt;blockquote&gt;
+      <description>
+
+&lt;blockquote&gt;
 &lt;p&gt;這裡我們要介紹 markdown 這個語言. 它非常簡單易學, 有時我們只是想打個小文件, 就幾頁而已不想要開 latex 或是 word 之類的文字編輯軟體, 這時候就非常適合以 markdown 來編寫. 另外其實越來越多的程式語言也支援 markdown 編寫. 比如這個網頁裡的 post 就都是以 markdown 做的.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;hr&gt;
+
+&lt;hr /&gt;
+
 &lt;h2 id=&#34;markdown-安裝&#34;&gt;Markdown 安裝&lt;/h2&gt;
+
 &lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;我自己是使用 mac, 我用的是 &lt;a href=&#34;https://macdown.uranusjr.com&#34;&gt;MacDown&lt;/a&gt; 這個軟體.&lt;/p&gt;
+&lt;li&gt;&lt;p&gt;我自己是使用 mac, 我用的是 &lt;a href=&#34;https://macdown.uranusjr.com&#34; target=&#34;_blank&#34;&gt;MacDown&lt;/a&gt; 這個軟體.&lt;/p&gt;
+
 &lt;ul&gt;
 &lt;li&gt;安裝完 &lt;em&gt;Macdown&lt;/em&gt; 之後需要到 &lt;code&gt;Preference/Rendering&lt;/code&gt; 中標選 &lt;em&gt;tex-like math&lt;/em&gt; 以及他下一行的 &lt;em&gt;use dollar sign as xxxx&lt;/em&gt;, 才可使用 tex 語法.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Windows 使用者可以參考&lt;a href=&#34;https://www.itread01.com/content/1547118008.html&#34;&gt;這篇&lt;/a&gt; 裡面有非常多 markdown 編輯器的選擇. 也有人推薦 &lt;a href=&#34;https://www.typora.io&#34;&gt;Typora&lt;/a&gt;.&lt;/p&gt;
+&lt;/ul&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;最近我用的是 &lt;a href=&#34;https://typora.io&#34; target=&#34;_blank&#34;&gt;Typora&lt;/a&gt; 這個軟體, 它支援各作業系統, 不管 mac 或 windows 都可以用.&lt;/p&gt;
+
 &lt;ul&gt;
 &lt;li&gt;Typora 主要特色是他&lt;strong&gt;所見即所得&lt;/strong&gt;, 所以邊寫邊看自己打出來的版面怎樣. 比較乾淨, 不需要將畫面切分成左右兩半一半程式一半預覽. 學起來也很簡單.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://free.com.tw/typora/&#34;&gt;Typora 免費極簡 Markdown 編輯器&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.itread01.com/content/1546144745.html&#34;&gt;markdown神器 -Typora使用教程筆記&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;安裝完 &lt;em&gt;Typora&lt;/em&gt; 之後到 &lt;code&gt;Preference/Markdown&lt;/code&gt; 中標選 &lt;em&gt;inline math&lt;/em&gt;, 才可使用 tex 語法.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://free.com.tw/typora/&#34; target=&#34;_blank&#34;&gt;Typora 免費極簡 Markdown 編輯器&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.itread01.com/content/1546144745.html&#34; target=&#34;_blank&#34;&gt;markdown神器 -Typora使用教程筆記&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;如果平常會寫各式程式語言, 也可以考慮使用 &lt;a href=&#34;https://atom.io&#34; target=&#34;_blank&#34;&gt;atom&lt;/a&gt; 編輯器. 它是 github 開發的免費編輯器, 不管 Mac, windows 或是 Linux 都有支援. 我自己也有使用 atom 來寫 &lt;code&gt;julia&lt;/code&gt;, &lt;code&gt;fortran&lt;/code&gt;, &lt;code&gt;html&lt;/code&gt; 等.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;如果連安裝都不想的話我推薦 &lt;a href=&#34;https://notes.dosilovic.com&#34; target=&#34;_blank&#34;&gt;markdown notes&lt;/a&gt; 這個線上編輯器. 它支援線上即時編寫, 可以線上存檔, 也可以下載成 markdown 以及 PDF.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;另一個線上編輯器: &lt;a href=&#34;https://upmath.me&#34; target=&#34;_blank&#34;&gt;upmath&lt;/a&gt;, 依樣支援線上即時編寫, 可以存成 html 直接幫你產生網頁.&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;如果平常會寫各式程式語言, 也可以考慮使用 &lt;a href=&#34;https://atom.io&#34;&gt;atom&lt;/a&gt; 編輯器. 它是 github 開發的免費編輯器, 不管 Mac, windows 或是 Linux 都有支援. 我自己也有使用 atom 來寫 &lt;code&gt;julia&lt;/code&gt;, &lt;code&gt;fortran&lt;/code&gt;, &lt;code&gt;html&lt;/code&gt; 等.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;如果連安裝都不想的話我推薦 &lt;a href=&#34;https://notes.dosilovic.com&#34;&gt;markdown notes&lt;/a&gt; 這個線上編輯器. 它支援線上即時編寫, 可以線上存檔, 也可以下載成 markdown 以及 PDF.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;另一個線上編輯器: &lt;a href=&#34;https://upmath.me&#34;&gt;upmath&lt;/a&gt;, 依樣支援線上即時編寫, 可以存成 html 直接幫你產生網頁.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
+
 &lt;p&gt;不過我要稍微說明一下, 不管使用哪種編輯器, markdown 主要語法都差不多. 不過在輸出上會有一些細微的差異. 這點就要自己使用後才會感受得到差別.&lt;/p&gt;
-&lt;hr&gt;
+
+&lt;hr /&gt;
+
 &lt;h2 id=&#34;markdown-語法教學&#34;&gt;Markdown 語法教學&lt;/h2&gt;
+
 &lt;p&gt;以下列舉一些 markdown 教學的線上資源&lt;/p&gt;
+
 &lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;https://commonmark.org/help/&#34;&gt;1分鐘學會 Markdown&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;https://wastemobile.gitbooks.io/gitbook-chinese/content/format/markdown.html&#34;&gt;Markdown gitbook&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;https://tiida54.github.io/2018/01/03/3%E5%88%86%E9%90%98%E5%AD%B8%E6%9C%83Markdown%E5%B8%B8%E7%94%A8%E8%AA%9E%E6%B3%95/&#34;&gt;3分鐘學會 Markdown 常用語法&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;https://docs.microsoft.com/zh-tw/contribute/how-to-write-use-markdown&#34;&gt;如何使用 Markdown 來撰寫 Docs&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://commonmark.org/help/&#34; target=&#34;_blank&#34;&gt;1分鐘學會 Markdown&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://wastemobile.gitbooks.io/gitbook-chinese/content/format/markdown.html&#34; target=&#34;_blank&#34;&gt;Markdown gitbook&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://tiida54.github.io/2018/01/03/3分鐘學會Markdown常用語法/&#34; target=&#34;_blank&#34;&gt;3分鐘學會 Markdown 常用語法&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://docs.microsoft.com/zh-tw/contribute/how-to-write-use-markdown&#34; target=&#34;_blank&#34;&gt;如何使用 Markdown 來撰寫 Docs&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;markdown 有一個很酷的語法是可以做 diagram, 在 typora 這個編輯器有支援: &lt;a href=&#34;https://support.typora.io/Draw-Diagrams-With-Markdown/&#34;&gt;Draw Diagrams With Markdown&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;markdown 有一個很酷的語法是可以做 diagram, 在 typora 這個編輯器有支援: &lt;a href=&#34;https://support.typora.io/Draw-Diagrams-With-Markdown/&#34; target=&#34;_blank&#34;&gt;Draw Diagrams With Markdown&lt;/a&gt;.&lt;/p&gt;
+
 &lt;ul&gt;
 &lt;li&gt;不過要稍微注意一下, 不要直接複製貼上介紹網頁裡的 diagram 程式到 typora 裡, 會跑不出來. 正確做法是, 比如說要做以下這個 sequence diagram, 那在 typora 裡打 ```sequence, 然後就會跑出一個框框讓你把程式貼進去. 程式貼入後圖就跑出來了.&lt;/li&gt;
 &lt;/ul&gt;
+
 &lt;p&gt;我自己所使用的 macdown 也號稱有支援, 不過其實只有某些特別的版本能用而已, 有點可惜.&lt;/p&gt;
-&lt;p&gt;如果是用 atom 的話則是要安裝 &lt;a href=&#34;https://shd101wyy.github.io/markdown-preview-enhanced/#/&#34;&gt;markdown-preview-enhanced&lt;/a&gt; 這個 package. 我自己試過, 支援各種 diagram, 非常棒.&lt;/p&gt;
-&lt;hr&gt;
+
+&lt;p&gt;如果是用 atom 的話則是要安裝 &lt;a href=&#34;https://shd101wyy.github.io/markdown-preview-enhanced/#/&#34; target=&#34;_blank&#34;&gt;markdown-preview-enhanced&lt;/a&gt; 這個 package. 我自己試過, 支援各種 diagram, 非常棒.&lt;/p&gt;
+
+&lt;hr /&gt;
+
 &lt;h2 id=&#34;markdown-語法補充&#34;&gt;Markdown 語法補充&lt;/h2&gt;
+
 &lt;ul&gt;
-&lt;li&gt;在 markdown 文字間插入空白無法單純使用空白鍵, 在 mac 裡是 option+space, 其他可見 &lt;a href=&#34;https://stackoverflow.com/a/54174466&#34;&gt;Use non-breaking spaces&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;在 markdown 裡將文字置中只能用 html 語法 &lt;a href=&#34;https://developer.mozilla.org/en-US/docs/Web/HTML/Element/center&#34;&gt;Centered Text&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;在 markdown 文字間插入空白無法單純使用空白鍵, 在 mac 裡是 option+space, 其他可見 &lt;a href=&#34;https://stackoverflow.com/a/54174466&#34; target=&#34;_blank&#34;&gt;Use non-breaking spaces&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;在 markdown 裡將文字置中只能用 html 語法 &lt;a href=&#34;https://developer.mozilla.org/en-US/docs/Web/HTML/Element/center&#34; target=&#34;_blank&#34;&gt;Centered Text&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;hr&gt;
+
+&lt;hr /&gt;
+
 &lt;h2 id=&#34;latex-語法教學&#34;&gt;Latex 語法教學&lt;/h2&gt;
+
 &lt;blockquote&gt;
 &lt;p&gt;Markdown 一個很重要功能(至少對我而言)就是它支援 $\LaTeX$ 語法. Latex 數學排版系統是科學界中非常重要的一種系統. 它使得研究員在撰寫學術文章時能輕易地做好排版. 尤其是科學文章中常有大量數學符號, 這些符號的編排以及顯示是 Latex 系統一大強項.&lt;/p&gt;
 &lt;/blockquote&gt;
+
 &lt;p&gt;如果只是要以 Markdown 來寫一些簡單包含數學符號的文章, 還不需要學整個 Latex 系統. 我們只要會一些語法就好. 以下整理一些線上資源供參考&lt;/p&gt;
+
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://walkccc.github.io/blog/2018/02/17/Techniques/latex-syntax/&#34;&gt;LaTeX 語法整理&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://oeis.org/wiki/List_of_LaTeX_mathematical_symbols&#34;&gt;List of LaTeX mathematical symbols&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.overleaf.com/learn/latex/Integrals,_sums_and_limits&#34;&gt;Integrals, sums and limits&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://en.wikibooks.org/wiki/LaTeX/Mathematics#Matrices_and_arrays&#34;&gt;matrices and arrays&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://walkccc.github.io/blog/2018/02/17/Techniques/latex-syntax/&#34; target=&#34;_blank&#34;&gt;LaTeX 語法整理&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://oeis.org/wiki/List_of_LaTeX_mathematical_symbols&#34; target=&#34;_blank&#34;&gt;List of LaTeX mathematical symbols&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.overleaf.com/learn/latex/Integrals,_sums_and_limits&#34; target=&#34;_blank&#34;&gt;Integrals, sums and limits&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://en.wikibooks.org/wiki/LaTeX/Mathematics#Matrices_and_arrays&#34; target=&#34;_blank&#34;&gt;matrices and arrays&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
+
 &lt;p&gt;所有介於兩個 &lt;code&gt;$&lt;/code&gt; 字元之間的內容將會被視為 TeX 數學公式處理。開頭的 &lt;code&gt;$&lt;/code&gt; 右側必須立刻接上任意文字，而結尾 &lt;code&gt;$&lt;/code&gt; 的左側同樣也必須緊挨著文字。如果使用兩個&lt;code&gt;$$&lt;/code&gt;則會將數學公式換行居中. 例如以下 markdown 程式碼&lt;/p&gt;
+
 &lt;pre&gt;&lt;code&gt;$$\frac{\sin(x)}{x}$$
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;顯示為
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;顯示為
 $$\frac{\sin(x)}{x}$$&lt;/p&gt;
-&lt;hr&gt;
+
+&lt;hr /&gt;
 </description>
     </item>
     
@@ -1271,44 +1722,61 @@ $$\frac{\sin(x)}{x}$$&lt;/p&gt;
       <link>https://teshenglin.github.io/post/2019_maxmin/</link>
       <pubDate>Tue, 29 Oct 2019 00:00:00 +0000</pubDate>
       <guid>https://teshenglin.github.io/post/2019_maxmin/</guid>
-      <description>&lt;blockquote&gt;
+      <description>
+
+&lt;blockquote&gt;
 &lt;p&gt;這裡我們要討論一個函數的最大值以及最小值.&lt;/p&gt;
 &lt;/blockquote&gt;
+
 &lt;p&gt;首先我們有極值定理&lt;/p&gt;
+
 &lt;blockquote&gt;
 &lt;h2 id=&#34;theorem-extreme-value-theorem&#34;&gt;Theorem: Extreme value theorem&lt;/h2&gt;
+
 &lt;p&gt;If $f$ is a real-valued continuous function on the closed interval $[a,b]$, then $f$ must attain a maximum and a minimum.&lt;/p&gt;
 &lt;/blockquote&gt;
+
 &lt;p&gt;所以對於定義在封閉區間的連續函數, 必定會有極值. 接下來我們看一下實際上我們怎麼把極值找出來.&lt;/p&gt;
+
 &lt;p&gt;在微積分課本裡有所謂的封閉區間法, 如下:&lt;/p&gt;
+
 &lt;h2 id=&#34;the-closed-interval-method&#34;&gt;The closed interval method&lt;/h2&gt;
-&lt;pre&gt;&lt;code class=&#34;language-mermaid&#34; data-lang=&#34;mermaid&#34;&gt;graph TD;
+
+&lt;pre&gt;&lt;code class=&#34;language-mermaid&#34;&gt;graph TD;
   B[f is `continuous` on a `closed interval`]--&amp;gt;A;
   B--&amp;gt;C;
   A[Determine the critical points]--&amp;gt;|f&#39;=0| D(The largest value at these points is the abs. max. and the smallest value is the abs. min.);
   A--&amp;gt;|f&#39; not exists| D;
   C[Determine the end points]--&amp;gt;D;
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;這個方法的原理跟做法都很簡單, 我這邊就不多做說明.&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;這個方法的原理跟做法都很簡單, 我這邊就不多做說明.&lt;/p&gt;
+
 &lt;p&gt;不過我要做一些補充. 事實上這個方法要能用還有一個很重要的假設是&lt;code&gt;假設這個函數只在有限個地方微分不存在&lt;/code&gt;. 如果一個函數在無窮多地方微分不存在, 雖然最大值還會是 &amp;ldquo;微分等於 0&amp;rdquo;, &amp;ldquo;微分不存在&amp;rdquo;, &amp;ldquo;端點&amp;rdquo; 這些地方的函數值中找最大的. 不過實作上會找不完. 所以等於是沒有用.&lt;/p&gt;
-&lt;p&gt;當然這樣的假設看起來很正常, 難道有函數是連續的, 但是在無窮多地方微分不存在嗎? 很不幸的也很幸運的, 真的有! 其中有一個很特別的函數叫做 &lt;a href=&#34;https://en.wikipedia.org/wiki/Weierstrass_function&#34;&gt;Weierstrass function&lt;/a&gt;. 它是定義在實數軸上的函數, 在每個點都連續, 但是同時在任何一個點微分都不存在. 所以如果套用 the closed interval method 在這函數上會發現所有的點都是 critical point, 所以套用之後還是必須要找出所有點中函數值最大的. 完全沒有簡化到.&lt;/p&gt;
+
+&lt;p&gt;當然這樣的假設看起來很正常, 難道有函數是連續的, 但是在無窮多地方微分不存在嗎? 很不幸的也很幸運的, 真的有! 其中有一個很特別的函數叫做 &lt;a href=&#34;https://en.wikipedia.org/wiki/Weierstrass_function&#34; target=&#34;_blank&#34;&gt;Weierstrass function&lt;/a&gt;. 它是定義在實數軸上的函數, 在每個點都連續, 但是同時在任何一個點微分都不存在. 所以如果套用 the closed interval method 在這函數上會發現所有的點都是 critical point, 所以套用之後還是必須要找出所有點中函數值最大的. 完全沒有簡化到.&lt;/p&gt;
+
 &lt;h3 id=&#34;question-1-是否存在連續-但是在每個點微分都等於-0-的函數&#34;&gt;Question 1: 是否存在連續, 但是在每個點微分都等於 0 的函數?&lt;/h3&gt;
+
 &lt;p&gt;當然有! 常數函數就是. 不過這個很好 check 最大最小值所以沒什麼問題.&lt;/p&gt;
-&lt;h3 id=&#34;question-2-是否存在連續-但是在每個點微分都等於-0-的非常數函數non-constant-function&#34;&gt;Question 2: 是否存在連續, 但是在每個點微分都等於 0 的非常數函數(non-constant function)?&lt;/h3&gt;
+
+&lt;h3 id=&#34;question-2-是否存在連續-但是在每個點微分都等於-0-的非常數函數-non-constant-function&#34;&gt;Question 2: 是否存在連續, 但是在每個點微分都等於 0 的非常數函數(non-constant function)?&lt;/h3&gt;
+
 &lt;p&gt;I will leave it as an exercise.&lt;/p&gt;
-&lt;hr&gt;
+
+&lt;hr /&gt;
+
 &lt;p&gt;最後再補充一點, 函數在某個點連續但是微分不存在有幾種情形:&lt;/p&gt;
+
 &lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;尖點. 例如 $f(x) = |x|$ 在 $x=0$ 時.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;垂直切線. 例如 $f(x) = \sqrt[3]{x}$ 在 $x=0$ 時.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;微分定義中的極限不存在. 例如 $f(x) = x\sin(x)$ 在 $x=0$ 時.&lt;/p&gt;
-&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;尖點. 例如 $f(x) = |x|$ 在 $x=0$ 時.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;垂直切線. 例如 $f(x) = \sqrt[3]{x}$ 在 $x=0$ 時.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;微分定義中的極限不存在. 例如 $f(x) = x\sin(x)$ 在 $x=0$ 時.&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
-&lt;hr&gt;
+
+&lt;hr /&gt;
 </description>
     </item>
     
@@ -1317,18 +1785,26 @@ $$\frac{\sin(x)}{x}$$&lt;/p&gt;
       <link>https://teshenglin.github.io/post/2019_slant_asymp/</link>
       <pubDate>Tue, 29 Oct 2019 00:00:00 +0000</pubDate>
       <guid>https://teshenglin.github.io/post/2019_slant_asymp/</guid>
-      <description>&lt;blockquote&gt;
+      <description>
+
+&lt;blockquote&gt;
 &lt;p&gt;這裡我們要介紹 slant asymptotes, 也就是所謂的斜漸近線.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h2 id=&#34;section-1-slant-asymptotes&#34;&gt;Section 1: slant asymptotes#&lt;/h2&gt;
+
+&lt;h2 id=&#34;section-1-slant-asymptotes&#34;&gt;Section 1: slant asymptotes&lt;/h2&gt;
+
 &lt;p&gt;斜漸近線定義如下:
 The line $y=mx+b$, $m\ne 0$, is called a slant asymptote of $f(x)$ if
 $$
 \lim_{x\to\infty} [f(x) - (mx+b)] = 0.
 $$&lt;/p&gt;
+
 &lt;p&gt;&lt;strong&gt;Remark:&lt;/strong&gt; 亦可將上列式子中改為 $x\to-\infty$. 滿足此條件的也是斜漸近線. 所以斜漸近線最多有兩條.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h3 id=&#34;section-11-長除法&#34;&gt;Section 1.1: 長除法&lt;/h3&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&#34;section-1-1-長除法&#34;&gt;Section 1.1: 長除法&lt;/h3&gt;
+
 &lt;p&gt;要求得斜漸近線的方法其中之一是長除法. 例如以下這個函數
 $$
 f(x) = \frac{4x^3-10x^2-11x+1}{x^2-3x}.
@@ -1346,13 +1822,17 @@ $$
 \lim_{x\to\pm\infty} [f(x) - (4x+2)] = \lim_{x\to\pm\infty} \frac{-5x+1}{x^2-3x} = 0.
 $$
 所以 $y=4x+2$ 就是這個函數的斜漸近線.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h3 id=&#34;section-12-直接法&#34;&gt;Section 1.2: 直接法&lt;/h3&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&#34;section-1-2-直接法&#34;&gt;Section 1.2: 直接法&lt;/h3&gt;
+
 &lt;p&gt;不過如果遇到無法做長除法的函數, 以上的招數就失效了. 例如
 $$
 g(x) = \sqrt{x^2-1}+3,
 $$
 就無法以長除法來找斜漸近線.&lt;/p&gt;
+
 &lt;p&gt;我們先觀察一下原本斜漸近線的定義, 然後很快就可以發現, 如果 $y=mx+b$ 是一條斜漸近線則我們有
 $$
 \lim_{x\to\infty} \frac{f(x)}{x} = m.
@@ -1362,23 +1842,25 @@ $$
 \lim_{x\to\infty} [f(x) - mx] = b.
 $$
 利用這個式子就可以找到斜漸近線中的第二個參數 $b$.&lt;/p&gt;
+
 &lt;p&gt;我們以上面的 $g(x)$ 函數為例來找一下它的斜漸近線.&lt;/p&gt;
+
 &lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;首先第一步我們先看一下 $g(x)$ 在正負無窮遠的行為:
+&lt;li&gt;&lt;p&gt;首先第一步我們先看一下 $g(x)$ 在正負無窮遠的行為:
 $$
 \lim_{x\to\infty} g(x) = \infty, \quad \lim_{x\to-\infty} g(x) = \infty.
 $$
 發現它會趨近無窮大, 所以有機會有斜漸近線.&lt;/p&gt;
+
 &lt;p&gt;&lt;strong&gt;Remark:&lt;/strong&gt;&lt;/p&gt;
+
 &lt;ul&gt;
 &lt;li&gt;如果趨近一個常數那就會得到橫漸近線 (horizontal asymptotes), 那就沒有斜漸近線.&lt;/li&gt;
 &lt;li&gt;如果極限不是正負無窮大其中之一, 那也不可能會有斜漸近線.&lt;/li&gt;
 &lt;li&gt;以上都是在講單邊 ($x\to\infty$, 或是 $x\to -\infty$), 有可能兩邊行為完全不一樣.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;接著我們試著求出 $m$:
+&lt;/ul&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;接著我們試著求出 $m$:
 $$
 \lim_{x\to\infty} \frac{g(x)}{x} = \lim_{x\to\infty} \frac{\sqrt{x^2-1}+3}{x} = 1.
 $$
@@ -1387,27 +1869,33 @@ $$
 \lim_{x\to\infty} [g(x) - mx] = \lim_{x\to\infty} \left[\sqrt{x^2-1}+3 - x\right] = 3.
 $$
 所以 $b=3$.&lt;/p&gt;
+
 &lt;p&gt;&lt;strong&gt;Remark:&lt;/strong&gt;&lt;/p&gt;
+
 &lt;ul&gt;
 &lt;li&gt;同樣做法可以得到 $x\to -\infty$ 時我們有 $m=-1$, $b=3$.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;因此我們得到 $g(x)$ 在正無窮遠處的斜漸近線為 $y=x+3$, 在負無窮遠處的斜漸近線為 $y=-x+3$.&lt;/p&gt;
-&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;因此我們得到 $g(x)$ 在正無窮遠處的斜漸近線為 $y=x+3$, 在負無窮遠處的斜漸近線為 $y=-x+3$.&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
-&lt;hr&gt;
-&lt;h3 id=&#34;section-13-summary&#34;&gt;Section 1.3: Summary&lt;/h3&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&#34;section-1-3-summary&#34;&gt;Section 1.3: Summary&lt;/h3&gt;
+
 &lt;p&gt;總結一下:&lt;/p&gt;
+
 &lt;ul&gt;
 &lt;li&gt;斜漸近線可以用長除法或直接法求得.&lt;/li&gt;
 &lt;/ul&gt;
+
 &lt;p&gt;不過不管長除法或直接法都是求出斜漸近線的計算過程. 實際上不管用哪種方法做, 長除法, 直接法, 或是當你很有經驗時可以一眼看出來, 要&lt;strong&gt;證明&lt;/strong&gt;你所得到的直線是斜漸近線就是要驗證最初的定義是否正確. 也就是要驗證以下這個式子是對的:
 $$
 \lim_{x\to\infty} [f(x) - (mx+b)] = 0.
 $$
 如果是對的, 你就得到它了.&lt;/p&gt;
-&lt;hr&gt;
+
+&lt;hr /&gt;
 </description>
     </item>
     
@@ -1416,76 +1904,108 @@ $$
       <link>https://teshenglin.github.io/courses/taught/</link>
       <pubDate>Mon, 28 Oct 2019 00:00:00 +0800</pubDate>
       <guid>https://teshenglin.github.io/courses/taught/</guid>
-      <description>&lt;hr&gt;
+      <description>
+
+&lt;hr /&gt;
+
 &lt;h2 id=&#34;2020-spring&#34;&gt;2020 Spring&lt;/h2&gt;
+
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Calculus (2):&lt;/strong&gt; &lt;a href=&#34;https://piazza.com/mail.nctu.edu.tw/spring2020/dam13680416/home&#34;&gt;Piazza&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Numerical Methods for Partial Differential Equations:&lt;/strong&gt; &lt;a href=&#34;https://piazza.com/mail.nctu.edu.tw/spring2020/iam58045401/home&#34;&gt;Piazza&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Calculus (2):&lt;/strong&gt; &lt;a href=&#34;https://piazza.com/mail.nctu.edu.tw/spring2020/dam13680416/home&#34; target=&#34;_blank&#34;&gt;Piazza&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Numerical Methods for Partial Differential Equations:&lt;/strong&gt; &lt;a href=&#34;https://piazza.com/mail.nctu.edu.tw/spring2020/iam58045401/home&#34; target=&#34;_blank&#34;&gt;Piazza&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
+
 &lt;h2 id=&#34;2019-fall&#34;&gt;2019 Fall&lt;/h2&gt;
+
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Calculus (1):&lt;/strong&gt; &lt;a href=&#34;https://piazza.com/mail.nctu.edu.tw/fall2019/dam13670416/home&#34;&gt;Piazza&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://teshenglin.github.io/courses/2019fall_colloquium&#34;&gt;Colloquium&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Calculus (1):&lt;/strong&gt; &lt;a href=&#34;https://piazza.com/mail.nctu.edu.tw/fall2019/dam13670416/home&#34; target=&#34;_blank&#34;&gt;Piazza&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://teshenglin.github.io/courses/2019fall_colloquium&#34; target=&#34;_blank&#34;&gt;Colloquium&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;hr&gt;
+
+&lt;hr /&gt;
+
 &lt;h2 id=&#34;2019-spring&#34;&gt;2019 Spring&lt;/h2&gt;
+
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Calculus (2)&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Introduction to Partial Differential Equations:&lt;/strong&gt; &lt;a href=&#34;http://piazza.com/mail.nctu.edu.tw/spring2019/dam32061390/home&#34;&gt;Piazza&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Introduction to Partial Differential Equations:&lt;/strong&gt; &lt;a href=&#34;http://piazza.com/mail.nctu.edu.tw/spring2019/dam32061390/home&#34; target=&#34;_blank&#34;&gt;Piazza&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
+
 &lt;h2 id=&#34;2018-fall&#34;&gt;2018 Fall&lt;/h2&gt;
+
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Calculus (1)&lt;/strong&gt;&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Introduction to Practice of Mathematics Software&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;hr&gt;
+
+&lt;hr /&gt;
+
 &lt;h2 id=&#34;2018-spring&#34;&gt;2018 Spring&lt;/h2&gt;
+
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Calculus (2):&lt;/strong&gt; &lt;a href=&#34;https://piazza.com/mail.nctu.edu.tw/spring2018/dam13680319/home&#34;&gt;Piazza&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Computational mathematics:&lt;/strong&gt; &lt;a href=&#34;https://piazza.com/mail.nctu.edu.tw/spring2018/dam32011392/home&#34;&gt;Piazza&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Calculus (2):&lt;/strong&gt; &lt;a href=&#34;https://piazza.com/mail.nctu.edu.tw/spring2018/dam13680319/home&#34; target=&#34;_blank&#34;&gt;Piazza&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Computational mathematics:&lt;/strong&gt; &lt;a href=&#34;https://piazza.com/mail.nctu.edu.tw/spring2018/dam32011392/home&#34; target=&#34;_blank&#34;&gt;Piazza&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
+
 &lt;h2 id=&#34;2017-fall&#34;&gt;2017 Fall&lt;/h2&gt;
+
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Calculus (1)&lt;/strong&gt;&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Vector Calculus&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;hr&gt;
+
+&lt;hr /&gt;
+
 &lt;h2 id=&#34;2017-spring&#34;&gt;2017 Spring&lt;/h2&gt;
+
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Service - Learning (2)&lt;/strong&gt;&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Applied Mathematics Methods&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
+
 &lt;h2 id=&#34;2016-fall&#34;&gt;2016 Fall&lt;/h2&gt;
+
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Service - Learning (1)&lt;/strong&gt;&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Introduction to Practice of Mathematics Software&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://teshenglin.github.io/courses/2016fall_colloquium&#34;&gt;Colloquium&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://teshenglin.github.io/courses/2016fall_colloquium&#34; target=&#34;_blank&#34;&gt;Colloquium&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;hr&gt;
+
+&lt;hr /&gt;
+
 &lt;h2 id=&#34;2016-spring&#34;&gt;2016 Spring&lt;/h2&gt;
+
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Applied Mathematics Methods&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://teshenglin.github.io/courses/2016spring_colloquium&#34;&gt;Colloquium&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://teshenglin.github.io/courses/2016spring_colloquium&#34; target=&#34;_blank&#34;&gt;Colloquium&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
+
 &lt;h2 id=&#34;2015-fall&#34;&gt;2015 Fall&lt;/h2&gt;
+
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Service - Learning (1)&lt;/strong&gt;&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Numerical Analysis&lt;/strong&gt;&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Topical mathematical modeling and computing (1)&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;hr&gt;
+
+&lt;hr /&gt;
+
 &lt;h2 id=&#34;2015-spring&#34;&gt;2015 Spring&lt;/h2&gt;
+
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Service - Learning (2)&lt;/strong&gt;&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Calculus (2)&lt;/strong&gt;&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Applied Mathematics Methods&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
+
 &lt;h2 id=&#34;2014-fall&#34;&gt;2014 Fall&lt;/h2&gt;
+
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Service - Learning (1)&lt;/strong&gt;&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Topical mathematical modeling and computing (1)&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;hr&gt;
+
+&lt;hr /&gt;
 </description>
     </item>
     
@@ -1494,13 +2014,20 @@ $$
       <link>https://teshenglin.github.io/courses/students/</link>
       <pubDate>Mon, 28 Oct 2019 00:00:00 +0800</pubDate>
       <guid>https://teshenglin.github.io/courses/students/</guid>
-      <description>&lt;hr&gt;
+      <description>
+
+&lt;hr /&gt;
+
 &lt;h2 id=&#34;phd-students&#34;&gt;PhD students&lt;/h2&gt;
+
 &lt;ul&gt;
 &lt;li&gt;Chiu-Yao He (何秋瑤)&lt;/li&gt;
 &lt;/ul&gt;
-&lt;hr&gt;
+
+&lt;hr /&gt;
+
 &lt;h2 id=&#34;master-students&#34;&gt;Master students&lt;/h2&gt;
+
 &lt;ul&gt;
 &lt;li&gt;高浩恩&lt;/li&gt;
 &lt;li&gt;謝亞衛&lt;/li&gt;
@@ -1515,7 +2042,8 @@ $$
 &lt;li&gt;Cheng Chiu (邱晟) - graduated 2017-07&lt;/li&gt;
 &lt;li&gt;Chiu-Yao He (何秋瑤) - graduated 2016-07&lt;/li&gt;
 &lt;/ul&gt;
-&lt;hr&gt;
+
+&lt;hr /&gt;
 </description>
     </item>
     
@@ -1524,118 +2052,97 @@ $$
       <link>https://teshenglin.github.io/post/2019_derivate_evaluate/</link>
       <pubDate>Sun, 27 Oct 2019 00:00:00 +0000</pubDate>
       <guid>https://teshenglin.github.io/post/2019_derivate_evaluate/</guid>
-      <description>&lt;!-- raw HTML omitted --&gt;
+      <description>
+
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    前情提要: &lt;a href=&#34;https://teshenglin.github.io/post/2019_limit_evaluate&#34;&gt;用電腦算極限&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
 &lt;blockquote&gt;
 &lt;p&gt;這裡我們要講的是用數值計算來算函數的微分值.&lt;/p&gt;
 &lt;/blockquote&gt;
+
 &lt;p&gt;已知一個函數 $f(x)$ 在某個點 $a$ 的微分值定義是
 $$
 f&amp;rsquo;(a) = \lim_{h\to 0} \frac{f(a+h)-f(a)}{h}.
 $$&lt;/p&gt;
+
 &lt;p&gt;我們用一個簡單的例子試試看. 假設我們想求 $f(x)=x^2$ 在 $x=\pi$ 的微分. 根據定義我們有&lt;/p&gt;
+
 &lt;p&gt;$$
 f&amp;rsquo;(\pi) = \lim_{h\to 0} \frac{(\pi+h)^2-\pi^2}{h}.
 $$&lt;/p&gt;
+
 &lt;p&gt;接著我們將 $h$ 取靠近 $0$ 的 $1000$ 的點並帶入上列這個式子試著來算其極限值.&lt;/p&gt;
+
 &lt;pre&gt;&lt;code&gt;1000×2 Array{Float64,2}:
  1.0    7.28319
  0.999  7.28219
  0.998  7.28119
  0.997  7.28019
  0.996  7.27919
- 0.995  7.27819
- 0.994  7.27719
- 0.993  7.27619
- 0.992  7.27519
- 0.991  7.27419
- 0.99   7.27319
- 0.989  7.27219
- 0.988  7.27119
  ⋮
- 0.012  6.29519
- 0.011  6.29419
- 0.01   6.29319
- 0.009  6.29219
- 0.008  6.29119
- 0.007  6.29019
- 0.006  6.28919
  0.005  6.28819
  0.004  6.28719
  0.003  6.28619
  0.002  6.28519
  0.001  6.28419
 &lt;/code&gt;&lt;/pre&gt;
+
 &lt;p&gt;上列數字左邊是 $h$ 值, 右邊為估計的微分值. 我們發現的確這個數字會越來越接近真實的解, 也就是 $2\pi$, 約等於 $6.283185307179586$.&lt;/p&gt;
+
 &lt;p&gt;接著我們算一下這個值與真實值 $2\pi$ 之間的差, 我們取其絕對值來表示&lt;/p&gt;
+
 &lt;pre&gt;&lt;code&gt;1000×2 Array{Float64,2}:
  1.0    1.0
  0.999  0.999
  0.998  0.998
  0.997  0.997
  0.996  0.996
- 0.995  0.995
- 0.994  0.994
- 0.993  0.993
- 0.992  0.992
- 0.991  0.991
- 0.99   0.99
- 0.989  0.989
- 0.988  0.988
  ⋮
- 0.012  0.012
- 0.011  0.011
- 0.01   0.01
- 0.009  0.009
- 0.008  0.008
- 0.007  0.007
- 0.006  0.006
  0.005  0.005
  0.004  0.004
  0.003  0.003
  0.002  0.002
  0.001  0.001
 &lt;/code&gt;&lt;/pre&gt;
+
 &lt;p&gt;的確, 當 $x$ 越來越靠近 $\pi$ 時這個估計出來的微分值離 $2\pi$ 的距離越來越小.&lt;/p&gt;
-&lt;hr&gt;
+
+&lt;hr /&gt;
+
 &lt;p&gt;&lt;strong&gt;Question:&lt;/strong&gt; 用數值計算微分能有多精確? 這個誤差能不能一直遞減下去?&lt;/p&gt;
+
 &lt;p&gt;接著我們取更多靠近 $0$ 的點來計算微分的極限值, 我們列出其與真實值 $2\pi$ 之間的差, 並且把它畫出來.&lt;/p&gt;
+
 &lt;pre&gt;&lt;code&gt;241×2 Array{Float64,2}:
  0.00673795   0.00673795
  0.00609675   0.00609675
  0.00551656   0.00551656
  0.00499159   0.00499159
  0.00451658   0.00451658
- 0.00408677   0.00408677
- 0.00369786   0.00369786
- 0.00334597   0.00334597
- 0.00302755   0.00302755
- 0.00273944   0.00273944
- 0.00247875   0.00247875
- 0.00224287   0.00224287
- 0.00202943   0.00202943
  ⋮
- 7.64159e-13  0.000179905
- 6.9144e-13   0.000756556
- 6.25641e-13  9.69264e-5
- 5.66103e-13  0.00196331
- 5.12231e-13  0.00285478
- 4.63486e-13  0.00227874
- 4.1938e-13   0.0016747
  3.7947e-13   0.00576551
  3.43359e-13  0.00259406
  3.10684e-13  0.000421242
  2.81119e-13  0.00220945
  2.54367e-13  0.001922
 &lt;/code&gt;&lt;/pre&gt;
+
 &lt;p&gt;觀察最後一列數字發現, 當 $h=2.54367*10^{-13}$ 時, 估計出來的微分值與真實值差了 $0.001922$ 這麼多!!&lt;/p&gt;
-&lt;p&gt;我們把它畫出來看看, 橫軸是 $h$, 縱軸是 $\left|\frac{(\pi+h)^2-\pi^2}{h}-2\pi\right|$&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://teshenglin.github.io/post/figs/output_22_0.svg&#34; alt=&#34;svg&#34;&gt;&lt;/p&gt;
+
+&lt;p&gt;我們把它畫出來看看, 橫軸是 $h$, 縱軸是 $\left|\frac{(\pi+h)^2-\pi^2}{h}-2\pi\right|,$ 發現雖然誤差在 $h$ 大的時候遞減, 不過當 $h$ 接近零的時候卻又遞增上去了.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://teshenglin.github.io/post/figs/output_22_0.svg&#34; alt=&#34;svg&#34; /&gt;&lt;/p&gt;
+
 &lt;p&gt;那誤差最小值出現在什麼時候呢?&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;1×2 Array{Float64,2}:
- 5.05653e-8  7.25251e-9
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;我們發現當 $h=5.05653&lt;em&gt;10^{-8}$ 時, 其估計出來的微分值離真實值誤差最小, 其誤差為 $7.25251&lt;/em&gt;10^{-9}$.&lt;/p&gt;
-&lt;p&gt;不過, WHY?? 為什麼誤差不會一直往下遞減? 其實這也是因為捨入誤差的關西.&lt;/p&gt;
+
+&lt;p&gt;我們發現當 當 $h=5.1 *10^{-8}$ 時, 其估計出來的微分值離真實值誤差最小, 其誤差為 $7.3 *10^{-9}$.&lt;/p&gt;
+
+&lt;p&gt;不過, WHY?? 為什麼誤差不會一直往下遞減? 其實這也是因為捨入誤差(rounding-error)的關係.&lt;/p&gt;
+
 &lt;p&gt;觀察一下我們的式子
 $$
 \frac{f(a+h)-f(a)}{h}
@@ -1645,23 +2152,27 @@ $$
 \frac{f(a+h)-f(a) + \epsilon}{h}
 $$
 其中的 $\epsilon$ 就是捨入誤差. 所以, 我們計算的時候會多出了 $\frac{\epsilon}{h}$ 這麼多.&lt;/p&gt;
+
 &lt;p&gt;如果依我們之前所算的 $\epsilon\approx 10^{-16}$, 那當 $h=10^{-8}$ 時, 算出來的數字會多了大約 $\frac{10^{-16}}{10^{-8}} = 10^{-8}$.&lt;/p&gt;
-&lt;p&gt;而當 $h=10^{-13}$ 時, 算出來的數字會多了大約 $\frac{10^{-16}}{10^{-13}} = 10^{-3}$. 跟我們之前所發現的完全吻合!!&lt;/p&gt;
-&lt;hr&gt;
+
+&lt;p&gt;而當 $h=10^{-13}$ 時, 算出來的數字會多了大約 $\frac{10^{-16}}{10^{-13}} = 10^{-3}$. 跟我們之前所發現的完全吻合!! 而這也就是為什麼當 $h$ 很靠近零的時候誤差會上升的原因.&lt;/p&gt;
+
+&lt;hr /&gt;
+
 &lt;h3 id=&#34;summary&#34;&gt;Summary:&lt;/h3&gt;
+
 &lt;p&gt;最後總結一下:&lt;/p&gt;
+
 &lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;我們可以用數值計算來估計一個函數在某點的微分值
+&lt;li&gt;&lt;p&gt;我們可以用數值計算來估計一個函數在某點的微分值
 $$
 f&amp;rsquo;(a) = \lim_{h\to 0} \frac{f(a+h)-f(a)}{h}.
-$$&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;不過計算時 $h$ 值不能無限取小, 需考慮到捨入誤差的影響.&lt;/p&gt;
-&lt;/li&gt;
+$$&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;不過計算時 $h$ 值不能無限取小, 需考慮到捨入誤差的影響.&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;hr&gt;
+
+&lt;hr /&gt;
 </description>
     </item>
     
@@ -1670,34 +2181,35 @@ $$&lt;/p&gt;
       <link>https://teshenglin.github.io/post/2019_limit_evaluate/</link>
       <pubDate>Sun, 27 Oct 2019 00:00:00 +0000</pubDate>
       <guid>https://teshenglin.github.io/post/2019_limit_evaluate/</guid>
-      <description>&lt;blockquote&gt;
+      <description>
+
+&lt;blockquote&gt;
 &lt;p&gt;這裡我們要介紹如何用電腦算極限, 以及我們來看一下當我們真的這樣做的時候有可能會發生什麼問題. 我們以 $sinc$ 函數為例來做說明.&lt;/p&gt;
 &lt;/blockquote&gt;
+
 &lt;h3 id=&#34;sinc-function&#34;&gt;sinc function&lt;/h3&gt;
+
 &lt;p&gt;首先我們要介紹一個特別的函數, $sinc(x)$, 定義如下:
 $$
 sinc(x) = \frac{\sin(x)}{x}, \quad x\ne 0.
 $$
 很明顯可以看出來當 $x=0$ 的時候分母會等於零, 是一件壞事, 所以把 $x=0$ 這個點先拿掉.&lt;/p&gt;
+
 &lt;p&gt;比較有趣的是我們可以把這個函數畫出來. 首先我們在 $[-20, 20]$ 這個區間取 $1000$ 個點, 然後帶入上面 $sinc$ 函數的定義, 再把所有點連起來看看.&lt;/p&gt;
+
 &lt;p&gt;&lt;strong&gt;Remark:&lt;/strong&gt; 有件事需要先說明一下, 由於我們是在 $[-20, 20]$ 這個區間均勻的取偶數個點, 所以會有 $500$ 個正數以及 $500$ 個負數, 重點是保證不會取到 $x=0$ 這個點, 所以沒有問題. 相反的, 如果取奇數個點就一定會取到 $x=0$, 那就會有函數無定義的問題了.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://teshenglin.github.io/post/figs/output_3_0.svg&#34; alt=&#34;svg&#34;&gt;&lt;/p&gt;
-&lt;p&gt;我們很輕易可以看出來, 連起來的線還蠻&amp;quot;光滑&amp;quot;的. 函數值在 $x=0$ 附近似乎不會趨近正無窮大或負無窮大, 也沒有跳躍的現象. 接著我們試著在 $x=0$ 附近放大一點看看, 我們在 $[-0.1, 0.1]$ 這個區間取 $1000$ 個點, 然後帶入 $sinc$ 函數的定義再把它畫出來:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://teshenglin.github.io/post/figs/output_5_0.svg&#34; alt=&#34;svg&#34;&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://teshenglin.github.io/post/figs/output_3_0.svg&#34; alt=&#34;svg&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;我們很輕易可以看出來, 連起來的線還蠻&amp;rdquo;光滑&amp;rdquo;的. 函數值在 $x=0$ 附近似乎不會趨近正無窮大或負無窮大, 也沒有跳躍的現象. 接著我們試著在 $x=0$ 附近放大一點看看, 我們在 $[-0.1, 0.1]$ 這個區間取 $1000$ 個點, 然後帶入 $sinc$ 函數的定義再把它畫出來:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://teshenglin.github.io/post/figs/output_5_0.svg&#34; alt=&#34;svg&#34; /&gt;&lt;/p&gt;
+
 &lt;p&gt;看起來真的很光滑!! 而且似乎當 $x$ 很靠近 $0$ 時, $sinc(x)$ 的值很靠近 $1$.&lt;/p&gt;
+
 &lt;p&gt;接著我們取一個會越來越靠近 $0$ 的數列, 然後看一下當把 $sinc$ 函數在這個數列的點上取值時, 其值會不會越來越靠近 $1$.  我們取以下數列:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;20-element Array{Float64,1}:
- 0.36787944117144233
- 0.1353352832366127
- 0.049787068367863944
- 0.01831563888873418
- 0.006737946999085467
- 0.0024787521766663585
- 0.0009118819655545162
- 0.00033546262790251185
- 0.00012340980408667956
- 4.539992976248485e-5
- 1.670170079024566e-5
+
+&lt;pre&gt;&lt;code&gt; 1.670170079024566e-5
  6.14421235332821e-6
  2.2603294069810542e-6
  8.315287191035679e-7
@@ -1708,19 +2220,10 @@ $$
  5.602796437537268e-9
  2.061153622438558e-9
 &lt;/code&gt;&lt;/pre&gt;
+
 &lt;p&gt;算一下 $sinc$ 函數在這些點上面的值, 並觀察他的趨勢:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;20-element Array{Float64,1}:
- 0.9775962588920379
- 0.9969501878216637
- 0.9995869258359702
- 0.9999440904998019
- 0.9999924333622158
- 0.9999989759649225
- 0.9999998614118859
- 0.9999999812441376
- 0.9999999974616701
- 0.9999999996564743
- 0.9999999999535089
+
+&lt;pre&gt;&lt;code&gt; 0.9999999999535089
  0.9999999999937081
  0.9999999999991485
  0.9999999999998848
@@ -1731,24 +2234,18 @@ $$
  1.0
  1.0
 &lt;/code&gt;&lt;/pre&gt;
+
 &lt;p&gt;赫然發現算到後來就等於 $1$ 了!! 所以我們發現&lt;/p&gt;
+
 &lt;p&gt;$$
 \lim_{x\to 0} sinc(x) = \lim_{x\to 0} \frac{\sin(x)}{x} = 1.
 $$&lt;/p&gt;
-&lt;p&gt;不過有一點點詭異的是, 在剛剛的計算裡我們最多也只是取到離 $1$ 很近的點而已, 但是算出來的結果卻是 $1$. 難道不只是 $sinc(0)=1$, 我們也有 $sinc(2.061153622438558*10^{-9})=1$ 嗎?&lt;/p&gt;
+
+&lt;p&gt;不過有一點點詭異的是, 在剛剛的計算裡我們最多也只是取到離 $0$ 很近的點而已, 但是算出來的結果卻是 $1$. 難道不只是 $sinc(0)=1$, 我們也有 $sinc(2.061153622438558 *10^{-9})=1$ 嗎?&lt;/p&gt;
+
 &lt;p&gt;事實上並不是這樣. 電腦有所謂的捨入誤差(rounding error). 這是因為電腦需要用有限位數來表達無窮小數, 所以一定要捨棄後面的位數. 我們把算出來的數字減去 $1$ 看看:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;20-element Array{Float64,1}:
- -0.02240374110796206
- -0.0030498121783363308
- -0.000413074164029803
- -5.590950019807028e-5
- -7.566637784228725e-6
- -1.0240350775125862e-6
- -1.3858811409583893e-7
- -1.8755862418728952e-8
- -2.5383298796199938e-9
- -3.435256523687258e-10
- -4.649114426769074e-11
+
+&lt;pre&gt;&lt;code&gt; -4.649114426769074e-11
  -6.291855925155687e-12
  -8.515410598874951e-13
  -1.1524114995609125e-13
@@ -1759,30 +2256,64 @@ $$&lt;/p&gt;
   0.0
   0.0
 &lt;/code&gt;&lt;/pre&gt;
+
 &lt;p&gt;我們可以發現這個數字最小可以到大約 $10^{-16}$, 之後就變成 $0$ 了. 也就是說我們目前用個這個程式語言其捨入誤差大約就是 $10^{-16}$.&lt;/p&gt;
-&lt;hr&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&#34;machine-epsilon&#34;&gt;machine epsilon&lt;/h3&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;一般我們會用 machine epsilon 這個數字來量化在電腦裡浮點運算的捨入誤差.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;machine epsilon 的定義是, 考慮正數$\epsilon$, 使得 $ 1+ \epsilon \ge 1$ 中最小的那個稱之為 machine epsilon. 當然以數學來看這個 machine epsilon 必須等於零. 不過在電腦裡並不是這樣.&lt;/p&gt;
+
+&lt;p&gt;為了方便我們稍微改一下定義, 我們考慮 $\epsilon = 2^{-k}$ 這種形式, 然後 machine epsilon 一樣是使得 $ 1+ \epsilon \ge 1$ 中最小的那個. julia 程式如下:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-julia&#34;&gt;s=1.0
+for k=1:100
+    s = s/2.0
+    if (1.0+s)&amp;lt;=1.0
+        s = 2.0*s
+        println(&amp;quot;k=&amp;quot;, k-1, &amp;quot;,  eps=&amp;quot;, s)
+        return
+    end
+end
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;在我的電腦上我發現 $\epsilon = 2^{-52} = 2.220446049250313e-16$.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;k=52,  eps=2.220446049250313e-16
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;所以的確捨入誤差大約是 $10^{-16}$ 這個等級.&lt;/p&gt;
+
+&lt;hr /&gt;
+
 &lt;h3 id=&#34;summary&#34;&gt;Summary:&lt;/h3&gt;
+
 &lt;p&gt;稍微總結一下目前我們看到的:&lt;/p&gt;
+
 &lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;我們用程式跑數值發現 $sinc(x\to 0)=1$, 所以我們可以定義 sinc 函數為
+&lt;li&gt;&lt;p&gt;我們用程式跑數值發現 $sinc(x\to 0)=1$, 所以我們可以定義 sinc 函數為
 $$
 sinc(x) =
 \begin{cases}
-\frac{\sin(x)}{x}, \quad x\ne 0 \\\&lt;br&gt;
+\frac{\sin(x)}{x}, \quad x\ne 0 \\&lt;br /&gt;
 1, \quad x=0.
 \end{cases}
 $$
-在這樣的定義之下 $sinc$ 函數是個&lt;code&gt;連續函數&lt;/code&gt;.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;在數值計算上有所謂的捨入誤差, 這是用有限位元來表達無限位數一定會有的差異.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;更多關於 $sinc$ 函數的性質可以參考 &lt;a href=&#34;https://en.wikipedia.org/wiki/Sinc_function&#34;&gt;wiki&lt;/a&gt; 上的介紹.&lt;/p&gt;
-&lt;/li&gt;
+在這樣的定義之下 $sinc$ 函數是個&lt;code&gt;連續函數&lt;/code&gt;.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;在數值計算上有所謂的捨入誤差, 這是用有限位元來表達無限位數一定會有的差異.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;可以用 machines epsilon 來量化捨入誤差.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;更多關於 $sinc$ 函數的性質可以參考 &lt;a href=&#34;https://en.wikipedia.org/wiki/Sinc_function&#34; target=&#34;_blank&#34;&gt;wiki&lt;/a&gt; 上的介紹.&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;hr&gt;
+
+&lt;hr /&gt;
 </description>
     </item>
     

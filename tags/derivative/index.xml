@@ -20,58 +20,91 @@
       <description>&lt;blockquote&gt;
 &lt;p&gt;Applied Project 2 in Sec.4.7, Calculus by Stewart&lt;/p&gt;
 &lt;/blockquote&gt;
+
 &lt;p&gt;Small birds like finches alternate between flapping their wings and keeping them folded while gliding. In this project we analyze this phenomenon and try to determine how frequently a bird should flap its wings. Some of the principles are the same as for fixed-wing aircraft and so we begin by considering how required power and energy depend on the speed of airplanes.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://media.cheggcdn.com/study/ad0/ad0cd741-aa85-4256-a058-b49a8ef42198/715030-4.7-4IAP21.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;hr&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://media.cheggcdn.com/study/ad0/ad0cd741-aa85-4256-a058-b49a8ef42198/715030-4.7-4IAP21.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
 &lt;p&gt;&lt;strong&gt;Question 1:&lt;/strong&gt; The power needed to propel an airplane forward at velocity​ $v$ is&lt;/p&gt;
+
 &lt;p&gt;$$
 P = Av^3 + \frac{BL^2}{v}
 $$&lt;/p&gt;
+
 &lt;p&gt;where $A$ and $B$ are positive constants specific to the particular aircraft and $L$ is the lift, the upward force supporting the weight of the plane. Find the speed that minimizes the required power.&lt;/p&gt;
+
 &lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
+
 &lt;p&gt;$$
-\frac{d P}{dv} = 3Av^2 - \frac{BL^2}{v^2} = 0 , \Longrightarrow , v_P = \sqrt[4]{\frac{BL^2}{3A}}
+\frac{d P}{dv} = 3Av^2 - \frac{BL^2}{v^2} = 0 \, \Longrightarrow \, v_P = \sqrt[4]{\frac{BL^2}{3A}}
 $$&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Question 2:&lt;/strong&gt;	The speed found in Problem 1 minimizes power but a faster speed might use less fuel. The energy needed to propel the airplane a unit distance is​ $E = P/v$ . At what speed is energy minimized?&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;strong&gt;Question 2:&lt;/strong&gt; The speed found in Problem 1 minimizes power but a faster speed might use less fuel. The energy needed to propel the airplane a unit distance is​ $E = P/v$ . At what speed is energy minimized?&lt;/p&gt;
+
 &lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
+
 &lt;p&gt;$$
-\frac{d E}{dv} = 2Av - \frac{2BL^2}{v^3} = 0 ,\Longrightarrow , v_E = \sqrt[4]{\frac{BL^2}{A}}
+\frac{d E}{dv} = 2Av - \frac{2BL^2}{v^3} = 0 \,\Longrightarrow \, v_E = \sqrt[4]{\frac{BL^2}{A}}
 $$&lt;/p&gt;
-&lt;hr&gt;
+
+&lt;hr /&gt;
+
 &lt;p&gt;&lt;strong&gt;Question 3:&lt;/strong&gt; Hows much faster is the speed for minimum energy than the speed for minimum power?&lt;/p&gt;
+
 &lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
+
 &lt;p&gt;$$
 \frac{v_E}{v_P} = \sqrt[4]{3}
 $$&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Question 4:&lt;/strong&gt;  In applying the equation of Problem 1 to bird flight we split the term $Av^3$ ​into two parts:​ $A_b v^3$ ​for the bird&#39;s body and​ $A_w v^3$ ​for its wings. Let​ $x$ be the fraction of flying time spent in flapping mode. If $m$ is the bird&#39;s mass and all the lift occurs during flapping, then the lift is $mg/x$ and so the power needed during flapping is&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;strong&gt;Question 4:&lt;/strong&gt;  In applying the equation of Problem 1 to bird flight we split the term $Av^3$ ​into two parts:​ $A_b v^3$ ​for the bird&amp;rsquo;s body and​ $A_w v^3$ ​for its wings. Let​ $x$ be the fraction of flying time spent in flapping mode. If $m$ is the bird&amp;rsquo;s mass and all the lift occurs during flapping, then the lift is $mg/x$ and so the power needed during flapping is&lt;/p&gt;
+
 &lt;p&gt;$$
 P_f = (A_b+A_w)v^3 + \frac{B(mg/x)^2}{v}
 $$&lt;/p&gt;
+
 &lt;p&gt;The power while wings are folded is $P_o = A_b v^3$. Find the average power over an entire flight cycle.&lt;/p&gt;
+
 &lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
+
 &lt;p&gt;$$
 P_a = x P_f + (1-x) P_o = A_b v^3 + A_w v^3 x + \frac{B m^2 g^2}{xv}
 $$&lt;/p&gt;
-&lt;hr&gt;
+
+&lt;hr /&gt;
+
 &lt;p&gt;&lt;strong&gt;Question 5:&lt;/strong&gt;  For what value of​ $x$ is the average power a minimum? What can you conclude if the bird flies slowly? What can you conclude if the bird flies faster and faster?&lt;/p&gt;
+
 &lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
+
 &lt;p&gt;$$
-\frac{d P_a}{dx} = A_w v^3 - \frac{B m^2 g^2}{x^2v} = 0 , \Longrightarrow , x = \frac{mg}{v^2}\sqrt{\frac{B}{A_w}}
+\frac{d P_a}{dx} = A_w v^3 - \frac{B m^2 g^2}{x^2v} = 0 \, \Longrightarrow \, x = \frac{mg}{v^2}\sqrt{\frac{B}{A_w}}
 $$&lt;/p&gt;
+
 &lt;p&gt;It can be seen that $x$ is inverse proportional to $v^2$, so,&lt;/p&gt;
+
 &lt;ul&gt;
 &lt;li&gt;鳥飛的慢,拍翅時間佔總體飛行時間上升&lt;/li&gt;
 &lt;li&gt;鳥飛的快,滑翔時間佔總體飛行時間上升&lt;/li&gt;
 &lt;/ul&gt;
-&lt;hr&gt;
+
+&lt;hr /&gt;
+
 &lt;p&gt;&lt;strong&gt;Question 6:&lt;/strong&gt;  The average energy over a cycle is $E_a = P_a/v$. What value of $x$​ minimizes $E_a$?&lt;/p&gt;
+
 &lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
+
 &lt;p&gt;$$
-\frac{d E}{dx} = A_w v^2 - \frac{B m^2 g^2}{x^2v^2} = 0 , \Longrightarrow , x = \frac{mg}{v^2}\sqrt{\frac{B}{A_w}}
+\frac{d E}{dx} = A_w v^2 - \frac{B m^2 g^2}{x^2v^2} = 0 \, \Longrightarrow \, x = \frac{mg}{v^2}\sqrt{\frac{B}{A_w}}
 $$&lt;/p&gt;
-&lt;hr&gt;
+
+&lt;hr /&gt;
 </description>
     </item>
     
@@ -83,69 +116,107 @@ $$&lt;/p&gt;
       <description>&lt;blockquote&gt;
 &lt;p&gt;Applied Project 1 in Sec.4.7, Calculus by Stewart&lt;/p&gt;
 &lt;/blockquote&gt;
+
 &lt;p&gt;Given a cylindrical can with fixed volume $v$, we want to find the height $h$ and radius $r$ that minimize the cost of metal to make the can.&lt;/p&gt;
+
 &lt;p&gt;If we disregard any waste metal in the manufacturing process, then the problem is to minimize the surface area of the cylinder. It can be found that the solution of this problem is $h=2r$; this is, the height should be the same as the diameter.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;But,&lt;/strong&gt; for most of the cans in the supermarket, the height is usually greater than the diameter and the ratio $h/r$ varies from $2$ up to about $3.8$. Let&#39;s see if we can explain this phenomenon.&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;img src=&#34;https://media.cheggcdn.com/study/e3e/e3e1a59a-d0be-46e7-8557-07e775d84b81/715030-4.7-1IAP11.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;But,&lt;/strong&gt; for most of the cans in the supermarket, the height is usually greater than the diameter and the ratio $h/r$ varies from $2$ up to about $3.8$. Let&amp;rsquo;s see if we can explain this phenomenon.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://media.cheggcdn.com/study/e3e/e3e1a59a-d0be-46e7-8557-07e775d84b81/715030-4.7-1IAP11.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
 &lt;p&gt;&lt;strong&gt;Question 1:&lt;/strong&gt; The material for the cans is cut from sheets of metal. The cylindrical sides are formed by bending rectangles; these rectangles are cut from the sheet with little or no waste.&lt;/p&gt;
+
 &lt;p&gt;But if the top and bottom discs are cut from squares of side $2r$, this leaves considerable waste metal, which may be recycled but has little or no value to the can makers. If this is the case, find the ratio $h/r$ for which the amount of metal used is minimized.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt; \&lt;br&gt;
+
+&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt; &lt;br /&gt;
 For a cylindrical can we have the relation between $v$, $r$ and $h$ as&lt;/p&gt;
+
 &lt;p&gt;$$
 v = r^2\pi h \Longrightarrow h = \frac{v}{r^2\pi}.
 $$&lt;/p&gt;
+
 &lt;p&gt;The total metal used, $M$, consists of the cylindrical side and two squares (with area $4r^2$) that makes the top and bottom discs. Written everything in terms of $r$ we have&lt;/p&gt;
+
 &lt;p&gt;$$
 M = 2r\pi h + 2\times 4 r^2 = 2r\pi\left(\frac{v}{r^2\pi}\right) + 8r^2 = \frac{2v}{r} + 8 r^2.
 $$&lt;/p&gt;
+
 &lt;p&gt;When $\frac{dM}{dr}=0$, there exists a minimum value&lt;/p&gt;
+
 &lt;p&gt;$$
 \frac{dM}{dr} = -\frac{2v}{r^2} + 16r=0 \Longrightarrow v = 8r^3.
 $$&lt;/p&gt;
+
 &lt;p&gt;So we find that, with the minimum metal used,&lt;/p&gt;
+
 &lt;p&gt;$$
 h = \frac{v}{r^2\pi} = \frac{8r}{\pi} \Longrightarrow \frac{h}{r} = \frac{8}{\pi}\approx 2.55
 $$&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Question 2:&lt;/strong&gt;	A more efficient packing of the discs is obtained by dividing the metal sheet into hexagons and cutting the circular lids and bases from the hexagons. If this strategy is adopted, find the ratio $h/r$ for which the amount of metal used is minimized.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt; \&lt;br&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;strong&gt;Question 2:&lt;/strong&gt; A more efficient packing of the discs is obtained by dividing the metal sheet into hexagons and cutting the circular lids and bases from the hexagons. If this strategy is adopted, find the ratio $h/r$ for which the amount of metal used is minimized.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt; &lt;br /&gt;
 The total metal used, $M$, consists of the cylindrical side and two hexagons that makes the top and bottom discs:&lt;/p&gt;
+
 &lt;p&gt;$$
 M = 2r\pi h + 2\left[\frac{1}{2}\left(\frac{2r}{\sqrt{3}}\right)6r\right] = \frac{2v}{r} + 4\sqrt{3} r^2.
 $$&lt;/p&gt;
+
 &lt;p&gt;When $\frac{dM}{dr}=0$, there exists a minimum value&lt;/p&gt;
+
 &lt;p&gt;$$
 \frac{dM}{dr} = -\frac{2v}{r^2} + 8\sqrt{3}r=0 \Longrightarrow v = 4\sqrt{3}r^3.
 $$&lt;/p&gt;
+
 &lt;p&gt;So we find that, with the minimum metal used,&lt;/p&gt;
+
 &lt;p&gt;$$
 h = \frac{v}{r^2\pi} = \frac{4\sqrt{3}r}{\pi} \Longrightarrow \frac{h}{r} = \frac{4\sqrt{3}}{\pi}\approx 2.21
 $$&lt;/p&gt;
-&lt;hr&gt;
+
+&lt;hr /&gt;
+
 &lt;p&gt;&lt;strong&gt;Question 3:&lt;/strong&gt; In addition to the cost of the metal, we need to incorporate the manufacturing of the can into the cost.&lt;/p&gt;
+
 &lt;ul&gt;
 &lt;li&gt;Assuming that most of the expense is incurred in joining the sides.&lt;/li&gt;
 &lt;/ul&gt;
+
 &lt;p&gt;For a cylindrical can, we need to bend a rectangle and joinging the sides together (with length $h$) to make the cylindrical shell. Also we need to join the two discs to the shell (each disc with length $2\pi r$). So the cost in joining is $k(h + 4\pi r)$ where $k$ is the reciprocal of the length that can be joined for the cost of one unit area of metal.&lt;/p&gt;
+
 &lt;p&gt;If we cut the discs from hexagons as in Question 2, then the total cost consists of the cost of the metal and the cost in joinging the sides, that is proportional to $4\sqrt{3}r^2 + 2\pi r h + k(4\pi r + h)$.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt; \&lt;br&gt;
+
+&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt; &lt;br /&gt;
 Denote the total cost by $f$ and rewrite it as a function of $r$:
 $$
 f( r )  = 4\sqrt{3}r^2 + 2\pi r \left(\frac{v}{r^2\pi}\right) + k\left(4\pi r + \frac{v}{r^2\pi}\right) = 4\sqrt{3}r^2 + \frac{2v}{r} + k\left(4\pi r + \frac{v}{r^2\pi}\right).
 $$&lt;/p&gt;
+
 &lt;p&gt;When $\frac{df}{dr}=0$, there exists a minimum value&lt;/p&gt;
+
 &lt;p&gt;$$
 \frac{df}{dr} = 8\sqrt{3}r -\frac{2v}{r^2} + k\left(4\pi - \frac{2v}{r^3\pi}\right) =0 \Longrightarrow 8\sqrt{3}r + 4\pi k = \left(\frac{2}{r^2} + \frac{2k}{r^3\pi}\right)v.
 $$&lt;/p&gt;
+
 &lt;p&gt;So we find that, with the minimum metal used,&lt;/p&gt;
+
 &lt;p&gt;$$
 \frac{h}{r} = \frac{v}{r^3\pi} = \frac{4\sqrt{3}r + 2k\pi}{\pi r + k}.
 $$&lt;/p&gt;
-&lt;hr&gt;
+
+&lt;hr /&gt;
+
 &lt;p&gt;&lt;strong&gt;Question 4:&lt;/strong&gt; What happened when a can is large or joining is cheap, and what happened when the can is small or joining is costly?&lt;/p&gt;
+
 &lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt; \&lt;/p&gt;
+
 &lt;p&gt;For a cylinder with fixed volume $v$:&lt;/p&gt;
+
 &lt;ul&gt;
 &lt;li&gt;When joining is cheap, $0&amp;lt;k\ll 1$, we have
 $$
@@ -156,7 +227,9 @@ $$
 \frac{h}{r} = \frac{4\sqrt{3}r + 2k\pi}{\pi r + k} \to 2\pi\approx 6.28.
 $$&lt;/li&gt;
 &lt;/ul&gt;
+
 &lt;p&gt;If $k$ is fixed, we need to firstly find the relation between the volume $v$ and the ratio $h/r$.&lt;/p&gt;
+
 &lt;p&gt;For convenience of notation we define $R=h/r$. Then we rewrite $r$ as a function of $v$ and $R$ as
 $$
 r = \sqrt[3]{\frac{v}{\pi R}}.
@@ -165,6 +238,7 @@ With careful calculation we obtain
 $$
 \frac{\sqrt[3]{v}}{k} = \frac{\sqrt[3]{\pi R}(2\pi - R)}{\pi R - 4\sqrt{3}}.
 $$&lt;/p&gt;
+
 &lt;ul&gt;
 &lt;li&gt;When a can is large, $v\gg 1$, we have that the denominator of the term of the right hand side should approaches $0$, that is,
 $$
@@ -175,7 +249,8 @@ $$
 2\pi - R \to 0 \Longrightarrow \frac{h}{r} = R \to 2\pi\approx 6.28.
 $$&lt;/li&gt;
 &lt;/ul&gt;
-&lt;hr&gt;
+
+&lt;hr /&gt;
 </description>
     </item>
     
@@ -187,15 +262,23 @@ $$&lt;/li&gt;
       <description>&lt;blockquote&gt;
 &lt;p&gt;Applied Project in Sec.3.5, Calculus by Stewart&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;&lt;img src=&#34;https://i.stack.imgur.com/ImsaT.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://i.stack.imgur.com/ImsaT.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
 &lt;p&gt;An approach path for an aircraft landing is shown in the figure and satisfies the following conditions:&lt;/p&gt;
+
 &lt;p&gt;(i) The cruising altitude is $h$ when descent starts at a horizontal distance $\ell$ from touchdown at the origin.&lt;/p&gt;
+
 &lt;p&gt;(ii) The pilot must maintain a constant horizontal speed $v$ throughout descent.&lt;/p&gt;
+
 &lt;p&gt;(iii) The absolute value of the vertical acceleration should not exceed a
 constant $k$ (which is much less than the acceleration due to gravity)&lt;/p&gt;
-&lt;hr&gt;
+
+&lt;hr /&gt;
+
 &lt;p&gt;&lt;strong&gt;Question 1:&lt;/strong&gt; Find a cubic polynomial $P(x) = ax^3 + bx^2 + cx + d$ that satisfies condition (i) by imposing suitable conditions on $P(x)$ and $P’(x)$ at the start of descent and at touchdown.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt; \&lt;br&gt;
+
+&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt; &lt;br /&gt;
 At the start of descent:
 $$
 P(\ell) = al^3 +b\ell^2 +c\ell+d = h, \qquad P’(\ell) = 3a\ell^2 +2b\ell+c = 0.
@@ -208,9 +291,12 @@ Solve for $a$, $b$ in terms of $h$, $\ell$ we find
 $$
 P(x) = −\frac{2h}{\ell^3}x^3 + \frac{3h}{\ell^2}x^2.
 $$&lt;/p&gt;
-&lt;hr&gt;
+
+&lt;hr /&gt;
+
 &lt;p&gt;&lt;strong&gt;Question 2:&lt;/strong&gt; Use conditions (ii) and (iii) to show that $\frac{6hv^2}{\ell^2}\le k$.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt; \&lt;br&gt;
+
+&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt; &lt;br /&gt;
 From (ii), a constant horizontal speed $v$ is assumed throughout descent, we can then express $x$ as
 $$
 x = \ell - vt, \qquad t\in[0, \frac{\ell}{v}],
@@ -222,16 +308,19 @@ P(t) = −\frac{2h}{\ell^3}(\ell - vt)^3 + \frac{3h}{\ell^2}(\ell - vt)^2, \qqua
 $$
 Therefore, the vertical acceleration $a$ is
 $$
-a(t) = \left|−\frac{12hv^2}{\ell^3}(\ell - vt) + \frac{6hv^2}{\ell^2}\right| = \left|\frac{12hv^3}{\ell^3},t - \frac{6hv^2}{\ell^2}\right|, \qquad t\in[0, \frac{\ell}{v}].
+a(t) = \left|−\frac{12hv^2}{\ell^3}(\ell - vt) + \frac{6hv^2}{\ell^2}\right| = \left|\frac{12hv^3}{\ell^3}\,t - \frac{6hv^2}{\ell^2}\right|, \qquad t\in[0, \frac{\ell}{v}].
 $$
-It can be check, from the Extreme Value Theorem and closed interval method, that $a$ attains it&#39;s maximum value $\frac{6hv^2}{\ell^2}$.
+It can be check, from the Extreme Value Theorem and closed interval method, that $a$ attains it&amp;rsquo;s maximum value $\frac{6hv^2}{\ell^2}$.
 From condition (iii), we therefore have
 $$
 \frac{6hv^2}{\ell} \le k.
 $$&lt;/p&gt;
-&lt;hr&gt;
+
+&lt;hr /&gt;
+
 &lt;p&gt;&lt;strong&gt;Question 3:&lt;/strong&gt; Suppose that an airline decides not to allow vertical acceleration of a plane to exceed $k = 860$(mi/h$^2$). If the cruising altitude of a plane is $35,000$(ft) and the speed is $300$(mi/h), how far away from the airport should the pilot start descent?&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt; \&lt;br&gt;
+
+&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt; &lt;br /&gt;
 Given $P(x) = −\frac{2h}{\ell^3}x^3 + \frac{3h}{\ell^2}x^2$, suppose the pilot starts to descend when the plane is $\ell$(mi) from the airport. In Q2. we know that $\frac{6hv^2}{\ell^2}\le k$. So,
 $$
 v=300\mbox{(mi/h)}, \qquad h=35000\mbox{(ft)} ≈ 6.628\mbox{(mi)}, \qquad k=860\mbox{(mi/h$^2$)},
@@ -241,20 +330,26 @@ $$
 \ell \ge 64.511.
 $$
 That is, the pilot should start to decend when the plane is $62.511$(mi) away from the airport.&lt;/p&gt;
-&lt;hr&gt;
+
+&lt;hr /&gt;
+
 &lt;p&gt;&lt;strong&gt;Question 4:&lt;/strong&gt; Graph the approach path if the conditions stated in Problem 3 are satisfied.&lt;/p&gt;
+
 &lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# Example code in julia&lt;/span&gt;
-&lt;span style=&#34;color:#66d9ef&#34;&gt;using&lt;/span&gt; Plots&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;
-v&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;300&lt;/span&gt;;
-h&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;6.628&lt;/span&gt;;
-l&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;65&lt;/span&gt;;
-N&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;100&lt;/span&gt;;
-dx&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; l&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;N&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;;
-x&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0.0&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;N&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;; x&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; dx&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;x&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;;
-P&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;h&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;l&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;^&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;)&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;x&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.^&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; (&lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;h&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;l&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;^&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;)&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;x&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.^&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;;
-plot&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;(x&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;, P&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;, lw&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;, xlabel&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;x&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;, ylabel&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;y&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;, title&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;a&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;p&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;p&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;r&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;o&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;a&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;c&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;h&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;p&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;a&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;t&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;h&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;, legend&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;false&lt;/span&gt;)
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-julia&#34;&gt;# Example code in julia
+using Plots
+v = 300;
+h = 6.628;
+l = 65;
+N = 100;
+dx = l/N;
+x = 0.0:N; x = dx*x;
+P = -(2*h/l^3)*x.^3 + (3*h/l^2)*x.^2;
+plot(x, P, lw=3, xlabel = &amp;quot;x&amp;quot;, ylabel = &amp;quot;y&amp;quot;, title=&amp;quot;approach path&amp;quot;, legend=false)
+&lt;/code&gt;&lt;/pre&gt;
+
+
 
 
   
@@ -293,118 +388,97 @@ plot&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;(x&lt;span style=&#34
       <link>https://teshenglin.github.io/post/2019_derivate_evaluate/</link>
       <pubDate>Sun, 27 Oct 2019 00:00:00 +0000</pubDate>
       <guid>https://teshenglin.github.io/post/2019_derivate_evaluate/</guid>
-      <description>&lt;!-- raw HTML omitted --&gt;
+      <description>
+
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    前情提要: &lt;a href=&#34;https://teshenglin.github.io/post/2019_limit_evaluate&#34;&gt;用電腦算極限&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
 &lt;blockquote&gt;
 &lt;p&gt;這裡我們要講的是用數值計算來算函數的微分值.&lt;/p&gt;
 &lt;/blockquote&gt;
+
 &lt;p&gt;已知一個函數 $f(x)$ 在某個點 $a$ 的微分值定義是
 $$
 f&amp;rsquo;(a) = \lim_{h\to 0} \frac{f(a+h)-f(a)}{h}.
 $$&lt;/p&gt;
+
 &lt;p&gt;我們用一個簡單的例子試試看. 假設我們想求 $f(x)=x^2$ 在 $x=\pi$ 的微分. 根據定義我們有&lt;/p&gt;
+
 &lt;p&gt;$$
 f&amp;rsquo;(\pi) = \lim_{h\to 0} \frac{(\pi+h)^2-\pi^2}{h}.
 $$&lt;/p&gt;
+
 &lt;p&gt;接著我們將 $h$ 取靠近 $0$ 的 $1000$ 的點並帶入上列這個式子試著來算其極限值.&lt;/p&gt;
+
 &lt;pre&gt;&lt;code&gt;1000×2 Array{Float64,2}:
  1.0    7.28319
  0.999  7.28219
  0.998  7.28119
  0.997  7.28019
  0.996  7.27919
- 0.995  7.27819
- 0.994  7.27719
- 0.993  7.27619
- 0.992  7.27519
- 0.991  7.27419
- 0.99   7.27319
- 0.989  7.27219
- 0.988  7.27119
  ⋮
- 0.012  6.29519
- 0.011  6.29419
- 0.01   6.29319
- 0.009  6.29219
- 0.008  6.29119
- 0.007  6.29019
- 0.006  6.28919
  0.005  6.28819
  0.004  6.28719
  0.003  6.28619
  0.002  6.28519
  0.001  6.28419
 &lt;/code&gt;&lt;/pre&gt;
+
 &lt;p&gt;上列數字左邊是 $h$ 值, 右邊為估計的微分值. 我們發現的確這個數字會越來越接近真實的解, 也就是 $2\pi$, 約等於 $6.283185307179586$.&lt;/p&gt;
+
 &lt;p&gt;接著我們算一下這個值與真實值 $2\pi$ 之間的差, 我們取其絕對值來表示&lt;/p&gt;
+
 &lt;pre&gt;&lt;code&gt;1000×2 Array{Float64,2}:
  1.0    1.0
  0.999  0.999
  0.998  0.998
  0.997  0.997
  0.996  0.996
- 0.995  0.995
- 0.994  0.994
- 0.993  0.993
- 0.992  0.992
- 0.991  0.991
- 0.99   0.99
- 0.989  0.989
- 0.988  0.988
  ⋮
- 0.012  0.012
- 0.011  0.011
- 0.01   0.01
- 0.009  0.009
- 0.008  0.008
- 0.007  0.007
- 0.006  0.006
  0.005  0.005
  0.004  0.004
  0.003  0.003
  0.002  0.002
  0.001  0.001
 &lt;/code&gt;&lt;/pre&gt;
+
 &lt;p&gt;的確, 當 $x$ 越來越靠近 $\pi$ 時這個估計出來的微分值離 $2\pi$ 的距離越來越小.&lt;/p&gt;
-&lt;hr&gt;
+
+&lt;hr /&gt;
+
 &lt;p&gt;&lt;strong&gt;Question:&lt;/strong&gt; 用數值計算微分能有多精確? 這個誤差能不能一直遞減下去?&lt;/p&gt;
+
 &lt;p&gt;接著我們取更多靠近 $0$ 的點來計算微分的極限值, 我們列出其與真實值 $2\pi$ 之間的差, 並且把它畫出來.&lt;/p&gt;
+
 &lt;pre&gt;&lt;code&gt;241×2 Array{Float64,2}:
  0.00673795   0.00673795
  0.00609675   0.00609675
  0.00551656   0.00551656
  0.00499159   0.00499159
  0.00451658   0.00451658
- 0.00408677   0.00408677
- 0.00369786   0.00369786
- 0.00334597   0.00334597
- 0.00302755   0.00302755
- 0.00273944   0.00273944
- 0.00247875   0.00247875
- 0.00224287   0.00224287
- 0.00202943   0.00202943
  ⋮
- 7.64159e-13  0.000179905
- 6.9144e-13   0.000756556
- 6.25641e-13  9.69264e-5
- 5.66103e-13  0.00196331
- 5.12231e-13  0.00285478
- 4.63486e-13  0.00227874
- 4.1938e-13   0.0016747
  3.7947e-13   0.00576551
  3.43359e-13  0.00259406
  3.10684e-13  0.000421242
  2.81119e-13  0.00220945
  2.54367e-13  0.001922
 &lt;/code&gt;&lt;/pre&gt;
+
 &lt;p&gt;觀察最後一列數字發現, 當 $h=2.54367*10^{-13}$ 時, 估計出來的微分值與真實值差了 $0.001922$ 這麼多!!&lt;/p&gt;
-&lt;p&gt;我們把它畫出來看看, 橫軸是 $h$, 縱軸是 $\left|\frac{(\pi+h)^2-\pi^2}{h}-2\pi\right|$&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://teshenglin.github.io/post/figs/output_22_0.svg&#34; alt=&#34;svg&#34;&gt;&lt;/p&gt;
+
+&lt;p&gt;我們把它畫出來看看, 橫軸是 $h$, 縱軸是 $\left|\frac{(\pi+h)^2-\pi^2}{h}-2\pi\right|,$ 發現雖然誤差在 $h$ 大的時候遞減, 不過當 $h$ 接近零的時候卻又遞增上去了.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://teshenglin.github.io/post/figs/output_22_0.svg&#34; alt=&#34;svg&#34; /&gt;&lt;/p&gt;
+
 &lt;p&gt;那誤差最小值出現在什麼時候呢?&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;1×2 Array{Float64,2}:
- 5.05653e-8  7.25251e-9
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;我們發現當 $h=5.05653&lt;em&gt;10^{-8}$ 時, 其估計出來的微分值離真實值誤差最小, 其誤差為 $7.25251&lt;/em&gt;10^{-9}$.&lt;/p&gt;
-&lt;p&gt;不過, WHY?? 為什麼誤差不會一直往下遞減? 其實這也是因為捨入誤差的關西.&lt;/p&gt;
+
+&lt;p&gt;我們發現當 當 $h=5.1 *10^{-8}$ 時, 其估計出來的微分值離真實值誤差最小, 其誤差為 $7.3 *10^{-9}$.&lt;/p&gt;
+
+&lt;p&gt;不過, WHY?? 為什麼誤差不會一直往下遞減? 其實這也是因為捨入誤差(rounding-error)的關係.&lt;/p&gt;
+
 &lt;p&gt;觀察一下我們的式子
 $$
 \frac{f(a+h)-f(a)}{h}
@@ -414,23 +488,27 @@ $$
 \frac{f(a+h)-f(a) + \epsilon}{h}
 $$
 其中的 $\epsilon$ 就是捨入誤差. 所以, 我們計算的時候會多出了 $\frac{\epsilon}{h}$ 這麼多.&lt;/p&gt;
+
 &lt;p&gt;如果依我們之前所算的 $\epsilon\approx 10^{-16}$, 那當 $h=10^{-8}$ 時, 算出來的數字會多了大約 $\frac{10^{-16}}{10^{-8}} = 10^{-8}$.&lt;/p&gt;
-&lt;p&gt;而當 $h=10^{-13}$ 時, 算出來的數字會多了大約 $\frac{10^{-16}}{10^{-13}} = 10^{-3}$. 跟我們之前所發現的完全吻合!!&lt;/p&gt;
-&lt;hr&gt;
+
+&lt;p&gt;而當 $h=10^{-13}$ 時, 算出來的數字會多了大約 $\frac{10^{-16}}{10^{-13}} = 10^{-3}$. 跟我們之前所發現的完全吻合!! 而這也就是為什麼當 $h$ 很靠近零的時候誤差會上升的原因.&lt;/p&gt;
+
+&lt;hr /&gt;
+
 &lt;h3 id=&#34;summary&#34;&gt;Summary:&lt;/h3&gt;
+
 &lt;p&gt;最後總結一下:&lt;/p&gt;
+
 &lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;我們可以用數值計算來估計一個函數在某點的微分值
+&lt;li&gt;&lt;p&gt;我們可以用數值計算來估計一個函數在某點的微分值
 $$
 f&amp;rsquo;(a) = \lim_{h\to 0} \frac{f(a+h)-f(a)}{h}.
-$$&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;不過計算時 $h$ 值不能無限取小, 需考慮到捨入誤差的影響.&lt;/p&gt;
-&lt;/li&gt;
+$$&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;不過計算時 $h$ 值不能無限取小, 需考慮到捨入誤差的影響.&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;hr&gt;
+
+&lt;hr /&gt;
 </description>
     </item>
     

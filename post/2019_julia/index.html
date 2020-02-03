@@ -124,7 +124,7 @@
     
       <meta property="article:published_time" content="2019-10-29T00:00:00&#43;00:00">
     
-    <meta property="article:modified_time" content="2020-01-28T18:37:44&#43;08:00">
+    <meta property="article:modified_time" content="2020-02-03T15:01:47&#43;08:00">
   
 
   
@@ -155,7 +155,7 @@
   "headline": "Julia 學習筆記",
   
   "datePublished": "2019-10-29T00:00:00Z",
-  "dateModified": "2020-01-28T18:37:44+08:00",
+  "dateModified": "2020-02-03T15:01:47+08:00",
   
   "author": {
     "@type": "Person",
@@ -432,7 +432,7 @@
           Last updated on
       
     
-    Jan 28, 2020
+    Feb 3, 2020
   </span>
   
 
@@ -484,127 +484,173 @@
   <div class="article-container">
 
     <div class="article-style">
-      <blockquote>
-<p>這裡我們要介紹 julia 這個程式語言. 這是一個非常新的語言, 在 2009 年才問世, 遠比 1990 年出生的 python 來的年輕許多. 不過由於它又<em><strong>快</strong></em>又<em><strong>簡單</strong></em>, 又<em><strong>不用錢</strong></em>, 使得目前有越來越多人開始使用這個新語言. 相信未來會更加普及.</p>
+      
+
+<blockquote>
+<p>這裡我們要介紹 julia 這個程式語言. 這是一個非常新的語言, 在 2009 年才問世, 遠比 1990 年出生的 python 來的年輕許多. 不過由於它又<strong><em>快</em></strong>又<strong><em>簡單</em></strong>, 又<strong><em>不用錢</em></strong>, 使得目前有越來越多人開始使用這個新語言. 相信未來會更加普及.</p>
 </blockquote>
-<hr>
+
+<hr />
+
 <h2 id="julia-安裝">Julia 安裝</h2>
-<p>在 <a href="https://julialang.org">Julia 官方網站</a> 上可以下載各系統平台的安裝包裹. 下載安裝後即可運行.</p>
+
+<p>在 <a href="https://julialang.org" target="_blank">Julia 官方網站</a> 上可以下載各系統平台的安裝包裹. 下載安裝後即可運行.</p>
+
 <ul>
-<li>
-<p>Julia 安裝教學影片可參考 <a href="https://youtu.be/v7XeveI19CM">Julia課程環境簡介 on Youtube</a></p>
-</li>
-<li>
-<p>如果只想試用一下的話可以試試 <a href="https://repl.it/languages/julia">repl.it</a> 這個線上編輯器. 它可以讓你在線上編輯並執行一些簡單的 julia 程式.</p>
-</li>
+<li><p>Julia 安裝教學影片可參考 <a href="https://youtu.be/v7XeveI19CM" target="_blank">Julia課程環境簡介 on Youtube</a></p></li>
+
+<li><p>如果只想試用一下的話可以試試 <a href="https://repl.it/languages/julia" target="_blank">repl.it</a> 這個線上編輯器. 它可以讓你在線上編輯並執行一些簡單的 julia 程式.</p></li>
 </ul>
+
 <p>除了 julia 主程式外, 我也建議加裝 <code>Jupyter notebook</code>(或 <code>Jupyter lab</code>) 以及 <code>Atom</code>. 讓你 coding 更方便.</p>
-<hr>
+
+<hr />
+
 <h3 id="julia-基本簡介">Julia 基本簡介</h3>
+
 <ul>
-<li>查詢版本資訊</li>
+<li><p>查詢版本資訊</p>
+
+<pre><code class="language-julia">julia&gt; versioninfo()
+</code></pre></li>
+
+<li><p>套件(package)管理</p>
+
+<pre><code class="language-julia">julia&gt; ]
+</code></pre></li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-julia" data-lang="julia">julia<span style="color:#f92672"></span><span style="color:#f92672">&gt;</span> versioninfo<span style="color:#f92672"></span>()
-</code></pre></div><ul>
-<li>套件(package)管理</li>
-</ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-julia" data-lang="julia">julia<span style="color:#f92672"></span><span style="color:#f92672">&gt;</span> ]
-</code></pre></div><p>然後就會進入套件管理系統</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-julia" data-lang="julia">(vX<span style="color:#f92672"></span><span style="color:#f92672">.</span>X<span style="color:#f92672"></span>) pkg<span style="color:#f92672"></span><span style="color:#f92672">&gt;</span>
-</code></pre></div><p>查詢已安裝套件</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-julia" data-lang="julia">(vX<span style="color:#f92672"></span><span style="color:#f92672">.</span>X<span style="color:#f92672"></span>) pkg<span style="color:#f92672"></span><span style="color:#f92672">&gt;</span> status<span style="color:#f92672"></span>
-</code></pre></div><p>更新套件</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-julia" data-lang="julia">(vX<span style="color:#f92672"></span><span style="color:#f92672">.</span>X<span style="color:#f92672"></span>) pkg<span style="color:#f92672"></span><span style="color:#f92672">&gt;</span> update<span style="color:#f92672"></span>
-</code></pre></div><p>跳出系統請按鍵盤上的<strong>刪除鍵</strong>.</p>
+
+<p>然後就會進入套件管理系統</p>
+
+<pre><code class="language-julia">pkg&gt;
+</code></pre>
+
+<p>查詢已安裝套件</p>
+
+<pre><code class="language-julia">pkg&gt; status
+</code></pre>
+
+<p>更新套件</p>
+
+<pre><code class="language-julia">pkg&gt; update
+</code></pre>
+
+<p>跳出系統請按鍵盤上的<strong>刪除鍵</strong>.</p>
+
 <ul>
-<li>查詢指令(如matlab中的help)</li>
+<li><p>查詢指令(如matlab中的help)</p>
+
+<pre><code class="language-julia">julia&gt; ?
+</code></pre></li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-julia" data-lang="julia">julia<span style="color:#f92672"></span><span style="color:#f92672">&gt;</span> <span style="color:#f92672">?</span>
-</code></pre></div><p>然後就會變成查詢的視窗</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-julia" data-lang="julia">help<span style="color:#f92672"></span><span style="color:#f92672">?</span><span style="color:#f92672">&gt;</span>
-</code></pre></div><hr>
+
+<p>然後就會變成查詢的視窗</p>
+
+<pre><code class="language-julia">help?&gt;
+</code></pre>
+
+<hr />
+
 <h2 id="jupyter-notebook-安裝">Jupyter notebook 安裝</h2>
+
 <blockquote>
 <p>Jupyter notebook 是個互動式筆記本, 很容易可以逐行執行並且做到資料視覺化, 並且支援多種主流的直譯語言像是 <code>Julia</code>, <code>python</code>, <code>R</code>. 有一說是 jupyter 這個字事實上就是由 julia, python 以及 R 這三個字組合而成.</p>
 </blockquote>
+
 <ol>
-<li>
-<p>安裝 Jupyter notebook 有兩種方式. 第一種是直接由 julia 安裝. 步驟如下</p>
+<li><p>安裝 Jupyter notebook 有兩種方式. 第一種是直接由 julia 安裝. 步驟如下</p>
+
 <p>在 julia 輸入 <code>]</code> 進入套件管理命令提示. 然後會長得像這樣</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-julia" data-lang="julia">(v1<span style="color:#f92672"></span><span style="color:#f92672">.</span><span style="color:#ae81ff">1</span>) pkg<span style="color:#f92672"></span><span style="color:#f92672">&gt;</span>
-</code></pre></div><p>接著輸入 <code>status</code> 可以看到現在已經安裝的套件.</p>
+
+<pre><code class="language-julia">pkg&gt;
+</code></pre>
+
+<p>接著輸入 <code>status</code> 可以看到現在已經安裝的套件.</p>
+
 <p>我們要安裝 IJulia, 所以輸入</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-julia" data-lang="julia">(v1<span style="color:#f92672"></span><span style="color:#f92672">.</span><span style="color:#ae81ff">1</span>) pkg<span style="color:#f92672"></span><span style="color:#f92672">&gt;</span> add<span style="color:#f92672"></span> IJulia<span style="color:#f92672"></span>
-</code></pre></div><p>安裝完後要退出套件管理則是 BackSpace 鍵或是 Ctrl+C 都可以.</p>
+
+<pre><code class="language-julia">pkg&gt; add IJulia
+</code></pre>
+
+<p>安裝完後要退出套件管理則是 BackSpace 鍵或是 Ctrl+C 都可以.</p>
+
 <p>要打開 notebook 需要退出套件管理, 並在 julia 命令提示字元下輸入</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-julia" data-lang="julia">julia<span style="color:#f92672"></span><span style="color:#f92672">&gt;</span> <span style="color:#66d9ef">using</span> IJulia<span style="color:#f92672"></span>
-julia<span style="color:#f92672"></span><span style="color:#f92672">&gt;</span> notebook<span style="color:#f92672"></span>()
-</code></pre></div><p>這樣 Jupyter notebook 就會在你的瀏覽器中打開.</p>
+
+<pre><code class="language-julia">julia&gt; using IJulia
+julia&gt; notebook()
+</code></pre>
+
+<p>這樣 Jupyter notebook 就會在你的瀏覽器中打開.</p>
+
 <ul>
-<li>
-<p>若還是有不清楚的地方請見 <a href="https://medium.com/@jamescchuang/%E5%AF%A6%E6%88%B0%E5%AE%89%E8%A3%9D%E5%8F%8A%E5%BB%BA%E7%BD%AE-julia-%E9%96%8B%E7%99%BC%E7%92%B0%E5%A2%83-6dc8c0d14c2a">安裝及建置 Julia 開發環境實戰教學</a></p>
-</li>
-<li>
-<p>目前已經有 jupyter notebook 的升級版, 稱為 jupyter lab. 在 julia 命令提示字元下輸入</p>
-</li>
+<li><p>若還是有不清楚的地方請見 <a href="https://medium.com/@jamescchuang/實戰安裝及建置-julia-開發環境-6dc8c0d14c2a" target="_blank">安裝及建置 Julia 開發環境實戰教學</a></p></li>
+
+<li><p>目前已經有 jupyter notebook 的升級版, 稱為 jupyter lab. 在 julia 命令提示字元下輸入</p>
+
+<pre><code class="language-julia">julia&gt; using IJulia
+julia&gt; jupyterlab()
+</code></pre></li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-julia" data-lang="julia">julia<span style="color:#f92672"></span><span style="color:#f92672">&gt;</span> <span style="color:#66d9ef">using</span> IJulia<span style="color:#f92672"></span>
-julia<span style="color:#f92672"></span><span style="color:#f92672">&gt;</span> jupyterlab<span style="color:#f92672"></span>()
-</code></pre></div><p>這樣 Jupyter lab 就會在你的瀏覽器中打開.</p>
-</li>
-<li>
-<p>安裝 Jupyter notebook 的第二種方式則是透過 anaconda. 先裝完 julia 後下載 anaconda 安裝, 即可快樂使用.</p>
-</li>
+
+<p>這樣 Jupyter lab 就會在你的瀏覽器中打開.</p></li>
+
+<li><p>安裝 Jupyter notebook 的第二種方式則是透過 anaconda. 先裝完 julia 後下載 anaconda 安裝, 即可快樂使用.</p>
+
+<ul>
+<li>若還是有不清楚的地方請見 <a href="https://medium.com/datainpoint/jupyter-kernels-3151a6408bab" target="_blank">打造 Jupyter Notebook 資料科學環境</a></li>
+</ul></li>
 </ol>
-<ul>
-<li>若還是有不清楚的地方請見 <a href="https://medium.com/datainpoint/jupyter-kernels-3151a6408bab">打造 Jupyter Notebook 資料科學環境</a></li>
-</ul>
-<hr>
+
+<hr />
+
 <h2 id="在-atom-中操作-julia">在 Atom 中操作 Julia</h2>
+
 <blockquote>
-<p>如果平常會寫各式程式語言, 可以考慮加安裝 <a href="https://atom.io">atom</a> 編輯器. 它是 github 開發的免費編輯器, 不管 Mac, windows 或是 Linux 都有支援. 我自己有使用 atom 來寫 <code>julia</code>, <code>fortran</code>, <code>html</code> 等.</p>
+<p>如果平常會寫各式程式語言, 可以考慮加安裝 <a href="https://atom.io" target="_blank">atom</a> 編輯器. 它是 github 開發的免費編輯器, 不管 Mac, windows 或是 Linux 都有支援. 我自己有使用 atom 來寫 <code>julia</code>, <code>fortran</code>, <code>html</code> 等.</p>
 </blockquote>
+
 <p>要在 Atom 裡操作 Julia 簡單說就是要裝以下幾個 package:</p>
+
 <ol>
 <li><code>ink</code></li>
 <li><code>julia-client</code></li>
 <li><code>language-julia</code></li>
 <li><code>uber juno</code></li>
 </ol>
+
 <p>然後就可以用了!!</p>
+
 <ul>
-<li><a href="https://www.itread01.com/content/1550260279.html?fbclid=IwAR3bBrHTvjF3Y5TJrZsElriJfO2fbyoM751XMfjLYOE0TLl31JA3LSpe8KQ">在 Atom 中操作 Julia</a></li>
+<li><a href="https://www.itread01.com/content/1550260279.html?fbclid=IwAR3bBrHTvjF3Y5TJrZsElriJfO2fbyoM751XMfjLYOE0TLl31JA3LSpe8KQ" target="_blank">在 Atom 中操作 Julia</a></li>
 </ul>
-<hr>
+
+<hr />
+
 <h2 id="julia-基本簡介與語法教學">Julia 基本簡介與語法教學</h2>
+
 <ul>
-<li>
-<p><a href="https://en.wikibooks.org/wiki/Introducing_Julia">Julia: wikibook</a></p>
-</li>
-<li>
-<p><a href="https://learnxinyminutes.com/docs/julia">Learn X in Y minutes, where X=Julia</a></p>
-</li>
-<li>
-<p>Julia Taiwan發起人杜岳華的 slideshare: <a href="https://www.slideshare.net/ssuserd6984b/coscup-introduction-to-julia">Introduction to Julia</a></p>
-</li>
-<li>
-<p><a href="https://hackmd.io/@7WeiUEuJSBKp7WCRouAWVg/r106dSpkb/%2FIwZgbAHApgnARgMwLQAYAmKxICxQMZpICGGATEjHtgOwwwrRwCsEQA%3D%3D?type=book">Julia 中文官方文件草稿</a></p>
-</li>
+<li><p><a href="https://en.wikibooks.org/wiki/Introducing_Julia" target="_blank">Julia: wikibook</a></p></li>
+
+<li><p><a href="https://learnxinyminutes.com/docs/julia" target="_blank">Learn X in Y minutes, where X=Julia</a></p></li>
+
+<li><p>Julia Taiwan發起人杜岳華的 slideshare: <a href="https://www.slideshare.net/ssuserd6984b/coscup-introduction-to-julia" target="_blank">Introduction to Julia</a></p></li>
+
+<li><p><a href="https://hackmd.io/@7WeiUEuJSBKp7WCRouAWVg/r106dSpkb/%2FIwZgbAHApgnARgMwLQAYAmKxICxQMZpICGGATEjHtgOwwwrRwCsEQA%3D%3D?type=book" target="_blank">Julia 中文官方文件草稿</a></p></li>
 </ul>
-<hr>
+
+<hr />
+
 <h2 id="youtube-上的-julia-超新手教學">Youtube 上的 Julia 超新手教學</h2>
+
 <ul>
-<li>
-<p><a href="https://github.com/JuliaLangTW/julia_tutorials_for_dummy">Julia Taiwan 超新手教學之一 on github</a></p>
-</li>
-<li>
-<p><a href="https://youtu.be/zzrctueO6JY">Julia Taiwan 超新手教學之二 on Youtube</a></p>
-</li>
-<li>
-<p><a href="https://youtu.be/W7R5dxGrxlk">Julia Taiwan 超新手教學之三 on Youtube</a></p>
-</li>
+<li><p><a href="https://github.com/JuliaLangTW/julia_tutorials_for_dummy" target="_blank">Julia Taiwan 超新手教學之一 on github</a></p></li>
+
+<li><p><a href="https://youtu.be/zzrctueO6JY" target="_blank">Julia Taiwan 超新手教學之二 on Youtube</a></p></li>
+
+<li><p><a href="https://youtu.be/W7R5dxGrxlk" target="_blank">Julia Taiwan 超新手教學之三 on Youtube</a></p></li>
 </ul>
-<hr>
+
+<hr />
 
     </div>
 

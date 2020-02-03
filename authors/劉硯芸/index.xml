@@ -20,69 +20,107 @@
       <description>&lt;blockquote&gt;
 &lt;p&gt;Applied Project 1 in Sec.4.7, Calculus by Stewart&lt;/p&gt;
 &lt;/blockquote&gt;
+
 &lt;p&gt;Given a cylindrical can with fixed volume $v$, we want to find the height $h$ and radius $r$ that minimize the cost of metal to make the can.&lt;/p&gt;
+
 &lt;p&gt;If we disregard any waste metal in the manufacturing process, then the problem is to minimize the surface area of the cylinder. It can be found that the solution of this problem is $h=2r$; this is, the height should be the same as the diameter.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;But,&lt;/strong&gt; for most of the cans in the supermarket, the height is usually greater than the diameter and the ratio $h/r$ varies from $2$ up to about $3.8$. Let&#39;s see if we can explain this phenomenon.&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;img src=&#34;https://media.cheggcdn.com/study/e3e/e3e1a59a-d0be-46e7-8557-07e775d84b81/715030-4.7-1IAP11.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;But,&lt;/strong&gt; for most of the cans in the supermarket, the height is usually greater than the diameter and the ratio $h/r$ varies from $2$ up to about $3.8$. Let&amp;rsquo;s see if we can explain this phenomenon.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://media.cheggcdn.com/study/e3e/e3e1a59a-d0be-46e7-8557-07e775d84b81/715030-4.7-1IAP11.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
 &lt;p&gt;&lt;strong&gt;Question 1:&lt;/strong&gt; The material for the cans is cut from sheets of metal. The cylindrical sides are formed by bending rectangles; these rectangles are cut from the sheet with little or no waste.&lt;/p&gt;
+
 &lt;p&gt;But if the top and bottom discs are cut from squares of side $2r$, this leaves considerable waste metal, which may be recycled but has little or no value to the can makers. If this is the case, find the ratio $h/r$ for which the amount of metal used is minimized.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt; \&lt;br&gt;
+
+&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt; &lt;br /&gt;
 For a cylindrical can we have the relation between $v$, $r$ and $h$ as&lt;/p&gt;
+
 &lt;p&gt;$$
 v = r^2\pi h \Longrightarrow h = \frac{v}{r^2\pi}.
 $$&lt;/p&gt;
+
 &lt;p&gt;The total metal used, $M$, consists of the cylindrical side and two squares (with area $4r^2$) that makes the top and bottom discs. Written everything in terms of $r$ we have&lt;/p&gt;
+
 &lt;p&gt;$$
 M = 2r\pi h + 2\times 4 r^2 = 2r\pi\left(\frac{v}{r^2\pi}\right) + 8r^2 = \frac{2v}{r} + 8 r^2.
 $$&lt;/p&gt;
+
 &lt;p&gt;When $\frac{dM}{dr}=0$, there exists a minimum value&lt;/p&gt;
+
 &lt;p&gt;$$
 \frac{dM}{dr} = -\frac{2v}{r^2} + 16r=0 \Longrightarrow v = 8r^3.
 $$&lt;/p&gt;
+
 &lt;p&gt;So we find that, with the minimum metal used,&lt;/p&gt;
+
 &lt;p&gt;$$
 h = \frac{v}{r^2\pi} = \frac{8r}{\pi} \Longrightarrow \frac{h}{r} = \frac{8}{\pi}\approx 2.55
 $$&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Question 2:&lt;/strong&gt;	A more efficient packing of the discs is obtained by dividing the metal sheet into hexagons and cutting the circular lids and bases from the hexagons. If this strategy is adopted, find the ratio $h/r$ for which the amount of metal used is minimized.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt; \&lt;br&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;strong&gt;Question 2:&lt;/strong&gt; A more efficient packing of the discs is obtained by dividing the metal sheet into hexagons and cutting the circular lids and bases from the hexagons. If this strategy is adopted, find the ratio $h/r$ for which the amount of metal used is minimized.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt; &lt;br /&gt;
 The total metal used, $M$, consists of the cylindrical side and two hexagons that makes the top and bottom discs:&lt;/p&gt;
+
 &lt;p&gt;$$
 M = 2r\pi h + 2\left[\frac{1}{2}\left(\frac{2r}{\sqrt{3}}\right)6r\right] = \frac{2v}{r} + 4\sqrt{3} r^2.
 $$&lt;/p&gt;
+
 &lt;p&gt;When $\frac{dM}{dr}=0$, there exists a minimum value&lt;/p&gt;
+
 &lt;p&gt;$$
 \frac{dM}{dr} = -\frac{2v}{r^2} + 8\sqrt{3}r=0 \Longrightarrow v = 4\sqrt{3}r^3.
 $$&lt;/p&gt;
+
 &lt;p&gt;So we find that, with the minimum metal used,&lt;/p&gt;
+
 &lt;p&gt;$$
 h = \frac{v}{r^2\pi} = \frac{4\sqrt{3}r}{\pi} \Longrightarrow \frac{h}{r} = \frac{4\sqrt{3}}{\pi}\approx 2.21
 $$&lt;/p&gt;
-&lt;hr&gt;
+
+&lt;hr /&gt;
+
 &lt;p&gt;&lt;strong&gt;Question 3:&lt;/strong&gt; In addition to the cost of the metal, we need to incorporate the manufacturing of the can into the cost.&lt;/p&gt;
+
 &lt;ul&gt;
 &lt;li&gt;Assuming that most of the expense is incurred in joining the sides.&lt;/li&gt;
 &lt;/ul&gt;
+
 &lt;p&gt;For a cylindrical can, we need to bend a rectangle and joinging the sides together (with length $h$) to make the cylindrical shell. Also we need to join the two discs to the shell (each disc with length $2\pi r$). So the cost in joining is $k(h + 4\pi r)$ where $k$ is the reciprocal of the length that can be joined for the cost of one unit area of metal.&lt;/p&gt;
+
 &lt;p&gt;If we cut the discs from hexagons as in Question 2, then the total cost consists of the cost of the metal and the cost in joinging the sides, that is proportional to $4\sqrt{3}r^2 + 2\pi r h + k(4\pi r + h)$.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt; \&lt;br&gt;
+
+&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt; &lt;br /&gt;
 Denote the total cost by $f$ and rewrite it as a function of $r$:
 $$
 f( r )  = 4\sqrt{3}r^2 + 2\pi r \left(\frac{v}{r^2\pi}\right) + k\left(4\pi r + \frac{v}{r^2\pi}\right) = 4\sqrt{3}r^2 + \frac{2v}{r} + k\left(4\pi r + \frac{v}{r^2\pi}\right).
 $$&lt;/p&gt;
+
 &lt;p&gt;When $\frac{df}{dr}=0$, there exists a minimum value&lt;/p&gt;
+
 &lt;p&gt;$$
 \frac{df}{dr} = 8\sqrt{3}r -\frac{2v}{r^2} + k\left(4\pi - \frac{2v}{r^3\pi}\right) =0 \Longrightarrow 8\sqrt{3}r + 4\pi k = \left(\frac{2}{r^2} + \frac{2k}{r^3\pi}\right)v.
 $$&lt;/p&gt;
+
 &lt;p&gt;So we find that, with the minimum metal used,&lt;/p&gt;
+
 &lt;p&gt;$$
 \frac{h}{r} = \frac{v}{r^3\pi} = \frac{4\sqrt{3}r + 2k\pi}{\pi r + k}.
 $$&lt;/p&gt;
-&lt;hr&gt;
+
+&lt;hr /&gt;
+
 &lt;p&gt;&lt;strong&gt;Question 4:&lt;/strong&gt; What happened when a can is large or joining is cheap, and what happened when the can is small or joining is costly?&lt;/p&gt;
+
 &lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt; \&lt;/p&gt;
+
 &lt;p&gt;For a cylinder with fixed volume $v$:&lt;/p&gt;
+
 &lt;ul&gt;
 &lt;li&gt;When joining is cheap, $0&amp;lt;k\ll 1$, we have
 $$
@@ -93,7 +131,9 @@ $$
 \frac{h}{r} = \frac{4\sqrt{3}r + 2k\pi}{\pi r + k} \to 2\pi\approx 6.28.
 $$&lt;/li&gt;
 &lt;/ul&gt;
+
 &lt;p&gt;If $k$ is fixed, we need to firstly find the relation between the volume $v$ and the ratio $h/r$.&lt;/p&gt;
+
 &lt;p&gt;For convenience of notation we define $R=h/r$. Then we rewrite $r$ as a function of $v$ and $R$ as
 $$
 r = \sqrt[3]{\frac{v}{\pi R}}.
@@ -102,6 +142,7 @@ With careful calculation we obtain
 $$
 \frac{\sqrt[3]{v}}{k} = \frac{\sqrt[3]{\pi R}(2\pi - R)}{\pi R - 4\sqrt{3}}.
 $$&lt;/p&gt;
+
 &lt;ul&gt;
 &lt;li&gt;When a can is large, $v\gg 1$, we have that the denominator of the term of the right hand side should approaches $0$, that is,
 $$
@@ -112,7 +153,8 @@ $$
 2\pi - R \to 0 \Longrightarrow \frac{h}{r} = R \to 2\pi\approx 6.28.
 $$&lt;/li&gt;
 &lt;/ul&gt;
-&lt;hr&gt;
+
+&lt;hr /&gt;
 </description>
     </item>
     
