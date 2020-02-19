@@ -247,6 +247,17 @@ gif(anim, &amp;quot;sine_cosine.gif&amp;quot;)
 &lt;p&gt;&lt;img src=&#34;https://teshenglin.github.io/post/figs/sine_cosine.gif&#34; /&gt;&lt;/p&gt;
 
 &lt;hr /&gt;
+
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    延伸閱讀: Julia 學習筆記 -
+&lt;a href=&#34;https://teshenglin.github.io/post/2019_julia&#34;&gt;簡介&lt;/a&gt;,
+&lt;a href=&#34;https://teshenglin.github.io/post/2020_julia_plots&#34;&gt;畫圖&lt;/a&gt;,
+&lt;a href=&#34;https://teshenglin.github.io/post/2020_julia_timing&#34;&gt;計時&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;hr /&gt;
 </description>
     </item>
     
@@ -495,6 +506,17 @@ end
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;hr /&gt;
+
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    延伸閱讀: Julia 學習筆記 -
+&lt;a href=&#34;https://teshenglin.github.io/post/2019_julia&#34;&gt;簡介&lt;/a&gt;,
+&lt;a href=&#34;https://teshenglin.github.io/post/2020_julia_plots&#34;&gt;畫圖&lt;/a&gt;,
+&lt;a href=&#34;https://teshenglin.github.io/post/2020_julia_timing&#34;&gt;計時&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;hr /&gt;
 </description>
     </item>
     
@@ -668,6 +690,17 @@ julia&amp;gt; jupyterlab()
 
 &lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://youtu.be/W7R5dxGrxlk&#34; target=&#34;_blank&#34;&gt;Julia Taiwan 超新手教學之三 on Youtube&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    延伸閱讀: Julia 學習筆記 -
+&lt;a href=&#34;https://teshenglin.github.io/post/2019_julia&#34;&gt;簡介&lt;/a&gt;,
+&lt;a href=&#34;https://teshenglin.github.io/post/2020_julia_plots&#34;&gt;畫圖&lt;/a&gt;,
+&lt;a href=&#34;https://teshenglin.github.io/post/2020_julia_timing&#34;&gt;計時&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
 
 &lt;hr /&gt;
 </description>

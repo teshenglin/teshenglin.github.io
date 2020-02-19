@@ -633,37 +633,7 @@ P = -(2*h/l^3)*x.^3 + (3*h/l^2)*x.^2;
 plot(x, P, lw=3, xlabel = &amp;quot;x&amp;quot;, ylabel = &amp;quot;y&amp;quot;, title=&amp;quot;approach path&amp;quot;, legend=false)
 &lt;/code&gt;&lt;/pre&gt;
 
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure&gt;
-
-
-  &lt;a data-fancybox=&#34;&#34; href=&#34;https://teshenglin.github.io/img/2019_cal_s3p5.png&#34; data-caption=&#34;&#34;&gt;
-&lt;img src=&#34;https://teshenglin.github.io/img/2019_cal_s3p5.png&#34; alt=&#34;&#34; &gt;&lt;/a&gt;
-
-
-  
-  
-  &lt;figcaption&gt;
-    
-  &lt;/figcaption&gt;
-
-
-&lt;/figure&gt;
-
+&lt;p&gt;&lt;img src=&#34;https://teshenglin.github.io/post/figs/2019.jpg&#34; alt=&#34;jpg&#34; /&gt;&lt;/p&gt;
 </description>
     </item>
     
