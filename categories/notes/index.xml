@@ -19,6 +19,17 @@
       <guid>https://teshenglin.github.io/post/2020_julia_plots/</guid>
       <description>
 
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    延伸閱讀: Julia 學習筆記 -
+&lt;a href=&#34;https://teshenglin.github.io/post/2019_julia&#34;&gt;簡介&lt;/a&gt;,
+&lt;a href=&#34;https://teshenglin.github.io/post/2020_julia_plots&#34;&gt;畫圖&lt;/a&gt;,
+&lt;a href=&#34;https://teshenglin.github.io/post/2020_julia_timing&#34;&gt;計時&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;hr /&gt;
+
 &lt;blockquote&gt;
 &lt;p&gt;底下的幾個例子我們將學習怎麼使用繪圖指令.&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -30,7 +41,7 @@
 
 &lt;p&gt;以下我們舉幾個簡單的範例來看看如何操作.&lt;/p&gt;
 
-&lt;p&gt;不過 &lt;code&gt;Plots&lt;/code&gt; 這個 package 完整的說明請見 &lt;a href=&#34;http://docs.juliaplots.org/latest/&#34; target=&#34;_blank&#34;&gt;Plots&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Remark:&lt;/strong&gt; &lt;code&gt;Plots&lt;/code&gt; 這個 package 完整的說明請見 &lt;a href=&#34;http://docs.juliaplots.org/latest/&#34; target=&#34;_blank&#34;&gt;Plots&lt;/a&gt;&lt;/p&gt;
 
 &lt;hr /&gt;
 
@@ -40,7 +51,7 @@
 
 &lt;ol&gt;
 &lt;li&gt;告訴他我們要畫 $y = \sin(x)$ 這個函數。&lt;/li&gt;
-&lt;li&gt;再來要指定函數的範圍 $-2\pi &amp;lt; x &amp;lt; \pi$。&lt;/li&gt;
+&lt;li&gt;再來要指定函數的範圍 $-\pi &amp;lt; x &amp;lt; \pi$。&lt;/li&gt;
 &lt;li&gt;最後用 label 標註函數圖形。注意要把標註的文字放在 &amp;ldquo; &amp;rdquo; 中。&lt;/li&gt;
 &lt;/ol&gt;
 
@@ -247,6 +258,15 @@ gif(anim, &amp;quot;sine_cosine.gif&amp;quot;)
 &lt;p&gt;&lt;img src=&#34;https://teshenglin.github.io/post/figs/sine_cosine.gif&#34; /&gt;&lt;/p&gt;
 
 &lt;hr /&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Julia 學習筆記 - 計時</title>
+      <link>https://teshenglin.github.io/post/2020_julia_timing/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>https://teshenglin.github.io/post/2020_julia_timing/</guid>
+      <description>
 
 &lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
@@ -258,15 +278,6 @@ gif(anim, &amp;quot;sine_cosine.gif&amp;quot;)
 &lt;/div&gt;
 
 &lt;hr /&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Julia 學習筆記 - 計時</title>
-      <link>https://teshenglin.github.io/post/2020_julia_timing/</link>
-      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
-      <guid>https://teshenglin.github.io/post/2020_julia_timing/</guid>
-      <description>
 
 &lt;blockquote&gt;
 &lt;p&gt;這裡我們要介紹 julia 計算程式執行時間的指令.&lt;/p&gt;
@@ -506,17 +517,6 @@ end
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;hr /&gt;
-
-&lt;div class=&#34;alert alert-note&#34;&gt;
-  &lt;div&gt;
-    延伸閱讀: Julia 學習筆記 -
-&lt;a href=&#34;https://teshenglin.github.io/post/2019_julia&#34;&gt;簡介&lt;/a&gt;,
-&lt;a href=&#34;https://teshenglin.github.io/post/2020_julia_plots&#34;&gt;畫圖&lt;/a&gt;,
-&lt;a href=&#34;https://teshenglin.github.io/post/2020_julia_timing&#34;&gt;計時&lt;/a&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;hr /&gt;
 </description>
     </item>
     
@@ -633,6 +633,17 @@ end
       <guid>https://teshenglin.github.io/post/2019_julia/</guid>
       <description>
 
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    延伸閱讀: Julia 學習筆記 -
+&lt;a href=&#34;https://teshenglin.github.io/post/2019_julia&#34;&gt;簡介&lt;/a&gt;,
+&lt;a href=&#34;https://teshenglin.github.io/post/2020_julia_plots&#34;&gt;畫圖&lt;/a&gt;,
+&lt;a href=&#34;https://teshenglin.github.io/post/2020_julia_timing&#34;&gt;計時&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;hr /&gt;
+
 &lt;blockquote&gt;
 &lt;p&gt;這裡我們要介紹 julia 這個程式語言. 這是一個非常新的語言, 在 2009 年才問世, 遠比 1990 年出生的 python 來的年輕許多. 不過由於它又&lt;strong&gt;&lt;em&gt;快&lt;/em&gt;&lt;/strong&gt;又&lt;strong&gt;&lt;em&gt;簡單&lt;/em&gt;&lt;/strong&gt;, 又&lt;strong&gt;&lt;em&gt;不用錢&lt;/em&gt;&lt;/strong&gt;, 使得目前有越來越多人開始使用這個新語言. 相信未來會更加普及.&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -664,8 +675,7 @@ end
 &lt;li&gt;&lt;p&gt;套件(package)管理&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-julia&#34;&gt;julia&amp;gt; ]
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-&lt;/ul&gt;
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;然後就會進入套件管理系統&lt;/p&gt;
 
@@ -682,19 +692,18 @@ end
 &lt;pre&gt;&lt;code class=&#34;language-julia&#34;&gt;pkg&amp;gt; update
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;跳出系統請按鍵盤上的&lt;strong&gt;刪除鍵&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;跳出系統請按鍵盤上的&lt;strong&gt;刪除鍵&lt;/strong&gt;.&lt;/p&gt;&lt;/li&gt;
 
-&lt;ul&gt;
 &lt;li&gt;&lt;p&gt;查詢指令(如matlab中的help)&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-julia&#34;&gt;julia&amp;gt; ?
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-&lt;/ul&gt;
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;然後就會變成查詢的視窗&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-julia&#34;&gt;help?&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;hr /&gt;
 
@@ -796,17 +805,6 @@ julia&amp;gt; jupyterlab()
 
 &lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://youtu.be/W7R5dxGrxlk&#34; target=&#34;_blank&#34;&gt;Julia Taiwan 超新手教學之三 on Youtube&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
-
-&lt;hr /&gt;
-
-&lt;div class=&#34;alert alert-note&#34;&gt;
-  &lt;div&gt;
-    延伸閱讀: Julia 學習筆記 -
-&lt;a href=&#34;https://teshenglin.github.io/post/2019_julia&#34;&gt;簡介&lt;/a&gt;,
-&lt;a href=&#34;https://teshenglin.github.io/post/2020_julia_plots&#34;&gt;畫圖&lt;/a&gt;,
-&lt;a href=&#34;https://teshenglin.github.io/post/2020_julia_timing&#34;&gt;計時&lt;/a&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
 
 &lt;hr /&gt;
 </description>

@@ -28,7 +28,7 @@
   
     
   
-  <meta name="description" content="底下的幾個例子我們將學習怎麼使用繪圖指令. 畫圖的時候我們會用到 Plots 這個 package，因此在第一行我們需要加上： using Plots 以下我們舉幾個簡單的範例來">
+  <meta name="description" content="延伸閱讀: Julia 學習筆記 - 簡介, 畫圖, 計時 底下的幾個例子我們將學習怎麼使用繪圖指令. 畫圖的時候我們會用到 Plots 這個 package，因此在第一行我們需">
 
   
   <link rel="alternate" hreflang="en-us" href="https://teshenglin.github.io/post/2020_julia_plots/">
@@ -118,13 +118,13 @@
   <meta property="og:site_name" content="Te-Sheng Lin">
   <meta property="og:url" content="https://teshenglin.github.io/post/2020_julia_plots/">
   <meta property="og:title" content="Julia 學習筆記 - 畫圖 | Te-Sheng Lin">
-  <meta property="og:description" content="底下的幾個例子我們將學習怎麼使用繪圖指令. 畫圖的時候我們會用到 Plots 這個 package，因此在第一行我們需要加上： using Plots 以下我們舉幾個簡單的範例來"><meta property="og:image" content="https://teshenglin.github.io/img/icon-192.png">
+  <meta property="og:description" content="延伸閱讀: Julia 學習筆記 - 簡介, 畫圖, 計時 底下的幾個例子我們將學習怎麼使用繪圖指令. 畫圖的時候我們會用到 Plots 這個 package，因此在第一行我們需"><meta property="og:image" content="https://teshenglin.github.io/img/icon-192.png">
   <meta property="twitter:image" content="https://teshenglin.github.io/img/icon-192.png"><meta property="og:locale" content="en-us">
   
     
       <meta property="article:published_time" content="2020-01-01T00:00:00&#43;00:00">
     
-    <meta property="article:modified_time" content="2020-02-19T16:09:38&#43;08:00">
+    <meta property="article:modified_time" content="2020-02-26T10:12:38&#43;08:00">
   
 
   
@@ -155,7 +155,7 @@
   "headline": "Julia 學習筆記 - 畫圖",
   
   "datePublished": "2020-01-01T00:00:00Z",
-  "dateModified": "2020-02-19T16:09:38+08:00",
+  "dateModified": "2020-02-26T10:12:38+08:00",
   
   "author": {
     "@type": "Person",
@@ -170,7 +170,7 @@
       "url": "https://teshenglin.github.io/img/icon-512.png"
     }
   },
-  "description": "底下的幾個例子我們將學習怎麼使用繪圖指令. 畫圖的時候我們會用到 Plots 這個 package，因此在第一行我們需要加上： using Plots 以下我們舉幾個簡單的範例來"
+  "description": "延伸閱讀: Julia 學習筆記 - 簡介, 畫圖, 計時 底下的幾個例子我們將學習怎麼使用繪圖指令. 畫圖的時候我們會用到 Plots 這個 package，因此在第一行我們需"
 }
 </script>
 
@@ -432,7 +432,7 @@
           Last updated on
       
     
-    Feb 19, 2020
+    Feb 26, 2020
   </span>
   
 
@@ -486,6 +486,17 @@
     <div class="article-style">
       
 
+<div class="alert alert-note">
+  <div>
+    延伸閱讀: Julia 學習筆記 -
+<a href="/post/2019_julia">簡介</a>,
+<a href="/post/2020_julia_plots">畫圖</a>,
+<a href="/post/2020_julia_timing">計時</a>
+  </div>
+</div>
+
+<hr />
+
 <blockquote>
 <p>底下的幾個例子我們將學習怎麼使用繪圖指令.</p>
 </blockquote>
@@ -497,7 +508,7 @@
 
 <p>以下我們舉幾個簡單的範例來看看如何操作.</p>
 
-<p>不過 <code>Plots</code> 這個 package 完整的說明請見 <a href="http://docs.juliaplots.org/latest/" target="_blank">Plots</a></p>
+<p><strong>Remark:</strong> <code>Plots</code> 這個 package 完整的說明請見 <a href="http://docs.juliaplots.org/latest/" target="_blank">Plots</a></p>
 
 <hr />
 
@@ -507,7 +518,7 @@
 
 <ol>
 <li>告訴他我們要畫 $y = \sin(x)$ 這個函數。</li>
-<li>再來要指定函數的範圍 $-2\pi &lt; x &lt; \pi$。</li>
+<li>再來要指定函數的範圍 $-\pi &lt; x &lt; \pi$。</li>
 <li>最後用 label 標註函數圖形。注意要把標註的文字放在 &ldquo; &rdquo; 中。</li>
 </ol>
 
@@ -712,17 +723,6 @@ gif(anim, &quot;sine_cosine.gif&quot;)
 </code></pre>
 
 <p><img src="/post/figs/sine_cosine.gif" /></p>
-
-<hr />
-
-<div class="alert alert-note">
-  <div>
-    延伸閱讀: Julia 學習筆記 -
-<a href="/post/2019_julia">簡介</a>,
-<a href="/post/2020_julia_plots">畫圖</a>,
-<a href="/post/2020_julia_timing">計時</a>
-  </div>
-</div>
 
 <hr />
 
