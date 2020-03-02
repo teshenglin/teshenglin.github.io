@@ -7,7 +7,7 @@
     <description>柴俊豪</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Wed, 08 Jan 2020 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://teshenglin.github.io/img/icon-192.png</url>
+      <url>https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
       <title>柴俊豪</title>
       <link>https://teshenglin.github.io/authors/%E6%9F%B4%E4%BF%8A%E8%B1%AA/</link>
     </image>
@@ -20,91 +20,58 @@
       <description>&lt;blockquote&gt;
 &lt;p&gt;Applied Project 2 in Sec.4.7, Calculus by Stewart&lt;/p&gt;
 &lt;/blockquote&gt;
-
 &lt;p&gt;Small birds like finches alternate between flapping their wings and keeping them folded while gliding. In this project we analyze this phenomenon and try to determine how frequently a bird should flap its wings. Some of the principles are the same as for fixed-wing aircraft and so we begin by considering how required power and energy depend on the speed of airplanes.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://media.cheggcdn.com/study/ad0/ad0cd741-aa85-4256-a058-b49a8ef42198/715030-4.7-4IAP21.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;hr /&gt;
-
+&lt;p&gt;&lt;img src=&#34;https://media.cheggcdn.com/study/ad0/ad0cd741-aa85-4256-a058-b49a8ef42198/715030-4.7-4IAP21.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Question 1:&lt;/strong&gt; The power needed to propel an airplane forward at velocity​ $v$ is&lt;/p&gt;
-
 &lt;p&gt;$$
 P = Av^3 + \frac{BL^2}{v}
 $$&lt;/p&gt;
-
 &lt;p&gt;where $A$ and $B$ are positive constants specific to the particular aircraft and $L$ is the lift, the upward force supporting the weight of the plane. Find the speed that minimizes the required power.&lt;/p&gt;
-
 &lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
-
 &lt;p&gt;$$
-\frac{d P}{dv} = 3Av^2 - \frac{BL^2}{v^2} = 0 \, \Longrightarrow \, v_P = \sqrt[4]{\frac{BL^2}{3A}}
+\frac{d P}{dv} = 3Av^2 - \frac{BL^2}{v^2} = 0 , \Longrightarrow , v_P = \sqrt[4]{\frac{BL^2}{3A}}
 $$&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;&lt;strong&gt;Question 2:&lt;/strong&gt; The speed found in Problem 1 minimizes power but a faster speed might use less fuel. The energy needed to propel the airplane a unit distance is​ $E = P/v$ . At what speed is energy minimized?&lt;/p&gt;
-
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Question 2:&lt;/strong&gt;	The speed found in Problem 1 minimizes power but a faster speed might use less fuel. The energy needed to propel the airplane a unit distance is​ $E = P/v$ . At what speed is energy minimized?&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
-
 &lt;p&gt;$$
-\frac{d E}{dv} = 2Av - \frac{2BL^2}{v^3} = 0 \,\Longrightarrow \, v_E = \sqrt[4]{\frac{BL^2}{A}}
+\frac{d E}{dv} = 2Av - \frac{2BL^2}{v^3} = 0 ,\Longrightarrow , v_E = \sqrt[4]{\frac{BL^2}{A}}
 $$&lt;/p&gt;
-
-&lt;hr /&gt;
-
+&lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Question 3:&lt;/strong&gt; Hows much faster is the speed for minimum energy than the speed for minimum power?&lt;/p&gt;
-
 &lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
-
 &lt;p&gt;$$
 \frac{v_E}{v_P} = \sqrt[4]{3}
 $$&lt;/p&gt;
-
-&lt;hr /&gt;
-
+&lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Question 4:&lt;/strong&gt;  In applying the equation of Problem 1 to bird flight we split the term $Av^3$ ​into two parts:​ $A_b v^3$ ​for the bird&amp;rsquo;s body and​ $A_w v^3$ ​for its wings. Let​ $x$ be the fraction of flying time spent in flapping mode. If $m$ is the bird&amp;rsquo;s mass and all the lift occurs during flapping, then the lift is $mg/x$ and so the power needed during flapping is&lt;/p&gt;
-
 &lt;p&gt;$$
 P_f = (A_b+A_w)v^3 + \frac{B(mg/x)^2}{v}
 $$&lt;/p&gt;
-
 &lt;p&gt;The power while wings are folded is $P_o = A_b v^3$. Find the average power over an entire flight cycle.&lt;/p&gt;
-
 &lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
-
 &lt;p&gt;$$
 P_a = x P_f + (1-x) P_o = A_b v^3 + A_w v^3 x + \frac{B m^2 g^2}{xv}
 $$&lt;/p&gt;
-
-&lt;hr /&gt;
-
+&lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Question 5:&lt;/strong&gt;  For what value of​ $x$ is the average power a minimum? What can you conclude if the bird flies slowly? What can you conclude if the bird flies faster and faster?&lt;/p&gt;
-
 &lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
-
 &lt;p&gt;$$
-\frac{d P_a}{dx} = A_w v^3 - \frac{B m^2 g^2}{x^2v} = 0 \, \Longrightarrow \, x = \frac{mg}{v^2}\sqrt{\frac{B}{A_w}}
+\frac{d P_a}{dx} = A_w v^3 - \frac{B m^2 g^2}{x^2v} = 0 , \Longrightarrow , x = \frac{mg}{v^2}\sqrt{\frac{B}{A_w}}
 $$&lt;/p&gt;
-
 &lt;p&gt;It can be seen that $x$ is inverse proportional to $v^2$, so,&lt;/p&gt;
-
 &lt;ul&gt;
 &lt;li&gt;鳥飛的慢,拍翅時間佔總體飛行時間上升&lt;/li&gt;
 &lt;li&gt;鳥飛的快,滑翔時間佔總體飛行時間上升&lt;/li&gt;
 &lt;/ul&gt;
-
-&lt;hr /&gt;
-
+&lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Question 6:&lt;/strong&gt;  The average energy over a cycle is $E_a = P_a/v$. What value of $x$​ minimizes $E_a$?&lt;/p&gt;
-
 &lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
-
 &lt;p&gt;$$
-\frac{d E}{dx} = A_w v^2 - \frac{B m^2 g^2}{x^2v^2} = 0 \, \Longrightarrow \, x = \frac{mg}{v^2}\sqrt{\frac{B}{A_w}}
+\frac{d E}{dx} = A_w v^2 - \frac{B m^2 g^2}{x^2v^2} = 0 , \Longrightarrow , x = \frac{mg}{v^2}\sqrt{\frac{B}{A_w}}
 $$&lt;/p&gt;
-
-&lt;hr /&gt;
+&lt;hr&gt;
 </description>
     </item>
     

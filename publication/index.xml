@@ -7,23 +7,15 @@
     <description>Publications</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language>
     <image>
-      <url>https://teshenglin.github.io/img/icon-192.png</url>
+      <url>https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
       <title>Publications</title>
       <link>https://teshenglin.github.io/publication/</link>
     </image>
     
     <item>
-      <title>Fast spectral solver for Poisson equation in an annular domain</title>
-      <link>https://teshenglin.github.io/publication/20_amsa_lhh/</link>
-      <pubDate>Mon, 17 Feb 2020 17:59:48 +0800</pubDate>
-      <guid>https://teshenglin.github.io/publication/20_amsa_lhh/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>A direct Poisson solver in spherical geometry with an application to diffusiophoretic problems</title>
       <link>https://teshenglin.github.io/publication/20_jcp_lhm/</link>
-      <pubDate>Mon, 17 Feb 2020 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 01 Mar 2020 00:00:00 +0000</pubDate>
       <guid>https://teshenglin.github.io/publication/20_jcp_lhm/</guid>
       <description></description>
     </item>
@@ -33,6 +25,14 @@
       <link>https://teshenglin.github.io/publication/20_non_talt/</link>
       <pubDate>Mon, 17 Feb 2020 00:00:00 +0000</pubDate>
       <guid>https://teshenglin.github.io/publication/20_non_talt/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Fast spectral solver for Poisson equation in an annular domain</title>
+      <link>https://teshenglin.github.io/publication/20_amsa_lhh/</link>
+      <pubDate>Mon, 17 Feb 2020 00:00:00 +0000</pubDate>
+      <guid>https://teshenglin.github.io/publication/20_amsa_lhh/</guid>
       <description></description>
     </item>
     
@@ -103,7 +103,7 @@
     <item>
       <title>Numerical study of a non-local weakly nonlinear model for a liquid film sheared by a turbulent gas</title>
       <link>https://teshenglin.github.io/publication/14_iutam_ltk/</link>
-      <pubDate>Mon, 27 Jan 2014 17:58:45 +0800</pubDate>
+      <pubDate>Mon, 27 Jan 2014 00:00:00 +0000</pubDate>
       <guid>https://teshenglin.github.io/publication/14_iutam_ltk/</guid>
       <description></description>
     </item>

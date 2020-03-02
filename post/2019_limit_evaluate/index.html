@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="Source Themes Academic 4.5.0">
+  <meta name="generator" content="Source Themes Academic 4.7.0">
 
   
 
@@ -45,10 +45,16 @@
   
   
   
+  <script src="/js/mathjax-config.js"></script>
+  
+
+  
+  
+  
   
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-1/css/all.min.css" integrity="sha256-4w9DunooKSr3MFXHXWyFER38WmPdm361bQS/2KUWZbU=" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
 
     
@@ -60,14 +66,126 @@
       
       
         
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/github.min.css" crossorigin="anonymous" title="hl-light">
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
         
       
     
 
     
 
+    
+
+    
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.1.2/lazysizes.min.js" integrity="sha256-Md1qLToewPeKjfAHU1zyPwOutccPAm5tahnaw7Osw0A=" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
     
 
   
@@ -100,11 +218,12 @@
   
 
   <link rel="manifest" href="/index.webmanifest">
-  <link rel="icon" type="image/png" href="/img/icon-32.png">
-  <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
+  <link rel="icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_2.png">
 
   <link rel="canonical" href="https://teshenglin.github.io/post/2019_limit_evaluate/">
 
+  
   
   
   
@@ -118,8 +237,8 @@
   <meta property="og:site_name" content="Te-Sheng Lin">
   <meta property="og:url" content="https://teshenglin.github.io/post/2019_limit_evaluate/">
   <meta property="og:title" content="用電腦算極限 | Te-Sheng Lin">
-  <meta property="og:description" content="這裡我們要介紹如何用電腦算極限, 以及我們來看一下當我們真的這樣做的時候有可能會發生什麼問題. 我們以 $sinc$ 函數為例來做說明. sinc function 首先我們要介紹一個"><meta property="og:image" content="https://teshenglin.github.io/img/icon-192.png">
-  <meta property="twitter:image" content="https://teshenglin.github.io/img/icon-192.png"><meta property="og:locale" content="en-us">
+  <meta property="og:description" content="這裡我們要介紹如何用電腦算極限, 以及我們來看一下當我們真的這樣做的時候有可能會發生什麼問題. 我們以 $sinc$ 函數為例來做說明. sinc function 首先我們要介紹一個"><meta property="og:image" content="https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png">
+  <meta property="twitter:image" content="https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png"><meta property="og:locale" content="en-us">
   
     
       <meta property="article:published_time" content="2019-10-27T00:00:00&#43;00:00">
@@ -138,8 +257,6 @@
 
 
   
-
-
 
 
 
@@ -167,7 +284,7 @@
     "name": "Te-Sheng Lin",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://teshenglin.github.io/img/icon-512.png"
+      "url": "https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_2.png"
     }
   },
   "description": "這裡我們要介紹如何用電腦算極限, 以及我們來看一下當我們真的這樣做的時候有可能會發生什麼問題. 我們以 $sinc$ 函數為例來做說明. sinc function 首先我們要介紹一個"
@@ -227,24 +344,41 @@
 
 
   
-<nav class="navbar navbar-light fixed-top navbar-expand-lg py-0 compensate-for-scrollbar" id="navbar-main">
+
+
+
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
   <div class="container">
 
     
+    <div class="d-none d-lg-inline-flex">
       <a class="navbar-brand" href="/">Te-Sheng Lin</a>
-      
-      <button type="button" class="navbar-toggler" data-toggle="collapse"
-              data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
-        <span><i class="fas fa-bars"></i></span>
-      </button>
-      
+    </div>
+    
 
     
-    <div class="collapse navbar-collapse" id="navbar">
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/">Te-Sheng Lin</a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
 
       
-      
-      <ul class="navbar-nav mr-auto">
+      <ul class="navbar-nav d-md-inline-flex">
         
 
         
@@ -280,21 +414,15 @@
         <li class="nav-item dropdown">
           <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"><span>Resume</span><span class="caret"></span>
           </a>
-          <ul class="dropdown-menu">
+          <div class="dropdown-menu">
             
-            <li class="dropdown-item my-0 py-0 mx-0 px-0">
-              <a href="/#experience"><span>Appointments </span></a>
-            </li>
+              <a class="dropdown-item" href="/#experience"><span>Appointments </span></a>
             
-            <li class="dropdown-item my-0 py-0 mx-0 px-0">
-              <a href="/#publications"><span>Publications</span></a>
-            </li>
+              <a class="dropdown-item" href="/#publications"><span>Publications</span></a>
             
-            <li class="dropdown-item my-0 py-0 mx-0 px-0">
-              <a href="/#cv"><span>CV</span></a>
-            </li>
+              <a class="dropdown-item" href="/#cv"><span>CV</span></a>
             
-          </ul>
+          </div>
         </li>
 
         
@@ -333,46 +461,41 @@
         <li class="nav-item dropdown">
           <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"><span>Teaching</span><span class="caret"></span>
           </a>
-          <ul class="dropdown-menu">
+          <div class="dropdown-menu">
             
-            <li class="dropdown-item my-0 py-0 mx-0 px-0">
-              <a href="/courses/taught"><span>Courses taught</span></a>
-            </li>
+              <a class="dropdown-item" href="/courses/taught"><span>Courses taught</span></a>
             
-            <li class="dropdown-item my-0 py-0 mx-0 px-0">
-              <a href="/courses/students"><span>Students supervised</span></a>
-            </li>
+              <a class="dropdown-item" href="/courses/students"><span>Students supervised</span></a>
             
-          </ul>
+          </div>
         </li>
 
         
         
 
       
+
+        
       </ul>
-      <ul class="navbar-nav ml-auto">
-      
-
-        
-
-        
-        <li class="nav-item">
-          <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
-        </li>
-        
-
-        
-
-        
-        <li class="nav-item">
-          <a class="nav-link js-dark-toggle" href="#"><i class="fas fa-moon" aria-hidden="true"></i></a>
-        </li>
-        
-
-      </ul>
-
     </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+      
+      <li class="nav-item">
+        <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+      <li class="nav-item">
+        <a class="nav-link js-dark-toggle" href="#"><i class="fas fa-moon" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+
+    </ul>
+
   </div>
 </nav>
 
@@ -484,34 +607,22 @@
   <div class="article-container">
 
     <div class="article-style">
-      
-
-<blockquote>
+      <blockquote>
 <p>這裡我們要介紹如何用電腦算極限, 以及我們來看一下當我們真的這樣做的時候有可能會發生什麼問題. 我們以 $sinc$ 函數為例來做說明.</p>
 </blockquote>
-
 <h3 id="sinc-function">sinc function</h3>
-
 <p>首先我們要介紹一個特別的函數, $sinc(x)$, 定義如下:
 $$
 sinc(x) = \frac{\sin(x)}{x}, \quad x\ne 0.
 $$
 很明顯可以看出來當 $x=0$ 的時候分母會等於零, 是一件壞事, 所以把 $x=0$ 這個點先拿掉.</p>
-
 <p>比較有趣的是我們可以把這個函數畫出來. 首先我們在 $[-20, 20]$ 這個區間取 $1000$ 個點, 然後帶入上面 $sinc$ 函數的定義, 再把所有點連起來看看.</p>
-
 <p><strong>Remark:</strong> 有件事需要先說明一下, 由於我們是在 $[-20, 20]$ 這個區間均勻的取偶數個點, 所以會有 $500$ 個正數以及 $500$ 個負數, 重點是保證不會取到 $x=0$ 這個點, 所以沒有問題. 相反的, 如果取奇數個點就一定會取到 $x=0$, 那就會有函數無定義的問題了.</p>
-
-<p><img src="/post/figs/output_3_0.svg" alt="svg" /></p>
-
-<p>我們很輕易可以看出來, 連起來的線還蠻&rdquo;光滑&rdquo;的. 函數值在 $x=0$ 附近似乎不會趨近正無窮大或負無窮大, 也沒有跳躍的現象. 接著我們試著在 $x=0$ 附近放大一點看看, 我們在 $[-0.1, 0.1]$ 這個區間取 $1000$ 個點, 然後帶入 $sinc$ 函數的定義再把它畫出來:</p>
-
-<p><img src="/post/figs/output_5_0.svg" alt="svg" /></p>
-
+<p><img src="/post/figs/output_3_0.svg" alt="svg"></p>
+<p>我們很輕易可以看出來, 連起來的線還蠻&quot;光滑&quot;的. 函數值在 $x=0$ 附近似乎不會趨近正無窮大或負無窮大, 也沒有跳躍的現象. 接著我們試著在 $x=0$ 附近放大一點看看, 我們在 $[-0.1, 0.1]$ 這個區間取 $1000$ 個點, 然後帶入 $sinc$ 函數的定義再把它畫出來:</p>
+<p><img src="/post/figs/output_5_0.svg" alt="svg"></p>
 <p>看起來真的很光滑!! 而且似乎當 $x$ 很靠近 $0$ 時, $sinc(x)$ 的值很靠近 $1$.</p>
-
 <p>接著我們取一個會越來越靠近 $0$ 的數列, 然後看一下當把 $sinc$ 函數在這個數列的點上取值時, 其值會不會越來越靠近 $1$.  我們取以下數列:</p>
-
 <pre><code> 1.670170079024566e-5
  6.14421235332821e-6
  2.2603294069810542e-6
@@ -523,9 +634,7 @@ $$
  5.602796437537268e-9
  2.061153622438558e-9
 </code></pre>
-
 <p>算一下 $sinc$ 函數在這些點上面的值, 並觀察他的趨勢:</p>
-
 <pre><code> 0.9999999999535089
  0.9999999999937081
  0.9999999999991485
@@ -537,17 +646,12 @@ $$
  1.0
  1.0
 </code></pre>
-
 <p>赫然發現算到後來就等於 $1$ 了!! 所以我們發現</p>
-
 <p>$$
 \lim_{x\to 0} sinc(x) = \lim_{x\to 0} \frac{\sin(x)}{x} = 1.
 $$</p>
-
 <p>不過有一點點詭異的是, 在剛剛的計算裡我們最多也只是取到離 $0$ 很近的點而已, 但是算出來的結果卻是 $1$. 難道不只是 $sinc(0)=1$, 我們也有 $sinc(2.061153622438558 *10^{-9})=1$ 嗎?</p>
-
 <p>事實上並不是這樣. 電腦有所謂的捨入誤差(rounding error). 這是因為電腦需要用有限位數來表達無窮小數, 所以一定要捨棄後面的位數. 我們把算出來的數字減去 $1$ 看看:</p>
-
 <pre><code> -4.649114426769074e-11
  -6.291855925155687e-12
  -8.515410598874951e-13
@@ -559,64 +663,54 @@ $$</p>
   0.0
   0.0
 </code></pre>
-
 <p>我們可以發現這個數字最小可以到大約 $10^{-16}$, 之後就變成 $0$ 了. 也就是說我們目前用個這個程式語言其捨入誤差大約就是 $10^{-16}$.</p>
-
-<hr />
-
+<hr>
 <h3 id="machine-epsilon">machine epsilon</h3>
-
 <blockquote>
 <p>一般我們會用 machine epsilon 這個數字來量化在電腦裡浮點運算的捨入誤差.</p>
 </blockquote>
-
 <p>machine epsilon 的定義是, 考慮正數$\epsilon$, 使得 $ 1+ \epsilon \ge 1$ 中最小的那個稱之為 machine epsilon. 當然以數學來看這個 machine epsilon 必須等於零. 不過在電腦裡並不是這樣.</p>
-
 <p>為了方便我們稍微改一下定義, 我們考慮 $\epsilon = 2^{-k}$ 這種形式, 然後 machine epsilon 一樣是使得 $ 1+ \epsilon \ge 1$ 中最小的那個. julia 程式如下:</p>
-
-<pre><code class="language-julia">s=1.0
-for k=1:100
-    s = s/2.0
-    if (1.0+s)&lt;=1.0
-        s = 2.0*s
-        println(&quot;k=&quot;, k-1, &quot;,  eps=&quot;, s)
-        return
-    end
-end
-</code></pre>
-
-<p>在我的電腦上我發現 $\epsilon = 2^{-52} = 2.220446049250313e-16$.</p>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-julia" data-lang="julia">s<span style="color:#f92672">=</span><span style="color:#ae81ff">1.0</span>
+<span style="color:#66d9ef">for</span> k<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span><span style="color:#f92672">:</span><span style="color:#ae81ff">100</span>
+    s <span style="color:#f92672">=</span> s<span style="color:#f92672">/</span><span style="color:#ae81ff">2.0</span>
+    <span style="color:#66d9ef">if</span> (<span style="color:#ae81ff">1.0</span><span style="color:#f92672">+</span>s)<span style="color:#f92672">&lt;=</span><span style="color:#ae81ff">1.0</span>
+        s <span style="color:#f92672">=</span> <span style="color:#ae81ff">2.0</span><span style="color:#f92672">*</span>s
+        println(<span style="color:#e6db74">&#34;k=&#34;</span>, k<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>, <span style="color:#e6db74">&#34;,  eps=&#34;</span>, s)
+        <span style="color:#66d9ef">return</span>
+    <span style="color:#66d9ef">end</span>
+<span style="color:#66d9ef">end</span>
+</code></pre></div><p>在我的電腦上我發現 $\epsilon = 2^{-52} = 2.220446049250313e-16$.</p>
 <pre><code>k=52,  eps=2.220446049250313e-16
 </code></pre>
-
 <p>所以的確捨入誤差大約是 $10^{-16}$ 這個等級.</p>
-
-<hr />
-
+<hr>
 <h3 id="summary">Summary:</h3>
-
 <p>稍微總結一下目前我們看到的:</p>
-
 <ul>
-<li><p>我們用程式跑數值發現 $sinc(x\to 0)=1$, 所以我們可以定義 sinc 函數為
+<li>
+<p>我們用程式跑數值發現 $sinc(x\to 0)=1$, 所以我們可以定義 sinc 函數為
 $$
 sinc(x) =
 \begin{cases}
-\frac{\sin(x)}{x}, \quad x\ne 0 \\<br />
+\frac{\sin(x)}{x}, \quad x\ne 0 \\\<br>
 1, \quad x=0.
 \end{cases}
 $$
-在這樣的定義之下 $sinc$ 函數是個<code>連續函數</code>.</p></li>
-
-<li><p>在數值計算上有所謂的捨入誤差, 這是用有限位元來表達無限位數一定會有的差異.</p></li>
-
-<li><p>可以用 machines epsilon 來量化捨入誤差.</p></li>
-
-<li><p>更多關於 $sinc$ 函數的性質可以參考 <a href="https://en.wikipedia.org/wiki/Sinc_function" target="_blank">wiki</a> 上的介紹.</p></li>
+在這樣的定義之下 $sinc$ 函數是個<code>連續函數</code>.</p>
+</li>
+<li>
+<p>在數值計算上有所謂的捨入誤差, 這是用有限位元來表達無限位數一定會有的差異.</p>
+</li>
+<li>
+<p>可以用 machines epsilon 來量化捨入誤差.</p>
+</li>
+<li>
+<p>更多關於 $sinc$ 函數的性質可以參考 
+<a href="https://en.wikipedia.org/wiki/Sinc_function" target="_blank" rel="noopener">wiki</a> 上的介紹.</p>
+</li>
 </ul>
-
-<hr />
+<hr>
 
     </div>
 
@@ -711,10 +805,11 @@ $$
     
   
   
+  
   <div class="media author-card content-widget-hr">
     
       
-      <img class="portrait mr-3" src="/authors/admin/avatar_hua0d4d4b24f4da3a102e4452ac738b95f_109236_250x250_fill_q90_lanczos_center.jpg" alt="Avatar">
+      <img class="avatar mr-3 avatar-circle" src="/authors/admin/avatar_hua0d4d4b24f4da3a102e4452ac738b95f_109236_270x270_fill_q90_lanczos_center.jpg" alt="Avatar">
     
 
     <div class="media-body">
@@ -833,39 +928,29 @@ $$
     
     
     
-    <script src="/js/mathjax-config.js"></script>
-    
-
-    
-    
-    
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
 
       
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.3.1/mermaid.min.js" integrity="sha256-vOIuDSYDirTfyr+S2MjFnhOz6Rgiz4ODFAHATG0rFxw=" crossorigin="anonymous" title="mermaid"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.4.4/mermaid.min.js" integrity="sha256-JEqEejGt4tR35L0a1zodzsV0/PJ6GIf7J4yDtywdrH8=" crossorigin="anonymous" title="mermaid"></script>
       
 
       
         
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js" integrity="sha256-1zu+3BnLYV9LdiY85uXMzii3bdrkelyp37e0ZyTAQh0=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js" integrity="sha256-eOgo0OtLL4cdq7RdwRUiGKLX9XsIJ7nGhWEKbohmVAQ=" crossorigin="anonymous"></script>
         
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/languages/r.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/languages/r.min.js"></script>
         
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/languages/julia.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/languages/julia.min.js"></script>
         
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/languages/python.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/languages/python.min.js"></script>
         
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/languages/fortran.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/languages/fortran.min.js"></script>
         
       
 
-      
-      
-      <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
-      
     
 
     
@@ -873,7 +958,12 @@ $$
 
     
     
-    <script>hljs.initHighlightingOnLoad();</script>
+    <script>const code_highlighting = true;</script>
+    
+
+    
+    
+    <script>const isSiteThemeDark = false;</script>
     
 
     
@@ -940,7 +1030,7 @@ $$
     
     
     
-    <script src="/js/academic.min.d6bd04fdad2ad213aa8111c5a3b72fc5.js"></script>
+    <script src="/js/academic.min.a8d7005002cb4a052fd6d721e83df9ba.js"></script>
 
     
 

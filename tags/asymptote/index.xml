@@ -7,7 +7,7 @@
     <description>asymptote</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 29 Oct 2019 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://teshenglin.github.io/img/icon-192.png</url>
+      <url>https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
       <title>asymptote</title>
       <link>https://teshenglin.github.io/tags/asymptote/</link>
     </image>
@@ -17,26 +17,18 @@
       <link>https://teshenglin.github.io/post/2019_slant_asymp/</link>
       <pubDate>Tue, 29 Oct 2019 00:00:00 +0000</pubDate>
       <guid>https://teshenglin.github.io/post/2019_slant_asymp/</guid>
-      <description>
-
-&lt;blockquote&gt;
+      <description>&lt;blockquote&gt;
 &lt;p&gt;這裡我們要介紹 slant asymptotes, 也就是所謂的斜漸近線.&lt;/p&gt;
 &lt;/blockquote&gt;
-
-&lt;h2 id=&#34;section-1-slant-asymptotes&#34;&gt;Section 1: slant asymptotes&lt;/h2&gt;
-
+&lt;h2 id=&#34;section-1-slant-asymptotes&#34;&gt;Section 1: slant asymptotes#&lt;/h2&gt;
 &lt;p&gt;斜漸近線定義如下:
 The line $y=mx+b$, $m\ne 0$, is called a slant asymptote of $f(x)$ if
 $$
 \lim_{x\to\infty} [f(x) - (mx+b)] = 0.
 $$&lt;/p&gt;
-
 &lt;p&gt;&lt;strong&gt;Remark:&lt;/strong&gt; 亦可將上列式子中改為 $x\to-\infty$. 滿足此條件的也是斜漸近線. 所以斜漸近線最多有兩條.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h3 id=&#34;section-1-1-長除法&#34;&gt;Section 1.1: 長除法&lt;/h3&gt;
-
+&lt;hr&gt;
+&lt;h3 id=&#34;section-11-長除法&#34;&gt;Section 1.1: 長除法&lt;/h3&gt;
 &lt;p&gt;要求得斜漸近線的方法其中之一是長除法. 例如以下這個函數
 $$
 f(x) = \frac{4x^3-10x^2-11x+1}{x^2-3x}.
@@ -54,17 +46,13 @@ $$
 \lim_{x\to\pm\infty} [f(x) - (4x+2)] = \lim_{x\to\pm\infty} \frac{-5x+1}{x^2-3x} = 0.
 $$
 所以 $y=4x+2$ 就是這個函數的斜漸近線.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h3 id=&#34;section-1-2-直接法&#34;&gt;Section 1.2: 直接法&lt;/h3&gt;
-
+&lt;hr&gt;
+&lt;h3 id=&#34;section-12-直接法&#34;&gt;Section 1.2: 直接法&lt;/h3&gt;
 &lt;p&gt;不過如果遇到無法做長除法的函數, 以上的招數就失效了. 例如
 $$
 g(x) = \sqrt{x^2-1}+3,
 $$
 就無法以長除法來找斜漸近線.&lt;/p&gt;
-
 &lt;p&gt;我們先觀察一下原本斜漸近線的定義, 然後很快就可以發現, 如果 $y=mx+b$ 是一條斜漸近線則我們有
 $$
 \lim_{x\to\infty} \frac{f(x)}{x} = m.
@@ -74,25 +62,23 @@ $$
 \lim_{x\to\infty} [f(x) - mx] = b.
 $$
 利用這個式子就可以找到斜漸近線中的第二個參數 $b$.&lt;/p&gt;
-
 &lt;p&gt;我們以上面的 $g(x)$ 函數為例來找一下它的斜漸近線.&lt;/p&gt;
-
 &lt;ol&gt;
-&lt;li&gt;&lt;p&gt;首先第一步我們先看一下 $g(x)$ 在正負無窮遠的行為:
+&lt;li&gt;
+&lt;p&gt;首先第一步我們先看一下 $g(x)$ 在正負無窮遠的行為:
 $$
 \lim_{x\to\infty} g(x) = \infty, \quad \lim_{x\to-\infty} g(x) = \infty.
 $$
 發現它會趨近無窮大, 所以有機會有斜漸近線.&lt;/p&gt;
-
 &lt;p&gt;&lt;strong&gt;Remark:&lt;/strong&gt;&lt;/p&gt;
-
 &lt;ul&gt;
 &lt;li&gt;如果趨近一個常數那就會得到橫漸近線 (horizontal asymptotes), 那就沒有斜漸近線.&lt;/li&gt;
 &lt;li&gt;如果極限不是正負無窮大其中之一, 那也不可能會有斜漸近線.&lt;/li&gt;
 &lt;li&gt;以上都是在講單邊 ($x\to\infty$, 或是 $x\to -\infty$), 有可能兩邊行為完全不一樣.&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;接著我們試著求出 $m$:
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;接著我們試著求出 $m$:
 $$
 \lim_{x\to\infty} \frac{g(x)}{x} = \lim_{x\to\infty} \frac{\sqrt{x^2-1}+3}{x} = 1.
 $$
@@ -101,33 +87,27 @@ $$
 \lim_{x\to\infty} [g(x) - mx] = \lim_{x\to\infty} \left[\sqrt{x^2-1}+3 - x\right] = 3.
 $$
 所以 $b=3$.&lt;/p&gt;
-
 &lt;p&gt;&lt;strong&gt;Remark:&lt;/strong&gt;&lt;/p&gt;
-
 &lt;ul&gt;
 &lt;li&gt;同樣做法可以得到 $x\to -\infty$ 時我們有 $m=-1$, $b=3$.&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;因此我們得到 $g(x)$ 在正無窮遠處的斜漸近線為 $y=x+3$, 在負無窮遠處的斜漸近線為 $y=-x+3$.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;因此我們得到 $g(x)$ 在正無窮遠處的斜漸近線為 $y=x+3$, 在負無窮遠處的斜漸近線為 $y=-x+3$.&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ol&gt;
-
-&lt;hr /&gt;
-
-&lt;h3 id=&#34;section-1-3-summary&#34;&gt;Section 1.3: Summary&lt;/h3&gt;
-
+&lt;hr&gt;
+&lt;h3 id=&#34;section-13-summary&#34;&gt;Section 1.3: Summary&lt;/h3&gt;
 &lt;p&gt;總結一下:&lt;/p&gt;
-
 &lt;ul&gt;
 &lt;li&gt;斜漸近線可以用長除法或直接法求得.&lt;/li&gt;
 &lt;/ul&gt;
-
 &lt;p&gt;不過不管長除法或直接法都是求出斜漸近線的計算過程. 實際上不管用哪種方法做, 長除法, 直接法, 或是當你很有經驗時可以一眼看出來, 要&lt;strong&gt;證明&lt;/strong&gt;你所得到的直線是斜漸近線就是要驗證最初的定義是否正確. 也就是要驗證以下這個式子是對的:
 $$
 \lim_{x\to\infty} [f(x) - (mx+b)] = 0.
 $$
 如果是對的, 你就得到它了.&lt;/p&gt;
-
-&lt;hr /&gt;
+&lt;hr&gt;
 </description>
     </item>
     

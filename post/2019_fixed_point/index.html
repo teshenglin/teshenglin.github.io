@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="Source Themes Academic 4.5.0">
+  <meta name="generator" content="Source Themes Academic 4.7.0">
 
   
 
@@ -28,7 +28,7 @@
   
     
   
-  <meta name="description" content="這裡我們介紹固定點迭代法 (Fixed point iteration) 首先我們介紹什麼是固定點 (Fixed point) Definition: Fixed point A fixed point of a function $f(x)$ is a number $c$ in its domain such that $f&copy;=c$. 所以簡單來說, 把固定點這個數字丟進函數後會">
+  <meta name="description" content="這裡我們介紹固定點迭代法 (Fixed point iteration) 首先我們介紹什麼是固定點 (Fixed point) Definition: Fixed point A fixed point of a function $f(x)$ is a number $c$ in its domain such that $f(c)=c$. 所以簡單來說, 把固定點這個數字丟進函數後會">
 
   
   <link rel="alternate" hreflang="en-us" href="https://teshenglin.github.io/post/2019_fixed_point/">
@@ -45,10 +45,16 @@
   
   
   
+  <script src="/js/mathjax-config.js"></script>
+  
+
+  
+  
+  
   
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-1/css/all.min.css" integrity="sha256-4w9DunooKSr3MFXHXWyFER38WmPdm361bQS/2KUWZbU=" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
 
     
@@ -60,14 +66,126 @@
       
       
         
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/github.min.css" crossorigin="anonymous" title="hl-light">
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
         
       
     
 
     
 
+    
+
+    
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.1.2/lazysizes.min.js" integrity="sha256-Md1qLToewPeKjfAHU1zyPwOutccPAm5tahnaw7Osw0A=" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
     
 
   
@@ -100,11 +218,12 @@
   
 
   <link rel="manifest" href="/index.webmanifest">
-  <link rel="icon" type="image/png" href="/img/icon-32.png">
-  <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
+  <link rel="icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_2.png">
 
   <link rel="canonical" href="https://teshenglin.github.io/post/2019_fixed_point/">
 
+  
   
   
   
@@ -118,8 +237,8 @@
   <meta property="og:site_name" content="Te-Sheng Lin">
   <meta property="og:url" content="https://teshenglin.github.io/post/2019_fixed_point/">
   <meta property="og:title" content="Fixed point iteration | Te-Sheng Lin">
-  <meta property="og:description" content="這裡我們介紹固定點迭代法 (Fixed point iteration) 首先我們介紹什麼是固定點 (Fixed point) Definition: Fixed point A fixed point of a function $f(x)$ is a number $c$ in its domain such that $f&copy;=c$. 所以簡單來說, 把固定點這個數字丟進函數後會"><meta property="og:image" content="https://teshenglin.github.io/img/icon-192.png">
-  <meta property="twitter:image" content="https://teshenglin.github.io/img/icon-192.png"><meta property="og:locale" content="en-us">
+  <meta property="og:description" content="這裡我們介紹固定點迭代法 (Fixed point iteration) 首先我們介紹什麼是固定點 (Fixed point) Definition: Fixed point A fixed point of a function $f(x)$ is a number $c$ in its domain such that $f(c)=c$. 所以簡單來說, 把固定點這個數字丟進函數後會"><meta property="og:image" content="https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png">
+  <meta property="twitter:image" content="https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png"><meta property="og:locale" content="en-us">
   
     
       <meta property="article:published_time" content="2019-11-04T00:00:00&#43;00:00">
@@ -138,8 +257,6 @@
 
 
   
-
-
 
 
 
@@ -167,10 +284,10 @@
     "name": "Te-Sheng Lin",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://teshenglin.github.io/img/icon-512.png"
+      "url": "https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_2.png"
     }
   },
-  "description": "這裡我們介紹固定點迭代法 (Fixed point iteration) 首先我們介紹什麼是固定點 (Fixed point) Definition: Fixed point A fixed point of a function $f(x)$ is a number $c$ in its domain such that $f\u0026copy;=c$. 所以簡單來說, 把固定點這個數字丟進函數後會"
+  "description": "這裡我們介紹固定點迭代法 (Fixed point iteration) 首先我們介紹什麼是固定點 (Fixed point) Definition: Fixed point A fixed point of a function $f(x)$ is a number $c$ in its domain such that $f(c)=c$. 所以簡單來說, 把固定點這個數字丟進函數後會"
 }
 </script>
 
@@ -227,24 +344,41 @@
 
 
   
-<nav class="navbar navbar-light fixed-top navbar-expand-lg py-0 compensate-for-scrollbar" id="navbar-main">
+
+
+
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
   <div class="container">
 
     
+    <div class="d-none d-lg-inline-flex">
       <a class="navbar-brand" href="/">Te-Sheng Lin</a>
-      
-      <button type="button" class="navbar-toggler" data-toggle="collapse"
-              data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
-        <span><i class="fas fa-bars"></i></span>
-      </button>
-      
+    </div>
+    
 
     
-    <div class="collapse navbar-collapse" id="navbar">
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/">Te-Sheng Lin</a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
 
       
-      
-      <ul class="navbar-nav mr-auto">
+      <ul class="navbar-nav d-md-inline-flex">
         
 
         
@@ -280,21 +414,15 @@
         <li class="nav-item dropdown">
           <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"><span>Resume</span><span class="caret"></span>
           </a>
-          <ul class="dropdown-menu">
+          <div class="dropdown-menu">
             
-            <li class="dropdown-item my-0 py-0 mx-0 px-0">
-              <a href="/#experience"><span>Appointments </span></a>
-            </li>
+              <a class="dropdown-item" href="/#experience"><span>Appointments </span></a>
             
-            <li class="dropdown-item my-0 py-0 mx-0 px-0">
-              <a href="/#publications"><span>Publications</span></a>
-            </li>
+              <a class="dropdown-item" href="/#publications"><span>Publications</span></a>
             
-            <li class="dropdown-item my-0 py-0 mx-0 px-0">
-              <a href="/#cv"><span>CV</span></a>
-            </li>
+              <a class="dropdown-item" href="/#cv"><span>CV</span></a>
             
-          </ul>
+          </div>
         </li>
 
         
@@ -333,46 +461,41 @@
         <li class="nav-item dropdown">
           <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"><span>Teaching</span><span class="caret"></span>
           </a>
-          <ul class="dropdown-menu">
+          <div class="dropdown-menu">
             
-            <li class="dropdown-item my-0 py-0 mx-0 px-0">
-              <a href="/courses/taught"><span>Courses taught</span></a>
-            </li>
+              <a class="dropdown-item" href="/courses/taught"><span>Courses taught</span></a>
             
-            <li class="dropdown-item my-0 py-0 mx-0 px-0">
-              <a href="/courses/students"><span>Students supervised</span></a>
-            </li>
+              <a class="dropdown-item" href="/courses/students"><span>Students supervised</span></a>
             
-          </ul>
+          </div>
         </li>
 
         
         
 
       
+
+        
       </ul>
-      <ul class="navbar-nav ml-auto">
-      
-
-        
-
-        
-        <li class="nav-item">
-          <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
-        </li>
-        
-
-        
-
-        
-        <li class="nav-item">
-          <a class="nav-link js-dark-toggle" href="#"><i class="fas fa-moon" aria-hidden="true"></i></a>
-        </li>
-        
-
-      </ul>
-
     </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+      
+      <li class="nav-item">
+        <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+      <li class="nav-item">
+        <a class="nav-link js-dark-toggle" href="#"><i class="fas fa-moon" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+
+    </ul>
+
   </div>
 </nav>
 
@@ -484,109 +607,77 @@
   <div class="article-container">
 
     <div class="article-style">
-      
-
-<blockquote>
+      <blockquote>
 <p>這裡我們介紹固定點迭代法 (Fixed point iteration)</p>
 </blockquote>
-
 <p>首先我們介紹什麼是固定點 (Fixed point)</p>
-
 <blockquote>
 <h2 id="definition-fixed-point">Definition: Fixed point</h2>
-
-<p>A fixed point of a function $f(x)$ is a number $c$ in its domain such that $f&copy;=c$.</p>
+<p>A fixed point of a function $f(x)$ is a number $c$ in its domain such that $f(c)=c$.</p>
 </blockquote>
-
 <p>所以簡單來說, 把固定點這個數字丟進函數後會得到同樣的一個數字. 所以稱之為固定點.</p>
-
 <p>那固定點重要性其一是在數值計算上有一種迭代方式叫做固定點迭代(Fixed point iteration). 假設我們想要求某個函數的固定點, 也就是滿足 $c=f(c )$ 的這些 $c$, 那我們可以定義一個迭代式
 $$
 x_{n+1} = f(x_n).
 $$</p>
-
 <p>如果夠幸運的, $\{x_{n}\}$ 這串數字收斂了, 那把它收斂到的數字稱為 $\bar{c}$ 我們就有 $\bar{c}=f(\bar{c})$, 也就是固定點.</p>
-
 <p>舉個例子來說, 假設我們想要解 $x=\cos(x)$ 這個方程式, 那我們可以定義一個固定點迭代為
 $$
 x_{n+1} = \cos(x_n).
 $$</p>
-
 <p>這樣的話如果數列收斂, $\{x_{n}\}\to \bar{x}$, 那我們就有 $\bar{x}=\cos(\bar{x})$, 那就解出來了!!</p>
-
 <p>不過這裡有兩個問題.</p>
-
 <ol>
-<li><p>為什麼這個數列會收斂?</p></li>
-
-<li><p>原方程式的固定點迭代其實有無窮多種改寫方式, 例如也可寫為 $x_{n+1} = \cos^{-1}(x_n)$. 如果收斂的話一樣會是原方程式的解. 那, 哪種改寫方式最好呢?</p></li>
+<li>
+<p>為什麼這個數列會收斂?</p>
+</li>
+<li>
+<p>原方程式的固定點迭代其實有無窮多種改寫方式, 例如也可寫為 $x_{n+1} = \cos^{-1}(x_n)$. 如果收斂的話一樣會是原方程式的解. 那, 哪種改寫方式最好呢?</p>
+</li>
 </ol>
-
 <p>我們有以下這個定理</p>
-
 <blockquote>
 <h2 id="theorem">Theorem</h2>
-
 <p>If $f:[a, b]\to [a,b]$ is a differentiable function such that
 $$ |f&rsquo;(x)|\leq \alpha&lt;1, \quad \forall x\in[a, b],$$
 then $f$ has exactly one fixed point $c$ and the fixed point iteration converges to $c$.</p>
 </blockquote>
-
 <p>這個證明很簡單.</p>
-
 <blockquote>
 <h3 id="proof">Proof</h3>
-
 <h3 id="sketch-not-complete-please-full-in-the-details-by-yourself">(Sketch, not complete, please full-in the details by yourself)</h3>
-
 <h4 id="existence">existence</h4>
-
 <p>Since the domain and the range of $f$ are both $[a, b]$, by Intermediate Value Theorem, there exists $c$ such that $c=f(c ).$</p>
-
 <h4 id="uniqueness">uniqueness</h4>
-
-<p>If there exits another fixed point $\bar{c}$, $\bar{c}\ne c$, such that $\bar{c}=f(\bar{c} )$, then according to Mean Value Theorem(MVT), there exits $z$ between $c$ and $\bar{c}$ such that $$f&rsquo;(z) = \frac{f(c ) - f(\bar{c})}{c-\bar{c}}=\frac{c - \bar{c}}{c-\bar{c}} = 1,$$ which violate the assumption that $|f&rsquo;|\leq \alpha&lt;1$. So the fixed point is unique.</p>
-
+<p>If there exits another fixed point $\bar{c}$, $\bar{c}\ne c$, such that $\bar{c}=f(\bar{c} )$, then according to Mean Value Theorem(MVT), there exits $z$ between $c$ and $\bar{c}$ such that $$f&rsquo;(z) = \frac{f(c ) - f(\bar{c})}{c-\bar{c}}=\frac{c - \bar{c}}{c-\bar{c}} = 1,$$ which violate the assumption that $|f'|\leq \alpha&lt;1$. So the fixed point is unique.</p>
 <h4 id="convergence-of-fixed-point-iteration">convergence of fixed point iteration</h4>
-
 <p>Based on MVT we have
 $$|x_{n+1} - c| = |f(x_n) - f(c )| = |f&rsquo;(c_i)(x_n-c)|\leq\alpha |x_n-c|\leq\alpha^n|x_1-c|\to 0.$$</p>
 </blockquote>
-
 <p>所以如果在函數固定點 $c$ 的微分小於 $1$, 那就存在一個包含 $c$ 的小區間使得函數的微分都在這區間內小於 $1$, 那根據這定理固定點迭代就會收斂.</p>
-
-<hr />
-
+<hr>
 <p>固定點迭代是求根問題(root finding problems)中很重要的一種迭代方式. 舉個例子來說, 假設我們想要找 $g(x)$ 這個函數的根, 那我們可以定義
 $$
 f(x) = x + g(x).
 $$
 這樣的話 $f$ 的固定點就會是 $g$ 的根了. 不過這種最簡單的改寫方式完全不保證會收斂.</p>
-
 <p>那要如何改寫才會比較好呢? 其中一個最有名的就是牛頓法 (Newton&rsquo;s method):</p>
-
 <blockquote>
-<h2 id="newton-s-iteration">Newton&rsquo;s iteration</h2>
-
+<h2 id="newtons-iteration">Newton&rsquo;s iteration</h2>
 <p>$$x_{n+1} = x_n - \frac{g(x_n)}{g&rsquo;(x_n)}.$$</p>
 </blockquote>
-
 <p>我們可以定義 $f(x) = x - \frac{g(x)}{g&rsquo;(x)}$, 這樣上面這個式子就是個固定點迭代. 接著我們可以發現, 如果 $c$ 是 $g$ 函數的根, 也就是 $g(c )=0$, 那 $f&rsquo;(c ) = 0$. 所以根據上面的定理就存在某個包含 $c$ 的小區間使得迭代會收斂.</p>
-
 <p>更進一步我們可以利用泰勒展開式(Taylor&rsquo;s series expansion) 來證明牛頓法事實上有二次收斂,
 $$
 |x_{n+1} - c| \approx \beta |x_n-c|^2.
 $$
 這個證明我們這邊就先略過不寫. 不過接著我們來看一下牛頓法究竟有多快. (&ndash;To be finished)</p>
-
-<hr />
-
+<hr>
 <p>依之前的例子我們想要解 $x=\cos(x)$, $x\in[0, \pi]$. 最簡單的固定點迭代為
 $$
 x_{n+1} = \cos(x_n),
 $$
 也就是求 $g(x) = \cos(x)-x$ 的根. 我們以 $x_0=1$ 當初始值, 發現需要 $80$ 個迭代才能使誤差在 $10^{-14}$ 之下.</p>
-
 <pre><code>    x_new= 0.5403023058681398		error= 0.31725090997825367
     x_new= 0.8575532158463934		error= 0.2032634253486143
     x_new= 0.6542897904977791		error= 0.13919056824478648
@@ -599,46 +690,47 @@ $$
     x_new= 0.7390851332151531		error= 1.2545520178264269e-14
     x_new= 0.7390851332151657		error= 8.43769498715119e-15
     Total number of iterations=80
-</code></pre>
-
-<p>若是使用牛頓法迭代則迭代式為
+</code></pre><p>若是使用牛頓法迭代則迭代式為
 $$
 x_{n+1} = x_n + \frac{cos(x_n)- x_n}{\sin(x_n)+1}.
 $$
 一樣以 $x_0=1$ 當初始值, 發現只需要 $4$ 個迭代就能使誤差在 $10^{-14}$ 之下. 比上個例子快上許多.</p>
-
 <pre><code>    x_new= 0.7503638678402439		error= 0.018923073822117442
     x_new= 0.7391128909113617		error= 4.6455898990771516e-5
     x_new= 0.739085133385284		error= 2.847205804457076e-10
     x_new= 0.7390851332151607		error= 0.0
     Total number of iterations=4
-</code></pre>
-
-<hr />
-
+</code></pre><hr>
 <h3 id="summary">Summary:</h3>
-
 <p>最後總結一下:</p>
-
 <ul>
-<li><p>固定點迭代要收斂, 至少在固定點的微分值必須比 $1$ 小.</p></li>
-
-<li><p>要取迭代函數, 如果知道如何對函數微分, 以牛頓法 <a href="https://en.wikipedia.org/wiki/Newton%27s_method" target="_blank">Newton&rsquo;s method</a> 來取通常會有不錯的效果.</p></li>
-
-<li><p>若無法得知微分函數, 可以用數值微分來逼近真實微分, 這樣會得到割線法 <a href="https://en.wikipedia.org/wiki/Secant_method" target="_blank">secant method</a>, 收斂速度比牛頓法慢一點點.</p></li>
+<li>
+<p>固定點迭代要收斂, 至少在固定點的微分值必須比 $1$ 小.</p>
+</li>
+<li>
+<p>要取迭代函數, 如果知道如何對函數微分, 以牛頓法 
+<a href="https://en.wikipedia.org/wiki/Newton%27s_method" target="_blank" rel="noopener">Newton&rsquo;s method</a> 來取通常會有不錯的效果.</p>
+</li>
+<li>
+<p>若無法得知微分函數, 可以用數值微分來逼近真實微分, 這樣會得到割線法 
+<a href="https://en.wikipedia.org/wiki/Secant_method" target="_blank" rel="noopener">secant method</a>, 收斂速度比牛頓法慢一點點.</p>
+</li>
 </ul>
-
 <p><strong>Remark:</strong></p>
-
 <ul>
-<li><p>固定點定理保證在區間裡任意取點當初使迭代都會收斂, 不過要滿足定理的條件很強, 實務上不容易做到.</p></li>
-
-<li><p>例如牛頓法, 我們能證明一定存在某個區間滿足固定點定理, 不過實際上這個區間有多大並不知道. 因此一般在討論牛頓法時都會要求初始值要離實際要求的固定點&rdquo;夠近&rdquo;. 至於&rdquo;夠近&rdquo;什麼意思就只能用嘗試的.</p></li>
-
-<li><p>由於牛頓法不保證收斂, 因此實務上要求根時會與一些保證收斂的方法, 如二分逼進法 <a href="https://en.wikipedia.org/wiki/Bisection_method" target="_blank">bisection method</a> 來合作. 如 <a href="https://en.wikipedia.org/wiki/Brent%27s_method" target="_blank">Brent-Dekker method</a>. 這樣既能保證收斂, 又兼有收斂快速的優點.</p></li>
+<li>
+<p>固定點定理保證在區間裡任意取點當初使迭代都會收斂, 不過要滿足定理的條件很強, 實務上不容易做到.</p>
+</li>
+<li>
+<p>例如牛頓法, 我們能證明一定存在某個區間滿足固定點定理, 不過實際上這個區間有多大並不知道. 因此一般在討論牛頓法時都會要求初始值要離實際要求的固定點&quot;夠近&rdquo;. 至於&quot;夠近&quot;什麼意思就只能用嘗試的.</p>
+</li>
+<li>
+<p>由於牛頓法不保證收斂, 因此實務上要求根時會與一些保證收斂的方法, 如二分逼進法 
+<a href="https://en.wikipedia.org/wiki/Bisection_method" target="_blank" rel="noopener">bisection method</a> 來合作. 如 
+<a href="https://en.wikipedia.org/wiki/Brent%27s_method" target="_blank" rel="noopener">Brent-Dekker method</a>. 這樣既能保證收斂, 又兼有收斂快速的優點.</p>
+</li>
 </ul>
-
-<hr />
+<hr>
 
     </div>
 
@@ -735,10 +827,11 @@ $$
     
   
   
+  
   <div class="media author-card content-widget-hr">
     
       
-      <img class="portrait mr-3" src="/authors/admin/avatar_hua0d4d4b24f4da3a102e4452ac738b95f_109236_250x250_fill_q90_lanczos_center.jpg" alt="Avatar">
+      <img class="avatar mr-3 avatar-circle" src="/authors/admin/avatar_hua0d4d4b24f4da3a102e4452ac738b95f_109236_270x270_fill_q90_lanczos_center.jpg" alt="Avatar">
     
 
     <div class="media-body">
@@ -857,39 +950,29 @@ $$
     
     
     
-    <script src="/js/mathjax-config.js"></script>
-    
-
-    
-    
-    
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
 
       
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.3.1/mermaid.min.js" integrity="sha256-vOIuDSYDirTfyr+S2MjFnhOz6Rgiz4ODFAHATG0rFxw=" crossorigin="anonymous" title="mermaid"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.4.4/mermaid.min.js" integrity="sha256-JEqEejGt4tR35L0a1zodzsV0/PJ6GIf7J4yDtywdrH8=" crossorigin="anonymous" title="mermaid"></script>
       
 
       
         
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js" integrity="sha256-1zu+3BnLYV9LdiY85uXMzii3bdrkelyp37e0ZyTAQh0=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js" integrity="sha256-eOgo0OtLL4cdq7RdwRUiGKLX9XsIJ7nGhWEKbohmVAQ=" crossorigin="anonymous"></script>
         
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/languages/r.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/languages/r.min.js"></script>
         
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/languages/julia.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/languages/julia.min.js"></script>
         
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/languages/python.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/languages/python.min.js"></script>
         
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/languages/fortran.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/languages/fortran.min.js"></script>
         
       
 
-      
-      
-      <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
-      
     
 
     
@@ -897,7 +980,12 @@ $$
 
     
     
-    <script>hljs.initHighlightingOnLoad();</script>
+    <script>const code_highlighting = true;</script>
+    
+
+    
+    
+    <script>const isSiteThemeDark = false;</script>
     
 
     
@@ -964,7 +1052,7 @@ $$
     
     
     
-    <script src="/js/academic.min.d6bd04fdad2ad213aa8111c5a3b72fc5.js"></script>
+    <script src="/js/academic.min.a8d7005002cb4a052fd6d721e83df9ba.js"></script>
 
     
 

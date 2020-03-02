@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="Source Themes Academic 4.5.0">
+  <meta name="generator" content="Source Themes Academic 4.7.0">
 
   
 
@@ -45,10 +45,16 @@
   
   
   
+  <script src="/js/mathjax-config.js"></script>
+  
+
+  
+  
+  
   
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-1/css/all.min.css" integrity="sha256-4w9DunooKSr3MFXHXWyFER38WmPdm361bQS/2KUWZbU=" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
 
     
@@ -60,14 +66,126 @@
       
       
         
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/github.min.css" crossorigin="anonymous" title="hl-light">
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
         
       
     
 
     
 
+    
+
+    
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.1.2/lazysizes.min.js" integrity="sha256-Md1qLToewPeKjfAHU1zyPwOutccPAm5tahnaw7Osw0A=" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
     
 
   
@@ -100,11 +218,12 @@
   
 
   <link rel="manifest" href="/index.webmanifest">
-  <link rel="icon" type="image/png" href="/img/icon-32.png">
-  <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
+  <link rel="icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_2.png">
 
   <link rel="canonical" href="https://teshenglin.github.io/post/2019_julia/">
 
+  
   
   
   
@@ -118,13 +237,13 @@
   <meta property="og:site_name" content="Te-Sheng Lin">
   <meta property="og:url" content="https://teshenglin.github.io/post/2019_julia/">
   <meta property="og:title" content="Julia 學習筆記 | Te-Sheng Lin">
-  <meta property="og:description" content="延伸閱讀: Julia 學習筆記 - 簡介, 畫圖, 計時 這裡我們要介紹 julia 這個程式語言. 這是一個非常新的語言, 在 2009 年才問世, 遠比 1990 年出生的 python 來的年輕許多. 不過由"><meta property="og:image" content="https://teshenglin.github.io/img/icon-192.png">
-  <meta property="twitter:image" content="https://teshenglin.github.io/img/icon-192.png"><meta property="og:locale" content="en-us">
+  <meta property="og:description" content="延伸閱讀: Julia 學習筆記 - 簡介, 畫圖, 計時 這裡我們要介紹 julia 這個程式語言. 這是一個非常新的語言, 在 2009 年才問世, 遠比 1990 年出生的 python 來的年輕許多. 不過由"><meta property="og:image" content="https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png">
+  <meta property="twitter:image" content="https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png"><meta property="og:locale" content="en-us">
   
     
       <meta property="article:published_time" content="2019-10-29T00:00:00&#43;00:00">
     
-    <meta property="article:modified_time" content="2020-02-26T10:12:38&#43;08:00">
+    <meta property="article:modified_time" content="2020-03-02T19:56:58&#43;08:00">
   
 
   
@@ -138,8 +257,6 @@
 
 
   
-
-
 
 
 
@@ -155,7 +272,7 @@
   "headline": "Julia 學習筆記",
   
   "datePublished": "2019-10-29T00:00:00Z",
-  "dateModified": "2020-02-26T10:12:38+08:00",
+  "dateModified": "2020-03-02T19:56:58+08:00",
   
   "author": {
     "@type": "Person",
@@ -167,7 +284,7 @@
     "name": "Te-Sheng Lin",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://teshenglin.github.io/img/icon-512.png"
+      "url": "https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_2.png"
     }
   },
   "description": "延伸閱讀: Julia 學習筆記 - 簡介, 畫圖, 計時 這裡我們要介紹 julia 這個程式語言. 這是一個非常新的語言, 在 2009 年才問世, 遠比 1990 年出生的 python 來的年輕許多. 不過由"
@@ -227,24 +344,41 @@
 
 
   
-<nav class="navbar navbar-light fixed-top navbar-expand-lg py-0 compensate-for-scrollbar" id="navbar-main">
+
+
+
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
   <div class="container">
 
     
+    <div class="d-none d-lg-inline-flex">
       <a class="navbar-brand" href="/">Te-Sheng Lin</a>
-      
-      <button type="button" class="navbar-toggler" data-toggle="collapse"
-              data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
-        <span><i class="fas fa-bars"></i></span>
-      </button>
-      
+    </div>
+    
 
     
-    <div class="collapse navbar-collapse" id="navbar">
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/">Te-Sheng Lin</a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
 
       
-      
-      <ul class="navbar-nav mr-auto">
+      <ul class="navbar-nav d-md-inline-flex">
         
 
         
@@ -280,21 +414,15 @@
         <li class="nav-item dropdown">
           <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"><span>Resume</span><span class="caret"></span>
           </a>
-          <ul class="dropdown-menu">
+          <div class="dropdown-menu">
             
-            <li class="dropdown-item my-0 py-0 mx-0 px-0">
-              <a href="/#experience"><span>Appointments </span></a>
-            </li>
+              <a class="dropdown-item" href="/#experience"><span>Appointments </span></a>
             
-            <li class="dropdown-item my-0 py-0 mx-0 px-0">
-              <a href="/#publications"><span>Publications</span></a>
-            </li>
+              <a class="dropdown-item" href="/#publications"><span>Publications</span></a>
             
-            <li class="dropdown-item my-0 py-0 mx-0 px-0">
-              <a href="/#cv"><span>CV</span></a>
-            </li>
+              <a class="dropdown-item" href="/#cv"><span>CV</span></a>
             
-          </ul>
+          </div>
         </li>
 
         
@@ -333,46 +461,41 @@
         <li class="nav-item dropdown">
           <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"><span>Teaching</span><span class="caret"></span>
           </a>
-          <ul class="dropdown-menu">
+          <div class="dropdown-menu">
             
-            <li class="dropdown-item my-0 py-0 mx-0 px-0">
-              <a href="/courses/taught"><span>Courses taught</span></a>
-            </li>
+              <a class="dropdown-item" href="/courses/taught"><span>Courses taught</span></a>
             
-            <li class="dropdown-item my-0 py-0 mx-0 px-0">
-              <a href="/courses/students"><span>Students supervised</span></a>
-            </li>
+              <a class="dropdown-item" href="/courses/students"><span>Students supervised</span></a>
             
-          </ul>
+          </div>
         </li>
 
         
         
 
       
+
+        
       </ul>
-      <ul class="navbar-nav ml-auto">
-      
-
-        
-
-        
-        <li class="nav-item">
-          <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
-        </li>
-        
-
-        
-
-        
-        <li class="nav-item">
-          <a class="nav-link js-dark-toggle" href="#"><i class="fas fa-moon" aria-hidden="true"></i></a>
-        </li>
-        
-
-      </ul>
-
     </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+      
+      <li class="nav-item">
+        <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+      <li class="nav-item">
+        <a class="nav-link js-dark-toggle" href="#"><i class="fas fa-moon" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+
+    </ul>
+
   </div>
 </nav>
 
@@ -432,7 +555,7 @@
           Last updated on
       
     
-    Feb 26, 2020
+    Mar 2, 2020
   </span>
   
 
@@ -484,182 +607,162 @@
   <div class="article-container">
 
     <div class="article-style">
-      
+      <p>延伸閱讀: Julia 學習筆記 -
 
-<div class="alert alert-note">
-  <div>
-    延伸閱讀: Julia 學習筆記 -
 <a href="/post/2019_julia">簡介</a>,
+
 <a href="/post/2020_julia_plots">畫圖</a>,
-<a href="/post/2020_julia_timing">計時</a>
-  </div>
-</div>
 
-<hr />
-
+<a href="/post/2020_julia_timing">計時</a></p>
+<hr>
 <blockquote>
-<p>這裡我們要介紹 julia 這個程式語言. 這是一個非常新的語言, 在 2009 年才問世, 遠比 1990 年出生的 python 來的年輕許多. 不過由於它又<strong><em>快</em></strong>又<strong><em>簡單</em></strong>, 又<strong><em>不用錢</em></strong>, 使得目前有越來越多人開始使用這個新語言. 相信未來會更加普及.</p>
+<p>這裡我們要介紹 julia 這個程式語言. 這是一個非常新的語言, 在 2009 年才問世, 遠比 1990 年出生的 python 來的年輕許多. 不過由於它又<em><strong>快</strong></em>又<em><strong>簡單</strong></em>, 又<em><strong>不用錢</strong></em>, 使得目前有越來越多人開始使用這個新語言. 相信未來會更加普及.</p>
 </blockquote>
-
-<hr />
-
+<hr>
 <h2 id="julia-安裝">Julia 安裝</h2>
-
-<p>在 <a href="https://julialang.org" target="_blank">Julia 官方網站</a> 上可以下載各系統平台的安裝包裹. 下載安裝後即可運行.</p>
-
+<p>在 
+<a href="https://julialang.org" target="_blank" rel="noopener">Julia 官方網站</a> 上可以下載各系統平台的安裝包裹. 下載安裝後即可運行.</p>
 <ul>
-<li><p>Julia 安裝教學影片可參考 <a href="https://youtu.be/v7XeveI19CM" target="_blank">Julia課程環境簡介 on Youtube</a></p></li>
-
-<li><p>如果只想試用一下的話可以試試 <a href="https://repl.it/languages/julia" target="_blank">repl.it</a> 這個線上編輯器. 它可以讓你在線上編輯並執行一些簡單的 julia 程式.</p></li>
+<li>
+<p>Julia 安裝教學影片可參考 
+<a href="https://youtu.be/v7XeveI19CM" target="_blank" rel="noopener">Julia課程環境簡介 on Youtube</a></p>
+</li>
+<li>
+<p>如果只想試用一下的話可以試試 
+<a href="https://repl.it/languages/julia" target="_blank" rel="noopener">repl.it</a> 這個線上編輯器. 它可以讓你在線上編輯並執行一些簡單的 julia 程式.</p>
+</li>
 </ul>
-
 <p>除了 julia 主程式外, 我也建議加裝 <code>Jupyter notebook</code>(或 <code>Jupyter lab</code>) 以及 <code>Atom</code>. 讓你 coding 更方便.</p>
-
-<hr />
-
+<hr>
 <h3 id="julia-基本簡介">Julia 基本簡介</h3>
-
 <ul>
-<li><p>查詢版本資訊</p>
-
-<pre><code class="language-julia">julia&gt; versioninfo()
-</code></pre></li>
-
-<li><p>套件(package)管理</p>
-
-<pre><code class="language-julia">julia&gt; ]
-</code></pre>
-
-<p>然後就會進入套件管理系統</p>
-
-<pre><code class="language-julia">pkg&gt;
-</code></pre>
-
-<p>查詢已安裝套件</p>
-
-<pre><code class="language-julia">pkg&gt; status
-</code></pre>
-
-<p>更新套件</p>
-
-<pre><code class="language-julia">pkg&gt; update
-</code></pre>
-
-<p>跳出系統請按鍵盤上的<strong>刪除鍵</strong>.</p></li>
-
-<li><p>查詢指令(如matlab中的help)</p>
-
-<pre><code class="language-julia">julia&gt; ?
-</code></pre>
-
-<p>然後就會變成查詢的視窗</p>
-
-<pre><code class="language-julia">help?&gt;
-</code></pre></li>
+<li>查詢版本資訊</li>
 </ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-julia" data-lang="julia">julia<span style="color:#f92672">&gt;</span> versioninfo()
+</code></pre></div><ul>
+<li>套件(package)管理</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-julia" data-lang="julia">julia<span style="color:#f92672">&gt;</span> ]
+</code></pre></div><pre><code>然後就會進入套件管理系統
+```julia
+pkg&gt;
+```
 
-<hr />
+查詢已安裝套件
+```julia
+pkg&gt; status
+```
 
+更新套件
+```julia
+pkg&gt; update
+```
+
+跳出系統請按鍵盤上的**刪除鍵**.
+</code></pre>
+<ul>
+<li>查詢指令(如matlab中的help)</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-julia" data-lang="julia">julia<span style="color:#f92672">&gt;</span> <span style="color:#f92672">?</span>
+</code></pre></div><pre><code>然後就會變成查詢的視窗
+```julia
+help?&gt;
+```
+</code></pre>
+<hr>
 <h2 id="jupyter-notebook-安裝">Jupyter notebook 安裝</h2>
-
 <blockquote>
 <p>Jupyter notebook 是個互動式筆記本, 很容易可以逐行執行並且做到資料視覺化, 並且支援多種主流的直譯語言像是 <code>Julia</code>, <code>python</code>, <code>R</code>. 有一說是 jupyter 這個字事實上就是由 julia, python 以及 R 這三個字組合而成.</p>
 </blockquote>
-
 <ol>
-<li><p>安裝 Jupyter notebook 有兩種方式. 第一種是直接由 julia 安裝. 步驟如下</p>
-
+<li>
+<p>安裝 Jupyter notebook 有兩種方式. 第一種是直接由 julia 安裝. 步驟如下</p>
 <p>在 julia 輸入 <code>]</code> 進入套件管理命令提示. 然後會長得像這樣</p>
-
-<pre><code class="language-julia">pkg&gt;
-</code></pre>
-
-<p>接著輸入 <code>status</code> 可以看到現在已經安裝的套件.</p>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-julia" data-lang="julia">pkg<span style="color:#f92672">&gt;</span>
+</code></pre></div><p>接著輸入 <code>status</code> 可以看到現在已經安裝的套件.</p>
 <p>我們要安裝 IJulia, 所以輸入</p>
-
-<pre><code class="language-julia">pkg&gt; add IJulia
-</code></pre>
-
-<p>安裝完後要退出套件管理則是 BackSpace 鍵或是 Ctrl+C 都可以.</p>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-julia" data-lang="julia">pkg<span style="color:#f92672">&gt;</span> add IJulia
+</code></pre></div><p>安裝完後要退出套件管理則是 BackSpace 鍵或是 Ctrl+C 都可以.</p>
 <p>要打開 notebook 需要退出套件管理, 並在 julia 命令提示字元下輸入</p>
-
-<pre><code class="language-julia">julia&gt; using IJulia
-julia&gt; notebook()
-</code></pre>
-
-<p>這樣 Jupyter notebook 就會在你的瀏覽器中打開.</p>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-julia" data-lang="julia">julia<span style="color:#f92672">&gt;</span> <span style="color:#66d9ef">using</span> IJulia
+julia<span style="color:#f92672">&gt;</span> notebook()
+</code></pre></div><p>這樣 Jupyter notebook 就會在你的瀏覽器中打開.</p>
 <ul>
-<li><p>若還是有不清楚的地方請見 <a href="https://medium.com/@jamescchuang/實戰安裝及建置-julia-開發環境-6dc8c0d14c2a" target="_blank">安裝及建置 Julia 開發環境實戰教學</a></p></li>
-
-<li><p>目前已經有 jupyter notebook 的升級版, 稱為 jupyter lab. 在 julia 命令提示字元下輸入</p>
-
-<pre><code class="language-julia">julia&gt; using IJulia
-julia&gt; jupyterlab()
-</code></pre></li>
+<li>
+<p>若還是有不清楚的地方請見 
+<a href="https://medium.com/@jamescchuang/%e5%af%a6%e6%88%b0%e5%ae%89%e8%a3%9d%e5%8f%8a%e5%bb%ba%e7%bd%ae-julia-%e9%96%8b%e7%99%bc%e7%92%b0%e5%a2%83-6dc8c0d14c2a" target="_blank" rel="noopener">安裝及建置 Julia 開發環境實戰教學</a></p>
+</li>
+<li>
+<p>目前已經有 jupyter notebook 的升級版, 稱為 jupyter lab. 在 julia 命令提示字元下輸入</p>
+</li>
 </ul>
-
-<p>這樣 Jupyter lab 就會在你的瀏覽器中打開.</p></li>
-
-<li><p>安裝 Jupyter notebook 的第二種方式則是透過 anaconda. 先裝完 julia 後下載 anaconda 安裝, 即可快樂使用.</p>
-
-<ul>
-<li>若還是有不清楚的地方請見 <a href="https://medium.com/datainpoint/jupyter-kernels-3151a6408bab" target="_blank">打造 Jupyter Notebook 資料科學環境</a></li>
-</ul></li>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-julia" data-lang="julia">julia<span style="color:#f92672">&gt;</span> <span style="color:#66d9ef">using</span> IJulia
+julia<span style="color:#f92672">&gt;</span> jupyterlab()
+</code></pre></div><p>這樣 Jupyter lab 就會在你的瀏覽器中打開.</p>
+</li>
+<li>
+<p>安裝 Jupyter notebook 的第二種方式則是透過 anaconda. 先裝完 julia 後下載 anaconda 安裝, 即可快樂使用.</p>
+</li>
 </ol>
-
-<hr />
-
+<ul>
+<li>若還是有不清楚的地方請見 
+<a href="https://medium.com/datainpoint/jupyter-kernels-3151a6408bab" target="_blank" rel="noopener">打造 Jupyter Notebook 資料科學環境</a></li>
+</ul>
+<hr>
 <h2 id="在-atom-中操作-julia">在 Atom 中操作 Julia</h2>
-
 <blockquote>
-<p>如果平常會寫各式程式語言, 可以考慮加安裝 <a href="https://atom.io" target="_blank">atom</a> 編輯器. 它是 github 開發的免費編輯器, 不管 Mac, windows 或是 Linux 都有支援. 我自己有使用 atom 來寫 <code>julia</code>, <code>fortran</code>, <code>html</code> 等.</p>
+<p>如果平常會寫各式程式語言, 可以考慮加安裝 
+<a href="https://atom.io" target="_blank" rel="noopener">atom</a> 編輯器. 它是 github 開發的免費編輯器, 不管 Mac, windows 或是 Linux 都有支援. 我自己有使用 atom 來寫 <code>julia</code>, <code>fortran</code>, <code>html</code> 等.</p>
 </blockquote>
-
 <p>要在 Atom 裡操作 Julia 簡單說就是要裝以下幾個 package:</p>
-
 <ol>
 <li><code>ink</code></li>
 <li><code>julia-client</code></li>
 <li><code>language-julia</code></li>
 <li><code>uber juno</code></li>
 </ol>
-
 <p>然後就可以用了!!</p>
-
 <ul>
-<li><a href="https://www.itread01.com/content/1550260279.html?fbclid=IwAR3bBrHTvjF3Y5TJrZsElriJfO2fbyoM751XMfjLYOE0TLl31JA3LSpe8KQ" target="_blank">在 Atom 中操作 Julia</a></li>
+<li>
+<a href="https://www.itread01.com/content/1550260279.html?fbclid=IwAR3bBrHTvjF3Y5TJrZsElriJfO2fbyoM751XMfjLYOE0TLl31JA3LSpe8KQ" target="_blank" rel="noopener">在 Atom 中操作 Julia</a></li>
 </ul>
-
-<hr />
-
+<hr>
 <h2 id="julia-基本簡介與語法教學">Julia 基本簡介與語法教學</h2>
-
 <ul>
-<li><p><a href="https://en.wikibooks.org/wiki/Introducing_Julia" target="_blank">Julia: wikibook</a></p></li>
-
-<li><p><a href="https://learnxinyminutes.com/docs/julia" target="_blank">Learn X in Y minutes, where X=Julia</a></p></li>
-
-<li><p>Julia Taiwan發起人杜岳華的 slideshare: <a href="https://www.slideshare.net/ssuserd6984b/coscup-introduction-to-julia" target="_blank">Introduction to Julia</a></p></li>
-
-<li><p><a href="https://hackmd.io/@7WeiUEuJSBKp7WCRouAWVg/r106dSpkb/%2FIwZgbAHApgnARgMwLQAYAmKxICxQMZpICGGATEjHtgOwwwrRwCsEQA%3D%3D?type=book" target="_blank">Julia 中文官方文件草稿</a></p></li>
+<li>
+<p>
+<a href="https://en.wikibooks.org/wiki/Introducing_Julia" target="_blank" rel="noopener">Julia: wikibook</a></p>
+</li>
+<li>
+<p>
+<a href="https://learnxinyminutes.com/docs/julia" target="_blank" rel="noopener">Learn X in Y minutes, where X=Julia</a></p>
+</li>
+<li>
+<p>Julia Taiwan發起人杜岳華的 slideshare: 
+<a href="https://www.slideshare.net/ssuserd6984b/coscup-introduction-to-julia" target="_blank" rel="noopener">Introduction to Julia</a></p>
+</li>
+<li>
+<p>
+<a href="https://hackmd.io/@7WeiUEuJSBKp7WCRouAWVg/r106dSpkb/%2FIwZgbAHApgnARgMwLQAYAmKxICxQMZpICGGATEjHtgOwwwrRwCsEQA%3D%3D?type=book" target="_blank" rel="noopener">Julia 中文官方文件草稿</a></p>
+</li>
 </ul>
-
-<hr />
-
+<hr>
 <h2 id="youtube-上的-julia-超新手教學">Youtube 上的 Julia 超新手教學</h2>
-
 <ul>
-<li><p><a href="https://github.com/JuliaLangTW/julia_tutorials_for_dummy" target="_blank">Julia Taiwan 超新手教學之一 on github</a></p></li>
-
-<li><p><a href="https://youtu.be/zzrctueO6JY" target="_blank">Julia Taiwan 超新手教學之二 on Youtube</a></p></li>
-
-<li><p><a href="https://youtu.be/W7R5dxGrxlk" target="_blank">Julia Taiwan 超新手教學之三 on Youtube</a></p></li>
+<li>
+<p>
+<a href="https://github.com/JuliaLangTW/julia_tutorials_for_dummy" target="_blank" rel="noopener">Julia Taiwan 超新手教學之一 on github</a></p>
+</li>
+<li>
+<p>
+<a href="https://youtu.be/zzrctueO6JY" target="_blank" rel="noopener">Julia Taiwan 超新手教學之二 on Youtube</a></p>
+</li>
+<li>
+<p>
+<a href="https://youtu.be/W7R5dxGrxlk" target="_blank" rel="noopener">Julia Taiwan 超新手教學之三 on Youtube</a></p>
+</li>
 </ul>
-
-<hr />
+<hr>
 
     </div>
 
@@ -750,10 +853,11 @@ julia&gt; jupyterlab()
     
   
   
+  
   <div class="media author-card content-widget-hr">
     
       
-      <img class="portrait mr-3" src="/authors/admin/avatar_hua0d4d4b24f4da3a102e4452ac738b95f_109236_250x250_fill_q90_lanczos_center.jpg" alt="Avatar">
+      <img class="avatar mr-3 avatar-circle" src="/authors/admin/avatar_hua0d4d4b24f4da3a102e4452ac738b95f_109236_270x270_fill_q90_lanczos_center.jpg" alt="Avatar">
     
 
     <div class="media-body">
@@ -863,39 +967,29 @@ julia&gt; jupyterlab()
     
     
     
-    <script src="/js/mathjax-config.js"></script>
-    
-
-    
-    
-    
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
 
       
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.3.1/mermaid.min.js" integrity="sha256-vOIuDSYDirTfyr+S2MjFnhOz6Rgiz4ODFAHATG0rFxw=" crossorigin="anonymous" title="mermaid"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.4.4/mermaid.min.js" integrity="sha256-JEqEejGt4tR35L0a1zodzsV0/PJ6GIf7J4yDtywdrH8=" crossorigin="anonymous" title="mermaid"></script>
       
 
       
         
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js" integrity="sha256-1zu+3BnLYV9LdiY85uXMzii3bdrkelyp37e0ZyTAQh0=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js" integrity="sha256-eOgo0OtLL4cdq7RdwRUiGKLX9XsIJ7nGhWEKbohmVAQ=" crossorigin="anonymous"></script>
         
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/languages/r.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/languages/r.min.js"></script>
         
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/languages/julia.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/languages/julia.min.js"></script>
         
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/languages/python.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/languages/python.min.js"></script>
         
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/languages/fortran.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/languages/fortran.min.js"></script>
         
       
 
-      
-      
-      <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
-      
     
 
     
@@ -903,7 +997,12 @@ julia&gt; jupyterlab()
 
     
     
-    <script>hljs.initHighlightingOnLoad();</script>
+    <script>const code_highlighting = true;</script>
+    
+
+    
+    
+    <script>const isSiteThemeDark = false;</script>
     
 
     
@@ -970,7 +1069,7 @@ julia&gt; jupyterlab()
     
     
     
-    <script src="/js/academic.min.d6bd04fdad2ad213aa8111c5a3b72fc5.js"></script>
+    <script src="/js/academic.min.a8d7005002cb4a052fd6d721e83df9ba.js"></script>
 
     
 

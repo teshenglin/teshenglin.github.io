@@ -5,26 +5,26 @@
     <link>https://teshenglin.github.io/authors/w.-f.-hu/</link>
       <atom:link href="https://teshenglin.github.io/authors/w.-f.-hu/index.xml" rel="self" type="application/rss+xml" />
     <description>W.-F. Hu</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 17 Feb 2020 17:59:48 +0800</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 01 Mar 2020 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://teshenglin.github.io/img/icon-192.png</url>
+      <url>https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
       <title>W.-F. Hu</title>
       <link>https://teshenglin.github.io/authors/w.-f.-hu/</link>
     </image>
     
     <item>
-      <title>Fast spectral solver for Poisson equation in an annular domain</title>
-      <link>https://teshenglin.github.io/publication/20_amsa_lhh/</link>
-      <pubDate>Mon, 17 Feb 2020 17:59:48 +0800</pubDate>
-      <guid>https://teshenglin.github.io/publication/20_amsa_lhh/</guid>
+      <title>A direct Poisson solver in spherical geometry with an application to diffusiophoretic problems</title>
+      <link>https://teshenglin.github.io/publication/20_jcp_lhm/</link>
+      <pubDate>Sun, 01 Mar 2020 00:00:00 +0000</pubDate>
+      <guid>https://teshenglin.github.io/publication/20_jcp_lhm/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>A direct Poisson solver in spherical geometry with an application to diffusiophoretic problems</title>
-      <link>https://teshenglin.github.io/publication/20_jcp_lhm/</link>
+      <title>Fast spectral solver for Poisson equation in an annular domain</title>
+      <link>https://teshenglin.github.io/publication/20_amsa_lhh/</link>
       <pubDate>Mon, 17 Feb 2020 00:00:00 +0000</pubDate>
-      <guid>https://teshenglin.github.io/publication/20_jcp_lhm/</guid>
+      <guid>https://teshenglin.github.io/publication/20_amsa_lhh/</guid>
       <description></description>
     </item>
     
