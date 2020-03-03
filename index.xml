@@ -13,6 +13,61 @@
     </image>
     
     <item>
+      <title>Polar curve - Example</title>
+      <link>https://teshenglin.github.io/post/2020_polar_graph_ex1/</link>
+      <pubDate>Tue, 03 Mar 2020 00:00:00 +0000</pubDate>
+      <guid>https://teshenglin.github.io/post/2020_polar_graph_ex1/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;這裡我們要介紹 $r^2=\cos(4\theta)$ 這個方程式的圖形怎麼畫.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;首先, 因為 $r^2 \ge 0$, 所以整個方程式只有在 $\cos 4\theta \ge 0$ 的地方有定義.&lt;/p&gt;
+&lt;p&gt;我們先找離 $\theta=0$ 最近的一段定義域, 也就是
+$$
+-\frac{\pi}{8}\le \theta \le \frac{\pi}{8}.
+$$
+在這範圍內 $\cos(4\theta)\ge 0$ 所以沒問題.&lt;/p&gt;
+&lt;p&gt;接著我們試著把方程式寫成函數的樣子, 改寫成 $r = \pm\sqrt{\cos(4\theta)}$. 當然這樣不是函數, 所以應該是寫成兩個函數
+$$
+r = \sqrt{\cos(4\theta)}, \quad -\frac{\pi}{8}\le \theta \le \frac{\pi}{8},
+$$
+以及
+$$
+r = -\sqrt{\cos(4\theta)}, \quad -\frac{\pi}{8}\le \theta \le \frac{\pi}{8}.
+$$&lt;/p&gt;
+&lt;p&gt;接著把這兩個函數分別畫出來就會得到兩片葉子.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;接著我們找另一段有定義地方:
+$$
+\frac{3\pi}{8}\le \theta \le \frac{5\pi}{8}.
+$$
+照以上一模一樣的步驟可以得到兩個函數
+$$
+r = \sqrt{\cos(4\theta)}, \quad \frac{3\pi}{8}\le \theta \le \frac{5\pi}{8},
+$$
+以及
+$$
+r = -\sqrt{\cos(4\theta)}, \quad \frac{3\pi}{8}\le \theta \le \frac{5\pi}{8}.
+$$&lt;/p&gt;
+&lt;p&gt;把這兩個函數分別畫出來就會得到另外兩片葉子.&lt;/p&gt;
+&lt;hr&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;想要驗證自己畫得對不對可以對照以下圖形&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://teshenglin.github.io/post/figs/r2cos4theta.png&#34; alt=&#34;png&#34;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;這個圖形我有點偷懶是用線上做圖畫的
+
+&lt;a href=&#34;https://www.desmos.com/calculator/oacuvw7j1v&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;polar curve on-line&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;當然, $\cos(4\theta) \ge 0$ 的定義域還有更多區間. 不過再多找一兩個區間會發現, 做出來的圖與以上四片葉子重複了. 所以整個函數圖形就是這四片葉子.&lt;/p&gt;
+&lt;hr&gt;
+</description>
+    </item>
+    
+    <item>
       <title>A direct Poisson solver in spherical geometry with an application to diffusiophoretic problems</title>
       <link>https://teshenglin.github.io/publication/20_jcp_lhm/</link>
       <pubDate>Sun, 01 Mar 2020 00:00:00 +0000</pubDate>
