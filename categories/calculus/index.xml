@@ -5,12 +5,127 @@
     <link>https://teshenglin.github.io/categories/calculus/</link>
       <atom:link href="https://teshenglin.github.io/categories/calculus/index.xml" rel="self" type="application/rss+xml" />
     <description>Calculus</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 06 Mar 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 08 Mar 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
       <title>Calculus</title>
       <link>https://teshenglin.github.io/categories/calculus/</link>
     </image>
+    
+    <item>
+      <title>飛行員應該何時開始下降高度?</title>
+      <link>https://teshenglin.github.io/post/2020_cal_s3p4_ch/</link>
+      <pubDate>Sun, 08 Mar 2020 00:00:00 +0000</pubDate>
+      <guid>https://teshenglin.github.io/post/2020_cal_s3p4_ch/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;Applied Project in Sec.3.4, Calculus by Stewart&lt;br&gt;
+英文版請見 
+&lt;a href=&#34;https://teshenglin.github.io/post/2019_cal_s3p4&#34;&gt;Where should a pilot start descent?&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.stack.imgur.com/ImsaT.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;上圖是一台飛行器的降落軌跡近似圖，它必須滿足以下條件：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;巡航高度為$h$，而飛行器在與著陸地點(同時也是圖中的原點)水平距離為$l$時開始下降&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;在整個下降過程中，飛行員必須維持固定的水平速度$v$&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;鉛直加速度的絕對值不能超過某個常數$k$(和地心引力造成的加速度相比，$k$非常的小)&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;問題壹：&lt;/strong&gt; 請透過加適當條件在「開始下降」和「著陸」這兩個時間點的$P(x)$和$P’(x)$上，來找到一個滿足條件(1.)的三次多項式 $P(x) = ax^3 + bx^2 + cx + d$。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;解：&lt;/strong&gt; \&lt;br&gt;
+在開始下降時:
+$$
+P(\ell) = al^3 +b\ell^2 +c\ell+d = h, \qquad P’(\ell) = 3a\ell^2 +2b\ell+c = 0。
+$$
+至於著陸時:
+$$
+P(0) = 0 \Longrightarrow d = 0, \qquad P’(0)=0 \Longrightarrow c=0。
+$$
+將 $a$, $b$ 的解用 $h$, $l$來表示，我們可以發現
+$$
+P(x) = −\frac{2h}{\ell^3}x^3 + \frac{3h}{\ell^2}x^2。
+$$&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;問題貳：&lt;/strong&gt; 用條件(2.)和(3.)來證明$\frac{6hv^2}{\ell^2}\le k$。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;解：&lt;/strong&gt; \&lt;br&gt;
+由條件(2.)可知，在整個下降過程中，水平速度被假設為定值$v$，因此我們可以把$x$表示為
+$$
+x = \ell - vt, \qquad t\in[0, \frac{\ell}{v}],
+$$
+在這之中，負號代表飛行器是向左飛的。接著多項式$P$能被重新寫成用變數$t$表示的形式
+$$
+P(t) = −\frac{2h}{\ell^3}(\ell - vt)^3 + \frac{3h}{\ell^2}(\ell - vt)^2, \qquad
+\frac{d^2}{dt^2}P(t) = −\frac{12hv^2}{\ell^3}(\ell - vt) + \frac{6hv^2}{\ell^2}。
+$$
+因此，鉛直加速度$a$的值是
+$$
+a(t) = \left|−\frac{12hv^2}{\ell^3}(\ell - vt) + \frac{6hv^2}{\ell^2}\right| = \left|\frac{12hv^3}{\ell^3},t - \frac{6hv^2}{\ell^2}\right|, \qquad t\in[0, \frac{\ell}{v}]。
+$$
+我們能經由極值定理和閉區間法來確認$a$會達到他的最大值$\frac{6hv^2}{\ell^2}$。根據條件(3.)，我們得到
+$$
+\frac{6hv^2}{\ell} \le k。
+$$&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;問題參：&lt;/strong&gt; 假設某航空公司決定不讓飛機的鉛直加速度達到$k = 860(英里/小時^2)$。如果飛機的巡航高度是$35,000$(英尺)且速度是$300$(英里/小時)，飛行員該在距離機場多遠的地方開始下降？&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;解：&lt;/strong&gt; \&lt;br&gt;
+給定$P(x) = −\frac{2h}{\ell^3}x^3 + \frac{3h}{\ell^2}x^2$，假設飛行員在距離機場$\ell$(英里)的地方開始下降。在問題貳當中，我們已經知道 $\frac{6hv^2}{\ell^2}\le k$。所以，
+$$
+v=300\mbox{(mi/h)}, \qquad h=35000\mbox{(ft)} ≈ 6.628\mbox{(mi)}, \qquad k=860\mbox{(mi/h$^2$)},
+$$
+$$
+\frac{6\times 6.628\times (300)^2}{\ell^2} \le 860, \quad \Longrightarrow \quad
+\ell \ge 64.511。
+$$
+也就是說，飛行員應該在距離機場$64.511$(英里)的地方開始下降。&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;問題肆：&lt;/strong&gt; 請繪製近似圖(假設問題參當中的所有條件都被滿足)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;解：&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# Example code in julia&lt;/span&gt;
+&lt;span style=&#34;color:#66d9ef&#34;&gt;using&lt;/span&gt; Plots
+v &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;300&lt;/span&gt;;
+h &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;6.628&lt;/span&gt;;
+l &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;65&lt;/span&gt;;
+N &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;100&lt;/span&gt;;
+dx &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; l&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;N;
+x &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0.0&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;N; x &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; dx&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;x;
+P &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;h&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;l&lt;span style=&#34;color:#f92672&#34;&gt;^&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;)&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;x&lt;span style=&#34;color:#f92672&#34;&gt;.^&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; (&lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;h&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;l&lt;span style=&#34;color:#f92672&#34;&gt;^&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;)&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;x&lt;span style=&#34;color:#f92672&#34;&gt;.^&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;;
+plot(x, P, lw&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;, xlabel &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;x&amp;#34;&lt;/span&gt;, ylabel &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;y&amp;#34;&lt;/span&gt;, title&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;approach path&amp;#34;&lt;/span&gt;, legend&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;false&lt;/span&gt;)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://teshenglin.github.io/post/figs/2019.jpg&#34; &gt;
+
+
+  &lt;img src=&#34;https://teshenglin.github.io/post/figs/2019.jpg&#34; alt=&#34;&#34; width=&#34;400px&#34; &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;hr&gt;
+</description>
+    </item>
     
     <item>
       <title>Limit of a sequence - Example</title>
@@ -542,7 +657,9 @@ $$
       <pubDate>Thu, 21 Nov 2019 00:00:00 +0000</pubDate>
       <guid>https://teshenglin.github.io/post/2019_cal_s3p4/</guid>
       <description>&lt;blockquote&gt;
-&lt;p&gt;Applied Project in Sec.3.4, Calculus by Stewart&lt;/p&gt;
+&lt;p&gt;Applied Project in Sec.3.4, Calculus by Stewart&lt;br&gt;
+Chinese version: 
+&lt;a href=&#34;https://teshenglin.github.io/post/2020_cal_s3p4_ch&#34;&gt;飛行員應該何時開始下降高度?&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;&lt;img src=&#34;https://i.stack.imgur.com/ImsaT.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;p&gt;An approach path for an aircraft landing is shown in the figure and satisfies the following conditions:&lt;/p&gt;
@@ -597,7 +714,7 @@ $$
 \frac{6\times 6.628\times (300)^2}{\ell^2} \le 860, \quad \Longrightarrow \quad
 \ell \ge 64.511.
 $$
-That is, the pilot should start to decend when the plane is $62.511$(mi) away from the airport.&lt;/p&gt;
+That is, the pilot should start to decend when the plane is $64.511$(mi) away from the airport.&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Question 4:&lt;/strong&gt; Graph the approach path if the conditions stated in Problem 3 are satisfied.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
@@ -611,7 +728,34 @@ dx &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; l&lt;span style=&#34
 x &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0.0&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;N; x &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; dx&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;x;
 P &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;h&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;l&lt;span style=&#34;color:#f92672&#34;&gt;^&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;)&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;x&lt;span style=&#34;color:#f92672&#34;&gt;.^&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; (&lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;h&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;l&lt;span style=&#34;color:#f92672&#34;&gt;^&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;)&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;x&lt;span style=&#34;color:#f92672&#34;&gt;.^&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;;
 plot(x, P, lw&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;, xlabel &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;x&amp;#34;&lt;/span&gt;, ylabel &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;y&amp;#34;&lt;/span&gt;, title&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;approach path&amp;#34;&lt;/span&gt;, legend&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;false&lt;/span&gt;)
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://teshenglin.github.io/post/figs/2019.jpg&#34; alt=&#34;jpg&#34;&gt;&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://teshenglin.github.io/post/figs/2019.jpg&#34; &gt;
+
+
+  &lt;img src=&#34;https://teshenglin.github.io/post/figs/2019.jpg&#34; alt=&#34;&#34; width=&#34;400px&#34; &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
 &lt;hr&gt;
 </description>
     </item>
@@ -961,7 +1105,34 @@ $$&lt;/p&gt;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;觀察最後一列數字發現, 當 $h=2.54367*10^{-13}$ 時, 估計出來的微分值與真實值差了 $0.001922$ 這麼多!!&lt;/p&gt;
 &lt;p&gt;我們把它畫出來看看, 橫軸是 $h$, 縱軸是 $\left|\frac{(\pi+h)^2-\pi^2}{h}-2\pi\right|,$ 發現雖然誤差在 $h$ 大的時候遞減, 不過當 $h$ 接近零的時候卻又遞增上去了.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://teshenglin.github.io/post/figs/output_22_0.svg&#34; alt=&#34;svg&#34;&gt;&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://teshenglin.github.io/post/figs/output_22_0.svg&#34; &gt;
+
+
+  &lt;img src=&#34;https://teshenglin.github.io/post/figs/output_22_0.svg&#34; alt=&#34;&#34; width=&#34;400px&#34; &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
 &lt;p&gt;那誤差最小值出現在什麼時候呢?&lt;/p&gt;
 &lt;p&gt;我們發現當 當 $h=5.1 *10^{-8}$ 時, 其估計出來的微分值離真實值誤差最小, 其誤差為 $7.3 *10^{-9}$.&lt;/p&gt;
 &lt;p&gt;不過, WHY?? 為什麼誤差不會一直往下遞減? 其實這也是因為捨入誤差(rounding-error)的關係.&lt;/p&gt;
@@ -1010,9 +1181,63 @@ $$
 很明顯可以看出來當 $x=0$ 的時候分母會等於零, 是一件壞事, 所以把 $x=0$ 這個點先拿掉.&lt;/p&gt;
 &lt;p&gt;比較有趣的是我們可以把這個函數畫出來. 首先我們在 $[-20, 20]$ 這個區間取 $1000$ 個點, 然後帶入上面 $sinc$ 函數的定義, 再把所有點連起來看看.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Remark:&lt;/strong&gt; 有件事需要先說明一下, 由於我們是在 $[-20, 20]$ 這個區間均勻的取偶數個點, 所以會有 $500$ 個正數以及 $500$ 個負數, 重點是保證不會取到 $x=0$ 這個點, 所以沒有問題. 相反的, 如果取奇數個點就一定會取到 $x=0$, 那就會有函數無定義的問題了.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://teshenglin.github.io/post/figs/output_3_0.svg&#34; alt=&#34;svg&#34;&gt;&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://teshenglin.github.io/post/figs/output_3_0.svg&#34; &gt;
+
+
+  &lt;img src=&#34;https://teshenglin.github.io/post/figs/output_3_0.svg&#34; alt=&#34;&#34; width=&#34;400px&#34; &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
 &lt;p&gt;我們很輕易可以看出來, 連起來的線還蠻&amp;quot;光滑&amp;quot;的. 函數值在 $x=0$ 附近似乎不會趨近正無窮大或負無窮大, 也沒有跳躍的現象. 接著我們試著在 $x=0$ 附近放大一點看看, 我們在 $[-0.1, 0.1]$ 這個區間取 $1000$ 個點, 然後帶入 $sinc$ 函數的定義再把它畫出來:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://teshenglin.github.io/post/figs/output_5_0.svg&#34; alt=&#34;svg&#34;&gt;&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://teshenglin.github.io/post/figs/output_5_0.svg&#34; &gt;
+
+
+  &lt;img src=&#34;https://teshenglin.github.io/post/figs/output_5_0.svg&#34; alt=&#34;&#34; width=&#34;400px&#34; &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
 &lt;p&gt;看起來真的很光滑!! 而且似乎當 $x$ 很靠近 $0$ 時, $sinc(x)$ 的值很靠近 $1$.&lt;/p&gt;
 &lt;p&gt;接著我們取一個會越來越靠近 $0$ 的數列, 然後看一下當把 $sinc$ 函數在這個數列的點上取值時, 其值會不會越來越靠近 $1$.  我們取以下數列:&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt; 1.670170079024566e-5

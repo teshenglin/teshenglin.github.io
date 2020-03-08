@@ -243,7 +243,7 @@
     
       <meta property="article:published_time" content="2019-10-27T00:00:00&#43;00:00">
     
-    <meta property="article:modified_time" content="2020-03-02T19:56:58&#43;08:00">
+    <meta property="article:modified_time" content="2020-03-08T17:34:13&#43;08:00">
   
 
   
@@ -272,7 +272,7 @@
   "headline": "用電腦算微分",
   
   "datePublished": "2019-10-27T00:00:00Z",
-  "dateModified": "2020-03-02T19:56:58+08:00",
+  "dateModified": "2020-03-08T17:34:13+08:00",
   
   "author": {
     "@type": "Person",
@@ -555,7 +555,7 @@
           Last updated on
       
     
-    Mar 2, 2020
+    Mar 8, 2020
   </span>
   
 
@@ -669,7 +669,34 @@ $$</p>
 </code></pre>
 <p>觀察最後一列數字發現, 當 $h=2.54367*10^{-13}$ 時, 估計出來的微分值與真實值差了 $0.001922$ 這麼多!!</p>
 <p>我們把它畫出來看看, 橫軸是 $h$, 縱軸是 $\left|\frac{(\pi+h)^2-\pi^2}{h}-2\pi\right|,$ 發現雖然誤差在 $h$ 大的時候遞減, 不過當 $h$ 接近零的時候卻又遞增上去了.</p>
-<p><img src="/post/figs/output_22_0.svg" alt="svg"></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure>
+
+
+  <a data-fancybox="" href="/post/figs/output_22_0.svg" >
+
+
+  <img src="/post/figs/output_22_0.svg" alt="" width="400px" >
+</a>
+
+
+
+</figure>
+
 <p>那誤差最小值出現在什麼時候呢?</p>
 <p>我們發現當 當 $h=5.1 *10^{-8}$ 時, 其估計出來的微分值離真實值誤差最小, 其誤差為 $7.3 *10^{-9}$.</p>
 <p>不過, WHY?? 為什麼誤差不會一直往下遞減? 其實這也是因為捨入誤差(rounding-error)的關係.</p>

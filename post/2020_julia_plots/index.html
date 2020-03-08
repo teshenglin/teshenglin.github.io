@@ -243,7 +243,7 @@
     
       <meta property="article:published_time" content="2020-01-01T00:00:00&#43;00:00">
     
-    <meta property="article:modified_time" content="2020-03-02T19:56:58&#43;08:00">
+    <meta property="article:modified_time" content="2020-03-08T17:34:13&#43;08:00">
   
 
   
@@ -272,7 +272,7 @@
   "headline": "Julia 學習筆記 - 畫圖",
   
   "datePublished": "2020-01-01T00:00:00Z",
-  "dateModified": "2020-03-02T19:56:58+08:00",
+  "dateModified": "2020-03-08T17:34:13+08:00",
   
   "author": {
     "@type": "Person",
@@ -555,7 +555,7 @@
           Last updated on
       
     
-    Mar 2, 2020
+    Mar 8, 2020
   </span>
   
 
@@ -633,7 +633,34 @@
 </ol>
 <p>另外，也可以畫 $e^x$、$arcsin(x)$ 這些基本函數。</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-julia" data-lang="julia">plot(sin, <span style="color:#f92672">-</span>pi, pi, label<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;sine function&#34;</span>)
-</code></pre></div><p><img src="/post/figs/output_5_01.svg" alt="svg"></p>
+</code></pre></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure>
+
+
+  <a data-fancybox="" href="/post/figs/output_5_01.svg" >
+
+
+  <img src="/post/figs/output_5_01.svg" alt="" width="400px" >
+</a>
+
+
+
+</figure>
+
 <h2 id="example-12-基本函數">Example 1.2 基本函數</h2>
 <p>這是一個畫出 $\sin^{-1}(x)$ 的例子，有幾件事需要注意：</p>
 <ol>
@@ -641,7 +668,34 @@
 <li>函數的範圍為 $-1 &lt; x &lt; 1$。</li>
 </ol>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-julia" data-lang="julia">plot(asin, <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">1</span>, label<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;arcsine function&#34;</span>)
-</code></pre></div><p><img src="/post/figs/output_7_0.svg" alt="svg"></p>
+</code></pre></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure>
+
+
+  <a data-fancybox="" href="/post/figs/output_7_0.svg" >
+
+
+  <img src="/post/figs/output_7_0.svg" alt="" width="400px" >
+</a>
+
+
+
+</figure>
+
 <hr>
 <h2 id="example-2">Example 2</h2>
 <p>接著我們看三維圖形的例子。這個例子中我們要畫出三圍中的一條曲線</p>
@@ -689,7 +743,34 @@ plot(x, y, z, marker<span style="color:#f92672">=:</span>circle, legend<span sty
 plot(x,y)
 z <span style="color:#f92672">=</span> rand(<span style="color:#ae81ff">10</span>)
 plot!(x,z)
-</code></pre></div><p><img src="/post/figs/output_15_0.svg" alt="svg"></p>
+</code></pre></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure>
+
+
+  <a data-fancybox="" href="/post/figs/output_15_0.svg" >
+
+
+  <img src="/post/figs/output_15_0.svg" alt="" width="400px" >
+</a>
+
+
+
+</figure>
+
 <hr>
 <h2 id="example-4">Example 4</h2>
 <p>在一個圖形中同時畫出兩個函數，除了上述的方法之外我們還可以這麼做： 直接把兩個函數值定義成一個矩陣</p>
@@ -707,11 +788,65 @@ Line 1 會標記 y 的第一個函數值，Line 2 會標記 y 的第二個函數
 </ol>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-julia" data-lang="julia">x <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span><span style="color:#f92672">:</span><span style="color:#ae81ff">10</span>; y <span style="color:#f92672">=</span> rand(<span style="color:#ae81ff">10</span>,<span style="color:#ae81ff">2</span>);
 plot(x,y,title<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Two Lines&#34;</span>,label<span style="color:#f92672">=</span>[<span style="color:#e6db74">&#34;Line 1&#34;</span> <span style="color:#e6db74">&#34;Line 2&#34;</span>],lw<span style="color:#f92672">=</span><span style="color:#ae81ff">3</span>,xlabel <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;My x label&#34;</span>)
-</code></pre></div><p><img src="/post/figs/output_17_0.svg" alt="svg"></p>
+</code></pre></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure>
+
+
+  <a data-fancybox="" href="/post/figs/output_17_0.svg" >
+
+
+  <img src="/post/figs/output_17_0.svg" alt="" width="400px" >
+</a>
+
+
+
+</figure>
+
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-julia" data-lang="julia">x <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span><span style="color:#f92672">:</span><span style="color:#ae81ff">10</span>; y <span style="color:#f92672">=</span> rand(<span style="color:#ae81ff">10</span>,<span style="color:#ae81ff">2</span>);
 plot(x,y,title<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Two Lines&#34;</span>,label<span style="color:#f92672">=</span>[<span style="color:#e6db74">&#34;Line 1&#34;</span> <span style="color:#e6db74">&#34;Line 2&#34;</span>],lw<span style="color:#f92672">=</span><span style="color:#ae81ff">3</span>)
 xlabel!(<span style="color:#e6db74">&#34;My x label&#34;</span>)
-</code></pre></div><p><img src="/post/figs/output_18_0.svg" alt="svg"></p>
+</code></pre></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure>
+
+
+  <a data-fancybox="" href="/post/figs/output_18_0.svg" >
+
+
+  <img src="/post/figs/output_18_0.svg" alt="" width="400px" >
+</a>
+
+
+
+</figure>
+
 <hr>
 <h2 id="example-5">Example 5</h2>
 <p>如果函數取點的方法不同，能不能畫在同一張圖形中呢？
@@ -726,7 +861,34 @@ p <span style="color:#f92672">=</span> plot(x,y)
 xx <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span><span style="color:#f92672">:</span><span style="color:#ae81ff">19</span>
 z <span style="color:#f92672">=</span> rand(<span style="color:#ae81ff">19</span>)
 plot!(p,xx,z)
-</code></pre></div><p><img src="/post/figs/output_20_0.svg" alt="svg"></p>
+</code></pre></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure>
+
+
+  <a data-fancybox="" href="/post/figs/output_20_0.svg" >
+
+
+  <img src="/post/figs/output_20_0.svg" alt="" width="400px" >
+</a>
+
+
+
+</figure>
+
 <p><strong>NOTE:</strong> 利用 <code>plot(x,y,xx,z)</code> 這樣的指令是行不通的!</p>
 <p><strong>Remark:</strong> 另外，畫圖也可以用 <code>PyPlot</code> 這個 package，有很多有趣的效果可以用。</p>
 <p>更多範例請見 
@@ -743,7 +905,34 @@ plot!(p,xx,z)
 y<span style="color:#f92672">=-</span><span style="color:#ae81ff">1</span><span style="color:#f92672">:</span><span style="color:#ae81ff">0.01</span><span style="color:#f92672">:</span><span style="color:#ae81ff">1</span>;
 h(x,y)<span style="color:#f92672">=</span>exp<span style="color:#f92672">.</span>(<span style="color:#f92672">-</span>(x<span style="color:#f92672">^</span><span style="color:#ae81ff">2</span><span style="color:#f92672">+</span>y<span style="color:#f92672">^</span><span style="color:#ae81ff">2</span>));
 surface(x,y,h)
-</code></pre></div><p><img src="/post/figs/output_23_0.svg" alt="svg"></p>
+</code></pre></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure>
+
+
+  <a data-fancybox="" href="/post/figs/output_23_0.svg" >
+
+
+  <img src="/post/figs/output_23_0.svg" alt="" width="600px" >
+</a>
+
+
+
+</figure>
+
 <hr>
 <h2 id="example-7-動畫">Example 7: 動畫</h2>
 <p>如果要將很多圖片合在一起做成動畫也是可以, 以下這個簡單例子將動畫存成一個 gif 檔.</p>

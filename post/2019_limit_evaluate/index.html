@@ -243,7 +243,7 @@
     
       <meta property="article:published_time" content="2019-10-27T00:00:00&#43;00:00">
     
-    <meta property="article:modified_time" content="2020-02-03T15:01:47&#43;08:00">
+    <meta property="article:modified_time" content="2020-03-08T17:34:13&#43;08:00">
   
 
   
@@ -272,7 +272,7 @@
   "headline": "用電腦算極限",
   
   "datePublished": "2019-10-27T00:00:00Z",
-  "dateModified": "2020-02-03T15:01:47+08:00",
+  "dateModified": "2020-03-08T17:34:13+08:00",
   
   "author": {
     "@type": "Person",
@@ -555,7 +555,7 @@
           Last updated on
       
     
-    Feb 3, 2020
+    Mar 8, 2020
   </span>
   
 
@@ -618,9 +618,63 @@ $$
 很明顯可以看出來當 $x=0$ 的時候分母會等於零, 是一件壞事, 所以把 $x=0$ 這個點先拿掉.</p>
 <p>比較有趣的是我們可以把這個函數畫出來. 首先我們在 $[-20, 20]$ 這個區間取 $1000$ 個點, 然後帶入上面 $sinc$ 函數的定義, 再把所有點連起來看看.</p>
 <p><strong>Remark:</strong> 有件事需要先說明一下, 由於我們是在 $[-20, 20]$ 這個區間均勻的取偶數個點, 所以會有 $500$ 個正數以及 $500$ 個負數, 重點是保證不會取到 $x=0$ 這個點, 所以沒有問題. 相反的, 如果取奇數個點就一定會取到 $x=0$, 那就會有函數無定義的問題了.</p>
-<p><img src="/post/figs/output_3_0.svg" alt="svg"></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure>
+
+
+  <a data-fancybox="" href="/post/figs/output_3_0.svg" >
+
+
+  <img src="/post/figs/output_3_0.svg" alt="" width="400px" >
+</a>
+
+
+
+</figure>
+
 <p>我們很輕易可以看出來, 連起來的線還蠻&quot;光滑&quot;的. 函數值在 $x=0$ 附近似乎不會趨近正無窮大或負無窮大, 也沒有跳躍的現象. 接著我們試著在 $x=0$ 附近放大一點看看, 我們在 $[-0.1, 0.1]$ 這個區間取 $1000$ 個點, 然後帶入 $sinc$ 函數的定義再把它畫出來:</p>
-<p><img src="/post/figs/output_5_0.svg" alt="svg"></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure>
+
+
+  <a data-fancybox="" href="/post/figs/output_5_0.svg" >
+
+
+  <img src="/post/figs/output_5_0.svg" alt="" width="400px" >
+</a>
+
+
+
+</figure>
+
 <p>看起來真的很光滑!! 而且似乎當 $x$ 很靠近 $0$ 時, $sinc(x)$ 的值很靠近 $1$.</p>
 <p>接著我們取一個會越來越靠近 $0$ 的數列, 然後看一下當把 $sinc$ 函數在這個數列的點上取值時, 其值會不會越來越靠近 $1$.  我們取以下數列:</p>
 <pre><code> 1.670170079024566e-5
