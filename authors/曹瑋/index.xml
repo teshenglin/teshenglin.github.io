@@ -111,8 +111,8 @@ P(x)=f(a)+f&amp;rsquo;(a)(x-a)+\frac{1}{2} f&amp;rsquo;&#39;(a)(x-a)^{2}。
 $$&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;解：&lt;/strong&gt; \&lt;/p&gt;
 &lt;p&gt;由條件1可知 $P(a)=A=f(a)\quad\Rightarrow\quad A=f(a)$。&lt;/p&gt;
-&lt;p&gt;由條件1可知 $P&amp;rsquo;(a)=B=f&amp;rsquo;(a)\quad\Rightarrow\quad B=f&amp;rsquo;(a)$。&lt;/p&gt;
-&lt;p&gt;由條件3可知 $PP&amp;rsquo;&#39;(a)=2C=f&amp;rsquo;&#39;(a)\quad\Rightarrow\quad C=\frac{1}{2} f&amp;rsquo;&#39;(a)$。&lt;/p&gt;
+&lt;p&gt;由條件2可知 $P&amp;rsquo;(a)=B=f&amp;rsquo;(a)\quad\Rightarrow\quad B=f&amp;rsquo;(a)$。&lt;/p&gt;
+&lt;p&gt;由條件3可知 $P&amp;rsquo;&#39;(a)=2C=f&amp;rsquo;&#39;(a)\quad\Rightarrow\quad C=\frac{1}{2} f&amp;rsquo;&#39;(a)$。&lt;/p&gt;
 &lt;p&gt;因此
 $$
 P(x)=f(a)+f&amp;rsquo;(a)(x-a)+\frac{1}{2} f&amp;rsquo;&#39;(a)(x-a)^{2}。

@@ -13,6 +13,116 @@
     </image>
     
     <item>
+      <title>罐頭的形狀</title>
+      <link>https://teshenglin.github.io/post/2020_cal_s4p7_ch/</link>
+      <pubDate>Tue, 10 Mar 2020 12:00:00 +0000</pubDate>
+      <guid>https://teshenglin.github.io/post/2020_cal_s4p7_ch/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;Applied Project 1 in Sec.4.7, Calculus by Stewart&lt;br&gt;
+英文版請見 
+&lt;a href=&#34;https://teshenglin.github.io/post/2019_cal_s4p7&#34;&gt;The shape of a can&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;給定一個體積為 $v$ 的圓柱體罐頭，我們想找到一個高 $h$ 和半徑 $r$ ，將製成罐頭的金屬量減到最小。&lt;/p&gt;
+&lt;p&gt;如果我們將製程中金屬的浪費忽略，那麼這個問題就是在找圓柱的最小表面積。計算之後發現這個問題的解是 $h=2r$ ，也就是說，高必須相等於直徑。&lt;/p&gt;
+&lt;p&gt;然而，去超市晃晃會發現一般而言市面上的罐頭的高都大於直徑， $h/r$ 的比例可以從 $2$ 到大約 $3.8$。讓我們來看看是否可以解釋這個現象。&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;img src=&#34;https://media.cheggcdn.com/study/e3e/e3e1a59a-d0be-46e7-8557-07e775d84b81/715030-4.7-1IAP11.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;問題 1:&lt;/strong&gt; 罐頭的原料是從金屬板上切割下來的，它(圓柱)的邊是由彎曲的矩形組成，而這些矩形也是從板上切成且過程中幾乎沒有浪費。&lt;/p&gt;
+&lt;p&gt;然而，如果圓柱上下的圓面是由邊為 $2r$ 的正方形切割的，那麼一定會有大量的金屬浪費，儘管它可以回收再利用，但對罐頭製造商來說是幾乎沒有任何價值的。&lt;/p&gt;
+&lt;p&gt;因此，如果是這樣的話，我們就需要找到一組 $h/r$ 比例來最小化金屬的使用。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;答案:&lt;/strong&gt; \&lt;/p&gt;
+&lt;p&gt;以一個圓柱體罐頭來說，我們已經知道 $v, r$ 和 $h$ 之間的關係：
+$$
+v = r^2\pi h \Longrightarrow h = \frac{v}{r^2\pi}
+$$
+設總共使用的金屬量為 $M$ ，包刮圓柱側面和製作圓柱上下兩圓面的兩個面積為 $4r^2$ 的正方形。接著將 $M$ 寫成 $r$ 的形式：
+$$
+M = 2r\pi h + 2\times 4 r^2 = 2r\pi\left(\frac{v}{r^2\pi}\right) + 8r^2 = \frac{2v}{r} + 8 r^2
+$$
+而我們已知當 $\frac{dM}{dr}=0$ 時，存在最小值：
+$$
+\frac{dM}{dr} = -\frac{2v}{r^2} + 16r=0 \Longrightarrow v = 8r^3
+$$
+所以我們找到了在最小的金屬使用量時：
+$$
+h = \frac{v}{r^2\pi} = \frac{8r}{\pi} \Longrightarrow \frac{h}{r} = \frac{8}{\pi}\approx 2.55
+$$&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;問題 2:&lt;/strong&gt; 若將金屬板劃分為六邊形並從六邊形切下圓形的蓋子和底座，可以更有效地填充圓盤。如果採用這個方法，要找到能讓使用的金屬量最小化的 $h/r$ 的比例。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;答案:&lt;/strong&gt; \&lt;/p&gt;
+&lt;p&gt;同樣設總金屬使用量為 $M$ ，其中包括圓柱側面和兩個製成圓盤(罐頭的蓋子及底座)的六邊形：
+$$
+M = 2r\pi h + 2\left[\frac{1}{2}\left(\frac{2r}{\sqrt{3}}\right)6r\right] = \frac{2v}{r} + 4\sqrt{3} r^2
+$$
+而同樣我們已知當 $\frac{dM}{dr}=0$ 時，存在最小值：
+$$
+\frac{dM}{dr} = -\frac{2v}{r^2} + 8\sqrt{3}r=0 \Longrightarrow v = 4\sqrt{3}r^3
+$$
+所以我們找到了在最小的金屬使用量時：
+$$
+h = \frac{v}{r^2\pi} = \frac{4\sqrt{3}r}{\pi} \Longrightarrow \frac{h}{r} = \frac{4\sqrt{3}}{\pi}\approx 2.21
+$$&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;問題 3:&lt;/strong&gt; 除了罐子本身的金屬材料，我們現在將製程中所需成本包含進去&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;假設大部分的成本發生在黏接邊與邊的地方&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;製作一圓柱罐，首先我們彎曲一矩形並將邊與邊黏接在一起以製成圓柱殼（高度為 $ h $）；接著，將兩個圓盤與圓柱殼黏接（圓盤長度為$2πr$）。 由上可知，黏接成本為 $ k(h+4πr) $， $k$ 為單位面積金屬成本可黏接長度的倒數。&lt;/p&gt;
+&lt;p&gt;同問題二，圓盤由一正六邊形切割而成，所以總成本包括金屬成本和黏接的成本，與$4\sqrt{3}r^2 + 2\pi r h + k(4\pi r + h) $成正比。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;答案：&lt;/strong&gt; \&lt;/p&gt;
+&lt;p&gt;將總成本表示為半徑 $ r$ 的函數，紀錄為$ f$：
+$$
+f( r )  = 4\sqrt{3}r^2 + 2\pi r \left(\frac{v}{r^2\pi}\right) + k\left(4\pi r + \frac{v}{r^2\pi}\right) = 4\sqrt{3}r^2 + \frac{2v}{r} + k\left(4\pi r + \frac{v}{r^2\pi}\right)
+$$
+當 $\frac{df}{dr}$ = 0 時，$f$ 函數產生最小值 :
+$$
+\frac{df}{dr} = 8\sqrt{3}r -\frac{2v}{r^2} + k\left(4\pi - \frac{2v}{r^3\pi}\right) =0 \Longrightarrow 8\sqrt{3}r + 4\pi k = \left(\frac{2}{r^2} + \frac{2k}{r^3\pi}\right)v
+$$
+​由此可知，發生最小值時圓柱體的高度與半徑比為:
+$$
+\frac{h}{r} = \frac{v}{r^3\pi} = \frac{4\sqrt{3}r + 2k\pi}{\pi r + k}
+$$&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;問題 4:&lt;/strong&gt; 當圓柱罐非常大且黏接的成本低時結果會是怎樣呢？反之圓柱罐非常小且黏接的成本高？&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;答案:&lt;/strong&gt;\&lt;/p&gt;
+&lt;p&gt;對固定體積的圓柱體而言&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;當黏接成本低  $0 &amp;lt; k ≪ 1$時，&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;$$
+\frac{h}{r} = \frac{4\sqrt{3}r + 2k\pi}{\pi r + k} \to \frac{4\sqrt{3}}{\pi}\approx 2.21
+$$&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;當黏接成本較高 $ k ≫ 1$ 時，&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;$$
+\frac{h}{r} = \frac{4\sqrt{3}r + 2k\pi}{\pi r + k} \to 2\pi\approx 6.28
+$$&lt;/p&gt;
+&lt;p&gt;如果$ k $為定值，我們先找出體積 $ v $與比值 $h/r$ 的關係。為了書寫方便，我們定義  $R = h/r$ 。接著重新將$ r$表示為 $v$與 $R$ 的函數，
+$$
+r = \sqrt[3]{\frac{v}{\pi R}}
+$$
+經過運算
+$$
+\frac{\sqrt[3]{v}}{k} = \frac{\sqrt[3]{\pi R}(2\pi - R)}{\pi R - 4\sqrt{3}}
+$$&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;當圓柱罐非常大 $v ≫ 1$ 時，右式的分母趨近於 0，&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;$$
+\pi R - 4\sqrt{3} \to 0 \Longrightarrow \frac{h}{r} = R \to \frac{4\sqrt{3}}{\pi}\approx 2.21
+$$&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;當圓柱罐非常較小  $0 &amp;lt; v ≪ 1$ 時，右式分子趨近於 0，
+$$
+2\pi - R \to 0 \Longrightarrow \frac{h}{r} = R \to 2\pi\approx 6.28
+$$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+</description>
+    </item>
+    
+    <item>
       <title>泰勒級數</title>
       <link>https://teshenglin.github.io/post/2020_cal_s3p10_ch/</link>
       <pubDate>Tue, 10 Mar 2020 00:00:00 +0000</pubDate>
@@ -111,8 +221,8 @@ P(x)=f(a)+f&amp;rsquo;(a)(x-a)+\frac{1}{2} f&amp;rsquo;&#39;(a)(x-a)^{2}。
 $$&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;解：&lt;/strong&gt; \&lt;/p&gt;
 &lt;p&gt;由條件1可知 $P(a)=A=f(a)\quad\Rightarrow\quad A=f(a)$。&lt;/p&gt;
-&lt;p&gt;由條件1可知 $P&amp;rsquo;(a)=B=f&amp;rsquo;(a)\quad\Rightarrow\quad B=f&amp;rsquo;(a)$。&lt;/p&gt;
-&lt;p&gt;由條件3可知 $PP&amp;rsquo;&#39;(a)=2C=f&amp;rsquo;&#39;(a)\quad\Rightarrow\quad C=\frac{1}{2} f&amp;rsquo;&#39;(a)$。&lt;/p&gt;
+&lt;p&gt;由條件2可知 $P&amp;rsquo;(a)=B=f&amp;rsquo;(a)\quad\Rightarrow\quad B=f&amp;rsquo;(a)$。&lt;/p&gt;
+&lt;p&gt;由條件3可知 $P&amp;rsquo;&#39;(a)=2C=f&amp;rsquo;&#39;(a)\quad\Rightarrow\quad C=\frac{1}{2} f&amp;rsquo;&#39;(a)$。&lt;/p&gt;
 &lt;p&gt;因此
 $$
 P(x)=f(a)+f&amp;rsquo;(a)(x-a)+\frac{1}{2} f&amp;rsquo;&#39;(a)(x-a)^{2}。
@@ -1072,7 +1182,9 @@ GC pauses:         1
       <pubDate>Wed, 11 Dec 2019 00:00:00 +0000</pubDate>
       <guid>https://teshenglin.github.io/post/2019_cal_s4p7/</guid>
       <description>&lt;blockquote&gt;
-&lt;p&gt;Applied Project 1 in Sec.4.7, Calculus by Stewart&lt;/p&gt;
+&lt;p&gt;Applied Project 1 in Sec.4.7, Calculus by Stewart&lt;br&gt;
+Chinese version: 
+&lt;a href=&#34;https://teshenglin.github.io/post/2020_cal_s4p7_ch&#34;&gt;罐頭的形狀&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;Given a cylindrical can with fixed volume $v$, we want to find the height $h$ and radius $r$ that minimize the cost of metal to make the can.&lt;/p&gt;
 &lt;p&gt;If we disregard any waste metal in the manufacturing process, then the problem is to minimize the surface area of the cylinder. It can be found that the solution of this problem is $h=2r$; this is, the height should be the same as the diameter.&lt;/p&gt;
