@@ -5,12 +5,174 @@
     <link>https://teshenglin.github.io/categories/calculus/</link>
       <atom:link href="https://teshenglin.github.io/categories/calculus/index.xml" rel="self" type="application/rss+xml" />
     <description>Calculus</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 10 Mar 2020 12:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Wed, 11 Mar 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
       <title>Calculus</title>
       <link>https://teshenglin.github.io/categories/calculus/</link>
     </image>
+    
+    <item>
+      <title>Building a better roller coaster</title>
+      <link>https://teshenglin.github.io/post/2020_cal_s3p1/</link>
+      <pubDate>Wed, 11 Mar 2020 00:00:00 +0000</pubDate>
+      <guid>https://teshenglin.github.io/post/2020_cal_s3p1/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;Applied Project in Sec.3.1, Calculus by Stewart&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Suppose you are asked to design the first ascent and drop for a new roller coaster. By studying the photographs of your favorite coasters, you decide to make the slope of the ascent $0.8$ and the slope of the drops $-1.6$. You decide to connect these two straight stretches $y=L_1(x)$ and $y=L_2(x)$ with part of a parabola $y=f(x) = ax^2+bx+c$, where $x$ and $f(x)$ are measured in meters. For the track to be smooth there can&amp;rsquo;t be abrupt changes in direction, so you want the linear segments $L_1$ and $L_2$ to be tangent to the parabola at the points $P$ and $Q$. To simplify the equations, you decide to place the origin at $P$.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://media.cheggcdn.com/media%2Fa1a%2Fa1a173e3-a2b4-46ea-835c-dc7ca2977f57%2FphpNfXwqZ.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Question 1:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;(a) Suppose the horizontal distance between $P$ and $Q$ is 30 m. Write equations in $a$, $b$, and $c$ that will ensure that the track is smooth at the transition points.&lt;/p&gt;
+&lt;p&gt;(b) Solve the equations in part(a) for $a$, $b$, and $c$ to find a formula for $f(x)$.&lt;/p&gt;
+&lt;p&gt;(c) Plot $L_1$, $f$, and $L_2$ to verify graphically that the transitions are smooth.&lt;/p&gt;
+&lt;p&gt;(d) Find the difference in elevation between $P$ and $Q$.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Suppose $P$ is at $(0,0)$, $Q$ is at $(30,y_q)$, then
+$$
+f(0)=c=0, \quad f&amp;rsquo;(0)=b=0.8, \quad f&amp;rsquo;(30)=60a+b=-1.6.
+$$
+After solving the equations, we can get $a=-0.04$, $b=0.8$ and $c=0$.
+So we find out all the cofficients of $f(x)$ and get
+$$
+f(x)=-0.04x^2+0.8x.
+$$
+By using this formula, we can find $y_q=f(30)=-12$, so the difference in elevation between $P$ and $Q$ is $12m$.&lt;/p&gt;
+&lt;p&gt;Below is the graph of these formula:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://teshenglin.github.io/post/figs/2020_cal_s4p1_1.jpg&#34; &gt;
+
+
+  &lt;img src=&#34;https://teshenglin.github.io/post/figs/2020_cal_s4p1_1.jpg&#34; alt=&#34;&#34; width=&#34;600px&#34; &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+As you can see, the transition among $L_1$, $f$, and $L_2$ is smooth.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Question 2:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The solution in Problem 1 might look smooth, but it might not feel smooth because the piecewise defined function (consisting of $L_1(x)$ for $x&amp;lt;0$, $f(x)$ for $0\le x\le 30$, and $L_2(x)$ for $x&amp;gt;30$) doesn&amp;rsquo;t have a continuous second derivative. So you decide to improve the design by using a quadratic function $q(x)=ax^2 + bx + c$ only on the interval $3\le x\le 27$ and connecting it to the linear functions by means of two cubic functions:
+$$
+g(x) = kx^3+lx^2+mx+n, \quad 0\le x&amp;lt;3,
+$$
+$$
+h(x) = px^3 + qx^2 + rx+s, \quad 27&amp;lt;x\le 30.
+$$&lt;/p&gt;
+&lt;p&gt;(a) Write a system of equations in $11$ unknowns that ensure that the functions and their first two derivatives agree at the transition points.&lt;/p&gt;
+&lt;p&gt;(b) Solve the equations in part (a) with a computer algebra system to find formulas for $q(x)$, $g(x)$, and $h(x)$.&lt;/p&gt;
+&lt;p&gt;(c) Plot $L_1$, $g$, $q$, $h$, and $L_2$, and compare with the plot in Problem1(c).&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;We first rewrite the functions as
+$$
+g(x)=kx^3+lx^2+mx+n, \quad 0 \leq x&amp;lt;3,
+$$
+$$
+q(x)=a(x-3)^2+b(x-3)+c, \quad 3 \leq x&amp;lt;27,
+$$
+$$
+h(x)=p(x-30)^3+q(x-30)^2+r(x-30)+s, \quad 27 \leq x&amp;lt;30.
+$$
+According to the article, we can list 11 equations to solve 11 unknown coefficients:
+$$
+g(0)=0,\quad g&amp;rsquo;(0)=0.8,\quad g&amp;rsquo;&#39;(0)=0,
+$$
+$$
+g(3)=q(3),\quad g&amp;rsquo;(3)=q&amp;rsquo;(3),\quad g&amp;rsquo;&#39;(3)=q&amp;rsquo;&#39;(3),
+$$
+$$
+q(27)=h(27),\quad q&amp;rsquo;(27)=h&amp;rsquo;(27),\quad q&amp;rsquo;&#39;(27)=h&amp;rsquo;&#39;(27),
+$$
+$$
+h&amp;rsquo;(30)=-1.6,\quad h&amp;rsquo;&#39;(30)=0.
+$$
+After a couple of complicated calculations, we finally come to the answer:
+$$
+k=-\frac{2}{405},\quad l=0,\quad m=\frac{4}{5},\quad n=0,
+$$
+$$
+a=-\frac{2}{45},\quad b=\frac{2}{3},\quad c=\frac{34}{15},
+$$
+$$
+p=\frac{2}{405},\quad q=0,\quad r=-\frac{8}{5},\quad s=-12.
+$$
+Accordingly, the final formula of the smoother roller coaster is:
+$$
+g(x)=-\frac{2}{405}x^3+\frac{4}{5}x, \quad 0 \leq x&amp;lt;3,
+$$
+$$
+q(x)=-\frac{2}{45}(x-3)^2+\frac{2}{3}(x-3)+\frac{34}{15}, \quad 3 \leq x&amp;lt;27,
+$$
+$$
+h(x)=\frac{2}{405}(x-30)^3-\frac{8}{5}(x-30)-12, \quad 27 \leq x&amp;lt;30.
+$$&lt;/p&gt;
+&lt;p&gt;Below is the graph of the smoother roller coaster:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://teshenglin.github.io/post/figs/2020_cal_s4p1_2.png&#34; &gt;
+
+
+  &lt;img src=&#34;https://teshenglin.github.io/post/figs/2020_cal_s4p1_2.png&#34; alt=&#34;&#34; width=&#34;600px&#34; &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+The red one is the graph of $g(x)$, the blue one is the graph of $q(x)$, and the green one is the graph of $h(x)$.&lt;/p&gt;
+&lt;p&gt;If we observe the graph by our naked eyes, we can barely recognize the difference between the smoother one and the original one. However, if we start to differentiate them:
+$$
+g&amp;rsquo;(0)=\frac{4}{5}=L_1&amp;rsquo;, \quad g&amp;rsquo;&#39;(0)=0=L_1&amp;rsquo;&#39;.
+$$
+Beside the same of the first derivatives of $g$ and $L_1$, the second derivatives of $g$ and $L_1$ are also the same, it means that this roller coaster is smoother than the original one, whose second derivatives of the adjacent formula aren&amp;rsquo;t the same.&lt;/p&gt;
+&lt;p&gt;The rest of the formulas can get the same results:
+$$
+g&amp;rsquo;(3)=\frac{2}{3}=q&amp;rsquo;(3), \quad g&amp;rsquo;&#39;(3)=-\frac{4}{45}=q&amp;rsquo;&#39;(3),
+$$
+$$
+q&amp;rsquo;(27)=-\frac{22}{15}=h&amp;rsquo;(27), \quad q&amp;rsquo;&#39;(27)=-\frac{4}{45}=h&amp;rsquo;&#39;(27),
+$$
+$$
+h&amp;rsquo;(30)=-\frac{8}{5}=L_2&amp;rsquo;, \quad h&amp;rsquo;&#39;(30)=0=L_2&amp;rsquo;&#39;.
+$$&lt;/p&gt;
+&lt;hr&gt;
+</description>
+    </item>
     
     <item>
       <title>罐頭的形狀</title>
