@@ -79,7 +79,7 @@ C_{x_1}=\frac{\int_0^{h}\frac{1}{2}[f(y)]^2dy}{\int_0^{h}f(y)dy}=\frac{1}{2A_1}\
 $$
 For $A_2$,
 $$
-C_{x_2}=\frac{\int_0^{h}\frac{1}{2}k^2-[f(y)]^2dy}{\int_0^{h}k-f(y)dy}=\frac{1}{2A_2}\int_0^{h}k^2-[f(y)]^2dy.
+C_{x_2}=\frac{\int_0^{h}\frac{1}{2}\left(k^2-[f(y)]^2\right)dy}{\int_0^{h}k-f(y)dy}=\frac{1}{2A_2}\int_0^{h}k^2-[f(y)]^2dy.
 $$
 After we knew the centroid of $A_1$ and $A_2$, we can start to calculate the volume of Cup A and Cup B by Pappus&amp;rsquo;s Theorem.&lt;/p&gt;
 &lt;p&gt;Volume of Cup A
@@ -96,7 +96,7 @@ $$
 $$
 Based on the fact that $A_1+A_2 = hk$, one easily obtain
 $$
-k = \frac{2A_2}{h} = \frac{hk - 2A_1}{h}, \implies k = \frac{2A_1}{h},
+k = \frac{2A_2}{h} = \frac{2hk - 2A_1}{h}, \implies k = \frac{2A_1}{h},
 $$
 which are consistent with the results of problem 1 and 2.&lt;/p&gt;
 &lt;hr&gt;
