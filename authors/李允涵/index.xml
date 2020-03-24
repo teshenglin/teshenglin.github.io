@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>李允涵 | Te-Sheng Lin</title>
+    <link>https://teshenglin.github.io/authors/%E6%9D%8E%E5%85%81%E6%B6%B5/</link>
+      <atom:link href="https://teshenglin.github.io/authors/%E6%9D%8E%E5%85%81%E6%B6%B5/index.xml" rel="self" type="application/rss+xml" />
+    <description>李允涵</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 23 Mar 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>李允涵</title>
+      <link>https://teshenglin.github.io/authors/%E6%9D%8E%E5%85%81%E6%B6%B5/</link>
+    </image>
+    
+    <item>
+      <title>飛機和鳥：能量最小化</title>
+      <link>https://teshenglin.github.io/post/2020_cal_s4p7_2_ch/</link>
+      <pubDate>Mon, 23 Mar 2020 00:00:00 +0000</pubDate>
+      <guid>https://teshenglin.github.io/post/2020_cal_s4p7_2_ch/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;Applied Project 2 in Sec.4.7, Calculus by Stewart&lt;br&gt;
+英文版請見 
+&lt;a href=&#34;https://teshenglin.github.io/post/2019_cal_s4p7_2&#34;&gt;Planes and birds: Minimizing energy&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;像雀科這樣的小鳥滑翔時，會在拍打翅膀和保持翅膀折疊之間進行交替。在這裡，我們觀察這種現象並試著找出鳥類拍動翅膀的頻率。而其中的一些原理與固定翼飛機相同，因此我們先依照飛機的速度去考慮其所需的功率及能量。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://media.cheggcdn.com/study/ad0/ad0cd741-aa85-4256-a058-b49a8ef42198/715030-4.7-4IAP21.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;問題 1:&lt;/strong&gt; 在速度為 $v$ 時，推動飛機前進所需的功率為
+$$
+P = Av^3 + \frac{BL^2}{v}
+$$
+其中 $A$ 和 $B$ 是特定飛機的參數，恆為正，$L$ 是升力，即為支撐飛機重量的向上力。 找出使其所需功率最小的速度。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;答案:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;$$
+\frac{d P}{dv} = 3Av^2 - \frac{BL^2}{v^2} = 0 , \Longrightarrow , v_P = \sqrt[4]{\frac{BL^2}{3A}}
+$$&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;問題 2:&lt;/strong&gt;	在問題 1 中找到的速度可將功率降至最低，但較快的速度可能會消耗較少的燃料。推動飛機每單位距離所需的能量為 $E=P/v$， 在什麼速度下能使能量最小？&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;答案:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;$$
+\frac{d E}{dv} = 2Av - \frac{2BL^2}{v^3} = 0 ,\Longrightarrow , v_E = \sqrt[4]{\frac{BL^2}{A}}
+$$&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;問題 3:&lt;/strong&gt; 最小能量的速度比最小功率的速度快多少？&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;答案:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;$$
+\frac{v_E}{v_P} = \sqrt[4]{3}
+$$&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;問題 4:&lt;/strong&gt;  在問題一的方程式應用於鳥類飛行時，我們將 $Av^3$ 分為兩部分：代表鳥類身體的 $A_bv^3$ 和代表翅膀的 $A_wv^3$。設 $x$ 為拍打模式佔飛行時間的部分，如果 $m$ 是鳥的質量且所有升力發生在拍打過程中，那麼升力即為 $mg/x$，因此在拍打過程中所需要的功率是&lt;/p&gt;
+&lt;p&gt;$$
+P_f = (A_b+A_w)v^3 + \frac{B(mg/x)^2}{v}
+$$&lt;/p&gt;
+&lt;p&gt;而折起翅膀時的力量為$P_o=A_bv^3$，試找出整個飛行週期的平均功率。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;答案:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;$$
+P_a = x P_f + (1-x) P_o = A_b v^3 + A_w v^3 x + \frac{B m^2 g^2}{xv}
+$$&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;問題 5:&lt;/strong&gt;  在最小平均功率下$x$的值是多少？ 如果鳥飛得慢，你能得出什麼結論？ 如果這隻鳥飛得越來越快，你能得出什麼結論？&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;答案:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;$$
+\frac{d P_a}{dx} = A_w v^3 - \frac{B m^2 g^2}{x^2v} = 0 , \Longrightarrow , x = \frac{mg}{v^2}\sqrt{\frac{B}{A_w}}
+$$
+可以看出$x$與$v^2$成反比，所以&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;鳥飛的慢,拍翅時間佔總體飛行時間上升&lt;/li&gt;
+&lt;li&gt;鳥飛的快,滑翔時間佔總體飛行時間上升&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;問題 6:&lt;/strong&gt;  一個週期的平均能量為 $E_a=P_a/v$. 試問 $x$ 的值為多少可以使$E_a$最小？&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;答案:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;$$
+\frac{d E}{dx} = A_w v^2 - \frac{B m^2 g^2}{x^2v^2} = 0 , \Longrightarrow , x = \frac{mg}{v^2}\sqrt{\frac{B}{A_w}}
+$$&lt;/p&gt;
+&lt;hr&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

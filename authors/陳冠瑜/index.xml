@@ -5,7 +5,7 @@
     <link>https://teshenglin.github.io/authors/%E9%99%B3%E5%86%A0%E7%91%9C/</link>
       <atom:link href="https://teshenglin.github.io/authors/%E9%99%B3%E5%86%A0%E7%91%9C/index.xml" rel="self" type="application/rss+xml" />
     <description>陳冠瑜</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Wed, 08 Jan 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 23 Mar 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
       <title>陳冠瑜</title>
@@ -13,12 +13,215 @@
     </image>
     
     <item>
+      <title>The Calculus of ranbows</title>
+      <link>https://teshenglin.github.io/post/2020_cal_s4p1/</link>
+      <pubDate>Mon, 23 Mar 2020 00:00:00 +0000</pubDate>
+      <guid>https://teshenglin.github.io/post/2020_cal_s4p1/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;Applied Project in Sec.4.1, Calculus by Stewart&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Rainbows are created when raindrops scatter sunlight. They have fascinated mankind since ancient times and have inspired attempts at scientific explanation since the time of Aristotle. In this project we use the ideas of Descartes and Newton to explain the shape, location, and colors of rainbows.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Question 1:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The figure shows a ray of sunlight entering spherical raindrop at A. Some of the light is reflected, but the line AB shows the path of the part that enters the drop. Notice that the light is refracted toward the normal line AO and in fact Snell&amp;quot;s Law says that $\sin\alpha=k \sin\beta$, where $\alpha$ is the angle of incidence, $\beta$ is the angle of refraction, and $k\approx\frac{4}{3}$ is the index of refraction for water. At B some of the light passes through the drop and is refracted into the air, but the line BC shows the part that is reflected. (The angle of incidence equals the angle of reflection.) When the ray reaches C, part of it is reflected, but for the time being we are more interested in the part that leaves the raindrop at C.(Notice that it is refracted away from the normal line.) The  &lt;em&gt;angle of deviation&lt;/em&gt; $D(\alpha )$ is the amount of clockwise rotation that the ray has undergone during this three-stage process. Thus
+​$$
+D(\alpha ) = (\alpha - \beta ) + (\pi - 2\beta  ) + (\alpha - \beta) = \pi  + 2\alpha  - 4\beta.
+$$&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://teshenglin.github.io/post/figs/2020_cal_s4p1_01.jpg&#34; &gt;
+
+
+  &lt;img src=&#34;https://teshenglin.github.io/post/figs/2020_cal_s4p1_01.jpg&#34; alt=&#34;&#34; width=&#34;300px&#34; &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;Show that the minimum value of deviation is $D(\alpha)\approx 138^{\circ}$; and occurs when $\alpha\approx 59.4^{\circ}$.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Recall Snell&amp;rsquo;s law:
+$$
+\sin\alpha = \frac{4}{3}\sin\beta. \qquad \qquad (1)
+$$
+We teat the angle $\alpha$ as a function of $\beta$ and take derivative with respect to $\alpha$ to Snell&amp;rsquo;s law to obtain
+$$
+\cos\alpha = \frac{4}{3}\cos\beta\frac{d\beta}{d\alpha}.
+$$
+To find the minimum value of $D(\alpha)$, we look for the solution of $D&amp;rsquo;(\alpha)=0$:
+$$
+D&amp;rsquo;(\alpha) = 2 - 4\frac{d\beta}{d\alpha} = 0 \Rightarrow
+\frac{d\beta}{d\alpha} = \frac1 2 = \frac{3\cos\alpha}{4\cos\beta}.
+$$
+We then obtain
+$$
+2\cos\beta = 3\cos\alpha. \qquad \qquad (2)
+$$
+One can solve (1) and (2) to have
+$$
+\cos\alpha = \sqrt\frac{7}{27}, \Rightarrow \alpha = \arccos\sqrt\frac{7}{27} \approx 59.4^\circ
+$$
+So we find the minimal value
+$$
+D(59.4^\circ)\approx138^\circ.
+$$&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;The significance of the minimum deviation is that when $\alpha\approx 59.4^{\circ}$ we have $D&amp;rsquo;(\alpha)\approx 0$, so $\frac{\Delta D}{\Delta \alpha}\approx 0.$ This means that many  rays with $\alpha\approx 59.4^{\circ}$ become deviated by approximately the same amount. It it the &lt;em&gt;concentration&lt;/em&gt; of rays coming from near the direction of minimum deviation that creates the brightness of the primary rainbow. The figure at the left shows that the angle of elevation from the observer up to the highest point on the rainbow is $180^{\circ}- 138^{\circ} = 42^{\circ}$. (This angle is called the &lt;em&gt;rainbow angle&lt;/em&gt; .)&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://teshenglin.github.io/post/figs/2020_cal_s4p1_02.jpg&#34; &gt;
+
+
+  &lt;img src=&#34;https://teshenglin.github.io/post/figs/2020_cal_s4p1_02.jpg&#34; alt=&#34;&#34; width=&#34;300px&#34; &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;&lt;strong&gt;Question 2:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Problem 1 explains the location of the primary rainbow, but how do we explain the colors? Sunlight comprises a range of wavelengths, from the red range through orange, yellow, green, blue, indigo, and violet. As Newton discovered in his prism experiments of 1666, the index of refraction is different for each color, (The effect is called &lt;em&gt;dispersion&lt;/em&gt;.) For red light the refractive index $k \approx 1.3318$,  whereas for violet light it is $k\approx 1.3435$. By repeating the calculation of Problem 1 for these values of $k$, show that the rainbow angle is about $42.3^{\circ}$ for red bow and $40.6^{\circ}$ for the violet bow. So the rainbow really consists of seven individual bows corresponding to the seven colors.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Similar to the approach of problem 1, we first write down the Snell&amp;rsquo;s law
+$$
+\sin\alpha =k\sin\beta. \qquad \qquad (3)
+$$
+We then look for the solution of $D&amp;rsquo;(\alpha)=0$ to obtain
+$$
+2\cos\alpha = k\cos\beta. \qquad \qquad (4)
+$$
+One can solve (3) and (4) to have
+$$
+\cos\alpha = \sqrt{\frac{k^2-1}{3}}, \Rightarrow \alpha = \arccos\sqrt{\frac{k^2-1}{3}}.
+$$&lt;/p&gt;
+&lt;p&gt;For red light: $k\approx 1.3318\Rightarrow \alpha_1\approx 59.473^{\circ}$, the rainbow angle$= \pi - D(\alpha_1)\approx 42.3^{\circ}$.&lt;/p&gt;
+&lt;p&gt;For violet light: $k\approx 1.3435\Rightarrow\alpha_2\approx 58.786^{\circ}$, the rainbow angle $=\pi - D(\alpha_2)\approx 40.6^{\circ}$.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Question 3:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Perhaps you have seen a fainter secondary rainbow above the primary bow. That results from the part of a ray that enters a raindrop and is refracted at A, reflected twice (at B and C), and refracted as it leaves the drop at D (see the figure at the left). This time the deviation angle $D(\alpha)$ is the total amount of counterclockwise rotation that the ray undergoes in this four-stage process.&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://teshenglin.github.io/post/figs/2020_cal_s4p1_03.jpg&#34; &gt;
+
+
+  &lt;img src=&#34;https://teshenglin.github.io/post/figs/2020_cal_s4p1_03.jpg&#34; alt=&#34;&#34; width=&#34;300px&#34; &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;Show that $D(\alpha ) = 2\alpha  - 6\beta  + 2\pi$ and $D(\alpha)$ has a minimum value when $\cos\alpha = \sqrt\frac{k^2-1}{8}$.&lt;/p&gt;
+&lt;p&gt;Taking $k=\frac{4}{3}$, show that the minimum deviation is about $129^{\circ}$ and so the rainbow angle for the secondary rainbow is about $51^{\circ}$, as shown in the figure below.&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://teshenglin.github.io/post/figs/2020_cal_s4p1_04.jpg&#34; &gt;
+
+
+  &lt;img src=&#34;https://teshenglin.github.io/post/figs/2020_cal_s4p1_04.jpg&#34; alt=&#34;&#34; width=&#34;300px&#34; &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Since $D(\alpha ) = 2\alpha  - 6\beta  + 2\pi$, we look for the solution of $D&amp;rsquo;(\alpha)=0$ to obtain
+$$
+3\cos\alpha = k\cos\beta. \qquad \qquad (5)
+$$
+One can solve (3) and (5) to have
+$$
+\cos\alpha = \sqrt{\frac{k^2-1}{8}}, \Rightarrow \alpha = \arccos\sqrt{\frac{k^2-1}{8}}. \qquad \qquad (6)
+$$&lt;/p&gt;
+&lt;p&gt;For $k=\frac43\Rightarrow \alpha\approx 71.849^{\circ}\Rightarrow D(\alpha)\approx231^{\circ}$.&lt;/p&gt;
+&lt;p&gt;The minimum deviation: $2\pi-D(\alpha)=129^{\circ}.$&lt;/p&gt;
+&lt;p&gt;The rainbow angle: $\pi-( 2\pi-D(\alpha)) =51^{\circ}.$&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Question 4:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Show that the colors in the secondary rainbow appear in the opposite order from those in the primary rainbow.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Based on (6) we find, for red light: $k\approx 1.3318\Rightarrow \alpha_1\approx 71.906^{\circ}$, the rainbow angle: $D(\alpha_1)-\pi\approx 50.6^{\circ}.$&lt;/p&gt;
+&lt;p&gt;For violet light: $k\approx 1.3435\Rightarrow\alpha_2\approx 71.505^{\circ}$, the rainbow angle: $D(\alpha_2)-\pi\approx 53.6^{\circ}.$&lt;/p&gt;
+&lt;p&gt;Therefore, the primary rainbow is lower than the secondary rainbow, and the colors in the secondary rainbow appear the opposite order from those in the primary rainbow.&lt;/p&gt;
+&lt;hr&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Planes and birds: Minimizing energy</title>
       <link>https://teshenglin.github.io/post/2019_cal_s4p7_2/</link>
       <pubDate>Wed, 08 Jan 2020 00:00:00 +0000</pubDate>
       <guid>https://teshenglin.github.io/post/2019_cal_s4p7_2/</guid>
       <description>&lt;blockquote&gt;
-&lt;p&gt;Applied Project 2 in Sec.4.7, Calculus by Stewart&lt;/p&gt;
+&lt;p&gt;Applied Project 2 in Sec.4.7, Calculus by Stewart&lt;br&gt;
+Chinese version: 
+&lt;a href=&#34;https://teshenglin.github.io/post/2020_cal_s4p7_2_ch&#34;&gt;飛機和鳥：能量最小化&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;Small birds like finches alternate between flapping their wings and keeping them folded while gliding. In this project we analyze this phenomenon and try to determine how frequently a bird should flap its wings. Some of the principles are the same as for fixed-wing aircraft and so we begin by considering how required power and energy depend on the speed of airplanes.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://media.cheggcdn.com/study/ad0/ad0cd741-aa85-4256-a058-b49a8ef42198/715030-4.7-4IAP21.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;

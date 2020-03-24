@@ -13,6 +13,272 @@
     </image>
     
     <item>
+      <title>The Calculus of ranbows</title>
+      <link>https://teshenglin.github.io/post/2020_cal_s4p1/</link>
+      <pubDate>Mon, 23 Mar 2020 00:00:00 +0000</pubDate>
+      <guid>https://teshenglin.github.io/post/2020_cal_s4p1/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;Applied Project in Sec.4.1, Calculus by Stewart&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Rainbows are created when raindrops scatter sunlight. They have fascinated mankind since ancient times and have inspired attempts at scientific explanation since the time of Aristotle. In this project we use the ideas of Descartes and Newton to explain the shape, location, and colors of rainbows.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Question 1:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The figure shows a ray of sunlight entering spherical raindrop at A. Some of the light is reflected, but the line AB shows the path of the part that enters the drop. Notice that the light is refracted toward the normal line AO and in fact Snell&amp;quot;s Law says that $\sin\alpha=k \sin\beta$, where $\alpha$ is the angle of incidence, $\beta$ is the angle of refraction, and $k\approx\frac{4}{3}$ is the index of refraction for water. At B some of the light passes through the drop and is refracted into the air, but the line BC shows the part that is reflected. (The angle of incidence equals the angle of reflection.) When the ray reaches C, part of it is reflected, but for the time being we are more interested in the part that leaves the raindrop at C.(Notice that it is refracted away from the normal line.) The  &lt;em&gt;angle of deviation&lt;/em&gt; $D(\alpha )$ is the amount of clockwise rotation that the ray has undergone during this three-stage process. Thus
+​$$
+D(\alpha ) = (\alpha - \beta ) + (\pi - 2\beta  ) + (\alpha - \beta) = \pi  + 2\alpha  - 4\beta.
+$$&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://teshenglin.github.io/post/figs/2020_cal_s4p1_01.jpg&#34; &gt;
+
+
+  &lt;img src=&#34;https://teshenglin.github.io/post/figs/2020_cal_s4p1_01.jpg&#34; alt=&#34;&#34; width=&#34;300px&#34; &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;Show that the minimum value of deviation is $D(\alpha)\approx 138^{\circ}$; and occurs when $\alpha\approx 59.4^{\circ}$.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Recall Snell&amp;rsquo;s law:
+$$
+\sin\alpha = \frac{4}{3}\sin\beta. \qquad \qquad (1)
+$$
+We teat the angle $\alpha$ as a function of $\beta$ and take derivative with respect to $\alpha$ to Snell&amp;rsquo;s law to obtain
+$$
+\cos\alpha = \frac{4}{3}\cos\beta\frac{d\beta}{d\alpha}.
+$$
+To find the minimum value of $D(\alpha)$, we look for the solution of $D&amp;rsquo;(\alpha)=0$:
+$$
+D&amp;rsquo;(\alpha) = 2 - 4\frac{d\beta}{d\alpha} = 0 \Rightarrow
+\frac{d\beta}{d\alpha} = \frac1 2 = \frac{3\cos\alpha}{4\cos\beta}.
+$$
+We then obtain
+$$
+2\cos\beta = 3\cos\alpha. \qquad \qquad (2)
+$$
+One can solve (1) and (2) to have
+$$
+\cos\alpha = \sqrt\frac{7}{27}, \Rightarrow \alpha = \arccos\sqrt\frac{7}{27} \approx 59.4^\circ
+$$
+So we find the minimal value
+$$
+D(59.4^\circ)\approx138^\circ.
+$$&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;The significance of the minimum deviation is that when $\alpha\approx 59.4^{\circ}$ we have $D&amp;rsquo;(\alpha)\approx 0$, so $\frac{\Delta D}{\Delta \alpha}\approx 0.$ This means that many  rays with $\alpha\approx 59.4^{\circ}$ become deviated by approximately the same amount. It it the &lt;em&gt;concentration&lt;/em&gt; of rays coming from near the direction of minimum deviation that creates the brightness of the primary rainbow. The figure at the left shows that the angle of elevation from the observer up to the highest point on the rainbow is $180^{\circ}- 138^{\circ} = 42^{\circ}$. (This angle is called the &lt;em&gt;rainbow angle&lt;/em&gt; .)&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://teshenglin.github.io/post/figs/2020_cal_s4p1_02.jpg&#34; &gt;
+
+
+  &lt;img src=&#34;https://teshenglin.github.io/post/figs/2020_cal_s4p1_02.jpg&#34; alt=&#34;&#34; width=&#34;300px&#34; &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;&lt;strong&gt;Question 2:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Problem 1 explains the location of the primary rainbow, but how do we explain the colors? Sunlight comprises a range of wavelengths, from the red range through orange, yellow, green, blue, indigo, and violet. As Newton discovered in his prism experiments of 1666, the index of refraction is different for each color, (The effect is called &lt;em&gt;dispersion&lt;/em&gt;.) For red light the refractive index $k \approx 1.3318$,  whereas for violet light it is $k\approx 1.3435$. By repeating the calculation of Problem 1 for these values of $k$, show that the rainbow angle is about $42.3^{\circ}$ for red bow and $40.6^{\circ}$ for the violet bow. So the rainbow really consists of seven individual bows corresponding to the seven colors.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Similar to the approach of problem 1, we first write down the Snell&amp;rsquo;s law
+$$
+\sin\alpha =k\sin\beta. \qquad \qquad (3)
+$$
+We then look for the solution of $D&amp;rsquo;(\alpha)=0$ to obtain
+$$
+2\cos\alpha = k\cos\beta. \qquad \qquad (4)
+$$
+One can solve (3) and (4) to have
+$$
+\cos\alpha = \sqrt{\frac{k^2-1}{3}}, \Rightarrow \alpha = \arccos\sqrt{\frac{k^2-1}{3}}.
+$$&lt;/p&gt;
+&lt;p&gt;For red light: $k\approx 1.3318\Rightarrow \alpha_1\approx 59.473^{\circ}$, the rainbow angle$= \pi - D(\alpha_1)\approx 42.3^{\circ}$.&lt;/p&gt;
+&lt;p&gt;For violet light: $k\approx 1.3435\Rightarrow\alpha_2\approx 58.786^{\circ}$, the rainbow angle $=\pi - D(\alpha_2)\approx 40.6^{\circ}$.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Question 3:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Perhaps you have seen a fainter secondary rainbow above the primary bow. That results from the part of a ray that enters a raindrop and is refracted at A, reflected twice (at B and C), and refracted as it leaves the drop at D (see the figure at the left). This time the deviation angle $D(\alpha)$ is the total amount of counterclockwise rotation that the ray undergoes in this four-stage process.&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://teshenglin.github.io/post/figs/2020_cal_s4p1_03.jpg&#34; &gt;
+
+
+  &lt;img src=&#34;https://teshenglin.github.io/post/figs/2020_cal_s4p1_03.jpg&#34; alt=&#34;&#34; width=&#34;300px&#34; &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;Show that $D(\alpha ) = 2\alpha  - 6\beta  + 2\pi$ and $D(\alpha)$ has a minimum value when $\cos\alpha = \sqrt\frac{k^2-1}{8}$.&lt;/p&gt;
+&lt;p&gt;Taking $k=\frac{4}{3}$, show that the minimum deviation is about $129^{\circ}$ and so the rainbow angle for the secondary rainbow is about $51^{\circ}$, as shown in the figure below.&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://teshenglin.github.io/post/figs/2020_cal_s4p1_04.jpg&#34; &gt;
+
+
+  &lt;img src=&#34;https://teshenglin.github.io/post/figs/2020_cal_s4p1_04.jpg&#34; alt=&#34;&#34; width=&#34;300px&#34; &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Since $D(\alpha ) = 2\alpha  - 6\beta  + 2\pi$, we look for the solution of $D&amp;rsquo;(\alpha)=0$ to obtain
+$$
+3\cos\alpha = k\cos\beta. \qquad \qquad (5)
+$$
+One can solve (3) and (5) to have
+$$
+\cos\alpha = \sqrt{\frac{k^2-1}{8}}, \Rightarrow \alpha = \arccos\sqrt{\frac{k^2-1}{8}}. \qquad \qquad (6)
+$$&lt;/p&gt;
+&lt;p&gt;For $k=\frac43\Rightarrow \alpha\approx 71.849^{\circ}\Rightarrow D(\alpha)\approx231^{\circ}$.&lt;/p&gt;
+&lt;p&gt;The minimum deviation: $2\pi-D(\alpha)=129^{\circ}.$&lt;/p&gt;
+&lt;p&gt;The rainbow angle: $\pi-( 2\pi-D(\alpha)) =51^{\circ}.$&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Question 4:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Show that the colors in the secondary rainbow appear in the opposite order from those in the primary rainbow.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Based on (6) we find, for red light: $k\approx 1.3318\Rightarrow \alpha_1\approx 71.906^{\circ}$, the rainbow angle: $D(\alpha_1)-\pi\approx 50.6^{\circ}.$&lt;/p&gt;
+&lt;p&gt;For violet light: $k\approx 1.3435\Rightarrow\alpha_2\approx 71.505^{\circ}$, the rainbow angle: $D(\alpha_2)-\pi\approx 53.6^{\circ}.$&lt;/p&gt;
+&lt;p&gt;Therefore, the primary rainbow is lower than the secondary rainbow, and the colors in the secondary rainbow appear the opposite order from those in the primary rainbow.&lt;/p&gt;
+&lt;hr&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>飛機和鳥：能量最小化</title>
+      <link>https://teshenglin.github.io/post/2020_cal_s4p7_2_ch/</link>
+      <pubDate>Mon, 23 Mar 2020 00:00:00 +0000</pubDate>
+      <guid>https://teshenglin.github.io/post/2020_cal_s4p7_2_ch/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;Applied Project 2 in Sec.4.7, Calculus by Stewart&lt;br&gt;
+英文版請見 
+&lt;a href=&#34;https://teshenglin.github.io/post/2019_cal_s4p7_2&#34;&gt;Planes and birds: Minimizing energy&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;像雀科這樣的小鳥滑翔時，會在拍打翅膀和保持翅膀折疊之間進行交替。在這裡，我們觀察這種現象並試著找出鳥類拍動翅膀的頻率。而其中的一些原理與固定翼飛機相同，因此我們先依照飛機的速度去考慮其所需的功率及能量。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://media.cheggcdn.com/study/ad0/ad0cd741-aa85-4256-a058-b49a8ef42198/715030-4.7-4IAP21.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;問題 1:&lt;/strong&gt; 在速度為 $v$ 時，推動飛機前進所需的功率為
+$$
+P = Av^3 + \frac{BL^2}{v}
+$$
+其中 $A$ 和 $B$ 是特定飛機的參數，恆為正，$L$ 是升力，即為支撐飛機重量的向上力。 找出使其所需功率最小的速度。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;答案:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;$$
+\frac{d P}{dv} = 3Av^2 - \frac{BL^2}{v^2} = 0 , \Longrightarrow , v_P = \sqrt[4]{\frac{BL^2}{3A}}
+$$&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;問題 2:&lt;/strong&gt;	在問題 1 中找到的速度可將功率降至最低，但較快的速度可能會消耗較少的燃料。推動飛機每單位距離所需的能量為 $E=P/v$， 在什麼速度下能使能量最小？&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;答案:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;$$
+\frac{d E}{dv} = 2Av - \frac{2BL^2}{v^3} = 0 ,\Longrightarrow , v_E = \sqrt[4]{\frac{BL^2}{A}}
+$$&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;問題 3:&lt;/strong&gt; 最小能量的速度比最小功率的速度快多少？&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;答案:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;$$
+\frac{v_E}{v_P} = \sqrt[4]{3}
+$$&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;問題 4:&lt;/strong&gt;  在問題一的方程式應用於鳥類飛行時，我們將 $Av^3$ 分為兩部分：代表鳥類身體的 $A_bv^3$ 和代表翅膀的 $A_wv^3$。設 $x$ 為拍打模式佔飛行時間的部分，如果 $m$ 是鳥的質量且所有升力發生在拍打過程中，那麼升力即為 $mg/x$，因此在拍打過程中所需要的功率是&lt;/p&gt;
+&lt;p&gt;$$
+P_f = (A_b+A_w)v^3 + \frac{B(mg/x)^2}{v}
+$$&lt;/p&gt;
+&lt;p&gt;而折起翅膀時的力量為$P_o=A_bv^3$，試找出整個飛行週期的平均功率。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;答案:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;$$
+P_a = x P_f + (1-x) P_o = A_b v^3 + A_w v^3 x + \frac{B m^2 g^2}{xv}
+$$&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;問題 5:&lt;/strong&gt;  在最小平均功率下$x$的值是多少？ 如果鳥飛得慢，你能得出什麼結論？ 如果這隻鳥飛得越來越快，你能得出什麼結論？&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;答案:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;$$
+\frac{d P_a}{dx} = A_w v^3 - \frac{B m^2 g^2}{x^2v} = 0 , \Longrightarrow , x = \frac{mg}{v^2}\sqrt{\frac{B}{A_w}}
+$$
+可以看出$x$與$v^2$成反比，所以&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;鳥飛的慢,拍翅時間佔總體飛行時間上升&lt;/li&gt;
+&lt;li&gt;鳥飛的快,滑翔時間佔總體飛行時間上升&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;問題 6:&lt;/strong&gt;  一個週期的平均能量為 $E_a=P_a/v$. 試問 $x$ 的值為多少可以使$E_a$最小？&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;答案:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;$$
+\frac{d E}{dx} = A_w v^2 - \frac{B m^2 g^2}{x^2v^2} = 0 , \Longrightarrow , x = \frac{mg}{v^2}\sqrt{\frac{B}{A_w}}
+$$&lt;/p&gt;
+&lt;hr&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Complementary Coffee Cups</title>
       <link>https://teshenglin.github.io/post/2020_cal_s8p3/</link>
       <pubDate>Wed, 18 Mar 2020 00:00:00 +0000</pubDate>
@@ -568,7 +834,7 @@ $$
 $$&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;問題 4:&lt;/strong&gt; 當圓柱罐非常大且黏接的成本低時結果會是怎樣呢？反之圓柱罐非常小且黏接的成本高？&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;答案:&lt;/strong&gt;\&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;答案:&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;對固定體積的圓柱體而言&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;當黏接成本低  $0 &amp;lt; k ≪ 1$時，&lt;/li&gt;
@@ -1077,7 +1343,9 @@ $$&lt;/p&gt;
       <pubDate>Wed, 08 Jan 2020 00:00:00 +0000</pubDate>
       <guid>https://teshenglin.github.io/post/2019_cal_s4p7_2/</guid>
       <description>&lt;blockquote&gt;
-&lt;p&gt;Applied Project 2 in Sec.4.7, Calculus by Stewart&lt;/p&gt;
+&lt;p&gt;Applied Project 2 in Sec.4.7, Calculus by Stewart&lt;br&gt;
+Chinese version: 
+&lt;a href=&#34;https://teshenglin.github.io/post/2020_cal_s4p7_2_ch&#34;&gt;飛機和鳥：能量最小化&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;Small birds like finches alternate between flapping their wings and keeping them folded while gliding. In this project we analyze this phenomenon and try to determine how frequently a bird should flap its wings. Some of the principles are the same as for fixed-wing aircraft and so we begin by considering how required power and energy depend on the speed of airplanes.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://media.cheggcdn.com/study/ad0/ad0cd741-aa85-4256-a058-b49a8ef42198/715030-4.7-4IAP21.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
