@@ -13,7 +13,7 @@
     </image>
     
     <item>
-      <title>The Calculus of ranbows</title>
+      <title>Sec.4.1 - The Calculus of ranbows</title>
       <link>https://teshenglin.github.io/post/2020_cal_s4p1/</link>
       <pubDate>Mon, 23 Mar 2020 00:00:00 +0000</pubDate>
       <guid>https://teshenglin.github.io/post/2020_cal_s4p1/</guid>
@@ -214,7 +214,7 @@ $$&lt;/p&gt;
     </item>
     
     <item>
-      <title>飛機和鳥：能量最小化</title>
+      <title>Sec.4.7 - 飛機和鳥：能量最小化</title>
       <link>https://teshenglin.github.io/post/2020_cal_s4p7_2_ch/</link>
       <pubDate>Mon, 23 Mar 2020 00:00:00 +0000</pubDate>
       <guid>https://teshenglin.github.io/post/2020_cal_s4p7_2_ch/</guid>
@@ -279,103 +279,7 @@ $$&lt;/p&gt;
     </item>
     
     <item>
-      <title>Complementary Coffee Cups</title>
-      <link>https://teshenglin.github.io/post/2020_cal_s8p3/</link>
-      <pubDate>Wed, 18 Mar 2020 00:00:00 +0000</pubDate>
-      <guid>https://teshenglin.github.io/post/2020_cal_s8p3/</guid>
-      <description>&lt;blockquote&gt;
-&lt;p&gt;Applied Project in Sec.8.3, Calculus by Stewart&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;Suppose you have a choice of two coffee cups of the type shown, one that bends outward and one inward, and you notice that they have the same height and their shapes fit together snugly. You wonder which cup holds more coffee. Of corse you could fill one cup with water and pour it into the other one but, being a calculus student, you decide on a more mathematical approach. Ignoring the handles, you observe that both cups are surfaces of revolution, so you can think of the coffee as a volume of revolution.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://media.cheggcdn.com/media%2Ff10%2Ff10af759-2600-468a-af6c-20a3854ee028%2FphpbqXd4u.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Question 1:&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Suppose the cups have height $h$, cup A is formed by rotating the curve $x=f(y)$ about the $y$-axis, and cup B is formed by rotating the same curve about the $x=k$. Find the value of $k$ such that two cups hold the same amount of coffee.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Volume of Cup A
-$$
-\int_0^{h}\pi[f(y)]^2dy.
-$$
-Volume of Cup B
-$$
-\int_0^{h}\pi[k-f(y)]^2dy.
-$$
-Let $V_A=V_B$, after some calculation we obtain
-$$
-\int_0^{h}k^2dy=\int_0^{h}2kf(y)dy.
-$$
-So finally we have $k$ as
-$$
-k=\frac{2\int_0^{h}f(y)dy}{h}.
-$$&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Question 2:&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;What does your result from Problem 1 say about the areas $A_1$ and $A_2$ shown in the figure?&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;We can see that $A_1+A_2$ is a rectangle, so $A_1+A_2=hk$.&lt;/p&gt;
-&lt;p&gt;From answer of Question 1 we knew that
-$$
-hk=2\int_0^{h}f(y)dy\implies{A_1+A_2}=2\int_0^{h}f(y)dy.
-$$
-Besides, we also have
-$$
-A_1=\int_0^{h}f(y)dy.
-$$
-Therefore we get
-$$
-A_1+A_2=2\int_0^{h}f(y)dy=2A_1\implies{A_1=A_2}.
-$$
-That is, when Cup A&amp;rsquo;s volume equals Cup B&amp;rsquo;s, the area of $A_1$ is the same as $A_2$.&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Question 3:&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Use Pappus&amp;rsquo;s Theorem to explain your result in Problem 1 and 2.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Pappus&amp;rsquo;s Theorem&lt;/strong&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Let $R$ be a plane region that lies entirely on one side of a line $l$ in the plane. If $R$ is rotated about $l$, then the volume of the resulting solid is the product of the area $A$ of $R$ and the distance $d$ travled by the centroid of $R$.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;To use the theorem, we should first find out the centroid of $A_1$ and $A_2$.&lt;/p&gt;
-&lt;p&gt;For arbitrary plane region, the centroid (the center of mass) are located at the point $(C_x,C_y)$, where
-$$
-C_x=\frac{\int_a^{b}xf(x)dx}{\int_a^{b}f(x)dx};C_y=\frac{\int_a^{b}\frac{1}{2}[f(x)]^2dx}{\int_a^{b}f(x)dx}.
-$$
-Since the cups are rotating about axis parallel to $y$-axis, we require only $C_x$. For $A_1$,
-$$
-C_{x_1}=\frac{\int_0^{h}\frac{1}{2}[f(y)]^2dy}{\int_0^{h}f(y)dy}=\frac{1}{2A_1}\int_0^{h}[f(y)]^2dy.
-$$
-For $A_2$,
-$$
-C_{x_2}=\frac{\int_0^{h}\frac{1}{2}\left(k^2-[f(y)]^2\right)dy}{\int_0^{h}k-f(y)dy}=\frac{1}{2A_2}\int_0^{h}k^2-[f(y)]^2dy.
-$$
-After we knew the centroid of $A_1$ and $A_2$, we can start to calculate the volume of Cup A and Cup B by Pappus&amp;rsquo;s Theorem.&lt;/p&gt;
-&lt;p&gt;Volume of Cup A
-$$
-2\pi{C_{x_1}}{A_1}=\pi\int_0^{h}[f(y)]^2dy.
-$$
-Volume of Cup B
-$$
-2\pi(k-C_{x_2})A_2=2\pi k A_2 - \pi k^2 h + \pi \int_0^{h}[f(y)]^2dy.
-$$
-So if we want to have the two volumes being the same, we should have
-$$
-2\pi k A_2 - \pi k^2 h=0, \implies k = \frac{2A_2}{h}.
-$$
-Based on the fact that $A_1+A_2 = hk$, one easily obtain
-$$
-k = \frac{2A_2}{h} = \frac{2hk - 2A_1}{h}, \implies k = \frac{2A_1}{h},
-$$
-which are consistent with the results of problem 1 and 2.&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Question 4:&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Based on your own measurements and observation, suggest a value for $h$ and an equation for $x=f(y)$ and calculus the amount of coffee that each cup holds.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;To be finished.&lt;/p&gt;
-&lt;hr&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Taylor polynomials</title>
+      <title>Sec.3.10 - Taylor polynomials</title>
       <link>https://teshenglin.github.io/post/2020_cal_s3p10/</link>
       <pubDate>Wed, 18 Mar 2020 00:00:00 +0000</pubDate>
       <guid>https://teshenglin.github.io/post/2020_cal_s3p10/</guid>
@@ -601,7 +505,111 @@ $$&lt;/p&gt;
     </item>
     
     <item>
-      <title>Building a better roller coaster</title>
+      <title>Sec.8.3 - Complementary Coffee Cups</title>
+      <link>https://teshenglin.github.io/post/2020_cal_s8p3/</link>
+      <pubDate>Wed, 18 Mar 2020 00:00:00 +0000</pubDate>
+      <guid>https://teshenglin.github.io/post/2020_cal_s8p3/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;Applied Project in Sec.8.3, Calculus by Stewart&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Suppose you have a choice of two coffee cups of the type shown, one that bends outward and one inward, and you notice that they have the same height and their shapes fit together snugly. You wonder which cup holds more coffee. Of corse you could fill one cup with water and pour it into the other one but, being a calculus student, you decide on a more mathematical approach. Ignoring the handles, you observe that both cups are surfaces of revolution, so you can think of the coffee as a volume of revolution.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://media.cheggcdn.com/media%2Ff10%2Ff10af759-2600-468a-af6c-20a3854ee028%2FphpbqXd4u.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Question 1:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Suppose the cups have height $h$, cup A is formed by rotating the curve $x=f(y)$ about the $y$-axis, and cup B is formed by rotating the same curve about the $x=k$. Find the value of $k$ such that two cups hold the same amount of coffee.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Volume of Cup A
+$$
+\int_0^{h}\pi[f(y)]^2dy.
+$$
+Volume of Cup B
+$$
+\int_0^{h}\pi[k-f(y)]^2dy.
+$$
+Let $V_A=V_B$, after some calculation we obtain
+$$
+\int_0^{h}k^2dy=\int_0^{h}2kf(y)dy.
+$$
+So finally we have $k$ as
+$$
+k=\frac{2\int_0^{h}f(y)dy}{h}.
+$$&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Question 2:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;What does your result from Problem 1 say about the areas $A_1$ and $A_2$ shown in the figure?&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;We can see that $A_1+A_2$ is a rectangle, so $A_1+A_2=hk$.&lt;/p&gt;
+&lt;p&gt;From answer of Question 1 we knew that
+$$
+hk=2\int_0^{h}f(y)dy\implies{A_1+A_2}=2\int_0^{h}f(y)dy.
+$$
+Besides, we also have
+$$
+A_1=\int_0^{h}f(y)dy.
+$$
+Therefore we get
+$$
+A_1+A_2=2\int_0^{h}f(y)dy=2A_1\implies{A_1=A_2}.
+$$
+That is, when Cup A&amp;rsquo;s volume equals Cup B&amp;rsquo;s, the area of $A_1$ is the same as $A_2$.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Question 3:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Use Pappus&amp;rsquo;s Theorem to explain your result in Problem 1 and 2.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Pappus&amp;rsquo;s Theorem&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Let $R$ be a plane region that lies entirely on one side of a line $l$ in the plane. If $R$ is rotated about $l$, then the volume of the resulting solid is the product of the area $A$ of $R$ and the distance $d$ travled by the centroid of $R$.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;To use the theorem, we should first find out the centroid of $A_1$ and $A_2$.&lt;/p&gt;
+&lt;p&gt;For arbitrary plane region, the centroid (the center of mass) are located at the point $(C_x,C_y)$, where
+$$
+C_x=\frac{\int_a^{b}xf(x)dx}{\int_a^{b}f(x)dx};C_y=\frac{\int_a^{b}\frac{1}{2}[f(x)]^2dx}{\int_a^{b}f(x)dx}.
+$$
+Since the cups are rotating about axis parallel to $y$-axis, we require only $C_x$. For $A_1$,
+$$
+C_{x_1}=\frac{\int_0^{h}\frac{1}{2}[f(y)]^2dy}{\int_0^{h}f(y)dy}=\frac{1}{2A_1}\int_0^{h}[f(y)]^2dy.
+$$
+For $A_2$,
+$$
+C_{x_2}=\frac{\int_0^{h}\frac{1}{2}\left(k^2-[f(y)]^2\right)dy}{\int_0^{h}k-f(y)dy}=\frac{1}{2A_2}\int_0^{h}k^2-[f(y)]^2dy.
+$$
+After we knew the centroid of $A_1$ and $A_2$, we can start to calculate the volume of Cup A and Cup B by Pappus&amp;rsquo;s Theorem.&lt;/p&gt;
+&lt;p&gt;Volume of Cup A
+$$
+2\pi{C_{x_1}}{A_1}=\pi\int_0^{h}[f(y)]^2dy.
+$$
+Volume of Cup B
+$$
+2\pi(k-C_{x_2})A_2=2\pi k A_2 - \pi k^2 h + \pi \int_0^{h}[f(y)]^2dy.
+$$
+So if we want to have the two volumes being the same, we should have
+$$
+2\pi k A_2 - \pi k^2 h=0, \implies k = \frac{2A_2}{h}.
+$$
+Based on the fact that $A_1+A_2 = hk$, one easily obtain
+$$
+k = \frac{2A_2}{h} = \frac{2hk - 2A_1}{h}, \implies k = \frac{2A_1}{h},
+$$
+which are consistent with the results of problem 1 and 2.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Question 4:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Based on your own measurements and observation, suggest a value for $h$ and an equation for $x=f(y)$ and calculus the amount of coffee that each cup holds.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;To be finished.&lt;/p&gt;
+&lt;hr&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Effect of driving on coarsening dynamics in phase-separating systems</title>
+      <link>https://teshenglin.github.io/publication/20_non_talt/</link>
+      <pubDate>Tue, 17 Mar 2020 00:00:00 +0000</pubDate>
+      <guid>https://teshenglin.github.io/publication/20_non_talt/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sec.3.1 - Building a better roller coaster</title>
       <link>https://teshenglin.github.io/post/2020_cal_s3p1/</link>
       <pubDate>Wed, 11 Mar 2020 00:00:00 +0000</pubDate>
       <guid>https://teshenglin.github.io/post/2020_cal_s3p1/</guid>
@@ -763,7 +771,7 @@ $$&lt;/p&gt;
     </item>
     
     <item>
-      <title>罐頭的形狀</title>
+      <title>Sec.4.7 - 罐頭的形狀</title>
       <link>https://teshenglin.github.io/post/2020_cal_s4p7_ch/</link>
       <pubDate>Tue, 10 Mar 2020 12:00:00 +0000</pubDate>
       <guid>https://teshenglin.github.io/post/2020_cal_s4p7_ch/</guid>
@@ -873,7 +881,7 @@ $$&lt;/li&gt;
     </item>
     
     <item>
-      <title>泰勒級數</title>
+      <title>Sec.3.10 - 泰勒級數</title>
       <link>https://teshenglin.github.io/post/2020_cal_s3p10_ch/</link>
       <pubDate>Tue, 10 Mar 2020 00:00:00 +0000</pubDate>
       <guid>https://teshenglin.github.io/post/2020_cal_s3p10_ch/</guid>
@@ -1100,7 +1108,7 @@ $$&lt;/p&gt;
     </item>
     
     <item>
-      <title>飛行員應該何時開始下降高度?</title>
+      <title>Sec.3.4 - 飛行員應該何時開始下降高度?</title>
       <link>https://teshenglin.github.io/post/2020_cal_s3p4_ch/</link>
       <pubDate>Sun, 08 Mar 2020 00:00:00 +0000</pubDate>
       <guid>https://teshenglin.github.io/post/2020_cal_s3p4_ch/</guid>
@@ -1346,14 +1354,6 @@ $$&lt;/p&gt;
     </item>
     
     <item>
-      <title>Effect of driving on coarsening dynamics in phase-separating systems</title>
-      <link>https://teshenglin.github.io/publication/20_non_talt/</link>
-      <pubDate>Mon, 17 Feb 2020 00:00:00 +0000</pubDate>
-      <guid>https://teshenglin.github.io/publication/20_non_talt/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Fast spectral solver for Poisson equation in an annular domain</title>
       <link>https://teshenglin.github.io/publication/20_amsa_lhh/</link>
       <pubDate>Mon, 17 Feb 2020 00:00:00 +0000</pubDate>
@@ -1362,7 +1362,7 @@ $$&lt;/p&gt;
     </item>
     
     <item>
-      <title>Planes and birds: Minimizing energy</title>
+      <title>Sec.4.7 - Planes and birds: Minimizing energy</title>
       <link>https://teshenglin.github.io/post/2019_cal_s4p7_2/</link>
       <pubDate>Wed, 08 Jan 2020 00:00:00 +0000</pubDate>
       <guid>https://teshenglin.github.io/post/2019_cal_s4p7_2/</guid>
@@ -1955,7 +1955,7 @@ GC pauses:         1
     </item>
     
     <item>
-      <title>The shape of a can</title>
+      <title>Sec.4.7 - The shape of a can</title>
       <link>https://teshenglin.github.io/post/2019_cal_s4p7/</link>
       <pubDate>Wed, 11 Dec 2019 00:00:00 +0000</pubDate>
       <guid>https://teshenglin.github.io/post/2019_cal_s4p7/</guid>
@@ -2303,7 +2303,7 @@ $$
     </item>
     
     <item>
-      <title>Where should a pilot start descent?</title>
+      <title>Sec.3.4 - Where should a pilot start descent?</title>
       <link>https://teshenglin.github.io/post/2019_cal_s3p4/</link>
       <pubDate>Thu, 21 Nov 2019 00:00:00 +0000</pubDate>
       <guid>https://teshenglin.github.io/post/2019_cal_s3p4/</guid>
