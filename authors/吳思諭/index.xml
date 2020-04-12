@@ -5,12 +5,224 @@
     <link>https://teshenglin.github.io/authors/%E5%90%B3%E6%80%9D%E8%AB%AD/</link>
       <atom:link href="https://teshenglin.github.io/authors/%E5%90%B3%E6%80%9D%E8%AB%AD/index.xml" rel="self" type="application/rss+xml" />
     <description>吳思諭</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 10 Mar 2020 12:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 11 Apr 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
       <title>吳思諭</title>
       <link>https://teshenglin.github.io/authors/%E5%90%B3%E6%80%9D%E8%AB%AD/</link>
     </image>
+    
+    <item>
+      <title>Sec.4.1 - 彩虹的微積分學</title>
+      <link>https://teshenglin.github.io/post/2020_cal_s4p1_ch/</link>
+      <pubDate>Sat, 11 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>https://teshenglin.github.io/post/2020_cal_s4p1_ch/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;Applied Project in Sec.4.1, Calculus by Stewart&lt;br&gt;
+英文版請見 
+&lt;a href=&#34;https://teshenglin.github.io/post/2020_cal_s4p1&#34;&gt;The Calculus of ranbows&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;當陽光照射到半空中的雨滴，光線被散射就會形成彩虹。彩虹自古以來就被人類著迷著，且早在亞里士多德時代以來激發許多人們進行科學的探討，並嘗試找到解釋。在這份專題裡，我們使用笛卡爾和牛頓的思想來解釋彩虹的形狀、位置和顏色。&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;問題 1:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;下面這張圖顯示了一道光束從 A 點進入球形雨滴。有一些光被反射，但線段AB 表示了一些沒有被反射，而穿入雨滴的光線軌跡。這裡要注意的是，這道光線是朝法線AO 折射的，而實際上，斯涅爾定律提及 $\sin\alpha = k\sin\beta$ ，其中 $\alpha$ 是入射角，$\beta$ 是折射角，而 $k\approx\frac{4}{3}$ 是水的折射率。在 B 點，有一些光線穿過水滴，然後折射進入空氣，但依然有部分被反射，如線段BC所示。 （入射角等於反射角）當光束到達 C 點時，它的一部份會被反射，但讓我們更感興趣的是從 C 點離開雨滴部分（要注意它是從法線折射出去的）。偏差角 $D(\alpha)$ 是光束在此三階段過程中經歷的順時針旋轉量。因此，
+$$
+D(\alpha ) = (\alpha - \beta ) + (\pi - 2\beta  ) + (\alpha - \beta) = \pi  + 2\alpha  - 4\beta.
+$$&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://teshenglin.github.io/post/figs/2020_cal_s4p1_01.jpg&#34; &gt;
+
+
+  &lt;img src=&#34;https://teshenglin.github.io/post/figs/2020_cal_s4p1_01.jpg&#34; alt=&#34;&#34; width=&#34;300px&#34; &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;證明偏差角在 $\alpha\approx 59.4^{\circ}$ 時會有最小值 $\alpha\approx 59.4^{\circ}$。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;回答：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;讓我們回想一下斯涅爾定律：
+$$
+\sin\alpha = \frac{4}{3}\sin\beta. \qquad \qquad (1)
+$$
+我們測試該角度與 $\alpha$ 作為 $\beta$ 的函數，並根據斯涅爾定律對 $\alpha$ 作導數運算，得到：
+$$
+\cos\alpha = \frac{4}{3}\cos\beta\frac{d\beta}{d\alpha}.
+$$
+為了得到 $D(\alpha)$ 的最小值，我們要找到 $D’(\alpha)=0$ ：
+$$
+D&amp;rsquo;(\alpha) = 2 - 4\frac{d\beta}{d\alpha} = 0 \Rightarrow
+\frac{d\beta}{d\alpha} = \frac1 2 = \frac{3\cos\alpha}{4\cos\beta}.
+$$
+然後我們得到：
+$$
+2\cos\beta = 3\cos\alpha. \qquad \qquad (2)
+$$
+然後我們聯立 (1) 和 (2) 得到：
+$$
+\cos\alpha = \sqrt\frac{7}{27}, \Rightarrow \alpha = \arccos\sqrt\frac{7}{27} \approx 59.4^\circ
+$$
+所以我們找到最小值：
+$$
+D(59.4^\circ)\approx138^\circ.
+$$&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;最小偏差角的意義是當$\alpha\approx 59.4^{\circ}$ 時，我們知道 $D’(\alpha)\approx 0$，則 $\frac{\Delta D}{\Delta \alpha}\approx 0$ 。這代表當很多光束在 $\alpha\approx 59.4^{\circ}$ 時偏差大約相同，而正是因為接近最小偏差方向的光線集中產生主彩虹的亮度。下面這張圖顯示了從觀察者到彩虹最高點的仰角為 $180^{\circ}- 138^{\circ} = 42^{\circ}$（這個角度就叫做彩虹角）。&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://teshenglin.github.io/post/figs/2020_cal_s4p1_02.jpg&#34; &gt;
+
+
+  &lt;img src=&#34;https://teshenglin.github.io/post/figs/2020_cal_s4p1_02.jpg&#34; alt=&#34;&#34; width=&#34;300px&#34; &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;&lt;strong&gt;問題二：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;問題1解釋了主彩虹的位置，那我們要如何解釋顏色呢？陽光的波長範圍從紅色到橙色，黃色，綠色，藍色，靛藍和紫色。正如牛頓在1666年的棱鏡實驗中發現的那樣，每種顏色的折射率都不同（這種效果稱為色散）。紅光的折射率為 $k \approx 1.3318$，紫光的折射率為 $k\approx 1.3435$。透過對的這些值 $k$ 重複問題1的計算，證明紅色光道的彩虹角是 $42.3^{\circ}$ 而紫色光道的彩虹角是 $40.6^{\circ}$ 。因此，彩虹實際上是由對應於這七個顏色的七個單獨的光道組成的。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;回答：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;相似於問題一的方法，我們先寫下斯涅爾定律：
+$$
+\sin\alpha =k\sin\beta. \qquad \qquad (3)
+$$
+為了得到
+$$
+2\cos\alpha = k\cos\beta. \qquad \qquad (4)
+$$
+我們要找 $D’(\alpha)=0$ 的解，然後我們聯立 (3) 和 (4)，得到：
+$$
+\cos\alpha = \sqrt{\frac{k^2-1}{3}}, \Rightarrow \alpha = \arccos\sqrt{\frac{k^2-1}{3}}.
+$$&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;紅色光道： $k\approx 1.3318\Rightarrow \alpha_1\approx 59.473^{\circ}$&lt;br&gt;
+彩虹角 $= \pi - D(\alpha_1)\approx 42.3^{\circ}$.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;紫色光道： $k\approx 1.3435\Rightarrow\alpha_2\approx 58.786^{\circ}$&lt;br&gt;
+彩虹角 $=\pi - D(\alpha_2)\approx 40.6^{\circ}$.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;問題三：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;或許你曾經看過主彩虹上較暗的次彩虹。這是由於光線進入雨滴並在A處折射、反射兩次（在B和C處）以及在D處離開雨滴而折射的那部分光束所致（如下圖）。這次偏差角$D(\alpha)$是射線在此四階段過程中經歷的逆時針旋轉的總量。&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://teshenglin.github.io/post/figs/2020_cal_s4p1_03.jpg&#34; &gt;
+
+
+  &lt;img src=&#34;https://teshenglin.github.io/post/figs/2020_cal_s4p1_03.jpg&#34; alt=&#34;&#34; width=&#34;300px&#34; &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;證明 $D(\alpha ) = 2\alpha  - 6\beta  + 2\pi$ 和 $D(\alpha)$ 在 $\cos\alpha = \sqrt\frac{k^2-1}{8}$ 時有最小值。&lt;/p&gt;
+&lt;p&gt;用 $k=\frac{4}{3}$ ，表示最小偏差角大約等於 $129^{\circ}$ 且次彩虹的彩虹角大約等於$51^{\circ}$ ，如下圖所示。&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://teshenglin.github.io/post/figs/2020_cal_s4p1_04.jpg&#34; &gt;
+
+
+  &lt;img src=&#34;https://teshenglin.github.io/post/figs/2020_cal_s4p1_04.jpg&#34; alt=&#34;&#34; width=&#34;300px&#34; &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;&lt;strong&gt;回答：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;因為 $D(\alpha ) = 2\alpha  - 6\beta  + 2\pi$ ，為了得到
+$$
+3\cos\alpha = k\cos\beta. \qquad \qquad (5)
+$$
+我們要找到 $D’(\alpha)=0$ 的解，所以我們聯立 (3) 和(5) ，得到：
+$$
+\cos\alpha = \sqrt{\frac{k^2-1}{8}}, \Rightarrow \alpha = \arccos\sqrt{\frac{k^2-1}{8}}. \qquad \qquad (6)
+$$&lt;/p&gt;
+&lt;p&gt;則對 $k=\frac43\Rightarrow \alpha\approx 71.849^{\circ}\Rightarrow D(\alpha)\approx231^{\circ}$.&lt;/p&gt;
+&lt;p&gt;最小偏差角： $2\pi-D(\alpha)=129^{\circ}.$&lt;/p&gt;
+&lt;p&gt;彩虹角： $\pi-( 2\pi-D(\alpha)) =51^{\circ}.$&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;問題四：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;證明次彩虹中的顏色以與主要彩虹中的顏色相反的順序顯現。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;回答：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;基於 (6) 我們得到，&lt;/p&gt;
+&lt;p&gt;對紅色光道：$k\approx 1.3318\Rightarrow \alpha_1\approx 71.906^{\circ}$，彩虹角 $D(\alpha_1)-\pi\approx 50.6^{\circ}.$&lt;/p&gt;
+&lt;p&gt;對紫色光道：$k\approx 1.3435\Rightarrow\alpha_2\approx 71.505^{\circ}$，彩虹角 $D(\alpha_2)-\pi\approx 53.6^{\circ}.$&lt;/p&gt;
+&lt;p&gt;因此，主彩虹低於次彩虹，並且次彩虹中的顏色與主彩虹中的顏色順序相反。&lt;/p&gt;
+&lt;hr&gt;
+</description>
+    </item>
     
     <item>
       <title>Sec.4.7 - 罐頭的形狀</title>

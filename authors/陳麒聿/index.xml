@@ -18,7 +18,9 @@
       <pubDate>Mon, 23 Mar 2020 00:00:00 +0000</pubDate>
       <guid>https://teshenglin.github.io/post/2020_cal_s4p1/</guid>
       <description>&lt;blockquote&gt;
-&lt;p&gt;Applied Project in Sec.4.1, Calculus by Stewart&lt;/p&gt;
+&lt;p&gt;Applied Project in Sec.4.1, Calculus by Stewart&lt;br&gt;
+Chinese version: 
+&lt;a href=&#34;https://teshenglin.github.io/post/2020_cal_s4p1_ch&#34;&gt;彩虹的微積分學&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;Rainbows are created when raindrops scatter sunlight. They have fascinated mankind since ancient times and have inspired attempts at scientific explanation since the time of Aristotle. In this project we use the ideas of Descartes and Newton to explain the shape, location, and colors of rainbows.&lt;/p&gt;
 &lt;hr&gt;
@@ -57,11 +59,11 @@ $$&lt;/p&gt;
 
 &lt;p&gt;Show that the minimum value of deviation is $D(\alpha)\approx 138^{\circ}$; and occurs when $\alpha\approx 59.4^{\circ}$.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Recall Snell&amp;rsquo;s law:
+&lt;p&gt;Recall Snell&#39;s law:
 $$
 \sin\alpha = \frac{4}{3}\sin\beta. \qquad \qquad (1)
 $$
-We teat the angle $\alpha$ as a function of $\beta$ and take derivative with respect to $\alpha$ to Snell&amp;rsquo;s law to obtain
+We teat the angle $\alpha$ as a function of $\beta$ and take derivative with respect to $\alpha$ to Snell&#39;s law to obtain
 $$
 \cos\alpha = \frac{4}{3}\cos\beta\frac{d\beta}{d\alpha}.
 $$
@@ -115,7 +117,7 @@ $$&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Question 2:&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Problem 1 explains the location of the primary rainbow, but how do we explain the colors? Sunlight comprises a range of wavelengths, from the red range through orange, yellow, green, blue, indigo, and violet. As Newton discovered in his prism experiments of 1666, the index of refraction is different for each color, (The effect is called &lt;em&gt;dispersion&lt;/em&gt;.) For red light the refractive index $k \approx 1.3318$,  whereas for violet light it is $k\approx 1.3435$. By repeating the calculation of Problem 1 for these values of $k$, show that the rainbow angle is about $42.3^{\circ}$ for red bow and $40.6^{\circ}$ for the violet bow. So the rainbow really consists of seven individual bows corresponding to the seven colors.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Similar to the approach of problem 1, we first write down the Snell&amp;rsquo;s law
+&lt;p&gt;Similar to the approach of problem 1, we first write down the Snell&#39;s law
 $$
 \sin\alpha =k\sin\beta. \qquad \qquad (3)
 $$
@@ -248,7 +250,7 @@ $$&lt;/p&gt;
 \frac{v_E}{v_P} = \sqrt[4]{3}
 $$&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Question 4:&lt;/strong&gt;  In applying the equation of Problem 1 to bird flight we split the term $Av^3$ ​into two parts:​ $A_b v^3$ ​for the bird&amp;rsquo;s body and​ $A_w v^3$ ​for its wings. Let​ $x$ be the fraction of flying time spent in flapping mode. If $m$ is the bird&amp;rsquo;s mass and all the lift occurs during flapping, then the lift is $mg/x$ and so the power needed during flapping is&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Question 4:&lt;/strong&gt;  In applying the equation of Problem 1 to bird flight we split the term $Av^3$ ​into two parts:​ $A_b v^3$ ​for the bird&#39;s body and​ $A_w v^3$ ​for its wings. Let​ $x$ be the fraction of flying time spent in flapping mode. If $m$ is the bird&#39;s mass and all the lift occurs during flapping, then the lift is $mg/x$ and so the power needed during flapping is&lt;/p&gt;
 &lt;p&gt;$$
 P_f = (A_b+A_w)v^3 + \frac{B(mg/x)^2}{v}
 $$&lt;/p&gt;

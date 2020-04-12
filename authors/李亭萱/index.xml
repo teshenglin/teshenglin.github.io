@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>李亭萱 | Te-Sheng Lin</title>
+    <link>https://teshenglin.github.io/authors/%E6%9D%8E%E4%BA%AD%E8%90%B1/</link>
+      <atom:link href="https://teshenglin.github.io/authors/%E6%9D%8E%E4%BA%AD%E8%90%B1/index.xml" rel="self" type="application/rss+xml" />
+    <description>李亭萱</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 22 Mar 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>李亭萱</title>
+      <link>https://teshenglin.github.io/authors/%E6%9D%8E%E4%BA%AD%E8%90%B1/</link>
+    </image>
+    
+    <item>
+      <title>Sec.9.3 - How fast does a tank drain?</title>
+      <link>https://teshenglin.github.io/post/2020_cal_s9p3/</link>
+      <pubDate>Sun, 22 Mar 2020 00:00:00 +0000</pubDate>
+      <guid>https://teshenglin.github.io/post/2020_cal_s9p3/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;Applied Project in Sec.9.3, Calculus by Stewart&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;If water (or other liquid) drains from a tank, we expect that the flow will be greatest at first (when the water depth is greatest) and will gradually decrease as the water level decreases. But we need a more precise mathematical description of how the flow decreases in order to answer the kinds of questions that engineers ask: How long does it take for a tank to drain completely? How much water should a tank hold in order to guarantee a certain minimum water pressure for a sprinkler system?&lt;/p&gt;
+&lt;p&gt;Let $h(t)$ and $V(t)$ be the height and volume of water in a tank at time $t$. If water leaks through a hole with area $a$ at the bottom of the tank, then Torricelli’s Law says that
+$$
+\frac{dV}{dt}=-a\sqrt{2gh}, \qquad \qquad \qquad (1)
+$$
+where $g$ is the acceleration due to gravity. So the rate at which water flows from the tank is proportional to the square root of the water height.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Question 1：&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Suppose the tank is cylindrical with height $2(cm)$ and radius $1(m)$ and the hole is circular with radius $2(cm)$. If we take $g = 10 (m/s^2)$, show that $h$ satisfies the differential equation:
+$$
+\frac{dh}{dt}=-0.0004\sqrt{20h}
+$$&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Solve this equation to find the height of the water at time $t$, assuming the tank is full at time $t = 0$.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;How long will it take for the water to drain completely?&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Recall, for a cylinder: $V=\pi r^2h$, so we have
+$$
+\frac{dV}{dt}=\pi r^2\frac{dh}{dt}=\pi \times 1^2 \times \frac{dh}{dt}=\pi\frac{dh}{dt}.
+$$
+The area of the hole is $2^2\pi (cm^2) = 0.0004\pi (m^2)$. According to Torricelli’s Law,
+$$
+\frac{dV}{dt}=-a\sqrt{2gh}=-0.0004\pi \sqrt{20 h}.
+$$
+Therefore,
+$$
+\pi\frac{dh}{dt}=-0.0004\pi\sqrt{20 h} \implies \frac{dh}{dt}=-0.0004\sqrt{20h}.
+$$&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;To solve the differential equation, we rewrite the equation as
+$$
+\int\frac{dh}{\sqrt{20h}}=-0.0004\int{dt}.
+$$
+Therefore,
+$$
+\frac{\sqrt{h}}{\sqrt{5}}=-0.0004t+C.
+$$
+Given initial condition $h(0)=2(m)$, we find $C = \sqrt{10}/5$. Hence the height of the water at time $t$ is
+$$
+h(t)=\left({-0.0004\sqrt{5}t+\sqrt{2}}\right)^2.
+$$&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;If the tank is empty then $h=0$, that is,
+$$
+\left({-0.0004\sqrt{5}t+\sqrt{2}}\right)^2=0.
+$$
+We then find the time $t_0$ when the water drain completely as
+$$
+t_0=\frac{\sqrt{2}}{0.0004\sqrt{5}}\approx 1581(s).
+$$&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Question 2：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Because of the rotation and viscosity of the liquid, the theoretical model given by Equation (1) is not quite accurate. Instead, the model
+$$
+\frac{dh}{dt}=k\sqrt{h}, \qquad \qquad \qquad (2)
+$$
+is often used and the constant $k$ (which depends on the physical properties of the liquid) is determined from data concerning the draining of the tank.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Suppose that a hole is drilled in the side of a cylindrical bottle and the height $h$ of the water (above the hole) decreases from $10(cm)$ to $3(cm)$ in $68(seconds)$. Use Equation (2) to find an expression for $h(t)$.  Evaluate $h(t)$ for $t = 10,20,30,40,50, 60$.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Drill a $4(mm)$ hole near the bottom of the cylindrical part of a two-liter plastic soft-drink bottle. Attach a strip of masking tape marked in centimeters from $0$ to $10$, with $0$ corresponding to the top of the hole. With one finger over the hole, fill the bottle with water to the $10(cm)$ mark. Then take your finger off the hole and record the values of $h(t)$ for $t = 10,20,30,40,50,60(s)$. (You will probably find that it takes $68(s)$ for the level to decrease to $h = 3(cm)$.) Compare your data with the values of $h(t)$ from part (a). How well did the model predict the actual values?&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;TBF&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;TBF&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Question 3：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;In many parts of the world, the water for sprinkler systems in large hotels and hospitals is supplied by gravity from cylindrical tanks on or near the roofs of the buildings. Suppose such a tank has radius $3(m)$ and the diameter of the outlet is $6(cm)$. An engineer has to guarantee that the water pressure will be at least $104(kPa)$ for a period of $10(minutes)$. (When a fire happens, the electrical system might fail and it could take up to $10(minutes)$ for the emergency generator and fire pump to be activated.) What height should the engineer specify for the tank in order to make such a guarantee? (Use the fact that the water pressure at a depth of $d(feet)$ is $P = 62.5(d)$. See Section 8.3)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;TBF&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Question 4：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Not all water tanks are shaped like cylinders. Suppose a tank has cress-sectional area $A(h)$ at height $h$. Then the volume of water up to height $h$ is $V=\int hA(u)du$ and so the Fundamental Theorem of Calculus gives $dV/dh=A(h)$. It follows that
+$$
+\frac{dV}{dt} = \frac{dV}{dh}\frac{dh}{dt} = A(h)\frac{dh}{dt},
+$$
+and so Torricelli’s Law becomes
+$$
+A(h) \frac{dh}{dt} = -a \sqrt{2gh}.
+$$&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Suppose the tank has the shape of a sphere with radius $2(m)$ and is initially half full of water. If the radius of the circular hole is $1(cm)$ and we take $g=10(m/s^2)$, show that $h$ satisfies the differential equation
+$$
+(4h-h^2)\frac{dh}{dt}=-0.0001\sqrt{20h}
+$$&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;How long will it take for the water to drain completely?&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;TBF&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;TBF&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

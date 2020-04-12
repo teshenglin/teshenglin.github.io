@@ -5,12 +5,52 @@
     <link>https://teshenglin.github.io/categories/</link>
       <atom:link href="https://teshenglin.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     <description>Categories</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 23 Mar 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 11 Apr 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
       <title>Categories</title>
       <link>https://teshenglin.github.io/categories/</link>
     </image>
+    
+    <item>
+      <title>Calculus</title>
+      <link>https://teshenglin.github.io/categories/calculus/</link>
+      <pubDate>Sat, 11 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>https://teshenglin.github.io/categories/calculus/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>notes</title>
+      <link>https://teshenglin.github.io/categories/notes/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>https://teshenglin.github.io/categories/notes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>notes_julia</title>
+      <link>https://teshenglin.github.io/categories/notes_julia/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>https://teshenglin.github.io/categories/notes_julia/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Computational Mathematics</title>
+      <link>https://teshenglin.github.io/categories/computational-mathematics/</link>
+      <pubDate>Wed, 11 Dec 2019 00:00:00 +0000</pubDate>
+      <guid>https://teshenglin.github.io/categories/computational-mathematics/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>numerical methods</title>
+      <link>https://teshenglin.github.io/categories/numerical-methods/</link>
+      <pubDate>Thu, 26 Feb 2004 00:00:00 +0000</pubDate>
+      <guid>https://teshenglin.github.io/categories/numerical-methods/</guid>
+      <description></description>
+    </item>
     
   </channel>
 </rss>

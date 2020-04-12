@@ -649,7 +649,7 @@ Therefore, the vertical acceleration $a$ is
 $$
 a(t) = \left|−\frac{12hv^2}{\ell^3}(\ell - vt) + \frac{6hv^2}{\ell^2}\right| = \left|\frac{12hv^3}{\ell^3},t - \frac{6hv^2}{\ell^2}\right|, \qquad t\in[0, \frac{\ell}{v}].
 $$
-It can be check, from the Extreme Value Theorem and closed interval method, that $a$ attains it&rsquo;s maximum value $\frac{6hv^2}{\ell^2}$.
+It can be check, from the Extreme Value Theorem and closed interval method, that $a$ attains it's maximum value $\frac{6hv^2}{\ell^2}$.
 From condition (iii), we therefore have
 $$
 \frac{6hv^2}{\ell} \le k.
@@ -670,15 +670,15 @@ That is, the pilot should start to decend when the plane is $64.511$(mi) away fr
 <p><strong>Question 4:</strong> Graph the approach path if the conditions stated in Problem 3 are satisfied.</p>
 <p><strong>Answer:</strong></p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-julia" data-lang="julia"><span style="color:#75715e"># Example code in julia</span>
-<span style="color:#66d9ef">using</span> Plots
-v <span style="color:#f92672">=</span> <span style="color:#ae81ff">300</span>;
-h <span style="color:#f92672">=</span> <span style="color:#ae81ff">6.628</span>;
-l <span style="color:#f92672">=</span> <span style="color:#ae81ff">65</span>;
-N <span style="color:#f92672">=</span> <span style="color:#ae81ff">100</span>;
-dx <span style="color:#f92672">=</span> l<span style="color:#f92672">/</span>N;
-x <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.0</span><span style="color:#f92672">:</span>N; x <span style="color:#f92672">=</span> dx<span style="color:#f92672">*</span>x;
-P <span style="color:#f92672">=</span> <span style="color:#f92672">-</span>(<span style="color:#ae81ff">2</span><span style="color:#f92672">*</span>h<span style="color:#f92672">/</span>l<span style="color:#f92672">^</span><span style="color:#ae81ff">3</span>)<span style="color:#f92672">*</span>x<span style="color:#f92672">.^</span><span style="color:#ae81ff">3</span> <span style="color:#f92672">+</span> (<span style="color:#ae81ff">3</span><span style="color:#f92672">*</span>h<span style="color:#f92672">/</span>l<span style="color:#f92672">^</span><span style="color:#ae81ff">2</span>)<span style="color:#f92672">*</span>x<span style="color:#f92672">.^</span><span style="color:#ae81ff">2</span>;
-plot(x, P, lw<span style="color:#f92672">=</span><span style="color:#ae81ff">3</span>, xlabel <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;x&#34;</span>, ylabel <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;y&#34;</span>, title<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;approach path&#34;</span>, legend<span style="color:#f92672">=</span><span style="color:#66d9ef">false</span>)
+<span style="color:#66d9ef">using</span> Plots<span style="color:#f92672"></span>
+v<span style="color:#f92672"></span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">300</span>;
+h<span style="color:#f92672"></span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">6.628</span>;
+l<span style="color:#f92672"></span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">65</span>;
+N<span style="color:#f92672"></span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">100</span>;
+dx<span style="color:#f92672"></span> <span style="color:#f92672">=</span> l<span style="color:#f92672"></span><span style="color:#f92672">/</span>N<span style="color:#f92672"></span>;
+x<span style="color:#f92672"></span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.0</span><span style="color:#f92672">:</span>N<span style="color:#f92672"></span>; x<span style="color:#f92672"></span> <span style="color:#f92672">=</span> dx<span style="color:#f92672"></span><span style="color:#f92672">*</span>x<span style="color:#f92672"></span>;
+P<span style="color:#f92672"></span> <span style="color:#f92672">=</span> <span style="color:#f92672">-</span>(<span style="color:#ae81ff">2</span><span style="color:#f92672">*</span>h<span style="color:#f92672"></span><span style="color:#f92672">/</span>l<span style="color:#f92672"></span><span style="color:#f92672">^</span><span style="color:#ae81ff">3</span>)<span style="color:#f92672">*</span>x<span style="color:#f92672"></span><span style="color:#f92672">.^</span><span style="color:#ae81ff">3</span> <span style="color:#f92672">+</span> (<span style="color:#ae81ff">3</span><span style="color:#f92672">*</span>h<span style="color:#f92672"></span><span style="color:#f92672">/</span>l<span style="color:#f92672"></span><span style="color:#f92672">^</span><span style="color:#ae81ff">2</span>)<span style="color:#f92672">*</span>x<span style="color:#f92672"></span><span style="color:#f92672">.^</span><span style="color:#ae81ff">2</span>;
+plot<span style="color:#f92672"></span>(x<span style="color:#f92672"></span>, P<span style="color:#f92672"></span>, lw<span style="color:#f92672"></span><span style="color:#f92672">=</span><span style="color:#ae81ff">3</span>, xlabel<span style="color:#f92672"></span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">x</span><span style="color:#e6db74">&#34;</span>, ylabel<span style="color:#f92672"></span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">y</span><span style="color:#e6db74">&#34;</span>, title<span style="color:#f92672"></span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">a</span><span style="color:#e6db74">p</span><span style="color:#e6db74">p</span><span style="color:#e6db74">r</span><span style="color:#e6db74">o</span><span style="color:#e6db74">a</span><span style="color:#e6db74">c</span><span style="color:#e6db74">h</span><span style="color:#e6db74"> </span><span style="color:#e6db74">p</span><span style="color:#e6db74">a</span><span style="color:#e6db74">t</span><span style="color:#e6db74">h</span><span style="color:#e6db74">&#34;</span>, legend<span style="color:#f92672"></span><span style="color:#f92672">=</span><span style="color:#66d9ef">false</span>)
 </code></pre></div>
 
 

@@ -71,13 +71,13 @@ $$
 f(x) = x + g(x).
 $$
 這樣的話 $f$ 的固定點就會是 $g$ 的根了. 不過這種最簡單的改寫方式完全不保證會收斂.&lt;/p&gt;
-&lt;p&gt;那要如何改寫才會比較好呢? 其中一個最有名的就是牛頓法 (Newton&amp;rsquo;s method):&lt;/p&gt;
+&lt;p&gt;那要如何改寫才會比較好呢? 其中一個最有名的就是牛頓法 (Newton&#39;s method):&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;h2 id=&#34;newtons-iteration&#34;&gt;Newton&amp;rsquo;s iteration&lt;/h2&gt;
+&lt;h2 id=&#34;newtons-iteration&#34;&gt;Newton&#39;s iteration&lt;/h2&gt;
 &lt;p&gt;$$x_{n+1} = x_n - \frac{g(x_n)}{g&amp;rsquo;(x_n)}.$$&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;我們可以定義 $f(x) = x - \frac{g(x)}{g&amp;rsquo;(x)}$, 這樣上面這個式子就是個固定點迭代. 接著我們可以發現, 如果 $c$ 是 $g$ 函數的根, 也就是 $g(c )=0$, 那 $f&amp;rsquo;(c ) = 0$. 所以根據上面的定理就存在某個包含 $c$ 的小區間使得迭代會收斂.&lt;/p&gt;
-&lt;p&gt;更進一步我們可以利用泰勒展開式(Taylor&amp;rsquo;s series expansion) 來證明牛頓法事實上有二次收斂,
+&lt;p&gt;更進一步我們可以利用泰勒展開式(Taylor&#39;s series expansion) 來證明牛頓法事實上有二次收斂,
 $$
 |x_{n+1} - c| \approx \beta |x_n-c|^2.
 $$
@@ -119,7 +119,7 @@ $$
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;要取迭代函數, 如果知道如何對函數微分, 以牛頓法 
-&lt;a href=&#34;https://en.wikipedia.org/wiki/Newton%27s_method&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Newton&amp;rsquo;s method&lt;/a&gt; 來取通常會有不錯的效果.&lt;/p&gt;
+&lt;a href=&#34;https://en.wikipedia.org/wiki/Newton%27s_method&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Newton&#39;s method&lt;/a&gt; 來取通常會有不錯的效果.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;若無法得知微分函數, 可以用數值微分來逼近真實微分, 這樣會得到割線法 

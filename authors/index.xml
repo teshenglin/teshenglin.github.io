@@ -5,12 +5,323 @@
     <link>https://teshenglin.github.io/authors/</link>
       <atom:link href="https://teshenglin.github.io/authors/index.xml" rel="self" type="application/rss+xml" />
     <description>Authors</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 23 Mar 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 11 Apr 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
       <title>Authors</title>
       <link>https://teshenglin.github.io/authors/</link>
     </image>
+    
+    <item>
+      <title></title>
+      <link>https://teshenglin.github.io/authors/admin/</link>
+      <pubDate>Sat, 11 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>https://teshenglin.github.io/authors/admin/</guid>
+      <description>&lt;p&gt;I am an assistant professor of 
+&lt;a href=&#34;http://www.math.nctu.edu.tw&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Department of Applied Mathematics&lt;/a&gt; at 
+&lt;a href=&#34;http://www.nctu.edu.tw&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;National Chiao Tung University, Taiwan&lt;/a&gt;. The focus of my research is concerned with the development of analytical and computational tools for the problems that arises in fluid dynamics, currently in thin liquid films, and further to communicate with scientists from other disciplines to solve engineering problems in practice.&lt;/p&gt;
+&lt;p&gt;I received my PhD in Applied Mathematics from 
+&lt;a href=&#34;https://math.njit.edu&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Department of Mathematical Sciences&lt;/a&gt;, New Jersey Institute of Technology, where I worked with 
+&lt;a href=&#34;http://web.njit.edu/~kondic&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Lou Kondic&lt;/a&gt; and 
+&lt;a href=&#34;http://cfsm.njit.edu&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Linda J. Cummings&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>吳思諭</title>
+      <link>https://teshenglin.github.io/authors/%E5%90%B3%E6%80%9D%E8%AB%AD/</link>
+      <pubDate>Sat, 11 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>https://teshenglin.github.io/authors/%E5%90%B3%E6%80%9D%E8%AB%AD/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>李允涵</title>
+      <link>https://teshenglin.github.io/authors/%E6%9D%8E%E5%85%81%E6%B6%B5/</link>
+      <pubDate>Mon, 23 Mar 2020 00:00:00 +0000</pubDate>
+      <guid>https://teshenglin.github.io/authors/%E6%9D%8E%E5%85%81%E6%B6%B5/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>陳冠瑜</title>
+      <link>https://teshenglin.github.io/authors/%E9%99%B3%E5%86%A0%E7%91%9C/</link>
+      <pubDate>Mon, 23 Mar 2020 00:00:00 +0000</pubDate>
+      <guid>https://teshenglin.github.io/authors/%E9%99%B3%E5%86%A0%E7%91%9C/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>陳麒聿</title>
+      <link>https://teshenglin.github.io/authors/%E9%99%B3%E9%BA%92%E8%81%BF/</link>
+      <pubDate>Mon, 23 Mar 2020 00:00:00 +0000</pubDate>
+      <guid>https://teshenglin.github.io/authors/%E9%99%B3%E9%BA%92%E8%81%BF/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>李亭萱</title>
+      <link>https://teshenglin.github.io/authors/%E6%9D%8E%E4%BA%AD%E8%90%B1/</link>
+      <pubDate>Sun, 22 Mar 2020 00:00:00 +0000</pubDate>
+      <guid>https://teshenglin.github.io/authors/%E6%9D%8E%E4%BA%AD%E8%90%B1/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>劉硯芸</title>
+      <link>https://teshenglin.github.io/authors/%E5%8A%89%E7%A1%AF%E8%8A%B8/</link>
+      <pubDate>Wed, 18 Mar 2020 00:00:00 +0000</pubDate>
+      <guid>https://teshenglin.github.io/authors/%E5%8A%89%E7%A1%AF%E8%8A%B8/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>黃仕茵</title>
+      <link>https://teshenglin.github.io/authors/%E9%BB%83%E4%BB%95%E8%8C%B5/</link>
+      <pubDate>Wed, 18 Mar 2020 00:00:00 +0000</pubDate>
+      <guid>https://teshenglin.github.io/authors/%E9%BB%83%E4%BB%95%E8%8C%B5/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>D. Tseluiko</title>
+      <link>https://teshenglin.github.io/authors/d.-tseluiko/</link>
+      <pubDate>Tue, 17 Mar 2020 00:00:00 +0000</pubDate>
+      <guid>https://teshenglin.github.io/authors/d.-tseluiko/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>M. Alesemi</title>
+      <link>https://teshenglin.github.io/authors/m.-alesemi/</link>
+      <pubDate>Tue, 17 Mar 2020 00:00:00 +0000</pubDate>
+      <guid>https://teshenglin.github.io/authors/m.-alesemi/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>T.-S. Lin</title>
+      <link>https://teshenglin.github.io/authors/t.-s.-lin/</link>
+      <pubDate>Tue, 17 Mar 2020 00:00:00 +0000</pubDate>
+      <guid>https://teshenglin.github.io/authors/t.-s.-lin/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>U. Thiele</title>
+      <link>https://teshenglin.github.io/authors/u.-thiele/</link>
+      <pubDate>Tue, 17 Mar 2020 00:00:00 +0000</pubDate>
+      <guid>https://teshenglin.github.io/authors/u.-thiele/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>陳昱揚</title>
+      <link>https://teshenglin.github.io/authors/%E9%99%B3%E6%98%B1%E6%8F%9A/</link>
+      <pubDate>Wed, 11 Mar 2020 00:00:00 +0000</pubDate>
+      <guid>https://teshenglin.github.io/authors/%E9%99%B3%E6%98%B1%E6%8F%9A/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>楊映渝</title>
+      <link>https://teshenglin.github.io/authors/%E6%A5%8A%E6%98%A0%E6%B8%9D/</link>
+      <pubDate>Tue, 10 Mar 2020 12:00:00 +0000</pubDate>
+      <guid>https://teshenglin.github.io/authors/%E6%A5%8A%E6%98%A0%E6%B8%9D/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>曹瑋</title>
+      <link>https://teshenglin.github.io/authors/%E6%9B%B9%E7%91%8B/</link>
+      <pubDate>Tue, 10 Mar 2020 00:00:00 +0000</pubDate>
+      <guid>https://teshenglin.github.io/authors/%E6%9B%B9%E7%91%8B/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>呂建霆</title>
+      <link>https://teshenglin.github.io/authors/%E5%91%82%E5%BB%BA%E9%9C%86/</link>
+      <pubDate>Sun, 08 Mar 2020 00:00:00 +0000</pubDate>
+      <guid>https://teshenglin.github.io/authors/%E5%91%82%E5%BB%BA%E9%9C%86/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>C. Misbah</title>
+      <link>https://teshenglin.github.io/authors/c.-misbah/</link>
+      <pubDate>Sun, 01 Mar 2020 00:00:00 +0000</pubDate>
+      <guid>https://teshenglin.github.io/authors/c.-misbah/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>W.-F. Hu</title>
+      <link>https://teshenglin.github.io/authors/w.-f.-hu/</link>
+      <pubDate>Sun, 01 Mar 2020 00:00:00 +0000</pubDate>
+      <guid>https://teshenglin.github.io/authors/w.-f.-hu/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>C.-Y. He</title>
+      <link>https://teshenglin.github.io/authors/c.-y.-he/</link>
+      <pubDate>Mon, 17 Feb 2020 00:00:00 +0000</pubDate>
+      <guid>https://teshenglin.github.io/authors/c.-y.-he/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>柴俊豪</title>
+      <link>https://teshenglin.github.io/authors/%E6%9F%B4%E4%BF%8A%E8%B1%AA/</link>
+      <pubDate>Wed, 08 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>https://teshenglin.github.io/authors/%E6%9F%B4%E4%BF%8A%E8%B1%AA/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>S. Rafai</title>
+      <link>https://teshenglin.github.io/authors/s.-rafai/</link>
+      <pubDate>Tue, 03 Dec 2019 00:00:00 +0000</pubDate>
+      <guid>https://teshenglin.github.io/authors/s.-rafai/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>鄒翔傑</title>
+      <link>https://teshenglin.github.io/authors/%E9%84%92%E7%BF%94%E5%82%91/</link>
+      <pubDate>Thu, 21 Nov 2019 00:00:00 +0000</pubDate>
+      <guid>https://teshenglin.github.io/authors/%E9%84%92%E7%BF%94%E5%82%91/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>黃立鈞</title>
+      <link>https://teshenglin.github.io/authors/%E9%BB%83%E7%AB%8B%E9%88%9E/</link>
+      <pubDate>Thu, 21 Nov 2019 00:00:00 +0000</pubDate>
+      <guid>https://teshenglin.github.io/authors/%E9%BB%83%E7%AB%8B%E9%88%9E/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>M. G. Blyth</title>
+      <link>https://teshenglin.github.io/authors/m.-g.-blyth/</link>
+      <pubDate>Fri, 27 Jul 2018 17:59:48 +0800</pubDate>
+      <guid>https://teshenglin.github.io/authors/m.-g.-blyth/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>S. Kalliadasis</title>
+      <link>https://teshenglin.github.io/authors/s.-kalliadasis/</link>
+      <pubDate>Fri, 27 Jul 2018 17:59:48 +0800</pubDate>
+      <guid>https://teshenglin.github.io/authors/s.-kalliadasis/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>S. Rogers</title>
+      <link>https://teshenglin.github.io/authors/s.-rogers/</link>
+      <pubDate>Sat, 27 Aug 2016 17:59:32 +0800</pubDate>
+      <guid>https://teshenglin.github.io/authors/s.-rogers/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A. Heuer</title>
+      <link>https://teshenglin.github.io/authors/a.-heuer/</link>
+      <pubDate>Sun, 27 Sep 2015 17:59:16 +0800</pubDate>
+      <guid>https://teshenglin.github.io/authors/a.-heuer/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>C. Honisch</title>
+      <link>https://teshenglin.github.io/authors/c.-honisch/</link>
+      <pubDate>Sun, 27 Sep 2015 17:59:16 +0800</pubDate>
+      <guid>https://teshenglin.github.io/authors/c.-honisch/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>S. Gurevich</title>
+      <link>https://teshenglin.github.io/authors/s.-gurevich/</link>
+      <pubDate>Sun, 27 Sep 2015 17:59:16 +0800</pubDate>
+      <guid>https://teshenglin.github.io/authors/s.-gurevich/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>L. J. Cummings</title>
+      <link>https://teshenglin.github.io/authors/l.-j.-cummings/</link>
+      <pubDate>Mon, 27 Apr 2015 17:59:06 +0800</pubDate>
+      <guid>https://teshenglin.github.io/authors/l.-j.-cummings/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>L. Kondic</title>
+      <link>https://teshenglin.github.io/authors/l.-kondic/</link>
+      <pubDate>Mon, 27 Apr 2015 17:59:06 +0800</pubDate>
+      <guid>https://teshenglin.github.io/authors/l.-kondic/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>M. A. Lam</title>
+      <link>https://teshenglin.github.io/authors/m.-a.-lam/</link>
+      <pubDate>Mon, 27 Apr 2015 17:59:06 +0800</pubDate>
+      <guid>https://teshenglin.github.io/authors/m.-a.-lam/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>D. T. Papageorgiou</title>
+      <link>https://teshenglin.github.io/authors/d.-t.-papageorgiou/</link>
+      <pubDate>Fri, 27 Mar 2015 17:59:24 +0800</pubDate>
+      <guid>https://teshenglin.github.io/authors/d.-t.-papageorgiou/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>M. Pradas</title>
+      <link>https://teshenglin.github.io/authors/m.-pradas/</link>
+      <pubDate>Fri, 27 Mar 2015 17:59:24 +0800</pubDate>
+      <guid>https://teshenglin.github.io/authors/m.-pradas/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A. J. Archer</title>
+      <link>https://teshenglin.github.io/authors/a.-j.-archer/</link>
+      <pubDate>Tue, 27 Aug 2013 18:17:07 +0800</pubDate>
+      <guid>https://teshenglin.github.io/authors/a.-j.-archer/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A. Filippov</title>
+      <link>https://teshenglin.github.io/authors/a.-filippov/</link>
+      <pubDate>Mon, 27 Feb 2012 17:49:39 +0800</pubDate>
+      <guid>https://teshenglin.github.io/authors/a.-filippov/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>C.-Y. Huang</title>
+      <link>https://teshenglin.github.io/authors/c.-y.-huang/</link>
+      <pubDate>Thu, 26 Feb 2004 00:00:00 +0000</pubDate>
+      <guid>https://teshenglin.github.io/authors/c.-y.-huang/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>M.-C. Lai</title>
+      <link>https://teshenglin.github.io/authors/m.-c.-lai/</link>
+      <pubDate>Thu, 26 Feb 2004 00:00:00 +0000</pubDate>
+      <guid>https://teshenglin.github.io/authors/m.-c.-lai/</guid>
+      <description></description>
+    </item>
     
   </channel>
 </rss>

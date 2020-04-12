@@ -661,13 +661,13 @@ $$
 f(x) = x + g(x).
 $$
 這樣的話 $f$ 的固定點就會是 $g$ 的根了. 不過這種最簡單的改寫方式完全不保證會收斂.</p>
-<p>那要如何改寫才會比較好呢? 其中一個最有名的就是牛頓法 (Newton&rsquo;s method):</p>
+<p>那要如何改寫才會比較好呢? 其中一個最有名的就是牛頓法 (Newton's method):</p>
 <blockquote>
-<h2 id="newtons-iteration">Newton&rsquo;s iteration</h2>
+<h2 id="newtons-iteration">Newton's iteration</h2>
 <p>$$x_{n+1} = x_n - \frac{g(x_n)}{g&rsquo;(x_n)}.$$</p>
 </blockquote>
 <p>我們可以定義 $f(x) = x - \frac{g(x)}{g&rsquo;(x)}$, 這樣上面這個式子就是個固定點迭代. 接著我們可以發現, 如果 $c$ 是 $g$ 函數的根, 也就是 $g(c )=0$, 那 $f&rsquo;(c ) = 0$. 所以根據上面的定理就存在某個包含 $c$ 的小區間使得迭代會收斂.</p>
-<p>更進一步我們可以利用泰勒展開式(Taylor&rsquo;s series expansion) 來證明牛頓法事實上有二次收斂,
+<p>更進一步我們可以利用泰勒展開式(Taylor's series expansion) 來證明牛頓法事實上有二次收斂,
 $$
 |x_{n+1} - c| \approx \beta |x_n-c|^2.
 $$
@@ -709,7 +709,7 @@ $$
 </li>
 <li>
 <p>要取迭代函數, 如果知道如何對函數微分, 以牛頓法 
-<a href="https://en.wikipedia.org/wiki/Newton%27s_method" target="_blank" rel="noopener">Newton&rsquo;s method</a> 來取通常會有不錯的效果.</p>
+<a href="https://en.wikipedia.org/wiki/Newton%27s_method" target="_blank" rel="noopener">Newton's method</a> 來取通常會有不錯的效果.</p>
 </li>
 <li>
 <p>若無法得知微分函數, 可以用數值微分來逼近真實微分, 這樣會得到割線法 
