@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>張創渝 | Te-Sheng Lin</title>
+    <link>https://teshenglin.github.io/authors/%E5%BC%B5%E5%89%B5%E6%B8%9D/</link>
+      <atom:link href="https://teshenglin.github.io/authors/%E5%BC%B5%E5%89%B5%E6%B8%9D/index.xml" rel="self" type="application/rss+xml" />
+    <description>張創渝</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Thu, 23 Apr 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>張創渝</title>
+      <link>https://teshenglin.github.io/authors/%E5%BC%B5%E5%89%B5%E6%B8%9D/</link>
+    </image>
+    
+    <item>
+      <title>Sec.8.3 - Complementary Coffee Cups</title>
+      <link>https://teshenglin.github.io/post/2020_cal_s8p3_ch/</link>
+      <pubDate>Thu, 23 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>https://teshenglin.github.io/post/2020_cal_s8p3_ch/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;Applied Project in Sec.8.3, Calculus by Stewart
+英文版請見 
+&lt;a href=&#34;https://teshenglin.github.io/post/2020_cal_s8p3&#34;&gt;Complementary Coffee Cups&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;假設你選擇了兩種形狀的咖啡杯，一種向外彎曲，另一種向內彎曲，你會注意到它們具有相同的高度，並且形狀可以緊密地貼合在一起。你想知道哪個杯子可以容納更多咖啡。當然，你可以將一個杯子裝滿水，然後倒入另一個杯子中來測量容量。但是，作為一名微積分學生，你決定採用一種更數學的方法：忽略手柄，會發現兩個杯子的表面可由旋轉而得，因此可以旋轉體計算咖啡杯之體積。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://media.cheggcdn.com/media%2Ff10%2Ff10af759-2600-468a-af6c-20a3854ee028%2FphpbqXd4u.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;問題 1:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;假定杯子的高度為 $h$，杯子A的形狀可由 $x=f(y)$ 對 $y$ 軸旋轉而得， 而杯子B則是由同一個曲線對 $x=k$ 旋轉而得。 求$k$使得兩個杯子可裝的咖啡量一樣多。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;解答:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;杯子A的體積
+$$
+\int_0^{h}\pi[f(y)]^2dy.
+$$
+杯子B的體積
+$$
+\int_0^{h}\pi[k-f(y)]^2dy.
+$$
+設 $V_A=V_B$, 經過計算我們得到
+$$
+\int_0^{h}k^2dy=\int_0^{h}2kf(y)dy.
+$$
+所以
+$$
+k=\frac{2\int_0^{h}f(y)dy}{h}.
+$$&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;問題 2:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;請問問題1的結果與圖中的 $A_1$ and $A_2$ 有何關聯?&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;解答:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;我們可以看到 $A_1+A_2$ 是一個長方形：$$A_1+A_2=hk$$&lt;/p&gt;
+&lt;p&gt;從問題一的解答我們知道
+$$
+hk=2\int_0^{h}f(y)dy\implies{A_1+A_2}=2\int_0^{h}f(y)dy.
+$$
+又
+$$
+A_1=\int_0^{h}f(y)dy.
+$$
+比較可得
+$$
+A_1+A_2=2\int_0^{h}f(y)dy=2A_1\implies{A_1=A_2}.
+$$
+代表當當杯子A之容積與杯子B相等時，$A_1$ 的面積與 $A_2$相等。&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;問題3:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;使用 Pappus&amp;rsquo;s 定理解釋問題1和問題2之結果。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Pappus&amp;rsquo;s Theorem&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;使$R$為一個平面區域，在這個區域外有同一平面上的一條直線$I$。若$R$以$I$為軸旋轉時，產生的旋轉體體積為$R$的面積$A$和區域重心的所經過的路徑長$d$的乘積。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;解答:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;使用這個理論之前，我們需要找到 $A_1$ 和 $A_2$ 的重心。&lt;/p&gt;
+&lt;p&gt;對於任意平面，其重心位於點 $(C_x,C_y)$, 且
+$$
+C_x=\frac{\int_a^{b}xf(x)dx}{\int_a^{b}f(x)dx};C_y=\frac{\int_a^{b}\frac{1}{2}[f(x)]^2dx}{\int_a^{b}f(x)dx}.
+$$
+對於$A_1$而言
+$$
+C_{x_1}=\frac{\int_0^{h}\frac{1}{2}[f(y)]^2dy}{\int_0^{h}f(y)dy}=\frac{1}{2A_1}\int_0^{h}[f(y)]^2dy.
+$$
+對於$A_2$而言
+$$
+C_{x_2}=\frac{\int_0^{h}\frac{1}{2}\left(k^2-[f(y)]^2\right)dy}{\int_0^{h}k-f(y)dy}=\frac{1}{2A_2}\int_0^{h}k^2-[f(y)]^2dy.
+$$
+現在我們有了$A_1$和$A_2$，便可以使用Pappus&amp;rsquo;s Theorom計算A杯和B杯的體積了。&lt;/p&gt;
+&lt;p&gt;A杯體積
+$$
+2\pi{C_{x_1}}{A_1}=\pi\int_0^{h}[f(y)]^2dy.
+$$
+B杯體積
+$$
+2\pi(k-C_{x_2})A_2=2\pi k A_2 - \pi k^2 h + \pi \int_0^{h}[f(y)]^2dy.
+$$
+所以如果兩個體積要一樣我們得到
+$$
+2\pi k A_2 - \pi k^2 h=0, \implies k = \frac{2A_2}{h}.
+$$
+又根據 $A_1+A_2 = hk$, 我們可以輕易的算出
+$$
+k = \frac{2A_2}{h} = \frac{2hk - 2A_1}{h}, \implies k = \frac{2A_1}{h},
+$$
+我們可以得到跟問題1一樣的答案&lt;/p&gt;
+&lt;hr&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

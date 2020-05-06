@@ -725,12 +725,12 @@ $$</p>
 </blockquote>
 <p>machine epsilon 的定義是, 考慮正數$\epsilon$, 使得 $ 1+ \epsilon \ge 1$ 中最小的那個稱之為 machine epsilon. 當然以數學來看這個 machine epsilon 必須等於零. 不過在電腦裡並不是這樣.</p>
 <p>為了方便我們稍微改一下定義, 我們考慮 $\epsilon = 2^{-k}$ 這種形式, 然後 machine epsilon 一樣是使得 $ 1+ \epsilon \ge 1$ 中最小的那個. julia 程式如下:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-julia" data-lang="julia">s<span style="color:#f92672"></span><span style="color:#f92672">=</span><span style="color:#ae81ff">1.0</span>
-<span style="color:#66d9ef">for</span> k<span style="color:#f92672"></span><span style="color:#f92672">=</span><span style="color:#ae81ff">1</span><span style="color:#f92672">:</span><span style="color:#ae81ff">100</span>
-    s<span style="color:#f92672"></span> <span style="color:#f92672">=</span> s<span style="color:#f92672"></span><span style="color:#f92672">/</span><span style="color:#ae81ff">2.0</span>
-    <span style="color:#66d9ef">if</span> (<span style="color:#ae81ff">1.0</span><span style="color:#f92672">+</span>s<span style="color:#f92672"></span>)<span style="color:#f92672">&lt;</span><span style="color:#f92672">=</span><span style="color:#ae81ff">1.0</span>
-        s<span style="color:#f92672"></span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">2.0</span><span style="color:#f92672">*</span>s<span style="color:#f92672"></span>
-        println<span style="color:#f92672"></span>(<span style="color:#e6db74">&#34;</span><span style="color:#e6db74">k</span><span style="color:#e6db74">=</span><span style="color:#e6db74">&#34;</span>, k<span style="color:#f92672"></span><span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>, <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">,</span><span style="color:#e6db74"> </span><span style="color:#e6db74"> </span><span style="color:#e6db74">e</span><span style="color:#e6db74">p</span><span style="color:#e6db74">s</span><span style="color:#e6db74">=</span><span style="color:#e6db74">&#34;</span>, s<span style="color:#f92672"></span>)
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-julia" data-lang="julia">s<span style="color:#f92672">=</span><span style="color:#ae81ff">1.0</span>
+<span style="color:#66d9ef">for</span> k<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span><span style="color:#f92672">:</span><span style="color:#ae81ff">100</span>
+    s <span style="color:#f92672">=</span> s<span style="color:#f92672">/</span><span style="color:#ae81ff">2.0</span>
+    <span style="color:#66d9ef">if</span> (<span style="color:#ae81ff">1.0</span><span style="color:#f92672">+</span>s)<span style="color:#f92672">&lt;=</span><span style="color:#ae81ff">1.0</span>
+        s <span style="color:#f92672">=</span> <span style="color:#ae81ff">2.0</span><span style="color:#f92672">*</span>s
+        println(<span style="color:#e6db74">&#34;k=&#34;</span>, k<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>, <span style="color:#e6db74">&#34;,  eps=&#34;</span>, s)
         <span style="color:#66d9ef">return</span>
     <span style="color:#66d9ef">end</span>
 <span style="color:#66d9ef">end</span>

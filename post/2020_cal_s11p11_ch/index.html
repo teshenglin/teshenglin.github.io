@@ -1,0 +1,1087 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 4.7.0">
+
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Te-Sheng Lin (林得勝)">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="Applied Project in Sec.11.11, Calculus by Stewart 英文版請見 Radiation From The Stars 任何物件在被加熱時會散發輻射. 而 黑體 則是一個會吸收所有經過他的輻射的一個系統. 舉例來說, 一個表面黑色且沒有光">
+
+  
+  <link rel="alternate" hreflang="en-us" href="https://teshenglin.github.io/post/2020_cal_s11p11_ch/">
+
+  
+
+
+  
+  
+  
+  <meta name="theme-color" content="#2962ff">
+  
+
+  
+  
+  
+  <script src="/js/mathjax-config.js"></script>
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-1/css/all.min.css" integrity="sha256-4w9DunooKSr3MFXHXWyFER38WmPdm361bQS/2KUWZbU=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+        
+      
+    
+
+    
+
+    
+
+    
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.1.2/lazysizes.min.js" integrity="sha256-Md1qLToewPeKjfAHU1zyPwOutccPAm5tahnaw7Osw0A=" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CRoboto:400,400italic,700%7CRoboto+Mono&display=swap">
+  
+
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/academic.css">
+
+  
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-33193104-3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-33193104-3');
+</script>
+
+  
+
+
+  
+
+  <link rel="manifest" href="/index.webmanifest">
+  <link rel="icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_2.png">
+
+  <link rel="canonical" href="https://teshenglin.github.io/post/2020_cal_s11p11_ch/">
+
+  
+  
+  
+  
+  
+    
+    
+  
+  
+  <meta property="twitter:card" content="summary">
+  
+  <meta property="og:site_name" content="Te-Sheng Lin">
+  <meta property="og:url" content="https://teshenglin.github.io/post/2020_cal_s11p11_ch/">
+  <meta property="og:title" content="Sec.11.11 - 恆星的輻射 | Te-Sheng Lin">
+  <meta property="og:description" content="Applied Project in Sec.11.11, Calculus by Stewart 英文版請見 Radiation From The Stars 任何物件在被加熱時會散發輻射. 而 黑體 則是一個會吸收所有經過他的輻射的一個系統. 舉例來說, 一個表面黑色且沒有光"><meta property="og:image" content="https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png">
+  <meta property="twitter:image" content="https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png"><meta property="og:locale" content="en-us">
+  
+    
+      <meta property="article:published_time" content="2020-04-26T00:00:00&#43;00:00">
+    
+    <meta property="article:modified_time" content="2020-05-06T12:16:23&#43;08:00">
+  
+
+  
+
+
+    
+
+
+
+
+
+
+  
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://teshenglin.github.io/post/2020_cal_s11p11_ch/"
+  },
+  "headline": "Sec.11.11 - 恆星的輻射",
+  
+  "datePublished": "2020-04-26T00:00:00Z",
+  "dateModified": "2020-05-06T12:16:23+08:00",
+  
+  "author": {
+    "@type": "Person",
+    "name": "陳麒聿"
+  },
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "Te-Sheng Lin",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_2.png"
+    }
+  },
+  "description": "Applied Project in Sec.11.11, Calculus by Stewart 英文版請見 Radiation From The Stars 任何物件在被加熱時會散發輻射. 而 黑體 則是一個會吸收所有經過他的輻射的一個系統. 舉例來說, 一個表面黑色且沒有光"
+}
+</script>
+
+  
+
+  
+
+
+  
+
+
+  
+
+
+
+
+
+  <title>Sec.11.11 - 恆星的輻射 | Te-Sheng Lin</title>
+
+</head>
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" >
+
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+  
+
+
+
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container">
+
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="/">Te-Sheng Lin</a>
+    </div>
+    
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/">Te-Sheng Lin</a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#about"><span>Home</span></a>
+        </li>
+
+        
+        
+
+        
+        <li class="nav-item dropdown">
+          <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"><span>Resume</span><span class="caret"></span>
+          </a>
+          <div class="dropdown-menu">
+            
+              <a class="dropdown-item" href="/#experience"><span>Appointments </span></a>
+            
+              <a class="dropdown-item" href="/#publications"><span>Publications</span></a>
+            
+              <a class="dropdown-item" href="/#cv"><span>CV</span></a>
+            
+          </div>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#posts"><span>Posts</span></a>
+        </li>
+
+        
+        
+
+        
+        <li class="nav-item dropdown">
+          <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"><span>Teaching</span><span class="caret"></span>
+          </a>
+          <div class="dropdown-menu">
+            
+              <a class="dropdown-item" href="/courses/taught"><span>Courses taught</span></a>
+            
+              <a class="dropdown-item" href="/courses/students"><span>Students supervised</span></a>
+            
+          </div>
+        </li>
+
+        
+        
+
+      
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+      
+      <li class="nav-item">
+        <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+      <li class="nav-item">
+        <a class="nav-link js-dark-toggle" href="#"><i class="fas fa-moon" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+  <article class="article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+<div class="article-container pt-3">
+  <h1>Sec.11.11 - 恆星的輻射</h1>
+
+  
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+
+
+  
+  <span><a href="/authors/%E9%99%B3%E9%BA%92%E8%81%BF/">陳麒聿</a></span>, <span><a href="/authors/%E9%99%B3%E5%86%A0%E7%91%9C/">陳冠瑜</a></span>, <span><a href="/authors/admin/">Te-Sheng Lin (林得勝)</a></span>
+
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+          Last updated on
+      
+    
+    May 6, 2020
+  </span>
+  
+
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    3 min read
+  </span>
+  
+
+  
+  
+  
+  <span class="middot-divider"></span>
+  <a href="/post/2020_cal_s11p11_ch/#disqus_thread"></a>
+  
+
+  
+  
+  <span class="middot-divider"></span>
+  <span class="article-categories">
+    <i class="fas fa-folder mr-1"></i><a href="/categories/calculus/">Calculus</a></span>
+  
+
+</div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style">
+      <blockquote>
+<p>Applied Project in Sec.11.11, Calculus by Stewart<br>
+英文版請見 
+<a href="/post/2020_cal_s11p11">Radiation From The Stars</a></p>
+</blockquote>
+<p>任何物件在被加熱時會散發輻射. 而 <strong>黑體</strong> 則是一個會吸收所有經過他的輻射的一個系統. 舉例來說, 一個表面黑色且沒有光澤或著有一個大的空腔但只有一個小孔洞在牆壁上(像是煉鐵的高爐)可以視為一個黑體, 而他們會散發黑體輻射. 甚至從太陽散發出來的輻射也可以視作為一種黑體輻射.</p>
+<p>19世紀時, 瑞立-金斯定律(Rayleigh-Jeans Law)被提出來, 用來描述黑體輻射的能量密度和波長 $\lambda$ 的關系:
+$$
+f(\lambda)=\frac{8 \pi kT}{\lambda^4}
+$$
+其中 $\lambda$ 的單位是公尺, $T$ 是溫度單位是 $K$(克氏溫標), $k$ 是波茲曼常數(Boltzmann&rsquo;s constant) $= 1.3807\times 10^{-34} (J/K)$.</p>
+<p>瑞立-金斯定律與實驗測量結果相比, 在長波長是吻合的, 但在短波長時卻相差甚遠. (這個定理預測 $f(\lambda)\rightarrow \infty$ as $\lambda \to 0^+$ 但實驗結果卻顯示 $f(\lambda)\to 0$.) 這個結果後來被稱為 <em>紫外災變</em>.</p>
+<p>馬克思.普朗克 (Max Planck) 在 1990 時為黑體輻射找到一個更好的模型(現在被稱為普朗克定律):
+$$
+f(\lambda)= \frac{8 \pi hc \lambda^{-5}}{e^{hc/(\lambda kT)}-1}
+$$
+其中</p>
+<ul>
+<li>$h$ 是普朗克常數(Plancks&rsquo;s constant) = $6.626\times 10^{-34} (J\cdot s)$</li>
+<li>$c$ 是光速 $= 2.997925\times 10^8 (m/s)$</li>
+</ul>
+<hr>
+<p><strong>Question 1：</strong></p>
+<p>用羅畢達法則 (l&rsquo;Hospital&rsquo;s Rule) 說明普朗克定律</p>
+<p>$$
+\lim_{\lambda\to 0^+}f(\lambda) = 0
+$$
+and
+$$
+\lim_{\lambda\to\infty} f(\lambda) = 0
+$$
+此結果說明為何對短波長的黑體輻射普朗克的模型比瑞立-金斯的定理更好.</p>
+<p><strong>Answer:</strong></p>
+<p>讓 $a=8\pi hc$, $b=\frac{hc}{kT}$, 則 $f(\lambda)=\frac{a\lambda ^{-5}}{e^{b/\lambda}-1}$.</p>
+<p>接著我們計算
+$$
+\lim_{\lambda\to\infty} f(\lambda)=\lim_{\lambda\to\infty}\frac{a\lambda ^{-5}}{e^{b/\lambda}-1}= \lim_{\lambda\to\infty}\frac{-5a\lambda^{-6}}{-\frac{b}{\lambda^2}e^{b/\lambda}}=\frac{5a}b\lim_{\lambda\to\infty}\frac{\lambda^{-4}}{e^{b/\lambda }} = 0
+$$
+同樣的, 利用羅畢達法則我們得到
+$$
+\lim_{\lambda\to0^+}f(\lambda)=\frac{5a}b\lim_{\lambda\to\infty}\frac{\lambda^{-4}}{e^{b/\lambda }}=\frac{20a}{b^2}\lim_{\lambda\to0^+}\frac{\lambda^{-3}}{e^{b/\lambda}}
+$$
+在四次羅畢達法則後,我們能得到
+$$
+\lim_{\lambda\to0^+}f(\lambda) = 0
+$$</p>
+<hr>
+<p><strong>Question 2：</strong></p>
+<p>用泰勒展開式(Taylor polynomial) 說明在長波長時,普朗克定律 和 瑞立-金斯定理的結果會大致相同.</p>
+<p><strong>Answer:</strong></p>
+<p>我們知道 $e^x$ 的泰勒展開式:
+$$
+e^x=1+x+\frac{x^2}{2!}+\frac{x^3}{3!}+&hellip;
+$$
+當 $\lambda$ 很大時, 泰勒展開式後面無窮多項相較於第一項是小非常多的, 所以我們可以用 $T_1$ 來近似:
+$$
+e^{{hc}/{\lambda k T}} - 1\approx 1 + \frac{hc}{\lambda k T} -1 = \frac{hc}{\lambda k T}
+$$
+因此
+$$
+f(\lambda)\approx\frac{8\pi h c \lambda^{-5}}{\frac{hc}{\lambda k T}}=\frac{8\pi k T}{\lambda^4}
+$$
+跟瑞立-金斯定理一模一樣.</p>
+<hr>
+<p><strong>Question 3：</strong></p>
+<p>分別用兩個函式在同一個座標平面上劃出圖形, 並且說明相同和相異之處. $T$  用 5700K (太陽表面溫度) 帶入. (為了更方便計算 可以把長度單位從公尺換成微米: $1\mu$m = $10^{-6}$ m.)</p>
+<p><strong>Answer:</strong></p>
+<p>為了轉換成微米,我們把 $\lambda$ 用 $\frac{\lambda}{10^6}$ 帶入兩個函式. 在 $\lambda$ 很大時(圖左),兩個定理的結果很類似,然而在 $\lambda$ 很小時(圖右),結果差異甚大.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure>
+
+
+  <a data-fancybox="" href="/post/figs/2020_cal_s11p11_2.png" >
+
+
+  <img src="/post/figs/2020_cal_s11p11_2.png" alt="" width="600px" >
+</a>
+
+
+
+</figure>
+
+<hr>
+<p><strong>Question 4：</strong></p>
+<p>用第三題畫出來的圖去估算普朗克定律中 $f(\lambda)$ 為最大值時  $\lambda$ 的長度.</p>
+<p><strong>Answer:</strong></p>
+<p>從第三題的圖表得知, 普朗克定律中$f(\lambda)$ 在 $\lambda$ $\approx$ $0.51\mu$m 有最大值.</p>
+<hr>
+<p><strong>Question 5：</strong></p>
+<p>觀察下列四個恆星在普朗克定律的圖形 $f$ 如何隨著 $T$ 的變動</p>
+<ul>
+<li>參宿四 (Betelgeuse) T = 3400K</li>
+<li>南河三 (Procyon) T = 6400K</li>
+<li>天狼星 (Sirius) T = 9200K</li>
+<li>太陽</li>
+</ul>
+<p>發散的總輻射量(曲線下的面積)式怎麼隨著溫度變化的? 用圖來說明為何天狼星是藍色而參宿四是紅色.</p>
+<p><strong>Answer:</strong></p>
+<p>隨著溫度升高，曲線下的面積也隨之增加，所以可以推斷出當恆星溫度越高，發散的能量越多。且當溫度升高時，曲線最大值的$\lambda$值會減少。因此溫度越高，恆星散發的光的峰值與平均波長越短。當光的波長越短，頻率越高。當頻率高時，光在光譜上會接近藍端。而參宿四的頻率較低，較接近紅端。這就是為什麼天狼星是藍星而參宿是紅星。</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure>
+
+
+  <a data-fancybox="" href="/post/figs/2020_cal_s11p11_1.png" >
+
+
+  <img src="/post/figs/2020_cal_s11p11_1.png" alt="" width="600px" >
+</a>
+
+
+
+</figure>
+
+<hr>
+
+    </div>
+
+    
+
+
+
+
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/tags/applied-project/">applied project</a>
+  
+</div>
+
+
+
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=https://teshenglin.github.io/post/2020_cal_s11p11_ch/&amp;text=Sec.11.11%20-%20%e6%81%86%e6%98%9f%e7%9a%84%e8%bc%bb%e5%b0%84" target="_blank" rel="noopener" class="share-btn-twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=https://teshenglin.github.io/post/2020_cal_s11p11_ch/&amp;t=Sec.11.11%20-%20%e6%81%86%e6%98%9f%e7%9a%84%e8%bc%bb%e5%b0%84" target="_blank" rel="noopener" class="share-btn-facebook">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="mailto:?subject=Sec.11.11%20-%20%e6%81%86%e6%98%9f%e7%9a%84%e8%bc%bb%e5%b0%84&amp;body=https://teshenglin.github.io/post/2020_cal_s11p11_ch/" target="_blank" rel="noopener" class="share-btn-email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+  
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  <div class="media author-card content-widget-hr">
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="/authors/%E9%99%B3%E9%BA%92%E8%81%BF/"></a></h5>
+      
+      
+      <ul class="network-icon" aria-hidden="true">
+  
+</ul>
+
+    </div>
+  </div>
+
+
+
+
+<section id="comments">
+  
+    
+<div id="disqus_thread"></div>
+<script>
+  let disqus_config = function () {
+    
+    
+    
+  };
+  (function() {
+    if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+      document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+      return;
+    }
+    var d = document, s = d.createElement('script'); s.async = true;
+    s.src = 'https://' + "https-teshenglin-github-io" + '.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+  
+</section>
+
+
+
+
+
+
+  
+  
+  <div class="article-widget content-widget-hr">
+    <h3>Related</h3>
+    <ul>
+      
+      <li><a href="/post/2020_cal_s11p11/">Sec.11.11 - Radiation From The Stars</a></li>
+      
+      <li><a href="/post/2020_cal_s8p3_ch/">Sec.8.3 - Complementary Coffee Cups</a></li>
+      
+      <li><a href="/post/2020_cal_s9p3_2/">Sec.9.3.2 - Which is faster, going up or going down?</a></li>
+      
+      <li><a href="/post/2020_cal_s9p3_2_ch/">Sec.9.3.2 - 上升快，還是下降快?</a></li>
+      
+      <li><a href="/post/2020_cal_s4p1_ch/">Sec.4.1 - 彩虹的微積分學</a></li>
+      
+    </ul>
+  </div>
+  
+
+
+
+  </div>
+</article>
+
+      
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.4.4/mermaid.min.js" integrity="sha256-JEqEejGt4tR35L0a1zodzsV0/PJ6GIf7J4yDtywdrH8=" crossorigin="anonymous" title="mermaid"></script>
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js" integrity="sha256-eOgo0OtLL4cdq7RdwRUiGKLX9XsIJ7nGhWEKbohmVAQ=" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/languages/r.min.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/languages/julia.min.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/languages/python.min.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/languages/fortran.min.js"></script>
+        
+      
+
+    
+
+    
+    
+
+    
+    
+    <script>const code_highlighting = true;</script>
+    
+
+    
+    
+    <script>const isSiteThemeDark = false;</script>
+    
+
+    
+    
+    
+    
+    
+    
+    <script>
+      const search_config = {"indexURI":"/index.json","minLength":1,"threshold":0.3};
+      const i18n = {"no_results":"No results found","placeholder":"Search...","results":"results found"};
+      const content_type = {
+        'post': "Posts",
+        'project': "Projects",
+        'publication' : "Publications",
+        'talk' : "Talks"
+        };
+    </script>
+    
+
+    
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+    <script id="dsq-count-scr" src="https://https-teshenglin-github-io.disqus.com/count.js" async></script>
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    <script src="/js/academic.min.a8d7005002cb4a052fd6d721e83df9ba.js"></script>
+
+    
+
+
+
+
+
+
+  
+  
+  <div class="container">
+    <footer class="site-footer">
+  
+
+  <p class="powered-by">
+    
+
+    Powered by the
+    <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
+    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+
+    
+    <span class="float-right" aria-hidden="true">
+      <a href="#" class="back-to-top">
+        <span class="button_icon">
+          <i class="fas fa-chevron-up fa-2x"></i>
+        </span>
+      </a>
+    </span>
+    
+  </p>
+</footer>
+
+  </div>
+  
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

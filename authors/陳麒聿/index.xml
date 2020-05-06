@@ -5,12 +5,312 @@
     <link>https://teshenglin.github.io/authors/%E9%99%B3%E9%BA%92%E8%81%BF/</link>
       <atom:link href="https://teshenglin.github.io/authors/%E9%99%B3%E9%BA%92%E8%81%BF/index.xml" rel="self" type="application/rss+xml" />
     <description>陳麒聿</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 23 Mar 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 26 Apr 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
       <title>陳麒聿</title>
       <link>https://teshenglin.github.io/authors/%E9%99%B3%E9%BA%92%E8%81%BF/</link>
     </image>
+    
+    <item>
+      <title>Sec.11.11 - Radiation From The Stars</title>
+      <link>https://teshenglin.github.io/post/2020_cal_s11p11/</link>
+      <pubDate>Sun, 26 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>https://teshenglin.github.io/post/2020_cal_s11p11/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;Applied Project in Sec.11.11, Calculus by Stewart&lt;br&gt;
+Chinese version 
+&lt;a href=&#34;https://teshenglin.github.io/post/2020_cal_s11p11_ch&#34;&gt;恆星的輻射&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Any object emits radiation when heated. A &lt;strong&gt;blackbody&lt;/strong&gt; is a system that absorbs all the radiation that falls on it. For instance, a matte black surface or a large cavity with a small hole in its wall (like a blastfurnace) is a blackbody and emits blackbody radiation. Even the radiation from the sun is close to being a blackbody radiation.&lt;/p&gt;
+&lt;p&gt;Proposed in the late 19th century, the Rayleigh-Jeans Law expresses the energy density of blackbody radiation of wavelength $\lambda$ as
+$$
+f(\lambda)=\frac{8 \pi kT}{\lambda^4}
+$$
+where $\lambda$ is measured in meters, $T$ is the temperature in kelvins (K) and $k=$ Boltzmann&amp;rsquo;s constant $=1.3807\times 10^{-23}$J/K.&lt;/p&gt;
+&lt;p&gt;The Rayleigh-Jeans Law agrees with experimental measurements for long wavelengths but disagrees drastically for short wavelengths. [The law predicts that $f(\lambda)\rightarrow \infty$as $\lambda \to 0^+$ but experiments have shown that $f(\lambda)\to0$.] This fact is known as the &lt;em&gt;ultraviolet catastrophe&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;In 1990 Max Planck found a better model (known now as Planck&amp;rsquo;s Law) for blackbody radiation:
+$$
+f(\lambda)= \frac{8 \pi hc \lambda^{-5}}{e^{hc/(\lambda kT)}-1}
+$$
+and&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;$h=$ Planck&amp;rsquo;s constant $=6.6262\times 10^{-34}$ J$\cdot$s&lt;/li&gt;
+&lt;li&gt;$c=$ speed of light $=2.997925\times10^8$m/s&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Question 1:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Use l&amp;rsquo;Hospital&amp;rsquo;s Rule to show that&lt;/p&gt;
+&lt;p&gt;$$
+\lim_{\lambda\to0^+}f(\lambda)=0
+$$
+and
+$$
+\lim_{\lambda\to\infty} f(\lambda) = 0
+$$&lt;/p&gt;
+&lt;p&gt;for Planck&amp;rsquo;s Law. So this law models blackbody radiation better than the Rayleigh-Jeans Law for short wavelengths.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Let $a=8\pi hc$, $b=\frac{hc}{kT}$, so that $f(\lambda)=\frac{a\lambda ^{-5}}{e^{b/\lambda}-1}$.&lt;/p&gt;
+&lt;p&gt;We then have
+$$
+\lim_{\lambda\to\infty} f(\lambda)=\lim_{\lambda\to\infty}\frac{a\lambda ^{-5}}{e^{b/\lambda}-1}= \lim_{\lambda\to\infty}\frac{-5a\lambda^{-6}}{-\frac{b}{\lambda^2}e^{b/\lambda}}=\frac{5a}b\lim_{\lambda\to\infty}\frac{\lambda^{-4}}{e^{b/\lambda }} = 0
+$$
+Similarly, with l&amp;rsquo;Hospital&amp;rsquo;s Rule we obtain
+$$
+\lim_{\lambda\to0^+}f(\lambda)=\frac{5a}b\lim_{\lambda\to\infty}\frac{\lambda^{-4}}{e^{b/\lambda }}=\frac{20a}{b^2}\lim_{\lambda\to0^+}\frac{\lambda^{-3}}{e^{b/\lambda}}
+$$
+After using l&amp;rsquo;Hospital&amp;rsquo;s Rule four times, we obtain
+$$
+\lim_{\lambda\to0^+}f(\lambda) = 0
+$$&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Question 2:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Use a Taylor polynomial to show that, for large wavelengths, Planck&amp;rsquo;s Law gives approximately the same values as the Rayleigh-Jeans Law.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Taylor series expansion for $e^x$ is given as
+$$
+e^x=1+x+\frac{x^2}{2!}+\frac{x^3}{3!}+&amp;hellip;
+$$
+For large enough $\lambda$, all subsequent terms in the Taylor expansion are very small compared to the first one, so we can approximate using the Taylor polynomial $T_1$:
+$$
+e^{{hc}/{\lambda k T}} - 1\approx 1 + \frac{hc}{\lambda k T} -1 = \frac{hc}{\lambda k T}
+$$
+Therefore
+$$
+f(\lambda)\approx\frac{8\pi h c \lambda^{-5}}{\frac{hc}{\lambda k T}}=\frac{8\pi k T}{\lambda^4}
+$$
+which is exactly the same as the Rayleigh-Jeans Law.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Question 3:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Graph $f$ as given by both laws on the same screen and comment on the similarities and differences. Use $T=5700$K (the temperature of the Sun ). (You may want to change from meters to the more convenient unit of micrometers: $1\mu$m $=10^{-6}$m.)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;To convert to $\mu$m, we substitute $\lambda/10^6$ for $\lambda$ in both laws. For large $\lambda$ (left), the graphs of two laws are similar. For small $\lambda$ (right), the graphs of two laws are very different.&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://teshenglin.github.io/post/figs/2020_cal_s11p11_2.png&#34; &gt;
+
+
+  &lt;img src=&#34;https://teshenglin.github.io/post/figs/2020_cal_s11p11_2.png&#34; alt=&#34;&#34; width=&#34;600px&#34; &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Question 4:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Use your graph in Problem 3 to estimate the value of $\lambda$ for which $f(\lambda)$ is a maximum under Planck&amp;rsquo;s Law.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;From the graph in Problem 3, $f(\lambda)$ has a maximum under Planck&amp;rsquo;s Law at $\lambda\approx0.51 \mu$m.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Question 5:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Investigate how the graph of $f$ changes as $T$ varies. (Use Planck&amp;rsquo;s Law.) In particular, graph $f$ for the stars&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Betelgeuse ($T=3400$K)&lt;/li&gt;
+&lt;li&gt;Procyon ($T=6400$K)&lt;/li&gt;
+&lt;li&gt;Sirius ($T=9200$K)&lt;/li&gt;
+&lt;li&gt;Sun&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;How does the total radiation emitted (the area under the curve) vary with $T$ ? Use the graph to comment on why Sirius is known as a blue star and Betelgeuse as a red star.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;As $T$ gets larger, the total area under the curve increase, so we can consider that the hotter the star is, the more energy it emits. Also as $T$ increases, the maximum $\lambda$-value decreases, so the higher the temperature, the shorter the peak wavelength and the average wavelength of light emitted. This is why Sirius is a blue star and Betelgeuse is a red star. And most of its light is of a short wavelength. That is, a higher frequency, toward the blue end of the spectrum, whereas most of Betelgeuse&amp;rsquo;s light is of a lower frequency, toward the red end of the spectrum.&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://teshenglin.github.io/post/figs/2020_cal_s11p11_1.png&#34; &gt;
+
+
+  &lt;img src=&#34;https://teshenglin.github.io/post/figs/2020_cal_s11p11_1.png&#34; alt=&#34;&#34; width=&#34;600px&#34; &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;hr&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Sec.11.11 - 恆星的輻射</title>
+      <link>https://teshenglin.github.io/post/2020_cal_s11p11_ch/</link>
+      <pubDate>Sun, 26 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>https://teshenglin.github.io/post/2020_cal_s11p11_ch/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;Applied Project in Sec.11.11, Calculus by Stewart&lt;br&gt;
+英文版請見 
+&lt;a href=&#34;https://teshenglin.github.io/post/2020_cal_s11p11&#34;&gt;Radiation From The Stars&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;任何物件在被加熱時會散發輻射. 而 &lt;strong&gt;黑體&lt;/strong&gt; 則是一個會吸收所有經過他的輻射的一個系統. 舉例來說, 一個表面黑色且沒有光澤或著有一個大的空腔但只有一個小孔洞在牆壁上(像是煉鐵的高爐)可以視為一個黑體, 而他們會散發黑體輻射. 甚至從太陽散發出來的輻射也可以視作為一種黑體輻射.&lt;/p&gt;
+&lt;p&gt;19世紀時, 瑞立-金斯定律(Rayleigh-Jeans Law)被提出來, 用來描述黑體輻射的能量密度和波長 $\lambda$ 的關系:
+$$
+f(\lambda)=\frac{8 \pi kT}{\lambda^4}
+$$
+其中 $\lambda$ 的單位是公尺, $T$ 是溫度單位是 $K$(克氏溫標), $k$ 是波茲曼常數(Boltzmann&amp;rsquo;s constant) $= 1.3807\times 10^{-34} (J/K)$.&lt;/p&gt;
+&lt;p&gt;瑞立-金斯定律與實驗測量結果相比, 在長波長是吻合的, 但在短波長時卻相差甚遠. (這個定理預測 $f(\lambda)\rightarrow \infty$ as $\lambda \to 0^+$ 但實驗結果卻顯示 $f(\lambda)\to 0$.) 這個結果後來被稱為 &lt;em&gt;紫外災變&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;馬克思.普朗克 (Max Planck) 在 1990 時為黑體輻射找到一個更好的模型(現在被稱為普朗克定律):
+$$
+f(\lambda)= \frac{8 \pi hc \lambda^{-5}}{e^{hc/(\lambda kT)}-1}
+$$
+其中&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;$h$ 是普朗克常數(Plancks&amp;rsquo;s constant) = $6.626\times 10^{-34} (J\cdot s)$&lt;/li&gt;
+&lt;li&gt;$c$ 是光速 $= 2.997925\times 10^8 (m/s)$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Question 1：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;用羅畢達法則 (l&amp;rsquo;Hospital&amp;rsquo;s Rule) 說明普朗克定律&lt;/p&gt;
+&lt;p&gt;$$
+\lim_{\lambda\to 0^+}f(\lambda) = 0
+$$
+and
+$$
+\lim_{\lambda\to\infty} f(\lambda) = 0
+$$
+此結果說明為何對短波長的黑體輻射普朗克的模型比瑞立-金斯的定理更好.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;讓 $a=8\pi hc$, $b=\frac{hc}{kT}$, 則 $f(\lambda)=\frac{a\lambda ^{-5}}{e^{b/\lambda}-1}$.&lt;/p&gt;
+&lt;p&gt;接著我們計算
+$$
+\lim_{\lambda\to\infty} f(\lambda)=\lim_{\lambda\to\infty}\frac{a\lambda ^{-5}}{e^{b/\lambda}-1}= \lim_{\lambda\to\infty}\frac{-5a\lambda^{-6}}{-\frac{b}{\lambda^2}e^{b/\lambda}}=\frac{5a}b\lim_{\lambda\to\infty}\frac{\lambda^{-4}}{e^{b/\lambda }} = 0
+$$
+同樣的, 利用羅畢達法則我們得到
+$$
+\lim_{\lambda\to0^+}f(\lambda)=\frac{5a}b\lim_{\lambda\to\infty}\frac{\lambda^{-4}}{e^{b/\lambda }}=\frac{20a}{b^2}\lim_{\lambda\to0^+}\frac{\lambda^{-3}}{e^{b/\lambda}}
+$$
+在四次羅畢達法則後,我們能得到
+$$
+\lim_{\lambda\to0^+}f(\lambda) = 0
+$$&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Question 2：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;用泰勒展開式(Taylor polynomial) 說明在長波長時,普朗克定律 和 瑞立-金斯定理的結果會大致相同.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;我們知道 $e^x$ 的泰勒展開式:
+$$
+e^x=1+x+\frac{x^2}{2!}+\frac{x^3}{3!}+&amp;hellip;
+$$
+當 $\lambda$ 很大時, 泰勒展開式後面無窮多項相較於第一項是小非常多的, 所以我們可以用 $T_1$ 來近似:
+$$
+e^{{hc}/{\lambda k T}} - 1\approx 1 + \frac{hc}{\lambda k T} -1 = \frac{hc}{\lambda k T}
+$$
+因此
+$$
+f(\lambda)\approx\frac{8\pi h c \lambda^{-5}}{\frac{hc}{\lambda k T}}=\frac{8\pi k T}{\lambda^4}
+$$
+跟瑞立-金斯定理一模一樣.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Question 3：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;分別用兩個函式在同一個座標平面上劃出圖形, 並且說明相同和相異之處. $T$  用 5700K (太陽表面溫度) 帶入. (為了更方便計算 可以把長度單位從公尺換成微米: $1\mu$m = $10^{-6}$ m.)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;為了轉換成微米,我們把 $\lambda$ 用 $\frac{\lambda}{10^6}$ 帶入兩個函式. 在 $\lambda$ 很大時(圖左),兩個定理的結果很類似,然而在 $\lambda$ 很小時(圖右),結果差異甚大.&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://teshenglin.github.io/post/figs/2020_cal_s11p11_2.png&#34; &gt;
+
+
+  &lt;img src=&#34;https://teshenglin.github.io/post/figs/2020_cal_s11p11_2.png&#34; alt=&#34;&#34; width=&#34;600px&#34; &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Question 4：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;用第三題畫出來的圖去估算普朗克定律中 $f(\lambda)$ 為最大值時  $\lambda$ 的長度.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;從第三題的圖表得知, 普朗克定律中$f(\lambda)$ 在 $\lambda$ $\approx$ $0.51\mu$m 有最大值.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Question 5：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;觀察下列四個恆星在普朗克定律的圖形 $f$ 如何隨著 $T$ 的變動&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;參宿四 (Betelgeuse) T = 3400K&lt;/li&gt;
+&lt;li&gt;南河三 (Procyon) T = 6400K&lt;/li&gt;
+&lt;li&gt;天狼星 (Sirius) T = 9200K&lt;/li&gt;
+&lt;li&gt;太陽&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;發散的總輻射量(曲線下的面積)式怎麼隨著溫度變化的? 用圖來說明為何天狼星是藍色而參宿四是紅色.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;隨著溫度升高，曲線下的面積也隨之增加，所以可以推斷出當恆星溫度越高，發散的能量越多。且當溫度升高時，曲線最大值的$\lambda$值會減少。因此溫度越高，恆星散發的光的峰值與平均波長越短。當光的波長越短，頻率越高。當頻率高時，光在光譜上會接近藍端。而參宿四的頻率較低，較接近紅端。這就是為什麼天狼星是藍星而參宿是紅星。&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://teshenglin.github.io/post/figs/2020_cal_s11p11_1.png&#34; &gt;
+
+
+  &lt;img src=&#34;https://teshenglin.github.io/post/figs/2020_cal_s11p11_1.png&#34; alt=&#34;&#34; width=&#34;600px&#34; &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;hr&gt;
+</description>
+    </item>
     
     <item>
       <title>Sec.4.1 - The Calculus of ranbows</title>
@@ -59,11 +359,11 @@ $$&lt;/p&gt;
 
 &lt;p&gt;Show that the minimum value of deviation is $D(\alpha)\approx 138^{\circ}$; and occurs when $\alpha\approx 59.4^{\circ}$.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Recall Snell&#39;s law:
+&lt;p&gt;Recall Snell&amp;rsquo;s law:
 $$
 \sin\alpha = \frac{4}{3}\sin\beta. \qquad \qquad (1)
 $$
-We teat the angle $\alpha$ as a function of $\beta$ and take derivative with respect to $\alpha$ to Snell&#39;s law to obtain
+We teat the angle $\alpha$ as a function of $\beta$ and take derivative with respect to $\alpha$ to Snell&amp;rsquo;s law to obtain
 $$
 \cos\alpha = \frac{4}{3}\cos\beta\frac{d\beta}{d\alpha}.
 $$
@@ -117,7 +417,7 @@ $$&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Question 2:&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Problem 1 explains the location of the primary rainbow, but how do we explain the colors? Sunlight comprises a range of wavelengths, from the red range through orange, yellow, green, blue, indigo, and violet. As Newton discovered in his prism experiments of 1666, the index of refraction is different for each color, (The effect is called &lt;em&gt;dispersion&lt;/em&gt;.) For red light the refractive index $k \approx 1.3318$,  whereas for violet light it is $k\approx 1.3435$. By repeating the calculation of Problem 1 for these values of $k$, show that the rainbow angle is about $42.3^{\circ}$ for red bow and $40.6^{\circ}$ for the violet bow. So the rainbow really consists of seven individual bows corresponding to the seven colors.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Similar to the approach of problem 1, we first write down the Snell&#39;s law
+&lt;p&gt;Similar to the approach of problem 1, we first write down the Snell&amp;rsquo;s law
 $$
 \sin\alpha =k\sin\beta. \qquad \qquad (3)
 $$
@@ -250,7 +550,7 @@ $$&lt;/p&gt;
 \frac{v_E}{v_P} = \sqrt[4]{3}
 $$&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Question 4:&lt;/strong&gt;  In applying the equation of Problem 1 to bird flight we split the term $Av^3$ ​into two parts:​ $A_b v^3$ ​for the bird&#39;s body and​ $A_w v^3$ ​for its wings. Let​ $x$ be the fraction of flying time spent in flapping mode. If $m$ is the bird&#39;s mass and all the lift occurs during flapping, then the lift is $mg/x$ and so the power needed during flapping is&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Question 4:&lt;/strong&gt;  In applying the equation of Problem 1 to bird flight we split the term $Av^3$ ​into two parts:​ $A_b v^3$ ​for the bird&amp;rsquo;s body and​ $A_w v^3$ ​for its wings. Let​ $x$ be the fraction of flying time spent in flapping mode. If $m$ is the bird&amp;rsquo;s mass and all the lift occurs during flapping, then the lift is $mg/x$ and so the power needed during flapping is&lt;/p&gt;
 &lt;p&gt;$$
 P_f = (A_b+A_w)v^3 + \frac{B(mg/x)^2}{v}
 $$&lt;/p&gt;

@@ -638,11 +638,11 @@
 <ul>
 <li>查詢版本資訊</li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-julia" data-lang="julia">julia<span style="color:#f92672"></span><span style="color:#f92672">&gt;</span> versioninfo<span style="color:#f92672"></span>()
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-julia" data-lang="julia">julia<span style="color:#f92672">&gt;</span> versioninfo()
 </code></pre></div><ul>
 <li>套件(package)管理</li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-julia" data-lang="julia">julia<span style="color:#f92672"></span><span style="color:#f92672">&gt;</span> ]
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-julia" data-lang="julia">julia<span style="color:#f92672">&gt;</span> ]
 </code></pre></div><pre><code>然後就會進入套件管理系統
 ```julia
 pkg&gt;
@@ -663,7 +663,7 @@ pkg&gt; update
 <ul>
 <li>查詢指令(如matlab中的help)</li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-julia" data-lang="julia">julia<span style="color:#f92672"></span><span style="color:#f92672">&gt;</span> <span style="color:#f92672">?</span>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-julia" data-lang="julia">julia<span style="color:#f92672">&gt;</span> <span style="color:#f92672">?</span>
 </code></pre></div><pre><code>然後就會變成查詢的視窗
 ```julia
 help?&gt;
@@ -678,14 +678,14 @@ help?&gt;
 <li>
 <p>安裝 Jupyter notebook 有兩種方式. 第一種是直接由 julia 安裝. 步驟如下</p>
 <p>在 julia 輸入 <code>]</code> 進入套件管理命令提示. 然後會長得像這樣</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-julia" data-lang="julia">pkg<span style="color:#f92672"></span><span style="color:#f92672">&gt;</span>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-julia" data-lang="julia">pkg<span style="color:#f92672">&gt;</span>
 </code></pre></div><p>接著輸入 <code>status</code> 可以看到現在已經安裝的套件.</p>
 <p>我們要安裝 IJulia, 所以輸入</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-julia" data-lang="julia">pkg<span style="color:#f92672"></span><span style="color:#f92672">&gt;</span> add<span style="color:#f92672"></span> IJulia<span style="color:#f92672"></span>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-julia" data-lang="julia">pkg<span style="color:#f92672">&gt;</span> add IJulia
 </code></pre></div><p>安裝完後要退出套件管理則是 BackSpace 鍵或是 Ctrl+C 都可以.</p>
 <p>要打開 notebook 需要退出套件管理, 並在 julia 命令提示字元下輸入</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-julia" data-lang="julia">julia<span style="color:#f92672"></span><span style="color:#f92672">&gt;</span> <span style="color:#66d9ef">using</span> IJulia<span style="color:#f92672"></span>
-julia<span style="color:#f92672"></span><span style="color:#f92672">&gt;</span> notebook<span style="color:#f92672"></span>()
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-julia" data-lang="julia">julia<span style="color:#f92672">&gt;</span> <span style="color:#66d9ef">using</span> IJulia
+julia<span style="color:#f92672">&gt;</span> notebook()
 </code></pre></div><p>這樣 Jupyter notebook 就會在你的瀏覽器中打開.</p>
 <ul>
 <li>
@@ -696,8 +696,8 @@ julia<span style="color:#f92672"></span><span style="color:#f92672">&gt;</span> 
 <p>目前已經有 jupyter notebook 的升級版, 稱為 jupyter lab. 在 julia 命令提示字元下輸入</p>
 </li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-julia" data-lang="julia">julia<span style="color:#f92672"></span><span style="color:#f92672">&gt;</span> <span style="color:#66d9ef">using</span> IJulia<span style="color:#f92672"></span>
-julia<span style="color:#f92672"></span><span style="color:#f92672">&gt;</span> jupyterlab<span style="color:#f92672"></span>()
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-julia" data-lang="julia">julia<span style="color:#f92672">&gt;</span> <span style="color:#66d9ef">using</span> IJulia
+julia<span style="color:#f92672">&gt;</span> jupyterlab()
 </code></pre></div><p>這樣 Jupyter lab 就會在你的瀏覽器中打開.</p>
 </li>
 <li>

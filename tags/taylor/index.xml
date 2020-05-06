@@ -22,7 +22,7 @@
 Chinese version: 
 &lt;a href=&#34;https://teshenglin.github.io/post/2020_cal_s3p10_ch&#34;&gt;泰勒級數&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;The tangent line approximation $L(x)$ is the best first-degree (linear) approximation to $f(x)$ near $x=a$ because $f(x)$ and $L(x)$ have the same rate of change (derivative) at $x=a$. For a better approximation than a linear one, let&#39;s try a second-degree (quadratic) approximation $P(x)$. In other words, we approximate a curve by a parabola instead of a straight line. To make sure that the approximation is a good one, we stipulate the following:&lt;/p&gt;
+&lt;p&gt;The tangent line approximation $L(x)$ is the best first-degree (linear) approximation to $f(x)$ near $x=a$ because $f(x)$ and $L(x)$ have the same rate of change (derivative) at $x=a$. For a better approximation than a linear one, let&amp;rsquo;s try a second-degree (quadratic) approximation $P(x)$. In other words, we approximate a curve by a parabola instead of a straight line. To make sure that the approximation is a good one, we stipulate the following:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;$P$ and $f$ should have the same value at $a$. ($P(a)=f(a)$)&lt;/li&gt;
 &lt;li&gt;$P$ and $f$ should have the same rate of change at $a$. ($P&amp;rsquo;(a)=f&amp;rsquo;(a)$)&lt;/li&gt;
@@ -158,7 +158,7 @@ We draw the graph of $f(x),P(x)$ and the linear approximation from Example 3.10.
 
 &lt;p&gt;According to the graph, when $x\rightarrow 1$, quadratic approximation $P(x)$ serves as a better approximation than linear approximation $L(x)$.&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Question 5:&lt;/strong&gt; Instead of being satisfied with a linear or quadratic approximation to $f(x)$ near $x=a$, let&#39;s try to find better approximations with higher-degree polynomials. We look for an nth-degree polynomial
+&lt;p&gt;&lt;strong&gt;Question 5:&lt;/strong&gt; Instead of being satisfied with a linear or quadratic approximation to $f(x)$ near $x=a$, let&amp;rsquo;s try to find better approximations with higher-degree polynomials. We look for an nth-degree polynomial
 $$
 T_{n}(x)=c_{0}+c_{1}(x-a)+c_{2}(x-a)^{2}+c_{3}(x-a)^{3}+&amp;hellip;+c_{n}(x-a)^{n}，
 $$

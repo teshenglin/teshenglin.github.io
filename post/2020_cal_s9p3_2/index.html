@@ -1,0 +1,1092 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 4.7.0">
+
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Te-Sheng Lin (林得勝)">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="Applied Project in Sec.9.3, Calculus by Stewart Chinese version: 上升快，還是下降快? Suppose you throw a ball into the air. Do you think it takes longer to reach its maximum height or to fall back to earth from its maximum height? We will solve the problem in this project, but before getting started, think about that situation and make a guess based on">
+
+  
+  <link rel="alternate" hreflang="en-us" href="https://teshenglin.github.io/post/2020_cal_s9p3_2/">
+
+  
+
+
+  
+  
+  
+  <meta name="theme-color" content="#2962ff">
+  
+
+  
+  
+  
+  <script src="/js/mathjax-config.js"></script>
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-1/css/all.min.css" integrity="sha256-4w9DunooKSr3MFXHXWyFER38WmPdm361bQS/2KUWZbU=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+        
+      
+    
+
+    
+
+    
+
+    
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.1.2/lazysizes.min.js" integrity="sha256-Md1qLToewPeKjfAHU1zyPwOutccPAm5tahnaw7Osw0A=" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CRoboto:400,400italic,700%7CRoboto+Mono&display=swap">
+  
+
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/academic.css">
+
+  
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-33193104-3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-33193104-3');
+</script>
+
+  
+
+
+  
+
+  <link rel="manifest" href="/index.webmanifest">
+  <link rel="icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_2.png">
+
+  <link rel="canonical" href="https://teshenglin.github.io/post/2020_cal_s9p3_2/">
+
+  
+  
+  
+  
+  
+    
+    
+  
+  
+  <meta property="twitter:card" content="summary">
+  
+  <meta property="og:site_name" content="Te-Sheng Lin">
+  <meta property="og:url" content="https://teshenglin.github.io/post/2020_cal_s9p3_2/">
+  <meta property="og:title" content="Sec.9.3.2 - Which is faster, going up or going down? | Te-Sheng Lin">
+  <meta property="og:description" content="Applied Project in Sec.9.3, Calculus by Stewart Chinese version: 上升快，還是下降快? Suppose you throw a ball into the air. Do you think it takes longer to reach its maximum height or to fall back to earth from its maximum height? We will solve the problem in this project, but before getting started, think about that situation and make a guess based on"><meta property="og:image" content="https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png">
+  <meta property="twitter:image" content="https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png"><meta property="og:locale" content="en-us">
+  
+    
+      <meta property="article:published_time" content="2020-04-23T00:00:00&#43;00:00">
+    
+    <meta property="article:modified_time" content="2020-05-06T12:16:23&#43;08:00">
+  
+
+  
+
+
+    
+
+
+
+
+
+
+  
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://teshenglin.github.io/post/2020_cal_s9p3_2/"
+  },
+  "headline": "Sec.9.3.2 - Which is faster, going up or going down?",
+  
+  "datePublished": "2020-04-23T00:00:00Z",
+  "dateModified": "2020-05-06T12:16:23+08:00",
+  
+  "author": {
+    "@type": "Person",
+    "name": "鄭宇皓"
+  },
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "Te-Sheng Lin",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_2.png"
+    }
+  },
+  "description": "Applied Project in Sec.9.3, Calculus by Stewart Chinese version: 上升快，還是下降快? Suppose you throw a ball into the air. Do you think it takes longer to reach its maximum height or to fall back to earth from its maximum height? We will solve the problem in this project, but before getting started, think about that situation and make a guess based on"
+}
+</script>
+
+  
+
+  
+
+
+  
+
+
+  
+
+
+
+
+
+  <title>Sec.9.3.2 - Which is faster, going up or going down? | Te-Sheng Lin</title>
+
+</head>
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" >
+
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+  
+
+
+
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container">
+
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="/">Te-Sheng Lin</a>
+    </div>
+    
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/">Te-Sheng Lin</a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#about"><span>Home</span></a>
+        </li>
+
+        
+        
+
+        
+        <li class="nav-item dropdown">
+          <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"><span>Resume</span><span class="caret"></span>
+          </a>
+          <div class="dropdown-menu">
+            
+              <a class="dropdown-item" href="/#experience"><span>Appointments </span></a>
+            
+              <a class="dropdown-item" href="/#publications"><span>Publications</span></a>
+            
+              <a class="dropdown-item" href="/#cv"><span>CV</span></a>
+            
+          </div>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#posts"><span>Posts</span></a>
+        </li>
+
+        
+        
+
+        
+        <li class="nav-item dropdown">
+          <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"><span>Teaching</span><span class="caret"></span>
+          </a>
+          <div class="dropdown-menu">
+            
+              <a class="dropdown-item" href="/courses/taught"><span>Courses taught</span></a>
+            
+              <a class="dropdown-item" href="/courses/students"><span>Students supervised</span></a>
+            
+          </div>
+        </li>
+
+        
+        
+
+      
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+      
+      <li class="nav-item">
+        <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+      <li class="nav-item">
+        <a class="nav-link js-dark-toggle" href="#"><i class="fas fa-moon" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+  <article class="article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+<div class="article-container pt-3">
+  <h1>Sec.9.3.2 - Which is faster, going up or going down?</h1>
+
+  
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+
+
+  
+  <span><a href="/authors/%E9%84%AD%E5%AE%87%E7%9A%93/">鄭宇皓</a></span>, <span><a href="/authors/%E7%B0%A1%E5%AD%90%E8%88%9C/">簡子舜</a></span>, <span><a href="/authors/admin/">Te-Sheng Lin (林得勝)</a></span>
+
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+          Last updated on
+      
+    
+    May 6, 2020
+  </span>
+  
+
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    2 min read
+  </span>
+  
+
+  
+  
+  
+  <span class="middot-divider"></span>
+  <a href="/post/2020_cal_s9p3_2/#disqus_thread"></a>
+  
+
+  
+  
+  <span class="middot-divider"></span>
+  <span class="article-categories">
+    <i class="fas fa-folder mr-1"></i><a href="/categories/calculus/">Calculus</a></span>
+  
+
+</div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style">
+      <blockquote>
+<p>Applied Project in Sec.9.3, Calculus by Stewart<br>
+Chinese version: 
+<a href="/post/2020_cal_s9p3_2_ch">上升快，還是下降快?</a></p>
+</blockquote>
+<p>Suppose you throw a ball into the air. Do you think it takes longer to reach its maximum height or to fall back to earth from its maximum height? We will solve the problem in this project, but before getting started, think about that situation and make a guess based on your physical intuition.</p>
+<hr>
+<p><strong>Question 1：</strong></p>
+<p>A ball with mass $m$ is projected vertically upward from the earth’s surface with a positive initial velocity $v_0$. We assume the forces acting on the ball are the force of gravity and a retarding force of air resistance with direction opposite to the direction of motion and with magnitude $p|v(t)|$, where $p$ is a positive constant and $v(t)$ is the velocity of the ball at time $t$. In both the ascent and the descent, the total force acting on the ball is $-pv-mg$. [During ascent, $v(t)$ is positive and the resistance acts downward; during descent, $v(t)$ is negative and the resistance acts upward.] So, by Newton’s Second Law, the equation of motion is
+$$
+mv'=-pv-mg
+$$
+Solve this differential equation to show that the velocity is
+$$
+v(t)=(v_0+\frac{mg}{p})e^{-pt/m}-\frac{mg}{p}
+$$</p>
+<p><strong>Answer:</strong></p>
+<p>We known that
+$$
+mv'=-pv-mg
+$$
+With some calculate we can get
+$$
+\int {\frac{p}{pv+mg}dv}=\int -\frac{p}{m}dt
+$$
+Integrate both sides we obtain
+$$
+\ln(pv+mg) = -\frac{p}{m}t + C, \quad pv+mg=e^{-\frac{p}{m}t + C}
+$$
+With initial condition $v(0) = v_0$ we get
+$$
+p v_0 + mg = e^C
+$$
+and finally we have
+$$
+v(t)=(v_0+\frac{mg}{p})e^{-\frac{p}{m}t}-\frac{mg}{p}
+$$</p>
+<hr>
+<p><strong>Question 2：</strong></p>
+<p>Show that the height of the ball, until it hits the ground, is
+$$
+y(t)=(v_0+\frac{mg}{p})\frac{m}{p}(1-e^{-pt/m})-\frac{mgt}{p}
+$$</p>
+<p><strong>Answer：</strong></p>
+<p>$$
+y(t)=\int_0^tv(t)dt
+=\int_0^t (v_0+\frac{mg}{p})e^{-\frac{p}{m}t}-\frac{mg}{p}dt
+=(v_0+\frac{mg}{p})\frac{m}{p}(-e^{-\frac{p}{m}t}+1)-\frac{mg}{p}t
+$$</p>
+<hr>
+<p><strong>Question 3：</strong></p>
+<ol>
+<li>
+<p>Let $t_1$ be the time that the ball takes to reach its maximum height. Show that
+$$
+t_1=\frac{m}{p}ln(\frac{mg+pv_0}{mg})
+$$</p>
+</li>
+<li>
+<p>Find this time for a ball with mass 1 kg and initial velocity 20 m/s. Assume the air resistance is $\frac{1}{10}$ of the speed.</p>
+</li>
+</ol>
+<p><strong>Answer：</strong></p>
+<ol start="2">
+<li>
+<p>when the ball takes to reach its maximum height, the velocity $v(t_1)=0$, i.e.,
+$$
+(v_0+\frac{mg}{p})e^{-\frac{p}{m}t_1}-\frac{mg}{p}=0
+$$
+We then obtain
+$$
+t_1=\frac{m}{p}\ln\left({\frac{mg + pv_0}{mg}}\right)
+$$</p>
+</li>
+<li>
+<p>with the ball with mass $m=1kg$, initial velocity $v_0=20m/s$, gravity $g=9.8m/s$, and air resistance $p=\frac{1}{10}$.
+$$
+t_1=\frac{1}{\frac{1}{10}}ln\left({\frac{1\times9.8+\frac{1}{10}\times20}{1\times9.8}}\right)=‭1.85717‬s
+$$</p>
+</li>
+</ol>
+<hr>
+<p><strong>Question 4：</strong></p>
+<p>Let $t_2$ be the time at which the ball falls back to earth. For the particular ball in Problem 3, estimate $t_2$ by using a graph of the height function $y(t)$. Which is faster, going up or coming down?</p>
+<p><strong>Answer：</strong></p>
+<p><img src="https://i.imgur.com/C4svFLG.png" alt="Imgur"></p>
+<p>because the time of the ball going up is shorter than the ball coming down, the speed of the ball going up is faster than the coming down.</p>
+<hr>
+<p><strong>Question 5：</strong></p>
+<p>In general, it’s not easy to find $t_2$ because it’s impossible to solve the equation $y(t)=0$ explicitly. We can, however, use an indirect method to determine whether ascent or descent is faster: we determine whether $y(2t_1)$ is positive or negative.</p>
+<ol>
+<li>
+<p>Show that
+$$
+y(2t_1)=\frac{m^2g}{p^2}(x-\frac{1}{x}-2\ln{x})
+$$
+where $x=e^{pt_1/m}$.</p>
+</li>
+<li>
+<p>Then show that $x &gt; 1$ and the function
+$$
+f(x)=x-\frac{1}{x}-2\ln{x}
+$$
+is increasing for $x &gt; 1$.</p>
+</li>
+<li>
+<p>Use this result to decide whether $y(2t_1)$ is positive or negative. What can you conclude? Is ascent or descent faster?</p>
+</li>
+</ol>
+<p><strong>Answer：</strong></p>
+<ol>
+<li>
+<p>According to Question 3, we get
+$$
+t_1=\frac{m}{p}ln{\frac{pv_0+mg}{mg}},　\quad x=e^{pt_1/m}, \quad
+\Rightarrow \quad x=\frac{pv_0+mg}{mg}
+$$
+According to the Question 2, we get
+$$
+y(2t_1)=(v_0+\frac{mg}{p})\frac{m}{p}(1-e^{-2pt_1/m})-\frac{2mgt_1}{p}
+$$
+$$
+=\frac{m^2g}{p^2}\left[(1-e^{-2pt_1/m})+(\frac{pv_0}{mg})(1-e^{-2pt_1/m})-(\frac{2pt_1}{m})\right]
+$$
+$$
+=\frac{m^2g}{p^2}\left[(1-\frac{1}{x^2})+(\frac{pv_0}{mg})(1-\frac{1}{x^2})-2\ln x\right]
+=\frac{m^2g}{p^2}(x-\frac{1}{x}-2\ln{x})
+$$</p>
+</li>
+<li>
+<p>According to the question
+$$
+f(x)=x-\frac{1}{x}-2\ln{x}, \quad
+f&rsquo;(x)=1+\frac{1}{x^2}-\frac{2}{x}
+=(\frac{x-1}{x})^2\geq 0
+$$
+so we know that $f(x)$ is increasing for $x&gt;1$</p>
+</li>
+<li>
+<p>By the result, we know that $f(1)=0$, and $f(x)$ is increasing for $x&gt;1$, so we can conclude that
+$$
+y(2t_1)=\frac{m^2g}{p^2}(x-\frac{1}{x}-2\ln{x})&gt;0
+$$
+Because $y(2t_1)$ is positive, which means that the $2t_1&lt;t_1+t_2$, and $t_1&lt;t_2$. So the conclusion is that ascent is faster than descent.</p>
+</li>
+</ol>
+<hr>
+
+    </div>
+
+    
+
+
+
+
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/tags/applied-project/">applied project</a>
+  
+</div>
+
+
+
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=https://teshenglin.github.io/post/2020_cal_s9p3_2/&amp;text=Sec.9.3.2%20-%20Which%20is%20faster,%20going%20up%20or%20going%20down?" target="_blank" rel="noopener" class="share-btn-twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=https://teshenglin.github.io/post/2020_cal_s9p3_2/&amp;t=Sec.9.3.2%20-%20Which%20is%20faster,%20going%20up%20or%20going%20down?" target="_blank" rel="noopener" class="share-btn-facebook">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="mailto:?subject=Sec.9.3.2%20-%20Which%20is%20faster,%20going%20up%20or%20going%20down?&amp;body=https://teshenglin.github.io/post/2020_cal_s9p3_2/" target="_blank" rel="noopener" class="share-btn-email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+  
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  <div class="media author-card content-widget-hr">
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="/authors/%E9%84%AD%E5%AE%87%E7%9A%93/"></a></h5>
+      
+      
+      <ul class="network-icon" aria-hidden="true">
+  
+</ul>
+
+    </div>
+  </div>
+
+
+
+
+<section id="comments">
+  
+    
+<div id="disqus_thread"></div>
+<script>
+  let disqus_config = function () {
+    
+    
+    
+  };
+  (function() {
+    if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+      document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+      return;
+    }
+    var d = document, s = d.createElement('script'); s.async = true;
+    s.src = 'https://' + "https-teshenglin-github-io" + '.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+  
+</section>
+
+
+
+
+
+
+  
+  
+  <div class="article-widget content-widget-hr">
+    <h3>Related</h3>
+    <ul>
+      
+      <li><a href="/post/2020_cal_s8p3_ch/">Sec.8.3 - Complementary Coffee Cups</a></li>
+      
+      <li><a href="/post/2020_cal_s9p3_2_ch/">Sec.9.3.2 - 上升快，還是下降快?</a></li>
+      
+      <li><a href="/post/2020_cal_s4p1_ch/">Sec.4.1 - 彩虹的微積分學</a></li>
+      
+      <li><a href="/post/2020_cal_s4p1/">Sec.4.1 - The Calculus of ranbows</a></li>
+      
+      <li><a href="/post/2020_cal_s4p7_2_ch/">Sec.4.7 - 飛機和鳥：能量最小化</a></li>
+      
+    </ul>
+  </div>
+  
+
+
+
+  </div>
+</article>
+
+      
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.4.4/mermaid.min.js" integrity="sha256-JEqEejGt4tR35L0a1zodzsV0/PJ6GIf7J4yDtywdrH8=" crossorigin="anonymous" title="mermaid"></script>
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js" integrity="sha256-eOgo0OtLL4cdq7RdwRUiGKLX9XsIJ7nGhWEKbohmVAQ=" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/languages/r.min.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/languages/julia.min.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/languages/python.min.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/languages/fortran.min.js"></script>
+        
+      
+
+    
+
+    
+    
+
+    
+    
+    <script>const code_highlighting = true;</script>
+    
+
+    
+    
+    <script>const isSiteThemeDark = false;</script>
+    
+
+    
+    
+    
+    
+    
+    
+    <script>
+      const search_config = {"indexURI":"/index.json","minLength":1,"threshold":0.3};
+      const i18n = {"no_results":"No results found","placeholder":"Search...","results":"results found"};
+      const content_type = {
+        'post': "Posts",
+        'project': "Projects",
+        'publication' : "Publications",
+        'talk' : "Talks"
+        };
+    </script>
+    
+
+    
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+    <script id="dsq-count-scr" src="https://https-teshenglin-github-io.disqus.com/count.js" async></script>
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    <script src="/js/academic.min.a8d7005002cb4a052fd6d721e83df9ba.js"></script>
+
+    
+
+
+
+
+
+
+  
+  
+  <div class="container">
+    <footer class="site-footer">
+  
+
+  <p class="powered-by">
+    
+
+    Powered by the
+    <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
+    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+
+    
+    <span class="float-right" aria-hidden="true">
+      <a href="#" class="back-to-top">
+        <span class="button_icon">
+          <i class="fas fa-chevron-up fa-2x"></i>
+        </span>
+      </a>
+    </span>
+    
+  </p>
+</footer>
+
+  </div>
+  
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

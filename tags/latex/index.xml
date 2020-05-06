@@ -50,14 +50,18 @@
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;如果連安裝都不想的話我推薦 
-&lt;a href=&#34;https://notes.dosilovic.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;markdown notes&lt;/a&gt; 這個線上編輯器. 它支援線上即時編寫, 可以線上存檔, 也可以下載成 markdown 以及 PDF.&lt;/p&gt;
+&lt;a href=&#34;http://hackmd.io/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;hackmd&lt;/a&gt; 這個線上編輯器. 這個還能多人共筆編輯, 適合寫作業交作業.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;另一個線上編輯器: 
+&lt;a href=&#34;https://notes.dosilovic.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;markdown notes&lt;/a&gt; . 它支援線上即時編寫, 可以線上存檔, 也可以下載成 markdown 以及 PDF.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;另一個線上編輯器: 
 &lt;a href=&#34;https://upmath.me&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;upmath&lt;/a&gt;, 一樣支援線上即時編寫, 可以存成 html 直接幫你產生網頁.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;不過我要稍微說明一下, 不管使用哪種編輯器, markdown 主要語法都差不多. 不過在輸出上會有一些細微的差異. 這點就要自己使用後才會感受得到差別.&lt;/p&gt;
+&lt;p&gt;不過我要稍微說明一下, 不管使用哪種編輯器, markdown 主要語法都差不多, 只是在輸出上會有一些細微的差異. 這點就要自己使用後才會感受得到差別.&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;markdown-語法教學&#34;&gt;Markdown 語法教學&lt;/h2&gt;
 &lt;p&gt;以下列舉一些 markdown 教學的線上資源&lt;/p&gt;

@@ -5,12 +5,715 @@
     <link>https://teshenglin.github.io/authors/admin/</link>
       <atom:link href="https://teshenglin.github.io/authors/admin/index.xml" rel="self" type="application/rss+xml" />
     <description>Te-Sheng Lin</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 11 Apr 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language>
     <image>
       <url>https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
       <title>Te-Sheng Lin</title>
       <link>https://teshenglin.github.io/authors/admin/</link>
     </image>
+    
+    <item>
+      <title>Sec.11.11 - Radiation From The Stars</title>
+      <link>https://teshenglin.github.io/post/2020_cal_s11p11/</link>
+      <pubDate>Sun, 26 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>https://teshenglin.github.io/post/2020_cal_s11p11/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;Applied Project in Sec.11.11, Calculus by Stewart&lt;br&gt;
+Chinese version 
+&lt;a href=&#34;https://teshenglin.github.io/post/2020_cal_s11p11_ch&#34;&gt;恆星的輻射&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Any object emits radiation when heated. A &lt;strong&gt;blackbody&lt;/strong&gt; is a system that absorbs all the radiation that falls on it. For instance, a matte black surface or a large cavity with a small hole in its wall (like a blastfurnace) is a blackbody and emits blackbody radiation. Even the radiation from the sun is close to being a blackbody radiation.&lt;/p&gt;
+&lt;p&gt;Proposed in the late 19th century, the Rayleigh-Jeans Law expresses the energy density of blackbody radiation of wavelength $\lambda$ as
+$$
+f(\lambda)=\frac{8 \pi kT}{\lambda^4}
+$$
+where $\lambda$ is measured in meters, $T$ is the temperature in kelvins (K) and $k=$ Boltzmann&amp;rsquo;s constant $=1.3807\times 10^{-23}$J/K.&lt;/p&gt;
+&lt;p&gt;The Rayleigh-Jeans Law agrees with experimental measurements for long wavelengths but disagrees drastically for short wavelengths. [The law predicts that $f(\lambda)\rightarrow \infty$as $\lambda \to 0^+$ but experiments have shown that $f(\lambda)\to0$.] This fact is known as the &lt;em&gt;ultraviolet catastrophe&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;In 1990 Max Planck found a better model (known now as Planck&amp;rsquo;s Law) for blackbody radiation:
+$$
+f(\lambda)= \frac{8 \pi hc \lambda^{-5}}{e^{hc/(\lambda kT)}-1}
+$$
+and&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;$h=$ Planck&amp;rsquo;s constant $=6.6262\times 10^{-34}$ J$\cdot$s&lt;/li&gt;
+&lt;li&gt;$c=$ speed of light $=2.997925\times10^8$m/s&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Question 1:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Use l&amp;rsquo;Hospital&amp;rsquo;s Rule to show that&lt;/p&gt;
+&lt;p&gt;$$
+\lim_{\lambda\to0^+}f(\lambda)=0
+$$
+and
+$$
+\lim_{\lambda\to\infty} f(\lambda) = 0
+$$&lt;/p&gt;
+&lt;p&gt;for Planck&amp;rsquo;s Law. So this law models blackbody radiation better than the Rayleigh-Jeans Law for short wavelengths.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Let $a=8\pi hc$, $b=\frac{hc}{kT}$, so that $f(\lambda)=\frac{a\lambda ^{-5}}{e^{b/\lambda}-1}$.&lt;/p&gt;
+&lt;p&gt;We then have
+$$
+\lim_{\lambda\to\infty} f(\lambda)=\lim_{\lambda\to\infty}\frac{a\lambda ^{-5}}{e^{b/\lambda}-1}= \lim_{\lambda\to\infty}\frac{-5a\lambda^{-6}}{-\frac{b}{\lambda^2}e^{b/\lambda}}=\frac{5a}b\lim_{\lambda\to\infty}\frac{\lambda^{-4}}{e^{b/\lambda }} = 0
+$$
+Similarly, with l&amp;rsquo;Hospital&amp;rsquo;s Rule we obtain
+$$
+\lim_{\lambda\to0^+}f(\lambda)=\frac{5a}b\lim_{\lambda\to\infty}\frac{\lambda^{-4}}{e^{b/\lambda }}=\frac{20a}{b^2}\lim_{\lambda\to0^+}\frac{\lambda^{-3}}{e^{b/\lambda}}
+$$
+After using l&amp;rsquo;Hospital&amp;rsquo;s Rule four times, we obtain
+$$
+\lim_{\lambda\to0^+}f(\lambda) = 0
+$$&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Question 2:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Use a Taylor polynomial to show that, for large wavelengths, Planck&amp;rsquo;s Law gives approximately the same values as the Rayleigh-Jeans Law.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Taylor series expansion for $e^x$ is given as
+$$
+e^x=1+x+\frac{x^2}{2!}+\frac{x^3}{3!}+&amp;hellip;
+$$
+For large enough $\lambda$, all subsequent terms in the Taylor expansion are very small compared to the first one, so we can approximate using the Taylor polynomial $T_1$:
+$$
+e^{{hc}/{\lambda k T}} - 1\approx 1 + \frac{hc}{\lambda k T} -1 = \frac{hc}{\lambda k T}
+$$
+Therefore
+$$
+f(\lambda)\approx\frac{8\pi h c \lambda^{-5}}{\frac{hc}{\lambda k T}}=\frac{8\pi k T}{\lambda^4}
+$$
+which is exactly the same as the Rayleigh-Jeans Law.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Question 3:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Graph $f$ as given by both laws on the same screen and comment on the similarities and differences. Use $T=5700$K (the temperature of the Sun ). (You may want to change from meters to the more convenient unit of micrometers: $1\mu$m $=10^{-6}$m.)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;To convert to $\mu$m, we substitute $\lambda/10^6$ for $\lambda$ in both laws. For large $\lambda$ (left), the graphs of two laws are similar. For small $\lambda$ (right), the graphs of two laws are very different.&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://teshenglin.github.io/post/figs/2020_cal_s11p11_2.png&#34; &gt;
+
+
+  &lt;img src=&#34;https://teshenglin.github.io/post/figs/2020_cal_s11p11_2.png&#34; alt=&#34;&#34; width=&#34;600px&#34; &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Question 4:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Use your graph in Problem 3 to estimate the value of $\lambda$ for which $f(\lambda)$ is a maximum under Planck&amp;rsquo;s Law.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;From the graph in Problem 3, $f(\lambda)$ has a maximum under Planck&amp;rsquo;s Law at $\lambda\approx0.51 \mu$m.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Question 5:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Investigate how the graph of $f$ changes as $T$ varies. (Use Planck&amp;rsquo;s Law.) In particular, graph $f$ for the stars&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Betelgeuse ($T=3400$K)&lt;/li&gt;
+&lt;li&gt;Procyon ($T=6400$K)&lt;/li&gt;
+&lt;li&gt;Sirius ($T=9200$K)&lt;/li&gt;
+&lt;li&gt;Sun&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;How does the total radiation emitted (the area under the curve) vary with $T$ ? Use the graph to comment on why Sirius is known as a blue star and Betelgeuse as a red star.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;As $T$ gets larger, the total area under the curve increase, so we can consider that the hotter the star is, the more energy it emits. Also as $T$ increases, the maximum $\lambda$-value decreases, so the higher the temperature, the shorter the peak wavelength and the average wavelength of light emitted. This is why Sirius is a blue star and Betelgeuse is a red star. And most of its light is of a short wavelength. That is, a higher frequency, toward the blue end of the spectrum, whereas most of Betelgeuse&amp;rsquo;s light is of a lower frequency, toward the red end of the spectrum.&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://teshenglin.github.io/post/figs/2020_cal_s11p11_1.png&#34; &gt;
+
+
+  &lt;img src=&#34;https://teshenglin.github.io/post/figs/2020_cal_s11p11_1.png&#34; alt=&#34;&#34; width=&#34;600px&#34; &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;hr&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Sec.11.11 - 恆星的輻射</title>
+      <link>https://teshenglin.github.io/post/2020_cal_s11p11_ch/</link>
+      <pubDate>Sun, 26 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>https://teshenglin.github.io/post/2020_cal_s11p11_ch/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;Applied Project in Sec.11.11, Calculus by Stewart&lt;br&gt;
+英文版請見 
+&lt;a href=&#34;https://teshenglin.github.io/post/2020_cal_s11p11&#34;&gt;Radiation From The Stars&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;任何物件在被加熱時會散發輻射. 而 &lt;strong&gt;黑體&lt;/strong&gt; 則是一個會吸收所有經過他的輻射的一個系統. 舉例來說, 一個表面黑色且沒有光澤或著有一個大的空腔但只有一個小孔洞在牆壁上(像是煉鐵的高爐)可以視為一個黑體, 而他們會散發黑體輻射. 甚至從太陽散發出來的輻射也可以視作為一種黑體輻射.&lt;/p&gt;
+&lt;p&gt;19世紀時, 瑞立-金斯定律(Rayleigh-Jeans Law)被提出來, 用來描述黑體輻射的能量密度和波長 $\lambda$ 的關系:
+$$
+f(\lambda)=\frac{8 \pi kT}{\lambda^4}
+$$
+其中 $\lambda$ 的單位是公尺, $T$ 是溫度單位是 $K$(克氏溫標), $k$ 是波茲曼常數(Boltzmann&amp;rsquo;s constant) $= 1.3807\times 10^{-34} (J/K)$.&lt;/p&gt;
+&lt;p&gt;瑞立-金斯定律與實驗測量結果相比, 在長波長是吻合的, 但在短波長時卻相差甚遠. (這個定理預測 $f(\lambda)\rightarrow \infty$ as $\lambda \to 0^+$ 但實驗結果卻顯示 $f(\lambda)\to 0$.) 這個結果後來被稱為 &lt;em&gt;紫外災變&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;馬克思.普朗克 (Max Planck) 在 1990 時為黑體輻射找到一個更好的模型(現在被稱為普朗克定律):
+$$
+f(\lambda)= \frac{8 \pi hc \lambda^{-5}}{e^{hc/(\lambda kT)}-1}
+$$
+其中&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;$h$ 是普朗克常數(Plancks&amp;rsquo;s constant) = $6.626\times 10^{-34} (J\cdot s)$&lt;/li&gt;
+&lt;li&gt;$c$ 是光速 $= 2.997925\times 10^8 (m/s)$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Question 1：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;用羅畢達法則 (l&amp;rsquo;Hospital&amp;rsquo;s Rule) 說明普朗克定律&lt;/p&gt;
+&lt;p&gt;$$
+\lim_{\lambda\to 0^+}f(\lambda) = 0
+$$
+and
+$$
+\lim_{\lambda\to\infty} f(\lambda) = 0
+$$
+此結果說明為何對短波長的黑體輻射普朗克的模型比瑞立-金斯的定理更好.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;讓 $a=8\pi hc$, $b=\frac{hc}{kT}$, 則 $f(\lambda)=\frac{a\lambda ^{-5}}{e^{b/\lambda}-1}$.&lt;/p&gt;
+&lt;p&gt;接著我們計算
+$$
+\lim_{\lambda\to\infty} f(\lambda)=\lim_{\lambda\to\infty}\frac{a\lambda ^{-5}}{e^{b/\lambda}-1}= \lim_{\lambda\to\infty}\frac{-5a\lambda^{-6}}{-\frac{b}{\lambda^2}e^{b/\lambda}}=\frac{5a}b\lim_{\lambda\to\infty}\frac{\lambda^{-4}}{e^{b/\lambda }} = 0
+$$
+同樣的, 利用羅畢達法則我們得到
+$$
+\lim_{\lambda\to0^+}f(\lambda)=\frac{5a}b\lim_{\lambda\to\infty}\frac{\lambda^{-4}}{e^{b/\lambda }}=\frac{20a}{b^2}\lim_{\lambda\to0^+}\frac{\lambda^{-3}}{e^{b/\lambda}}
+$$
+在四次羅畢達法則後,我們能得到
+$$
+\lim_{\lambda\to0^+}f(\lambda) = 0
+$$&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Question 2：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;用泰勒展開式(Taylor polynomial) 說明在長波長時,普朗克定律 和 瑞立-金斯定理的結果會大致相同.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;我們知道 $e^x$ 的泰勒展開式:
+$$
+e^x=1+x+\frac{x^2}{2!}+\frac{x^3}{3!}+&amp;hellip;
+$$
+當 $\lambda$ 很大時, 泰勒展開式後面無窮多項相較於第一項是小非常多的, 所以我們可以用 $T_1$ 來近似:
+$$
+e^{{hc}/{\lambda k T}} - 1\approx 1 + \frac{hc}{\lambda k T} -1 = \frac{hc}{\lambda k T}
+$$
+因此
+$$
+f(\lambda)\approx\frac{8\pi h c \lambda^{-5}}{\frac{hc}{\lambda k T}}=\frac{8\pi k T}{\lambda^4}
+$$
+跟瑞立-金斯定理一模一樣.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Question 3：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;分別用兩個函式在同一個座標平面上劃出圖形, 並且說明相同和相異之處. $T$  用 5700K (太陽表面溫度) 帶入. (為了更方便計算 可以把長度單位從公尺換成微米: $1\mu$m = $10^{-6}$ m.)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;為了轉換成微米,我們把 $\lambda$ 用 $\frac{\lambda}{10^6}$ 帶入兩個函式. 在 $\lambda$ 很大時(圖左),兩個定理的結果很類似,然而在 $\lambda$ 很小時(圖右),結果差異甚大.&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://teshenglin.github.io/post/figs/2020_cal_s11p11_2.png&#34; &gt;
+
+
+  &lt;img src=&#34;https://teshenglin.github.io/post/figs/2020_cal_s11p11_2.png&#34; alt=&#34;&#34; width=&#34;600px&#34; &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Question 4：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;用第三題畫出來的圖去估算普朗克定律中 $f(\lambda)$ 為最大值時  $\lambda$ 的長度.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;從第三題的圖表得知, 普朗克定律中$f(\lambda)$ 在 $\lambda$ $\approx$ $0.51\mu$m 有最大值.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Question 5：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;觀察下列四個恆星在普朗克定律的圖形 $f$ 如何隨著 $T$ 的變動&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;參宿四 (Betelgeuse) T = 3400K&lt;/li&gt;
+&lt;li&gt;南河三 (Procyon) T = 6400K&lt;/li&gt;
+&lt;li&gt;天狼星 (Sirius) T = 9200K&lt;/li&gt;
+&lt;li&gt;太陽&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;發散的總輻射量(曲線下的面積)式怎麼隨著溫度變化的? 用圖來說明為何天狼星是藍色而參宿四是紅色.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;隨著溫度升高，曲線下的面積也隨之增加，所以可以推斷出當恆星溫度越高，發散的能量越多。且當溫度升高時，曲線最大值的$\lambda$值會減少。因此溫度越高，恆星散發的光的峰值與平均波長越短。當光的波長越短，頻率越高。當頻率高時，光在光譜上會接近藍端。而參宿四的頻率較低，較接近紅端。這就是為什麼天狼星是藍星而參宿是紅星。&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://teshenglin.github.io/post/figs/2020_cal_s11p11_1.png&#34; &gt;
+
+
+  &lt;img src=&#34;https://teshenglin.github.io/post/figs/2020_cal_s11p11_1.png&#34; alt=&#34;&#34; width=&#34;600px&#34; &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;hr&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Sec.8.3 - Complementary Coffee Cups</title>
+      <link>https://teshenglin.github.io/post/2020_cal_s8p3_ch/</link>
+      <pubDate>Thu, 23 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>https://teshenglin.github.io/post/2020_cal_s8p3_ch/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;Applied Project in Sec.8.3, Calculus by Stewart
+英文版請見 
+&lt;a href=&#34;https://teshenglin.github.io/post/2020_cal_s8p3&#34;&gt;Complementary Coffee Cups&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;假設你選擇了兩種形狀的咖啡杯，一種向外彎曲，另一種向內彎曲，你會注意到它們具有相同的高度，並且形狀可以緊密地貼合在一起。你想知道哪個杯子可以容納更多咖啡。當然，你可以將一個杯子裝滿水，然後倒入另一個杯子中來測量容量。但是，作為一名微積分學生，你決定採用一種更數學的方法：忽略手柄，會發現兩個杯子的表面可由旋轉而得，因此可以旋轉體計算咖啡杯之體積。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://media.cheggcdn.com/media%2Ff10%2Ff10af759-2600-468a-af6c-20a3854ee028%2FphpbqXd4u.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;問題 1:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;假定杯子的高度為 $h$，杯子A的形狀可由 $x=f(y)$ 對 $y$ 軸旋轉而得， 而杯子B則是由同一個曲線對 $x=k$ 旋轉而得。 求$k$使得兩個杯子可裝的咖啡量一樣多。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;解答:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;杯子A的體積
+$$
+\int_0^{h}\pi[f(y)]^2dy.
+$$
+杯子B的體積
+$$
+\int_0^{h}\pi[k-f(y)]^2dy.
+$$
+設 $V_A=V_B$, 經過計算我們得到
+$$
+\int_0^{h}k^2dy=\int_0^{h}2kf(y)dy.
+$$
+所以
+$$
+k=\frac{2\int_0^{h}f(y)dy}{h}.
+$$&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;問題 2:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;請問問題1的結果與圖中的 $A_1$ and $A_2$ 有何關聯?&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;解答:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;我們可以看到 $A_1+A_2$ 是一個長方形：$$A_1+A_2=hk$$&lt;/p&gt;
+&lt;p&gt;從問題一的解答我們知道
+$$
+hk=2\int_0^{h}f(y)dy\implies{A_1+A_2}=2\int_0^{h}f(y)dy.
+$$
+又
+$$
+A_1=\int_0^{h}f(y)dy.
+$$
+比較可得
+$$
+A_1+A_2=2\int_0^{h}f(y)dy=2A_1\implies{A_1=A_2}.
+$$
+代表當當杯子A之容積與杯子B相等時，$A_1$ 的面積與 $A_2$相等。&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;問題3:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;使用 Pappus&amp;rsquo;s 定理解釋問題1和問題2之結果。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Pappus&amp;rsquo;s Theorem&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;使$R$為一個平面區域，在這個區域外有同一平面上的一條直線$I$。若$R$以$I$為軸旋轉時，產生的旋轉體體積為$R$的面積$A$和區域重心的所經過的路徑長$d$的乘積。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;解答:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;使用這個理論之前，我們需要找到 $A_1$ 和 $A_2$ 的重心。&lt;/p&gt;
+&lt;p&gt;對於任意平面，其重心位於點 $(C_x,C_y)$, 且
+$$
+C_x=\frac{\int_a^{b}xf(x)dx}{\int_a^{b}f(x)dx};C_y=\frac{\int_a^{b}\frac{1}{2}[f(x)]^2dx}{\int_a^{b}f(x)dx}.
+$$
+對於$A_1$而言
+$$
+C_{x_1}=\frac{\int_0^{h}\frac{1}{2}[f(y)]^2dy}{\int_0^{h}f(y)dy}=\frac{1}{2A_1}\int_0^{h}[f(y)]^2dy.
+$$
+對於$A_2$而言
+$$
+C_{x_2}=\frac{\int_0^{h}\frac{1}{2}\left(k^2-[f(y)]^2\right)dy}{\int_0^{h}k-f(y)dy}=\frac{1}{2A_2}\int_0^{h}k^2-[f(y)]^2dy.
+$$
+現在我們有了$A_1$和$A_2$，便可以使用Pappus&amp;rsquo;s Theorom計算A杯和B杯的體積了。&lt;/p&gt;
+&lt;p&gt;A杯體積
+$$
+2\pi{C_{x_1}}{A_1}=\pi\int_0^{h}[f(y)]^2dy.
+$$
+B杯體積
+$$
+2\pi(k-C_{x_2})A_2=2\pi k A_2 - \pi k^2 h + \pi \int_0^{h}[f(y)]^2dy.
+$$
+所以如果兩個體積要一樣我們得到
+$$
+2\pi k A_2 - \pi k^2 h=0, \implies k = \frac{2A_2}{h}.
+$$
+又根據 $A_1+A_2 = hk$, 我們可以輕易的算出
+$$
+k = \frac{2A_2}{h} = \frac{2hk - 2A_1}{h}, \implies k = \frac{2A_1}{h},
+$$
+我們可以得到跟問題1一樣的答案&lt;/p&gt;
+&lt;hr&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Sec.9.3.2 - Which is faster, going up or going down?</title>
+      <link>https://teshenglin.github.io/post/2020_cal_s9p3_2/</link>
+      <pubDate>Thu, 23 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>https://teshenglin.github.io/post/2020_cal_s9p3_2/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;Applied Project in Sec.9.3, Calculus by Stewart&lt;br&gt;
+Chinese version: 
+&lt;a href=&#34;https://teshenglin.github.io/post/2020_cal_s9p3_2_ch&#34;&gt;上升快，還是下降快?&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Suppose you throw a ball into the air. Do you think it takes longer to reach its maximum height or to fall back to earth from its maximum height? We will solve the problem in this project, but before getting started, think about that situation and make a guess based on your physical intuition.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Question 1：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;A ball with mass $m$ is projected vertically upward from the earth’s surface with a positive initial velocity $v_0$. We assume the forces acting on the ball are the force of gravity and a retarding force of air resistance with direction opposite to the direction of motion and with magnitude $p|v(t)|$, where $p$ is a positive constant and $v(t)$ is the velocity of the ball at time $t$. In both the ascent and the descent, the total force acting on the ball is $-pv-mg$. [During ascent, $v(t)$ is positive and the resistance acts downward; during descent, $v(t)$ is negative and the resistance acts upward.] So, by Newton’s Second Law, the equation of motion is
+$$
+mv&#39;=-pv-mg
+$$
+Solve this differential equation to show that the velocity is
+$$
+v(t)=(v_0+\frac{mg}{p})e^{-pt/m}-\frac{mg}{p}
+$$&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;We known that
+$$
+mv&#39;=-pv-mg
+$$
+With some calculate we can get
+$$
+\int {\frac{p}{pv+mg}dv}=\int -\frac{p}{m}dt
+$$
+Integrate both sides we obtain
+$$
+\ln(pv+mg) = -\frac{p}{m}t + C, \quad pv+mg=e^{-\frac{p}{m}t + C}
+$$
+With initial condition $v(0) = v_0$ we get
+$$
+p v_0 + mg = e^C
+$$
+and finally we have
+$$
+v(t)=(v_0+\frac{mg}{p})e^{-\frac{p}{m}t}-\frac{mg}{p}
+$$&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Question 2：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Show that the height of the ball, until it hits the ground, is
+$$
+y(t)=(v_0+\frac{mg}{p})\frac{m}{p}(1-e^{-pt/m})-\frac{mgt}{p}
+$$&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Answer：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;$$
+y(t)=\int_0^tv(t)dt
+=\int_0^t (v_0+\frac{mg}{p})e^{-\frac{p}{m}t}-\frac{mg}{p}dt
+=(v_0+\frac{mg}{p})\frac{m}{p}(-e^{-\frac{p}{m}t}+1)-\frac{mg}{p}t
+$$&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Question 3：&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Let $t_1$ be the time that the ball takes to reach its maximum height. Show that
+$$
+t_1=\frac{m}{p}ln(\frac{mg+pv_0}{mg})
+$$&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Find this time for a ball with mass 1 kg and initial velocity 20 m/s. Assume the air resistance is $\frac{1}{10}$ of the speed.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;Answer：&lt;/strong&gt;&lt;/p&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;
+&lt;p&gt;when the ball takes to reach its maximum height, the velocity $v(t_1)=0$, i.e.,
+$$
+(v_0+\frac{mg}{p})e^{-\frac{p}{m}t_1}-\frac{mg}{p}=0
+$$
+We then obtain
+$$
+t_1=\frac{m}{p}\ln\left({\frac{mg + pv_0}{mg}}\right)
+$$&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;with the ball with mass $m=1kg$, initial velocity $v_0=20m/s$, gravity $g=9.8m/s$, and air resistance $p=\frac{1}{10}$.
+$$
+t_1=\frac{1}{\frac{1}{10}}ln\left({\frac{1\times9.8+\frac{1}{10}\times20}{1\times9.8}}\right)=‭1.85717‬s
+$$&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Question 4：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Let $t_2$ be the time at which the ball falls back to earth. For the particular ball in Problem 3, estimate $t_2$ by using a graph of the height function $y(t)$. Which is faster, going up or coming down?&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Answer：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.imgur.com/C4svFLG.png&#34; alt=&#34;Imgur&#34;&gt;&lt;/p&gt;
+&lt;p&gt;because the time of the ball going up is shorter than the ball coming down, the speed of the ball going up is faster than the coming down.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Question 5：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;In general, it’s not easy to find $t_2$ because it’s impossible to solve the equation $y(t)=0$ explicitly. We can, however, use an indirect method to determine whether ascent or descent is faster: we determine whether $y(2t_1)$ is positive or negative.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Show that
+$$
+y(2t_1)=\frac{m^2g}{p^2}(x-\frac{1}{x}-2\ln{x})
+$$
+where $x=e^{pt_1/m}$.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Then show that $x &amp;gt; 1$ and the function
+$$
+f(x)=x-\frac{1}{x}-2\ln{x}
+$$
+is increasing for $x &amp;gt; 1$.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Use this result to decide whether $y(2t_1)$ is positive or negative. What can you conclude? Is ascent or descent faster?&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;Answer：&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;According to Question 3, we get
+$$
+t_1=\frac{m}{p}ln{\frac{pv_0+mg}{mg}},　\quad x=e^{pt_1/m}, \quad
+\Rightarrow \quad x=\frac{pv_0+mg}{mg}
+$$
+According to the Question 2, we get
+$$
+y(2t_1)=(v_0+\frac{mg}{p})\frac{m}{p}(1-e^{-2pt_1/m})-\frac{2mgt_1}{p}
+$$
+$$
+=\frac{m^2g}{p^2}\left[(1-e^{-2pt_1/m})+(\frac{pv_0}{mg})(1-e^{-2pt_1/m})-(\frac{2pt_1}{m})\right]
+$$
+$$
+=\frac{m^2g}{p^2}\left[(1-\frac{1}{x^2})+(\frac{pv_0}{mg})(1-\frac{1}{x^2})-2\ln x\right]
+=\frac{m^2g}{p^2}(x-\frac{1}{x}-2\ln{x})
+$$&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;According to the question
+$$
+f(x)=x-\frac{1}{x}-2\ln{x}, \quad
+f&amp;rsquo;(x)=1+\frac{1}{x^2}-\frac{2}{x}
+=(\frac{x-1}{x})^2\geq 0
+$$
+so we know that $f(x)$ is increasing for $x&amp;gt;1$&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;By the result, we know that $f(1)=0$, and $f(x)$ is increasing for $x&amp;gt;1$, so we can conclude that
+$$
+y(2t_1)=\frac{m^2g}{p^2}(x-\frac{1}{x}-2\ln{x})&amp;gt;0
+$$
+Because $y(2t_1)$ is positive, which means that the $2t_1&amp;lt;t_1+t_2$, and $t_1&amp;lt;t_2$. So the conclusion is that ascent is faster than descent.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Sec.9.3.2 - 上升快，還是下降快?</title>
+      <link>https://teshenglin.github.io/post/2020_cal_s9p3_2_ch/</link>
+      <pubDate>Thu, 23 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>https://teshenglin.github.io/post/2020_cal_s9p3_2_ch/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;Applied Project in Sec.9.3, Calculus by Stewart&lt;br&gt;
+英文版請見 
+&lt;a href=&#34;https://teshenglin.github.io/post/2020_cal_s9p3_2&#34;&gt;Which is faster, going up or going down?&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;假設你在空氣中將一顆球向上拋。你認為球從地表到最高高度和從最高處落回地面哪一個所耗的時間較長? 我們將在這個研究中探討這個問題，但，在我們開始前，先思考整個情況，接著根據你的物理直覺做出猜想。&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;問題1：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;一顆質量為 $m$ 的球以初速為 $v_0$ 的速度鉛直上拋，我們假設作用在球上的力為地球給球的重力和相反於運動方向的空氣阻力 $p|v(t)|$ ， $p$ 為一個正的常數， $v(t)$ 為球在時間為 $t$ 時的速度。綜合正向和負向的力，球所受到的總合力為 $-pv-mg$，(在球上升階段，$v(t)$ 為正而阻力為向下；在球下降時， $v(t)$ 為負且阻力向上)。因此，根據牛頓第二運動定律，我們可得知移動的等式為
+$$
+mv&#39;=-pv-mg
+$$&lt;/p&gt;
+&lt;p&gt;解出此微分方程來說明速度為
+$$
+v(t)=(v_0+\frac{mg}{p})e^{-pt/m}-\frac{mg}{p}
+$$&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;解答：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;我們已知
+$$
+mv&#39;=-pv-mg
+$$
+計算後可得
+$$
+\int {\frac{p}{pv+mg}dv}=\int -\frac{p}{m}dt
+$$
+兩邊積分可得
+$$
+\ln(pv+mg) = -\frac{p}{m}t + C, \quad pv+mg=e^{-\frac{p}{m}t + C}
+$$
+帶入初始條件 $v(0) = v_0$ 我們得到
+$$
+p v_0 + mg = e^C
+$$
+最終我們得到
+$$
+v(t)=(v_0+\frac{mg}{p})e^{-\frac{p}{m}t}-\frac{mg}{p}
+$$&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;問題 2：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;解出直到球落地之前的高度為
+$$
+y(t)=(v_0+\frac{mg}{p})\frac{m}{p}(1-e^{-pt/m})-\frac{mgt}{p}
+$$&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;解答：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;$$
+y(t)=\int_0^tv(t)dt
+=\int_0^t (v_0+\frac{mg}{p})e^{-\frac{p}{m}t}-\frac{mg}{p}dt
+=(v_0+\frac{mg}{p})\frac{m}{p}(-e^{-\frac{p}{m}t}+1)-\frac{mg}{p}t
+$$&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;問題 3：&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;設 $t_1$ 為球升至最高點所耗的時間。證明
+$$
+t_1=\frac{m}{p}\ln\left(\frac{mg+pv_0}{mg}\right)
+$$&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;一顆質量為1公斤的球，向上初速為 $20$(公尺/秒)。假設空氣阻力為速度的$\frac{1}{10}$。解出此狀況下的 $t_1$。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;解答：&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;當球到達最高點時，速度 $v(t_1)=0$, i.e.,
+$$
+(v_0+\frac{mg}{p})e^{-\frac{p}{m}t_1}-\frac{mg}{p}=0
+$$
+經過計算後得到
+$$
+t_1=\frac{m}{p}\ln\left({\frac{mg + pv_0}{mg}}\right)
+$$&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;當球的質量 $m=1kg$，向上的速度 $v_0=20m/s$，重力 $g=9.8m/s$，空氣阻力 $p=\frac{1}{10}$
+$$
+t_1=\frac{1}{\frac{1}{10}}ln\left({\frac{1\times9.8+\frac{1}{10}\times20}{1\times9.8}}\right)=‭1.85717‬s
+$$&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;問題 4：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;當 $t_2$ 為球落回最低點的時間。特別指在問題3中的情況中的球，使用高度函數 $y(t)$ 的圖形計算。哪一個情況的時間較短，上升還是落下?&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;解答：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.imgur.com/C4svFLG.png&#34; alt=&#34;Imgur&#34;&gt;&lt;/p&gt;
+&lt;p&gt;因為上升所耗的時間比下降的時間短，因此上升比下降快。&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;問題 5：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;一般來說，找出 $t_2$ 是不容易的。因為要明確地解出等式 $y(t)=0$ 是不可能的。然而，我們可以使用一種非直接的方法來計算到底上升還是下降哪個較快。我們計算 $y(2t_1)$ 是正是負。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;證明
+$$
+y(2t_1)=\frac{m^2g}{p^2}(x-\frac{1}{x}-2\ln{x})
+$$
+其中 $x=e^{pt_1/m}$。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;再證明當 $x &amp;gt; 1$ 時 $f(x)$
+$$
+f(x)=x-\frac{1}{x}-2\ln{x}
+$$
+為遞增函數。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;使用這項結果來決定 $y(2t_1)$ 何時為正，何時為負。你能推斷出甚麼結果?上升還是下降比較快?&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;解答：&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;根據問題3，我們可知
+$$
+t_1=\frac{m}{p}ln{\frac{pv_0+mg}{mg}},　\quad x=e^{pt_1/m}, \quad
+\Rightarrow \quad x=\frac{pv_0+mg}{mg}
+$$&lt;/p&gt;
+&lt;p&gt;根據問題2，我們可知
+$$
+y(2t_1)=(v_0+\frac{mg}{p})\frac{m}{p}(1-e^{-2pt_1/m})-\frac{2mgt_1}{p}
+$$
+$$
+=\frac{m^2g}{p^2}\left[(1-e^{-2pt_1/m})+(\frac{pv_0}{mg})(1-e^{-2pt_1/m})-(\frac{2pt_1}{m})\right]
+$$
+$$
+=\frac{m^2g}{p^2}\left[(1-\frac{1}{x^2})+(\frac{pv_0}{mg})(1-\frac{1}{x^2})-2\ln x\right]
+=\frac{m^2g}{p^2}(x-\frac{1}{x}-2\ln{x})
+$$&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;根據此題，我們可知
+$$
+f(x)=x-\frac{1}{x}-2\ln{x}, \quad
+f&amp;rsquo;(x)=1+\frac{1}{x^2}-\frac{2}{x}
+=(\frac{x-1}{x})^2\geq 0
+$$
+所以我們得知當 $x&amp;gt;1$ 時 $f(x)$ 為遞增&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;根據結果，我們知道 $f(1)=0$，和 $f(x)$ 在 $x&amp;gt;1$ 時遞增，因此我們可推斷
+$$
+y(2t_1)=\frac{m^2g}{p^2}(x-\frac{1}{x}-2\ln{x})&amp;gt;0
+$$
+因為 $y(2t_1)$ 為正，代表 $2t_1&amp;lt;t_1+t_2$ 和 $t_1&amp;lt;t_2$ 。因此推斷上升比下降快。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+</description>
+    </item>
     
     <item>
       <title>Sec.4.1 - 彩虹的微積分學</title>
@@ -271,11 +974,11 @@ $$&lt;/p&gt;
 
 &lt;p&gt;Show that the minimum value of deviation is $D(\alpha)\approx 138^{\circ}$; and occurs when $\alpha\approx 59.4^{\circ}$.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Recall Snell&#39;s law:
+&lt;p&gt;Recall Snell&amp;rsquo;s law:
 $$
 \sin\alpha = \frac{4}{3}\sin\beta. \qquad \qquad (1)
 $$
-We teat the angle $\alpha$ as a function of $\beta$ and take derivative with respect to $\alpha$ to Snell&#39;s law to obtain
+We teat the angle $\alpha$ as a function of $\beta$ and take derivative with respect to $\alpha$ to Snell&amp;rsquo;s law to obtain
 $$
 \cos\alpha = \frac{4}{3}\cos\beta\frac{d\beta}{d\alpha}.
 $$
@@ -329,7 +1032,7 @@ $$&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Question 2:&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Problem 1 explains the location of the primary rainbow, but how do we explain the colors? Sunlight comprises a range of wavelengths, from the red range through orange, yellow, green, blue, indigo, and violet. As Newton discovered in his prism experiments of 1666, the index of refraction is different for each color, (The effect is called &lt;em&gt;dispersion&lt;/em&gt;.) For red light the refractive index $k \approx 1.3318$,  whereas for violet light it is $k\approx 1.3435$. By repeating the calculation of Problem 1 for these values of $k$, show that the rainbow angle is about $42.3^{\circ}$ for red bow and $40.6^{\circ}$ for the violet bow. So the rainbow really consists of seven individual bows corresponding to the seven colors.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Similar to the approach of problem 1, we first write down the Snell&#39;s law
+&lt;p&gt;Similar to the approach of problem 1, we first write down the Snell&amp;rsquo;s law
 $$
 \sin\alpha =k\sin\beta. \qquad \qquad (3)
 $$
@@ -493,140 +1196,6 @@ $$&lt;/p&gt;
     </item>
     
     <item>
-      <title>Sec.9.3 - How fast does a tank drain?</title>
-      <link>https://teshenglin.github.io/post/2020_cal_s9p3/</link>
-      <pubDate>Sun, 22 Mar 2020 00:00:00 +0000</pubDate>
-      <guid>https://teshenglin.github.io/post/2020_cal_s9p3/</guid>
-      <description>&lt;blockquote&gt;
-&lt;p&gt;Applied Project in Sec.9.3, Calculus by Stewart&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;If water (or other liquid) drains from a tank, we expect that the flow will be greatest at first (when the water depth is greatest) and will gradually decrease as the water level decreases. But we need a more precise mathematical description of how the flow decreases in order to answer the kinds of questions that engineers ask: How long does it take for a tank to drain completely? How much water should a tank hold in order to guarantee a certain minimum water pressure for a sprinkler system?&lt;/p&gt;
-&lt;p&gt;Let $h(t)$ and $V(t)$ be the height and volume of water in a tank at time $t$. If water leaks through a hole with area $a$ at the bottom of the tank, then Torricelli’s Law says that
-$$
-\frac{dV}{dt}=-a\sqrt{2gh}, \qquad \qquad \qquad (1)
-$$
-where $g$ is the acceleration due to gravity. So the rate at which water flows from the tank is proportional to the square root of the water height.&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Question 1：&lt;/strong&gt;&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;Suppose the tank is cylindrical with height $2(cm)$ and radius $1(m)$ and the hole is circular with radius $2(cm)$. If we take $g = 10 (m/s^2)$, show that $h$ satisfies the differential equation:
-$$
-\frac{dh}{dt}=-0.0004\sqrt{20h}
-$$&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Solve this equation to find the height of the water at time $t$, assuming the tank is full at time $t = 0$.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;How long will it take for the water to drain completely?&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;Recall, for a cylinder: $V=\pi r^2h$, so we have
-$$
-\frac{dV}{dt}=\pi r^2\frac{dh}{dt}=\pi \times 1^2 \times \frac{dh}{dt}=\pi\frac{dh}{dt}.
-$$
-The area of the hole is $2^2\pi (cm^2) = 0.0004\pi (m^2)$. According to Torricelli’s Law,
-$$
-\frac{dV}{dt}=-a\sqrt{2gh}=-0.0004\pi \sqrt{20 h}.
-$$
-Therefore,
-$$
-\pi\frac{dh}{dt}=-0.0004\pi\sqrt{20 h} \implies \frac{dh}{dt}=-0.0004\sqrt{20h}.
-$$&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;To solve the differential equation, we rewrite the equation as
-$$
-\int\frac{dh}{\sqrt{20h}}=-0.0004\int{dt}.
-$$
-Therefore,
-$$
-\frac{\sqrt{h}}{\sqrt{5}}=-0.0004t+C.
-$$
-Given initial condition $h(0)=2(m)$, we find $C = \sqrt{10}/5$. Hence the height of the water at time $t$ is
-$$
-h(t)=\left({-0.0004\sqrt{5}t+\sqrt{2}}\right)^2.
-$$&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;If the tank is empty then $h=0$, that is,
-$$
-\left({-0.0004\sqrt{5}t+\sqrt{2}}\right)^2=0.
-$$
-We then find the time $t_0$ when the water drain completely as
-$$
-t_0=\frac{\sqrt{2}}{0.0004\sqrt{5}}\approx 1581(s).
-$$&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Question 2：&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Because of the rotation and viscosity of the liquid, the theoretical model given by Equation (1) is not quite accurate. Instead, the model
-$$
-\frac{dh}{dt}=k\sqrt{h}, \qquad \qquad \qquad (2)
-$$
-is often used and the constant $k$ (which depends on the physical properties of the liquid) is determined from data concerning the draining of the tank.&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;Suppose that a hole is drilled in the side of a cylindrical bottle and the height $h$ of the water (above the hole) decreases from $10(cm)$ to $3(cm)$ in $68(seconds)$. Use Equation (2) to find an expression for $h(t)$.  Evaluate $h(t)$ for $t = 10,20,30,40,50, 60$.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Drill a $4(mm)$ hole near the bottom of the cylindrical part of a two-liter plastic soft-drink bottle. Attach a strip of masking tape marked in centimeters from $0$ to $10$, with $0$ corresponding to the top of the hole. With one finger over the hole, fill the bottle with water to the $10(cm)$ mark. Then take your finger off the hole and record the values of $h(t)$ for $t = 10,20,30,40,50,60(s)$. (You will probably find that it takes $68(s)$ for the level to decrease to $h = 3(cm)$.) Compare your data with the values of $h(t)$ from part (a). How well did the model predict the actual values?&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;TBF&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;TBF&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Question 3：&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;In many parts of the world, the water for sprinkler systems in large hotels and hospitals is supplied by gravity from cylindrical tanks on or near the roofs of the buildings. Suppose such a tank has radius $3(m)$ and the diameter of the outlet is $6(cm)$. An engineer has to guarantee that the water pressure will be at least $104(kPa)$ for a period of $10(minutes)$. (When a fire happens, the electrical system might fail and it could take up to $10(minutes)$ for the emergency generator and fire pump to be activated.) What height should the engineer specify for the tank in order to make such a guarantee? (Use the fact that the water pressure at a depth of $d(feet)$ is $P = 62.5(d)$. See Section 8.3)&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;TBF&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Question 4：&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Not all water tanks are shaped like cylinders. Suppose a tank has cress-sectional area $A(h)$ at height $h$. Then the volume of water up to height $h$ is $V=\int hA(u)du$ and so the Fundamental Theorem of Calculus gives $dV/dh=A(h)$. It follows that
-$$
-\frac{dV}{dt} = \frac{dV}{dh}\frac{dh}{dt} = A(h)\frac{dh}{dt},
-$$
-and so Torricelli’s Law becomes
-$$
-A(h) \frac{dh}{dt} = -a \sqrt{2gh}.
-$$&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;Suppose the tank has the shape of a sphere with radius $2(m)$ and is initially half full of water. If the radius of the circular hole is $1(cm)$ and we take $g=10(m/s^2)$, show that $h$ satisfies the differential equation
-$$
-(4h-h^2)\frac{dh}{dt}=-0.0001\sqrt{20h}
-$$&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;How long will it take for the water to drain completely?&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;TBF&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;TBF&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;hr&gt;
-</description>
-    </item>
-    
-    <item>
       <title>Sec.3.10 - Taylor polynomials</title>
       <link>https://teshenglin.github.io/post/2020_cal_s3p10/</link>
       <pubDate>Wed, 18 Mar 2020 00:00:00 +0000</pubDate>
@@ -636,7 +1205,7 @@ $$&lt;/p&gt;
 Chinese version: 
 &lt;a href=&#34;https://teshenglin.github.io/post/2020_cal_s3p10_ch&#34;&gt;泰勒級數&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;The tangent line approximation $L(x)$ is the best first-degree (linear) approximation to $f(x)$ near $x=a$ because $f(x)$ and $L(x)$ have the same rate of change (derivative) at $x=a$. For a better approximation than a linear one, let&#39;s try a second-degree (quadratic) approximation $P(x)$. In other words, we approximate a curve by a parabola instead of a straight line. To make sure that the approximation is a good one, we stipulate the following:&lt;/p&gt;
+&lt;p&gt;The tangent line approximation $L(x)$ is the best first-degree (linear) approximation to $f(x)$ near $x=a$ because $f(x)$ and $L(x)$ have the same rate of change (derivative) at $x=a$. For a better approximation than a linear one, let&amp;rsquo;s try a second-degree (quadratic) approximation $P(x)$. In other words, we approximate a curve by a parabola instead of a straight line. To make sure that the approximation is a good one, we stipulate the following:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;$P$ and $f$ should have the same value at $a$. ($P(a)=f(a)$)&lt;/li&gt;
 &lt;li&gt;$P$ and $f$ should have the same rate of change at $a$. ($P&amp;rsquo;(a)=f&amp;rsquo;(a)$)&lt;/li&gt;
@@ -772,7 +1341,7 @@ We draw the graph of $f(x),P(x)$ and the linear approximation from Example 3.10.
 
 &lt;p&gt;According to the graph, when $x\rightarrow 1$, quadratic approximation $P(x)$ serves as a better approximation than linear approximation $L(x)$.&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Question 5:&lt;/strong&gt; Instead of being satisfied with a linear or quadratic approximation to $f(x)$ near $x=a$, let&#39;s try to find better approximations with higher-degree polynomials. We look for an nth-degree polynomial
+&lt;p&gt;&lt;strong&gt;Question 5:&lt;/strong&gt; Instead of being satisfied with a linear or quadratic approximation to $f(x)$ near $x=a$, let&amp;rsquo;s try to find better approximations with higher-degree polynomials. We look for an nth-degree polynomial
 $$
 T_{n}(x)=c_{0}+c_{1}(x-a)+c_{2}(x-a)^{2}+c_{3}(x-a)^{3}+&amp;hellip;+c_{n}(x-a)^{n}，
 $$
@@ -858,7 +1427,9 @@ $$&lt;/p&gt;
       <pubDate>Wed, 18 Mar 2020 00:00:00 +0000</pubDate>
       <guid>https://teshenglin.github.io/post/2020_cal_s8p3/</guid>
       <description>&lt;blockquote&gt;
-&lt;p&gt;Applied Project in Sec.8.3, Calculus by Stewart&lt;/p&gt;
+&lt;p&gt;Applied Project in Sec.8.3, Calculus by Stewart
+Chinese version: 
+&lt;a href=&#34;https://teshenglin.github.io/post/2020_cal_s8p3_ch&#34;&gt;Complementary Coffee Cups&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;Suppose you have a choice of two coffee cups of the type shown, one that bends outward and one inward, and you notice that they have the same height and their shapes fit together snugly. You wonder which cup holds more coffee. Of corse you could fill one cup with water and pour it into the other one but, being a calculus student, you decide on a more mathematical approach. Ignoring the handles, you observe that both cups are surfaces of revolution, so you can think of the coffee as a volume of revolution.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://media.cheggcdn.com/media%2Ff10%2Ff10af759-2600-468a-af6c-20a3854ee028%2FphpbqXd4u.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
@@ -899,11 +1470,11 @@ Therefore we get
 $$
 A_1+A_2=2\int_0^{h}f(y)dy=2A_1\implies{A_1=A_2}.
 $$
-That is, when Cup A&#39;s volume equals Cup B&#39;s, the area of $A_1$ is the same as $A_2$.&lt;/p&gt;
+That is, when Cup A&amp;rsquo;s volume equals Cup B&amp;rsquo;s, the area of $A_1$ is the same as $A_2$.&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Question 3:&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Use Pappus&#39;s Theorem to explain your result in Problem 1 and 2.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Pappus&#39;s Theorem&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Use Pappus&amp;rsquo;s Theorem to explain your result in Problem 1 and 2.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Pappus&amp;rsquo;s Theorem&lt;/strong&gt;&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Let $R$ be a plane region that lies entirely on one side of a line $l$ in the plane. If $R$ is rotated about $l$, then the volume of the resulting solid is the product of the area $A$ of $R$ and the distance $d$ travled by the centroid of $R$.&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -921,7 +1492,7 @@ For $A_2$,
 $$
 C_{x_2}=\frac{\int_0^{h}\frac{1}{2}\left(k^2-[f(y)]^2\right)dy}{\int_0^{h}k-f(y)dy}=\frac{1}{2A_2}\int_0^{h}k^2-[f(y)]^2dy.
 $$
-After we knew the centroid of $A_1$ and $A_2$, we can start to calculate the volume of Cup A and Cup B by Pappus&#39;s Theorem.&lt;/p&gt;
+After we knew the centroid of $A_1$ and $A_2$, we can start to calculate the volume of Cup A and Cup B by Pappus&amp;rsquo;s Theorem.&lt;/p&gt;
 &lt;p&gt;Volume of Cup A
 $$
 2\pi{C_{x_1}}{A_1}=\pi\int_0^{h}[f(y)]^2dy.
@@ -940,11 +1511,6 @@ k = \frac{2A_2}{h} = \frac{2hk - 2A_1}{h}, \implies k = \frac{2A_1}{h},
 $$
 which are consistent with the results of problem 1 and 2.&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Question 4:&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Based on your own measurements and observation, suggest a value for $h$ and an equation for $x=f(y)$ and calculus the amount of coffee that each cup holds.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;To be finished.&lt;/p&gt;
-&lt;hr&gt;
 </description>
     </item>
     
@@ -956,7 +1522,7 @@ which are consistent with the results of problem 1 and 2.&lt;/p&gt;
       <description>&lt;blockquote&gt;
 &lt;p&gt;Applied Project in Sec.3.1, Calculus by Stewart&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;Suppose you are asked to design the first ascent and drop for a new roller coaster. By studying the photographs of your favorite coasters, you decide to make the slope of the ascent $0.8$ and the slope of the drops $-1.6$. You decide to connect these two straight stretches $y=L_1(x)$ and $y=L_2(x)$ with part of a parabola $y=f(x) = ax^2+bx+c$, where $x$ and $f(x)$ are measured in meters. For the track to be smooth there can&#39;t be abrupt changes in direction, so you want the linear segments $L_1$ and $L_2$ to be tangent to the parabola at the points $P$ and $Q$. To simplify the equations, you decide to place the origin at $P$.&lt;/p&gt;
+&lt;p&gt;Suppose you are asked to design the first ascent and drop for a new roller coaster. By studying the photographs of your favorite coasters, you decide to make the slope of the ascent $0.8$ and the slope of the drops $-1.6$. You decide to connect these two straight stretches $y=L_1(x)$ and $y=L_2(x)$ with part of a parabola $y=f(x) = ax^2+bx+c$, where $x$ and $f(x)$ are measured in meters. For the track to be smooth there can&amp;rsquo;t be abrupt changes in direction, so you want the linear segments $L_1$ and $L_2$ to be tangent to the parabola at the points $P$ and $Q$. To simplify the equations, you decide to place the origin at $P$.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://media.cheggcdn.com/media%2Fa1a%2Fa1a173e3-a2b4-46ea-835c-dc7ca2977f57%2FphpNfXwqZ.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Question 1:&lt;/strong&gt;&lt;/p&gt;
@@ -1007,7 +1573,7 @@ By using this formula, we can find $y_q=f(30)=-12$, so the difference in elevati
 As you can see, the transition among $L_1$, $f$, and $L_2$ is smooth.&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Question 2:&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;The solution in Problem 1 might look smooth, but it might not feel smooth because the piecewise defined function (consisting of $L_1(x)$ for $x&amp;lt;0$, $f(x)$ for $0\le x\le 30$, and $L_2(x)$ for $x&amp;gt;30$) doesn&#39;t have a continuous second derivative. So you decide to improve the design by using a quadratic function $q(x)=ax^2 + bx + c$ only on the interval $3\le x\le 27$ and connecting it to the linear functions by means of two cubic functions:
+&lt;p&gt;The solution in Problem 1 might look smooth, but it might not feel smooth because the piecewise defined function (consisting of $L_1(x)$ for $x&amp;lt;0$, $f(x)$ for $0\le x\le 30$, and $L_2(x)$ for $x&amp;gt;30$) doesn&amp;rsquo;t have a continuous second derivative. So you decide to improve the design by using a quadratic function $q(x)=ax^2 + bx + c$ only on the interval $3\le x\le 27$ and connecting it to the linear functions by means of two cubic functions:
 $$
 g(x) = kx^3+lx^2+mx+n, \quad 0\le x&amp;lt;3,
 $$
@@ -1095,7 +1661,7 @@ The red one is the graph of $g(x)$, the blue one is the graph of $q(x)$, and the
 $$
 g&amp;rsquo;(0)=\frac{4}{5}=L_1&amp;rsquo;, \quad g&amp;rsquo;&#39;(0)=0=L_1&amp;rsquo;&#39;.
 $$
-Beside the same of the first derivatives of $g$ and $L_1$, the second derivatives of $g$ and $L_1$ are also the same, it means that this roller coaster is smoother than the original one, whose second derivatives of the adjacent formula aren&#39;t the same.&lt;/p&gt;
+Beside the same of the first derivatives of $g$ and $L_1$, the second derivatives of $g$ and $L_1$ are also the same, it means that this roller coaster is smoother than the original one, whose second derivatives of the adjacent formula aren&amp;rsquo;t the same.&lt;/p&gt;
 &lt;p&gt;The rest of the formulas can get the same results:
 $$
 g&amp;rsquo;(3)=\frac{2}{3}=q&amp;rsquo;(3), \quad g&amp;rsquo;&#39;(3)=-\frac{4}{45}=q&amp;rsquo;&#39;(3),
@@ -1521,15 +2087,15 @@ $$
 &lt;p&gt;&lt;strong&gt;問題肆：&lt;/strong&gt; 請繪製近似圖(假設問題參當中的所有條件都被滿足)&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;解：&lt;/strong&gt;&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# Example code in julia&lt;/span&gt;
-&lt;span style=&#34;color:#66d9ef&#34;&gt;using&lt;/span&gt; Plots&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;
-v&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;300&lt;/span&gt;;
-h&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;6.628&lt;/span&gt;;
-l&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;65&lt;/span&gt;;
-N&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;100&lt;/span&gt;;
-dx&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; l&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;N&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;;
-x&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0.0&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;N&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;; x&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; dx&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;x&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;;
-P&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;h&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;l&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;^&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;)&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;x&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.^&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; (&lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;h&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;l&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;^&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;)&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;x&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.^&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;;
-plot&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;(x&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;, P&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;, lw&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;, xlabel&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;x&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;, ylabel&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;y&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;, title&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;a&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;p&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;p&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;r&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;o&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;a&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;c&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;h&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;p&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;a&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;t&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;h&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;, legend&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;false&lt;/span&gt;)
+&lt;span style=&#34;color:#66d9ef&#34;&gt;using&lt;/span&gt; Plots
+v &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;300&lt;/span&gt;;
+h &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;6.628&lt;/span&gt;;
+l &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;65&lt;/span&gt;;
+N &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;100&lt;/span&gt;;
+dx &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; l&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;N;
+x &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0.0&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;N; x &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; dx&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;x;
+P &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;h&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;l&lt;span style=&#34;color:#f92672&#34;&gt;^&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;)&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;x&lt;span style=&#34;color:#f92672&#34;&gt;.^&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; (&lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;h&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;l&lt;span style=&#34;color:#f92672&#34;&gt;^&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;)&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;x&lt;span style=&#34;color:#f92672&#34;&gt;.^&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;;
+plot(x, P, lw&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;, xlabel &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;x&amp;#34;&lt;/span&gt;, ylabel &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;y&amp;#34;&lt;/span&gt;, title&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;approach path&amp;#34;&lt;/span&gt;, legend&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;false&lt;/span&gt;)
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
@@ -1720,7 +2286,7 @@ $$&lt;/p&gt;
 \frac{v_E}{v_P} = \sqrt[4]{3}
 $$&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Question 4:&lt;/strong&gt;  In applying the equation of Problem 1 to bird flight we split the term $Av^3$ ​into two parts:​ $A_b v^3$ ​for the bird&#39;s body and​ $A_w v^3$ ​for its wings. Let​ $x$ be the fraction of flying time spent in flapping mode. If $m$ is the bird&#39;s mass and all the lift occurs during flapping, then the lift is $mg/x$ and so the power needed during flapping is&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Question 4:&lt;/strong&gt;  In applying the equation of Problem 1 to bird flight we split the term $Av^3$ ​into two parts:​ $A_b v^3$ ​for the bird&amp;rsquo;s body and​ $A_w v^3$ ​for its wings. Let​ $x$ be the fraction of flying time spent in flapping mode. If $m$ is the bird&amp;rsquo;s mass and all the lift occurs during flapping, then the lift is $mg/x$ and so the power needed during flapping is&lt;/p&gt;
 &lt;p&gt;$$
 P_f = (A_b+A_w)v^3 + \frac{B(mg/x)^2}{v}
 $$&lt;/p&gt;
@@ -1767,7 +2333,7 @@ $$&lt;/p&gt;
 &lt;p&gt;底下的幾個例子我們將學習怎麼使用繪圖指令.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;畫圖的時候我們會用到 &lt;code&gt;Plots&lt;/code&gt; 這個 package，因此在第一行我們需要加上：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;using&lt;/span&gt; Plots&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;using&lt;/span&gt; Plots
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;以下我們舉幾個簡單的範例來看看如何操作.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Remark:&lt;/strong&gt; &lt;code&gt;Plots&lt;/code&gt; 這個 package 完整的說明請見 
 &lt;a href=&#34;http://docs.juliaplots.org/latest/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Plots&lt;/a&gt;&lt;/p&gt;
@@ -1780,7 +2346,7 @@ $$&lt;/p&gt;
 &lt;li&gt;最後用 label 標註函數圖形。注意要把標註的文字放在 &amp;quot; &amp;quot; 中。&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;另外，也可以畫 $e^x$、$arcsin(x)$ 這些基本函數。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;plot&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;(sin&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;, &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;pi, pi, label&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;s&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;i&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;n&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;e&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;f&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;u&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;n&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;c&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;t&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;i&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;o&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;n&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;)
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;plot(sin, &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;pi, pi, label&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;sine function&amp;#34;&lt;/span&gt;)
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
@@ -1815,7 +2381,7 @@ $$&lt;/p&gt;
 &lt;li&gt;$\sin(x)$ 的反函數 $arcsin(x)$ 的指令為 asin。&lt;/li&gt;
 &lt;li&gt;函數的範圍為 $-1 &amp;lt; x &amp;lt; 1$。&lt;/li&gt;
 &lt;/ol&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;plot&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;(asin&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;, &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;, label&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;a&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;r&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;c&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;s&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;i&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;n&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;e&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;f&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;u&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;n&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;c&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;t&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;i&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;o&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;n&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;)
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;plot(asin, &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;, label&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;arcsine function&amp;#34;&lt;/span&gt;)
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
@@ -1861,23 +2427,23 @@ $$&lt;/p&gt;
 &lt;/ol&gt;
 &lt;p&gt;由 (x,y,z) 的定義方式我們知道它是一個螺旋線，螺旋的半徑從 0 一直增加到 $8 \pi$。角度也是從 0 到 $8 \pi$，所以總共繞了4圈。
 在 plot 指令中我們用 marker 選擇圖形的樣式為圓圈(circle)，legend=false 代表不標記圖形。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;N&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;200&lt;/span&gt;;
-Δt&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;8&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;π&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;N&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;;
-n&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0.0&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;N&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;;
-ti&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; Δt&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;n&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;
-x&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; ti&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.*&lt;/span&gt;cos&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;(ti&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;);
-y&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; ti&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.*&lt;/span&gt;sin&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;(ti&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;);
-z&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; ti&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;;
-plot&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;(x&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;, y&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;, z&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;, marker&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;circle&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;, legend&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;false&lt;/span&gt;)
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;N &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;200&lt;/span&gt;;
+Δt &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;8&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;π&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;N;
+n&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0.0&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;N;
+ti &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; Δt&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;n
+x &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; ti&lt;span style=&#34;color:#f92672&#34;&gt;.*&lt;/span&gt;cos&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;(ti);
+y &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; ti&lt;span style=&#34;color:#f92672&#34;&gt;.*&lt;/span&gt;sin&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;(ti);
+z &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; ti;
+plot(x, y, z, marker&lt;span style=&#34;color:#f92672&#34;&gt;=:&lt;/span&gt;circle, legend&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;false&lt;/span&gt;)
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://teshenglin.github.io/post/figs/output_9_0.svg&#34; alt=&#34;svg&#34;&gt;&lt;/p&gt;
 &lt;p&gt;另外, 可以用 &lt;code&gt;camera&lt;/code&gt; 這個指令來調整 3D 視角, 裡面數字是角度 (方位角azimuth, 高度角altitude).&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;plot&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;(x&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;, y&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;, z&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;, marker&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;circle&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;, legend&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;false&lt;/span&gt;, camera&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; (&lt;span style=&#34;color:#ae81ff&#34;&gt;30&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;80&lt;/span&gt;))
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;plot(x, y, z, marker&lt;span style=&#34;color:#f92672&#34;&gt;=:&lt;/span&gt;circle, legend&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;false&lt;/span&gt;, camera &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; (&lt;span style=&#34;color:#ae81ff&#34;&gt;30&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;80&lt;/span&gt;))
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://teshenglin.github.io/post/figs/output_11_0.svg&#34; alt=&#34;svg&#34;&gt;&lt;/p&gt;
 &lt;p&gt;我們也可以使用指令 &lt;code&gt;plotd3d&lt;/code&gt;.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;我們設定 linewidth (lw) 等於 2 以及 legend (leg) 等於 false 表示不標記圖形.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;plot3d&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;(x&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;, y&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;, z&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;, lw&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;, leg&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;false&lt;/span&gt;)
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;plot3d(x, y, z, lw&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;, leg&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;false&lt;/span&gt;)
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://teshenglin.github.io/post/figs/output_13_0.svg&#34; alt=&#34;svg&#34;&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;example-3&#34;&gt;Example 3&lt;/h2&gt;
@@ -1887,10 +2453,10 @@ plot&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;(x&lt;span style=&#34
 &lt;li&gt;第一個圖形，x 座標是取整數 1 到 10。y 軸取 0 到 1 之間的亂數，共十個小數。再來，用 plot 指令將第一個圖形畫出。&lt;/li&gt;
 &lt;li&gt;第二個圖形，使用相同的 x 座標，函數值 z 取亂數。將第二個函數圖形與第一個圖形重疊，我們需要指令 plot!&lt;/li&gt;
 &lt;/ol&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;x&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;; y&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; rand&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;);
-plot&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;(x&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;,y&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;)
-z&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; rand&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;)
-plot!&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;(x&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;,z&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;)
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;x &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;; y &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; rand(&lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;);
+plot(x,y)
+z &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; rand(&lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;)
+plot!(x,z)
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
@@ -1934,8 +2500,8 @@ Line 1 會標記 y 的第一個函數值，Line 2 會標記 y 的第二個函數
 &lt;li&gt;在 plot 指令中加入：xlabel = &amp;ldquo;My x label&amp;rdquo;。 (xlabel 後面不用&amp;rdquo;!&amp;quot;)&lt;/li&gt;
 &lt;li&gt;或是在 plot 指令的下一行用 xlabel!(&amp;ldquo;My x label&amp;rdquo;) 加入。(xlabel! 後面要用&amp;rdquo;!&amp;quot;)&lt;/li&gt;
 &lt;/ol&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;x&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;; y&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; rand&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;);
-plot&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;(x&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;,y&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;,title&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;T&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;w&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;o&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;L&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;i&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;n&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;e&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;s&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;,label&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;[&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;L&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;i&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;n&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;e&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;L&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;i&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;n&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;e&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;2&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;],lw&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;,xlabel&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;M&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;y&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;x&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;l&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;a&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;b&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;e&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;l&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;)
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;x &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;; y &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; rand(&lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;);
+plot(x,y,title&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Two Lines&amp;#34;&lt;/span&gt;,label&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;[&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Line 1&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Line 2&amp;#34;&lt;/span&gt;],lw&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;,xlabel &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;My x label&amp;#34;&lt;/span&gt;)
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
@@ -1964,9 +2530,9 @@ plot&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;(x&lt;span style=&#34
 
 &lt;/figure&gt;
 
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;x&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;; y&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; rand&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;);
-plot&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;(x&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;,y&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;,title&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;T&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;w&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;o&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;L&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;i&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;n&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;e&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;s&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;,label&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;[&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;L&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;i&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;n&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;e&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;L&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;i&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;n&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;e&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;2&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;],lw&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;)
-xlabel!&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;M&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;y&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;x&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;l&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;a&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;b&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;e&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;l&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;)
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;x &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;; y &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; rand(&lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;);
+plot(x,y,title&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Two Lines&amp;#34;&lt;/span&gt;,label&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;[&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Line 1&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Line 2&amp;#34;&lt;/span&gt;],lw&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;)
+xlabel!(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;My x label&amp;#34;&lt;/span&gt;)
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
@@ -2003,12 +2569,12 @@ xlabel!&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;(&lt;span style=&#
 &lt;li&gt;y 這個矩陣裡包含兩筆資料，x 的取點都是整數 1 到 10。所以可以用 &amp;ldquo;一個&amp;rdquo; 指令把兩筆資料畫出來。令這張圖叫做 p&lt;/li&gt;
 &lt;li&gt;z 這筆資料為 0 到 1 中的 19 個亂數，xx 的取點也是19個在 [1, 10] 的均勻取點。所以我們用 plot! 指令，先畫出 p, 再把 z 這筆資料畫上去。&lt;/li&gt;
 &lt;/ol&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;x&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;; y&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; rand&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;);
-p&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; plot&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;(x&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;,y&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;)
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;x &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;; y &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; rand(&lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;);
+p &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; plot(x,y)
 
-xx&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;19&lt;/span&gt;
-z&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; rand&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;19&lt;/span&gt;)
-plot!&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;(p&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;,xx&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;,z&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;)
+xx &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;19&lt;/span&gt;
+z &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; rand(&lt;span style=&#34;color:#ae81ff&#34;&gt;19&lt;/span&gt;)
+plot!(p,xx,z)
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
@@ -2049,10 +2615,10 @@ plot!&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;(p&lt;span style=&#3
 &lt;li&gt;接著我們設定函數 &amp;ldquo;h&amp;rdquo;&lt;/li&gt;
 &lt;li&gt;最後, 我們利用指令 &lt;code&gt;surface&lt;/code&gt; 來畫曲面.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;x&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0.01&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;;
-y&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0.01&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;;
-h&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;(x&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;,y&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;)&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;exp&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;(&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;(x&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;^&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;y&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;^&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;));
-surface&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;(x&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;,y&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;,h&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;)
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;x&lt;span style=&#34;color:#f92672&#34;&gt;=-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0.01&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;;
+y&lt;span style=&#34;color:#f92672&#34;&gt;=-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0.01&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;;
+h(x,y)&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;exp&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;(&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;(x&lt;span style=&#34;color:#f92672&#34;&gt;^&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;y&lt;span style=&#34;color:#f92672&#34;&gt;^&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;));
+surface(x,y,h)
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
@@ -2086,13 +2652,13 @@ surface&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;(x&lt;span style=&
 &lt;p&gt;如果要將很多圖片合在一起做成動畫也是可以, 以下這個簡單例子將動畫存成一個 gif 檔.&lt;/p&gt;
 &lt;p&gt;更多細節請見 
 &lt;a href=&#34;https://docs.juliaplots.org/latest/animations/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;julia_plots_animations&lt;/a&gt;&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;p&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; plot&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;([sin&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;, cos&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;], zeros&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;), leg&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;false&lt;/span&gt;)
-anim&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; Animation&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;()
-&lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; x&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; range&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;, stop&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;π, length&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;100&lt;/span&gt;)
-    push!&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;(p&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;, x&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;, &lt;span style=&#34;color:#66d9ef&#34;&gt;Float64&lt;/span&gt;[sin&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;(x&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;), cos&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;(x&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;)])
-    frame&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;(anim&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;)
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;p &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; plot([sin, cos], zeros(&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;), leg&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;false&lt;/span&gt;)
+anim &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; Animation()
+&lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; x &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; range(&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;, stop&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;π, length&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;100&lt;/span&gt;)
+    push!(p, x, &lt;span style=&#34;color:#66d9ef&#34;&gt;Float64&lt;/span&gt;[sin(x), cos(x)])
+    frame(anim)
 &lt;span style=&#34;color:#66d9ef&#34;&gt;end&lt;/span&gt;
-gif&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;(anim&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;s&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;i&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;n&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;e&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;_&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;c&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;o&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;s&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;i&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;n&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;e&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;g&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;i&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;f&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;)
+gif(anim, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;sine_cosine.gif&amp;#34;&lt;/span&gt;)
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
 &lt;hr&gt;
 </description>
@@ -2123,20 +2689,20 @@ gif&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;(anim&lt;span style=&#
 &lt;/ul&gt;
 &lt;p&gt;&lt;strong&gt;BUT,&lt;/strong&gt; 真正要計算程式效能, 還是推薦用 &lt;code&gt;BenchmarkTools.jl&lt;/code&gt; 這個 package.&lt;/p&gt;
 &lt;p&gt;以下範例中我們需要使用兩個 package: &lt;code&gt;LinearAlgebra&lt;/code&gt; 以及 &lt;code&gt;BenchmarkTools&lt;/code&gt;&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;using&lt;/span&gt; LinearAlgebra&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;
-&lt;span style=&#34;color:#66d9ef&#34;&gt;using&lt;/span&gt; BenchmarkTools&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;using&lt;/span&gt; LinearAlgebra
+&lt;span style=&#34;color:#66d9ef&#34;&gt;using&lt;/span&gt; BenchmarkTools
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
 &lt;h2 id=&#34;example-1-matrix-matrix-multiplication&#34;&gt;Example 1: Matrix-matrix multiplication&lt;/h2&gt;
 &lt;p&gt;我們以矩陣乘法 $C=A\times B$ 為例：$A:n\times p$, $B:p\times m$, $C:n\times m$&lt;/p&gt;
 &lt;p&gt;f1 這個函數會產生兩個隨機矩陣 $A$, $B$ 並且將他們相乘:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt; f1&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;(n&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;, p&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;, m&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;)
-   A&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;rand&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;(n&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;,p&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;)
-   B&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;rand&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;(p&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;,m&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;)
-   C&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;zeros&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;Float64&lt;/span&gt;,n&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;,m&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;)
-   &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; i&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;in&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;n&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;
-      &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; j&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;in&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;m&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;
-         &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; k&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;in&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;p&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;
-            C&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;[i&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;,j&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;] &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; C&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;[i&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;,j&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;]&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;A&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;[i&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;,k&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;]&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;B&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;[k&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;,j&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;]
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt; f1(n, p, m)
+   A&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;rand(n,p)
+   B&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;rand(p,m)
+   C&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;zeros(&lt;span style=&#34;color:#66d9ef&#34;&gt;Float64&lt;/span&gt;,n,m)
+   &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; i &lt;span style=&#34;color:#66d9ef&#34;&gt;in&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;n
+      &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; j &lt;span style=&#34;color:#66d9ef&#34;&gt;in&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;m
+         &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; k &lt;span style=&#34;color:#66d9ef&#34;&gt;in&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;p
+            C[i,j] &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; C[i,j]&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;A[i,k]&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;B[k,j]
          &lt;span style=&#34;color:#66d9ef&#34;&gt;end&lt;/span&gt;
        &lt;span style=&#34;color:#66d9ef&#34;&gt;end&lt;/span&gt;
     &lt;span style=&#34;color:#66d9ef&#34;&gt;end&lt;/span&gt;
@@ -2144,13 +2710,13 @@ gif&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;(anim&lt;span style=&#
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;pre&gt;&lt;code&gt;f1 (generic function with 1 method)
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;我們先試試看以 julia 既有的計算時間指令來看結果如何&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;@time&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt; f1&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;100&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;200&lt;/span&gt;)
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;@time&lt;/span&gt; f1(&lt;span style=&#34;color:#ae81ff&#34;&gt;100&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;200&lt;/span&gt;)
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;pre&gt;&lt;code&gt;  0.076423 seconds (161.79 k allocations: 8.380 MiB)
 &lt;/code&gt;&lt;/pre&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;@timed&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt; f1&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;100&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;200&lt;/span&gt;)
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;@timed&lt;/span&gt; f1(&lt;span style=&#34;color:#ae81ff&#34;&gt;100&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;200&lt;/span&gt;)
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;pre&gt;&lt;code&gt;(nothing, 0.000448109, 184496, 0.0, Base.GC_Diff(184496, 1, 0, 5, 2, 0, 0, 0, 0))
 &lt;/code&gt;&lt;/pre&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;@timev&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt; f1&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;100&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;200&lt;/span&gt;)
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;@timev&lt;/span&gt; f1(&lt;span style=&#34;color:#ae81ff&#34;&gt;100&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;200&lt;/span&gt;)
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;pre&gt;&lt;code&gt;  0.005932 seconds (8 allocations: 180.172 KiB, 92.28% gc time)
 elapsed time (ns): 5931535
 gc time (ns):      5473727
@@ -2160,13 +2726,13 @@ non-pool GC allocs:2
 malloc() calls:    1
 GC pauses:         1
 &lt;/code&gt;&lt;/pre&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;@elapsed&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt; f1&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;100&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;200&lt;/span&gt;)
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;@elapsed&lt;/span&gt; f1(&lt;span style=&#34;color:#ae81ff&#34;&gt;100&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;200&lt;/span&gt;)
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;pre&gt;&lt;code&gt;0.000561533
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;這些指令的表現如同一開始我們所介紹的, 顯示出程式執行時間以及其他資訊.&lt;/p&gt;
 &lt;p&gt;不過一般而言一個程式在第一次跑及之後幾次跑的運行效能會不同, 這是由於初始化的關係. 所以我們通常要跑好幾次來算平均, 已得知一個程式的真正效能.&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;benchmark&lt;/code&gt; 就提供了這樣的功用, 他會跑好幾次程式, 並且計算最大最小時間.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;@benchmark&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt; f1&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;100&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;200&lt;/span&gt;)
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;@benchmark&lt;/span&gt; f1(&lt;span style=&#34;color:#ae81ff&#34;&gt;100&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;200&lt;/span&gt;)
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;pre&gt;&lt;code&gt;BenchmarkTools.Trial:
   memory estimate:  180.02 KiB
   allocs estimate:  4
@@ -2180,15 +2746,15 @@ GC pauses:         1
   evals/sample:     1
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;接著我們看一下如果用 &lt;code&gt;LinearAlgebra&lt;/code&gt; 裡的矩陣乘法指令效能如何.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt; f2&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;(n&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;, p&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;, m&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;)
-    A&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;rand&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;(n&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;,p&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;)
-    B&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;rand&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;(p&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;,m&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;)
-    C&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;zeros&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;Float64&lt;/span&gt;,n&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;,m&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;)
-    mul!&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;(C&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;,A&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;,B&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;);
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt; f2(n, p, m)
+    A&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;rand(n,p)
+    B&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;rand(p,m)
+    C&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;zeros(&lt;span style=&#34;color:#66d9ef&#34;&gt;Float64&lt;/span&gt;,n,m)
+    mul!(C,A,B);
 &lt;span style=&#34;color:#66d9ef&#34;&gt;end&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;pre&gt;&lt;code&gt;f2 (generic function with 1 method)
 &lt;/code&gt;&lt;/pre&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;@benchmark&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt; f2&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;100&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;200&lt;/span&gt;)
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;@benchmark&lt;/span&gt; f2(&lt;span style=&#34;color:#ae81ff&#34;&gt;100&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;200&lt;/span&gt;)
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;pre&gt;&lt;code&gt;BenchmarkTools.Trial:
   memory estimate:  180.02 KiB
   allocs estimate:  4
@@ -2205,21 +2771,21 @@ GC pauses:         1
 &lt;hr&gt;
 &lt;h2 id=&#34;type-stability&#34;&gt;type-stability&lt;/h2&gt;
 &lt;p&gt;julia 語言號稱效能非常好, 不過常常我們自己寫一個 julia 程式發現跑得沒有很快, 這通常是由於所謂的 “型別穩定性 type-stability”. 這樣的問題可以藉由以下幾個 julia 內建的巨集程式來診斷.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;@code_warntype&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt; f1&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;)
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;@code_typed&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt; f1&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;)
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;@code_native&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt; f1&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;)
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;@code_warntype&lt;/span&gt; f1(&lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;@code_typed&lt;/span&gt; f1(&lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;@code_native&lt;/span&gt; f1(&lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;)
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;這方面更深入的說明可見 
 &lt;a href=&#34;https://docs.julialang.org/en/v1/manual/performance-tips/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;julia: performance tips&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;example-2-vector-2-norm&#34;&gt;Example 2: Vector 2-norm&lt;/h2&gt;
 &lt;p&gt;接著我們看一下算向量 2-norm 的效能, 一樣我們比較一下自己寫的以及 call 函數的方式.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt; t1&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;(n&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;)
-    vec&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; rand&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;,n&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;);
-    vec&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;vec&lt;span style=&#34;color:#f92672&#34;&gt;&amp;#39;&lt;/span&gt;;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt; t1(n)
+    vec &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; rand(&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;,n);
+    vec&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;vec&lt;span style=&#34;color:#f92672&#34;&gt;&amp;#39;&lt;/span&gt;;
 &lt;span style=&#34;color:#66d9ef&#34;&gt;end&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;pre&gt;&lt;code&gt;t1 (generic function with 1 method)
 &lt;/code&gt;&lt;/pre&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;@benchmark&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt; t1&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;^&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;5&lt;/span&gt;)
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;@benchmark&lt;/span&gt; t1(&lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;^&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;5&lt;/span&gt;)
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;pre&gt;&lt;code&gt;BenchmarkTools.Trial:
   memory estimate:  781.42 KiB
   allocs estimate:  3
@@ -2232,13 +2798,13 @@ GC pauses:         1
   samples:          8213
   evals/sample:     1
 &lt;/code&gt;&lt;/pre&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt; t2&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;(n&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;)
-    vec&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; rand&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;,n&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;);
-    sum&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;(abs2&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;, vec&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;);
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt; t2(n)
+    vec &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; rand(&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;,n);
+    sum(abs2, vec);
 &lt;span style=&#34;color:#66d9ef&#34;&gt;end&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;pre&gt;&lt;code&gt;t2 (generic function with 1 method)
 &lt;/code&gt;&lt;/pre&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;@benchmark&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt; t2&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;^&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;5&lt;/span&gt;)
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;@benchmark&lt;/span&gt; t2(&lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;^&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;5&lt;/span&gt;)
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;pre&gt;&lt;code&gt;BenchmarkTools.Trial:
   memory estimate:  781.33 KiB
   allocs estimate:  2
@@ -2254,14 +2820,14 @@ GC pauses:         1
 &lt;hr&gt;
 &lt;h2 id=&#34;example-3-solving-linear-system&#34;&gt;Example 3: Solving linear system&lt;/h2&gt;
 &lt;p&gt;這裡我們看一下解線性系統, 也就是 matlab 常見的&amp;quot;左除&amp;rdquo;, 的效率如何.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt; s1&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;(n&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;)
-    A&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;rand&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;(n&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;,n&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;);
-    b&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;rand&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;(n&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;);
-    A&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;\&lt;/span&gt;b&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt; s1(n)
+    A&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;rand(n,n);
+    b&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;rand(n);
+    A&lt;span style=&#34;color:#f92672&#34;&gt;\&lt;/span&gt;b;
 &lt;span style=&#34;color:#66d9ef&#34;&gt;end&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;pre&gt;&lt;code&gt;s1 (generic function with 1 method)
 &lt;/code&gt;&lt;/pre&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;@benchmark&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt; s1&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;1000&lt;/span&gt;)
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;@benchmark&lt;/span&gt; s1(&lt;span style=&#34;color:#ae81ff&#34;&gt;1000&lt;/span&gt;)
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;pre&gt;&lt;code&gt;BenchmarkTools.Trial:
   memory estimate:  15.28 MiB
   allocs estimate:  8
@@ -2290,7 +2856,7 @@ Chinese version:
 &lt;/blockquote&gt;
 &lt;p&gt;Given a cylindrical can with fixed volume $v$, we want to find the height $h$ and radius $r$ that minimize the cost of metal to make the can.&lt;/p&gt;
 &lt;p&gt;If we disregard any waste metal in the manufacturing process, then the problem is to minimize the surface area of the cylinder. It can be found that the solution of this problem is $h=2r$; this is, the height should be the same as the diameter.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;But,&lt;/strong&gt; for most of the cans in the supermarket, the height is usually greater than the diameter and the ratio $h/r$ varies from $2$ up to about $3.8$. Let&#39;s see if we can explain this phenomenon.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;But,&lt;/strong&gt; for most of the cans in the supermarket, the height is usually greater than the diameter and the ratio $h/r$ varies from $2$ up to about $3.8$. Let&amp;rsquo;s see if we can explain this phenomenon.&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;img src=&#34;https://media.cheggcdn.com/study/e3e/e3e1a59a-d0be-46e7-8557-07e775d84b81/715030-4.7-1IAP11.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Question 1:&lt;/strong&gt; The material for the cans is cut from sheets of metal. The cylindrical sides are formed by bending rectangles; these rectangles are cut from the sheet with little or no waste.&lt;/p&gt;
@@ -2406,7 +2972,7 @@ $$&lt;/li&gt;
 &lt;p&gt;Trapezoidal rule: $\int^1_{-1}f(x),dx\approx f(-1)+f(1)$&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Simpson&#39;s rule: $\int^1_{-1}f(x),dx\approx \frac{1}{3}(f(-1)+4f(0)+f(1))$&lt;/p&gt;
+&lt;p&gt;Simpson&amp;rsquo;s rule: $\int^1_{-1}f(x),dx\approx \frac{1}{3}(f(-1)+4f(0)+f(1))$&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;ul&gt;
@@ -2480,7 +3046,7 @@ $$
 &lt;th&gt;n\Method&lt;/th&gt;
 &lt;th&gt;Midpoint&lt;/th&gt;
 &lt;th&gt;Trapezoidal&lt;/th&gt;
-&lt;th&gt;Simpson&#39;s&lt;/th&gt;
+&lt;th&gt;Simpson&amp;rsquo;s&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
 &lt;tbody&gt;
@@ -2665,7 +3231,7 @@ Therefore, the vertical acceleration $a$ is
 $$
 a(t) = \left|−\frac{12hv^2}{\ell^3}(\ell - vt) + \frac{6hv^2}{\ell^2}\right| = \left|\frac{12hv^3}{\ell^3},t - \frac{6hv^2}{\ell^2}\right|, \qquad t\in[0, \frac{\ell}{v}].
 $$
-It can be check, from the Extreme Value Theorem and closed interval method, that $a$ attains it&#39;s maximum value $\frac{6hv^2}{\ell^2}$.
+It can be check, from the Extreme Value Theorem and closed interval method, that $a$ attains it&amp;rsquo;s maximum value $\frac{6hv^2}{\ell^2}$.
 From condition (iii), we therefore have
 $$
 \frac{6hv^2}{\ell} \le k.
@@ -2686,15 +3252,15 @@ That is, the pilot should start to decend when the plane is $64.511$(mi) away fr
 &lt;p&gt;&lt;strong&gt;Question 4:&lt;/strong&gt; Graph the approach path if the conditions stated in Problem 3 are satisfied.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# Example code in julia&lt;/span&gt;
-&lt;span style=&#34;color:#66d9ef&#34;&gt;using&lt;/span&gt; Plots&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;
-v&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;300&lt;/span&gt;;
-h&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;6.628&lt;/span&gt;;
-l&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;65&lt;/span&gt;;
-N&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;100&lt;/span&gt;;
-dx&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; l&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;N&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;;
-x&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0.0&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;N&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;; x&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; dx&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;x&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;;
-P&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;h&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;l&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;^&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;)&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;x&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.^&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; (&lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;h&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;l&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;^&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;)&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;x&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.^&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;;
-plot&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;(x&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;, P&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;, lw&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;, xlabel&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;x&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;, ylabel&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;y&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;, title&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;a&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;p&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;p&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;r&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;o&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;a&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;c&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;h&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;p&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;a&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;t&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;h&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;, legend&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;false&lt;/span&gt;)
+&lt;span style=&#34;color:#66d9ef&#34;&gt;using&lt;/span&gt; Plots
+v &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;300&lt;/span&gt;;
+h &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;6.628&lt;/span&gt;;
+l &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;65&lt;/span&gt;;
+N &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;100&lt;/span&gt;;
+dx &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; l&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;N;
+x &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0.0&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;N; x &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; dx&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;x;
+P &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;h&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;l&lt;span style=&#34;color:#f92672&#34;&gt;^&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;)&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;x&lt;span style=&#34;color:#f92672&#34;&gt;.^&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; (&lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;h&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;l&lt;span style=&#34;color:#f92672&#34;&gt;^&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;)&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;x&lt;span style=&#34;color:#f92672&#34;&gt;.^&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;;
+plot(x, P, lw&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;, xlabel &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;x&amp;#34;&lt;/span&gt;, ylabel &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;y&amp;#34;&lt;/span&gt;, title&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;approach path&amp;#34;&lt;/span&gt;, legend&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;false&lt;/span&gt;)
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
@@ -2786,13 +3352,13 @@ $$
 f(x) = x + g(x).
 $$
 這樣的話 $f$ 的固定點就會是 $g$ 的根了. 不過這種最簡單的改寫方式完全不保證會收斂.&lt;/p&gt;
-&lt;p&gt;那要如何改寫才會比較好呢? 其中一個最有名的就是牛頓法 (Newton&#39;s method):&lt;/p&gt;
+&lt;p&gt;那要如何改寫才會比較好呢? 其中一個最有名的就是牛頓法 (Newton&amp;rsquo;s method):&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;h2 id=&#34;newtons-iteration&#34;&gt;Newton&#39;s iteration&lt;/h2&gt;
+&lt;h2 id=&#34;newtons-iteration&#34;&gt;Newton&amp;rsquo;s iteration&lt;/h2&gt;
 &lt;p&gt;$$x_{n+1} = x_n - \frac{g(x_n)}{g&amp;rsquo;(x_n)}.$$&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;我們可以定義 $f(x) = x - \frac{g(x)}{g&amp;rsquo;(x)}$, 這樣上面這個式子就是個固定點迭代. 接著我們可以發現, 如果 $c$ 是 $g$ 函數的根, 也就是 $g(c )=0$, 那 $f&amp;rsquo;(c ) = 0$. 所以根據上面的定理就存在某個包含 $c$ 的小區間使得迭代會收斂.&lt;/p&gt;
-&lt;p&gt;更進一步我們可以利用泰勒展開式(Taylor&#39;s series expansion) 來證明牛頓法事實上有二次收斂,
+&lt;p&gt;更進一步我們可以利用泰勒展開式(Taylor&amp;rsquo;s series expansion) 來證明牛頓法事實上有二次收斂,
 $$
 |x_{n+1} - c| \approx \beta |x_n-c|^2.
 $$
@@ -2834,7 +3400,7 @@ $$
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;要取迭代函數, 如果知道如何對函數微分, 以牛頓法 
-&lt;a href=&#34;https://en.wikipedia.org/wiki/Newton%27s_method&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Newton&#39;s method&lt;/a&gt; 來取通常會有不錯的效果.&lt;/p&gt;
+&lt;a href=&#34;https://en.wikipedia.org/wiki/Newton%27s_method&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Newton&amp;rsquo;s method&lt;/a&gt; 來取通常會有不錯的效果.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;若無法得知微分函數, 可以用數值微分來逼近真實微分, 這樣會得到割線法 
@@ -2969,11 +3535,11 @@ $$
 &lt;ul&gt;
 &lt;li&gt;查詢版本資訊&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;julia&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; versioninfo&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;()
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;julia&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; versioninfo()
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
 &lt;li&gt;套件(package)管理&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;julia&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; ]
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;julia&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; ]
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;pre&gt;&lt;code&gt;然後就會進入套件管理系統
 ```julia
 pkg&amp;gt;
@@ -2994,7 +3560,7 @@ pkg&amp;gt; update
 &lt;ul&gt;
 &lt;li&gt;查詢指令(如matlab中的help)&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;julia&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;?&lt;/span&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;julia&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;?&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;pre&gt;&lt;code&gt;然後就會變成查詢的視窗
 ```julia
 help?&amp;gt;
@@ -3009,14 +3575,14 @@ help?&amp;gt;
 &lt;li&gt;
 &lt;p&gt;安裝 Jupyter notebook 有兩種方式. 第一種是直接由 julia 安裝. 步驟如下&lt;/p&gt;
 &lt;p&gt;在 julia 輸入 &lt;code&gt;]&lt;/code&gt; 進入套件管理命令提示. 然後會長得像這樣&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;pkg&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;pkg&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;接著輸入 &lt;code&gt;status&lt;/code&gt; 可以看到現在已經安裝的套件.&lt;/p&gt;
 &lt;p&gt;我們要安裝 IJulia, 所以輸入&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;pkg&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; add&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt; IJulia&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;pkg&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; add IJulia
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;安裝完後要退出套件管理則是 BackSpace 鍵或是 Ctrl+C 都可以.&lt;/p&gt;
 &lt;p&gt;要打開 notebook 需要退出套件管理, 並在 julia 命令提示字元下輸入&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;julia&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;using&lt;/span&gt; IJulia&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;
-julia&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; notebook&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;()
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;julia&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;using&lt;/span&gt; IJulia
+julia&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; notebook()
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;這樣 Jupyter notebook 就會在你的瀏覽器中打開.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -3027,8 +3593,8 @@ julia&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;&lt;span style=&#34;
 &lt;p&gt;目前已經有 jupyter notebook 的升級版, 稱為 jupyter lab. 在 julia 命令提示字元下輸入&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;julia&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;using&lt;/span&gt; IJulia&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;
-julia&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; jupyterlab&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;()
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;julia&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;using&lt;/span&gt; IJulia
+julia&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; jupyterlab()
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;這樣 Jupyter lab 就會在你的瀏覽器中打開.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
@@ -3135,14 +3701,18 @@ julia&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;&lt;span style=&#34;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;如果連安裝都不想的話我推薦 
-&lt;a href=&#34;https://notes.dosilovic.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;markdown notes&lt;/a&gt; 這個線上編輯器. 它支援線上即時編寫, 可以線上存檔, 也可以下載成 markdown 以及 PDF.&lt;/p&gt;
+&lt;a href=&#34;http://hackmd.io/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;hackmd&lt;/a&gt; 這個線上編輯器. 這個還能多人共筆編輯, 適合寫作業交作業.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;另一個線上編輯器: 
+&lt;a href=&#34;https://notes.dosilovic.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;markdown notes&lt;/a&gt; . 它支援線上即時編寫, 可以線上存檔, 也可以下載成 markdown 以及 PDF.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;另一個線上編輯器: 
 &lt;a href=&#34;https://upmath.me&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;upmath&lt;/a&gt;, 一樣支援線上即時編寫, 可以存成 html 直接幫你產生網頁.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;不過我要稍微說明一下, 不管使用哪種編輯器, markdown 主要語法都差不多. 不過在輸出上會有一些細微的差異. 這點就要自己使用後才會感受得到差別.&lt;/p&gt;
+&lt;p&gt;不過我要稍微說明一下, 不管使用哪種編輯器, markdown 主要語法都差不多, 只是在輸出上會有一些細微的差異. 這點就要自己使用後才會感受得到差別.&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;markdown-語法教學&#34;&gt;Markdown 語法教學&lt;/h2&gt;
 &lt;p&gt;以下列舉一些 markdown 教學的線上資源&lt;/p&gt;
@@ -3600,12 +4170,12 @@ $$&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;machine epsilon 的定義是, 考慮正數$\epsilon$, 使得 $ 1+ \epsilon \ge 1$ 中最小的那個稱之為 machine epsilon. 當然以數學來看這個 machine epsilon 必須等於零. 不過在電腦裡並不是這樣.&lt;/p&gt;
 &lt;p&gt;為了方便我們稍微改一下定義, 我們考慮 $\epsilon = 2^{-k}$ 這種形式, 然後 machine epsilon 一樣是使得 $ 1+ \epsilon \ge 1$ 中最小的那個. julia 程式如下:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;s&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1.0&lt;/span&gt;
-&lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; k&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;100&lt;/span&gt;
-    s&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; s&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2.0&lt;/span&gt;
-    &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; (&lt;span style=&#34;color:#ae81ff&#34;&gt;1.0&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;s&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;)&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1.0&lt;/span&gt;
-        s&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;2.0&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;s&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;
-        println&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;k&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;, k&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;,&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;e&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;p&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;s&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;, s&lt;span style=&#34;color:#f92672&#34;&gt;&lt;/span&gt;)
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;s&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1.0&lt;/span&gt;
+&lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; k&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;100&lt;/span&gt;
+    s &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; s&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2.0&lt;/span&gt;
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; (&lt;span style=&#34;color:#ae81ff&#34;&gt;1.0&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;s)&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1.0&lt;/span&gt;
+        s &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;2.0&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;s
+        println(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;k=&amp;#34;&lt;/span&gt;, k&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;,  eps=&amp;#34;&lt;/span&gt;, s)
         &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt;
     &lt;span style=&#34;color:#66d9ef&#34;&gt;end&lt;/span&gt;
 &lt;span style=&#34;color:#66d9ef&#34;&gt;end&lt;/span&gt;
