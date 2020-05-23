@@ -5,12 +5,176 @@
     <link>https://teshenglin.github.io/tags/optimization/</link>
       <atom:link href="https://teshenglin.github.io/tags/optimization/index.xml" rel="self" type="application/rss+xml" />
     <description>optimization</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Thu, 21 May 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 22 May 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
       <title>optimization</title>
       <link>https://teshenglin.github.io/tags/optimization/</link>
     </image>
+    
+    <item>
+      <title>Sec.3.1 - 建造較佳的雲霄飛車</title>
+      <link>https://teshenglin.github.io/post/2020_cal_s3p1_ch/</link>
+      <pubDate>Fri, 22 May 2020 00:00:00 +0000</pubDate>
+      <guid>https://teshenglin.github.io/post/2020_cal_s3p1_ch/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;Applied Project in Sec.3.1, Calculus by Stewart&lt;br&gt;
+英文版請見 
+&lt;a href=&#34;https://teshenglin.github.io/post/2020_cal_s3p1&#34;&gt;Building a better roller coaster&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;假設你被要求設計一架新的雲霄飛車的第一個上升與下降。在研究你最喜歡的雲霄飛車的圖片後，你決定新的雲霄飛車先以 0.8 的斜率上升然後再以 -1.6 的斜率下降。你決定以二次曲線 $y=f(x)=ax^2+bx+c$ 的一部份去連接上升與下降的直線 $y=L_1(x)$、$y=L_2(x)$，$x$和$f(x)$的單位為公尺。為了維持軌道的平滑性，因此軌道的方向上不能有明顯的變化，所以你要求兩條直線 $L_1$ 和 $L_2$ 應在交接點 $P$ 和 $Q$ 與二次曲線 $y=f(x)$ 相切（如圖）。你將起點定在 $P$ 以簡化方程式。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://media.cheggcdn.com/media%2Fa1a%2Fa1a173e3-a2b4-46ea-835c-dc7ca2977f57%2FphpNfXwqZ.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;問題 1:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;(a) 假設 $P$ 和 $Q$ 之間的水平距離是 30 公尺。請寫出以$a$、$b$、和$c$構成的等式使得軌道與軌道之間的接點是平滑的。&lt;/p&gt;
+&lt;p&gt;(b) 解出第(a)小題的 $a$、$b$、和 $c$，以找到$f(x)$的方程式。&lt;/p&gt;
+&lt;p&gt;(c) 畫出$L_1$、$f$和 $L_2$，以圖形證實軌道之間的接點是平滑的。&lt;/p&gt;
+&lt;p&gt;(d) 找出$P$和$Q$之間的垂直距離。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;解答:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;假設 $P$ 點在 $(0,0)$，$Q$ 點在 $(30,y_q)$, 則
+$$
+f&amp;rsquo;(0)=b=0.8, \quad f&amp;rsquo;(30)=60a+b=-1.6
+$$
+解出方程式後，我們可以得到 $a=-0.04$，$b=0.8$。至於 $c$，$f(0)=c=0$。&lt;/p&gt;
+&lt;p&gt;因此我們得到
+$$
+f(x)=-0.04x^2+0.8x
+$$&lt;/p&gt;
+&lt;p&gt;運用已經得到的 $f(x)$ ，我們可以找到 $y_q=f(30)=-12$，因此 $P$ 和 $Q$ 之間的垂直距離為12公尺。&lt;/p&gt;
+&lt;p&gt;下圖是這些函數的圖形：&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://teshenglin.github.io/post/figs/2020_cal_s4p1_1.jpg&#34; &gt;
+
+
+  &lt;img src=&#34;https://teshenglin.github.io/post/figs/2020_cal_s4p1_1.jpg&#34; alt=&#34;&#34; width=&#34;600px&#34; &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;如上圖，$L_1$、$f$和$L_2$之間的接點是平滑的。&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;問題 2:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;問題一的解答看似平滑，但坐起來感覺卻不怎麼平滑，因為分段定義的函數（$L_1(x)$ 當 $x&amp;lt;0$，$f(x)$ 當 $0\leq x\leq 30$，$L_2(x)$ 當 $x&amp;gt;30$）的二次微分並不連續。所以你決定將二次曲線 $q(x)=ax^2+bx+c$ 的使用範圍減少為 $3\leq x\leq 27$，並且將二次曲線和直線以兩條三次曲線相連接:&lt;/p&gt;
+&lt;p&gt;$$
+g(x)=kx^3+lx^2+mx+n \quad 0 \leq x&amp;lt;3
+$$&lt;/p&gt;
+&lt;p&gt;$$
+h(x)=px^3+qx^2+rx+s \quad 27&amp;lt;x\leq30
+$$&lt;/p&gt;
+&lt;p&gt;(a) 列出含有11個未知數的一系列的方程式，使得接點與接點之間的一次微分及二次微分皆是相同的。&lt;/p&gt;
+&lt;p&gt;(b) 利用電腦計算系統解出第(a)小題的等式，以找出$q(x)$、$g(x)$和$h(x)$的方程式。&lt;/p&gt;
+&lt;p&gt;(c) 畫出 $L_1$、 $g$、 $q$、 $h$和 $L_2$，並與問題一的第(c)小題的圖形相互比較。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;解答:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;我們可以列出下列三個方程式：
+$$
+g(x)=kx^3+lx^2+mx+n, \quad 0 \leq x&amp;lt;3,
+$$
+$$
+q(x)=a(x-3)^2+b(x-3)+c, \quad 3 \leq x&amp;lt;27,
+$$
+$$
+h(x)=p(x-30)^3+q(x-30)^2+r(x-30)+s, \quad 27 \leq x&amp;lt;30.
+$$
+根據文章，我們可以列出11個等式進而解出11個未知數：
+$$
+g(0)=0,\quad g&amp;rsquo;(0)=0.8,\quad g&amp;rsquo;&#39;(0)=0,
+$$
+$$
+g(3)=q(3),\quad g&amp;rsquo;(3)=q&amp;rsquo;(3),\quad g&amp;rsquo;&#39;(3)=q&amp;rsquo;&#39;(3),
+$$
+$$
+q(27)=h(27),\quad q&amp;rsquo;(27)=h&amp;rsquo;(27),\quad q&amp;rsquo;&#39;(27)=h&amp;rsquo;&#39;(27),
+$$
+$$
+h&amp;rsquo;(30)=-1.6,\quad h&amp;rsquo;&#39;(30)=0.
+$$
+經過一連串複雜的運算，我們解出了11個未知數：
+$$
+k=-\frac{2}{405},\quad l=0,\quad m=\frac{4}{5},\quad n=0,
+$$
+$$
+a=-\frac{2}{45},\quad b=\frac{2}{3},\quad c=\frac{34}{15},
+$$
+$$
+p=\frac{2}{405},\quad q=0,\quad r=-\frac{8}{5},\quad s=-12.
+$$
+根據上表所解出的係數，以下為更加平滑的軌道函數：
+$$
+g(x)=-\frac{2}{405}x^3+\frac{4}{5}x, \quad 0 \leq x&amp;lt;3,
+$$
+$$
+q(x)=-\frac{2}{45}(x-3)^2+\frac{2}{3}(x-3)+\frac{34}{15}, \quad 3 \leq x&amp;lt;27,
+$$
+$$
+h(x)=\frac{2}{405}(x-30)^3-\frac{8}{5}(x-30)-12, \quad 27 \leq x&amp;lt;30.
+$$&lt;/p&gt;
+&lt;p&gt;以下為更加平滑的軌道的圖形：
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://teshenglin.github.io/post/figs/2020_cal_s4p1_2.png&#34; &gt;
+
+
+  &lt;img src=&#34;https://teshenglin.github.io/post/figs/2020_cal_s4p1_2.png&#34; alt=&#34;&#34; width=&#34;600px&#34; &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+紅線是$g(x)$的圖形，藍線是$q(x)$的圖形，綠線是$h(x)$的圖形。&lt;/p&gt;
+&lt;p&gt;如果我們只以肉眼觀察圖形，基本上我們無法分辨原本的軌道及更加平滑的軌道的差別。然而，如果我們開始對它作微分：
+$$
+g&amp;rsquo;(0)=\frac{4}{5}=L_1&amp;rsquo;, \quad g&amp;rsquo;&#39;(0)=0=L_1&amp;rsquo;&#39;.
+$$
+觀察 $g$ 和 $L_1$，除了一次微分相同，他們的二次微分也相同，這表示這條軌道比起原先的軌道來的更加平滑，因爲雖然原先的軌道接點與接點之間的一次微分相同，但是二次微分並不同。&lt;/p&gt;
+&lt;p&gt;更加平滑的軌道的其他接點也能得到相同的答案：
+$$
+g&amp;rsquo;(3)=\frac{2}{3}=q&amp;rsquo;(3), \quad g&amp;rsquo;&#39;(3)=-\frac{4}{45}=q&amp;rsquo;&#39;(3),
+$$
+$$
+q&amp;rsquo;(27)=-\frac{22}{15}=h&amp;rsquo;(27), \quad q&amp;rsquo;&#39;(27)=-\frac{4}{45}=h&amp;rsquo;&#39;(27),
+$$
+$$
+h&amp;rsquo;(30)=-\frac{8}{5}=L_2&amp;rsquo;, \quad h&amp;rsquo;&#39;(30)=0=L_2&amp;rsquo;&#39;.
+$$&lt;/p&gt;
+&lt;hr&gt;
+</description>
+    </item>
     
     <item>
       <title>Sec.6.5 - Where to Sit at the Movies</title>
@@ -1290,7 +1454,9 @@ which are consistent with the results of problem 1 and 2.&lt;/p&gt;
       <pubDate>Wed, 11 Mar 2020 00:00:00 +0000</pubDate>
       <guid>https://teshenglin.github.io/post/2020_cal_s3p1/</guid>
       <description>&lt;blockquote&gt;
-&lt;p&gt;Applied Project in Sec.3.1, Calculus by Stewart&lt;/p&gt;
+&lt;p&gt;Applied Project in Sec.3.1, Calculus by Stewart
+Chinese version: 
+&lt;a href=&#34;https://teshenglin.github.io/post/2020_cal_s3p1_ch&#34;&gt;建造較佳的雲霄飛車&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;Suppose you are asked to design the first ascent and drop for a new roller coaster. By studying the photographs of your favorite coasters, you decide to make the slope of the ascent $0.8$ and the slope of the drops $-1.6$. You decide to connect these two straight stretches $y=L_1(x)$ and $y=L_2(x)$ with part of a parabola $y=f(x) = ax^2+bx+c$, where $x$ and $f(x)$ are measured in meters. For the track to be smooth there can&amp;rsquo;t be abrupt changes in direction, so you want the linear segments $L_1$ and $L_2$ to be tangent to the parabola at the points $P$ and $Q$. To simplify the equations, you decide to place the origin at $P$.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://media.cheggcdn.com/media%2Fa1a%2Fa1a173e3-a2b4-46ea-835c-dc7ca2977f57%2FphpNfXwqZ.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
