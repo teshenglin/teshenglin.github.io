@@ -108,7 +108,7 @@
 
 &lt;hr&gt;
 &lt;h2 id=&#34;example-2&#34;&gt;Example 2&lt;/h2&gt;
-&lt;p&gt;接著我們看三維圖形的例子。這個例子中我們要畫出三圍中的一條曲線&lt;/p&gt;
+&lt;p&gt;接著我們看三維圖形的例子。這個例子中我們要畫出三維中的一條曲線&lt;/p&gt;
 &lt;p&gt;$$\left(x(t), y(t), z(t)\right) = (t\cos t, t\sin t, t), \quad t\in[0, 8\pi].$$&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;先將 $8\pi$ 切成 N 等分, 間距為 $\Delta t = 8\pi/N$.
@@ -355,7 +355,34 @@ anim &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; Animation()
     frame(anim)
 &lt;span style=&#34;color:#66d9ef&#34;&gt;end&lt;/span&gt;
 gif(anim, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;sine_cosine.gif&amp;#34;&lt;/span&gt;)
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://teshenglin.github.io/post/figs/sine_cosine.gif&#34; &gt;
+
+
+  &lt;img src=&#34;https://teshenglin.github.io/post/figs/sine_cosine.gif&#34; alt=&#34;&#34; width=&#34;600px&#34; &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
 &lt;hr&gt;
 </description>
     </item>
@@ -596,7 +623,7 @@ pkg&amp;gt; status
 pkg&amp;gt; update
 ```
 
-跳出系統請按鍵盤上的**刪除鍵**.
+跳出系統請按鍵盤上的 `刪除鍵`
 &lt;/code&gt;&lt;/pre&gt;
 &lt;ul&gt;
 &lt;li&gt;查詢指令(如matlab中的help)&lt;/li&gt;

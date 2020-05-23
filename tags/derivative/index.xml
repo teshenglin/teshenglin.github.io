@@ -5,12 +5,468 @@
     <link>https://teshenglin.github.io/tags/derivative/</link>
       <atom:link href="https://teshenglin.github.io/tags/derivative/index.xml" rel="self" type="application/rss+xml" />
     <description>derivative</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 26 Apr 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Thu, 21 May 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
       <title>derivative</title>
       <link>https://teshenglin.github.io/tags/derivative/</link>
     </image>
+    
+    <item>
+      <title>Sec.6.5 - Where to Sit at the Movies</title>
+      <link>https://teshenglin.github.io/post/2020_cal_s6p5/</link>
+      <pubDate>Thu, 21 May 2020 00:00:00 +0000</pubDate>
+      <guid>https://teshenglin.github.io/post/2020_cal_s6p5/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;Applied Project in Sec.6.5, Calculus by Stewart&lt;br&gt;
+Chinese version 
+&lt;a href=&#34;https://teshenglin.github.io/post/2020_cal_s6p5_ch&#34;&gt;電影院要坐哪?&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;A movie theater has a screen that is positioned $3$m off the floor and is $10$m high. The first row of seats is placed $3$m from the screen and the rows are set $1$m apart. The floor of the seating area is inclined at an angle of $\alpha=20^{\circ}$ above the horizontal and the distance up the incline that you sit is $x$. The theater has $21$ rows of seats, so $0 \leq x \leq 20$. Suppose you decide that the best place to sit is in the row where the angle $\theta$ subtended by the screen at your eyes is a maximum. Let&amp;rsquo;s also suppose that your eye are $1.2$m above the floor.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Question 1:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Show that $\theta = \cos^{-1}\left(\frac{a^2+b^2-100}{2ab}\right)$, where
+$$
+a^2 = (3+x\cos{\alpha})^2+(11.8-x\sin{\alpha})^2
+$$
+and
+$$
+b^2 = (3+x\cos{\alpha})^2+(x\sin{\alpha} - 1.8)^2
+$$&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Make the position of screen and seat geocoding:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Set the origin at the floor under the screen$(0,0)$&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The bottom edge of the screen is $(0,3)$, the upper edge is $(0,13)$&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The distance up the incline that you sit is $x$ meter, so the coordinates of the seat is the coordinate of the first row that moves $x\cos{\alpha}$ to the right and moves $x\sin{\alpha}$ to the up.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The coordinates of first row of seats is $(3,0)$, so the coordinates of your seat is $(3+x\cos{\alpha}, x\sin{\alpha})$, the coordinates of your eyes is $(3+x\cos{\alpha}, 1.2+x\sin{\alpha})$&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The square of the distance of your eyes and the upper edge of the screen $=(3+x\cos{\alpha})^2+(11.8-x\sin{\alpha})^2=a^2$&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The square of the distance of your eyes and the bottom edge of the screen $=(3+x\cos{\alpha})^2+(x\sin{\alpha} - 1.8)^2=b^2$&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Finally, by law of cosines: $\cos{\theta}=\frac{a^2+b^2-100}{2ab}$, so
+$\theta = \cos^{-1}\left(\frac{a^2+b^2-100}{2ab}\right)$.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Question 2:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Use a graph of $\theta$ as a function of $x$ to estimate the value of $x$ that maximizes $\theta$. In which row should you sit? What is the viewing angle $\theta$ in this row? What is the angle $\theta$ subtended by the screen at your eyes?&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://i.imgur.com/a0cuq0e.jpg&#34; &gt;
+
+
+  &lt;img src=&#34;https://i.imgur.com/a0cuq0e.jpg&#34; alt=&#34;&#34; width=&#34;400px&#34; &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;$x$&lt;/th&gt;
+&lt;th&gt;$\theta$&lt;/th&gt;
+&lt;th&gt;$x$&lt;/th&gt;
+&lt;th&gt;$\theta$&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;td&gt;0.781414&lt;/td&gt;
+&lt;td&gt;11&lt;/td&gt;
+&lt;td&gt;0.688473&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;0.885175&lt;/td&gt;
+&lt;td&gt;12&lt;/td&gt;
+&lt;td&gt;0.654426&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;td&gt;0.932324&lt;/td&gt;
+&lt;td&gt;13&lt;/td&gt;
+&lt;td&gt;0.622381&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;3&lt;/td&gt;
+&lt;td&gt;0.943356&lt;/td&gt;
+&lt;td&gt;14&lt;/td&gt;
+&lt;td&gt;0.592377&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;4&lt;/td&gt;
+&lt;td&gt;0.932085&lt;/td&gt;
+&lt;td&gt;15&lt;/td&gt;
+&lt;td&gt;0.564380&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;5&lt;/td&gt;
+&lt;td&gt;0.907358&lt;/td&gt;
+&lt;td&gt;16&lt;/td&gt;
+&lt;td&gt;0.538310&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;6&lt;/td&gt;
+&lt;td&gt;0.874860&lt;/td&gt;
+&lt;td&gt;17&lt;/td&gt;
+&lt;td&gt;0.514061&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;7&lt;/td&gt;
+&lt;td&gt;0.838292&lt;/td&gt;
+&lt;td&gt;18&lt;/td&gt;
+&lt;td&gt;0.491514&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;8&lt;/td&gt;
+&lt;td&gt;0.800070&lt;/td&gt;
+&lt;td&gt;19&lt;/td&gt;
+&lt;td&gt;0.470546&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;9&lt;/td&gt;
+&lt;td&gt;0.761763&lt;/td&gt;
+&lt;td&gt;20&lt;/td&gt;
+&lt;td&gt;0.451038&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;10&lt;/td&gt;
+&lt;td&gt;0.724364&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;The maximum of $\theta$ is 0.943356, you should sit at third row.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Question 3:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Use your 
+&lt;a href=&#34;https://www.derivative-calculator.net/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;computer algebra system&lt;/a&gt; to differentiate $\theta$ and find a numerical value for the root of the equation $\frac{d\theta}{dx} = 0$. Does this value confirm your result in Problem 2?&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;According to the graph of $y = \frac{d\theta}{dx}$&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://i.imgur.com/qet2iFc.png&#34; &gt;
+
+
+  &lt;img src=&#34;https://i.imgur.com/qet2iFc.png&#34; alt=&#34;&#34; width=&#34;600px&#34; &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;we found that there is a root at $\approx 2.84556$&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Question 4:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Use the graph of $\theta$ to estimate the average value of $\theta$ on the interval $0 \leq x \leq 20$. Then use your CAS to compute the average value. Compare with the maximum and minimum values of $\theta$.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;average value:&lt;/p&gt;
+&lt;p&gt;$$
+avg = \frac{1}{20}\int_{0}^{20} \theta(x) dx \approx 0.71941
+$$&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://i.imgur.com/kSB09Fk.png&#34; &gt;
+
+
+  &lt;img src=&#34;https://i.imgur.com/kSB09Fk.png&#34; alt=&#34;&#34; width=&#34;600px&#34; &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;There exists three critical points at $x=0$, 2.84556 and 20, the maximum value is approximately 0.94336, the minimum value is approximately 0.45594&lt;/p&gt;
+&lt;hr&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Sec.6.5 - 電影院要坐哪?</title>
+      <link>https://teshenglin.github.io/post/2020_cal_s6p5_ch/</link>
+      <pubDate>Thu, 21 May 2020 00:00:00 +0000</pubDate>
+      <guid>https://teshenglin.github.io/post/2020_cal_s6p5_ch/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;Applied Project in Sec.6.5, Calculus by Stewart&lt;br&gt;
+English version 
+&lt;a href=&#34;https://teshenglin.github.io/post/2020_cal_s6p5&#34;&gt;Where to Sit at the Movies?&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;有家電影院的螢幕高10米且離地3公尺，第一排的位子距離螢幕3公尺且每排間隔1公尺，座位區的地板以與水平20度夾角向上傾斜，而你的座位在斜坡上的距離是 $x$。電影院有21排位子，因此 $0 \leq x \leq 20$。假設你認為最好的位子是眼睛與螢幕上下緣連線的夾角 $\theta$ 為最大值時，同時假設你的眼睛距離地面1.2公尺。&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;問題 1:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;試證明: $\theta = \cos^{-1}\left(\frac{a^2+b^2-100}{2ab}\right)$, 其中
+$$
+a^2 = (3+x\cos{\alpha})^2+(11.8-x\sin{\alpha})^2
+$$
+並且
+$$
+b^2 = (3+x\cos{\alpha})^2+(x\sin{\alpha} - 1.8)^2
+$$&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;回答:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;將螢幕與位子的位置座標化:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;設螢幕下的地板為原點$(0,0)$&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;螢幕下緣為 $(0,3)$，上緣為 $(0,13)$&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;你的位子在斜坡上$x$公尺，因此位子的座標為第一排位子的座標向右推移 $x\cos{\alpha}$ 且向上推移 $x\sin{\alpha}$。&lt;/p&gt;
+&lt;p&gt;第一排位子的座標為$(3,0)$，因此你的位子座標為 $(3+x\cos{\alpha}, x\sin{\alpha})$，且你眼睛的座標為 $(3+x\cos{\alpha}, 1.2+x\sin{\alpha})$。&lt;/p&gt;
+&lt;p&gt;眼睛跟螢幕上緣的距離的平方 $=(3+x\cos{\alpha})^2+(11.8-x\sin{\alpha})^2=a^2$。&lt;/p&gt;
+&lt;p&gt;眼睛跟螢幕下緣的距離的平方 $= (3+x\cos{\alpha})^2+(x\sin{\alpha} - 1.8)^2=b^2$。&lt;/p&gt;
+&lt;p&gt;利用餘弦定理: $\cos{\theta}=\frac{a^2+b^2-100}{2ab}$，因此 $\theta = \cos^{-1}\left(\frac{a^2+b^2-100}{2ab}\right)$。&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;問題 2:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;利用 $\theta$ 與 $x$ 的函數圖形找出 $\theta$ 的最大值。你該坐在哪一排? 你在那一排的視角 $\theta$ 是幾度?&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;回答:&lt;/strong&gt;&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://i.imgur.com/a0cuq0e.jpg&#34; &gt;
+
+
+  &lt;img src=&#34;https://i.imgur.com/a0cuq0e.jpg&#34; alt=&#34;&#34; width=&#34;400px&#34; &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;$x$&lt;/th&gt;
+&lt;th&gt;$\theta$&lt;/th&gt;
+&lt;th&gt;$x$&lt;/th&gt;
+&lt;th&gt;$\theta$&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;td&gt;0.781414&lt;/td&gt;
+&lt;td&gt;11&lt;/td&gt;
+&lt;td&gt;0.688473&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;0.885175&lt;/td&gt;
+&lt;td&gt;12&lt;/td&gt;
+&lt;td&gt;0.654426&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;td&gt;0.932324&lt;/td&gt;
+&lt;td&gt;13&lt;/td&gt;
+&lt;td&gt;0.622381&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;3&lt;/td&gt;
+&lt;td&gt;0.943356&lt;/td&gt;
+&lt;td&gt;14&lt;/td&gt;
+&lt;td&gt;0.592377&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;4&lt;/td&gt;
+&lt;td&gt;0.932085&lt;/td&gt;
+&lt;td&gt;15&lt;/td&gt;
+&lt;td&gt;0.564380&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;5&lt;/td&gt;
+&lt;td&gt;0.907358&lt;/td&gt;
+&lt;td&gt;16&lt;/td&gt;
+&lt;td&gt;0.538310&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;6&lt;/td&gt;
+&lt;td&gt;0.874860&lt;/td&gt;
+&lt;td&gt;17&lt;/td&gt;
+&lt;td&gt;0.514061&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;7&lt;/td&gt;
+&lt;td&gt;0.838292&lt;/td&gt;
+&lt;td&gt;18&lt;/td&gt;
+&lt;td&gt;0.491514&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;8&lt;/td&gt;
+&lt;td&gt;0.800070&lt;/td&gt;
+&lt;td&gt;19&lt;/td&gt;
+&lt;td&gt;0.470546&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;9&lt;/td&gt;
+&lt;td&gt;0.761763&lt;/td&gt;
+&lt;td&gt;20&lt;/td&gt;
+&lt;td&gt;0.451038&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;10&lt;/td&gt;
+&lt;td&gt;0.724364&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;$\theta$ 的最大值為 $0.943356$，你應該坐在第3排的位置。&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;問題 3:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;利用 
+&lt;a href=&#34;https://www.derivative-calculator.net/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;computer algebra system&lt;/a&gt; 對 $\theta$ 微分，並嘗試找出 $\frac{d\theta}{dx} = 0$ 的解。答案是否和第二小題的答案吻合?&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;根據 $y = \frac{d\theta}{dx}$ 的圖形&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://i.imgur.com/qet2iFc.png&#34; &gt;
+
+
+  &lt;img src=&#34;https://i.imgur.com/qet2iFc.png&#34; alt=&#34;&#34; width=&#34;600px&#34; &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;我們發現在 $x\approx 2.84556$ 時有根。&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;問題 4:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Use the graph of $\theta$ to estimate the average value of $\theta$ on the interval $0 \leq x \leq 20$. Then use your CAS to compute the average value. Compare with the maximum and minimum values of $\theta$.&lt;/p&gt;
+&lt;p&gt;利用 $\theta$ 的圖形找出$\theta$在$0 \leq x \leq 20$區間的平均值。利用CAS計算$\theta$的平均值並與$\theta$的最大值與最小值比較。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;平均值:&lt;/p&gt;
+&lt;p&gt;$$
+avg = \frac{1}{20}\int_{0}^{20} \theta(x) dx \approx 0.71941
+$$&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://i.imgur.com/kSB09Fk.png&#34; &gt;
+
+
+  &lt;img src=&#34;https://i.imgur.com/kSB09Fk.png&#34; alt=&#34;&#34; width=&#34;600px&#34; &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;臨界點(critical point)有三個位在 $x=0$, 2.84556 以及 20。最大值約為 0.94336，最小值約為 0.45594。&lt;/p&gt;
+&lt;hr&gt;
+</description>
+    </item>
     
     <item>
       <title>Sec.11.11 - Radiation From The Stars</title>

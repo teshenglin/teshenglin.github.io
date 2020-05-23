@@ -81,7 +81,7 @@ $$
 $$
 |x_{n+1} - c| \approx \beta |x_n-c|^2.
 $$
-這個證明我們這邊就先略過不寫. 不過接著我們來看一下牛頓法究竟有多快. (&amp;ndash;To be finished)&lt;/p&gt;
+這個證明我們這邊就先略過不寫. 不過接著我們來看一下牛頓法究竟有多快.&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;依之前的例子我們想要解 $x=\cos(x)$, $x\in[0, \pi]$. 最簡單的固定點迭代為
 $$
@@ -136,7 +136,7 @@ $$
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;由於牛頓法不保證收斂, 因此實務上要求根時會與一些保證收斂的方法, 如二分逼進法 
-&lt;a href=&#34;https://en.wikipedia.org/wiki/Bisection_method&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;bisection method&lt;/a&gt; 來合作. 如 
+&lt;a href=&#34;https://en.wikipedia.org/wiki/Bisection_method&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;(bisection method)&lt;/a&gt; 來合作. 如 
 &lt;a href=&#34;https://en.wikipedia.org/wiki/Brent%27s_method&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Brent-Dekker method&lt;/a&gt;. 這樣既能保證收斂, 又兼有收斂快速的優點.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
