@@ -78,7 +78,7 @@ $$&lt;/p&gt;
 g(x)=kx^3+lx^2+mx+n \quad 0 \leq x&amp;lt;3
 $$&lt;/p&gt;
 &lt;p&gt;$$
-h(x)=px^3+qx^2+rx+s \quad 27&amp;lt;x\leq30
+h(x)=px^3+qx^2+rx+s \quad 27&amp;lt;x\leq 30
 $$&lt;/p&gt;
 &lt;p&gt;(a) 列出含有11個未知數的一系列的方程式，使得接點與接點之間的一次微分及二次微分皆是相同的。&lt;/p&gt;
 &lt;p&gt;(b) 利用電腦計算系統解出第(a)小題的等式，以找出$q(x)$、$g(x)$和$h(x)$的方程式。&lt;/p&gt;
@@ -86,13 +86,13 @@ $$&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;解答:&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;我們可以列出下列三個方程式：
 $$
-g(x)=kx^3+lx^2+mx+n, \quad 0 \leq x&amp;lt;3,
+g(x)=kx^3+lx^2+mx+n, \quad 0 \leq x \leq 3,
 $$
 $$
-q(x)=a(x-3)^2+b(x-3)+c, \quad 3 \leq x&amp;lt;27,
+q(x)=a(x-3)^2+b(x-3)+c, \quad 3 \leq x \leq 27,
 $$
 $$
-h(x)=p(x-30)^3+q(x-30)^2+r(x-30)+s, \quad 27 \leq x&amp;lt;30.
+h(x)=p(x-30)^3+q(x-30)^2+r(x-30)+s, \quad 27 \leq x \leq 30.
 $$
 根據文章，我們可以列出11個等式進而解出11個未知數：
 $$
@@ -119,13 +119,13 @@ p=\frac{2}{405},\quad q=0,\quad r=-\frac{8}{5},\quad s=-12.
 $$
 根據上表所解出的係數，以下為更加平滑的軌道函數：
 $$
-g(x)=-\frac{2}{405}x^3+\frac{4}{5}x, \quad 0 \leq x&amp;lt;3,
+g(x)=-\frac{2}{405}x^3+\frac{4}{5}x, \quad 0 \leq x \leq 3,
 $$
 $$
-q(x)=-\frac{2}{45}(x-3)^2+\frac{2}{3}(x-3)+\frac{34}{15}, \quad 3 \leq x&amp;lt;27,
+q(x)=-\frac{2}{45}(x-3)^2+\frac{2}{3}(x-3)+\frac{34}{15}, \quad 3 \leq x \leq 27,
 $$
 $$
-h(x)=\frac{2}{405}(x-30)^3-\frac{8}{5}(x-30)-12, \quad 27 \leq x&amp;lt;30.
+h(x)=\frac{2}{405}(x-30)^3-\frac{8}{5}(x-30)-12, \quad 27 \leq x \leq 30.
 $$&lt;/p&gt;
 &lt;p&gt;以下為更加平滑的軌道的圖形：
 
@@ -2200,7 +2200,7 @@ $$
 g(x) = kx^3+lx^2+mx+n, \quad 0\le x&amp;lt;3,
 $$
 $$
-h(x) = px^3 + qx^2 + rx+s, \quad 27&amp;lt;x\le 30.
+h(x) = px^3 + qx^2 + rx+s, \quad 27&amp;lt;x\leq 30.
 $$&lt;/p&gt;
 &lt;p&gt;(a) Write a system of equations in $11$ unknowns that ensure that the functions and their first two derivatives agree at the transition points.&lt;/p&gt;
 &lt;p&gt;(b) Solve the equations in part (a) with a computer algebra system to find formulas for $q(x)$, $g(x)$, and $h(x)$.&lt;/p&gt;
@@ -2208,13 +2208,13 @@ $$&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;We first rewrite the functions as
 $$
-g(x)=kx^3+lx^2+mx+n, \quad 0 \leq x&amp;lt;3,
+g(x)=kx^3+lx^2+mx+n, \quad 0 \leq x \leq 3,
 $$
 $$
-q(x)=a(x-3)^2+b(x-3)+c, \quad 3 \leq x&amp;lt;27,
+q(x)=a(x-3)^2+b(x-3)+c, \quad 3 \leq x \leq 27,
 $$
 $$
-h(x)=p(x-30)^3+q(x-30)^2+r(x-30)+s, \quad 27 \leq x&amp;lt;30.
+h(x)=p(x-30)^3+q(x-30)^2+r(x-30)+s, \quad 27 \leq x\leq 30.
 $$
 According to the article, we can list 11 equations to solve 11 unknown coefficients:
 $$
@@ -2241,13 +2241,13 @@ p=\frac{2}{405},\quad q=0,\quad r=-\frac{8}{5},\quad s=-12.
 $$
 Accordingly, the final formula of the smoother roller coaster is:
 $$
-g(x)=-\frac{2}{405}x^3+\frac{4}{5}x, \quad 0 \leq x&amp;lt;3,
+g(x)=-\frac{2}{405}x^3+\frac{4}{5}x, \quad 0 \leq x \leq 3,
 $$
 $$
-q(x)=-\frac{2}{45}(x-3)^2+\frac{2}{3}(x-3)+\frac{34}{15}, \quad 3 \leq x&amp;lt;27,
+q(x)=-\frac{2}{45}(x-3)^2+\frac{2}{3}(x-3)+\frac{34}{15}, \quad 3 \leq x \leq 27,
 $$
 $$
-h(x)=\frac{2}{405}(x-30)^3-\frac{8}{5}(x-30)-12, \quad 27 \leq x&amp;lt;30.
+h(x)=\frac{2}{405}(x-30)^3-\frac{8}{5}(x-30)-12, \quad 27 \leq x \leq30.
 $$&lt;/p&gt;
 &lt;p&gt;Below is the graph of the smoother roller coaster:
 
