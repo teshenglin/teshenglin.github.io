@@ -5,12 +5,322 @@
     <link>https://teshenglin.github.io/tags/applied-project/</link>
       <atom:link href="https://teshenglin.github.io/tags/applied-project/index.xml" rel="self" type="application/rss+xml" />
     <description>applied project</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 22 May 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 29 May 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
       <title>applied project</title>
       <link>https://teshenglin.github.io/tags/applied-project/</link>
     </image>
+    
+    <item>
+      <title>Sec.12.4 - The Geometry of a Tetrahedron</title>
+      <link>https://teshenglin.github.io/post/2020_cal_s12p4/</link>
+      <pubDate>Fri, 29 May 2020 00:00:00 +0000</pubDate>
+      <guid>https://teshenglin.github.io/post/2020_cal_s12p4/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;Discovery Project in Sec.12.4, Calculus by Stewart&lt;br&gt;
+Chinese version 
+&lt;a href=&#34;https://teshenglin.github.io/post/2020_cal_s12p4_ch&#34;&gt;四面體的幾何學&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;A tetrahedron is a solid with four vertices, &lt;em&gt;P&lt;/em&gt; ,&lt;em&gt;Q&lt;/em&gt; , &lt;em&gt;R&lt;/em&gt; and &lt;em&gt;S&lt;/em&gt; ,and four triangular faces, as shown in the figure.&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://teshenglin.github.io/post/figs/2020_cal_s12p4_1.png&#34; &gt;
+
+
+  &lt;img src=&#34;https://teshenglin.github.io/post/figs/2020_cal_s12p4_1.png&#34; alt=&#34;&#34; width=&#34;400px&#34; &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Question 1:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Let  $v_1, v_2, v_3$ and $v_4$ be vectors with lengths equal to the areas of the faces opposite the vertices &lt;em&gt;P&lt;/em&gt;, &lt;em&gt;Q&lt;/em&gt;, &lt;em&gt;R&lt;/em&gt; and &lt;em&gt;S&lt;/em&gt;, respectively, and directions perpendicular to the respective faces and pointing outward. Show that
+$$
+v_1+v_2+v_3+v_4=0
+$$&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;We know that
+$$
+v_1=\frac{\overrightarrow{QS}\times\overrightarrow{QR}}{2} ,
+v_2=\frac{\overrightarrow{RS}\times\overrightarrow{RP}}{2} ,
+v_3=\frac{\overrightarrow{QP}\times\overrightarrow{QS}}{2} ,
+v_4=\frac{\overrightarrow{QR}\times\overrightarrow{QP}}{2}.
+$$
+The vector $v_2$ can be re-written as
+$$
+\overrightarrow{RS} = \overrightarrow{QS}-\overrightarrow{QR}, \quad
+\overrightarrow{RP} = \overrightarrow{QP}-\overrightarrow{QR}, \quad
+$$
+and we have
+$$
+\overrightarrow{RS}\times\overrightarrow{RP} = \overrightarrow{QS}\times\overrightarrow{QP}-\overrightarrow{QR}\times\overrightarrow{QP}-\overrightarrow{QS}\times\overrightarrow{QR}.
+$$
+Therefore, by adding up the four vectors
+$$
+v_1+v_2+v_3+v_4=\frac{\overrightarrow{QS}\times\overrightarrow{QR}+\overrightarrow{RS}\times\overrightarrow{RP}+\overrightarrow{QP}\times\overrightarrow{QS}+\overrightarrow{QR}\times\overrightarrow{QP}}{2}=0.
+$$&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Question 2:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The volume &lt;em&gt;V&lt;/em&gt; of a tetrahedron is one-third the distance from a vertex to the opposite face, times the area of the face.&lt;/p&gt;
+&lt;p&gt;(a)Find a formula for the volume of a tetrahedron in terms of the coordination of its vertices &lt;em&gt;P&lt;/em&gt; ,&lt;em&gt;Q&lt;/em&gt; , &lt;em&gt;R&lt;/em&gt; and &lt;em&gt;S&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;(b)Find the volume of the tetrahedron whose vertices are &lt;em&gt;P&lt;/em&gt;(1,1,1), &lt;em&gt;Q&lt;/em&gt;(1,2,3), &lt;em&gt;R&lt;/em&gt;(1,1,2), and &lt;em&gt;S&lt;/em&gt;(3,-1,2).&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;(a)&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;We know that the volume of a tetrahedron is one-third the distance from a vertex to the opposite face, times the area of the face. That is, it is one-sixth of the volume of a parallelepiped.&lt;/p&gt;
+&lt;p&gt;Therefore we can use the formula of the volume of the parallelepiped to form a formula for the volume of a tetrahedron.&lt;/p&gt;
+&lt;p&gt;Suppose that the three vectors that form the parallelepiped are &lt;em&gt;a&lt;/em&gt;, &lt;em&gt;b&lt;/em&gt; and &lt;em&gt;c&lt;/em&gt;:
+$$
+a=(a_1, a_2, a_3), b=(b_1, b_2, b_3), c=(c_1, c_2, c_3).
+$$&lt;/p&gt;
+&lt;p&gt;We now have
+$$
+(5) \qquad V=\frac{\mid (a\times b )\cdot c \mid}{6}=\frac{\left |
+\begin{array}{ccc}
+a_1 &amp;amp; a_2 &amp;amp;  a_3 \\&lt;br&gt;
+b_1 &amp;amp; b_2 &amp;amp; b_3 \\&lt;br&gt;
+c_1 &amp;amp; c_2 &amp;amp; c_3 \\&lt;br&gt;
+\end{array}\right |}{6}
+$$
+In addition, suppose that &lt;em&gt;P&lt;/em&gt;=($p_1$，$p_2$，$p_3$), &lt;em&gt;Q&lt;/em&gt;=($q_1$，$q_2$，$q_3$), &lt;em&gt;R&lt;/em&gt;=($r_1$，$r_2$，$r_3$), &lt;em&gt;S&lt;/em&gt;=($s_1$，$s_2$，$s_3$).&lt;/p&gt;
+&lt;p&gt;Substitute  &lt;em&gt;a&lt;/em&gt;=&lt;em&gt;Q&lt;/em&gt;-&lt;em&gt;P&lt;/em&gt;, &lt;em&gt;b&lt;/em&gt;=&lt;em&gt;R&lt;/em&gt;-&lt;em&gt;P&lt;/em&gt;, &lt;em&gt;c&lt;/em&gt;=&lt;em&gt;S&lt;/em&gt;-&lt;em&gt;P&lt;/em&gt; into formula (5), then we can get the volume &lt;em&gt;V&lt;/em&gt; of a tetrahedron.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;(b)&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;By (a),  a=(0,1,2), b=(0,0,1), c=(2,-2,1).&lt;/p&gt;
+&lt;p&gt;So
+$$
+V=\frac{\left |
+\begin{array}{ccc}
+0 &amp;amp; 1 &amp;amp;  2 \\&lt;br&gt;
+0 &amp;amp; 0 &amp;amp; 1 \\&lt;br&gt;
+2 &amp;amp; -2 &amp;amp; 1 \\&lt;br&gt;
+\end{array}\right |}{6}=\frac{1}{3}
+$$&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Question 3:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Suppose the tetrahedron in the figure has a trirectangular vertex &lt;em&gt;S&lt;/em&gt;. (This means that the three angles at &lt;em&gt;S&lt;/em&gt; are all right angles.) Let &lt;em&gt;A&lt;/em&gt;,&lt;em&gt;B&lt;/em&gt;,and &lt;em&gt;C&lt;/em&gt; be the areas of the three faces that meet at &lt;em&gt;S&lt;/em&gt;,and let &lt;em&gt;D&lt;/em&gt; be the area of the opposite face &lt;em&gt;PQR&lt;/em&gt;. Using the result Question 1, or otherwise, show that
+$$
+D^{2}=A^{2}+B^{2}+C^{2}
+$$
+(This is a three-dimensional version of the Pythagorean Theorem.)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;First, suppose that $\overline{QS}=a$, $\overline{SR}=b$ , $\overline{SP}=c$, area &lt;em&gt;PQS&lt;/em&gt;=&lt;em&gt;A&lt;/em&gt;, area &lt;em&gt;PSR&lt;/em&gt;= &lt;em&gt;B&lt;/em&gt;, area &lt;em&gt;QSR&lt;/em&gt;= &lt;em&gt;C&lt;/em&gt;, and area &lt;em&gt;PQR&lt;/em&gt;= &lt;em&gt;D&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;Then, we can throw the tetrahedron into a three-dimensional coordinate system, as the following figure shows.&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://teshenglin.github.io/post/figs/2020_cal_s12p4_2.png&#34; &gt;
+
+
+  &lt;img src=&#34;https://teshenglin.github.io/post/figs/2020_cal_s12p4_2.png&#34; alt=&#34;&#34; width=&#34;400px&#34; &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;Therefore,
+$$
+A^{2}=\frac{a^{2}c^{2}}{4}, B^{2}=\frac{b^{2}c^{2}}{4}, C^{2}=\frac{a^{2}b^{2}}{4}
+$$
+and we know that
+$$
+D=\left|\frac{\overrightarrow{QP}\times\overrightarrow{QR}}{2}\right|=\left|\frac{(-a,0,c)\times(-a,b,0)}{2}\right|=\sqrt{\frac{a^2b^2+b^2c^2+a^2c^2}{4}}
+$$
+Therefore,
+$$
+D^2=\frac{a^2b^2+b^2c^2+a^2c^2}{4} = A^2+B^2+C^2
+$$&lt;/p&gt;
+&lt;hr&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Sec.12.4 - 四面體的幾何學</title>
+      <link>https://teshenglin.github.io/post/2020_cal_s12p4_ch/</link>
+      <pubDate>Fri, 29 May 2020 00:00:00 +0000</pubDate>
+      <guid>https://teshenglin.github.io/post/2020_cal_s12p4_ch/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;Discovery Project in Sec.12.4, Calculus by Stewart&lt;br&gt;
+英文版請見 
+&lt;a href=&#34;https://teshenglin.github.io/post/2020_cal_s12p4&#34;&gt;The Geometry of a Tetrahedron&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;如圖所示，四面體是一個擁有4個頂點(P,Q,R,S)和四個三角面的固體。&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://teshenglin.github.io/post/figs/2020_cal_s12p4_1.png&#34; &gt;
+
+
+  &lt;img src=&#34;https://teshenglin.github.io/post/figs/2020_cal_s12p4_1.png&#34; alt=&#34;&#34; width=&#34;400px&#34; &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;問題1：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;令 $v_1, v_2, v_3$ 和 $v_4$ 為向量, 其長度分別和頂點 &lt;em&gt;P$, $Q$, $R$, $S&lt;/em&gt; 所對應到的面的面積相等，並且其方向與對應到的面垂直且向外。證明
+$$
+v_1+v_2+v_3+v_4=0
+$$&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;解答:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;我們知道
+$$
+v_1=\frac{\overrightarrow{QS}\times\overrightarrow{QR}}{2} ,
+v_2=\frac{\overrightarrow{RS}\times\overrightarrow{RP}}{2} ,
+v_3=\frac{\overrightarrow{QP}\times\overrightarrow{QS}}{2} ,
+v_4=\frac{\overrightarrow{QR}\times\overrightarrow{QP}}{2}.
+$$
+其中兩個向量可被改寫成
+$$
+\overrightarrow{RS} = \overrightarrow{QS}-\overrightarrow{QR}, \quad
+\overrightarrow{RP} = \overrightarrow{QP}-\overrightarrow{QR}, \quad
+$$
+因此得到
+$$
+\overrightarrow{RS}\times\overrightarrow{RP} = \overrightarrow{QS}\times\overrightarrow{QP}-\overrightarrow{QR}\times\overrightarrow{QP}-\overrightarrow{QS}\times\overrightarrow{QR}.
+$$
+接著，將四個向量相加可得
+$$
+v_1+v_2+v_3+v_4=\frac{\overrightarrow{QS}\times\overrightarrow{QR}+\overrightarrow{RS}\times\overrightarrow{RP}+\overrightarrow{QP}\times\overrightarrow{QS}+\overrightarrow{QR}\times\overrightarrow{QP}}{2}=0.
+$$&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;問題2：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;四面體的體積&lt;em&gt;V&lt;/em&gt;是其一頂點到其對面的距離乘以該面的面積，再乘以三分之一倍。&lt;/p&gt;
+&lt;p&gt;(a)找出一個計算四面體體積的公式，以頂點 &lt;em&gt;P&lt;/em&gt;，&lt;em&gt;Q&lt;/em&gt;，&lt;em&gt;R&lt;/em&gt;，&lt;em&gt;S&lt;/em&gt; 的座標表達。&lt;/p&gt;
+&lt;p&gt;(b)算出四頂點分別為 &lt;em&gt;P&lt;/em&gt;(1,1,1)，&lt;em&gt;Q&lt;/em&gt;(1,2,3)，&lt;em&gt;R&lt;/em&gt;(1,1,2)，&lt;em&gt;S&lt;/em&gt;(3,-1,2) 的四面體的體積。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;解答:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;(a)&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;我們知道四面體的體積是三分之一倍的一頂點到其對面的距離乘以該面的面積。也就是說，是六分之一倍的平行六面體的體積。&lt;/p&gt;
+&lt;p&gt;因此，我們可以用平行四面體的體積公式來推導出四面體的體積公式。&lt;/p&gt;
+&lt;p&gt;假設三個組成平行六面體的向量為&lt;em&gt;a&lt;/em&gt;，&lt;em&gt;b&lt;/em&gt;，&lt;em&gt;c&lt;/em&gt;：
+$$
+a=(a_1, a_2, a_3), b=(b_1, b_2, b_3), c=(c_1, c_2, c_3).
+$$&lt;/p&gt;
+&lt;p&gt;現在我們有
+$$
+(5) \qquad V=\frac{\mid (a\times b )\cdot c \mid}{6}=\frac{\left |
+\begin{array}{ccc}
+a_1 &amp;amp; a_2 &amp;amp;  a_3 \\&lt;br&gt;
+b_1 &amp;amp; b_2 &amp;amp; b_3 \\&lt;br&gt;
+c_1 &amp;amp; c_2 &amp;amp; c_3 \\&lt;br&gt;
+\end{array}\right |}{6}
+$$
+又假設 &lt;em&gt;P&lt;/em&gt;=($p_1$，$p_2$，$p_3$), &lt;em&gt;Q&lt;/em&gt;=($q_1$，$q_2$，$q_3$), &lt;em&gt;R&lt;/em&gt;=($r_1$，$r_2$，$r_3$), &lt;em&gt;S&lt;/em&gt;=($s_1$，$s_2$，$s_3$).&lt;/p&gt;
+&lt;p&gt;將 &lt;em&gt;a&lt;/em&gt;=&lt;em&gt;Q&lt;/em&gt;-&lt;em&gt;P&lt;/em&gt;, &lt;em&gt;b&lt;/em&gt;=&lt;em&gt;R&lt;/em&gt;-&lt;em&gt;P&lt;/em&gt;, &lt;em&gt;c&lt;/em&gt;=&lt;em&gt;S&lt;/em&gt;-&lt;em&gt;P&lt;/em&gt; 代入方程式 (5)，然後我們就可以得到四面體的體積&lt;em&gt;V&lt;/em&gt;。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;(b)&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;由 (a),  a=(0,1,2), b=(0,0,1), c=(2,-2,1).&lt;/p&gt;
+&lt;p&gt;所以
+$$
+V=\frac{\left |
+\begin{array}{ccc}
+0 &amp;amp; 1 &amp;amp;  2 \\&lt;br&gt;
+0 &amp;amp; 0 &amp;amp; 1 \\&lt;br&gt;
+2 &amp;amp; -2 &amp;amp; 1 \\&lt;br&gt;
+\end{array}\right |}{6}=\frac{1}{3}
+$$&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;問題3:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;假設如圖所示的四面體有一個三直角的頂點&lt;em&gt;S&lt;/em&gt;。(這表示三個在&lt;em&gt;S&lt;/em&gt;的角是直角。) 令&lt;em&gt;A&lt;/em&gt;，&lt;em&gt;B&lt;/em&gt;，&lt;em&gt;C&lt;/em&gt;為三個在&lt;em&gt;S&lt;/em&gt;相遇的面，且令&lt;em&gt;D&lt;/em&gt;為相對的面&lt;em&gt;PQR&lt;/em&gt;。用問題1的結論，或其他方法證明
+$$
+D^{2}=A^{2}+B^{2}+C^{2}
+$$
+(這是一個三維版本的勾股定理。)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;解答:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;首先，令  $\overline{QS}=a$, $\overline{SR}=b$ , $\overline{SP}=c$, 面積 &lt;em&gt;PQS&lt;/em&gt;=&lt;em&gt;A&lt;/em&gt;, 面積 &lt;em&gt;PSR&lt;/em&gt;= &lt;em&gt;B&lt;/em&gt;, 面積 &lt;em&gt;QSR&lt;/em&gt;= &lt;em&gt;C&lt;/em&gt;, 面積 &lt;em&gt;PQR&lt;/em&gt;= &lt;em&gt;D&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;然後，我們可以把四面體置於一個三維座標系統，如下圖所示。&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://teshenglin.github.io/post/figs/2020_cal_s12p4_2.png&#34; &gt;
+
+
+  &lt;img src=&#34;https://teshenglin.github.io/post/figs/2020_cal_s12p4_2.png&#34; alt=&#34;&#34; width=&#34;400px&#34; &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;因此，
+$$
+A^{2}=\frac{a^{2}c^{2}}{4}, B^{2}=\frac{b^{2}c^{2}}{4}, C^{2}=\frac{a^{2}b^{2}}{4}
+$$
+並且我們知道，
+$$
+D=\left|\frac{\overrightarrow{QP}\times\overrightarrow{QR}}{2}\right|=\left|\frac{(-a,0,c)\times(-a,b,0)}{2}\right|=\sqrt{\frac{a^2b^2+b^2c^2+a^2c^2}{4}}
+$$
+因此
+$$
+D^2=\frac{a^2b^2+b^2c^2+a^2c^2}{4} = A^2+B^2+C^2
+$$&lt;/p&gt;
+&lt;hr&gt;
+</description>
+    </item>
     
     <item>
       <title>Sec.3.1 - 建造較佳的雲霄飛車</title>
