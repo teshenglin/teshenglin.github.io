@@ -28,10 +28,10 @@
   
     
   
-  <meta name="description" content="在微積分課程裡我們有學到積分的&#39;中點法&rsquo;, &lsquo;梯形法&#39;以及&#39;辛普森法&rsquo;. 這裡我們簡介一些基本概念並且引進高">
+  <meta name="description" content="前情提要: 數值積分初探 前情提要: 以內插多項式來做數值積分 我們想要找到一些插值點使得以內插多項式來做數值積分會最準. 這就是高斯積分. Goal: 任意給定">
 
   
-  <link rel="alternate" hreflang="en-us" href="https://teshenglin.github.io/post/2019_numerical_integration/">
+  <link rel="alternate" hreflang="en-us" href="https://teshenglin.github.io/post/2020_numerical_integration_3/">
 
   
 
@@ -221,7 +221,7 @@
   <link rel="icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_2.png">
   <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_2.png">
 
-  <link rel="canonical" href="https://teshenglin.github.io/post/2019_numerical_integration/">
+  <link rel="canonical" href="https://teshenglin.github.io/post/2020_numerical_integration_3/">
 
   
   
@@ -235,13 +235,13 @@
   <meta property="twitter:card" content="summary">
   
   <meta property="og:site_name" content="Te-Sheng Lin">
-  <meta property="og:url" content="https://teshenglin.github.io/post/2019_numerical_integration/">
-  <meta property="og:title" content="數值積分初探 | Te-Sheng Lin">
-  <meta property="og:description" content="在微積分課程裡我們有學到積分的&#39;中點法&rsquo;, &lsquo;梯形法&#39;以及&#39;辛普森法&rsquo;. 這裡我們簡介一些基本概念並且引進高"><meta property="og:image" content="https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png">
+  <meta property="og:url" content="https://teshenglin.github.io/post/2020_numerical_integration_3/">
+  <meta property="og:title" content="高斯積分 | Te-Sheng Lin">
+  <meta property="og:description" content="前情提要: 數值積分初探 前情提要: 以內插多項式來做數值積分 我們想要找到一些插值點使得以內插多項式來做數值積分會最準. 這就是高斯積分. Goal: 任意給定"><meta property="og:image" content="https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png">
   <meta property="twitter:image" content="https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png"><meta property="og:locale" content="en-us">
   
     
-      <meta property="article:published_time" content="2019-12-11T00:00:00&#43;00:00">
+      <meta property="article:published_time" content="2020-06-02T00:00:00&#43;00:00">
     
     <meta property="article:modified_time" content="2020-06-03T09:21:29&#43;08:00">
   
@@ -267,11 +267,11 @@
   "@type": "BlogPosting",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://teshenglin.github.io/post/2019_numerical_integration/"
+    "@id": "https://teshenglin.github.io/post/2020_numerical_integration_3/"
   },
-  "headline": "數值積分初探",
+  "headline": "高斯積分",
   
-  "datePublished": "2019-12-11T00:00:00Z",
+  "datePublished": "2020-06-02T00:00:00Z",
   "dateModified": "2020-06-03T09:21:29+08:00",
   
   "author": {
@@ -287,7 +287,7 @@
       "url": "https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_2.png"
     }
   },
-  "description": "在微積分課程裡我們有學到積分的'中點法\u0026rsquo;, \u0026lsquo;梯形法'以及'辛普森法\u0026rsquo;. 這裡我們簡介一些基本概念並且引進高"
+  "description": "前情提要: 數值積分初探 前情提要: 以內插多項式來做數值積分 我們想要找到一些插值點使得以內插多項式來做數值積分會最準. 這就是高斯積分. Goal: 任意給定"
 }
 </script>
 
@@ -305,7 +305,7 @@
 
 
 
-  <title>數值積分初探 | Te-Sheng Lin</title>
+  <title>高斯積分 | Te-Sheng Lin</title>
 
 </head>
 
@@ -521,7 +521,7 @@
   
   
 <div class="article-container pt-3">
-  <h1>數值積分初探</h1>
+  <h1>高斯積分</h1>
 
   
 
@@ -572,7 +572,7 @@
   
   
   <span class="middot-divider"></span>
-  <a href="/post/2019_numerical_integration/#disqus_thread"></a>
+  <a href="/post/2020_numerical_integration_3/#disqus_thread"></a>
   
 
   
@@ -607,168 +607,160 @@
   <div class="article-container">
 
     <div class="article-style">
-      <blockquote>
-<p>在微積分課程裡我們有學到積分的'中點法&rsquo;, &lsquo;梯形法'以及'辛普森法&rsquo;. 這裡我們簡介一些基本概念並且引進高斯積分法.</p>
+      <p>前情提要: 
+<a href="/post/2019_numerical_integration">數值積分初探</a></p>
+<p>前情提要: 
+<a href="/post/2020_numerical_integration_2">以內插多項式來做數值積分</a></p>
+<hr>
+<blockquote>
+<p>我們想要找到一些插值點使得以內插多項式來做數值積分會最準. 這就是高斯積分.</p>
 </blockquote>
 <h4 id="goal-任意給定一可積分函數-fx-xin-1-1-我們想要算-int1_-1-fx-dx">Goal: 任意給定一可積分函數 $f(x)$, $x\in[-1, 1]$, 我們想要算 $\int^1_{-1} f(x) dx$.</h4>
 <hr>
-<p><strong>Remark:</strong> 對任一個積分式 $\int^b_{a} g(x),dx$ 我們皆可用變數變換來將此積分轉到 $[-1, 1]$ 這個區間. 所以我們只需考慮 $[-1, 1]$ 即可.</p>
+<blockquote>
+<p>複習一下內插多項式的積分</p>
+</blockquote>
+<p>給定任意 $n+1$ 個不重複的點在 $[-1, 1]$ 區間, 記為 $x_0, x_1, \cdots, x_n.$ 我們可以逼近函數 $f(x)$ 的積分
+$$
+\int^1_{-1} f(x)dx \approx \sum^n_{i=0} w_i f_i,
+$$
+其中 $f_i = f(x_i)$, 並且
+$$
+w_i = \int^1_{-1} \ell_i(x)dx = \int^1_{-1} \left(\prod^n_{k=0, k\ne i} \frac{x-x_k}{x_i-x_k}\right) dx.
+$$</p>
+<blockquote>
+<p>一個重要的 remark: 如果 $p(x)$ 是個 $n$ 次或以下的多項式, 那這個積分是等號!</p>
+</blockquote>
+<p>也就是說
+$$
+\int^1_{-1} p(x)dx = \sum^n_{i=0} w_i f_i,
+$$
+where $p(x)$ is a polynomial with degree less than or equals to $n$.</p>
 <hr>
-<p>首先我們討論一下哪種方法比較準. 一個最簡單的判斷方法是看積分法能不能將多項式算準.</p>
-<p>我們考慮三種積分法:</p>
+<h4 id="idea">Idea:</h4>
+<p>高斯積分的想法就是, 我想要找到特別的點 $x_i$ 以及特別的權重 $w_i$ 使得我能算準的多項式次數最高.</p>
+<p>如果我們回想一下內插多項式, 給定點然後求 $n+1$ 個權重, 也就是有 $n+1$ 個未知數, 那顯然它所能滿足的方程式就是 $n+1$ 個. 如果要把多項式算準的話從常數($0$次)到 $n$次共可以列出剛好 $n+1$個方程式. 所以最多能把 $n$ 次多項式算準.</p>
+<p>現在假設點($x_i$)跟權重($w_i$)都是待決定的, 那我就有 $2(n+1)$ 個未知數, 能夠把多項式從常數($0$次)到 $2n+1$次都算準. 所以理論上, $n+1$ 個點的高斯積分可以將 $2n+1$次的多項式算準, 完全沒有誤差.</p>
+<p>那如果這這樣的想法直接列式的話就會得到以下 $2n+1$ 個方程式
+$$
+\int^1_{-1} x^m dx=\frac{1 - (-1)^{m+1}}{m+1} =  \sum^n_{i=0} w_i x^m_i, \quad 0\le m\le 2n+1.
+$$
+然後解以上的非線性聯立方程式就可以得到所有的點 $x_i$ 及權重 $w_i$.</p>
+<p><strong>看起來有點困難</strong>, 不過好消息是其實不難解.</p>
+<hr>
+<blockquote>
+<p>我們需要引進正交多項式 (orthogonal polynomials)</p>
+</blockquote>
+<p>在線性代數裡我們知道兩個向量如果正交則其內積等於零. 函數空間裡我們也可以做一樣的定義, 我們定義兩個函數的內積
+$$
+(f, g) = \int^1_{-1} f(x)g(x) dx.
+$$</p>
+<blockquote>
+<h2 id="definition">Definition</h2>
+<p>$f(x)$ and $g(x)$ are orthogonal if $(f,g)=0$.</p>
+</blockquote>
+<p>我們知道 $n$ 次多項式有一組最基本的基底 ${1, x, x^2, \cdots, x^n}$, 將這組基底以 Gram-Schimidt 做正交化就可以得到一組正交基底. 這組正交基底就是所謂的 
+<a href="https://en.wikipedia.org/wiki/Legendre_polynomials" target="_blank" rel="noopener">Legendre polynomials</a>.</p>
+<p>我們將 Legendre polynomials 這組正交基底記為 $P_i(x)$, 其前三個如下:
+$$
+P_0(x) = 1, \quad P_1(x) = x, \quad P_2(x)=\frac{1}{2}(3x^2-1).
+$$</p>
+<p>Legendre polynomials 有以下兩個性質:</p>
 <ol>
-<li>
-<p>Midpoint rule: $\int^1_{-1}f(x),dx\approx 2f(0)$</p>
-</li>
-<li>
-<p>Trapezoidal rule: $\int^1_{-1}f(x),dx\approx f(-1)+f(1)$</p>
-</li>
-<li>
-<p>Simpson&rsquo;s rule: $\int^1_{-1}f(x),dx\approx \frac{1}{3}(f(-1)+4f(0)+f(1))$</p>
+<li>$P_i(x)$ 是一個 $i$次多項式</li>
+<li>$(P_i(x), P_j(x)) = \delta_{ij}$
+<ul>
+<li>對任何多項式 $Q(x)$ 如果其次數小於 $i$, 則有 $(P_i(x), Q(x))=0$</li>
+</ul>
 </li>
 </ol>
+<hr>
+<h4 id="高斯積分的點與權重">高斯積分的點與權重:</h4>
+<p>任意給定一個 $2n+1$ 次多項式 $p(x)$, 我們可以透過多項式的除法把它分解成以下這種樣子
+$$
+p(x) = P_{n+1}(x)Q(x) + R(x),
+$$
+其中 $Q(x)$ 以及 $R(x)$ 都是至多 $n$ 次的多項式. 透過這樣的分解我們發現
+$$
+\int^1_{-1} p(x)dx = \int^1_{-1} P_{n+1}(x)Q(x) + R(x)dx = \int^1_{-1} R(x)dx,
+$$
+其中 $P_{n+1}$ 與 $Q$ 的積分等於零是用到上面正交多項式的性質.</p>
+<p>以上這積分如果以數值積分來表示的話就是
+$$
+\int^1_{-1} p(x)dx \approx \sum^n_{i=0} w_i p(x_i) = \sum^n_{i=0} w_i \left(P_{n+1}(x_i)Q(x_i) + R(x_i)\right).
+$$
+我們希望數值積分也會有 &ldquo;$P_{n+1}$ 與 $Q$ 的積分等於零&rdquo; 這件事. 那一個最簡單的取法就是我們取 $x_i$ 是 $P_{n+1}(x)$ 這個 $n+1$ 次多項式所有的根. 由於 $P_{n+1}$ 剛好有 $n+1$ 個不重複的根, 這樣我們就有 $x_i$ 這些點了, 而且 $P_{n+1}(x_i)=0$ 表示
+$$
+\sum^n_{i=0} w_i P_{n+1}(x_i)Q(x_i)=0,
+$$
+所以
+$$
+\int^1_{-1} p(x)dx \approx \sum^n_{i=0} w_i R(x_i),
+$$
+也就是說我們只需要把 $R(x)$ 這個 $n$ 次多項式算準就好. 那我們就可以用內插多項式算權重的方法把權重都寫下來
+$$
+w_i = \int^1_{-1} \left(\prod^n_{k=0, k\ne i} \frac{x-x_k}{x_i-x_k}\right) dx.
+$$</p>
+<p>如此, 我們就把<code>點</code>跟<code>權重</code>都求出來了.</p>
+<hr>
+<h3 id="summary">Summary:</h3>
+<p>最後總結一下:</p>
 <ul>
 <li>
-<p>我們先檢驗常數函數: $\int^1_{-1} 1,dx=2$. 很快我們就可以發現以上三種方法都可以得出完全正確的答案.</p>
+<p>$n+1$ 個點的高斯積分可以將 $2n+1$ 次多項式算準無誤差</p>
 </li>
 <li>
-<p>接著我們檢驗一次函數: $\int^1_{-1} x,dx=0$. 一樣, 三種方法都得出正確答案.</p>
+<p>高斯點是正交多項式 $P_{n+1}(x)$ 的 $n+1$ 個根</p>
 </li>
 <li>
-<p>二次函數: $\int^1_{-1} x^2,dx=\frac{2}{3}$. 對於二次函數我們發現, 中點法以及梯形法都無法算出正確答案, 只有辛普森法能成功.</p>
-</li>
-<li>
-<p>三次函數: $\int^1_{-1} x^3,dx=0$. 對於三次函數我們只檢驗辛普森法, 發現三次函數辛普森法也能算準.</p>
-</li>
-<li>
-<p>四次函數: $\int^1_{-1} x^4,dx=\frac{2}{5}$. 對於四次函數, 辛普森法就算錯了.</p>
+<p>求出高斯點後我們以內插多項式的做法來求出權重</p>
 </li>
 </ul>
-<p><strong>小結論</strong></p>
-<ol>
-<li>中點跟梯形法準確率相同, 能準確的算出任意一次多項式的積分值.</li>
-<li>辛普森法比中點及梯形法更準確, 並且它能準確的算出任意三次多項式的積分值.</li>
-</ol>
 <hr>
 <blockquote>
-<p>接著我們稍微推廣一下, 並且介紹所謂的'高斯積分&rsquo;.</p>
+<p>舉個簡單的例子來試試</p>
 </blockquote>
-<p><strong>Question:</strong> 假設我們現在想要用函數在 $x=0$ 這個點的值來估算積分, 那係數要取多少會最好?</p>
-<p>也就是說我們假設
-$$\int^1_{-1}f(x),dx\approx A_0f(0),$$
-其中 $A_0$ 是個常數. 那 $A_0$ 要選哪個數字, 這個積分公式才會算的最準?</p>
-<p>依照我們之前的想法, 要讓積分式準就是要讓他把多項式算準. 所以我們希望他至少能把常數函數算準. 這樣的話很容易就看出 $A_0=2$, 也就是'中點法&rsquo;.</p>
-<p><strong>Question:</strong> 假設我們現在想要用函數在 $x=-1$ 以及 $x=1$ 這兩個點的值來估算積分, 那係數要取多少會最好?</p>
-<p>也就是說我們假設
-$$\int^1_{-1}f(x),dx\approx \alpha f(-1)+\beta f(1),$$
-其中 $\alpha, \beta$ 是常數.</p>
-<p>我們有兩個未知數, 所以我們希望他至少能把常數及一次函數算準. 這樣的話我們可以列出方程式:
+<p>假設我們只想要用兩個點來估算積分, 那 Legendre polynomial 的 $P_2(x)=\frac{1}{2}(3x^2-1)$.</p>
+<p>由此可算出兩個高斯點, 也就是 $P_2$ 的兩個根是
 $$
-\alpha + \beta = 2, \quad -\alpha + \beta = 0.
+x_0 = -\frac{1}{\sqrt{3}}, \quad x_1 = \frac{1}{\sqrt{3}}.
 $$
-解方程式我們得到 $\alpha=\beta=1$, 也就是梯形法.</p>
-<p><strong>Question:</strong> 假設我們現在只想用兩個點的值來估算積分, 那怎樣做會最好?</p>
-<p>也就是說我們假設
-$$\int^1_{-1}f(x),dx\approx A_0 f(x_0)+A_1 f(x_1),$$
-其中 $A_0, A_1, x_0, x_1$ 都待決定.</p>
-<p>我們有四個未知數, 所以理想狀況下應該能從常數到三次多項式都能算準, 依此可以列出四個方程式:
+接著權重也可以簡單的算出來, 我們得到.
 $$
-\begin{aligned}
-A_0 + A_1 &amp;= 2 \\\<br>
-A_0x_0 + A_1x_1 &amp;= 0 \\\<br>
-A_0x^2_0 + A_1x^2_1 &amp;= \frac{2}{3} \\\<br>
-A_0x^3_0 + A_1x^3_1 &amp;= 0.
-\end{aligned}
+w_0 = w_1 = 1.
 $$
-解方程式我們得到 $A_0=A_1=1$, $x_0=-\frac{1}{\sqrt{3}}$, $x_1=\frac{1}{\sqrt{3}}$. 也就是說</p>
-<p>$$
-\int^1_{-1} f(x),dx \approx f\left(-\frac{1}{\sqrt{3}}\right)+ f\left(\frac{1}{\sqrt{3}}\right).
+因此, 兩個點的高斯積分公式是
 $$
-這就是所謂的兩點高斯積分公式 (two-point Gaussian quadrature formula).</p>
+\int^1_{-1} f(x)dx = f\left(-\frac{1}{\sqrt{3}}\right) + f\left(\frac{1}{\sqrt{3}}\right),
+$$
+可以將 3次(含)以下的多項式算準無誤差.</p>
 <hr>
+<h4 id="再延伸一下">再延伸一下</h4>
+<p>對於更廣義有權重的積分
+$$
+\int^1_{-1} w(x)f(x)dx,
+$$
+我們只要找出相對應的正交多項式, 我們一樣可以求出其高斯積分點以及權重.</p>
 <blockquote>
-<p>最後我們看一下以數值積分來估算的例子.</p>
+<p>舉例來說, $w(x)=\frac{1}{1+x^2}$</p>
 </blockquote>
-<p>我們想計算 $\int^1_{-1} e^x,dx$, 當然我們知道答案是 $e^1-e^{-1}$, 不過我們想要知道若以上列幾種方法估算會有多準確.</p>
-<p><strong>Remark:</strong> 一般來說我們會先將所要積分的範圍分成 $n$ 等分, 接著在每一等分上使用上列積分法. 這就是微積分課本中所介紹的合成積分法 (composite integral rules). 實作上的細節我們就不在這裡討論.</p>
-<p>我們將 $[-1, 1]$ 區間均勻分成 $n$ 等分, 再用三種不同積分法來估算積分值. 下表列出不同積分法在不同區間數所得之值與實際值之間的絕對誤差.</p>
-<table>
-<thead>
-<tr>
-<th>n\Method</th>
-<th>Midpoint</th>
-<th>Trapezoidal</th>
-<th>Simpson&rsquo;s</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>10</td>
-<td>3.91e-3</td>
-<td>7.83e-3</td>
-<td>2.08e-5</td>
-</tr>
-<tr>
-<td>100</td>
-<td>3.92e-5</td>
-<td>7.83e-5</td>
-<td>2.09e-9</td>
-</tr>
-<tr>
-<td>1000</td>
-<td>3.92e-7</td>
-<td>7.83e-7</td>
-<td>2.10e-13</td>
-</tr>
-</tbody>
-</table>
-<p>我們可以看到, 中點以及梯形法誤差皆是以 $O(n^{-2})$ 來下降, 也就是點數變十倍時誤差會降一百倍, 而辛普森法則是 $O(n^{-4})$.</p>
-<p>接著我們試試看用高斯積分來做, 這裡我們就不分小區間, 直接做整個 $[-1, 1]$ 區間. 多個點的高斯積分的公式可在 
-<a href="https://en.wikipedia.org/wiki/Gaussian_quadrature" target="_blank" rel="noopener">wiki</a> 找到. 我們將 $m$-point 高斯積分所得之值與實際值之間的絕對誤差列於下表</p>
-<table>
-<thead>
-<tr>
-<th>m\Method</th>
-<th>Gaussian quadrature rule</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>2</td>
-<td>7.71e-3</td>
-</tr>
-<tr>
-<td>3</td>
-<td>6.55e-5</td>
-</tr>
-<tr>
-<td>4</td>
-<td>2.95e-7</td>
-</tr>
-<tr>
-<td>5</td>
-<td>8.25e-10</td>
-</tr>
-<tr>
-<td>6</td>
-<td>1.56e-12</td>
-</tr>
-<tr>
-<td>7</td>
-<td>2.66e-15</td>
-</tr>
-<tr>
-<td>8</td>
-<td>4.44e-16</td>
-</tr>
-</tbody>
-</table>
-<p>可以看到我們用 8 個點就可以將這個積分準確估計到誤差接近機器的捨入誤差 (rounding error).</p>
-<hr>
-<p>延伸閱讀: 
-<a href="/post/2020_numerical_integration_2">以內差多項式來做數值積分</a></p>
-<p>延伸閱讀: 
-<a href="/post/2020_numerical_integration_3">高斯積分</a></p>
+<p>其相對應的內積以及積分為
+$$
+(f,g) = \int^1_{-1} \frac{1}{1+x^2}f(x)g(x)dx, \quad \int^1_{-1} \frac{1}{1+x^2}f(x)dx.
+$$
+其正交多項式為 
+<a href="https://en.wikipedia.org/wiki/Chebyshev_polynomials" target="_blank" rel="noopener">Chebyshev polynomials</a>, $T_i(x)$, 前三項為:
+$$
+T_0(x) = 1, \quad T_1(x) =x, \quad T_2(x) = 2x^2-1.
+$$
+比較特別的是其高斯點, 稱為 Gauss-Chebyshev points, 可以直接求出來:
+$$
+x_i = \cos\left(\frac{(i+\frac{1}{2})\pi}{n+1}\right), \quad 0\le i\le n.
+$$
+而且權重也可以直接求出來:
+$$
+w_i = \frac{\pi}{n+1}.
+$$</p>
 <hr>
 
     </div>
@@ -800,7 +792,7 @@ $$
       
       
       <li>
-        <a href="https://twitter.com/intent/tweet?url=https://teshenglin.github.io/post/2019_numerical_integration/&amp;text=%e6%95%b8%e5%80%bc%e7%a9%8d%e5%88%86%e5%88%9d%e6%8e%a2" target="_blank" rel="noopener" class="share-btn-twitter">
+        <a href="https://twitter.com/intent/tweet?url=https://teshenglin.github.io/post/2020_numerical_integration_3/&amp;text=%e9%ab%98%e6%96%af%e7%a9%8d%e5%88%86" target="_blank" rel="noopener" class="share-btn-twitter">
           <i class="fab fa-twitter"></i>
         </a>
       </li>
@@ -813,7 +805,7 @@ $$
       
       
       <li>
-        <a href="https://www.facebook.com/sharer.php?u=https://teshenglin.github.io/post/2019_numerical_integration/&amp;t=%e6%95%b8%e5%80%bc%e7%a9%8d%e5%88%86%e5%88%9d%e6%8e%a2" target="_blank" rel="noopener" class="share-btn-facebook">
+        <a href="https://www.facebook.com/sharer.php?u=https://teshenglin.github.io/post/2020_numerical_integration_3/&amp;t=%e9%ab%98%e6%96%af%e7%a9%8d%e5%88%86" target="_blank" rel="noopener" class="share-btn-facebook">
           <i class="fab fa-facebook-f"></i>
         </a>
       </li>
@@ -826,7 +818,7 @@ $$
       
       
       <li>
-        <a href="mailto:?subject=%e6%95%b8%e5%80%bc%e7%a9%8d%e5%88%86%e5%88%9d%e6%8e%a2&amp;body=https://teshenglin.github.io/post/2019_numerical_integration/" target="_blank" rel="noopener" class="share-btn-email">
+        <a href="mailto:?subject=%e9%ab%98%e6%96%af%e7%a9%8d%e5%88%86&amp;body=https://teshenglin.github.io/post/2020_numerical_integration_3/" target="_blank" rel="noopener" class="share-btn-email">
           <i class="fas fa-envelope"></i>
         </a>
       </li>
@@ -964,6 +956,17 @@ $$
 
 
   
+  
+  <div class="article-widget content-widget-hr">
+    <h3>Related</h3>
+    <ul>
+      
+      <li><a href="/post/2020_numerical_integration_2/">以內插多項式來做數值積分</a></li>
+      
+      <li><a href="/post/2019_numerical_integration/">數值積分初探</a></li>
+      
+    </ul>
+  </div>
   
 
 

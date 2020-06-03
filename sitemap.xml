@@ -3,22 +3,52 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://teshenglin.github.io/tags/applied-project/</loc>
-    <lastmod>2020-05-30T16:00:09+08:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://teshenglin.github.io/authors/</loc>
-    <lastmod>2020-05-30T16:00:09+08:00</lastmod>
+    <lastmod>2020-06-03T09:21:29+08:00</lastmod>
   </url>
   
   <url>
     <loc>https://teshenglin.github.io/categories/calculus/</loc>
-    <lastmod>2020-05-30T16:00:09+08:00</lastmod>
+    <lastmod>2020-06-03T09:21:29+08:00</lastmod>
   </url>
   
   <url>
     <loc>https://teshenglin.github.io/categories/</loc>
+    <lastmod>2020-06-03T09:21:29+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://teshenglin.github.io/categories/computational-mathematics/</loc>
+    <lastmod>2020-06-03T09:21:29+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://teshenglin.github.io/tags/numerical_integration/</loc>
+    <lastmod>2020-06-03T09:21:29+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://teshenglin.github.io/tags/quadrature/</loc>
+    <lastmod>2020-06-03T09:21:29+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://teshenglin.github.io/tags/</loc>
+    <lastmod>2020-06-03T09:21:29+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://teshenglin.github.io/post/2020_numerical_integration_2/</loc>
+    <lastmod>2020-06-03T09:21:29+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://teshenglin.github.io/post/2020_numerical_integration_3/</loc>
+    <lastmod>2020-06-03T09:21:29+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://teshenglin.github.io/tags/applied-project/</loc>
     <lastmod>2020-05-30T16:00:09+08:00</lastmod>
   </url>
   
@@ -29,11 +59,6 @@
   
   <url>
     <loc>https://teshenglin.github.io/post/2020_cal_s12p4_ch/</loc>
-    <lastmod>2020-05-30T16:00:09+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://teshenglin.github.io/tags/</loc>
     <lastmod>2020-05-30T16:00:09+08:00</lastmod>
   </url>
   
@@ -339,42 +364,27 @@
   
   <url>
     <loc>https://teshenglin.github.io/tags/julia/</loc>
-    <lastmod>2020-05-23T10:34:34+08:00</lastmod>
+    <lastmod>2020-06-03T09:21:29+08:00</lastmod>
   </url>
   
   <url>
     <loc>https://teshenglin.github.io/post/2020_julia_plots/</loc>
-    <lastmod>2020-05-23T10:34:34+08:00</lastmod>
+    <lastmod>2020-06-03T09:21:29+08:00</lastmod>
   </url>
   
   <url>
     <loc>https://teshenglin.github.io/post/2020_julia_timing/</loc>
-    <lastmod>2020-03-02T19:56:58+08:00</lastmod>
+    <lastmod>2020-06-03T09:21:29+08:00</lastmod>
   </url>
   
   <url>
     <loc>https://teshenglin.github.io/categories/notes/</loc>
-    <lastmod>2020-05-23T10:34:34+08:00</lastmod>
+    <lastmod>2020-06-03T09:21:29+08:00</lastmod>
   </url>
   
   <url>
     <loc>https://teshenglin.github.io/categories/notes_julia/</loc>
-    <lastmod>2020-05-23T10:34:34+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://teshenglin.github.io/categories/computational-mathematics/</loc>
-    <lastmod>2020-05-23T10:34:34+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://teshenglin.github.io/tags/numerical_integration/</loc>
-    <lastmod>2019-12-11T14:41:46+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://teshenglin.github.io/tags/quadrature/</loc>
-    <lastmod>2019-12-11T14:41:46+08:00</lastmod>
+    <lastmod>2020-06-03T09:21:29+08:00</lastmod>
   </url>
   
   <url>
@@ -384,7 +394,7 @@
   
   <url>
     <loc>https://teshenglin.github.io/post/2019_numerical_integration/</loc>
-    <lastmod>2019-12-11T14:41:46+08:00</lastmod>
+    <lastmod>2020-06-03T09:21:29+08:00</lastmod>
   </url>
   
   <url>
@@ -730,6 +740,21 @@
   <url>
     <loc>https://teshenglin.github.io/authors/admin/</loc>
     <lastmod>2019-10-29T10:20:13+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://teshenglin.github.io/courses/2016fall_colloquium/</loc>
+    <lastmod>2019-10-29T10:20:13+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://teshenglin.github.io/courses/2016spring_colloquium/</loc>
+    <lastmod>2019-10-29T10:20:13+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://teshenglin.github.io/courses/2019fall_colloquium/</loc>
+    <lastmod>2020-01-01T21:33:34+08:00</lastmod>
   </url>
   
   <url>
