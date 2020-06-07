@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>王昱翔 | Te-Sheng Lin</title>
+    <link>https://teshenglin.github.io/authors/%E7%8E%8B%E6%98%B1%E7%BF%94/</link>
+      <atom:link href="https://teshenglin.github.io/authors/%E7%8E%8B%E6%98%B1%E7%BF%94/index.xml" rel="self" type="application/rss+xml" />
+    <description>王昱翔</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 31 May 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>王昱翔</title>
+      <link>https://teshenglin.github.io/authors/%E7%8E%8B%E6%98%B1%E7%BF%94/</link>
+    </image>
+    
+    <item>
+      <title>Sec.14.4 - The speedo LZR razer</title>
+      <link>https://teshenglin.github.io/post/2020_cal_s14p4/</link>
+      <pubDate>Sun, 31 May 2020 00:00:00 +0000</pubDate>
+      <guid>https://teshenglin.github.io/post/2020_cal_s14p4/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;Applied Project in Sec.14.4, Calculus by Stewart&lt;br&gt;
+Chinese version 
+&lt;a href=&#34;https://teshenglin.github.io/post/2020_cal_s14p4_ch&#34;&gt;速比濤鯊魚皮系列第四代泳裝&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Many technological advances have occurred in sports that have contributed to increased athletic performance. One of the best known is the introduction, in 2008, of the Speedo LZR racer. It was claimed that this full-body swimsuit reduced a swimmer’s drag in the water. Figure 1 shows the number of world records broken in men’s and women’s long-course freestyle swimming events from 1990 to 2011. The dramatic increase in 2008 when the suit was introduced led people to claim that such suits are a form of technological doping. As a result all full-body suits were banned from competition starting in 2010.&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://teshenglin.github.io/post/figs/2020_cal_s14p4_1.png&#34; &gt;
+
+
+  &lt;img src=&#34;https://teshenglin.github.io/post/figs/2020_cal_s14p4_1.png&#34; alt=&#34;&#34; width=&#34;600px&#34; &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;It might be surprising that a simple reduction in drag could have such a big effect on performance. We can gain some insight into this using a simple mathematical model.&lt;/p&gt;
+&lt;p&gt;The speed $v$ of an object being propelled through water is given by
+$$
+v(P,C)=\left(\frac{2P}{kC}\right)^{\frac{1}{3}},
+$$
+where $P$ is the power being used to propel the object, $C$ is the drag coefficient, and $k$ is a positive constant. Athletes can therefore increase their swimming speeds by increasing their power or reducing their drag coefficients. But how effective is each of these?&lt;/p&gt;
+&lt;p&gt;To compare the effect of increasing power versus reducing drag, we need to somehow compare the two in common units. The most common approach is to determine the percentage change in speed that results from a given percentage change in power and in drag.&lt;/p&gt;
+&lt;p&gt;If we work with percentages as fractions, then when power is changed by a fraction $x$ (with $x$ corresponding to $100x$ percent), $P$ changes from $P$ to $P + xP$. Likewise, if the drag coefficient is changed by a fraction $y$, this means that it has changed from $C$ to $C + yC$. Finally, the fractional change in speed resulting from both effects is
+$$
+f(x,y)=\frac{v(P+xP,C+yC)-v(P,C)}{v(P,C)}
+$$&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Question 1:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The function $f$  gives the fractional change in speed that results from a change $x$ in power and a change $y$ in drag. Show that this reduces to the function
+$$
+f(x,y)=\left(\frac{1+x}{1+y}\right)^{\frac{1}{3}}-1.
+$$
+Given the context, what is the domain of $f$?&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Find the formula of $f$:&lt;/p&gt;
+&lt;p&gt;$f(x,y)$ can be rewritten as
+$$
+f(x,y)=\frac{v(P(1+x),C(1+y))}{v(P,C)}-1
+$$
+Replace $v(P,C)$ with its formula
+$$
+f(x,y)=\frac{\left[\frac{2P(1+x)}{kC(1+y)}\right]^{1/3} }{\left(\frac{2P}{kC}\right)^{1/3}}-1
+$$
+$v(P,C)$ is greater than zero, and $v(P+xP,C+yC)$ is greater than or equal to zero. Thus, the roots of numerator and dominator can be combined together：
+$$
+f(x,y)=\left(\frac{1+x}{1+y}\right)^{\frac{1}{3}}-1
+$$&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Find the domain of $f$:&lt;/p&gt;
+&lt;p&gt;The power performed is obviously greater than or equal to zero.
+$$
+P+xP\geq 0
+$$
+The friction is always greater than zero in the real world. Hence, the drag is obviously greater than zero.
+$$
+C+yC&amp;gt;0
+$$
+In conclusion
+$$
+1+x\geq0,\qquad1+y&amp;gt;0
+$$
+The domain of $f$ is
+$$
+{(x,y)\mid x\geq-1,\quad y&amp;gt;-1}
+$$&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Question 2:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Suppose that the possible changes in power $x$ and drag $y$ are small. Find the linear approximation to the function $f(x, y)$. What does this approximation tell you about the effect of a small increase in power versus a small decrease in drag?&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Find the linear approximation to the function $f$&lt;/p&gt;
+&lt;p&gt;The changes in power $x$ and drag $y$ are small. It means that $x$ and $y$ are closed to zero. Applied linear approximation at the point $(0,0)$
+$$
+f(x,y)\approx f(0,0)+f_x(0,0)(x-0)+f_y(0,0)(y-0)
+$$
+Calculate  $f_x$
+$$
+\frac{\partial f}{\partial x} =\frac{1}{3}(1+x)^{-\frac{2}{3}}(1+y)^{-\frac{1}{3}}
+$$
+Calculate  $f_y$
+$$
+\frac{\partial f}{\partial y}=-\frac{1}{3}(1+x)^{\frac{1}{3}}(1+y)^{-\frac{4}{3}}
+$$
+Calculate  $f_x(0,0)$ and  $f_y(0,0)$
+$$
+f_x(0,0)=\frac{1}{3} \quad f_y(0,0)=-\frac{1}{3}
+$$
+$f(0,0)=0$, therefore, the linear approximation to  $f$  at $(0, 0)$ is
+$$
+f(x,y)\approx \frac{1}{3}x-\frac{1}{3}y
+$$&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The effect of a small increase in power vs. a small decrease in drag&lt;/p&gt;
+&lt;p&gt;According to the linear approximation to the function $f$ , the small increase in power $x$ and the small decrease in drag $y$ have the same impact on changes in speed $f$ with the proportion of one-third. Consequently, in terms of the fractional change in speed, there is no significant difference between the small increase in power and the small decrease in drag.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Question 3:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Calculate $f_{xx}(x, y)$ and $f_{yy}(x, y)$. Based on the signs of these derivatives, does the linear approximation in Problem 2 result in an overestimate or an underestimate for an increase in power? What about for a decrease in drag? Use your answer to explain why, for changes in power or drag that are not very small, a decrease in drag is more effective.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Evaluate whether the linear approximation in Problem 2 is overestimated or underestimated&lt;/p&gt;
+&lt;p&gt;Calculate $f_{xx}(x, y)$ and $f_{yy}(x, y)$
+$$
+\frac{\partial^2 f}{\partial x^2} = -\frac{2}{9}(1+x)^{-\frac{5}{3}}(1+y)^{-\frac{1}{3}}&amp;lt;0
+$$
+$$
+\frac{\partial^2 f}{\partial y^2} = \frac{4}{9}(1+x)^{\frac{1}{3}}(1+y)^{-\frac{7}{3}}&amp;gt;0
+$$&lt;/p&gt;
+&lt;p&gt;$f$ is a &lt;em&gt;concave&lt;/em&gt; function with respect to $x$, which means the linear approximation result in an &lt;em&gt;overestimate&lt;/em&gt; for the impact on an increase in power.
+$$
+f(x,0)&amp;lt;\frac{1}{3}x
+$$
+$f$ is a &lt;em&gt;convex&lt;/em&gt; function with respect to $y$, which means the linear approximation result in an &lt;em&gt;underestimate&lt;/em&gt; for the impact on an decrease in drag.
+$$
+f(0,y)&amp;gt;-\frac{1}{3}y
+$$&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Explain why a decrease in drag is more effective when the changes are not very small&lt;/p&gt;
+&lt;p&gt;Suppose that the increase in power and the decrease in drag are equal to a constant $c &amp;gt;0$
+$$
+c=x=-y
+$$
+Determine whether $f$ is more sensitive to changes in $x$ or $y$
+$$
+\frac{\Delta f(c,0)}{\Delta f(0,-c)}=\frac{f(c,0)-f(0,0)}{f(0,-c)-f(0,0)}=\frac{f(c,0)}{f(0,-c)}&amp;lt;\frac{\frac{1}{3}c}{\frac{1}{3}c}=1
+$$
+Consequently, for changes in power or drag that are not very small, a decrease in drag is more effective.
+$$
+\Delta f(0,-c)&amp;gt;\Delta f(c,0)\quad (c&amp;gt;0)
+$$&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Question 4:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Graph the level curves of $f(x, y)$. Explain how the shapes of these curves relate to your answers to Problems 2 and 3.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;For a given constant $h$, suppose $f(x,y)=h$
+$$
+f(x,y)=\left(\frac{1+x}{1+y}\right)^{\frac{1}{3}}-1=h
+$$
+Rearrange the equation and  then get the formula of the level curve
+$$
+y=\frac{x}{(1+h)^3}+\frac{1}{(1+h)^3}-1
+$$
+Graph the level curve with h= -0.75, -0.5, -0.25, 0, 0.05, 0.25, 0.5, 0.75, 1&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://teshenglin.github.io/post/figs/2020_cal_s14p4_2.png&#34; &gt;
+
+
+  &lt;img src=&#34;https://teshenglin.github.io/post/figs/2020_cal_s14p4_2.png&#34; alt=&#34;&#34; width=&#34;600px&#34; &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;A little changes in power or drags&lt;/p&gt;
+&lt;p&gt;Suppose that a little changes in power or drags at point $(0, 0)$ leads to a change in $h$ from $h=0$ to $h=0.05$. In order to reach $h=0.05$ from point $(0, 0)$, the power has to increase about $0.158$ (point A), or the drag has to decrease about $0.136$ (point B). These two value are closed to each other. The result correspond with the answer of Problem 2.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;A considerable changes in power or drags&lt;/p&gt;
+&lt;p&gt;Suppose that a considerable changes in power or drags at point $(0, 0)$ leads to a change in $h$ from $h=0$ to $h=0.5$. In order to reach $h=0.5$ from point $(0, 0)$, the power has to increase about $2.38$ (point D), or the drag has to decrease $0.704$ (point C).  The decrease in drag is about 3.4 times more efficient than the increase in power. $(2.38/0.74=3.4)$ The result correspond with the answer of Problem 3.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Sec.14.4 - 速比濤鯊魚皮系列第四代泳裝</title>
+      <link>https://teshenglin.github.io/post/2020_cal_s14p4_ch/</link>
+      <pubDate>Sun, 31 May 2020 00:00:00 +0000</pubDate>
+      <guid>https://teshenglin.github.io/post/2020_cal_s14p4_ch/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;Applied Project in Sec.14.4, Calculus by Stewart&lt;br&gt;
+英文版請見 
+&lt;a href=&#34;https://teshenglin.github.io/post/2020_cal_s14p4&#34;&gt;The speedo LZR razer&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;在體育運動中, 許多科技的進步讓運動員的表現更好. 最廣為人知的例子之一就是速比濤在2008年時推出鯊魚皮系列第四代泳裝, 宣稱這個連身泳衣可以減少泳者在水中的阻力. 圖1 顯示1990年到2011年男性和女性在長程自由式的賽事中打破世界紀錄的數量, 可以發現在2008年時數量大大的增加, 恰好是那款泳衣推出的時候, 這讓大家覺得這種泳衣根本就是一種科技的「禁藥」, 結果2010年以後所有的連身泳衣在競賽中都被禁止使用.&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://teshenglin.github.io/post/figs/2020_cal_s14p4_1.png&#34; &gt;
+
+
+  &lt;img src=&#34;https://teshenglin.github.io/post/figs/2020_cal_s14p4_1.png&#34; alt=&#34;&#34; width=&#34;600px&#34; &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;可能會讓人驚訝的是純粹減少阻力竟然可以在表現上有這麼大的影響力! 我們可以藉由簡單的數學模型更深入的探討這個現象.&lt;/p&gt;
+&lt;p&gt;在水中物體被驅動的速率 $v$ 公式如下
+$$
+v(P,C)=\left( \frac{2P}{kC}\right)^{\frac{1}{3}},
+$$
+其中 $P$ 代表驅動物體所使用的功率, $C$ 是阻力係數, $k$ 是一個大於零的定值. 因此, 運動員可以藉由增加功率或是減少阻力係數來增加游泳速率, 但是這兩個因素影響速率的效果如何呢?&lt;/p&gt;
+&lt;p&gt;為了比較「增加功率」和「減少阻力」的影響, 我們需要以某種方式在共同的單位下比較兩者的差異. 最常見的方法就是給定一個功率或是阻力的百分比變化率, 測定速率隨之改變多少百分比.&lt;/p&gt;
+&lt;p&gt;若我們以分數的形式代表百分比, 則當功率被改變 $x$ 的比例後($x$對應到 $100x$), $P$ 會變化成 $P + xP$. 同理, 若阻力係數被改變 $y$ 的比例, $C$ 會變化成 $C + yC$. 最後, 這兩個因素造成的速率比例的改變為:
+$$
+f(x,y)=\frac{v(P+xP,C+yC)-v(P,C)}{v(P,C)}.
+$$&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;問題 1:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;函數 $f$ 代表功率的改變比例 $x$ 和阻力的改變比例 $y$ 所造成的速率改變比例, 請說明這個函數可以簡化成
+$$
+f(x,y)=\left(\frac{1+x}{1+y}\right)^{\frac{1}{3}}-1
+$$
+由文字給定的敘述中, 請問函數 $f$ 的定義域為何?&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;解&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;找出 $f$ 的公式&lt;/p&gt;
+&lt;p&gt;$f(x,y)$ 可以被重新寫成
+$$
+f(x,y)=\frac{v(P(1+x),C(1+y))}{v(P,C)}-1
+$$
+帶入 $v(P,C)$ 的公式
+$$
+f(x,y)=\frac{\left[\frac{2P(1+x)}{kC(1+y)}\right]^{1/3} }{\left(\frac{2P}{kC}\right)^{1/3}}-1
+$$
+$v(P,C)$ 大於零且 $v(P+xP,C+yC)$ 大於等於零. 因此, 分子和分母的根號可以結合一起計算:
+$$
+f(x,y)=\left(\frac{1+x}{1+y}\right)^{\frac{1}{3}}-1
+$$&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;找出 $f$ 的定義域&lt;/p&gt;
+&lt;p&gt;所做的功率必定大於等於零:
+$$
+P+xP\geq 0
+$$
+現實生活中必定存在磨擦, 阻力係數大於零:
+$$
+C+yC&amp;gt;0
+$$
+總結以上
+$$
+1+x\geq0, \qquad 1+y&amp;gt;0
+$$
+因此 $f$ 的定義域為
+$$
+\{ (x,y)\mid x\geq-1,\quad y&amp;gt;-1 \}
+$$&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;問題 2:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;假設功率的改變比例 $x$ 和阻力的改變比例 $y$ 很小, 找出 $f(x, y)$ 的線性近似. 請問這個近似告訴你關於「增加功率」和「減少阻力」的影響存在哪些差異?&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;解&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;找出函數 $f$ 的線性近似&lt;/p&gt;
+&lt;p&gt;功率的改變比例 $x$ 和阻力的改變比例 $y$ 很小意味著 $x$ 和 $y$ 很接近零, 在點 $(0,0)$ 使用線性逼近法
+$$
+f(x,y)\approx f(0,0)+f_x(0,0)(x-0)+f_y(0,0)(y-0)
+$$
+計算 $f_x$
+$$
+\frac{\partial f}{\partial x} =\frac{1}{3}(1+x)^{-\frac{2}{3}}(1+y)^{-\frac{1}{3}}
+$$
+計算 $f_y$
+$$
+\frac{\partial f}{\partial y}=-\frac{1}{3}(1+x)^{\frac{1}{3}}(1+y)^{-\frac{4}{3}}
+$$
+計算 $f_x(0,0)$ 和 $f_y(0,0)$
+$$
+f_x(0,0)=\frac{1}{3} \quad f_y(0,0)=-\frac{1}{3}
+$$
+因為 $f(0,0)=0$, 得 $f$ 在點 $(0,0)$ 的線性近似為
+$$
+f(x,y)\approx \frac{1}{3}x-\frac{1}{3}y
+$$&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;比較「增加功率」和「減少阻力」的影響&lt;/p&gt;
+&lt;p&gt;根據函數 $f$ 線性逼近的結果, 增加功率 $x$ 或減少阻力 $y$ 所造成速率的增加比例都是三分之一. 因此, 對於速率的增加比例而言, 少量增加功率抑或是少量減少阻力所造成的影響並沒有差異.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;問題 3:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;計算 $f_{xx}(x, y)$ 和 $f_{yy}(x, y)$. 根據這些導數的正負號, 請問題目2的線性近似對於「增加功率」是低估還是高估呢? 那麼對於「減少阻力」呢? 利用你的答案解釋為什麼在功率或阻力的變化量不小的情況下, 「減少阻力」比較有效率?&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;解&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;評估問題2的線性近似究竟是高估還是低估&lt;/p&gt;
+&lt;p&gt;計算 $f_{xx}(x, y)$ 和 $f_{yy}(x, y)$
+$$
+\frac{\partial^2 f}{\partial x^2} = -\frac{2}{9}(1+x)^{-\frac{5}{3}}(1+y)^{-\frac{1}{3}}&amp;lt;0
+$$
+$$
+\frac{\partial^2 f}{\partial y^2} = \frac{4}{9}(1+x)^{\frac{1}{3}}(1+y)^{-\frac{7}{3}}&amp;gt;0
+$$&lt;/p&gt;
+&lt;p&gt;$f$ 對於 $x$ 而言是凸函數 (a &lt;em&gt;concave&lt;/em&gt; function), 這意味著線性近似高估了「增加功率」的影響.
+$$
+f(x,0)&amp;lt;\frac{1}{3}x
+$$
+$f$ 對於 $y$ 而言是凹函數 (a &lt;em&gt;convex&lt;/em&gt; function), 這意味著線性近似低估了「減少阻力」的影響.
+$$
+f(0,y)&amp;gt;-\frac{1}{3}y
+$$&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;解釋為什麼在變化量大的時候「減少阻力」比較有效率&lt;/p&gt;
+&lt;p&gt;假設功率的增加量和阻力的減少量等於定值 $c &amp;gt;0$
+$$
+c=x=-y
+$$
+判斷 $f$  對於 $x$ 或 $y$ 的改變何者比較敏感
+$$
+\frac{\Delta f(c,0)}{\Delta f(0,-c)}=\frac{f(c,0)-f(0,0)}{f(0,-c)-f(0,0)}=\frac{f(c,0)}{f(0,-c)}&amp;lt;\frac{\frac{1}{3}c}{\frac{1}{3}c}=1
+$$
+因此，在功率或阻力的變化量不小的情況下, 「減少阻力」比較有效.
+$$
+\Delta f(0,-c)&amp;gt;\Delta f(c,0)\quad (c&amp;gt;0)
+$$&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;問題 4:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;畫出 $f(x, y)$ 的等高線圖, 解釋這些等高線的形狀和問題 2 和 3 有哪些關聯性.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;解&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;給定一個定值$h$, 令 $f(x,y)=h$
+$$
+f(x,y)=\left(\frac{1+x}{1+y}\right)^{\frac{1}{3}}-1=h
+$$
+重新整理方程式，然後得到等高線的公式
+$$
+y=\frac{x}{(1+h)^3}+\frac{1}{(1+h)^3}-1
+$$
+畫出在 h= -0.75, -0.5, -0.25, 0, 0.05, 0.25, 0.5, 0.75, 1的等高線&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://teshenglin.github.io/post/figs/2020_cal_s14p4_2.png&#34; &gt;
+
+
+  &lt;img src=&#34;https://teshenglin.github.io/post/figs/2020_cal_s14p4_2.png&#34; alt=&#34;&#34; width=&#34;600px&#34; &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;當功率和阻力變化量很小&lt;/p&gt;
+&lt;p&gt;假設在點 $(0, 0)$ 時很小的功率和阻力變化量導致 $h$ 從 $h=0$ 變化成 $h=0.05$. 為了從點 $(0,0)$ 達到 $h=0.05$, 功率需要增加大約 $0.158$ (點 A) 或者是阻力需要增加大概 $0.136$ (點 B), 這兩個值相當接近, 這個結果呼應了問題 2 的答案.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;當功率和阻力變化量較大&lt;/p&gt;
+&lt;p&gt;假設在點 $(0, 0)$ 時較大的功率和阻力變化量導致 $h$ 從 $h=0$ 變化成 $h=0.5$. 為了從點 $(0, 0)$ 達到 $h=0.5$, 功率需要增加大約 $2.38$ (點 D) 或者是阻力需要增加大概 $0.704$ (點 C), 可見「減少阻力」比「增加功率」的效率還要高出約 $3.4$倍 ($2.38/0.74=3.4$), 這個結果呼應了問題 3 的答案.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

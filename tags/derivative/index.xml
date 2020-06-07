@@ -2136,54 +2136,178 @@ $$&lt;/p&gt;
 &lt;p&gt;$$
 f&amp;rsquo;(\pi) = \lim_{h\to 0} \frac{(\pi+h)^2-\pi^2}{h}.
 $$&lt;/p&gt;
-&lt;p&gt;接著我們將 $h$ 取靠近 $0$ 的 $1000$ 的點並帶入上列這個式子試著來算其極限值.&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;1000×2 Array{Float64,2}:
- 1.0    7.28319
- 0.999  7.28219
- 0.998  7.28119
- 0.997  7.28019
- 0.996  7.27919
- ⋮
- 0.005  6.28819
- 0.004  6.28719
- 0.003  6.28619
- 0.002  6.28519
- 0.001  6.28419
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;上列數字左邊是 $h$ 值, 右邊為估計的微分值. 我們發現的確這個數字會越來越接近真實的解, 也就是 $2\pi$, 約等於 $6.283185307179586$.&lt;/p&gt;
-&lt;p&gt;接著我們算一下這個值與真實值 $2\pi$ 之間的差, 我們取其絕對值來表示&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;1000×2 Array{Float64,2}:
- 1.0    1.0
- 0.999  0.999
- 0.998  0.998
- 0.997  0.997
- 0.996  0.996
- ⋮
- 0.005  0.005
- 0.004  0.004
- 0.003  0.003
- 0.002  0.002
- 0.001  0.001
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;的確, 當 $x$ 越來越靠近 $\pi$ 時這個估計出來的微分值離 $2\pi$ 的距離越來越小.&lt;/p&gt;
+&lt;p&gt;接著我們將 $h$ 取靠近 $0$ 的 $11$ 的點並帶入上列這個式子試著來算其極限值. &lt;code&gt;Julia&lt;/code&gt; 程式如下&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;h &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; range(&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;0.01&lt;/span&gt;, length&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;11&lt;/span&gt;); h &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; h[&lt;span style=&#34;color:#ae81ff&#34;&gt;11&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;];
+fp &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; ((pi&lt;span style=&#34;color:#f92672&#34;&gt;.+&lt;/span&gt;h)&lt;span style=&#34;color:#f92672&#34;&gt;.^&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;.-&lt;/span&gt; pi&lt;span style=&#34;color:#f92672&#34;&gt;^&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;)&lt;span style=&#34;color:#f92672&#34;&gt;./&lt;/span&gt;h;
+hcat(h, fp, fp&lt;span style=&#34;color:#f92672&#34;&gt;.-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;pi)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;結果如下:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;$h$&lt;/th&gt;
+&lt;th&gt;$f&#39;$&lt;/th&gt;
+&lt;th&gt;$f&amp;rsquo;-2\pi$&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;0.01&lt;/td&gt;
+&lt;td&gt;6.29319&lt;/td&gt;
+&lt;td&gt;0.01&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;0.009&lt;/td&gt;
+&lt;td&gt;6.29219&lt;/td&gt;
+&lt;td&gt;0.009&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;0.008&lt;/td&gt;
+&lt;td&gt;6.29119&lt;/td&gt;
+&lt;td&gt;0.008&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;0.007&lt;/td&gt;
+&lt;td&gt;6.29019&lt;/td&gt;
+&lt;td&gt;0.007&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;0.006&lt;/td&gt;
+&lt;td&gt;6.28919&lt;/td&gt;
+&lt;td&gt;0.006&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;0.005&lt;/td&gt;
+&lt;td&gt;6.28819&lt;/td&gt;
+&lt;td&gt;0.005&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;0.004&lt;/td&gt;
+&lt;td&gt;6.28719&lt;/td&gt;
+&lt;td&gt;0.004&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;0.003&lt;/td&gt;
+&lt;td&gt;6.28619&lt;/td&gt;
+&lt;td&gt;0.003&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;0.002&lt;/td&gt;
+&lt;td&gt;6.28519&lt;/td&gt;
+&lt;td&gt;0.002&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;0.001&lt;/td&gt;
+&lt;td&gt;6.28419&lt;/td&gt;
+&lt;td&gt;0.001&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;上列數字最左邊是 $h$ 值, 中間為估計的微分值. 我們發現的確這個數字會越來越接近真實的解, 也就是 $2\pi$, 約等於 $6.283185307179586$. 最右邊為這個估算值與真實值 $2\pi$ 之間的差. 的確, 當 $h$ 越接近零, 這個估計出來的微分值離 $2\pi$ 的距離越來越小.&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Question:&lt;/strong&gt; 用數值計算微分能有多精確? 這個誤差能不能一直遞減下去?&lt;/p&gt;
 &lt;p&gt;接著我們取更多靠近 $0$ 的點來計算微分的極限值, 我們列出其與真實值 $2\pi$ 之間的差, 並且把它畫出來.&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;241×2 Array{Float64,2}:
- 0.00673795   0.00673795
- 0.00609675   0.00609675
- 0.00551656   0.00551656
- 0.00499159   0.00499159
- 0.00451658   0.00451658
- ⋮
- 3.7947e-13   0.00576551
- 3.43359e-13  0.00259406
- 3.10684e-13  0.000421242
- 2.81119e-13  0.00220945
- 2.54367e-13  0.001922
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;觀察最後一列數字發現, 當 $h=2.54367*10^{-13}$ 時, 估計出來的微分值與真實值差了 $0.001922$ 這麼多!!&lt;/p&gt;
-&lt;p&gt;我們把它畫出來看看, 橫軸是 $h$, 縱軸是 $\left|\frac{(\pi+h)^2-\pi^2}{h}-2\pi\right|,$ 發現雖然誤差在 $h$ 大的時候遞減, 不過當 $h$ 接近零的時候卻又遞增上去了.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;h &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; range(&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;16&lt;/span&gt;, length&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;16&lt;/span&gt;); h &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;10.0&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.^&lt;/span&gt;(&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;h[&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;16&lt;/span&gt;]);
+fp &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; ((pi&lt;span style=&#34;color:#f92672&#34;&gt;.+&lt;/span&gt;h)&lt;span style=&#34;color:#f92672&#34;&gt;.^&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;.-&lt;/span&gt; pi&lt;span style=&#34;color:#f92672&#34;&gt;^&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;)&lt;span style=&#34;color:#f92672&#34;&gt;./&lt;/span&gt;h;
+hcat(h, fp, abs&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;(fp&lt;span style=&#34;color:#f92672&#34;&gt;.-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;pi))
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;結果如下:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;$h$&lt;/th&gt;
+&lt;th&gt;$f&#39;$&lt;/th&gt;
+&lt;th&gt;$abs(f&amp;rsquo;-2\pi)$&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;0.1&lt;/td&gt;
+&lt;td&gt;6.38319&lt;/td&gt;
+&lt;td&gt;0.1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;0.01&lt;/td&gt;
+&lt;td&gt;6.29319&lt;/td&gt;
+&lt;td&gt;0.01&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;0.001&lt;/td&gt;
+&lt;td&gt;6.28419&lt;/td&gt;
+&lt;td&gt;0.001&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;0.0001&lt;/td&gt;
+&lt;td&gt;6.28329&lt;/td&gt;
+&lt;td&gt;0.0001&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;1.0e-5&lt;/td&gt;
+&lt;td&gt;6.2832&lt;/td&gt;
+&lt;td&gt;9.99998e-6&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;1.0e-6&lt;/td&gt;
+&lt;td&gt;6.28319&lt;/td&gt;
+&lt;td&gt;1.00006e-6&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;1.0e-7&lt;/td&gt;
+&lt;td&gt;6.28319&lt;/td&gt;
+&lt;td&gt;9.5898e-8&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;1.0e-8&lt;/td&gt;
+&lt;td&gt;6.28319&lt;/td&gt;
+&lt;td&gt;4.26073e-8&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;1.0e-9&lt;/td&gt;
+&lt;td&gt;6.28319&lt;/td&gt;
+&lt;td&gt;2.20243e-7&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;1.0e-10&lt;/td&gt;
+&lt;td&gt;6.28319&lt;/td&gt;
+&lt;td&gt;1.9966e-6&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;1.0e-11&lt;/td&gt;
+&lt;td&gt;6.28315&lt;/td&gt;
+&lt;td&gt;3.35305e-5&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;1.0e-12&lt;/td&gt;
+&lt;td&gt;6.28297&lt;/td&gt;
+&lt;td&gt;0.000211166&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;1.0e-13&lt;/td&gt;
+&lt;td&gt;6.27054&lt;/td&gt;
+&lt;td&gt;0.0126457&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;1.0e-14&lt;/td&gt;
+&lt;td&gt;6.39488&lt;/td&gt;
+&lt;td&gt;0.111699&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;1.0e-15&lt;/td&gt;
+&lt;td&gt;5.32907&lt;/td&gt;
+&lt;td&gt;0.954115&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;1.0e-16&lt;/td&gt;
+&lt;td&gt;0.0&lt;/td&gt;
+&lt;td&gt;6.28319&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;觀察最後一下發現, 當 $h$ 很小時微分竟然與真實質差更多, 更不準了!! 比如說當 $h=10^{-14}$ 時, 誤差竟然大到約是 $10^{-1}$.&lt;/p&gt;
+&lt;p&gt;我們把它畫出來看看, &lt;code&gt;Julia&lt;/code&gt; code 如下:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;using&lt;/span&gt; Plots
+plot(log10&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;(h), log10&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;(abs&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;(fp&lt;span style=&#34;color:#f92672&#34;&gt;.-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;pi)),label&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Error&amp;#34;&lt;/span&gt;)
+xlabel!(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;log10(h)&amp;#34;&lt;/span&gt;)
+ylabel!(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;log10(Error)&amp;#34;&lt;/span&gt;)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;發現雖然誤差在 $h$ 大的時候遞減, 不過當 $h$ 接近零的時候卻又遞增上去了.&lt;/p&gt;
 
 
 
@@ -2202,10 +2326,10 @@ $$&lt;/p&gt;
 &lt;figure&gt;
 
 
-  &lt;a data-fancybox=&#34;&#34; href=&#34;https://teshenglin.github.io/post/figs/output_22_0.svg&#34; &gt;
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://teshenglin.github.io/post/figs/2019_derivative_evaulate_01.svg&#34; &gt;
 
 
-  &lt;img src=&#34;https://teshenglin.github.io/post/figs/output_22_0.svg&#34; alt=&#34;&#34; width=&#34;400px&#34; &gt;
+  &lt;img src=&#34;https://teshenglin.github.io/post/figs/2019_derivative_evaulate_01.svg&#34; alt=&#34;&#34; width=&#34;600px&#34; &gt;
 &lt;/a&gt;
 
 
@@ -2213,8 +2337,8 @@ $$&lt;/p&gt;
 &lt;/figure&gt;
 
 &lt;p&gt;那誤差最小值出現在什麼時候呢?&lt;/p&gt;
-&lt;p&gt;我們發現當 當 $h=5.1 *10^{-8}$ 時, 其估計出來的微分值離真實值誤差最小, 其誤差為 $7.3 *10^{-9}$.&lt;/p&gt;
-&lt;p&gt;不過, WHY?? 為什麼誤差不會一直往下遞減? 其實這也是因為捨入誤差(rounding-error)的關係.&lt;/p&gt;
+&lt;p&gt;我們發現當 當 $h=1.0*10^{-8}$ 時, 其估計出來的微分值離真實值誤差最小, 其誤差為 $4.26 *10^{-8}$.&lt;/p&gt;
+&lt;p&gt;不過, WHY?? 為什麼誤差不會一直往下遞減? 其實這也是因為 &lt;strong&gt;捨入誤差(rounding-error)&lt;/strong&gt; 的關係.&lt;/p&gt;
 &lt;p&gt;觀察一下我們的式子
 $$
 \frac{f(a+h)-f(a)}{h}
@@ -2224,8 +2348,31 @@ $$
 \frac{f(a+h)-f(a) + \epsilon}{h}
 $$
 其中的 $\epsilon$ 就是捨入誤差. 所以, 我們計算的時候會多出了 $\frac{\epsilon}{h}$ 這麼多.&lt;/p&gt;
-&lt;p&gt;如果依我們之前所算的 $\epsilon\approx 10^{-16}$, 那當 $h=10^{-8}$ 時, 算出來的數字會多了大約 $\frac{10^{-16}}{10^{-8}} = 10^{-8}$.&lt;/p&gt;
-&lt;p&gt;而當 $h=10^{-13}$ 時, 算出來的數字會多了大約 $\frac{10^{-16}}{10^{-13}} = 10^{-3}$. 跟我們之前所發現的完全吻合!! 而這也就是為什麼當 $h$ 很靠近零的時候誤差會上升的原因.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h4 id=&#34;泰勒展開式&#34;&gt;泰勒展開式&lt;/h4&gt;
+&lt;p&gt;再深一點來說, 我們可以利用泰勒展開式知道
+$$
+\frac{f(a+h)-f(a)}{h} = f&amp;rsquo;(a) + \frac{h}{2}f&amp;rsquo;&#39;(\xi), \quad a\leq \xi \leq a+h.
+$$
+這個式子告訴我們, 用這方式算微分誤差應該是 $\frac{h}{2}f&amp;rsquo;&#39;(\xi) = O(h)$, 誤差會隨著 $h$ 減少而線性變小.&lt;/p&gt;
+&lt;p&gt;數學上我們有以上這個等式, 而數值計算上則是有以下這個等式
+$$
+\frac{f(a+h)-f(a) + \epsilon}{h} = f&amp;rsquo;(a) + \frac{h}{2}f&amp;rsquo;&#39;(\xi) + \frac{\epsilon}{h}, \quad a\leq \xi \leq a+h.
+$$
+也就是說, 真正的誤差公式應該是
+$$
+\frac{h}{2}f&amp;rsquo;&#39;(\xi) + \frac{\epsilon}{h},
+$$
+當 $h$ 非常小的時候 $\frac{\epsilon}{h}$ 這項就會變很大.&lt;/p&gt;
+&lt;p&gt;比如說, 依我們之前所算的 $\epsilon\approx 10^{-16}$, 那當 $h=10^{-8}$ 時, 算出來的數字會多了大約 $\frac{10^{-16}}{10^{-8}} = 10^{-8}$.&lt;/p&gt;
+&lt;p&gt;而當 $h=10^{-14}$ 時, 算出來的數字會多了大約 $\frac{10^{-16}}{10^{-14}} = 10^{-2}$. 跟我們之前所發現的完全吻合!! 而這也就是為什麼當 $h$ 很靠近零的時候誤差會上升的原因.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h4 id=&#34;optimal-h&#34;&gt;Optimal $h$&lt;/h4&gt;
+&lt;p&gt;那給定一個微分公式, 要怎麼知道 $h$ 能小到什麼程度呢? 一個簡單的感覺是這樣的, 由於誤差的第一項  $\frac{h}{2}f&amp;rsquo;&#39;(\xi)$ 會隨著 $h$ 變小而變小, 第二項 $\frac{\epsilon}{h}$ 則會變大, 因此整體最小值約會發生在兩項交叉時, 也就是當
+$$
+h \sim \frac{\epsilon}{h},
+$$
+(由於我們不知道 $f&amp;rsquo;&#39;(\xi)/2$ 是多少, 簡單起見設成 1). 上式稍微計算一下發現誤差最小值約發生在 $h=10^{-8}$, 誤差最小值則約為 $10^{-8}$.&lt;/p&gt;
 &lt;hr&gt;
 &lt;h3 id=&#34;summary&#34;&gt;Summary:&lt;/h3&gt;
 &lt;p&gt;最後總結一下:&lt;/p&gt;
@@ -2233,8 +2380,9 @@ $$
 &lt;li&gt;
 &lt;p&gt;我們可以用數值計算來估計一個函數在某點的微分值
 $$
-f&amp;rsquo;(a) = \lim_{h\to 0} \frac{f(a+h)-f(a)}{h}.
-$$&lt;/p&gt;
+f&amp;rsquo;(a) \approx \frac{f(a+h)-f(a)}{h}.
+$$
+這樣的做法稱為&lt;strong&gt;有限差分法 (finite difference method)&lt;/strong&gt;.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;不過計算時 $h$ 值不能無限取小, 需考慮到捨入誤差的影響.&lt;/p&gt;

@@ -255,6 +255,622 @@ $$&lt;/p&gt;
     </item>
     
     <item>
+      <title>Sec.13.4 - Kepler’s Laws</title>
+      <link>https://teshenglin.github.io/post/2020_cal_s13p4/</link>
+      <pubDate>Mon, 01 Jun 2020 00:00:00 +0000</pubDate>
+      <guid>https://teshenglin.github.io/post/2020_cal_s13p4/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;Applied Project in Sec.13.4, Calculus by Stewart&lt;br&gt;
+Chinese version 
+&lt;a href=&#34;https://teshenglin.github.io/post/2020_cal_s13p4_ch&#34;&gt;克卜勒定律&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Johannes Kepler stated the following three laws of planetary motion on the basis of massive amounts of data on the positions of the planets at various times.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Kepler’s Laws&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;A planet revolves around the sun in an elliptical orbit with the sun at one focus.&lt;/li&gt;
+&lt;li&gt;The line joining the sun to a planet sweeps out equal areas in equal times.&lt;/li&gt;
+&lt;li&gt;The square of the period of revolution of a planet is proportional to the cube of the length of the major axis of its orbit.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Kepler formulated these laws because they fitted the astronomical data. He wasn’t able to see why they were true or how they related to each other. But Sir Isaac Newton, in his &lt;em&gt;Principia Mathematica&lt;/em&gt; of 1687, showed how to deduce Kepler’s three laws from two of Newton’s own laws, the Second Law of Motion and the Law of Universal Gravitation. In Section 13.4 we proved Kepler’s First Law using the calculus of vector functions. In this project we guide you through the proofs of Kepler’s Second and Third Laws and explore some of their consequences.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Question 1&lt;/strong&gt;：  Use the following steps to prove Kepler’s Second Law. The notation is the same as in  the proof of the First Law in Section 13.4. In particular, use polar coordinates so that $\vec{r} = r\cos{\theta} \vec{i} + r\sin{\theta} \vec{j}$.&lt;/p&gt;
+&lt;p&gt;(a) Show that $\vec{h}=r^2 \frac{d\theta}{dt} \vec{k}$.&lt;/p&gt;
+&lt;p&gt;(b) Deduce that $r^2 \frac{d\theta}{dt}=h$.&lt;/p&gt;
+&lt;p&gt;(c) If $A=A(t)$ is the area swept out by the radius vector $r=r(t)$ in the time interval $[t_0, t]$. Show that
+$$
+\frac{dA}{dt}=\frac{1}{2}r^2\frac{d\theta}{dt}
+$$&lt;/p&gt;
+&lt;p&gt;(d) Deduce that
+$$
+\frac{dA}{dt}=\frac{1}{2}h= c,
+$$
+where $c$ is a constant. This says that the rate at which $A$ is swept out is constant and proves Kepler’s Second Law.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Solution&lt;/strong&gt;：&lt;/p&gt;
+&lt;p&gt;(a)
+$$
+\vec{h} = \vec{r} \times \vec{v} = \vec{r} \times \vec{r}&amp;rsquo; = ( r\cos{\theta} \vec{i} + r\sin{\theta} \vec{j}) \times \frac{d}{dt} (r\cos{\theta} \vec{i} + r\sin{\theta} \vec{j})
+$$
+$$
+= \ \left|\begin{array}{cccc}     i &amp;amp;    j    &amp;amp; k \\   r \cos\theta   &amp;amp;    r \sin\theta   &amp;amp; 0\\    -r \sin\theta \frac{ d\theta }{dt} &amp;amp; r \cos\theta \frac{ d\theta }{dt} &amp;amp; 0 \end{array}\right| = r^2 \frac{d\theta}{dt} \vec{k}
+$$&lt;/p&gt;
+&lt;p&gt;(b)
+$$
+h = |\vec{h}| =  r^2 \frac{d\theta}{dt}.
+$$&lt;/p&gt;
+&lt;p&gt;(c) $dA =  \frac{1}{2} (r)(r d\theta) =  \frac{1}{2} r^2 d\theta$, therefore, $\frac{dA}{dt} =  \frac{1}{2}(r^2 \frac{d\theta}{dt})$&lt;/p&gt;
+&lt;p&gt;(d) Combine (b) and (c), we can infer that $\frac{dA}{dt} =  \frac{1}{2} h =c$, where $c$ is a constant.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Question 2&lt;/strong&gt;： Let $T$ be the period of a planet about the sun; that is, $T$ is the time required for it to travel once around its elliptical orbit. Suppose that the lengths of the major and minor axes of the ellipse are $2a$ and $2b$.&lt;/p&gt;
+&lt;p&gt;(a) Use part (d) of Problem 1 to show that $T =2\pi ab h$.&lt;/p&gt;
+&lt;p&gt;(b) Show that
+$$
+\frac{h^2}{GM}=ed=\frac{b^2}{a}
+$$&lt;/p&gt;
+&lt;p&gt;(c) Use parts (a) and (b) to show that
+$$
+T^2=\frac{4\pi^2}{GM}a^3
+$$&lt;/p&gt;
+&lt;p&gt;This proves Kepler’s Third Law. [Notice that the proportionality constant $\frac{4\pi^2}{GM}$ is independent of the planet.]&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Solution&lt;/strong&gt;：&lt;/p&gt;
+&lt;p&gt;(a) We already know that  $\frac{dA}{dt} =  \frac{1}{2} h$, transposing the terms, we get $dt=\frac{2dA}{h}$. Then we integral both sides about one period, we get
+$$
+\int dt =T =\int \frac{2}{h}dA=\frac{2}{h}(\pi ab).
+$$
+Thus, $T=2\pi ab /h$.&lt;/p&gt;
+&lt;p&gt;(b) Recall that $e=\frac{c}{GM}$, and $d=\frac{h^2}{c}$. Therefore, $ed=\frac{h^2}{GM}$.&lt;/p&gt;
+&lt;p&gt;We also know that $\frac{b^2}{a}=l$, where $l$ is the semi-latus rectum of the orbit. By definition, $ed=l$, thus we can infer that $ed=\frac{h^2}{GM}=\frac{b^2}{a}$.&lt;/p&gt;
+&lt;p&gt;(c) Using parts (a) and (b), we know
+$$
+T^2=\frac{4\pi^2a^2b^2}{h^2}=4\pi^2a^2(\frac{a}{GM})=\frac{4\pi^2a^3}{GM}.
+$$&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Quesion 3&lt;/strong&gt;： The period of the earth’s orbit is approximately 365.25 days. Use this fact and Kepler’s Third Law to find the length of the major axis of the earth’s orbit. You will need the mass of the sun, $M=1.99\times 10^{30}kg$, and the gravitational constant, $G=6.67\times10^{-11}N-m^2/kg^2$.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Solution&lt;/strong&gt; ：&lt;/p&gt;
+&lt;p&gt;$$
+a^3=\frac{GMT^2}{4\pi^2}
+$$&lt;/p&gt;
+&lt;p&gt;$$
+a=(\frac{GMT^2}{4\pi^2})^{\frac{1}{3}}\approx149600000km
+$$&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Question 4&lt;/strong&gt;：  It’s possible to place a satellite into orbit about the earth so that it remains fixed above a given location on the equator. Compute the altitude that is needed for such a satellite.  The earth’s mass is $5.98\times 10^{24}kg$; its radius is $6.37\times 10^{6}m$.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Solution&lt;/strong&gt;：
+$$
+h=(\frac{GM_eT^2}{4\pi^2})^{\frac{1}{3}}-R\approx42.25\times10^6-6.37\times10^6=35880km
+$$&lt;/p&gt;
+&lt;hr&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Sec.13.4 - 克卜勒定律</title>
+      <link>https://teshenglin.github.io/post/2020_cal_s13p4_ch/</link>
+      <pubDate>Mon, 01 Jun 2020 00:00:00 +0000</pubDate>
+      <guid>https://teshenglin.github.io/post/2020_cal_s13p4_ch/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;Applied Project in Sec.13.4, Calculus by Stewart&lt;br&gt;
+英文版請見 
+&lt;a href=&#34;https://teshenglin.github.io/post/2020_cal_s13p4&#34;&gt;Kepler’s Laws&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;約翰尼斯‧克卜勒在有關不同時間行星位置的大量數據基礎上，提出了以下三個行星運動定律。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;克卜勒定律&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;每一個行星都沿各自的橢圓軌道環繞太陽，而太陽則處在橢圓的一個焦點中。&lt;/li&gt;
+&lt;li&gt;在相等時間內，太陽和行星連線所掃過的面積都是相等的。&lt;/li&gt;
+&lt;li&gt;各個行星繞太陽公轉週期的平方和它們的橢圓軌道的半長軸的立方成正比。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;克卜勒制定這些定律是因為它們符合天文數據。 他看不出它們為什麼是對的或它們之間如何相互聯繫。 但是，艾薩克·牛頓爵士在1687年的《數學原理》一書中展示如何從牛頓自己的兩個定律，第二運動定律和萬有引力定律中推論克卜勒的三個定律。 在第13.4節中，我們使用向量函數演算證明了克卜勒第一定律。 在本專題中，我們將指導你了解克卜勒第二定律和第三定律的證明，並探討其中的一些結果。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;問題 1&lt;/strong&gt;：  使用以下步驟來證明克卜勒第二定律，其記號與第13.4節中的第一定律證明相同。特別的是要使用極座標，意即 $\vec{r} = r\cos{\theta} \vec{i} + r\sin{\theta} \vec{j}$.&lt;/p&gt;
+&lt;p&gt;(a) 證明 $\vec{h}=r^2 \frac{d\theta}{dt} \vec{k}$.&lt;/p&gt;
+&lt;p&gt;(b) 解釋 $r^2 \frac{d\theta}{dt}=h$.&lt;/p&gt;
+&lt;p&gt;(c) 若 $A=A(t)$ 是向量 $r=r(t)$ 在時間間隔 $[t_0, t]$ 內掃過的面積, 證明
+$$
+\frac{dA}{dt}=\frac{1}{2}r^2\frac{d\theta}{dt}
+$$&lt;/p&gt;
+&lt;p&gt;(d) 解釋
+$$
+\frac{dA}{dt}=\frac{1}{2}h=c,
+$$
+其中 $c$ 是常數. 如此證明了克卜勒第二定律，即面積速率為定值。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;解&lt;/strong&gt;：&lt;/p&gt;
+&lt;p&gt;(a)
+$$
+\vec{h} = \vec{r} \times \vec{v} = \vec{r} \times \vec{r}&amp;rsquo; = ( r\cos{\theta} \vec{i} + r\sin{\theta} \vec{j}) \times \frac{d}{dt} (r\cos{\theta} \vec{i} + r\sin{\theta} \vec{j})
+$$
+$$
+= \ \left|\begin{array}{cccc}     i &amp;amp;    j    &amp;amp; k \\   r \cos\theta   &amp;amp;    r \sin\theta   &amp;amp; 0\\    -r \sin\theta \frac{ d\theta }{dt} &amp;amp; r \cos\theta \frac{ d\theta }{dt} &amp;amp; 0 \end{array}\right| = r^2 \frac{d\theta}{dt} \vec{k}
+$$&lt;/p&gt;
+&lt;p&gt;(b)
+$$
+h = |\vec{h}| =  r^2 \frac{d\theta}{dt}.
+$$&lt;/p&gt;
+&lt;p&gt;(c) $dA =  \frac{1}{2} (r)(r d\theta) =  \frac{1}{2} r^2 d\theta$, 因此, $\frac{dA}{dt} =  \frac{1}{2}(r^2 \frac{d\theta}{dt})$&lt;/p&gt;
+&lt;p&gt;(d) 結合 (b) 和 (c) ,可得 $\frac{dA}{dt} =  \frac{1}{2} h =c$, 其中 $c$ 是常數.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;問題 2&lt;/strong&gt;： 令 $T$ 是行星繞日之週期，$2a$ 為橢圓軌道長軸，$2b$ 為短軸。&lt;/p&gt;
+&lt;p&gt;(a)利用上題(d)小題證明 $T =2\pi ab /h$.&lt;/p&gt;
+&lt;p&gt;(b) 證明
+$$
+\frac{h^2}{GM}=ed=\frac{b^2}{a}
+$$&lt;/p&gt;
+&lt;p&gt;(c) 利用 (a) 和 (b) 小題證明
+$$
+T^2=\frac{4\pi^2}{GM}a^3
+$$&lt;/p&gt;
+&lt;p&gt;這證明了克卜勒第三定律. [注意比例常數 $\frac{4\pi^2}{GM}$ 與行星無關.]&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;解&lt;/strong&gt;：&lt;/p&gt;
+&lt;p&gt;(a) 已知  $\frac{dA}{dt}$ =  $\frac{1}{2} h$, 移項後可得 $dt=\frac{2dA}{h}$. 兩邊同時積分一個週期, 可得
+$$
+\int dt =T =\int \frac{2}{h}dA=\frac{2}{h}(\pi ab).
+$$
+因此, $T=2\pi ab /h$.&lt;/p&gt;
+&lt;p&gt;(b) 已知 $e=\frac{c}{GM}$, $d=\frac{h^2}{c}$. 因此, $ed=\frac{h^2}{GM}$.&lt;/p&gt;
+&lt;p&gt;又 $\frac{b^2}{a}=l$, 其中 $l$ 為軌道之半正焦弦長. 透過定義, $ed=l$, 可推得 $ed=\frac{h^2}{GM}=\frac{b^2}{a}$.&lt;/p&gt;
+&lt;p&gt;(c) 結合 (a) 和 (b) 小題, 可得
+$$
+T^2=\frac{4\pi^2a^2b^2}{h^2}=4\pi^2a^2(\frac{a}{GM})=\frac{4\pi^2a^3}{GM}.
+$$&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;問題 3&lt;/strong&gt;： 地球公轉周期約為 365.25 天.利用克卜勒第三定律找出半長軸. 其中太陽質量為 $M=1.99\times 10^{30}kg$, 重力常數為 $G=6.67\times10^{-11}N-m^2/kg^2$.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;解&lt;/strong&gt;：&lt;/p&gt;
+&lt;p&gt;$$
+a^3=\frac{GMT^2}{4\pi^2}
+$$&lt;/p&gt;
+&lt;p&gt;$$
+a=(\frac{GMT^2}{4\pi^2})^{\frac{1}{3}}\approx149600000km
+$$&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;問題 4&lt;/strong&gt;：  計算赤道上同步衛星之高度. 其中地球質量為 $5.98\times 10^{24}kg$; 地球半徑為 $6.37\times 10^{6}m$.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;解法&lt;/strong&gt;：
+$$
+h=(\frac{GM_eT^2}{4\pi^2})^{\frac{1}{3}}-R\approx42.25\times10^6-6.37\times10^6=35880km
+$$&lt;/p&gt;
+&lt;hr&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Sec.14.4 - The speedo LZR razer</title>
+      <link>https://teshenglin.github.io/post/2020_cal_s14p4/</link>
+      <pubDate>Sun, 31 May 2020 00:00:00 +0000</pubDate>
+      <guid>https://teshenglin.github.io/post/2020_cal_s14p4/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;Applied Project in Sec.14.4, Calculus by Stewart&lt;br&gt;
+Chinese version 
+&lt;a href=&#34;https://teshenglin.github.io/post/2020_cal_s14p4_ch&#34;&gt;速比濤鯊魚皮系列第四代泳裝&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Many technological advances have occurred in sports that have contributed to increased athletic performance. One of the best known is the introduction, in 2008, of the Speedo LZR racer. It was claimed that this full-body swimsuit reduced a swimmer’s drag in the water. Figure 1 shows the number of world records broken in men’s and women’s long-course freestyle swimming events from 1990 to 2011. The dramatic increase in 2008 when the suit was introduced led people to claim that such suits are a form of technological doping. As a result all full-body suits were banned from competition starting in 2010.&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://teshenglin.github.io/post/figs/2020_cal_s14p4_1.png&#34; &gt;
+
+
+  &lt;img src=&#34;https://teshenglin.github.io/post/figs/2020_cal_s14p4_1.png&#34; alt=&#34;&#34; width=&#34;600px&#34; &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;It might be surprising that a simple reduction in drag could have such a big effect on performance. We can gain some insight into this using a simple mathematical model.&lt;/p&gt;
+&lt;p&gt;The speed $v$ of an object being propelled through water is given by
+$$
+v(P,C)=\left(\frac{2P}{kC}\right)^{\frac{1}{3}},
+$$
+where $P$ is the power being used to propel the object, $C$ is the drag coefficient, and $k$ is a positive constant. Athletes can therefore increase their swimming speeds by increasing their power or reducing their drag coefficients. But how effective is each of these?&lt;/p&gt;
+&lt;p&gt;To compare the effect of increasing power versus reducing drag, we need to somehow compare the two in common units. The most common approach is to determine the percentage change in speed that results from a given percentage change in power and in drag.&lt;/p&gt;
+&lt;p&gt;If we work with percentages as fractions, then when power is changed by a fraction $x$ (with $x$ corresponding to $100x$ percent), $P$ changes from $P$ to $P + xP$. Likewise, if the drag coefficient is changed by a fraction $y$, this means that it has changed from $C$ to $C + yC$. Finally, the fractional change in speed resulting from both effects is
+$$
+f(x,y)=\frac{v(P+xP,C+yC)-v(P,C)}{v(P,C)}
+$$&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Question 1:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The function $f$  gives the fractional change in speed that results from a change $x$ in power and a change $y$ in drag. Show that this reduces to the function
+$$
+f(x,y)=\left(\frac{1+x}{1+y}\right)^{\frac{1}{3}}-1.
+$$
+Given the context, what is the domain of $f$?&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Find the formula of $f$:&lt;/p&gt;
+&lt;p&gt;$f(x,y)$ can be rewritten as
+$$
+f(x,y)=\frac{v(P(1+x),C(1+y))}{v(P,C)}-1
+$$
+Replace $v(P,C)$ with its formula
+$$
+f(x,y)=\frac{\left[\frac{2P(1+x)}{kC(1+y)}\right]^{1/3} }{\left(\frac{2P}{kC}\right)^{1/3}}-1
+$$
+$v(P,C)$ is greater than zero, and $v(P+xP,C+yC)$ is greater than or equal to zero. Thus, the roots of numerator and dominator can be combined together：
+$$
+f(x,y)=\left(\frac{1+x}{1+y}\right)^{\frac{1}{3}}-1
+$$&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Find the domain of $f$:&lt;/p&gt;
+&lt;p&gt;The power performed is obviously greater than or equal to zero.
+$$
+P+xP\geq 0
+$$
+The friction is always greater than zero in the real world. Hence, the drag is obviously greater than zero.
+$$
+C+yC&amp;gt;0
+$$
+In conclusion
+$$
+1+x\geq0,\qquad1+y&amp;gt;0
+$$
+The domain of $f$ is
+$$
+{(x,y)\mid x\geq-1,\quad y&amp;gt;-1}
+$$&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Question 2:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Suppose that the possible changes in power $x$ and drag $y$ are small. Find the linear approximation to the function $f(x, y)$. What does this approximation tell you about the effect of a small increase in power versus a small decrease in drag?&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Find the linear approximation to the function $f$&lt;/p&gt;
+&lt;p&gt;The changes in power $x$ and drag $y$ are small. It means that $x$ and $y$ are closed to zero. Applied linear approximation at the point $(0,0)$
+$$
+f(x,y)\approx f(0,0)+f_x(0,0)(x-0)+f_y(0,0)(y-0)
+$$
+Calculate  $f_x$
+$$
+\frac{\partial f}{\partial x} =\frac{1}{3}(1+x)^{-\frac{2}{3}}(1+y)^{-\frac{1}{3}}
+$$
+Calculate  $f_y$
+$$
+\frac{\partial f}{\partial y}=-\frac{1}{3}(1+x)^{\frac{1}{3}}(1+y)^{-\frac{4}{3}}
+$$
+Calculate  $f_x(0,0)$ and  $f_y(0,0)$
+$$
+f_x(0,0)=\frac{1}{3} \quad f_y(0,0)=-\frac{1}{3}
+$$
+$f(0,0)=0$, therefore, the linear approximation to  $f$  at $(0, 0)$ is
+$$
+f(x,y)\approx \frac{1}{3}x-\frac{1}{3}y
+$$&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The effect of a small increase in power vs. a small decrease in drag&lt;/p&gt;
+&lt;p&gt;According to the linear approximation to the function $f$ , the small increase in power $x$ and the small decrease in drag $y$ have the same impact on changes in speed $f$ with the proportion of one-third. Consequently, in terms of the fractional change in speed, there is no significant difference between the small increase in power and the small decrease in drag.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Question 3:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Calculate $f_{xx}(x, y)$ and $f_{yy}(x, y)$. Based on the signs of these derivatives, does the linear approximation in Problem 2 result in an overestimate or an underestimate for an increase in power? What about for a decrease in drag? Use your answer to explain why, for changes in power or drag that are not very small, a decrease in drag is more effective.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Evaluate whether the linear approximation in Problem 2 is overestimated or underestimated&lt;/p&gt;
+&lt;p&gt;Calculate $f_{xx}(x, y)$ and $f_{yy}(x, y)$
+$$
+\frac{\partial^2 f}{\partial x^2} = -\frac{2}{9}(1+x)^{-\frac{5}{3}}(1+y)^{-\frac{1}{3}}&amp;lt;0
+$$
+$$
+\frac{\partial^2 f}{\partial y^2} = \frac{4}{9}(1+x)^{\frac{1}{3}}(1+y)^{-\frac{7}{3}}&amp;gt;0
+$$&lt;/p&gt;
+&lt;p&gt;$f$ is a &lt;em&gt;concave&lt;/em&gt; function with respect to $x$, which means the linear approximation result in an &lt;em&gt;overestimate&lt;/em&gt; for the impact on an increase in power.
+$$
+f(x,0)&amp;lt;\frac{1}{3}x
+$$
+$f$ is a &lt;em&gt;convex&lt;/em&gt; function with respect to $y$, which means the linear approximation result in an &lt;em&gt;underestimate&lt;/em&gt; for the impact on an decrease in drag.
+$$
+f(0,y)&amp;gt;-\frac{1}{3}y
+$$&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Explain why a decrease in drag is more effective when the changes are not very small&lt;/p&gt;
+&lt;p&gt;Suppose that the increase in power and the decrease in drag are equal to a constant $c &amp;gt;0$
+$$
+c=x=-y
+$$
+Determine whether $f$ is more sensitive to changes in $x$ or $y$
+$$
+\frac{\Delta f(c,0)}{\Delta f(0,-c)}=\frac{f(c,0)-f(0,0)}{f(0,-c)-f(0,0)}=\frac{f(c,0)}{f(0,-c)}&amp;lt;\frac{\frac{1}{3}c}{\frac{1}{3}c}=1
+$$
+Consequently, for changes in power or drag that are not very small, a decrease in drag is more effective.
+$$
+\Delta f(0,-c)&amp;gt;\Delta f(c,0)\quad (c&amp;gt;0)
+$$&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Question 4:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Graph the level curves of $f(x, y)$. Explain how the shapes of these curves relate to your answers to Problems 2 and 3.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;For a given constant $h$, suppose $f(x,y)=h$
+$$
+f(x,y)=\left(\frac{1+x}{1+y}\right)^{\frac{1}{3}}-1=h
+$$
+Rearrange the equation and  then get the formula of the level curve
+$$
+y=\frac{x}{(1+h)^3}+\frac{1}{(1+h)^3}-1
+$$
+Graph the level curve with h= -0.75, -0.5, -0.25, 0, 0.05, 0.25, 0.5, 0.75, 1&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://teshenglin.github.io/post/figs/2020_cal_s14p4_2.png&#34; &gt;
+
+
+  &lt;img src=&#34;https://teshenglin.github.io/post/figs/2020_cal_s14p4_2.png&#34; alt=&#34;&#34; width=&#34;600px&#34; &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;A little changes in power or drags&lt;/p&gt;
+&lt;p&gt;Suppose that a little changes in power or drags at point $(0, 0)$ leads to a change in $h$ from $h=0$ to $h=0.05$. In order to reach $h=0.05$ from point $(0, 0)$, the power has to increase about $0.158$ (point A), or the drag has to decrease about $0.136$ (point B). These two value are closed to each other. The result correspond with the answer of Problem 2.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;A considerable changes in power or drags&lt;/p&gt;
+&lt;p&gt;Suppose that a considerable changes in power or drags at point $(0, 0)$ leads to a change in $h$ from $h=0$ to $h=0.5$. In order to reach $h=0.5$ from point $(0, 0)$, the power has to increase about $2.38$ (point D), or the drag has to decrease $0.704$ (point C).  The decrease in drag is about 3.4 times more efficient than the increase in power. $(2.38/0.74=3.4)$ The result correspond with the answer of Problem 3.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Sec.14.4 - 速比濤鯊魚皮系列第四代泳裝</title>
+      <link>https://teshenglin.github.io/post/2020_cal_s14p4_ch/</link>
+      <pubDate>Sun, 31 May 2020 00:00:00 +0000</pubDate>
+      <guid>https://teshenglin.github.io/post/2020_cal_s14p4_ch/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;Applied Project in Sec.14.4, Calculus by Stewart&lt;br&gt;
+英文版請見 
+&lt;a href=&#34;https://teshenglin.github.io/post/2020_cal_s14p4&#34;&gt;The speedo LZR razer&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;在體育運動中, 許多科技的進步讓運動員的表現更好. 最廣為人知的例子之一就是速比濤在2008年時推出鯊魚皮系列第四代泳裝, 宣稱這個連身泳衣可以減少泳者在水中的阻力. 圖1 顯示1990年到2011年男性和女性在長程自由式的賽事中打破世界紀錄的數量, 可以發現在2008年時數量大大的增加, 恰好是那款泳衣推出的時候, 這讓大家覺得這種泳衣根本就是一種科技的「禁藥」, 結果2010年以後所有的連身泳衣在競賽中都被禁止使用.&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://teshenglin.github.io/post/figs/2020_cal_s14p4_1.png&#34; &gt;
+
+
+  &lt;img src=&#34;https://teshenglin.github.io/post/figs/2020_cal_s14p4_1.png&#34; alt=&#34;&#34; width=&#34;600px&#34; &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;可能會讓人驚訝的是純粹減少阻力竟然可以在表現上有這麼大的影響力! 我們可以藉由簡單的數學模型更深入的探討這個現象.&lt;/p&gt;
+&lt;p&gt;在水中物體被驅動的速率 $v$ 公式如下
+$$
+v(P,C)=\left( \frac{2P}{kC}\right)^{\frac{1}{3}},
+$$
+其中 $P$ 代表驅動物體所使用的功率, $C$ 是阻力係數, $k$ 是一個大於零的定值. 因此, 運動員可以藉由增加功率或是減少阻力係數來增加游泳速率, 但是這兩個因素影響速率的效果如何呢?&lt;/p&gt;
+&lt;p&gt;為了比較「增加功率」和「減少阻力」的影響, 我們需要以某種方式在共同的單位下比較兩者的差異. 最常見的方法就是給定一個功率或是阻力的百分比變化率, 測定速率隨之改變多少百分比.&lt;/p&gt;
+&lt;p&gt;若我們以分數的形式代表百分比, 則當功率被改變 $x$ 的比例後($x$對應到 $100x$), $P$ 會變化成 $P + xP$. 同理, 若阻力係數被改變 $y$ 的比例, $C$ 會變化成 $C + yC$. 最後, 這兩個因素造成的速率比例的改變為:
+$$
+f(x,y)=\frac{v(P+xP,C+yC)-v(P,C)}{v(P,C)}.
+$$&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;問題 1:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;函數 $f$ 代表功率的改變比例 $x$ 和阻力的改變比例 $y$ 所造成的速率改變比例, 請說明這個函數可以簡化成
+$$
+f(x,y)=\left(\frac{1+x}{1+y}\right)^{\frac{1}{3}}-1
+$$
+由文字給定的敘述中, 請問函數 $f$ 的定義域為何?&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;解&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;找出 $f$ 的公式&lt;/p&gt;
+&lt;p&gt;$f(x,y)$ 可以被重新寫成
+$$
+f(x,y)=\frac{v(P(1+x),C(1+y))}{v(P,C)}-1
+$$
+帶入 $v(P,C)$ 的公式
+$$
+f(x,y)=\frac{\left[\frac{2P(1+x)}{kC(1+y)}\right]^{1/3} }{\left(\frac{2P}{kC}\right)^{1/3}}-1
+$$
+$v(P,C)$ 大於零且 $v(P+xP,C+yC)$ 大於等於零. 因此, 分子和分母的根號可以結合一起計算:
+$$
+f(x,y)=\left(\frac{1+x}{1+y}\right)^{\frac{1}{3}}-1
+$$&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;找出 $f$ 的定義域&lt;/p&gt;
+&lt;p&gt;所做的功率必定大於等於零:
+$$
+P+xP\geq 0
+$$
+現實生活中必定存在磨擦, 阻力係數大於零:
+$$
+C+yC&amp;gt;0
+$$
+總結以上
+$$
+1+x\geq0, \qquad 1+y&amp;gt;0
+$$
+因此 $f$ 的定義域為
+$$
+\{ (x,y)\mid x\geq-1,\quad y&amp;gt;-1 \}
+$$&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;問題 2:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;假設功率的改變比例 $x$ 和阻力的改變比例 $y$ 很小, 找出 $f(x, y)$ 的線性近似. 請問這個近似告訴你關於「增加功率」和「減少阻力」的影響存在哪些差異?&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;解&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;找出函數 $f$ 的線性近似&lt;/p&gt;
+&lt;p&gt;功率的改變比例 $x$ 和阻力的改變比例 $y$ 很小意味著 $x$ 和 $y$ 很接近零, 在點 $(0,0)$ 使用線性逼近法
+$$
+f(x,y)\approx f(0,0)+f_x(0,0)(x-0)+f_y(0,0)(y-0)
+$$
+計算 $f_x$
+$$
+\frac{\partial f}{\partial x} =\frac{1}{3}(1+x)^{-\frac{2}{3}}(1+y)^{-\frac{1}{3}}
+$$
+計算 $f_y$
+$$
+\frac{\partial f}{\partial y}=-\frac{1}{3}(1+x)^{\frac{1}{3}}(1+y)^{-\frac{4}{3}}
+$$
+計算 $f_x(0,0)$ 和 $f_y(0,0)$
+$$
+f_x(0,0)=\frac{1}{3} \quad f_y(0,0)=-\frac{1}{3}
+$$
+因為 $f(0,0)=0$, 得 $f$ 在點 $(0,0)$ 的線性近似為
+$$
+f(x,y)\approx \frac{1}{3}x-\frac{1}{3}y
+$$&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;比較「增加功率」和「減少阻力」的影響&lt;/p&gt;
+&lt;p&gt;根據函數 $f$ 線性逼近的結果, 增加功率 $x$ 或減少阻力 $y$ 所造成速率的增加比例都是三分之一. 因此, 對於速率的增加比例而言, 少量增加功率抑或是少量減少阻力所造成的影響並沒有差異.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;問題 3:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;計算 $f_{xx}(x, y)$ 和 $f_{yy}(x, y)$. 根據這些導數的正負號, 請問題目2的線性近似對於「增加功率」是低估還是高估呢? 那麼對於「減少阻力」呢? 利用你的答案解釋為什麼在功率或阻力的變化量不小的情況下, 「減少阻力」比較有效率?&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;解&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;評估問題2的線性近似究竟是高估還是低估&lt;/p&gt;
+&lt;p&gt;計算 $f_{xx}(x, y)$ 和 $f_{yy}(x, y)$
+$$
+\frac{\partial^2 f}{\partial x^2} = -\frac{2}{9}(1+x)^{-\frac{5}{3}}(1+y)^{-\frac{1}{3}}&amp;lt;0
+$$
+$$
+\frac{\partial^2 f}{\partial y^2} = \frac{4}{9}(1+x)^{\frac{1}{3}}(1+y)^{-\frac{7}{3}}&amp;gt;0
+$$&lt;/p&gt;
+&lt;p&gt;$f$ 對於 $x$ 而言是凸函數 (a &lt;em&gt;concave&lt;/em&gt; function), 這意味著線性近似高估了「增加功率」的影響.
+$$
+f(x,0)&amp;lt;\frac{1}{3}x
+$$
+$f$ 對於 $y$ 而言是凹函數 (a &lt;em&gt;convex&lt;/em&gt; function), 這意味著線性近似低估了「減少阻力」的影響.
+$$
+f(0,y)&amp;gt;-\frac{1}{3}y
+$$&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;解釋為什麼在變化量大的時候「減少阻力」比較有效率&lt;/p&gt;
+&lt;p&gt;假設功率的增加量和阻力的減少量等於定值 $c &amp;gt;0$
+$$
+c=x=-y
+$$
+判斷 $f$  對於 $x$ 或 $y$ 的改變何者比較敏感
+$$
+\frac{\Delta f(c,0)}{\Delta f(0,-c)}=\frac{f(c,0)-f(0,0)}{f(0,-c)-f(0,0)}=\frac{f(c,0)}{f(0,-c)}&amp;lt;\frac{\frac{1}{3}c}{\frac{1}{3}c}=1
+$$
+因此，在功率或阻力的變化量不小的情況下, 「減少阻力」比較有效.
+$$
+\Delta f(0,-c)&amp;gt;\Delta f(c,0)\quad (c&amp;gt;0)
+$$&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;問題 4:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;畫出 $f(x, y)$ 的等高線圖, 解釋這些等高線的形狀和問題 2 和 3 有哪些關聯性.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;解&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;給定一個定值$h$, 令 $f(x,y)=h$
+$$
+f(x,y)=\left(\frac{1+x}{1+y}\right)^{\frac{1}{3}}-1=h
+$$
+重新整理方程式，然後得到等高線的公式
+$$
+y=\frac{x}{(1+h)^3}+\frac{1}{(1+h)^3}-1
+$$
+畫出在 h= -0.75, -0.5, -0.25, 0, 0.05, 0.25, 0.5, 0.75, 1的等高線&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://teshenglin.github.io/post/figs/2020_cal_s14p4_2.png&#34; &gt;
+
+
+  &lt;img src=&#34;https://teshenglin.github.io/post/figs/2020_cal_s14p4_2.png&#34; alt=&#34;&#34; width=&#34;600px&#34; &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;當功率和阻力變化量很小&lt;/p&gt;
+&lt;p&gt;假設在點 $(0, 0)$ 時很小的功率和阻力變化量導致 $h$ 從 $h=0$ 變化成 $h=0.05$. 為了從點 $(0,0)$ 達到 $h=0.05$, 功率需要增加大約 $0.158$ (點 A) 或者是阻力需要增加大概 $0.136$ (點 B), 這兩個值相當接近, 這個結果呼應了問題 2 的答案.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;當功率和阻力變化量較大&lt;/p&gt;
+&lt;p&gt;假設在點 $(0, 0)$ 時較大的功率和阻力變化量導致 $h$ 從 $h=0$ 變化成 $h=0.5$. 為了從點 $(0, 0)$ 達到 $h=0.5$, 功率需要增加大約 $2.38$ (點 D) 或者是阻力需要增加大概 $0.704$ (點 C), 可見「減少阻力」比「增加功率」的效率還要高出約 $3.4$倍 ($2.38/0.74=3.4$), 這個結果呼應了問題 3 的答案.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Sec.12.4 - The Geometry of a Tetrahedron</title>
       <link>https://teshenglin.github.io/post/2020_cal_s12p4/</link>
       <pubDate>Fri, 29 May 2020 00:00:00 +0000</pubDate>
@@ -4157,7 +4773,7 @@ $$&lt;/li&gt;
       <pubDate>Wed, 11 Dec 2019 00:00:00 +0000</pubDate>
       <guid>https://teshenglin.github.io/post/2019_numerical_integration/</guid>
       <description>&lt;blockquote&gt;
-&lt;p&gt;在微積分課程裡我們有學到積分的&#39;中點法&amp;rsquo;, &amp;lsquo;梯形法&#39;以及&#39;辛普森法&amp;rsquo;. 這裡我們簡介一些基本概念並且引進高斯積分法.&lt;/p&gt;
+&lt;p&gt;在微積分課程裡我們有學到積分的&amp;rsquo;中點法&amp;rsquo;, &amp;lsquo;梯形法&amp;rsquo;以及&amp;rsquo;辛普森法&amp;rsquo;. 這裡我們簡介一些基本概念並且引進高斯積分法.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h4 id=&#34;goal-任意給定一可積分函數-fx-xin-1-1-我們想要算-int1_-1-fx-dx&#34;&gt;Goal: 任意給定一可積分函數 $f(x)$, $x\in[-1, 1]$, 我們想要算 $\int^1_{-1} f(x) dx$.&lt;/h4&gt;
 &lt;hr&gt;
@@ -4200,13 +4816,13 @@ $$&lt;/li&gt;
 &lt;/ol&gt;
 &lt;hr&gt;
 &lt;blockquote&gt;
-&lt;p&gt;接著我們稍微推廣一下, 並且介紹所謂的&#39;高斯積分&amp;rsquo;.&lt;/p&gt;
+&lt;p&gt;接著我們稍微推廣一下, 並且介紹所謂的&amp;rsquo;高斯積分&amp;rsquo;.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;&lt;strong&gt;Question:&lt;/strong&gt; 假設我們現在想要用函數在 $x=0$ 這個點的值來估算積分, 那係數要取多少會最好?&lt;/p&gt;
 &lt;p&gt;也就是說我們假設
 $$\int^1_{-1}f(x),dx\approx A_0f(0),$$
 其中 $A_0$ 是個常數. 那 $A_0$ 要選哪個數字, 這個積分公式才會算的最準?&lt;/p&gt;
-&lt;p&gt;依照我們之前的想法, 要讓積分式準就是要讓他把多項式算準. 所以我們希望他至少能把常數函數算準. 這樣的話很容易就看出 $A_0=2$, 也就是&#39;中點法&amp;rsquo;.&lt;/p&gt;
+&lt;p&gt;依照我們之前的想法, 要讓積分式準就是要讓他把多項式算準. 所以我們希望他至少能把常數函數算準. 這樣的話很容易就看出 $A_0=2$, 也就是&amp;rsquo;中點法&amp;rsquo;.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Question:&lt;/strong&gt; 假設我們現在想要用函數在 $x=-1$ 以及 $x=1$ 這兩個點的值來估算積分, 那係數要取多少會最好?&lt;/p&gt;
 &lt;p&gt;也就是說我們假設
 $$\int^1_{-1}f(x),dx\approx \alpha f(-1)+\beta f(1),$$
@@ -5145,54 +5761,178 @@ $$&lt;/p&gt;
 &lt;p&gt;$$
 f&amp;rsquo;(\pi) = \lim_{h\to 0} \frac{(\pi+h)^2-\pi^2}{h}.
 $$&lt;/p&gt;
-&lt;p&gt;接著我們將 $h$ 取靠近 $0$ 的 $1000$ 的點並帶入上列這個式子試著來算其極限值.&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;1000×2 Array{Float64,2}:
- 1.0    7.28319
- 0.999  7.28219
- 0.998  7.28119
- 0.997  7.28019
- 0.996  7.27919
- ⋮
- 0.005  6.28819
- 0.004  6.28719
- 0.003  6.28619
- 0.002  6.28519
- 0.001  6.28419
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;上列數字左邊是 $h$ 值, 右邊為估計的微分值. 我們發現的確這個數字會越來越接近真實的解, 也就是 $2\pi$, 約等於 $6.283185307179586$.&lt;/p&gt;
-&lt;p&gt;接著我們算一下這個值與真實值 $2\pi$ 之間的差, 我們取其絕對值來表示&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;1000×2 Array{Float64,2}:
- 1.0    1.0
- 0.999  0.999
- 0.998  0.998
- 0.997  0.997
- 0.996  0.996
- ⋮
- 0.005  0.005
- 0.004  0.004
- 0.003  0.003
- 0.002  0.002
- 0.001  0.001
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;的確, 當 $x$ 越來越靠近 $\pi$ 時這個估計出來的微分值離 $2\pi$ 的距離越來越小.&lt;/p&gt;
+&lt;p&gt;接著我們將 $h$ 取靠近 $0$ 的 $11$ 的點並帶入上列這個式子試著來算其極限值. &lt;code&gt;Julia&lt;/code&gt; 程式如下&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;h &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; range(&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;0.01&lt;/span&gt;, length&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;11&lt;/span&gt;); h &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; h[&lt;span style=&#34;color:#ae81ff&#34;&gt;11&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;];
+fp &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; ((pi&lt;span style=&#34;color:#f92672&#34;&gt;.+&lt;/span&gt;h)&lt;span style=&#34;color:#f92672&#34;&gt;.^&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;.-&lt;/span&gt; pi&lt;span style=&#34;color:#f92672&#34;&gt;^&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;)&lt;span style=&#34;color:#f92672&#34;&gt;./&lt;/span&gt;h;
+hcat(h, fp, fp&lt;span style=&#34;color:#f92672&#34;&gt;.-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;pi)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;結果如下:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;$h$&lt;/th&gt;
+&lt;th&gt;$f&#39;$&lt;/th&gt;
+&lt;th&gt;$f&amp;rsquo;-2\pi$&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;0.01&lt;/td&gt;
+&lt;td&gt;6.29319&lt;/td&gt;
+&lt;td&gt;0.01&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;0.009&lt;/td&gt;
+&lt;td&gt;6.29219&lt;/td&gt;
+&lt;td&gt;0.009&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;0.008&lt;/td&gt;
+&lt;td&gt;6.29119&lt;/td&gt;
+&lt;td&gt;0.008&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;0.007&lt;/td&gt;
+&lt;td&gt;6.29019&lt;/td&gt;
+&lt;td&gt;0.007&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;0.006&lt;/td&gt;
+&lt;td&gt;6.28919&lt;/td&gt;
+&lt;td&gt;0.006&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;0.005&lt;/td&gt;
+&lt;td&gt;6.28819&lt;/td&gt;
+&lt;td&gt;0.005&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;0.004&lt;/td&gt;
+&lt;td&gt;6.28719&lt;/td&gt;
+&lt;td&gt;0.004&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;0.003&lt;/td&gt;
+&lt;td&gt;6.28619&lt;/td&gt;
+&lt;td&gt;0.003&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;0.002&lt;/td&gt;
+&lt;td&gt;6.28519&lt;/td&gt;
+&lt;td&gt;0.002&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;0.001&lt;/td&gt;
+&lt;td&gt;6.28419&lt;/td&gt;
+&lt;td&gt;0.001&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;上列數字最左邊是 $h$ 值, 中間為估計的微分值. 我們發現的確這個數字會越來越接近真實的解, 也就是 $2\pi$, 約等於 $6.283185307179586$. 最右邊為這個估算值與真實值 $2\pi$ 之間的差. 的確, 當 $h$ 越接近零, 這個估計出來的微分值離 $2\pi$ 的距離越來越小.&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Question:&lt;/strong&gt; 用數值計算微分能有多精確? 這個誤差能不能一直遞減下去?&lt;/p&gt;
 &lt;p&gt;接著我們取更多靠近 $0$ 的點來計算微分的極限值, 我們列出其與真實值 $2\pi$ 之間的差, 並且把它畫出來.&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;241×2 Array{Float64,2}:
- 0.00673795   0.00673795
- 0.00609675   0.00609675
- 0.00551656   0.00551656
- 0.00499159   0.00499159
- 0.00451658   0.00451658
- ⋮
- 3.7947e-13   0.00576551
- 3.43359e-13  0.00259406
- 3.10684e-13  0.000421242
- 2.81119e-13  0.00220945
- 2.54367e-13  0.001922
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;觀察最後一列數字發現, 當 $h=2.54367*10^{-13}$ 時, 估計出來的微分值與真實值差了 $0.001922$ 這麼多!!&lt;/p&gt;
-&lt;p&gt;我們把它畫出來看看, 橫軸是 $h$, 縱軸是 $\left|\frac{(\pi+h)^2-\pi^2}{h}-2\pi\right|,$ 發現雖然誤差在 $h$ 大的時候遞減, 不過當 $h$ 接近零的時候卻又遞增上去了.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;h &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; range(&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;16&lt;/span&gt;, length&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;16&lt;/span&gt;); h &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;10.0&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.^&lt;/span&gt;(&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;h[&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;16&lt;/span&gt;]);
+fp &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; ((pi&lt;span style=&#34;color:#f92672&#34;&gt;.+&lt;/span&gt;h)&lt;span style=&#34;color:#f92672&#34;&gt;.^&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;.-&lt;/span&gt; pi&lt;span style=&#34;color:#f92672&#34;&gt;^&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;)&lt;span style=&#34;color:#f92672&#34;&gt;./&lt;/span&gt;h;
+hcat(h, fp, abs&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;(fp&lt;span style=&#34;color:#f92672&#34;&gt;.-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;pi))
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;結果如下:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;$h$&lt;/th&gt;
+&lt;th&gt;$f&#39;$&lt;/th&gt;
+&lt;th&gt;$abs(f&amp;rsquo;-2\pi)$&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;0.1&lt;/td&gt;
+&lt;td&gt;6.38319&lt;/td&gt;
+&lt;td&gt;0.1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;0.01&lt;/td&gt;
+&lt;td&gt;6.29319&lt;/td&gt;
+&lt;td&gt;0.01&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;0.001&lt;/td&gt;
+&lt;td&gt;6.28419&lt;/td&gt;
+&lt;td&gt;0.001&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;0.0001&lt;/td&gt;
+&lt;td&gt;6.28329&lt;/td&gt;
+&lt;td&gt;0.0001&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;1.0e-5&lt;/td&gt;
+&lt;td&gt;6.2832&lt;/td&gt;
+&lt;td&gt;9.99998e-6&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;1.0e-6&lt;/td&gt;
+&lt;td&gt;6.28319&lt;/td&gt;
+&lt;td&gt;1.00006e-6&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;1.0e-7&lt;/td&gt;
+&lt;td&gt;6.28319&lt;/td&gt;
+&lt;td&gt;9.5898e-8&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;1.0e-8&lt;/td&gt;
+&lt;td&gt;6.28319&lt;/td&gt;
+&lt;td&gt;4.26073e-8&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;1.0e-9&lt;/td&gt;
+&lt;td&gt;6.28319&lt;/td&gt;
+&lt;td&gt;2.20243e-7&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;1.0e-10&lt;/td&gt;
+&lt;td&gt;6.28319&lt;/td&gt;
+&lt;td&gt;1.9966e-6&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;1.0e-11&lt;/td&gt;
+&lt;td&gt;6.28315&lt;/td&gt;
+&lt;td&gt;3.35305e-5&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;1.0e-12&lt;/td&gt;
+&lt;td&gt;6.28297&lt;/td&gt;
+&lt;td&gt;0.000211166&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;1.0e-13&lt;/td&gt;
+&lt;td&gt;6.27054&lt;/td&gt;
+&lt;td&gt;0.0126457&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;1.0e-14&lt;/td&gt;
+&lt;td&gt;6.39488&lt;/td&gt;
+&lt;td&gt;0.111699&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;1.0e-15&lt;/td&gt;
+&lt;td&gt;5.32907&lt;/td&gt;
+&lt;td&gt;0.954115&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;1.0e-16&lt;/td&gt;
+&lt;td&gt;0.0&lt;/td&gt;
+&lt;td&gt;6.28319&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;觀察最後一下發現, 當 $h$ 很小時微分竟然與真實質差更多, 更不準了!! 比如說當 $h=10^{-14}$ 時, 誤差竟然大到約是 $10^{-1}$.&lt;/p&gt;
+&lt;p&gt;我們把它畫出來看看, &lt;code&gt;Julia&lt;/code&gt; code 如下:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;using&lt;/span&gt; Plots
+plot(log10&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;(h), log10&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;(abs&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;(fp&lt;span style=&#34;color:#f92672&#34;&gt;.-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;pi)),label&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Error&amp;#34;&lt;/span&gt;)
+xlabel!(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;log10(h)&amp;#34;&lt;/span&gt;)
+ylabel!(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;log10(Error)&amp;#34;&lt;/span&gt;)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;發現雖然誤差在 $h$ 大的時候遞減, 不過當 $h$ 接近零的時候卻又遞增上去了.&lt;/p&gt;
 
 
 
@@ -5211,10 +5951,10 @@ $$&lt;/p&gt;
 &lt;figure&gt;
 
 
-  &lt;a data-fancybox=&#34;&#34; href=&#34;https://teshenglin.github.io/post/figs/output_22_0.svg&#34; &gt;
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://teshenglin.github.io/post/figs/2019_derivative_evaulate_01.svg&#34; &gt;
 
 
-  &lt;img src=&#34;https://teshenglin.github.io/post/figs/output_22_0.svg&#34; alt=&#34;&#34; width=&#34;400px&#34; &gt;
+  &lt;img src=&#34;https://teshenglin.github.io/post/figs/2019_derivative_evaulate_01.svg&#34; alt=&#34;&#34; width=&#34;600px&#34; &gt;
 &lt;/a&gt;
 
 
@@ -5222,8 +5962,8 @@ $$&lt;/p&gt;
 &lt;/figure&gt;
 
 &lt;p&gt;那誤差最小值出現在什麼時候呢?&lt;/p&gt;
-&lt;p&gt;我們發現當 當 $h=5.1 *10^{-8}$ 時, 其估計出來的微分值離真實值誤差最小, 其誤差為 $7.3 *10^{-9}$.&lt;/p&gt;
-&lt;p&gt;不過, WHY?? 為什麼誤差不會一直往下遞減? 其實這也是因為捨入誤差(rounding-error)的關係.&lt;/p&gt;
+&lt;p&gt;我們發現當 當 $h=1.0*10^{-8}$ 時, 其估計出來的微分值離真實值誤差最小, 其誤差為 $4.26 *10^{-8}$.&lt;/p&gt;
+&lt;p&gt;不過, WHY?? 為什麼誤差不會一直往下遞減? 其實這也是因為 &lt;strong&gt;捨入誤差(rounding-error)&lt;/strong&gt; 的關係.&lt;/p&gt;
 &lt;p&gt;觀察一下我們的式子
 $$
 \frac{f(a+h)-f(a)}{h}
@@ -5233,8 +5973,31 @@ $$
 \frac{f(a+h)-f(a) + \epsilon}{h}
 $$
 其中的 $\epsilon$ 就是捨入誤差. 所以, 我們計算的時候會多出了 $\frac{\epsilon}{h}$ 這麼多.&lt;/p&gt;
-&lt;p&gt;如果依我們之前所算的 $\epsilon\approx 10^{-16}$, 那當 $h=10^{-8}$ 時, 算出來的數字會多了大約 $\frac{10^{-16}}{10^{-8}} = 10^{-8}$.&lt;/p&gt;
-&lt;p&gt;而當 $h=10^{-13}$ 時, 算出來的數字會多了大約 $\frac{10^{-16}}{10^{-13}} = 10^{-3}$. 跟我們之前所發現的完全吻合!! 而這也就是為什麼當 $h$ 很靠近零的時候誤差會上升的原因.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h4 id=&#34;泰勒展開式&#34;&gt;泰勒展開式&lt;/h4&gt;
+&lt;p&gt;再深一點來說, 我們可以利用泰勒展開式知道
+$$
+\frac{f(a+h)-f(a)}{h} = f&amp;rsquo;(a) + \frac{h}{2}f&amp;rsquo;&#39;(\xi), \quad a\leq \xi \leq a+h.
+$$
+這個式子告訴我們, 用這方式算微分誤差應該是 $\frac{h}{2}f&amp;rsquo;&#39;(\xi) = O(h)$, 誤差會隨著 $h$ 減少而線性變小.&lt;/p&gt;
+&lt;p&gt;數學上我們有以上這個等式, 而數值計算上則是有以下這個等式
+$$
+\frac{f(a+h)-f(a) + \epsilon}{h} = f&amp;rsquo;(a) + \frac{h}{2}f&amp;rsquo;&#39;(\xi) + \frac{\epsilon}{h}, \quad a\leq \xi \leq a+h.
+$$
+也就是說, 真正的誤差公式應該是
+$$
+\frac{h}{2}f&amp;rsquo;&#39;(\xi) + \frac{\epsilon}{h},
+$$
+當 $h$ 非常小的時候 $\frac{\epsilon}{h}$ 這項就會變很大.&lt;/p&gt;
+&lt;p&gt;比如說, 依我們之前所算的 $\epsilon\approx 10^{-16}$, 那當 $h=10^{-8}$ 時, 算出來的數字會多了大約 $\frac{10^{-16}}{10^{-8}} = 10^{-8}$.&lt;/p&gt;
+&lt;p&gt;而當 $h=10^{-14}$ 時, 算出來的數字會多了大約 $\frac{10^{-16}}{10^{-14}} = 10^{-2}$. 跟我們之前所發現的完全吻合!! 而這也就是為什麼當 $h$ 很靠近零的時候誤差會上升的原因.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h4 id=&#34;optimal-h&#34;&gt;Optimal $h$&lt;/h4&gt;
+&lt;p&gt;那給定一個微分公式, 要怎麼知道 $h$ 能小到什麼程度呢? 一個簡單的感覺是這樣的, 由於誤差的第一項  $\frac{h}{2}f&amp;rsquo;&#39;(\xi)$ 會隨著 $h$ 變小而變小, 第二項 $\frac{\epsilon}{h}$ 則會變大, 因此整體最小值約會發生在兩項交叉時, 也就是當
+$$
+h \sim \frac{\epsilon}{h},
+$$
+(由於我們不知道 $f&amp;rsquo;&#39;(\xi)/2$ 是多少, 簡單起見設成 1). 上式稍微計算一下發現誤差最小值約發生在 $h=10^{-8}$, 誤差最小值則約為 $10^{-8}$.&lt;/p&gt;
 &lt;hr&gt;
 &lt;h3 id=&#34;summary&#34;&gt;Summary:&lt;/h3&gt;
 &lt;p&gt;最後總結一下:&lt;/p&gt;
@@ -5242,8 +6005,9 @@ $$
 &lt;li&gt;
 &lt;p&gt;我們可以用數值計算來估計一個函數在某點的微分值
 $$
-f&amp;rsquo;(a) = \lim_{h\to 0} \frac{f(a+h)-f(a)}{h}.
-$$&lt;/p&gt;
+f&amp;rsquo;(a) \approx \frac{f(a+h)-f(a)}{h}.
+$$
+這樣的做法稱為&lt;strong&gt;有限差分法 (finite difference method)&lt;/strong&gt;.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;不過計算時 $h$ 值不能無限取小, 需考慮到捨入誤差的影響.&lt;/p&gt;
@@ -5375,7 +6139,7 @@ $$&lt;/p&gt;
 &lt;p&gt;一般我們會用 machine epsilon 這個數字來量化在電腦裡浮點運算的捨入誤差.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;machine epsilon 的定義是, 考慮正數$\epsilon$, 使得 $ 1+ \epsilon \ge 1$ 中最小的那個稱之為 machine epsilon. 當然以數學來看這個 machine epsilon 必須等於零. 不過在電腦裡並不是這樣.&lt;/p&gt;
-&lt;p&gt;為了方便我們稍微改一下定義, 我們考慮 $\epsilon = 2^{-k}$ 這種形式, 然後 machine epsilon 一樣是使得 $ 1+ \epsilon \ge 1$ 中最小的那個. julia 程式如下:&lt;/p&gt;
+&lt;p&gt;為了方便我們稍微改一下定義, 我們考慮 $\epsilon = 2^{-k}$ 這種形式, 然後 machine epsilon 一樣是使得 $ 1+ \epsilon \ge 1$ 中最小的那個. &lt;code&gt;julia&lt;/code&gt; 程式如下:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;s&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1.0&lt;/span&gt;
 &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; k&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;100&lt;/span&gt;
     s &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; s&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2.0&lt;/span&gt;
@@ -5398,21 +6162,21 @@ $$&lt;/p&gt;
 $$
 sinc(x) =
 \begin{cases}
-\frac{\sin(x)}{x}, \quad x\ne 0 \\\&lt;br&gt;
+\frac{\sin(x)}{x}, \quad x\ne 0, \\\&lt;br&gt;
 1, \quad x=0.
 \end{cases}
 $$
 在這樣的定義之下 $sinc$ 函數是個&lt;code&gt;連續函數&lt;/code&gt;.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;更多關於 $sinc$ 函數的性質可以參考 
+&lt;a href=&#34;https://en.wikipedia.org/wiki/Sinc_function&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;wiki&lt;/a&gt; 上的介紹.&lt;/li&gt;
+&lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;在數值計算上有所謂的捨入誤差, 這是用有限位元來表達無限位數一定會有的差異.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;可以用 machines epsilon 來量化捨入誤差.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;更多關於 $sinc$ 函數的性質可以參考 
-&lt;a href=&#34;https://en.wikipedia.org/wiki/Sinc_function&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;wiki&lt;/a&gt; 上的介紹.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr&gt;
