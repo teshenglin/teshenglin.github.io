@@ -5,12 +5,796 @@
     <link>https://teshenglin.github.io/tags/derivative/</link>
       <atom:link href="https://teshenglin.github.io/tags/derivative/index.xml" rel="self" type="application/rss+xml" />
     <description>derivative</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 22 May 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Wed, 10 Jun 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
       <title>derivative</title>
       <link>https://teshenglin.github.io/tags/derivative/</link>
     </image>
+    
+    <item>
+      <title>Sec.5.2 - Area functions</title>
+      <link>https://teshenglin.github.io/post/2020_cal_s5p2/</link>
+      <pubDate>Wed, 10 Jun 2020 00:00:00 +0000</pubDate>
+      <guid>https://teshenglin.github.io/post/2020_cal_s5p2/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;Discovery Project in Sec.5.2, Calculus by Stewart&lt;br&gt;
+Chinese version 
+&lt;a href=&#34;https://teshenglin.github.io/post/2020_cal_s5p2_ch&#34;&gt;面積函數&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Question 1(a):&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Draw the line $y = 2t+1$ and use geometry to find the area under this line, above the t-axis, and between the vertical lines $t=1$ and $t = 3$.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;let $f(x)=y=2t+1$, then $f(1)=3$ and $f(3)=7$.&lt;/p&gt;
+&lt;p&gt;So, Area$= \frac{1}{2}(3+7)(3-1) = 10$&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://teshenglin.github.io/post/figs/cals5p2_1.png&#34; &gt;
+
+
+  &lt;img src=&#34;https://teshenglin.github.io/post/figs/cals5p2_1.png&#34; alt=&#34;&#34; width=&#34;600px&#34; &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Question 1(b):&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;If $x&amp;gt;1$, let $A(x)$ be the area of the region that lies under the line $y = 2t + 1$ between $t =1$ and $t = x$. Sketch this region and use geometry to find expression for $A(x)$.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;$f(1)=3$ and $f(x)=2x+1$.&lt;/p&gt;
+&lt;p&gt;Area$= A(x) = \frac{1}{2}(2x+1+3)(x-1) = x^2 +x -2 $&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Question 1(c):&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Differentiate the area function $A(x)$. What do you notice?&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Because $A(x) = x^2+x-2$, then $A’(x) = 2x+1$.&lt;/p&gt;
+&lt;p&gt;We can found that $A’(x)$ have the same form with $f(x) = y = 2t+1$.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Question 2(a):&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;If $x \geq  -1$, let
+$$
+A(x) = \int_{-1}^{x} (1+t^2)dt
+$$
+$A(x)$ represents the area of a region. Sketch that region.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://teshenglin.github.io/post/figs/cals5p2_2.png&#34; &gt;
+
+
+  &lt;img src=&#34;https://teshenglin.github.io/post/figs/cals5p2_2.png&#34; alt=&#34;&#34; width=&#34;600px&#34; &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Question 2(b):&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Use the result of Exercise 5.2.28 to find an expression for $A(x)$.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;$$
+A(x) = \int_{-1}^{x} (1+t^2)dt =\frac{t^3-(-1)^3}{3}+x+1
+$$&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Question 2(c):&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Find $A&amp;rsquo;(x)$. What do you notice?&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;$A’(x) = 1+t^2$, we can found that $A’(x)$ is the upper bound of the area of a region.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Question 2(d):&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;If $x \geq  -1$ and &lt;em&gt;h&lt;/em&gt; is a small positive number, then $A(x+h) - A(x)$ represents the area of a region. Describe and sketch the region.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The area is trapezoid, the length of base is $h$ ,and the length of parallel sides is $A(x+h)$  and $A(x)$ ,respectively.&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://teshenglin.github.io/post/figs/cals5p2_3.png&#34; &gt;
+
+
+  &lt;img src=&#34;https://teshenglin.github.io/post/figs/cals5p2_3.png&#34; alt=&#34;&#34; width=&#34;600px&#34; &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Question 2(e):&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Draw a rectangle that approximates the region in part (d). By comparing the areas of these two regions, show that
+$$
+\frac{A(x+h)-A(x)}{h} \approx 1+x^2
+$$&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://teshenglin.github.io/post/figs/cals5p2_4.png&#34; &gt;
+
+
+  &lt;img src=&#34;https://teshenglin.github.io/post/figs/cals5p2_4.png&#34; alt=&#34;&#34; width=&#34;600px&#34; &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Question 2(f):&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Use part (e) to give an intuitive explanation for the result of part (c).&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;As you can see, the result of part (c) is equal to the result of part (e) ,which means when we cut the area into infinite areas, the result will equal to the differentiate of the formula.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Question 3(a):&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Draw the graph of the function $f(x)=cos(x^2)$ in the viewing rectangle $[0,2]$ by $[-1.25,1.25]$&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://teshenglin.github.io/post/figs/cals5p2_5.png&#34; &gt;
+
+
+  &lt;img src=&#34;https://teshenglin.github.io/post/figs/cals5p2_5.png&#34; alt=&#34;&#34; width=&#34;600px&#34; &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Question 3(b):&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;If we define a new function $g$ by
+$$
+g(x) = \int_{0}^{x}\cos(t^2) dt
+$$
+then $g(x)$ is the area under the graph of $f$ from $0$ to $x$ [until $f(x)$ becomes negative, at which point $g(x)$ becomes a difference of areas.] Use part (a) to determine the value of $x$ at which $g(x)$ starts to decrease. [Unlike the integral in Problem 2, it is impossible to evaluate the intergral defining $g$ to obtain an explicit expression for $g(x)$]&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;According to part (a), we can found that $g(x)$ starts to decrease when the line goes under x-axis. Thus, $x^2 = \pi \to x\approx1.77245$&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Question 3(c):&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Use the integration command on your calculator or computer to estimate $g(0.2)$, $g(0.4),g(0.6),\cdots,g(1.8),g(2)$. Then use these values to sketch a graph of $g$.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;$g(x)$ is the blue line in the graph.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;center&#34;&gt;&lt;strong&gt;x&lt;/strong&gt;&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;&lt;strong&gt;g(x)&lt;/strong&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;0.2&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.2&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;0.4&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.399&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;0.6&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.5923&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;0.8&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.7678&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.9045&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;1.2&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.9739&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;1.4&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.9498&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;1.6&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.8255&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;1.8&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.6354&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;2&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.4615&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://teshenglin.github.io/post/figs/cals5p2_6.png&#34; &gt;
+
+
+  &lt;img src=&#34;https://teshenglin.github.io/post/figs/cals5p2_6.png&#34; alt=&#34;&#34; width=&#34;600px&#34; &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Question 3(d):&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Use your graph of $g$ from part (c) to sketch the graph of $g’$ using the interpretation of $g’(x)$ as the slope of a tangent line. How does the graph of $g’$ compare with the graph of $f$ ?&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;We can found that $g’(x)$ is almost the same with the graph of $f$.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;center&#34;&gt;&lt;strong&gt;x&lt;/strong&gt;&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;&lt;strong&gt;g’(x)&lt;/strong&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;0.3&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.995&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;0.5&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.9665&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;0.7&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.8775&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;0.9&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.6835&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;1.1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.347&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;1.3&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;-0.1205&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;1.5&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;-0.6215&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;1.7&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;-0.9505&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;1.9&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;-0.8695&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://teshenglin.github.io/post/figs/cals5p2_7.png&#34; &gt;
+
+
+  &lt;img src=&#34;https://teshenglin.github.io/post/figs/cals5p2_7.png&#34; alt=&#34;&#34; width=&#34;600px&#34; &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Question 4:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Suppose $f$ is a continuous function on the interval $[a,b]$ and we define a new function $g$ by the equation
+$$
+g(x) = \int_{a}^{x} f(x)dt
+$$
+Based on your result in Problem 1-3, conjecture an expression for $g’(x)$.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Based on the result in Problem 1-3, we can conjecture that $g’(x) = f(x)$.&lt;/p&gt;
+&lt;hr&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Sec.5.2 - 面積函數</title>
+      <link>https://teshenglin.github.io/post/2020_cal_s5p2_ch/</link>
+      <pubDate>Wed, 10 Jun 2020 00:00:00 +0000</pubDate>
+      <guid>https://teshenglin.github.io/post/2020_cal_s5p2_ch/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;Discovery Project in Sec.5.2, Calculus by Stewart&lt;br&gt;
+英文版請見 
+&lt;a href=&#34;https://teshenglin.github.io/post/2020_cal_s5p2&#34;&gt;Area functions&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Question 1(a):&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;畫出 $y = 2t+1$ 且用幾何方法找出在此線下方、$t$軸上方、與$t＝1$和$ｔ＝３$兩條垂直線所圍出的面積.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;令 $f(x)=y=2t+1$, 則 $f(1)=3$ 且 $f(3)=7$. 所以其面積為$\frac{1}{2}(3+7)(3-1) = 10$&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://teshenglin.github.io/post/figs/cals5p2_1.png&#34; &gt;
+
+
+  &lt;img src=&#34;https://teshenglin.github.io/post/figs/cals5p2_1.png&#34; alt=&#34;&#34; width=&#34;600px&#34; &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Question 1(b):&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;如果 $x  &amp;gt; 1$, 令 $A(x)$ 是由 $y = 2t + 1$、$t$軸與 $t =1$ 和 $t = x$ 所圍出的面積 。畫出這個區域並用幾何方法表達 $A(x)$.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;$f(1)=3$ and $f(x)=2x+1$.&lt;/p&gt;
+&lt;p&gt;Area$= A(x) = \frac{1}{2}(2x+1+3)(x-1) = x^2 +x -2 $&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Question 1(c):&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;將 $A(x)$ 微分，你注意到了什麼？&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;因為 $A(x) = x^2+x-2$, 所以 $A’(x) = 2x+1$. 我們可以得知 $A’(x)$ 和 $f(x) = y = 2t+1$ 形式相同.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Question 2(a):&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;如果 $x \geq  -1$ ， 令
+$$
+A(x) = \int_{-1}^{x} (1+t^2)dt
+$$
+$A(x)$ 代表所圍成的面積， 畫出此區域&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://teshenglin.github.io/post/figs/cals5p2_2.png&#34; &gt;
+
+
+  &lt;img src=&#34;https://teshenglin.github.io/post/figs/cals5p2_2.png&#34; alt=&#34;&#34; width=&#34;600px&#34; &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Question 2(b):&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;用練習題 5.2.28的結果來找出一種方法表示 $A(x)$.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;$$
+A(x) = \int_{-1}^{x} (1+t^2)dt =\frac{t^3-(-1)^3}{3}+x+1
+$$&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Question 2(c):&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;找出 $A&amp;rsquo;(x)$ ，你察覺到了什麼？&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;由 $A’(x) = 1+t^2$ ，我們可以得知 $A’(x)$ 是所圍成區域的拋物線&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Question 2(d):&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;如果  $x \geq  -1$ 且 &lt;em&gt;h&lt;/em&gt; 為極小正實數，則 $A(x+h) - A(x)$ 代表此區域的面積。 敘述且畫出此區域。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;此區域為梯形， 其底為 $h$ 且其兩條平行線的長度分別為  $A(x+h)$  和 $A(x)$&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://teshenglin.github.io/post/figs/cals5p2_3.png&#34; &gt;
+
+
+  &lt;img src=&#34;https://teshenglin.github.io/post/figs/cals5p2_3.png&#34; alt=&#34;&#34; width=&#34;600px&#34; &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Question 2(e):&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;畫出一個長方形來估計 (d)部分的區域面積。 藉由比較這兩個區域的面積來顯示
+$$
+\frac{A(x+h)-A(x)}{h} \approx 1+x^2
+$$&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://teshenglin.github.io/post/figs/cals5p2_4.png&#34; &gt;
+
+
+  &lt;img src=&#34;https://teshenglin.github.io/post/figs/cals5p2_4.png&#34; alt=&#34;&#34; width=&#34;600px&#34; &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Question 2(f):&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;用 (e)部分來給予 (c)部分的結果直觀的解釋。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;如我們所見(c)部分的結果和 (e)部份相同 ，而這代表當我們將一個區域劃分為無限個區域時其結果會等同於此函式的微分 。&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Question 3(a):&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;畫出此方程式 $f(x)=cos(x^2)$ 在[0,2]$ 及 $[-1.25,1.25]​的視窗內&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://teshenglin.github.io/post/figs/cals5p2_5.png&#34; &gt;
+
+
+  &lt;img src=&#34;https://teshenglin.github.io/post/figs/cals5p2_5.png&#34; alt=&#34;&#34; width=&#34;600px&#34; &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Question 3(b):&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;如果我們定義 $g$ 為
+$$
+g(x) = \int_{0}^{x}\cos(t^2) dt
+$$
+則 $g(x)$ 是 $f$ 函式 從 $0$ 到 $x$ 下的面積 [直到 $f(x)$ 小於 $0$, 當 $g(x)$ 和所圍出的面積不同時] 用 (a)部分來決定當 $g(x)$ 開始減少時的 $x$ 值。[不同於問題2 的積分,，我們不可能得到一個清楚的積分表達式來定義 $g(x)$]&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;由(a)部分，我們可以得到當此線在x軸之下 $g(x)$ 開始減少。因此, $x^2 = \pi \to x\approx1.77245$&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Question 3(c):&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;用積分計算機來計算 $g(0.2),$ $g(0.4),g(0.6),\cdots,g(1.8),g(2)$. 然後用這些直來畫出 $g$.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;$g(x)$ 為圖中的藍線&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;center&#34;&gt;&lt;strong&gt;x&lt;/strong&gt;&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;&lt;strong&gt;g(x)&lt;/strong&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;0.2&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.2&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;0.4&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.399&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;0.6&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.5923&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;0.8&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.7678&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.9045&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;1.2&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.9739&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;1.4&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.9498&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;1.6&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.8255&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;1.8&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.6354&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;2&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.4615&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://teshenglin.github.io/post/figs/cals5p2_6.png&#34; &gt;
+
+
+  &lt;img src=&#34;https://teshenglin.github.io/post/figs/cals5p2_6.png&#34; alt=&#34;&#34; width=&#34;600px&#34; &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Question 3(d):&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;用(c)部分 $g$ 的圖把$$g’(x)$$作為切線的斜率來畫出 $g’$ ，且將  $g’$ 和 $f$ 比較&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;我們可以看出 $g’(x)$ 幾乎和  $f$ 相同&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;center&#34;&gt;&lt;strong&gt;x&lt;/strong&gt;&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;&lt;strong&gt;g’(x)&lt;/strong&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;0.3&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.995&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;0.5&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.9665&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;0.7&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.8775&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;0.9&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.6835&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;1.1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.347&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;1.3&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;-0.1205&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;1.5&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;-0.6215&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;1.7&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;-0.9505&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;1.9&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;-0.8695&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://teshenglin.github.io/post/figs/cals5p2_7.png&#34; &gt;
+
+
+  &lt;img src=&#34;https://teshenglin.github.io/post/figs/cals5p2_7.png&#34; alt=&#34;&#34; width=&#34;600px&#34; &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Question 4:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;設想 $f$ 在區間 $[a,b]$ 為連續函數，並將函式 $g$ 由方程式定義為
+$$
+g(x) = \int_{a}^{x} f(x)dt
+$$
+由練習 1-3的結論， 推測 $g’(x)$ 的表達式&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;由練習 1-3的結論，我們可以推測 $g’(x) = f(x)$.&lt;/p&gt;
+&lt;hr&gt;
+</description>
+    </item>
     
     <item>
       <title>Sec.3.1 - 建造較佳的雲霄飛車</title>

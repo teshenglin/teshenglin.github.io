@@ -1,0 +1,1334 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 4.7.0">
+
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Te-Sheng Lin (林得勝)">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="Discovery Project in Sec.5.2, Calculus by Stewart Chinese version 面積函數 Question 1(a): Draw the line $y = 2t&#43;1$ and use geometry to find the area under this line, above the t-axis, and between the vertical lines $t=1$ and $t = 3$. Answer: let $f(x)=y=2t&#43;1$, then $f(1)=3$ and $f(3)=7$. So, Area$= \frac{1}{2}(3&#43;7)(3-1) = 10$ Question 1(b): If $x&gt;1$, let $A(x)$ be the area of the region that lies">
+
+  
+  <link rel="alternate" hreflang="en-us" href="https://teshenglin.github.io/post/2020_cal_s5p2/">
+
+  
+
+
+  
+  
+  
+  <meta name="theme-color" content="#2962ff">
+  
+
+  
+  
+  
+  <script src="/js/mathjax-config.js"></script>
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-1/css/all.min.css" integrity="sha256-4w9DunooKSr3MFXHXWyFER38WmPdm361bQS/2KUWZbU=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+        
+      
+    
+
+    
+
+    
+
+    
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.1.2/lazysizes.min.js" integrity="sha256-Md1qLToewPeKjfAHU1zyPwOutccPAm5tahnaw7Osw0A=" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CRoboto:400,400italic,700%7CRoboto+Mono&display=swap">
+  
+
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/academic.css">
+
+  
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-33193104-3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-33193104-3');
+</script>
+
+  
+
+
+  
+
+  <link rel="manifest" href="/index.webmanifest">
+  <link rel="icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_2.png">
+
+  <link rel="canonical" href="https://teshenglin.github.io/post/2020_cal_s5p2/">
+
+  
+  
+  
+  
+  
+    
+    
+  
+  
+  <meta property="twitter:card" content="summary">
+  
+  <meta property="og:site_name" content="Te-Sheng Lin">
+  <meta property="og:url" content="https://teshenglin.github.io/post/2020_cal_s5p2/">
+  <meta property="og:title" content="Sec.5.2 - Area functions | Te-Sheng Lin">
+  <meta property="og:description" content="Discovery Project in Sec.5.2, Calculus by Stewart Chinese version 面積函數 Question 1(a): Draw the line $y = 2t&#43;1$ and use geometry to find the area under this line, above the t-axis, and between the vertical lines $t=1$ and $t = 3$. Answer: let $f(x)=y=2t&#43;1$, then $f(1)=3$ and $f(3)=7$. So, Area$= \frac{1}{2}(3&#43;7)(3-1) = 10$ Question 1(b): If $x&gt;1$, let $A(x)$ be the area of the region that lies"><meta property="og:image" content="https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png">
+  <meta property="twitter:image" content="https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png"><meta property="og:locale" content="en-us">
+  
+    
+      <meta property="article:published_time" content="2020-06-10T00:00:00&#43;00:00">
+    
+    <meta property="article:modified_time" content="2020-06-12T22:14:24&#43;08:00">
+  
+
+  
+
+
+    
+
+
+
+
+
+
+  
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://teshenglin.github.io/post/2020_cal_s5p2/"
+  },
+  "headline": "Sec.5.2 - Area functions",
+  
+  "datePublished": "2020-06-10T00:00:00Z",
+  "dateModified": "2020-06-12T22:14:24+08:00",
+  
+  "author": {
+    "@type": "Person",
+    "name": "簡瑀鋅"
+  },
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "Te-Sheng Lin",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_2.png"
+    }
+  },
+  "description": "Discovery Project in Sec.5.2, Calculus by Stewart Chinese version 面積函數 Question 1(a): Draw the line $y = 2t+1$ and use geometry to find the area under this line, above the t-axis, and between the vertical lines $t=1$ and $t = 3$. Answer: let $f(x)=y=2t+1$, then $f(1)=3$ and $f(3)=7$. So, Area$= \\frac{1}{2}(3+7)(3-1) = 10$ Question 1(b): If $x\u0026gt;1$, let $A(x)$ be the area of the region that lies"
+}
+</script>
+
+  
+
+  
+
+
+  
+
+
+  
+
+
+
+
+
+  <title>Sec.5.2 - Area functions | Te-Sheng Lin</title>
+
+</head>
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" >
+
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+  
+
+
+
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container">
+
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="/">Te-Sheng Lin</a>
+    </div>
+    
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/">Te-Sheng Lin</a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#about"><span>Home</span></a>
+        </li>
+
+        
+        
+
+        
+        <li class="nav-item dropdown">
+          <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"><span>Resume</span><span class="caret"></span>
+          </a>
+          <div class="dropdown-menu">
+            
+              <a class="dropdown-item" href="/#experience"><span>Appointments </span></a>
+            
+              <a class="dropdown-item" href="/#publications"><span>Publications</span></a>
+            
+              <a class="dropdown-item" href="/#cv"><span>CV</span></a>
+            
+          </div>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#posts"><span>Posts</span></a>
+        </li>
+
+        
+        
+
+        
+        <li class="nav-item dropdown">
+          <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"><span>Teaching</span><span class="caret"></span>
+          </a>
+          <div class="dropdown-menu">
+            
+              <a class="dropdown-item" href="/courses/taught"><span>Courses taught</span></a>
+            
+              <a class="dropdown-item" href="/courses/students"><span>Students supervised</span></a>
+            
+          </div>
+        </li>
+
+        
+        
+
+      
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+      
+      <li class="nav-item">
+        <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+      <li class="nav-item">
+        <a class="nav-link js-dark-toggle" href="#"><i class="fas fa-moon" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+  <article class="article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+<div class="article-container pt-3">
+  <h1>Sec.5.2 - Area functions</h1>
+
+  
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+
+
+  
+  <span><a href="/authors/%E7%B0%A1%E7%91%80%E9%8B%85/">簡瑀鋅</a></span>, <span><a href="/authors/%E5%BD%AD%E6%9F%8F%E6%A3%A3/">彭柏棣</a></span>, <span><a href="/authors/admin/">Te-Sheng Lin (林得勝)</a></span>
+
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+          Last updated on
+      
+    
+    Jun 12, 2020
+  </span>
+  
+
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    2 min read
+  </span>
+  
+
+  
+  
+  
+  <span class="middot-divider"></span>
+  <a href="/post/2020_cal_s5p2/#disqus_thread"></a>
+  
+
+  
+  
+  <span class="middot-divider"></span>
+  <span class="article-categories">
+    <i class="fas fa-folder mr-1"></i><a href="/categories/calculus/">Calculus</a></span>
+  
+
+</div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style">
+      <blockquote>
+<p>Discovery Project in Sec.5.2, Calculus by Stewart<br>
+Chinese version 
+<a href="/post/2020_cal_s5p2_ch">面積函數</a></p>
+</blockquote>
+<hr>
+<p><strong>Question 1(a):</strong></p>
+<p>Draw the line $y = 2t+1$ and use geometry to find the area under this line, above the t-axis, and between the vertical lines $t=1$ and $t = 3$.</p>
+<p><strong>Answer:</strong></p>
+<p>let $f(x)=y=2t+1$, then $f(1)=3$ and $f(3)=7$.</p>
+<p>So, Area$= \frac{1}{2}(3+7)(3-1) = 10$</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure>
+
+
+  <a data-fancybox="" href="/post/figs/cals5p2_1.png" >
+
+
+  <img src="/post/figs/cals5p2_1.png" alt="" width="600px" >
+</a>
+
+
+
+</figure>
+
+<hr>
+<p><strong>Question 1(b):</strong></p>
+<p>If $x&gt;1$, let $A(x)$ be the area of the region that lies under the line $y = 2t + 1$ between $t =1$ and $t = x$. Sketch this region and use geometry to find expression for $A(x)$.</p>
+<p><strong>Answer:</strong></p>
+<p>$f(1)=3$ and $f(x)=2x+1$.</p>
+<p>Area$= A(x) = \frac{1}{2}(2x+1+3)(x-1) = x^2 +x -2 $</p>
+<hr>
+<p><strong>Question 1(c):</strong></p>
+<p>Differentiate the area function $A(x)$. What do you notice?</p>
+<p><strong>Answer:</strong></p>
+<p>Because $A(x) = x^2+x-2$, then $A’(x) = 2x+1$.</p>
+<p>We can found that $A’(x)$ have the same form with $f(x) = y = 2t+1$.</p>
+<hr>
+<p><strong>Question 2(a):</strong></p>
+<p>If $x \geq  -1$, let
+$$
+A(x) = \int_{-1}^{x} (1+t^2)dt
+$$
+$A(x)$ represents the area of a region. Sketch that region.</p>
+<p><strong>Answer:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure>
+
+
+  <a data-fancybox="" href="/post/figs/cals5p2_2.png" >
+
+
+  <img src="/post/figs/cals5p2_2.png" alt="" width="600px" >
+</a>
+
+
+
+</figure>
+
+<hr>
+<p><strong>Question 2(b):</strong></p>
+<p>Use the result of Exercise 5.2.28 to find an expression for $A(x)$.</p>
+<p><strong>Answer:</strong></p>
+<p>$$
+A(x) = \int_{-1}^{x} (1+t^2)dt =\frac{t^3-(-1)^3}{3}+x+1
+$$</p>
+<hr>
+<p><strong>Question 2(c):</strong></p>
+<p>Find $A&rsquo;(x)$. What do you notice?</p>
+<p><strong>Answer:</strong></p>
+<p>$A’(x) = 1+t^2$, we can found that $A’(x)$ is the upper bound of the area of a region.</p>
+<hr>
+<p><strong>Question 2(d):</strong></p>
+<p>If $x \geq  -1$ and <em>h</em> is a small positive number, then $A(x+h) - A(x)$ represents the area of a region. Describe and sketch the region.</p>
+<p><strong>Answer:</strong></p>
+<p>The area is trapezoid, the length of base is $h$ ,and the length of parallel sides is $A(x+h)$  and $A(x)$ ,respectively.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure>
+
+
+  <a data-fancybox="" href="/post/figs/cals5p2_3.png" >
+
+
+  <img src="/post/figs/cals5p2_3.png" alt="" width="600px" >
+</a>
+
+
+
+</figure>
+
+<hr>
+<p><strong>Question 2(e):</strong></p>
+<p>Draw a rectangle that approximates the region in part (d). By comparing the areas of these two regions, show that
+$$
+\frac{A(x+h)-A(x)}{h} \approx 1+x^2
+$$</p>
+<p><strong>Answer:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure>
+
+
+  <a data-fancybox="" href="/post/figs/cals5p2_4.png" >
+
+
+  <img src="/post/figs/cals5p2_4.png" alt="" width="600px" >
+</a>
+
+
+
+</figure>
+
+<hr>
+<p><strong>Question 2(f):</strong></p>
+<p>Use part (e) to give an intuitive explanation for the result of part (c).</p>
+<p><strong>Answer:</strong></p>
+<p>As you can see, the result of part (c) is equal to the result of part (e) ,which means when we cut the area into infinite areas, the result will equal to the differentiate of the formula.</p>
+<hr>
+<p><strong>Question 3(a):</strong></p>
+<p>Draw the graph of the function $f(x)=cos(x^2)$ in the viewing rectangle $[0,2]$ by $[-1.25,1.25]$</p>
+<p><strong>Answer:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure>
+
+
+  <a data-fancybox="" href="/post/figs/cals5p2_5.png" >
+
+
+  <img src="/post/figs/cals5p2_5.png" alt="" width="600px" >
+</a>
+
+
+
+</figure>
+
+<hr>
+<p><strong>Question 3(b):</strong></p>
+<p>If we define a new function $g$ by
+$$
+g(x) = \int_{0}^{x}\cos(t^2) dt
+$$
+then $g(x)$ is the area under the graph of $f$ from $0$ to $x$ [until $f(x)$ becomes negative, at which point $g(x)$ becomes a difference of areas.] Use part (a) to determine the value of $x$ at which $g(x)$ starts to decrease. [Unlike the integral in Problem 2, it is impossible to evaluate the intergral defining $g$ to obtain an explicit expression for $g(x)$]</p>
+<p><strong>Answer:</strong></p>
+<p>According to part (a), we can found that $g(x)$ starts to decrease when the line goes under x-axis. Thus, $x^2 = \pi \to x\approx1.77245$</p>
+<hr>
+<p><strong>Question 3(c):</strong></p>
+<p>Use the integration command on your calculator or computer to estimate $g(0.2)$, $g(0.4),g(0.6),\cdots,g(1.8),g(2)$. Then use these values to sketch a graph of $g$.</p>
+<p><strong>Answer:</strong></p>
+<p>$g(x)$ is the blue line in the graph.</p>
+<table>
+<thead>
+<tr>
+<th align="center"><strong>x</strong></th>
+<th align="center"><strong>g(x)</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">0.2</td>
+<td align="center">0.2</td>
+</tr>
+<tr>
+<td align="center">0.4</td>
+<td align="center">0.399</td>
+</tr>
+<tr>
+<td align="center">0.6</td>
+<td align="center">0.5923</td>
+</tr>
+<tr>
+<td align="center">0.8</td>
+<td align="center">0.7678</td>
+</tr>
+<tr>
+<td align="center">1</td>
+<td align="center">0.9045</td>
+</tr>
+<tr>
+<td align="center">1.2</td>
+<td align="center">0.9739</td>
+</tr>
+<tr>
+<td align="center">1.4</td>
+<td align="center">0.9498</td>
+</tr>
+<tr>
+<td align="center">1.6</td>
+<td align="center">0.8255</td>
+</tr>
+<tr>
+<td align="center">1.8</td>
+<td align="center">0.6354</td>
+</tr>
+<tr>
+<td align="center">2</td>
+<td align="center">0.4615</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure>
+
+
+  <a data-fancybox="" href="/post/figs/cals5p2_6.png" >
+
+
+  <img src="/post/figs/cals5p2_6.png" alt="" width="600px" >
+</a>
+
+
+
+</figure>
+
+<hr>
+<p><strong>Question 3(d):</strong></p>
+<p>Use your graph of $g$ from part (c) to sketch the graph of $g’$ using the interpretation of $g’(x)$ as the slope of a tangent line. How does the graph of $g’$ compare with the graph of $f$ ?</p>
+<p><strong>Answer:</strong></p>
+<p>We can found that $g’(x)$ is almost the same with the graph of $f$.</p>
+<table>
+<thead>
+<tr>
+<th align="center"><strong>x</strong></th>
+<th align="center"><strong>g’(x)</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">0.3</td>
+<td align="center">0.995</td>
+</tr>
+<tr>
+<td align="center">0.5</td>
+<td align="center">0.9665</td>
+</tr>
+<tr>
+<td align="center">0.7</td>
+<td align="center">0.8775</td>
+</tr>
+<tr>
+<td align="center">0.9</td>
+<td align="center">0.6835</td>
+</tr>
+<tr>
+<td align="center">1.1</td>
+<td align="center">0.347</td>
+</tr>
+<tr>
+<td align="center">1.3</td>
+<td align="center">-0.1205</td>
+</tr>
+<tr>
+<td align="center">1.5</td>
+<td align="center">-0.6215</td>
+</tr>
+<tr>
+<td align="center">1.7</td>
+<td align="center">-0.9505</td>
+</tr>
+<tr>
+<td align="center">1.9</td>
+<td align="center">-0.8695</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure>
+
+
+  <a data-fancybox="" href="/post/figs/cals5p2_7.png" >
+
+
+  <img src="/post/figs/cals5p2_7.png" alt="" width="600px" >
+</a>
+
+
+
+</figure>
+
+<hr>
+<p><strong>Question 4:</strong></p>
+<p>Suppose $f$ is a continuous function on the interval $[a,b]$ and we define a new function $g$ by the equation
+$$
+g(x) = \int_{a}^{x} f(x)dt
+$$
+Based on your result in Problem 1-3, conjecture an expression for $g’(x)$.</p>
+<p><strong>Answer:</strong></p>
+<p>Based on the result in Problem 1-3, we can conjecture that $g’(x) = f(x)$.</p>
+<hr>
+
+    </div>
+
+    
+
+
+
+
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/tags/derivative/">derivative</a>
+  
+  <a class="badge badge-light" href="/tags/optimization/">optimization</a>
+  
+  <a class="badge badge-light" href="/tags/applied-project/">applied project</a>
+  
+</div>
+
+
+
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=https://teshenglin.github.io/post/2020_cal_s5p2/&amp;text=Sec.5.2%20-%20Area%20functions" target="_blank" rel="noopener" class="share-btn-twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=https://teshenglin.github.io/post/2020_cal_s5p2/&amp;t=Sec.5.2%20-%20Area%20functions" target="_blank" rel="noopener" class="share-btn-facebook">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="mailto:?subject=Sec.5.2%20-%20Area%20functions&amp;body=https://teshenglin.github.io/post/2020_cal_s5p2/" target="_blank" rel="noopener" class="share-btn-email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+  
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  <div class="media author-card content-widget-hr">
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="/authors/%E7%B0%A1%E7%91%80%E9%8B%85/"></a></h5>
+      
+      
+      <ul class="network-icon" aria-hidden="true">
+  
+</ul>
+
+    </div>
+  </div>
+
+
+
+
+<section id="comments">
+  
+    
+<div id="disqus_thread"></div>
+<script>
+  let disqus_config = function () {
+    
+    
+    
+  };
+  (function() {
+    if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+      document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+      return;
+    }
+    var d = document, s = d.createElement('script'); s.async = true;
+    s.src = 'https://' + "https-teshenglin-github-io" + '.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+  
+</section>
+
+
+
+
+
+
+  
+  
+  <div class="article-widget content-widget-hr">
+    <h3>Related</h3>
+    <ul>
+      
+      <li><a href="/post/2020_cal_s5p2_ch/">Sec.5.2 - 面積函數</a></li>
+      
+      <li><a href="/post/2020_cal_s3p1_ch/">Sec.3.1 - 建造較佳的雲霄飛車</a></li>
+      
+      <li><a href="/post/2020_cal_s6p5/">Sec.6.5 - Where to Sit at the Movies</a></li>
+      
+      <li><a href="/post/2020_cal_s6p5_ch/">Sec.6.5 - 電影院要坐哪?</a></li>
+      
+      <li><a href="/post/2020_cal_s11p11/">Sec.11.11 - Radiation From The Stars</a></li>
+      
+    </ul>
+  </div>
+  
+
+
+
+  </div>
+</article>
+
+      
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.4.4/mermaid.min.js" integrity="sha256-JEqEejGt4tR35L0a1zodzsV0/PJ6GIf7J4yDtywdrH8=" crossorigin="anonymous" title="mermaid"></script>
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js" integrity="sha256-eOgo0OtLL4cdq7RdwRUiGKLX9XsIJ7nGhWEKbohmVAQ=" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/languages/r.min.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/languages/julia.min.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/languages/python.min.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/languages/fortran.min.js"></script>
+        
+      
+
+    
+
+    
+    
+
+    
+    
+    <script>const code_highlighting = true;</script>
+    
+
+    
+    
+    <script>const isSiteThemeDark = false;</script>
+    
+
+    
+    
+    
+    
+    
+    
+    <script>
+      const search_config = {"indexURI":"/index.json","minLength":1,"threshold":0.3};
+      const i18n = {"no_results":"No results found","placeholder":"Search...","results":"results found"};
+      const content_type = {
+        'post': "Posts",
+        'project': "Projects",
+        'publication' : "Publications",
+        'talk' : "Talks"
+        };
+    </script>
+    
+
+    
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+    <script id="dsq-count-scr" src="https://https-teshenglin-github-io.disqus.com/count.js" async></script>
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    <script src="/js/academic.min.a8d7005002cb4a052fd6d721e83df9ba.js"></script>
+
+    
+
+
+
+
+
+
+  
+  
+  <div class="container">
+    <footer class="site-footer">
+  
+
+  <p class="powered-by">
+    
+
+    Powered by the
+    <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
+    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+
+    
+    <span class="float-right" aria-hidden="true">
+      <a href="#" class="back-to-top">
+        <span class="button_icon">
+          <i class="fas fa-chevron-up fa-2x"></i>
+        </span>
+      </a>
+    </span>
+    
+  </p>
+</footer>
+
+  </div>
+  
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

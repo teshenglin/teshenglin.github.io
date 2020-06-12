@@ -173,12 +173,12 @@ $$
 $$
 \int^1_{-1} p(x)dx = \int^1_{-1} P_{n+1}(x)Q(x) + R(x)dx = \int^1_{-1} R(x)dx,
 $$
-其中 $P_{n+1}$ 與 $Q$ 的積分等於零是用到上面正交多項式的性質.&lt;/p&gt;
+其中 $P_{n+1}$ 與 $Q$ 相丞後的積分等於零是用到上面正交多項式的性質.&lt;/p&gt;
 &lt;p&gt;以上這積分如果以數值積分來表示的話就是
 $$
 \int^1_{-1} p(x)dx \approx \sum^n_{i=0} w_i p(x_i) = \sum^n_{i=0} w_i \left(P_{n+1}(x_i)Q(x_i) + R(x_i)\right).
 $$
-我們希望數值積分也會有 &amp;ldquo;$P_{n+1}$ 與 $Q$ 的積分等於零&amp;rdquo; 這件事. 那一個最簡單的取法就是我們取 $x_i$ 是 $P_{n+1}(x)$ 這個 $n+1$ 次多項式所有的根. 由於 $P_{n+1}$ 剛好有 $n+1$ 個不重複的根, 這樣我們就有 $x_i$ 這些點了, 而且 $P_{n+1}(x_i)=0$ 表示
+我們希望數值積分也會有 &amp;ldquo;$P_{n+1}$ 與 $Q$ 相乘的積分等於零&amp;rdquo; 這件事. 那一個最簡單的取法就是我們取 $x_i$ 是 $P_{n+1}(x)$ 這個 $n+1$ 次多項式所有的根. 由於 $P_{n+1}$ 剛好有 $n+1$ 個不重複的根, 這樣我們就有 $x_i$ 這些點了, 而且 $P_{n+1}(x_i)=0$ 表示
 $$
 \sum^n_{i=0} w_i P_{n+1}(x_i)Q(x_i)=0,
 $$
@@ -260,7 +260,7 @@ $$&lt;/p&gt;
       <pubDate>Wed, 11 Dec 2019 00:00:00 +0000</pubDate>
       <guid>https://teshenglin.github.io/post/2019_numerical_integration/</guid>
       <description>&lt;blockquote&gt;
-&lt;p&gt;在微積分課程裡我們有學到積分的&amp;rsquo;中點法&amp;rsquo;, &amp;lsquo;梯形法&amp;rsquo;以及&amp;rsquo;辛普森法&amp;rsquo;. 這裡我們簡介一些基本概念並且引進高斯積分法.&lt;/p&gt;
+&lt;p&gt;在微積分課程裡我們有學到積分的&#39;中點法&amp;rsquo;, &amp;lsquo;梯形法&#39;以及&#39;辛普森法&amp;rsquo;. 這裡我們簡介一些基本概念並且引進高斯積分法.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h4 id=&#34;goal-任意給定一可積分函數-fx-xin-1-1-我們想要算-int1_-1-fx-dx&#34;&gt;Goal: 任意給定一可積分函數 $f(x)$, $x\in[-1, 1]$, 我們想要算 $\int^1_{-1} f(x) dx$.&lt;/h4&gt;
 &lt;hr&gt;
@@ -303,13 +303,13 @@ $$&lt;/p&gt;
 &lt;/ol&gt;
 &lt;hr&gt;
 &lt;blockquote&gt;
-&lt;p&gt;接著我們稍微推廣一下, 並且介紹所謂的&amp;rsquo;高斯積分&amp;rsquo;.&lt;/p&gt;
+&lt;p&gt;接著我們稍微推廣一下, 並且介紹所謂的&#39;高斯積分&amp;rsquo;.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;&lt;strong&gt;Question:&lt;/strong&gt; 假設我們現在想要用函數在 $x=0$ 這個點的值來估算積分, 那係數要取多少會最好?&lt;/p&gt;
 &lt;p&gt;也就是說我們假設
 $$\int^1_{-1}f(x),dx\approx A_0f(0),$$
 其中 $A_0$ 是個常數. 那 $A_0$ 要選哪個數字, 這個積分公式才會算的最準?&lt;/p&gt;
-&lt;p&gt;依照我們之前的想法, 要讓積分式準就是要讓他把多項式算準. 所以我們希望他至少能把常數函數算準. 這樣的話很容易就看出 $A_0=2$, 也就是&amp;rsquo;中點法&amp;rsquo;.&lt;/p&gt;
+&lt;p&gt;依照我們之前的想法, 要讓積分式準就是要讓他把多項式算準. 所以我們希望他至少能把常數函數算準. 這樣的話很容易就看出 $A_0=2$, 也就是&#39;中點法&amp;rsquo;.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Question:&lt;/strong&gt; 假設我們現在想要用函數在 $x=-1$ 以及 $x=1$ 這兩個點的值來估算積分, 那係數要取多少會最好?&lt;/p&gt;
 &lt;p&gt;也就是說我們假設
 $$\int^1_{-1}f(x),dx\approx \alpha f(-1)+\beta f(1),$$

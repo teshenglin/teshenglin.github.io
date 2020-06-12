@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>iteration | Te-Sheng Lin</title>
+    <link>https://teshenglin.github.io/tags/iteration/</link>
+      <atom:link href="https://teshenglin.github.io/tags/iteration/index.xml" rel="self" type="application/rss+xml" />
+    <description>iteration</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 12 Jun 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>iteration</title>
+      <link>https://teshenglin.github.io/tags/iteration/</link>
+    </image>
+    
+    <item>
+      <title>Lagrange Multiplier - 01</title>
+      <link>https://teshenglin.github.io/post/2020_lagrange_multiplier/</link>
+      <pubDate>Fri, 12 Jun 2020 00:00:00 +0000</pubDate>
+      <guid>https://teshenglin.github.io/post/2020_lagrange_multiplier/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;在微積分課程裡我們有學到如何利用 Lagrange multiplier 來解 constraint optimization 問題. 這邊要介紹課本裡沒教的 Lagrangian function.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&#34;goal-我們想要解以下這個問題&#34;&gt;Goal: 我們想要解以下這個問題&lt;/h4&gt;
+&lt;p&gt;$$
+\min_{x} f(x), \quad \text{subject to } \quad  g(x)=0.
+$$&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Observation&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;微積分課本告訴我們一個相對好懂的直觀, 就是這個解會發生在兩個等高線相切的地方, 因此在這個問題的解那個點兩個函數 $f$ 與 $g$ 等高線的法向量會平行, 因此可以列出以下兩個式子
+$$
+\partial_x f + \lambda \partial_x g = 0, \quad  g(x)=0.
+$$
+因為有兩個方程式, 因此我們可以解出兩個未知數 $x$ 以及 $\lambda$, 其中 $\lambda$ 即稱為 Lagrange multiplier.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;上列的這個方程組有另一種相對好記的方式, 就是引進所謂的 Lagrangian function
+$$
+L(x, \lambda) = f(x) + \lambda g(x)
+$$
+這是一個雙變數方程式, 而原本問題的解會發生在這個方程的 critical point, 也就是會滿足 $\nabla L=0$.&lt;/p&gt;
+&lt;p&gt;要注意的是由於 $L$ 是個雙變數函數, 所以 $\nabla = (\partial_x, \partial_{\lambda})$. 根據這樣的定義我們將 $\nabla L=0$ 方程式列出來會得到跟上面一模一樣的兩個方程組.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Remark 1:&lt;/strong&gt;  $\partial_{x} L = \partial_x f + \lambda \partial_x g$&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Remark 2:&lt;/strong&gt;  $\partial_{\lambda} L = g(x)$&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;引進 Lagrangian function 比較好記是因為假設我有更多的 constraints, 例如我想解以下這個問題:
+$$
+\min_{x} f(x), \quad \text{subject to } \quad  g_1(x)=0, \quad g_2(x)=0.
+$$
+要找一個函數最小值不過有兩個限制條件.&lt;/p&gt;
+&lt;p&gt;這樣的話我們照之前的步驟, 先引進 Lagrangian function
+$$
+L(x, \lambda_1, \lambda_2) = f(x) + \lambda_1 g_1(x) + \lambda_2 g_2(x)
+$$
+然後原問題的最佳解會發生在 $\nabla L=0$.&lt;/p&gt;
+&lt;p&gt;要注意的是這次的 $L$ 是個三變數函數, 所以 $\nabla L = (\partial_x, \partial_{\lambda_1}, \partial_{\lambda_2})$. 然後將 $\nabla L=0$ 寫下來就是
+$$
+\partial_x f + \lambda_1 \partial_x g_1 + \lambda_2 \partial_x g_2 = 0, \quad  g_1(x)=0, \quad g_2(x)=0.
+$$
+就得到我們需要解的方程組了!&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;接著我們試著將以上寫的更廣義一點, 考慮一個 $n$ 維度的最佳化問題有 $m$ 個限制式, 我們引進一些符號: $\pmb{x}\in \mathbb{R}^n$,  $\pmb{g}(\pmb{x}):\mathbb{R}^n\to\mathbb{R}^m$, 這個有限制的最佳化問題即可寫成
+$$
+\min_{\pmb{x}\in\mathbb{R}^n}f(\pmb{x}), \quad \text{subject to } \quad  \pmb{g}(\pmb{x})=\pmb{0}.
+$$&lt;/p&gt;
+&lt;p&gt;我們接著引進 Lagrangian function
+$$
+L(\pmb{x}, \pmb{\lambda}) = f(\pmb{x}) + \pmb{\lambda}^T \pmb{g}(\pmb{x}), \quad \pmb{\lambda}\in\mathbb{R}^m
+$$&lt;/p&gt;
+&lt;p&gt;原問題的最佳解會發生在 $\nabla L=0$, 也就是 $(\nabla_{\pmb{x}} L, \nabla_{\pmb{\lambda}} L) = (0, 0)$, 也就是
+$$
+\nabla_{\pmb{x}} f(\pmb{x}) + \pmb{\lambda}^T \nabla_{\pmb{x}}\pmb{g}(\pmb{x}) = 0, \quad \pmb{g}(\pmb{x})=\pmb{0}.
+$$&lt;/p&gt;
+&lt;hr&gt;
+&lt;blockquote&gt;
+&lt;p&gt;所以為什麼要引進 Lagrange multiplier 或是 Lagrangian function?&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;引進 Lagrange multiplier 的好處是我們將一個&lt;strong&gt;最佳化問題&lt;/strong&gt;改寫成一個&lt;strong&gt;求根問題&lt;/strong&gt;. 理論上 $f(x)=0$ 這種問題不管線性或非線性我們都比較會解. 而最佳化問題就相對比較無從下手.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;BUT&lt;/strong&gt;, 付出的代價是我們增加了維度! 原本 $n$ 維最小值問題變成 $n+m$ 維求根問題.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;引進 Lagrangian function 最明顯的好處是&lt;strong&gt;比較好記&lt;/strong&gt;, 不管是記在頭腦裡的記或是寫筆記下來的記. 整個問題很輕易的就記成 $\nabla L=0$.&lt;/p&gt;
+&lt;p&gt;當然還有其他更重要的好處.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Lagrange Multiplier - 02</title>
+      <link>https://teshenglin.github.io/post/2020_lagrange_multiplier_2/</link>
+      <pubDate>Fri, 12 Jun 2020 00:00:00 +0000</pubDate>
+      <guid>https://teshenglin.github.io/post/2020_lagrange_multiplier_2/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;這裡我們再多討論一點 Lagrangian function.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;我們先看最簡單的一維問題, 求一個有限制式的函數最小值問題:
+$$
+\min_{x} f(x), \quad \text{subject to } \quad  g(x)=0.
+$$&lt;/p&gt;
+&lt;p&gt;我們引進 Lagrangian function
+$$
+L(x, \lambda) = f(x) + \lambda g(x)
+$$
+並且知道原問題的解發生在 $\nabla L=0$ 的地方.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Question:&lt;/strong&gt; 從微積分我們知道 $\nabla L=0$ 是 $L(x, \lambda)$ 這個函數 critical point發生的地方, 那這個 critical point 究竟是 local max/min 還是 saddle 呢?&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;要回答這問題其實很簡單, 我們看這個二維函數的判別式就知道. 這函數的變數有兩個分別是 $x$ 以及 $\lambda$, 所以判別式是
+$$
+L_{xx}L_{\lambda\lambda} - L_{x\lambda}^2 = -(g_x)^2 \le 0
+$$
+所以我們知道原最佳化問題的解其實是這個 Lagragian function 的 saddle point (至少不是 local max/min)!&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Constraint optimization problem&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;我們事實上可以考慮更一般的問題
+$$
+\min_{x} f(x), \quad \text{subject to } \quad  g(x) \le 0.
+$$
+這樣的問題我們可以定義一樣的 Lagrangian function
+$$
+L(x, \lambda) = f(x) + \lambda g(x).
+$$&lt;/p&gt;
+&lt;p&gt;我們有以下這個定理:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;h2 id=&#34;theorem---saddle-point-sufficient-condition&#34;&gt;Theorem - Saddle point (Sufficient condition)&lt;/h2&gt;
+&lt;p&gt;Let $P$ be a constraint optimization problem.
+If $(x^+, \lambda^+)$ is a saddle point, that is,
+$$\forall x\in\mathbb{R}, \forall\lambda\ge 0, \quad L(x^+, \lambda)\le L(x^+, \lambda^+)\le L(x, \lambda^+),$$
+then it is a solution of $P$.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;這個證明很簡單.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;根據不等式第一個部分
+$$\forall\lambda\ge 0, \quad L(x^+, \lambda)\le L(x^+, \lambda^+)$$
+帶入 $L$ 我們得到 $\lambda g(x^+) \le \lambda^+ g(x^+)$.&lt;/p&gt;
+&lt;p&gt;由於對所有 $\lambda$ 都對, 我們讓 $\lambda\to\infty$ 得到 $g(x^+)\le 0$.
+接著讓 $\lambda\to 0$ 我們得到 $0\le \lambda^+ g(x^+)\le 0$, 因此 $\lambda^+ g(x^+)=0$.&lt;/p&gt;
+&lt;p&gt;有這件事後我們再看不等式第二部分, $L(x^+, \lambda^+)\le L(x, \lambda^+)$.
+代入 $L$ 以及以上結果我們有 $f(x^+)\le f(x) + \lambda^+ g(x)$.&lt;/p&gt;
+&lt;p&gt;因此, 若 $g(x)\le 0$, 我們必定有 $f(x^+)\le f(x)$.&lt;/p&gt;
+&lt;p&gt;QED.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;p&gt;更進一步, 我們可以引進這個 Lagrange dual function:
+$$
+F(\lambda) = \inf_{x} L(x, \lambda)
+$$
+也就是固定一個 $\lambda$ 我去找這函數的最大下界(有點像最小值不過不一定要碰到). 據此我們可以引進以下的 dual problem.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Dual optimization problem&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;$$
+\max_{\lambda} F(\lambda), \quad \lambda \ge 0.
+$$&lt;/p&gt;
+&lt;hr&gt;
+&lt;h4 id=&#34;舉個例子&#34;&gt;舉個例子&lt;/h4&gt;
+&lt;p&gt;我們考慮這個特別的 constraint optimization 問題
+$$
+\min_{\pmb{x}\in\mathbb{R}^n}f(\pmb{x}), \quad \text{subject to } \quad  A\pmb{x}-\pmb{b}=\pmb{0},
+$$
+其中 $A$ 是個矩陣而 $\pmb{b}$ 是個向量. 事實上也就是說 constraint $g(\pmb{x}) = A\pmb{x}-\pmb{b}$.&lt;/p&gt;
+&lt;p&gt;把 Lagrangian function 寫下來就是
+$$
+L(\pmb{x}, \pmb{\lambda}) = f(\pmb{x}) + \pmb{\lambda}^T(A\pmb{x}-\pmb{b}).
+$$&lt;/p&gt;
+&lt;p&gt;我們可以構造一個迭代法來解這問題. 由 Dual optimization problem 我們知道對於 $F$ 這個函數我們要求其最大值. 所以我們試著朝 gradient 方向走來往上走, 意即
+$$
+\lambda^{k+1} = \lambda_k + \alpha^k\nabla F(\lambda^k)
+$$
+我們知道 $\nabla F(\lambda^k) = A\pmb{\tilde{x}}-\pmb{b}$, 其中 $\pmb{\tilde{x}} = argmin \ L(\pmb{x}, \pmb{\lambda}^k)$. 因此我們有以下這方法:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Dual ascent iteration method:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;第一步: 固定一個 $\pmb{\lambda}$ 我們解一個 optimization 問題(沒有 constraints)
+$$
+\pmb{x}^{k+1} = argmin \ L(x, \pmb{\lambda}^k)
+$$&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;第二步: 接著我們用 gradient ascent 來更新 $\pmb{\lambda}$
+$$
+\lambda^{k+1} = \lambda_k + \alpha^k(A\pmb{x}^{k+1}-\pmb{b})
+$$&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;迭代下去我們可以得到原問題的解!&lt;/p&gt;
+&lt;hr&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -5,12 +5,971 @@
     <link>https://teshenglin.github.io/tags/optimization/</link>
       <atom:link href="https://teshenglin.github.io/tags/optimization/index.xml" rel="self" type="application/rss+xml" />
     <description>optimization</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 22 May 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 12 Jun 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
       <title>optimization</title>
       <link>https://teshenglin.github.io/tags/optimization/</link>
     </image>
+    
+    <item>
+      <title>Lagrange Multiplier - 01</title>
+      <link>https://teshenglin.github.io/post/2020_lagrange_multiplier/</link>
+      <pubDate>Fri, 12 Jun 2020 00:00:00 +0000</pubDate>
+      <guid>https://teshenglin.github.io/post/2020_lagrange_multiplier/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;在微積分課程裡我們有學到如何利用 Lagrange multiplier 來解 constraint optimization 問題. 這邊要介紹課本裡沒教的 Lagrangian function.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&#34;goal-我們想要解以下這個問題&#34;&gt;Goal: 我們想要解以下這個問題&lt;/h4&gt;
+&lt;p&gt;$$
+\min_{x} f(x), \quad \text{subject to } \quad  g(x)=0.
+$$&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Observation&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;微積分課本告訴我們一個相對好懂的直觀, 就是這個解會發生在兩個等高線相切的地方, 因此在這個問題的解那個點兩個函數 $f$ 與 $g$ 等高線的法向量會平行, 因此可以列出以下兩個式子
+$$
+\partial_x f + \lambda \partial_x g = 0, \quad  g(x)=0.
+$$
+因為有兩個方程式, 因此我們可以解出兩個未知數 $x$ 以及 $\lambda$, 其中 $\lambda$ 即稱為 Lagrange multiplier.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;上列的這個方程組有另一種相對好記的方式, 就是引進所謂的 Lagrangian function
+$$
+L(x, \lambda) = f(x) + \lambda g(x)
+$$
+這是一個雙變數方程式, 而原本問題的解會發生在這個方程的 critical point, 也就是會滿足 $\nabla L=0$.&lt;/p&gt;
+&lt;p&gt;要注意的是由於 $L$ 是個雙變數函數, 所以 $\nabla = (\partial_x, \partial_{\lambda})$. 根據這樣的定義我們將 $\nabla L=0$ 方程式列出來會得到跟上面一模一樣的兩個方程組.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Remark 1:&lt;/strong&gt;  $\partial_{x} L = \partial_x f + \lambda \partial_x g$&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Remark 2:&lt;/strong&gt;  $\partial_{\lambda} L = g(x)$&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;引進 Lagrangian function 比較好記是因為假設我有更多的 constraints, 例如我想解以下這個問題:
+$$
+\min_{x} f(x), \quad \text{subject to } \quad  g_1(x)=0, \quad g_2(x)=0.
+$$
+要找一個函數最小值不過有兩個限制條件.&lt;/p&gt;
+&lt;p&gt;這樣的話我們照之前的步驟, 先引進 Lagrangian function
+$$
+L(x, \lambda_1, \lambda_2) = f(x) + \lambda_1 g_1(x) + \lambda_2 g_2(x)
+$$
+然後原問題的最佳解會發生在 $\nabla L=0$.&lt;/p&gt;
+&lt;p&gt;要注意的是這次的 $L$ 是個三變數函數, 所以 $\nabla L = (\partial_x, \partial_{\lambda_1}, \partial_{\lambda_2})$. 然後將 $\nabla L=0$ 寫下來就是
+$$
+\partial_x f + \lambda_1 \partial_x g_1 + \lambda_2 \partial_x g_2 = 0, \quad  g_1(x)=0, \quad g_2(x)=0.
+$$
+就得到我們需要解的方程組了!&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;接著我們試著將以上寫的更廣義一點, 考慮一個 $n$ 維度的最佳化問題有 $m$ 個限制式, 我們引進一些符號: $\pmb{x}\in \mathbb{R}^n$,  $\pmb{g}(\pmb{x}):\mathbb{R}^n\to\mathbb{R}^m$, 這個有限制的最佳化問題即可寫成
+$$
+\min_{\pmb{x}\in\mathbb{R}^n}f(\pmb{x}), \quad \text{subject to } \quad  \pmb{g}(\pmb{x})=\pmb{0}.
+$$&lt;/p&gt;
+&lt;p&gt;我們接著引進 Lagrangian function
+$$
+L(\pmb{x}, \pmb{\lambda}) = f(\pmb{x}) + \pmb{\lambda}^T \pmb{g}(\pmb{x}), \quad \pmb{\lambda}\in\mathbb{R}^m
+$$&lt;/p&gt;
+&lt;p&gt;原問題的最佳解會發生在 $\nabla L=0$, 也就是 $(\nabla_{\pmb{x}} L, \nabla_{\pmb{\lambda}} L) = (0, 0)$, 也就是
+$$
+\nabla_{\pmb{x}} f(\pmb{x}) + \pmb{\lambda}^T \nabla_{\pmb{x}}\pmb{g}(\pmb{x}) = 0, \quad \pmb{g}(\pmb{x})=\pmb{0}.
+$$&lt;/p&gt;
+&lt;hr&gt;
+&lt;blockquote&gt;
+&lt;p&gt;所以為什麼要引進 Lagrange multiplier 或是 Lagrangian function?&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;引進 Lagrange multiplier 的好處是我們將一個&lt;strong&gt;最佳化問題&lt;/strong&gt;改寫成一個&lt;strong&gt;求根問題&lt;/strong&gt;. 理論上 $f(x)=0$ 這種問題不管線性或非線性我們都比較會解. 而最佳化問題就相對比較無從下手.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;BUT&lt;/strong&gt;, 付出的代價是我們增加了維度! 原本 $n$ 維最小值問題變成 $n+m$ 維求根問題.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;引進 Lagrangian function 最明顯的好處是&lt;strong&gt;比較好記&lt;/strong&gt;, 不管是記在頭腦裡的記或是寫筆記下來的記. 整個問題很輕易的就記成 $\nabla L=0$.&lt;/p&gt;
+&lt;p&gt;當然還有其他更重要的好處.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Lagrange Multiplier - 02</title>
+      <link>https://teshenglin.github.io/post/2020_lagrange_multiplier_2/</link>
+      <pubDate>Fri, 12 Jun 2020 00:00:00 +0000</pubDate>
+      <guid>https://teshenglin.github.io/post/2020_lagrange_multiplier_2/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;這裡我們再多討論一點 Lagrangian function.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;我們先看最簡單的一維問題, 求一個有限制式的函數最小值問題:
+$$
+\min_{x} f(x), \quad \text{subject to } \quad  g(x)=0.
+$$&lt;/p&gt;
+&lt;p&gt;我們引進 Lagrangian function
+$$
+L(x, \lambda) = f(x) + \lambda g(x)
+$$
+並且知道原問題的解發生在 $\nabla L=0$ 的地方.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Question:&lt;/strong&gt; 從微積分我們知道 $\nabla L=0$ 是 $L(x, \lambda)$ 這個函數 critical point發生的地方, 那這個 critical point 究竟是 local max/min 還是 saddle 呢?&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;要回答這問題其實很簡單, 我們看這個二維函數的判別式就知道. 這函數的變數有兩個分別是 $x$ 以及 $\lambda$, 所以判別式是
+$$
+L_{xx}L_{\lambda\lambda} - L_{x\lambda}^2 = -(g_x)^2 \le 0
+$$
+所以我們知道原最佳化問題的解其實是這個 Lagragian function 的 saddle point (至少不是 local max/min)!&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Constraint optimization problem&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;我們事實上可以考慮更一般的問題
+$$
+\min_{x} f(x), \quad \text{subject to } \quad  g(x) \le 0.
+$$
+這樣的問題我們可以定義一樣的 Lagrangian function
+$$
+L(x, \lambda) = f(x) + \lambda g(x).
+$$&lt;/p&gt;
+&lt;p&gt;我們有以下這個定理:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;h2 id=&#34;theorem---saddle-point-sufficient-condition&#34;&gt;Theorem - Saddle point (Sufficient condition)&lt;/h2&gt;
+&lt;p&gt;Let $P$ be a constraint optimization problem.
+If $(x^+, \lambda^+)$ is a saddle point, that is,
+$$\forall x\in\mathbb{R}, \forall\lambda\ge 0, \quad L(x^+, \lambda)\le L(x^+, \lambda^+)\le L(x, \lambda^+),$$
+then it is a solution of $P$.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;這個證明很簡單.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;根據不等式第一個部分
+$$\forall\lambda\ge 0, \quad L(x^+, \lambda)\le L(x^+, \lambda^+)$$
+帶入 $L$ 我們得到 $\lambda g(x^+) \le \lambda^+ g(x^+)$.&lt;/p&gt;
+&lt;p&gt;由於對所有 $\lambda$ 都對, 我們讓 $\lambda\to\infty$ 得到 $g(x^+)\le 0$.
+接著讓 $\lambda\to 0$ 我們得到 $0\le \lambda^+ g(x^+)\le 0$, 因此 $\lambda^+ g(x^+)=0$.&lt;/p&gt;
+&lt;p&gt;有這件事後我們再看不等式第二部分, $L(x^+, \lambda^+)\le L(x, \lambda^+)$.
+代入 $L$ 以及以上結果我們有 $f(x^+)\le f(x) + \lambda^+ g(x)$.&lt;/p&gt;
+&lt;p&gt;因此, 若 $g(x)\le 0$, 我們必定有 $f(x^+)\le f(x)$.&lt;/p&gt;
+&lt;p&gt;QED.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;p&gt;更進一步, 我們可以引進這個 Lagrange dual function:
+$$
+F(\lambda) = \inf_{x} L(x, \lambda)
+$$
+也就是固定一個 $\lambda$ 我去找這函數的最大下界(有點像最小值不過不一定要碰到). 據此我們可以引進以下的 dual problem.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Dual optimization problem&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;$$
+\max_{\lambda} F(\lambda), \quad \lambda \ge 0.
+$$&lt;/p&gt;
+&lt;hr&gt;
+&lt;h4 id=&#34;舉個例子&#34;&gt;舉個例子&lt;/h4&gt;
+&lt;p&gt;我們考慮這個特別的 constraint optimization 問題
+$$
+\min_{\pmb{x}\in\mathbb{R}^n}f(\pmb{x}), \quad \text{subject to } \quad  A\pmb{x}-\pmb{b}=\pmb{0},
+$$
+其中 $A$ 是個矩陣而 $\pmb{b}$ 是個向量. 事實上也就是說 constraint $g(\pmb{x}) = A\pmb{x}-\pmb{b}$.&lt;/p&gt;
+&lt;p&gt;把 Lagrangian function 寫下來就是
+$$
+L(\pmb{x}, \pmb{\lambda}) = f(\pmb{x}) + \pmb{\lambda}^T(A\pmb{x}-\pmb{b}).
+$$&lt;/p&gt;
+&lt;p&gt;我們可以構造一個迭代法來解這問題. 由 Dual optimization problem 我們知道對於 $F$ 這個函數我們要求其最大值. 所以我們試著朝 gradient 方向走來往上走, 意即
+$$
+\lambda^{k+1} = \lambda_k + \alpha^k\nabla F(\lambda^k)
+$$
+我們知道 $\nabla F(\lambda^k) = A\pmb{\tilde{x}}-\pmb{b}$, 其中 $\pmb{\tilde{x}} = argmin \ L(\pmb{x}, \pmb{\lambda}^k)$. 因此我們有以下這方法:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Dual ascent iteration method:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;第一步: 固定一個 $\pmb{\lambda}$ 我們解一個 optimization 問題(沒有 constraints)
+$$
+\pmb{x}^{k+1} = argmin \ L(x, \pmb{\lambda}^k)
+$$&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;第二步: 接著我們用 gradient ascent 來更新 $\pmb{\lambda}$
+$$
+\lambda^{k+1} = \lambda_k + \alpha^k(A\pmb{x}^{k+1}-\pmb{b})
+$$&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;迭代下去我們可以得到原問題的解!&lt;/p&gt;
+&lt;hr&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Sec.5.2 - Area functions</title>
+      <link>https://teshenglin.github.io/post/2020_cal_s5p2/</link>
+      <pubDate>Wed, 10 Jun 2020 00:00:00 +0000</pubDate>
+      <guid>https://teshenglin.github.io/post/2020_cal_s5p2/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;Discovery Project in Sec.5.2, Calculus by Stewart&lt;br&gt;
+Chinese version 
+&lt;a href=&#34;https://teshenglin.github.io/post/2020_cal_s5p2_ch&#34;&gt;面積函數&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Question 1(a):&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Draw the line $y = 2t+1$ and use geometry to find the area under this line, above the t-axis, and between the vertical lines $t=1$ and $t = 3$.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;let $f(x)=y=2t+1$, then $f(1)=3$ and $f(3)=7$.&lt;/p&gt;
+&lt;p&gt;So, Area$= \frac{1}{2}(3+7)(3-1) = 10$&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://teshenglin.github.io/post/figs/cals5p2_1.png&#34; &gt;
+
+
+  &lt;img src=&#34;https://teshenglin.github.io/post/figs/cals5p2_1.png&#34; alt=&#34;&#34; width=&#34;600px&#34; &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Question 1(b):&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;If $x&amp;gt;1$, let $A(x)$ be the area of the region that lies under the line $y = 2t + 1$ between $t =1$ and $t = x$. Sketch this region and use geometry to find expression for $A(x)$.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;$f(1)=3$ and $f(x)=2x+1$.&lt;/p&gt;
+&lt;p&gt;Area$= A(x) = \frac{1}{2}(2x+1+3)(x-1) = x^2 +x -2 $&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Question 1(c):&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Differentiate the area function $A(x)$. What do you notice?&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Because $A(x) = x^2+x-2$, then $A’(x) = 2x+1$.&lt;/p&gt;
+&lt;p&gt;We can found that $A’(x)$ have the same form with $f(x) = y = 2t+1$.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Question 2(a):&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;If $x \geq  -1$, let
+$$
+A(x) = \int_{-1}^{x} (1+t^2)dt
+$$
+$A(x)$ represents the area of a region. Sketch that region.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://teshenglin.github.io/post/figs/cals5p2_2.png&#34; &gt;
+
+
+  &lt;img src=&#34;https://teshenglin.github.io/post/figs/cals5p2_2.png&#34; alt=&#34;&#34; width=&#34;600px&#34; &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Question 2(b):&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Use the result of Exercise 5.2.28 to find an expression for $A(x)$.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;$$
+A(x) = \int_{-1}^{x} (1+t^2)dt =\frac{t^3-(-1)^3}{3}+x+1
+$$&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Question 2(c):&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Find $A&amp;rsquo;(x)$. What do you notice?&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;$A’(x) = 1+t^2$, we can found that $A’(x)$ is the upper bound of the area of a region.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Question 2(d):&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;If $x \geq  -1$ and &lt;em&gt;h&lt;/em&gt; is a small positive number, then $A(x+h) - A(x)$ represents the area of a region. Describe and sketch the region.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The area is trapezoid, the length of base is $h$ ,and the length of parallel sides is $A(x+h)$  and $A(x)$ ,respectively.&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://teshenglin.github.io/post/figs/cals5p2_3.png&#34; &gt;
+
+
+  &lt;img src=&#34;https://teshenglin.github.io/post/figs/cals5p2_3.png&#34; alt=&#34;&#34; width=&#34;600px&#34; &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Question 2(e):&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Draw a rectangle that approximates the region in part (d). By comparing the areas of these two regions, show that
+$$
+\frac{A(x+h)-A(x)}{h} \approx 1+x^2
+$$&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://teshenglin.github.io/post/figs/cals5p2_4.png&#34; &gt;
+
+
+  &lt;img src=&#34;https://teshenglin.github.io/post/figs/cals5p2_4.png&#34; alt=&#34;&#34; width=&#34;600px&#34; &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Question 2(f):&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Use part (e) to give an intuitive explanation for the result of part (c).&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;As you can see, the result of part (c) is equal to the result of part (e) ,which means when we cut the area into infinite areas, the result will equal to the differentiate of the formula.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Question 3(a):&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Draw the graph of the function $f(x)=cos(x^2)$ in the viewing rectangle $[0,2]$ by $[-1.25,1.25]$&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://teshenglin.github.io/post/figs/cals5p2_5.png&#34; &gt;
+
+
+  &lt;img src=&#34;https://teshenglin.github.io/post/figs/cals5p2_5.png&#34; alt=&#34;&#34; width=&#34;600px&#34; &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Question 3(b):&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;If we define a new function $g$ by
+$$
+g(x) = \int_{0}^{x}\cos(t^2) dt
+$$
+then $g(x)$ is the area under the graph of $f$ from $0$ to $x$ [until $f(x)$ becomes negative, at which point $g(x)$ becomes a difference of areas.] Use part (a) to determine the value of $x$ at which $g(x)$ starts to decrease. [Unlike the integral in Problem 2, it is impossible to evaluate the intergral defining $g$ to obtain an explicit expression for $g(x)$]&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;According to part (a), we can found that $g(x)$ starts to decrease when the line goes under x-axis. Thus, $x^2 = \pi \to x\approx1.77245$&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Question 3(c):&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Use the integration command on your calculator or computer to estimate $g(0.2)$, $g(0.4),g(0.6),\cdots,g(1.8),g(2)$. Then use these values to sketch a graph of $g$.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;$g(x)$ is the blue line in the graph.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;center&#34;&gt;&lt;strong&gt;x&lt;/strong&gt;&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;&lt;strong&gt;g(x)&lt;/strong&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;0.2&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.2&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;0.4&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.399&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;0.6&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.5923&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;0.8&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.7678&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.9045&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;1.2&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.9739&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;1.4&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.9498&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;1.6&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.8255&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;1.8&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.6354&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;2&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.4615&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://teshenglin.github.io/post/figs/cals5p2_6.png&#34; &gt;
+
+
+  &lt;img src=&#34;https://teshenglin.github.io/post/figs/cals5p2_6.png&#34; alt=&#34;&#34; width=&#34;600px&#34; &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Question 3(d):&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Use your graph of $g$ from part (c) to sketch the graph of $g’$ using the interpretation of $g’(x)$ as the slope of a tangent line. How does the graph of $g’$ compare with the graph of $f$ ?&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;We can found that $g’(x)$ is almost the same with the graph of $f$.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;center&#34;&gt;&lt;strong&gt;x&lt;/strong&gt;&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;&lt;strong&gt;g’(x)&lt;/strong&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;0.3&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.995&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;0.5&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.9665&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;0.7&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.8775&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;0.9&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.6835&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;1.1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.347&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;1.3&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;-0.1205&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;1.5&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;-0.6215&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;1.7&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;-0.9505&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;1.9&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;-0.8695&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://teshenglin.github.io/post/figs/cals5p2_7.png&#34; &gt;
+
+
+  &lt;img src=&#34;https://teshenglin.github.io/post/figs/cals5p2_7.png&#34; alt=&#34;&#34; width=&#34;600px&#34; &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Question 4:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Suppose $f$ is a continuous function on the interval $[a,b]$ and we define a new function $g$ by the equation
+$$
+g(x) = \int_{a}^{x} f(x)dt
+$$
+Based on your result in Problem 1-3, conjecture an expression for $g’(x)$.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Based on the result in Problem 1-3, we can conjecture that $g’(x) = f(x)$.&lt;/p&gt;
+&lt;hr&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Sec.5.2 - 面積函數</title>
+      <link>https://teshenglin.github.io/post/2020_cal_s5p2_ch/</link>
+      <pubDate>Wed, 10 Jun 2020 00:00:00 +0000</pubDate>
+      <guid>https://teshenglin.github.io/post/2020_cal_s5p2_ch/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;Discovery Project in Sec.5.2, Calculus by Stewart&lt;br&gt;
+英文版請見 
+&lt;a href=&#34;https://teshenglin.github.io/post/2020_cal_s5p2&#34;&gt;Area functions&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Question 1(a):&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;畫出 $y = 2t+1$ 且用幾何方法找出在此線下方、$t$軸上方、與$t＝1$和$ｔ＝３$兩條垂直線所圍出的面積.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;令 $f(x)=y=2t+1$, 則 $f(1)=3$ 且 $f(3)=7$. 所以其面積為$\frac{1}{2}(3+7)(3-1) = 10$&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://teshenglin.github.io/post/figs/cals5p2_1.png&#34; &gt;
+
+
+  &lt;img src=&#34;https://teshenglin.github.io/post/figs/cals5p2_1.png&#34; alt=&#34;&#34; width=&#34;600px&#34; &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Question 1(b):&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;如果 $x  &amp;gt; 1$, 令 $A(x)$ 是由 $y = 2t + 1$、$t$軸與 $t =1$ 和 $t = x$ 所圍出的面積 。畫出這個區域並用幾何方法表達 $A(x)$.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;$f(1)=3$ and $f(x)=2x+1$.&lt;/p&gt;
+&lt;p&gt;Area$= A(x) = \frac{1}{2}(2x+1+3)(x-1) = x^2 +x -2 $&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Question 1(c):&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;將 $A(x)$ 微分，你注意到了什麼？&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;因為 $A(x) = x^2+x-2$, 所以 $A’(x) = 2x+1$. 我們可以得知 $A’(x)$ 和 $f(x) = y = 2t+1$ 形式相同.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Question 2(a):&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;如果 $x \geq  -1$ ， 令
+$$
+A(x) = \int_{-1}^{x} (1+t^2)dt
+$$
+$A(x)$ 代表所圍成的面積， 畫出此區域&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://teshenglin.github.io/post/figs/cals5p2_2.png&#34; &gt;
+
+
+  &lt;img src=&#34;https://teshenglin.github.io/post/figs/cals5p2_2.png&#34; alt=&#34;&#34; width=&#34;600px&#34; &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Question 2(b):&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;用練習題 5.2.28的結果來找出一種方法表示 $A(x)$.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;$$
+A(x) = \int_{-1}^{x} (1+t^2)dt =\frac{t^3-(-1)^3}{3}+x+1
+$$&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Question 2(c):&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;找出 $A&amp;rsquo;(x)$ ，你察覺到了什麼？&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;由 $A’(x) = 1+t^2$ ，我們可以得知 $A’(x)$ 是所圍成區域的拋物線&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Question 2(d):&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;如果  $x \geq  -1$ 且 &lt;em&gt;h&lt;/em&gt; 為極小正實數，則 $A(x+h) - A(x)$ 代表此區域的面積。 敘述且畫出此區域。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;此區域為梯形， 其底為 $h$ 且其兩條平行線的長度分別為  $A(x+h)$  和 $A(x)$&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://teshenglin.github.io/post/figs/cals5p2_3.png&#34; &gt;
+
+
+  &lt;img src=&#34;https://teshenglin.github.io/post/figs/cals5p2_3.png&#34; alt=&#34;&#34; width=&#34;600px&#34; &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Question 2(e):&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;畫出一個長方形來估計 (d)部分的區域面積。 藉由比較這兩個區域的面積來顯示
+$$
+\frac{A(x+h)-A(x)}{h} \approx 1+x^2
+$$&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://teshenglin.github.io/post/figs/cals5p2_4.png&#34; &gt;
+
+
+  &lt;img src=&#34;https://teshenglin.github.io/post/figs/cals5p2_4.png&#34; alt=&#34;&#34; width=&#34;600px&#34; &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Question 2(f):&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;用 (e)部分來給予 (c)部分的結果直觀的解釋。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;如我們所見(c)部分的結果和 (e)部份相同 ，而這代表當我們將一個區域劃分為無限個區域時其結果會等同於此函式的微分 。&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Question 3(a):&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;畫出此方程式 $f(x)=cos(x^2)$ 在[0,2]$ 及 $[-1.25,1.25]​的視窗內&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://teshenglin.github.io/post/figs/cals5p2_5.png&#34; &gt;
+
+
+  &lt;img src=&#34;https://teshenglin.github.io/post/figs/cals5p2_5.png&#34; alt=&#34;&#34; width=&#34;600px&#34; &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Question 3(b):&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;如果我們定義 $g$ 為
+$$
+g(x) = \int_{0}^{x}\cos(t^2) dt
+$$
+則 $g(x)$ 是 $f$ 函式 從 $0$ 到 $x$ 下的面積 [直到 $f(x)$ 小於 $0$, 當 $g(x)$ 和所圍出的面積不同時] 用 (a)部分來決定當 $g(x)$ 開始減少時的 $x$ 值。[不同於問題2 的積分,，我們不可能得到一個清楚的積分表達式來定義 $g(x)$]&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;由(a)部分，我們可以得到當此線在x軸之下 $g(x)$ 開始減少。因此, $x^2 = \pi \to x\approx1.77245$&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Question 3(c):&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;用積分計算機來計算 $g(0.2),$ $g(0.4),g(0.6),\cdots,g(1.8),g(2)$. 然後用這些直來畫出 $g$.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;$g(x)$ 為圖中的藍線&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;center&#34;&gt;&lt;strong&gt;x&lt;/strong&gt;&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;&lt;strong&gt;g(x)&lt;/strong&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;0.2&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.2&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;0.4&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.399&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;0.6&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.5923&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;0.8&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.7678&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.9045&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;1.2&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.9739&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;1.4&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.9498&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;1.6&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.8255&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;1.8&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.6354&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;2&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.4615&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://teshenglin.github.io/post/figs/cals5p2_6.png&#34; &gt;
+
+
+  &lt;img src=&#34;https://teshenglin.github.io/post/figs/cals5p2_6.png&#34; alt=&#34;&#34; width=&#34;600px&#34; &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Question 3(d):&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;用(c)部分 $g$ 的圖把$$g’(x)$$作為切線的斜率來畫出 $g’$ ，且將  $g’$ 和 $f$ 比較&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;我們可以看出 $g’(x)$ 幾乎和  $f$ 相同&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;center&#34;&gt;&lt;strong&gt;x&lt;/strong&gt;&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;&lt;strong&gt;g’(x)&lt;/strong&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;0.3&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.995&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;0.5&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.9665&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;0.7&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.8775&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;0.9&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.6835&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;1.1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.347&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;1.3&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;-0.1205&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;1.5&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;-0.6215&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;1.7&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;-0.9505&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;1.9&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;-0.8695&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://teshenglin.github.io/post/figs/cals5p2_7.png&#34; &gt;
+
+
+  &lt;img src=&#34;https://teshenglin.github.io/post/figs/cals5p2_7.png&#34; alt=&#34;&#34; width=&#34;600px&#34; &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Question 4:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;設想 $f$ 在區間 $[a,b]$ 為連續函數，並將函式 $g$ 由方程式定義為
+$$
+g(x) = \int_{a}^{x} f(x)dt
+$$
+由練習 1-3的結論， 推測 $g’(x)$ 的表達式&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;由練習 1-3的結論，我們可以推測 $g’(x) = f(x)$.&lt;/p&gt;
+&lt;hr&gt;
+</description>
+    </item>
     
     <item>
       <title>Sec.3.1 - 建造較佳的雲霄飛車</title>

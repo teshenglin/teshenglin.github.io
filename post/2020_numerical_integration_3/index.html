@@ -243,7 +243,7 @@
     
       <meta property="article:published_time" content="2020-06-02T00:00:00&#43;00:00">
     
-    <meta property="article:modified_time" content="2020-06-03T09:21:29&#43;08:00">
+    <meta property="article:modified_time" content="2020-06-12T22:14:24&#43;08:00">
   
 
   
@@ -272,7 +272,7 @@
   "headline": "高斯積分",
   
   "datePublished": "2020-06-02T00:00:00Z",
-  "dateModified": "2020-06-03T09:21:29+08:00",
+  "dateModified": "2020-06-12T22:14:24+08:00",
   
   "author": {
     "@type": "Person",
@@ -555,7 +555,7 @@
           Last updated on
       
     
-    Jun 3, 2020
+    Jun 12, 2020
   </span>
   
 
@@ -684,12 +684,12 @@ $$
 $$
 \int^1_{-1} p(x)dx = \int^1_{-1} P_{n+1}(x)Q(x) + R(x)dx = \int^1_{-1} R(x)dx,
 $$
-其中 $P_{n+1}$ 與 $Q$ 的積分等於零是用到上面正交多項式的性質.</p>
+其中 $P_{n+1}$ 與 $Q$ 相丞後的積分等於零是用到上面正交多項式的性質.</p>
 <p>以上這積分如果以數值積分來表示的話就是
 $$
 \int^1_{-1} p(x)dx \approx \sum^n_{i=0} w_i p(x_i) = \sum^n_{i=0} w_i \left(P_{n+1}(x_i)Q(x_i) + R(x_i)\right).
 $$
-我們希望數值積分也會有 &ldquo;$P_{n+1}$ 與 $Q$ 的積分等於零&rdquo; 這件事. 那一個最簡單的取法就是我們取 $x_i$ 是 $P_{n+1}(x)$ 這個 $n+1$ 次多項式所有的根. 由於 $P_{n+1}$ 剛好有 $n+1$ 個不重複的根, 這樣我們就有 $x_i$ 這些點了, 而且 $P_{n+1}(x_i)=0$ 表示
+我們希望數值積分也會有 &ldquo;$P_{n+1}$ 與 $Q$ 相乘的積分等於零&rdquo; 這件事. 那一個最簡單的取法就是我們取 $x_i$ 是 $P_{n+1}(x)$ 這個 $n+1$ 次多項式所有的根. 由於 $P_{n+1}$ 剛好有 $n+1$ 個不重複的根, 這樣我們就有 $x_i$ 這些點了, 而且 $P_{n+1}(x_i)=0$ 表示
 $$
 \sum^n_{i=0} w_i P_{n+1}(x_i)Q(x_i)=0,
 $$
