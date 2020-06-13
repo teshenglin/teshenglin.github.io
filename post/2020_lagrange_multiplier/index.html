@@ -243,7 +243,7 @@
     
       <meta property="article:published_time" content="2020-06-12T00:00:00&#43;00:00">
     
-    <meta property="article:modified_time" content="2020-06-12T22:14:24&#43;08:00">
+    <meta property="article:modified_time" content="2020-06-13T20:46:45&#43;08:00">
   
 
   
@@ -272,7 +272,7 @@
   "headline": "Lagrange Multiplier - 01",
   
   "datePublished": "2020-06-12T00:00:00Z",
-  "dateModified": "2020-06-12T22:14:24+08:00",
+  "dateModified": "2020-06-13T20:46:45+08:00",
   
   "author": {
     "@type": "Person",
@@ -555,7 +555,7 @@
           Last updated on
       
     
-    Jun 12, 2020
+    Jun 13, 2020
   </span>
   
 
@@ -616,11 +616,12 @@
 $$</p>
 <hr>
 <p><strong>Observation</strong></p>
-<p>微積分課本告訴我們一個相對好懂的直觀, 就是這個解會發生在兩個等高線相切的地方, 因此在這個問題的解那個點兩個函數 $f$ 與 $g$ 等高線的法向量會平行, 因此可以列出以下兩個式子
+<p>微積分課本告訴我們一個相對好懂的直觀, 就是這個解會發生在兩個等高線相切的地方, 因此在這個問題的解那個點的位置, 兩個函數 $f$ 與 $g$ 等高線的法向量會平行, 因此可以列出以下兩個式子
 $$
 \partial_x f + \lambda \partial_x g = 0, \quad  g(x)=0.
 $$
-因為有兩個方程式, 因此我們可以解出兩個未知數 $x$ 以及 $\lambda$, 其中 $\lambda$ 即稱為 Lagrange multiplier.</p>
+這裡我們引進一個新的未知數 $\lambda$, 即稱為 Lagrange multiplier.
+因為有兩個方程式, 因此我們可以解出兩個未知數 $x$ 以及 $\lambda$.</p>
 <hr>
 <p>上列的這個方程組有另一種相對好記的方式, 就是引進所謂的 Lagrangian function
 $$
@@ -665,12 +666,13 @@ $$</p>
 </blockquote>
 <ul>
 <li>
-<p>引進 Lagrange multiplier 的好處是我們將一個<strong>最佳化問題</strong>改寫成一個<strong>求根問題</strong>. 理論上 $f(x)=0$ 這種問題不管線性或非線性我們都比較會解. 而最佳化問題就相對比較無從下手.</p>
+<p>引進 Lagrange multiplier 的好處是我們將一個<strong>最佳化問題</strong>改寫成一個<strong>求根問題</strong>. 理論上 $F(x)=0$ 這種問題不管線性或非線性我們都比較會解. 而最佳化問題就相對比較無從下手.</p>
 <p><strong>BUT</strong>, 付出的代價是我們增加了維度! 原本 $n$ 維最小值問題變成 $n+m$ 維求根問題.</p>
 </li>
 <li>
-<p>引進 Lagrangian function 最明顯的好處是<strong>比較好記</strong>, 不管是記在頭腦裡的記或是寫筆記下來的記. 整個問題很輕易的就記成 $\nabla L=0$.</p>
-<p>當然還有其他更重要的好處.</p>
+<p>引進 Lagrangian function 最明顯的好處是<strong>比較好記</strong>, 不管是<code>記</code>在頭腦裡或是做筆<code>記</code>寫下來. 整個問題很輕易的就記成 $\nabla L=0$.</p>
+<p>當然還有其他更重要的好處, 就是可以推導出所謂的 dual optimization problem: 
+<a href="/post/2020_lagrange_multiplier_2">Lagrange Multiplier - 02</a>.</p>
 </li>
 </ul>
 <hr>
@@ -875,13 +877,13 @@ $$</p>
       
       <li><a href="/post/2020_lagrange_multiplier_2/">Lagrange Multiplier - 02</a></li>
       
+      <li><a href="/post/2020_lagrange_multiplier_3/">Lagrange Multiplier - 03</a></li>
+      
       <li><a href="/post/2020_cal_s5p2/">Sec.5.2 - Area functions</a></li>
       
       <li><a href="/post/2020_cal_s5p2_ch/">Sec.5.2 - 面積函數</a></li>
       
       <li><a href="/post/2020_cal_s3p1_ch/">Sec.3.1 - 建造較佳的雲霄飛車</a></li>
-      
-      <li><a href="/post/2020_cal_s6p5/">Sec.6.5 - Where to Sit at the Movies</a></li>
       
     </ul>
   </div>

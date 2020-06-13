@@ -28,10 +28,10 @@
   
     
   
-  <meta name="description" content="Assistant Professor">
+  <meta name="description" content="這裡我們討論一下 Lagrange multiplier. 我們知道, 如果想要解以下這個有限制式的最佳化問題 $$ \min_{x} f(x), \quad \text{subject to } \quad g(x)=k, $$ 一個方式是引進 Lagrange multiplier, $\lambda$, 然後可以列出以下兩個式子 $$ \partial_x f &#43;">
 
   
-  <link rel="alternate" hreflang="en-us" href="https://teshenglin.github.io/post/">
+  <link rel="alternate" hreflang="en-us" href="https://teshenglin.github.io/post/2020_lagrange_multiplier_3/">
 
   
 
@@ -216,14 +216,12 @@
 
 
   
-  <link rel="alternate" href="/post/index.xml" type="application/rss+xml" title="Te-Sheng Lin">
-  
 
   <link rel="manifest" href="/index.webmanifest">
   <link rel="icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_2.png">
   <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_2.png">
 
-  <link rel="canonical" href="https://teshenglin.github.io/post/">
+  <link rel="canonical" href="https://teshenglin.github.io/post/2020_lagrange_multiplier_3/">
 
   
   
@@ -237,18 +235,63 @@
   <meta property="twitter:card" content="summary">
   
   <meta property="og:site_name" content="Te-Sheng Lin">
-  <meta property="og:url" content="https://teshenglin.github.io/post/">
-  <meta property="og:title" content="Posts | Te-Sheng Lin">
-  <meta property="og:description" content="Assistant Professor"><meta property="og:image" content="https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png">
+  <meta property="og:url" content="https://teshenglin.github.io/post/2020_lagrange_multiplier_3/">
+  <meta property="og:title" content="Lagrange Multiplier - 03 | Te-Sheng Lin">
+  <meta property="og:description" content="這裡我們討論一下 Lagrange multiplier. 我們知道, 如果想要解以下這個有限制式的最佳化問題 $$ \min_{x} f(x), \quad \text{subject to } \quad g(x)=k, $$ 一個方式是引進 Lagrange multiplier, $\lambda$, 然後可以列出以下兩個式子 $$ \partial_x f &#43;"><meta property="og:image" content="https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png">
   <meta property="twitter:image" content="https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png"><meta property="og:locale" content="en-us">
   
     
+      <meta property="article:published_time" content="2020-06-12T00:00:00&#43;00:00">
+    
+    <meta property="article:modified_time" content="2020-06-13T20:46:45&#43;08:00">
   
 
   
 
 
+    
 
+
+
+
+
+
+  
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://teshenglin.github.io/post/2020_lagrange_multiplier_3/"
+  },
+  "headline": "Lagrange Multiplier - 03",
+  
+  "datePublished": "2020-06-12T00:00:00Z",
+  "dateModified": "2020-06-13T20:46:45+08:00",
+  
+  "author": {
+    "@type": "Person",
+    "name": "Te-Sheng Lin (林得勝)"
+  },
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "Te-Sheng Lin",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_2.png"
+    }
+  },
+  "description": "這裡我們討論一下 Lagrange multiplier. 我們知道, 如果想要解以下這個有限制式的最佳化問題 $$ \\min_{x} f(x), \\quad \\text{subject to } \\quad g(x)=k, $$ 一個方式是引進 Lagrange multiplier, $\\lambda$, 然後可以列出以下兩個式子 $$ \\partial_x f +"
+}
+</script>
+
+  
 
   
 
@@ -256,10 +299,13 @@
   
 
 
+  
 
 
 
-  <title>Posts | Te-Sheng Lin</title>
+
+
+  <title>Lagrange Multiplier - 03 | Te-Sheng Lin</title>
 
 </head>
 
@@ -454,185 +500,33 @@
 </nav>
 
 
-  
-
-
-
-
-
-
-
-
-
-
-
+  <article class="article">
 
   
 
+
+
+
+
+
+
+
+
+
+
+
+  
+
   
   
+  
+<div class="article-container pt-3">
+  <h1>Lagrange Multiplier - 03</h1>
+
+  
+
   
     
-  
-<div class="universal-wrapper pt-3">
-  <h1>Posts</h1>
-
-  
-
-  
-</div>
-
-
-
-<div class="universal-wrapper">
-
-  
-
-  
-  
-    
-      
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-<div class="media stream-item">
-  <div class="media-body">
-
-    <h3 class="article-title mb-0 mt-0">
-      <a href="/post/2019_cal_s3p4/" >Sec.3.4 - Where should a pilot start descent?</a>
-    </h3>
-
-    
-    <div class="article-style">
-      Applied Project in Sec.3.4, Calculus by Stewart Chinese version: 飛行員應該何時開始下降高度? An approach path for an aircraft landing is shown in …
-    </div>
-    
-
-    <div class="stream-meta article-metadata">
-
-      
-
-      
-        
-
-
-<div class="article-metadata">
-
-  
-  
-  
-  
-  <div>
-    
-
-
-
-  
-  <span><a href="/authors/%E9%84%92%E7%BF%94%E5%82%91/">鄒翔傑</a></span>, <span><a href="/authors/%E9%BB%83%E7%AB%8B%E9%88%9E/">黃立鈞</a></span>, <span><a href="/authors/admin/">Te-Sheng Lin (林得勝)</a></span>
-
-  </div>
-  
-  
-
-  
-  <span class="article-date">
-    
-    
-      
-          Last updated on
-      
-    
-    Apr 8, 2020
-  </span>
-  
-
-  
-
-  
-  <span class="middot-divider"></span>
-  <span class="article-reading-time">
-    2 min read
-  </span>
-  
-
-  
-  
-  
-  <span class="middot-divider"></span>
-  <a href="/post/2019_cal_s3p4/#disqus_thread"></a>
-  
-
-  
-  
-  <span class="middot-divider"></span>
-  <span class="article-categories">
-    <i class="fas fa-folder mr-1"></i><a href="/categories/calculus/">Calculus</a></span>
-  
-
-</div>
-
-      
-    </div>
-
-    
-
-  </div>
-  <div class="ml-3">
-    
-    
-  </div>
-</div>
-
-    
-  
-    
-      
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-<div class="media stream-item">
-  <div class="media-body">
-
-    <h3 class="article-title mb-0 mt-0">
-      <a href="/post/2019_fixed_point/" >Fixed point iteration</a>
-    </h3>
-
-    
-    <div class="article-style">
-      這裡我們介紹固定點迭代法 (Fixed point iteration) 首先我們介紹什麼是固定點 (Fixed point) Definition: Fixed point A fixed point of a function $f(x)$ is a number …
-    </div>
-    
-
-    <div class="stream-meta article-metadata">
-
-      
-
-      
-        
 
 
 <div class="article-metadata">
@@ -661,7 +555,7 @@
           Last updated on
       
     
-    May 23, 2020
+    Jun 13, 2020
   </span>
   
 
@@ -670,7 +564,7 @@
   
   <span class="middot-divider"></span>
   <span class="article-reading-time">
-    3 min read
+    2 min read
   </span>
   
 
@@ -678,7 +572,7 @@
   
   
   <span class="middot-divider"></span>
-  <a href="/post/2019_fixed_point/#disqus_thread"></a>
+  <a href="/post/2020_lagrange_multiplier_3/#disqus_thread"></a>
   
 
   
@@ -690,783 +584,363 @@
 
 </div>
 
-      
-    </div>
-
     
 
-  </div>
-  <div class="ml-3">
-    
-    
-  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
 </div>
 
-    
-  
-    
-      
 
 
+  <div class="article-container">
 
-
-
-
-
-
-
-
-
-
-  
-
-
-<div class="media stream-item">
-  <div class="media-body">
-
-    <h3 class="article-title mb-0 mt-0">
-      <a href="/post/2019_git/" >git 學習筆記</a>
-    </h3>
-
-    
     <div class="article-style">
-      這裡我們要介紹 git 這個分散式版本控制軟體. 有人可能會聽過 &lsquo;github&rsquo;. 不過這邊要提醒一下 git 跟 github 是不一樣的兩件事. 簡單的說 git 是一個軟體, 而 github 則是提供線上 git 服
+      <blockquote>
+<p>這裡我們討論一下 Lagrange multiplier.</p>
+</blockquote>
+<p>我們知道, 如果想要解以下這個有限制式的最佳化問題
+$$
+\min_{x} f(x), \quad \text{subject to } \quad  g(x)=k,
+$$
+一個方式是引進 Lagrange multiplier, $\lambda$, 然後可以列出以下兩個式子
+$$
+\partial_x f + \lambda \partial_x g = 0, \quad  g(x)=k.
+$$</p>
+<h4 id="question">Question:</h4>
+<p>解出聯立方程後我們得到 $x^+$, $\lambda^+$, 帶入原函數得到 $f^+=f(x^+)$.
+我們知道 $f^+$ 是最佳值, 而 $x^+$ 是最佳解. 那 $\lambda^+$ 是做什麼用的?
+看起來只是為了解出原問題所引進的虛擬變數. 它有什麼作用嗎?</p>
+<hr>
+<blockquote>
+<p>先說結論, $\lambda^+ = -\frac{df^+}{dk}$. 也就是告訴我們如果稍微改變限制式中的 $k$ 值, 那原題的最佳值會有怎樣的變化.</p>
+</blockquote>
+<hr>
+<p>我們先引進 Lagrangian function
+$$
+L(x, \lambda) = f(x) + \lambda (g(x) - k)
+$$
+並且知道原問題的解發生在 $\nabla L=0$ 的地方, 意即, $\nabla L(x^+, \lambda^+)=0$.
+然後我們有
+$$
+L^+ = L(x^+, \lambda^+) = f(x^+) + \lambda^+(g(x^+)-k) = f^+.
+$$</p>
+<p>在這裡我們要稍微小心一點. 固定一個 $k$ 值, 我們就有一個最佳化問題, 然後就可以解出 $x^+$ 跟 $\lambda^+$.
+而當 $k$ 值改變時, $x^+$, $\lambda^+$, 甚至 $f^+$ 以及 $L^+$ 也都會跟著改變, 所以我們想像這四個值都是 $k$ 的函數:
+$$
+x^+ = x^+(k), \ \lambda^+ = \lambda^+(k), \ f^+ = f^+(k), \ L^+ = L^+(k).
+$$
+再寫清楚一點就是
+$$
+L^+(k) = \left.L(x, \lambda,k)\right|_{x=x^+(k), \lambda=\lambda^+(k),k=k}
+$$</p>
+<p>其中
+$$
+L(x, \lambda,k) = f(x) + \lambda (g(x) - k).
+$$</p>
+<p><strong>Remark:</strong> 讀到這邊也許會覺得有個奇怪的地方, 就是為什麼要把 $L$ 從雙變數變成三變數函數.
+原因是當寫成 $L(x, \lambda)$ 時 $k$ 是個常數, 是不能變的. 想要改變 $k$ 值需要把它也當成一個變數比較合理.</p>
+<p>接著我們就可以微分
+$$
+\frac{d L^+}{dk} = \left.\frac{\partial L}{\partial x}\frac{d x}{dk} + \frac{\partial L}{\partial \lambda}\frac{d \lambda}{dk} + \frac{\partial L}{\partial k}\right|_{x=x^+(k), \lambda=\lambda^+(k),k=k} = -\lambda^+.
+$$</p>
+<p><strong>Remark:</strong>
+$$
+\left.\frac{\partial L}{\partial x}\right|_{x=x^+(k), \lambda=\lambda^+(k),k=k}=
+\left.\frac{\partial L}{\partial \lambda}\right|_{x=x^+(k), \lambda=\lambda^+(k),k=k}=0.
+$$</p>
+<p>由於 $f^+ =L^+$, 所以我們也可以得到 $\frac{d f^+}{dk} = -\lambda^+$.</p>
+<hr>
+<h4 id="舉個例子">舉個例子</h4>
+<p>以下單位皆為<code>萬元</code>!</p>
+<ul>
+<li>
+<p>假設我如果花費 $x$ 買進某一股票在一定時間後賣出可獲得 $2x$.</p>
+</li>
+<li>
+<p>假設我如果花費 $y$ 買進某一貴金屬在一定時間後賣出可獲得 $10y-y^2$.</p>
+</li>
+<li>
+<p>假設我總共可運用的財產只有 $10$</p>
+</li>
+</ul>
+<p>那我們可以列出以下限制最佳化問題</p>
+<p>$$
+\max_{x,y} f(x,y)=2x+(10y-y^2), \quad \text{subject to } \quad  x+y=10,
+$$</p>
+<ol>
+<li>
+<p>先引進 Lagrangian funtion
+$$
+L(x,y,\lambda) = 2x+(10y-y^2)+\lambda(x+y-10)
+$$</p>
+</li>
+<li>
+<p>列出方程式 $\nabla L=0$:
+$$
+\frac{\partial L}{\partial x} = 2 + \lambda =0, \quad
+\frac{\partial L}{\partial y} = 10-2y + \lambda =0, \quad
+\frac{\partial L}{\partial \lambda} = x+y-10 =0.
+$$</p>
+</li>
+<li>
+<p>解出得到
+$$
+x^+ = 6, \quad y^+=4, \quad \lambda^+=-2.
+$$
+也就是我們若以 $6$ 單位買進股票, $4$ 單位買進貴金屬, 一定時間賣出後可獲利 $f^+ = 36$ 單位.</p>
+</li>
+<li>
+<p>所以 $\lambda^+=-2$ 告訴我們 $\frac{d f^+}{dk}=-\lambda^+=2$, 意思就是如果我們增加一點 $k$ 值, 那獲利會是所增加數目的<strong>兩倍</strong>.</p>
+</li>
+<li>
+<p>將原題改成我目前可運用的財產有 $11$, 那會發現最佳解是 $x^+=7$, $y^+=4$, $f^+=38$, 獲利真的增加 $2$ 單位了!</p>
+<ul>
+<li>這例子比較特殊 $\lambda^+$ 衡等於 $2$, 所以才會那麼巧資金增加一單位獲利就增加兩單位. 一般而言這應該只是 linear appxoimation, 只有 $k$ 增加一點點時才會大約兩倍. 增加太多就不知道了.</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h4 id="references">References:</h4>
+<ul>
+<li>
+<p>
+<a href="https://youtu.be/m-G3K2GPmEQ" target="_blank" rel="noopener">Meaning of the Lagrange multiplier</a></p>
+</li>
+<li>
+<p>
+<a href="https://youtu.be/b9B2FZ5cqbM" target="_blank" rel="noopener">Proof for the meaning of Lagrange multipliers</a></p>
+</li>
+</ul>
+<hr>
+
     </div>
+
     
 
-    <div class="stream-meta article-metadata">
 
+
+
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/tags/optimization/">optimization</a>
+  
+  <a class="badge badge-light" href="/tags/iteration/">iteration</a>
+  
+</div>
+
+
+
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    
       
-
+      
       
         
-
-
-<div class="article-metadata">
-
-  
-  
-  
-  
-  <div>
-    
-
-
-
-  
-  <span><a href="/authors/admin/">Te-Sheng Lin (林得勝)</a></span>
-
-  </div>
-  
-  
-
-  
-  <span class="article-date">
-    
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=https://teshenglin.github.io/post/2020_lagrange_multiplier_3/&amp;text=Lagrange%20Multiplier%20-%2003" target="_blank" rel="noopener" class="share-btn-twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
     
       
-          Last updated on
       
-    
-    Dec 10, 2019
-  </span>
-  
-
-  
-
-  
-  <span class="middot-divider"></span>
-  <span class="article-reading-time">
-    1 min read
-  </span>
-  
-
-  
-  
-  
-  <span class="middot-divider"></span>
-  <a href="/post/2019_git/#disqus_thread"></a>
-  
-
-  
-  
-  <span class="middot-divider"></span>
-  <span class="article-categories">
-    <i class="fas fa-folder mr-1"></i><a href="/categories/notes/">notes</a></span>
-  
-
-</div>
-
-      
-    </div>
-
-    
-
-  </div>
-  <div class="ml-3">
-    
-    
-  </div>
-</div>
-
-    
-  
-    
-      
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-<div class="media stream-item">
-  <div class="media-body">
-
-    <h3 class="article-title mb-0 mt-0">
-      <a href="/post/2019_julia/" >Julia 學習筆記</a>
-    </h3>
-
-    
-    <div class="article-style">
-      延伸閱讀: Julia 學習筆記 - 簡介, 畫圖, 計時 這裡我們要介紹 julia 這個程式語言. 這是一個非常新的語言, 在 2009 年才問世, 遠比 1990 年出生的 python 來的年輕許多. 不過由
-    </div>
-    
-
-    <div class="stream-meta article-metadata">
-
-      
-
       
         
-
-
-<div class="article-metadata">
-
-  
-  
-  
-  
-  <div>
-    
-
-
-
-  
-  <span><a href="/authors/admin/">Te-Sheng Lin (林得勝)</a></span>
-
-  </div>
-  
-  
-
-  
-  <span class="article-date">
-    
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=https://teshenglin.github.io/post/2020_lagrange_multiplier_3/&amp;t=Lagrange%20Multiplier%20-%2003" target="_blank" rel="noopener" class="share-btn-facebook">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+      </li>
     
       
-          Last updated on
       
-    
-    May 23, 2020
-  </span>
-  
-
-  
-
-  
-  <span class="middot-divider"></span>
-  <span class="article-reading-time">
-    2 min read
-  </span>
-  
-
-  
-  
-  
-  <span class="middot-divider"></span>
-  <a href="/post/2019_julia/#disqus_thread"></a>
-  
-
-  
-  
-  <span class="middot-divider"></span>
-  <span class="article-categories">
-    <i class="fas fa-folder mr-1"></i><a href="/categories/notes/">notes</a>, <a href="/categories/notes_julia/">notes_julia</a></span>
-  
-
-</div>
-
-      
-    </div>
-
-    
-
-  </div>
-  <div class="ml-3">
-    
-    
-  </div>
-</div>
-
-    
-  
-    
-      
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-<div class="media stream-item">
-  <div class="media-body">
-
-    <h3 class="article-title mb-0 mt-0">
-      <a href="/post/2019_markdown/" >Markdown 學習筆記</a>
-    </h3>
-
-    
-    <div class="article-style">
-      這裡我們要介紹 markdown 這個語言. 它非常簡單易學, 有時我們只是想打個小文件, 就幾頁而已不想要開 latex 或是 word 之類的文字編輯軟體, 這時候就非常適合以 markdown 來編寫
-    </div>
-    
-
-    <div class="stream-meta article-metadata">
-
-      
-
       
         
-
-
-<div class="article-metadata">
-
-  
-  
-  
-  
-  <div>
-    
-
-
-
-  
-  <span><a href="/authors/admin/">Te-Sheng Lin (林得勝)</a></span>
-
-  </div>
-  
-  
-
-  
-  <span class="article-date">
-    
-    
       
-          Last updated on
       
-    
-    May 6, 2020
-  </span>
-  
-
-  
-
-  
-  <span class="middot-divider"></span>
-  <span class="article-reading-time">
-    3 min read
-  </span>
-  
-
-  
-  
-  
-  <span class="middot-divider"></span>
-  <a href="/post/2019_markdown/#disqus_thread"></a>
-  
-
-  
-  
-  <span class="middot-divider"></span>
-  <span class="article-categories">
-    <i class="fas fa-folder mr-1"></i><a href="/categories/notes/">notes</a></span>
-  
-
-</div>
-
       
-    </div>
-
-    
-
-  </div>
-  <div class="ml-3">
-    
-    
-  </div>
-</div>
-
-    
-  
-    
-      
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-<div class="media stream-item">
-  <div class="media-body">
-
-    <h3 class="article-title mb-0 mt-0">
-      <a href="/post/2019_maxmin/" >Maximum and minimum of a function</a>
-    </h3>
-
-    
-    <div class="article-style">
-      這裡我們要討論一個函數的最大值以及最小值. 首先我們有極值定理 Theorem: Extreme value theorem If $f$ is a real-valued continuous function on the closed interval …
-    </div>
-    
-
-    <div class="stream-meta article-metadata">
-
-      
-
-      
-        
-
-
-<div class="article-metadata">
-
-  
-  
-  
-  
-  <div>
-    
-
-
-
-  
-  <span><a href="/authors/admin/">Te-Sheng Lin (林得勝)</a></span>
-
-  </div>
-  
-  
-
-  
-  <span class="article-date">
-    
-    
-      
-          Last updated on
-      
-    
-    Oct 30, 2019
-  </span>
-  
-
-  
-
-  
-  <span class="middot-divider"></span>
-  <span class="article-reading-time">
-    2 min read
-  </span>
-  
-
-  
-  
-  
-  <span class="middot-divider"></span>
-  <a href="/post/2019_maxmin/#disqus_thread"></a>
-  
-
-  
-  
-  <span class="middot-divider"></span>
-  <span class="article-categories">
-    <i class="fas fa-folder mr-1"></i><a href="/categories/calculus/">Calculus</a></span>
-  
-
-</div>
-
-      
-    </div>
-
-    
-
-  </div>
-  <div class="ml-3">
-    
-    
-  </div>
-</div>
-
-    
-  
-    
-      
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-<div class="media stream-item">
-  <div class="media-body">
-
-    <h3 class="article-title mb-0 mt-0">
-      <a href="/post/2019_slant_asymp/" >Slant asymptotes</a>
-    </h3>
-
-    
-    <div class="article-style">
-      這裡我們要介紹 slant asymptotes, 也就是所謂的斜漸近線. Section 1: slant asymptotes# 斜漸近線定義如下: The line $y=mx+b$, $m\ne 0$, is called a slant asymptote …
-    </div>
-    
-
-    <div class="stream-meta article-metadata">
-
-      
-
-      
-        
-
-
-<div class="article-metadata">
-
-  
-  
-  
-  
-  <div>
-    
-
-
-
-  
-  <span><a href="/authors/admin/">Te-Sheng Lin (林得勝)</a></span>
-
-  </div>
-  
-  
-
-  
-  <span class="article-date">
-    
-    
-      
-          Last updated on
-      
-    
-    Oct 30, 2019
-  </span>
-  
-
-  
-
-  
-  <span class="middot-divider"></span>
-  <span class="article-reading-time">
-    2 min read
-  </span>
-  
-
-  
-  
-  
-  <span class="middot-divider"></span>
-  <a href="/post/2019_slant_asymp/#disqus_thread"></a>
-  
-
-  
-  
-  <span class="middot-divider"></span>
-  <span class="article-categories">
-    <i class="fas fa-folder mr-1"></i><a href="/categories/calculus/">Calculus</a></span>
-  
-
-</div>
-
-      
-    </div>
-
-    
-
-  </div>
-  <div class="ml-3">
-    
-    
-  </div>
-</div>
-
-    
-  
-    
-      
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-<div class="media stream-item">
-  <div class="media-body">
-
-    <h3 class="article-title mb-0 mt-0">
-      <a href="/post/2019_derivate_evaluate/" >用電腦算微分</a>
-    </h3>
-
-    
-    <div class="article-style">
-      前情提要: 用電腦算極限 這裡我們要講的是用數值計算來算函數的微分值. 已知一個函數 $f(x)$ 在某個點 $a$ 的微分值定義是 $$ f&rsquo;(a) = \lim_{h\to 0} \frac{f(a+h)-f(a)}{h}. $$ 我們用一個簡單的例子試
-    </div>
-    
-
-    <div class="stream-meta article-metadata">
-
-      
-
-      
-        
-
-
-<div class="article-metadata">
-
-  
-  
-  
-  
-  <div>
-    
-
-
-
-  
-  <span><a href="/authors/admin/">Te-Sheng Lin (林得勝)</a></span>
-
-  </div>
-  
-  
-
-  
-  <span class="article-date">
-    
-    
-      
-          Last updated on
-      
-    
-    Jun 7, 2020
-  </span>
-  
-
-  
-
-  
-  <span class="middot-divider"></span>
-  <span class="article-reading-time">
-    3 min read
-  </span>
-  
-
-  
-  
-  
-  <span class="middot-divider"></span>
-  <a href="/post/2019_derivate_evaluate/#disqus_thread"></a>
-  
-
-  
-  
-  <span class="middot-divider"></span>
-  <span class="article-categories">
-    <i class="fas fa-folder mr-1"></i><a href="/categories/calculus/">Calculus</a>, <a href="/categories/computational-mathematics/">Computational Mathematics</a></span>
-  
-
-</div>
-
-      
-    </div>
-
-    
-
-  </div>
-  <div class="ml-3">
-    
-    
-  </div>
-</div>
-
-    
-  
-    
-      
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-<div class="media stream-item">
-  <div class="media-body">
-
-    <h3 class="article-title mb-0 mt-0">
-      <a href="/post/2019_limit_evaluate/" >用電腦算極限</a>
-    </h3>
-
-    
-    <div class="article-style">
-      這裡我們要介紹如何用電腦算極限, 以及我們來看一下當我們真的這樣做的時候有可能會發生什麼問題. 我們以 $sinc$ 函數為例來做說明. sinc function 首先我們要介紹一個
-    </div>
-    
-
-    <div class="stream-meta article-metadata">
-
-      
-
-      
-        
-
-
-<div class="article-metadata">
-
-  
-  
-  
-  
-  <div>
-    
-
-
-
-  
-  <span><a href="/authors/admin/">Te-Sheng Lin (林得勝)</a></span>
-
-  </div>
-  
-  
-
-  
-  <span class="article-date">
-    
-    
-      
-          Last updated on
-      
-    
-    Jun 7, 2020
-  </span>
-  
-
-  
-
-  
-  <span class="middot-divider"></span>
-  <span class="article-reading-time">
-    3 min read
-  </span>
-  
-
-  
-  
-  
-  <span class="middot-divider"></span>
-  <a href="/post/2019_limit_evaluate/#disqus_thread"></a>
-  
-
-  
-  
-  <span class="middot-divider"></span>
-  <span class="article-categories">
-    <i class="fas fa-folder mr-1"></i><a href="/categories/calculus/">Calculus</a>, <a href="/categories/computational-mathematics/">Computational Mathematics</a></span>
-  
-
-</div>
-
-      
-    </div>
-
-    
-
-  </div>
-  <div class="ml-3">
-    
-    
-  </div>
-</div>
-
-    
-  
-
-  
-<nav>
-  <ul class="pagination justify-content-center">
-    
-    <li class="page-item"><a class="page-link" href="/post/page/4/">&laquo;</a></li>
-    
+      <li>
+        <a href="mailto:?subject=Lagrange%20Multiplier%20-%2003&amp;body=https://teshenglin.github.io/post/2020_lagrange_multiplier_3/" target="_blank" rel="noopener" class="share-btn-email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
     
   </ul>
-</nav>
-
-
-
 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+  
+
+
+
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  <div class="media author-card content-widget-hr">
+    
+      
+      <img class="avatar mr-3 avatar-circle" src="/authors/admin/avatar_hua0d4d4b24f4da3a102e4452ac738b95f_109236_270x270_fill_q90_lanczos_center.jpg" alt="Avatar">
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="https://teshenglin.github.io/">Te-Sheng Lin (林得勝)</a></h5>
+      <h6 class="card-subtitle">Assistant Professor</h6>
+      <p class="card-text">The focus of my research is concerned with the development of analytical and computational tools for the problems that arises in fluid dynamics, currently in thin liquid films, and further to communicate with scientists from other disciplines to solve engineering problems in practice.</p>
+      <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://scholar.google.com.tw/citations?user=diXYXkwAAAAJ" target="_blank" rel="noopener">
+        <i class="ai ai-google-scholar"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.researchgate.net/profile/Te-Sheng_Lin" target="_blank" rel="noopener">
+        <i class="ai ai-researchgate"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://github.com/teshenglin" target="_blank" rel="noopener">
+        <i class="fab fa-github"></i>
+      </a>
+    </li>
+  
+</ul>
+
+    </div>
+  </div>
+
+
+
+
+<section id="comments">
+  
+    
+<div id="disqus_thread"></div>
+<script>
+  let disqus_config = function () {
+    
+    
+    
+  };
+  (function() {
+    if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+      document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+      return;
+    }
+    var d = document, s = d.createElement('script'); s.async = true;
+    s.src = 'https://' + "https-teshenglin-github-io" + '.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+  
+</section>
+
+
+
+
+
+
+  
+  
+  <div class="article-widget content-widget-hr">
+    <h3>Related</h3>
+    <ul>
+      
+      <li><a href="/post/2020_lagrange_multiplier/">Lagrange Multiplier - 01</a></li>
+      
+      <li><a href="/post/2020_lagrange_multiplier_2/">Lagrange Multiplier - 02</a></li>
+      
+      <li><a href="/post/2020_cal_s5p2/">Sec.5.2 - Area functions</a></li>
+      
+      <li><a href="/post/2020_cal_s5p2_ch/">Sec.5.2 - 面積函數</a></li>
+      
+      <li><a href="/post/2020_cal_s3p1_ch/">Sec.3.1 - 建造較佳的雲霄飛車</a></li>
+      
+    </ul>
+  </div>
+  
+
+
+
+  </div>
+</article>
 
       
 
