@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Probability | Te-Sheng Lin</title>
+    <link>https://teshenglin.github.io/categories/probability/</link>
+      <atom:link href="https://teshenglin.github.io/categories/probability/index.xml" rel="self" type="application/rss+xml" />
+    <description>Probability</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 14 Jun 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>Probability</title>
+      <link>https://teshenglin.github.io/categories/probability/</link>
+    </image>
+    
+    <item>
+      <title>擲硬幣問題</title>
+      <link>https://teshenglin.github.io/post/2020_coin_problem/</link>
+      <pubDate>Sun, 14 Jun 2020 00:00:00 +0000</pubDate>
+      <guid>https://teshenglin.github.io/post/2020_coin_problem/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;重複擲一枚硬幣, 當出現連續兩次為正時停止, 平均要扔幾次?&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;第一種做法&#34;&gt;第一種做法:&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;我們以正負號 (+ -) 代表正面反面.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;觀察&#34;&gt;觀察&lt;/h3&gt;
+&lt;p&gt;假設花 $n$ 次才擲到連續兩次為正，$n \geq 2$. 我們發現, 可以從第 $n-1$ 次的結果進行窮舉法得到第 $n$ 次的結果。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;當 $n = 2$, 只會有 1 種情況 : &lt;code&gt;++&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;要窮舉 $n = 3$, 要知道三次中的尾巴兩次必須是 $n=2$ 的所有情況. 由於 $n=2$ 的第一個為正, 因此要在前加一項只能為負, 因此 $n=3$ 只有 &lt;code&gt;-++&lt;/code&gt; 這情況&lt;/li&gt;
+&lt;li&gt;對 $n=4$, 尾巴兩次必須是 $n=3$ 的所有情況. 由於 $n=3$ 的第一個為負, 因此要在前加正或負皆可, 因此 $n=4$ 有兩種情況: &lt;code&gt;+-++&lt;/code&gt;,  &lt;code&gt;--++&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;小結論&#34;&gt;小結論&lt;/h4&gt;
+&lt;p&gt;對 $n=k+1$ 而言, 我們只需要考慮 $n=k$ 所有情況的第一個是正或負即可. 若為正則只能在前面再加個負, 若為負則可以在前面加正或負.&lt;/p&gt;
+&lt;p&gt;也就是說, 假設 $n=k$ 中有 $x_k$ 個情況第一個為正, 有 $y_k$ 個情況第一個為負, 那 $n=k+1$ 的所有情況中必有 $y_k$ 為正, $x_k+y_k$ 為負.
+寫成矩陣型式就是
+$$
+\begin{bmatrix} x_{k+1} \\ y_{k+1}\end{bmatrix}
+= A
+\begin{bmatrix} x_{k} \\ y_{k}\end{bmatrix}, \quad
+A =
+\begin{bmatrix} 0 &amp;amp; 1 \\ 1 &amp;amp; 1 \end{bmatrix}
+$$
+則我們有
+$$
+\begin{bmatrix} x_{k} \\ y_{k}\end{bmatrix}
+= A^{k-2}
+\begin{bmatrix} 1 \\ 0\end{bmatrix}, \quad k\ge 2.
+$$
+並且我們知道花 $k$ 次才直到連續兩次為正共會有 $x_k+y_k$ 種情況, 意即
+$$
+\begin{bmatrix} 1 &amp;amp; 1\end{bmatrix}
+A^{k-2}
+\begin{bmatrix} 1 \\ 0\end{bmatrix}.
+$$
+另外我們還知道丟硬幣 $k$ 次之情況的機率為 $\frac{1}{2^k}$.&lt;/p&gt;
+&lt;h3 id=&#34;計算期望值&#34;&gt;計算期望值&lt;/h3&gt;
+&lt;p&gt;利用以上結果我們可以知道期望值為
+$$
+E = \sum_{k=2}^\infty
+\left(
+\begin{bmatrix} 1 &amp;amp; 1\end{bmatrix}
+A^{k-2}
+\begin{bmatrix} 1 \\ 0\end{bmatrix}
+\right)
+\cdot \frac{k}{2^{k}}
+=\sum_{k=0}^\infty
+\left(
+\begin{bmatrix} 1 &amp;amp; 1\end{bmatrix}
+A^{k}
+\begin{bmatrix} 1 \\ 0\end{bmatrix}
+\right)
+\cdot \frac{k+2}{2^{k+2}}.
+$$&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;對角化
+$$
+A = \begin{bmatrix}0 &amp;amp; 1 \\ 1 &amp;amp; 1\end{bmatrix}
+= \frac{1}{\sqrt{5}}
+\begin{bmatrix}1 &amp;amp; 1 \\ \frac{1+\sqrt{5}}{2} &amp;amp; \frac{1-\sqrt{5}}{2}\end{bmatrix}
+\begin{bmatrix}\frac{1+\sqrt{5}}{2} &amp;amp; 0 \\ 0 &amp;amp; \frac{1-\sqrt{5}}{2}\end{bmatrix}
+\begin{bmatrix}\frac{\sqrt{5}-1}{2} &amp;amp; 1 \\ \frac{1+\sqrt{5}}{2} &amp;amp; -1\end{bmatrix}
+$$&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;可得
+$$
+A^k
+= \frac{1}{\sqrt{5}}
+\begin{bmatrix}1 &amp;amp; 1 \\ \frac{1+\sqrt{5}}{2} &amp;amp; \frac{1-\sqrt{5}}{2}\end{bmatrix}
+\begin{bmatrix}\left(\frac{1+\sqrt{5}}{2}\right)^k &amp;amp; 0 \\ 0 &amp;amp; \left(\frac{1-\sqrt{5}}{2}\right)^k\end{bmatrix}
+\begin{bmatrix}\frac{\sqrt{5}-1}{2} &amp;amp; 1 \\ \frac{1+\sqrt{5}}{2} &amp;amp; -1\end{bmatrix}
+$$&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;接著我們有
+$$
+\begin{bmatrix} 1 &amp;amp; 1\end{bmatrix}
+A^{k}
+\begin{bmatrix} 1 \\ 0\end{bmatrix}
+=\frac{1}{\sqrt{5}}\left[(\frac{1+\sqrt{5}}{2})^{k-1}\cdot\frac{3+\sqrt{5}}{2} - (\frac{1-\sqrt{5}}{2})^{k-1}\cdot\frac{3-\sqrt{5}}{2}\right]
+$$&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;因此
+$$
+E = \frac{3+\sqrt{5}}{16\sqrt{5}} \underbrace{\sum_{k=0}^{\infty}(k+2)\cdot(\frac{1+\sqrt{5}}{4})^{k-1}}_{(a)} - \frac{3-\sqrt{5}}{16\sqrt{5}} \underbrace{\sum_{k=0}^{\infty}(k+2)\cdot(\frac{1-\sqrt{5}}{4})^{k-1}}_{(b)}
+$$&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 id=&#34;recall-calculus&#34;&gt;Recall Calculus&lt;/h4&gt;
+&lt;blockquote&gt;
+&lt;p&gt;要算 (a) 與 (b) 我們先 recall 微積分裡的一個結果&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;$$
+\sum_{n=0}^{\infty} x^n = \frac{1}{1-x}, \quad |x| &amp;lt; 1.
+$$
+兩邊微分得到
+$$
+\sum_{n=0}^{\infty} n x^{n-1} = \frac{1}{(1-x)^2}, \quad |x| &amp;lt; 1.
+$$&lt;/p&gt;
+&lt;p&gt;利用這個我們可以算 (a)
+$$
+\sum_{k=0}^{\infty}(k+2)\cdot(\frac{1+\sqrt{5}}{4})^{k-1} = 18 + 10\sqrt{5}
+$$
+也可以算 (b)
+$$
+\sum_{k=0}^{\infty}(k+2)\cdot(\frac{1-\sqrt{5}}{4})^{k-1} = 18 - 10\sqrt{5}
+$$&lt;/p&gt;
+&lt;p&gt;最後,
+$$
+E = \frac{3+\sqrt{5}}{16\sqrt{5}}\cdot (18+10\sqrt{5}) - \frac{3-\sqrt{5}}{16\sqrt{5}}\cdot (18-10\sqrt{5}) = 6
+$$&lt;/p&gt;
+&lt;h3 id=&#34;結論&#34;&gt;結論&lt;/h3&gt;
+&lt;p&gt;重複擲一枚硬幣, 當出現連續兩次為正時停止, 平均要扔&lt;strong&gt;六&lt;/strong&gt;次.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;第二種做法&#34;&gt;第二種做法:&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;我們可以用 Markov chain 來想這問題&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;觀察-1&#34;&gt;觀察&lt;/h3&gt;
+&lt;p&gt;假設目前連續投擲出 0 個正, 那下一投有 $0.5$ 機率是正以及 $0.5$ 機率是負.
+也就是 $0.5$ 機率會是到 &lt;code&gt;1正&lt;/code&gt; 這狀態以及 $0.5$ 機率回到 &lt;code&gt;0正&lt;/code&gt; 這狀態.&lt;/p&gt;
+&lt;p&gt;假設目前連續投擲出 1 個正, 那下一投則 $0.5$ 機率會是到 &lt;code&gt;2正&lt;/code&gt; 這狀態以及 $0.5$ 機率回到 &lt;code&gt;0正&lt;/code&gt; 這狀態.&lt;/p&gt;
+&lt;p&gt;根據這些觀察我們可以做出以下的 diagram:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-mermaid&#34; data-lang=&#34;mermaid&#34;&gt;graph LR;
+A[0 正] -- 0.5 --&amp;gt;B(1 正)
+  B -- 0.5 --&amp;gt; C(2 正)
+  A -- 0.5 --&amp;gt; A
+  B -- 0.5 --&amp;gt; A
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;接著我們假設從 &lt;code&gt;0正&lt;/code&gt; 這狀態需要投 $k_0$ 次才會到 &lt;code&gt;2正&lt;/code&gt;, 而從 &lt;code&gt;1正&lt;/code&gt; 這狀態需要投 $k_1$ 次才會到 &lt;code&gt;2正&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;對 &lt;code&gt;0正&lt;/code&gt; 狀態而言, 投一次有 $0.5$ 機會到&lt;code&gt;1正&lt;/code&gt;狀態, 然後再需要 $k_1$ 次到&lt;code&gt;2正&lt;/code&gt;, 所以這樣總共投 $1+k_1$ 次.
+而 &lt;code&gt;0正&lt;/code&gt; 投一次也有 $0.5$ 機會會回到自己原始 &lt;code&gt;0正&lt;/code&gt; 狀態, 然後再需要 $k_0$ 次到&lt;code&gt;2正&lt;/code&gt;, 所以這樣總共投 $1+k_0$ 次.
+如此可以列式:
+$$
+k_0 = 0.5(1+k_1) + 0.5(1+k_0)
+$$&lt;/p&gt;
+&lt;p&gt;同理, 對 &lt;code&gt;1正&lt;/code&gt; 狀態而言我們有以下式子
+$$
+k_1 = 0.5(1) + 0.5(1+k_0)
+$$&lt;/p&gt;
+&lt;p&gt;這樣我們有兩個未知數兩個方程式, 解出來得到
+$$
+k_0=6, \quad k_1=4.
+$$&lt;/p&gt;
+&lt;p&gt;所以, 從 &lt;code&gt;0正&lt;/code&gt; 狀態到出現連續兩次為正平均要投 $6$ 次.&lt;/p&gt;
+&lt;hr&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

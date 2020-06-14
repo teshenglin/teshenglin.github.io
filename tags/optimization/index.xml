@@ -182,11 +182,103 @@ $$
 &lt;li&gt;
 &lt;p&gt;第二步: 接著我們用 gradient ascent 來更新 $\pmb{\lambda}$
 $$
-\lambda^{k+1} = \lambda_k + \alpha^k(A\pmb{x}^{k+1}-\pmb{b})
+\lambda^{k+1} = \lambda^k + \alpha^k(A\pmb{x}^{k+1}-\pmb{b})
 $$&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;迭代下去我們可以得到原問題的解!&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;augmented-lagrangian&#34;&gt;Augmented Lagrangian&lt;/h2&gt;
+&lt;p&gt;一個很有趣的更進一步推廣是將 Lagrangian 引入一個新的 penalty term:
+$$
+L_{\rho}(\pmb{x}, \pmb{\lambda}) = f(\pmb{x}) + \pmb{\lambda}^T(A\pmb{x}-\pmb{b}) + \frac{\rho}{2}\|A\pmb{x}-\pmb{b}\|^2_2,
+$$
+其中 $\rho$ 是個常數.&lt;/p&gt;
+&lt;p&gt;我們可以反過來將這個 Lagrangian 所對應的限制最佳化問題寫下來:
+$$
+\min_{\pmb{x}\in\mathbb{R}^n}f(\pmb{x})+\frac{\rho}{2}\|A\pmb{x}-\pmb{b}\|^2_2, \quad \text{subject to } \quad  A\pmb{x}-\pmb{b}=\pmb{0}.
+$$
+我們可以輕易發現, 加了這新的一項對於這整個問題的最佳解完全沒有影響! 也就是說 $L_{\rho}$ 所得到的解就是原本 $L$ 的解.&lt;/p&gt;
+&lt;p&gt;接著我們一樣用 dual ascent iteration method 來解這問題（給定 $\pmb{x}^{k}$ 以及 $\pmb{\lambda}^{k}$).&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Method of multiplier:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;第一步: 我們解一個 optimization 問題
+$$
+\pmb{x}^{k+1} = argmin \ L_{\rho}(\pmb{x}, \pmb{\lambda}^k)
+$$&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;第二步: 接著我們用 gradient ascent 來更新 $\pmb{\lambda}$
+$$
+\pmb{\lambda}^{k+1} = \pmb{\lambda}^k + \rho(A\pmb{x}^{k+1}-\pmb{b})
+$$&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Remark:&lt;/strong&gt; 這裡有個有趣的事, 原本的方法中步長是不知道的需要自己決定, 不過在這裡我們卻直接設定步常為 $\rho$. 接下來我們就是要解釋這部分.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;第一步中, 如果 $\pmb{x}^{k+1}$ 是個解那它要滿足 $\nabla_{\pmb{x}} L_{\rho}=0$, 其中整理一下發現
+$$
+\nabla_{\pmb{x}} L_{\rho}=\nabla_{\pmb{x}} f(\pmb{x}^{k+1}) + A^T\left(\pmb{\lambda}^k + \rho (A\pmb{x}^{k+1}-\pmb{b})\right)=0.
+$$&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;所以, 如果第二步中的步長我們設定為 $\rho$, 那上式就可以改寫為
+$$
+\nabla_{\pmb{x}} f(\pmb{x}^{k+1}) + A^T\pmb{\lambda}^{k+1}=0.
+$$
+有趣的是, 對原本的 Lagrangian 而言我們有
+$$
+\nabla_{\pmb{x}} L=\nabla_{\pmb{x}} f(\pmb{x}) + A^T\pmb{\lambda},
+$$
+所以我們這樣設定步長, 剛好使得我們每次算出的 $\pmb{x}^{k+1}$ 以及 $\pmb{\lambda}^{k+1}$ 滿足
+$$
+\nabla_{\pmb{x}} L(\pmb{x}^{k+1}, \pmb{\lambda}^{k+1})=0.
+$$&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;blockquote&gt;
+&lt;p&gt;再把以上兩個方法 summarize 一下&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;原本問題是
+$$
+\min_{\pmb{x}} f(\pmb{x}), \quad \text{subject to } \quad  A\pmb{x}-\pmb{b}=\pmb{0}.
+$$&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;引進 Lagrangian 後變成我們要解以下方程
+$$
+\nabla_{\pmb{x}} L =\nabla_{\pmb{x}} f(\pmb{x}) + A^T\pmb{\lambda}=0, \quad \nabla_{\pmb{\lambda}} L=A\pmb{x}-\pmb{b}=0.
+$$&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;我們使用迭代法來解&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;若用 &lt;strong&gt;dual ascent iteration method&lt;/strong&gt;, 則有
+$$
+L(\pmb{x}^{k+1}, \pmb{\lambda}^k)=0.
+$$&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;若用 &lt;strong&gt;method of multiplier&lt;/strong&gt;, 則有
+$$
+L(\pmb{x}^{k+1}, \pmb{\lambda}^{k+1})=0.
+$$&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;對於兩種方法, 原問題的 Constraint 都在 $k\to\infty$ 滿足
+$$
+\lim_{k\to\infty} A\pmb{x}^k-\pmb{b}=0.
+$$&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
 &lt;hr&gt;
 </description>
     </item>
@@ -252,7 +344,7 @@ $$&lt;/p&gt;
 &lt;p&gt;由於 $f^+ =L^+$, 所以我們也可以得到 $\frac{d f^+}{dk} = -\lambda^+$.&lt;/p&gt;
 &lt;hr&gt;
 &lt;h4 id=&#34;舉個例子&#34;&gt;舉個例子&lt;/h4&gt;
-&lt;p&gt;以下單位皆為&lt;code&gt;萬元&lt;/code&gt;!&lt;/p&gt;
+&lt;p&gt;以下單位皆為&lt;code&gt;元&lt;/code&gt; or &lt;code&gt;萬元&lt;/code&gt; or &lt;code&gt;千萬元&lt;/code&gt;, 請自行依喜好帶入!&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;假設我如果花費 $x$ 買進某一股票在一定時間後賣出可獲得 $2x$.&lt;/p&gt;

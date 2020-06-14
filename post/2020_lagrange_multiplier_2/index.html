@@ -243,7 +243,7 @@
     
       <meta property="article:published_time" content="2020-06-12T00:00:00&#43;00:00">
     
-    <meta property="article:modified_time" content="2020-06-13T20:46:45&#43;08:00">
+    <meta property="article:modified_time" content="2020-06-14T23:15:40&#43;08:00">
   
 
   
@@ -272,7 +272,7 @@
   "headline": "Lagrange Multiplier - 02",
   
   "datePublished": "2020-06-12T00:00:00Z",
-  "dateModified": "2020-06-13T20:46:45+08:00",
+  "dateModified": "2020-06-14T23:15:40+08:00",
   
   "author": {
     "@type": "Person",
@@ -555,7 +555,7 @@
           Last updated on
       
     
-    Jun 13, 2020
+    Jun 14, 2020
   </span>
   
 
@@ -564,7 +564,7 @@
   
   <span class="middot-divider"></span>
   <span class="article-reading-time">
-    2 min read
+    3 min read
   </span>
   
 
@@ -695,11 +695,103 @@ $$
 <li>
 <p>第二步: 接著我們用 gradient ascent 來更新 $\pmb{\lambda}$
 $$
-\lambda^{k+1} = \lambda_k + \alpha^k(A\pmb{x}^{k+1}-\pmb{b})
+\lambda^{k+1} = \lambda^k + \alpha^k(A\pmb{x}^{k+1}-\pmb{b})
 $$</p>
 </li>
 </ul>
 <p>迭代下去我們可以得到原問題的解!</p>
+<hr>
+<h2 id="augmented-lagrangian">Augmented Lagrangian</h2>
+<p>一個很有趣的更進一步推廣是將 Lagrangian 引入一個新的 penalty term:
+$$
+L_{\rho}(\pmb{x}, \pmb{\lambda}) = f(\pmb{x}) + \pmb{\lambda}^T(A\pmb{x}-\pmb{b}) + \frac{\rho}{2}\|A\pmb{x}-\pmb{b}\|^2_2,
+$$
+其中 $\rho$ 是個常數.</p>
+<p>我們可以反過來將這個 Lagrangian 所對應的限制最佳化問題寫下來:
+$$
+\min_{\pmb{x}\in\mathbb{R}^n}f(\pmb{x})+\frac{\rho}{2}\|A\pmb{x}-\pmb{b}\|^2_2, \quad \text{subject to } \quad  A\pmb{x}-\pmb{b}=\pmb{0}.
+$$
+我們可以輕易發現, 加了這新的一項對於這整個問題的最佳解完全沒有影響! 也就是說 $L_{\rho}$ 所得到的解就是原本 $L$ 的解.</p>
+<p>接著我們一樣用 dual ascent iteration method 來解這問題（給定 $\pmb{x}^{k}$ 以及 $\pmb{\lambda}^{k}$).</p>
+<p><strong>Method of multiplier:</strong></p>
+<ul>
+<li>
+<p>第一步: 我們解一個 optimization 問題
+$$
+\pmb{x}^{k+1} = argmin \ L_{\rho}(\pmb{x}, \pmb{\lambda}^k)
+$$</p>
+</li>
+<li>
+<p>第二步: 接著我們用 gradient ascent 來更新 $\pmb{\lambda}$
+$$
+\pmb{\lambda}^{k+1} = \pmb{\lambda}^k + \rho(A\pmb{x}^{k+1}-\pmb{b})
+$$</p>
+</li>
+</ul>
+<p><strong>Remark:</strong> 這裡有個有趣的事, 原本的方法中步長是不知道的需要自己決定, 不過在這裡我們卻直接設定步常為 $\rho$. 接下來我們就是要解釋這部分.</p>
+<ul>
+<li>
+<p>第一步中, 如果 $\pmb{x}^{k+1}$ 是個解那它要滿足 $\nabla_{\pmb{x}} L_{\rho}=0$, 其中整理一下發現
+$$
+\nabla_{\pmb{x}} L_{\rho}=\nabla_{\pmb{x}} f(\pmb{x}^{k+1}) + A^T\left(\pmb{\lambda}^k + \rho (A\pmb{x}^{k+1}-\pmb{b})\right)=0.
+$$</p>
+</li>
+<li>
+<p>所以, 如果第二步中的步長我們設定為 $\rho$, 那上式就可以改寫為
+$$
+\nabla_{\pmb{x}} f(\pmb{x}^{k+1}) + A^T\pmb{\lambda}^{k+1}=0.
+$$
+有趣的是, 對原本的 Lagrangian 而言我們有
+$$
+\nabla_{\pmb{x}} L=\nabla_{\pmb{x}} f(\pmb{x}) + A^T\pmb{\lambda},
+$$
+所以我們這樣設定步長, 剛好使得我們每次算出的 $\pmb{x}^{k+1}$ 以及 $\pmb{\lambda}^{k+1}$ 滿足
+$$
+\nabla_{\pmb{x}} L(\pmb{x}^{k+1}, \pmb{\lambda}^{k+1})=0.
+$$</p>
+</li>
+</ul>
+<hr>
+<blockquote>
+<p>再把以上兩個方法 summarize 一下</p>
+</blockquote>
+<ul>
+<li>
+<p>原本問題是
+$$
+\min_{\pmb{x}} f(\pmb{x}), \quad \text{subject to } \quad  A\pmb{x}-\pmb{b}=\pmb{0}.
+$$</p>
+</li>
+<li>
+<p>引進 Lagrangian 後變成我們要解以下方程
+$$
+\nabla_{\pmb{x}} L =\nabla_{\pmb{x}} f(\pmb{x}) + A^T\pmb{\lambda}=0, \quad \nabla_{\pmb{\lambda}} L=A\pmb{x}-\pmb{b}=0.
+$$</p>
+</li>
+<li>
+<p>我們使用迭代法來解</p>
+<ul>
+<li>
+<p>若用 <strong>dual ascent iteration method</strong>, 則有
+$$
+L(\pmb{x}^{k+1}, \pmb{\lambda}^k)=0.
+$$</p>
+</li>
+<li>
+<p>若用 <strong>method of multiplier</strong>, 則有
+$$
+L(\pmb{x}^{k+1}, \pmb{\lambda}^{k+1})=0.
+$$</p>
+</li>
+<li>
+<p>對於兩種方法, 原問題的 Constraint 都在 $k\to\infty$ 滿足
+$$
+\lim_{k\to\infty} A\pmb{x}^k-\pmb{b}=0.
+$$</p>
+</li>
+</ul>
+</li>
+</ul>
 <hr>
 
     </div>

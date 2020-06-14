@@ -28,10 +28,10 @@
   
     
   
-  <meta name="description" content="Assistant Professor">
+  <meta name="description" content="重複擲一枚硬幣, 當出現連續兩次為正時停止, 平均要扔幾次? 第一種做法: 我們以正負號 (&#43; -) 代表正面反面. 觀察 假設花 $n$ 次才擲到連續兩次為正，$n \geq 2$.">
 
   
-  <link rel="alternate" hreflang="en-us" href="https://teshenglin.github.io/tags/numerical_integration/">
+  <link rel="alternate" hreflang="en-us" href="https://teshenglin.github.io/post/2020_coin_problem/">
 
   
 
@@ -216,14 +216,12 @@
 
 
   
-  <link rel="alternate" href="/tags/numerical_integration/index.xml" type="application/rss+xml" title="Te-Sheng Lin">
-  
 
   <link rel="manifest" href="/index.webmanifest">
   <link rel="icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_2.png">
   <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_2.png">
 
-  <link rel="canonical" href="https://teshenglin.github.io/tags/numerical_integration/">
+  <link rel="canonical" href="https://teshenglin.github.io/post/2020_coin_problem/">
 
   
   
@@ -237,18 +235,63 @@
   <meta property="twitter:card" content="summary">
   
   <meta property="og:site_name" content="Te-Sheng Lin">
-  <meta property="og:url" content="https://teshenglin.github.io/tags/numerical_integration/">
-  <meta property="og:title" content="numerical_integration | Te-Sheng Lin">
-  <meta property="og:description" content="Assistant Professor"><meta property="og:image" content="https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png">
+  <meta property="og:url" content="https://teshenglin.github.io/post/2020_coin_problem/">
+  <meta property="og:title" content="擲硬幣問題 | Te-Sheng Lin">
+  <meta property="og:description" content="重複擲一枚硬幣, 當出現連續兩次為正時停止, 平均要扔幾次? 第一種做法: 我們以正負號 (&#43; -) 代表正面反面. 觀察 假設花 $n$ 次才擲到連續兩次為正，$n \geq 2$."><meta property="og:image" content="https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png">
   <meta property="twitter:image" content="https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png"><meta property="og:locale" content="en-us">
   
-    <meta property="og:updated_time" content="2020-06-02T00:00:00&#43;00:00">
+    
+      <meta property="article:published_time" content="2020-06-14T00:00:00&#43;00:00">
+    
+    <meta property="article:modified_time" content="2020-06-14T23:15:40&#43;08:00">
   
 
   
 
 
+    
 
+
+
+
+
+
+  
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://teshenglin.github.io/post/2020_coin_problem/"
+  },
+  "headline": "擲硬幣問題",
+  
+  "datePublished": "2020-06-14T00:00:00Z",
+  "dateModified": "2020-06-14T23:15:40+08:00",
+  
+  "author": {
+    "@type": "Person",
+    "name": "鐘俊儒"
+  },
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "Te-Sheng Lin",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_2.png"
+    }
+  },
+  "description": "重複擲一枚硬幣, 當出現連續兩次為正時停止, 平均要扔幾次? 第一種做法: 我們以正負號 (+ -) 代表正面反面. 觀察 假設花 $n$ 次才擲到連續兩次為正，$n \\geq 2$."
+}
+</script>
+
+  
 
   
 
@@ -256,10 +299,13 @@
   
 
 
+  
 
 
 
-  <title>numerical_integration | Te-Sheng Lin</title>
+
+
+  <title>擲硬幣問題 | Te-Sheng Lin</title>
 
 </head>
 
@@ -454,81 +500,404 @@
 </nav>
 
 
-  
-
-
-
-
-
-
-
-
-
-
-
+  <article class="article">
 
   
 
+
+
+
+
+
+
+
+
+
+
+
+  
+
   
   
+  
+<div class="article-container pt-3">
+  <h1>擲硬幣問題</h1>
+
+  
+
   
     
-  
-<div class="universal-wrapper pt-3">
-  <h1>numerical_integration</h1>
+
+
+<div class="article-metadata">
 
   
+  
+  
+  
+  <div>
+    
+
+
+
+  
+  <span><a href="/authors/%E9%90%98%E4%BF%8A%E5%84%92/">鐘俊儒</a></span>, <span><a href="/authors/admin/">Te-Sheng Lin (林得勝)</a></span>
+
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+          Last updated on
+      
+    
+    Jun 14, 2020
+  </span>
+  
+
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    3 min read
+  </span>
+  
+
+  
+  
+  
+  <span class="middot-divider"></span>
+  <a href="/post/2020_coin_problem/#disqus_thread"></a>
+  
+
+  
+  
+  <span class="middot-divider"></span>
+  <span class="article-categories">
+    <i class="fas fa-folder mr-1"></i><a href="/categories/probability/">Probability</a>, <a href="/categories/linear-algebra/">Linear algebra</a>, <a href="/categories/calculus/">Calculus</a></span>
+  
+
+</div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   
 </div>
 
 
 
-<div class="universal-wrapper">
-  
+  <div class="article-container">
 
-  
-  
-    
-    
-    
-    <div>
-      <h2><a href="/post/2020_numerical_integration_2/" >以內插多項式來做數值積分</a></h2>
-      <div class="article-style">
-        
-          前情提要: 數值積分初探 連續函數可以用多項式來逼近它, 因此直覺來講, 既然我們已經找到一個離給定函數&quot;很近&quot;的多項式了, 何不
-        
-      </div>
-    </div>
-  
-    
-    
-    
-    <div>
-      <h2><a href="/post/2020_numerical_integration_3/" >高斯積分</a></h2>
-      <div class="article-style">
-        
-          前情提要: 數值積分初探 前情提要: 以內插多項式來做數值積分 我們想要找到一些插值點使得以內插多項式來做數值積分會最準. 這就是高斯積分. Goal: 任意給定
-        
-      </div>
-    </div>
-  
-    
-    
-    
-    <div>
-      <h2><a href="/post/2019_numerical_integration/" >數值積分初探</a></h2>
-      <div class="article-style">
-        
-          在微積分課程裡我們有學到積分的&rsquo;中點法&rsquo;, &lsquo;梯形法&rsquo;以及&rsquo;辛普森法&rsquo;
-        
-      </div>
-    </div>
-  
+    <div class="article-style">
+      <blockquote>
+<p>重複擲一枚硬幣, 當出現連續兩次為正時停止, 平均要扔幾次?</p>
+</blockquote>
+<hr>
+<h2 id="第一種做法">第一種做法:</h2>
+<blockquote>
+<p>我們以正負號 (+ -) 代表正面反面.</p>
+</blockquote>
+<h3 id="觀察">觀察</h3>
+<p>假設花 $n$ 次才擲到連續兩次為正，$n \geq 2$. 我們發現, 可以從第 $n-1$ 次的結果進行窮舉法得到第 $n$ 次的結果。</p>
+<ul>
+<li>當 $n = 2$, 只會有 1 種情況 : <code>++</code></li>
+<li>要窮舉 $n = 3$, 要知道三次中的尾巴兩次必須是 $n=2$ 的所有情況. 由於 $n=2$ 的第一個為正, 因此要在前加一項只能為負, 因此 $n=3$ 只有 <code>-++</code> 這情況</li>
+<li>對 $n=4$, 尾巴兩次必須是 $n=3$ 的所有情況. 由於 $n=3$ 的第一個為負, 因此要在前加正或負皆可, 因此 $n=4$ 有兩種情況: <code>+-++</code>,  <code>--++</code></li>
+</ul>
+<h4 id="小結論">小結論</h4>
+<p>對 $n=k+1$ 而言, 我們只需要考慮 $n=k$ 所有情況的第一個是正或負即可. 若為正則只能在前面再加個負, 若為負則可以在前面加正或負.</p>
+<p>也就是說, 假設 $n=k$ 中有 $x_k$ 個情況第一個為正, 有 $y_k$ 個情況第一個為負, 那 $n=k+1$ 的所有情況中必有 $y_k$ 為正, $x_k+y_k$ 為負.
+寫成矩陣型式就是
+$$
+\begin{bmatrix} x_{k+1} \\ y_{k+1}\end{bmatrix}
+= A
+\begin{bmatrix} x_{k} \\ y_{k}\end{bmatrix}, \quad
+A =
+\begin{bmatrix} 0 &amp; 1 \\ 1 &amp; 1 \end{bmatrix}
+$$
+則我們有
+$$
+\begin{bmatrix} x_{k} \\ y_{k}\end{bmatrix}
+= A^{k-2}
+\begin{bmatrix} 1 \\ 0\end{bmatrix}, \quad k\ge 2.
+$$
+並且我們知道花 $k$ 次才直到連續兩次為正共會有 $x_k+y_k$ 種情況, 意即
+$$
+\begin{bmatrix} 1 &amp; 1\end{bmatrix}
+A^{k-2}
+\begin{bmatrix} 1 \\ 0\end{bmatrix}.
+$$
+另外我們還知道丟硬幣 $k$ 次之情況的機率為 $\frac{1}{2^k}$.</p>
+<h3 id="計算期望值">計算期望值</h3>
+<p>利用以上結果我們可以知道期望值為
+$$
+E = \sum_{k=2}^\infty
+\left(
+\begin{bmatrix} 1 &amp; 1\end{bmatrix}
+A^{k-2}
+\begin{bmatrix} 1 \\ 0\end{bmatrix}
+\right)
+\cdot \frac{k}{2^{k}}
+=\sum_{k=0}^\infty
+\left(
+\begin{bmatrix} 1 &amp; 1\end{bmatrix}
+A^{k}
+\begin{bmatrix} 1 \\ 0\end{bmatrix}
+\right)
+\cdot \frac{k+2}{2^{k+2}}.
+$$</p>
+<ol>
+<li>
+<p>對角化
+$$
+A = \begin{bmatrix}0 &amp; 1 \\ 1 &amp; 1\end{bmatrix}
+= \frac{1}{\sqrt{5}}
+\begin{bmatrix}1 &amp; 1 \\ \frac{1+\sqrt{5}}{2} &amp; \frac{1-\sqrt{5}}{2}\end{bmatrix}
+\begin{bmatrix}\frac{1+\sqrt{5}}{2} &amp; 0 \\ 0 &amp; \frac{1-\sqrt{5}}{2}\end{bmatrix}
+\begin{bmatrix}\frac{\sqrt{5}-1}{2} &amp; 1 \\ \frac{1+\sqrt{5}}{2} &amp; -1\end{bmatrix}
+$$</p>
+</li>
+<li>
+<p>可得
+$$
+A^k
+= \frac{1}{\sqrt{5}}
+\begin{bmatrix}1 &amp; 1 \\ \frac{1+\sqrt{5}}{2} &amp; \frac{1-\sqrt{5}}{2}\end{bmatrix}
+\begin{bmatrix}\left(\frac{1+\sqrt{5}}{2}\right)^k &amp; 0 \\ 0 &amp; \left(\frac{1-\sqrt{5}}{2}\right)^k\end{bmatrix}
+\begin{bmatrix}\frac{\sqrt{5}-1}{2} &amp; 1 \\ \frac{1+\sqrt{5}}{2} &amp; -1\end{bmatrix}
+$$</p>
+</li>
+<li>
+<p>接著我們有
+$$
+\begin{bmatrix} 1 &amp; 1\end{bmatrix}
+A^{k}
+\begin{bmatrix} 1 \\ 0\end{bmatrix}
+=\frac{1}{\sqrt{5}}\left[(\frac{1+\sqrt{5}}{2})^{k-1}\cdot\frac{3+\sqrt{5}}{2} - (\frac{1-\sqrt{5}}{2})^{k-1}\cdot\frac{3-\sqrt{5}}{2}\right]
+$$</p>
+</li>
+<li>
+<p>因此
+$$
+E = \frac{3+\sqrt{5}}{16\sqrt{5}} \underbrace{\sum_{k=0}^{\infty}(k+2)\cdot(\frac{1+\sqrt{5}}{4})^{k-1}}_{(a)} - \frac{3-\sqrt{5}}{16\sqrt{5}} \underbrace{\sum_{k=0}^{\infty}(k+2)\cdot(\frac{1-\sqrt{5}}{4})^{k-1}}_{(b)}
+$$</p>
+</li>
+</ol>
+<h4 id="recall-calculus">Recall Calculus</h4>
+<blockquote>
+<p>要算 (a) 與 (b) 我們先 recall 微積分裡的一個結果</p>
+</blockquote>
+<p>$$
+\sum_{n=0}^{\infty} x^n = \frac{1}{1-x}, \quad |x| &lt; 1.
+$$
+兩邊微分得到
+$$
+\sum_{n=0}^{\infty} n x^{n-1} = \frac{1}{(1-x)^2}, \quad |x| &lt; 1.
+$$</p>
+<p>利用這個我們可以算 (a)
+$$
+\sum_{k=0}^{\infty}(k+2)\cdot(\frac{1+\sqrt{5}}{4})^{k-1} = 18 + 10\sqrt{5}
+$$
+也可以算 (b)
+$$
+\sum_{k=0}^{\infty}(k+2)\cdot(\frac{1-\sqrt{5}}{4})^{k-1} = 18 - 10\sqrt{5}
+$$</p>
+<p>最後,
+$$
+E = \frac{3+\sqrt{5}}{16\sqrt{5}}\cdot (18+10\sqrt{5}) - \frac{3-\sqrt{5}}{16\sqrt{5}}\cdot (18-10\sqrt{5}) = 6
+$$</p>
+<h3 id="結論">結論</h3>
+<p>重複擲一枚硬幣, 當出現連續兩次為正時停止, 平均要扔<strong>六</strong>次.</p>
+<hr>
+<h2 id="第二種做法">第二種做法:</h2>
+<blockquote>
+<p>我們可以用 Markov chain 來想這問題</p>
+</blockquote>
+<h3 id="觀察-1">觀察</h3>
+<p>假設目前連續投擲出 0 個正, 那下一投有 $0.5$ 機率是正以及 $0.5$ 機率是負.
+也就是 $0.5$ 機率會是到 <code>1正</code> 這狀態以及 $0.5$ 機率回到 <code>0正</code> 這狀態.</p>
+<p>假設目前連續投擲出 1 個正, 那下一投則 $0.5$ 機率會是到 <code>2正</code> 這狀態以及 $0.5$ 機率回到 <code>0正</code> 這狀態.</p>
+<p>根據這些觀察我們可以做出以下的 diagram:</p>
+<pre><code class="language-mermaid" data-lang="mermaid">graph LR;
+A[0 正] -- 0.5 --&gt;B(1 正)
+  B -- 0.5 --&gt; C(2 正)
+  A -- 0.5 --&gt; A
+  B -- 0.5 --&gt; A
+</code></pre><p>接著我們假設從 <code>0正</code> 這狀態需要投 $k_0$ 次才會到 <code>2正</code>, 而從 <code>1正</code> 這狀態需要投 $k_1$ 次才會到 <code>2正</code>.</p>
+<p>對 <code>0正</code> 狀態而言, 投一次有 $0.5$ 機會到<code>1正</code>狀態, 然後再需要 $k_1$ 次到<code>2正</code>, 所以這樣總共投 $1+k_1$ 次.
+而 <code>0正</code> 投一次也有 $0.5$ 機會會回到自己原始 <code>0正</code> 狀態, 然後再需要 $k_0$ 次到<code>2正</code>, 所以這樣總共投 $1+k_0$ 次.
+如此可以列式:
+$$
+k_0 = 0.5(1+k_1) + 0.5(1+k_0)
+$$</p>
+<p>同理, 對 <code>1正</code> 狀態而言我們有以下式子
+$$
+k_1 = 0.5(1) + 0.5(1+k_0)
+$$</p>
+<p>這樣我們有兩個未知數兩個方程式, 解出來得到
+$$
+k_0=6, \quad k_1=4.
+$$</p>
+<p>所以, 從 <code>0正</code> 狀態到出現連續兩次為正平均要投 $6$ 次.</p>
+<hr>
 
-  
+    </div>
 
+    
+
+
+
+
+
+
+
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=https://teshenglin.github.io/post/2020_coin_problem/&amp;text=%e6%93%b2%e7%a1%ac%e5%b9%a3%e5%95%8f%e9%a1%8c" target="_blank" rel="noopener" class="share-btn-twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=https://teshenglin.github.io/post/2020_coin_problem/&amp;t=%e6%93%b2%e7%a1%ac%e5%b9%a3%e5%95%8f%e9%a1%8c" target="_blank" rel="noopener" class="share-btn-facebook">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="mailto:?subject=%e6%93%b2%e7%a1%ac%e5%b9%a3%e5%95%8f%e9%a1%8c&amp;body=https://teshenglin.github.io/post/2020_coin_problem/" target="_blank" rel="noopener" class="share-btn-email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+  </ul>
 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+  
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  <div class="media author-card content-widget-hr">
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="/authors/%E9%90%98%E4%BF%8A%E5%84%92/"></a></h5>
+      
+      
+      <ul class="network-icon" aria-hidden="true">
+  
+</ul>
+
+    </div>
+  </div>
+
+
+
+
+<section id="comments">
+  
+    
+<div id="disqus_thread"></div>
+<script>
+  let disqus_config = function () {
+    
+    
+    
+  };
+  (function() {
+    if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+      document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+      return;
+    }
+    var d = document, s = d.createElement('script'); s.async = true;
+    s.src = 'https://' + "https-teshenglin-github-io" + '.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+  
+</section>
+
+
+
+
+
+
+  
+  
+
+
+
+  </div>
+</article>
 
       
 
