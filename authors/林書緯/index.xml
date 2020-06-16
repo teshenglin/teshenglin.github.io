@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>林書緯 | Te-Sheng Lin</title>
+    <link>https://teshenglin.github.io/authors/%E6%9E%97%E6%9B%B8%E7%B7%AF/</link>
+      <atom:link href="https://teshenglin.github.io/authors/%E6%9E%97%E6%9B%B8%E7%B7%AF/index.xml" rel="self" type="application/rss+xml" />
+    <description>林書緯</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 15 Jun 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>林書緯</title>
+      <link>https://teshenglin.github.io/authors/%E6%9E%97%E6%9B%B8%E7%B7%AF/</link>
+    </image>
+    
+    <item>
+      <title>Sec.3.5 - Families of Implicit Curves</title>
+      <link>https://teshenglin.github.io/post/2020_cal_s3p5/</link>
+      <pubDate>Mon, 15 Jun 2020 00:00:00 +0000</pubDate>
+      <guid>https://teshenglin.github.io/post/2020_cal_s3p5/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;Applied Project in Sec.3.5, Calculus by Stewart&lt;br&gt;
+Chinese version 
+&lt;a href=&#34;https://teshenglin.github.io/post/2020_cal_s3p5_ch&#34;&gt;隱式曲線集合&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;In this project you will explore the changing shapes of implicitly defined curves as you vary the constants in a family, and determine which features are common to all members of the family.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Question 1&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Consider the family of curves
+$$
+y^2-2x^2(x+8)=c[(y+1)^2(y+9)-x^2]
+$$&lt;/p&gt;
+&lt;p&gt;(a) By graphing the curves with $c=0$ and $c=2$ , determine how many points of intersection there are. (You might have to zoom in to find all of them.)&lt;/p&gt;
+&lt;p&gt;(b) Now add the curves with $c=5$ and $c=10$ to your graphs in part (a) . What do you notice? What about other values of $c$?&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Solution&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;(a)&lt;/strong&gt; There appear to be nine points of intersection. The &amp;ldquo;inner four&amp;rdquo; near the origin are about $(\pm0.2, -0.9)$ and $(\pm0.3,-1.1)$. The &amp;ldquo;outer five&amp;rdquo; are about $(2.0,-8.9)$, $(-2.8,-8.8)$, $(-7.5,-7.7)$, $(-7.8,-4.7)$, and $(-8.0,1.5)$.
+&lt;img src=&#34;https://i.imgur.com/DJwb3iP.png&#34; alt=&#34;1(a)&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;(b)&lt;/strong&gt; We see from the graphs with $c=5$ and $c=10$, and for other values of $c$, that the curves change but the nine points of intersection are the same.
+&lt;img src=&#34;https://i.imgur.com/gIuQrL8.png&#34; alt=&#34;1(b)&#34;&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Question 2&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;(a) Graph several members of the family of curves
+$$
+x^2+y^2+cx^2 y^2=1
+$$
+Describe how the graph changes as you change the value of $c$.&lt;/p&gt;
+&lt;p&gt;(b) What happens to the curve when $c=-1$? Describe what appears on the screen. Can you prove it algebraically?&lt;/p&gt;
+&lt;p&gt;(c) Find $y&#39;$ by implicit differentiation. For the case $c=-1$, is your expression for $y&#39;$ consistent with what you discovered in part (b)?&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Solution&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;(a)&lt;/strong&gt; If $c=0$, the graph is the unit circle. As $c$ increases, the graph looks more diamondlike and more crosslike (see the graph for $c\geq 0$)&lt;/p&gt;
+&lt;p&gt;For $-1&amp;lt;c&amp;lt;0$(see the graph), there are four hyperboliclike branches as well as an ellipticlike curve bounded by $|x|\leq1$ and $|y|\leq1$ for values of $c$ close to $0$. As $c$ gets closer to $-1$, the branches and the curve become more rectangular, approaching the lines $|x|=1$ and $|y|=1$.&lt;/p&gt;
+&lt;p&gt;For $c=-1$, we get the lines $x=\pm1$ and $y=\pm1$. As $c$ decreases, we get four test-tubelike curves (see the graph) that are bounded by $|x|=1$ and $|y|=1$, and get thinner as $|c|$ gets larger.
+&lt;img src=&#34;https://i.imgur.com/8MuCqVK.png&#34; alt=&#34;2(a)&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;(b)&lt;/strong&gt; The curve for $c=-1$ is described in part &lt;strong&gt;(a)&lt;/strong&gt;. When $c=-1$, we get
+$$
+x^2+y^2-x^2y^2=1 \leftrightarrow (x^2-1)(y^2-1)=0,
+$$
+so $x=\pm 1$ or $y=\pm 1$, which algebraically proves that the graph consists of the stated lines.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;(c)&lt;/strong&gt;
+$$
+\frac{d}{dx}(x^2+y^2+cx^2y^2)=\frac{d}{dx}(1) \rightarrow
+2x+2yy&#39;+c(x^2\cdot2yy&#39;+y^2\cdot2x)=0
+$$
+$$
+\rightarrow 2yy&#39;+2cx^2yy&#39;=-2x-2cxy^2 \rightarrow
+2y(1+cx^2)y&#39;=-2x(1+cy^2)
+$$
+$$
+\rightarrow y&#39;=-\frac{x(1+cy^2)}{y(1+cx^2)}
+$$&lt;/p&gt;
+&lt;p&gt;For $c=-1$, $y&#39;=-\frac{x(1-y^2)}{y(1-x^2)}=-\frac{x(1+y)(1-y)}{y(1+x)(1-x)}$, so $y&#39;=0$ when $y=\pm1$ or $x=0$ (which leads to $y=\pm1$) and $y&#39;$ is undefined when $x=\pm1$ or $y=0$ (which leads to $x=\pm1$). Since the graph consists of the lines $x=\pm1$ and $y=\pm1$, the slope at any point on the graph is undefined or $0$, which is consistent with the expression found for $y&#39;$.&lt;/p&gt;
+&lt;hr&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Sec.3.5 - 隱式曲線集合</title>
+      <link>https://teshenglin.github.io/post/2020_cal_s3p5_ch/</link>
+      <pubDate>Mon, 15 Jun 2020 00:00:00 +0000</pubDate>
+      <guid>https://teshenglin.github.io/post/2020_cal_s3p5_ch/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;Applied Project in Sec.3.5, Calculus by Stewart&lt;br&gt;
+英文版請見 
+&lt;a href=&#34;https://teshenglin.github.io/post/2020_cal_s3p5&#34;&gt;Families of Implicit Curves&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;在這個專題中你將會發現，若你改變一個隱式曲線集合中的常數，它的形狀會如何改變，並決定集合中的成員會有哪些共同的特徵。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;問題-1&#34;&gt;問題 1.&lt;/h2&gt;
+&lt;p&gt;考慮以下的曲線集合
+$$
+y^2-2x^2(x+8)=c[(y+1)^2(y+9)-x^2]
+$$&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;(a)&lt;/strong&gt; 藉由畫出$c=0$ 和 $c=2$ 的圖形，找出共有幾個交點。 (你可能需要放大來找出全部的交點。)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;(b)&lt;/strong&gt; 將$c=5$ 和 $c=10$ 加到 &lt;strong&gt;(a)&lt;/strong&gt; 的圖形。你注意到了什麼?  $c$ 帶入其他數值結果又會如何?&lt;/p&gt;
+&lt;h2 id=&#34;解答&#34;&gt;解答&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;(a)&lt;/strong&gt; 共有九個交點。「內部」的四個交點大概位於 $(\pm0.2, -0.9)$ 和 $(\pm0.3,-1.1)$. 「外部」的五個交點大概位於 $(2.0,-8.9)$, $(-2.8,-8.8)$, $(-7.5,-7.7)$, $(-7.8,-4.7)$, 和 $(-8.0,1.5)$。
+&lt;img src=&#34;https://i.imgur.com/DJwb3iP.png&#34; alt=&#34;1(a)&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;(b)&lt;/strong&gt; 觀察$c=5$ 及 $c=10$的圖形，以及對其他的 $c$ 而言，曲線的圖形會改變但交點的位置不變。
+&lt;img src=&#34;https://i.imgur.com/gIuQrL8.png&#34; alt=&#34;1(b)&#34;&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;問題-2&#34;&gt;問題 2.&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;(a)&lt;/strong&gt; 畫出
+$$
+x^2+y^2+cx^2 y^2=1
+$$
+曲線集合中的數個成員，並描述當你改變$c$的值，曲線的圖形出現了什麼改變？&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;(b)&lt;/strong&gt; 當$c=-1$會發生什麼事?描述螢幕上發生了什麼事？你能夠代數性的證明它嗎？&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;(c)&lt;/strong&gt; 使用隱微分找到 $y&#39;$ 。當$c=-1$,你寫的 $y&#39;$ 與你在 &lt;strong&gt;(b)&lt;/strong&gt; 發現的相符嗎?&lt;/p&gt;
+&lt;h2 id=&#34;解答-1&#34;&gt;解答&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;(a)&lt;/strong&gt; 當 $c=0$圖形為單位圓。當 $c$ 增加，圖形看起來越來越像寶石和十字架 (看 $c\geq0$的圖)&lt;/p&gt;
+&lt;p&gt;當 $-1&amp;lt;c&amp;lt;0$(看圖), $c$ 靠近 $0$ 時有四個部分的雙曲線和一個由 $|x|\leq1$ 和 $|y|\leq1$ 圍出的橢圓。$c$ 越靠近 $-1$, 橢圓和曲線就變得越方正, 靠近 $|x|=1$和$|y|=1$。&lt;/p&gt;
+&lt;p&gt;當$c=-1$, 我們得到直線 $x=\pm1$ 和 $y=\pm1$。當 $c$ 減少,我們得到四個試管形狀的曲線(看圖) 由 $|x|=1$ 和 $|y|=1$ 圍出，當$|c|$越大，圖形就變得越小。
+&lt;img src=&#34;https://i.imgur.com/8MuCqVK.png&#34; alt=&#34;2(a)&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;(b)&lt;/strong&gt; $c=-1$ 的圖形已在 &lt;strong&gt;(a)&lt;/strong&gt; 描述過。當 $c=-1$，我們得到
+$$
+x^2+y^2-x^2y^2=1 \leftrightarrow (x^2-1)(y^2-1)=0
+$$
+所以 $x=\pm1$ 或 $y=\pm1$，代術性的證明了指定的直線。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;(c)&lt;/strong&gt;
+$$
+\frac{d}{dx}(x^2+y^2+cx^2y^2)=\frac{d}{dx}(1) \rightarrow
+2x+2yy&#39;+c(x^2\cdot2yy&#39;+y^2\cdot2x)=0
+$$
+$$
+\rightarrow 2yy&#39;+2cx^2yy&#39;=-2x-2cxy^2 \rightarrow
+2y(1+cx^2)y&#39;=-2x(1+cy^2)
+$$
+$$
+\rightarrow y&#39;=-\frac{x(1+cy^2)}{y(1+cx^2)}
+$$&lt;/p&gt;
+&lt;p&gt;當$c=-1$, $y&#39;=-\frac{x(1-y^2)}{y(1-x^2)}=-\frac{x(1+y)(1-y)}{y(1+x)(1-x)}$, 當 $y&#39;=0$ 得到 $y=\pm1$ or $x=0$ (故我們得到$y=\pm1$) 且 $y&#39;$ 在 $x=\pm1$ 或 $y=0$ (故我們得到$x=\pm1$)為未定義。因為 $c=-1$ 的圖形由直線 $x=\pm1$和$y=\pm1$ 組成，在任何點的斜率為未定義或 $0$，與我們對 $y&#39;$ 的發現相符。&lt;/p&gt;
+&lt;hr&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

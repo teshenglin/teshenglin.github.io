@@ -21,7 +21,7 @@
 &lt;p&gt;重複擲一枚硬幣, 當出現連續兩次為正時停止, 平均要扔幾次?&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;hr&gt;
-&lt;h2 id=&#34;第一種做法&#34;&gt;第一種做法:&lt;/h2&gt;
+&lt;h2 id=&#34;第一種做法-窮舉法&#34;&gt;第一種做法: 窮舉法&lt;/h2&gt;
 &lt;blockquote&gt;
 &lt;p&gt;我們以正負號 (+ -) 代表正面反面.&lt;/p&gt;
 &lt;/blockquote&gt;
