@@ -5,12 +5,143 @@
     <link>https://teshenglin.github.io/categories/computational-mathematics/</link>
       <atom:link href="https://teshenglin.github.io/categories/computational-mathematics/index.xml" rel="self" type="application/rss+xml" />
     <description>Computational Mathematics</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 12 Jun 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 19 Jun 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
       <title>Computational Mathematics</title>
       <link>https://teshenglin.github.io/categories/computational-mathematics/</link>
     </image>
+    
+    <item>
+      <title>Clenshaw–Curtis quadrature</title>
+      <link>https://teshenglin.github.io/post/2020_numerical_integration_4/</link>
+      <pubDate>Fri, 19 Jun 2020 00:00:00 +0000</pubDate>
+      <guid>https://teshenglin.github.io/post/2020_numerical_integration_4/</guid>
+      <description>&lt;p&gt;前情提要: 
+&lt;a href=&#34;https://teshenglin.github.io/post/2019_numerical_integration&#34;&gt;數值積分初探&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;前情提要: 
+&lt;a href=&#34;https://teshenglin.github.io/post/2020_numerical_integration_2&#34;&gt;以內插多項式來做數值積分&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;前情提要: 
+&lt;a href=&#34;https://teshenglin.github.io/post/2020_numerical_integration_3&#34;&gt;高斯積分&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;blockquote&gt;
+&lt;p&gt;我們想要利用 Chebyshev polynomial 來算積分&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&#34;goal-任意給定一可積分函數-fx-xin-1-1-我們想要算-int1_-1-fx-dx&#34;&gt;Goal: 任意給定一可積分函數 $f(x)$, $x\in[-1, 1]$, 我們想要算 $\int^1_{-1} f(x) dx$.&lt;/h4&gt;
+&lt;hr&gt;
+&lt;h4 id=&#34;idea&#34;&gt;Idea:&lt;/h4&gt;
+&lt;p&gt;我們簡單做個變數變換 $x = \cos\theta$ 可以得到
+$$
+\int^1_{-1} f(x) dx = \int^{\pi}_0 f(\cos\theta)\sin\theta d\theta.
+$$
+所以如果我能將 $f(x)$ 這個函數以 second kind Chebyshev polynomial 來做展開, i.e.,
+$$
+f(x) = \sum^N_{k=0} a_k T_k(x) = \sum^N_{k=0} a_k \cos(k\cos^{-1}x) = \sum^N_{k=0} a_k \cos(k\theta)=f(\cos\theta).
+$$
+那代入後我們就有
+$$
+\int^1_{-1} f(x) dx = \int^{\pi}_0 \sum^N_{k=0} a_k \cos(k\theta)\sin\theta d\theta = \sum^{N/2}_{k=0}\frac{2 a_{2k}}{1-(2k)^2}.
+$$&lt;/p&gt;
+&lt;p&gt;因此, 若我們知道如何求一個函數的 Chebyshev coefficients, $a_k$, 那我們很容易就可以計算 $\int^1_{-1}f(x)dx$.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;簡單的 Matlab 程式如下:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;% generate grid points
+N = 25;
+x = -sin((-N:2:N)&#39;*pi/(2*N));
+
+% evaluate at grid points
+f = exp(sin(x));
+
+% extend the function and take scaled FFT
+f_extend = [f; f(N: -1:2)];
+f_hat = fft(f_extend)/(2*N);
+
+% obtain the Chebyshev coefficients
+a = zeros(N+1,1);
+a(1) = real(f_hat(1));
+a(2:N) = 2*real(f_hat(2:N));
+a(N+1) = real(f_hat(N+1));
+
+% Clenshaw–Curtis weights
+w = zeros(1,N+1);
+if(mod(N,2)==0)
+    M = N/2;
+else
+    M = (N-1)/2;
+end
+w(1:2:end) = 2./(1-4*(0:M).^2);
+
+% Clenshaw–Curtis quadrature
+w*a
+&lt;/code&gt;&lt;/pre&gt;&lt;hr&gt;
+&lt;p&gt;以上做法是先將函數取值, 算其係數, 再求其積分.
+不過實際上我們應該能將積分權重直接算出來, 如此一來我們就能直接由函數值求積分了.
+也就是說我們希望能寫成以下這式子:
+$$
+\int^1_{-1} f(x)dx \approx \sum^N_{k=0} w_k f(x_k), \quad x_k = \cos\left(\frac{k\pi}{N}\right).
+$$&lt;/p&gt;
+&lt;hr&gt;
+&lt;h4 id=&#34;積分權重&#34;&gt;積分權重:&lt;/h4&gt;
+&lt;p&gt;要求得積分權重我們首先回顧一下上面的作法：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;首先將點做 even extension&lt;/li&gt;
+&lt;li&gt;做 FFT&lt;/li&gt;
+&lt;li&gt;由 Fourier coefficients 求得 Chebyshev coefficients&lt;/li&gt;
+&lt;li&gt;再將係數乘上積分權重即得到積分值&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;以上步驟可以寫成矩陣形式:
+$$
+q = [\pmb{w}][\pmb{I}]^T[\pmb{F}][\pmb{I}][\pmb{f}]
+$$
+其中&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;$[\pmb{f}]$ 是函數值, 是個 $(N+1)\times 1$ 的矩陣&lt;/li&gt;
+&lt;li&gt;$[\pmb{I}]$ 是 even extension 是個 $2N\times (N+1)$ 的矩陣&lt;/li&gt;
+&lt;li&gt;$[\pmb{F}]$ 是 Fourier transform 是個 $2N\times 2N$ 的矩陣&lt;/li&gt;
+&lt;li&gt;$[\pmb{w}]$ 是 Clenshaw–Curtis 對於係數的 weights 是個 $1\times (N+1)$ 的矩陣&lt;/li&gt;
+&lt;li&gt;$q$ 是最後得到的數值積分值&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;所以這樣看就很清楚, Clenshaw–Curtis 對於函數值的 weights 事實上就是 $[\pmb{w}][\pmb{I}]^T[\pmb{F}][\pmb{I}]$ 這串矩陣乘法.
+也就是說如果我定義
+$$
+[CCW]=[\pmb{w}][\pmb{I}]^T[\pmb{F}][\pmb{I}],
+$$
+則我們有
+$$
+q = [CCW][\pmb{f}]
+$$
+而由於 $[\pmb{F}]$ 是對稱矩陣, 我們可以把這整個做矩陣轉置, 這樣就很清楚要怎樣求 weight 了
+$$
+[CCW]^T = [\pmb{I}]^T[\pmb{F}]^T[\pmb{I}][\pmb{w}]^T,
+$$
+其中 $[\pmb{F}]^T$ 這個矩陣乘法則是以 iFFT 來加速計算.&lt;/p&gt;
+&lt;p&gt;簡單的 Matlab 程式如下:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;N=25;
+
+w = zeros(1,N+1);
+if(mod(N,2)==0)
+    M=N/2;
+else
+    M = (N-1)/2;
+end
+w(1:2:end) = 2./(1-4*(0:M).^2);
+
+w2 = [w, w(N: -1:2)];
+CCW = ifft(w2&#39;);
+CCW = [CCW(1), 2*CCW(2:N)&#39;, CCW(N+1)];
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;有了權重後即可由函數值直接求得積分值:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;% generate grid points
+N = 25;
+x = -sin((-N:2:N)&#39;*pi/(2*N));
+
+% evaluate at grid points
+f = exp(sin(x));
+
+% Clenshaw–Curtis quadrature
+CCW*f
+&lt;/code&gt;&lt;/pre&gt;&lt;hr&gt;
+</description>
+    </item>
     
     <item>
       <title>Lagrange Multiplier - 01</title>

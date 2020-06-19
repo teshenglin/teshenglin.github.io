@@ -28,10 +28,10 @@
   
     
   
-  <meta name="description" content="Assistant Professor">
+  <meta name="description" content="前情提要: 數值積分初探 前情提要: 以內插多項式來做數值積分 前情提要: 高斯積分 我們想要利用 Chebyshev polynomial 來算積分 Goal: 任意給定一可積分函數 $f(x)$, $x\in[-1, 1]$, 我們想要算 $\int^1_{-1} f(x)">
 
   
-  <link rel="alternate" hreflang="en-us" href="https://teshenglin.github.io/tags/">
+  <link rel="alternate" hreflang="en-us" href="https://teshenglin.github.io/post/2020_numerical_integration_4/">
 
   
 
@@ -216,14 +216,12 @@
 
 
   
-  <link rel="alternate" href="/tags/index.xml" type="application/rss+xml" title="Te-Sheng Lin">
-  
 
   <link rel="manifest" href="/index.webmanifest">
   <link rel="icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_2.png">
   <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_2.png">
 
-  <link rel="canonical" href="https://teshenglin.github.io/tags/">
+  <link rel="canonical" href="https://teshenglin.github.io/post/2020_numerical_integration_4/">
 
   
   
@@ -237,18 +235,63 @@
   <meta property="twitter:card" content="summary">
   
   <meta property="og:site_name" content="Te-Sheng Lin">
-  <meta property="og:url" content="https://teshenglin.github.io/tags/">
-  <meta property="og:title" content="Tags | Te-Sheng Lin">
-  <meta property="og:description" content="Assistant Professor"><meta property="og:image" content="https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png">
+  <meta property="og:url" content="https://teshenglin.github.io/post/2020_numerical_integration_4/">
+  <meta property="og:title" content="Clenshaw–Curtis quadrature | Te-Sheng Lin">
+  <meta property="og:description" content="前情提要: 數值積分初探 前情提要: 以內插多項式來做數值積分 前情提要: 高斯積分 我們想要利用 Chebyshev polynomial 來算積分 Goal: 任意給定一可積分函數 $f(x)$, $x\in[-1, 1]$, 我們想要算 $\int^1_{-1} f(x)"><meta property="og:image" content="https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png">
   <meta property="twitter:image" content="https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png"><meta property="og:locale" content="en-us">
   
-    <meta property="og:updated_time" content="2020-06-19T00:00:00&#43;00:00">
+    
+      <meta property="article:published_time" content="2020-06-19T00:00:00&#43;00:00">
+    
+    <meta property="article:modified_time" content="2020-06-19T17:00:49&#43;08:00">
   
 
   
 
 
+    
 
+
+
+
+
+
+  
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://teshenglin.github.io/post/2020_numerical_integration_4/"
+  },
+  "headline": "Clenshaw–Curtis quadrature",
+  
+  "datePublished": "2020-06-19T00:00:00Z",
+  "dateModified": "2020-06-19T17:00:49+08:00",
+  
+  "author": {
+    "@type": "Person",
+    "name": "Te-Sheng Lin (林得勝)"
+  },
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "Te-Sheng Lin",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_2.png"
+    }
+  },
+  "description": "前情提要: 數值積分初探 前情提要: 以內插多項式來做數值積分 前情提要: 高斯積分 我們想要利用 Chebyshev polynomial 來算積分 Goal: 任意給定一可積分函數 $f(x)$, $x\\in[-1, 1]$, 我們想要算 $\\int^1_{-1} f(x)"
+}
+</script>
+
+  
 
   
 
@@ -256,10 +299,13 @@
   
 
 
+  
 
 
 
-  <title>Tags | Te-Sheng Lin</title>
+
+
+  <title>Clenshaw–Curtis quadrature | Te-Sheng Lin</title>
 
 </head>
 
@@ -454,156 +500,449 @@
 </nav>
 
 
-  
-
-
-
-
-
-
-
-
-
-
-
+  <article class="article">
 
   
 
+
+
+
+
+
+
+
+
+
+
+
+  
+
   
   
+  
+<div class="article-container pt-3">
+  <h1>Clenshaw–Curtis quadrature</h1>
+
+  
+
   
     
-  
-<div class="universal-wrapper pt-3">
-  <h1>Tags</h1>
+
+
+<div class="article-metadata">
 
   
+  
+  
+  
+  <div>
+    
+
+
+
+  
+  <span><a href="/authors/admin/">Te-Sheng Lin (林得勝)</a></span>
+
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+          Last updated on
+      
+    
+    Jun 19, 2020
+  </span>
+  
+
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    2 min read
+  </span>
+  
+
+  
+  
+  
+  <span class="middot-divider"></span>
+  <a href="/post/2020_numerical_integration_4/#disqus_thread"></a>
+  
+
+  
+  
+  <span class="middot-divider"></span>
+  <span class="article-categories">
+    <i class="fas fa-folder mr-1"></i><a href="/categories/calculus/">Calculus</a>, <a href="/categories/computational-mathematics/">Computational Mathematics</a></span>
+  
+
+</div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   
 </div>
 
 
 
-<div class="universal-wrapper">
-  
+  <div class="article-container">
 
-  
-  
-    
-    
-    
-    <div>
-      <h2><a href="/tags/graph/" >graph</a></h2>
-      <div class="article-style">
-        
-      </div>
-    </div>
-  
-    
-    
-    
-    <div>
-      <h2><a href="/tags/polar/" >polar</a></h2>
-      <div class="article-style">
-        
-      </div>
-    </div>
-  
-    
-    
-    
-    <div>
-      <h2><a href="/tags/julia/" >Julia</a></h2>
-      <div class="article-style">
-        
-      </div>
-    </div>
-  
-    
-    
-    
-    <div>
-      <h2><a href="/tags/antiderivative/" >antiderivative</a></h2>
-      <div class="article-style">
-        
-      </div>
-    </div>
-  
-    
-    
-    
-    <div>
-      <h2><a href="/tags/indefinite-integral/" >indefinite integral</a></h2>
-      <div class="article-style">
-        
-      </div>
-    </div>
-  
-    
-    
-    
-    <div>
-      <h2><a href="/tags/continuous/" >continuous</a></h2>
-      <div class="article-style">
-        
-      </div>
-    </div>
-  
-    
-    
-    
-    <div>
-      <h2><a href="/tags/differentiable/" >differentiable</a></h2>
-      <div class="article-style">
-        
-      </div>
-    </div>
-  
-    
-    
-    
-    <div>
-      <h2><a href="/tags/iteration_method/" >iteration_method</a></h2>
-      <div class="article-style">
-        
-      </div>
-    </div>
-  
-    
-    
-    
-    <div>
-      <h2><a href="/tags/root_finding/" >root_finding</a></h2>
-      <div class="article-style">
-        
-      </div>
-    </div>
-  
-    
-    
-    
-    <div>
-      <h2><a href="/tags/git/" >git</a></h2>
-      <div class="article-style">
-        
-      </div>
-    </div>
-  
+    <div class="article-style">
+      <p>前情提要: 
+<a href="/post/2019_numerical_integration">數值積分初探</a></p>
+<p>前情提要: 
+<a href="/post/2020_numerical_integration_2">以內插多項式來做數值積分</a></p>
+<p>前情提要: 
+<a href="/post/2020_numerical_integration_3">高斯積分</a></p>
+<hr>
+<blockquote>
+<p>我們想要利用 Chebyshev polynomial 來算積分</p>
+</blockquote>
+<h4 id="goal-任意給定一可積分函數-fx-xin-1-1-我們想要算-int1_-1-fx-dx">Goal: 任意給定一可積分函數 $f(x)$, $x\in[-1, 1]$, 我們想要算 $\int^1_{-1} f(x) dx$.</h4>
+<hr>
+<h4 id="idea">Idea:</h4>
+<p>我們簡單做個變數變換 $x = \cos\theta$ 可以得到
+$$
+\int^1_{-1} f(x) dx = \int^{\pi}_0 f(\cos\theta)\sin\theta d\theta.
+$$
+所以如果我能將 $f(x)$ 這個函數以 second kind Chebyshev polynomial 來做展開, i.e.,
+$$
+f(x) = \sum^N_{k=0} a_k T_k(x) = \sum^N_{k=0} a_k \cos(k\cos^{-1}x) = \sum^N_{k=0} a_k \cos(k\theta)=f(\cos\theta).
+$$
+那代入後我們就有
+$$
+\int^1_{-1} f(x) dx = \int^{\pi}_0 \sum^N_{k=0} a_k \cos(k\theta)\sin\theta d\theta = \sum^{N/2}_{k=0}\frac{2 a_{2k}}{1-(2k)^2}.
+$$</p>
+<p>因此, 若我們知道如何求一個函數的 Chebyshev coefficients, $a_k$, 那我們很容易就可以計算 $\int^1_{-1}f(x)dx$.</p>
+<hr>
+<p>簡單的 Matlab 程式如下:</p>
+<pre><code>% generate grid points
+N = 25;
+x = -sin((-N:2:N)'*pi/(2*N));
 
+% evaluate at grid points
+f = exp(sin(x));
+
+% extend the function and take scaled FFT
+f_extend = [f; f(N: -1:2)];
+f_hat = fft(f_extend)/(2*N);
+
+% obtain the Chebyshev coefficients
+a = zeros(N+1,1);
+a(1) = real(f_hat(1));
+a(2:N) = 2*real(f_hat(2:N));
+a(N+1) = real(f_hat(N+1));
+
+% Clenshaw–Curtis weights
+w = zeros(1,N+1);
+if(mod(N,2)==0)
+    M = N/2;
+else
+    M = (N-1)/2;
+end
+w(1:2:end) = 2./(1-4*(0:M).^2);
+
+% Clenshaw–Curtis quadrature
+w*a
+</code></pre><hr>
+<p>以上做法是先將函數取值, 算其係數, 再求其積分.
+不過實際上我們應該能將積分權重直接算出來, 如此一來我們就能直接由函數值求積分了.
+也就是說我們希望能寫成以下這式子:
+$$
+\int^1_{-1} f(x)dx \approx \sum^N_{k=0} w_k f(x_k), \quad x_k = \cos\left(\frac{k\pi}{N}\right).
+$$</p>
+<hr>
+<h4 id="積分權重">積分權重:</h4>
+<p>要求得積分權重我們首先回顧一下上面的作法：</p>
+<ol>
+<li>首先將點做 even extension</li>
+<li>做 FFT</li>
+<li>由 Fourier coefficients 求得 Chebyshev coefficients</li>
+<li>再將係數乘上積分權重即得到積分值</li>
+</ol>
+<p>以上步驟可以寫成矩陣形式:
+$$
+q = [\pmb{w}][\pmb{I}]^T[\pmb{F}][\pmb{I}][\pmb{f}]
+$$
+其中</p>
+<ul>
+<li>$[\pmb{f}]$ 是函數值, 是個 $(N+1)\times 1$ 的矩陣</li>
+<li>$[\pmb{I}]$ 是 even extension 是個 $2N\times (N+1)$ 的矩陣</li>
+<li>$[\pmb{F}]$ 是 Fourier transform 是個 $2N\times 2N$ 的矩陣</li>
+<li>$[\pmb{w}]$ 是 Clenshaw–Curtis 對於係數的 weights 是個 $1\times (N+1)$ 的矩陣</li>
+<li>$q$ 是最後得到的數值積分值</li>
+</ul>
+<p>所以這樣看就很清楚, Clenshaw–Curtis 對於函數值的 weights 事實上就是 $[\pmb{w}][\pmb{I}]^T[\pmb{F}][\pmb{I}]$ 這串矩陣乘法.
+也就是說如果我定義
+$$
+[CCW]=[\pmb{w}][\pmb{I}]^T[\pmb{F}][\pmb{I}],
+$$
+則我們有
+$$
+q = [CCW][\pmb{f}]
+$$
+而由於 $[\pmb{F}]$ 是對稱矩陣, 我們可以把這整個做矩陣轉置, 這樣就很清楚要怎樣求 weight 了
+$$
+[CCW]^T = [\pmb{I}]^T[\pmb{F}]^T[\pmb{I}][\pmb{w}]^T,
+$$
+其中 $[\pmb{F}]^T$ 這個矩陣乘法則是以 iFFT 來加速計算.</p>
+<p>簡單的 Matlab 程式如下:</p>
+<pre><code>N=25;
+
+w = zeros(1,N+1);
+if(mod(N,2)==0)
+    M=N/2;
+else
+    M = (N-1)/2;
+end
+w(1:2:end) = 2./(1-4*(0:M).^2);
+
+w2 = [w, w(N: -1:2)];
+CCW = ifft(w2');
+CCW = [CCW(1), 2*CCW(2:N)', CCW(N+1)];
+</code></pre><p>有了權重後即可由函數值直接求得積分值:</p>
+<pre><code>% generate grid points
+N = 25;
+x = -sin((-N:2:N)'*pi/(2*N));
+
+% evaluate at grid points
+f = exp(sin(x));
+
+% Clenshaw–Curtis quadrature
+CCW*f
+</code></pre><hr>
+
+    </div>
+
+    
+
+
+
+
+
+<div class="article-tags">
   
-<nav>
-  <ul class="pagination justify-content-center">
+  <a class="badge badge-light" href="/tags/numerical_integration/">numerical_integration</a>
+  
+  <a class="badge badge-light" href="/tags/quadrature/">quadrature</a>
+  
+</div>
+
+
+
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
     
-    <li class="page-item"><a class="page-link" href="/tags/">&laquo;</a></li>
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=https://teshenglin.github.io/post/2020_numerical_integration_4/&amp;text=Clenshaw%e2%80%93Curtis%20quadrature" target="_blank" rel="noopener" class="share-btn-twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
     
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=https://teshenglin.github.io/post/2020_numerical_integration_4/&amp;t=Clenshaw%e2%80%93Curtis%20quadrature" target="_blank" rel="noopener" class="share-btn-facebook">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+      </li>
     
-    <li class="page-item"><a class="page-link" href="/tags/page/3/">&raquo;</a></li>
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="mailto:?subject=Clenshaw%e2%80%93Curtis%20quadrature&amp;body=https://teshenglin.github.io/post/2020_numerical_integration_4/" target="_blank" rel="noopener" class="share-btn-email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
     
   </ul>
-</nav>
-
-
 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+  
+
+
+
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  <div class="media author-card content-widget-hr">
+    
+      
+      <img class="avatar mr-3 avatar-circle" src="/authors/admin/avatar_hua0d4d4b24f4da3a102e4452ac738b95f_109236_270x270_fill_q90_lanczos_center.jpg" alt="Avatar">
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="https://teshenglin.github.io/">Te-Sheng Lin (林得勝)</a></h5>
+      <h6 class="card-subtitle">Assistant Professor</h6>
+      <p class="card-text">The focus of my research is concerned with the development of analytical and computational tools for the problems that arises in fluid dynamics, currently in thin liquid films, and further to communicate with scientists from other disciplines to solve engineering problems in practice.</p>
+      <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://scholar.google.com.tw/citations?user=diXYXkwAAAAJ" target="_blank" rel="noopener">
+        <i class="ai ai-google-scholar"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.researchgate.net/profile/Te-Sheng_Lin" target="_blank" rel="noopener">
+        <i class="ai ai-researchgate"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://github.com/teshenglin" target="_blank" rel="noopener">
+        <i class="fab fa-github"></i>
+      </a>
+    </li>
+  
+</ul>
+
+    </div>
+  </div>
+
+
+
+
+<section id="comments">
+  
+    
+<div id="disqus_thread"></div>
+<script>
+  let disqus_config = function () {
+    
+    
+    
+  };
+  (function() {
+    if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+      document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+      return;
+    }
+    var d = document, s = d.createElement('script'); s.async = true;
+    s.src = 'https://' + "https-teshenglin-github-io" + '.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+  
+</section>
+
+
+
+
+
+
+  
+  
+  <div class="article-widget content-widget-hr">
+    <h3>Related</h3>
+    <ul>
+      
+      <li><a href="/post/2020_numerical_integration_2/">以內插多項式來做數值積分</a></li>
+      
+      <li><a href="/post/2020_numerical_integration_3/">高斯積分</a></li>
+      
+      <li><a href="/post/2019_numerical_integration/">數值積分初探</a></li>
+      
+    </ul>
+  </div>
+  
+
+
+
+  </div>
+</article>
 
       
 

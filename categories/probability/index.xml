@@ -30,11 +30,11 @@
 &lt;ul&gt;
 &lt;li&gt;當 $n = 2$, 只會有 1 種情況 : &lt;code&gt;++&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;要窮舉 $n = 3$, 要知道三次中的尾巴兩次必須是 $n=2$ 的所有情況. 由於 $n=2$ 的第一個為正, 因此要在前加一項只能為負, 因此 $n=3$ 只有 &lt;code&gt;-++&lt;/code&gt; 這情況&lt;/li&gt;
-&lt;li&gt;對 $n=4$, 尾巴兩次必須是 $n=3$ 的所有情況. 由於 $n=3$ 的第一個為負, 因此要在前加正或負皆可, 因此 $n=4$ 有兩種情況: &lt;code&gt;+-++&lt;/code&gt;,  &lt;code&gt;--++&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;對 $n=4$, 尾巴三次必須是 $n=3$ 的所有情況. 由於 $n=3$ 的第一個為負, 因此要在前加正或負皆可, 因此 $n=4$ 有兩種情況: &lt;code&gt;+-++&lt;/code&gt;,  &lt;code&gt;--++&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h4 id=&#34;小結論&#34;&gt;小結論&lt;/h4&gt;
 &lt;p&gt;對 $n=k+1$ 而言, 我們只需要考慮 $n=k$ 所有情況的第一個是正或負即可. 若為正則只能在前面再加個負, 若為負則可以在前面加正或負.&lt;/p&gt;
-&lt;p&gt;也就是說, 假設 $n=k$ 中有 $x_k$ 個情況第一個為正, 有 $y_k$ 個情況第一個為負, 那 $n=k+1$ 的所有情況中必有 $y_k$ 為正, $x_k+y_k$ 為負.
+&lt;p&gt;也就是說, 假設 $n=k$ 中有 $x_k$ 個情況第一個為正, 有 $y_k$ 個情況第一個為負, 那 $n=k+1$ 的所有情況中必有 $y_k$ 個情況第一個為正, $x_k+y_k$ 個情況第一個為負.
 寫成矩陣型式就是
 $$
 \begin{bmatrix} x_{k+1} \\ y_{k+1}\end{bmatrix}
@@ -49,13 +49,13 @@ $$
 = A^{k-2}
 \begin{bmatrix} 1 \\ 0\end{bmatrix}, \quad k\ge 2.
 $$
-並且我們知道花 $k$ 次才直到連續兩次為正共會有 $x_k+y_k$ 種情況, 意即
+並且我們知道花 $k$ 次才達到連續兩次為正共會有 $x_k+y_k$ 種情況, 意即
 $$
 \begin{bmatrix} 1 &amp;amp; 1\end{bmatrix}
 A^{k-2}
 \begin{bmatrix} 1 \\ 0\end{bmatrix}.
 $$
-另外我們還知道丟硬幣 $k$ 次之情況的機率為 $\frac{1}{2^k}$.&lt;/p&gt;
+另外我們還知道丟硬幣 $k$ 次之任一情況的機率為 $\frac{1}{2^k}$.&lt;/p&gt;
 &lt;h3 id=&#34;計算期望值&#34;&gt;計算期望值&lt;/h3&gt;
 &lt;p&gt;利用以上結果我們可以知道期望值為
 $$

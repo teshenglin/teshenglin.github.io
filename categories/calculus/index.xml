@@ -5,12 +5,143 @@
     <link>https://teshenglin.github.io/categories/calculus/</link>
       <atom:link href="https://teshenglin.github.io/categories/calculus/index.xml" rel="self" type="application/rss+xml" />
     <description>Calculus</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 15 Jun 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 19 Jun 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
       <title>Calculus</title>
       <link>https://teshenglin.github.io/categories/calculus/</link>
     </image>
+    
+    <item>
+      <title>Clenshaw–Curtis quadrature</title>
+      <link>https://teshenglin.github.io/post/2020_numerical_integration_4/</link>
+      <pubDate>Fri, 19 Jun 2020 00:00:00 +0000</pubDate>
+      <guid>https://teshenglin.github.io/post/2020_numerical_integration_4/</guid>
+      <description>&lt;p&gt;前情提要: 
+&lt;a href=&#34;https://teshenglin.github.io/post/2019_numerical_integration&#34;&gt;數值積分初探&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;前情提要: 
+&lt;a href=&#34;https://teshenglin.github.io/post/2020_numerical_integration_2&#34;&gt;以內插多項式來做數值積分&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;前情提要: 
+&lt;a href=&#34;https://teshenglin.github.io/post/2020_numerical_integration_3&#34;&gt;高斯積分&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;blockquote&gt;
+&lt;p&gt;我們想要利用 Chebyshev polynomial 來算積分&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&#34;goal-任意給定一可積分函數-fx-xin-1-1-我們想要算-int1_-1-fx-dx&#34;&gt;Goal: 任意給定一可積分函數 $f(x)$, $x\in[-1, 1]$, 我們想要算 $\int^1_{-1} f(x) dx$.&lt;/h4&gt;
+&lt;hr&gt;
+&lt;h4 id=&#34;idea&#34;&gt;Idea:&lt;/h4&gt;
+&lt;p&gt;我們簡單做個變數變換 $x = \cos\theta$ 可以得到
+$$
+\int^1_{-1} f(x) dx = \int^{\pi}_0 f(\cos\theta)\sin\theta d\theta.
+$$
+所以如果我能將 $f(x)$ 這個函數以 second kind Chebyshev polynomial 來做展開, i.e.,
+$$
+f(x) = \sum^N_{k=0} a_k T_k(x) = \sum^N_{k=0} a_k \cos(k\cos^{-1}x) = \sum^N_{k=0} a_k \cos(k\theta)=f(\cos\theta).
+$$
+那代入後我們就有
+$$
+\int^1_{-1} f(x) dx = \int^{\pi}_0 \sum^N_{k=0} a_k \cos(k\theta)\sin\theta d\theta = \sum^{N/2}_{k=0}\frac{2 a_{2k}}{1-(2k)^2}.
+$$&lt;/p&gt;
+&lt;p&gt;因此, 若我們知道如何求一個函數的 Chebyshev coefficients, $a_k$, 那我們很容易就可以計算 $\int^1_{-1}f(x)dx$.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;簡單的 Matlab 程式如下:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;% generate grid points
+N = 25;
+x = -sin((-N:2:N)&#39;*pi/(2*N));
+
+% evaluate at grid points
+f = exp(sin(x));
+
+% extend the function and take scaled FFT
+f_extend = [f; f(N: -1:2)];
+f_hat = fft(f_extend)/(2*N);
+
+% obtain the Chebyshev coefficients
+a = zeros(N+1,1);
+a(1) = real(f_hat(1));
+a(2:N) = 2*real(f_hat(2:N));
+a(N+1) = real(f_hat(N+1));
+
+% Clenshaw–Curtis weights
+w = zeros(1,N+1);
+if(mod(N,2)==0)
+    M = N/2;
+else
+    M = (N-1)/2;
+end
+w(1:2:end) = 2./(1-4*(0:M).^2);
+
+% Clenshaw–Curtis quadrature
+w*a
+&lt;/code&gt;&lt;/pre&gt;&lt;hr&gt;
+&lt;p&gt;以上做法是先將函數取值, 算其係數, 再求其積分.
+不過實際上我們應該能將積分權重直接算出來, 如此一來我們就能直接由函數值求積分了.
+也就是說我們希望能寫成以下這式子:
+$$
+\int^1_{-1} f(x)dx \approx \sum^N_{k=0} w_k f(x_k), \quad x_k = \cos\left(\frac{k\pi}{N}\right).
+$$&lt;/p&gt;
+&lt;hr&gt;
+&lt;h4 id=&#34;積分權重&#34;&gt;積分權重:&lt;/h4&gt;
+&lt;p&gt;要求得積分權重我們首先回顧一下上面的作法：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;首先將點做 even extension&lt;/li&gt;
+&lt;li&gt;做 FFT&lt;/li&gt;
+&lt;li&gt;由 Fourier coefficients 求得 Chebyshev coefficients&lt;/li&gt;
+&lt;li&gt;再將係數乘上積分權重即得到積分值&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;以上步驟可以寫成矩陣形式:
+$$
+q = [\pmb{w}][\pmb{I}]^T[\pmb{F}][\pmb{I}][\pmb{f}]
+$$
+其中&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;$[\pmb{f}]$ 是函數值, 是個 $(N+1)\times 1$ 的矩陣&lt;/li&gt;
+&lt;li&gt;$[\pmb{I}]$ 是 even extension 是個 $2N\times (N+1)$ 的矩陣&lt;/li&gt;
+&lt;li&gt;$[\pmb{F}]$ 是 Fourier transform 是個 $2N\times 2N$ 的矩陣&lt;/li&gt;
+&lt;li&gt;$[\pmb{w}]$ 是 Clenshaw–Curtis 對於係數的 weights 是個 $1\times (N+1)$ 的矩陣&lt;/li&gt;
+&lt;li&gt;$q$ 是最後得到的數值積分值&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;所以這樣看就很清楚, Clenshaw–Curtis 對於函數值的 weights 事實上就是 $[\pmb{w}][\pmb{I}]^T[\pmb{F}][\pmb{I}]$ 這串矩陣乘法.
+也就是說如果我定義
+$$
+[CCW]=[\pmb{w}][\pmb{I}]^T[\pmb{F}][\pmb{I}],
+$$
+則我們有
+$$
+q = [CCW][\pmb{f}]
+$$
+而由於 $[\pmb{F}]$ 是對稱矩陣, 我們可以把這整個做矩陣轉置, 這樣就很清楚要怎樣求 weight 了
+$$
+[CCW]^T = [\pmb{I}]^T[\pmb{F}]^T[\pmb{I}][\pmb{w}]^T,
+$$
+其中 $[\pmb{F}]^T$ 這個矩陣乘法則是以 iFFT 來加速計算.&lt;/p&gt;
+&lt;p&gt;簡單的 Matlab 程式如下:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;N=25;
+
+w = zeros(1,N+1);
+if(mod(N,2)==0)
+    M=N/2;
+else
+    M = (N-1)/2;
+end
+w(1:2:end) = 2./(1-4*(0:M).^2);
+
+w2 = [w, w(N: -1:2)];
+CCW = ifft(w2&#39;);
+CCW = [CCW(1), 2*CCW(2:N)&#39;, CCW(N+1)];
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;有了權重後即可由函數值直接求得積分值:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;% generate grid points
+N = 25;
+x = -sin((-N:2:N)&#39;*pi/(2*N));
+
+% evaluate at grid points
+f = exp(sin(x));
+
+% Clenshaw–Curtis quadrature
+CCW*f
+&lt;/code&gt;&lt;/pre&gt;&lt;hr&gt;
+</description>
+    </item>
     
     <item>
       <title>Sec.3.5 - Families of Implicit Curves</title>
@@ -150,11 +281,11 @@ $$&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;當 $n = 2$, 只會有 1 種情況 : &lt;code&gt;++&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;要窮舉 $n = 3$, 要知道三次中的尾巴兩次必須是 $n=2$ 的所有情況. 由於 $n=2$ 的第一個為正, 因此要在前加一項只能為負, 因此 $n=3$ 只有 &lt;code&gt;-++&lt;/code&gt; 這情況&lt;/li&gt;
-&lt;li&gt;對 $n=4$, 尾巴兩次必須是 $n=3$ 的所有情況. 由於 $n=3$ 的第一個為負, 因此要在前加正或負皆可, 因此 $n=4$ 有兩種情況: &lt;code&gt;+-++&lt;/code&gt;,  &lt;code&gt;--++&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;對 $n=4$, 尾巴三次必須是 $n=3$ 的所有情況. 由於 $n=3$ 的第一個為負, 因此要在前加正或負皆可, 因此 $n=4$ 有兩種情況: &lt;code&gt;+-++&lt;/code&gt;,  &lt;code&gt;--++&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h4 id=&#34;小結論&#34;&gt;小結論&lt;/h4&gt;
 &lt;p&gt;對 $n=k+1$ 而言, 我們只需要考慮 $n=k$ 所有情況的第一個是正或負即可. 若為正則只能在前面再加個負, 若為負則可以在前面加正或負.&lt;/p&gt;
-&lt;p&gt;也就是說, 假設 $n=k$ 中有 $x_k$ 個情況第一個為正, 有 $y_k$ 個情況第一個為負, 那 $n=k+1$ 的所有情況中必有 $y_k$ 為正, $x_k+y_k$ 為負.
+&lt;p&gt;也就是說, 假設 $n=k$ 中有 $x_k$ 個情況第一個為正, 有 $y_k$ 個情況第一個為負, 那 $n=k+1$ 的所有情況中必有 $y_k$ 個情況第一個為正, $x_k+y_k$ 個情況第一個為負.
 寫成矩陣型式就是
 $$
 \begin{bmatrix} x_{k+1} \\ y_{k+1}\end{bmatrix}
@@ -169,13 +300,13 @@ $$
 = A^{k-2}
 \begin{bmatrix} 1 \\ 0\end{bmatrix}, \quad k\ge 2.
 $$
-並且我們知道花 $k$ 次才直到連續兩次為正共會有 $x_k+y_k$ 種情況, 意即
+並且我們知道花 $k$ 次才達到連續兩次為正共會有 $x_k+y_k$ 種情況, 意即
 $$
 \begin{bmatrix} 1 &amp;amp; 1\end{bmatrix}
 A^{k-2}
 \begin{bmatrix} 1 \\ 0\end{bmatrix}.
 $$
-另外我們還知道丟硬幣 $k$ 次之情況的機率為 $\frac{1}{2^k}$.&lt;/p&gt;
+另外我們還知道丟硬幣 $k$ 次之任一情況的機率為 $\frac{1}{2^k}$.&lt;/p&gt;
 &lt;h3 id=&#34;計算期望值&#34;&gt;計算期望值&lt;/h3&gt;
 &lt;p&gt;利用以上結果我們可以知道期望值為
 $$
