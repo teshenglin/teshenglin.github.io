@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>李孟棋 | Te-Sheng Lin</title>
+    <link>https://teshenglin.github.io/authors/%E6%9D%8E%E5%AD%9F%E6%A3%8B/</link>
+      <atom:link href="https://teshenglin.github.io/authors/%E6%9D%8E%E5%AD%9F%E6%A3%8B/index.xml" rel="self" type="application/rss+xml" />
+    <description>李孟棋</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 21 Jun 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>李孟棋</title>
+      <link>https://teshenglin.github.io/authors/%E6%9D%8E%E5%AD%9F%E6%A3%8B/</link>
+    </image>
+    
+    <item>
+      <title>Sec.14.7 - Designing a dumpster</title>
+      <link>https://teshenglin.github.io/post/2020_cal_s14p7/</link>
+      <pubDate>Sun, 21 Jun 2020 00:00:00 +0000</pubDate>
+      <guid>https://teshenglin.github.io/post/2020_cal_s14p7/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;Applied Project in Sec.14.7, Calculus by Stewart&lt;br&gt;
+Chinese version 
+&lt;a href=&#34;https://teshenglin.github.io/post/2020_cal_s14p7_ch&#34;&gt;設計垃圾桶&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;For this project we locate a rectangular trash Dumpster in order to study and describe all its shape and construction. We then attempt to determine the dimensions of a container of similar design that minimize construction cost.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Question 1 :&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;First locate a trash dumpster in your area. Carefully study and describe all details of its construction, and determine its volume. Include a sketch of the container.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Answer：&lt;/strong&gt;&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://teshenglin.github.io/post/figs/2020_cal_s14p7_1.png&#34; &gt;
+
+
+  &lt;img src=&#34;https://teshenglin.github.io/post/figs/2020_cal_s14p7_1.png&#34; alt=&#34;&#34; width=&#34;400px&#34; &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Width $x = 0.2 (m)$&lt;/li&gt;
+&lt;li&gt;Length $y = 0.25 (m)$&lt;/li&gt;
+&lt;li&gt;Height $z = 0.3 (m)$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;$$
+volume = 0.2 \times 0.25 \times 0.3 = 0.015 (m^3)
+$$&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Question 2：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;While maintaining the general shape and method of construction, determine the dimensions such a container of the same volume should have in order to minimize the cost of construction. Use the following assumptions in your analysis:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The sides, back, and front are to be made from 12-gauge ($2.657 (mm)$ thick) steel sheets, which cost $8.00 per square foot (including any required cuts or bends).&lt;/li&gt;
+&lt;li&gt;The base is to be made from a 10-gauge ($3.416 (mm)$ thick) steel sheet, which costs $10.00 per square foot.&lt;/li&gt;
+&lt;li&gt;Lids cost approximately $50.00 each, regardless of dimensions.&lt;/li&gt;
+&lt;li&gt;Welding costs approximately $0.60 per square meter for material and labor combined.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Give justification of any further assumptions or simplifications made of the details of construction.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Answer：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;From these figures the cost equation of a rectangular dumpster was determined to be:
+$$
+8\times 2\times (x+y)\times z+10xy+50+0.6\times (2x+2y+4z)
+$$
+Where the dimensions are based on a 3-dimentional graph, Width=x, Length=y, and Height=z. It is also known that the dumpster volume will have to equal to $0.015 (m^3)$, i.e.,
+$$
+xyz=0.015\ or\ z=\frac{0.015}{xy}
+$$
+so the expression for Total Cost $(f)$ becomes
+$$
+f=0.24\left(\frac{1}{x}+\frac{1}{y}\right)+10xy+50+1.2x+1.2y+\frac{0.036}{xy}
+$$
+To have a minimum we should have $f_x=f_y=0$ where
+$$
+f_x=\frac{-0.24}{x^2}+10y+1.2-\frac{0.036}{x^2y}\&lt;br&gt;
+f_y=\frac{-0.24}{y^2}+10x+1.2-\frac{0.036}{xy^2}
+$$
+Since $x$ and $y$ must be positive in this problem, we have $x=y$. We then get $10x^4+ 1.2x^3 -0.24x -0.036=0$ that has only one positive root $x\approx 0.295$.&lt;/p&gt;
+&lt;p&gt;So we find Total cost is about $53.6.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Question 3:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Describe how any of your assumptions or simplifications may affect the actual result.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Since the length of the side is much bigger then it&amp;rsquo;s thickness we simply ignore the thickness.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Question 4：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;If you were hired as a consultant on this investigation, what would your conclusion be? Would you recommend altering the design of the dumpster? If so, describe the savings that would result.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Answer&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The cost of the original trash dumpster is $53.92, which is larger than the dumpster we design. So we would recommend altering the design of the dumpster, and we can save about $0.3.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Sec.14.7 - 設計垃圾桶</title>
+      <link>https://teshenglin.github.io/post/2020_cal_s14p7_ch/</link>
+      <pubDate>Sun, 21 Jun 2020 00:00:00 +0000</pubDate>
+      <guid>https://teshenglin.github.io/post/2020_cal_s14p7_ch/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;Applied Project in Sec.14.7, Calculus by Stewart&lt;br&gt;
+English version 
+&lt;a href=&#34;https://teshenglin.github.io/post/2020_cal_s14p7&#34;&gt;Designing a dumpster&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;在這個專題中，我們先測量出一個長方體垃圾桶出他的外型和結構。希望設計出一個和它一樣大的容器，並將所需的花費最小化。&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;問題 1 :&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;首先，測量垃圾桶的大小，形狀和體積，並畫出垃圾桶的圖案。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;答案：&lt;/strong&gt;&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://teshenglin.github.io/post/figs/2020_cal_s14p7_1.png&#34; &gt;
+
+
+  &lt;img src=&#34;https://teshenglin.github.io/post/figs/2020_cal_s14p7_1.png&#34; alt=&#34;&#34; width=&#34;400px&#34; &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;ul&gt;
+&lt;li&gt;長 $x = 0.2 (m)$&lt;/li&gt;
+&lt;li&gt;寬 $y = 0.25 (m)$&lt;/li&gt;
+&lt;li&gt;高 $z = 0.3 (m)$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;$$
+體積 = 0.2 \times 0.25 \times 0.3 = 0.015 (m^3)
+$$&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;問題 2：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;維持垃圾桶大概的形狀，設計出一個體積和原垃圾桶相同而且價格最便宜的容器。使用下列條件進行分析:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;前後和側邊都是用12-gauge (厚度 $2.657$ 毫米) 的鋼板做成，價格為每平方公尺$8.00&lt;/li&gt;
+&lt;li&gt;底部是由10-gauge (厚度 $3.416$ 毫米) 的鋼板製成，價格為每平方公尺 $10.00&lt;/li&gt;
+&lt;li&gt;蓋子不論大小，每片約 $50.00&lt;/li&gt;
+&lt;li&gt;焊接的價格為每公尺 $0.60&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;自行提出其他假設，敘述所設計的容器&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;答案：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;從上面的規定，我們可以算出長方體容器價格的方程式:
+$$
+8\times 2\times (x+y)\times z+10xy+50+0.6\times (2x+2y+4z)
+$$
+其中x是寬，y是長，z是高 ，容器的體積和垃圾桶一樣，為$0.015 m^3$ ，因此我們可以得到：
+$$
+xyz=0.015\ or\ z=\frac{0.015}{xy}
+$$
+所以可以將花費的式子 $f$ 改寫成：
+$$
+f=0.24\left(\frac{1}{x}+\frac{1}{y}\right)+10xy+50+1.2x+1.2y+\frac{0.036}{xy}
+$$
+如果$f$要是最小值，那 $f_x=f_y=0$, 其中
+$$
+f_x=\frac{-0.24}{x^2}+10y+1.2-\frac{0.036}{x^2y}\&lt;br&gt;
+f_y=\frac{-0.24}{y^2}+10x+1.2-\frac{0.036}{xy^2}
+$$
+但是x 和y 一定是正數，所以 x=y。接著，將x=y 帶入偏微分的式子，可以得到 $10x^4+ 1.2x^3 -0.24x -0.036=0$，能夠找出長方體容器的長寬高：
+$$
+x=寬=y=長\approx0.295\&lt;br&gt;
+z=高\approx0.172\&lt;br&gt;
+$$
+總花費=TotalCost=$53.61473&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;問題 3:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;描述所做的假設或省略會帶來怎麼樣的影響&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;答案 :&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;因為容器的長寬高和容器壁的厚度大小差距約100倍，因此我將厚度忽略。&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;問題 4：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;如果我變成這個研究的顧問，我的結論會是？我會建議更換垃圾桶的設計嗎？如果會的話，能夠省下多少錢？&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;答案：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;原本垃圾桶的花費要 $53.92，比我們設計的容器還要貴，因此如果只從成本方面考量，我會建議更改垃圾桶的設計，可以省下至少$0.3。&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
