@@ -746,7 +746,8 @@ $$&lt;/p&gt;
 &lt;p&gt;我們以正負號 (+ -) 代表正面反面.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h3 id=&#34;觀察&#34;&gt;觀察&lt;/h3&gt;
-&lt;p&gt;假設花 $n$ 次才擲到連續兩次為正，$n \geq 2$. 我們發現, 可以從第 $n-1$ 次的結果進行窮舉法得到第 $n$ 次的結果。&lt;/p&gt;
+&lt;p&gt;假設花 $n$ 次才擲到連續兩次為正, $n \geq 2$.&lt;/p&gt;
+&lt;p&gt;我們發現, 可以從第 $n-1$ 次的結果進行窮舉法得到第 $n$ 次的結果。&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;當 $n = 2$, 只會有 1 種情況 : &lt;code&gt;++&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;要窮舉 $n = 3$, 要知道三次中的尾巴兩次必須是 $n=2$ 的所有情況. 由於 $n=2$ 的第一個為正, 因此要在前加一項只能為負, 因此 $n=3$ 只有 &lt;code&gt;-++&lt;/code&gt; 這情況&lt;/li&gt;
@@ -2505,7 +2506,10 @@ $$&lt;/p&gt;
 &lt;p&gt;Legendre polynomials 有以下兩個性質:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;$P_i(x)$ 是一個 $i$次多項式&lt;/li&gt;
-&lt;li&gt;$(P_i(x), P_j(x)) = \delta_{ij}$
+&lt;li&gt;$(P_i(x), P_j(x)) = \delta_{ij} = \begin{cases}
+0, \quad i\ne j, \\&lt;br&gt;
+1, \quad i=j.
+\end{cases}$
 &lt;ul&gt;
 &lt;li&gt;對任何多項式 $Q(x)$ 如果其次數小於 $i$, 則有 $(P_i(x), Q(x))=0$&lt;/li&gt;
 &lt;/ul&gt;
@@ -2521,7 +2525,7 @@ $$
 $$
 \int^1_{-1} p(x)dx = \int^1_{-1} P_{n+1}(x)Q(x) + R(x)dx = \int^1_{-1} R(x)dx,
 $$
-其中 $P_{n+1}$ 與 $Q$ 相丞後的積分等於零是用到上面正交多項式的性質.&lt;/p&gt;
+其中 $P_{n+1}$ 與 $Q$ 相乘後的積分等於零是用到上面正交多項式的性質.&lt;/p&gt;
 &lt;p&gt;以上這積分如果以數值積分來表示的話就是
 $$
 \int^1_{-1} p(x)dx \approx \sum^n_{i=0} w_i p(x_i) = \sum^n_{i=0} w_i \left(P_{n+1}(x_i)Q(x_i) + R(x_i)\right).
@@ -6739,7 +6743,7 @@ $$
       <description>&lt;blockquote&gt;
 &lt;p&gt;這幾天有個朋友問我一個關於不定積分的問題, 看起來很詭異. 我們一起來看看.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;我們以分部積分(integration by part)來求 $\tan$ 的不定積分 $\int \tan(x),dx$.&lt;/p&gt;
+&lt;p&gt;我們以分部積分(integration by part)來求 $\tan$ 的不定積分 $\int \tan(x)\ dx$.&lt;/p&gt;
 &lt;p&gt;首先我們知道 $\tan(x) = \frac{\sin(x)}{\cos(x)}$, 接著我們來做分部積分, 假設
 $$
 u = \frac{1}{\cos(x)}, \quad dv = \sin(x)dx.
@@ -6750,10 +6754,10 @@ du = \frac{\sin(x)}{\cos^2(x)}dx, \quad v = -\cos(x).
 $$
 根據分部積分公式我們得到
 $$
-\int \tan(x),dx  = \frac{1}{\cos(x)}\left(-\cos(x)\right) - \int (-\cos(x))\frac{\sin(x)}{\cos^2(x)}dx
-= -1 + \int\tan(x),dx.
+\int \tan(x)\ dx  = \frac{1}{\cos(x)}\left(-\cos(x)\right) - \int (-\cos(x))\frac{\sin(x)}{\cos^2(x)}dx
+= -1 + \int\tan(x)\ dx.
 $$
-等號最左邊跟最右邊都有 $\int\tan(x),dx$, 同時減掉我們就得到 $0 = -1$. 太神奇了!!&lt;/p&gt;
+等號最左邊跟最右邊都有 $\int\tan(x)\ dx$, 同時減掉我們就得到 $0 = -1$. 太神奇了!!&lt;/p&gt;
 &lt;p&gt;所以問題是, 這中間究竟哪裏有問題？&lt;/p&gt;
 &lt;hr&gt;
 &lt;blockquote&gt;
@@ -6767,32 +6771,32 @@ $$
 &lt;hr&gt;
 &lt;p&gt;在不定積分中的等號究竟是什麼意思? 我們都知道 $\cos$ 的反導函數是 $\sin$, 寫成不定積分就是&lt;/p&gt;
 &lt;p&gt;$$
-\int\cos(x),dx = \sin(x)+c,
+\int\cos(x)\ dx = \sin(x)+c,
 $$
 其中 $c$ 是任意常數. 那上列這個式子的等號是什麼意思?&lt;/p&gt;
 &lt;p&gt;我們都知道 $\sin(x)$ 加上任意常數, 其微分都會是 $\cos(x)$, 所以我們才有這個式子. 也就是說, 上面這個等號就是這個意思!!&lt;/p&gt;
-&lt;p&gt;再說清楚一點, 當我們寫 $\int f(x),dx = F(x)$ 時意思就是 $F&amp;rsquo;(x) = f(x)$.&lt;/p&gt;
+&lt;p&gt;再說清楚一點, 當我們寫 $\int f(x)\ dx = F(x)$ 時意思就是 $F&amp;rsquo;(x) = f(x)$.&lt;/p&gt;
 &lt;p&gt;所以回到原文最後一個式子, 我把它在這裡重列一次
 $$
-\int \tan(x),dx  = -1 + \int\tan(x),dx.
+\int \tan(x)\ dx  = -1 + \int\tan(x)\ dx.
 $$
-如果我們把 $\tan$ 的反導函數稱為 $F$, 也就是 $\int\tan(x),dx = F(x)$. 那這個式子可以改寫成
+如果我們把 $\tan$ 的反導函數稱為 $F$, 也就是 $\int\tan(x)\ dx = F(x)$. 那這個式子可以改寫成
 $$
-\int \tan(x),dx  = -1 + F(x).
+\int \tan(x)\ dx  = -1 + F(x).
 $$
 我們知道這個式子也是對的因為 $(F(x)-1)&amp;rsquo; = \tan(x)$. 所以從這個角度來說, 這整個式子就都沒有問題了.&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;所以最後一個問題是, 我們可以把東西減掉嗎? 舉例來說,
 $$
 \begin{aligned}
-\int\cos(x),dx &amp;amp;= \sin(x)+1, \\\&lt;br&gt;
-\int\cos(x),dx &amp;amp;= \sin(x).
+\int\cos(x)\ dx &amp;amp;= \sin(x)+1, \\\&lt;br&gt;
+\int\cos(x)\ dx &amp;amp;= \sin(x).
 \end{aligned}
 $$
 兩式一減我們就得到 $0=1$ 了!!&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;BUT,&lt;/strong&gt; 事實上這樣寫是錯的. 再小心一點做的話你會發現兩式相減我們應該是得到
 $$
-\int 0,dx = 1.
+\int 0\ dx = 1.
 $$
 從這裡來看的話, $1$ 的微分是 $0$, 那就完全沒有問題了.&lt;/p&gt;
 &lt;hr&gt;

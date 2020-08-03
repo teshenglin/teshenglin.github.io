@@ -288,7 +288,10 @@ $$&lt;/p&gt;
 &lt;p&gt;Legendre polynomials 有以下兩個性質:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;$P_i(x)$ 是一個 $i$次多項式&lt;/li&gt;
-&lt;li&gt;$(P_i(x), P_j(x)) = \delta_{ij}$
+&lt;li&gt;$(P_i(x), P_j(x)) = \delta_{ij} = \begin{cases}
+0, \quad i\ne j, \\&lt;br&gt;
+1, \quad i=j.
+\end{cases}$
 &lt;ul&gt;
 &lt;li&gt;對任何多項式 $Q(x)$ 如果其次數小於 $i$, 則有 $(P_i(x), Q(x))=0$&lt;/li&gt;
 &lt;/ul&gt;
@@ -304,7 +307,7 @@ $$
 $$
 \int^1_{-1} p(x)dx = \int^1_{-1} P_{n+1}(x)Q(x) + R(x)dx = \int^1_{-1} R(x)dx,
 $$
-其中 $P_{n+1}$ 與 $Q$ 相丞後的積分等於零是用到上面正交多項式的性質.&lt;/p&gt;
+其中 $P_{n+1}$ 與 $Q$ 相乘後的積分等於零是用到上面正交多項式的性質.&lt;/p&gt;
 &lt;p&gt;以上這積分如果以數值積分來表示的話就是
 $$
 \int^1_{-1} p(x)dx \approx \sum^n_{i=0} w_i p(x_i) = \sum^n_{i=0} w_i \left(P_{n+1}(x_i)Q(x_i) + R(x_i)\right).

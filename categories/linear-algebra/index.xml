@@ -26,7 +26,8 @@
 &lt;p&gt;我們以正負號 (+ -) 代表正面反面.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h3 id=&#34;觀察&#34;&gt;觀察&lt;/h3&gt;
-&lt;p&gt;假設花 $n$ 次才擲到連續兩次為正，$n \geq 2$. 我們發現, 可以從第 $n-1$ 次的結果進行窮舉法得到第 $n$ 次的結果。&lt;/p&gt;
+&lt;p&gt;假設花 $n$ 次才擲到連續兩次為正, $n \geq 2$.&lt;/p&gt;
+&lt;p&gt;我們發現, 可以從第 $n-1$ 次的結果進行窮舉法得到第 $n$ 次的結果。&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;當 $n = 2$, 只會有 1 種情況 : &lt;code&gt;++&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;要窮舉 $n = 3$, 要知道三次中的尾巴兩次必須是 $n=2$ 的所有情況. 由於 $n=2$ 的第一個為正, 因此要在前加一項只能為負, 因此 $n=3$ 只有 &lt;code&gt;-++&lt;/code&gt; 這情況&lt;/li&gt;
