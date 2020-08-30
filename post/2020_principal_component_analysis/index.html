@@ -1,0 +1,1215 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 4.7.0">
+
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Te-Sheng Lin (林得勝)">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="主成分分析, Principal component analysis, 簡稱 PCA, 是個資料分析或是資料降維的工具. 資料降維簡單來說, 假設我們有一些資料, 這資料中的每一筆維度都很高, 導致我們很難 &ld">
+
+  
+  <link rel="alternate" hreflang="en-us" href="https://teshenglin.github.io/post/2020_principal_component_analysis/">
+
+  
+
+
+  
+  
+  
+  <meta name="theme-color" content="#2962ff">
+  
+
+  
+  
+  
+  <script src="/js/mathjax-config.js"></script>
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-1/css/all.min.css" integrity="sha256-4w9DunooKSr3MFXHXWyFER38WmPdm361bQS/2KUWZbU=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+        
+      
+    
+
+    
+
+    
+
+    
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.1.2/lazysizes.min.js" integrity="sha256-Md1qLToewPeKjfAHU1zyPwOutccPAm5tahnaw7Osw0A=" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CRoboto:400,400italic,700%7CRoboto+Mono&display=swap">
+  
+
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/academic.css">
+
+  
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-33193104-3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-33193104-3');
+</script>
+
+  
+
+
+  
+
+  <link rel="manifest" href="/index.webmanifest">
+  <link rel="icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_2.png">
+
+  <link rel="canonical" href="https://teshenglin.github.io/post/2020_principal_component_analysis/">
+
+  
+  
+  
+  
+  
+    
+    
+  
+  
+  <meta property="twitter:card" content="summary">
+  
+  <meta property="og:site_name" content="Te-Sheng Lin">
+  <meta property="og:url" content="https://teshenglin.github.io/post/2020_principal_component_analysis/">
+  <meta property="og:title" content="主成分分析 | Te-Sheng Lin">
+  <meta property="og:description" content="主成分分析, Principal component analysis, 簡稱 PCA, 是個資料分析或是資料降維的工具. 資料降維簡單來說, 假設我們有一些資料, 這資料中的每一筆維度都很高, 導致我們很難 &ld"><meta property="og:image" content="https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png">
+  <meta property="twitter:image" content="https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png"><meta property="og:locale" content="en-us">
+  
+    
+      <meta property="article:published_time" content="2020-08-27T00:00:00&#43;00:00">
+    
+    <meta property="article:modified_time" content="2020-08-30T22:35:50&#43;08:00">
+  
+
+  
+
+
+    
+
+
+
+
+
+
+  
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://teshenglin.github.io/post/2020_principal_component_analysis/"
+  },
+  "headline": "主成分分析",
+  
+  "datePublished": "2020-08-27T00:00:00Z",
+  "dateModified": "2020-08-30T22:35:50+08:00",
+  
+  "author": {
+    "@type": "Person",
+    "name": "Te-Sheng Lin (林得勝)"
+  },
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "Te-Sheng Lin",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_2.png"
+    }
+  },
+  "description": "主成分分析, Principal component analysis, 簡稱 PCA, 是個資料分析或是資料降維的工具. 資料降維簡單來說, 假設我們有一些資料, 這資料中的每一筆維度都很高, 導致我們很難 \u0026ld"
+}
+</script>
+
+  
+
+  
+
+
+  
+
+
+  
+
+
+
+
+
+  <title>主成分分析 | Te-Sheng Lin</title>
+
+</head>
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" >
+
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+  
+
+
+
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container">
+
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="/">Te-Sheng Lin</a>
+    </div>
+    
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/">Te-Sheng Lin</a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#about"><span>Home</span></a>
+        </li>
+
+        
+        
+
+        
+        <li class="nav-item dropdown">
+          <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"><span>Resume</span><span class="caret"></span>
+          </a>
+          <div class="dropdown-menu">
+            
+              <a class="dropdown-item" href="/#experience"><span>Appointments </span></a>
+            
+              <a class="dropdown-item" href="/#publications"><span>Publications</span></a>
+            
+              <a class="dropdown-item" href="/#cv"><span>CV</span></a>
+            
+          </div>
+        </li>
+
+        
+        
+
+        
+        <li class="nav-item dropdown">
+          <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"><span>Posts</span><span class="caret"></span>
+          </a>
+          <div class="dropdown-menu">
+            
+              <a class="dropdown-item" href="/#posts"><span>All posts</span></a>
+            
+              <a class="dropdown-item" href="/categories/calculus/"><span>Calculus 微積分</span></a>
+            
+              <a class="dropdown-item" href="/categories/computational-mathematics/"><span>Computational Mathematics 計算數學</span></a>
+            
+              <a class="dropdown-item" href="/categories/notes/"><span>程式語言學習筆記</span></a>
+            
+          </div>
+        </li>
+
+        
+        
+
+        
+        <li class="nav-item dropdown">
+          <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"><span>Teaching</span><span class="caret"></span>
+          </a>
+          <div class="dropdown-menu">
+            
+              <a class="dropdown-item" href="/courses/taught"><span>Courses taught</span></a>
+            
+              <a class="dropdown-item" href="/courses/students"><span>Students supervised</span></a>
+            
+              <a class="dropdown-item" href="/courses/gsw"><span>Graduate student workshops</span></a>
+            
+          </div>
+        </li>
+
+        
+        
+
+      
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+      
+      <li class="nav-item">
+        <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+      <li class="nav-item">
+        <a class="nav-link js-dark-toggle" href="#"><i class="fas fa-moon" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+  <article class="article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+<div class="article-container pt-3">
+  <h1>主成分分析</h1>
+
+  
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+
+
+  
+  <span><a href="/authors/admin/">Te-Sheng Lin (林得勝)</a></span>
+
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+          Last updated on
+      
+    
+    Aug 30, 2020
+  </span>
+  
+
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    5 min read
+  </span>
+  
+
+  
+  
+  
+  <span class="middot-divider"></span>
+  <a href="/post/2020_principal_component_analysis/#disqus_thread"></a>
+  
+
+  
+  
+  <span class="middot-divider"></span>
+  <span class="article-categories">
+    <i class="fas fa-folder mr-1"></i><a href="/categories/calculus/">Calculus</a>, <a href="/categories/computational-mathematics/">Computational Mathematics</a>, <a href="/categories/linear-algebra/">Linear algebra</a></span>
+  
+
+</div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style">
+      <blockquote>
+<p>主成分分析, Principal component analysis, 簡稱 PCA, 是個資料分析或是資料降維的工具.</p>
+</blockquote>
+<blockquote>
+<p>資料降維簡單來說, 假設我們有一些資料, 這資料中的每一筆維度都很高, 導致我們很難 &ldquo;看出&rdquo; 或 &ldquo;分析&rdquo; 這資料集的特性, 這時候我們就會想要在低維度空間裡(通常三維以下)建構一組點資料, 並且想辦法使新的這組點資料在某些程度上能表示出原本高維度的點資料, 或保有某種特性. 這種將高維度資料在低維度表現出來的方式就稱為資料降維. 而 PCA 就是其中一種線性降維的方式.</p>
+</blockquote>
+<blockquote>
+<p>這裡我們要談一下從數學角度來說 PCA 的原理及做法.</p>
+</blockquote>
+<hr>
+<p>假設我們有 $n$ 筆 $p$ 維的資料, 記成
+$$
+\{x_1, x_2, \cdots, x_n\} \in R^p
+$$
+那我們想要做以下等價的兩件事:</p>
+<ol>
+<li>找到一組低維度的投影並且使得資料有最大的變異性</li>
+<li>找到一組低維度的投影並且使得原始資料與投影後的資料之間的&quot;距離平方&quot;最小</li>
+</ol>
+<h4 id="remark-這裡所謂低維度的投影講精確一點-事實上是找到一個低維度的仿射子空間affine-subspace-可以想像成一個不穿過原點的點或直線或平面-找到之後再把原始資料點投影上去">Remark: 這裡所謂低維度的投影講精確一點, 事實上是找到一個低維度的仿射子空間(affine subspace), 可以想像成一個不穿過原點的點或直線或平面, 找到之後再把原始資料點投影上去.</h4>
+<hr>
+<h3 id="example-投影到-0-維">Example: 投影到 $0$ 維</h3>
+<p>先舉一個最簡單的例子, 假設我們想要投影到 $0$ 維, 也就是投影到一個點.</p>
+<blockquote>
+<p>也就是說要我們想要找一個點來代表整組資料. 直覺上來想正常應該就會用 &ldquo;平均數&rdquo; 或 &ldquo;中位數&rdquo; 來當這個點. 不過這邊我們需要講清楚的是究竟是以何種機制來做選擇的.</p>
+</blockquote>
+<p>PCA 的做法就是要找一個點 $\mu\in R^p$ 使得所有資料點到這個點的距離平方和最小, 也就是要讓下式有最小值
+$$
+\sum_{i=1}^n \|x_i - \mu\|^2.
+$$
+簡單的微分求極值我們可以得到其最佳解為
+$$
+\mu = \frac{1}{n}\sum^n_{i=1} x_i,
+$$
+也就是原始資料點的平均值.</p>
+<blockquote>
+<p>如果我們想要的是&quot;距離&quot;和最小而不是&quot;距離平方&quot;和, 也就是要使下式最小,
+$$
+\sum_{i=1}^n \|x_i - \mu\|,
+$$
+則最佳解為資料的中位數. 證明可見 
+<a href="https://math.stackexchange.com/questions/113270/the-median-minimizes-the-sum-of-absolute-deviations-the-l-1-norm#:~:text=111-,The%20Median%20Minimizes%20the%20Sum,Deviations%20%28The%20L1%20Norm%29&amp;text=is%20minimal%20if%20x%20is%20equal%20to%20the%20median" target="_blank" rel="noopener">Median minimizes sum of absolute deviations</a>.</p>
+</blockquote>
+<hr>
+<h3 id="example-投影到-1-維">Example: 投影到 $1$ 維</h3>
+<p>投影到 $0$ 維也許不是那麼直覺好懂, 接著我們來投影到 $1$ 維試試, 我們直接用圖形來說明:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure>
+
+
+  <a data-fancybox="" href="/post/figs/2020_pca_01.png" >
+
+
+  <img src="/post/figs/2020_pca_01.png" alt="" width="600px" >
+</a>
+
+
+
+</figure>
+
+藍色小圈就是原始資料點, 共10筆資料. 而 PCA 要做的事就是找到一個一維的 affine subspace, 就是中間那條斜線. 這樣我們就能把原始資料都投影到這個子空間去, 投影後的資料就是紅色點.</p>
+<p>而這 affine subspace 怎麼找到的呢, 事實上這個子空間就是使得所有虛線段(原始資料到投影點連線)距離平方加起來最小的那個.</p>
+<hr>
+<p>接下來我們來定義更一般的投影, 假設想要投影到 $k$ 維, $k\le p$, 也就是我們想要在 $R^p$ 空間中找一個 $k$ 維的 affine subspace, 使得說投影後資料與原始資料的距離最小. 數學上來說就是要讓下式有最小值
+$$
+\sum_{i=1}^n \| x_i - (\mu + U\beta_i)\|^2,
+$$
+其中未知數有 $\mu\in R^p$, $U\in R^{p\times k}$, 以及 $\beta_i\in R^{k\times 1}$.</p>
+<p>稍微解釋一下以上這些變數.</p>
+<p>$\mu$ 最容易想像, 就是 $R^p$ 空間中的一個點, 也是這個 affine subspace 上的一個點. 事實上之後可以輕易算出他是資料的平均值, 也就是投影到 $0$ 維的那個解.</p>
+<p>$U$ 是個 $R^{p\times k}$ 的矩陣, 事實上它的行(columns)就是我們所找的這 affine subspace 的基底. 也就是說, 若我們寫 $U=[u_1, u_2, \cdots, u_k]$, 則 $\{u_1, u_2, \cdots, u_k\}$ 是這 affine subspace 的基底. 我們可以特別要求這基底要正交, 也就是 $U^TU = I$.</p>
+<p>最後, $\beta_i$ 可以想像是原始資料第 $i$ 筆投影到 affine subspace 之後的座標, 或是係數.</p>
+<p>也就是說, 事實上這個 affine subspace 可以表示成
+$$
+\mu + V, \quad V = span\{u_1, \cdots, u_k\},
+$$
+而 $\mu + U\beta_i$ 就是 $x_i$ 這個資料點在這 affine subspace 上的投影.</p>
+<hr>
+<p>再稍微整理一下, 我們想要找到 $\mu$, $U$ 以及 $\beta_i$ 使得下式 $I$ 有最小值
+$$
+I = \sum_{i=1}^n \|x_i - (\mu + U\beta_i)\|^2,
+$$
+其中有兩個條件, $U^TU=I$, 以及 $\sum^n_{i=1} \beta_i=0$.</p>
+<h4 id="remark-第二個條件-sum_i-beta_i0-看起來似乎是憑空冒出來的-不過這可以從兩方面來說-第一-我們希望投影之後的解他們的平均是-0-所以中心就在新座標原點的位置-第二-數學上來說為了讓解有唯一性我們也需要這樣一個條件">Remark: 第二個條件 $\sum_i \beta_i=0$ 看起來似乎是憑空冒出來的, 不過這可以從兩方面來說. 第一, 我們希望投影之後的解他們的平均是 $0$, 所以中心就在新座標原點的位置. 第二, 數學上來說為了讓解有唯一性我們也需要這樣一個條件.</h4>
+<hr>
+<p>這問題可以被完全解出來, 也就是說給定 $x_i$, 我們可以決定出最佳的 $\mu$, $U$ 以及 $\beta_i$ 使得上式的值為最小.</p>
+<blockquote>
+<p>推導過程我們在這先省略, 有興趣的請見 references.</p>
+</blockquote>
+<p>其最佳解整理如下:</p>
+<p>第一, $\mu$ 就如同我們說的是原始資料的平均
+$$
+\mu = \frac{1}{n}\sum^n_{i=1} x_i
+$$</p>
+<p>第二, 找到平均後我們將所有資料做平移使得中心為原點, 定 $y_i = x_i-\mu$, 求出這組新資料的共變異數矩陣 $\Sigma=YY^T$, 其中 $Y=[y_1, \cdots, y_n]$.</p>
+<p>對 $\Sigma$ 做譜分解(spectral decomposition), 找到其最大的 $k$ 個 eigenvalues 以及相對應的 eigenvectors, 將 eigenvectors 收集起來就得到 $U=[u_1, \cdots, u_k]$, 也就是 affine subspace 的 basis.</p>
+<p>第三, 將新資料投影到子空間中得到 $\beta_i$, 也就是
+$$
+\beta_i = \sum^n_{j=1}&lt;y_i, u_j&gt;
+$$</p>
+<hr>
+<p>一般最基礎的 PCA 做法就是從 $x_i$, 得到 $\mu$, 求出 $y_i$ 以及 $\Sigma$. 接著對 $\Sigma$ 做 eigendecomposition 求出其特徵值及特徵向量. 拿出最大的幾個就可以定出 affine subspace.</p>
+<p>以上這做法的 <code>Matlab</code> 程式如下:</p>
+<blockquote>
+<p>X 是 data matrix 含有 p 個 features 以及 n 個 samples.</p>
+</blockquote>
+<blockquote>
+<p>投影到 k 維子空間, 投影後的 data matrix 為 B.</p>
+</blockquote>
+<pre><code>function B = principal_component_analysis(X, k)
+    [p, n] = size(X);               % p 個 features 以及 n 個 samples
+    mu = sum(X, 2)/n;               % 計算 sample 的平均
+    Y = X - mu;                     % 資料平移
+    S = Y*Y';                       % 求出共變異數矩陣
+    [V, D] = eig(S, 'vector');      % 求出特徵值及特徵向量
+    [D, ind] = sort(D, 'descend');  % 將特徵值按大小排列
+    V = V(:, ind);                  % 將特徵向量照樣排列
+    B = V(:,1:k)'*Y;                % 求出投影後的係數
+end
+</code></pre><h4 id="remark-這做法會造出一個-ptimes-p-的共變異數矩陣-sigma-並且算出全部的特徵值及特徵向量-不過其實我們只需要前-k-個-所以多出來的部分會丟掉-有點浪費">Remark: 這做法會造出一個 $p\times p$ 的共變異數矩陣 $\Sigma$, 並且算出全部的特徵值及特徵向量. 不過其實我們只需要前 $k$ 個. 所以多出來的部分會丟掉, 有點浪費.</h4>
+<hr>
+<p>我們再來看一下這個共變異數矩陣 $\Sigma=YY^T$, 可以很輕易地看出來這是個對稱矩陣, 所以特徵值一定是實數, 也一定存在 orthonormal 的實數特徵向量組. 因此我們以上的要求(將特徵值按大小排列, 特徵向量要彼此正交)都一定做得到. 而分解之後可以得到
+$$
+\Sigma = V\Lambda V^T,
+$$
+其中 $V$ 是個 $p\times p$ 矩陣.</p>
+<p>我們事實上可以將矩陣 $Y$ 做奇異值分解 (Singular Value Decomposition, SVD), 得到
+$$
+Y = \hat{U}\hat{\Sigma}\hat{V}, \quad \hat{U}\in R^{p\times p}, \quad \hat{\Sigma}\in R^{p\times m}, \quad \hat{V}\in R^{m\times m},
+$$
+並且 $\hat{U}\hat{U}^T=I_p$ 以及 $\hat{V}\hat{V}^T=I_m$.</p>
+<p>既然我們有 $\Sigma=YY^T$, 很容易可以看出來其實
+$$
+V = \hat{U}, \quad \Lambda = \hat{\Sigma}\hat{\Sigma}^T.
+$$
+也就是說將 $Y$ 的 singular values 平方就可以得到 $\Sigma$ 的 eigenvalues. 而 $Y$ 的 left-singular-vector 事實上就是 $\Sigma$ 的 eigenvectors.</p>
+<p>因此我們可以將 <code>Matlab</code> 程式改寫如下:</p>
+<pre><code>function B = principal_component_analysis2(X, k)
+    [p, n] = size(X);               % p 個 features 以及 n 個 samples
+    mu = sum(X, 2)/n;               % 計算 sample 的平均
+    Y = X - mu;                     % 資料平移
+    [V, ~, ~] = svds(Y, k);         % 將 Y 做奇異值分解
+    B = V'*Y;                       % 求出投影後的係數
+end
+</code></pre><hr>
+<p>而事實上, matlab 已經內建 PCA 程式了, 所以其實完全不用自己寫. 只是要注意一下 matlab 裡 PCA 的輸入 sample points 是 $n\times p$, 由於我們以上都是將 $X$ 設成 $p\times n$ 的矩陣, 所以要轉置一下, 程式只有兩行, <code>Matlab</code> 程式如下:</p>
+<pre><code>[V, B, ~] = pca(X');
+B = B';
+</code></pre><hr>
+<h1 id="working-example">Working example</h1>
+<p>這裡我們舉一個例子, 我們先構造 sample points, 是一個類似螺旋狀結構, <code>Matlab</code> 程式如下:</p>
+<pre><code>n = 1000;                                   % 取 n 個點
+t = 3*pi*(1:n)/n;                           % 利用參數化來構造
+X = [t.*cos(t); 5*rand(1,n); t.*sin(t)];    % 先利用 random 構造三圍中的一個面
+M = makehgtform('axisrotate',[1 1 1], 30);  % 構造旋轉矩陣
+X = M(1:3, 1:3)*X + 10*rand(3,1);           % 將 sample 旋轉並且平移
+</code></pre><p>其圖形長這樣:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure>
+
+
+  <a data-fancybox="" href="/post/figs/2020_pca_02.png" >
+
+
+  <img src="/post/figs/2020_pca_02.png" alt="" width="600px" >
+</a>
+
+
+
+</figure>
+</p>
+<p>接著我們用 PCA 投影到二維, 圖形長這樣:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure>
+
+
+  <a data-fancybox="" href="/post/figs/2020_pca_03.png" >
+
+
+  <img src="/post/figs/2020_pca_03.png" alt="" width="600px" >
+</a>
+
+
+
+</figure>
+</p>
+<p>可以發現 PCA 找到一個正確的軸來做投影, 使得原本的螺旋線可以看得很清楚.</p>
+<hr>
+<h2 id="references">References:</h2>
+<ol>
+<li>
+<a href="https://sites.google.com/view/manifoldlearning2020" target="_blank" rel="noopener">NCTS mini-course on manifold learning</a></li>
+<li>
+<a href="https://liorpachter.wordpress.com/2014/05/26/what-is-principal-component-analysis/" target="_blank" rel="noopener">What is principal component analysis?</a></li>
+</ol>
+<hr>
+
+    </div>
+
+    
+
+
+
+
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/tags/machine_learning/">machine_learning</a>
+  
+  <a class="badge badge-light" href="/tags/dimension_reduction/">dimension_reduction</a>
+  
+  <a class="badge badge-light" href="/tags/pca/">PCA</a>
+  
+</div>
+
+
+
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=https://teshenglin.github.io/post/2020_principal_component_analysis/&amp;text=%e4%b8%bb%e6%88%90%e5%88%86%e5%88%86%e6%9e%90" target="_blank" rel="noopener" class="share-btn-twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=https://teshenglin.github.io/post/2020_principal_component_analysis/&amp;t=%e4%b8%bb%e6%88%90%e5%88%86%e5%88%86%e6%9e%90" target="_blank" rel="noopener" class="share-btn-facebook">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="mailto:?subject=%e4%b8%bb%e6%88%90%e5%88%86%e5%88%86%e6%9e%90&amp;body=https://teshenglin.github.io/post/2020_principal_component_analysis/" target="_blank" rel="noopener" class="share-btn-email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+  
+
+
+
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  <div class="media author-card content-widget-hr">
+    
+      
+      <img class="avatar mr-3 avatar-circle" src="/authors/admin/avatar_hua0d4d4b24f4da3a102e4452ac738b95f_109236_270x270_fill_q90_lanczos_center.jpg" alt="Avatar">
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="https://teshenglin.github.io/">Te-Sheng Lin (林得勝)</a></h5>
+      <h6 class="card-subtitle">Assistant Professor</h6>
+      <p class="card-text">The focus of my research is concerned with the development of analytical and computational tools for the problems that arises in fluid dynamics, currently in thin liquid films, and further to communicate with scientists from other disciplines to solve engineering problems in practice.</p>
+      <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://scholar.google.com.tw/citations?user=diXYXkwAAAAJ" target="_blank" rel="noopener">
+        <i class="ai ai-google-scholar"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.researchgate.net/profile/Te-Sheng_Lin" target="_blank" rel="noopener">
+        <i class="ai ai-researchgate"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://github.com/teshenglin" target="_blank" rel="noopener">
+        <i class="fab fa-github"></i>
+      </a>
+    </li>
+  
+</ul>
+
+    </div>
+  </div>
+
+
+
+
+<section id="comments">
+  
+    
+<div id="disqus_thread"></div>
+<script>
+  let disqus_config = function () {
+    
+    
+    
+  };
+  (function() {
+    if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+      document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+      return;
+    }
+    var d = document, s = d.createElement('script'); s.async = true;
+    s.src = 'https://' + "https-teshenglin-github-io" + '.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+  
+</section>
+
+
+
+
+
+
+  
+  
+
+
+
+  </div>
+</article>
+
+      
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.4.4/mermaid.min.js" integrity="sha256-JEqEejGt4tR35L0a1zodzsV0/PJ6GIf7J4yDtywdrH8=" crossorigin="anonymous" title="mermaid"></script>
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js" integrity="sha256-eOgo0OtLL4cdq7RdwRUiGKLX9XsIJ7nGhWEKbohmVAQ=" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/languages/r.min.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/languages/julia.min.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/languages/python.min.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/languages/fortran.min.js"></script>
+        
+      
+
+    
+
+    
+    
+
+    
+    
+    <script>const code_highlighting = true;</script>
+    
+
+    
+    
+    <script>const isSiteThemeDark = false;</script>
+    
+
+    
+    
+    
+    
+    
+    
+    <script>
+      const search_config = {"indexURI":"/index.json","minLength":1,"threshold":0.3};
+      const i18n = {"no_results":"No results found","placeholder":"Search...","results":"results found"};
+      const content_type = {
+        'post': "Posts",
+        'project': "Projects",
+        'publication' : "Publications",
+        'talk' : "Talks"
+        };
+    </script>
+    
+
+    
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+    <script id="dsq-count-scr" src="https://https-teshenglin-github-io.disqus.com/count.js" async></script>
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    <script src="/js/academic.min.a8d7005002cb4a052fd6d721e83df9ba.js"></script>
+
+    
+
+
+
+
+
+
+  
+  
+  <div class="container">
+    <footer class="site-footer">
+  
+
+  <p class="powered-by">
+    
+
+    Powered by the
+    <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
+    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+
+    
+    <span class="float-right" aria-hidden="true">
+      <a href="#" class="back-to-top">
+        <span class="button_icon">
+          <i class="fas fa-chevron-up fa-2x"></i>
+        </span>
+      </a>
+    </span>
+    
+  </p>
+</footer>
+
+  </div>
+  
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

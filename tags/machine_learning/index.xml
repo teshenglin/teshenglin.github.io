@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>machine_learning | Te-Sheng Lin</title>
+    <link>https://teshenglin.github.io/tags/machine_learning/</link>
+      <atom:link href="https://teshenglin.github.io/tags/machine_learning/index.xml" rel="self" type="application/rss+xml" />
+    <description>machine_learning</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Thu, 27 Aug 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>machine_learning</title>
+      <link>https://teshenglin.github.io/tags/machine_learning/</link>
+    </image>
+    
+    <item>
+      <title>主成分分析</title>
+      <link>https://teshenglin.github.io/post/2020_principal_component_analysis/</link>
+      <pubDate>Thu, 27 Aug 2020 00:00:00 +0000</pubDate>
+      <guid>https://teshenglin.github.io/post/2020_principal_component_analysis/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;主成分分析, Principal component analysis, 簡稱 PCA, 是個資料分析或是資料降維的工具.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;資料降維簡單來說, 假設我們有一些資料, 這資料中的每一筆維度都很高, 導致我們很難 &amp;ldquo;看出&amp;rdquo; 或 &amp;ldquo;分析&amp;rdquo; 這資料集的特性, 這時候我們就會想要在低維度空間裡(通常三維以下)建構一組點資料, 並且想辦法使新的這組點資料在某些程度上能表示出原本高維度的點資料, 或保有某種特性. 這種將高維度資料在低維度表現出來的方式就稱為資料降維. 而 PCA 就是其中一種線性降維的方式.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;這裡我們要談一下從數學角度來說 PCA 的原理及做法.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;p&gt;假設我們有 $n$ 筆 $p$ 維的資料, 記成
+$$
+\{x_1, x_2, \cdots, x_n\} \in R^p
+$$
+那我們想要做以下等價的兩件事:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;找到一組低維度的投影並且使得資料有最大的變異性&lt;/li&gt;
+&lt;li&gt;找到一組低維度的投影並且使得原始資料與投影後的資料之間的&amp;quot;距離平方&amp;quot;最小&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 id=&#34;remark-這裡所謂低維度的投影講精確一點-事實上是找到一個低維度的仿射子空間affine-subspace-可以想像成一個不穿過原點的點或直線或平面-找到之後再把原始資料點投影上去&#34;&gt;Remark: 這裡所謂低維度的投影講精確一點, 事實上是找到一個低維度的仿射子空間(affine subspace), 可以想像成一個不穿過原點的點或直線或平面, 找到之後再把原始資料點投影上去.&lt;/h4&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;example-投影到-0-維&#34;&gt;Example: 投影到 $0$ 維&lt;/h3&gt;
+&lt;p&gt;先舉一個最簡單的例子, 假設我們想要投影到 $0$ 維, 也就是投影到一個點.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;也就是說要我們想要找一個點來代表整組資料. 直覺上來想正常應該就會用 &amp;ldquo;平均數&amp;rdquo; 或 &amp;ldquo;中位數&amp;rdquo; 來當這個點. 不過這邊我們需要講清楚的是究竟是以何種機制來做選擇的.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;PCA 的做法就是要找一個點 $\mu\in R^p$ 使得所有資料點到這個點的距離平方和最小, 也就是要讓下式有最小值
+$$
+\sum_{i=1}^n \|x_i - \mu\|^2.
+$$
+簡單的微分求極值我們可以得到其最佳解為
+$$
+\mu = \frac{1}{n}\sum^n_{i=1} x_i,
+$$
+也就是原始資料點的平均值.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;如果我們想要的是&amp;quot;距離&amp;quot;和最小而不是&amp;quot;距離平方&amp;quot;和, 也就是要使下式最小,
+$$
+\sum_{i=1}^n \|x_i - \mu\|,
+$$
+則最佳解為資料的中位數. 證明可見 
+&lt;a href=&#34;https://math.stackexchange.com/questions/113270/the-median-minimizes-the-sum-of-absolute-deviations-the-l-1-norm#:~:text=111-,The%20Median%20Minimizes%20the%20Sum,Deviations%20%28The%20L1%20Norm%29&amp;amp;text=is%20minimal%20if%20x%20is%20equal%20to%20the%20median&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Median minimizes sum of absolute deviations&lt;/a&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;example-投影到-1-維&#34;&gt;Example: 投影到 $1$ 維&lt;/h3&gt;
+&lt;p&gt;投影到 $0$ 維也許不是那麼直覺好懂, 接著我們來投影到 $1$ 維試試, 我們直接用圖形來說明:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://teshenglin.github.io/post/figs/2020_pca_01.png&#34; &gt;
+
+
+  &lt;img src=&#34;https://teshenglin.github.io/post/figs/2020_pca_01.png&#34; alt=&#34;&#34; width=&#34;600px&#34; &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+藍色小圈就是原始資料點, 共10筆資料. 而 PCA 要做的事就是找到一個一維的 affine subspace, 就是中間那條斜線. 這樣我們就能把原始資料都投影到這個子空間去, 投影後的資料就是紅色點.&lt;/p&gt;
+&lt;p&gt;而這 affine subspace 怎麼找到的呢, 事實上這個子空間就是使得所有虛線段(原始資料到投影點連線)距離平方加起來最小的那個.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;接下來我們來定義更一般的投影, 假設想要投影到 $k$ 維, $k\le p$, 也就是我們想要在 $R^p$ 空間中找一個 $k$ 維的 affine subspace, 使得說投影後資料與原始資料的距離最小. 數學上來說就是要讓下式有最小值
+$$
+\sum_{i=1}^n \| x_i - (\mu + U\beta_i)\|^2,
+$$
+其中未知數有 $\mu\in R^p$, $U\in R^{p\times k}$, 以及 $\beta_i\in R^{k\times 1}$.&lt;/p&gt;
+&lt;p&gt;稍微解釋一下以上這些變數.&lt;/p&gt;
+&lt;p&gt;$\mu$ 最容易想像, 就是 $R^p$ 空間中的一個點, 也是這個 affine subspace 上的一個點. 事實上之後可以輕易算出他是資料的平均值, 也就是投影到 $0$ 維的那個解.&lt;/p&gt;
+&lt;p&gt;$U$ 是個 $R^{p\times k}$ 的矩陣, 事實上它的行(columns)就是我們所找的這 affine subspace 的基底. 也就是說, 若我們寫 $U=[u_1, u_2, \cdots, u_k]$, 則 $\{u_1, u_2, \cdots, u_k\}$ 是這 affine subspace 的基底. 我們可以特別要求這基底要正交, 也就是 $U^TU = I$.&lt;/p&gt;
+&lt;p&gt;最後, $\beta_i$ 可以想像是原始資料第 $i$ 筆投影到 affine subspace 之後的座標, 或是係數.&lt;/p&gt;
+&lt;p&gt;也就是說, 事實上這個 affine subspace 可以表示成
+$$
+\mu + V, \quad V = span\{u_1, \cdots, u_k\},
+$$
+而 $\mu + U\beta_i$ 就是 $x_i$ 這個資料點在這 affine subspace 上的投影.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;再稍微整理一下, 我們想要找到 $\mu$, $U$ 以及 $\beta_i$ 使得下式 $I$ 有最小值
+$$
+I = \sum_{i=1}^n \|x_i - (\mu + U\beta_i)\|^2,
+$$
+其中有兩個條件, $U^TU=I$, 以及 $\sum^n_{i=1} \beta_i=0$.&lt;/p&gt;
+&lt;h4 id=&#34;remark-第二個條件-sum_i-beta_i0-看起來似乎是憑空冒出來的-不過這可以從兩方面來說-第一-我們希望投影之後的解他們的平均是-0-所以中心就在新座標原點的位置-第二-數學上來說為了讓解有唯一性我們也需要這樣一個條件&#34;&gt;Remark: 第二個條件 $\sum_i \beta_i=0$ 看起來似乎是憑空冒出來的, 不過這可以從兩方面來說. 第一, 我們希望投影之後的解他們的平均是 $0$, 所以中心就在新座標原點的位置. 第二, 數學上來說為了讓解有唯一性我們也需要這樣一個條件.&lt;/h4&gt;
+&lt;hr&gt;
+&lt;p&gt;這問題可以被完全解出來, 也就是說給定 $x_i$, 我們可以決定出最佳的 $\mu$, $U$ 以及 $\beta_i$ 使得上式的值為最小.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;推導過程我們在這先省略, 有興趣的請見 references.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;其最佳解整理如下:&lt;/p&gt;
+&lt;p&gt;第一, $\mu$ 就如同我們說的是原始資料的平均
+$$
+\mu = \frac{1}{n}\sum^n_{i=1} x_i
+$$&lt;/p&gt;
+&lt;p&gt;第二, 找到平均後我們將所有資料做平移使得中心為原點, 定 $y_i = x_i-\mu$, 求出這組新資料的共變異數矩陣 $\Sigma=YY^T$, 其中 $Y=[y_1, \cdots, y_n]$.&lt;/p&gt;
+&lt;p&gt;對 $\Sigma$ 做譜分解(spectral decomposition), 找到其最大的 $k$ 個 eigenvalues 以及相對應的 eigenvectors, 將 eigenvectors 收集起來就得到 $U=[u_1, \cdots, u_k]$, 也就是 affine subspace 的 basis.&lt;/p&gt;
+&lt;p&gt;第三, 將新資料投影到子空間中得到 $\beta_i$, 也就是
+$$
+\beta_i = \sum^n_{j=1}&amp;lt;y_i, u_j&amp;gt;
+$$&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;一般最基礎的 PCA 做法就是從 $x_i$, 得到 $\mu$, 求出 $y_i$ 以及 $\Sigma$. 接著對 $\Sigma$ 做 eigendecomposition 求出其特徵值及特徵向量. 拿出最大的幾個就可以定出 affine subspace.&lt;/p&gt;
+&lt;p&gt;以上這做法的 &lt;code&gt;Matlab&lt;/code&gt; 程式如下:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;X 是 data matrix 含有 p 個 features 以及 n 個 samples.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;投影到 k 維子空間, 投影後的 data matrix 為 B.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;pre&gt;&lt;code&gt;function B = principal_component_analysis(X, k)
+    [p, n] = size(X);               % p 個 features 以及 n 個 samples
+    mu = sum(X, 2)/n;               % 計算 sample 的平均
+    Y = X - mu;                     % 資料平移
+    S = Y*Y&#39;;                       % 求出共變異數矩陣
+    [V, D] = eig(S, &#39;vector&#39;);      % 求出特徵值及特徵向量
+    [D, ind] = sort(D, &#39;descend&#39;);  % 將特徵值按大小排列
+    V = V(:, ind);                  % 將特徵向量照樣排列
+    B = V(:,1:k)&#39;*Y;                % 求出投影後的係數
+end
+&lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&#34;remark-這做法會造出一個-ptimes-p-的共變異數矩陣-sigma-並且算出全部的特徵值及特徵向量-不過其實我們只需要前-k-個-所以多出來的部分會丟掉-有點浪費&#34;&gt;Remark: 這做法會造出一個 $p\times p$ 的共變異數矩陣 $\Sigma$, 並且算出全部的特徵值及特徵向量. 不過其實我們只需要前 $k$ 個. 所以多出來的部分會丟掉, 有點浪費.&lt;/h4&gt;
+&lt;hr&gt;
+&lt;p&gt;我們再來看一下這個共變異數矩陣 $\Sigma=YY^T$, 可以很輕易地看出來這是個對稱矩陣, 所以特徵值一定是實數, 也一定存在 orthonormal 的實數特徵向量組. 因此我們以上的要求(將特徵值按大小排列, 特徵向量要彼此正交)都一定做得到. 而分解之後可以得到
+$$
+\Sigma = V\Lambda V^T,
+$$
+其中 $V$ 是個 $p\times p$ 矩陣.&lt;/p&gt;
+&lt;p&gt;我們事實上可以將矩陣 $Y$ 做奇異值分解 (Singular Value Decomposition, SVD), 得到
+$$
+Y = \hat{U}\hat{\Sigma}\hat{V}, \quad \hat{U}\in R^{p\times p}, \quad \hat{\Sigma}\in R^{p\times m}, \quad \hat{V}\in R^{m\times m},
+$$
+並且 $\hat{U}\hat{U}^T=I_p$ 以及 $\hat{V}\hat{V}^T=I_m$.&lt;/p&gt;
+&lt;p&gt;既然我們有 $\Sigma=YY^T$, 很容易可以看出來其實
+$$
+V = \hat{U}, \quad \Lambda = \hat{\Sigma}\hat{\Sigma}^T.
+$$
+也就是說將 $Y$ 的 singular values 平方就可以得到 $\Sigma$ 的 eigenvalues. 而 $Y$ 的 left-singular-vector 事實上就是 $\Sigma$ 的 eigenvectors.&lt;/p&gt;
+&lt;p&gt;因此我們可以將 &lt;code&gt;Matlab&lt;/code&gt; 程式改寫如下:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;function B = principal_component_analysis2(X, k)
+    [p, n] = size(X);               % p 個 features 以及 n 個 samples
+    mu = sum(X, 2)/n;               % 計算 sample 的平均
+    Y = X - mu;                     % 資料平移
+    [V, ~, ~] = svds(Y, k);         % 將 Y 做奇異值分解
+    B = V&#39;*Y;                       % 求出投影後的係數
+end
+&lt;/code&gt;&lt;/pre&gt;&lt;hr&gt;
+&lt;p&gt;而事實上, matlab 已經內建 PCA 程式了, 所以其實完全不用自己寫. 只是要注意一下 matlab 裡 PCA 的輸入 sample points 是 $n\times p$, 由於我們以上都是將 $X$ 設成 $p\times n$ 的矩陣, 所以要轉置一下, 程式只有兩行, &lt;code&gt;Matlab&lt;/code&gt; 程式如下:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;[V, B, ~] = pca(X&#39;);
+B = B&#39;;
+&lt;/code&gt;&lt;/pre&gt;&lt;hr&gt;
+&lt;h1 id=&#34;working-example&#34;&gt;Working example&lt;/h1&gt;
+&lt;p&gt;這裡我們舉一個例子, 我們先構造 sample points, 是一個類似螺旋狀結構, &lt;code&gt;Matlab&lt;/code&gt; 程式如下:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;n = 1000;                                   % 取 n 個點
+t = 3*pi*(1:n)/n;                           % 利用參數化來構造
+X = [t.*cos(t); 5*rand(1,n); t.*sin(t)];    % 先利用 random 構造三圍中的一個面
+M = makehgtform(&#39;axisrotate&#39;,[1 1 1], 30);  % 構造旋轉矩陣
+X = M(1:3, 1:3)*X + 10*rand(3,1);           % 將 sample 旋轉並且平移
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;其圖形長這樣:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://teshenglin.github.io/post/figs/2020_pca_02.png&#34; &gt;
+
+
+  &lt;img src=&#34;https://teshenglin.github.io/post/figs/2020_pca_02.png&#34; alt=&#34;&#34; width=&#34;600px&#34; &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;接著我們用 PCA 投影到二維, 圖形長這樣:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://teshenglin.github.io/post/figs/2020_pca_03.png&#34; &gt;
+
+
+  &lt;img src=&#34;https://teshenglin.github.io/post/figs/2020_pca_03.png&#34; alt=&#34;&#34; width=&#34;600px&#34; &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;可以發現 PCA 找到一個正確的軸來做投影, 使得原本的螺旋線可以看得很清楚.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;references&#34;&gt;References:&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://sites.google.com/view/manifoldlearning2020&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;NCTS mini-course on manifold learning&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://liorpachter.wordpress.com/2014/05/26/what-is-principal-component-analysis/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;What is principal component analysis?&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
