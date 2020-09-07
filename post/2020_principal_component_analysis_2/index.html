@@ -28,10 +28,10 @@
   
     
   
-  <meta name="description" content="Assistant Professor">
+  <meta name="description" content="這裡我們補充一下主成分分析裡的證明部分. 假設我們有 $n$ 筆 $p$ 維的資料, 記成 $$ \{x_1, x_2, \cdots, x_n\} \in R^p. $$ 假設想要投影到 $k$ 維, $k\le p$, 數學上來說就是想要找到 $\mu$, $U$ 以及">
 
   
-  <link rel="alternate" hreflang="en-us" href="https://teshenglin.github.io/tags/">
+  <link rel="alternate" hreflang="en-us" href="https://teshenglin.github.io/post/2020_principal_component_analysis_2/">
 
   
 
@@ -216,14 +216,12 @@
 
 
   
-  <link rel="alternate" href="/tags/index.xml" type="application/rss+xml" title="Te-Sheng Lin">
-  
 
   <link rel="manifest" href="/index.webmanifest">
   <link rel="icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_2.png">
   <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_2.png">
 
-  <link rel="canonical" href="https://teshenglin.github.io/tags/">
+  <link rel="canonical" href="https://teshenglin.github.io/post/2020_principal_component_analysis_2/">
 
   
   
@@ -237,18 +235,63 @@
   <meta property="twitter:card" content="summary">
   
   <meta property="og:site_name" content="Te-Sheng Lin">
-  <meta property="og:url" content="https://teshenglin.github.io/tags/">
-  <meta property="og:title" content="Tags | Te-Sheng Lin">
-  <meta property="og:description" content="Assistant Professor"><meta property="og:image" content="https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png">
+  <meta property="og:url" content="https://teshenglin.github.io/post/2020_principal_component_analysis_2/">
+  <meta property="og:title" content="主成分分析 - 2 | Te-Sheng Lin">
+  <meta property="og:description" content="這裡我們補充一下主成分分析裡的證明部分. 假設我們有 $n$ 筆 $p$ 維的資料, 記成 $$ \{x_1, x_2, \cdots, x_n\} \in R^p. $$ 假設想要投影到 $k$ 維, $k\le p$, 數學上來說就是想要找到 $\mu$, $U$ 以及"><meta property="og:image" content="https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png">
   <meta property="twitter:image" content="https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png"><meta property="og:locale" content="en-us">
   
-    <meta property="og:updated_time" content="2020-09-07T00:00:00&#43;00:00">
+    
+      <meta property="article:published_time" content="2020-09-07T00:00:00&#43;00:00">
+    
+    <meta property="article:modified_time" content="2020-09-07T15:05:19&#43;08:00">
   
 
   
 
 
+    
 
+
+
+
+
+
+  
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://teshenglin.github.io/post/2020_principal_component_analysis_2/"
+  },
+  "headline": "主成分分析 - 2",
+  
+  "datePublished": "2020-09-07T00:00:00Z",
+  "dateModified": "2020-09-07T15:05:19+08:00",
+  
+  "author": {
+    "@type": "Person",
+    "name": "Te-Sheng Lin (林得勝)"
+  },
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "Te-Sheng Lin",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_2.png"
+    }
+  },
+  "description": "這裡我們補充一下主成分分析裡的證明部分. 假設我們有 $n$ 筆 $p$ 維的資料, 記成 $$ \\{x_1, x_2, \\cdots, x_n\\} \\in R^p. $$ 假設想要投影到 $k$ 維, $k\\le p$, 數學上來說就是想要找到 $\\mu$, $U$ 以及"
+}
+</script>
+
+  
 
   
 
@@ -256,10 +299,13 @@
   
 
 
+  
 
 
 
-  <title>Tags | Te-Sheng Lin</title>
+
+
+  <title>主成分分析 - 2 | Te-Sheng Lin</title>
 
 </head>
 
@@ -447,94 +493,410 @@
 </nav>
 
 
-  
-
-
-
-
-
-
-
-
-
-
-
+  <article class="article">
 
   
 
+
+
+
+
+
+
+
+
+
+
+
+  
+
   
   
+  
+<div class="article-container pt-3">
+  <h1>主成分分析 - 2</h1>
+
+  
+
   
     
-  
-<div class="universal-wrapper pt-3">
-  <h1>Tags</h1>
+
+
+<div class="article-metadata">
 
   
+  
+  
+  
+  <div>
+    
+
+
+
+  
+  <span><a href="/authors/admin/">Te-Sheng Lin (林得勝)</a></span>
+
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+          Last updated on
+      
+    
+    Sep 7, 2020
+  </span>
+  
+
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    2 min read
+  </span>
+  
+
+  
+  
+  
+  <span class="middot-divider"></span>
+  <a href="/post/2020_principal_component_analysis_2/#disqus_thread"></a>
+  
+
+  
+  
+  <span class="middot-divider"></span>
+  <span class="article-categories">
+    <i class="fas fa-folder mr-1"></i><a href="/categories/calculus/">Calculus</a>, <a href="/categories/computational-mathematics/">Computational Mathematics</a>, <a href="/categories/linear-algebra/">Linear algebra</a></span>
+  
+
+</div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   
 </div>
 
 
 
-<div class="universal-wrapper">
-  
+  <div class="article-container">
 
-  
-  
-    
-    
-    
-    <div>
-      <h2><a href="/tags/contact-line/" >contact line</a></h2>
-      <div class="article-style">
-        
-      </div>
-    </div>
-  
-    
-    
-    
-    <div>
-      <h2><a href="/tags/lubrication-approximation/" >lubrication approximation</a></h2>
-      <div class="article-style">
-        
-      </div>
-    </div>
-  
-    
-    
-    
-    <div>
-      <h2><a href="/tags/nematic-liquid-crystals/" >nematic liquid crystals</a></h2>
-      <div class="article-style">
-        
-      </div>
-    </div>
-  
-    
-    
-    
-    <div>
-      <h2><a href="/tags/thin-films/" >thin films</a></h2>
-      <div class="article-style">
-        
-      </div>
-    </div>
-  
+    <div class="article-style">
+      <blockquote>
+<p>這裡我們補充一下主成分分析裡的證明部分.</p>
+</blockquote>
+<hr>
+<p>假設我們有 $n$ 筆 $p$ 維的資料, 記成
+$$
+\{x_1, x_2, \cdots, x_n\} \in R^p.
+$$
+假設想要投影到 $k$ 維, $k\le p$, 數學上來說就是想要找到 $\mu$, $U$ 以及 $\beta_i$ 使得下式 $I$ 有最小值
+$$
+E = \sum_{i=1}^n \|x_i - (\mu + U\beta_i)\|^2,
+$$
+其中有兩個條件, $U^TU=I$, 以及 $\sum^n_{i=1} \beta_i=0$.</p>
+<hr>
+<blockquote>
+<p>要求極值就是要找微分等於零的解, 由於這式子是 convex, 所以保證找到唯一解而且是最小的.</p>
+</blockquote>
+<p>首先看 $\mu$:
+$$
+\partial_{\mu} E = -2 \left[\sum_i x_i - n\mu\right]=0.
+$$
+因此可以得到
+$$
+\mu = \frac{1}{n}\sum_{i=1}^n x_i.
+$$</p>
+<hr>
+<p>找到平均後我們將所有資料做平移使得中心為原點, 定 $y_i = x_i-\mu$, 我們有
+$$
+E = \sum_{i=1}^n \|y_i - U\beta_i\|^2.
+$$
+接著對 $\beta_i$ 微分得到
+$$
+\partial_{\beta_i} E = 2\left[\beta_i - U^Ty_i\right]=0.
+$$
+因此可以得到
+$$
+\beta_i = U^T y_i = \sum^k_{j=1}&lt;u_j, y_i&gt;,
+$$
+其中 $U=[u_1, \cdots, u_k]$.</p>
+<hr>
+<p>我們接著又可將原本的 $E$ 改寫為
+$$
+E = \sum_{i=1}^n \|y_i - UU^Ty_i\|^2 = \|Y - UU^TY\|^2_F,
+$$
+其中 $Y=[y_1, \cdots, y_n]$, 而下標 $F$ 代表矩陣的 Frobenius norm.</p>
+<p>我們先定義 $P = UU^T$, 則有 $P^T=P$, $P^2=P$. 接著我們改寫 $E$ 為
+$$
+E = \|Y - PY\|^2_F = trace\left[(Y-PY)^T(Y-PY)\right] = trace\left(Y^TY-Y^TPY\right).
+$$
+由於 $Y$ 不會變, 因此求 $E$ 的最小值變成求 $trace\left(-Y^TPY\right)$ 的最小值, 也就是求 $trace\left(Y^TPY\right)$ 的最大值, 換回來得到是求 $trace\left(Y^TUU^TY\right)$ 的最大值.</p>
+<p>接著我們用線性代數裡一個定理, $trace(AB)=trace(BA)$, 將原式轉換成求 $trace\left(U^TYY^TU\right)$ 的最大值, 最後得到
+$$
+\arg\min_U E = \arg\max_U trace\left(U^T\Sigma U\right),
+$$
+其中 $\Sigma=YY^T$ 也就是原資料的共變異數矩陣. 上式是個非常重要的式子, 它告訴我們以下兩件事是等價的:</p>
+<ol>
+<li>使得原始資料與投影後的資料之間的&quot;距離平方&quot;最小</li>
+<li>使得資料有最大的變異性</li>
+</ol>
+<p>最後, 線性代數告訴我們等號右邊這問題的解就是 $\Sigma$ 最大的 $k$ 個 eigenvalues 其相對應的 eigenvectors, 收集起來得到 $U=[u_1, \cdots, u_k]$.</p>
+<blockquote>
+<p>以上使用的線性代數結果, 其證明可見 
+<a href="https://math.stackexchange.com/questions/252272/is-trace-invariant-under-cyclic-permutation-with-rectangular-matrices" target="_blank" rel="noopener">tr(AB)=tr(BA) proof</a>, 以及 
+<a href="https://math.stackexchange.com/questions/1199852/maximize-the-value-of-vtav" target="_blank" rel="noopener">maximize v^T Av</a>.</p>
+</blockquote>
+<hr>
+<p>總結一下最佳解如下:</p>
+<p>第一, $\mu$ 是原始資料的平均
+$$
+\mu = \frac{1}{n}\sum^n_{i=1} x_i
+$$</p>
+<p>第二, 找到平均後我們將所有資料做平移使得中心為原點, 定 $y_i = x_i-\mu$, 求出這組新資料的共變異數矩陣 $\Sigma=YY^T$, 其中 $Y=[y_1, \cdots, y_n]$.</p>
+<p>對 $\Sigma$ 做譜分解(spectral decomposition), 找到其最大的 $k$ 個 eigenvalues 以及相對應的 eigenvectors, 將 eigenvectors 收集起來就得到 $U=[u_1, \cdots, u_k]$, 也就是 affine subspace 的 basis.</p>
+<p>第三, 將新資料投影到子空間中得到 $\beta_i$, 也就是
+$$
+\beta_i = \sum^n_{j=1}&lt;u_j, y_i&gt;.
+$$</p>
+<hr>
+<h2 id="references">References:</h2>
+<ol>
+<li>
+<a href="https://sites.google.com/view/manifoldlearning2020" target="_blank" rel="noopener">NCTS mini-course on manifold learning</a></li>
+<li>
+<a href="https://liorpachter.wordpress.com/2014/05/26/what-is-principal-component-analysis/" target="_blank" rel="noopener">What is principal component analysis?</a></li>
+</ol>
+<hr>
 
+    </div>
+
+    
+
+
+
+
+
+<div class="article-tags">
   
-<nav>
-  <ul class="pagination justify-content-center">
+  <a class="badge badge-light" href="/tags/machine_learning/">machine_learning</a>
+  
+  <a class="badge badge-light" href="/tags/dimension_reduction/">dimension_reduction</a>
+  
+  <a class="badge badge-light" href="/tags/pca/">PCA</a>
+  
+</div>
+
+
+
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
     
-    <li class="page-item"><a class="page-link" href="/tags/page/3/">&laquo;</a></li>
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=https://teshenglin.github.io/post/2020_principal_component_analysis_2/&amp;text=%e4%b8%bb%e6%88%90%e5%88%86%e5%88%86%e6%9e%90%20-%202" target="_blank" rel="noopener" class="share-btn-twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
     
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=https://teshenglin.github.io/post/2020_principal_component_analysis_2/&amp;t=%e4%b8%bb%e6%88%90%e5%88%86%e5%88%86%e6%9e%90%20-%202" target="_blank" rel="noopener" class="share-btn-facebook">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="mailto:?subject=%e4%b8%bb%e6%88%90%e5%88%86%e5%88%86%e6%9e%90%20-%202&amp;body=https://teshenglin.github.io/post/2020_principal_component_analysis_2/" target="_blank" rel="noopener" class="share-btn-email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
     
   </ul>
-</nav>
-
-
 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+  
+
+
+
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  <div class="media author-card content-widget-hr">
+    
+      
+      <img class="avatar mr-3 avatar-circle" src="/authors/admin/avatar_hua0d4d4b24f4da3a102e4452ac738b95f_109236_270x270_fill_q90_lanczos_center.jpg" alt="Avatar">
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="https://teshenglin.github.io/">Te-Sheng Lin (林得勝)</a></h5>
+      <h6 class="card-subtitle">Assistant Professor</h6>
+      <p class="card-text">The focus of my research is concerned with the development of analytical and computational tools for the problems that arises in fluid dynamics, currently in thin liquid films, and further to communicate with scientists from other disciplines to solve engineering problems in practice.</p>
+      <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://scholar.google.com.tw/citations?user=diXYXkwAAAAJ" target="_blank" rel="noopener">
+        <i class="ai ai-google-scholar"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.researchgate.net/profile/Te-Sheng_Lin" target="_blank" rel="noopener">
+        <i class="ai ai-researchgate"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://github.com/teshenglin" target="_blank" rel="noopener">
+        <i class="fab fa-github"></i>
+      </a>
+    </li>
+  
+</ul>
+
+    </div>
+  </div>
+
+
+
+
+<section id="comments">
+  
+    
+<div id="disqus_thread"></div>
+<script>
+  let disqus_config = function () {
+    
+    
+    
+  };
+  (function() {
+    if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+      document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+      return;
+    }
+    var d = document, s = d.createElement('script'); s.async = true;
+    s.src = 'https://' + "https-teshenglin-github-io" + '.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+  
+</section>
+
+
+
+
+
+
+  
+  
+  <div class="article-widget content-widget-hr">
+    <h3>Related</h3>
+    <ul>
+      
+      <li><a href="/post/2020_principal_component_analysis/">主成分分析</a></li>
+      
+    </ul>
+  </div>
+  
+
+
+
+  </div>
+</article>
 
       
 

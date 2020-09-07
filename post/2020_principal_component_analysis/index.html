@@ -243,7 +243,7 @@
     
       <meta property="article:published_time" content="2020-08-27T00:00:00&#43;00:00">
     
-    <meta property="article:modified_time" content="2020-08-30T22:35:50&#43;08:00">
+    <meta property="article:modified_time" content="2020-09-07T15:05:19&#43;08:00">
   
 
   
@@ -272,7 +272,7 @@
   "headline": "主成分分析",
   
   "datePublished": "2020-08-27T00:00:00Z",
-  "dateModified": "2020-08-30T22:35:50+08:00",
+  "dateModified": "2020-09-07T15:05:19+08:00",
   
   "author": {
     "@type": "Person",
@@ -548,7 +548,7 @@
           Last updated on
       
     
-    Aug 30, 2020
+    Sep 7, 2020
   </span>
   
 
@@ -557,7 +557,7 @@
   
   <span class="middot-divider"></span>
   <span class="article-reading-time">
-    5 min read
+    6 min read
   </span>
   
 
@@ -684,7 +684,7 @@ $$
 其中未知數有 $\mu\in R^p$, $U\in R^{p\times k}$, 以及 $\beta_i\in R^{k\times 1}$.</p>
 <p>稍微解釋一下以上這些變數.</p>
 <p>$\mu$ 最容易想像, 就是 $R^p$ 空間中的一個點, 也是這個 affine subspace 上的一個點. 事實上之後可以輕易算出他是資料的平均值, 也就是投影到 $0$ 維的那個解.</p>
-<p>$U$ 是個 $R^{p\times k}$ 的矩陣, 事實上它的行(columns)就是我們所找的這 affine subspace 的基底. 也就是說, 若我們寫 $U=[u_1, u_2, \cdots, u_k]$, 則 $\{u_1, u_2, \cdots, u_k\}$ 是這 affine subspace 的基底. 我們可以特別要求這基底要正交, 也就是 $U^TU = I$.</p>
+<p>$U$ 是個 $R^{p\times k}$ 的矩陣, 事實上它的行(columns)就是我們所找的這 affine subspace 的基底. 也就是說, 若我們寫 $U=[u_1, u_2, \cdots, u_k]$, 則 $\{u_1, u_2, \cdots, u_k\}$ 是這 affine subspace 的基底. 我們可以特別要求這基底要正交, 也就是 $U^TU = I_k$, 其中 $I_k$ 表示 $k\times k$ 的 identity matrix.</p>
 <p>最後, $\beta_i$ 可以想像是原始資料第 $i$ 筆投影到 affine subspace 之後的座標, 或是係數.</p>
 <p>也就是說, 事實上這個 affine subspace 可以表示成
 $$
@@ -692,16 +692,17 @@ $$
 $$
 而 $\mu + U\beta_i$ 就是 $x_i$ 這個資料點在這 affine subspace 上的投影.</p>
 <hr>
-<p>再稍微整理一下, 我們想要找到 $\mu$, $U$ 以及 $\beta_i$ 使得下式 $I$ 有最小值
+<p>再稍微整理一下, 我們想要找到 $\mu$, $U$ 以及 $\beta_i$ 使得下式 $E$ 有最小值
 $$
-I = \sum_{i=1}^n \|x_i - (\mu + U\beta_i)\|^2,
+E = \sum_{i=1}^n \|x_i - (\mu + U\beta_i)\|^2,
 $$
-其中有兩個條件, $U^TU=I$, 以及 $\sum^n_{i=1} \beta_i=0$.</p>
+其中有兩個條件, $U^TU=I_k$, 以及 $\sum^n_{i=1} \beta_i=0$.</p>
 <h4 id="remark-第二個條件-sum_i-beta_i0-看起來似乎是憑空冒出來的-不過這可以從兩方面來說-第一-我們希望投影之後的解他們的平均是-0-所以中心就在新座標原點的位置-第二-數學上來說為了讓解有唯一性我們也需要這樣一個條件">Remark: 第二個條件 $\sum_i \beta_i=0$ 看起來似乎是憑空冒出來的, 不過這可以從兩方面來說. 第一, 我們希望投影之後的解他們的平均是 $0$, 所以中心就在新座標原點的位置. 第二, 數學上來說為了讓解有唯一性我們也需要這樣一個條件.</h4>
 <hr>
 <p>這問題可以被完全解出來, 也就是說給定 $x_i$, 我們可以決定出最佳的 $\mu$, $U$ 以及 $\beta_i$ 使得上式的值為最小.</p>
 <blockquote>
-<p>推導過程我們在這先省略, 有興趣的請見 references.</p>
+<p>推導過程我們在這先省略, 有興趣的請見 references, 或是 
+<a href="/post/2020_principal_component_analysis_2">主成分分析 - 2</a>.</p>
 </blockquote>
 <p>其最佳解整理如下:</p>
 <p>第一, $\mu$ 就如同我們說的是原始資料的平均
@@ -712,7 +713,7 @@ $$</p>
 <p>對 $\Sigma$ 做譜分解(spectral decomposition), 找到其最大的 $k$ 個 eigenvalues 以及相對應的 eigenvectors, 將 eigenvectors 收集起來就得到 $U=[u_1, \cdots, u_k]$, 也就是 affine subspace 的 basis.</p>
 <p>第三, 將新資料投影到子空間中得到 $\beta_i$, 也就是
 $$
-\beta_i = \sum^n_{j=1}&lt;y_i, u_j&gt;
+\beta_i = \sum^n_{j=1}&lt;u_j, y_i&gt;.
 $$</p>
 <hr>
 <p>一般最基礎的 PCA 做法就是從 $x_i$, 得到 $\mu$, 求出 $y_i$ 以及 $\Sigma$. 接著對 $\Sigma$ 做 eigendecomposition 求出其特徵值及特徵向量. 拿出最大的幾個就可以定出 affine subspace.</p>
@@ -723,10 +724,11 @@ $$</p>
 <blockquote>
 <p>投影到 k 維子空間, 投影後的 data matrix 為 B.</p>
 </blockquote>
-<pre><code>function B = principal_component_analysis(X, k)
+<pre><code>% Matlab program
+function B = principal_component_analysis(X, k)
     [p, n] = size(X);               % p 個 features 以及 n 個 samples
     mu = sum(X, 2)/n;               % 計算 sample 的平均
-    Y = X - mu;                     % 資料平移
+    Y = X - mu*ones(1,n);                     % 資料平移
     S = Y*Y';                       % 求出共變異數矩陣
     [V, D] = eig(S, 'vector');      % 求出特徵值及特徵向量
     [D, ind] = sort(D, 'descend');  % 將特徵值按大小排列
@@ -750,26 +752,29 @@ $$
 V = \hat{U}, \quad \Lambda = \hat{\Sigma}\hat{\Sigma}^T.
 $$
 也就是說將 $Y$ 的 singular values 平方就可以得到 $\Sigma$ 的 eigenvalues. 而 $Y$ 的 left-singular-vector 事實上就是 $\Sigma$ 的 eigenvectors.</p>
-<p>因此我們可以將 <code>Matlab</code> 程式改寫如下:</p>
-<pre><code>function B = principal_component_analysis2(X, k)
+<p>因此我們可以將程式改寫如下:</p>
+<pre><code>% Matlab program
+function B = principal_component_analysis2(X, k)
     [p, n] = size(X);               % p 個 features 以及 n 個 samples
     mu = sum(X, 2)/n;               % 計算 sample 的平均
-    Y = X - mu;                     % 資料平移
+    Y = X - mu*ones(1,n);                     % 資料平移
     [V, ~, ~] = svds(Y, k);         % 將 Y 做奇異值分解
     B = V'*Y;                       % 求出投影後的係數
 end
 </code></pre><hr>
-<p>而事實上, matlab 已經內建 PCA 程式了, 所以其實完全不用自己寫. 只是要注意一下 matlab 裡 PCA 的輸入 sample points 是 $n\times p$, 由於我們以上都是將 $X$ 設成 $p\times n$ 的矩陣, 所以要轉置一下, 程式只有兩行, <code>Matlab</code> 程式如下:</p>
-<pre><code>[V, B, ~] = pca(X');
+<p>而事實上, matlab 已經內建 PCA 程式了, 所以其實完全不用自己寫. 只是要注意一下 matlab 裡 PCA 的輸入 sample points 是 $n\times p$, 由於我們以上都是將 $X$ 設成 $p\times n$ 的矩陣, 所以要轉置一下, 程式只有兩行, 如下:</p>
+<pre><code>% Matlab program
+[V, B, ~] = pca(X');
 B = B';
 </code></pre><hr>
 <h1 id="working-example">Working example</h1>
-<p>這裡我們舉一個例子, 我們先構造 sample points, 是一個類似螺旋狀結構, <code>Matlab</code> 程式如下:</p>
-<pre><code>n = 1000;                                   % 取 n 個點
+<p>這裡我們舉一個例子, 我們先構造 sample points, 是一個類似螺旋狀結構, 程式如下:</p>
+<pre><code>% Matlab program
+n = 1000;                                   % 取 n 個點
 t = 3*pi*(1:n)/n;                           % 利用參數化來構造
 X = [t.*cos(t); 5*rand(1,n); t.*sin(t)];    % 先利用 random 構造三圍中的一個面
 M = makehgtform('axisrotate',[1 1 1], 30);  % 構造旋轉矩陣
-X = M(1:3, 1:3)*X + 10*rand(3,1);           % 將 sample 旋轉並且平移
+X = M(1:3, 1:3)*X + 10*rand(3,1)*ones(1,n); % 將 sample 旋轉並且隨機平移
 </code></pre><p>其圖形長這樣:
 
 

@@ -5,12 +5,106 @@
     <link>https://teshenglin.github.io/categories/linear-algebra/</link>
       <atom:link href="https://teshenglin.github.io/categories/linear-algebra/index.xml" rel="self" type="application/rss+xml" />
     <description>Linear algebra</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Thu, 27 Aug 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 07 Sep 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
       <title>Linear algebra</title>
       <link>https://teshenglin.github.io/categories/linear-algebra/</link>
     </image>
+    
+    <item>
+      <title>主成分分析 - 2</title>
+      <link>https://teshenglin.github.io/post/2020_principal_component_analysis_2/</link>
+      <pubDate>Mon, 07 Sep 2020 00:00:00 +0000</pubDate>
+      <guid>https://teshenglin.github.io/post/2020_principal_component_analysis_2/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;這裡我們補充一下主成分分析裡的證明部分.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;p&gt;假設我們有 $n$ 筆 $p$ 維的資料, 記成
+$$
+\{x_1, x_2, \cdots, x_n\} \in R^p.
+$$
+假設想要投影到 $k$ 維, $k\le p$, 數學上來說就是想要找到 $\mu$, $U$ 以及 $\beta_i$ 使得下式 $I$ 有最小值
+$$
+E = \sum_{i=1}^n \|x_i - (\mu + U\beta_i)\|^2,
+$$
+其中有兩個條件, $U^TU=I$, 以及 $\sum^n_{i=1} \beta_i=0$.&lt;/p&gt;
+&lt;hr&gt;
+&lt;blockquote&gt;
+&lt;p&gt;要求極值就是要找微分等於零的解, 由於這式子是 convex, 所以保證找到唯一解而且是最小的.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;首先看 $\mu$:
+$$
+\partial_{\mu} E = -2 \left[\sum_i x_i - n\mu\right]=0.
+$$
+因此可以得到
+$$
+\mu = \frac{1}{n}\sum_{i=1}^n x_i.
+$$&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;找到平均後我們將所有資料做平移使得中心為原點, 定 $y_i = x_i-\mu$, 我們有
+$$
+E = \sum_{i=1}^n \|y_i - U\beta_i\|^2.
+$$
+接著對 $\beta_i$ 微分得到
+$$
+\partial_{\beta_i} E = 2\left[\beta_i - U^Ty_i\right]=0.
+$$
+因此可以得到
+$$
+\beta_i = U^T y_i = \sum^k_{j=1}&amp;lt;u_j, y_i&amp;gt;,
+$$
+其中 $U=[u_1, \cdots, u_k]$.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;我們接著又可將原本的 $E$ 改寫為
+$$
+E = \sum_{i=1}^n \|y_i - UU^Ty_i\|^2 = \|Y - UU^TY\|^2_F,
+$$
+其中 $Y=[y_1, \cdots, y_n]$, 而下標 $F$ 代表矩陣的 Frobenius norm.&lt;/p&gt;
+&lt;p&gt;我們先定義 $P = UU^T$, 則有 $P^T=P$, $P^2=P$. 接著我們改寫 $E$ 為
+$$
+E = \|Y - PY\|^2_F = trace\left[(Y-PY)^T(Y-PY)\right] = trace\left(Y^TY-Y^TPY\right).
+$$
+由於 $Y$ 不會變, 因此求 $E$ 的最小值變成求 $trace\left(-Y^TPY\right)$ 的最小值, 也就是求 $trace\left(Y^TPY\right)$ 的最大值, 換回來得到是求 $trace\left(Y^TUU^TY\right)$ 的最大值.&lt;/p&gt;
+&lt;p&gt;接著我們用線性代數裡一個定理, $trace(AB)=trace(BA)$, 將原式轉換成求 $trace\left(U^TYY^TU\right)$ 的最大值, 最後得到
+$$
+\arg\min_U E = \arg\max_U trace\left(U^T\Sigma U\right),
+$$
+其中 $\Sigma=YY^T$ 也就是原資料的共變異數矩陣. 上式是個非常重要的式子, 它告訴我們以下兩件事是等價的:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;使得原始資料與投影後的資料之間的&amp;quot;距離平方&amp;quot;最小&lt;/li&gt;
+&lt;li&gt;使得資料有最大的變異性&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;最後, 線性代數告訴我們等號右邊這問題的解就是 $\Sigma$ 最大的 $k$ 個 eigenvalues 其相對應的 eigenvectors, 收集起來得到 $U=[u_1, \cdots, u_k]$.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;以上使用的線性代數結果, 其證明可見 
+&lt;a href=&#34;https://math.stackexchange.com/questions/252272/is-trace-invariant-under-cyclic-permutation-with-rectangular-matrices&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;tr(AB)=tr(BA) proof&lt;/a&gt;, 以及 
+&lt;a href=&#34;https://math.stackexchange.com/questions/1199852/maximize-the-value-of-vtav&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;maximize v^T Av&lt;/a&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;p&gt;總結一下最佳解如下:&lt;/p&gt;
+&lt;p&gt;第一, $\mu$ 是原始資料的平均
+$$
+\mu = \frac{1}{n}\sum^n_{i=1} x_i
+$$&lt;/p&gt;
+&lt;p&gt;第二, 找到平均後我們將所有資料做平移使得中心為原點, 定 $y_i = x_i-\mu$, 求出這組新資料的共變異數矩陣 $\Sigma=YY^T$, 其中 $Y=[y_1, \cdots, y_n]$.&lt;/p&gt;
+&lt;p&gt;對 $\Sigma$ 做譜分解(spectral decomposition), 找到其最大的 $k$ 個 eigenvalues 以及相對應的 eigenvectors, 將 eigenvectors 收集起來就得到 $U=[u_1, \cdots, u_k]$, 也就是 affine subspace 的 basis.&lt;/p&gt;
+&lt;p&gt;第三, 將新資料投影到子空間中得到 $\beta_i$, 也就是
+$$
+\beta_i = \sum^n_{j=1}&amp;lt;u_j, y_i&amp;gt;.
+$$&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;references&#34;&gt;References:&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://sites.google.com/view/manifoldlearning2020&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;NCTS mini-course on manifold learning&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://liorpachter.wordpress.com/2014/05/26/what-is-principal-component-analysis/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;What is principal component analysis?&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+</description>
+    </item>
     
     <item>
       <title>主成分分析</title>
@@ -101,7 +195,7 @@ $$
 其中未知數有 $\mu\in R^p$, $U\in R^{p\times k}$, 以及 $\beta_i\in R^{k\times 1}$.&lt;/p&gt;
 &lt;p&gt;稍微解釋一下以上這些變數.&lt;/p&gt;
 &lt;p&gt;$\mu$ 最容易想像, 就是 $R^p$ 空間中的一個點, 也是這個 affine subspace 上的一個點. 事實上之後可以輕易算出他是資料的平均值, 也就是投影到 $0$ 維的那個解.&lt;/p&gt;
-&lt;p&gt;$U$ 是個 $R^{p\times k}$ 的矩陣, 事實上它的行(columns)就是我們所找的這 affine subspace 的基底. 也就是說, 若我們寫 $U=[u_1, u_2, \cdots, u_k]$, 則 $\{u_1, u_2, \cdots, u_k\}$ 是這 affine subspace 的基底. 我們可以特別要求這基底要正交, 也就是 $U^TU = I$.&lt;/p&gt;
+&lt;p&gt;$U$ 是個 $R^{p\times k}$ 的矩陣, 事實上它的行(columns)就是我們所找的這 affine subspace 的基底. 也就是說, 若我們寫 $U=[u_1, u_2, \cdots, u_k]$, 則 $\{u_1, u_2, \cdots, u_k\}$ 是這 affine subspace 的基底. 我們可以特別要求這基底要正交, 也就是 $U^TU = I_k$, 其中 $I_k$ 表示 $k\times k$ 的 identity matrix.&lt;/p&gt;
 &lt;p&gt;最後, $\beta_i$ 可以想像是原始資料第 $i$ 筆投影到 affine subspace 之後的座標, 或是係數.&lt;/p&gt;
 &lt;p&gt;也就是說, 事實上這個 affine subspace 可以表示成
 $$
@@ -109,16 +203,17 @@ $$
 $$
 而 $\mu + U\beta_i$ 就是 $x_i$ 這個資料點在這 affine subspace 上的投影.&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;再稍微整理一下, 我們想要找到 $\mu$, $U$ 以及 $\beta_i$ 使得下式 $I$ 有最小值
+&lt;p&gt;再稍微整理一下, 我們想要找到 $\mu$, $U$ 以及 $\beta_i$ 使得下式 $E$ 有最小值
 $$
-I = \sum_{i=1}^n \|x_i - (\mu + U\beta_i)\|^2,
+E = \sum_{i=1}^n \|x_i - (\mu + U\beta_i)\|^2,
 $$
-其中有兩個條件, $U^TU=I$, 以及 $\sum^n_{i=1} \beta_i=0$.&lt;/p&gt;
+其中有兩個條件, $U^TU=I_k$, 以及 $\sum^n_{i=1} \beta_i=0$.&lt;/p&gt;
 &lt;h4 id=&#34;remark-第二個條件-sum_i-beta_i0-看起來似乎是憑空冒出來的-不過這可以從兩方面來說-第一-我們希望投影之後的解他們的平均是-0-所以中心就在新座標原點的位置-第二-數學上來說為了讓解有唯一性我們也需要這樣一個條件&#34;&gt;Remark: 第二個條件 $\sum_i \beta_i=0$ 看起來似乎是憑空冒出來的, 不過這可以從兩方面來說. 第一, 我們希望投影之後的解他們的平均是 $0$, 所以中心就在新座標原點的位置. 第二, 數學上來說為了讓解有唯一性我們也需要這樣一個條件.&lt;/h4&gt;
 &lt;hr&gt;
 &lt;p&gt;這問題可以被完全解出來, 也就是說給定 $x_i$, 我們可以決定出最佳的 $\mu$, $U$ 以及 $\beta_i$ 使得上式的值為最小.&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;推導過程我們在這先省略, 有興趣的請見 references.&lt;/p&gt;
+&lt;p&gt;推導過程我們在這先省略, 有興趣的請見 references, 或是 
+&lt;a href=&#34;https://teshenglin.github.io/post/2020_principal_component_analysis_2&#34;&gt;主成分分析 - 2&lt;/a&gt;.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;其最佳解整理如下:&lt;/p&gt;
 &lt;p&gt;第一, $\mu$ 就如同我們說的是原始資料的平均
@@ -129,7 +224,7 @@ $$&lt;/p&gt;
 &lt;p&gt;對 $\Sigma$ 做譜分解(spectral decomposition), 找到其最大的 $k$ 個 eigenvalues 以及相對應的 eigenvectors, 將 eigenvectors 收集起來就得到 $U=[u_1, \cdots, u_k]$, 也就是 affine subspace 的 basis.&lt;/p&gt;
 &lt;p&gt;第三, 將新資料投影到子空間中得到 $\beta_i$, 也就是
 $$
-\beta_i = \sum^n_{j=1}&amp;lt;y_i, u_j&amp;gt;
+\beta_i = \sum^n_{j=1}&amp;lt;u_j, y_i&amp;gt;.
 $$&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;一般最基礎的 PCA 做法就是從 $x_i$, 得到 $\mu$, 求出 $y_i$ 以及 $\Sigma$. 接著對 $\Sigma$ 做 eigendecomposition 求出其特徵值及特徵向量. 拿出最大的幾個就可以定出 affine subspace.&lt;/p&gt;
@@ -140,10 +235,11 @@ $$&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;投影到 k 維子空間, 投影後的 data matrix 為 B.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;pre&gt;&lt;code&gt;function B = principal_component_analysis(X, k)
+&lt;pre&gt;&lt;code&gt;% Matlab program
+function B = principal_component_analysis(X, k)
     [p, n] = size(X);               % p 個 features 以及 n 個 samples
     mu = sum(X, 2)/n;               % 計算 sample 的平均
-    Y = X - mu;                     % 資料平移
+    Y = X - mu*ones(1,n);                     % 資料平移
     S = Y*Y&#39;;                       % 求出共變異數矩陣
     [V, D] = eig(S, &#39;vector&#39;);      % 求出特徵值及特徵向量
     [D, ind] = sort(D, &#39;descend&#39;);  % 將特徵值按大小排列
@@ -167,26 +263,29 @@ $$
 V = \hat{U}, \quad \Lambda = \hat{\Sigma}\hat{\Sigma}^T.
 $$
 也就是說將 $Y$ 的 singular values 平方就可以得到 $\Sigma$ 的 eigenvalues. 而 $Y$ 的 left-singular-vector 事實上就是 $\Sigma$ 的 eigenvectors.&lt;/p&gt;
-&lt;p&gt;因此我們可以將 &lt;code&gt;Matlab&lt;/code&gt; 程式改寫如下:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;function B = principal_component_analysis2(X, k)
+&lt;p&gt;因此我們可以將程式改寫如下:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;% Matlab program
+function B = principal_component_analysis2(X, k)
     [p, n] = size(X);               % p 個 features 以及 n 個 samples
     mu = sum(X, 2)/n;               % 計算 sample 的平均
-    Y = X - mu;                     % 資料平移
+    Y = X - mu*ones(1,n);                     % 資料平移
     [V, ~, ~] = svds(Y, k);         % 將 Y 做奇異值分解
     B = V&#39;*Y;                       % 求出投影後的係數
 end
 &lt;/code&gt;&lt;/pre&gt;&lt;hr&gt;
-&lt;p&gt;而事實上, matlab 已經內建 PCA 程式了, 所以其實完全不用自己寫. 只是要注意一下 matlab 裡 PCA 的輸入 sample points 是 $n\times p$, 由於我們以上都是將 $X$ 設成 $p\times n$ 的矩陣, 所以要轉置一下, 程式只有兩行, &lt;code&gt;Matlab&lt;/code&gt; 程式如下:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;[V, B, ~] = pca(X&#39;);
+&lt;p&gt;而事實上, matlab 已經內建 PCA 程式了, 所以其實完全不用自己寫. 只是要注意一下 matlab 裡 PCA 的輸入 sample points 是 $n\times p$, 由於我們以上都是將 $X$ 設成 $p\times n$ 的矩陣, 所以要轉置一下, 程式只有兩行, 如下:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;% Matlab program
+[V, B, ~] = pca(X&#39;);
 B = B&#39;;
 &lt;/code&gt;&lt;/pre&gt;&lt;hr&gt;
 &lt;h1 id=&#34;working-example&#34;&gt;Working example&lt;/h1&gt;
-&lt;p&gt;這裡我們舉一個例子, 我們先構造 sample points, 是一個類似螺旋狀結構, &lt;code&gt;Matlab&lt;/code&gt; 程式如下:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;n = 1000;                                   % 取 n 個點
+&lt;p&gt;這裡我們舉一個例子, 我們先構造 sample points, 是一個類似螺旋狀結構, 程式如下:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;% Matlab program
+n = 1000;                                   % 取 n 個點
 t = 3*pi*(1:n)/n;                           % 利用參數化來構造
 X = [t.*cos(t); 5*rand(1,n); t.*sin(t)];    % 先利用 random 構造三圍中的一個面
 M = makehgtform(&#39;axisrotate&#39;,[1 1 1], 30);  % 構造旋轉矩陣
-X = M(1:3, 1:3)*X + 10*rand(3,1);           % 將 sample 旋轉並且平移
+X = M(1:3, 1:3)*X + 10*rand(3,1)*ones(1,n); % 將 sample 旋轉並且隨機平移
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;其圖形長這樣:
 
 
