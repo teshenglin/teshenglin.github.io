@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>MDS | Te-Sheng Lin</title>
+    <link>https://teshenglin.github.io/tags/mds/</link>
+      <atom:link href="https://teshenglin.github.io/tags/mds/index.xml" rel="self" type="application/rss+xml" />
+    <description>MDS</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 31 Aug 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>MDS</title>
+      <link>https://teshenglin.github.io/tags/mds/</link>
+    </image>
+    
+    <item>
+      <title>Multidimensional scaling</title>
+      <link>https://teshenglin.github.io/post/2020_multi_dimensional_scaling/</link>
+      <pubDate>Mon, 31 Aug 2020 00:00:00 +0000</pubDate>
+      <guid>https://teshenglin.github.io/post/2020_multi_dimensional_scaling/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;Multidimensional scaling, 簡稱 MDS, 是個資料分析或是資料降維的工具.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;這裡我們要談一下從數學角度來說 MDS 的原理及做法, 更具體的說, 這裡講的是 classical MDS.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;p&gt;假設我們有 $n$ 筆 $p$ 維的資料, 記成
+$$
+\{x_1, x_2, \cdots, x_n\} \in R^p
+$$
+那我們可以據此構造出一個距離平方矩陣 $D$, Euclidian distance matrix, 簡稱 EDM, 其中 $D_{ij} = \|x_i-x_j\|^2$.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h5 id=&#34;舉例來說&#34;&gt;舉例來說&lt;/h5&gt;
+&lt;p&gt;以下我們用 Matlab 隨機生出 $R^2$ 空間中的 $5$ 個點, 並求出他的 EDM:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;% Matlab program
+    X = rand(2,5);                                  % R^2 中的 5 個點
+    D = squareform(pdist(X&#39;, &#39;squaredeuclidean&#39;));  % 求出其 EDM
+&lt;/code&gt;&lt;/pre&gt;&lt;pre&gt;&lt;code&gt;D =
+     0    0.3839    0.2333    0.2675    0.6373
+0.3839         0    0.1571    0.1272    0.0470
+0.2333    0.1571         0    0.0028    0.3725
+0.2675    0.1272    0.0028         0    0.3222
+0.6373    0.0470    0.3725    0.3222         0
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;可看出 EDM 一定是個對稱矩陣, 所有元素都非負, 而且對角線元素必為零.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;而 MDS 要做的事是反過來, 假設我們拿到一個 EDM 矩陣, 我想要把它原始生成的點 $x_i$ 找出來. 這樣子的問題稱為 classical MDS.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;classical MDS 處理這些距離用 Euclidean distance 來量出來的矩陣.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;p&gt;要講 MDS 做法之前我們先定義一個矩陣稱為&lt;strong&gt;置中矩陣&lt;/strong&gt; $H$, centering matrix, 也就是把一組資料平移使得其中心為坐標原點:
+$$
+H = I_n - \frac{1}{n}{\bf 1}{\bf 1}^T,
+$$
+其中 $I_n$ 是 $n\times n$ 的單位矩陣, ${\bf 1}$ 則是元素全為 $1$ 的 $n\times 1$ 向量.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;可以輕易看出來 $H$ 是一個對稱矩陣, $H^T=H$.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;若我們將原始資料收集一起成一個 $p\times n$ 矩陣 $X = [x_1, \cdots, x_n]$, 則有
+$$
+X H = X (I_n - \frac{1}{n}{\bf 1}{\bf 1}^T) = X - \frac{1}{n}\left(\sum_i x_i\right) {\bf 1}^T = X - \mu {\bf 1}^T = Y,
+$$
+其中 $\mu=\frac{1}{n}\sum_i x_i$ 就是原始資料的平均, $Y=[y_1, \cdots, y_n]$, $y_i = x_i-\mu$. 所以的確 $XH$ 就是把資料平移使得其中心為坐標原點.&lt;/p&gt;
+&lt;p&gt;推導一下後也可以發現 $H\hat{X}$ 則是將 $\hat{X}$ row space 的資料平移到原點.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;我們有以下這個定理&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;h2 id=&#34;theorem&#34;&gt;Theorem&lt;/h2&gt;
+&lt;p&gt;給定原始資料 $X = [x_1, \cdots, x_n]$, 且其相對應的 EDM 為 $D$, 則我們有
+$$Y^T Y = -\frac{1}{2}HDH.$$&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;這個定理證明很簡單.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;h3 id=&#34;proof&#34;&gt;Proof&lt;/h3&gt;
+&lt;h3 id=&#34;sketch-not-complete-please-full-in-the-details-by-yourself&#34;&gt;(Sketch, not complete, please full-in the details by yourself)&lt;/h3&gt;
+&lt;p&gt;我們先重新整理一下這個 EDM 矩陣:
+$$
+\begin{aligned}
+D_{ij} &amp;amp;= \|x_i-x_j\|^2 = &amp;lt;x_i-x_j, x_i-x_j&amp;gt; \\ &amp;amp;= &amp;lt;x_i, x_i&amp;gt; + &amp;lt;x_j, x_j&amp;gt; - 2&amp;lt;x_i, x_j&amp;gt;
+\end{aligned}
+$$&lt;/p&gt;
+&lt;p&gt;接著我們定義一個 $n\times 1$ 向量 ${\bf k}$, 其中 ${\bf k}_i = &amp;lt;x_i, x_i&amp;gt;$, 則可以將 $D$ 改寫為
+$$D = {\bf k}{\bf 1}^T + {\bf 1}{\bf k}^T - 2 X^TX.$$
+接著兩邊乘上 $H$, 並利用 ${\bf 1}^T H = 0$ 以及 $H {\bf 1} = 0$ (分別將一個常數列向量以及常數行向量置中都會得到零向量), 我們可得
+$$HDH = -2HX^TXH = -2(XH)^T(XH) = -2Y^TY.$$
+故得證.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;p&gt;這個定理告訴我們的是, 如果我們只知道一組資料的 EDM 矩陣 $D$, 那要怎樣把資料給還原回來.&lt;/p&gt;
+&lt;h4 id=&#34;remark&#34;&gt;Remark&lt;/h4&gt;
+&lt;p&gt;當然, 不可能把原始資料完全還原回來! 如同定理中所述我們所能算出的等號左邊是 $Y$, 也就是置中後的原始資料. 事實上我們也很容易想像, 若將一組資料平移或是旋轉後其 EDM 應該是完全不會變的. 也就是說我們若只知道 EDM, 則其原始資料應該有無限多解. 這裡所謂的還原回來是找到其中一組解, 其他所有可能的解則都可以將之&lt;strong&gt;平移&lt;/strong&gt;或&lt;strong&gt;旋轉&lt;/strong&gt;後得到.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;定理等號右邊由於是個對稱矩陣, 所以可以對角化為
+$$
+-\frac{1}{2}HDH = V\Lambda V^T = V\sqrt{\Lambda}\sqrt{\Lambda} V^T,
+$$
+其中 $\Lambda$ 是個對角矩陣包含所有特徵值, 而 $\sqrt{\Lambda}$ 則是將 $\Lambda$ 對角線元素都開根號.&lt;/p&gt;
+&lt;p&gt;跟定理對照一下可以輕易地看出來, 平移後的原始資料點可以被還原出來: $Y = \sqrt{\Lambda}V^T$.&lt;/p&gt;
+&lt;p&gt;這就是 classical MDS 的作法!! 非常簡單.&lt;/p&gt;
+&lt;h4 id=&#34;remark-1&#34;&gt;Remark:&lt;/h4&gt;
+&lt;p&gt;若原始資料 $x_i\in R^p$, 則 $Y^TY$ 的 rank 為 $p$, 必有 $n-p$ 個為零的特徵值. 所以, 若我們將 $-\frac{1}{2}HDH$ 對角化後發現有 $m$ 個為零的特徵值, 表示原資料的 $p=n-m$, 那我們就把這些零特徵值都拿掉, 使 $\sqrt{\Lambda}$ 為一個 $p\times n$ 的矩陣, 這樣我們就有 $Y = \sqrt{\Lambda}V^T \in R^{p\times n}$.&lt;/p&gt;
+&lt;h4 id=&#34;remark-2&#34;&gt;Remark:&lt;/h4&gt;
+&lt;p&gt;若將 $Y$ 做奇異值分解 (Singular Value Decomposition, SVD), 得到
+$$
+Y = \hat{U}\hat{\Sigma}\hat{V}, \quad \hat{U}\in R^{p\times p}, \quad \hat{\Sigma}\in R^{p\times m}, \quad \hat{V}\in R^{m\times m},
+$$
+並且 $\hat{U}\hat{U}^T=I_p$ 以及 $\hat{V}\hat{V}^T=I_m$. 則 $Y^TY = \hat{V}^T\hat{\Sigma}^2\hat{V}$. 對照一下定理可以看出, 如果 $D$ 是個 EDM 矩陣, 那他的 eigenvalues 一定都是非負.&lt;/p&gt;
+&lt;p&gt;依照上面兩個 remark 稍微整理一下 MDS 的做法:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;將 EDM 矩陣 $D$ 做 double centering 並乘以 $-1/2$ 求出 $-\frac{1}{2}HDH$.&lt;/li&gt;
+&lt;li&gt;做對角化得到 $\Lambda$ 以及 $V$&lt;/li&gt;
+&lt;li&gt;拿掉所有零特徵值及其相對應的特徵向量, 求出 $Y = \sqrt{\Lambda}V^T$&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;p&gt;一般來說我們會將 MDS 當成一個降維的工具, 希望在低維度(二或三, 或 $k$)找到一組資料使得其 EDM 與原始資料的 EDM 最像. 而作法就是保留前 $k$ 個特徵值及其特徵向量.&lt;/p&gt;
+&lt;p&gt;給定一個 $n\times n$ 的 EDM 以及欲投影的維度 $k$, MDS 簡單的程式如下:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;% Matlab program
+function Y = multidimensional_scaling(D, k)
+    n = size(D, 1);                         % n 個 samples
+    mu = sum(D, 1)/n; D = D - mu;           %
+    mu = sum(D, 2)/n; B = D - mu;           %
+    B = -0.5*B;                             % B = -0.5*H*D*H
+    [V, D] = eig(B, &#39;vector&#39;);              % 求出特徵值及特徵向量
+    [sqD, ind] = sort(sqrt(D), &#39;descend&#39;);  % 將特徵值按大小排列
+    sqD = sqD(1:k);                         % 取前 k 個
+    V = V(:, ind);                          % 將特徵向量照樣排列
+    Y = V(:,1:k)&#39;.*(sqD*ones(1,n));         % 求出 k 維資料點
+end
+&lt;/code&gt;&lt;/pre&gt;&lt;hr&gt;
+&lt;h2 id=&#34;extension&#34;&gt;Extension&lt;/h2&gt;
+&lt;p&gt;廣義一點的 MDS 可以想像是, 我們拿到的距離也許不是用歐式距離量的. 比如說手裡有許多照片, 照片與照片兩兩之間的距離就有非常多種測量的方式. 而不管是用什麼方式量的, 只要他們是 &lt;strong&gt;距離(metric)&lt;/strong&gt; , 我們就可以定出一個 $D$ 矩陣, 其中 $d_{ij}$ 就是 sample points $x_i$ 與 $x_j$ 之間的距離.&lt;/p&gt;
+&lt;p&gt;接著我們可以定義一個 cost function, 稱之為 stress:
+$$
+Stress_D(x_1, \cdots, x_n) = \left(\sum_i\sum_j\left(d_{ij} - \|x_i-x_j\|\right)^2\right)^{1/2}.
+$$
+Metric Multidimensional scaling (mMDS) 要做的事就是要找到一組資料點 $\{x_1, \cdots, x_n\}$ 使得上式 stress 有最小值.&lt;/p&gt;
+&lt;h4 id=&#34;remark-3&#34;&gt;Remark:&lt;/h4&gt;
+&lt;p&gt;若 $D$ 是用廣義距離造出來的, 就無法保證 $-\frac{1}{2}HDH$ 這矩陣的特徵值都是正的. 不過我們依然可以用 classical MDS 的做法來做, 只是這時候我們會將所有負的特徵值全都丟掉.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;extension-1&#34;&gt;Extension&lt;/h2&gt;
+&lt;p&gt;原始點資料若是在某個 weighted inner product space 裡, 內積定義為
+$$
+&amp;lt;x, y&amp;gt;_Q = x^TQy.
+$$
+則我們可以將原本的定理推廣如下&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;h2 id=&#34;theorem-1&#34;&gt;Theorem&lt;/h2&gt;
+&lt;p&gt;$$Y^T QY = -\frac{1}{2}HDH.$$&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;extension-classical-mds-vs-pca&#34;&gt;Extension: classical MDS v.s. PCA&lt;/h2&gt;
+&lt;p&gt;給定 $n$ 筆 $p$ 維的資料, 記成
+$$
+\{x_1, x_2, \cdots, x_n\} \in R^p,
+$$&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;我們可以造出其 EDM, 再用 classical MDS 投影到 $k$ 維.&lt;/li&gt;
+&lt;li&gt;我們也可以直接用 
+&lt;a href=&#34;https://teshenglin.github.io/post/2020_principal_component_analysis&#34;&gt;PCA&lt;/a&gt; 投影到 $k$ 維.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;有趣的是以上兩個做法得到完全相同的結果.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;不管 PCA 或 classical MDS 最後都是考慮置中後的資料, 所以我們只需看 $Y$ 即可, $y_i = x_i-\mu$, 而 $\mu$ 是平均數.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;PCA 是對 $\Sigma = YY^T$ 做 spectral decomposition&lt;/li&gt;
+&lt;li&gt;classical MDS 是對 $Y^TY$ 做 spectral decomposition&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;若將 $Y$ 做 SVD 得到 $Y = \hat{U}\hat{\Sigma}\hat{V}$, 則&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;PCA 我們知道最後投影的結果為 $B = \hat{\Sigma}\hat{V}$&lt;/li&gt;
+&lt;li&gt;classical MDS 我們也是投影到 $\hat{\Sigma}\hat{V}$&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;所以雖然出發點不同, 不過結果真的一模一樣.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;PCA = classical MDS.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;references&#34;&gt;References:&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://sites.google.com/view/manifoldlearning2020&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;NCTS mini-course on manifold learning&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://liorpachter.wordpress.com/2014/05/26/what-is-principal-component-analysis/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;What is principal component analysis?&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://youtu.be/Yt0o8ukIOKU&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GeostatsGuy Lectures - Multidimensional Scaling&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

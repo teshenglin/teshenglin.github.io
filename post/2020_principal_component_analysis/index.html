@@ -243,7 +243,7 @@
     
       <meta property="article:published_time" content="2020-08-27T00:00:00&#43;00:00">
     
-    <meta property="article:modified_time" content="2020-09-07T15:05:19&#43;08:00">
+    <meta property="article:modified_time" content="2020-09-08T11:00:09&#43;08:00">
   
 
   
@@ -272,7 +272,7 @@
   "headline": "主成分分析",
   
   "datePublished": "2020-08-27T00:00:00Z",
-  "dateModified": "2020-09-07T15:05:19+08:00",
+  "dateModified": "2020-09-08T11:00:09+08:00",
   
   "author": {
     "@type": "Person",
@@ -548,7 +548,7 @@
           Last updated on
       
     
-    Sep 7, 2020
+    Sep 8, 2020
   </span>
   
 
@@ -616,10 +616,11 @@ $$
 $$
 那我們想要做以下等價的兩件事:</p>
 <ol>
-<li>找到一組低維度的投影並且使得資料有最大的變異性</li>
-<li>找到一組低維度的投影並且使得原始資料與投影後的資料之間的&quot;距離平方&quot;最小</li>
+<li>找到一組低維度的投影並且使得資料有<em>最大的變異性</em></li>
+<li>找到一組低維度的投影並且使得原始資料與投影後的資料之間的<em>距離平方和最小</em></li>
 </ol>
-<h4 id="remark-這裡所謂低維度的投影講精確一點-事實上是找到一個低維度的仿射子空間affine-subspace-可以想像成一個不穿過原點的點或直線或平面-找到之後再把原始資料點投影上去">Remark: 這裡所謂低維度的投影講精確一點, 事實上是找到一個低維度的仿射子空間(affine subspace), 可以想像成一個不穿過原點的點或直線或平面, 找到之後再把原始資料點投影上去.</h4>
+<h4 id="remark">Remark:</h4>
+<p>這裡所謂低維度的投影講精確一點, 事實上是找到一個低維度的仿射子空間(affine subspace), 可以想像成一個不穿過原點的點或直線或平面, 找到之後再把原始資料點投影上去.</p>
 <hr>
 <h3 id="example-投影到-0-維">Example: 投影到 $0$ 維</h3>
 <p>先舉一個最簡單的例子, 假設我們想要投影到 $0$ 維, 也就是投影到一個點.</p>
@@ -645,7 +646,7 @@ $$
 </blockquote>
 <hr>
 <h3 id="example-投影到-1-維">Example: 投影到 $1$ 維</h3>
-<p>投影到 $0$ 維也許不是那麼直覺好懂, 接著我們來投影到 $1$ 維試試, 我們直接用圖形來說明:
+<p>投影到 $0$ 維也許過於簡化, 接著我們來投影到 $1$ 維試試, 我們直接用圖形來說明:
 
 
 
@@ -682,22 +683,21 @@ $$
 \sum_{i=1}^n \| x_i - (\mu + U\beta_i)\|^2,
 $$
 其中未知數有 $\mu\in R^p$, $U\in R^{p\times k}$, 以及 $\beta_i\in R^{k\times 1}$.</p>
-<p>稍微解釋一下以上這些變數.</p>
-<p>$\mu$ 最容易想像, 就是 $R^p$ 空間中的一個點, 也是這個 affine subspace 上的一個點. 事實上之後可以輕易算出他是資料的平均值, 也就是投影到 $0$ 維的那個解.</p>
-<p>$U$ 是個 $R^{p\times k}$ 的矩陣, 事實上它的行(columns)就是我們所找的這 affine subspace 的基底. 也就是說, 若我們寫 $U=[u_1, u_2, \cdots, u_k]$, 則 $\{u_1, u_2, \cdots, u_k\}$ 是這 affine subspace 的基底. 我們可以特別要求這基底要正交, 也就是 $U^TU = I_k$, 其中 $I_k$ 表示 $k\times k$ 的 identity matrix.</p>
-<p>最後, $\beta_i$ 可以想像是原始資料第 $i$ 筆投影到 affine subspace 之後的座標, 或是係數.</p>
-<p>也就是說, 事實上這個 affine subspace 可以表示成
+<p>稍微解釋一下以上這些變數:</p>
+<p>事實上這個 affine subspace 可以表示成
 $$
 \mu + V, \quad V = span\{u_1, \cdots, u_k\},
 $$
-而 $\mu + U\beta_i$ 就是 $x_i$ 這個資料點在這 affine subspace 上的投影.</p>
+其中 $\mu$ 是 $R^p$ 空間中的一個點, $\{u_1, u_2, \cdots, u_k\}$ 是這 affine subspace 的基底, 收集在一起構成 $U$, 也就是 $U=[u_1, u_2, \cdots, u_k]$. 而 $\mu + U\beta_i$ 就是 $x_i$ 這個資料點在這 affine subspace 上的投影, 所以 $\beta_i$ 可以想像是原始資料第 $i$ 筆投影到 affine subspace 之後的座標, 或是係數.</p>
+<p>此外, 我們可以特別要求這基底要正交, 也就是 $U^TU = I_k$, 其中 $I_k$ 表示 $k\times k$ 的 identity matrix.</p>
 <hr>
 <p>再稍微整理一下, 我們想要找到 $\mu$, $U$ 以及 $\beta_i$ 使得下式 $E$ 有最小值
 $$
 E = \sum_{i=1}^n \|x_i - (\mu + U\beta_i)\|^2,
 $$
 其中有兩個條件, $U^TU=I_k$, 以及 $\sum^n_{i=1} \beta_i=0$.</p>
-<h4 id="remark-第二個條件-sum_i-beta_i0-看起來似乎是憑空冒出來的-不過這可以從兩方面來說-第一-我們希望投影之後的解他們的平均是-0-所以中心就在新座標原點的位置-第二-數學上來說為了讓解有唯一性我們也需要這樣一個條件">Remark: 第二個條件 $\sum_i \beta_i=0$ 看起來似乎是憑空冒出來的, 不過這可以從兩方面來說. 第一, 我們希望投影之後的解他們的平均是 $0$, 所以中心就在新座標原點的位置. 第二, 數學上來說為了讓解有唯一性我們也需要這樣一個條件.</h4>
+<h4 id="remark-1">Remark:</h4>
+<p>第二個條件 $\sum_i \beta_i=0$ 看起來似乎是憑空冒出來的, 不過這可以從兩方面來說. 第一, 我們希望投影之後的解他們的平均是 $0$, 所以新資料點的中心就在新座標原點的位置. 第二, 數學上來說為了讓解有唯一性我們也需要這樣一個條件.</p>
 <hr>
 <p>這問題可以被完全解出來, 也就是說給定 $x_i$, 我們可以決定出最佳的 $\mu$, $U$ 以及 $\beta_i$ 使得上式的值為最小.</p>
 <blockquote>
@@ -705,43 +705,52 @@ $$
 <a href="/post/2020_principal_component_analysis_2">主成分分析 - 2</a>.</p>
 </blockquote>
 <p>其最佳解整理如下:</p>
-<p>第一, $\mu$ 就如同我們說的是原始資料的平均
+<ol>
+<li>
+<p>$\mu$ 就剛好是投影到 $0$ 維的解, 也就是資料點的平均:
 $$
 \mu = \frac{1}{n}\sum^n_{i=1} x_i
 $$</p>
-<p>第二, 找到平均後我們將所有資料做平移使得中心為原點, 定 $y_i = x_i-\mu$, 求出這組新資料的共變異數矩陣 $\Sigma=YY^T$, 其中 $Y=[y_1, \cdots, y_n]$.</p>
+</li>
+<li>
+<p>找到平均後我們將所有資料做平移使得中心為原點, 定 $y_i = x_i-\mu$, 求出這組新資料的共變異數矩陣 $\Sigma=YY^T$, 其中 $Y=[y_1, \cdots, y_n]$.</p>
 <p>對 $\Sigma$ 做譜分解(spectral decomposition), 找到其最大的 $k$ 個 eigenvalues 以及相對應的 eigenvectors, 將 eigenvectors 收集起來就得到 $U=[u_1, \cdots, u_k]$, 也就是 affine subspace 的 basis.</p>
-<p>第三, 將新資料投影到子空間中得到 $\beta_i$, 也就是
+</li>
+<li>
+<p>將新資料投影到子空間中得到 $\beta_i$, 也就是
 $$
-\beta_i = \sum^n_{j=1}&lt;u_j, y_i&gt;.
+\beta_i = \sum^k_{j=1}&lt;u_j, y_i&gt;.
 $$</p>
+</li>
+</ol>
 <hr>
 <p>一般最基礎的 PCA 做法就是從 $x_i$, 得到 $\mu$, 求出 $y_i$ 以及 $\Sigma$. 接著對 $\Sigma$ 做 eigendecomposition 求出其特徵值及特徵向量. 拿出最大的幾個就可以定出 affine subspace.</p>
 <p>以上這做法的 <code>Matlab</code> 程式如下:</p>
 <blockquote>
-<p>X 是 data matrix 含有 p 個 features 以及 n 個 samples.</p>
+<p>$X$ 是 $p\times n$ 的 data matrix 含有 $p$ 個 features 以及 $n$ 個 samples.</p>
 </blockquote>
 <blockquote>
-<p>投影到 k 維子空間, 投影後的 data matrix 為 B.</p>
+<p>投影到 $k$ 維子空間, 投影後得到 $B$, 為 $k\times n$ 的 data matrix.</p>
 </blockquote>
 <pre><code>% Matlab program
 function B = principal_component_analysis(X, k)
     [p, n] = size(X);               % p 個 features 以及 n 個 samples
     mu = sum(X, 2)/n;               % 計算 sample 的平均
-    Y = X - mu*ones(1,n);                     % 資料平移
+    Y = X - mu*ones(1,n);           % 資料平移
     S = Y*Y';                       % 求出共變異數矩陣
-    [V, D] = eig(S, 'vector');      % 求出特徵值及特徵向量
+    [U, D] = eig(S, 'vector');      % 求出特徵值及特徵向量
     [D, ind] = sort(D, 'descend');  % 將特徵值按大小排列
-    V = V(:, ind);                  % 將特徵向量照樣排列
-    B = V(:,1:k)'*Y;                % 求出投影後的係數
+    U = U(:, ind);                  % 將特徵向量照樣排列
+    B = U(:,1:k)'*Y;                % 求出投影後的係數
 end
-</code></pre><h4 id="remark-這做法會造出一個-ptimes-p-的共變異數矩陣-sigma-並且算出全部的特徵值及特徵向量-不過其實我們只需要前-k-個-所以多出來的部分會丟掉-有點浪費">Remark: 這做法會造出一個 $p\times p$ 的共變異數矩陣 $\Sigma$, 並且算出全部的特徵值及特徵向量. 不過其實我們只需要前 $k$ 個. 所以多出來的部分會丟掉, 有點浪費.</h4>
+</code></pre><h4 id="remark-2">Remark:</h4>
+<p>這做法會造出一個 $p\times p$ 的共變異數矩陣 $\Sigma$, 並且算出全部的特徵值及特徵向量. 不過其實我們只需要前 $k$ 個. 所以多出來的部分會丟掉, 有點浪費.</p>
 <hr>
 <p>我們再來看一下這個共變異數矩陣 $\Sigma=YY^T$, 可以很輕易地看出來這是個對稱矩陣, 所以特徵值一定是實數, 也一定存在 orthonormal 的實數特徵向量組. 因此我們以上的要求(將特徵值按大小排列, 特徵向量要彼此正交)都一定做得到. 而分解之後可以得到
 $$
-\Sigma = V\Lambda V^T,
+\Sigma = U\Lambda U^T,
 $$
-其中 $V$ 是個 $p\times p$ 矩陣.</p>
+其中 $U$ 是個 $p\times p$ 矩陣.</p>
 <p>我們事實上可以將矩陣 $Y$ 做奇異值分解 (Singular Value Decomposition, SVD), 得到
 $$
 Y = \hat{U}\hat{\Sigma}\hat{V}, \quad \hat{U}\in R^{p\times p}, \quad \hat{\Sigma}\in R^{p\times m}, \quad \hat{V}\in R^{m\times m},
@@ -749,17 +758,25 @@ $$
 並且 $\hat{U}\hat{U}^T=I_p$ 以及 $\hat{V}\hat{V}^T=I_m$.</p>
 <p>既然我們有 $\Sigma=YY^T$, 很容易可以看出來其實
 $$
-V = \hat{U}, \quad \Lambda = \hat{\Sigma}\hat{\Sigma}^T.
+U = \hat{U}, \quad \Lambda = \hat{\Sigma}\hat{\Sigma}^T.
 $$
 也就是說將 $Y$ 的 singular values 平方就可以得到 $\Sigma$ 的 eigenvalues. 而 $Y$ 的 left-singular-vector 事實上就是 $\Sigma$ 的 eigenvectors.</p>
+<blockquote>
+<p>以上 $U$ 的 size 與 $\hat{U}$ 明顯不同要如何相等? 事實上若 $Y$ 不是方陣, 則 $\Sigma$ 會有許多零特徵值, 把這些零特徵值相對應的特徵向量都拿掉就會相等了.</p>
+</blockquote>
+<p>而投影後的係數我們可以算一下:
+$$
+B=U^TY = \hat{U}^T\hat{U}\hat{\Sigma}\hat{V} = \hat{\Sigma}\hat{V}.
+$$
+所以只需要將 $Y$ 做 SVD 就夠了!</p>
 <p>因此我們可以將程式改寫如下:</p>
 <pre><code>% Matlab program
 function B = principal_component_analysis2(X, k)
     [p, n] = size(X);               % p 個 features 以及 n 個 samples
     mu = sum(X, 2)/n;               % 計算 sample 的平均
-    Y = X - mu*ones(1,n);                     % 資料平移
-    [V, ~, ~] = svds(Y, k);         % 將 Y 做奇異值分解
-    B = V'*Y;                       % 求出投影後的係數
+    Y = X - mu*ones(1,n);           % 資料平移
+    [~, S, V] = svds(Y, k);         % 將 Y 做奇異值分解並取前 k 個 eigenvectors
+    B = S*V';                       % 求出投影後的係數
 end
 </code></pre><hr>
 <p>而事實上, matlab 已經內建 PCA 程式了, 所以其實完全不用自己寫. 只是要注意一下 matlab 裡 PCA 的輸入 sample points 是 $n\times p$, 由於我們以上都是將 $X$ 設成 $p\times n$ 的矩陣, 所以要轉置一下, 程式只有兩行, 如下:</p>
@@ -834,6 +851,10 @@ X = M(1:3, 1:3)*X + 10*rand(3,1)*ones(1,n); % 將 sample 旋轉並且隨機平�
 </figure>
 </p>
 <p>可以發現 PCA 找到一個正確的軸來做投影, 使得原本的螺旋線可以看得很清楚.</p>
+<hr>
+<h2 id="extension">Extension</h2>
+<p>另一種降維方法: 
+<a href="/post/2020_multi_dimensional_scaling">Multidimensional scaling</a>.</p>
 <hr>
 <h2 id="references">References:</h2>
 <ol>
