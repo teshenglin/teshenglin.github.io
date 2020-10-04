@@ -123,7 +123,7 @@ $$&lt;/p&gt;
 &lt;p&gt;Multidimensional scaling, 簡稱 MDS, 是個資料分析或是資料降維的工具.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;blockquote&gt;
-&lt;p&gt;這裡我們要談一下從數學角度來說 MDS 的原理及做法, 更具體的說, 這裡講的是 classical MDS.&lt;/p&gt;
+&lt;p&gt;這裡我們要談一下從數學角度來說 MDS 的原理及做法, 更精確的說, 這裡講的是 classical MDS.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;hr&gt;
 &lt;p&gt;假設我們有 $n$ 筆 $p$ 維的資料, 記成

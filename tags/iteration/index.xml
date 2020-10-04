@@ -84,6 +84,10 @@ $$&lt;/p&gt;
 &lt;p&gt;當然還有其他更重要的好處, 就是可以推導出所謂的 dual optimization problem: 
 &lt;a href=&#34;https://teshenglin.github.io/post/2020_lagrange_multiplier_2&#34;&gt;Lagrange Multiplier - 02&lt;/a&gt;.&lt;/p&gt;
 &lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Lagrange multiplier $\lambda$ 感覺起來很像一點用都沒有, 就是為了解出問題過程所引進的虛擬變數. 其實它還是有一點意義的, 可見: 
+&lt;a href=&#34;https://teshenglin.github.io/post/2020_lagrange_multiplier_3&#34;&gt;Lagrange Multiplier - 03&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr&gt;
 </description>
