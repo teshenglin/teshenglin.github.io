@@ -29,12 +29,12 @@ $$
 $$
 E = \sum_{i=1}^n \|x_i - (\mu + U\beta_i)\|^2,
 $$
-其中有兩個條件, $U^TU=I_k$, 以及 $\sum^n_{i=1} \beta_i=0$.&lt;/p&gt;
+其中有兩個條件, $U^TU=I_k$, 以及 $\sum^n_{i=1} \beta_i=\vec{0}$.&lt;/p&gt;
 &lt;hr&gt;
 &lt;blockquote&gt;
 &lt;p&gt;要求極值就是要找微分等於零的解, 由於這式子是 convex, 所以保證找到唯一解而且是最小的.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;首先看 $\mu$, 利用 $\sum^n_{i=1} \beta_i=0$ 我們可以得到
+&lt;p&gt;首先看 $\mu$, 利用 $\sum^n_{i=1} \beta_i=\vec{0}$ 我們可以得到
 $$
 \partial_{\mu} E = -2 \left(\sum_i x_i - n\mu\right)=0.
 $$
@@ -392,9 +392,9 @@ $$
 $$
 E = \sum_{i=1}^n \|x_i - (\mu + U\beta_i)\|^2,
 $$
-其中有兩個條件, $U^TU=I_k$, 以及 $\sum^n_{i=1} \beta_i=0$.&lt;/p&gt;
+其中有兩個條件, $U^TU=I_k$, 以及 $\sum^n_{i=1} \beta_i=\vec{0}$.&lt;/p&gt;
 &lt;h4 id=&#34;remark-1&#34;&gt;Remark:&lt;/h4&gt;
-&lt;p&gt;第二個條件 $\sum_i \beta_i=0$ 看起來似乎是憑空冒出來的, 不過這可以從兩方面來說. 第一, 我們希望投影之後的解他們的平均是 $0$, 所以新資料點的中心就在新座標原點的位置. 第二, 數學上來說為了讓解有唯一性我們也需要這樣一個條件.&lt;/p&gt;
+&lt;p&gt;第二個條件 $\sum_i \beta_i=\vec{0}$ 看起來似乎是憑空冒出來的, 不過這可以從兩方面來說. 第一, 我們希望投影之後的解他們的平均是 $0$, 所以新資料點的中心就在新座標原點的位置. 第二, 數學上來說為了讓解有唯一性我們也需要這樣一個條件.&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;這問題可以被完全解出來, 也就是說給定 $x_i$, 我們可以決定出最佳的 $\mu$, $U$ 以及 $\beta_i$ 使得上式的值為最小.&lt;/p&gt;
 &lt;blockquote&gt;

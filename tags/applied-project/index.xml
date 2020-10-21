@@ -4358,13 +4358,13 @@ $$
 其中 $A$ 和 $B$ 是特定飛機的參數，恆為正，$L$ 是升力，即為支撐飛機重量的向上力。 找出使其所需功率最小的速度。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;答案:&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;$$
-\frac{d P}{dv} = 3Av^2 - \frac{BL^2}{v^2} = 0 , \Longrightarrow , v_P = \sqrt[4]{\frac{BL^2}{3A}}
+\frac{d P}{dv} = 3Av^2 - \frac{BL^2}{v^2} = 0 \ \Longrightarrow \ v_P = \sqrt[4]{\frac{BL^2}{3A}}
 $$&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;問題 2:&lt;/strong&gt;	在問題 1 中找到的速度可將功率降至最低，但較快的速度可能會消耗較少的燃料。推動飛機每單位距離所需的能量為 $E=P/v$， 在什麼速度下能使能量最小？&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;答案:&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;$$
-\frac{d E}{dv} = 2Av - \frac{2BL^2}{v^3} = 0 ,\Longrightarrow , v_E = \sqrt[4]{\frac{BL^2}{A}}
+\frac{d E}{dv} = 2Av - \frac{2BL^2}{v^3} = 0 \ \Longrightarrow \  v_E = \sqrt[4]{\frac{BL^2}{A}}
 $$&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;問題 3:&lt;/strong&gt; 最小能量的速度比最小功率的速度快多少？&lt;/p&gt;
@@ -4386,7 +4386,7 @@ $$&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;問題 5:&lt;/strong&gt;  在最小平均功率下$x$的值是多少？ 如果鳥飛得慢，你能得出什麼結論？ 如果這隻鳥飛得越來越快，你能得出什麼結論？&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;答案:&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;$$
-\frac{d P_a}{dx} = A_w v^3 - \frac{B m^2 g^2}{x^2v} = 0 , \Longrightarrow , x = \frac{mg}{v^2}\sqrt{\frac{B}{A_w}}
+\frac{d P_a}{dx} = A_w v^3 - \frac{B m^2 g^2}{x^2v} = 0 \ \Longrightarrow \ x = \frac{mg}{v^2}\sqrt{\frac{B}{A_w}}
 $$
 可以看出$x$與$v^2$成反比，所以&lt;/p&gt;
 &lt;ul&gt;
@@ -4397,7 +4397,7 @@ $$
 &lt;p&gt;&lt;strong&gt;問題 6:&lt;/strong&gt;  一個週期的平均能量為 $E_a=P_a/v$. 試問 $x$ 的值為多少可以使$E_a$最小？&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;答案:&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;$$
-\frac{d E}{dx} = A_w v^2 - \frac{B m^2 g^2}{x^2v^2} = 0 , \Longrightarrow , x = \frac{mg}{v^2}\sqrt{\frac{B}{A_w}}
+\frac{d E}{dx} = A_w v^2 - \frac{B m^2 g^2}{x^2v^2} = 0 \ \Longrightarrow \ x = \frac{mg}{v^2}\sqrt{\frac{B}{A_w}}
 $$&lt;/p&gt;
 &lt;hr&gt;
 </description>
@@ -5358,13 +5358,13 @@ $$&lt;/p&gt;
 &lt;p&gt;where $A$ and $B$ are positive constants specific to the particular aircraft and $L$ is the lift, the upward force supporting the weight of the plane. Find the speed that minimizes the required power.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;$$
-\frac{d P}{dv} = 3Av^2 - \frac{BL^2}{v^2} = 0 , \Longrightarrow , v_P = \sqrt[4]{\frac{BL^2}{3A}}
+\frac{d P}{dv} = 3Av^2 - \frac{BL^2}{v^2} = 0 \ \Longrightarrow \ v_P = \sqrt[4]{\frac{BL^2}{3A}}
 $$&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Question 2:&lt;/strong&gt;	The speed found in Problem 1 minimizes power but a faster speed might use less fuel. The energy needed to propel the airplane a unit distance is​ $E = P/v$ . At what speed is energy minimized?&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;$$
-\frac{d E}{dv} = 2Av - \frac{2BL^2}{v^3} = 0 ,\Longrightarrow , v_E = \sqrt[4]{\frac{BL^2}{A}}
+\frac{d E}{dv} = 2Av - \frac{2BL^2}{v^3} = 0 \ \Longrightarrow \ v_E = \sqrt[4]{\frac{BL^2}{A}}
 $$&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Question 3:&lt;/strong&gt; Hows much faster is the speed for minimum energy than the speed for minimum power?&lt;/p&gt;
@@ -5386,7 +5386,7 @@ $$&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Question 5:&lt;/strong&gt;  For what value of​ $x$ is the average power a minimum? What can you conclude if the bird flies slowly? What can you conclude if the bird flies faster and faster?&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;$$
-\frac{d P_a}{dx} = A_w v^3 - \frac{B m^2 g^2}{x^2v} = 0 , \Longrightarrow , x = \frac{mg}{v^2}\sqrt{\frac{B}{A_w}}
+\frac{d P_a}{dx} = A_w v^3 - \frac{B m^2 g^2}{x^2v} = 0 \ \Longrightarrow \ x = \frac{mg}{v^2}\sqrt{\frac{B}{A_w}}
 $$&lt;/p&gt;
 &lt;p&gt;It can be seen that $x$ is inverse proportional to $v^2$, so,&lt;/p&gt;
 &lt;ul&gt;
@@ -5397,7 +5397,7 @@ $$&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Question 6:&lt;/strong&gt;  The average energy over a cycle is $E_a = P_a/v$. What value of $x$​ minimizes $E_a$?&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;$$
-\frac{d E}{dx} = A_w v^2 - \frac{B m^2 g^2}{x^2v^2} = 0 , \Longrightarrow , x = \frac{mg}{v^2}\sqrt{\frac{B}{A_w}}
+\frac{d E}{dx} = A_w v^2 - \frac{B m^2 g^2}{x^2v^2} = 0 \ \Longrightarrow \ x = \frac{mg}{v^2}\sqrt{\frac{B}{A_w}}
 $$&lt;/p&gt;
 &lt;hr&gt;
 </description>

@@ -29,12 +29,12 @@ $$
 $$
 E = \sum_{i=1}^n \|x_i - (\mu + U\beta_i)\|^2,
 $$
-其中有兩個條件, $U^TU=I_k$, 以及 $\sum^n_{i=1} \beta_i=0$.&lt;/p&gt;
+其中有兩個條件, $U^TU=I_k$, 以及 $\sum^n_{i=1} \beta_i=\vec{0}$.&lt;/p&gt;
 &lt;hr&gt;
 &lt;blockquote&gt;
 &lt;p&gt;要求極值就是要找微分等於零的解, 由於這式子是 convex, 所以保證找到唯一解而且是最小的.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;首先看 $\mu$, 利用 $\sum^n_{i=1} \beta_i=0$ 我們可以得到
+&lt;p&gt;首先看 $\mu$, 利用 $\sum^n_{i=1} \beta_i=\vec{0}$ 我們可以得到
 $$
 \partial_{\mu} E = -2 \left(\sum_i x_i - n\mu\right)=0.
 $$
@@ -392,9 +392,9 @@ $$
 $$
 E = \sum_{i=1}^n \|x_i - (\mu + U\beta_i)\|^2,
 $$
-其中有兩個條件, $U^TU=I_k$, 以及 $\sum^n_{i=1} \beta_i=0$.&lt;/p&gt;
+其中有兩個條件, $U^TU=I_k$, 以及 $\sum^n_{i=1} \beta_i=\vec{0}$.&lt;/p&gt;
 &lt;h4 id=&#34;remark-1&#34;&gt;Remark:&lt;/h4&gt;
-&lt;p&gt;第二個條件 $\sum_i \beta_i=0$ 看起來似乎是憑空冒出來的, 不過這可以從兩方面來說. 第一, 我們希望投影之後的解他們的平均是 $0$, 所以新資料點的中心就在新座標原點的位置. 第二, 數學上來說為了讓解有唯一性我們也需要這樣一個條件.&lt;/p&gt;
+&lt;p&gt;第二個條件 $\sum_i \beta_i=\vec{0}$ 看起來似乎是憑空冒出來的, 不過這可以從兩方面來說. 第一, 我們希望投影之後的解他們的平均是 $0$, 所以新資料點的中心就在新座標原點的位置. 第二, 數學上來說為了讓解有唯一性我們也需要這樣一個條件.&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;這問題可以被完全解出來, 也就是說給定 $x_i$, 我們可以決定出最佳的 $\mu$, $U$ 以及 $\beta_i$ 使得上式的值為最小.&lt;/p&gt;
 &lt;blockquote&gt;
@@ -5846,13 +5846,13 @@ $$
 其中 $A$ 和 $B$ 是特定飛機的參數，恆為正，$L$ 是升力，即為支撐飛機重量的向上力。 找出使其所需功率最小的速度。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;答案:&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;$$
-\frac{d P}{dv} = 3Av^2 - \frac{BL^2}{v^2} = 0 , \Longrightarrow , v_P = \sqrt[4]{\frac{BL^2}{3A}}
+\frac{d P}{dv} = 3Av^2 - \frac{BL^2}{v^2} = 0 \ \Longrightarrow \ v_P = \sqrt[4]{\frac{BL^2}{3A}}
 $$&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;問題 2:&lt;/strong&gt;	在問題 1 中找到的速度可將功率降至最低，但較快的速度可能會消耗較少的燃料。推動飛機每單位距離所需的能量為 $E=P/v$， 在什麼速度下能使能量最小？&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;答案:&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;$$
-\frac{d E}{dv} = 2Av - \frac{2BL^2}{v^3} = 0 ,\Longrightarrow , v_E = \sqrt[4]{\frac{BL^2}{A}}
+\frac{d E}{dv} = 2Av - \frac{2BL^2}{v^3} = 0 \ \Longrightarrow \  v_E = \sqrt[4]{\frac{BL^2}{A}}
 $$&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;問題 3:&lt;/strong&gt; 最小能量的速度比最小功率的速度快多少？&lt;/p&gt;
@@ -5874,7 +5874,7 @@ $$&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;問題 5:&lt;/strong&gt;  在最小平均功率下$x$的值是多少？ 如果鳥飛得慢，你能得出什麼結論？ 如果這隻鳥飛得越來越快，你能得出什麼結論？&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;答案:&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;$$
-\frac{d P_a}{dx} = A_w v^3 - \frac{B m^2 g^2}{x^2v} = 0 , \Longrightarrow , x = \frac{mg}{v^2}\sqrt{\frac{B}{A_w}}
+\frac{d P_a}{dx} = A_w v^3 - \frac{B m^2 g^2}{x^2v} = 0 \ \Longrightarrow \ x = \frac{mg}{v^2}\sqrt{\frac{B}{A_w}}
 $$
 可以看出$x$與$v^2$成反比，所以&lt;/p&gt;
 &lt;ul&gt;
@@ -5885,7 +5885,7 @@ $$
 &lt;p&gt;&lt;strong&gt;問題 6:&lt;/strong&gt;  一個週期的平均能量為 $E_a=P_a/v$. 試問 $x$ 的值為多少可以使$E_a$最小？&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;答案:&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;$$
-\frac{d E}{dx} = A_w v^2 - \frac{B m^2 g^2}{x^2v^2} = 0 , \Longrightarrow , x = \frac{mg}{v^2}\sqrt{\frac{B}{A_w}}
+\frac{d E}{dx} = A_w v^2 - \frac{B m^2 g^2}{x^2v^2} = 0 \ \Longrightarrow \ x = \frac{mg}{v^2}\sqrt{\frac{B}{A_w}}
 $$&lt;/p&gt;
 &lt;hr&gt;
 </description>
@@ -6969,13 +6969,13 @@ $$&lt;/p&gt;
 &lt;p&gt;where $A$ and $B$ are positive constants specific to the particular aircraft and $L$ is the lift, the upward force supporting the weight of the plane. Find the speed that minimizes the required power.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;$$
-\frac{d P}{dv} = 3Av^2 - \frac{BL^2}{v^2} = 0 , \Longrightarrow , v_P = \sqrt[4]{\frac{BL^2}{3A}}
+\frac{d P}{dv} = 3Av^2 - \frac{BL^2}{v^2} = 0 \ \Longrightarrow \ v_P = \sqrt[4]{\frac{BL^2}{3A}}
 $$&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Question 2:&lt;/strong&gt;	The speed found in Problem 1 minimizes power but a faster speed might use less fuel. The energy needed to propel the airplane a unit distance is​ $E = P/v$ . At what speed is energy minimized?&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;$$
-\frac{d E}{dv} = 2Av - \frac{2BL^2}{v^3} = 0 ,\Longrightarrow , v_E = \sqrt[4]{\frac{BL^2}{A}}
+\frac{d E}{dv} = 2Av - \frac{2BL^2}{v^3} = 0 \ \Longrightarrow \ v_E = \sqrt[4]{\frac{BL^2}{A}}
 $$&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Question 3:&lt;/strong&gt; Hows much faster is the speed for minimum energy than the speed for minimum power?&lt;/p&gt;
@@ -6997,7 +6997,7 @@ $$&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Question 5:&lt;/strong&gt;  For what value of​ $x$ is the average power a minimum? What can you conclude if the bird flies slowly? What can you conclude if the bird flies faster and faster?&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;$$
-\frac{d P_a}{dx} = A_w v^3 - \frac{B m^2 g^2}{x^2v} = 0 , \Longrightarrow , x = \frac{mg}{v^2}\sqrt{\frac{B}{A_w}}
+\frac{d P_a}{dx} = A_w v^3 - \frac{B m^2 g^2}{x^2v} = 0 \ \Longrightarrow \ x = \frac{mg}{v^2}\sqrt{\frac{B}{A_w}}
 $$&lt;/p&gt;
 &lt;p&gt;It can be seen that $x$ is inverse proportional to $v^2$, so,&lt;/p&gt;
 &lt;ul&gt;
@@ -7008,7 +7008,7 @@ $$&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Question 6:&lt;/strong&gt;  The average energy over a cycle is $E_a = P_a/v$. What value of $x$​ minimizes $E_a$?&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;$$
-\frac{d E}{dx} = A_w v^2 - \frac{B m^2 g^2}{x^2v^2} = 0 , \Longrightarrow , x = \frac{mg}{v^2}\sqrt{\frac{B}{A_w}}
+\frac{d E}{dx} = A_w v^2 - \frac{B m^2 g^2}{x^2v^2} = 0 \ \Longrightarrow \ x = \frac{mg}{v^2}\sqrt{\frac{B}{A_w}}
 $$&lt;/p&gt;
 &lt;hr&gt;
 </description>
@@ -8559,15 +8559,15 @@ $$\frac{\sin(x)}{x}$$&lt;/p&gt;
       <description>&lt;blockquote&gt;
 &lt;p&gt;這裡我們要介紹 slant asymptotes, 也就是所謂的斜漸近線.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h2 id=&#34;section-1-slant-asymptotes&#34;&gt;Section 1: slant asymptotes#&lt;/h2&gt;
-&lt;p&gt;斜漸近線定義如下:
+&lt;h1 id=&#34;section-1-slant-asymptotes&#34;&gt;Section 1: slant asymptotes&lt;/h1&gt;
+&lt;p&gt;斜漸近線定義如下:&lt;br&gt;
 The line $y=mx+b$, $m\ne 0$, is called a slant asymptote of $f(x)$ if
 $$
 \lim_{x\to\infty} [f(x) - (mx+b)] = 0.
 $$&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Remark:&lt;/strong&gt; 亦可將上列式子中改為 $x\to-\infty$. 滿足此條件的也是斜漸近線. 所以斜漸近線最多有兩條.&lt;/p&gt;
 &lt;hr&gt;
-&lt;h3 id=&#34;section-11-長除法&#34;&gt;Section 1.1: 長除法&lt;/h3&gt;
+&lt;h2 id=&#34;section-11-長除法&#34;&gt;Section 1.1: 長除法&lt;/h2&gt;
 &lt;p&gt;要求得斜漸近線的方法其中之一是長除法. 例如以下這個函數
 $$
 f(x) = \frac{4x^3-10x^2-11x+1}{x^2-3x}.
@@ -8586,7 +8586,7 @@ $$
 $$
 所以 $y=4x+2$ 就是這個函數的斜漸近線.&lt;/p&gt;
 &lt;hr&gt;
-&lt;h3 id=&#34;section-12-直接法&#34;&gt;Section 1.2: 直接法&lt;/h3&gt;
+&lt;h2 id=&#34;section-12-直接法&#34;&gt;Section 1.2: 直接法&lt;/h2&gt;
 &lt;p&gt;不過如果遇到無法做長除法的函數, 以上的招數就失效了. 例如
 $$
 g(x) = \sqrt{x^2-1}+3,
@@ -8636,7 +8636,7 @@ $$
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;hr&gt;
-&lt;h3 id=&#34;section-13-summary&#34;&gt;Section 1.3: Summary&lt;/h3&gt;
+&lt;h2 id=&#34;section-13-summary&#34;&gt;Section 1.3: Summary&lt;/h2&gt;
 &lt;p&gt;總結一下:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;斜漸近線可以用長除法或直接法求得.&lt;/li&gt;

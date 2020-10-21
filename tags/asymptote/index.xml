@@ -20,15 +20,15 @@
       <description>&lt;blockquote&gt;
 &lt;p&gt;這裡我們要介紹 slant asymptotes, 也就是所謂的斜漸近線.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h2 id=&#34;section-1-slant-asymptotes&#34;&gt;Section 1: slant asymptotes#&lt;/h2&gt;
-&lt;p&gt;斜漸近線定義如下:
+&lt;h1 id=&#34;section-1-slant-asymptotes&#34;&gt;Section 1: slant asymptotes&lt;/h1&gt;
+&lt;p&gt;斜漸近線定義如下:&lt;br&gt;
 The line $y=mx+b$, $m\ne 0$, is called a slant asymptote of $f(x)$ if
 $$
 \lim_{x\to\infty} [f(x) - (mx+b)] = 0.
 $$&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Remark:&lt;/strong&gt; 亦可將上列式子中改為 $x\to-\infty$. 滿足此條件的也是斜漸近線. 所以斜漸近線最多有兩條.&lt;/p&gt;
 &lt;hr&gt;
-&lt;h3 id=&#34;section-11-長除法&#34;&gt;Section 1.1: 長除法&lt;/h3&gt;
+&lt;h2 id=&#34;section-11-長除法&#34;&gt;Section 1.1: 長除法&lt;/h2&gt;
 &lt;p&gt;要求得斜漸近線的方法其中之一是長除法. 例如以下這個函數
 $$
 f(x) = \frac{4x^3-10x^2-11x+1}{x^2-3x}.
@@ -47,7 +47,7 @@ $$
 $$
 所以 $y=4x+2$ 就是這個函數的斜漸近線.&lt;/p&gt;
 &lt;hr&gt;
-&lt;h3 id=&#34;section-12-直接法&#34;&gt;Section 1.2: 直接法&lt;/h3&gt;
+&lt;h2 id=&#34;section-12-直接法&#34;&gt;Section 1.2: 直接法&lt;/h2&gt;
 &lt;p&gt;不過如果遇到無法做長除法的函數, 以上的招數就失效了. 例如
 $$
 g(x) = \sqrt{x^2-1}+3,
@@ -97,7 +97,7 @@ $$
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;hr&gt;
-&lt;h3 id=&#34;section-13-summary&#34;&gt;Section 1.3: Summary&lt;/h3&gt;
+&lt;h2 id=&#34;section-13-summary&#34;&gt;Section 1.3: Summary&lt;/h2&gt;
 &lt;p&gt;總結一下:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;斜漸近線可以用長除法或直接法求得.&lt;/li&gt;
