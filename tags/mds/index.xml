@@ -42,9 +42,20 @@ $$
 0.2675    0.1272    0.0028         0    0.3222
 0.6373    0.0470    0.3725    0.3222         0
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;可看出 EDM 一定是個對稱矩陣, 所有元素都非負, 而且對角線元素必為零.&lt;/p&gt;
+&lt;p&gt;可看出 EDM 的幾個性質&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;一定是個對稱矩陣&lt;/li&gt;
+&lt;li&gt;所有元素都非負&lt;/li&gt;
+&lt;li&gt;對角線元素必為零&lt;/li&gt;
+&lt;/ol&gt;
 &lt;hr&gt;
-&lt;p&gt;而 MDS 要做的事是反過來, 假設我們拿到一個 EDM 矩陣, 我想要把它原始生成的點 $x_i$ 找出來. 這樣子的問題稱為 classical MDS.&lt;/p&gt;
+&lt;p&gt;而 MDS 要做的事是以上的反問題:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;假設我們拿到一個 EDM 矩陣, 我想要把它原始生成的點 $x_i$ 找出來.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;這樣子的問題稱為 classical MDS.&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;blockquote&gt;
 &lt;p&gt;classical MDS 處理這些距離用 Euclidean distance 來量出來的矩陣.&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -61,8 +72,8 @@ $$
 $$
 X H = X (I_n - \frac{1}{n}{\bf 1}{\bf 1}^T) = X - \frac{1}{n}\left(\sum_i x_i\right) {\bf 1}^T = X - \mu {\bf 1}^T = Y,
 $$
-其中 $\mu=\frac{1}{n}\sum_i x_i$ 就是原始資料的平均, $Y=[y_1, \cdots, y_n]$, $y_i = x_i-\mu$. 所以的確 $XH$ 就是把資料平移使得其中心為坐標原點.&lt;/p&gt;
-&lt;p&gt;推導一下後也可以發現 $H\hat{X}$ 則是將 $\hat{X}$ row space 的資料平移到原點.&lt;/p&gt;
+其中 $\mu=\frac{1}{n}\sum_i x_i$ 就是原始資料的平均, 而 $Y=[y_1, \cdots, y_n]$, $y_i = x_i-\mu$. 所以的確 $XH$ 就是把資料平移使得其中心為坐標原點.&lt;/p&gt;
+&lt;p&gt;推導一下後也可以發現 $H\hat{X}$ 則是將 $\hat{X}$ 的 rows 做資料平移到原點.&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;我們有以下這個定理&lt;/p&gt;
 &lt;blockquote&gt;
@@ -103,9 +114,9 @@ $$
 &lt;h4 id=&#34;remark-2&#34;&gt;Remark:&lt;/h4&gt;
 &lt;p&gt;若將 $Y$ 做奇異值分解 (Singular Value Decomposition, SVD), 得到
 $$
-Y = \hat{U}\hat{\Sigma}\hat{V}, \quad \hat{U}\in R^{p\times p}, \quad \hat{\Sigma}\in R^{p\times m}, \quad \hat{V}\in R^{m\times m},
+Y = \hat{U}\hat{\Sigma}\hat{V}, \quad \hat{U}\in R^{p\times p}, \quad \hat{\Sigma}\in R^{p\times n}, \quad \hat{V}\in R^{n\times n},
 $$
-並且 $\hat{U}\hat{U}^T=I_p$ 以及 $\hat{V}\hat{V}^T=I_m$. 則 $Y^TY = \hat{V}^T\hat{\Sigma}^2\hat{V}$. 對照一下定理可以看出, 如果 $D$ 是個 EDM 矩陣, 那他的 eigenvalues 一定都是非負.&lt;/p&gt;
+並且 $\hat{U}\hat{U}^T=I_p$ 以及 $\hat{V}\hat{V}^T=I_n$. 則 $Y^TY = \hat{V}^T\hat{\Sigma}^T\hat{\Sigma}\hat{V}$. 對照一下定理可以看出, 如果 $D$ 是個 EDM 矩陣, 那他的 eigenvalues 一定都是非負.&lt;/p&gt;
 &lt;p&gt;依照上面兩個 remark 稍微整理一下 MDS 的做法:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;將 EDM 矩陣 $D$ 做 double centering 並乘以 $-1/2$ 求出 $-\frac{1}{2}HDH$.&lt;/li&gt;
@@ -117,6 +128,11 @@ $$
 &lt;p&gt;給定一個 $n\times n$ 的 EDM 以及欲投影的維度 $k$, MDS 簡單的程式如下:&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;% Matlab program
 function Y = multidimensional_scaling(D, k)
+
+%   Input: D, n*n EDM 矩陣, 元素為距離平方
+%          k, 要降到的維度, k 為正整數, k&amp;lt;n
+%   Output: Y: k*n data matrix, k 個 features 以及 n 個 samples
+
     n = size(D, 1);                         % n 個 samples
     mu = sum(D, 1)/n; D = D - mu;           %
     mu = sum(D, 2)/n; B = D - mu;           %
@@ -124,8 +140,8 @@ function Y = multidimensional_scaling(D, k)
     [V, D] = eig(B, &#39;vector&#39;);              % 求出特徵值及特徵向量
     [sqD, ind] = sort(sqrt(D), &#39;descend&#39;);  % 將特徵值按大小排列
     sqD = sqD(1:k);                         % 取前 k 個
-    V = V(:, ind);                          % 將特徵向量照樣排列
-    Y = V(:,1:k)&#39;.*(sqD*ones(1,n));         % 求出 k 維資料點
+    V = V(:, ind(1:k));                     % 取相對應的特徵向量
+    Y = V&#39;.*(sqD*ones(1,n));                % 求出 k 維資料點
 end
 &lt;/code&gt;&lt;/pre&gt;&lt;hr&gt;
 &lt;h2 id=&#34;extension&#34;&gt;Extension&lt;/h2&gt;
