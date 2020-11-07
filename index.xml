@@ -141,8 +141,8 @@ $$
 &lt;h5 id=&#34;舉例來說&#34;&gt;舉例來說&lt;/h5&gt;
 &lt;p&gt;以下我們用 Matlab 隨機生出 $R^2$ 空間中的 $5$ 個點, 並求出他的 EDM:&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;% Matlab program
-    X = rand(2,5);                                  % R^2 中的 5 個點
-    D = squareform(pdist(X&#39;, &#39;squaredeuclidean&#39;));  % 求出其 EDM
+X = rand(2,5);                                  % R^2 中的 5 個點
+D = squareform(pdist(X&#39;, &#39;squaredeuclidean&#39;));  % 求出其 EDM
 &lt;/code&gt;&lt;/pre&gt;&lt;pre&gt;&lt;code&gt;D =
      0    0.3839    0.2333    0.2675    0.6373
 0.3839         0    0.1571    0.1272    0.0470
@@ -521,7 +521,7 @@ end
 &lt;/code&gt;&lt;/pre&gt;&lt;hr&gt;
 &lt;p&gt;而事實上, matlab 已經內建 PCA 程式了, 所以其實完全不用自己寫. 只是要注意一下 matlab 裡 PCA 的輸入 sample points 是 $n\times p$, 由於我們以上都是將 $X$ 設成 $p\times n$ 的矩陣, 所以要轉置一下, 程式只有兩行, 如下:&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;% Matlab program
-[U, B, ~] = pca(X&#39;);
+[U, B] = pca(X&#39;);
 B = B(:,1:k)&#39;;
 &lt;/code&gt;&lt;/pre&gt;&lt;hr&gt;
 &lt;h1 id=&#34;working-example&#34;&gt;Working example&lt;/h1&gt;
@@ -532,8 +532,9 @@ t = 3*pi*(1:n)/n;                           % 利用參數化來構造, 取 t\in
 X = [t.*cos(t); 5*rand(1,n); t.*sin(t)];    % 先利用 random 構造三圍中的一個面
 M = makehgtform(&#39;axisrotate&#39;,[1 1 1], 30);  % 構造旋轉矩陣
 X = M(1:3, 1:3)*X + 10*rand(3,1)*ones(1,n); % 將 sample 旋轉並且隨機平移
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;其圖形長這樣:
-
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;其圖形長這樣:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;scatter3(X(1,:), X(2,:), X(3,:), [], (1:n)/n, &#39;fill&#39;)
+&lt;/code&gt;&lt;/pre&gt;
 
 
 
@@ -560,9 +561,12 @@ X = M(1:3, 1:3)*X + 10*rand(3,1)*ones(1,n); % 將 sample 旋轉並且隨機平�
 
 
 &lt;/figure&gt;
-&lt;/p&gt;
-&lt;p&gt;接著我們用 PCA 投影到二維, 圖形長這樣:
 
+&lt;p&gt;接著我們用 PCA 投影到二維, 圖形長這樣:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;[~, B] = pca(X&#39;);
+B=B&#39;;
+scatter(B(1,:), B(2,:), [], (1:n)/n, &#39;fill&#39;)
+&lt;/code&gt;&lt;/pre&gt;
 
 
 
@@ -589,7 +593,7 @@ X = M(1:3, 1:3)*X + 10*rand(3,1)*ones(1,n); % 將 sample 旋轉並且隨機平�
 
 
 &lt;/figure&gt;
-&lt;/p&gt;
+
 &lt;p&gt;可以發現 PCA 找到一個正確的軸來做投影, 使得原本的螺旋線可以看得很清楚.&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;extension&#34;&gt;Extension&lt;/h2&gt;

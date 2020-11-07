@@ -33,8 +33,8 @@ $$
 &lt;h5 id=&#34;舉例來說&#34;&gt;舉例來說&lt;/h5&gt;
 &lt;p&gt;以下我們用 Matlab 隨機生出 $R^2$ 空間中的 $5$ 個點, 並求出他的 EDM:&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;% Matlab program
-    X = rand(2,5);                                  % R^2 中的 5 個點
-    D = squareform(pdist(X&#39;, &#39;squaredeuclidean&#39;));  % 求出其 EDM
+X = rand(2,5);                                  % R^2 中的 5 個點
+D = squareform(pdist(X&#39;, &#39;squaredeuclidean&#39;));  % 求出其 EDM
 &lt;/code&gt;&lt;/pre&gt;&lt;pre&gt;&lt;code&gt;D =
      0    0.3839    0.2333    0.2675    0.6373
 0.3839         0    0.1571    0.1272    0.0470

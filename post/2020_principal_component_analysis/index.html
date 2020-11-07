@@ -243,7 +243,7 @@
     
       <meta property="article:published_time" content="2020-08-27T00:00:00&#43;00:00">
     
-    <meta property="article:modified_time" content="2020-11-02T11:21:25&#43;08:00">
+    <meta property="article:modified_time" content="2020-11-07T13:55:24&#43;08:00">
   
 
   
@@ -272,7 +272,7 @@
   "headline": "主成分分析",
   
   "datePublished": "2020-08-27T00:00:00Z",
-  "dateModified": "2020-11-02T11:21:25+08:00",
+  "dateModified": "2020-11-07T13:55:24+08:00",
   
   "author": {
     "@type": "Person",
@@ -548,7 +548,7 @@
           Last updated on
       
     
-    Nov 2, 2020
+    Nov 7, 2020
   </span>
   
 
@@ -802,7 +802,7 @@ end
 </code></pre><hr>
 <p>而事實上, matlab 已經內建 PCA 程式了, 所以其實完全不用自己寫. 只是要注意一下 matlab 裡 PCA 的輸入 sample points 是 $n\times p$, 由於我們以上都是將 $X$ 設成 $p\times n$ 的矩陣, 所以要轉置一下, 程式只有兩行, 如下:</p>
 <pre><code>% Matlab program
-[U, B, ~] = pca(X');
+[U, B] = pca(X');
 B = B(:,1:k)';
 </code></pre><hr>
 <h1 id="working-example">Working example</h1>
@@ -813,8 +813,9 @@ t = 3*pi*(1:n)/n;                           % 利用參數化來構造, 取 t\in
 X = [t.*cos(t); 5*rand(1,n); t.*sin(t)];    % 先利用 random 構造三圍中的一個面
 M = makehgtform('axisrotate',[1 1 1], 30);  % 構造旋轉矩陣
 X = M(1:3, 1:3)*X + 10*rand(3,1)*ones(1,n); % 將 sample 旋轉並且隨機平移
-</code></pre><p>其圖形長這樣:
-
+</code></pre><p>其圖形長這樣:</p>
+<pre><code>scatter3(X(1,:), X(2,:), X(3,:), [], (1:n)/n, 'fill')
+</code></pre>
 
 
 
@@ -841,9 +842,12 @@ X = M(1:3, 1:3)*X + 10*rand(3,1)*ones(1,n); % 將 sample 旋轉並且隨機平�
 
 
 </figure>
-</p>
-<p>接著我們用 PCA 投影到二維, 圖形長這樣:
 
+<p>接著我們用 PCA 投影到二維, 圖形長這樣:</p>
+<pre><code>[~, B] = pca(X');
+B=B';
+scatter(B(1,:), B(2,:), [], (1:n)/n, 'fill')
+</code></pre>
 
 
 
@@ -870,7 +874,7 @@ X = M(1:3, 1:3)*X + 10*rand(3,1)*ones(1,n); % 將 sample 旋轉並且隨機平�
 
 
 </figure>
-</p>
+
 <p>可以發現 PCA 找到一個正確的軸來做投影, 使得原本的螺旋線可以看得很清楚.</p>
 <hr>
 <h2 id="extension">Extension</h2>
