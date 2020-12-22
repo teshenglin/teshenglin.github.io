@@ -102,7 +102,7 @@ $$&lt;/p&gt;
 &lt;p&gt;對 $\Sigma$ 做譜分解(spectral decomposition), 找到其最大的 $k$ 個 eigenvalues 以及相對應的 eigenvectors, 將 eigenvectors 收集起來就得到 $U=[u_1, \cdots, u_k]$, 也就是 affine subspace 的 basis.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;將新資料投影到子空間中得到 $\beta_i$, 也就是
+&lt;p&gt;將平移後的資料投影到子空間中得到 $\beta_i$, 也就是
 $$
 \beta_i = \sum^k_{j=1}&amp;lt;u_j, y_i&amp;gt;.
 $$&lt;/p&gt;
@@ -150,9 +150,9 @@ $$
 &lt;h3 id=&#34;example-投影到-0-維&#34;&gt;Example: 投影到 $0$ 維&lt;/h3&gt;
 &lt;p&gt;先舉一個最簡單的例子, 假設我們想要投影到 $0$ 維, 也就是投影到一個點.&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;也就是說要我們想要找一個點來代表整組資料.
-直覺上來想, 如果我要幫一組資料找一個最具代表性的點, 應該就會用 &amp;ldquo;平均數&amp;rdquo; 或 &amp;ldquo;中位數&amp;rdquo; 來當這個點.
-不過這邊我們需要講清楚的是究竟是以何種機制來做選擇的.&lt;/p&gt;
+&lt;p&gt;也就是說我們想要找一個點來代表整組資料.&lt;/p&gt;
+&lt;p&gt;直覺上來想, 如果我要幫一組資料找一個最具代表性的點, 應該就會用 &amp;ldquo;平均數&amp;rdquo; 或 &amp;ldquo;中位數&amp;rdquo; 來當這個點.&lt;/p&gt;
+&lt;p&gt;不過這邊我們需要講清楚的是究竟是以何種機制來做選擇的.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;PCA 的做法就是要找一個點 $\mu\in R^p$ 使得所有資料點到這個點的距離平方和最小, 也就是要讓下式有最小值
 $$
@@ -244,18 +244,18 @@ $$
 $$&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;找到平均後我們將所有資料做平移使得中心為原點, 定 $y_i = x_i-\mu$, 求出這組新資料的共變異數矩陣 $\Sigma=YY^T$, 其中 $Y=[y_1, \cdots, y_n]$.&lt;/p&gt;
+&lt;p&gt;找到平均後我們將所有資料做平移使得中心為原點, 定 $y_i = x_i-\mu$, 求出這組新資料的共變異數矩陣 $\Sigma=YY^T$, 其中 $Y=[y_1, \cdots, y_n]$ 是個 $p\times n$ 的矩陣, 而 $\Sigma$ 則是 $p\times p$.&lt;/p&gt;
 &lt;p&gt;對 $\Sigma$ 做譜分解(spectral decomposition), 找到其最大的 $k$ 個 eigenvalues 以及相對應的 eigenvectors, 將 eigenvectors 收集起來就得到 $U=[u_1, \cdots, u_k]$, 也就是 affine subspace 的 basis.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;將新資料投影到子空間中得到 $\beta_i$, 也就是
+&lt;p&gt;將原資料投影到此 affine subspace 中得到 $\beta_i$, 也就是
 $$
-\beta_i = \sum^k_{j=1}&amp;lt;u_j, y_i&amp;gt;.
+\beta_i = \sum^k_{j=1}&amp;lt;u_j, (x_i-\mu)&amp;gt;
 $$&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;hr&gt;
-&lt;p&gt;一般最基礎的 PCA 做法就是從 $x_i$, 得到 $\mu$. 將資料平移求出 $y_i$, 接著求共變異數矩陣 $\Sigma$. 接著對 $\Sigma$ 做 eigendecomposition 求出其特徵值及特徵向量. 拿出最大的幾個就可以定出 affine subspace. 然後將 $y_i$ 投影下去就得到 $\beta_i$, 也就是投影之後的座標了.&lt;/p&gt;
+&lt;p&gt;一般最基礎的 PCA 做法就是從 $x_i$, 得到 $\mu$. 將資料平移求出 $y_i$, 接著求共變異數矩陣 $\Sigma$. 接著對 $\Sigma$ 做 eigen-decomposition 求出其特徵值及特徵向量. 拿出最大的幾個就可以定出 affine subspace. 然後將 $y_i$ 投影下去就得到 $\beta_i$, 也就是投影之後的座標了.&lt;/p&gt;
 &lt;p&gt;以上這做法的 &lt;code&gt;Matlab&lt;/code&gt; 程式如下:&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;$X$ 是 $p\times n$ 的 data matrix 含有 $p$ 個 features 以及 $n$ 個 samples.&lt;/p&gt;
@@ -267,7 +267,7 @@ $$&lt;/p&gt;
 function B = principal_component_analysis(X, k)
 
 %   Input: X, p*n data matrix, p 個 features 以及 n 個 samples
-%          k, 要降到的維度, k 為正整數, k&amp;lt;n
+%          k, 要降到的維度, k 為正整數, k&amp;lt;=p
 %   Output: B: k*n data matrix, k 個 features 以及 n 個 samples
 
     [p, n] = size(X);               % p 個 features 以及 n 個 samples
@@ -287,23 +287,24 @@ $$
 \Sigma = U\Lambda U^T,
 $$
 其中 $U$ 是個 $p\times p$ 矩陣.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;事實上由 $\Sigma=YY^T$ 可以知道 $\Sigma$ 一定是個半正定矩陣, 所以它的 eigenvalues 一定都非負.&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;p&gt;我們事實上可以將矩陣 $Y$ 做奇異值分解 (Singular Value Decomposition, SVD), 得到
 $$
-Y = \hat{U}\hat{\Sigma}\hat{V}, \quad \hat{U}\in R^{p\times p}, \quad \hat{\Sigma}\in R^{p\times n}, \quad \hat{V}\in R^{n\times n},
+Y = \hat{U}\hat{\Sigma}\hat{V}^T, \quad \hat{U}\in R^{p\times p}, \quad \hat{\Sigma}\in R^{p\times n}, \quad \hat{V}\in R^{n\times n},
 $$
-並且 $\hat{U}$ 及 $\hat{V}$ 都是 orthogonal matrix, 也就是 $\hat{U}\hat{U}^T=I_p$ 以及 $\hat{V}\hat{V}^T=I_n$.&lt;/p&gt;
+並且 $\hat{U}$ 及 $\hat{V}$ 都是 orthogonal matrix, 也就是 $\hat{U}^T\hat{U}=I_p$ 以及 $\hat{V}^T\hat{V}=I_n$.&lt;/p&gt;
 &lt;p&gt;既然我們有 $\Sigma=YY^T$, 很容易可以看出來其實
 $$
 U = \hat{U}, \quad \Lambda = \hat{\Sigma}\hat{\Sigma}^T\in R^{p\times p}.
 $$
-也就是說將 $Y$ 的 singular values 平方就可以得到 $\Sigma$ 的 eigenvalues. 而 $Y$ 的 left-singular-vector 事實上就是 $\Sigma$ 的 eigenvectors.&lt;/p&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;!-- raw HTML omitted --&gt;
+也就是說將 $Y$ 的 singular values 平方就可以得到 $\Sigma$ 的 eigenvalues. 而 $Y$ 的 left singular vectors 事實上就是 $\Sigma$ 的 eigenvectors.&lt;/p&gt;
 &lt;p&gt;而投影後的係數我們可以算一下:
 $$
-B=U^TY = \hat{U}^T\hat{U}\hat{\Sigma}\hat{V} = \hat{\Sigma}\hat{V}.
+B=U^TY = \hat{U}^T\hat{U}\hat{\Sigma}\hat{V}^T = \hat{\Sigma}\hat{V}^T.
 $$
-所以如果我們只需要投影後的係數, 將 $Y$ 做 SVD 並且我們需要的是 $Y$ 的 right-singular-vector.&lt;/p&gt;
+所以如果我們只需要投影後的係數, 將 $Y$ 做 SVD 並且我們需要的是 $Y$ 的 right singular vectors.&lt;/p&gt;
 &lt;hr&gt;
 &lt;h4 id=&#34;remark-3&#34;&gt;Remark:&lt;/h4&gt;
 &lt;p&gt;以上這式子很有趣, 告訴我們投影之後的座標 $B$ 與投影之前的座標 $Y$ 的 SVD 之間的關係.
@@ -315,7 +316,7 @@ $$
 function B = principal_component_analysis2(X, k)
 
 %   Input: X, p*n data matrix, p 個 features 以及 n 個 samples
-%          k, 要降到的維度, k 為正整數, k&amp;lt;n
+%          k, 要降到的維度, k 為正整數, k&amp;lt;=p
 %   Output: B: k*n data matrix, k 個 features 以及 n 個 samples
 
     [p, n] = size(X);               % p 個 features 以及 n 個 samples

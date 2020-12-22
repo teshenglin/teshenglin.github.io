@@ -28,7 +28,7 @@
 $$
 \{x_1, x_2, \cdots, x_n\} \in R^p
 $$
-那我們可以據此構造出一個距離平方矩陣 $D$, Euclidian distance matrix, 簡稱 EDM, 其中 $D_{ij} = \|x_i-x_j\|^2$.&lt;/p&gt;
+那我們可以據此構造出一個距離平方矩陣 $D$, Euclidian distance matrix, 簡稱 EDM, 其中 $D_{ij} = \|x_i-x_j\|^2$, 也就是 $(x_i)$ 及 $x_j$ 這兩個點距離的平方.&lt;/p&gt;
 &lt;hr&gt;
 &lt;h5 id=&#34;舉例來說&#34;&gt;舉例來說&lt;/h5&gt;
 &lt;p&gt;以下我們用 Matlab 隨機生出 $R^2$ 空間中的 $5$ 個點, 並求出他的 EDM:&lt;/p&gt;
@@ -114,9 +114,9 @@ $$
 &lt;h4 id=&#34;remark-2&#34;&gt;Remark:&lt;/h4&gt;
 &lt;p&gt;若將 $Y$ 做奇異值分解 (Singular Value Decomposition, SVD), 得到
 $$
-Y = \hat{U}\hat{\Sigma}\hat{V}, \quad \hat{U}\in R^{p\times p}, \quad \hat{\Sigma}\in R^{p\times n}, \quad \hat{V}\in R^{n\times n},
+Y = \hat{U}\hat{\Sigma}\hat{V}^T, \quad \hat{U}\in R^{p\times p}, \quad \hat{\Sigma}\in R^{p\times n}, \quad \hat{V}\in R^{n\times n},
 $$
-並且 $\hat{U}\hat{U}^T=I_p$ 以及 $\hat{V}\hat{V}^T=I_n$. 則 $Y^TY = \hat{V}^T\hat{\Sigma}^T\hat{\Sigma}\hat{V}$. 對照一下定理可以看出, 如果 $D$ 是個 EDM 矩陣, 那他的 eigenvalues 一定都是非負.&lt;/p&gt;
+並且 $\hat{U}^T\hat{U}=I_p$ 以及 $\hat{V}^T\hat{V}=I_n$. 則 $Y^TY = \hat{V}\hat{\Sigma}^T\hat{\Sigma}\hat{V}^T$. 對照一下定理可以看出, 如果 $D$ 是個 EDM 矩陣, 那他的 eigenvalues 一定都是非負.&lt;/p&gt;
 &lt;p&gt;依照上面兩個 remark 稍微整理一下 MDS 的做法:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;將 EDM 矩陣 $D$ 做 double centering 並乘以 $-1/2$ 求出 $-\frac{1}{2}HDH$.&lt;/li&gt;
@@ -130,7 +130,7 @@ $$
 function Y = multidimensional_scaling(D, k)
 
 %   Input: D, n*n EDM 矩陣, 元素為距離平方
-%          k, 要降到的維度, k 為正整數, k&amp;lt;n
+%          k, 要降到的維度, k 為正整數, k&amp;lt;=p
 %   Output: Y: k*n data matrix, k 個 features 以及 n 個 samples
 
     n = size(D, 1);                         % n 個 samples
@@ -183,10 +183,10 @@ $$&lt;/p&gt;
 &lt;li&gt;PCA 是對 $\Sigma = YY^T$ 做 spectral decomposition&lt;/li&gt;
 &lt;li&gt;classical MDS 是對 $Y^TY$ 做 spectral decomposition&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;若將 $Y$ 做 SVD 得到 $Y = \hat{U}\hat{\Sigma}\hat{V}$, 則&lt;/p&gt;
+&lt;p&gt;若將 $Y$ 做 SVD 得到 $Y = \hat{U}\hat{\Sigma}\hat{V}^T$, 則&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;PCA 我們知道最後投影的結果為 $B = \hat{\Sigma}\hat{V}$&lt;/li&gt;
-&lt;li&gt;classical MDS 我們也是投影到 $\hat{\Sigma}\hat{V}$&lt;/li&gt;
+&lt;li&gt;PCA 我們知道最後投影的結果為 $B = \hat{\Sigma}\hat{V}^T$&lt;/li&gt;
+&lt;li&gt;classical MDS 我們也是投影到 $\hat{\Sigma}\hat{V}^T$&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;所以雖然出發點不同, 不過結果真的一模一樣.&lt;/p&gt;
 &lt;blockquote&gt;
