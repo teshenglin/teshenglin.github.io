@@ -37,51 +37,22 @@
 &lt;/ol&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;問題壹：&lt;/strong&gt; 請透過加適當條件在「開始下降」和「著陸」這兩個時間點的$P(x)$和$P’(x)$上，來找到一個滿足條件(1.)的三次多項式 $P(x) = ax^3 + bx^2 + cx + d$。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;解：&lt;/strong&gt; \&lt;br&gt;
-在開始下降時:
-$$
-P(\ell) = al^3 +b\ell^2 +c\ell+d = h, \qquad P’(\ell) = 3a\ell^2 +2b\ell+c = 0。
-$$
-至於著陸時:
-$$
-P(0) = 0 \Longrightarrow d = 0, \qquad P’(0)=0 \Longrightarrow c=0。
-$$
-將 $a$, $b$ 的解用 $h$, $l$來表示，我們可以發現
-$$
+&lt;p&gt;&lt;strong&gt;解：&lt;/strong&gt;&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;$$
 P(x) = −\frac{2h}{\ell^3}x^3 + \frac{3h}{\ell^2}x^2。
 $$&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;問題貳：&lt;/strong&gt; 用條件(2.)和(3.)來證明$\frac{6hv^2}{\ell^2}\le k$。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;解：&lt;/strong&gt; \&lt;br&gt;
-由條件(2.)可知，在整個下降過程中，水平速度被假設為定值$v$，因此我們可以把$x$表示為
-$$
-x = \ell - vt, \qquad t\in[0, \frac{\ell}{v}],
-$$
-在這之中，負號代表飛行器是向左飛的。接著多項式$P$能被重新寫成用變數$t$表示的形式
-$$
-P(t) = −\frac{2h}{\ell^3}(\ell - vt)^3 + \frac{3h}{\ell^2}(\ell - vt)^2, \qquad
-\frac{d^2}{dt^2}P(t) = −\frac{12hv^2}{\ell^3}(\ell - vt) + \frac{6hv^2}{\ell^2}。
-$$
-因此，鉛直加速度$a$的值是
-$$
-a(t) = \left|−\frac{12hv^2}{\ell^3}(\ell - vt) + \frac{6hv^2}{\ell^2}\right| = \left|\frac{12hv^3}{\ell^3},t - \frac{6hv^2}{\ell^2}\right|, \qquad t\in[0, \frac{\ell}{v}]。
-$$
-我們能經由極值定理和閉區間法來確認$a$會達到他的最大值$\frac{6hv^2}{\ell^2}$。根據條件(3.)，我們得到
-$$
-\frac{6hv^2}{\ell} \le k。
-$$&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;問題參：&lt;/strong&gt; 假設某航空公司決定不讓飛機的鉛直加速度達到$k = 860(英里/小時^2)$。如果飛機的巡航高度是$35,000$(英尺)且速度是$300$(英里/小時)，飛行員該在距離機場多遠的地方開始下降？&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;解：&lt;/strong&gt; \&lt;br&gt;
-給定$P(x) = −\frac{2h}{\ell^3}x^3 + \frac{3h}{\ell^2}x^2$，假設飛行員在距離機場$\ell$(英里)的地方開始下降。在問題貳當中，我們已經知道 $\frac{6hv^2}{\ell^2}\le k$。所以，
-$$
-v=300\mbox{(mi/h)}, \qquad h=35000\mbox{(ft)} ≈ 6.628\mbox{(mi)}, \qquad k=860\mbox{(mi/h$^2$)},
-$$
-$$
-\frac{6\times 6.628\times (300)^2}{\ell^2} \le 860, \quad \Longrightarrow \quad
-\ell \ge 64.511。
-$$
-也就是說，飛行員應該在距離機場$64.511$(英里)的地方開始下降。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;解：&lt;/strong&gt;&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;飛行員應該在距離機場$64.511$(英里)的地方開始下降。&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;問題肆：&lt;/strong&gt; 請繪製近似圖(假設問題參當中的所有條件都被滿足)&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;解：&lt;/strong&gt;&lt;/p&gt;
@@ -145,52 +116,22 @@ Chinese version:
 constant $k$ (which is much less than the acceleration due to gravity)&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Question 1:&lt;/strong&gt; Find a cubic polynomial $P(x) = ax^3 + bx^2 + cx + d$ that satisfies condition (i) by imposing suitable conditions on $P(x)$ and $P’(x)$ at the start of descent and at touchdown.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt; \&lt;br&gt;
-At the start of descent:
-$$
-P(\ell) = al^3 +b\ell^2 +c\ell+d = h, \qquad P’(\ell) = 3a\ell^2 +2b\ell+c = 0.
-$$
-At touchdown:
-$$
-P(0) = 0 \Longrightarrow d = 0, \qquad P’(0)=0 \Longrightarrow c=0.
-$$
-Solve for $a$, $b$ in terms of $h$, $\ell$ we find
-$$
+&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;$$
 P(x) = −\frac{2h}{\ell^3}x^3 + \frac{3h}{\ell^2}x^2.
 $$&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Question 2:&lt;/strong&gt; Use conditions (ii) and (iii) to show that $\frac{6hv^2}{\ell^2}\le k$.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt; \&lt;br&gt;
-From (ii), a constant horizontal speed $v$ is assumed throughout descent, we can then express $x$ as
-$$
-x = \ell - vt, \qquad t\in[0, \frac{\ell}{v}],
-$$
-where the minus sign indicating flying to the left. The polynomial $P$ can then be re-written in terms of variable $t$ as
-$$
-P(t) = −\frac{2h}{\ell^3}(\ell - vt)^3 + \frac{3h}{\ell^2}(\ell - vt)^2, \qquad
-\frac{d^2}{dt^2}P(t) = −\frac{12hv^2}{\ell^3}(\ell - vt) + \frac{6hv^2}{\ell^2}.
-$$
-Therefore, the vertical acceleration $a$ is
-$$
-a(t) = \left|−\frac{12hv^2}{\ell^3}(\ell - vt) + \frac{6hv^2}{\ell^2}\right| = \left|\frac{12hv^3}{\ell^3},t - \frac{6hv^2}{\ell^2}\right|, \qquad t\in[0, \frac{\ell}{v}].
-$$
-It can be check, from the Extreme Value Theorem and closed interval method, that $a$ attains it&amp;rsquo;s maximum value $\frac{6hv^2}{\ell^2}$.
-From condition (iii), we therefore have
-$$
-\frac{6hv^2}{\ell} \le k.
-$$&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Question 3:&lt;/strong&gt; Suppose that an airline decides not to allow vertical acceleration of a plane to exceed $k = 860$(mi/h$^2$). If the cruising altitude of a plane is $35,000$(ft) and the speed is $300$(mi/h), how far away from the airport should the pilot start descent?&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt; \&lt;br&gt;
-Given $P(x) = −\frac{2h}{\ell^3}x^3 + \frac{3h}{\ell^2}x^2$, suppose the pilot starts to descend when the plane is $\ell$(mi) from the airport. In Q2. we know that $\frac{6hv^2}{\ell^2}\le k$. So,
-$$
-v=300\mbox{(mi/h)}, \qquad h=35000\mbox{(ft)} ≈ 6.628\mbox{(mi)}, \qquad k=860\mbox{(mi/h$^2$)},
-$$
-$$
-\frac{6\times 6.628\times (300)^2}{\ell^2} \le 860, \quad \Longrightarrow \quad
-\ell \ge 64.511.
-$$
-That is, the pilot should start to decend when the plane is $64.511$(mi) away from the airport.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;The pilot should start to decend when the plane is $64.511$(mi) away from the airport.&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Question 4:&lt;/strong&gt; Graph the approach path if the conditions stated in Problem 3 are satisfied.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;

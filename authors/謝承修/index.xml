@@ -42,20 +42,8 @@ $$
 \frac{dA}{dt}=\frac{1}{2}h= c,
 $$
 where $c$ is a constant. This says that the rate at which $A$ is swept out is constant and proves Kepler’s Second Law.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Solution&lt;/strong&gt;：&lt;/p&gt;
-&lt;p&gt;(a)
-$$
-\vec{h} = \vec{r} \times \vec{v} = \vec{r} \times \vec{r}&amp;rsquo; = ( r\cos{\theta} \vec{i} + r\sin{\theta} \vec{j}) \times \frac{d}{dt} (r\cos{\theta} \vec{i} + r\sin{\theta} \vec{j})
-$$
-$$
-= \ \left|\begin{array}{cccc}     i &amp;amp;    j    &amp;amp; k \\   r \cos\theta   &amp;amp;    r \sin\theta   &amp;amp; 0\\    -r \sin\theta \frac{ d\theta }{dt} &amp;amp; r \cos\theta \frac{ d\theta }{dt} &amp;amp; 0 \end{array}\right| = r^2 \frac{d\theta}{dt} \vec{k}
-$$&lt;/p&gt;
-&lt;p&gt;(b)
-$$
-h = |\vec{h}| =  r^2 \frac{d\theta}{dt}.
-$$&lt;/p&gt;
-&lt;p&gt;(c) $dA =  \frac{1}{2} (r)(r d\theta) =  \frac{1}{2} r^2 d\theta$, therefore, $\frac{dA}{dt} =  \frac{1}{2}(r^2 \frac{d\theta}{dt})$&lt;/p&gt;
-&lt;p&gt;(d) Combine (b) and (c), we can infer that $\frac{dA}{dt} =  \frac{1}{2} h =c$, where $c$ is a constant.&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Question 2&lt;/strong&gt;： Let $T$ be the period of a planet about the sun; that is, $T$ is the time required for it to travel once around its elliptical orbit. Suppose that the lengths of the major and minor axes of the ellipse are $2a$ and $2b$.&lt;/p&gt;
 &lt;p&gt;(a) Use part (d) of Problem 1 to show that $T =2\pi ab h$.&lt;/p&gt;
@@ -68,18 +56,8 @@ $$
 T^2=\frac{4\pi^2}{GM}a^3
 $$&lt;/p&gt;
 &lt;p&gt;This proves Kepler’s Third Law. [Notice that the proportionality constant $\frac{4\pi^2}{GM}$ is independent of the planet.]&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Solution&lt;/strong&gt;：&lt;/p&gt;
-&lt;p&gt;(a) We already know that  $\frac{dA}{dt} =  \frac{1}{2} h$, transposing the terms, we get $dt=\frac{2dA}{h}$. Then we integral both sides about one period, we get
-$$
-\int dt =T =\int \frac{2}{h}dA=\frac{2}{h}(\pi ab).
-$$
-Thus, $T=2\pi ab /h$.&lt;/p&gt;
-&lt;p&gt;(b) Recall that $e=\frac{c}{GM}$, and $d=\frac{h^2}{c}$. Therefore, $ed=\frac{h^2}{GM}$.&lt;/p&gt;
-&lt;p&gt;We also know that $\frac{b^2}{a}=l$, where $l$ is the semi-latus rectum of the orbit. By definition, $ed=l$, thus we can infer that $ed=\frac{h^2}{GM}=\frac{b^2}{a}$.&lt;/p&gt;
-&lt;p&gt;(c) Using parts (a) and (b), we know
-$$
-T^2=\frac{4\pi^2a^2b^2}{h^2}=4\pi^2a^2(\frac{a}{GM})=\frac{4\pi^2a^3}{GM}.
-$$&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Quesion 3&lt;/strong&gt;： The period of the earth’s orbit is approximately 365.25 days. Use this fact and Kepler’s Third Law to find the length of the major axis of the earth’s orbit. You will need the mass of the sun, $M=1.99\times 10^{30}kg$, and the gravitational constant, $G=6.67\times10^{-11}N-m^2/kg^2$.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Solution&lt;/strong&gt; ：&lt;/p&gt;
@@ -129,20 +107,8 @@ $$
 \frac{dA}{dt}=\frac{1}{2}h=c,
 $$
 其中 $c$ 是常數. 如此證明了克卜勒第二定律，即面積速率為定值。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;解&lt;/strong&gt;：&lt;/p&gt;
-&lt;p&gt;(a)
-$$
-\vec{h} = \vec{r} \times \vec{v} = \vec{r} \times \vec{r}&amp;rsquo; = ( r\cos{\theta} \vec{i} + r\sin{\theta} \vec{j}) \times \frac{d}{dt} (r\cos{\theta} \vec{i} + r\sin{\theta} \vec{j})
-$$
-$$
-= \ \left|\begin{array}{cccc}     i &amp;amp;    j    &amp;amp; k \\   r \cos\theta   &amp;amp;    r \sin\theta   &amp;amp; 0\\    -r \sin\theta \frac{ d\theta }{dt} &amp;amp; r \cos\theta \frac{ d\theta }{dt} &amp;amp; 0 \end{array}\right| = r^2 \frac{d\theta}{dt} \vec{k}
-$$&lt;/p&gt;
-&lt;p&gt;(b)
-$$
-h = |\vec{h}| =  r^2 \frac{d\theta}{dt}.
-$$&lt;/p&gt;
-&lt;p&gt;(c) $dA =  \frac{1}{2} (r)(r d\theta) =  \frac{1}{2} r^2 d\theta$, 因此, $\frac{dA}{dt} =  \frac{1}{2}(r^2 \frac{d\theta}{dt})$&lt;/p&gt;
-&lt;p&gt;(d) 結合 (b) 和 (c) ,可得 $\frac{dA}{dt} =  \frac{1}{2} h =c$, 其中 $c$ 是常數.&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;問題 2&lt;/strong&gt;： 令 $T$ 是行星繞日之週期，$2a$ 為橢圓軌道長軸，$2b$ 為短軸。&lt;/p&gt;
 &lt;p&gt;(a)利用上題(d)小題證明 $T =2\pi ab /h$.&lt;/p&gt;
@@ -155,18 +121,8 @@ $$
 T^2=\frac{4\pi^2}{GM}a^3
 $$&lt;/p&gt;
 &lt;p&gt;這證明了克卜勒第三定律. [注意比例常數 $\frac{4\pi^2}{GM}$ 與行星無關.]&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;解&lt;/strong&gt;：&lt;/p&gt;
-&lt;p&gt;(a) 已知  $\frac{dA}{dt}$ =  $\frac{1}{2} h$, 移項後可得 $dt=\frac{2dA}{h}$. 兩邊同時積分一個週期, 可得
-$$
-\int dt =T =\int \frac{2}{h}dA=\frac{2}{h}(\pi ab).
-$$
-因此, $T=2\pi ab /h$.&lt;/p&gt;
-&lt;p&gt;(b) 已知 $e=\frac{c}{GM}$, $d=\frac{h^2}{c}$. 因此, $ed=\frac{h^2}{GM}$.&lt;/p&gt;
-&lt;p&gt;又 $\frac{b^2}{a}=l$, 其中 $l$ 為軌道之半正焦弦長. 透過定義, $ed=l$, 可推得 $ed=\frac{h^2}{GM}=\frac{b^2}{a}$.&lt;/p&gt;
-&lt;p&gt;(c) 結合 (a) 和 (b) 小題, 可得
-$$
-T^2=\frac{4\pi^2a^2b^2}{h^2}=4\pi^2a^2(\frac{a}{GM})=\frac{4\pi^2a^3}{GM}.
-$$&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;問題 3&lt;/strong&gt;： 地球公轉周期約為 365.25 天.利用克卜勒第三定律找出半長軸. 其中太陽質量為 $M=1.99\times 10^{30}kg$, 重力常數為 $G=6.67\times10^{-11}N-m^2/kg^2$.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;解&lt;/strong&gt;：&lt;/p&gt;

@@ -33,19 +33,8 @@ $$&lt;/p&gt;
 $$
 v^2=\frac{2gh}{1+I^*},\quad \text{where  } I^*=\frac{I}{mr^2}
 $$&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Answer&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;By the statement, we know that
-$$
-mgh=\frac{1}{2}mv^2+\frac{1}{2}I\omega ^2,\quad v=\omega r
-$$
-By combining two equation above, we can get a new equation
-$$
-mgh=\frac{1}{2}mv^2+\frac{I}{2r^2}v^2=(\frac{1}{2}m+\frac{I}{2r^2})v^2
-$$
-Therefore,
-$$
-v^2 = \frac{2mgh}{m+\frac{I}{r^2}} = \frac{2gh}{1+I^*}
-$$&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Problem 2&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;If $y(t)$ is the vertical distance traveled at time $t$, then the same reasoning as used in Problem 1 shows that $v^2=2gy/(1+I^*)$ at any time t. Use this result to show that $y$ satisfies the differential equation
@@ -53,15 +42,8 @@ $$
 \frac{dy}{dt}= \sqrt{\frac{2g}{1+I^*}}(\sin{\alpha})\sqrt{y}
 $$
 where $\alpha$ is the angle of inclination of the plane.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Answer&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Notice that $dy/dt$ is the y component of velocity $v$, so we have that
-$$
-\frac{dy}{dt}=v_y=v\sin{\alpha}
-$$
-Therefore
-$$
-\frac{dy}{dt}=\sqrt{\frac{2g}{1+I^*}}\sin\alpha\sqrt{y}
-$$&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Problem 3&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;By solving the equation in Problem 2, show that the total travel time is
@@ -69,80 +51,18 @@ $$
 T=\sqrt{\frac{2h(1+I^*)}{g\sin^2\alpha}}
 $$
 This shows that the object with the smallest value of $I^*$ wins the race.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Answer&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Notice that
-$$
-\frac{dy}{dt}\frac{dt}{dy}=1\ (chain\ rule),\quad\frac{dt}{dy}=\frac{1}{\frac{dy}{dt}}
-$$
-There for we can get $dt/dy$
-$$
-\frac{dt}{dy}=\sqrt{\frac{1+I^*}{2g(\sin^2\alpha)y}}
-$$
-By solving this, we can calculate the total travel time. Notice that when $y=0$, $dt/dy$ don&amp;rsquo;t exist, so we need to approach it by using limit
-$$
-\begin{aligned}
-T&amp;amp;=\lim_{x\to 0}\int^h_x\sqrt{\frac{1+I^*}{2g(\sin^2\alpha)y}}dy
-=\sqrt{\frac{2(1+I^*)}{g\sin^2\alpha}}\lim_{x\to 0}\int^h_x\frac{1}{2\sqrt y}dy\\&lt;br&gt;
-&amp;amp;=\sqrt{\frac{2(1+I^*)}{g\sin^2\alpha}}\lim_{x\to 0}\sqrt y|^h_x
-=\sqrt{\frac{2(1+I^*)}{g\sin^2\alpha}}\lim_{x\to 0}\sqrt h-\sqrt x\\&lt;br&gt;
-&amp;amp;=\sqrt{\frac{2h(1+I^*)}{g\sin^2\alpha}}
-\end{aligned}
-$$&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Problem 4&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Show that $I^*=1/2$ for a solid cylinder and $I^*=1$ for a hollow cylinder&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Answer&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;For any object, it&amp;rsquo;s moment of inertia can be calculate as
-$$
-\int\rho_m R^2dV
-$$
-where $\rho_m$ is the density of mass, $R$ is the distance to the rotating axis.&lt;/p&gt;
-&lt;p&gt;For a solid cylinder, it&amp;rsquo;s volume is $\pi r^2 L$, where $L$ is length of the cylinder. Therefore the moment of inertia for solid cylinder can be calculate as
-$$
-I=\int_0^L\int_0^r\int_0^{2\pi}\frac{m}{\pi r^2L}R^2\cdot Rd\theta dRdl
-=\frac{mr^2}{2}
-$$
-Therefore,
-$$
-I^*=\frac{1}{2}
-$$&lt;/p&gt;
-&lt;p&gt;For a hollow cylinder, we suppose that it&amp;rsquo;s internal radius $a\to r$ . It&amp;rsquo;s volume is $\pi L(r^2-a^2)$, thus the the moment of inertia of hollow cylinder can be calculate as
-$$
-\begin{aligned}
-I=&amp;amp;\lim_{a\to r}\int_0^L\int_a^r\int_0^{2\pi}\frac{m}{\pi L(r^2-a^2)}R^2\cdot Rd\theta dRdl\\&lt;br&gt;
-=&amp;amp;\lim_{a\to r}\frac{m(r^4-a^4)}{2(r^2-a^2)}=mr^2
-\end{aligned}
-$$
-Therefore,
-$$
-I^*=1
-$$&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Problem 5&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Calculate $I^*$ for a partly hollow ball with inner radius $a$ and outer radius $r$. Express your answer in terms of $b=a/r$. What happened when as $a\to 0$ and as $a\to r$?&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Answer&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;For a partly hollow ball, it&amp;rsquo;s volume is $(4/3)\pi (r^3-a^3)$, set $z$-axis is the rotate axis, so the distance to the rotate axis $R$ can be express as $\rho\sin\phi$. Therefore, it&amp;rsquo;s moment of inertia can be calculate as
-$$
-\begin{aligned}
-I=&amp;amp;\int_0^{2\pi}\int_0^\pi\int_a^{r}\frac{m}{\frac{4}{3}\pi (r^3-a^3)}\cdot(\rho\sin\phi) ^2\cdot \rho^2\sin\phi\ d\rho d\phi d\theta\\&lt;br&gt;
-=&amp;amp;\frac{m}{\frac{4}{3}\pi (r^3-a^3)}\int_0^{2\pi}d\theta\int_0^\pi\sin^3\phi\ d\phi\int_a^{r}\rho^4d\rho\\&lt;br&gt;
-=&amp;amp;\frac{2m(r^5-a^5)}{5(r^3-a^3)} = \frac{2m(r^4+r^3a+r^2a^2+ra^3+a^4)}{5(r^2+ra+a^2)}
-\end{aligned}
-$$
-when $a\to 0$
-$$
-\begin{aligned}
-\lim_{a\to 0}\frac{2m(r^5-a^5)}{5(r^3-a^3)}&amp;amp;=\frac{2}{5}mr^2\\&lt;br&gt;
-I^*&amp;amp;=\frac{2}{5}
-\end{aligned}
-$$
-when $a\to r$
-$$
-\begin{aligned}
-\lim_{a\to r}\frac{2m(r^5-a^5)}{5(r^3-a^3)}&amp;amp;=\frac2 3mr^2\\&lt;br&gt;
-I^*&amp;amp;=\frac{2}{3}
-\end{aligned}
-$$&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Problem 6&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Show that $I^*=2/5$ for a solid ball and $I^*=2/3$ for a hollow ball. Thus the objects finish in following order: solid ball, solid cylinder, hollow ball, hollow cylinder.&lt;/p&gt;
@@ -176,20 +96,8 @@ $$&lt;/p&gt;
 $$
 v^2=\frac{2gh}{1+I^*},\quad \text{其中  } I^*=\frac{I}{mr^2}
 $$&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;解答&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;自題幹敘述中，我們知道：
-$$
-mgh=\frac{1}{2}mv^2+\frac{1}{2}I\omega ^2,\quad v=\omega r
-$$
-由上述二式可得：
-$$
-mgh=\frac{1}{2}mv^2+\frac{I}{2r^2}v^2=(\frac{1}{2}m+\frac{I}{2r^2})v^2
-$$
-因此，
-$$
-v^2 = \frac{2mgh}{m+\frac{I}{r^2}} = \frac{2gh}{1+I^*}
-$$
-此即本題之解答。&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;問題 2&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;$y(t)$ 為時間 $t$ 時的鉛直下落量。而由問題一可知在不論時間 $t$ 為何，皆有關係式： $v^2=2gy/(1+I^*)$。以此結果證明 $y$ 符合以下微分方程：
@@ -197,16 +105,8 @@ $$
 \frac{dy}{dt}= \sqrt{\frac{2g}{1+I^*}}(\sin{\alpha})\sqrt{y}
 $$
 其中 $\alpha$ 為斜面傾角。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;解答&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;注意到 $dy/dt$ 是速度 $v$ 在 $y$ 方向之分量，故有關係式：
-$$
-\frac{dy}{dt}=v_y=v\sin{\alpha}
-$$
-因此帶入 $v$ 後可將式子改寫：
-$$
-\frac{dy}{dt}=\sqrt{\frac{2g}{1+I^*}}\sin\alpha\sqrt{y}
-$$
-此即本題之解答。&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;問題 3&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;藉由求解問題2之方程式，得出自斜面頂端滾至底端之時長 $T$ 為：
@@ -214,81 +114,18 @@ $$
 T=\sqrt{\frac{2h(1+I^*)}{g\sin^2\alpha}}
 $$
 亦即 $I^*$ 最小之物品將最先滾至底端。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;解答&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;注意到
-$$
-\frac{dy}{dt}\frac{dt}{dy}=1\ (根據鏈鎖律),\quad\frac{dt}{dy}=\frac{1}{\frac{dy}{dt}}
-$$
-因此可得 $dt/dy$
-$$
-\frac{dt}{dy}=\sqrt{\frac{1+I^*}{2g(\sin^2\alpha)y}}
-$$
-求解此方程即可得滾動總時。注意到當 $y=0$ 時， $dt/dy$ 不存在，因此利用極限逼近之
-$$
-\begin{aligned}
-T&amp;amp;=\lim_{x\to 0}\int^h_x\sqrt{\frac{1+I^*}{2g(\sin^2\alpha)y}}dy
-=\sqrt{\frac{2(1+I^*)}{g\sin^2\alpha}}\lim_{x\to 0}\int^h_x\frac{1}{2\sqrt y}dy\\&lt;br&gt;
-&amp;amp;=\sqrt{\frac{2(1+I^*)}{g\sin^2\alpha}}\lim_{x\to 0}\sqrt y|^h_x
-=\sqrt{\frac{2(1+I^*)}{g\sin^2\alpha}}\lim_{x\to 0}\sqrt h-\sqrt x\\&lt;br&gt;
-&amp;amp;=\sqrt{\frac{2h(1+I^*)}{g\sin^2\alpha}}
-\end{aligned}
-$$
-此即本題之解答。&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;問題 4&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;證明實心圓柱之 $I^*=1/2$，空心圓柱之 $I^*=1$。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;解答&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;一物體的轉動慣量可表示為：
-$$
-\int\rho_m R^2dV
-$$
-其中 $\rho_m$ 為密度，$R$ 為與轉軸距離。&lt;/p&gt;
-&lt;p&gt;實心圓柱之體積為 $\pi r^2 L$，其中 $L$ 為柱體長度。因此其轉動慣量可表示如下：
-$$
-I=\int_0^L\int_0^r\int_0^{2\pi}\frac{m}{\pi r^2L}R^2\cdot Rd\theta dRdl
-=\frac{mr^2}{2}
-$$
-因此，
-$$
-I^*=\frac{1}{2}
-$$&lt;/p&gt;
-&lt;p&gt;對於空心圓柱，我們將其視為內徑 $a\to r$，其體積為 $\pi L(r^2-a^2)$。因此其轉動慣量可表示如下：
-$$
-\begin{aligned}
-I=&amp;amp;\lim_{a\to r}\int_0^L\int_a^r\int_0^{2\pi}\frac{m}{\pi L(r^2-a^2)}R^2\cdot Rd\theta dRdl\\&lt;br&gt;
-=&amp;amp;\lim_{a\to r}\frac{m(r^4-a^4)}{2(r^2-a^2)}=mr^2
-\end{aligned}
-$$
-因此，
-$$
-I^*=1
-$$&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;問題 5&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;計算內徑 $a$，外徑 $r$ 之部分空心球體之 $I^&lt;em&gt;$。答案以 $b$ 表示，其中 $b=a/r$。求當 $a\to 0$ 或當 $a\to r$ 時的 $I^&lt;/em&gt;$。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;解答&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;空心球體之體積為 $(4/3)\pi (r^3-a^3)$，設轉軸為 $z$ 軸，一點到轉軸之距離 $R$ 可以球座標中 $\rho\sin\phi$ 表示。因此其轉動慣量為：
-$$
-\begin{aligned}
-I=&amp;amp;\int_0^{2\pi}\int_0^\pi\int_a^{r}\frac{m}{\frac{4}{3}\pi (r^3-a^3)}\cdot(\rho\sin\phi) ^2\cdot \rho^2\sin\phi\ d\rho d\phi d\theta\\&lt;br&gt;
-=&amp;amp;\frac{m}{\frac{4}{3}\pi (r^3-a^3)}\int_0^{2\pi}d\theta\int_0^\pi\sin^3\phi\ d\phi\int_a^{r}\rho^4d\rho\\&lt;br&gt;
-=&amp;amp;\frac{2m(r^5-a^5)}{5(r^3-a^3)} = \frac{2m(r^4+r^3a+r^2a^2+ra^3+a^4)}{5(r^2+ra+a^2)}
-\end{aligned}
-$$
-當 $a\to 0$：
-$$
-\begin{aligned}
-\lim_{a\to 0}\frac{2m(r^5-a^5)}{5(r^3-a^3)}&amp;amp;=\frac{2}{5}mr^2\\&lt;br&gt;
-I^*&amp;amp;=\frac{2}{5}
-\end{aligned}
-$$
-當 $a\to r$：
-$$
-\begin{aligned}
-\lim_{a\to r}\frac{2m(r^5-a^5)}{5(r^3-a^3)}&amp;amp;=\frac2 3mr^2\\&lt;br&gt;
-I^*&amp;amp;=\frac{2}{3}
-\end{aligned}
-$$&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;問題 6&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;說明實心球體的 $I^*=2/5$，而空心球體的 $I^*=2/3$。因此滾至斜面底部的順序為實心球體、實心柱體、空心球體、空心柱體。&lt;/p&gt;
@@ -317,40 +154,18 @@ $$&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;問題 1:&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;假定杯子的高度為 $h$，杯子A的形狀可由 $x=f(y)$ 對 $y$ 軸旋轉而得， 而杯子B則是由同一個曲線對 $x=k$ 旋轉而得。 求$k$使得兩個杯子可裝的咖啡量一樣多。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;解答:&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;杯子A的體積
-$$
-\int_0^{h}\pi[f(y)]^2dy.
-$$
-杯子B的體積
-$$
-\int_0^{h}\pi[k-f(y)]^2dy.
-$$
-設 $V_A=V_B$, 經過計算我們得到
-$$
-\int_0^{h}k^2dy=\int_0^{h}2kf(y)dy.
-$$
-所以
-$$
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;$$
 k=\frac{2\int_0^{h}f(y)dy}{h}.
 $$&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;問題 2:&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;請問問題1的結果與圖中的 $A_1$ and $A_2$ 有何關聯?&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;解答:&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;我們可以看到 $A_1+A_2$ 是一個長方形：$$A_1+A_2=hk$$&lt;/p&gt;
-&lt;p&gt;從問題一的解答我們知道
-$$
-hk=2\int_0^{h}f(y)dy\implies{A_1+A_2}=2\int_0^{h}f(y)dy.
-$$
-又
-$$
-A_1=\int_0^{h}f(y)dy.
-$$
-比較可得
-$$
-A_1+A_2=2\int_0^{h}f(y)dy=2A_1\implies{A_1=A_2}.
-$$
-代表當當杯子A之容積與杯子B相等時，$A_1$ 的面積與 $A_2$相等。&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;當杯子A之容積與杯子B相等時，$A_1$ 的面積與 $A_2$相等。&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;問題3:&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;使用 Pappus&amp;rsquo;s 定理解釋問題1和問題2之結果。&lt;/p&gt;
@@ -358,38 +173,8 @@ $$
 &lt;blockquote&gt;
 &lt;p&gt;使$R$為一個平面區域，在這個區域外有同一平面上的一條直線$I$。若$R$以$I$為軸旋轉時，產生的旋轉體體積為$R$的面積$A$和區域重心的所經過的路徑長$d$的乘積。&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;&lt;strong&gt;解答:&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;使用這個理論之前，我們需要找到 $A_1$ 和 $A_2$ 的重心。&lt;/p&gt;
-&lt;p&gt;對於任意平面，其重心位於點 $(C_x,C_y)$, 且
-$$
-C_x=\frac{\int_a^{b}xf(x)dx}{\int_a^{b}f(x)dx};C_y=\frac{\int_a^{b}\frac{1}{2}[f(x)]^2dx}{\int_a^{b}f(x)dx}.
-$$
-對於$A_1$而言
-$$
-C_{x_1}=\frac{\int_0^{h}\frac{1}{2}[f(y)]^2dy}{\int_0^{h}f(y)dy}=\frac{1}{2A_1}\int_0^{h}[f(y)]^2dy.
-$$
-對於$A_2$而言
-$$
-C_{x_2}=\frac{\int_0^{h}\frac{1}{2}\left(k^2-[f(y)]^2\right)dy}{\int_0^{h}k-f(y)dy}=\frac{1}{2A_2}\int_0^{h}k^2-[f(y)]^2dy.
-$$
-現在我們有了$A_1$和$A_2$，便可以使用Pappus&amp;rsquo;s Theorom計算A杯和B杯的體積了。&lt;/p&gt;
-&lt;p&gt;A杯體積
-$$
-2\pi{C_{x_1}}{A_1}=\pi\int_0^{h}[f(y)]^2dy.
-$$
-B杯體積
-$$
-2\pi(k-C_{x_2})A_2=2\pi k A_2 - \pi k^2 h + \pi \int_0^{h}[f(y)]^2dy.
-$$
-所以如果兩個體積要一樣我們得到
-$$
-2\pi k A_2 - \pi k^2 h=0, \implies k = \frac{2A_2}{h}.
-$$
-又根據 $A_1+A_2 = hk$, 我們可以輕易的算出
-$$
-k = \frac{2A_2}{h} = \frac{2hk - 2A_1}{h}, \implies k = \frac{2A_1}{h},
-$$
-我們可以得到跟問題1一樣的答案&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
 &lt;hr&gt;
 </description>
     </item>

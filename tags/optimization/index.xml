@@ -1492,16 +1492,8 @@ $$
 &lt;p&gt;(c) 畫出$L_1$、$f$和 $L_2$，以圖形證實軌道之間的接點是平滑的。&lt;/p&gt;
 &lt;p&gt;(d) 找出$P$和$Q$之間的垂直距離。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;解答:&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;假設 $P$ 點在 $(0,0)$，$Q$ 點在 $(30,y_q)$, 則
-$$
-f&amp;rsquo;(0)=b=0.8, \quad f&amp;rsquo;(30)=60a+b=-1.6
-$$
-解出方程式後，我們可以得到 $a=-0.04$，$b=0.8$。至於 $c$，$f(0)=c=0$。&lt;/p&gt;
-&lt;p&gt;因此我們得到
-$$
-f(x)=-0.04x^2+0.8x
-$$&lt;/p&gt;
-&lt;p&gt;運用已經得到的 $f(x)$ ，我們可以找到 $y_q=f(30)=-12$，因此 $P$ 和 $Q$ 之間的垂直距離為12公尺。&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
 &lt;p&gt;下圖是這些函數的圖形：&lt;/p&gt;
 
 
@@ -1545,49 +1537,8 @@ $$&lt;/p&gt;
 &lt;p&gt;(b) 利用電腦計算系統解出第(a)小題的等式，以找出$q(x)$、$g(x)$和$h(x)$的方程式。&lt;/p&gt;
 &lt;p&gt;(c) 畫出 $L_1$、 $g$、 $q$、 $h$和 $L_2$，並與問題一的第(c)小題的圖形相互比較。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;解答:&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;我們可以列出下列三個方程式：
-$$
-g(x)=kx^3+lx^2+mx+n, \quad 0 \leq x \leq 3,
-$$
-$$
-q(x)=a(x-3)^2+b(x-3)+c, \quad 3 \leq x \leq 27,
-$$
-$$
-h(x)=p(x-30)^3+q(x-30)^2+r(x-30)+s, \quad 27 \leq x \leq 30.
-$$
-根據文章，我們可以列出11個等式進而解出11個未知數：
-$$
-g(0)=0,\quad g&amp;rsquo;(0)=0.8,\quad g&amp;rsquo;&#39;(0)=0,
-$$
-$$
-g(3)=q(3),\quad g&amp;rsquo;(3)=q&amp;rsquo;(3),\quad g&amp;rsquo;&#39;(3)=q&amp;rsquo;&#39;(3),
-$$
-$$
-q(27)=h(27),\quad q&amp;rsquo;(27)=h&amp;rsquo;(27),\quad q&amp;rsquo;&#39;(27)=h&amp;rsquo;&#39;(27),
-$$
-$$
-h&amp;rsquo;(30)=-1.6,\quad h&amp;rsquo;&#39;(30)=0.
-$$
-經過一連串複雜的運算，我們解出了11個未知數：
-$$
-k=-\frac{2}{405},\quad l=0,\quad m=\frac{4}{5},\quad n=0,
-$$
-$$
-a=-\frac{2}{45},\quad b=\frac{2}{3},\quad c=\frac{34}{15},
-$$
-$$
-p=\frac{2}{405},\quad q=0,\quad r=-\frac{8}{5},\quad s=-12.
-$$
-根據上表所解出的係數，以下為更加平滑的軌道函數：
-$$
-g(x)=-\frac{2}{405}x^3+\frac{4}{5}x, \quad 0 \leq x \leq 3,
-$$
-$$
-q(x)=-\frac{2}{45}(x-3)^2+\frac{2}{3}(x-3)+\frac{34}{15}, \quad 3 \leq x \leq 27,
-$$
-$$
-h(x)=\frac{2}{405}(x-30)^3-\frac{8}{5}(x-30)-12, \quad 27 \leq x \leq 30.
-$$&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
 &lt;p&gt;以下為更加平滑的軌道的圖形：
 
 
@@ -1618,21 +1569,8 @@ $$&lt;/p&gt;
 &lt;/figure&gt;
 
 紅線是$g(x)$的圖形，藍線是$q(x)$的圖形，綠線是$h(x)$的圖形。&lt;/p&gt;
-&lt;p&gt;如果我們只以肉眼觀察圖形，基本上我們無法分辨原本的軌道及更加平滑的軌道的差別。然而，如果我們開始對它作微分：
-$$
-g&amp;rsquo;(0)=\frac{4}{5}=L_1&amp;rsquo;, \quad g&amp;rsquo;&#39;(0)=0=L_1&amp;rsquo;&#39;.
-$$
-觀察 $g$ 和 $L_1$，除了一次微分相同，他們的二次微分也相同，這表示這條軌道比起原先的軌道來的更加平滑，因爲雖然原先的軌道接點與接點之間的一次微分相同，但是二次微分並不同。&lt;/p&gt;
-&lt;p&gt;更加平滑的軌道的其他接點也能得到相同的答案：
-$$
-g&amp;rsquo;(3)=\frac{2}{3}=q&amp;rsquo;(3), \quad g&amp;rsquo;&#39;(3)=-\frac{4}{45}=q&amp;rsquo;&#39;(3),
-$$
-$$
-q&amp;rsquo;(27)=-\frac{22}{15}=h&amp;rsquo;(27), \quad q&amp;rsquo;&#39;(27)=-\frac{4}{45}=h&amp;rsquo;&#39;(27),
-$$
-$$
-h&amp;rsquo;(30)=-\frac{8}{5}=L_2&amp;rsquo;, \quad h&amp;rsquo;&#39;(30)=0=L_2&amp;rsquo;&#39;.
-$$&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
 &lt;hr&gt;
 </description>
     </item>
@@ -1658,30 +1596,8 @@ and
 $$
 b^2 = (3+x\cos{\alpha})^2+(x\sin{\alpha} - 1.8)^2
 $$&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Make the position of screen and seat geocoding:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Set the origin at the floor under the screen$(0,0)$&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;The bottom edge of the screen is $(0,3)$, the upper edge is $(0,13)$&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;The distance up the incline that you sit is $x$ meter, so the coordinates of the seat is the coordinate of the first row that moves $x\cos{\alpha}$ to the right and moves $x\sin{\alpha}$ to the up.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;The coordinates of first row of seats is $(3,0)$, so the coordinates of your seat is $(3+x\cos{\alpha}, x\sin{\alpha})$, the coordinates of your eyes is $(3+x\cos{\alpha}, 1.2+x\sin{\alpha})$&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;The square of the distance of your eyes and the upper edge of the screen $=(3+x\cos{\alpha})^2+(11.8-x\sin{\alpha})^2=a^2$&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;The square of the distance of your eyes and the bottom edge of the screen $=(3+x\cos{\alpha})^2+(x\sin{\alpha} - 1.8)^2=b^2$&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Finally, by law of cosines: $\cos{\theta}=\frac{a^2+b^2-100}{2ab}$, so
-$\theta = \cos^{-1}\left(\frac{a^2+b^2-100}{2ab}\right)$.&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Question 2:&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Use a graph of $\theta$ as a function of $x$ to estimate the value of $x$ that maximizes $\theta$. In which row should you sit? What is the viewing angle $\theta$ in this row? What is the angle $\theta$ subtended by the screen at your eyes?&lt;/p&gt;
@@ -1890,21 +1806,8 @@ $$
 $$
 b^2 = (3+x\cos{\alpha})^2+(x\sin{\alpha} - 1.8)^2
 $$&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;回答:&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;將螢幕與位子的位置座標化:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;設螢幕下的地板為原點$(0,0)$&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;螢幕下緣為 $(0,3)$，上緣為 $(0,13)$&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;你的位子在斜坡上$x$公尺，因此位子的座標為第一排位子的座標向右推移 $x\cos{\alpha}$ 且向上推移 $x\sin{\alpha}$。&lt;/p&gt;
-&lt;p&gt;第一排位子的座標為$(3,0)$，因此你的位子座標為 $(3+x\cos{\alpha}, x\sin{\alpha})$，且你眼睛的座標為 $(3+x\cos{\alpha}, 1.2+x\sin{\alpha})$。&lt;/p&gt;
-&lt;p&gt;眼睛跟螢幕上緣的距離的平方 $=(3+x\cos{\alpha})^2+(11.8-x\sin{\alpha})^2=a^2$。&lt;/p&gt;
-&lt;p&gt;眼睛跟螢幕下緣的距離的平方 $= (3+x\cos{\alpha})^2+(x\sin{\alpha} - 1.8)^2=b^2$。&lt;/p&gt;
-&lt;p&gt;利用餘弦定理: $\cos{\theta}=\frac{a^2+b^2-100}{2ab}$，因此 $\theta = \cos^{-1}\left(\frac{a^2+b^2-100}{2ab}\right)$。&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;問題 2:&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;利用 $\theta$ 與 $x$ 的函數圖形找出 $\theta$ 的最大值。你該坐在哪一排? 你在那一排的視角 $\theta$ 是幾度?&lt;/p&gt;
@@ -2130,37 +2033,13 @@ $$
 \lim_{\lambda\to\infty} f(\lambda) = 0
 $$&lt;/p&gt;
 &lt;p&gt;for Planck&amp;rsquo;s Law. So this law models blackbody radiation better than the Rayleigh-Jeans Law for short wavelengths.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Let $a=8\pi hc$, $b=\frac{hc}{kT}$, so that $f(\lambda)=\frac{a\lambda ^{-5}}{e^{b/\lambda}-1}$.&lt;/p&gt;
-&lt;p&gt;We then have
-$$
-\lim_{\lambda\to\infty} f(\lambda)=\lim_{\lambda\to\infty}\frac{a\lambda ^{-5}}{e^{b/\lambda}-1}= \lim_{\lambda\to\infty}\frac{-5a\lambda^{-6}}{-\frac{b}{\lambda^2}e^{b/\lambda}}=\frac{5a}b\lim_{\lambda\to\infty}\frac{\lambda^{-4}}{e^{b/\lambda }} = 0
-$$
-Similarly, with l&amp;rsquo;Hospital&amp;rsquo;s Rule we obtain
-$$
-\lim_{\lambda\to0^+}f(\lambda)=\frac{5a}b\lim_{\lambda\to\infty}\frac{\lambda^{-4}}{e^{b/\lambda }}=\frac{20a}{b^2}\lim_{\lambda\to0^+}\frac{\lambda^{-3}}{e^{b/\lambda}}
-$$
-After using l&amp;rsquo;Hospital&amp;rsquo;s Rule four times, we obtain
-$$
-\lim_{\lambda\to0^+}f(\lambda) = 0
-$$&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Question 2:&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Use a Taylor polynomial to show that, for large wavelengths, Planck&amp;rsquo;s Law gives approximately the same values as the Rayleigh-Jeans Law.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Taylor series expansion for $e^x$ is given as
-$$
-e^x=1+x+\frac{x^2}{2!}+\frac{x^3}{3!}+&amp;hellip;
-$$
-For large enough $\lambda$, all subsequent terms in the Taylor expansion are very small compared to the first one, so we can approximate using the Taylor polynomial $T_1$:
-$$
-e^{{hc}/{\lambda k T}} - 1\approx 1 + \frac{hc}{\lambda k T} -1 = \frac{hc}{\lambda k T}
-$$
-Therefore
-$$
-f(\lambda)\approx\frac{8\pi h c \lambda^{-5}}{\frac{hc}{\lambda k T}}=\frac{8\pi k T}{\lambda^4}
-$$
-which is exactly the same as the Rayleigh-Jeans Law.&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Question 3:&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Graph $f$ as given by both laws on the same screen and comment on the similarities and differences. Use $T=5700$K (the temperature of the Sun ). (You may want to change from meters to the more convenient unit of micrometers: $1\mu$m $=10^{-6}$m.)&lt;/p&gt;
@@ -2259,40 +2138,18 @@ which is exactly the same as the Rayleigh-Jeans Law.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;問題 1:&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;假定杯子的高度為 $h$，杯子A的形狀可由 $x=f(y)$ 對 $y$ 軸旋轉而得， 而杯子B則是由同一個曲線對 $x=k$ 旋轉而得。 求$k$使得兩個杯子可裝的咖啡量一樣多。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;解答:&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;杯子A的體積
-$$
-\int_0^{h}\pi[f(y)]^2dy.
-$$
-杯子B的體積
-$$
-\int_0^{h}\pi[k-f(y)]^2dy.
-$$
-設 $V_A=V_B$, 經過計算我們得到
-$$
-\int_0^{h}k^2dy=\int_0^{h}2kf(y)dy.
-$$
-所以
-$$
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;$$
 k=\frac{2\int_0^{h}f(y)dy}{h}.
 $$&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;問題 2:&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;請問問題1的結果與圖中的 $A_1$ and $A_2$ 有何關聯?&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;解答:&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;我們可以看到 $A_1+A_2$ 是一個長方形：$$A_1+A_2=hk$$&lt;/p&gt;
-&lt;p&gt;從問題一的解答我們知道
-$$
-hk=2\int_0^{h}f(y)dy\implies{A_1+A_2}=2\int_0^{h}f(y)dy.
-$$
-又
-$$
-A_1=\int_0^{h}f(y)dy.
-$$
-比較可得
-$$
-A_1+A_2=2\int_0^{h}f(y)dy=2A_1\implies{A_1=A_2}.
-$$
-代表當當杯子A之容積與杯子B相等時，$A_1$ 的面積與 $A_2$相等。&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;當杯子A之容積與杯子B相等時，$A_1$ 的面積與 $A_2$相等。&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;問題3:&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;使用 Pappus&amp;rsquo;s 定理解釋問題1和問題2之結果。&lt;/p&gt;
@@ -2300,38 +2157,8 @@ $$
 &lt;blockquote&gt;
 &lt;p&gt;使$R$為一個平面區域，在這個區域外有同一平面上的一條直線$I$。若$R$以$I$為軸旋轉時，產生的旋轉體體積為$R$的面積$A$和區域重心的所經過的路徑長$d$的乘積。&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;&lt;strong&gt;解答:&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;使用這個理論之前，我們需要找到 $A_1$ 和 $A_2$ 的重心。&lt;/p&gt;
-&lt;p&gt;對於任意平面，其重心位於點 $(C_x,C_y)$, 且
-$$
-C_x=\frac{\int_a^{b}xf(x)dx}{\int_a^{b}f(x)dx};C_y=\frac{\int_a^{b}\frac{1}{2}[f(x)]^2dx}{\int_a^{b}f(x)dx}.
-$$
-對於$A_1$而言
-$$
-C_{x_1}=\frac{\int_0^{h}\frac{1}{2}[f(y)]^2dy}{\int_0^{h}f(y)dy}=\frac{1}{2A_1}\int_0^{h}[f(y)]^2dy.
-$$
-對於$A_2$而言
-$$
-C_{x_2}=\frac{\int_0^{h}\frac{1}{2}\left(k^2-[f(y)]^2\right)dy}{\int_0^{h}k-f(y)dy}=\frac{1}{2A_2}\int_0^{h}k^2-[f(y)]^2dy.
-$$
-現在我們有了$A_1$和$A_2$，便可以使用Pappus&amp;rsquo;s Theorom計算A杯和B杯的體積了。&lt;/p&gt;
-&lt;p&gt;A杯體積
-$$
-2\pi{C_{x_1}}{A_1}=\pi\int_0^{h}[f(y)]^2dy.
-$$
-B杯體積
-$$
-2\pi(k-C_{x_2})A_2=2\pi k A_2 - \pi k^2 h + \pi \int_0^{h}[f(y)]^2dy.
-$$
-所以如果兩個體積要一樣我們得到
-$$
-2\pi k A_2 - \pi k^2 h=0, \implies k = \frac{2A_2}{h}.
-$$
-又根據 $A_1+A_2 = hk$, 我們可以輕易的算出
-$$
-k = \frac{2A_2}{h} = \frac{2hk - 2A_1}{h}, \implies k = \frac{2A_1}{h},
-$$
-我們可以得到跟問題1一樣的答案&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
 &lt;hr&gt;
 </description>
     </item>
@@ -2382,32 +2209,8 @@ $$&lt;/p&gt;
 &lt;/figure&gt;
 
 &lt;p&gt;證明偏差角在 $\alpha\approx 59.4^{\circ}$ 時會有最小值 $\alpha\approx 59.4^{\circ}$。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;回答：&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;讓我們回想一下斯涅爾定律：
-$$
-\sin\alpha = \frac{4}{3}\sin\beta. \qquad \qquad (1)
-$$
-我們測試該角度與 $\alpha$ 作為 $\beta$ 的函數，並根據斯涅爾定律對 $\alpha$ 作導數運算，得到：
-$$
-\cos\alpha = \frac{4}{3}\cos\beta\frac{d\beta}{d\alpha}.
-$$
-為了得到 $D(\alpha)$ 的最小值，我們要找到 $D’(\alpha)=0$ ：
-$$
-D&amp;rsquo;(\alpha) = 2 - 4\frac{d\beta}{d\alpha} = 0 \Rightarrow
-\frac{d\beta}{d\alpha} = \frac1 2 = \frac{3\cos\alpha}{4\cos\beta}.
-$$
-然後我們得到：
-$$
-2\cos\beta = 3\cos\alpha. \qquad \qquad (2)
-$$
-然後我們聯立 (1) 和 (2) 得到：
-$$
-\cos\alpha = \sqrt\frac{7}{27}, \Rightarrow \alpha = \arccos\sqrt\frac{7}{27} \approx 59.4^\circ
-$$
-所以我們找到最小值：
-$$
-D(59.4^\circ)\approx138^\circ.
-$$&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
 &lt;hr&gt;
 &lt;p&gt;最小偏差角的意義是當$\alpha\approx 59.4^{\circ}$ 時，我們知道 $D’(\alpha)\approx 0$，則 $\frac{\Delta D}{\Delta \alpha}\approx 0$ 。這代表當很多光束在 $\alpha\approx 59.4^{\circ}$ 時偏差大約相同，而正是因為接近最小偏差方向的光線集中產生主彩虹的亮度。下面這張圖顯示了從觀察者到彩虹最高點的仰角為 $180^{\circ}- 138^{\circ} = 42^{\circ}$（這個角度就叫做彩虹角）。&lt;/p&gt;
 
@@ -2440,29 +2243,8 @@ $$&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;問題二：&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;問題1解釋了主彩虹的位置，那我們要如何解釋顏色呢？陽光的波長範圍從紅色到橙色，黃色，綠色，藍色，靛藍和紫色。正如牛頓在1666年的棱鏡實驗中發現的那樣，每種顏色的折射率都不同（這種效果稱為色散）。紅光的折射率為 $k \approx 1.3318$，紫光的折射率為 $k\approx 1.3435$。透過對的這些值 $k$ 重複問題1的計算，證明紅色光道的彩虹角是 $42.3^{\circ}$ 而紫色光道的彩虹角是 $40.6^{\circ}$ 。因此，彩虹實際上是由對應於這七個顏色的七個單獨的光道組成的。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;回答：&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;相似於問題一的方法，我們先寫下斯涅爾定律：
-$$
-\sin\alpha =k\sin\beta. \qquad \qquad (3)
-$$
-為了得到
-$$
-2\cos\alpha = k\cos\beta. \qquad \qquad (4)
-$$
-我們要找 $D’(\alpha)=0$ 的解，然後我們聯立 (3) 和 (4)，得到：
-$$
-\cos\alpha = \sqrt{\frac{k^2-1}{3}}, \Rightarrow \alpha = \arccos\sqrt{\frac{k^2-1}{3}}.
-$$&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;紅色光道： $k\approx 1.3318\Rightarrow \alpha_1\approx 59.473^{\circ}$&lt;br&gt;
-彩虹角 $= \pi - D(\alpha_1)\approx 42.3^{\circ}$.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;紫色光道： $k\approx 1.3435\Rightarrow\alpha_2\approx 58.786^{\circ}$&lt;br&gt;
-彩虹角 $=\pi - D(\alpha_2)\approx 40.6^{\circ}$.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;問題三：&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;或許你曾經看過主彩虹上較暗的次彩虹。這是由於光線進入雨滴並在A處折射、反射兩次（在B和C處）以及在D處離開雨滴而折射的那部分光束所致（如下圖）。這次偏差角$D(\alpha)$是射線在此四階段過程中經歷的逆時針旋轉的總量。&lt;/p&gt;
@@ -2524,26 +2306,13 @@ $$&lt;/p&gt;
 
 &lt;/figure&gt;
 
-&lt;p&gt;&lt;strong&gt;回答：&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;因為 $D(\alpha ) = 2\alpha  - 6\beta  + 2\pi$ ，為了得到
-$$
-3\cos\alpha = k\cos\beta. \qquad \qquad (5)
-$$
-我們要找到 $D’(\alpha)=0$ 的解，所以我們聯立 (3) 和(5) ，得到：
-$$
-\cos\alpha = \sqrt{\frac{k^2-1}{8}}, \Rightarrow \alpha = \arccos\sqrt{\frac{k^2-1}{8}}. \qquad \qquad (6)
-$$&lt;/p&gt;
-&lt;p&gt;則對 $k=\frac43\Rightarrow \alpha\approx 71.849^{\circ}\Rightarrow D(\alpha)\approx231^{\circ}$.&lt;/p&gt;
-&lt;p&gt;最小偏差角： $2\pi-D(\alpha)=129^{\circ}.$&lt;/p&gt;
-&lt;p&gt;彩虹角： $\pi-( 2\pi-D(\alpha)) =51^{\circ}.$&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;問題四：&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;證明次彩虹中的顏色以與主要彩虹中的顏色相反的順序顯現。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;回答：&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;基於 (6) 我們得到，&lt;/p&gt;
-&lt;p&gt;對紅色光道：$k\approx 1.3318\Rightarrow \alpha_1\approx 71.906^{\circ}$，彩虹角 $D(\alpha_1)-\pi\approx 50.6^{\circ}.$&lt;/p&gt;
-&lt;p&gt;對紫色光道：$k\approx 1.3435\Rightarrow\alpha_2\approx 71.505^{\circ}$，彩虹角 $D(\alpha_2)-\pi\approx 53.6^{\circ}.$&lt;/p&gt;
-&lt;p&gt;因此，主彩虹低於次彩虹，並且次彩虹中的顏色與主彩虹中的顏色順序相反。&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
 &lt;hr&gt;
 </description>
     </item>
@@ -2594,32 +2363,8 @@ $$&lt;/p&gt;
 &lt;/figure&gt;
 
 &lt;p&gt;Show that the minimum value of deviation is $D(\alpha)\approx 138^{\circ}$; and occurs when $\alpha\approx 59.4^{\circ}$.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Recall Snell&amp;rsquo;s law:
-$$
-\sin\alpha = \frac{4}{3}\sin\beta. \qquad \qquad (1)
-$$
-We teat the angle $\alpha$ as a function of $\beta$ and take derivative with respect to $\alpha$ to Snell&amp;rsquo;s law to obtain
-$$
-\cos\alpha = \frac{4}{3}\cos\beta\frac{d\beta}{d\alpha}.
-$$
-To find the minimum value of $D(\alpha)$, we look for the solution of $D&amp;rsquo;(\alpha)=0$:
-$$
-D&amp;rsquo;(\alpha) = 2 - 4\frac{d\beta}{d\alpha} = 0 \Rightarrow
-\frac{d\beta}{d\alpha} = \frac1 2 = \frac{3\cos\alpha}{4\cos\beta}.
-$$
-We then obtain
-$$
-2\cos\beta = 3\cos\alpha. \qquad \qquad (2)
-$$
-One can solve (1) and (2) to have
-$$
-\cos\alpha = \sqrt\frac{7}{27}, \Rightarrow \alpha = \arccos\sqrt\frac{7}{27} \approx 59.4^\circ
-$$
-So we find the minimal value
-$$
-D(59.4^\circ)\approx138^\circ.
-$$&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
 &lt;hr&gt;
 &lt;p&gt;The significance of the minimum deviation is that when $\alpha\approx 59.4^{\circ}$ we have $D&amp;rsquo;(\alpha)\approx 0$, so $\frac{\Delta D}{\Delta \alpha}\approx 0.$ This means that many  rays with $\alpha\approx 59.4^{\circ}$ become deviated by approximately the same amount. It it the &lt;em&gt;concentration&lt;/em&gt; of rays coming from near the direction of minimum deviation that creates the brightness of the primary rainbow. The figure at the left shows that the angle of elevation from the observer up to the highest point on the rainbow is $180^{\circ}- 138^{\circ} = 42^{\circ}$. (This angle is called the &lt;em&gt;rainbow angle&lt;/em&gt; .)&lt;/p&gt;
 
@@ -2652,21 +2397,8 @@ $$&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Question 2:&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Problem 1 explains the location of the primary rainbow, but how do we explain the colors? Sunlight comprises a range of wavelengths, from the red range through orange, yellow, green, blue, indigo, and violet. As Newton discovered in his prism experiments of 1666, the index of refraction is different for each color, (The effect is called &lt;em&gt;dispersion&lt;/em&gt;.) For red light the refractive index $k \approx 1.3318$,  whereas for violet light it is $k\approx 1.3435$. By repeating the calculation of Problem 1 for these values of $k$, show that the rainbow angle is about $42.3^{\circ}$ for red bow and $40.6^{\circ}$ for the violet bow. So the rainbow really consists of seven individual bows corresponding to the seven colors.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Similar to the approach of problem 1, we first write down the Snell&amp;rsquo;s law
-$$
-\sin\alpha =k\sin\beta. \qquad \qquad (3)
-$$
-We then look for the solution of $D&amp;rsquo;(\alpha)=0$ to obtain
-$$
-2\cos\alpha = k\cos\beta. \qquad \qquad (4)
-$$
-One can solve (3) and (4) to have
-$$
-\cos\alpha = \sqrt{\frac{k^2-1}{3}}, \Rightarrow \alpha = \arccos\sqrt{\frac{k^2-1}{3}}.
-$$&lt;/p&gt;
-&lt;p&gt;For red light: $k\approx 1.3318\Rightarrow \alpha_1\approx 59.473^{\circ}$, the rainbow angle$= \pi - D(\alpha_1)\approx 42.3^{\circ}$.&lt;/p&gt;
-&lt;p&gt;For violet light: $k\approx 1.3435\Rightarrow\alpha_2\approx 58.786^{\circ}$, the rainbow angle $=\pi - D(\alpha_2)\approx 40.6^{\circ}$.&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Question 3:&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Perhaps you have seen a fainter secondary rainbow above the primary bow. That results from the part of a ray that enters a raindrop and is refracted at A, reflected twice (at B and C), and refracted as it leaves the drop at D (see the figure at the left). This time the deviation angle $D(\alpha)$ is the total amount of counterclockwise rotation that the ray undergoes in this four-stage process.&lt;/p&gt;
@@ -2728,25 +2460,13 @@ $$&lt;/p&gt;
 
 &lt;/figure&gt;
 
-&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Since $D(\alpha ) = 2\alpha  - 6\beta  + 2\pi$, we look for the solution of $D&amp;rsquo;(\alpha)=0$ to obtain
-$$
-3\cos\alpha = k\cos\beta. \qquad \qquad (5)
-$$
-One can solve (3) and (5) to have
-$$
-\cos\alpha = \sqrt{\frac{k^2-1}{8}}, \Rightarrow \alpha = \arccos\sqrt{\frac{k^2-1}{8}}. \qquad \qquad (6)
-$$&lt;/p&gt;
-&lt;p&gt;For $k=\frac43\Rightarrow \alpha\approx 71.849^{\circ}\Rightarrow D(\alpha)\approx231^{\circ}$.&lt;/p&gt;
-&lt;p&gt;The minimum deviation: $2\pi-D(\alpha)=129^{\circ}.$&lt;/p&gt;
-&lt;p&gt;The rainbow angle: $\pi-( 2\pi-D(\alpha)) =51^{\circ}.$&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Question 4:&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Show that the colors in the secondary rainbow appear in the opposite order from those in the primary rainbow.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Based on (6) we find, for red light: $k\approx 1.3318\Rightarrow \alpha_1\approx 71.906^{\circ}$, the rainbow angle: $D(\alpha_1)-\pi\approx 50.6^{\circ}.$&lt;/p&gt;
-&lt;p&gt;For violet light: $k\approx 1.3435\Rightarrow\alpha_2\approx 71.505^{\circ}$, the rainbow angle: $D(\alpha_2)-\pi\approx 53.6^{\circ}.$&lt;/p&gt;
-&lt;p&gt;Therefore, the primary rainbow is lower than the secondary rainbow, and the colors in the secondary rainbow appear the opposite order from those in the primary rainbow.&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
 &lt;hr&gt;
 </description>
     </item>
@@ -2770,14 +2490,18 @@ P = Av^3 + \frac{BL^2}{v}
 $$
 其中 $A$ 和 $B$ 是特定飛機的參數，恆為正，$L$ 是升力，即為支撐飛機重量的向上力。 找出使其所需功率最小的速度。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;答案:&lt;/strong&gt;&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
 &lt;p&gt;$$
-\frac{d P}{dv} = 3Av^2 - \frac{BL^2}{v^2} = 0 \ \Longrightarrow \ v_P = \sqrt[4]{\frac{BL^2}{3A}}
+v_P = \sqrt[4]{\frac{BL^2}{3A}}
 $$&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;問題 2:&lt;/strong&gt;	在問題 1 中找到的速度可將功率降至最低，但較快的速度可能會消耗較少的燃料。推動飛機每單位距離所需的能量為 $E=P/v$， 在什麼速度下能使能量最小？&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;答案:&lt;/strong&gt;&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
 &lt;p&gt;$$
-\frac{d E}{dv} = 2Av - \frac{2BL^2}{v^3} = 0 \ \Longrightarrow \  v_E = \sqrt[4]{\frac{BL^2}{A}}
+v_E = \sqrt[4]{\frac{BL^2}{A}}
 $$&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;問題 3:&lt;/strong&gt; 最小能量的速度比最小功率的速度快多少？&lt;/p&gt;
@@ -2798,10 +2522,12 @@ $$&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;問題 5:&lt;/strong&gt;  在最小平均功率下$x$的值是多少？ 如果鳥飛得慢，你能得出什麼結論？ 如果這隻鳥飛得越來越快，你能得出什麼結論？&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;答案:&lt;/strong&gt;&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
 &lt;p&gt;$$
-\frac{d P_a}{dx} = A_w v^3 - \frac{B m^2 g^2}{x^2v} = 0 \ \Longrightarrow \ x = \frac{mg}{v^2}\sqrt{\frac{B}{A_w}}
-$$
-可以看出$x$與$v^2$成反比，所以&lt;/p&gt;
+x = \frac{mg}{v^2}\sqrt{\frac{B}{A_w}}
+$$&lt;/p&gt;
+&lt;p&gt;可以看出$x$與$v^2$成反比，所以&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;鳥飛的慢,拍翅時間佔總體飛行時間上升&lt;/li&gt;
 &lt;li&gt;鳥飛的快,滑翔時間佔總體飛行時間上升&lt;/li&gt;
@@ -2809,8 +2535,10 @@ $$
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;問題 6:&lt;/strong&gt;  一個週期的平均能量為 $E_a=P_a/v$. 試問 $x$ 的值為多少可以使$E_a$最小？&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;答案:&lt;/strong&gt;&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
 &lt;p&gt;$$
-\frac{d E}{dx} = A_w v^2 - \frac{B m^2 g^2}{x^2v^2} = 0 \ \Longrightarrow \ x = \frac{mg}{v^2}\sqrt{\frac{B}{A_w}}
+x = \frac{mg}{v^2}\sqrt{\frac{B}{A_w}}
 $$&lt;/p&gt;
 &lt;hr&gt;
 </description>
@@ -2832,40 +2560,18 @@ Chinese version:
 &lt;p&gt;&lt;strong&gt;Question 1:&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Suppose the cups have height $h$, cup A is formed by rotating the curve $x=f(y)$ about the $y$-axis, and cup B is formed by rotating the same curve about the $x=k$. Find the value of $k$ such that two cups hold the same amount of coffee.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Volume of Cup A
-$$
-\int_0^{h}\pi[f(y)]^2dy.
-$$
-Volume of Cup B
-$$
-\int_0^{h}\pi[k-f(y)]^2dy.
-$$
-Let $V_A=V_B$, after some calculation we obtain
-$$
-\int_0^{h}k^2dy=\int_0^{h}2kf(y)dy.
-$$
-So finally we have $k$ as
-$$
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;$$
 k=\frac{2\int_0^{h}f(y)dy}{h}.
 $$&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Question 2:&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;What does your result from Problem 1 say about the areas $A_1$ and $A_2$ shown in the figure?&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;We can see that $A_1+A_2$ is a rectangle, so $A_1+A_2=hk$.&lt;/p&gt;
-&lt;p&gt;From answer of Question 1 we knew that
-$$
-hk=2\int_0^{h}f(y)dy\implies{A_1+A_2}=2\int_0^{h}f(y)dy.
-$$
-Besides, we also have
-$$
-A_1=\int_0^{h}f(y)dy.
-$$
-Therefore we get
-$$
-A_1+A_2=2\int_0^{h}f(y)dy=2A_1\implies{A_1=A_2}.
-$$
-That is, when Cup A&amp;rsquo;s volume equals Cup B&amp;rsquo;s, the area of $A_1$ is the same as $A_2$.&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;when Cup A&amp;rsquo;s volume equals Cup B&amp;rsquo;s, the area of $A_1$ is the same as $A_2$.&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Question 3:&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Use Pappus&amp;rsquo;s Theorem to explain your result in Problem 1 and 2.&lt;/p&gt;
@@ -2873,38 +2579,8 @@ That is, when Cup A&amp;rsquo;s volume equals Cup B&amp;rsquo;s, the area of $A_
 &lt;blockquote&gt;
 &lt;p&gt;Let $R$ be a plane region that lies entirely on one side of a line $l$ in the plane. If $R$ is rotated about $l$, then the volume of the resulting solid is the product of the area $A$ of $R$ and the distance $d$ travled by the centroid of $R$.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;To use the theorem, we should first find out the centroid of $A_1$ and $A_2$.&lt;/p&gt;
-&lt;p&gt;For arbitrary plane region, the centroid (the center of mass) are located at the point $(C_x,C_y)$, where
-$$
-C_x=\frac{\int_a^{b}xf(x)dx}{\int_a^{b}f(x)dx};C_y=\frac{\int_a^{b}\frac{1}{2}[f(x)]^2dx}{\int_a^{b}f(x)dx}.
-$$
-Since the cups are rotating about axis parallel to $y$-axis, we require only $C_x$. For $A_1$,
-$$
-C_{x_1}=\frac{\int_0^{h}\frac{1}{2}[f(y)]^2dy}{\int_0^{h}f(y)dy}=\frac{1}{2A_1}\int_0^{h}[f(y)]^2dy.
-$$
-For $A_2$,
-$$
-C_{x_2}=\frac{\int_0^{h}\frac{1}{2}\left(k^2-[f(y)]^2\right)dy}{\int_0^{h}k-f(y)dy}=\frac{1}{2A_2}\int_0^{h}k^2-[f(y)]^2dy.
-$$
-After we knew the centroid of $A_1$ and $A_2$, we can start to calculate the volume of Cup A and Cup B by Pappus&amp;rsquo;s Theorem.&lt;/p&gt;
-&lt;p&gt;Volume of Cup A
-$$
-2\pi{C_{x_1}}{A_1}=\pi\int_0^{h}[f(y)]^2dy.
-$$
-Volume of Cup B
-$$
-2\pi(k-C_{x_2})A_2=2\pi k A_2 - \pi k^2 h + \pi \int_0^{h}[f(y)]^2dy.
-$$
-So if we want to have the two volumes being the same, we should have
-$$
-2\pi k A_2 - \pi k^2 h=0, \implies k = \frac{2A_2}{h}.
-$$
-Based on the fact that $A_1+A_2 = hk$, one easily obtain
-$$
-k = \frac{2A_2}{h} = \frac{2hk - 2A_1}{h}, \implies k = \frac{2A_1}{h},
-$$
-which are consistent with the results of problem 1 and 2.&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
 &lt;hr&gt;
 </description>
     </item>
@@ -2928,16 +2604,8 @@ Chinese version:
 &lt;p&gt;(c) Plot $L_1$, $f$, and $L_2$ to verify graphically that the transitions are smooth.&lt;/p&gt;
 &lt;p&gt;(d) Find the difference in elevation between $P$ and $Q$.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Suppose $P$ is at $(0,0)$, $Q$ is at $(30,y_q)$, then
-$$
-f(0)=c=0, \quad f&amp;rsquo;(0)=b=0.8, \quad f&amp;rsquo;(30)=60a+b=-1.6.
-$$
-After solving the equations, we can get $a=-0.04$, $b=0.8$ and $c=0$.
-So we find out all the cofficients of $f(x)$ and get
-$$
-f(x)=-0.04x^2+0.8x.
-$$
-By using this formula, we can find $y_q=f(30)=-12$, so the difference in elevation between $P$ and $Q$ is $12m$.&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
 &lt;p&gt;Below is the graph of these formula:
 
 
@@ -2981,49 +2649,8 @@ $$&lt;/p&gt;
 &lt;p&gt;(b) Solve the equations in part (a) with a computer algebra system to find formulas for $q(x)$, $g(x)$, and $h(x)$.&lt;/p&gt;
 &lt;p&gt;(c) Plot $L_1$, $g$, $q$, $h$, and $L_2$, and compare with the plot in Problem1(c).&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;We first rewrite the functions as
-$$
-g(x)=kx^3+lx^2+mx+n, \quad 0 \leq x \leq 3,
-$$
-$$
-q(x)=a(x-3)^2+b(x-3)+c, \quad 3 \leq x \leq 27,
-$$
-$$
-h(x)=p(x-30)^3+q(x-30)^2+r(x-30)+s, \quad 27 \leq x\leq 30.
-$$
-According to the article, we can list 11 equations to solve 11 unknown coefficients:
-$$
-g(0)=0,\quad g&amp;rsquo;(0)=0.8,\quad g&amp;rsquo;&#39;(0)=0,
-$$
-$$
-g(3)=q(3),\quad g&amp;rsquo;(3)=q&amp;rsquo;(3),\quad g&amp;rsquo;&#39;(3)=q&amp;rsquo;&#39;(3),
-$$
-$$
-q(27)=h(27),\quad q&amp;rsquo;(27)=h&amp;rsquo;(27),\quad q&amp;rsquo;&#39;(27)=h&amp;rsquo;&#39;(27),
-$$
-$$
-h&amp;rsquo;(30)=-1.6,\quad h&amp;rsquo;&#39;(30)=0.
-$$
-After a couple of complicated calculations, we finally come to the answer:
-$$
-k=-\frac{2}{405},\quad l=0,\quad m=\frac{4}{5},\quad n=0,
-$$
-$$
-a=-\frac{2}{45},\quad b=\frac{2}{3},\quad c=\frac{34}{15},
-$$
-$$
-p=\frac{2}{405},\quad q=0,\quad r=-\frac{8}{5},\quad s=-12.
-$$
-Accordingly, the final formula of the smoother roller coaster is:
-$$
-g(x)=-\frac{2}{405}x^3+\frac{4}{5}x, \quad 0 \leq x \leq 3,
-$$
-$$
-q(x)=-\frac{2}{45}(x-3)^2+\frac{2}{3}(x-3)+\frac{34}{15}, \quad 3 \leq x \leq 27,
-$$
-$$
-h(x)=\frac{2}{405}(x-30)^3-\frac{8}{5}(x-30)-12, \quad 27 \leq x \leq30.
-$$&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
 &lt;p&gt;Below is the graph of the smoother roller coaster:
 
 
@@ -3054,21 +2681,8 @@ $$&lt;/p&gt;
 &lt;/figure&gt;
 
 The red one is the graph of $g(x)$, the blue one is the graph of $q(x)$, and the green one is the graph of $h(x)$.&lt;/p&gt;
-&lt;p&gt;If we observe the graph by our naked eyes, we can barely recognize the difference between the smoother one and the original one. However, if we start to differentiate them:
-$$
-g&amp;rsquo;(0)=\frac{4}{5}=L_1&amp;rsquo;, \quad g&amp;rsquo;&#39;(0)=0=L_1&amp;rsquo;&#39;.
-$$
-Beside the same of the first derivatives of $g$ and $L_1$, the second derivatives of $g$ and $L_1$ are also the same, it means that this roller coaster is smoother than the original one, whose second derivatives of the adjacent formula aren&amp;rsquo;t the same.&lt;/p&gt;
-&lt;p&gt;The rest of the formulas can get the same results:
-$$
-g&amp;rsquo;(3)=\frac{2}{3}=q&amp;rsquo;(3), \quad g&amp;rsquo;&#39;(3)=-\frac{4}{45}=q&amp;rsquo;&#39;(3),
-$$
-$$
-q&amp;rsquo;(27)=-\frac{22}{15}=h&amp;rsquo;(27), \quad q&amp;rsquo;&#39;(27)=-\frac{4}{45}=h&amp;rsquo;&#39;(27),
-$$
-$$
-h&amp;rsquo;(30)=-\frac{8}{5}=L_2&amp;rsquo;, \quad h&amp;rsquo;&#39;(30)=0=L_2&amp;rsquo;&#39;.
-$$&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
 &lt;hr&gt;
 </description>
     </item>
@@ -3091,37 +2705,19 @@ $$&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;問題 1:&lt;/strong&gt; 罐頭的原料是從金屬板上切割下來的，它(圓柱)的邊是由彎曲的矩形組成，而這些矩形也是從板上切成且過程中幾乎沒有浪費。&lt;/p&gt;
 &lt;p&gt;然而，如果圓柱上下的圓面是由邊為 $2r$ 的正方形切割的，那麼一定會有大量的金屬浪費，儘管它可以回收再利用，但對罐頭製造商來說是幾乎沒有任何價值的。&lt;/p&gt;
 &lt;p&gt;因此，如果是這樣的話，我們就需要找到一組 $h/r$ 比例來最小化金屬的使用。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;答案:&lt;/strong&gt; \&lt;/p&gt;
-&lt;p&gt;以一個圓柱體罐頭來說，我們已經知道 $v, r$ 和 $h$ 之間的關係：
-$$
-v = r^2\pi h \Longrightarrow h = \frac{v}{r^2\pi}
-$$
-設總共使用的金屬量為 $M$ ，包刮圓柱側面和製作圓柱上下兩圓面的兩個面積為 $4r^2$ 的正方形。接著將 $M$ 寫成 $r$ 的形式：
-$$
-M = 2r\pi h + 2\times 4 r^2 = 2r\pi\left(\frac{v}{r^2\pi}\right) + 8r^2 = \frac{2v}{r} + 8 r^2
-$$
-而我們已知當 $\frac{dM}{dr}=0$ 時，存在最小值：
-$$
-\frac{dM}{dr} = -\frac{2v}{r^2} + 16r=0 \Longrightarrow v = 8r^3
-$$
-所以我們找到了在最小的金屬使用量時：
-$$
-h = \frac{v}{r^2\pi} = \frac{8r}{\pi} \Longrightarrow \frac{h}{r} = \frac{8}{\pi}\approx 2.55
+&lt;p&gt;&lt;strong&gt;答案:&lt;/strong&gt;&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;$$
+\frac{h}{r} = \frac{8}{\pi}\approx 2.55
 $$&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;問題 2:&lt;/strong&gt; 若將金屬板劃分為六邊形並從六邊形切下圓形的蓋子和底座，可以更有效地填充圓盤。如果採用這個方法，要找到能讓使用的金屬量最小化的 $h/r$ 的比例。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;答案:&lt;/strong&gt; \&lt;/p&gt;
-&lt;p&gt;同樣設總金屬使用量為 $M$ ，其中包括圓柱側面和兩個製成圓盤(罐頭的蓋子及底座)的六邊形：
-$$
-M = 2r\pi h + 2\left[\frac{1}{2}\left(\frac{2r}{\sqrt{3}}\right)6r\right] = \frac{2v}{r} + 4\sqrt{3} r^2
-$$
-而同樣我們已知當 $\frac{dM}{dr}=0$ 時，存在最小值：
-$$
-\frac{dM}{dr} = -\frac{2v}{r^2} + 8\sqrt{3}r=0 \Longrightarrow v = 4\sqrt{3}r^3
-$$
-所以我們找到了在最小的金屬使用量時：
-$$
-h = \frac{v}{r^2\pi} = \frac{4\sqrt{3}r}{\pi} \Longrightarrow \frac{h}{r} = \frac{4\sqrt{3}}{\pi}\approx 2.21
+&lt;p&gt;&lt;strong&gt;答案:&lt;/strong&gt;&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;$$
+\frac{h}{r} = \frac{4\sqrt{3}}{\pi}\approx 2.21
 $$&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;問題 3:&lt;/strong&gt; 除了罐子本身的金屬材料，我們現在將製程中所需成本包含進去&lt;/p&gt;
@@ -3130,18 +2726,12 @@ $$&lt;/p&gt;
 &lt;/ul&gt;
 &lt;p&gt;製作一圓柱罐，首先我們彎曲一矩形並將邊與邊黏接在一起以製成圓柱殼（高度為 $ h $）；接著，將兩個圓盤與圓柱殼黏接（圓盤長度為$2πr$）。 由上可知，黏接成本為 $ k(h+4πr) $， $k$ 為單位面積金屬成本可黏接長度的倒數。&lt;/p&gt;
 &lt;p&gt;同問題二，圓盤由一正六邊形切割而成，所以總成本包括金屬成本和黏接的成本，與$4\sqrt{3}r^2 + 2\pi r h + k(4\pi r + h) $成正比。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;答案：&lt;/strong&gt; \&lt;/p&gt;
-&lt;p&gt;將總成本表示為半徑 $ r$ 的函數，紀錄為$ f$：
+&lt;p&gt;&lt;strong&gt;答案：&lt;/strong&gt;&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;發生最小值時圓柱體的高度與半徑比為:
 $$
-f( r )  = 4\sqrt{3}r^2 + 2\pi r \left(\frac{v}{r^2\pi}\right) + k\left(4\pi r + \frac{v}{r^2\pi}\right) = 4\sqrt{3}r^2 + \frac{2v}{r} + k\left(4\pi r + \frac{v}{r^2\pi}\right)
-$$
-當 $\frac{df}{dr}$ = 0 時，$f$ 函數產生最小值 :
-$$
-\frac{df}{dr} = 8\sqrt{3}r -\frac{2v}{r^2} + k\left(4\pi - \frac{2v}{r^3\pi}\right) =0 \Longrightarrow 8\sqrt{3}r + 4\pi k = \left(\frac{2}{r^2} + \frac{2k}{r^3\pi}\right)v
-$$
-​由此可知，發生最小值時圓柱體的高度與半徑比為:
-$$
-\frac{h}{r} = \frac{v}{r^3\pi} = \frac{4\sqrt{3}r + 2k\pi}{\pi r + k}
+\frac{h}{r} = \frac{4\sqrt{3}r + 2k\pi}{\pi r + k}
 $$&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;問題 4:&lt;/strong&gt; 當圓柱罐非常大且黏接的成本低時結果會是怎樣呢？反之圓柱罐非常小且黏接的成本高？&lt;/p&gt;
@@ -3202,14 +2792,18 @@ P = Av^3 + \frac{BL^2}{v}
 $$&lt;/p&gt;
 &lt;p&gt;where $A$ and $B$ are positive constants specific to the particular aircraft and $L$ is the lift, the upward force supporting the weight of the plane. Find the speed that minimizes the required power.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
 &lt;p&gt;$$
-\frac{d P}{dv} = 3Av^2 - \frac{BL^2}{v^2} = 0 \ \Longrightarrow \ v_P = \sqrt[4]{\frac{BL^2}{3A}}
+v_P = \sqrt[4]{\frac{BL^2}{3A}}
 $$&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Question 2:&lt;/strong&gt;	The speed found in Problem 1 minimizes power but a faster speed might use less fuel. The energy needed to propel the airplane a unit distance is​ $E = P/v$ . At what speed is energy minimized?&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
 &lt;p&gt;$$
-\frac{d E}{dv} = 2Av - \frac{2BL^2}{v^3} = 0 \ \Longrightarrow \ v_E = \sqrt[4]{\frac{BL^2}{A}}
+v_E = \sqrt[4]{\frac{BL^2}{A}}
 $$&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Question 3:&lt;/strong&gt; Hows much faster is the speed for minimum energy than the speed for minimum power?&lt;/p&gt;
@@ -3230,8 +2824,10 @@ $$&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Question 5:&lt;/strong&gt;  For what value of​ $x$ is the average power a minimum? What can you conclude if the bird flies slowly? What can you conclude if the bird flies faster and faster?&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
 &lt;p&gt;$$
-\frac{d P_a}{dx} = A_w v^3 - \frac{B m^2 g^2}{x^2v} = 0 \ \Longrightarrow \ x = \frac{mg}{v^2}\sqrt{\frac{B}{A_w}}
+x = \frac{mg}{v^2}\sqrt{\frac{B}{A_w}}
 $$&lt;/p&gt;
 &lt;p&gt;It can be seen that $x$ is inverse proportional to $v^2$, so,&lt;/p&gt;
 &lt;ul&gt;
@@ -3241,8 +2837,10 @@ $$&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Question 6:&lt;/strong&gt;  The average energy over a cycle is $E_a = P_a/v$. What value of $x$​ minimizes $E_a$?&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
 &lt;p&gt;$$
-\frac{d E}{dx} = A_w v^2 - \frac{B m^2 g^2}{x^2v^2} = 0 \ \Longrightarrow \ x = \frac{mg}{v^2}\sqrt{\frac{B}{A_w}}
+x = \frac{mg}{v^2}\sqrt{\frac{B}{A_w}}
 $$&lt;/p&gt;
 &lt;hr&gt;
 </description>
@@ -3265,37 +2863,19 @@ Chinese version:
 &lt;p&gt;&lt;img src=&#34;https://media.cheggcdn.com/study/e3e/e3e1a59a-d0be-46e7-8557-07e775d84b81/715030-4.7-1IAP11.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Question 1:&lt;/strong&gt; The material for the cans is cut from sheets of metal. The cylindrical sides are formed by bending rectangles; these rectangles are cut from the sheet with little or no waste.&lt;/p&gt;
 &lt;p&gt;But if the top and bottom discs are cut from squares of side $2r$, this leaves considerable waste metal, which may be recycled but has little or no value to the can makers. If this is the case, find the ratio $h/r$ for which the amount of metal used is minimized.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt; \&lt;br&gt;
-For a cylindrical can we have the relation between $v$, $r$ and $h$ as&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
 &lt;p&gt;$$
-v = r^2\pi h \Longrightarrow h = \frac{v}{r^2\pi}.
-$$&lt;/p&gt;
-&lt;p&gt;The total metal used, $M$, consists of the cylindrical side and two squares (with area $4r^2$) that makes the top and bottom discs. Written everything in terms of $r$ we have&lt;/p&gt;
-&lt;p&gt;$$
-M = 2r\pi h + 2\times 4 r^2 = 2r\pi\left(\frac{v}{r^2\pi}\right) + 8r^2 = \frac{2v}{r} + 8 r^2.
-$$&lt;/p&gt;
-&lt;p&gt;When $\frac{dM}{dr}=0$, there exists a minimum value&lt;/p&gt;
-&lt;p&gt;$$
-\frac{dM}{dr} = -\frac{2v}{r^2} + 16r=0 \Longrightarrow v = 8r^3.
-$$&lt;/p&gt;
-&lt;p&gt;So we find that, with the minimum metal used,&lt;/p&gt;
-&lt;p&gt;$$
-h = \frac{v}{r^2\pi} = \frac{8r}{\pi} \Longrightarrow \frac{h}{r} = \frac{8}{\pi}\approx 2.55
+\frac{h}{r} = \frac{8}{\pi}\approx 2.55
 $$&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Question 2:&lt;/strong&gt;	A more efficient packing of the discs is obtained by dividing the metal sheet into hexagons and cutting the circular lids and bases from the hexagons. If this strategy is adopted, find the ratio $h/r$ for which the amount of metal used is minimized.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt; \&lt;br&gt;
-The total metal used, $M$, consists of the cylindrical side and two hexagons that makes the top and bottom discs:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
 &lt;p&gt;$$
-M = 2r\pi h + 2\left[\frac{1}{2}\left(\frac{2r}{\sqrt{3}}\right)6r\right] = \frac{2v}{r} + 4\sqrt{3} r^2.
-$$&lt;/p&gt;
-&lt;p&gt;When $\frac{dM}{dr}=0$, there exists a minimum value&lt;/p&gt;
-&lt;p&gt;$$
-\frac{dM}{dr} = -\frac{2v}{r^2} + 8\sqrt{3}r=0 \Longrightarrow v = 4\sqrt{3}r^3.
-$$&lt;/p&gt;
-&lt;p&gt;So we find that, with the minimum metal used,&lt;/p&gt;
-&lt;p&gt;$$
-h = \frac{v}{r^2\pi} = \frac{4\sqrt{3}r}{\pi} \Longrightarrow \frac{h}{r} = \frac{4\sqrt{3}}{\pi}\approx 2.21
+\frac{h}{r} = \frac{4\sqrt{3}}{\pi}\approx 2.21
 $$&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Question 3:&lt;/strong&gt; In addition to the cost of the metal, we need to incorporate the manufacturing of the can into the cost.&lt;/p&gt;
@@ -3304,22 +2884,16 @@ $$&lt;/p&gt;
 &lt;/ul&gt;
 &lt;p&gt;For a cylindrical can, we need to bend a rectangle and joinging the sides together (with length $h$) to make the cylindrical shell. Also we need to join the two discs to the shell (each disc with length $2\pi r$). So the cost in joining is $k(h + 4\pi r)$ where $k$ is the reciprocal of the length that can be joined for the cost of one unit area of metal.&lt;/p&gt;
 &lt;p&gt;If we cut the discs from hexagons as in Question 2, then the total cost consists of the cost of the metal and the cost in joinging the sides, that is proportional to $4\sqrt{3}r^2 + 2\pi r h + k(4\pi r + h)$.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt; \&lt;br&gt;
-Denote the total cost by $f$ and rewrite it as a function of $r$:
-$$
-f( r )  = 4\sqrt{3}r^2 + 2\pi r \left(\frac{v}{r^2\pi}\right) + k\left(4\pi r + \frac{v}{r^2\pi}\right) = 4\sqrt{3}r^2 + \frac{2v}{r} + k\left(4\pi r + \frac{v}{r^2\pi}\right).
-$$&lt;/p&gt;
-&lt;p&gt;When $\frac{df}{dr}=0$, there exists a minimum value&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;with the minimum metal used,&lt;/p&gt;
 &lt;p&gt;$$
-\frac{df}{dr} = 8\sqrt{3}r -\frac{2v}{r^2} + k\left(4\pi - \frac{2v}{r^3\pi}\right) =0 \Longrightarrow 8\sqrt{3}r + 4\pi k = \left(\frac{2}{r^2} + \frac{2k}{r^3\pi}\right)v.
-$$&lt;/p&gt;
-&lt;p&gt;So we find that, with the minimum metal used,&lt;/p&gt;
-&lt;p&gt;$$
-\frac{h}{r} = \frac{v}{r^3\pi} = \frac{4\sqrt{3}r + 2k\pi}{\pi r + k}.
+\frac{h}{r} = \frac{4\sqrt{3}r + 2k\pi}{\pi r + k}.
 $$&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Question 4:&lt;/strong&gt; What happened when a can is large or joining is cheap, and what happened when the can is small or joining is costly?&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt; \&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;For a cylinder with fixed volume $v$:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;When joining is cheap, $0&amp;lt;k\ll 1$, we have

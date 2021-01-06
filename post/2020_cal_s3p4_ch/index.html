@@ -243,7 +243,7 @@
     
       <meta property="article:published_time" content="2020-03-08T00:00:00&#43;00:00">
     
-    <meta property="article:modified_time" content="2020-04-08T11:48:58&#43;08:00">
+    <meta property="article:modified_time" content="2021-01-06T20:32:48&#43;08:00">
   
 
   
@@ -272,7 +272,7 @@
   "headline": "Sec.3.4 - 飛行員應該何時開始下降高度?",
   
   "datePublished": "2020-03-08T00:00:00Z",
-  "dateModified": "2020-04-08T11:48:58+08:00",
+  "dateModified": "2021-01-06T20:32:48+08:00",
   
   "author": {
     "@type": "Person",
@@ -548,7 +548,7 @@
           Last updated on
       
     
-    Apr 8, 2020
+    Jan 6, 2021
   </span>
   
 
@@ -557,7 +557,7 @@
   
   <span class="middot-divider"></span>
   <span class="article-reading-time">
-    3 min read
+    2 min read
   </span>
   
 
@@ -620,51 +620,22 @@
 </ol>
 <hr>
 <p><strong>問題壹：</strong> 請透過加適當條件在「開始下降」和「著陸」這兩個時間點的$P(x)$和$P’(x)$上，來找到一個滿足條件(1.)的三次多項式 $P(x) = ax^3 + bx^2 + cx + d$。</p>
-<p><strong>解：</strong> \<br>
-在開始下降時:
-$$
-P(\ell) = al^3 +b\ell^2 +c\ell+d = h, \qquad P’(\ell) = 3a\ell^2 +2b\ell+c = 0。
-$$
-至於著陸時:
-$$
-P(0) = 0 \Longrightarrow d = 0, \qquad P’(0)=0 \Longrightarrow c=0。
-$$
-將 $a$, $b$ 的解用 $h$, $l$來表示，我們可以發現
-$$
+<p><strong>解：</strong></p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<p>$$
 P(x) = −\frac{2h}{\ell^3}x^3 + \frac{3h}{\ell^2}x^2。
 $$</p>
 <hr>
 <p><strong>問題貳：</strong> 用條件(2.)和(3.)來證明$\frac{6hv^2}{\ell^2}\le k$。</p>
-<p><strong>解：</strong> \<br>
-由條件(2.)可知，在整個下降過程中，水平速度被假設為定值$v$，因此我們可以把$x$表示為
-$$
-x = \ell - vt, \qquad t\in[0, \frac{\ell}{v}],
-$$
-在這之中，負號代表飛行器是向左飛的。接著多項式$P$能被重新寫成用變數$t$表示的形式
-$$
-P(t) = −\frac{2h}{\ell^3}(\ell - vt)^3 + \frac{3h}{\ell^2}(\ell - vt)^2, \qquad
-\frac{d^2}{dt^2}P(t) = −\frac{12hv^2}{\ell^3}(\ell - vt) + \frac{6hv^2}{\ell^2}。
-$$
-因此，鉛直加速度$a$的值是
-$$
-a(t) = \left|−\frac{12hv^2}{\ell^3}(\ell - vt) + \frac{6hv^2}{\ell^2}\right| = \left|\frac{12hv^3}{\ell^3},t - \frac{6hv^2}{\ell^2}\right|, \qquad t\in[0, \frac{\ell}{v}]。
-$$
-我們能經由極值定理和閉區間法來確認$a$會達到他的最大值$\frac{6hv^2}{\ell^2}$。根據條件(3.)，我們得到
-$$
-\frac{6hv^2}{\ell} \le k。
-$$</p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
 <hr>
 <p><strong>問題參：</strong> 假設某航空公司決定不讓飛機的鉛直加速度達到$k = 860(英里/小時^2)$。如果飛機的巡航高度是$35,000$(英尺)且速度是$300$(英里/小時)，飛行員該在距離機場多遠的地方開始下降？</p>
-<p><strong>解：</strong> \<br>
-給定$P(x) = −\frac{2h}{\ell^3}x^3 + \frac{3h}{\ell^2}x^2$，假設飛行員在距離機場$\ell$(英里)的地方開始下降。在問題貳當中，我們已經知道 $\frac{6hv^2}{\ell^2}\le k$。所以，
-$$
-v=300\mbox{(mi/h)}, \qquad h=35000\mbox{(ft)} ≈ 6.628\mbox{(mi)}, \qquad k=860\mbox{(mi/h$^2$)},
-$$
-$$
-\frac{6\times 6.628\times (300)^2}{\ell^2} \le 860, \quad \Longrightarrow \quad
-\ell \ge 64.511。
-$$
-也就是說，飛行員應該在距離機場$64.511$(英里)的地方開始下降。</p>
+<p><strong>解：</strong></p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<p>飛行員應該在距離機場$64.511$(英里)的地方開始下降。</p>
 <hr>
 <p><strong>問題肆：</strong> 請繪製近似圖(假設問題參當中的所有條件都被滿足)</p>
 <p><strong>解：</strong></p>

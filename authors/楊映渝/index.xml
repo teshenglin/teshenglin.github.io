@@ -30,37 +30,19 @@
 &lt;p&gt;&lt;strong&gt;問題 1:&lt;/strong&gt; 罐頭的原料是從金屬板上切割下來的，它(圓柱)的邊是由彎曲的矩形組成，而這些矩形也是從板上切成且過程中幾乎沒有浪費。&lt;/p&gt;
 &lt;p&gt;然而，如果圓柱上下的圓面是由邊為 $2r$ 的正方形切割的，那麼一定會有大量的金屬浪費，儘管它可以回收再利用，但對罐頭製造商來說是幾乎沒有任何價值的。&lt;/p&gt;
 &lt;p&gt;因此，如果是這樣的話，我們就需要找到一組 $h/r$ 比例來最小化金屬的使用。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;答案:&lt;/strong&gt; \&lt;/p&gt;
-&lt;p&gt;以一個圓柱體罐頭來說，我們已經知道 $v, r$ 和 $h$ 之間的關係：
-$$
-v = r^2\pi h \Longrightarrow h = \frac{v}{r^2\pi}
-$$
-設總共使用的金屬量為 $M$ ，包刮圓柱側面和製作圓柱上下兩圓面的兩個面積為 $4r^2$ 的正方形。接著將 $M$ 寫成 $r$ 的形式：
-$$
-M = 2r\pi h + 2\times 4 r^2 = 2r\pi\left(\frac{v}{r^2\pi}\right) + 8r^2 = \frac{2v}{r} + 8 r^2
-$$
-而我們已知當 $\frac{dM}{dr}=0$ 時，存在最小值：
-$$
-\frac{dM}{dr} = -\frac{2v}{r^2} + 16r=0 \Longrightarrow v = 8r^3
-$$
-所以我們找到了在最小的金屬使用量時：
-$$
-h = \frac{v}{r^2\pi} = \frac{8r}{\pi} \Longrightarrow \frac{h}{r} = \frac{8}{\pi}\approx 2.55
+&lt;p&gt;&lt;strong&gt;答案:&lt;/strong&gt;&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;$$
+\frac{h}{r} = \frac{8}{\pi}\approx 2.55
 $$&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;問題 2:&lt;/strong&gt; 若將金屬板劃分為六邊形並從六邊形切下圓形的蓋子和底座，可以更有效地填充圓盤。如果採用這個方法，要找到能讓使用的金屬量最小化的 $h/r$ 的比例。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;答案:&lt;/strong&gt; \&lt;/p&gt;
-&lt;p&gt;同樣設總金屬使用量為 $M$ ，其中包括圓柱側面和兩個製成圓盤(罐頭的蓋子及底座)的六邊形：
-$$
-M = 2r\pi h + 2\left[\frac{1}{2}\left(\frac{2r}{\sqrt{3}}\right)6r\right] = \frac{2v}{r} + 4\sqrt{3} r^2
-$$
-而同樣我們已知當 $\frac{dM}{dr}=0$ 時，存在最小值：
-$$
-\frac{dM}{dr} = -\frac{2v}{r^2} + 8\sqrt{3}r=0 \Longrightarrow v = 4\sqrt{3}r^3
-$$
-所以我們找到了在最小的金屬使用量時：
-$$
-h = \frac{v}{r^2\pi} = \frac{4\sqrt{3}r}{\pi} \Longrightarrow \frac{h}{r} = \frac{4\sqrt{3}}{\pi}\approx 2.21
+&lt;p&gt;&lt;strong&gt;答案:&lt;/strong&gt;&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;$$
+\frac{h}{r} = \frac{4\sqrt{3}}{\pi}\approx 2.21
 $$&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;問題 3:&lt;/strong&gt; 除了罐子本身的金屬材料，我們現在將製程中所需成本包含進去&lt;/p&gt;
@@ -69,18 +51,12 @@ $$&lt;/p&gt;
 &lt;/ul&gt;
 &lt;p&gt;製作一圓柱罐，首先我們彎曲一矩形並將邊與邊黏接在一起以製成圓柱殼（高度為 $ h $）；接著，將兩個圓盤與圓柱殼黏接（圓盤長度為$2πr$）。 由上可知，黏接成本為 $ k(h+4πr) $， $k$ 為單位面積金屬成本可黏接長度的倒數。&lt;/p&gt;
 &lt;p&gt;同問題二，圓盤由一正六邊形切割而成，所以總成本包括金屬成本和黏接的成本，與$4\sqrt{3}r^2 + 2\pi r h + k(4\pi r + h) $成正比。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;答案：&lt;/strong&gt; \&lt;/p&gt;
-&lt;p&gt;將總成本表示為半徑 $ r$ 的函數，紀錄為$ f$：
+&lt;p&gt;&lt;strong&gt;答案：&lt;/strong&gt;&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;發生最小值時圓柱體的高度與半徑比為:
 $$
-f( r )  = 4\sqrt{3}r^2 + 2\pi r \left(\frac{v}{r^2\pi}\right) + k\left(4\pi r + \frac{v}{r^2\pi}\right) = 4\sqrt{3}r^2 + \frac{2v}{r} + k\left(4\pi r + \frac{v}{r^2\pi}\right)
-$$
-當 $\frac{df}{dr}$ = 0 時，$f$ 函數產生最小值 :
-$$
-\frac{df}{dr} = 8\sqrt{3}r -\frac{2v}{r^2} + k\left(4\pi - \frac{2v}{r^3\pi}\right) =0 \Longrightarrow 8\sqrt{3}r + 4\pi k = \left(\frac{2}{r^2} + \frac{2k}{r^3\pi}\right)v
-$$
-​由此可知，發生最小值時圓柱體的高度與半徑比為:
-$$
-\frac{h}{r} = \frac{v}{r^3\pi} = \frac{4\sqrt{3}r + 2k\pi}{\pi r + k}
+\frac{h}{r} = \frac{4\sqrt{3}r + 2k\pi}{\pi r + k}
 $$&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;問題 4:&lt;/strong&gt; 當圓柱罐非常大且黏接的成本低時結果會是怎樣呢？反之圓柱罐非常小且黏接的成本高？&lt;/p&gt;

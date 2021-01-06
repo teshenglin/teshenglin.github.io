@@ -984,6 +984,7 @@ Since $x$ and $y$ must be positive in this problem, we have $x=y$. We then get $
 &lt;p&gt;If you were hired as a consultant on this investigation, what would your conclusion be? Would you recommend altering the design of the dumpster? If so, describe the savings that would result.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Answer&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;The cost of the original trash dumpster is $53.92, which is larger than the dumpster we design. So we would recommend altering the design of the dumpster, and we can save about $0.3.&lt;/p&gt;
+&lt;hr&gt;
 </description>
     </item>
     
@@ -1082,6 +1083,7 @@ $$
 &lt;p&gt;如果我變成這個研究的顧問，我的結論會是？我會建議更換垃圾桶的設計嗎？如果會的話，能夠省下多少錢？&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;答案：&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;原本垃圾桶的花費要 $53.92，比我們設計的容器還要貴，因此如果只從成本方面考量，我會建議更改垃圾桶的設計，可以省下至少$0.3。&lt;/p&gt;
+&lt;hr&gt;
 </description>
     </item>
     
@@ -1254,24 +1256,8 @@ Describe how the graph changes as you change the value of $c$.&lt;/p&gt;
 &lt;p&gt;For $-1&amp;lt;c&amp;lt;0$(see the graph), there are four hyperboliclike branches as well as an ellipticlike curve bounded by $|x|\leq1$ and $|y|\leq1$ for values of $c$ close to $0$. As $c$ gets closer to $-1$, the branches and the curve become more rectangular, approaching the lines $|x|=1$ and $|y|=1$.&lt;/p&gt;
 &lt;p&gt;For $c=-1$, we get the lines $x=\pm1$ and $y=\pm1$. As $c$ decreases, we get four test-tubelike curves (see the graph) that are bounded by $|x|=1$ and $|y|=1$, and get thinner as $|c|$ gets larger.
 &lt;img src=&#34;https://i.imgur.com/8MuCqVK.png&#34; alt=&#34;2(a)&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;(b)&lt;/strong&gt; The curve for $c=-1$ is described in part &lt;strong&gt;(a)&lt;/strong&gt;. When $c=-1$, we get
-$$
-x^2+y^2-x^2y^2=1 \leftrightarrow (x^2-1)(y^2-1)=0,
-$$
-so $x=\pm 1$ or $y=\pm 1$, which algebraically proves that the graph consists of the stated lines.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;(c)&lt;/strong&gt;
-$$
-\frac{d}{dx}(x^2+y^2+cx^2y^2)=\frac{d}{dx}(1) \rightarrow
-2x+2yy&#39;+c(x^2\cdot2yy&#39;+y^2\cdot2x)=0
-$$
-$$
-\rightarrow 2yy&#39;+2cx^2yy&#39;=-2x-2cxy^2 \rightarrow
-2y(1+cx^2)y&#39;=-2x(1+cy^2)
-$$
-$$
-\rightarrow y&#39;=-\frac{x(1+cy^2)}{y(1+cx^2)}
-$$&lt;/p&gt;
-&lt;p&gt;For $c=-1$, $y&#39;=-\frac{x(1-y^2)}{y(1-x^2)}=-\frac{x(1+y)(1-y)}{y(1+x)(1-x)}$, so $y&#39;=0$ when $y=\pm1$ or $x=0$ (which leads to $y=\pm1$) and $y&#39;$ is undefined when $x=\pm1$ or $y=0$ (which leads to $x=\pm1$). Since the graph consists of the lines $x=\pm1$ and $y=\pm1$, the slope at any point on the graph is undefined or $0$, which is consistent with the expression found for $y&#39;$.&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
 &lt;hr&gt;
 </description>
     </item>
@@ -1314,24 +1300,8 @@ $$
 &lt;p&gt;當 $-1&amp;lt;c&amp;lt;0$(看圖), $c$ 靠近 $0$ 時有四個部分的雙曲線和一個由 $|x|\leq1$ 和 $|y|\leq1$ 圍出的橢圓。$c$ 越靠近 $-1$, 橢圓和曲線就變得越方正, 靠近 $|x|=1$和$|y|=1$。&lt;/p&gt;
 &lt;p&gt;當$c=-1$, 我們得到直線 $x=\pm1$ 和 $y=\pm1$。當 $c$ 減少,我們得到四個試管形狀的曲線(看圖) 由 $|x|=1$ 和 $|y|=1$ 圍出，當$|c|$越大，圖形就變得越小。
 &lt;img src=&#34;https://i.imgur.com/8MuCqVK.png&#34; alt=&#34;2(a)&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;(b)&lt;/strong&gt; $c=-1$ 的圖形已在 &lt;strong&gt;(a)&lt;/strong&gt; 描述過。當 $c=-1$，我們得到
-$$
-x^2+y^2-x^2y^2=1 \leftrightarrow (x^2-1)(y^2-1)=0
-$$
-所以 $x=\pm1$ 或 $y=\pm1$，代術性的證明了指定的直線。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;(c)&lt;/strong&gt;
-$$
-\frac{d}{dx}(x^2+y^2+cx^2y^2)=\frac{d}{dx}(1) \rightarrow
-2x+2yy&#39;+c(x^2\cdot2yy&#39;+y^2\cdot2x)=0
-$$
-$$
-\rightarrow 2yy&#39;+2cx^2yy&#39;=-2x-2cxy^2 \rightarrow
-2y(1+cx^2)y&#39;=-2x(1+cy^2)
-$$
-$$
-\rightarrow y&#39;=-\frac{x(1+cy^2)}{y(1+cx^2)}
-$$&lt;/p&gt;
-&lt;p&gt;當$c=-1$, $y&#39;=-\frac{x(1-y^2)}{y(1-x^2)}=-\frac{x(1+y)(1-y)}{y(1+x)(1-x)}$, 當 $y&#39;=0$ 得到 $y=\pm1$ or $x=0$ (故我們得到$y=\pm1$) 且 $y&#39;$ 在 $x=\pm1$ 或 $y=0$ (故我們得到$x=\pm1$)為未定義。因為 $c=-1$ 的圖形由直線 $x=\pm1$和$y=\pm1$ 組成，在任何點的斜率為未定義或 $0$，與我們對 $y&#39;$ 的發現相符。&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
 &lt;hr&gt;
 </description>
     </item>
@@ -1917,19 +1887,8 @@ $$&lt;/p&gt;
 $$
 v^2=\frac{2gh}{1+I^*},\quad \text{where  } I^*=\frac{I}{mr^2}
 $$&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Answer&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;By the statement, we know that
-$$
-mgh=\frac{1}{2}mv^2+\frac{1}{2}I\omega ^2,\quad v=\omega r
-$$
-By combining two equation above, we can get a new equation
-$$
-mgh=\frac{1}{2}mv^2+\frac{I}{2r^2}v^2=(\frac{1}{2}m+\frac{I}{2r^2})v^2
-$$
-Therefore,
-$$
-v^2 = \frac{2mgh}{m+\frac{I}{r^2}} = \frac{2gh}{1+I^*}
-$$&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Problem 2&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;If $y(t)$ is the vertical distance traveled at time $t$, then the same reasoning as used in Problem 1 shows that $v^2=2gy/(1+I^*)$ at any time t. Use this result to show that $y$ satisfies the differential equation
@@ -1937,15 +1896,8 @@ $$
 \frac{dy}{dt}= \sqrt{\frac{2g}{1+I^*}}(\sin{\alpha})\sqrt{y}
 $$
 where $\alpha$ is the angle of inclination of the plane.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Answer&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Notice that $dy/dt$ is the y component of velocity $v$, so we have that
-$$
-\frac{dy}{dt}=v_y=v\sin{\alpha}
-$$
-Therefore
-$$
-\frac{dy}{dt}=\sqrt{\frac{2g}{1+I^*}}\sin\alpha\sqrt{y}
-$$&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Problem 3&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;By solving the equation in Problem 2, show that the total travel time is
@@ -1953,80 +1905,18 @@ $$
 T=\sqrt{\frac{2h(1+I^*)}{g\sin^2\alpha}}
 $$
 This shows that the object with the smallest value of $I^*$ wins the race.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Answer&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Notice that
-$$
-\frac{dy}{dt}\frac{dt}{dy}=1\ (chain\ rule),\quad\frac{dt}{dy}=\frac{1}{\frac{dy}{dt}}
-$$
-There for we can get $dt/dy$
-$$
-\frac{dt}{dy}=\sqrt{\frac{1+I^*}{2g(\sin^2\alpha)y}}
-$$
-By solving this, we can calculate the total travel time. Notice that when $y=0$, $dt/dy$ don&amp;rsquo;t exist, so we need to approach it by using limit
-$$
-\begin{aligned}
-T&amp;amp;=\lim_{x\to 0}\int^h_x\sqrt{\frac{1+I^*}{2g(\sin^2\alpha)y}}dy
-=\sqrt{\frac{2(1+I^*)}{g\sin^2\alpha}}\lim_{x\to 0}\int^h_x\frac{1}{2\sqrt y}dy\\&lt;br&gt;
-&amp;amp;=\sqrt{\frac{2(1+I^*)}{g\sin^2\alpha}}\lim_{x\to 0}\sqrt y|^h_x
-=\sqrt{\frac{2(1+I^*)}{g\sin^2\alpha}}\lim_{x\to 0}\sqrt h-\sqrt x\\&lt;br&gt;
-&amp;amp;=\sqrt{\frac{2h(1+I^*)}{g\sin^2\alpha}}
-\end{aligned}
-$$&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Problem 4&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Show that $I^*=1/2$ for a solid cylinder and $I^*=1$ for a hollow cylinder&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Answer&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;For any object, it&amp;rsquo;s moment of inertia can be calculate as
-$$
-\int\rho_m R^2dV
-$$
-where $\rho_m$ is the density of mass, $R$ is the distance to the rotating axis.&lt;/p&gt;
-&lt;p&gt;For a solid cylinder, it&amp;rsquo;s volume is $\pi r^2 L$, where $L$ is length of the cylinder. Therefore the moment of inertia for solid cylinder can be calculate as
-$$
-I=\int_0^L\int_0^r\int_0^{2\pi}\frac{m}{\pi r^2L}R^2\cdot Rd\theta dRdl
-=\frac{mr^2}{2}
-$$
-Therefore,
-$$
-I^*=\frac{1}{2}
-$$&lt;/p&gt;
-&lt;p&gt;For a hollow cylinder, we suppose that it&amp;rsquo;s internal radius $a\to r$ . It&amp;rsquo;s volume is $\pi L(r^2-a^2)$, thus the the moment of inertia of hollow cylinder can be calculate as
-$$
-\begin{aligned}
-I=&amp;amp;\lim_{a\to r}\int_0^L\int_a^r\int_0^{2\pi}\frac{m}{\pi L(r^2-a^2)}R^2\cdot Rd\theta dRdl\\&lt;br&gt;
-=&amp;amp;\lim_{a\to r}\frac{m(r^4-a^4)}{2(r^2-a^2)}=mr^2
-\end{aligned}
-$$
-Therefore,
-$$
-I^*=1
-$$&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Problem 5&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Calculate $I^*$ for a partly hollow ball with inner radius $a$ and outer radius $r$. Express your answer in terms of $b=a/r$. What happened when as $a\to 0$ and as $a\to r$?&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Answer&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;For a partly hollow ball, it&amp;rsquo;s volume is $(4/3)\pi (r^3-a^3)$, set $z$-axis is the rotate axis, so the distance to the rotate axis $R$ can be express as $\rho\sin\phi$. Therefore, it&amp;rsquo;s moment of inertia can be calculate as
-$$
-\begin{aligned}
-I=&amp;amp;\int_0^{2\pi}\int_0^\pi\int_a^{r}\frac{m}{\frac{4}{3}\pi (r^3-a^3)}\cdot(\rho\sin\phi) ^2\cdot \rho^2\sin\phi\ d\rho d\phi d\theta\\&lt;br&gt;
-=&amp;amp;\frac{m}{\frac{4}{3}\pi (r^3-a^3)}\int_0^{2\pi}d\theta\int_0^\pi\sin^3\phi\ d\phi\int_a^{r}\rho^4d\rho\\&lt;br&gt;
-=&amp;amp;\frac{2m(r^5-a^5)}{5(r^3-a^3)} = \frac{2m(r^4+r^3a+r^2a^2+ra^3+a^4)}{5(r^2+ra+a^2)}
-\end{aligned}
-$$
-when $a\to 0$
-$$
-\begin{aligned}
-\lim_{a\to 0}\frac{2m(r^5-a^5)}{5(r^3-a^3)}&amp;amp;=\frac{2}{5}mr^2\\&lt;br&gt;
-I^*&amp;amp;=\frac{2}{5}
-\end{aligned}
-$$
-when $a\to r$
-$$
-\begin{aligned}
-\lim_{a\to r}\frac{2m(r^5-a^5)}{5(r^3-a^3)}&amp;amp;=\frac2 3mr^2\\&lt;br&gt;
-I^*&amp;amp;=\frac{2}{3}
-\end{aligned}
-$$&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Problem 6&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Show that $I^*=2/5$ for a solid ball and $I^*=2/3$ for a hollow ball. Thus the objects finish in following order: solid ball, solid cylinder, hollow ball, hollow cylinder.&lt;/p&gt;
@@ -2060,20 +1950,8 @@ $$&lt;/p&gt;
 $$
 v^2=\frac{2gh}{1+I^*},\quad \text{其中  } I^*=\frac{I}{mr^2}
 $$&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;解答&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;自題幹敘述中，我們知道：
-$$
-mgh=\frac{1}{2}mv^2+\frac{1}{2}I\omega ^2,\quad v=\omega r
-$$
-由上述二式可得：
-$$
-mgh=\frac{1}{2}mv^2+\frac{I}{2r^2}v^2=(\frac{1}{2}m+\frac{I}{2r^2})v^2
-$$
-因此，
-$$
-v^2 = \frac{2mgh}{m+\frac{I}{r^2}} = \frac{2gh}{1+I^*}
-$$
-此即本題之解答。&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;問題 2&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;$y(t)$ 為時間 $t$ 時的鉛直下落量。而由問題一可知在不論時間 $t$ 為何，皆有關係式： $v^2=2gy/(1+I^*)$。以此結果證明 $y$ 符合以下微分方程：
@@ -2081,16 +1959,8 @@ $$
 \frac{dy}{dt}= \sqrt{\frac{2g}{1+I^*}}(\sin{\alpha})\sqrt{y}
 $$
 其中 $\alpha$ 為斜面傾角。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;解答&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;注意到 $dy/dt$ 是速度 $v$ 在 $y$ 方向之分量，故有關係式：
-$$
-\frac{dy}{dt}=v_y=v\sin{\alpha}
-$$
-因此帶入 $v$ 後可將式子改寫：
-$$
-\frac{dy}{dt}=\sqrt{\frac{2g}{1+I^*}}\sin\alpha\sqrt{y}
-$$
-此即本題之解答。&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;問題 3&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;藉由求解問題2之方程式，得出自斜面頂端滾至底端之時長 $T$ 為：
@@ -2098,81 +1968,18 @@ $$
 T=\sqrt{\frac{2h(1+I^*)}{g\sin^2\alpha}}
 $$
 亦即 $I^*$ 最小之物品將最先滾至底端。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;解答&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;注意到
-$$
-\frac{dy}{dt}\frac{dt}{dy}=1\ (根據鏈鎖律),\quad\frac{dt}{dy}=\frac{1}{\frac{dy}{dt}}
-$$
-因此可得 $dt/dy$
-$$
-\frac{dt}{dy}=\sqrt{\frac{1+I^*}{2g(\sin^2\alpha)y}}
-$$
-求解此方程即可得滾動總時。注意到當 $y=0$ 時， $dt/dy$ 不存在，因此利用極限逼近之
-$$
-\begin{aligned}
-T&amp;amp;=\lim_{x\to 0}\int^h_x\sqrt{\frac{1+I^*}{2g(\sin^2\alpha)y}}dy
-=\sqrt{\frac{2(1+I^*)}{g\sin^2\alpha}}\lim_{x\to 0}\int^h_x\frac{1}{2\sqrt y}dy\\&lt;br&gt;
-&amp;amp;=\sqrt{\frac{2(1+I^*)}{g\sin^2\alpha}}\lim_{x\to 0}\sqrt y|^h_x
-=\sqrt{\frac{2(1+I^*)}{g\sin^2\alpha}}\lim_{x\to 0}\sqrt h-\sqrt x\\&lt;br&gt;
-&amp;amp;=\sqrt{\frac{2h(1+I^*)}{g\sin^2\alpha}}
-\end{aligned}
-$$
-此即本題之解答。&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;問題 4&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;證明實心圓柱之 $I^*=1/2$，空心圓柱之 $I^*=1$。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;解答&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;一物體的轉動慣量可表示為：
-$$
-\int\rho_m R^2dV
-$$
-其中 $\rho_m$ 為密度，$R$ 為與轉軸距離。&lt;/p&gt;
-&lt;p&gt;實心圓柱之體積為 $\pi r^2 L$，其中 $L$ 為柱體長度。因此其轉動慣量可表示如下：
-$$
-I=\int_0^L\int_0^r\int_0^{2\pi}\frac{m}{\pi r^2L}R^2\cdot Rd\theta dRdl
-=\frac{mr^2}{2}
-$$
-因此，
-$$
-I^*=\frac{1}{2}
-$$&lt;/p&gt;
-&lt;p&gt;對於空心圓柱，我們將其視為內徑 $a\to r$，其體積為 $\pi L(r^2-a^2)$。因此其轉動慣量可表示如下：
-$$
-\begin{aligned}
-I=&amp;amp;\lim_{a\to r}\int_0^L\int_a^r\int_0^{2\pi}\frac{m}{\pi L(r^2-a^2)}R^2\cdot Rd\theta dRdl\\&lt;br&gt;
-=&amp;amp;\lim_{a\to r}\frac{m(r^4-a^4)}{2(r^2-a^2)}=mr^2
-\end{aligned}
-$$
-因此，
-$$
-I^*=1
-$$&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;問題 5&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;計算內徑 $a$，外徑 $r$ 之部分空心球體之 $I^&lt;em&gt;$。答案以 $b$ 表示，其中 $b=a/r$。求當 $a\to 0$ 或當 $a\to r$ 時的 $I^&lt;/em&gt;$。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;解答&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;空心球體之體積為 $(4/3)\pi (r^3-a^3)$，設轉軸為 $z$ 軸，一點到轉軸之距離 $R$ 可以球座標中 $\rho\sin\phi$ 表示。因此其轉動慣量為：
-$$
-\begin{aligned}
-I=&amp;amp;\int_0^{2\pi}\int_0^\pi\int_a^{r}\frac{m}{\frac{4}{3}\pi (r^3-a^3)}\cdot(\rho\sin\phi) ^2\cdot \rho^2\sin\phi\ d\rho d\phi d\theta\\&lt;br&gt;
-=&amp;amp;\frac{m}{\frac{4}{3}\pi (r^3-a^3)}\int_0^{2\pi}d\theta\int_0^\pi\sin^3\phi\ d\phi\int_a^{r}\rho^4d\rho\\&lt;br&gt;
-=&amp;amp;\frac{2m(r^5-a^5)}{5(r^3-a^3)} = \frac{2m(r^4+r^3a+r^2a^2+ra^3+a^4)}{5(r^2+ra+a^2)}
-\end{aligned}
-$$
-當 $a\to 0$：
-$$
-\begin{aligned}
-\lim_{a\to 0}\frac{2m(r^5-a^5)}{5(r^3-a^3)}&amp;amp;=\frac{2}{5}mr^2\\&lt;br&gt;
-I^*&amp;amp;=\frac{2}{5}
-\end{aligned}
-$$
-當 $a\to r$：
-$$
-\begin{aligned}
-\lim_{a\to r}\frac{2m(r^5-a^5)}{5(r^3-a^3)}&amp;amp;=\frac2 3mr^2\\&lt;br&gt;
-I^*&amp;amp;=\frac{2}{3}
-\end{aligned}
-$$&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;問題 6&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;說明實心球體的 $I^*=2/5$，而空心球體的 $I^*=2/3$。因此滾至斜面底部的順序為實心球體、實心柱體、空心球體、空心柱體。&lt;/p&gt;
@@ -3244,20 +3051,8 @@ $$
 \frac{dA}{dt}=\frac{1}{2}h= c,
 $$
 where $c$ is a constant. This says that the rate at which $A$ is swept out is constant and proves Kepler’s Second Law.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Solution&lt;/strong&gt;：&lt;/p&gt;
-&lt;p&gt;(a)
-$$
-\vec{h} = \vec{r} \times \vec{v} = \vec{r} \times \vec{r}&amp;rsquo; = ( r\cos{\theta} \vec{i} + r\sin{\theta} \vec{j}) \times \frac{d}{dt} (r\cos{\theta} \vec{i} + r\sin{\theta} \vec{j})
-$$
-$$
-= \ \left|\begin{array}{cccc}     i &amp;amp;    j    &amp;amp; k \\   r \cos\theta   &amp;amp;    r \sin\theta   &amp;amp; 0\\    -r \sin\theta \frac{ d\theta }{dt} &amp;amp; r \cos\theta \frac{ d\theta }{dt} &amp;amp; 0 \end{array}\right| = r^2 \frac{d\theta}{dt} \vec{k}
-$$&lt;/p&gt;
-&lt;p&gt;(b)
-$$
-h = |\vec{h}| =  r^2 \frac{d\theta}{dt}.
-$$&lt;/p&gt;
-&lt;p&gt;(c) $dA =  \frac{1}{2} (r)(r d\theta) =  \frac{1}{2} r^2 d\theta$, therefore, $\frac{dA}{dt} =  \frac{1}{2}(r^2 \frac{d\theta}{dt})$&lt;/p&gt;
-&lt;p&gt;(d) Combine (b) and (c), we can infer that $\frac{dA}{dt} =  \frac{1}{2} h =c$, where $c$ is a constant.&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Question 2&lt;/strong&gt;： Let $T$ be the period of a planet about the sun; that is, $T$ is the time required for it to travel once around its elliptical orbit. Suppose that the lengths of the major and minor axes of the ellipse are $2a$ and $2b$.&lt;/p&gt;
 &lt;p&gt;(a) Use part (d) of Problem 1 to show that $T =2\pi ab h$.&lt;/p&gt;
@@ -3270,18 +3065,8 @@ $$
 T^2=\frac{4\pi^2}{GM}a^3
 $$&lt;/p&gt;
 &lt;p&gt;This proves Kepler’s Third Law. [Notice that the proportionality constant $\frac{4\pi^2}{GM}$ is independent of the planet.]&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Solution&lt;/strong&gt;：&lt;/p&gt;
-&lt;p&gt;(a) We already know that  $\frac{dA}{dt} =  \frac{1}{2} h$, transposing the terms, we get $dt=\frac{2dA}{h}$. Then we integral both sides about one period, we get
-$$
-\int dt =T =\int \frac{2}{h}dA=\frac{2}{h}(\pi ab).
-$$
-Thus, $T=2\pi ab /h$.&lt;/p&gt;
-&lt;p&gt;(b) Recall that $e=\frac{c}{GM}$, and $d=\frac{h^2}{c}$. Therefore, $ed=\frac{h^2}{GM}$.&lt;/p&gt;
-&lt;p&gt;We also know that $\frac{b^2}{a}=l$, where $l$ is the semi-latus rectum of the orbit. By definition, $ed=l$, thus we can infer that $ed=\frac{h^2}{GM}=\frac{b^2}{a}$.&lt;/p&gt;
-&lt;p&gt;(c) Using parts (a) and (b), we know
-$$
-T^2=\frac{4\pi^2a^2b^2}{h^2}=4\pi^2a^2(\frac{a}{GM})=\frac{4\pi^2a^3}{GM}.
-$$&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Quesion 3&lt;/strong&gt;： The period of the earth’s orbit is approximately 365.25 days. Use this fact and Kepler’s Third Law to find the length of the major axis of the earth’s orbit. You will need the mass of the sun, $M=1.99\times 10^{30}kg$, and the gravitational constant, $G=6.67\times10^{-11}N-m^2/kg^2$.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Solution&lt;/strong&gt; ：&lt;/p&gt;
@@ -3331,20 +3116,8 @@ $$
 \frac{dA}{dt}=\frac{1}{2}h=c,
 $$
 其中 $c$ 是常數. 如此證明了克卜勒第二定律，即面積速率為定值。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;解&lt;/strong&gt;：&lt;/p&gt;
-&lt;p&gt;(a)
-$$
-\vec{h} = \vec{r} \times \vec{v} = \vec{r} \times \vec{r}&amp;rsquo; = ( r\cos{\theta} \vec{i} + r\sin{\theta} \vec{j}) \times \frac{d}{dt} (r\cos{\theta} \vec{i} + r\sin{\theta} \vec{j})
-$$
-$$
-= \ \left|\begin{array}{cccc}     i &amp;amp;    j    &amp;amp; k \\   r \cos\theta   &amp;amp;    r \sin\theta   &amp;amp; 0\\    -r \sin\theta \frac{ d\theta }{dt} &amp;amp; r \cos\theta \frac{ d\theta }{dt} &amp;amp; 0 \end{array}\right| = r^2 \frac{d\theta}{dt} \vec{k}
-$$&lt;/p&gt;
-&lt;p&gt;(b)
-$$
-h = |\vec{h}| =  r^2 \frac{d\theta}{dt}.
-$$&lt;/p&gt;
-&lt;p&gt;(c) $dA =  \frac{1}{2} (r)(r d\theta) =  \frac{1}{2} r^2 d\theta$, 因此, $\frac{dA}{dt} =  \frac{1}{2}(r^2 \frac{d\theta}{dt})$&lt;/p&gt;
-&lt;p&gt;(d) 結合 (b) 和 (c) ,可得 $\frac{dA}{dt} =  \frac{1}{2} h =c$, 其中 $c$ 是常數.&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;問題 2&lt;/strong&gt;： 令 $T$ 是行星繞日之週期，$2a$ 為橢圓軌道長軸，$2b$ 為短軸。&lt;/p&gt;
 &lt;p&gt;(a)利用上題(d)小題證明 $T =2\pi ab /h$.&lt;/p&gt;
@@ -3357,18 +3130,8 @@ $$
 T^2=\frac{4\pi^2}{GM}a^3
 $$&lt;/p&gt;
 &lt;p&gt;這證明了克卜勒第三定律. [注意比例常數 $\frac{4\pi^2}{GM}$ 與行星無關.]&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;解&lt;/strong&gt;：&lt;/p&gt;
-&lt;p&gt;(a) 已知  $\frac{dA}{dt}$ =  $\frac{1}{2} h$, 移項後可得 $dt=\frac{2dA}{h}$. 兩邊同時積分一個週期, 可得
-$$
-\int dt =T =\int \frac{2}{h}dA=\frac{2}{h}(\pi ab).
-$$
-因此, $T=2\pi ab /h$.&lt;/p&gt;
-&lt;p&gt;(b) 已知 $e=\frac{c}{GM}$, $d=\frac{h^2}{c}$. 因此, $ed=\frac{h^2}{GM}$.&lt;/p&gt;
-&lt;p&gt;又 $\frac{b^2}{a}=l$, 其中 $l$ 為軌道之半正焦弦長. 透過定義, $ed=l$, 可推得 $ed=\frac{h^2}{GM}=\frac{b^2}{a}$.&lt;/p&gt;
-&lt;p&gt;(c) 結合 (a) 和 (b) 小題, 可得
-$$
-T^2=\frac{4\pi^2a^2b^2}{h^2}=4\pi^2a^2(\frac{a}{GM})=\frac{4\pi^2a^3}{GM}.
-$$&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;問題 3&lt;/strong&gt;： 地球公轉周期約為 365.25 天.利用克卜勒第三定律找出半長軸. 其中太陽質量為 $M=1.99\times 10^{30}kg$, 重力常數為 $G=6.67\times10^{-11}N-m^2/kg^2$.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;解&lt;/strong&gt;：&lt;/p&gt;
@@ -3446,70 +3209,19 @@ f(x,y)=\left(\frac{1+x}{1+y}\right)^{\frac{1}{3}}-1.
 $$
 Given the context, what is the domain of $f$?&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Find the formula of $f$:&lt;/p&gt;
-&lt;p&gt;$f(x,y)$ can be rewritten as
-$$
-f(x,y)=\frac{v(P(1+x),C(1+y))}{v(P,C)}-1
-$$
-Replace $v(P,C)$ with its formula
-$$
-f(x,y)=\frac{\left[\frac{2P(1+x)}{kC(1+y)}\right]^{1/3} }{\left(\frac{2P}{kC}\right)^{1/3}}-1
-$$
-$v(P,C)$ is greater than zero, and $v(P+xP,C+yC)$ is greater than or equal to zero. Thus, the roots of numerator and dominator can be combined together：
-$$
-f(x,y)=\left(\frac{1+x}{1+y}\right)^{\frac{1}{3}}-1
-$$&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Find the domain of $f$:&lt;/p&gt;
-&lt;p&gt;The power performed is obviously greater than or equal to zero.
-$$
-P+xP\geq 0
-$$
-The friction is always greater than zero in the real world. Hence, the drag is obviously greater than zero.
-$$
-C+yC&amp;gt;0
-$$
-In conclusion
-$$
-1+x\geq0,\qquad1+y&amp;gt;0
-$$
-The domain of $f$ is
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;The domain of $f$ is
 $$
 {(x,y)\mid x\geq-1,\quad y&amp;gt;-1}
 $$&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Question 2:&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Suppose that the possible changes in power $x$ and drag $y$ are small. Find the linear approximation to the function $f(x, y)$. What does this approximation tell you about the effect of a small increase in power versus a small decrease in drag?&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
 &lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Find the linear approximation to the function $f$&lt;/p&gt;
-&lt;p&gt;The changes in power $x$ and drag $y$ are small. It means that $x$ and $y$ are closed to zero. Applied linear approximation at the point $(0,0)$
-$$
-f(x,y)\approx f(0,0)+f_x(0,0)(x-0)+f_y(0,0)(y-0)
-$$
-Calculate  $f_x$
-$$
-\frac{\partial f}{\partial x} =\frac{1}{3}(1+x)^{-\frac{2}{3}}(1+y)^{-\frac{1}{3}}
-$$
-Calculate  $f_y$
-$$
-\frac{\partial f}{\partial y}=-\frac{1}{3}(1+x)^{\frac{1}{3}}(1+y)^{-\frac{4}{3}}
-$$
-Calculate  $f_x(0,0)$ and  $f_y(0,0)$
-$$
-f_x(0,0)=\frac{1}{3} \quad f_y(0,0)=-\frac{1}{3}
-$$
-$f(0,0)=0$, therefore, the linear approximation to  $f$  at $(0, 0)$ is
-$$
-f(x,y)\approx \frac{1}{3}x-\frac{1}{3}y
-$$&lt;/p&gt;
-&lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;The effect of a small increase in power vs. a small decrease in drag&lt;/p&gt;
 &lt;p&gt;According to the linear approximation to the function $f$ , the small increase in power $x$ and the small decrease in drag $y$ have the same impact on changes in speed $f$ with the proportion of one-third. Consequently, in terms of the fractional change in speed, there is no significant difference between the small increase in power and the small decrease in drag.&lt;/p&gt;
@@ -3518,55 +3230,15 @@ $$&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Question 3:&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Calculate $f_{xx}(x, y)$ and $f_{yy}(x, y)$. Based on the signs of these derivatives, does the linear approximation in Problem 2 result in an overestimate or an underestimate for an increase in power? What about for a decrease in drag? Use your answer to explain why, for changes in power or drag that are not very small, a decrease in drag is more effective.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Evaluate whether the linear approximation in Problem 2 is overestimated or underestimated&lt;/p&gt;
-&lt;p&gt;Calculate $f_{xx}(x, y)$ and $f_{yy}(x, y)$
-$$
-\frac{\partial^2 f}{\partial x^2} = -\frac{2}{9}(1+x)^{-\frac{5}{3}}(1+y)^{-\frac{1}{3}}&amp;lt;0
-$$
-$$
-\frac{\partial^2 f}{\partial y^2} = \frac{4}{9}(1+x)^{\frac{1}{3}}(1+y)^{-\frac{7}{3}}&amp;gt;0
-$$&lt;/p&gt;
-&lt;p&gt;$f$ is a &lt;em&gt;concave&lt;/em&gt; function with respect to $x$, which means the linear approximation result in an &lt;em&gt;overestimate&lt;/em&gt; for the impact on an increase in power.
-$$
-f(x,0)&amp;lt;\frac{1}{3}x
-$$
-$f$ is a &lt;em&gt;convex&lt;/em&gt; function with respect to $y$, which means the linear approximation result in an &lt;em&gt;underestimate&lt;/em&gt; for the impact on an decrease in drag.
-$$
-f(0,y)&amp;gt;-\frac{1}{3}y
-$$&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Explain why a decrease in drag is more effective when the changes are not very small&lt;/p&gt;
-&lt;p&gt;Suppose that the increase in power and the decrease in drag are equal to a constant $c &amp;gt;0$
-$$
-c=x=-y
-$$
-Determine whether $f$ is more sensitive to changes in $x$ or $y$
-$$
-\frac{\Delta f(c,0)}{\Delta f(0,-c)}=\frac{f(c,0)-f(0,0)}{f(0,-c)-f(0,0)}=\frac{f(c,0)}{f(0,-c)}&amp;lt;\frac{\frac{1}{3}c}{\frac{1}{3}c}=1
-$$
-Consequently, for changes in power or drag that are not very small, a decrease in drag is more effective.
-$$
-\Delta f(0,-c)&amp;gt;\Delta f(c,0)\quad (c&amp;gt;0)
-$$&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Question 4:&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Graph the level curves of $f(x, y)$. Explain how the shapes of these curves relate to your answers to Problems 2 and 3.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;For a given constant $h$, suppose $f(x,y)=h$
-$$
-f(x,y)=\left(\frac{1+x}{1+y}\right)^{\frac{1}{3}}-1=h
-$$
-Rearrange the equation and  then get the formula of the level curve
-$$
-y=\frac{x}{(1+h)^3}+\frac{1}{(1+h)^3}-1
-$$
-Graph the level curve with h= -0.75, -0.5, -0.25, 0, 0.05, 0.25, 0.5, 0.75, 1&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;Graph the level curve with h= -0.75, -0.5, -0.25, 0, 0.05, 0.25, 0.5, 0.75, 1&lt;/p&gt;
 
 
 
@@ -3667,70 +3339,19 @@ f(x,y)=\left(\frac{1+x}{1+y}\right)^{\frac{1}{3}}-1
 $$
 由文字給定的敘述中, 請問函數 $f$ 的定義域為何?&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;解&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;找出 $f$ 的公式&lt;/p&gt;
-&lt;p&gt;$f(x,y)$ 可以被重新寫成
-$$
-f(x,y)=\frac{v(P(1+x),C(1+y))}{v(P,C)}-1
-$$
-帶入 $v(P,C)$ 的公式
-$$
-f(x,y)=\frac{\left[\frac{2P(1+x)}{kC(1+y)}\right]^{1/3} }{\left(\frac{2P}{kC}\right)^{1/3}}-1
-$$
-$v(P,C)$ 大於零且 $v(P+xP,C+yC)$ 大於等於零. 因此, 分子和分母的根號可以結合一起計算:
-$$
-f(x,y)=\left(\frac{1+x}{1+y}\right)^{\frac{1}{3}}-1
-$$&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;找出 $f$ 的定義域&lt;/p&gt;
-&lt;p&gt;所做的功率必定大於等於零:
-$$
-P+xP\geq 0
-$$
-現實生活中必定存在磨擦, 阻力係數大於零:
-$$
-C+yC&amp;gt;0
-$$
-總結以上
-$$
-1+x\geq0, \qquad 1+y&amp;gt;0
-$$
-因此 $f$ 的定義域為
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;$f$ 的定義域為
 $$
 \{ (x,y)\mid x\geq-1,\quad y&amp;gt;-1 \}
 $$&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;問題 2:&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;假設功率的改變比例 $x$ 和阻力的改變比例 $y$ 很小, 找出 $f(x, y)$ 的線性近似. 請問這個近似告訴你關於「增加功率」和「減少阻力」的影響存在哪些差異?&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;解&lt;/strong&gt;&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
 &lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;找出函數 $f$ 的線性近似&lt;/p&gt;
-&lt;p&gt;功率的改變比例 $x$ 和阻力的改變比例 $y$ 很小意味著 $x$ 和 $y$ 很接近零, 在點 $(0,0)$ 使用線性逼近法
-$$
-f(x,y)\approx f(0,0)+f_x(0,0)(x-0)+f_y(0,0)(y-0)
-$$
-計算 $f_x$
-$$
-\frac{\partial f}{\partial x} =\frac{1}{3}(1+x)^{-\frac{2}{3}}(1+y)^{-\frac{1}{3}}
-$$
-計算 $f_y$
-$$
-\frac{\partial f}{\partial y}=-\frac{1}{3}(1+x)^{\frac{1}{3}}(1+y)^{-\frac{4}{3}}
-$$
-計算 $f_x(0,0)$ 和 $f_y(0,0)$
-$$
-f_x(0,0)=\frac{1}{3} \quad f_y(0,0)=-\frac{1}{3}
-$$
-因為 $f(0,0)=0$, 得 $f$ 在點 $(0,0)$ 的線性近似為
-$$
-f(x,y)\approx \frac{1}{3}x-\frac{1}{3}y
-$$&lt;/p&gt;
-&lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;比較「增加功率」和「減少阻力」的影響&lt;/p&gt;
 &lt;p&gt;根據函數 $f$ 線性逼近的結果, 增加功率 $x$ 或減少阻力 $y$ 所造成速率的增加比例都是三分之一. 因此, 對於速率的增加比例而言, 少量增加功率抑或是少量減少阻力所造成的影響並沒有差異.&lt;/p&gt;
@@ -3739,55 +3360,15 @@ $$&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;問題 3:&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;計算 $f_{xx}(x, y)$ 和 $f_{yy}(x, y)$. 根據這些導數的正負號, 請問題目2的線性近似對於「增加功率」是低估還是高估呢? 那麼對於「減少阻力」呢? 利用你的答案解釋為什麼在功率或阻力的變化量不小的情況下, 「減少阻力」比較有效率?&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;解&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;評估問題2的線性近似究竟是高估還是低估&lt;/p&gt;
-&lt;p&gt;計算 $f_{xx}(x, y)$ 和 $f_{yy}(x, y)$
-$$
-\frac{\partial^2 f}{\partial x^2} = -\frac{2}{9}(1+x)^{-\frac{5}{3}}(1+y)^{-\frac{1}{3}}&amp;lt;0
-$$
-$$
-\frac{\partial^2 f}{\partial y^2} = \frac{4}{9}(1+x)^{\frac{1}{3}}(1+y)^{-\frac{7}{3}}&amp;gt;0
-$$&lt;/p&gt;
-&lt;p&gt;$f$ 對於 $x$ 而言是凸函數 (a &lt;em&gt;concave&lt;/em&gt; function), 這意味著線性近似高估了「增加功率」的影響.
-$$
-f(x,0)&amp;lt;\frac{1}{3}x
-$$
-$f$ 對於 $y$ 而言是凹函數 (a &lt;em&gt;convex&lt;/em&gt; function), 這意味著線性近似低估了「減少阻力」的影響.
-$$
-f(0,y)&amp;gt;-\frac{1}{3}y
-$$&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;解釋為什麼在變化量大的時候「減少阻力」比較有效率&lt;/p&gt;
-&lt;p&gt;假設功率的增加量和阻力的減少量等於定值 $c &amp;gt;0$
-$$
-c=x=-y
-$$
-判斷 $f$  對於 $x$ 或 $y$ 的改變何者比較敏感
-$$
-\frac{\Delta f(c,0)}{\Delta f(0,-c)}=\frac{f(c,0)-f(0,0)}{f(0,-c)-f(0,0)}=\frac{f(c,0)}{f(0,-c)}&amp;lt;\frac{\frac{1}{3}c}{\frac{1}{3}c}=1
-$$
-因此，在功率或阻力的變化量不小的情況下, 「減少阻力」比較有效.
-$$
-\Delta f(0,-c)&amp;gt;\Delta f(c,0)\quad (c&amp;gt;0)
-$$&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;問題 4:&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;畫出 $f(x, y)$ 的等高線圖, 解釋這些等高線的形狀和問題 2 和 3 有哪些關聯性.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;解&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;給定一個定值$h$, 令 $f(x,y)=h$
-$$
-f(x,y)=\left(\frac{1+x}{1+y}\right)^{\frac{1}{3}}-1=h
-$$
-重新整理方程式，然後得到等高線的公式
-$$
-y=\frac{x}{(1+h)^3}+\frac{1}{(1+h)^3}-1
-$$
-畫出在 h= -0.75, -0.5, -0.25, 0, 0.05, 0.25, 0.5, 0.75, 1的等高線&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;畫出在 h= -0.75, -0.5, -0.25, 0, 0.05, 0.25, 0.5, 0.75, 1的等高線&lt;/p&gt;
 
 
 
@@ -3875,51 +3456,16 @@ Chinese version
 $$
 v_1+v_2+v_3+v_4=0
 $$&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;We know that
-$$
-v_1=\frac{\overrightarrow{QS}\times\overrightarrow{QR}}{2} ,
-v_2=\frac{\overrightarrow{RS}\times\overrightarrow{RP}}{2} ,
-v_3=\frac{\overrightarrow{QP}\times\overrightarrow{QS}}{2} ,
-v_4=\frac{\overrightarrow{QR}\times\overrightarrow{QP}}{2}.
-$$
-The vector $v_2$ can be re-written as
-$$
-\overrightarrow{RS} = \overrightarrow{QS}-\overrightarrow{QR}, \quad
-\overrightarrow{RP} = \overrightarrow{QP}-\overrightarrow{QR}, \quad
-$$
-and we have
-$$
-\overrightarrow{RS}\times\overrightarrow{RP} = \overrightarrow{QS}\times\overrightarrow{QP}-\overrightarrow{QR}\times\overrightarrow{QP}-\overrightarrow{QS}\times\overrightarrow{QR}.
-$$
-Therefore, by adding up the four vectors
-$$
-v_1+v_2+v_3+v_4=\frac{\overrightarrow{QS}\times\overrightarrow{QR}+\overrightarrow{RS}\times\overrightarrow{RP}+\overrightarrow{QP}\times\overrightarrow{QS}+\overrightarrow{QR}\times\overrightarrow{QP}}{2}=0.
-$$&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Question 2:&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;The volume &lt;em&gt;V&lt;/em&gt; of a tetrahedron is one-third the distance from a vertex to the opposite face, times the area of the face.&lt;/p&gt;
 &lt;p&gt;(a)Find a formula for the volume of a tetrahedron in terms of the coordination of its vertices &lt;em&gt;P&lt;/em&gt; ,&lt;em&gt;Q&lt;/em&gt; , &lt;em&gt;R&lt;/em&gt; and &lt;em&gt;S&lt;/em&gt;.&lt;/p&gt;
 &lt;p&gt;(b)Find the volume of the tetrahedron whose vertices are &lt;em&gt;P&lt;/em&gt;(1,1,1), &lt;em&gt;Q&lt;/em&gt;(1,2,3), &lt;em&gt;R&lt;/em&gt;(1,1,2), and &lt;em&gt;S&lt;/em&gt;(3,-1,2).&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;(a)&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;We know that the volume of a tetrahedron is one-third the distance from a vertex to the opposite face, times the area of the face. That is, it is one-sixth of the volume of a parallelepiped.&lt;/p&gt;
-&lt;p&gt;Therefore we can use the formula of the volume of the parallelepiped to form a formula for the volume of a tetrahedron.&lt;/p&gt;
-&lt;p&gt;Suppose that the three vectors that form the parallelepiped are &lt;em&gt;a&lt;/em&gt;, &lt;em&gt;b&lt;/em&gt; and &lt;em&gt;c&lt;/em&gt;:
-$$
-a=(a_1, a_2, a_3), b=(b_1, b_2, b_3), c=(c_1, c_2, c_3).
-$$&lt;/p&gt;
-&lt;p&gt;We now have
-$$
-(5) \qquad V=\frac{\mid (a\times b )\cdot c \mid}{6}=\frac{\left |
-\begin{array}{ccc}
-a_1 &amp;amp; a_2 &amp;amp;  a_3 \\&lt;br&gt;
-b_1 &amp;amp; b_2 &amp;amp; b_3 \\&lt;br&gt;
-c_1 &amp;amp; c_2 &amp;amp; c_3 \\&lt;br&gt;
-\end{array}\right |}{6}
-$$
-In addition, suppose that &lt;em&gt;P&lt;/em&gt;=($p_1$，$p_2$，$p_3$), &lt;em&gt;Q&lt;/em&gt;=($q_1$，$q_2$，$q_3$), &lt;em&gt;R&lt;/em&gt;=($r_1$，$r_2$，$r_3$), &lt;em&gt;S&lt;/em&gt;=($s_1$，$s_2$，$s_3$).&lt;/p&gt;
-&lt;p&gt;Substitute  &lt;em&gt;a&lt;/em&gt;=&lt;em&gt;Q&lt;/em&gt;-&lt;em&gt;P&lt;/em&gt;, &lt;em&gt;b&lt;/em&gt;=&lt;em&gt;R&lt;/em&gt;-&lt;em&gt;P&lt;/em&gt;, &lt;em&gt;c&lt;/em&gt;=&lt;em&gt;S&lt;/em&gt;-&lt;em&gt;P&lt;/em&gt; into formula (5), then we can get the volume &lt;em&gt;V&lt;/em&gt; of a tetrahedron.&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
 &lt;p&gt;&lt;strong&gt;(b)&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;By (a),  a=(0,1,2), b=(0,0,1), c=(2,-2,1).&lt;/p&gt;
 &lt;p&gt;So
@@ -3938,49 +3484,8 @@ $$
 D^{2}=A^{2}+B^{2}+C^{2}
 $$
 (This is a three-dimensional version of the Pythagorean Theorem.)&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;First, suppose that $\overline{QS}=a$, $\overline{SR}=b$ , $\overline{SP}=c$, area &lt;em&gt;PQS&lt;/em&gt;=&lt;em&gt;A&lt;/em&gt;, area &lt;em&gt;PSR&lt;/em&gt;= &lt;em&gt;B&lt;/em&gt;, area &lt;em&gt;QSR&lt;/em&gt;= &lt;em&gt;C&lt;/em&gt;, and area &lt;em&gt;PQR&lt;/em&gt;= &lt;em&gt;D&lt;/em&gt;.&lt;/p&gt;
-&lt;p&gt;Then, we can throw the tetrahedron into a three-dimensional coordinate system, as the following figure shows.&lt;/p&gt;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure&gt;
-
-
-  &lt;a data-fancybox=&#34;&#34; href=&#34;https://teshenglin.github.io/post/figs/2020_cal_s12p4_2.png&#34; &gt;
-
-
-  &lt;img src=&#34;https://teshenglin.github.io/post/figs/2020_cal_s12p4_2.png&#34; alt=&#34;&#34; width=&#34;400px&#34; &gt;
-&lt;/a&gt;
-
-
-
-&lt;/figure&gt;
-
-&lt;p&gt;Therefore,
-$$
-A^{2}=\frac{a^{2}c^{2}}{4}, B^{2}=\frac{b^{2}c^{2}}{4}, C^{2}=\frac{a^{2}b^{2}}{4}
-$$
-and we know that
-$$
-D=\left|\frac{\overrightarrow{QP}\times\overrightarrow{QR}}{2}\right|=\left|\frac{(-a,0,c)\times(-a,b,0)}{2}\right|=\sqrt{\frac{a^2b^2+b^2c^2+a^2c^2}{4}}
-$$
-Therefore,
-$$
-D^2=\frac{a^2b^2+b^2c^2+a^2c^2}{4} = A^2+B^2+C^2
-$$&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
 &lt;hr&gt;
 </description>
     </item>
@@ -4030,51 +3535,16 @@ $$&lt;/p&gt;
 $$
 v_1+v_2+v_3+v_4=0
 $$&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;解答:&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;我們知道
-$$
-v_1=\frac{\overrightarrow{QS}\times\overrightarrow{QR}}{2} ,
-v_2=\frac{\overrightarrow{RS}\times\overrightarrow{RP}}{2} ,
-v_3=\frac{\overrightarrow{QP}\times\overrightarrow{QS}}{2} ,
-v_4=\frac{\overrightarrow{QR}\times\overrightarrow{QP}}{2}.
-$$
-其中兩個向量可被改寫成
-$$
-\overrightarrow{RS} = \overrightarrow{QS}-\overrightarrow{QR}, \quad
-\overrightarrow{RP} = \overrightarrow{QP}-\overrightarrow{QR}, \quad
-$$
-因此得到
-$$
-\overrightarrow{RS}\times\overrightarrow{RP} = \overrightarrow{QS}\times\overrightarrow{QP}-\overrightarrow{QR}\times\overrightarrow{QP}-\overrightarrow{QS}\times\overrightarrow{QR}.
-$$
-接著，將四個向量相加可得
-$$
-v_1+v_2+v_3+v_4=\frac{\overrightarrow{QS}\times\overrightarrow{QR}+\overrightarrow{RS}\times\overrightarrow{RP}+\overrightarrow{QP}\times\overrightarrow{QS}+\overrightarrow{QR}\times\overrightarrow{QP}}{2}=0.
-$$&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;問題2：&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;四面體的體積&lt;em&gt;V&lt;/em&gt;是其一頂點到其對面的距離乘以該面的面積，再乘以三分之一倍。&lt;/p&gt;
 &lt;p&gt;(a)找出一個計算四面體體積的公式，以頂點 &lt;em&gt;P&lt;/em&gt;，&lt;em&gt;Q&lt;/em&gt;，&lt;em&gt;R&lt;/em&gt;，&lt;em&gt;S&lt;/em&gt; 的座標表達。&lt;/p&gt;
 &lt;p&gt;(b)算出四頂點分別為 &lt;em&gt;P&lt;/em&gt;(1,1,1)，&lt;em&gt;Q&lt;/em&gt;(1,2,3)，&lt;em&gt;R&lt;/em&gt;(1,1,2)，&lt;em&gt;S&lt;/em&gt;(3,-1,2) 的四面體的體積。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;解答:&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;(a)&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;我們知道四面體的體積是三分之一倍的一頂點到其對面的距離乘以該面的面積。也就是說，是六分之一倍的平行六面體的體積。&lt;/p&gt;
-&lt;p&gt;因此，我們可以用平行四面體的體積公式來推導出四面體的體積公式。&lt;/p&gt;
-&lt;p&gt;假設三個組成平行六面體的向量為&lt;em&gt;a&lt;/em&gt;，&lt;em&gt;b&lt;/em&gt;，&lt;em&gt;c&lt;/em&gt;：
-$$
-a=(a_1, a_2, a_3), b=(b_1, b_2, b_3), c=(c_1, c_2, c_3).
-$$&lt;/p&gt;
-&lt;p&gt;現在我們有
-$$
-(5) \qquad V=\frac{\mid (a\times b )\cdot c \mid}{6}=\frac{\left |
-\begin{array}{ccc}
-a_1 &amp;amp; a_2 &amp;amp;  a_3 \\&lt;br&gt;
-b_1 &amp;amp; b_2 &amp;amp; b_3 \\&lt;br&gt;
-c_1 &amp;amp; c_2 &amp;amp; c_3 \\&lt;br&gt;
-\end{array}\right |}{6}
-$$
-又假設 &lt;em&gt;P&lt;/em&gt;=($p_1$，$p_2$，$p_3$), &lt;em&gt;Q&lt;/em&gt;=($q_1$，$q_2$，$q_3$), &lt;em&gt;R&lt;/em&gt;=($r_1$，$r_2$，$r_3$), &lt;em&gt;S&lt;/em&gt;=($s_1$，$s_2$，$s_3$).&lt;/p&gt;
-&lt;p&gt;將 &lt;em&gt;a&lt;/em&gt;=&lt;em&gt;Q&lt;/em&gt;-&lt;em&gt;P&lt;/em&gt;, &lt;em&gt;b&lt;/em&gt;=&lt;em&gt;R&lt;/em&gt;-&lt;em&gt;P&lt;/em&gt;, &lt;em&gt;c&lt;/em&gt;=&lt;em&gt;S&lt;/em&gt;-&lt;em&gt;P&lt;/em&gt; 代入方程式 (5)，然後我們就可以得到四面體的體積&lt;em&gt;V&lt;/em&gt;。&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
 &lt;p&gt;&lt;strong&gt;(b)&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;由 (a),  a=(0,1,2), b=(0,0,1), c=(2,-2,1).&lt;/p&gt;
 &lt;p&gt;所以
@@ -4093,49 +3563,8 @@ $$
 D^{2}=A^{2}+B^{2}+C^{2}
 $$
 (這是一個三維版本的勾股定理。)&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;解答:&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;首先，令  $\overline{QS}=a$, $\overline{SR}=b$ , $\overline{SP}=c$, 面積 &lt;em&gt;PQS&lt;/em&gt;=&lt;em&gt;A&lt;/em&gt;, 面積 &lt;em&gt;PSR&lt;/em&gt;= &lt;em&gt;B&lt;/em&gt;, 面積 &lt;em&gt;QSR&lt;/em&gt;= &lt;em&gt;C&lt;/em&gt;, 面積 &lt;em&gt;PQR&lt;/em&gt;= &lt;em&gt;D&lt;/em&gt;.&lt;/p&gt;
-&lt;p&gt;然後，我們可以把四面體置於一個三維座標系統，如下圖所示。&lt;/p&gt;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure&gt;
-
-
-  &lt;a data-fancybox=&#34;&#34; href=&#34;https://teshenglin.github.io/post/figs/2020_cal_s12p4_2.png&#34; &gt;
-
-
-  &lt;img src=&#34;https://teshenglin.github.io/post/figs/2020_cal_s12p4_2.png&#34; alt=&#34;&#34; width=&#34;400px&#34; &gt;
-&lt;/a&gt;
-
-
-
-&lt;/figure&gt;
-
-&lt;p&gt;因此，
-$$
-A^{2}=\frac{a^{2}c^{2}}{4}, B^{2}=\frac{b^{2}c^{2}}{4}, C^{2}=\frac{a^{2}b^{2}}{4}
-$$
-並且我們知道，
-$$
-D=\left|\frac{\overrightarrow{QP}\times\overrightarrow{QR}}{2}\right|=\left|\frac{(-a,0,c)\times(-a,b,0)}{2}\right|=\sqrt{\frac{a^2b^2+b^2c^2+a^2c^2}{4}}
-$$
-因此
-$$
-D^2=\frac{a^2b^2+b^2c^2+a^2c^2}{4} = A^2+B^2+C^2
-$$&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
 &lt;hr&gt;
 </description>
     </item>
@@ -4159,16 +3588,8 @@ $$&lt;/p&gt;
 &lt;p&gt;(c) 畫出$L_1$、$f$和 $L_2$，以圖形證實軌道之間的接點是平滑的。&lt;/p&gt;
 &lt;p&gt;(d) 找出$P$和$Q$之間的垂直距離。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;解答:&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;假設 $P$ 點在 $(0,0)$，$Q$ 點在 $(30,y_q)$, 則
-$$
-f&amp;rsquo;(0)=b=0.8, \quad f&amp;rsquo;(30)=60a+b=-1.6
-$$
-解出方程式後，我們可以得到 $a=-0.04$，$b=0.8$。至於 $c$，$f(0)=c=0$。&lt;/p&gt;
-&lt;p&gt;因此我們得到
-$$
-f(x)=-0.04x^2+0.8x
-$$&lt;/p&gt;
-&lt;p&gt;運用已經得到的 $f(x)$ ，我們可以找到 $y_q=f(30)=-12$，因此 $P$ 和 $Q$ 之間的垂直距離為12公尺。&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
 &lt;p&gt;下圖是這些函數的圖形：&lt;/p&gt;
 
 
@@ -4212,49 +3633,8 @@ $$&lt;/p&gt;
 &lt;p&gt;(b) 利用電腦計算系統解出第(a)小題的等式，以找出$q(x)$、$g(x)$和$h(x)$的方程式。&lt;/p&gt;
 &lt;p&gt;(c) 畫出 $L_1$、 $g$、 $q$、 $h$和 $L_2$，並與問題一的第(c)小題的圖形相互比較。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;解答:&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;我們可以列出下列三個方程式：
-$$
-g(x)=kx^3+lx^2+mx+n, \quad 0 \leq x \leq 3,
-$$
-$$
-q(x)=a(x-3)^2+b(x-3)+c, \quad 3 \leq x \leq 27,
-$$
-$$
-h(x)=p(x-30)^3+q(x-30)^2+r(x-30)+s, \quad 27 \leq x \leq 30.
-$$
-根據文章，我們可以列出11個等式進而解出11個未知數：
-$$
-g(0)=0,\quad g&amp;rsquo;(0)=0.8,\quad g&amp;rsquo;&#39;(0)=0,
-$$
-$$
-g(3)=q(3),\quad g&amp;rsquo;(3)=q&amp;rsquo;(3),\quad g&amp;rsquo;&#39;(3)=q&amp;rsquo;&#39;(3),
-$$
-$$
-q(27)=h(27),\quad q&amp;rsquo;(27)=h&amp;rsquo;(27),\quad q&amp;rsquo;&#39;(27)=h&amp;rsquo;&#39;(27),
-$$
-$$
-h&amp;rsquo;(30)=-1.6,\quad h&amp;rsquo;&#39;(30)=0.
-$$
-經過一連串複雜的運算，我們解出了11個未知數：
-$$
-k=-\frac{2}{405},\quad l=0,\quad m=\frac{4}{5},\quad n=0,
-$$
-$$
-a=-\frac{2}{45},\quad b=\frac{2}{3},\quad c=\frac{34}{15},
-$$
-$$
-p=\frac{2}{405},\quad q=0,\quad r=-\frac{8}{5},\quad s=-12.
-$$
-根據上表所解出的係數，以下為更加平滑的軌道函數：
-$$
-g(x)=-\frac{2}{405}x^3+\frac{4}{5}x, \quad 0 \leq x \leq 3,
-$$
-$$
-q(x)=-\frac{2}{45}(x-3)^2+\frac{2}{3}(x-3)+\frac{34}{15}, \quad 3 \leq x \leq 27,
-$$
-$$
-h(x)=\frac{2}{405}(x-30)^3-\frac{8}{5}(x-30)-12, \quad 27 \leq x \leq 30.
-$$&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
 &lt;p&gt;以下為更加平滑的軌道的圖形：
 
 
@@ -4285,21 +3665,8 @@ $$&lt;/p&gt;
 &lt;/figure&gt;
 
 紅線是$g(x)$的圖形，藍線是$q(x)$的圖形，綠線是$h(x)$的圖形。&lt;/p&gt;
-&lt;p&gt;如果我們只以肉眼觀察圖形，基本上我們無法分辨原本的軌道及更加平滑的軌道的差別。然而，如果我們開始對它作微分：
-$$
-g&amp;rsquo;(0)=\frac{4}{5}=L_1&amp;rsquo;, \quad g&amp;rsquo;&#39;(0)=0=L_1&amp;rsquo;&#39;.
-$$
-觀察 $g$ 和 $L_1$，除了一次微分相同，他們的二次微分也相同，這表示這條軌道比起原先的軌道來的更加平滑，因爲雖然原先的軌道接點與接點之間的一次微分相同，但是二次微分並不同。&lt;/p&gt;
-&lt;p&gt;更加平滑的軌道的其他接點也能得到相同的答案：
-$$
-g&amp;rsquo;(3)=\frac{2}{3}=q&amp;rsquo;(3), \quad g&amp;rsquo;&#39;(3)=-\frac{4}{45}=q&amp;rsquo;&#39;(3),
-$$
-$$
-q&amp;rsquo;(27)=-\frac{22}{15}=h&amp;rsquo;(27), \quad q&amp;rsquo;&#39;(27)=-\frac{4}{45}=h&amp;rsquo;&#39;(27),
-$$
-$$
-h&amp;rsquo;(30)=-\frac{8}{5}=L_2&amp;rsquo;, \quad h&amp;rsquo;&#39;(30)=0=L_2&amp;rsquo;&#39;.
-$$&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
 &lt;hr&gt;
 </description>
     </item>
@@ -4325,30 +3692,8 @@ and
 $$
 b^2 = (3+x\cos{\alpha})^2+(x\sin{\alpha} - 1.8)^2
 $$&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Make the position of screen and seat geocoding:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Set the origin at the floor under the screen$(0,0)$&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;The bottom edge of the screen is $(0,3)$, the upper edge is $(0,13)$&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;The distance up the incline that you sit is $x$ meter, so the coordinates of the seat is the coordinate of the first row that moves $x\cos{\alpha}$ to the right and moves $x\sin{\alpha}$ to the up.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;The coordinates of first row of seats is $(3,0)$, so the coordinates of your seat is $(3+x\cos{\alpha}, x\sin{\alpha})$, the coordinates of your eyes is $(3+x\cos{\alpha}, 1.2+x\sin{\alpha})$&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;The square of the distance of your eyes and the upper edge of the screen $=(3+x\cos{\alpha})^2+(11.8-x\sin{\alpha})^2=a^2$&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;The square of the distance of your eyes and the bottom edge of the screen $=(3+x\cos{\alpha})^2+(x\sin{\alpha} - 1.8)^2=b^2$&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Finally, by law of cosines: $\cos{\theta}=\frac{a^2+b^2-100}{2ab}$, so
-$\theta = \cos^{-1}\left(\frac{a^2+b^2-100}{2ab}\right)$.&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Question 2:&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Use a graph of $\theta$ as a function of $x$ to estimate the value of $x$ that maximizes $\theta$. In which row should you sit? What is the viewing angle $\theta$ in this row? What is the angle $\theta$ subtended by the screen at your eyes?&lt;/p&gt;
@@ -4557,21 +3902,8 @@ $$
 $$
 b^2 = (3+x\cos{\alpha})^2+(x\sin{\alpha} - 1.8)^2
 $$&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;回答:&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;將螢幕與位子的位置座標化:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;設螢幕下的地板為原點$(0,0)$&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;螢幕下緣為 $(0,3)$，上緣為 $(0,13)$&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;你的位子在斜坡上$x$公尺，因此位子的座標為第一排位子的座標向右推移 $x\cos{\alpha}$ 且向上推移 $x\sin{\alpha}$。&lt;/p&gt;
-&lt;p&gt;第一排位子的座標為$(3,0)$，因此你的位子座標為 $(3+x\cos{\alpha}, x\sin{\alpha})$，且你眼睛的座標為 $(3+x\cos{\alpha}, 1.2+x\sin{\alpha})$。&lt;/p&gt;
-&lt;p&gt;眼睛跟螢幕上緣的距離的平方 $=(3+x\cos{\alpha})^2+(11.8-x\sin{\alpha})^2=a^2$。&lt;/p&gt;
-&lt;p&gt;眼睛跟螢幕下緣的距離的平方 $= (3+x\cos{\alpha})^2+(x\sin{\alpha} - 1.8)^2=b^2$。&lt;/p&gt;
-&lt;p&gt;利用餘弦定理: $\cos{\theta}=\frac{a^2+b^2-100}{2ab}$，因此 $\theta = \cos^{-1}\left(\frac{a^2+b^2-100}{2ab}\right)$。&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;問題 2:&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;利用 $\theta$ 與 $x$ 的函數圖形找出 $\theta$ 的最大值。你該坐在哪一排? 你在那一排的視角 $\theta$ 是幾度?&lt;/p&gt;
@@ -4797,37 +4129,13 @@ $$
 \lim_{\lambda\to\infty} f(\lambda) = 0
 $$&lt;/p&gt;
 &lt;p&gt;for Planck&amp;rsquo;s Law. So this law models blackbody radiation better than the Rayleigh-Jeans Law for short wavelengths.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Let $a=8\pi hc$, $b=\frac{hc}{kT}$, so that $f(\lambda)=\frac{a\lambda ^{-5}}{e^{b/\lambda}-1}$.&lt;/p&gt;
-&lt;p&gt;We then have
-$$
-\lim_{\lambda\to\infty} f(\lambda)=\lim_{\lambda\to\infty}\frac{a\lambda ^{-5}}{e^{b/\lambda}-1}= \lim_{\lambda\to\infty}\frac{-5a\lambda^{-6}}{-\frac{b}{\lambda^2}e^{b/\lambda}}=\frac{5a}b\lim_{\lambda\to\infty}\frac{\lambda^{-4}}{e^{b/\lambda }} = 0
-$$
-Similarly, with l&amp;rsquo;Hospital&amp;rsquo;s Rule we obtain
-$$
-\lim_{\lambda\to0^+}f(\lambda)=\frac{5a}b\lim_{\lambda\to\infty}\frac{\lambda^{-4}}{e^{b/\lambda }}=\frac{20a}{b^2}\lim_{\lambda\to0^+}\frac{\lambda^{-3}}{e^{b/\lambda}}
-$$
-After using l&amp;rsquo;Hospital&amp;rsquo;s Rule four times, we obtain
-$$
-\lim_{\lambda\to0^+}f(\lambda) = 0
-$$&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Question 2:&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Use a Taylor polynomial to show that, for large wavelengths, Planck&amp;rsquo;s Law gives approximately the same values as the Rayleigh-Jeans Law.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Taylor series expansion for $e^x$ is given as
-$$
-e^x=1+x+\frac{x^2}{2!}+\frac{x^3}{3!}+&amp;hellip;
-$$
-For large enough $\lambda$, all subsequent terms in the Taylor expansion are very small compared to the first one, so we can approximate using the Taylor polynomial $T_1$:
-$$
-e^{{hc}/{\lambda k T}} - 1\approx 1 + \frac{hc}{\lambda k T} -1 = \frac{hc}{\lambda k T}
-$$
-Therefore
-$$
-f(\lambda)\approx\frac{8\pi h c \lambda^{-5}}{\frac{hc}{\lambda k T}}=\frac{8\pi k T}{\lambda^4}
-$$
-which is exactly the same as the Rayleigh-Jeans Law.&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Question 3:&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Graph $f$ as given by both laws on the same screen and comment on the similarities and differences. Use $T=5700$K (the temperature of the Sun ). (You may want to change from meters to the more convenient unit of micrometers: $1\mu$m $=10^{-6}$m.)&lt;/p&gt;
@@ -4947,37 +4255,13 @@ $$
 \lim_{\lambda\to\infty} f(\lambda) = 0
 $$
 此結果說明為何對短波長的黑體輻射普朗克的模型比瑞立-金斯的定理更好.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;讓 $a=8\pi hc$, $b=\frac{hc}{kT}$, 則 $f(\lambda)=\frac{a\lambda ^{-5}}{e^{b/\lambda}-1}$.&lt;/p&gt;
-&lt;p&gt;接著我們計算
-$$
-\lim_{\lambda\to\infty} f(\lambda)=\lim_{\lambda\to\infty}\frac{a\lambda ^{-5}}{e^{b/\lambda}-1}= \lim_{\lambda\to\infty}\frac{-5a\lambda^{-6}}{-\frac{b}{\lambda^2}e^{b/\lambda}}=\frac{5a}b\lim_{\lambda\to\infty}\frac{\lambda^{-4}}{e^{b/\lambda }} = 0
-$$
-同樣的, 利用羅畢達法則我們得到
-$$
-\lim_{\lambda\to0^+}f(\lambda)=\frac{5a}b\lim_{\lambda\to\infty}\frac{\lambda^{-4}}{e^{b/\lambda }}=\frac{20a}{b^2}\lim_{\lambda\to0^+}\frac{\lambda^{-3}}{e^{b/\lambda}}
-$$
-在四次羅畢達法則後,我們能得到
-$$
-\lim_{\lambda\to0^+}f(\lambda) = 0
-$$&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Question 2：&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;用泰勒展開式(Taylor polynomial) 說明在長波長時,普朗克定律 和 瑞立-金斯定理的結果會大致相同.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;我們知道 $e^x$ 的泰勒展開式:
-$$
-e^x=1+x+\frac{x^2}{2!}+\frac{x^3}{3!}+&amp;hellip;
-$$
-當 $\lambda$ 很大時, 泰勒展開式後面無窮多項相較於第一項是小非常多的, 所以我們可以用 $T_1$ 來近似:
-$$
-e^{{hc}/{\lambda k T}} - 1\approx 1 + \frac{hc}{\lambda k T} -1 = \frac{hc}{\lambda k T}
-$$
-因此
-$$
-f(\lambda)\approx\frac{8\pi h c \lambda^{-5}}{\frac{hc}{\lambda k T}}=\frac{8\pi k T}{\lambda^4}
-$$
-跟瑞立-金斯定理一模一樣.&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Question 3：&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;分別用兩個函式在同一個座標平面上劃出圖形, 並且說明相同和相異之處. $T$  用 5700K (太陽表面溫度) 帶入. (為了更方便計算 可以把長度單位從公尺換成微米: $1\mu$m = $10^{-6}$ m.)&lt;/p&gt;
@@ -5076,40 +4360,18 @@ $$
 &lt;p&gt;&lt;strong&gt;問題 1:&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;假定杯子的高度為 $h$，杯子A的形狀可由 $x=f(y)$ 對 $y$ 軸旋轉而得， 而杯子B則是由同一個曲線對 $x=k$ 旋轉而得。 求$k$使得兩個杯子可裝的咖啡量一樣多。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;解答:&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;杯子A的體積
-$$
-\int_0^{h}\pi[f(y)]^2dy.
-$$
-杯子B的體積
-$$
-\int_0^{h}\pi[k-f(y)]^2dy.
-$$
-設 $V_A=V_B$, 經過計算我們得到
-$$
-\int_0^{h}k^2dy=\int_0^{h}2kf(y)dy.
-$$
-所以
-$$
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;$$
 k=\frac{2\int_0^{h}f(y)dy}{h}.
 $$&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;問題 2:&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;請問問題1的結果與圖中的 $A_1$ and $A_2$ 有何關聯?&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;解答:&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;我們可以看到 $A_1+A_2$ 是一個長方形：$$A_1+A_2=hk$$&lt;/p&gt;
-&lt;p&gt;從問題一的解答我們知道
-$$
-hk=2\int_0^{h}f(y)dy\implies{A_1+A_2}=2\int_0^{h}f(y)dy.
-$$
-又
-$$
-A_1=\int_0^{h}f(y)dy.
-$$
-比較可得
-$$
-A_1+A_2=2\int_0^{h}f(y)dy=2A_1\implies{A_1=A_2}.
-$$
-代表當當杯子A之容積與杯子B相等時，$A_1$ 的面積與 $A_2$相等。&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;當杯子A之容積與杯子B相等時，$A_1$ 的面積與 $A_2$相等。&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;問題3:&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;使用 Pappus&amp;rsquo;s 定理解釋問題1和問題2之結果。&lt;/p&gt;
@@ -5117,38 +4379,8 @@ $$
 &lt;blockquote&gt;
 &lt;p&gt;使$R$為一個平面區域，在這個區域外有同一平面上的一條直線$I$。若$R$以$I$為軸旋轉時，產生的旋轉體體積為$R$的面積$A$和區域重心的所經過的路徑長$d$的乘積。&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;&lt;strong&gt;解答:&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;使用這個理論之前，我們需要找到 $A_1$ 和 $A_2$ 的重心。&lt;/p&gt;
-&lt;p&gt;對於任意平面，其重心位於點 $(C_x,C_y)$, 且
-$$
-C_x=\frac{\int_a^{b}xf(x)dx}{\int_a^{b}f(x)dx};C_y=\frac{\int_a^{b}\frac{1}{2}[f(x)]^2dx}{\int_a^{b}f(x)dx}.
-$$
-對於$A_1$而言
-$$
-C_{x_1}=\frac{\int_0^{h}\frac{1}{2}[f(y)]^2dy}{\int_0^{h}f(y)dy}=\frac{1}{2A_1}\int_0^{h}[f(y)]^2dy.
-$$
-對於$A_2$而言
-$$
-C_{x_2}=\frac{\int_0^{h}\frac{1}{2}\left(k^2-[f(y)]^2\right)dy}{\int_0^{h}k-f(y)dy}=\frac{1}{2A_2}\int_0^{h}k^2-[f(y)]^2dy.
-$$
-現在我們有了$A_1$和$A_2$，便可以使用Pappus&amp;rsquo;s Theorom計算A杯和B杯的體積了。&lt;/p&gt;
-&lt;p&gt;A杯體積
-$$
-2\pi{C_{x_1}}{A_1}=\pi\int_0^{h}[f(y)]^2dy.
-$$
-B杯體積
-$$
-2\pi(k-C_{x_2})A_2=2\pi k A_2 - \pi k^2 h + \pi \int_0^{h}[f(y)]^2dy.
-$$
-所以如果兩個體積要一樣我們得到
-$$
-2\pi k A_2 - \pi k^2 h=0, \implies k = \frac{2A_2}{h}.
-$$
-又根據 $A_1+A_2 = hk$, 我們可以輕易的算出
-$$
-k = \frac{2A_2}{h} = \frac{2hk - 2A_1}{h}, \implies k = \frac{2A_1}{h},
-$$
-我們可以得到跟問題1一樣的答案&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
 &lt;hr&gt;
 </description>
     </item>
@@ -5174,39 +4406,16 @@ Solve this differential equation to show that the velocity is
 $$
 v(t)=(v_0+\frac{mg}{p})e^{-pt/m}-\frac{mg}{p}
 $$&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;We known that
-$$
-mv&#39;=-pv-mg
-$$
-With some calculate we can get
-$$
-\int {\frac{p}{pv+mg}dv}=\int -\frac{p}{m}dt
-$$
-Integrate both sides we obtain
-$$
-\ln(pv+mg) = -\frac{p}{m}t + C, \quad pv+mg=e^{-\frac{p}{m}t + C}
-$$
-With initial condition $v(0) = v_0$ we get
-$$
-p v_0 + mg = e^C
-$$
-and finally we have
-$$
-v(t)=(v_0+\frac{mg}{p})e^{-\frac{p}{m}t}-\frac{mg}{p}
-$$&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Question 2：&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Show that the height of the ball, until it hits the ground, is
 $$
 y(t)=(v_0+\frac{mg}{p})\frac{m}{p}(1-e^{-pt/m})-\frac{mgt}{p}
 $$&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Answer：&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;$$
-y(t)=\int_0^tv(t)dt
-=\int_0^t (v_0+\frac{mg}{p})e^{-\frac{p}{m}t}-\frac{mg}{p}dt
-=(v_0+\frac{mg}{p})\frac{m}{p}(-e^{-\frac{p}{m}t}+1)-\frac{mg}{p}t
-$$&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Question 3：&lt;/strong&gt;&lt;/p&gt;
 &lt;ol&gt;
@@ -5221,23 +4430,13 @@ $$&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;&lt;strong&gt;Answer：&lt;/strong&gt;&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
 &lt;ol start=&#34;2&#34;&gt;
-&lt;li&gt;
-&lt;p&gt;when the ball takes to reach its maximum height, the velocity $v(t_1)=0$, i.e.,
-$$
-(v_0+\frac{mg}{p})e^{-\frac{p}{m}t_1}-\frac{mg}{p}=0
-$$
-We then obtain
-$$
-t_1=\frac{m}{p}\ln\left({\frac{mg + pv_0}{mg}}\right)
-$$&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;with the ball with mass $m=1kg$, initial velocity $v_0=20m/s$, gravity $g=9.8m/s$, and air resistance $p=\frac{1}{10}$.
+&lt;li&gt;with the ball with mass $m=1kg$, initial velocity $v_0=20m/s$, gravity $g=9.8m/s$, and air resistance $p=\frac{1}{10}$.
 $$
 t_1=\frac{1}{\frac{1}{10}}ln\left({\frac{1\times9.8+\frac{1}{10}\times20}{1\times9.8}}\right)=‭1.85717‬s
-$$&lt;/p&gt;
-&lt;/li&gt;
+$$&lt;/li&gt;
 &lt;/ol&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Question 4：&lt;/strong&gt;&lt;/p&gt;
@@ -5268,42 +4467,8 @@ is increasing for $x &amp;gt; 1$.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;&lt;strong&gt;Answer：&lt;/strong&gt;&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;According to Question 3, we get
-$$
-t_1=\frac{m}{p}ln{\frac{pv_0+mg}{mg}},　\quad x=e^{pt_1/m}, \quad
-\Rightarrow \quad x=\frac{pv_0+mg}{mg}
-$$
-According to the Question 2, we get
-$$
-y(2t_1)=(v_0+\frac{mg}{p})\frac{m}{p}(1-e^{-2pt_1/m})-\frac{2mgt_1}{p}
-$$
-$$
-=\frac{m^2g}{p^2}\left[(1-e^{-2pt_1/m})+(\frac{pv_0}{mg})(1-e^{-2pt_1/m})-(\frac{2pt_1}{m})\right]
-$$
-$$
-=\frac{m^2g}{p^2}\left[(1-\frac{1}{x^2})+(\frac{pv_0}{mg})(1-\frac{1}{x^2})-2\ln x\right]
-=\frac{m^2g}{p^2}(x-\frac{1}{x}-2\ln{x})
-$$&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;According to the question
-$$
-f(x)=x-\frac{1}{x}-2\ln{x}, \quad
-f&amp;rsquo;(x)=1+\frac{1}{x^2}-\frac{2}{x}
-=(\frac{x-1}{x})^2\geq 0
-$$
-so we know that $f(x)$ is increasing for $x&amp;gt;1$&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;By the result, we know that $f(1)=0$, and $f(x)$ is increasing for $x&amp;gt;1$, so we can conclude that
-$$
-y(2t_1)=\frac{m^2g}{p^2}(x-\frac{1}{x}-2\ln{x})&amp;gt;0
-$$
-Because $y(2t_1)$ is positive, which means that the $2t_1&amp;lt;t_1+t_2$, and $t_1&amp;lt;t_2$. So the conclusion is that ascent is faster than descent.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
 &lt;hr&gt;
 </description>
     </item>
@@ -5329,39 +4494,16 @@ $$&lt;/p&gt;
 $$
 v(t)=(v_0+\frac{mg}{p})e^{-pt/m}-\frac{mg}{p}
 $$&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;解答：&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;我們已知
-$$
-mv&#39;=-pv-mg
-$$
-計算後可得
-$$
-\int {\frac{p}{pv+mg}dv}=\int -\frac{p}{m}dt
-$$
-兩邊積分可得
-$$
-\ln(pv+mg) = -\frac{p}{m}t + C, \quad pv+mg=e^{-\frac{p}{m}t + C}
-$$
-帶入初始條件 $v(0) = v_0$ 我們得到
-$$
-p v_0 + mg = e^C
-$$
-最終我們得到
-$$
-v(t)=(v_0+\frac{mg}{p})e^{-\frac{p}{m}t}-\frac{mg}{p}
-$$&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;問題 2：&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;解出直到球落地之前的高度為
 $$
 y(t)=(v_0+\frac{mg}{p})\frac{m}{p}(1-e^{-pt/m})-\frac{mgt}{p}
 $$&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;解答：&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;$$
-y(t)=\int_0^tv(t)dt
-=\int_0^t (v_0+\frac{mg}{p})e^{-\frac{p}{m}t}-\frac{mg}{p}dt
-=(v_0+\frac{mg}{p})\frac{m}{p}(-e^{-\frac{p}{m}t}+1)-\frac{mg}{p}t
-$$&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;問題 3：&lt;/strong&gt;&lt;/p&gt;
 &lt;ol&gt;
@@ -5376,23 +4518,13 @@ $$&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;&lt;strong&gt;解答：&lt;/strong&gt;&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;當球到達最高點時，速度 $v(t_1)=0$, i.e.,
-$$
-(v_0+\frac{mg}{p})e^{-\frac{p}{m}t_1}-\frac{mg}{p}=0
-$$
-經過計算後得到
-$$
-t_1=\frac{m}{p}\ln\left({\frac{mg + pv_0}{mg}}\right)
-$$&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;當球的質量 $m=1kg$，向上的速度 $v_0=20m/s$，重力 $g=9.8m/s$，空氣阻力 $p=\frac{1}{10}$
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;當球的質量 $m=1kg$，向上的速度 $v_0=20m/s$，重力 $g=9.8m/s$，空氣阻力 $p=\frac{1}{10}$
 $$
 t_1=\frac{1}{\frac{1}{10}}ln\left({\frac{1\times9.8+\frac{1}{10}\times20}{1\times9.8}}\right)=‭1.85717‬s
-$$&lt;/p&gt;
-&lt;/li&gt;
+$$&lt;/li&gt;
 &lt;/ol&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;問題 4：&lt;/strong&gt;&lt;/p&gt;
@@ -5422,43 +4554,8 @@ $$
 &lt;p&gt;使用這項結果來決定 $y(2t_1)$ 何時為正，何時為負。你能推斷出甚麼結果?上升還是下降比較快?&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;strong&gt;解答：&lt;/strong&gt;&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;根據問題3，我們可知
-$$
-t_1=\frac{m}{p}ln{\frac{pv_0+mg}{mg}},　\quad x=e^{pt_1/m}, \quad
-\Rightarrow \quad x=\frac{pv_0+mg}{mg}
-$$&lt;/p&gt;
-&lt;p&gt;根據問題2，我們可知
-$$
-y(2t_1)=(v_0+\frac{mg}{p})\frac{m}{p}(1-e^{-2pt_1/m})-\frac{2mgt_1}{p}
-$$
-$$
-=\frac{m^2g}{p^2}\left[(1-e^{-2pt_1/m})+(\frac{pv_0}{mg})(1-e^{-2pt_1/m})-(\frac{2pt_1}{m})\right]
-$$
-$$
-=\frac{m^2g}{p^2}\left[(1-\frac{1}{x^2})+(\frac{pv_0}{mg})(1-\frac{1}{x^2})-2\ln x\right]
-=\frac{m^2g}{p^2}(x-\frac{1}{x}-2\ln{x})
-$$&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;根據此題，我們可知
-$$
-f(x)=x-\frac{1}{x}-2\ln{x}, \quad
-f&amp;rsquo;(x)=1+\frac{1}{x^2}-\frac{2}{x}
-=(\frac{x-1}{x})^2\geq 0
-$$
-所以我們得知當 $x&amp;gt;1$ 時 $f(x)$ 為遞增&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;根據結果，我們知道 $f(1)=0$，和 $f(x)$ 在 $x&amp;gt;1$ 時遞增，因此我們可推斷
-$$
-y(2t_1)=\frac{m^2g}{p^2}(x-\frac{1}{x}-2\ln{x})&amp;gt;0
-$$
-因為 $y(2t_1)$ 為正，代表 $2t_1&amp;lt;t_1+t_2$ 和 $t_1&amp;lt;t_2$ 。因此推斷上升比下降快。&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
 &lt;hr&gt;
 </description>
     </item>
@@ -5509,32 +4606,8 @@ $$&lt;/p&gt;
 &lt;/figure&gt;
 
 &lt;p&gt;證明偏差角在 $\alpha\approx 59.4^{\circ}$ 時會有最小值 $\alpha\approx 59.4^{\circ}$。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;回答：&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;讓我們回想一下斯涅爾定律：
-$$
-\sin\alpha = \frac{4}{3}\sin\beta. \qquad \qquad (1)
-$$
-我們測試該角度與 $\alpha$ 作為 $\beta$ 的函數，並根據斯涅爾定律對 $\alpha$ 作導數運算，得到：
-$$
-\cos\alpha = \frac{4}{3}\cos\beta\frac{d\beta}{d\alpha}.
-$$
-為了得到 $D(\alpha)$ 的最小值，我們要找到 $D’(\alpha)=0$ ：
-$$
-D&amp;rsquo;(\alpha) = 2 - 4\frac{d\beta}{d\alpha} = 0 \Rightarrow
-\frac{d\beta}{d\alpha} = \frac1 2 = \frac{3\cos\alpha}{4\cos\beta}.
-$$
-然後我們得到：
-$$
-2\cos\beta = 3\cos\alpha. \qquad \qquad (2)
-$$
-然後我們聯立 (1) 和 (2) 得到：
-$$
-\cos\alpha = \sqrt\frac{7}{27}, \Rightarrow \alpha = \arccos\sqrt\frac{7}{27} \approx 59.4^\circ
-$$
-所以我們找到最小值：
-$$
-D(59.4^\circ)\approx138^\circ.
-$$&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
 &lt;hr&gt;
 &lt;p&gt;最小偏差角的意義是當$\alpha\approx 59.4^{\circ}$ 時，我們知道 $D’(\alpha)\approx 0$，則 $\frac{\Delta D}{\Delta \alpha}\approx 0$ 。這代表當很多光束在 $\alpha\approx 59.4^{\circ}$ 時偏差大約相同，而正是因為接近最小偏差方向的光線集中產生主彩虹的亮度。下面這張圖顯示了從觀察者到彩虹最高點的仰角為 $180^{\circ}- 138^{\circ} = 42^{\circ}$（這個角度就叫做彩虹角）。&lt;/p&gt;
 
@@ -5567,29 +4640,8 @@ $$&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;問題二：&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;問題1解釋了主彩虹的位置，那我們要如何解釋顏色呢？陽光的波長範圍從紅色到橙色，黃色，綠色，藍色，靛藍和紫色。正如牛頓在1666年的棱鏡實驗中發現的那樣，每種顏色的折射率都不同（這種效果稱為色散）。紅光的折射率為 $k \approx 1.3318$，紫光的折射率為 $k\approx 1.3435$。透過對的這些值 $k$ 重複問題1的計算，證明紅色光道的彩虹角是 $42.3^{\circ}$ 而紫色光道的彩虹角是 $40.6^{\circ}$ 。因此，彩虹實際上是由對應於這七個顏色的七個單獨的光道組成的。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;回答：&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;相似於問題一的方法，我們先寫下斯涅爾定律：
-$$
-\sin\alpha =k\sin\beta. \qquad \qquad (3)
-$$
-為了得到
-$$
-2\cos\alpha = k\cos\beta. \qquad \qquad (4)
-$$
-我們要找 $D’(\alpha)=0$ 的解，然後我們聯立 (3) 和 (4)，得到：
-$$
-\cos\alpha = \sqrt{\frac{k^2-1}{3}}, \Rightarrow \alpha = \arccos\sqrt{\frac{k^2-1}{3}}.
-$$&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;紅色光道： $k\approx 1.3318\Rightarrow \alpha_1\approx 59.473^{\circ}$&lt;br&gt;
-彩虹角 $= \pi - D(\alpha_1)\approx 42.3^{\circ}$.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;紫色光道： $k\approx 1.3435\Rightarrow\alpha_2\approx 58.786^{\circ}$&lt;br&gt;
-彩虹角 $=\pi - D(\alpha_2)\approx 40.6^{\circ}$.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;問題三：&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;或許你曾經看過主彩虹上較暗的次彩虹。這是由於光線進入雨滴並在A處折射、反射兩次（在B和C處）以及在D處離開雨滴而折射的那部分光束所致（如下圖）。這次偏差角$D(\alpha)$是射線在此四階段過程中經歷的逆時針旋轉的總量。&lt;/p&gt;
@@ -5651,26 +4703,13 @@ $$&lt;/p&gt;
 
 &lt;/figure&gt;
 
-&lt;p&gt;&lt;strong&gt;回答：&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;因為 $D(\alpha ) = 2\alpha  - 6\beta  + 2\pi$ ，為了得到
-$$
-3\cos\alpha = k\cos\beta. \qquad \qquad (5)
-$$
-我們要找到 $D’(\alpha)=0$ 的解，所以我們聯立 (3) 和(5) ，得到：
-$$
-\cos\alpha = \sqrt{\frac{k^2-1}{8}}, \Rightarrow \alpha = \arccos\sqrt{\frac{k^2-1}{8}}. \qquad \qquad (6)
-$$&lt;/p&gt;
-&lt;p&gt;則對 $k=\frac43\Rightarrow \alpha\approx 71.849^{\circ}\Rightarrow D(\alpha)\approx231^{\circ}$.&lt;/p&gt;
-&lt;p&gt;最小偏差角： $2\pi-D(\alpha)=129^{\circ}.$&lt;/p&gt;
-&lt;p&gt;彩虹角： $\pi-( 2\pi-D(\alpha)) =51^{\circ}.$&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;問題四：&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;證明次彩虹中的顏色以與主要彩虹中的顏色相反的順序顯現。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;回答：&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;基於 (6) 我們得到，&lt;/p&gt;
-&lt;p&gt;對紅色光道：$k\approx 1.3318\Rightarrow \alpha_1\approx 71.906^{\circ}$，彩虹角 $D(\alpha_1)-\pi\approx 50.6^{\circ}.$&lt;/p&gt;
-&lt;p&gt;對紫色光道：$k\approx 1.3435\Rightarrow\alpha_2\approx 71.505^{\circ}$，彩虹角 $D(\alpha_2)-\pi\approx 53.6^{\circ}.$&lt;/p&gt;
-&lt;p&gt;因此，主彩虹低於次彩虹，並且次彩虹中的顏色與主彩虹中的顏色順序相反。&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
 &lt;hr&gt;
 </description>
     </item>
@@ -5721,32 +4760,8 @@ $$&lt;/p&gt;
 &lt;/figure&gt;
 
 &lt;p&gt;Show that the minimum value of deviation is $D(\alpha)\approx 138^{\circ}$; and occurs when $\alpha\approx 59.4^{\circ}$.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Recall Snell&amp;rsquo;s law:
-$$
-\sin\alpha = \frac{4}{3}\sin\beta. \qquad \qquad (1)
-$$
-We teat the angle $\alpha$ as a function of $\beta$ and take derivative with respect to $\alpha$ to Snell&amp;rsquo;s law to obtain
-$$
-\cos\alpha = \frac{4}{3}\cos\beta\frac{d\beta}{d\alpha}.
-$$
-To find the minimum value of $D(\alpha)$, we look for the solution of $D&amp;rsquo;(\alpha)=0$:
-$$
-D&amp;rsquo;(\alpha) = 2 - 4\frac{d\beta}{d\alpha} = 0 \Rightarrow
-\frac{d\beta}{d\alpha} = \frac1 2 = \frac{3\cos\alpha}{4\cos\beta}.
-$$
-We then obtain
-$$
-2\cos\beta = 3\cos\alpha. \qquad \qquad (2)
-$$
-One can solve (1) and (2) to have
-$$
-\cos\alpha = \sqrt\frac{7}{27}, \Rightarrow \alpha = \arccos\sqrt\frac{7}{27} \approx 59.4^\circ
-$$
-So we find the minimal value
-$$
-D(59.4^\circ)\approx138^\circ.
-$$&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
 &lt;hr&gt;
 &lt;p&gt;The significance of the minimum deviation is that when $\alpha\approx 59.4^{\circ}$ we have $D&amp;rsquo;(\alpha)\approx 0$, so $\frac{\Delta D}{\Delta \alpha}\approx 0.$ This means that many  rays with $\alpha\approx 59.4^{\circ}$ become deviated by approximately the same amount. It it the &lt;em&gt;concentration&lt;/em&gt; of rays coming from near the direction of minimum deviation that creates the brightness of the primary rainbow. The figure at the left shows that the angle of elevation from the observer up to the highest point on the rainbow is $180^{\circ}- 138^{\circ} = 42^{\circ}$. (This angle is called the &lt;em&gt;rainbow angle&lt;/em&gt; .)&lt;/p&gt;
 
@@ -5779,21 +4794,8 @@ $$&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Question 2:&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Problem 1 explains the location of the primary rainbow, but how do we explain the colors? Sunlight comprises a range of wavelengths, from the red range through orange, yellow, green, blue, indigo, and violet. As Newton discovered in his prism experiments of 1666, the index of refraction is different for each color, (The effect is called &lt;em&gt;dispersion&lt;/em&gt;.) For red light the refractive index $k \approx 1.3318$,  whereas for violet light it is $k\approx 1.3435$. By repeating the calculation of Problem 1 for these values of $k$, show that the rainbow angle is about $42.3^{\circ}$ for red bow and $40.6^{\circ}$ for the violet bow. So the rainbow really consists of seven individual bows corresponding to the seven colors.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Similar to the approach of problem 1, we first write down the Snell&amp;rsquo;s law
-$$
-\sin\alpha =k\sin\beta. \qquad \qquad (3)
-$$
-We then look for the solution of $D&amp;rsquo;(\alpha)=0$ to obtain
-$$
-2\cos\alpha = k\cos\beta. \qquad \qquad (4)
-$$
-One can solve (3) and (4) to have
-$$
-\cos\alpha = \sqrt{\frac{k^2-1}{3}}, \Rightarrow \alpha = \arccos\sqrt{\frac{k^2-1}{3}}.
-$$&lt;/p&gt;
-&lt;p&gt;For red light: $k\approx 1.3318\Rightarrow \alpha_1\approx 59.473^{\circ}$, the rainbow angle$= \pi - D(\alpha_1)\approx 42.3^{\circ}$.&lt;/p&gt;
-&lt;p&gt;For violet light: $k\approx 1.3435\Rightarrow\alpha_2\approx 58.786^{\circ}$, the rainbow angle $=\pi - D(\alpha_2)\approx 40.6^{\circ}$.&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Question 3:&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Perhaps you have seen a fainter secondary rainbow above the primary bow. That results from the part of a ray that enters a raindrop and is refracted at A, reflected twice (at B and C), and refracted as it leaves the drop at D (see the figure at the left). This time the deviation angle $D(\alpha)$ is the total amount of counterclockwise rotation that the ray undergoes in this four-stage process.&lt;/p&gt;
@@ -5855,25 +4857,13 @@ $$&lt;/p&gt;
 
 &lt;/figure&gt;
 
-&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Since $D(\alpha ) = 2\alpha  - 6\beta  + 2\pi$, we look for the solution of $D&amp;rsquo;(\alpha)=0$ to obtain
-$$
-3\cos\alpha = k\cos\beta. \qquad \qquad (5)
-$$
-One can solve (3) and (5) to have
-$$
-\cos\alpha = \sqrt{\frac{k^2-1}{8}}, \Rightarrow \alpha = \arccos\sqrt{\frac{k^2-1}{8}}. \qquad \qquad (6)
-$$&lt;/p&gt;
-&lt;p&gt;For $k=\frac43\Rightarrow \alpha\approx 71.849^{\circ}\Rightarrow D(\alpha)\approx231^{\circ}$.&lt;/p&gt;
-&lt;p&gt;The minimum deviation: $2\pi-D(\alpha)=129^{\circ}.$&lt;/p&gt;
-&lt;p&gt;The rainbow angle: $\pi-( 2\pi-D(\alpha)) =51^{\circ}.$&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Question 4:&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Show that the colors in the secondary rainbow appear in the opposite order from those in the primary rainbow.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Based on (6) we find, for red light: $k\approx 1.3318\Rightarrow \alpha_1\approx 71.906^{\circ}$, the rainbow angle: $D(\alpha_1)-\pi\approx 50.6^{\circ}.$&lt;/p&gt;
-&lt;p&gt;For violet light: $k\approx 1.3435\Rightarrow\alpha_2\approx 71.505^{\circ}$, the rainbow angle: $D(\alpha_2)-\pi\approx 53.6^{\circ}.$&lt;/p&gt;
-&lt;p&gt;Therefore, the primary rainbow is lower than the secondary rainbow, and the colors in the secondary rainbow appear the opposite order from those in the primary rainbow.&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
 &lt;hr&gt;
 </description>
     </item>
@@ -5897,14 +4887,18 @@ P = Av^3 + \frac{BL^2}{v}
 $$
 其中 $A$ 和 $B$ 是特定飛機的參數，恆為正，$L$ 是升力，即為支撐飛機重量的向上力。 找出使其所需功率最小的速度。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;答案:&lt;/strong&gt;&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
 &lt;p&gt;$$
-\frac{d P}{dv} = 3Av^2 - \frac{BL^2}{v^2} = 0 \ \Longrightarrow \ v_P = \sqrt[4]{\frac{BL^2}{3A}}
+v_P = \sqrt[4]{\frac{BL^2}{3A}}
 $$&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;問題 2:&lt;/strong&gt;	在問題 1 中找到的速度可將功率降至最低，但較快的速度可能會消耗較少的燃料。推動飛機每單位距離所需的能量為 $E=P/v$， 在什麼速度下能使能量最小？&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;答案:&lt;/strong&gt;&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
 &lt;p&gt;$$
-\frac{d E}{dv} = 2Av - \frac{2BL^2}{v^3} = 0 \ \Longrightarrow \  v_E = \sqrt[4]{\frac{BL^2}{A}}
+v_E = \sqrt[4]{\frac{BL^2}{A}}
 $$&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;問題 3:&lt;/strong&gt; 最小能量的速度比最小功率的速度快多少？&lt;/p&gt;
@@ -5925,10 +4919,12 @@ $$&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;問題 5:&lt;/strong&gt;  在最小平均功率下$x$的值是多少？ 如果鳥飛得慢，你能得出什麼結論？ 如果這隻鳥飛得越來越快，你能得出什麼結論？&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;答案:&lt;/strong&gt;&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
 &lt;p&gt;$$
-\frac{d P_a}{dx} = A_w v^3 - \frac{B m^2 g^2}{x^2v} = 0 \ \Longrightarrow \ x = \frac{mg}{v^2}\sqrt{\frac{B}{A_w}}
-$$
-可以看出$x$與$v^2$成反比，所以&lt;/p&gt;
+x = \frac{mg}{v^2}\sqrt{\frac{B}{A_w}}
+$$&lt;/p&gt;
+&lt;p&gt;可以看出$x$與$v^2$成反比，所以&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;鳥飛的慢,拍翅時間佔總體飛行時間上升&lt;/li&gt;
 &lt;li&gt;鳥飛的快,滑翔時間佔總體飛行時間上升&lt;/li&gt;
@@ -5936,8 +4932,10 @@ $$
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;問題 6:&lt;/strong&gt;  一個週期的平均能量為 $E_a=P_a/v$. 試問 $x$ 的值為多少可以使$E_a$最小？&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;答案:&lt;/strong&gt;&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
 &lt;p&gt;$$
-\frac{d E}{dx} = A_w v^2 - \frac{B m^2 g^2}{x^2v^2} = 0 \ \Longrightarrow \ x = \frac{mg}{v^2}\sqrt{\frac{B}{A_w}}
+x = \frac{mg}{v^2}\sqrt{\frac{B}{A_w}}
 $$&lt;/p&gt;
 &lt;hr&gt;
 </description>
@@ -5962,10 +4960,9 @@ Chinese version:
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Question 1：&lt;/strong&gt; Find the quadratic approximation $P(x)=A+Bx+Cx^{2}$ to the function $f(x)=cosx$ that satisfies conditions (i), (ii),and (iii) with $a=0$ . Graph $P$, $f$ and the linear approximation $L(x)=1$ on a common screen. Comment on how well the functions $P$ and $L$ approximate $f$.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;We know from condition (i), $P(0)=A=f(0)=1\quad\Rightarrow\quad A=1$.&lt;/p&gt;
-&lt;p&gt;We know from condition (ii), $P&amp;rsquo;(0)=B=f&amp;rsquo;(0)=0\quad\Rightarrow\quad B=0$.&lt;/p&gt;
-&lt;p&gt;We know from condition (iii), $P&amp;rsquo;&#39;(0)=2C=f&amp;rsquo;&#39;(0)=-1\quad\Rightarrow\quad C=-\frac{1}{2}$.&lt;/p&gt;
-&lt;p&gt;Thus, $P(x)=1-\frac{1}{2}x^{2}$, and the graph shows:&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;$P(x)=1-\frac{1}{2}x^{2}$, and the graph shows:&lt;/p&gt;
 
 
 
@@ -5998,10 +4995,9 @@ Chinese version:
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Question 2：&lt;/strong&gt; Determine the values of $x$ for which the quadratic approximation $f(x)\approx P(x)$ in Problem 1 is accurate to within $0.1$.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;$$
-|P(x)-f(x)|\leq 0.1\Rightarrow f(x)-0.1\leq P(x)\leq f(x)+0.1
-$$&lt;/p&gt;
-&lt;p&gt;Let $g(x)=f(x)-1=\cos(x)-0.1$；$h(x)=f(x)+1=\cos(x)+0.1$, then we get $g(x)\leq P(x)\leq h(x)$. We draw the graph of $g(x),P(x),h(x)$:&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;We draw the graph of $g(x),P(x),h(x)$:&lt;/p&gt;
 
 
 
@@ -6041,24 +5037,17 @@ $$
 P(x)=f(a)+f&amp;rsquo;(a)(x-a)+\frac{1}{2} f&amp;rsquo;&#39;(a)(x-a)^{2}。
 $$&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;From condition (i): $P(a)=A=f(a)\quad\Rightarrow\quad A=f(a)$.&lt;/p&gt;
-&lt;p&gt;From condition (ii): $P&amp;rsquo;(a)=B=f&amp;rsquo;(a)\quad\Rightarrow\quad B=f&amp;rsquo;(a)$.&lt;/p&gt;
-&lt;p&gt;From condition (iii): $P&amp;rsquo;&#39;(a)=2C=f&amp;rsquo;&#39;(a)\quad\Rightarrow\quad C=\frac{1}{2} f&amp;rsquo;&#39;(a)$.&lt;/p&gt;
-&lt;p&gt;Therefore,
-$$
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;$$
 P(x)=f(a)+f&amp;rsquo;(a)(x-a)+\frac{1}{2} f&amp;rsquo;&#39;(a)(x-a)^{2}.
 $$&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Question 4:&lt;/strong&gt; Find the quadratic approximation to $F(x)=\sqrt{x+3}\quad$ near $a=1$. Graph $f$, the quadratic approximation, and the linear approximation from Example 3.10.2 on a common screen. What do you conclude?&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;$$
-f(1)=2, \quad f&amp;rsquo;(1)=\frac{1}{4}, \quad f&amp;rsquo;&#39;(1)=-\frac{1}{32}，
-$$
-According to 2., the quadratic approximation $P(x)$ is
-$$
-P(x)=2+\frac{1}{4}(x-1)-\frac{1}{64}(x-1)^{2}。
-$$
-We draw the graph of $f(x),P(x)$ and the linear approximation from Example 3.10.2：&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;We draw the graph of $f(x),P(x)$ and the linear approximation from Example 3.10.2：&lt;/p&gt;
 
 
 
@@ -6103,38 +5092,13 @@ $$
 T_{n}(x)=f(a)+f&amp;rsquo;(a)(x-a)+\frac{f&amp;rsquo;&#39;(a)}{2!} (x-a)^{2}+&amp;hellip;+\frac{f^{(n)}(a)}{n!}(x-a)^{n}。
 $$
 is called the nth-degree Taylor polynomial of $f$ centered at $a$.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;$$
-T_{n}(a)=c_{0}。
-$$
-$$
-T_{n}&#39;(a)=1!c_{1}=f&amp;rsquo;(a)\Rightarrow c_{1}=\frac{f&amp;rsquo;(a)}{1!}。
-$$
-$$
-T_{n}&#39;&#39;(a)=2!c_{2}=f&amp;rsquo;&#39;(a)\Rightarrow c_{2}=\frac{f&amp;rsquo;&#39;(a)}{2!}。
-$$
-$$
-\vdots
-$$
-$$
-T_{n}^{(k)}(a)=k!c_{k}=f^{(k)}(a)\Rightarrow c_{k}=\frac{f^{(k)}(a)}{k!}。
-$$&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Question 6:&lt;/strong&gt; Find the 8th-degree Taylor polynomial centered at $a=0$ for the function $f(x)=\cos x$. Graph $f$ together with the Taylor polynomials $T_{2},T_{4},T_{6},T_{8}$ in the viewing rectangle $x=[-5,5]$ by $y=[-1.4,1.4]$  and comment how well they approximate $f$.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;$$
-f(0)=1, \quad f&amp;rsquo;(0)=0, \quad f&amp;rsquo;&#39;(0)=-1, \quad f^{(3)}(0)=0, \quad f^{(4)}(0)=1,
-$$
-$$
-f^{(5)}(0)=0,\quad f^{(6)}(0)=-1,\quad f^{(7)}(0)=0, \quad f^{(8)}(0)=1,
-$$
-then $T_{8}(x)=1-\frac{1}{2!} x^{2}+\frac{1}{4!} x^{4}-\frac{1}{6!} x^{6}+\frac{1}{8!} x^{8}$. Meanwhile, we can get
-$$
-T_{2}(x) = 1-\frac{1}{2!} x^{2},\quad T_{4}(x) = 1-\frac{1}{2!} x^{2}+\frac{1}{4!} x^{4},
-$$
-$$
-T_{6}(x) = 1-\frac{1}{2!} x^{2}+\frac{1}{4!} x^{4}-\frac{1}{6!} x^{6}.
-$$&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
 &lt;p&gt;We draw the graph of$f$ and $T_{2},T_{4},T_{6},T_{8}$, and the rectangle $x=[-5,5]$ by $y=[-1.4,1.4]$&lt;/p&gt;
 
 
@@ -6185,40 +5149,18 @@ Chinese version:
 &lt;p&gt;&lt;strong&gt;Question 1:&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Suppose the cups have height $h$, cup A is formed by rotating the curve $x=f(y)$ about the $y$-axis, and cup B is formed by rotating the same curve about the $x=k$. Find the value of $k$ such that two cups hold the same amount of coffee.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Volume of Cup A
-$$
-\int_0^{h}\pi[f(y)]^2dy.
-$$
-Volume of Cup B
-$$
-\int_0^{h}\pi[k-f(y)]^2dy.
-$$
-Let $V_A=V_B$, after some calculation we obtain
-$$
-\int_0^{h}k^2dy=\int_0^{h}2kf(y)dy.
-$$
-So finally we have $k$ as
-$$
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;$$
 k=\frac{2\int_0^{h}f(y)dy}{h}.
 $$&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Question 2:&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;What does your result from Problem 1 say about the areas $A_1$ and $A_2$ shown in the figure?&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;We can see that $A_1+A_2$ is a rectangle, so $A_1+A_2=hk$.&lt;/p&gt;
-&lt;p&gt;From answer of Question 1 we knew that
-$$
-hk=2\int_0^{h}f(y)dy\implies{A_1+A_2}=2\int_0^{h}f(y)dy.
-$$
-Besides, we also have
-$$
-A_1=\int_0^{h}f(y)dy.
-$$
-Therefore we get
-$$
-A_1+A_2=2\int_0^{h}f(y)dy=2A_1\implies{A_1=A_2}.
-$$
-That is, when Cup A&amp;rsquo;s volume equals Cup B&amp;rsquo;s, the area of $A_1$ is the same as $A_2$.&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;when Cup A&amp;rsquo;s volume equals Cup B&amp;rsquo;s, the area of $A_1$ is the same as $A_2$.&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Question 3:&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Use Pappus&amp;rsquo;s Theorem to explain your result in Problem 1 and 2.&lt;/p&gt;
@@ -6226,38 +5168,8 @@ That is, when Cup A&amp;rsquo;s volume equals Cup B&amp;rsquo;s, the area of $A_
 &lt;blockquote&gt;
 &lt;p&gt;Let $R$ be a plane region that lies entirely on one side of a line $l$ in the plane. If $R$ is rotated about $l$, then the volume of the resulting solid is the product of the area $A$ of $R$ and the distance $d$ travled by the centroid of $R$.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;To use the theorem, we should first find out the centroid of $A_1$ and $A_2$.&lt;/p&gt;
-&lt;p&gt;For arbitrary plane region, the centroid (the center of mass) are located at the point $(C_x,C_y)$, where
-$$
-C_x=\frac{\int_a^{b}xf(x)dx}{\int_a^{b}f(x)dx};C_y=\frac{\int_a^{b}\frac{1}{2}[f(x)]^2dx}{\int_a^{b}f(x)dx}.
-$$
-Since the cups are rotating about axis parallel to $y$-axis, we require only $C_x$. For $A_1$,
-$$
-C_{x_1}=\frac{\int_0^{h}\frac{1}{2}[f(y)]^2dy}{\int_0^{h}f(y)dy}=\frac{1}{2A_1}\int_0^{h}[f(y)]^2dy.
-$$
-For $A_2$,
-$$
-C_{x_2}=\frac{\int_0^{h}\frac{1}{2}\left(k^2-[f(y)]^2\right)dy}{\int_0^{h}k-f(y)dy}=\frac{1}{2A_2}\int_0^{h}k^2-[f(y)]^2dy.
-$$
-After we knew the centroid of $A_1$ and $A_2$, we can start to calculate the volume of Cup A and Cup B by Pappus&amp;rsquo;s Theorem.&lt;/p&gt;
-&lt;p&gt;Volume of Cup A
-$$
-2\pi{C_{x_1}}{A_1}=\pi\int_0^{h}[f(y)]^2dy.
-$$
-Volume of Cup B
-$$
-2\pi(k-C_{x_2})A_2=2\pi k A_2 - \pi k^2 h + \pi \int_0^{h}[f(y)]^2dy.
-$$
-So if we want to have the two volumes being the same, we should have
-$$
-2\pi k A_2 - \pi k^2 h=0, \implies k = \frac{2A_2}{h}.
-$$
-Based on the fact that $A_1+A_2 = hk$, one easily obtain
-$$
-k = \frac{2A_2}{h} = \frac{2hk - 2A_1}{h}, \implies k = \frac{2A_1}{h},
-$$
-which are consistent with the results of problem 1 and 2.&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
 &lt;hr&gt;
 </description>
     </item>
@@ -6281,16 +5193,8 @@ Chinese version:
 &lt;p&gt;(c) Plot $L_1$, $f$, and $L_2$ to verify graphically that the transitions are smooth.&lt;/p&gt;
 &lt;p&gt;(d) Find the difference in elevation between $P$ and $Q$.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Suppose $P$ is at $(0,0)$, $Q$ is at $(30,y_q)$, then
-$$
-f(0)=c=0, \quad f&amp;rsquo;(0)=b=0.8, \quad f&amp;rsquo;(30)=60a+b=-1.6.
-$$
-After solving the equations, we can get $a=-0.04$, $b=0.8$ and $c=0$.
-So we find out all the cofficients of $f(x)$ and get
-$$
-f(x)=-0.04x^2+0.8x.
-$$
-By using this formula, we can find $y_q=f(30)=-12$, so the difference in elevation between $P$ and $Q$ is $12m$.&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
 &lt;p&gt;Below is the graph of these formula:
 
 
@@ -6334,49 +5238,8 @@ $$&lt;/p&gt;
 &lt;p&gt;(b) Solve the equations in part (a) with a computer algebra system to find formulas for $q(x)$, $g(x)$, and $h(x)$.&lt;/p&gt;
 &lt;p&gt;(c) Plot $L_1$, $g$, $q$, $h$, and $L_2$, and compare with the plot in Problem1(c).&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;We first rewrite the functions as
-$$
-g(x)=kx^3+lx^2+mx+n, \quad 0 \leq x \leq 3,
-$$
-$$
-q(x)=a(x-3)^2+b(x-3)+c, \quad 3 \leq x \leq 27,
-$$
-$$
-h(x)=p(x-30)^3+q(x-30)^2+r(x-30)+s, \quad 27 \leq x\leq 30.
-$$
-According to the article, we can list 11 equations to solve 11 unknown coefficients:
-$$
-g(0)=0,\quad g&amp;rsquo;(0)=0.8,\quad g&amp;rsquo;&#39;(0)=0,
-$$
-$$
-g(3)=q(3),\quad g&amp;rsquo;(3)=q&amp;rsquo;(3),\quad g&amp;rsquo;&#39;(3)=q&amp;rsquo;&#39;(3),
-$$
-$$
-q(27)=h(27),\quad q&amp;rsquo;(27)=h&amp;rsquo;(27),\quad q&amp;rsquo;&#39;(27)=h&amp;rsquo;&#39;(27),
-$$
-$$
-h&amp;rsquo;(30)=-1.6,\quad h&amp;rsquo;&#39;(30)=0.
-$$
-After a couple of complicated calculations, we finally come to the answer:
-$$
-k=-\frac{2}{405},\quad l=0,\quad m=\frac{4}{5},\quad n=0,
-$$
-$$
-a=-\frac{2}{45},\quad b=\frac{2}{3},\quad c=\frac{34}{15},
-$$
-$$
-p=\frac{2}{405},\quad q=0,\quad r=-\frac{8}{5},\quad s=-12.
-$$
-Accordingly, the final formula of the smoother roller coaster is:
-$$
-g(x)=-\frac{2}{405}x^3+\frac{4}{5}x, \quad 0 \leq x \leq 3,
-$$
-$$
-q(x)=-\frac{2}{45}(x-3)^2+\frac{2}{3}(x-3)+\frac{34}{15}, \quad 3 \leq x \leq 27,
-$$
-$$
-h(x)=\frac{2}{405}(x-30)^3-\frac{8}{5}(x-30)-12, \quad 27 \leq x \leq30.
-$$&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
 &lt;p&gt;Below is the graph of the smoother roller coaster:
 
 
@@ -6407,21 +5270,8 @@ $$&lt;/p&gt;
 &lt;/figure&gt;
 
 The red one is the graph of $g(x)$, the blue one is the graph of $q(x)$, and the green one is the graph of $h(x)$.&lt;/p&gt;
-&lt;p&gt;If we observe the graph by our naked eyes, we can barely recognize the difference between the smoother one and the original one. However, if we start to differentiate them:
-$$
-g&amp;rsquo;(0)=\frac{4}{5}=L_1&amp;rsquo;, \quad g&amp;rsquo;&#39;(0)=0=L_1&amp;rsquo;&#39;.
-$$
-Beside the same of the first derivatives of $g$ and $L_1$, the second derivatives of $g$ and $L_1$ are also the same, it means that this roller coaster is smoother than the original one, whose second derivatives of the adjacent formula aren&amp;rsquo;t the same.&lt;/p&gt;
-&lt;p&gt;The rest of the formulas can get the same results:
-$$
-g&amp;rsquo;(3)=\frac{2}{3}=q&amp;rsquo;(3), \quad g&amp;rsquo;&#39;(3)=-\frac{4}{45}=q&amp;rsquo;&#39;(3),
-$$
-$$
-q&amp;rsquo;(27)=-\frac{22}{15}=h&amp;rsquo;(27), \quad q&amp;rsquo;&#39;(27)=-\frac{4}{45}=h&amp;rsquo;&#39;(27),
-$$
-$$
-h&amp;rsquo;(30)=-\frac{8}{5}=L_2&amp;rsquo;, \quad h&amp;rsquo;&#39;(30)=0=L_2&amp;rsquo;&#39;.
-$$&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
 &lt;hr&gt;
 </description>
     </item>
@@ -6444,37 +5294,19 @@ $$&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;問題 1:&lt;/strong&gt; 罐頭的原料是從金屬板上切割下來的，它(圓柱)的邊是由彎曲的矩形組成，而這些矩形也是從板上切成且過程中幾乎沒有浪費。&lt;/p&gt;
 &lt;p&gt;然而，如果圓柱上下的圓面是由邊為 $2r$ 的正方形切割的，那麼一定會有大量的金屬浪費，儘管它可以回收再利用，但對罐頭製造商來說是幾乎沒有任何價值的。&lt;/p&gt;
 &lt;p&gt;因此，如果是這樣的話，我們就需要找到一組 $h/r$ 比例來最小化金屬的使用。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;答案:&lt;/strong&gt; \&lt;/p&gt;
-&lt;p&gt;以一個圓柱體罐頭來說，我們已經知道 $v, r$ 和 $h$ 之間的關係：
-$$
-v = r^2\pi h \Longrightarrow h = \frac{v}{r^2\pi}
-$$
-設總共使用的金屬量為 $M$ ，包刮圓柱側面和製作圓柱上下兩圓面的兩個面積為 $4r^2$ 的正方形。接著將 $M$ 寫成 $r$ 的形式：
-$$
-M = 2r\pi h + 2\times 4 r^2 = 2r\pi\left(\frac{v}{r^2\pi}\right) + 8r^2 = \frac{2v}{r} + 8 r^2
-$$
-而我們已知當 $\frac{dM}{dr}=0$ 時，存在最小值：
-$$
-\frac{dM}{dr} = -\frac{2v}{r^2} + 16r=0 \Longrightarrow v = 8r^3
-$$
-所以我們找到了在最小的金屬使用量時：
-$$
-h = \frac{v}{r^2\pi} = \frac{8r}{\pi} \Longrightarrow \frac{h}{r} = \frac{8}{\pi}\approx 2.55
+&lt;p&gt;&lt;strong&gt;答案:&lt;/strong&gt;&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;$$
+\frac{h}{r} = \frac{8}{\pi}\approx 2.55
 $$&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;問題 2:&lt;/strong&gt; 若將金屬板劃分為六邊形並從六邊形切下圓形的蓋子和底座，可以更有效地填充圓盤。如果採用這個方法，要找到能讓使用的金屬量最小化的 $h/r$ 的比例。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;答案:&lt;/strong&gt; \&lt;/p&gt;
-&lt;p&gt;同樣設總金屬使用量為 $M$ ，其中包括圓柱側面和兩個製成圓盤(罐頭的蓋子及底座)的六邊形：
-$$
-M = 2r\pi h + 2\left[\frac{1}{2}\left(\frac{2r}{\sqrt{3}}\right)6r\right] = \frac{2v}{r} + 4\sqrt{3} r^2
-$$
-而同樣我們已知當 $\frac{dM}{dr}=0$ 時，存在最小值：
-$$
-\frac{dM}{dr} = -\frac{2v}{r^2} + 8\sqrt{3}r=0 \Longrightarrow v = 4\sqrt{3}r^3
-$$
-所以我們找到了在最小的金屬使用量時：
-$$
-h = \frac{v}{r^2\pi} = \frac{4\sqrt{3}r}{\pi} \Longrightarrow \frac{h}{r} = \frac{4\sqrt{3}}{\pi}\approx 2.21
+&lt;p&gt;&lt;strong&gt;答案:&lt;/strong&gt;&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;$$
+\frac{h}{r} = \frac{4\sqrt{3}}{\pi}\approx 2.21
 $$&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;問題 3:&lt;/strong&gt; 除了罐子本身的金屬材料，我們現在將製程中所需成本包含進去&lt;/p&gt;
@@ -6483,18 +5315,12 @@ $$&lt;/p&gt;
 &lt;/ul&gt;
 &lt;p&gt;製作一圓柱罐，首先我們彎曲一矩形並將邊與邊黏接在一起以製成圓柱殼（高度為 $ h $）；接著，將兩個圓盤與圓柱殼黏接（圓盤長度為$2πr$）。 由上可知，黏接成本為 $ k(h+4πr) $， $k$ 為單位面積金屬成本可黏接長度的倒數。&lt;/p&gt;
 &lt;p&gt;同問題二，圓盤由一正六邊形切割而成，所以總成本包括金屬成本和黏接的成本，與$4\sqrt{3}r^2 + 2\pi r h + k(4\pi r + h) $成正比。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;答案：&lt;/strong&gt; \&lt;/p&gt;
-&lt;p&gt;將總成本表示為半徑 $ r$ 的函數，紀錄為$ f$：
+&lt;p&gt;&lt;strong&gt;答案：&lt;/strong&gt;&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;發生最小值時圓柱體的高度與半徑比為:
 $$
-f( r )  = 4\sqrt{3}r^2 + 2\pi r \left(\frac{v}{r^2\pi}\right) + k\left(4\pi r + \frac{v}{r^2\pi}\right) = 4\sqrt{3}r^2 + \frac{2v}{r} + k\left(4\pi r + \frac{v}{r^2\pi}\right)
-$$
-當 $\frac{df}{dr}$ = 0 時，$f$ 函數產生最小值 :
-$$
-\frac{df}{dr} = 8\sqrt{3}r -\frac{2v}{r^2} + k\left(4\pi - \frac{2v}{r^3\pi}\right) =0 \Longrightarrow 8\sqrt{3}r + 4\pi k = \left(\frac{2}{r^2} + \frac{2k}{r^3\pi}\right)v
-$$
-​由此可知，發生最小值時圓柱體的高度與半徑比為:
-$$
-\frac{h}{r} = \frac{v}{r^3\pi} = \frac{4\sqrt{3}r + 2k\pi}{\pi r + k}
+\frac{h}{r} = \frac{4\sqrt{3}r + 2k\pi}{\pi r + k}
 $$&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;問題 4:&lt;/strong&gt; 當圓柱罐非常大且黏接的成本低時結果會是怎樣呢？反之圓柱罐非常小且黏接的成本高？&lt;/p&gt;
@@ -6556,10 +5382,9 @@ $$&lt;/li&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;問題 1：&lt;/strong&gt; 對於函數 $f(x)=\cos(x)$，找尋它在 $a=0$ 時的二次逼近函數 $P(x)=A+Bx+Cx^2$，並且此函數須滿足上述介紹中的三個條件。接著對函數 $P,f$ 及線性逼近函數 $L(x)=1$ 作圖，比較 $P$ 和 $f$ 哪一個逼近函數比較精確。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;解：&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;由條件1可知 $P(0)=A=f(0)=1\quad\Rightarrow\quad A=1$。&lt;/p&gt;
-&lt;p&gt;由條件2可知 $P&amp;rsquo;(0)=B=f&amp;rsquo;(0)=0\quad\Rightarrow\quad B=0$。&lt;/p&gt;
-&lt;p&gt;接著由條件3可知 $P&amp;rsquo;&#39;(0)=2C=f&amp;rsquo;&#39;(0)=-1\quad\Rightarrow\quad C=-\frac{1}{2}$。&lt;/p&gt;
-&lt;p&gt;故 $P(x)=1-\frac{1}{2}x^{2}$。&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;$P(x)=1-\frac{1}{2}x^{2}$&lt;/p&gt;
 &lt;p&gt;函數 $P,f$ 及線性逼近函數 $L(x)=1$ 作圖如下：&lt;/p&gt;
 
 
@@ -6593,10 +5418,9 @@ $$&lt;/li&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;問題 2：&lt;/strong&gt; 延續題1，試求符合條件的 $x$ 滿足 $P(x)$ 及 $f(x)$ 的差值在 $0.1$ 內。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;解：&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;$$
-|P(x)-f(x)|\leq 0.1\Rightarrow f(x)-0.1\leq P(x)\leq f(x)+0.1
-$$&lt;/p&gt;
-&lt;p&gt;我們令 $g(x)=f(x)-1=cos(x)-0.1$；$h(x)=f(x)+1=cos(x)+0.1$，則有$g(x)\leq P(x)\leq h(x)$，因此對 $g(x),P(x),h(x)$ 作圖如下：&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;對 $g(x),P(x),h(x)$ 作圖如下：&lt;/p&gt;
 
 
 
@@ -6636,24 +5460,17 @@ $$
 P(x)=f(a)+f&amp;rsquo;(a)(x-a)+\frac{1}{2} f&amp;rsquo;&#39;(a)(x-a)^{2}。
 $$&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;解：&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;由條件1可知 $P(a)=A=f(a)\quad\Rightarrow\quad A=f(a)$。&lt;/p&gt;
-&lt;p&gt;由條件2可知 $P&amp;rsquo;(a)=B=f&amp;rsquo;(a)\quad\Rightarrow\quad B=f&amp;rsquo;(a)$。&lt;/p&gt;
-&lt;p&gt;由條件3可知 $P&amp;rsquo;&#39;(a)=2C=f&amp;rsquo;&#39;(a)\quad\Rightarrow\quad C=\frac{1}{2} f&amp;rsquo;&#39;(a)$。&lt;/p&gt;
-&lt;p&gt;因此
-$$
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;$$
 P(x)=f(a)+f&amp;rsquo;(a)(x-a)+\frac{1}{2} f&amp;rsquo;&#39;(a)(x-a)^{2}。
 $$&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;問題 4：&lt;/strong&gt; 找尋函數 $f(x)=\sqrt{x+3}$ 在 $a=1$ 時的二次逼近函數，接著對 $f$、二次逼近函數及線性逼近函數做圖。你能做怎樣的結論？&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;解：&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;$$
-f(1)=2, \quad f&amp;rsquo;(1)=\frac{1}{4}, \quad f&amp;rsquo;&#39;(1)=-\frac{1}{32}，
-$$
-由題3可知，二次逼近函數 $P(x)$ 為
-$$
-P(x)=2+\frac{1}{4}(x-1)-\frac{1}{64}(x-1)^{2}。
-$$
-對函數 $f(x),P(x)$ 及線性逼近函數作圖如下：&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;對函數 $f(x),P(x)$ 及線性逼近函數作圖如下：&lt;/p&gt;
 
 
 
@@ -6697,38 +5514,13 @@ $$
 T_{n}(x)=f(a)+f&amp;rsquo;(a)(x-a)+\frac{f&amp;rsquo;&#39;(a)}{2!} (x-a)^{2}+&amp;hellip;+\frac{f^{(n)}(a)}{n!}(x-a)^{n}。
 $$
 此即為函數 $f$ 在點 $a$ 的 $n$ 階泰勒級數。)&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;解：&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;$$
-T_{n}(a)=c_{0}。
-$$
-$$
-T_{n}&#39;(a)=1!c_{1}=f&amp;rsquo;(a)\Rightarrow c_{1}=\frac{f&amp;rsquo;(a)}{1!}。
-$$
-$$
-T_{n}&#39;&#39;(a)=2!c_{2}=f&amp;rsquo;&#39;(a)\Rightarrow c_{2}=\frac{f&amp;rsquo;&#39;(a)}{2!}。
-$$
-$$
-\vdots
-$$
-$$
-T_{n}^{(k)}(a)=k!c_{k}=f^{(k)}(a)\Rightarrow c_{k}=\frac{f^{(k)}(a)}{k!}。
-$$&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;問題 6：&lt;/strong&gt; 試求函數 $f(x)=\cos(x)$ 在點 $a=0$ 的8階泰勒級數。除此之外，對函數 $f$ 及 $T_{2},T_{4},T_{6},T_{8}$ 做圖，考慮範圍為 $x=[-5,5],y=[-1.4,1.4]$ 之長方形，評論對於函數 $f$，4條逼近函數 $T$ 的近似程度。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;解：&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;$$
-f(0)=1, \quad f&amp;rsquo;(0)=0, \quad f&amp;rsquo;&#39;(0)=-1, \quad f^{(3)}(0)=0, \quad f^{(4)}(0)=1,
-$$
-$$
-f^{(5)}(0)=0,\quad f^{(6)}(0)=-1,\quad f^{(7)}(0)=0, \quad f^{(8)}(0)=1
-$$
-則 $T_{8}(x)=1-\frac{1}{2!} x^{2}+\frac{1}{4!} x^{4}-\frac{1}{6!} x^{6}+\frac{1}{8!} x^{8}$。同時，也可得
-$$
-T_{2}(x) = 1-\frac{1}{2!} x^{2},\quad T_{4}(x) = 1-\frac{1}{2!} x^{2}+\frac{1}{4!} x^{4},
-$$
-$$
-T_{6}(x) = 1-\frac{1}{2!} x^{2}+\frac{1}{4!} x^{4}-\frac{1}{6!} x^{6}.
-$$&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
 &lt;p&gt;對函數 $f$ 及 $T_{2},T_{4},T_{6},T_{8}$ 做圖，黑色框線為題目要求 $x=[-5,5],y=[-1.4,1.4]$ 之長方形。&lt;/p&gt;
 
 
@@ -6788,51 +5580,22 @@ $$&lt;/p&gt;
 &lt;/ol&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;問題壹：&lt;/strong&gt; 請透過加適當條件在「開始下降」和「著陸」這兩個時間點的$P(x)$和$P’(x)$上，來找到一個滿足條件(1.)的三次多項式 $P(x) = ax^3 + bx^2 + cx + d$。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;解：&lt;/strong&gt; \&lt;br&gt;
-在開始下降時:
-$$
-P(\ell) = al^3 +b\ell^2 +c\ell+d = h, \qquad P’(\ell) = 3a\ell^2 +2b\ell+c = 0。
-$$
-至於著陸時:
-$$
-P(0) = 0 \Longrightarrow d = 0, \qquad P’(0)=0 \Longrightarrow c=0。
-$$
-將 $a$, $b$ 的解用 $h$, $l$來表示，我們可以發現
-$$
+&lt;p&gt;&lt;strong&gt;解：&lt;/strong&gt;&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;$$
 P(x) = −\frac{2h}{\ell^3}x^3 + \frac{3h}{\ell^2}x^2。
 $$&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;問題貳：&lt;/strong&gt; 用條件(2.)和(3.)來證明$\frac{6hv^2}{\ell^2}\le k$。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;解：&lt;/strong&gt; \&lt;br&gt;
-由條件(2.)可知，在整個下降過程中，水平速度被假設為定值$v$，因此我們可以把$x$表示為
-$$
-x = \ell - vt, \qquad t\in[0, \frac{\ell}{v}],
-$$
-在這之中，負號代表飛行器是向左飛的。接著多項式$P$能被重新寫成用變數$t$表示的形式
-$$
-P(t) = −\frac{2h}{\ell^3}(\ell - vt)^3 + \frac{3h}{\ell^2}(\ell - vt)^2, \qquad
-\frac{d^2}{dt^2}P(t) = −\frac{12hv^2}{\ell^3}(\ell - vt) + \frac{6hv^2}{\ell^2}。
-$$
-因此，鉛直加速度$a$的值是
-$$
-a(t) = \left|−\frac{12hv^2}{\ell^3}(\ell - vt) + \frac{6hv^2}{\ell^2}\right| = \left|\frac{12hv^3}{\ell^3},t - \frac{6hv^2}{\ell^2}\right|, \qquad t\in[0, \frac{\ell}{v}]。
-$$
-我們能經由極值定理和閉區間法來確認$a$會達到他的最大值$\frac{6hv^2}{\ell^2}$。根據條件(3.)，我們得到
-$$
-\frac{6hv^2}{\ell} \le k。
-$$&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;問題參：&lt;/strong&gt; 假設某航空公司決定不讓飛機的鉛直加速度達到$k = 860(英里/小時^2)$。如果飛機的巡航高度是$35,000$(英尺)且速度是$300$(英里/小時)，飛行員該在距離機場多遠的地方開始下降？&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;解：&lt;/strong&gt; \&lt;br&gt;
-給定$P(x) = −\frac{2h}{\ell^3}x^3 + \frac{3h}{\ell^2}x^2$，假設飛行員在距離機場$\ell$(英里)的地方開始下降。在問題貳當中，我們已經知道 $\frac{6hv^2}{\ell^2}\le k$。所以，
-$$
-v=300\mbox{(mi/h)}, \qquad h=35000\mbox{(ft)} ≈ 6.628\mbox{(mi)}, \qquad k=860\mbox{(mi/h$^2$)},
-$$
-$$
-\frac{6\times 6.628\times (300)^2}{\ell^2} \le 860, \quad \Longrightarrow \quad
-\ell \ge 64.511。
-$$
-也就是說，飛行員應該在距離機場$64.511$(英里)的地方開始下降。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;解：&lt;/strong&gt;&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;飛行員應該在距離機場$64.511$(英里)的地方開始下降。&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;問題肆：&lt;/strong&gt; 請繪製近似圖(假設問題參當中的所有條件都被滿足)&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;解：&lt;/strong&gt;&lt;/p&gt;
@@ -7020,14 +5783,18 @@ P = Av^3 + \frac{BL^2}{v}
 $$&lt;/p&gt;
 &lt;p&gt;where $A$ and $B$ are positive constants specific to the particular aircraft and $L$ is the lift, the upward force supporting the weight of the plane. Find the speed that minimizes the required power.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
 &lt;p&gt;$$
-\frac{d P}{dv} = 3Av^2 - \frac{BL^2}{v^2} = 0 \ \Longrightarrow \ v_P = \sqrt[4]{\frac{BL^2}{3A}}
+v_P = \sqrt[4]{\frac{BL^2}{3A}}
 $$&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Question 2:&lt;/strong&gt;	The speed found in Problem 1 minimizes power but a faster speed might use less fuel. The energy needed to propel the airplane a unit distance is​ $E = P/v$ . At what speed is energy minimized?&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
 &lt;p&gt;$$
-\frac{d E}{dv} = 2Av - \frac{2BL^2}{v^3} = 0 \ \Longrightarrow \ v_E = \sqrt[4]{\frac{BL^2}{A}}
+v_E = \sqrt[4]{\frac{BL^2}{A}}
 $$&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Question 3:&lt;/strong&gt; Hows much faster is the speed for minimum energy than the speed for minimum power?&lt;/p&gt;
@@ -7048,8 +5815,10 @@ $$&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Question 5:&lt;/strong&gt;  For what value of​ $x$ is the average power a minimum? What can you conclude if the bird flies slowly? What can you conclude if the bird flies faster and faster?&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
 &lt;p&gt;$$
-\frac{d P_a}{dx} = A_w v^3 - \frac{B m^2 g^2}{x^2v} = 0 \ \Longrightarrow \ x = \frac{mg}{v^2}\sqrt{\frac{B}{A_w}}
+x = \frac{mg}{v^2}\sqrt{\frac{B}{A_w}}
 $$&lt;/p&gt;
 &lt;p&gt;It can be seen that $x$ is inverse proportional to $v^2$, so,&lt;/p&gt;
 &lt;ul&gt;
@@ -7059,8 +5828,10 @@ $$&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Question 6:&lt;/strong&gt;  The average energy over a cycle is $E_a = P_a/v$. What value of $x$​ minimizes $E_a$?&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
 &lt;p&gt;$$
-\frac{d E}{dx} = A_w v^2 - \frac{B m^2 g^2}{x^2v^2} = 0 \ \Longrightarrow \ x = \frac{mg}{v^2}\sqrt{\frac{B}{A_w}}
+x = \frac{mg}{v^2}\sqrt{\frac{B}{A_w}}
 $$&lt;/p&gt;
 &lt;hr&gt;
 </description>
@@ -7083,37 +5854,19 @@ Chinese version:
 &lt;p&gt;&lt;img src=&#34;https://media.cheggcdn.com/study/e3e/e3e1a59a-d0be-46e7-8557-07e775d84b81/715030-4.7-1IAP11.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Question 1:&lt;/strong&gt; The material for the cans is cut from sheets of metal. The cylindrical sides are formed by bending rectangles; these rectangles are cut from the sheet with little or no waste.&lt;/p&gt;
 &lt;p&gt;But if the top and bottom discs are cut from squares of side $2r$, this leaves considerable waste metal, which may be recycled but has little or no value to the can makers. If this is the case, find the ratio $h/r$ for which the amount of metal used is minimized.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt; \&lt;br&gt;
-For a cylindrical can we have the relation between $v$, $r$ and $h$ as&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
 &lt;p&gt;$$
-v = r^2\pi h \Longrightarrow h = \frac{v}{r^2\pi}.
-$$&lt;/p&gt;
-&lt;p&gt;The total metal used, $M$, consists of the cylindrical side and two squares (with area $4r^2$) that makes the top and bottom discs. Written everything in terms of $r$ we have&lt;/p&gt;
-&lt;p&gt;$$
-M = 2r\pi h + 2\times 4 r^2 = 2r\pi\left(\frac{v}{r^2\pi}\right) + 8r^2 = \frac{2v}{r} + 8 r^2.
-$$&lt;/p&gt;
-&lt;p&gt;When $\frac{dM}{dr}=0$, there exists a minimum value&lt;/p&gt;
-&lt;p&gt;$$
-\frac{dM}{dr} = -\frac{2v}{r^2} + 16r=0 \Longrightarrow v = 8r^3.
-$$&lt;/p&gt;
-&lt;p&gt;So we find that, with the minimum metal used,&lt;/p&gt;
-&lt;p&gt;$$
-h = \frac{v}{r^2\pi} = \frac{8r}{\pi} \Longrightarrow \frac{h}{r} = \frac{8}{\pi}\approx 2.55
+\frac{h}{r} = \frac{8}{\pi}\approx 2.55
 $$&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Question 2:&lt;/strong&gt;	A more efficient packing of the discs is obtained by dividing the metal sheet into hexagons and cutting the circular lids and bases from the hexagons. If this strategy is adopted, find the ratio $h/r$ for which the amount of metal used is minimized.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt; \&lt;br&gt;
-The total metal used, $M$, consists of the cylindrical side and two hexagons that makes the top and bottom discs:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
 &lt;p&gt;$$
-M = 2r\pi h + 2\left[\frac{1}{2}\left(\frac{2r}{\sqrt{3}}\right)6r\right] = \frac{2v}{r} + 4\sqrt{3} r^2.
-$$&lt;/p&gt;
-&lt;p&gt;When $\frac{dM}{dr}=0$, there exists a minimum value&lt;/p&gt;
-&lt;p&gt;$$
-\frac{dM}{dr} = -\frac{2v}{r^2} + 8\sqrt{3}r=0 \Longrightarrow v = 4\sqrt{3}r^3.
-$$&lt;/p&gt;
-&lt;p&gt;So we find that, with the minimum metal used,&lt;/p&gt;
-&lt;p&gt;$$
-h = \frac{v}{r^2\pi} = \frac{4\sqrt{3}r}{\pi} \Longrightarrow \frac{h}{r} = \frac{4\sqrt{3}}{\pi}\approx 2.21
+\frac{h}{r} = \frac{4\sqrt{3}}{\pi}\approx 2.21
 $$&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Question 3:&lt;/strong&gt; In addition to the cost of the metal, we need to incorporate the manufacturing of the can into the cost.&lt;/p&gt;
@@ -7122,22 +5875,16 @@ $$&lt;/p&gt;
 &lt;/ul&gt;
 &lt;p&gt;For a cylindrical can, we need to bend a rectangle and joinging the sides together (with length $h$) to make the cylindrical shell. Also we need to join the two discs to the shell (each disc with length $2\pi r$). So the cost in joining is $k(h + 4\pi r)$ where $k$ is the reciprocal of the length that can be joined for the cost of one unit area of metal.&lt;/p&gt;
 &lt;p&gt;If we cut the discs from hexagons as in Question 2, then the total cost consists of the cost of the metal and the cost in joinging the sides, that is proportional to $4\sqrt{3}r^2 + 2\pi r h + k(4\pi r + h)$.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt; \&lt;br&gt;
-Denote the total cost by $f$ and rewrite it as a function of $r$:
-$$
-f( r )  = 4\sqrt{3}r^2 + 2\pi r \left(\frac{v}{r^2\pi}\right) + k\left(4\pi r + \frac{v}{r^2\pi}\right) = 4\sqrt{3}r^2 + \frac{2v}{r} + k\left(4\pi r + \frac{v}{r^2\pi}\right).
-$$&lt;/p&gt;
-&lt;p&gt;When $\frac{df}{dr}=0$, there exists a minimum value&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;with the minimum metal used,&lt;/p&gt;
 &lt;p&gt;$$
-\frac{df}{dr} = 8\sqrt{3}r -\frac{2v}{r^2} + k\left(4\pi - \frac{2v}{r^3\pi}\right) =0 \Longrightarrow 8\sqrt{3}r + 4\pi k = \left(\frac{2}{r^2} + \frac{2k}{r^3\pi}\right)v.
-$$&lt;/p&gt;
-&lt;p&gt;So we find that, with the minimum metal used,&lt;/p&gt;
-&lt;p&gt;$$
-\frac{h}{r} = \frac{v}{r^3\pi} = \frac{4\sqrt{3}r + 2k\pi}{\pi r + k}.
+\frac{h}{r} = \frac{4\sqrt{3}r + 2k\pi}{\pi r + k}.
 $$&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Question 4:&lt;/strong&gt; What happened when a can is large or joining is cheap, and what happened when the can is small or joining is costly?&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt; \&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;For a cylinder with fixed volume $v$:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;When joining is cheap, $0&amp;lt;k\ll 1$, we have
@@ -7429,52 +6176,22 @@ Chinese version:
 constant $k$ (which is much less than the acceleration due to gravity)&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Question 1:&lt;/strong&gt; Find a cubic polynomial $P(x) = ax^3 + bx^2 + cx + d$ that satisfies condition (i) by imposing suitable conditions on $P(x)$ and $P’(x)$ at the start of descent and at touchdown.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt; \&lt;br&gt;
-At the start of descent:
-$$
-P(\ell) = al^3 +b\ell^2 +c\ell+d = h, \qquad P’(\ell) = 3a\ell^2 +2b\ell+c = 0.
-$$
-At touchdown:
-$$
-P(0) = 0 \Longrightarrow d = 0, \qquad P’(0)=0 \Longrightarrow c=0.
-$$
-Solve for $a$, $b$ in terms of $h$, $\ell$ we find
-$$
+&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;$$
 P(x) = −\frac{2h}{\ell^3}x^3 + \frac{3h}{\ell^2}x^2.
 $$&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Question 2:&lt;/strong&gt; Use conditions (ii) and (iii) to show that $\frac{6hv^2}{\ell^2}\le k$.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt; \&lt;br&gt;
-From (ii), a constant horizontal speed $v$ is assumed throughout descent, we can then express $x$ as
-$$
-x = \ell - vt, \qquad t\in[0, \frac{\ell}{v}],
-$$
-where the minus sign indicating flying to the left. The polynomial $P$ can then be re-written in terms of variable $t$ as
-$$
-P(t) = −\frac{2h}{\ell^3}(\ell - vt)^3 + \frac{3h}{\ell^2}(\ell - vt)^2, \qquad
-\frac{d^2}{dt^2}P(t) = −\frac{12hv^2}{\ell^3}(\ell - vt) + \frac{6hv^2}{\ell^2}.
-$$
-Therefore, the vertical acceleration $a$ is
-$$
-a(t) = \left|−\frac{12hv^2}{\ell^3}(\ell - vt) + \frac{6hv^2}{\ell^2}\right| = \left|\frac{12hv^3}{\ell^3},t - \frac{6hv^2}{\ell^2}\right|, \qquad t\in[0, \frac{\ell}{v}].
-$$
-It can be check, from the Extreme Value Theorem and closed interval method, that $a$ attains it&amp;rsquo;s maximum value $\frac{6hv^2}{\ell^2}$.
-From condition (iii), we therefore have
-$$
-\frac{6hv^2}{\ell} \le k.
-$$&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Question 3:&lt;/strong&gt; Suppose that an airline decides not to allow vertical acceleration of a plane to exceed $k = 860$(mi/h$^2$). If the cruising altitude of a plane is $35,000$(ft) and the speed is $300$(mi/h), how far away from the airport should the pilot start descent?&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt; \&lt;br&gt;
-Given $P(x) = −\frac{2h}{\ell^3}x^3 + \frac{3h}{\ell^2}x^2$, suppose the pilot starts to descend when the plane is $\ell$(mi) from the airport. In Q2. we know that $\frac{6hv^2}{\ell^2}\le k$. So,
-$$
-v=300\mbox{(mi/h)}, \qquad h=35000\mbox{(ft)} ≈ 6.628\mbox{(mi)}, \qquad k=860\mbox{(mi/h$^2$)},
-$$
-$$
-\frac{6\times 6.628\times (300)^2}{\ell^2} \le 860, \quad \Longrightarrow \quad
-\ell \ge 64.511.
-$$
-That is, the pilot should start to decend when the plane is $64.511$(mi) away from the airport.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;The pilot should start to decend when the plane is $64.511$(mi) away from the airport.&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Question 4:&lt;/strong&gt; Graph the approach path if the conditions stated in Problem 3 are satisfied.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;

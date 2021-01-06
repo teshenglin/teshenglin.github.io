@@ -33,39 +33,16 @@ Solve this differential equation to show that the velocity is
 $$
 v(t)=(v_0+\frac{mg}{p})e^{-pt/m}-\frac{mg}{p}
 $$&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;We known that
-$$
-mv&#39;=-pv-mg
-$$
-With some calculate we can get
-$$
-\int {\frac{p}{pv+mg}dv}=\int -\frac{p}{m}dt
-$$
-Integrate both sides we obtain
-$$
-\ln(pv+mg) = -\frac{p}{m}t + C, \quad pv+mg=e^{-\frac{p}{m}t + C}
-$$
-With initial condition $v(0) = v_0$ we get
-$$
-p v_0 + mg = e^C
-$$
-and finally we have
-$$
-v(t)=(v_0+\frac{mg}{p})e^{-\frac{p}{m}t}-\frac{mg}{p}
-$$&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Question 2：&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Show that the height of the ball, until it hits the ground, is
 $$
 y(t)=(v_0+\frac{mg}{p})\frac{m}{p}(1-e^{-pt/m})-\frac{mgt}{p}
 $$&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Answer：&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;$$
-y(t)=\int_0^tv(t)dt
-=\int_0^t (v_0+\frac{mg}{p})e^{-\frac{p}{m}t}-\frac{mg}{p}dt
-=(v_0+\frac{mg}{p})\frac{m}{p}(-e^{-\frac{p}{m}t}+1)-\frac{mg}{p}t
-$$&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Question 3：&lt;/strong&gt;&lt;/p&gt;
 &lt;ol&gt;
@@ -80,23 +57,13 @@ $$&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;&lt;strong&gt;Answer：&lt;/strong&gt;&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
 &lt;ol start=&#34;2&#34;&gt;
-&lt;li&gt;
-&lt;p&gt;when the ball takes to reach its maximum height, the velocity $v(t_1)=0$, i.e.,
-$$
-(v_0+\frac{mg}{p})e^{-\frac{p}{m}t_1}-\frac{mg}{p}=0
-$$
-We then obtain
-$$
-t_1=\frac{m}{p}\ln\left({\frac{mg + pv_0}{mg}}\right)
-$$&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;with the ball with mass $m=1kg$, initial velocity $v_0=20m/s$, gravity $g=9.8m/s$, and air resistance $p=\frac{1}{10}$.
+&lt;li&gt;with the ball with mass $m=1kg$, initial velocity $v_0=20m/s$, gravity $g=9.8m/s$, and air resistance $p=\frac{1}{10}$.
 $$
 t_1=\frac{1}{\frac{1}{10}}ln\left({\frac{1\times9.8+\frac{1}{10}\times20}{1\times9.8}}\right)=‭1.85717‬s
-$$&lt;/p&gt;
-&lt;/li&gt;
+$$&lt;/li&gt;
 &lt;/ol&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Question 4：&lt;/strong&gt;&lt;/p&gt;
@@ -127,42 +94,8 @@ is increasing for $x &amp;gt; 1$.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;&lt;strong&gt;Answer：&lt;/strong&gt;&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;According to Question 3, we get
-$$
-t_1=\frac{m}{p}ln{\frac{pv_0+mg}{mg}},　\quad x=e^{pt_1/m}, \quad
-\Rightarrow \quad x=\frac{pv_0+mg}{mg}
-$$
-According to the Question 2, we get
-$$
-y(2t_1)=(v_0+\frac{mg}{p})\frac{m}{p}(1-e^{-2pt_1/m})-\frac{2mgt_1}{p}
-$$
-$$
-=\frac{m^2g}{p^2}\left[(1-e^{-2pt_1/m})+(\frac{pv_0}{mg})(1-e^{-2pt_1/m})-(\frac{2pt_1}{m})\right]
-$$
-$$
-=\frac{m^2g}{p^2}\left[(1-\frac{1}{x^2})+(\frac{pv_0}{mg})(1-\frac{1}{x^2})-2\ln x\right]
-=\frac{m^2g}{p^2}(x-\frac{1}{x}-2\ln{x})
-$$&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;According to the question
-$$
-f(x)=x-\frac{1}{x}-2\ln{x}, \quad
-f&amp;rsquo;(x)=1+\frac{1}{x^2}-\frac{2}{x}
-=(\frac{x-1}{x})^2\geq 0
-$$
-so we know that $f(x)$ is increasing for $x&amp;gt;1$&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;By the result, we know that $f(1)=0$, and $f(x)$ is increasing for $x&amp;gt;1$, so we can conclude that
-$$
-y(2t_1)=\frac{m^2g}{p^2}(x-\frac{1}{x}-2\ln{x})&amp;gt;0
-$$
-Because $y(2t_1)$ is positive, which means that the $2t_1&amp;lt;t_1+t_2$, and $t_1&amp;lt;t_2$. So the conclusion is that ascent is faster than descent.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
 &lt;hr&gt;
 </description>
     </item>
@@ -188,39 +121,16 @@ $$&lt;/p&gt;
 $$
 v(t)=(v_0+\frac{mg}{p})e^{-pt/m}-\frac{mg}{p}
 $$&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;解答：&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;我們已知
-$$
-mv&#39;=-pv-mg
-$$
-計算後可得
-$$
-\int {\frac{p}{pv+mg}dv}=\int -\frac{p}{m}dt
-$$
-兩邊積分可得
-$$
-\ln(pv+mg) = -\frac{p}{m}t + C, \quad pv+mg=e^{-\frac{p}{m}t + C}
-$$
-帶入初始條件 $v(0) = v_0$ 我們得到
-$$
-p v_0 + mg = e^C
-$$
-最終我們得到
-$$
-v(t)=(v_0+\frac{mg}{p})e^{-\frac{p}{m}t}-\frac{mg}{p}
-$$&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;問題 2：&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;解出直到球落地之前的高度為
 $$
 y(t)=(v_0+\frac{mg}{p})\frac{m}{p}(1-e^{-pt/m})-\frac{mgt}{p}
 $$&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;解答：&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;$$
-y(t)=\int_0^tv(t)dt
-=\int_0^t (v_0+\frac{mg}{p})e^{-\frac{p}{m}t}-\frac{mg}{p}dt
-=(v_0+\frac{mg}{p})\frac{m}{p}(-e^{-\frac{p}{m}t}+1)-\frac{mg}{p}t
-$$&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;問題 3：&lt;/strong&gt;&lt;/p&gt;
 &lt;ol&gt;
@@ -235,23 +145,13 @@ $$&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;&lt;strong&gt;解答：&lt;/strong&gt;&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;當球到達最高點時，速度 $v(t_1)=0$, i.e.,
-$$
-(v_0+\frac{mg}{p})e^{-\frac{p}{m}t_1}-\frac{mg}{p}=0
-$$
-經過計算後得到
-$$
-t_1=\frac{m}{p}\ln\left({\frac{mg + pv_0}{mg}}\right)
-$$&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;當球的質量 $m=1kg$，向上的速度 $v_0=20m/s$，重力 $g=9.8m/s$，空氣阻力 $p=\frac{1}{10}$
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;當球的質量 $m=1kg$，向上的速度 $v_0=20m/s$，重力 $g=9.8m/s$，空氣阻力 $p=\frac{1}{10}$
 $$
 t_1=\frac{1}{\frac{1}{10}}ln\left({\frac{1\times9.8+\frac{1}{10}\times20}{1\times9.8}}\right)=‭1.85717‬s
-$$&lt;/p&gt;
-&lt;/li&gt;
+$$&lt;/li&gt;
 &lt;/ol&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;問題 4：&lt;/strong&gt;&lt;/p&gt;
@@ -281,43 +181,8 @@ $$
 &lt;p&gt;使用這項結果來決定 $y(2t_1)$ 何時為正，何時為負。你能推斷出甚麼結果?上升還是下降比較快?&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;strong&gt;解答：&lt;/strong&gt;&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;根據問題3，我們可知
-$$
-t_1=\frac{m}{p}ln{\frac{pv_0+mg}{mg}},　\quad x=e^{pt_1/m}, \quad
-\Rightarrow \quad x=\frac{pv_0+mg}{mg}
-$$&lt;/p&gt;
-&lt;p&gt;根據問題2，我們可知
-$$
-y(2t_1)=(v_0+\frac{mg}{p})\frac{m}{p}(1-e^{-2pt_1/m})-\frac{2mgt_1}{p}
-$$
-$$
-=\frac{m^2g}{p^2}\left[(1-e^{-2pt_1/m})+(\frac{pv_0}{mg})(1-e^{-2pt_1/m})-(\frac{2pt_1}{m})\right]
-$$
-$$
-=\frac{m^2g}{p^2}\left[(1-\frac{1}{x^2})+(\frac{pv_0}{mg})(1-\frac{1}{x^2})-2\ln x\right]
-=\frac{m^2g}{p^2}(x-\frac{1}{x}-2\ln{x})
-$$&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;根據此題，我們可知
-$$
-f(x)=x-\frac{1}{x}-2\ln{x}, \quad
-f&amp;rsquo;(x)=1+\frac{1}{x^2}-\frac{2}{x}
-=(\frac{x-1}{x})^2\geq 0
-$$
-所以我們得知當 $x&amp;gt;1$ 時 $f(x)$ 為遞增&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;根據結果，我們知道 $f(1)=0$，和 $f(x)$ 在 $x&amp;gt;1$ 時遞增，因此我們可推斷
-$$
-y(2t_1)=\frac{m^2g}{p^2}(x-\frac{1}{x}-2\ln{x})&amp;gt;0
-$$
-因為 $y(2t_1)$ 為正，代表 $2t_1&amp;lt;t_1+t_2$ 和 $t_1&amp;lt;t_2$ 。因此推斷上升比下降快。&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
 &lt;hr&gt;
 </description>
     </item>

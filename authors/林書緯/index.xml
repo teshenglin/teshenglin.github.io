@@ -50,24 +50,8 @@ Describe how the graph changes as you change the value of $c$.&lt;/p&gt;
 &lt;p&gt;For $-1&amp;lt;c&amp;lt;0$(see the graph), there are four hyperboliclike branches as well as an ellipticlike curve bounded by $|x|\leq1$ and $|y|\leq1$ for values of $c$ close to $0$. As $c$ gets closer to $-1$, the branches and the curve become more rectangular, approaching the lines $|x|=1$ and $|y|=1$.&lt;/p&gt;
 &lt;p&gt;For $c=-1$, we get the lines $x=\pm1$ and $y=\pm1$. As $c$ decreases, we get four test-tubelike curves (see the graph) that are bounded by $|x|=1$ and $|y|=1$, and get thinner as $|c|$ gets larger.
 &lt;img src=&#34;https://i.imgur.com/8MuCqVK.png&#34; alt=&#34;2(a)&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;(b)&lt;/strong&gt; The curve for $c=-1$ is described in part &lt;strong&gt;(a)&lt;/strong&gt;. When $c=-1$, we get
-$$
-x^2+y^2-x^2y^2=1 \leftrightarrow (x^2-1)(y^2-1)=0,
-$$
-so $x=\pm 1$ or $y=\pm 1$, which algebraically proves that the graph consists of the stated lines.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;(c)&lt;/strong&gt;
-$$
-\frac{d}{dx}(x^2+y^2+cx^2y^2)=\frac{d}{dx}(1) \rightarrow
-2x+2yy&#39;+c(x^2\cdot2yy&#39;+y^2\cdot2x)=0
-$$
-$$
-\rightarrow 2yy&#39;+2cx^2yy&#39;=-2x-2cxy^2 \rightarrow
-2y(1+cx^2)y&#39;=-2x(1+cy^2)
-$$
-$$
-\rightarrow y&#39;=-\frac{x(1+cy^2)}{y(1+cx^2)}
-$$&lt;/p&gt;
-&lt;p&gt;For $c=-1$, $y&#39;=-\frac{x(1-y^2)}{y(1-x^2)}=-\frac{x(1+y)(1-y)}{y(1+x)(1-x)}$, so $y&#39;=0$ when $y=\pm1$ or $x=0$ (which leads to $y=\pm1$) and $y&#39;$ is undefined when $x=\pm1$ or $y=0$ (which leads to $x=\pm1$). Since the graph consists of the lines $x=\pm1$ and $y=\pm1$, the slope at any point on the graph is undefined or $0$, which is consistent with the expression found for $y&#39;$.&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
 &lt;hr&gt;
 </description>
     </item>
@@ -110,24 +94,8 @@ $$
 &lt;p&gt;當 $-1&amp;lt;c&amp;lt;0$(看圖), $c$ 靠近 $0$ 時有四個部分的雙曲線和一個由 $|x|\leq1$ 和 $|y|\leq1$ 圍出的橢圓。$c$ 越靠近 $-1$, 橢圓和曲線就變得越方正, 靠近 $|x|=1$和$|y|=1$。&lt;/p&gt;
 &lt;p&gt;當$c=-1$, 我們得到直線 $x=\pm1$ 和 $y=\pm1$。當 $c$ 減少,我們得到四個試管形狀的曲線(看圖) 由 $|x|=1$ 和 $|y|=1$ 圍出，當$|c|$越大，圖形就變得越小。
 &lt;img src=&#34;https://i.imgur.com/8MuCqVK.png&#34; alt=&#34;2(a)&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;(b)&lt;/strong&gt; $c=-1$ 的圖形已在 &lt;strong&gt;(a)&lt;/strong&gt; 描述過。當 $c=-1$，我們得到
-$$
-x^2+y^2-x^2y^2=1 \leftrightarrow (x^2-1)(y^2-1)=0
-$$
-所以 $x=\pm1$ 或 $y=\pm1$，代術性的證明了指定的直線。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;(c)&lt;/strong&gt;
-$$
-\frac{d}{dx}(x^2+y^2+cx^2y^2)=\frac{d}{dx}(1) \rightarrow
-2x+2yy&#39;+c(x^2\cdot2yy&#39;+y^2\cdot2x)=0
-$$
-$$
-\rightarrow 2yy&#39;+2cx^2yy&#39;=-2x-2cxy^2 \rightarrow
-2y(1+cx^2)y&#39;=-2x(1+cy^2)
-$$
-$$
-\rightarrow y&#39;=-\frac{x(1+cy^2)}{y(1+cx^2)}
-$$&lt;/p&gt;
-&lt;p&gt;當$c=-1$, $y&#39;=-\frac{x(1-y^2)}{y(1-x^2)}=-\frac{x(1+y)(1-y)}{y(1+x)(1-x)}$, 當 $y&#39;=0$ 得到 $y=\pm1$ or $x=0$ (故我們得到$y=\pm1$) 且 $y&#39;$ 在 $x=\pm1$ 或 $y=0$ (故我們得到$x=\pm1$)為未定義。因為 $c=-1$ 的圖形由直線 $x=\pm1$和$y=\pm1$ 組成，在任何點的斜率為未定義或 $0$，與我們對 $y&#39;$ 的發現相符。&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
 &lt;hr&gt;
 </description>
     </item>

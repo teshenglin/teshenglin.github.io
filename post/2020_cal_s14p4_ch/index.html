@@ -243,7 +243,7 @@
     
       <meta property="article:published_time" content="2020-05-31T00:00:00&#43;00:00">
     
-    <meta property="article:modified_time" content="2020-06-07T22:45:19&#43;08:00">
+    <meta property="article:modified_time" content="2021-01-06T20:32:48&#43;08:00">
   
 
   
@@ -272,7 +272,7 @@
   "headline": "Sec.14.4 - 速比濤鯊魚皮系列第四代泳裝",
   
   "datePublished": "2020-05-31T00:00:00Z",
-  "dateModified": "2020-06-07T22:45:19+08:00",
+  "dateModified": "2021-01-06T20:32:48+08:00",
   
   "author": {
     "@type": "Person",
@@ -548,7 +548,7 @@
           Last updated on
       
     
-    Jun 7, 2020
+    Jan 6, 2021
   </span>
   
 
@@ -557,7 +557,7 @@
   
   <span class="middot-divider"></span>
   <span class="article-reading-time">
-    4 min read
+    3 min read
   </span>
   
 
@@ -653,70 +653,19 @@ f(x,y)=\left(\frac{1+x}{1+y}\right)^{\frac{1}{3}}-1
 $$
 由文字給定的敘述中, 請問函數 $f$ 的定義域為何?</p>
 <p><strong>解</strong></p>
-<ul>
-<li>
-<p>找出 $f$ 的公式</p>
-<p>$f(x,y)$ 可以被重新寫成
-$$
-f(x,y)=\frac{v(P(1+x),C(1+y))}{v(P,C)}-1
-$$
-帶入 $v(P,C)$ 的公式
-$$
-f(x,y)=\frac{\left[\frac{2P(1+x)}{kC(1+y)}\right]^{1/3} }{\left(\frac{2P}{kC}\right)^{1/3}}-1
-$$
-$v(P,C)$ 大於零且 $v(P+xP,C+yC)$ 大於等於零. 因此, 分子和分母的根號可以結合一起計算:
-$$
-f(x,y)=\left(\frac{1+x}{1+y}\right)^{\frac{1}{3}}-1
-$$</p>
-</li>
-<li>
-<p>找出 $f$ 的定義域</p>
-<p>所做的功率必定大於等於零:
-$$
-P+xP\geq 0
-$$
-現實生活中必定存在磨擦, 阻力係數大於零:
-$$
-C+yC&gt;0
-$$
-總結以上
-$$
-1+x\geq0, \qquad 1+y&gt;0
-$$
-因此 $f$ 的定義域為
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<p>$f$ 的定義域為
 $$
 \{ (x,y)\mid x\geq-1,\quad y&gt;-1 \}
 $$</p>
-</li>
-</ul>
 <hr>
 <p><strong>問題 2:</strong></p>
 <p>假設功率的改變比例 $x$ 和阻力的改變比例 $y$ 很小, 找出 $f(x, y)$ 的線性近似. 請問這個近似告訴你關於「增加功率」和「減少阻力」的影響存在哪些差異?</p>
 <p><strong>解</strong></p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
 <ul>
-<li>
-<p>找出函數 $f$ 的線性近似</p>
-<p>功率的改變比例 $x$ 和阻力的改變比例 $y$ 很小意味著 $x$ 和 $y$ 很接近零, 在點 $(0,0)$ 使用線性逼近法
-$$
-f(x,y)\approx f(0,0)+f_x(0,0)(x-0)+f_y(0,0)(y-0)
-$$
-計算 $f_x$
-$$
-\frac{\partial f}{\partial x} =\frac{1}{3}(1+x)^{-\frac{2}{3}}(1+y)^{-\frac{1}{3}}
-$$
-計算 $f_y$
-$$
-\frac{\partial f}{\partial y}=-\frac{1}{3}(1+x)^{\frac{1}{3}}(1+y)^{-\frac{4}{3}}
-$$
-計算 $f_x(0,0)$ 和 $f_y(0,0)$
-$$
-f_x(0,0)=\frac{1}{3} \quad f_y(0,0)=-\frac{1}{3}
-$$
-因為 $f(0,0)=0$, 得 $f$ 在點 $(0,0)$ 的線性近似為
-$$
-f(x,y)\approx \frac{1}{3}x-\frac{1}{3}y
-$$</p>
-</li>
 <li>
 <p>比較「增加功率」和「減少阻力」的影響</p>
 <p>根據函數 $f$ 線性逼近的結果, 增加功率 $x$ 或減少阻力 $y$ 所造成速率的增加比例都是三分之一. 因此, 對於速率的增加比例而言, 少量增加功率抑或是少量減少阻力所造成的影響並沒有差異.</p>
@@ -725,55 +674,15 @@ $$</p>
 <hr>
 <p><strong>問題 3:</strong></p>
 <p>計算 $f_{xx}(x, y)$ 和 $f_{yy}(x, y)$. 根據這些導數的正負號, 請問題目2的線性近似對於「增加功率」是低估還是高估呢? 那麼對於「減少阻力」呢? 利用你的答案解釋為什麼在功率或阻力的變化量不小的情況下, 「減少阻力」比較有效率?</p>
-<p><strong>解</strong></p>
-<ul>
-<li>
-<p>評估問題2的線性近似究竟是高估還是低估</p>
-<p>計算 $f_{xx}(x, y)$ 和 $f_{yy}(x, y)$
-$$
-\frac{\partial^2 f}{\partial x^2} = -\frac{2}{9}(1+x)^{-\frac{5}{3}}(1+y)^{-\frac{1}{3}}&lt;0
-$$
-$$
-\frac{\partial^2 f}{\partial y^2} = \frac{4}{9}(1+x)^{\frac{1}{3}}(1+y)^{-\frac{7}{3}}&gt;0
-$$</p>
-<p>$f$ 對於 $x$ 而言是凸函數 (a <em>concave</em> function), 這意味著線性近似高估了「增加功率」的影響.
-$$
-f(x,0)&lt;\frac{1}{3}x
-$$
-$f$ 對於 $y$ 而言是凹函數 (a <em>convex</em> function), 這意味著線性近似低估了「減少阻力」的影響.
-$$
-f(0,y)&gt;-\frac{1}{3}y
-$$</p>
-</li>
-<li>
-<p>解釋為什麼在變化量大的時候「減少阻力」比較有效率</p>
-<p>假設功率的增加量和阻力的減少量等於定值 $c &gt;0$
-$$
-c=x=-y
-$$
-判斷 $f$  對於 $x$ 或 $y$ 的改變何者比較敏感
-$$
-\frac{\Delta f(c,0)}{\Delta f(0,-c)}=\frac{f(c,0)-f(0,0)}{f(0,-c)-f(0,0)}=\frac{f(c,0)}{f(0,-c)}&lt;\frac{\frac{1}{3}c}{\frac{1}{3}c}=1
-$$
-因此，在功率或阻力的變化量不小的情況下, 「減少阻力」比較有效.
-$$
-\Delta f(0,-c)&gt;\Delta f(c,0)\quad (c&gt;0)
-$$</p>
-</li>
-</ul>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
 <hr>
 <p><strong>問題 4:</strong></p>
 <p>畫出 $f(x, y)$ 的等高線圖, 解釋這些等高線的形狀和問題 2 和 3 有哪些關聯性.</p>
 <p><strong>解</strong></p>
-<p>給定一個定值$h$, 令 $f(x,y)=h$
-$$
-f(x,y)=\left(\frac{1+x}{1+y}\right)^{\frac{1}{3}}-1=h
-$$
-重新整理方程式，然後得到等高線的公式
-$$
-y=\frac{x}{(1+h)^3}+\frac{1}{(1+h)^3}-1
-$$
-畫出在 h= -0.75, -0.5, -0.25, 0, 0.05, 0.25, 0.5, 0.75, 1的等高線</p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<p>畫出在 h= -0.75, -0.5, -0.25, 0, 0.05, 0.25, 0.5, 0.75, 1的等高線</p>
 
 
 

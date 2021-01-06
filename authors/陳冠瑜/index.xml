@@ -49,37 +49,13 @@ $$
 \lim_{\lambda\to\infty} f(\lambda) = 0
 $$&lt;/p&gt;
 &lt;p&gt;for Planck&amp;rsquo;s Law. So this law models blackbody radiation better than the Rayleigh-Jeans Law for short wavelengths.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Let $a=8\pi hc$, $b=\frac{hc}{kT}$, so that $f(\lambda)=\frac{a\lambda ^{-5}}{e^{b/\lambda}-1}$.&lt;/p&gt;
-&lt;p&gt;We then have
-$$
-\lim_{\lambda\to\infty} f(\lambda)=\lim_{\lambda\to\infty}\frac{a\lambda ^{-5}}{e^{b/\lambda}-1}= \lim_{\lambda\to\infty}\frac{-5a\lambda^{-6}}{-\frac{b}{\lambda^2}e^{b/\lambda}}=\frac{5a}b\lim_{\lambda\to\infty}\frac{\lambda^{-4}}{e^{b/\lambda }} = 0
-$$
-Similarly, with l&amp;rsquo;Hospital&amp;rsquo;s Rule we obtain
-$$
-\lim_{\lambda\to0^+}f(\lambda)=\frac{5a}b\lim_{\lambda\to\infty}\frac{\lambda^{-4}}{e^{b/\lambda }}=\frac{20a}{b^2}\lim_{\lambda\to0^+}\frac{\lambda^{-3}}{e^{b/\lambda}}
-$$
-After using l&amp;rsquo;Hospital&amp;rsquo;s Rule four times, we obtain
-$$
-\lim_{\lambda\to0^+}f(\lambda) = 0
-$$&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Question 2:&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Use a Taylor polynomial to show that, for large wavelengths, Planck&amp;rsquo;s Law gives approximately the same values as the Rayleigh-Jeans Law.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Taylor series expansion for $e^x$ is given as
-$$
-e^x=1+x+\frac{x^2}{2!}+\frac{x^3}{3!}+&amp;hellip;
-$$
-For large enough $\lambda$, all subsequent terms in the Taylor expansion are very small compared to the first one, so we can approximate using the Taylor polynomial $T_1$:
-$$
-e^{{hc}/{\lambda k T}} - 1\approx 1 + \frac{hc}{\lambda k T} -1 = \frac{hc}{\lambda k T}
-$$
-Therefore
-$$
-f(\lambda)\approx\frac{8\pi h c \lambda^{-5}}{\frac{hc}{\lambda k T}}=\frac{8\pi k T}{\lambda^4}
-$$
-which is exactly the same as the Rayleigh-Jeans Law.&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Question 3:&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Graph $f$ as given by both laws on the same screen and comment on the similarities and differences. Use $T=5700$K (the temperature of the Sun ). (You may want to change from meters to the more convenient unit of micrometers: $1\mu$m $=10^{-6}$m.)&lt;/p&gt;
@@ -199,37 +175,13 @@ $$
 \lim_{\lambda\to\infty} f(\lambda) = 0
 $$
 此結果說明為何對短波長的黑體輻射普朗克的模型比瑞立-金斯的定理更好.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;讓 $a=8\pi hc$, $b=\frac{hc}{kT}$, 則 $f(\lambda)=\frac{a\lambda ^{-5}}{e^{b/\lambda}-1}$.&lt;/p&gt;
-&lt;p&gt;接著我們計算
-$$
-\lim_{\lambda\to\infty} f(\lambda)=\lim_{\lambda\to\infty}\frac{a\lambda ^{-5}}{e^{b/\lambda}-1}= \lim_{\lambda\to\infty}\frac{-5a\lambda^{-6}}{-\frac{b}{\lambda^2}e^{b/\lambda}}=\frac{5a}b\lim_{\lambda\to\infty}\frac{\lambda^{-4}}{e^{b/\lambda }} = 0
-$$
-同樣的, 利用羅畢達法則我們得到
-$$
-\lim_{\lambda\to0^+}f(\lambda)=\frac{5a}b\lim_{\lambda\to\infty}\frac{\lambda^{-4}}{e^{b/\lambda }}=\frac{20a}{b^2}\lim_{\lambda\to0^+}\frac{\lambda^{-3}}{e^{b/\lambda}}
-$$
-在四次羅畢達法則後,我們能得到
-$$
-\lim_{\lambda\to0^+}f(\lambda) = 0
-$$&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Question 2：&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;用泰勒展開式(Taylor polynomial) 說明在長波長時,普朗克定律 和 瑞立-金斯定理的結果會大致相同.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;我們知道 $e^x$ 的泰勒展開式:
-$$
-e^x=1+x+\frac{x^2}{2!}+\frac{x^3}{3!}+&amp;hellip;
-$$
-當 $\lambda$ 很大時, 泰勒展開式後面無窮多項相較於第一項是小非常多的, 所以我們可以用 $T_1$ 來近似:
-$$
-e^{{hc}/{\lambda k T}} - 1\approx 1 + \frac{hc}{\lambda k T} -1 = \frac{hc}{\lambda k T}
-$$
-因此
-$$
-f(\lambda)\approx\frac{8\pi h c \lambda^{-5}}{\frac{hc}{\lambda k T}}=\frac{8\pi k T}{\lambda^4}
-$$
-跟瑞立-金斯定理一模一樣.&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Question 3：&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;分別用兩個函式在同一個座標平面上劃出圖形, 並且說明相同和相異之處. $T$  用 5700K (太陽表面溫度) 帶入. (為了更方便計算 可以把長度單位從公尺換成微米: $1\mu$m = $10^{-6}$ m.)&lt;/p&gt;
@@ -358,32 +310,8 @@ $$&lt;/p&gt;
 &lt;/figure&gt;
 
 &lt;p&gt;Show that the minimum value of deviation is $D(\alpha)\approx 138^{\circ}$; and occurs when $\alpha\approx 59.4^{\circ}$.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Recall Snell&amp;rsquo;s law:
-$$
-\sin\alpha = \frac{4}{3}\sin\beta. \qquad \qquad (1)
-$$
-We teat the angle $\alpha$ as a function of $\beta$ and take derivative with respect to $\alpha$ to Snell&amp;rsquo;s law to obtain
-$$
-\cos\alpha = \frac{4}{3}\cos\beta\frac{d\beta}{d\alpha}.
-$$
-To find the minimum value of $D(\alpha)$, we look for the solution of $D&amp;rsquo;(\alpha)=0$:
-$$
-D&amp;rsquo;(\alpha) = 2 - 4\frac{d\beta}{d\alpha} = 0 \Rightarrow
-\frac{d\beta}{d\alpha} = \frac1 2 = \frac{3\cos\alpha}{4\cos\beta}.
-$$
-We then obtain
-$$
-2\cos\beta = 3\cos\alpha. \qquad \qquad (2)
-$$
-One can solve (1) and (2) to have
-$$
-\cos\alpha = \sqrt\frac{7}{27}, \Rightarrow \alpha = \arccos\sqrt\frac{7}{27} \approx 59.4^\circ
-$$
-So we find the minimal value
-$$
-D(59.4^\circ)\approx138^\circ.
-$$&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
 &lt;hr&gt;
 &lt;p&gt;The significance of the minimum deviation is that when $\alpha\approx 59.4^{\circ}$ we have $D&amp;rsquo;(\alpha)\approx 0$, so $\frac{\Delta D}{\Delta \alpha}\approx 0.$ This means that many  rays with $\alpha\approx 59.4^{\circ}$ become deviated by approximately the same amount. It it the &lt;em&gt;concentration&lt;/em&gt; of rays coming from near the direction of minimum deviation that creates the brightness of the primary rainbow. The figure at the left shows that the angle of elevation from the observer up to the highest point on the rainbow is $180^{\circ}- 138^{\circ} = 42^{\circ}$. (This angle is called the &lt;em&gt;rainbow angle&lt;/em&gt; .)&lt;/p&gt;
 
@@ -416,21 +344,8 @@ $$&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Question 2:&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Problem 1 explains the location of the primary rainbow, but how do we explain the colors? Sunlight comprises a range of wavelengths, from the red range through orange, yellow, green, blue, indigo, and violet. As Newton discovered in his prism experiments of 1666, the index of refraction is different for each color, (The effect is called &lt;em&gt;dispersion&lt;/em&gt;.) For red light the refractive index $k \approx 1.3318$,  whereas for violet light it is $k\approx 1.3435$. By repeating the calculation of Problem 1 for these values of $k$, show that the rainbow angle is about $42.3^{\circ}$ for red bow and $40.6^{\circ}$ for the violet bow. So the rainbow really consists of seven individual bows corresponding to the seven colors.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Similar to the approach of problem 1, we first write down the Snell&amp;rsquo;s law
-$$
-\sin\alpha =k\sin\beta. \qquad \qquad (3)
-$$
-We then look for the solution of $D&amp;rsquo;(\alpha)=0$ to obtain
-$$
-2\cos\alpha = k\cos\beta. \qquad \qquad (4)
-$$
-One can solve (3) and (4) to have
-$$
-\cos\alpha = \sqrt{\frac{k^2-1}{3}}, \Rightarrow \alpha = \arccos\sqrt{\frac{k^2-1}{3}}.
-$$&lt;/p&gt;
-&lt;p&gt;For red light: $k\approx 1.3318\Rightarrow \alpha_1\approx 59.473^{\circ}$, the rainbow angle$= \pi - D(\alpha_1)\approx 42.3^{\circ}$.&lt;/p&gt;
-&lt;p&gt;For violet light: $k\approx 1.3435\Rightarrow\alpha_2\approx 58.786^{\circ}$, the rainbow angle $=\pi - D(\alpha_2)\approx 40.6^{\circ}$.&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Question 3:&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Perhaps you have seen a fainter secondary rainbow above the primary bow. That results from the part of a ray that enters a raindrop and is refracted at A, reflected twice (at B and C), and refracted as it leaves the drop at D (see the figure at the left). This time the deviation angle $D(\alpha)$ is the total amount of counterclockwise rotation that the ray undergoes in this four-stage process.&lt;/p&gt;
@@ -492,25 +407,13 @@ $$&lt;/p&gt;
 
 &lt;/figure&gt;
 
-&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Since $D(\alpha ) = 2\alpha  - 6\beta  + 2\pi$, we look for the solution of $D&amp;rsquo;(\alpha)=0$ to obtain
-$$
-3\cos\alpha = k\cos\beta. \qquad \qquad (5)
-$$
-One can solve (3) and (5) to have
-$$
-\cos\alpha = \sqrt{\frac{k^2-1}{8}}, \Rightarrow \alpha = \arccos\sqrt{\frac{k^2-1}{8}}. \qquad \qquad (6)
-$$&lt;/p&gt;
-&lt;p&gt;For $k=\frac43\Rightarrow \alpha\approx 71.849^{\circ}\Rightarrow D(\alpha)\approx231^{\circ}$.&lt;/p&gt;
-&lt;p&gt;The minimum deviation: $2\pi-D(\alpha)=129^{\circ}.$&lt;/p&gt;
-&lt;p&gt;The rainbow angle: $\pi-( 2\pi-D(\alpha)) =51^{\circ}.$&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Question 4:&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Show that the colors in the secondary rainbow appear in the opposite order from those in the primary rainbow.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Based on (6) we find, for red light: $k\approx 1.3318\Rightarrow \alpha_1\approx 71.906^{\circ}$, the rainbow angle: $D(\alpha_1)-\pi\approx 50.6^{\circ}.$&lt;/p&gt;
-&lt;p&gt;For violet light: $k\approx 1.3435\Rightarrow\alpha_2\approx 71.505^{\circ}$, the rainbow angle: $D(\alpha_2)-\pi\approx 53.6^{\circ}.$&lt;/p&gt;
-&lt;p&gt;Therefore, the primary rainbow is lower than the secondary rainbow, and the colors in the secondary rainbow appear the opposite order from those in the primary rainbow.&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
 &lt;hr&gt;
 </description>
     </item>
@@ -534,14 +437,18 @@ P = Av^3 + \frac{BL^2}{v}
 $$&lt;/p&gt;
 &lt;p&gt;where $A$ and $B$ are positive constants specific to the particular aircraft and $L$ is the lift, the upward force supporting the weight of the plane. Find the speed that minimizes the required power.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
 &lt;p&gt;$$
-\frac{d P}{dv} = 3Av^2 - \frac{BL^2}{v^2} = 0 \ \Longrightarrow \ v_P = \sqrt[4]{\frac{BL^2}{3A}}
+v_P = \sqrt[4]{\frac{BL^2}{3A}}
 $$&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Question 2:&lt;/strong&gt;	The speed found in Problem 1 minimizes power but a faster speed might use less fuel. The energy needed to propel the airplane a unit distance is​ $E = P/v$ . At what speed is energy minimized?&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
 &lt;p&gt;$$
-\frac{d E}{dv} = 2Av - \frac{2BL^2}{v^3} = 0 \ \Longrightarrow \ v_E = \sqrt[4]{\frac{BL^2}{A}}
+v_E = \sqrt[4]{\frac{BL^2}{A}}
 $$&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Question 3:&lt;/strong&gt; Hows much faster is the speed for minimum energy than the speed for minimum power?&lt;/p&gt;
@@ -562,8 +469,10 @@ $$&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Question 5:&lt;/strong&gt;  For what value of​ $x$ is the average power a minimum? What can you conclude if the bird flies slowly? What can you conclude if the bird flies faster and faster?&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
 &lt;p&gt;$$
-\frac{d P_a}{dx} = A_w v^3 - \frac{B m^2 g^2}{x^2v} = 0 \ \Longrightarrow \ x = \frac{mg}{v^2}\sqrt{\frac{B}{A_w}}
+x = \frac{mg}{v^2}\sqrt{\frac{B}{A_w}}
 $$&lt;/p&gt;
 &lt;p&gt;It can be seen that $x$ is inverse proportional to $v^2$, so,&lt;/p&gt;
 &lt;ul&gt;
@@ -573,8 +482,10 @@ $$&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Question 6:&lt;/strong&gt;  The average energy over a cycle is $E_a = P_a/v$. What value of $x$​ minimizes $E_a$?&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
 &lt;p&gt;$$
-\frac{d E}{dx} = A_w v^2 - \frac{B m^2 g^2}{x^2v^2} = 0 \ \Longrightarrow \ x = \frac{mg}{v^2}\sqrt{\frac{B}{A_w}}
+x = \frac{mg}{v^2}\sqrt{\frac{B}{A_w}}
 $$&lt;/p&gt;
 &lt;hr&gt;
 </description>

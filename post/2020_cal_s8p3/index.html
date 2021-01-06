@@ -243,7 +243,7 @@
     
       <meta property="article:published_time" content="2020-03-18T00:00:00&#43;00:00">
     
-    <meta property="article:modified_time" content="2020-05-06T12:16:23&#43;08:00">
+    <meta property="article:modified_time" content="2021-01-06T20:32:48&#43;08:00">
   
 
   
@@ -272,7 +272,7 @@
   "headline": "Sec.8.3 - Complementary Coffee Cups",
   
   "datePublished": "2020-03-18T00:00:00Z",
-  "dateModified": "2020-05-06T12:16:23+08:00",
+  "dateModified": "2021-01-06T20:32:48+08:00",
   
   "author": {
     "@type": "Person",
@@ -548,7 +548,7 @@
           Last updated on
       
     
-    May 6, 2020
+    Jan 6, 2021
   </span>
   
 
@@ -611,40 +611,18 @@ Chinese version:
 <p><strong>Question 1:</strong></p>
 <p>Suppose the cups have height $h$, cup A is formed by rotating the curve $x=f(y)$ about the $y$-axis, and cup B is formed by rotating the same curve about the $x=k$. Find the value of $k$ such that two cups hold the same amount of coffee.</p>
 <p><strong>Answer:</strong></p>
-<p>Volume of Cup A
-$$
-\int_0^{h}\pi[f(y)]^2dy.
-$$
-Volume of Cup B
-$$
-\int_0^{h}\pi[k-f(y)]^2dy.
-$$
-Let $V_A=V_B$, after some calculation we obtain
-$$
-\int_0^{h}k^2dy=\int_0^{h}2kf(y)dy.
-$$
-So finally we have $k$ as
-$$
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<p>$$
 k=\frac{2\int_0^{h}f(y)dy}{h}.
 $$</p>
 <hr>
 <p><strong>Question 2:</strong></p>
 <p>What does your result from Problem 1 say about the areas $A_1$ and $A_2$ shown in the figure?</p>
 <p><strong>Answer:</strong></p>
-<p>We can see that $A_1+A_2$ is a rectangle, so $A_1+A_2=hk$.</p>
-<p>From answer of Question 1 we knew that
-$$
-hk=2\int_0^{h}f(y)dy\implies{A_1+A_2}=2\int_0^{h}f(y)dy.
-$$
-Besides, we also have
-$$
-A_1=\int_0^{h}f(y)dy.
-$$
-Therefore we get
-$$
-A_1+A_2=2\int_0^{h}f(y)dy=2A_1\implies{A_1=A_2}.
-$$
-That is, when Cup A&rsquo;s volume equals Cup B&rsquo;s, the area of $A_1$ is the same as $A_2$.</p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<p>when Cup A&rsquo;s volume equals Cup B&rsquo;s, the area of $A_1$ is the same as $A_2$.</p>
 <hr>
 <p><strong>Question 3:</strong></p>
 <p>Use Pappus&rsquo;s Theorem to explain your result in Problem 1 and 2.</p>
@@ -652,38 +630,8 @@ That is, when Cup A&rsquo;s volume equals Cup B&rsquo;s, the area of $A_1$ is th
 <blockquote>
 <p>Let $R$ be a plane region that lies entirely on one side of a line $l$ in the plane. If $R$ is rotated about $l$, then the volume of the resulting solid is the product of the area $A$ of $R$ and the distance $d$ travled by the centroid of $R$.</p>
 </blockquote>
-<p><strong>Answer:</strong></p>
-<p>To use the theorem, we should first find out the centroid of $A_1$ and $A_2$.</p>
-<p>For arbitrary plane region, the centroid (the center of mass) are located at the point $(C_x,C_y)$, where
-$$
-C_x=\frac{\int_a^{b}xf(x)dx}{\int_a^{b}f(x)dx};C_y=\frac{\int_a^{b}\frac{1}{2}[f(x)]^2dx}{\int_a^{b}f(x)dx}.
-$$
-Since the cups are rotating about axis parallel to $y$-axis, we require only $C_x$. For $A_1$,
-$$
-C_{x_1}=\frac{\int_0^{h}\frac{1}{2}[f(y)]^2dy}{\int_0^{h}f(y)dy}=\frac{1}{2A_1}\int_0^{h}[f(y)]^2dy.
-$$
-For $A_2$,
-$$
-C_{x_2}=\frac{\int_0^{h}\frac{1}{2}\left(k^2-[f(y)]^2\right)dy}{\int_0^{h}k-f(y)dy}=\frac{1}{2A_2}\int_0^{h}k^2-[f(y)]^2dy.
-$$
-After we knew the centroid of $A_1$ and $A_2$, we can start to calculate the volume of Cup A and Cup B by Pappus&rsquo;s Theorem.</p>
-<p>Volume of Cup A
-$$
-2\pi{C_{x_1}}{A_1}=\pi\int_0^{h}[f(y)]^2dy.
-$$
-Volume of Cup B
-$$
-2\pi(k-C_{x_2})A_2=2\pi k A_2 - \pi k^2 h + \pi \int_0^{h}[f(y)]^2dy.
-$$
-So if we want to have the two volumes being the same, we should have
-$$
-2\pi k A_2 - \pi k^2 h=0, \implies k = \frac{2A_2}{h}.
-$$
-Based on the fact that $A_1+A_2 = hk$, one easily obtain
-$$
-k = \frac{2A_2}{h} = \frac{2hk - 2A_1}{h}, \implies k = \frac{2A_1}{h},
-$$
-which are consistent with the results of problem 1 and 2.</p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
 <hr>
 
     </div>

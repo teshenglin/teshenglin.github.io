@@ -243,7 +243,7 @@
     
       <meta property="article:published_time" content="2020-04-23T00:00:00&#43;00:00">
     
-    <meta property="article:modified_time" content="2020-05-06T12:16:23&#43;08:00">
+    <meta property="article:modified_time" content="2021-01-06T20:32:48&#43;08:00">
   
 
   
@@ -272,7 +272,7 @@
   "headline": "Sec.8.3 - Complementary Coffee Cups",
   
   "datePublished": "2020-04-23T00:00:00Z",
-  "dateModified": "2020-05-06T12:16:23+08:00",
+  "dateModified": "2021-01-06T20:32:48+08:00",
   
   "author": {
     "@type": "Person",
@@ -548,7 +548,7 @@
           Last updated on
       
     
-    May 6, 2020
+    Jan 6, 2021
   </span>
   
 
@@ -557,7 +557,7 @@
   
   <span class="middot-divider"></span>
   <span class="article-reading-time">
-    2 min read
+    1 min read
   </span>
   
 
@@ -611,40 +611,18 @@
 <p><strong>問題 1:</strong></p>
 <p>假定杯子的高度為 $h$，杯子A的形狀可由 $x=f(y)$ 對 $y$ 軸旋轉而得， 而杯子B則是由同一個曲線對 $x=k$ 旋轉而得。 求$k$使得兩個杯子可裝的咖啡量一樣多。</p>
 <p><strong>解答:</strong></p>
-<p>杯子A的體積
-$$
-\int_0^{h}\pi[f(y)]^2dy.
-$$
-杯子B的體積
-$$
-\int_0^{h}\pi[k-f(y)]^2dy.
-$$
-設 $V_A=V_B$, 經過計算我們得到
-$$
-\int_0^{h}k^2dy=\int_0^{h}2kf(y)dy.
-$$
-所以
-$$
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<p>$$
 k=\frac{2\int_0^{h}f(y)dy}{h}.
 $$</p>
 <hr>
 <p><strong>問題 2:</strong></p>
 <p>請問問題1的結果與圖中的 $A_1$ and $A_2$ 有何關聯?</p>
 <p><strong>解答:</strong></p>
-<p>我們可以看到 $A_1+A_2$ 是一個長方形：$$A_1+A_2=hk$$</p>
-<p>從問題一的解答我們知道
-$$
-hk=2\int_0^{h}f(y)dy\implies{A_1+A_2}=2\int_0^{h}f(y)dy.
-$$
-又
-$$
-A_1=\int_0^{h}f(y)dy.
-$$
-比較可得
-$$
-A_1+A_2=2\int_0^{h}f(y)dy=2A_1\implies{A_1=A_2}.
-$$
-代表當當杯子A之容積與杯子B相等時，$A_1$ 的面積與 $A_2$相等。</p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<p>當杯子A之容積與杯子B相等時，$A_1$ 的面積與 $A_2$相等。</p>
 <hr>
 <p><strong>問題3:</strong></p>
 <p>使用 Pappus&rsquo;s 定理解釋問題1和問題2之結果。</p>
@@ -652,38 +630,8 @@ $$
 <blockquote>
 <p>使$R$為一個平面區域，在這個區域外有同一平面上的一條直線$I$。若$R$以$I$為軸旋轉時，產生的旋轉體體積為$R$的面積$A$和區域重心的所經過的路徑長$d$的乘積。</p>
 </blockquote>
-<p><strong>解答:</strong></p>
-<p>使用這個理論之前，我們需要找到 $A_1$ 和 $A_2$ 的重心。</p>
-<p>對於任意平面，其重心位於點 $(C_x,C_y)$, 且
-$$
-C_x=\frac{\int_a^{b}xf(x)dx}{\int_a^{b}f(x)dx};C_y=\frac{\int_a^{b}\frac{1}{2}[f(x)]^2dx}{\int_a^{b}f(x)dx}.
-$$
-對於$A_1$而言
-$$
-C_{x_1}=\frac{\int_0^{h}\frac{1}{2}[f(y)]^2dy}{\int_0^{h}f(y)dy}=\frac{1}{2A_1}\int_0^{h}[f(y)]^2dy.
-$$
-對於$A_2$而言
-$$
-C_{x_2}=\frac{\int_0^{h}\frac{1}{2}\left(k^2-[f(y)]^2\right)dy}{\int_0^{h}k-f(y)dy}=\frac{1}{2A_2}\int_0^{h}k^2-[f(y)]^2dy.
-$$
-現在我們有了$A_1$和$A_2$，便可以使用Pappus&rsquo;s Theorom計算A杯和B杯的體積了。</p>
-<p>A杯體積
-$$
-2\pi{C_{x_1}}{A_1}=\pi\int_0^{h}[f(y)]^2dy.
-$$
-B杯體積
-$$
-2\pi(k-C_{x_2})A_2=2\pi k A_2 - \pi k^2 h + \pi \int_0^{h}[f(y)]^2dy.
-$$
-所以如果兩個體積要一樣我們得到
-$$
-2\pi k A_2 - \pi k^2 h=0, \implies k = \frac{2A_2}{h}.
-$$
-又根據 $A_1+A_2 = hk$, 我們可以輕易的算出
-$$
-k = \frac{2A_2}{h} = \frac{2hk - 2A_1}{h}, \implies k = \frac{2A_1}{h},
-$$
-我們可以得到跟問題1一樣的答案</p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
 <hr>
 
     </div>

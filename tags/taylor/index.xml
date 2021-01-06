@@ -31,10 +31,9 @@ Chinese version:
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Question 1：&lt;/strong&gt; Find the quadratic approximation $P(x)=A+Bx+Cx^{2}$ to the function $f(x)=cosx$ that satisfies conditions (i), (ii),and (iii) with $a=0$ . Graph $P$, $f$ and the linear approximation $L(x)=1$ on a common screen. Comment on how well the functions $P$ and $L$ approximate $f$.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;We know from condition (i), $P(0)=A=f(0)=1\quad\Rightarrow\quad A=1$.&lt;/p&gt;
-&lt;p&gt;We know from condition (ii), $P&amp;rsquo;(0)=B=f&amp;rsquo;(0)=0\quad\Rightarrow\quad B=0$.&lt;/p&gt;
-&lt;p&gt;We know from condition (iii), $P&amp;rsquo;&#39;(0)=2C=f&amp;rsquo;&#39;(0)=-1\quad\Rightarrow\quad C=-\frac{1}{2}$.&lt;/p&gt;
-&lt;p&gt;Thus, $P(x)=1-\frac{1}{2}x^{2}$, and the graph shows:&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;$P(x)=1-\frac{1}{2}x^{2}$, and the graph shows:&lt;/p&gt;
 
 
 
@@ -67,10 +66,9 @@ Chinese version:
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Question 2：&lt;/strong&gt; Determine the values of $x$ for which the quadratic approximation $f(x)\approx P(x)$ in Problem 1 is accurate to within $0.1$.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;$$
-|P(x)-f(x)|\leq 0.1\Rightarrow f(x)-0.1\leq P(x)\leq f(x)+0.1
-$$&lt;/p&gt;
-&lt;p&gt;Let $g(x)=f(x)-1=\cos(x)-0.1$；$h(x)=f(x)+1=\cos(x)+0.1$, then we get $g(x)\leq P(x)\leq h(x)$. We draw the graph of $g(x),P(x),h(x)$:&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;We draw the graph of $g(x),P(x),h(x)$:&lt;/p&gt;
 
 
 
@@ -110,24 +108,17 @@ $$
 P(x)=f(a)+f&amp;rsquo;(a)(x-a)+\frac{1}{2} f&amp;rsquo;&#39;(a)(x-a)^{2}。
 $$&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;From condition (i): $P(a)=A=f(a)\quad\Rightarrow\quad A=f(a)$.&lt;/p&gt;
-&lt;p&gt;From condition (ii): $P&amp;rsquo;(a)=B=f&amp;rsquo;(a)\quad\Rightarrow\quad B=f&amp;rsquo;(a)$.&lt;/p&gt;
-&lt;p&gt;From condition (iii): $P&amp;rsquo;&#39;(a)=2C=f&amp;rsquo;&#39;(a)\quad\Rightarrow\quad C=\frac{1}{2} f&amp;rsquo;&#39;(a)$.&lt;/p&gt;
-&lt;p&gt;Therefore,
-$$
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;$$
 P(x)=f(a)+f&amp;rsquo;(a)(x-a)+\frac{1}{2} f&amp;rsquo;&#39;(a)(x-a)^{2}.
 $$&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Question 4:&lt;/strong&gt; Find the quadratic approximation to $F(x)=\sqrt{x+3}\quad$ near $a=1$. Graph $f$, the quadratic approximation, and the linear approximation from Example 3.10.2 on a common screen. What do you conclude?&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;$$
-f(1)=2, \quad f&amp;rsquo;(1)=\frac{1}{4}, \quad f&amp;rsquo;&#39;(1)=-\frac{1}{32}，
-$$
-According to 2., the quadratic approximation $P(x)$ is
-$$
-P(x)=2+\frac{1}{4}(x-1)-\frac{1}{64}(x-1)^{2}。
-$$
-We draw the graph of $f(x),P(x)$ and the linear approximation from Example 3.10.2：&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;We draw the graph of $f(x),P(x)$ and the linear approximation from Example 3.10.2：&lt;/p&gt;
 
 
 
@@ -172,38 +163,13 @@ $$
 T_{n}(x)=f(a)+f&amp;rsquo;(a)(x-a)+\frac{f&amp;rsquo;&#39;(a)}{2!} (x-a)^{2}+&amp;hellip;+\frac{f^{(n)}(a)}{n!}(x-a)^{n}。
 $$
 is called the nth-degree Taylor polynomial of $f$ centered at $a$.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;$$
-T_{n}(a)=c_{0}。
-$$
-$$
-T_{n}&#39;(a)=1!c_{1}=f&amp;rsquo;(a)\Rightarrow c_{1}=\frac{f&amp;rsquo;(a)}{1!}。
-$$
-$$
-T_{n}&#39;&#39;(a)=2!c_{2}=f&amp;rsquo;&#39;(a)\Rightarrow c_{2}=\frac{f&amp;rsquo;&#39;(a)}{2!}。
-$$
-$$
-\vdots
-$$
-$$
-T_{n}^{(k)}(a)=k!c_{k}=f^{(k)}(a)\Rightarrow c_{k}=\frac{f^{(k)}(a)}{k!}。
-$$&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Question 6:&lt;/strong&gt; Find the 8th-degree Taylor polynomial centered at $a=0$ for the function $f(x)=\cos x$. Graph $f$ together with the Taylor polynomials $T_{2},T_{4},T_{6},T_{8}$ in the viewing rectangle $x=[-5,5]$ by $y=[-1.4,1.4]$  and comment how well they approximate $f$.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;$$
-f(0)=1, \quad f&amp;rsquo;(0)=0, \quad f&amp;rsquo;&#39;(0)=-1, \quad f^{(3)}(0)=0, \quad f^{(4)}(0)=1,
-$$
-$$
-f^{(5)}(0)=0,\quad f^{(6)}(0)=-1,\quad f^{(7)}(0)=0, \quad f^{(8)}(0)=1,
-$$
-then $T_{8}(x)=1-\frac{1}{2!} x^{2}+\frac{1}{4!} x^{4}-\frac{1}{6!} x^{6}+\frac{1}{8!} x^{8}$. Meanwhile, we can get
-$$
-T_{2}(x) = 1-\frac{1}{2!} x^{2},\quad T_{4}(x) = 1-\frac{1}{2!} x^{2}+\frac{1}{4!} x^{4},
-$$
-$$
-T_{6}(x) = 1-\frac{1}{2!} x^{2}+\frac{1}{4!} x^{4}-\frac{1}{6!} x^{6}.
-$$&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
 &lt;p&gt;We draw the graph of$f$ and $T_{2},T_{4},T_{6},T_{8}$, and the rectangle $x=[-5,5]$ by $y=[-1.4,1.4]$&lt;/p&gt;
 
 
@@ -258,10 +224,9 @@ $$&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;問題 1：&lt;/strong&gt; 對於函數 $f(x)=\cos(x)$，找尋它在 $a=0$ 時的二次逼近函數 $P(x)=A+Bx+Cx^2$，並且此函數須滿足上述介紹中的三個條件。接著對函數 $P,f$ 及線性逼近函數 $L(x)=1$ 作圖，比較 $P$ 和 $f$ 哪一個逼近函數比較精確。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;解：&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;由條件1可知 $P(0)=A=f(0)=1\quad\Rightarrow\quad A=1$。&lt;/p&gt;
-&lt;p&gt;由條件2可知 $P&amp;rsquo;(0)=B=f&amp;rsquo;(0)=0\quad\Rightarrow\quad B=0$。&lt;/p&gt;
-&lt;p&gt;接著由條件3可知 $P&amp;rsquo;&#39;(0)=2C=f&amp;rsquo;&#39;(0)=-1\quad\Rightarrow\quad C=-\frac{1}{2}$。&lt;/p&gt;
-&lt;p&gt;故 $P(x)=1-\frac{1}{2}x^{2}$。&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;$P(x)=1-\frac{1}{2}x^{2}$&lt;/p&gt;
 &lt;p&gt;函數 $P,f$ 及線性逼近函數 $L(x)=1$ 作圖如下：&lt;/p&gt;
 
 
@@ -295,10 +260,9 @@ $$&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;問題 2：&lt;/strong&gt; 延續題1，試求符合條件的 $x$ 滿足 $P(x)$ 及 $f(x)$ 的差值在 $0.1$ 內。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;解：&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;$$
-|P(x)-f(x)|\leq 0.1\Rightarrow f(x)-0.1\leq P(x)\leq f(x)+0.1
-$$&lt;/p&gt;
-&lt;p&gt;我們令 $g(x)=f(x)-1=cos(x)-0.1$；$h(x)=f(x)+1=cos(x)+0.1$，則有$g(x)\leq P(x)\leq h(x)$，因此對 $g(x),P(x),h(x)$ 作圖如下：&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;對 $g(x),P(x),h(x)$ 作圖如下：&lt;/p&gt;
 
 
 
@@ -338,24 +302,17 @@ $$
 P(x)=f(a)+f&amp;rsquo;(a)(x-a)+\frac{1}{2} f&amp;rsquo;&#39;(a)(x-a)^{2}。
 $$&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;解：&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;由條件1可知 $P(a)=A=f(a)\quad\Rightarrow\quad A=f(a)$。&lt;/p&gt;
-&lt;p&gt;由條件2可知 $P&amp;rsquo;(a)=B=f&amp;rsquo;(a)\quad\Rightarrow\quad B=f&amp;rsquo;(a)$。&lt;/p&gt;
-&lt;p&gt;由條件3可知 $P&amp;rsquo;&#39;(a)=2C=f&amp;rsquo;&#39;(a)\quad\Rightarrow\quad C=\frac{1}{2} f&amp;rsquo;&#39;(a)$。&lt;/p&gt;
-&lt;p&gt;因此
-$$
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;$$
 P(x)=f(a)+f&amp;rsquo;(a)(x-a)+\frac{1}{2} f&amp;rsquo;&#39;(a)(x-a)^{2}。
 $$&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;問題 4：&lt;/strong&gt; 找尋函數 $f(x)=\sqrt{x+3}$ 在 $a=1$ 時的二次逼近函數，接著對 $f$、二次逼近函數及線性逼近函數做圖。你能做怎樣的結論？&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;解：&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;$$
-f(1)=2, \quad f&amp;rsquo;(1)=\frac{1}{4}, \quad f&amp;rsquo;&#39;(1)=-\frac{1}{32}，
-$$
-由題3可知，二次逼近函數 $P(x)$ 為
-$$
-P(x)=2+\frac{1}{4}(x-1)-\frac{1}{64}(x-1)^{2}。
-$$
-對函數 $f(x),P(x)$ 及線性逼近函數作圖如下：&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;對函數 $f(x),P(x)$ 及線性逼近函數作圖如下：&lt;/p&gt;
 
 
 
@@ -399,38 +356,13 @@ $$
 T_{n}(x)=f(a)+f&amp;rsquo;(a)(x-a)+\frac{f&amp;rsquo;&#39;(a)}{2!} (x-a)^{2}+&amp;hellip;+\frac{f^{(n)}(a)}{n!}(x-a)^{n}。
 $$
 此即為函數 $f$ 在點 $a$ 的 $n$ 階泰勒級數。)&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;解：&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;$$
-T_{n}(a)=c_{0}。
-$$
-$$
-T_{n}&#39;(a)=1!c_{1}=f&amp;rsquo;(a)\Rightarrow c_{1}=\frac{f&amp;rsquo;(a)}{1!}。
-$$
-$$
-T_{n}&#39;&#39;(a)=2!c_{2}=f&amp;rsquo;&#39;(a)\Rightarrow c_{2}=\frac{f&amp;rsquo;&#39;(a)}{2!}。
-$$
-$$
-\vdots
-$$
-$$
-T_{n}^{(k)}(a)=k!c_{k}=f^{(k)}(a)\Rightarrow c_{k}=\frac{f^{(k)}(a)}{k!}。
-$$&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;問題 6：&lt;/strong&gt; 試求函數 $f(x)=\cos(x)$ 在點 $a=0$ 的8階泰勒級數。除此之外，對函數 $f$ 及 $T_{2},T_{4},T_{6},T_{8}$ 做圖，考慮範圍為 $x=[-5,5],y=[-1.4,1.4]$ 之長方形，評論對於函數 $f$，4條逼近函數 $T$ 的近似程度。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;解：&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;$$
-f(0)=1, \quad f&amp;rsquo;(0)=0, \quad f&amp;rsquo;&#39;(0)=-1, \quad f^{(3)}(0)=0, \quad f^{(4)}(0)=1,
-$$
-$$
-f^{(5)}(0)=0,\quad f^{(6)}(0)=-1,\quad f^{(7)}(0)=0, \quad f^{(8)}(0)=1
-$$
-則 $T_{8}(x)=1-\frac{1}{2!} x^{2}+\frac{1}{4!} x^{4}-\frac{1}{6!} x^{6}+\frac{1}{8!} x^{8}$。同時，也可得
-$$
-T_{2}(x) = 1-\frac{1}{2!} x^{2},\quad T_{4}(x) = 1-\frac{1}{2!} x^{2}+\frac{1}{4!} x^{4},
-$$
-$$
-T_{6}(x) = 1-\frac{1}{2!} x^{2}+\frac{1}{4!} x^{4}-\frac{1}{6!} x^{6}.
-$$&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
 &lt;p&gt;對函數 $f$ 及 $T_{2},T_{4},T_{6},T_{8}$ 做圖，黑色框線為題目要求 $x=[-5,5],y=[-1.4,1.4]$ 之長方形。&lt;/p&gt;
 
 

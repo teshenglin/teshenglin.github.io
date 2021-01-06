@@ -243,7 +243,7 @@
     
       <meta property="article:published_time" content="2019-11-21T00:00:00&#43;00:00">
     
-    <meta property="article:modified_time" content="2020-04-08T11:48:58&#43;08:00">
+    <meta property="article:modified_time" content="2021-01-06T20:32:48&#43;08:00">
   
 
   
@@ -272,7 +272,7 @@
   "headline": "Sec.3.4 - Where should a pilot start descent?",
   
   "datePublished": "2019-11-21T00:00:00Z",
-  "dateModified": "2020-04-08T11:48:58+08:00",
+  "dateModified": "2021-01-06T20:32:48+08:00",
   
   "author": {
     "@type": "Person",
@@ -548,7 +548,7 @@
           Last updated on
       
     
-    Apr 8, 2020
+    Jan 6, 2021
   </span>
   
 
@@ -557,7 +557,7 @@
   
   <span class="middot-divider"></span>
   <span class="article-reading-time">
-    2 min read
+    1 min read
   </span>
   
 
@@ -613,52 +613,22 @@ Chinese version:
 constant $k$ (which is much less than the acceleration due to gravity)</p>
 <hr>
 <p><strong>Question 1:</strong> Find a cubic polynomial $P(x) = ax^3 + bx^2 + cx + d$ that satisfies condition (i) by imposing suitable conditions on $P(x)$ and $P’(x)$ at the start of descent and at touchdown.</p>
-<p><strong>Answer:</strong> \<br>
-At the start of descent:
-$$
-P(\ell) = al^3 +b\ell^2 +c\ell+d = h, \qquad P’(\ell) = 3a\ell^2 +2b\ell+c = 0.
-$$
-At touchdown:
-$$
-P(0) = 0 \Longrightarrow d = 0, \qquad P’(0)=0 \Longrightarrow c=0.
-$$
-Solve for $a$, $b$ in terms of $h$, $\ell$ we find
-$$
+<p><strong>Answer:</strong></p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<p>$$
 P(x) = −\frac{2h}{\ell^3}x^3 + \frac{3h}{\ell^2}x^2.
 $$</p>
 <hr>
 <p><strong>Question 2:</strong> Use conditions (ii) and (iii) to show that $\frac{6hv^2}{\ell^2}\le k$.</p>
-<p><strong>Answer:</strong> \<br>
-From (ii), a constant horizontal speed $v$ is assumed throughout descent, we can then express $x$ as
-$$
-x = \ell - vt, \qquad t\in[0, \frac{\ell}{v}],
-$$
-where the minus sign indicating flying to the left. The polynomial $P$ can then be re-written in terms of variable $t$ as
-$$
-P(t) = −\frac{2h}{\ell^3}(\ell - vt)^3 + \frac{3h}{\ell^2}(\ell - vt)^2, \qquad
-\frac{d^2}{dt^2}P(t) = −\frac{12hv^2}{\ell^3}(\ell - vt) + \frac{6hv^2}{\ell^2}.
-$$
-Therefore, the vertical acceleration $a$ is
-$$
-a(t) = \left|−\frac{12hv^2}{\ell^3}(\ell - vt) + \frac{6hv^2}{\ell^2}\right| = \left|\frac{12hv^3}{\ell^3},t - \frac{6hv^2}{\ell^2}\right|, \qquad t\in[0, \frac{\ell}{v}].
-$$
-It can be check, from the Extreme Value Theorem and closed interval method, that $a$ attains it&rsquo;s maximum value $\frac{6hv^2}{\ell^2}$.
-From condition (iii), we therefore have
-$$
-\frac{6hv^2}{\ell} \le k.
-$$</p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
 <hr>
 <p><strong>Question 3:</strong> Suppose that an airline decides not to allow vertical acceleration of a plane to exceed $k = 860$(mi/h$^2$). If the cruising altitude of a plane is $35,000$(ft) and the speed is $300$(mi/h), how far away from the airport should the pilot start descent?</p>
-<p><strong>Answer:</strong> \<br>
-Given $P(x) = −\frac{2h}{\ell^3}x^3 + \frac{3h}{\ell^2}x^2$, suppose the pilot starts to descend when the plane is $\ell$(mi) from the airport. In Q2. we know that $\frac{6hv^2}{\ell^2}\le k$. So,
-$$
-v=300\mbox{(mi/h)}, \qquad h=35000\mbox{(ft)} ≈ 6.628\mbox{(mi)}, \qquad k=860\mbox{(mi/h$^2$)},
-$$
-$$
-\frac{6\times 6.628\times (300)^2}{\ell^2} \le 860, \quad \Longrightarrow \quad
-\ell \ge 64.511.
-$$
-That is, the pilot should start to decend when the plane is $64.511$(mi) away from the airport.</p>
+<p><strong>Answer:</strong></p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<p>The pilot should start to decend when the plane is $64.511$(mi) away from the airport.</p>
 <hr>
 <p><strong>Question 4:</strong> Graph the approach path if the conditions stated in Problem 3 are satisfied.</p>
 <p><strong>Answer:</strong></p>

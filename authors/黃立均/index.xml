@@ -33,21 +33,8 @@ $$
 $$
 b^2 = (3+x\cos{\alpha})^2+(x\sin{\alpha} - 1.8)^2
 $$&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;回答:&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;將螢幕與位子的位置座標化:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;設螢幕下的地板為原點$(0,0)$&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;螢幕下緣為 $(0,3)$，上緣為 $(0,13)$&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;你的位子在斜坡上$x$公尺，因此位子的座標為第一排位子的座標向右推移 $x\cos{\alpha}$ 且向上推移 $x\sin{\alpha}$。&lt;/p&gt;
-&lt;p&gt;第一排位子的座標為$(3,0)$，因此你的位子座標為 $(3+x\cos{\alpha}, x\sin{\alpha})$，且你眼睛的座標為 $(3+x\cos{\alpha}, 1.2+x\sin{\alpha})$。&lt;/p&gt;
-&lt;p&gt;眼睛跟螢幕上緣的距離的平方 $=(3+x\cos{\alpha})^2+(11.8-x\sin{\alpha})^2=a^2$。&lt;/p&gt;
-&lt;p&gt;眼睛跟螢幕下緣的距離的平方 $= (3+x\cos{\alpha})^2+(x\sin{\alpha} - 1.8)^2=b^2$。&lt;/p&gt;
-&lt;p&gt;利用餘弦定理: $\cos{\theta}=\frac{a^2+b^2-100}{2ab}$，因此 $\theta = \cos^{-1}\left(\frac{a^2+b^2-100}{2ab}\right)$。&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;問題 2:&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;利用 $\theta$ 與 $x$ 的函數圖形找出 $\theta$ 的最大值。你該坐在哪一排? 你在那一排的視角 $\theta$ 是幾度?&lt;/p&gt;

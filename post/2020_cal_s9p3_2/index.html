@@ -243,7 +243,7 @@
     
       <meta property="article:published_time" content="2020-04-23T00:00:00&#43;00:00">
     
-    <meta property="article:modified_time" content="2020-05-06T12:16:23&#43;08:00">
+    <meta property="article:modified_time" content="2021-01-06T20:32:48&#43;08:00">
   
 
   
@@ -272,7 +272,7 @@
   "headline": "Sec.9.3.2 - Which is faster, going up or going down?",
   
   "datePublished": "2020-04-23T00:00:00Z",
-  "dateModified": "2020-05-06T12:16:23+08:00",
+  "dateModified": "2021-01-06T20:32:48+08:00",
   
   "author": {
     "@type": "Person",
@@ -548,7 +548,7 @@
           Last updated on
       
     
-    May 6, 2020
+    Jan 6, 2021
   </span>
   
 
@@ -616,39 +616,16 @@ Solve this differential equation to show that the velocity is
 $$
 v(t)=(v_0+\frac{mg}{p})e^{-pt/m}-\frac{mg}{p}
 $$</p>
-<p><strong>Answer:</strong></p>
-<p>We known that
-$$
-mv'=-pv-mg
-$$
-With some calculate we can get
-$$
-\int {\frac{p}{pv+mg}dv}=\int -\frac{p}{m}dt
-$$
-Integrate both sides we obtain
-$$
-\ln(pv+mg) = -\frac{p}{m}t + C, \quad pv+mg=e^{-\frac{p}{m}t + C}
-$$
-With initial condition $v(0) = v_0$ we get
-$$
-p v_0 + mg = e^C
-$$
-and finally we have
-$$
-v(t)=(v_0+\frac{mg}{p})e^{-\frac{p}{m}t}-\frac{mg}{p}
-$$</p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
 <hr>
 <p><strong>Question 2：</strong></p>
 <p>Show that the height of the ball, until it hits the ground, is
 $$
 y(t)=(v_0+\frac{mg}{p})\frac{m}{p}(1-e^{-pt/m})-\frac{mgt}{p}
 $$</p>
-<p><strong>Answer：</strong></p>
-<p>$$
-y(t)=\int_0^tv(t)dt
-=\int_0^t (v_0+\frac{mg}{p})e^{-\frac{p}{m}t}-\frac{mg}{p}dt
-=(v_0+\frac{mg}{p})\frac{m}{p}(-e^{-\frac{p}{m}t}+1)-\frac{mg}{p}t
-$$</p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
 <hr>
 <p><strong>Question 3：</strong></p>
 <ol>
@@ -663,23 +640,13 @@ $$</p>
 </li>
 </ol>
 <p><strong>Answer：</strong></p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
 <ol start="2">
-<li>
-<p>when the ball takes to reach its maximum height, the velocity $v(t_1)=0$, i.e.,
-$$
-(v_0+\frac{mg}{p})e^{-\frac{p}{m}t_1}-\frac{mg}{p}=0
-$$
-We then obtain
-$$
-t_1=\frac{m}{p}\ln\left({\frac{mg + pv_0}{mg}}\right)
-$$</p>
-</li>
-<li>
-<p>with the ball with mass $m=1kg$, initial velocity $v_0=20m/s$, gravity $g=9.8m/s$, and air resistance $p=\frac{1}{10}$.
+<li>with the ball with mass $m=1kg$, initial velocity $v_0=20m/s$, gravity $g=9.8m/s$, and air resistance $p=\frac{1}{10}$.
 $$
 t_1=\frac{1}{\frac{1}{10}}ln\left({\frac{1\times9.8+\frac{1}{10}\times20}{1\times9.8}}\right)=‭1.85717‬s
-$$</p>
-</li>
+$$</li>
 </ol>
 <hr>
 <p><strong>Question 4：</strong></p>
@@ -710,42 +677,8 @@ is increasing for $x &gt; 1$.</p>
 </li>
 </ol>
 <p><strong>Answer：</strong></p>
-<ol>
-<li>
-<p>According to Question 3, we get
-$$
-t_1=\frac{m}{p}ln{\frac{pv_0+mg}{mg}},　\quad x=e^{pt_1/m}, \quad
-\Rightarrow \quad x=\frac{pv_0+mg}{mg}
-$$
-According to the Question 2, we get
-$$
-y(2t_1)=(v_0+\frac{mg}{p})\frac{m}{p}(1-e^{-2pt_1/m})-\frac{2mgt_1}{p}
-$$
-$$
-=\frac{m^2g}{p^2}\left[(1-e^{-2pt_1/m})+(\frac{pv_0}{mg})(1-e^{-2pt_1/m})-(\frac{2pt_1}{m})\right]
-$$
-$$
-=\frac{m^2g}{p^2}\left[(1-\frac{1}{x^2})+(\frac{pv_0}{mg})(1-\frac{1}{x^2})-2\ln x\right]
-=\frac{m^2g}{p^2}(x-\frac{1}{x}-2\ln{x})
-$$</p>
-</li>
-<li>
-<p>According to the question
-$$
-f(x)=x-\frac{1}{x}-2\ln{x}, \quad
-f&rsquo;(x)=1+\frac{1}{x^2}-\frac{2}{x}
-=(\frac{x-1}{x})^2\geq 0
-$$
-so we know that $f(x)$ is increasing for $x&gt;1$</p>
-</li>
-<li>
-<p>By the result, we know that $f(1)=0$, and $f(x)$ is increasing for $x&gt;1$, so we can conclude that
-$$
-y(2t_1)=\frac{m^2g}{p^2}(x-\frac{1}{x}-2\ln{x})&gt;0
-$$
-Because $y(2t_1)$ is positive, which means that the $2t_1&lt;t_1+t_2$, and $t_1&lt;t_2$. So the conclusion is that ascent is faster than descent.</p>
-</li>
-</ol>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
 <hr>
 
     </div>

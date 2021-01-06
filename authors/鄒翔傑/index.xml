@@ -33,30 +33,8 @@ and
 $$
 b^2 = (3+x\cos{\alpha})^2+(x\sin{\alpha} - 1.8)^2
 $$&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Make the position of screen and seat geocoding:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Set the origin at the floor under the screen$(0,0)$&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;The bottom edge of the screen is $(0,3)$, the upper edge is $(0,13)$&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;The distance up the incline that you sit is $x$ meter, so the coordinates of the seat is the coordinate of the first row that moves $x\cos{\alpha}$ to the right and moves $x\sin{\alpha}$ to the up.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;The coordinates of first row of seats is $(3,0)$, so the coordinates of your seat is $(3+x\cos{\alpha}, x\sin{\alpha})$, the coordinates of your eyes is $(3+x\cos{\alpha}, 1.2+x\sin{\alpha})$&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;The square of the distance of your eyes and the upper edge of the screen $=(3+x\cos{\alpha})^2+(11.8-x\sin{\alpha})^2=a^2$&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;The square of the distance of your eyes and the bottom edge of the screen $=(3+x\cos{\alpha})^2+(x\sin{\alpha} - 1.8)^2=b^2$&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Finally, by law of cosines: $\cos{\theta}=\frac{a^2+b^2-100}{2ab}$, so
-$\theta = \cos^{-1}\left(\frac{a^2+b^2-100}{2ab}\right)$.&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Question 2:&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Use a graph of $\theta$ as a function of $x$ to estimate the value of $x$ that maximizes $\theta$. In which row should you sit? What is the viewing angle $\theta$ in this row? What is the angle $\theta$ subtended by the screen at your eyes?&lt;/p&gt;
@@ -262,52 +240,22 @@ Chinese version:
 constant $k$ (which is much less than the acceleration due to gravity)&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Question 1:&lt;/strong&gt; Find a cubic polynomial $P(x) = ax^3 + bx^2 + cx + d$ that satisfies condition (i) by imposing suitable conditions on $P(x)$ and $P’(x)$ at the start of descent and at touchdown.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt; \&lt;br&gt;
-At the start of descent:
-$$
-P(\ell) = al^3 +b\ell^2 +c\ell+d = h, \qquad P’(\ell) = 3a\ell^2 +2b\ell+c = 0.
-$$
-At touchdown:
-$$
-P(0) = 0 \Longrightarrow d = 0, \qquad P’(0)=0 \Longrightarrow c=0.
-$$
-Solve for $a$, $b$ in terms of $h$, $\ell$ we find
-$$
+&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;$$
 P(x) = −\frac{2h}{\ell^3}x^3 + \frac{3h}{\ell^2}x^2.
 $$&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Question 2:&lt;/strong&gt; Use conditions (ii) and (iii) to show that $\frac{6hv^2}{\ell^2}\le k$.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt; \&lt;br&gt;
-From (ii), a constant horizontal speed $v$ is assumed throughout descent, we can then express $x$ as
-$$
-x = \ell - vt, \qquad t\in[0, \frac{\ell}{v}],
-$$
-where the minus sign indicating flying to the left. The polynomial $P$ can then be re-written in terms of variable $t$ as
-$$
-P(t) = −\frac{2h}{\ell^3}(\ell - vt)^3 + \frac{3h}{\ell^2}(\ell - vt)^2, \qquad
-\frac{d^2}{dt^2}P(t) = −\frac{12hv^2}{\ell^3}(\ell - vt) + \frac{6hv^2}{\ell^2}.
-$$
-Therefore, the vertical acceleration $a$ is
-$$
-a(t) = \left|−\frac{12hv^2}{\ell^3}(\ell - vt) + \frac{6hv^2}{\ell^2}\right| = \left|\frac{12hv^3}{\ell^3},t - \frac{6hv^2}{\ell^2}\right|, \qquad t\in[0, \frac{\ell}{v}].
-$$
-It can be check, from the Extreme Value Theorem and closed interval method, that $a$ attains it&amp;rsquo;s maximum value $\frac{6hv^2}{\ell^2}$.
-From condition (iii), we therefore have
-$$
-\frac{6hv^2}{\ell} \le k.
-$$&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Question 3:&lt;/strong&gt; Suppose that an airline decides not to allow vertical acceleration of a plane to exceed $k = 860$(mi/h$^2$). If the cruising altitude of a plane is $35,000$(ft) and the speed is $300$(mi/h), how far away from the airport should the pilot start descent?&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt; \&lt;br&gt;
-Given $P(x) = −\frac{2h}{\ell^3}x^3 + \frac{3h}{\ell^2}x^2$, suppose the pilot starts to descend when the plane is $\ell$(mi) from the airport. In Q2. we know that $\frac{6hv^2}{\ell^2}\le k$. So,
-$$
-v=300\mbox{(mi/h)}, \qquad h=35000\mbox{(ft)} ≈ 6.628\mbox{(mi)}, \qquad k=860\mbox{(mi/h$^2$)},
-$$
-$$
-\frac{6\times 6.628\times (300)^2}{\ell^2} \le 860, \quad \Longrightarrow \quad
-\ell \ge 64.511.
-$$
-That is, the pilot should start to decend when the plane is $64.511$(mi) away from the airport.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;The pilot should start to decend when the plane is $64.511$(mi) away from the airport.&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Question 4:&lt;/strong&gt; Graph the approach path if the conditions stated in Problem 3 are satisfied.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;

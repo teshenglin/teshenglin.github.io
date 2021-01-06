@@ -243,7 +243,7 @@
     
       <meta property="article:published_time" content="2020-03-18T00:00:00&#43;00:00">
     
-    <meta property="article:modified_time" content="2020-04-08T11:48:58&#43;08:00">
+    <meta property="article:modified_time" content="2021-01-06T20:32:48&#43;08:00">
   
 
   
@@ -272,7 +272,7 @@
   "headline": "Sec.3.10 - Taylor polynomials",
   
   "datePublished": "2020-03-18T00:00:00Z",
-  "dateModified": "2020-04-08T11:48:58+08:00",
+  "dateModified": "2021-01-06T20:32:48+08:00",
   
   "author": {
     "@type": "Person",
@@ -548,7 +548,7 @@
           Last updated on
       
     
-    Apr 8, 2020
+    Jan 6, 2021
   </span>
   
 
@@ -557,7 +557,7 @@
   
   <span class="middot-divider"></span>
   <span class="article-reading-time">
-    3 min read
+    2 min read
   </span>
   
 
@@ -614,10 +614,9 @@ Chinese version:
 <hr>
 <p><strong>Question 1：</strong> Find the quadratic approximation $P(x)=A+Bx+Cx^{2}$ to the function $f(x)=cosx$ that satisfies conditions (i), (ii),and (iii) with $a=0$ . Graph $P$, $f$ and the linear approximation $L(x)=1$ on a common screen. Comment on how well the functions $P$ and $L$ approximate $f$.</p>
 <p><strong>Answer:</strong></p>
-<p>We know from condition (i), $P(0)=A=f(0)=1\quad\Rightarrow\quad A=1$.</p>
-<p>We know from condition (ii), $P&rsquo;(0)=B=f&rsquo;(0)=0\quad\Rightarrow\quad B=0$.</p>
-<p>We know from condition (iii), $P&rsquo;'(0)=2C=f&rsquo;'(0)=-1\quad\Rightarrow\quad C=-\frac{1}{2}$.</p>
-<p>Thus, $P(x)=1-\frac{1}{2}x^{2}$, and the graph shows:</p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<p>$P(x)=1-\frac{1}{2}x^{2}$, and the graph shows:</p>
 
 
 
@@ -650,10 +649,9 @@ Chinese version:
 <hr>
 <p><strong>Question 2：</strong> Determine the values of $x$ for which the quadratic approximation $f(x)\approx P(x)$ in Problem 1 is accurate to within $0.1$.</p>
 <p><strong>Answer:</strong></p>
-<p>$$
-|P(x)-f(x)|\leq 0.1\Rightarrow f(x)-0.1\leq P(x)\leq f(x)+0.1
-$$</p>
-<p>Let $g(x)=f(x)-1=\cos(x)-0.1$；$h(x)=f(x)+1=\cos(x)+0.1$, then we get $g(x)\leq P(x)\leq h(x)$. We draw the graph of $g(x),P(x),h(x)$:</p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<p>We draw the graph of $g(x),P(x),h(x)$:</p>
 
 
 
@@ -693,24 +691,17 @@ $$
 P(x)=f(a)+f&rsquo;(a)(x-a)+\frac{1}{2} f&rsquo;'(a)(x-a)^{2}。
 $$</p>
 <p><strong>Answer:</strong></p>
-<p>From condition (i): $P(a)=A=f(a)\quad\Rightarrow\quad A=f(a)$.</p>
-<p>From condition (ii): $P&rsquo;(a)=B=f&rsquo;(a)\quad\Rightarrow\quad B=f&rsquo;(a)$.</p>
-<p>From condition (iii): $P&rsquo;'(a)=2C=f&rsquo;'(a)\quad\Rightarrow\quad C=\frac{1}{2} f&rsquo;'(a)$.</p>
-<p>Therefore,
-$$
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<p>$$
 P(x)=f(a)+f&rsquo;(a)(x-a)+\frac{1}{2} f&rsquo;'(a)(x-a)^{2}.
 $$</p>
 <hr>
 <p><strong>Question 4:</strong> Find the quadratic approximation to $F(x)=\sqrt{x+3}\quad$ near $a=1$. Graph $f$, the quadratic approximation, and the linear approximation from Example 3.10.2 on a common screen. What do you conclude?</p>
 <p><strong>Answer:</strong></p>
-<p>$$
-f(1)=2, \quad f&rsquo;(1)=\frac{1}{4}, \quad f&rsquo;'(1)=-\frac{1}{32}，
-$$
-According to 2., the quadratic approximation $P(x)$ is
-$$
-P(x)=2+\frac{1}{4}(x-1)-\frac{1}{64}(x-1)^{2}。
-$$
-We draw the graph of $f(x),P(x)$ and the linear approximation from Example 3.10.2：</p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<p>We draw the graph of $f(x),P(x)$ and the linear approximation from Example 3.10.2：</p>
 
 
 
@@ -755,38 +746,13 @@ $$
 T_{n}(x)=f(a)+f&rsquo;(a)(x-a)+\frac{f&rsquo;'(a)}{2!} (x-a)^{2}+&hellip;+\frac{f^{(n)}(a)}{n!}(x-a)^{n}。
 $$
 is called the nth-degree Taylor polynomial of $f$ centered at $a$.</p>
-<p><strong>Answer:</strong></p>
-<p>$$
-T_{n}(a)=c_{0}。
-$$
-$$
-T_{n}'(a)=1!c_{1}=f&rsquo;(a)\Rightarrow c_{1}=\frac{f&rsquo;(a)}{1!}。
-$$
-$$
-T_{n}''(a)=2!c_{2}=f&rsquo;'(a)\Rightarrow c_{2}=\frac{f&rsquo;'(a)}{2!}。
-$$
-$$
-\vdots
-$$
-$$
-T_{n}^{(k)}(a)=k!c_{k}=f^{(k)}(a)\Rightarrow c_{k}=\frac{f^{(k)}(a)}{k!}。
-$$</p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
 <hr>
 <p><strong>Question 6:</strong> Find the 8th-degree Taylor polynomial centered at $a=0$ for the function $f(x)=\cos x$. Graph $f$ together with the Taylor polynomials $T_{2},T_{4},T_{6},T_{8}$ in the viewing rectangle $x=[-5,5]$ by $y=[-1.4,1.4]$  and comment how well they approximate $f$.</p>
 <p><strong>Answer:</strong></p>
-<p>$$
-f(0)=1, \quad f&rsquo;(0)=0, \quad f&rsquo;'(0)=-1, \quad f^{(3)}(0)=0, \quad f^{(4)}(0)=1,
-$$
-$$
-f^{(5)}(0)=0,\quad f^{(6)}(0)=-1,\quad f^{(7)}(0)=0, \quad f^{(8)}(0)=1,
-$$
-then $T_{8}(x)=1-\frac{1}{2!} x^{2}+\frac{1}{4!} x^{4}-\frac{1}{6!} x^{6}+\frac{1}{8!} x^{8}$. Meanwhile, we can get
-$$
-T_{2}(x) = 1-\frac{1}{2!} x^{2},\quad T_{4}(x) = 1-\frac{1}{2!} x^{2}+\frac{1}{4!} x^{4},
-$$
-$$
-T_{6}(x) = 1-\frac{1}{2!} x^{2}+\frac{1}{4!} x^{4}-\frac{1}{6!} x^{6}.
-$$</p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
 <p>We draw the graph of$f$ and $T_{2},T_{4},T_{6},T_{8}$, and the rectangle $x=[-5,5]$ by $y=[-1.4,1.4]$</p>
 
 

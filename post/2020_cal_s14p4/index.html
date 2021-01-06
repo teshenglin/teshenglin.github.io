@@ -243,7 +243,7 @@
     
       <meta property="article:published_time" content="2020-05-31T00:00:00&#43;00:00">
     
-    <meta property="article:modified_time" content="2020-06-07T22:45:19&#43;08:00">
+    <meta property="article:modified_time" content="2021-01-06T20:32:48&#43;08:00">
   
 
   
@@ -272,7 +272,7 @@
   "headline": "Sec.14.4 - The speedo LZR razer",
   
   "datePublished": "2020-05-31T00:00:00Z",
-  "dateModified": "2020-06-07T22:45:19+08:00",
+  "dateModified": "2021-01-06T20:32:48+08:00",
   
   "author": {
     "@type": "Person",
@@ -548,7 +548,7 @@
           Last updated on
       
     
-    Jun 7, 2020
+    Jan 6, 2021
   </span>
   
 
@@ -557,7 +557,7 @@
   
   <span class="middot-divider"></span>
   <span class="article-reading-time">
-    3 min read
+    2 min read
   </span>
   
 
@@ -653,70 +653,19 @@ f(x,y)=\left(\frac{1+x}{1+y}\right)^{\frac{1}{3}}-1.
 $$
 Given the context, what is the domain of $f$?</p>
 <p><strong>Answer:</strong></p>
-<ul>
-<li>
-<p>Find the formula of $f$:</p>
-<p>$f(x,y)$ can be rewritten as
-$$
-f(x,y)=\frac{v(P(1+x),C(1+y))}{v(P,C)}-1
-$$
-Replace $v(P,C)$ with its formula
-$$
-f(x,y)=\frac{\left[\frac{2P(1+x)}{kC(1+y)}\right]^{1/3} }{\left(\frac{2P}{kC}\right)^{1/3}}-1
-$$
-$v(P,C)$ is greater than zero, and $v(P+xP,C+yC)$ is greater than or equal to zero. Thus, the roots of numerator and dominator can be combined together：
-$$
-f(x,y)=\left(\frac{1+x}{1+y}\right)^{\frac{1}{3}}-1
-$$</p>
-</li>
-<li>
-<p>Find the domain of $f$:</p>
-<p>The power performed is obviously greater than or equal to zero.
-$$
-P+xP\geq 0
-$$
-The friction is always greater than zero in the real world. Hence, the drag is obviously greater than zero.
-$$
-C+yC&gt;0
-$$
-In conclusion
-$$
-1+x\geq0,\qquad1+y&gt;0
-$$
-The domain of $f$ is
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<p>The domain of $f$ is
 $$
 {(x,y)\mid x\geq-1,\quad y&gt;-1}
 $$</p>
-</li>
-</ul>
 <hr>
 <p><strong>Question 2:</strong></p>
 <p>Suppose that the possible changes in power $x$ and drag $y$ are small. Find the linear approximation to the function $f(x, y)$. What does this approximation tell you about the effect of a small increase in power versus a small decrease in drag?</p>
 <p><strong>Answer:</strong></p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
 <ul>
-<li>
-<p>Find the linear approximation to the function $f$</p>
-<p>The changes in power $x$ and drag $y$ are small. It means that $x$ and $y$ are closed to zero. Applied linear approximation at the point $(0,0)$
-$$
-f(x,y)\approx f(0,0)+f_x(0,0)(x-0)+f_y(0,0)(y-0)
-$$
-Calculate  $f_x$
-$$
-\frac{\partial f}{\partial x} =\frac{1}{3}(1+x)^{-\frac{2}{3}}(1+y)^{-\frac{1}{3}}
-$$
-Calculate  $f_y$
-$$
-\frac{\partial f}{\partial y}=-\frac{1}{3}(1+x)^{\frac{1}{3}}(1+y)^{-\frac{4}{3}}
-$$
-Calculate  $f_x(0,0)$ and  $f_y(0,0)$
-$$
-f_x(0,0)=\frac{1}{3} \quad f_y(0,0)=-\frac{1}{3}
-$$
-$f(0,0)=0$, therefore, the linear approximation to  $f$  at $(0, 0)$ is
-$$
-f(x,y)\approx \frac{1}{3}x-\frac{1}{3}y
-$$</p>
-</li>
 <li>
 <p>The effect of a small increase in power vs. a small decrease in drag</p>
 <p>According to the linear approximation to the function $f$ , the small increase in power $x$ and the small decrease in drag $y$ have the same impact on changes in speed $f$ with the proportion of one-third. Consequently, in terms of the fractional change in speed, there is no significant difference between the small increase in power and the small decrease in drag.</p>
@@ -725,55 +674,15 @@ $$</p>
 <hr>
 <p><strong>Question 3:</strong></p>
 <p>Calculate $f_{xx}(x, y)$ and $f_{yy}(x, y)$. Based on the signs of these derivatives, does the linear approximation in Problem 2 result in an overestimate or an underestimate for an increase in power? What about for a decrease in drag? Use your answer to explain why, for changes in power or drag that are not very small, a decrease in drag is more effective.</p>
-<p><strong>Answer:</strong></p>
-<ul>
-<li>
-<p>Evaluate whether the linear approximation in Problem 2 is overestimated or underestimated</p>
-<p>Calculate $f_{xx}(x, y)$ and $f_{yy}(x, y)$
-$$
-\frac{\partial^2 f}{\partial x^2} = -\frac{2}{9}(1+x)^{-\frac{5}{3}}(1+y)^{-\frac{1}{3}}&lt;0
-$$
-$$
-\frac{\partial^2 f}{\partial y^2} = \frac{4}{9}(1+x)^{\frac{1}{3}}(1+y)^{-\frac{7}{3}}&gt;0
-$$</p>
-<p>$f$ is a <em>concave</em> function with respect to $x$, which means the linear approximation result in an <em>overestimate</em> for the impact on an increase in power.
-$$
-f(x,0)&lt;\frac{1}{3}x
-$$
-$f$ is a <em>convex</em> function with respect to $y$, which means the linear approximation result in an <em>underestimate</em> for the impact on an decrease in drag.
-$$
-f(0,y)&gt;-\frac{1}{3}y
-$$</p>
-</li>
-<li>
-<p>Explain why a decrease in drag is more effective when the changes are not very small</p>
-<p>Suppose that the increase in power and the decrease in drag are equal to a constant $c &gt;0$
-$$
-c=x=-y
-$$
-Determine whether $f$ is more sensitive to changes in $x$ or $y$
-$$
-\frac{\Delta f(c,0)}{\Delta f(0,-c)}=\frac{f(c,0)-f(0,0)}{f(0,-c)-f(0,0)}=\frac{f(c,0)}{f(0,-c)}&lt;\frac{\frac{1}{3}c}{\frac{1}{3}c}=1
-$$
-Consequently, for changes in power or drag that are not very small, a decrease in drag is more effective.
-$$
-\Delta f(0,-c)&gt;\Delta f(c,0)\quad (c&gt;0)
-$$</p>
-</li>
-</ul>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
 <hr>
 <p><strong>Question 4:</strong></p>
 <p>Graph the level curves of $f(x, y)$. Explain how the shapes of these curves relate to your answers to Problems 2 and 3.</p>
 <p><strong>Answer:</strong></p>
-<p>For a given constant $h$, suppose $f(x,y)=h$
-$$
-f(x,y)=\left(\frac{1+x}{1+y}\right)^{\frac{1}{3}}-1=h
-$$
-Rearrange the equation and  then get the formula of the level curve
-$$
-y=\frac{x}{(1+h)^3}+\frac{1}{(1+h)^3}-1
-$$
-Graph the level curve with h= -0.75, -0.5, -0.25, 0, 0.05, 0.25, 0.5, 0.75, 1</p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<p>Graph the level curve with h= -0.75, -0.5, -0.25, 0, 0.05, 0.25, 0.5, 0.75, 1</p>
 
 
 
