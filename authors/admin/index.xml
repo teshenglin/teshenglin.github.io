@@ -1594,7 +1594,7 @@ then it is a solution of $P$.&lt;/p&gt;
 &lt;p&gt;根據不等式第一個部分
 $$\forall\lambda\ge 0, \quad L(x^+, \lambda)\le L(x^+, \lambda^+)$$
 帶入 $L$ 我們得到 $\lambda g(x^+) \le \lambda^+ g(x^+)$.&lt;/p&gt;
-&lt;p&gt;由於對所有 $\lambda\ge $ 都對, 我們讓 $\lambda\to\infty$ 得到 $g(x^+)\le 0$.
+&lt;p&gt;由於對所有 $\lambda\ge 0$ 都對, 我們讓 $\lambda\to\infty$ 得到 $g(x^+)\le 0$.
 接著讓 $\lambda\to 0$ 我們得到 $0\le \lambda^+ g(x^+)\le 0$, 因此 $\lambda^+ g(x^+)=0$.&lt;/p&gt;
 &lt;p&gt;有這件事後我們再看不等式第二部分, $L(x^+, \lambda^+)\le L(x, \lambda^+)$.
 代入 $L$ 以及以上結果我們有 $f(x^+)\le f(x) + \lambda^+ g(x)$.&lt;/p&gt;
@@ -1625,15 +1625,15 @@ $$
 對於 dual problem 我們可以構造一個迭代法來解這問題.&lt;/p&gt;
 &lt;p&gt;由 Dual optimization problem 我們知道對於 $F$ 這個函數我們要求其最大值. 所以我們試著朝 gradient 方向走來往上走, 意即
 $$
-\lambda^{k+1} = \lambda_k + \alpha^k\nabla F(\lambda^k),
+\lambda^{k+1} = \lambda_k + \alpha^k\nabla_{\lambda} F(\lambda^k),
 $$
-其中 $\alpha^k$ 是步長. 而且我們知道 $\nabla F(\lambda^k) = A\pmb{\tilde{x}}-\pmb{b},$ 其中 $\pmb{\tilde{x}} = argmin \ L(\pmb{x}, \pmb{\lambda}^k)$. 因此我們有以下這方法:&lt;/p&gt;
+其中 $\alpha^k$ 是步長. 而且我們知道 $\nabla F_{\lambda}(\lambda^k) = A\pmb{\tilde{x}}-\pmb{b},$ 其中 $\pmb{\tilde{x}} = argmin \ L(\pmb{x}, \pmb{\lambda}^k)$. 因此我們有以下這方法:&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Dual ascent iteration method:&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;第一步: 固定一個 $\pmb{\lambda}$ 我們解一個 optimization 問題
 $$
-\pmb{x}^{k+1} = argmin \ L(x, \pmb{\lambda}^k)
+\pmb{x}^{k+1} = argmin \ L(\pmb{x}, \pmb{\lambda}^k)
 $$
 &lt;strong&gt;Remark:&lt;/strong&gt; 這是一個沒有 constraint 的最小值問題, 可以用 gradient descent 或各式方法來解.&lt;/p&gt;
 &lt;/li&gt;
@@ -1719,13 +1719,13 @@ $$&lt;/p&gt;
 &lt;li&gt;
 &lt;p&gt;若用 &lt;strong&gt;dual ascent iteration method&lt;/strong&gt;, 則有
 $$
-L(\pmb{x}^{k+1}, \pmb{\lambda}^k)=0.
+\nabla_{\pmb{x}} L(\pmb{x}^{k+1}, \pmb{\lambda}^k)=0.
 $$&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;若用 &lt;strong&gt;method of multiplier&lt;/strong&gt;, 則有
 $$
-L(\pmb{x}^{k+1}, \pmb{\lambda}^{k+1})=0.
+\nabla_{\pmb{x}} L(\pmb{x}^{k+1}, \pmb{\lambda}^{k+1})=0.
 $$&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
@@ -1811,10 +1811,13 @@ $$&lt;/p&gt;
 &lt;p&gt;假設我如果花費 $y$ 買進某一貴金屬在一定時間後賣出可獲得 $10y-y^2$.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;假設我總共可運用的財產只有 $10$&lt;/p&gt;
+&lt;p&gt;假設我總共可運用的財產只有 $10$.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;那我們可以列出以下限制最佳化問題&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;那我應該花多少錢買股票花多少錢買貴金屬, 才能有最佳獲利呢?&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;我們可以列出以下限制最佳化問題&lt;/p&gt;
 &lt;p&gt;$$
 \max_{x,y} f(x,y)=2x+(10y-y^2), \quad \text{subject to } \quad  x+y=10,
 $$&lt;/p&gt;
@@ -1844,9 +1847,10 @@ $$
 &lt;p&gt;所以 $\lambda^+=-2$ 告訴我們 $\frac{d f^+}{dk}=-\lambda^+=2$, 意思就是如果我們增加一點 $k$ 值, 那獲利會是所增加數目的&lt;strong&gt;兩倍&lt;/strong&gt;.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;將原題改成我目前可運用的財產有 $11$, 那會發現最佳解是 $x^+=7$, $y^+=4$, $f^+=38$, 獲利真的增加 $2$ 單位了!&lt;/p&gt;
+&lt;p&gt;將原題改成我目前可運用的財產有 $11$ (也就是多增加了 $1$), 那會發現最佳解是 $x^+=7$, $y^+=4$, $f^+=38$, 獲利真的增加 $2$ 單位了!&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;這例子比較特殊 $\lambda^+$ 衡等於 $2$, 所以才會那麼巧資金增加一單位獲利就增加兩單位. 一般而言這應該只是 linear appxoimation, 只有 $k$ 增加一點點時才會大約兩倍. 增加太多就不知道了.&lt;/li&gt;
+&lt;li&gt;如果這是真實情形, 那就告訴我們說如果去借 $1$ 單位的錢, 可以賺到 $2$ 單位. 如果借的錢加上利息會小於 $2$ 單位, 那就是個很好的投資, 應該去借.&lt;/li&gt;
+&lt;li&gt;這例子比較特殊 $\lambda^+$ 恆等於 $2$, 所以才會那麼巧資金增加一單位獲利就增加兩單位. 一般而言這應該只是 linear appxoimation, 只有 $k$ 增加一點點時才會大約兩倍. 增加太多就不知道了.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
@@ -1855,11 +1859,11 @@ $$
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;
-&lt;a href=&#34;https://youtu.be/m-G3K2GPmEQ&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Meaning of the Lagrange multiplier&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;https://youtu.be/m-G3K2GPmEQ&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Youtube: Meaning of the Lagrange multiplier&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;
-&lt;a href=&#34;https://youtu.be/b9B2FZ5cqbM&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Proof for the meaning of Lagrange multipliers&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;https://youtu.be/b9B2FZ5cqbM&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Youtube: Proof for the meaning of Lagrange multipliers&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr&gt;

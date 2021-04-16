@@ -243,7 +243,7 @@
     
       <meta property="article:published_time" content="2020-06-12T00:00:00&#43;00:00">
     
-    <meta property="article:modified_time" content="2020-06-14T23:15:40&#43;08:00">
+    <meta property="article:modified_time" content="2021-04-16T08:47:24&#43;08:00">
   
 
   
@@ -272,7 +272,7 @@
   "headline": "Lagrange Multiplier - 02",
   
   "datePublished": "2020-06-12T00:00:00Z",
-  "dateModified": "2020-06-14T23:15:40+08:00",
+  "dateModified": "2021-04-16T08:47:24+08:00",
   
   "author": {
     "@type": "Person",
@@ -440,6 +440,8 @@
             
               <a class="dropdown-item" href="/categories/computational-mathematics/"><span>Computational Mathematics 計算數學</span></a>
             
+              <a class="dropdown-item" href="/categories/linear-algebra/"><span>Linear Algebra 線性代數</span></a>
+            
               <a class="dropdown-item" href="/categories/notes/"><span>程式語言學習筆記</span></a>
             
           </div>
@@ -548,7 +550,7 @@
           Last updated on
       
     
-    Jun 14, 2020
+    Apr 16, 2021
   </span>
   
 
@@ -642,7 +644,7 @@ then it is a solution of $P$.</p>
 <p>根據不等式第一個部分
 $$\forall\lambda\ge 0, \quad L(x^+, \lambda)\le L(x^+, \lambda^+)$$
 帶入 $L$ 我們得到 $\lambda g(x^+) \le \lambda^+ g(x^+)$.</p>
-<p>由於對所有 $\lambda\ge $ 都對, 我們讓 $\lambda\to\infty$ 得到 $g(x^+)\le 0$.
+<p>由於對所有 $\lambda\ge 0$ 都對, 我們讓 $\lambda\to\infty$ 得到 $g(x^+)\le 0$.
 接著讓 $\lambda\to 0$ 我們得到 $0\le \lambda^+ g(x^+)\le 0$, 因此 $\lambda^+ g(x^+)=0$.</p>
 <p>有這件事後我們再看不等式第二部分, $L(x^+, \lambda^+)\le L(x, \lambda^+)$.
 代入 $L$ 以及以上結果我們有 $f(x^+)\le f(x) + \lambda^+ g(x)$.</p>
@@ -673,15 +675,15 @@ $$
 對於 dual problem 我們可以構造一個迭代法來解這問題.</p>
 <p>由 Dual optimization problem 我們知道對於 $F$ 這個函數我們要求其最大值. 所以我們試著朝 gradient 方向走來往上走, 意即
 $$
-\lambda^{k+1} = \lambda_k + \alpha^k\nabla F(\lambda^k),
+\lambda^{k+1} = \lambda_k + \alpha^k\nabla_{\lambda} F(\lambda^k),
 $$
-其中 $\alpha^k$ 是步長. 而且我們知道 $\nabla F(\lambda^k) = A\pmb{\tilde{x}}-\pmb{b},$ 其中 $\pmb{\tilde{x}} = argmin \ L(\pmb{x}, \pmb{\lambda}^k)$. 因此我們有以下這方法:</p>
+其中 $\alpha^k$ 是步長. 而且我們知道 $\nabla F_{\lambda}(\lambda^k) = A\pmb{\tilde{x}}-\pmb{b},$ 其中 $\pmb{\tilde{x}} = argmin \ L(\pmb{x}, \pmb{\lambda}^k)$. 因此我們有以下這方法:</p>
 <p><strong>Dual ascent iteration method:</strong></p>
 <ul>
 <li>
 <p>第一步: 固定一個 $\pmb{\lambda}$ 我們解一個 optimization 問題
 $$
-\pmb{x}^{k+1} = argmin \ L(x, \pmb{\lambda}^k)
+\pmb{x}^{k+1} = argmin \ L(\pmb{x}, \pmb{\lambda}^k)
 $$
 <strong>Remark:</strong> 這是一個沒有 constraint 的最小值問題, 可以用 gradient descent 或各式方法來解.</p>
 </li>
@@ -767,13 +769,13 @@ $$</p>
 <li>
 <p>若用 <strong>dual ascent iteration method</strong>, 則有
 $$
-L(\pmb{x}^{k+1}, \pmb{\lambda}^k)=0.
+\nabla_{\pmb{x}} L(\pmb{x}^{k+1}, \pmb{\lambda}^k)=0.
 $$</p>
 </li>
 <li>
 <p>若用 <strong>method of multiplier</strong>, 則有
 $$
-L(\pmb{x}^{k+1}, \pmb{\lambda}^{k+1})=0.
+\nabla_{\pmb{x}} L(\pmb{x}^{k+1}, \pmb{\lambda}^{k+1})=0.
 $$</p>
 </li>
 <li>
@@ -800,6 +802,8 @@ $$</p>
   <a class="badge badge-light" href="/tags/optimization/">optimization</a>
   
   <a class="badge badge-light" href="/tags/iteration/">iteration</a>
+  
+  <a class="badge badge-light" href="/tags/multiplier/">multiplier</a>
   
 </div>
 
