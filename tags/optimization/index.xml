@@ -425,6 +425,8 @@ $$\forall\lambda\ge 0, \quad L(x^+, \lambda)\le L(x^+, \lambda^+)$$
 &lt;p&gt;QED.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;hr&gt;
+&lt;h4 id=&#34;可以看到在上面有個隱藏的假設是-lambdage-0-可以被很輕易地看出來所以這裡就不記下了&#34;&gt;可以看到在上面有個隱藏的假設是 $\lambda\ge 0$. 可以被很輕易地看出來所以這裡就不記下了.&lt;/h4&gt;
+&lt;hr&gt;
 &lt;p&gt;更進一步, 我們可以引進這個 Lagrange dual function:
 $$
 F(\lambda) = \inf_{x} L(x, \lambda)
