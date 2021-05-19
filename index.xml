@@ -13,6 +13,65 @@
     </image>
     
     <item>
+      <title>2021 Summer Research Internship</title>
+      <link>https://teshenglin.github.io/courses/2021_summer_research/</link>
+      <pubDate>Wed, 19 May 2021 00:00:00 +0800</pubDate>
+      <guid>https://teshenglin.github.io/courses/2021_summer_research/</guid>
+      <description>&lt;hr&gt;
+&lt;h2 id=&#34;2021-暑期研究實習&#34;&gt;2021 暑期研究實習&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://drive.google.com/file/d/1vJ0LKWxjjpTvwlTxEwnRus77fKgSRyL3/view?usp=sharing&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;海報&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://drive.google.com/file/d/1g4zek59NaqxUbT1mbx_7K2KEDNXAuLET/view?usp=sharing&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;研究實習辦法&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://youtu.be/sFL47gziK30&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;說明會錄影&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;各研究團隊說明&#34;&gt;各研究團隊說明&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://drive.google.com/file/d/1TKMdkvROkfCE-BtSqu-40O7JdOkPpn1I/view?usp=sharing&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;量子電腦投資組合最佳化&lt;/a&gt;
+&lt;ol&gt;
+&lt;li&gt;游家牧 - &lt;a href=&#34;mailto:chiamuyu@gmail.com&#34;&gt;chiamuyu@gmail.com&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://drive.google.com/file/d/1duzGRTSHBUBIdwtgzHhAzD-GroUp773c/view?usp=sharing&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;訊號與影像處理&lt;/a&gt;
+&lt;ol&gt;
+&lt;li&gt;薛名成 - &lt;a href=&#34;mailto:mshiue@math.nctu.edu.tw&#34;&gt;mshiue@math.nctu.edu.tw&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;吳金典 - &lt;a href=&#34;mailto:ctw@math.nctu.edu.tw&#34;&gt;ctw@math.nctu.edu.tw&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://drive.google.com/file/d/1MIzVXC_qljcNoVXppBKve6OvF7LUbLTb/view?usp=sharing&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;數學建模與機器學習&lt;/a&gt;
+&lt;ol&gt;
+&lt;li&gt;吳昌鴻 - &lt;a href=&#34;mailto:changhong@math.nctu.edu.tw&#34;&gt;changhong@math.nctu.edu.tw&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;林得勝 - &lt;a href=&#34;mailto:tslin@math.nctu.edu.tw&#34;&gt;tslin@math.nctu.edu.tw&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://drive.google.com/file/d/1fO83ISqJizCJppeJ78XlaxUwwl65_jCW/view?usp=sharing&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;AI與量化投資交易&lt;/a&gt;
+&lt;ol&gt;
+&lt;li&gt;康明軒 - &lt;a href=&#34;mailto:mhkang@math.nctu.edu.tw&#34;&gt;mhkang@math.nctu.edu.tw&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;鄧惠文 - &lt;a href=&#34;mailto:venteng@gmail.com&#34;&gt;venteng@gmail.com&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;實習報名&#34;&gt;實習報名&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;請先與各團隊指導教授線上面談後填寫以下表單&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://forms.gle/SBMPbUpzV7jbBdWv6&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;報名表單&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+</description>
+    </item>
+    
+    <item>
       <title>主成分分析 - 2</title>
       <link>https://teshenglin.github.io/post/2020_principal_component_analysis_2/</link>
       <pubDate>Mon, 07 Sep 2020 00:00:00 +0000</pubDate>
@@ -134,7 +193,7 @@ $$&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;假設我們有 $n$ 筆 $p$ 維的資料, 記成
 $$
-\{x_1, x_2, \cdots, x_n\} \in R^p
+\{x_1, x_2, \cdots, x_n\} \in \mathbb{R}^p
 $$
 那我們可以據此構造出一個距離平方矩陣 $D$, Euclidian distance matrix, 簡稱 EDM, 其中 $D_{ij} = \|x_i-x_j\|^2$, 也就是 $(x_i)$ 及 $x_j$ 這兩個點距離的平方.&lt;/p&gt;
 &lt;hr&gt;
@@ -176,12 +235,15 @@ $$
 &lt;blockquote&gt;
 &lt;p&gt;可以輕易看出來 $H$ 是一個對稱矩陣, $H^T=H$.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;若我們將原始資料收集一起成一個 $p\times n$ 矩陣 $X = [x_1, \cdots, x_n]$, 則有
+&lt;p&gt;若我們將原始資料收集一起成一個 $p\times n$ 矩陣 $X = [x_1, \cdots, x_n]$, 也就是把原始資料每一筆當成一個 column 排隊排好, 則有
 $$
 X H = X (I_n - \frac{1}{n}{\bf 1}{\bf 1}^T) = X - \frac{1}{n}\left(\sum_i x_i\right) {\bf 1}^T = X - \mu {\bf 1}^T = Y,
 $$
-其中 $\mu=\frac{1}{n}\sum_i x_i$ 就是原始資料的平均, 而 $Y=[y_1, \cdots, y_n]$, $y_i = x_i-\mu$. 所以的確 $XH$ 就是把資料平移使得其中心為坐標原點.&lt;/p&gt;
-&lt;p&gt;推導一下後也可以發現 $H\hat{X}$ 則是將 $\hat{X}$ 的 rows 做資料平移到原點.&lt;/p&gt;
+其中 $\mu=\frac{1}{n}\sum_i x_i \in \mathbb{R}^p$ 就是原始資料的平均,
+而 $Y=[y_1, \cdots, y_n]$, $y_i = x_i-\mu$, 也就是把每筆資料減去平均之後記成 $y_i$ 再排排站好.
+所以的確 $XH$ 就是把資料平移使得其中心為坐標原點.&lt;/p&gt;
+&lt;p&gt;推導一下後也可以發現, 若將每筆資料當成一個 row 擺好變成 $\hat{X}$,
+則要用 $H\hat{X}$ 將資料做平移使資料中心為原點.&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;我們有以下這個定理&lt;/p&gt;
 &lt;blockquote&gt;
@@ -218,7 +280,7 @@ $$
 &lt;p&gt;跟定理對照一下可以輕易地看出來, 平移後的原始資料點可以被還原出來: $Y = \sqrt{\Lambda}V^T$.&lt;/p&gt;
 &lt;p&gt;這就是 classical MDS 的作法!! 非常簡單.&lt;/p&gt;
 &lt;h4 id=&#34;remark-1&#34;&gt;Remark:&lt;/h4&gt;
-&lt;p&gt;若原始資料 $x_i\in R^p$, 則 $Y^TY$ 的 rank 為 $p$, 必有 $n-p$ 個為零的特徵值. 所以, 若我們將 $-\frac{1}{2}HDH$ 對角化後發現有 $m$ 個為零的特徵值, 表示原資料的 $p=n-m$, 那我們就把這些零特徵值都拿掉, 使 $\sqrt{\Lambda}$ 為一個 $p\times n$ 的矩陣, 這樣我們就有 $Y = \sqrt{\Lambda}V^T \in R^{p\times n}$.&lt;/p&gt;
+&lt;p&gt;若原始資料 $x_i\in R^p$ (並假設排排站之後的 $X$ 其 rank 為 $p$), 則 $Y^TY$ 的 rank 為 $p$, 必有至少 $n-p$ 個為零的特徵值. 所以, 若我們將 $-\frac{1}{2}HDH$ 對角化後發現有 $m$ 個為零的特徵值, 表示原資料的 $p=n-m$, 那我們就把這些零特徵值都拿掉, 使 $\sqrt{\Lambda}$ 為一個 $p\times n$ 的矩陣, 這樣我們就有 $Y = \sqrt{\Lambda}V^T \in R^{p\times n}$.&lt;/p&gt;
 &lt;h4 id=&#34;remark-2&#34;&gt;Remark:&lt;/h4&gt;
 &lt;p&gt;若將 $Y$ 做奇異值分解 (Singular Value Decomposition, SVD), 得到
 $$
@@ -671,7 +733,8 @@ scatter(B(1,:), B(2,:), [], (1:n)/n, &#39;fill&#39;)
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Linear algebra (2):&lt;/strong&gt; 
 &lt;a href=&#34;https://hackmd.io/@teshenglin/la2_syllabus&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Syllabus at HackMD&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Applied Mathematics Methods&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Applied Mathematics Methods&lt;/strong&gt; 
+&lt;a href=&#34;https://www.notion.so/Applied-Mathematics-Methods-4e19750f9b0047c6b4ae3789f444f56a&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Notion&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;2020-fall&#34;&gt;2020 Fall&lt;/h2&gt;
 &lt;ul&gt;
