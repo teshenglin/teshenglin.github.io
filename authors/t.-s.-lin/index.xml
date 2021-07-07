@@ -5,12 +5,20 @@
     <link>https://teshenglin.github.io/authors/t.-s.-lin/</link>
       <atom:link href="https://teshenglin.github.io/authors/t.-s.-lin/index.xml" rel="self" type="application/rss+xml" />
     <description>T.-S. Lin</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 21 Jul 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Thu, 10 Jun 2021 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
       <title>T.-S. Lin</title>
       <link>https://teshenglin.github.io/authors/t.-s.-lin/</link>
     </image>
+    
+    <item>
+      <title>A Discontinuity Capturing Shallow Neural Network for Elliptic Interface Problems</title>
+      <link>https://teshenglin.github.io/publication/21_jcp_hll/</link>
+      <pubDate>Thu, 10 Jun 2021 00:00:00 +0000</pubDate>
+      <guid>https://teshenglin.github.io/publication/21_jcp_hll/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Effect of driving on coarsening dynamics in phase-separating systems</title>

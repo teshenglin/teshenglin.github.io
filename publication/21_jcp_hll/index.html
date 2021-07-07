@@ -28,10 +28,10 @@
   
     
   
-  <meta name="description" content="在微積分課程裡我們有學到積分的&rsquo;中點法&rsquo;, &lsquo;梯形法&rsquo;以及&rsquo;辛普森法&rsquo;">
+  <meta name="description" content="In this paper, a new Discontinuity Capturing Shallow Neural Network (DCSNN) for approximating $d$-dimensional piecewise continuous functions and for solving elliptic interface problems is developed. There are three novel features in the present network; namely, (i) jump discontinuity is captured sharply, (ii) it is completely shallow consisting of only one hidden layer, (iii) it is completely mesh-free for solving partial differential equations (PDEs). We first continuously extend the $d$-dimensional piecewise continuous function in $(d&#43;1)$-dimensional space by augmenting one coordinate variable to label the pieces of discontinuous function, and then construct a shallow neural network to express this new augmented function. Since only one hidden layer is employed, the number of training parameters (weights and biases) scales linearly with the dimension and the neurons used in the hidden layer.  For solving elliptic interface equations, the network is trained by minimizing the mean squared error loss that consists of the residual of governing equation, boundary condition, and the interface jump conditions. We perform a series of numerical tests to compare the accuracy and efficiency of the present network. Our DCSNN model  is comparably efficient due to only moderate number of parameters needed to be trained (a few hundreds of parameters used throughout all numerical examples here), and the result shows better accuracy (and less parameters) than other method using piecewise deep neural network in literature. We also compare the results obtained by the traditional grid-based immersed interface method (IIM) which is designed particularly for elliptic interface problems. Again, the present results show better accuracy than the ones obtained by IIM. We conclude by solving a six-dimensional problem to show the capability of the present network for high-dimensional applications. ">
 
   
-  <link rel="alternate" hreflang="en-us" href="https://teshenglin.github.io/post/2019_numerical_integration/">
+  <link rel="alternate" hreflang="en-us" href="https://teshenglin.github.io/publication/21_jcp_hll/">
 
   
 
@@ -221,7 +221,7 @@
   <link rel="icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_2.png">
   <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_2.png">
 
-  <link rel="canonical" href="https://teshenglin.github.io/post/2019_numerical_integration/">
+  <link rel="canonical" href="https://teshenglin.github.io/publication/21_jcp_hll/">
 
   
   
@@ -229,21 +229,20 @@
   
   
     
-    
   
   
-  <meta property="twitter:card" content="summary">
+  <meta property="twitter:card" content="summary_large_image">
   
   <meta property="og:site_name" content="Te-Sheng Lin">
-  <meta property="og:url" content="https://teshenglin.github.io/post/2019_numerical_integration/">
-  <meta property="og:title" content="數值積分初探 | Te-Sheng Lin">
-  <meta property="og:description" content="在微積分課程裡我們有學到積分的&rsquo;中點法&rsquo;, &lsquo;梯形法&rsquo;以及&rsquo;辛普森法&rsquo;"><meta property="og:image" content="https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png">
-  <meta property="twitter:image" content="https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png"><meta property="og:locale" content="en-us">
+  <meta property="og:url" content="https://teshenglin.github.io/publication/21_jcp_hll/">
+  <meta property="og:title" content="A Discontinuity Capturing Shallow Neural Network for Elliptic Interface Problems | Te-Sheng Lin">
+  <meta property="og:description" content="In this paper, a new Discontinuity Capturing Shallow Neural Network (DCSNN) for approximating $d$-dimensional piecewise continuous functions and for solving elliptic interface problems is developed. There are three novel features in the present network; namely, (i) jump discontinuity is captured sharply, (ii) it is completely shallow consisting of only one hidden layer, (iii) it is completely mesh-free for solving partial differential equations (PDEs). We first continuously extend the $d$-dimensional piecewise continuous function in $(d&#43;1)$-dimensional space by augmenting one coordinate variable to label the pieces of discontinuous function, and then construct a shallow neural network to express this new augmented function. Since only one hidden layer is employed, the number of training parameters (weights and biases) scales linearly with the dimension and the neurons used in the hidden layer.  For solving elliptic interface equations, the network is trained by minimizing the mean squared error loss that consists of the residual of governing equation, boundary condition, and the interface jump conditions. We perform a series of numerical tests to compare the accuracy and efficiency of the present network. Our DCSNN model  is comparably efficient due to only moderate number of parameters needed to be trained (a few hundreds of parameters used throughout all numerical examples here), and the result shows better accuracy (and less parameters) than other method using piecewise deep neural network in literature. We also compare the results obtained by the traditional grid-based immersed interface method (IIM) which is designed particularly for elliptic interface problems. Again, the present results show better accuracy than the ones obtained by IIM. We conclude by solving a six-dimensional problem to show the capability of the present network for high-dimensional applications. "><meta property="og:image" content="https://teshenglin.github.io/publication/21_jcp_hll/featured.png">
+  <meta property="twitter:image" content="https://teshenglin.github.io/publication/21_jcp_hll/featured.png"><meta property="og:locale" content="en-us">
   
     
-      <meta property="article:published_time" content="2019-12-11T00:00:00&#43;00:00">
+      <meta property="article:published_time" content="2021-06-10T00:00:00&#43;00:00">
     
-    <meta property="article:modified_time" content="2020-06-03T09:21:29&#43;08:00">
+    <meta property="article:modified_time" content="2021-07-08T01:53:31&#43;08:00">
   
 
   
@@ -255,8 +254,6 @@
 
 
 
-
-  
 
 
 
@@ -264,19 +261,23 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "BlogPosting",
+  "@type": "Article",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://teshenglin.github.io/post/2019_numerical_integration/"
+    "@id": "https://teshenglin.github.io/publication/21_jcp_hll/"
   },
-  "headline": "數值積分初探",
+  "headline": "A Discontinuity Capturing Shallow Neural Network for Elliptic Interface Problems",
   
-  "datePublished": "2019-12-11T00:00:00Z",
-  "dateModified": "2020-06-03T09:21:29+08:00",
+  "image": [
+    "https://teshenglin.github.io/publication/21_jcp_hll/featured.png"
+  ],
+  
+  "datePublished": "2021-06-10T00:00:00Z",
+  "dateModified": "2021-07-08T01:53:31+08:00",
   
   "author": {
     "@type": "Person",
-    "name": "Te-Sheng Lin (林得勝)"
+    "name": "W.-F. Hu"
   },
   
   "publisher": {
@@ -287,7 +288,7 @@
       "url": "https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_2.png"
     }
   },
-  "description": "在微積分課程裡我們有學到積分的\u0026rsquo;中點法\u0026rsquo;, \u0026lsquo;梯形法\u0026rsquo;以及\u0026rsquo;辛普森法\u0026rsquo;"
+  "description": "In this paper, a new Discontinuity Capturing Shallow Neural Network (DCSNN) for approximating $d$-dimensional piecewise continuous functions and for solving elliptic interface problems is developed. There are three novel features in the present network; namely, (i) jump discontinuity is captured sharply, (ii) it is completely shallow consisting of only one hidden layer, (iii) it is completely mesh-free for solving partial differential equations (PDEs). We first continuously extend the $d$-dimensional piecewise continuous function in $(d+1)$-dimensional space by augmenting one coordinate variable to label the pieces of discontinuous function, and then construct a shallow neural network to express this new augmented function. Since only one hidden layer is employed, the number of training parameters (weights and biases) scales linearly with the dimension and the neurons used in the hidden layer.  For solving elliptic interface equations, the network is trained by minimizing the mean squared error loss that consists of the residual of governing equation, boundary condition, and the interface jump conditions. We perform a series of numerical tests to compare the accuracy and efficiency of the present network. Our DCSNN model  is comparably efficient due to only moderate number of parameters needed to be trained (a few hundreds of parameters used throughout all numerical examples here), and the result shows better accuracy (and less parameters) than other method using piecewise deep neural network in literature. We also compare the results obtained by the traditional grid-based immersed interface method (IIM) which is designed particularly for elliptic interface problems. Again, the present results show better accuracy than the ones obtained by IIM. We conclude by solving a six-dimensional problem to show the capability of the present network for high-dimensional applications. "
 }
 </script>
 
@@ -305,7 +306,7 @@
 
 
 
-  <title>數值積分初探 | Te-Sheng Lin</title>
+  <title>A Discontinuity Capturing Shallow Neural Network for Elliptic Interface Problems | Te-Sheng Lin</title>
 
 </head>
 
@@ -497,7 +498,7 @@
 </nav>
 
 
-  <article class="article">
+  <div class="pub">
 
   
 
@@ -512,18 +513,26 @@
 
 
 
-  
+
+
+
+
+
+
+
 
   
-  
-  
-<div class="article-container pt-3">
-  <h1>數值積分初探</h1>
-
-  
-
   
     
+  
+
+
+<div class="article-container pt-3">
+  <h1>A Discontinuity Capturing Shallow Neural Network for Elliptic Interface Problems</h1>
+
+  
+
+  
 
 
 <div class="article-metadata">
@@ -538,7 +547,7 @@
 
 
   
-  <span><a href="/authors/admin/">Te-Sheng Lin (林得勝)</a></span>
+  <span>W.-F. Hu</span>, <span>T.-S. Lin</span>, <span>M.-C. Lai</span>
 
   </div>
   
@@ -549,39 +558,57 @@
     
     
       
-          Last updated on
-      
     
-    Jun 3, 2020
+    June 2021
   </span>
   
 
   
 
   
-  <span class="middot-divider"></span>
-  <span class="article-reading-time">
-    3 min read
-  </span>
-  
 
   
   
   
   <span class="middot-divider"></span>
-  <a href="/post/2019_numerical_integration/#disqus_thread"></a>
+  <a href="/publication/21_jcp_hll/#disqus_thread"></a>
   
 
   
-  
-  <span class="middot-divider"></span>
-  <span class="article-categories">
-    <i class="fas fa-folder mr-1"></i><a href="/categories/calculus/">Calculus</a>, <a href="/categories/computational-mathematics/">Computational Mathematics</a></span>
   
 
 </div>
 
-    
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="btn-links mb-3">
+  
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
 
 
 
@@ -597,192 +624,74 @@
 
 
   
+  
+  
+  
+  
+  
+  
+    
+  
+  <a class="btn btn-outline-primary my-1 mr-1" href="http://arxiv.org/abs/2106.05587" target="_blank" rel="noopener">
+    <i class="ai ai-arxiv mr-1"></i>
+    arXiv
+  </a>
+
+
+</div>
+
+
+</div>
+
+
+<div class="article-header article-container featured-image-wrapper mt-4 mb-4" style="max-width: 720px; max-height: 335px;">
+  <div style="position: relative">
+    <img src="/publication/21_jcp_hll/featured_hua1efaa13589b162f135a219382275550_890627_720x0_resize_lanczos_2.png" alt="" class="featured-image">
+    
+  </div>
 </div>
 
 
 
   <div class="article-container">
 
-    <div class="article-style">
-      <blockquote>
-<p>在微積分課程裡我們有學到積分的&rsquo;中點法&rsquo;, &lsquo;梯形法&rsquo;以及&rsquo;辛普森法&rsquo;. 這裡我們簡介一些基本概念並且引進高斯積分法.</p>
-</blockquote>
-<h4 id="goal-任意給定一可積分函數-fx-xin-1-1-我們想要算-int1_-1-fx-dx">Goal: 任意給定一可積分函數 $f(x)$, $x\in[-1, 1]$, 我們想要算 $\int^1_{-1} f(x) dx$.</h4>
-<hr>
-<p><strong>Remark:</strong> 對任一個積分式 $\int^b_{a} g(x),dx$ 我們皆可用變數變換來將此積分轉到 $[-1, 1]$ 這個區間. 所以我們只需考慮 $[-1, 1]$ 即可.</p>
-<hr>
-<p>首先我們討論一下哪種方法比較準. 一個最簡單的判斷方法是看積分法能不能將多項式算準.</p>
-<p>我們考慮三種積分法:</p>
-<ol>
-<li>
-<p>Midpoint rule: $\int^1_{-1}f(x),dx\approx 2f(0)$</p>
-</li>
-<li>
-<p>Trapezoidal rule: $\int^1_{-1}f(x),dx\approx f(-1)+f(1)$</p>
-</li>
-<li>
-<p>Simpson&rsquo;s rule: $\int^1_{-1}f(x),dx\approx \frac{1}{3}(f(-1)+4f(0)+f(1))$</p>
-</li>
-</ol>
-<ul>
-<li>
-<p>我們先檢驗常數函數: $\int^1_{-1} 1,dx=2$. 很快我們就可以發現以上三種方法都可以得出完全正確的答案.</p>
-</li>
-<li>
-<p>接著我們檢驗一次函數: $\int^1_{-1} x,dx=0$. 一樣, 三種方法都得出正確答案.</p>
-</li>
-<li>
-<p>二次函數: $\int^1_{-1} x^2,dx=\frac{2}{3}$. 對於二次函數我們發現, 中點法以及梯形法都無法算出正確答案, 只有辛普森法能成功.</p>
-</li>
-<li>
-<p>三次函數: $\int^1_{-1} x^3,dx=0$. 對於三次函數我們只檢驗辛普森法, 發現三次函數辛普森法也能算準.</p>
-</li>
-<li>
-<p>四次函數: $\int^1_{-1} x^4,dx=\frac{2}{5}$. 對於四次函數, 辛普森法就算錯了.</p>
-</li>
-</ul>
-<p><strong>小結論</strong></p>
-<ol>
-<li>中點跟梯形法準確率相同, 能準確的算出任意一次多項式的積分值.</li>
-<li>辛普森法比中點及梯形法更準確, 並且它能準確的算出任意三次多項式的積分值.</li>
-</ol>
-<hr>
-<blockquote>
-<p>接著我們稍微推廣一下, 並且介紹所謂的&rsquo;高斯積分&rsquo;.</p>
-</blockquote>
-<p><strong>Question:</strong> 假設我們現在想要用函數在 $x=0$ 這個點的值來估算積分, 那係數要取多少會最好?</p>
-<p>也就是說我們假設
-$$\int^1_{-1}f(x),dx\approx A_0f(0),$$
-其中 $A_0$ 是個常數. 那 $A_0$ 要選哪個數字, 這個積分公式才會算的最準?</p>
-<p>依照我們之前的想法, 要讓積分式準就是要讓他把多項式算準. 所以我們希望他至少能把常數函數算準. 這樣的話很容易就看出 $A_0=2$, 也就是&rsquo;中點法&rsquo;.</p>
-<p><strong>Question:</strong> 假設我們現在想要用函數在 $x=-1$ 以及 $x=1$ 這兩個點的值來估算積分, 那係數要取多少會最好?</p>
-<p>也就是說我們假設
-$$\int^1_{-1}f(x),dx\approx \alpha f(-1)+\beta f(1),$$
-其中 $\alpha, \beta$ 是常數.</p>
-<p>我們有兩個未知數, 所以我們希望他至少能把常數及一次函數算準. 這樣的話我們可以列出方程式:
-$$
-\alpha + \beta = 2, \quad -\alpha + \beta = 0.
-$$
-解方程式我們得到 $\alpha=\beta=1$, 也就是梯形法.</p>
-<p><strong>Question:</strong> 假設我們現在只想用兩個點的值來估算積分, 那怎樣做會最好?</p>
-<p>也就是說我們假設
-$$\int^1_{-1}f(x),dx\approx A_0 f(x_0)+A_1 f(x_1),$$
-其中 $A_0, A_1, x_0, x_1$ 都待決定.</p>
-<p>我們有四個未知數, 所以理想狀況下應該能從常數到三次多項式都能算準, 依此可以列出四個方程式:
-$$
-\begin{aligned}
-A_0 + A_1 &amp;= 2 \\\<br>
-A_0x_0 + A_1x_1 &amp;= 0 \\\<br>
-A_0x^2_0 + A_1x^2_1 &amp;= \frac{2}{3} \\\<br>
-A_0x^3_0 + A_1x^3_1 &amp;= 0.
-\end{aligned}
-$$
-解方程式我們得到 $A_0=A_1=1$, $x_0=-\frac{1}{\sqrt{3}}$, $x_1=\frac{1}{\sqrt{3}}$. 也就是說</p>
-<p>$$
-\int^1_{-1} f(x),dx \approx f\left(-\frac{1}{\sqrt{3}}\right)+ f\left(\frac{1}{\sqrt{3}}\right).
-$$
-這就是所謂的兩點高斯積分公式 (two-point Gaussian quadrature formula).</p>
-<hr>
-<blockquote>
-<p>最後我們看一下以數值積分來估算的例子.</p>
-</blockquote>
-<p>我們想計算 $\int^1_{-1} e^x,dx$, 當然我們知道答案是 $e^1-e^{-1}$, 不過我們想要知道若以上列幾種方法估算會有多準確.</p>
-<p><strong>Remark:</strong> 一般來說我們會先將所要積分的範圍分成 $n$ 等分, 接著在每一等分上使用上列積分法. 這就是微積分課本中所介紹的合成積分法 (composite integral rules). 實作上的細節我們就不在這裡討論.</p>
-<p>我們將 $[-1, 1]$ 區間均勻分成 $n$ 等分, 再用三種不同積分法來估算積分值. 下表列出不同積分法在不同區間數所得之值與實際值之間的絕對誤差.</p>
-<table>
-<thead>
-<tr>
-<th>n\Method</th>
-<th>Midpoint</th>
-<th>Trapezoidal</th>
-<th>Simpson&rsquo;s</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>10</td>
-<td>3.91e-3</td>
-<td>7.83e-3</td>
-<td>2.08e-5</td>
-</tr>
-<tr>
-<td>100</td>
-<td>3.92e-5</td>
-<td>7.83e-5</td>
-<td>2.09e-9</td>
-</tr>
-<tr>
-<td>1000</td>
-<td>3.92e-7</td>
-<td>7.83e-7</td>
-<td>2.10e-13</td>
-</tr>
-</tbody>
-</table>
-<p>我們可以看到, 中點以及梯形法誤差皆是以 $O(n^{-2})$ 來下降, 也就是點數變十倍時誤差會降一百倍, 而辛普森法則是 $O(n^{-4})$.</p>
-<p>接著我們試試看用高斯積分來做, 這裡我們就不分小區間, 直接做整個 $[-1, 1]$ 區間. 多個點的高斯積分的公式可在 
-<a href="https://en.wikipedia.org/wiki/Gaussian_quadrature" target="_blank" rel="noopener">wiki</a> 找到. 我們將 $m$-point 高斯積分所得之值與實際值之間的絕對誤差列於下表</p>
-<table>
-<thead>
-<tr>
-<th>m\Method</th>
-<th>Gaussian quadrature rule</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>2</td>
-<td>7.71e-3</td>
-</tr>
-<tr>
-<td>3</td>
-<td>6.55e-5</td>
-</tr>
-<tr>
-<td>4</td>
-<td>2.95e-7</td>
-</tr>
-<tr>
-<td>5</td>
-<td>8.25e-10</td>
-</tr>
-<tr>
-<td>6</td>
-<td>1.56e-12</td>
-</tr>
-<tr>
-<td>7</td>
-<td>2.66e-15</td>
-</tr>
-<tr>
-<td>8</td>
-<td>4.44e-16</td>
-</tr>
-</tbody>
-</table>
-<p>可以看到我們用 8 個點就可以將這個積分準確估計到誤差接近機器的捨入誤差 (rounding error).</p>
-<hr>
-<p>延伸閱讀: 
-<a href="/post/2020_numerical_integration_2">以內差多項式來做數值積分</a></p>
-<p>延伸閱讀: 
-<a href="/post/2020_numerical_integration_3">高斯積分</a></p>
-<hr>
+    
+    <h3>Abstract</h3>
+    <p class="pub-abstract">In this paper, a new Discontinuity Capturing Shallow Neural Network (DCSNN) for approximating $d$-dimensional piecewise continuous functions and for solving elliptic interface problems is developed. There are three novel features in the present network; namely, (i) jump discontinuity is captured sharply, (ii) it is completely shallow consisting of only one hidden layer, (iii) it is completely mesh-free for solving partial differential equations (PDEs). We first continuously extend the $d$-dimensional piecewise continuous function in $(d+1)$-dimensional space by augmenting one coordinate variable to label the pieces of discontinuous function, and then construct a shallow neural network to express this new augmented function. Since only one hidden layer is employed, the number of training parameters (weights and biases) scales linearly with the dimension and the neurons used in the hidden layer.  For solving elliptic interface equations, the network is trained by minimizing the mean squared error loss that consists of the residual of governing equation, boundary condition, and the interface jump conditions. We perform a series of numerical tests to compare the accuracy and efficiency of the present network. Our DCSNN model  is comparably efficient due to only moderate number of parameters needed to be trained (a few hundreds of parameters used throughout all numerical examples here), and the result shows better accuracy (and less parameters) than other method using piecewise deep neural network in literature. We also compare the results obtained by the traditional grid-based immersed interface method (IIM) which is designed particularly for elliptic interface problems. Again, the present results show better accuracy than the ones obtained by IIM. We conclude by solving a six-dimensional problem to show the capability of the present network for high-dimensional applications.</p>
+    
 
+    
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-10">
+        <div class="row">
+          <div class="col-12 col-md-3 pub-row-heading">Type</div>
+          <div class="col-12 col-md-9">
+            
+            
+            <a href="/publication/#3">
+              Preprint
+            </a>
+            
+          </div>
+        </div>
+      </div>
+      <div class="col-md-1"></div>
     </div>
+    <div class="d-md-none space-below"></div>
+    
+
+    
+
+    <div class="space-below"></div>
+
+    <div class="article-style"></div>
 
     
 
 
 
 
-
-<div class="article-tags">
-  
-  <a class="badge badge-light" href="/tags/numerical_integration/">numerical_integration</a>
-  
-  <a class="badge badge-light" href="/tags/quadrature/">quadrature</a>
-  
-</div>
 
 
 
@@ -797,7 +706,7 @@ $$
       
       
       <li>
-        <a href="https://twitter.com/intent/tweet?url=https://teshenglin.github.io/post/2019_numerical_integration/&amp;text=%e6%95%b8%e5%80%bc%e7%a9%8d%e5%88%86%e5%88%9d%e6%8e%a2" target="_blank" rel="noopener" class="share-btn-twitter">
+        <a href="https://twitter.com/intent/tweet?url=https://teshenglin.github.io/publication/21_jcp_hll/&amp;text=A%20Discontinuity%20Capturing%20Shallow%20Neural%20Network%20for%20Elliptic%20Interface%20Problems" target="_blank" rel="noopener" class="share-btn-twitter">
           <i class="fab fa-twitter"></i>
         </a>
       </li>
@@ -810,7 +719,7 @@ $$
       
       
       <li>
-        <a href="https://www.facebook.com/sharer.php?u=https://teshenglin.github.io/post/2019_numerical_integration/&amp;t=%e6%95%b8%e5%80%bc%e7%a9%8d%e5%88%86%e5%88%9d%e6%8e%a2" target="_blank" rel="noopener" class="share-btn-facebook">
+        <a href="https://www.facebook.com/sharer.php?u=https://teshenglin.github.io/publication/21_jcp_hll/&amp;t=A%20Discontinuity%20Capturing%20Shallow%20Neural%20Network%20for%20Elliptic%20Interface%20Problems" target="_blank" rel="noopener" class="share-btn-facebook">
           <i class="fab fa-facebook-f"></i>
         </a>
       </li>
@@ -823,7 +732,7 @@ $$
       
       
       <li>
-        <a href="mailto:?subject=%e6%95%b8%e5%80%bc%e7%a9%8d%e5%88%86%e5%88%9d%e6%8e%a2&amp;body=https://teshenglin.github.io/post/2019_numerical_integration/" target="_blank" rel="noopener" class="share-btn-email">
+        <a href="mailto:?subject=A%20Discontinuity%20Capturing%20Shallow%20Neural%20Network%20for%20Elliptic%20Interface%20Problems&amp;body=https://teshenglin.github.io/publication/21_jcp_hll/" target="_blank" rel="noopener" class="share-btn-email">
           <i class="fas fa-envelope"></i>
         </a>
       </li>
@@ -852,77 +761,6 @@ $$
 
 
 
-
-  
-  
-  
-    
-  
-  
-  
-  <div class="media author-card content-widget-hr">
-    
-      
-      <img class="avatar mr-3 avatar-circle" src="/authors/admin/avatar_hua0d4d4b24f4da3a102e4452ac738b95f_109236_270x270_fill_q90_lanczos_center.jpg" alt="Avatar">
-    
-
-    <div class="media-body">
-      <h5 class="card-title"><a href="https://teshenglin.github.io/">Te-Sheng Lin (林得勝)</a></h5>
-      <h6 class="card-subtitle">Associate Professor</h6>
-      <p class="card-text">The focus of my research is concerned with the development of analytical and computational tools for the problems that arises in fluid dynamics, currently in thin liquid films, and further to communicate with scientists from other disciplines to solve engineering problems in practice.</p>
-      <ul class="network-icon" aria-hidden="true">
-  
-    
-    
-    
-    
-    
-    
-    
-      
-    
-    <li>
-      <a href="https://scholar.google.com.tw/citations?user=diXYXkwAAAAJ" target="_blank" rel="noopener">
-        <i class="ai ai-google-scholar"></i>
-      </a>
-    </li>
-  
-    
-    
-    
-    
-    
-    
-    
-      
-    
-    <li>
-      <a href="https://www.researchgate.net/profile/Te-Sheng_Lin" target="_blank" rel="noopener">
-        <i class="ai ai-researchgate"></i>
-      </a>
-    </li>
-  
-    
-    
-    
-      
-    
-    
-    
-    
-    
-      
-    
-    <li>
-      <a href="https://github.com/teshenglin" target="_blank" rel="noopener">
-        <i class="fab fa-github"></i>
-      </a>
-    </li>
-  
-</ul>
-
-    </div>
-  </div>
 
 
 
@@ -966,7 +804,7 @@ $$
 
 
   </div>
-</article>
+</div>
 
       
 

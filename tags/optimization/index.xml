@@ -452,7 +452,7 @@ $$
 $$
 \lambda^{k+1} = \lambda_k + \alpha^k\nabla_{\lambda} F(\lambda^k),
 $$
-其中 $\alpha^k$ 是步長. 而且我們知道 $\nabla F_{\lambda}(\lambda^k) = A\pmb{\tilde{x}}-\pmb{b},$ 其中 $\pmb{\tilde{x}} = argmin \ L(\pmb{x}, \pmb{\lambda}^k)$. 因此我們有以下這方法:&lt;/p&gt;
+其中 $\alpha^k$ 是步長. 而且我們知道 $\nabla_{\lambda} F(\lambda^k) = A\pmb{\tilde{x}}-\pmb{b},$ 其中 $\pmb{\tilde{x}} = argmin \ L(\pmb{x}, \pmb{\lambda}^k)$. 因此我們有以下這方法:&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Dual ascent iteration method:&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
