@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>3 | Te-Sheng Lin</title>
-    <link>https://teshenglin.github.io/publication_types/3/</link>
-      <atom:link href="https://teshenglin.github.io/publication_types/3/index.xml" rel="self" type="application/rss+xml" />
-    <description>3</description>
+    <title>W.-S. Lin | Te-Sheng Lin</title>
+    <link>https://teshenglin.github.io/authors/w.-s.-lin/</link>
+      <atom:link href="https://teshenglin.github.io/authors/w.-s.-lin/index.xml" rel="self" type="application/rss+xml" />
+    <description>W.-S. Lin</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 27 Jul 2021 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
-      <title>3</title>
-      <link>https://teshenglin.github.io/publication_types/3/</link>
+      <title>W.-S. Lin</title>
+      <link>https://teshenglin.github.io/authors/w.-s.-lin/</link>
     </image>
     
     <item>
@@ -17,14 +17,6 @@
       <link>https://teshenglin.github.io/publication/21_jcp_lclhl/</link>
       <pubDate>Tue, 27 Jul 2021 00:00:00 +0000</pubDate>
       <guid>https://teshenglin.github.io/publication/21_jcp_lclhl/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>A Discontinuity Capturing Shallow Neural Network for Elliptic Interface Problems</title>
-      <link>https://teshenglin.github.io/publication/21_jcp_hll/</link>
-      <pubDate>Thu, 10 Jun 2021 00:00:00 +0000</pubDate>
-      <guid>https://teshenglin.github.io/publication/21_jcp_hll/</guid>
       <description></description>
     </item>
     

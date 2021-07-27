@@ -13,6 +13,14 @@
     </image>
     
     <item>
+      <title>A Shallow Ritz Method for elliptic problems with Singular Sources</title>
+      <link>https://teshenglin.github.io/publication/21_jcp_lclhl/</link>
+      <pubDate>Tue, 27 Jul 2021 00:00:00 +0000</pubDate>
+      <guid>https://teshenglin.github.io/publication/21_jcp_lclhl/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>A Discontinuity Capturing Shallow Neural Network for Elliptic Interface Problems</title>
       <link>https://teshenglin.github.io/publication/21_jcp_hll/</link>
       <pubDate>Thu, 10 Jun 2021 00:00:00 +0000</pubDate>
@@ -860,7 +868,7 @@ scatter(B(1,:), B(2,:), [], (1:n)/n, &#39;fill&#39;)
 &lt;li&gt;高浩恩&lt;/li&gt;
 &lt;li&gt;謝亞衛&lt;/li&gt;
 &lt;li&gt;Chien-Hao Wu (巫健豪)&lt;/li&gt;
-&lt;li&gt;Fang-Yu Lee (李芳妤)&lt;/li&gt;
+&lt;li&gt;Fang-Yu Lee (李芳妤) - graduated 2021-07&lt;/li&gt;
 &lt;li&gt;Yun-Yu Wang (王云郁) - graduated 2020-02&lt;/li&gt;
 &lt;li&gt;Yi-Chen Chen (陳逸蓁) - graduated 2019-08&lt;/li&gt;
 &lt;li&gt;Yi-Ting Chen (陳奕廷) - graduated 2019-07&lt;/li&gt;
@@ -6766,7 +6774,7 @@ $$&lt;/li&gt;
       <pubDate>Wed, 11 Dec 2019 00:00:00 +0000</pubDate>
       <guid>https://teshenglin.github.io/post/2019_numerical_integration/</guid>
       <description>&lt;blockquote&gt;
-&lt;p&gt;在微積分課程裡我們有學到積分的&amp;rsquo;中點法&amp;rsquo;, &amp;lsquo;梯形法&amp;rsquo;以及&amp;rsquo;辛普森法&amp;rsquo;. 這裡我們簡介一些基本概念並且引進高斯積分法.&lt;/p&gt;
+&lt;p&gt;在微積分課程裡我們有學到積分的&#39;中點法&amp;rsquo;, &amp;lsquo;梯形法&#39;以及&#39;辛普森法&amp;rsquo;. 這裡我們簡介一些基本概念並且引進高斯積分法.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h4 id=&#34;goal-任意給定一可積分函數-fx-xin-1-1-我們想要算-int1_-1-fx-dx&#34;&gt;Goal: 任意給定一可積分函數 $f(x)$, $x\in[-1, 1]$, 我們想要算 $\int^1_{-1} f(x) dx$.&lt;/h4&gt;
 &lt;hr&gt;
@@ -6809,13 +6817,13 @@ $$&lt;/li&gt;
 &lt;/ol&gt;
 &lt;hr&gt;
 &lt;blockquote&gt;
-&lt;p&gt;接著我們稍微推廣一下, 並且介紹所謂的&amp;rsquo;高斯積分&amp;rsquo;.&lt;/p&gt;
+&lt;p&gt;接著我們稍微推廣一下, 並且介紹所謂的&#39;高斯積分&amp;rsquo;.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;&lt;strong&gt;Question:&lt;/strong&gt; 假設我們現在想要用函數在 $x=0$ 這個點的值來估算積分, 那係數要取多少會最好?&lt;/p&gt;
 &lt;p&gt;也就是說我們假設
 $$\int^1_{-1}f(x),dx\approx A_0f(0),$$
 其中 $A_0$ 是個常數. 那 $A_0$ 要選哪個數字, 這個積分公式才會算的最準?&lt;/p&gt;
-&lt;p&gt;依照我們之前的想法, 要讓積分式準就是要讓他把多項式算準. 所以我們希望他至少能把常數函數算準. 這樣的話很容易就看出 $A_0=2$, 也就是&amp;rsquo;中點法&amp;rsquo;.&lt;/p&gt;
+&lt;p&gt;依照我們之前的想法, 要讓積分式準就是要讓他把多項式算準. 所以我們希望他至少能把常數函數算準. 這樣的話很容易就看出 $A_0=2$, 也就是&#39;中點法&amp;rsquo;.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Question:&lt;/strong&gt; 假設我們現在想要用函數在 $x=-1$ 以及 $x=1$ 這兩個點的值來估算積分, 那係數要取多少會最好?&lt;/p&gt;
 &lt;p&gt;也就是說我們假設
 $$\int^1_{-1}f(x),dx\approx \alpha f(-1)+\beta f(1),$$
@@ -8271,6 +8279,30 @@ $$
       <link>https://teshenglin.github.io/publication/04_nmpde_lhl/</link>
       <pubDate>Thu, 26 Feb 2004 00:00:00 +0000</pubDate>
       <guid>https://teshenglin.github.io/publication/04_nmpde_lhl/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://teshenglin.github.io/courses/2016fall_colloquium/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://teshenglin.github.io/courses/2016fall_colloquium/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://teshenglin.github.io/courses/2016spring_colloquium/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://teshenglin.github.io/courses/2016spring_colloquium/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://teshenglin.github.io/courses/2019fall_colloquium/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://teshenglin.github.io/courses/2019fall_colloquium/</guid>
       <description></description>
     </item>
     
