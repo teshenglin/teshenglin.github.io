@@ -5,12 +5,240 @@
     <link>https://teshenglin.github.io/categories/linear-algebra/</link>
       <atom:link href="https://teshenglin.github.io/categories/linear-algebra/index.xml" rel="self" type="application/rss+xml" />
     <description>Linear algebra</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 07 Sep 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 13 Aug 2021 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <url>https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
       <title>Linear algebra</title>
       <link>https://teshenglin.github.io/categories/linear-algebra/</link>
     </image>
+    
+    <item>
+      <title>Diffusion maps</title>
+      <link>https://teshenglin.github.io/post/2021_diffusion_maps/</link>
+      <pubDate>Fri, 13 Aug 2021 00:00:00 +0000</pubDate>
+      <guid>https://teshenglin.github.io/post/2021_diffusion_maps/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;擴散映射, 
+&lt;a href=&#34;https://en.wikipedia.org/wiki/Diffusion_map&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Diffusion maps&lt;/a&gt; (以下簡稱 DM), 是個資料分析, 流型學習或是資料降維的工具.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;這裡我們要介紹以 &lt;code&gt;julia&lt;/code&gt; 來做 diffusion maps 降維.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;algorithm---diffusion-maps-embeding&#34;&gt;Algorithm - diffusion maps embeding&lt;/h2&gt;
+&lt;p&gt;先簡單介紹一下作法.&lt;/p&gt;
+&lt;p&gt;假設我們有 $n$ 筆 $d$ 維的資料,
+$$
+\{x_1, x_2, \cdots, x_n\} \in R^d.
+$$&lt;/p&gt;
+&lt;hr&gt;
+&lt;h4 id=&#34;1-affinity-matrix-k&#34;&gt;1. Affinity matrix $K$&lt;/h4&gt;
+&lt;p&gt;我們需要先定一個 $K$ 矩陣, $K_{ij}=k(x_{i},x_{j})$, 一般而言我們使用 Guassian kernel
+$$
+k(x,y) = e^{-\frac{\lVert x-y \rVert^2}{\sigma^2}},
+$$
+其中 $\sigma$ 是個常數. 這樣造出來的 $K$ 矩陣會是個 $n\times n$ 對稱半正定的矩陣.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h4 id=&#34;2-normalized-affinity-matrix-q&#34;&gt;2. Normalized affinity matrix $Q$&lt;/h4&gt;
+&lt;p&gt;接著我們要定 diffusion matrix $P$, 其定義為
+$$
+P=D^{-1}K,
+$$
+其中 $D$ 是個只有對角線有值的矩陣, 其元素為相對應 $K$ 矩陣的 rowsum, $D_{ii} = \sum^n_{j=1} K_{ij}$.
+因此可以知道 $P$ 矩陣其實就是將 $K$ 矩陣的每個 row 做 normalize 的動作, 使其 rowsum 等於 $1$.&lt;/p&gt;
+&lt;p&gt;$P$ 這矩陣可看成是個機率矩陣, 其第 $i$ 個 row 表示從 $x_{i}$ 這個點跳到其他點的機率分佈.&lt;/p&gt;
+&lt;p&gt;接著我們考慮 $Q$ 矩陣, 定義為
+$$
+Q=D^{-\frac{1}{2}}KD^{-\frac{1}{2}}.
+$$
+我們可以很輕易發現 $P$ 以及 $Q$ 兩個矩陣有完全相同的 eigenvalues, 而 $P$ 的 eigenvectors 是
+$$
+v = D^{-1/2}v_Q,
+$$
+其中 $v_Q$ 是 $Q$ 的 eigenvector.&lt;/p&gt;
+&lt;p&gt;另一個重要觀察是 $Q$ 矩陣跟 $K$ 一樣是對稱半正定的矩陣, 因此它的 eigenvalues 都非負, 而且他的 eigenvalues 跟 singular values 會完全一模一樣.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h4 id=&#34;3-求出-p-矩陣的-eigenvalues-跟-eigenvectors&#34;&gt;3. 求出 $P$ 矩陣的 eigenvalues 跟 eigenvectors&lt;/h4&gt;
+&lt;p&gt;先將 $Q$ 的 eigenvalues 跟 eigenvectors 都找出來, 接著 $P$ 的 eigenvalues 跟 eigenvectors 就依照上面的公式可以輕易得到.&lt;/p&gt;
+&lt;p&gt;我們令 $P$ 的 eigenvalues 跟 eigenvectors 分別為 $\lambda_i$ 跟 $\psi_i$, $1\le i\le n$.&lt;/p&gt;
+&lt;p&gt;需要注意的是, $\lambda_1=1$ 並且 $\psi_1$ 是一個常數向量, 因為我們要拿的是從第二個開始.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h4 id=&#34;4-define-diffusion-map-y&#34;&gt;4. Define diffusion map $Y$&lt;/h4&gt;
+&lt;p&gt;接著我們定義 $Y$ 矩陣為
+$$
+Y = \left[\lambda_2\psi_2, \lambda_3\psi_3, \cdots, \lambda_n\psi_n\right],
+$$
+這是個 $n\times (n-1)$ 的矩陣.&lt;/p&gt;
+&lt;p&gt;如果我們想要將原始資料投射到 $k$ 維, $k \le (n-1)$, 那我們就只要到第 $k+1$ 個 eigenvector 就好. 比如說要投影到三維, 我們只需要取
+$$
+Y = \left[\lambda_2\psi_2, \lambda_3\psi_3, \lambda_4\psi_4\right].
+$$
+而 diffusion maps embedding 的每個點就是這個 $Y$ 矩陣的 row, 也就是 $y_i = Y(i,:)$.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;implementation-in-julia&#34;&gt;Implementation in &lt;code&gt;julia&lt;/code&gt;&lt;/h2&gt;
+&lt;p&gt;接著我們就可以來看要怎樣以 &lt;code&gt;julia&lt;/code&gt; 來做 diffusion maps.&lt;/p&gt;
+&lt;p&gt;我們需要以下幾個 packages:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;using&lt;/span&gt; Plots
+&lt;span style=&#34;color:#66d9ef&#34;&gt;using&lt;/span&gt; Distances
+&lt;span style=&#34;color:#66d9ef&#34;&gt;using&lt;/span&gt; LinearAlgebra
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
+&lt;p&gt;以下例子為一個 spiral curve, 我們想要看經過 diffusion maps 的投射到二或三維後會長什麼樣子.&lt;/p&gt;
+&lt;p&gt;我們先把 spiral curve 上面的點造出來 (取 $300$ 個點)&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# generating the data - a spiral curve&lt;/span&gt;
+&lt;span style=&#34;color:#75715e&#34;&gt;# n: number of sampling&lt;/span&gt;
+n &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;300&lt;/span&gt;;
+
+theta &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; range(&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;,stop&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;6&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;pi,length&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;n);
+r &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; range(&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;,stop&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;, length&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;n);
+&lt;span style=&#34;color:#75715e&#34;&gt;# x and y-coordinates&lt;/span&gt;
+x &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; r&lt;span style=&#34;color:#f92672&#34;&gt;.*&lt;/span&gt;cos&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;(theta);
+y &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; r&lt;span style=&#34;color:#f92672&#34;&gt;.*&lt;/span&gt;sin&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;(theta);
+&lt;span style=&#34;color:#75715e&#34;&gt;# X is a n-by-2 data matrix&lt;/span&gt;
+X &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; [x y];
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
+&lt;p&gt;畫出來看看原始 data 長怎樣. 我們照順序將點標為藍色, 紅色以及綠色.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;plot(reshape(X[&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;], &lt;span style=&#34;color:#ae81ff&#34;&gt;100&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;), reshape(X[&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;], &lt;span style=&#34;color:#ae81ff&#34;&gt;100&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;), aspect_ratio&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;:equal&lt;/span&gt;, leg&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;false)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://teshenglin.github.io/post/figs/DM_spiral_01.png&#34; &gt;
+
+
+  &lt;img src=&#34;https://teshenglin.github.io/post/figs/DM_spiral_01.png&#34; alt=&#34;&#34; width=&#34;500px&#34; &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;hr&gt;
+&lt;h4 id=&#34;1-affinity-matrix-k-1&#34;&gt;1. Affinity matrix $K$&lt;/h4&gt;
+&lt;p&gt;先來造出 $K$ 矩陣:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;E &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; pairwise(Euclidean(), X, dims&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;);
+sigma &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0.1&lt;/span&gt;;
+K &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; exp&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;(&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;(E&lt;span style=&#34;color:#f92672&#34;&gt;.^&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;)&lt;span style=&#34;color:#f92672&#34;&gt;./&lt;/span&gt;(sigma&lt;span style=&#34;color:#f92672&#34;&gt;^&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;));
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
+&lt;h4 id=&#34;2-normalized-affinity-matrix-q-1&#34;&gt;2. Normalized affinity matrix $Q$&lt;/h4&gt;
+&lt;p&gt;接著造出 $Q$ 矩陣, 並求出其 eigenvalues 跟 eigenvectors.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Q = zeros(n,n);
+d_sq = zeros(n);
+for ii = 1:n
+    d_sq[ii] = sqrt(sum(K[ii,:]));
+end
+for ii = 1:n
+    for jj = 1:n
+        Q[ii,jj] = K[ii,jj]/(d_sq[ii]*d_sq[jj]);
+    end
+end
+U,S,V = svd(Q);
+&lt;/code&gt;&lt;/pre&gt;&lt;hr&gt;
+&lt;h4 id=&#34;3-求出-p-矩陣的-eigenvalues-跟-eigenvectors-1&#34;&gt;3. 求出 $P$ 矩陣的 eigenvalues 跟 eigenvectors&lt;/h4&gt;
+&lt;p&gt;$P$ 矩陣的 eigenvalues 跟 $Q$ 一樣, eigenvectors 也可以依公式得到:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; ii &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; n
+    V[ii,&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;] &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; V[ii,&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;]&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;d_sq[ii];
+&lt;span style=&#34;color:#66d9ef&#34;&gt;end&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
+&lt;p&gt;將 eigenvalues 畫出來看看. 左圖是第 $2$ 到第 $11$ 個, 右圖則是以 semilogy 畫出全部的 eigenvalues. 可以看出 eigenvalues 遞減的非常快, 所以其實 embedding 不需要取到全部 $(n-1)$ 維.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;p1 &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; scatter(S[&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;11&lt;/span&gt;], title&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;eigenvalues 2:11&amp;#34;&lt;/span&gt;, leg&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;false);
+p2 &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; plot(log&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;(S), title&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;eigenvalues in log&amp;#34;&lt;/span&gt;, leg&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;false);
+plot(p1, p2, layout&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;, fmt&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;:png&lt;/span&gt;)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://teshenglin.github.io/post/figs/DM_spiral_02.png&#34; &gt;
+
+
+  &lt;img src=&#34;https://teshenglin.github.io/post/figs/DM_spiral_02.png&#34; alt=&#34;&#34; width=&#34;500px&#34; &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;hr&gt;
+&lt;h4 id=&#34;4-define-diffusion-map-y-1&#34;&gt;4. Define diffusion map $Y$&lt;/h4&gt;
+&lt;p&gt;最後我們定義 embedding $Y$:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;Y &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; zeros(n,&lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;);
+&lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; ii &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;
+    Y[&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;,ii] &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; V[&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;,ii&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;]&lt;span style=&#34;color:#f92672&#34;&gt;.*&lt;/span&gt;S[ii&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;];
+&lt;span style=&#34;color:#66d9ef&#34;&gt;end&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;我們知道 $Y$ 的每個 row 就是這個 embedding 的座標.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;我們將 embedding 畫出來看看. 左圖是 embed 到二維, 右圖則是 embed 到三維.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;p1 &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; plot(reshape(Y[&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;], &lt;span style=&#34;color:#ae81ff&#34;&gt;100&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;), reshape(Y[&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;], &lt;span style=&#34;color:#ae81ff&#34;&gt;100&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;), title&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;2D&amp;#34;&lt;/span&gt;, leg&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;false)
+p2 &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; plot(reshape(Y[&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;], &lt;span style=&#34;color:#ae81ff&#34;&gt;100&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;), reshape(Y[&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;], &lt;span style=&#34;color:#ae81ff&#34;&gt;100&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;), reshape(Y[&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;], &lt;span style=&#34;color:#ae81ff&#34;&gt;100&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;), title&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;3D&amp;#34;&lt;/span&gt;, leg&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;false)
+plot(p1, p2, layout&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;), fmt&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;:png&lt;/span&gt;)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;我們一樣照順序將點標為藍色, 紅色以及綠色. 有趣的是, 我們發現這個 embedding 將整個 spiral curve &lt;strong&gt;打開了&lt;/strong&gt;. 因此, 經由 diffusion maps 投射之後我們比較榮以可以看出點資料真正在整個曲線上彼此間距離的遠近.&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://teshenglin.github.io/post/figs/DM_spiral_03.png&#34; &gt;
+
+
+  &lt;img src=&#34;https://teshenglin.github.io/post/figs/DM_spiral_03.png&#34; alt=&#34;&#34; width=&#34;500px&#34; &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;hr&gt;
+&lt;h2 id=&#34;extension&#34;&gt;Extension&lt;/h2&gt;
+&lt;p&gt;Diffusion maps 也常被拿來搭配 
+&lt;a href=&#34;https://en.wikipedia.org/wiki/K-means_clustering&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;k-means&lt;/a&gt; 做成分群演算法, 算是 
+&lt;a href=&#34;https://en.wikipedia.org/wiki/Spectral_clustering&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;spectral clustering&lt;/a&gt; 的其中一種.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Diffusion maps 的 &lt;code&gt;python&lt;/code&gt;, &lt;code&gt;julia&lt;/code&gt; 以及 &lt;code&gt;matlab&lt;/code&gt; 程式都可以在這裡找到: 
+&lt;a href=&#34;https://github.com/teshenglin/diffusion_maps&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Github - teshenglin/diffusion_maps&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+</description>
+    </item>
     
     <item>
       <title>主成分分析 - 2</title>
