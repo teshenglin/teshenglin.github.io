@@ -7,7 +7,7 @@
     <description>黃仕茵</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 21 Jun 2020 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <url>https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
       <title>黃仕茵</title>
       <link>https://teshenglin.github.io/authors/%E9%BB%83%E4%BB%95%E8%8C%B5/</link>
     </image>
@@ -302,8 +302,8 @@ Chinese version:
 &lt;p&gt;The tangent line approximation $L(x)$ is the best first-degree (linear) approximation to $f(x)$ near $x=a$ because $f(x)$ and $L(x)$ have the same rate of change (derivative) at $x=a$. For a better approximation than a linear one, let&amp;rsquo;s try a second-degree (quadratic) approximation $P(x)$. In other words, we approximate a curve by a parabola instead of a straight line. To make sure that the approximation is a good one, we stipulate the following:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;$P$ and $f$ should have the same value at $a$. ($P(a)=f(a)$)&lt;/li&gt;
-&lt;li&gt;$P$ and $f$ should have the same rate of change at $a$. ($P&#39;(a)=f&#39;(a)$)&lt;/li&gt;
-&lt;li&gt;The slopes of $P$ and $f$ should change at the same rate at $a$. ($P&#39;&#39;(a)=f&#39;&#39;(a)$)&lt;/li&gt;
+&lt;li&gt;$P$ and $f$ should have the same rate of change at $a$. ($P&amp;rsquo;(a)=f&amp;rsquo;(a)$)&lt;/li&gt;
+&lt;li&gt;The slopes of $P$ and $f$ should change at the same rate at $a$. ($P&amp;rsquo;&#39;(a)=f&amp;rsquo;&#39;(a)$)&lt;/li&gt;
 &lt;/ol&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Question 1：&lt;/strong&gt; Find the quadratic approximation $P(x)=A+Bx+Cx^{2}$ to the function $f(x)=cosx$ that satisfies conditions (i), (ii),and (iii) with $a=0$ . Graph $P$, $f$ and the linear approximation $L(x)=1$ on a common screen. Comment on how well the functions $P$ and $L$ approximate $f$.&lt;/p&gt;
@@ -382,13 +382,13 @@ P(x)=A+B(x-a)+C(x-a)^{2}。
 $$
 Show that the quadratic function that satisfies conditions (i), (ii), and (iii) is
 $$
-P(x)=f(a)+f&#39;(a)(x-a)+\frac{1}{2} f&#39;&#39;(a)(x-a)^{2}。
+P(x)=f(a)+f&amp;rsquo;(a)(x-a)+\frac{1}{2} f&amp;rsquo;&#39;(a)(x-a)^{2}。
 $$&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
 &lt;!-- raw HTML omitted --&gt;
 &lt;!-- raw HTML omitted --&gt;
 &lt;p&gt;$$
-P(x)=f(a)+f&#39;(a)(x-a)+\frac{1}{2} f&#39;&#39;(a)(x-a)^{2}.
+P(x)=f(a)+f&amp;rsquo;(a)(x-a)+\frac{1}{2} f&amp;rsquo;&#39;(a)(x-a)^{2}.
 $$&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Question 4:&lt;/strong&gt; Find the quadratic approximation to $F(x)=\sqrt{x+3}\quad$ near $a=1$. Graph $f$, the quadratic approximation, and the linear approximation from Example 3.10.2 on a common screen. What do you conclude?&lt;/p&gt;
@@ -437,7 +437,7 @@ $$
 Show that these conditions are satisfied if $c_{k}=\frac{f^{(k)}(a)}{k!}$.&lt;/p&gt;
 &lt;p&gt;The resulting polynomial:
 $$
-T_{n}(x)=f(a)+f&#39;(a)(x-a)+\frac{f&#39;&#39;(a)}{2!} (x-a)^{2}+&amp;hellip;+\frac{f^{(n)}(a)}{n!}(x-a)^{n}。
+T_{n}(x)=f(a)+f&amp;rsquo;(a)(x-a)+\frac{f&amp;rsquo;&#39;(a)}{2!} (x-a)^{2}+&amp;hellip;+\frac{f^{(n)}(a)}{n!}(x-a)^{n}。
 $$
 is called the nth-degree Taylor polynomial of $f$ centered at $a$.&lt;/p&gt;
 &lt;!-- raw HTML omitted --&gt;
