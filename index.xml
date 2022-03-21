@@ -5,12 +5,28 @@
     <link>https://teshenglin.github.io/</link>
       <atom:link href="https://teshenglin.github.io/index.xml" rel="self" type="application/rss+xml" />
     <description>Te-Sheng Lin</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 27 Feb 2022 00:00:00 +0800</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Thu, 17 Mar 2022 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
       <title>Te-Sheng Lin</title>
       <link>https://teshenglin.github.io/</link>
     </image>
+    
+    <item>
+      <title>Spontaneous locomotion of phoretic particles in three dimensions</title>
+      <link>https://teshenglin.github.io/publication/22_prf_hlrm/</link>
+      <pubDate>Thu, 17 Mar 2022 00:00:00 +0000</pubDate>
+      <guid>https://teshenglin.github.io/publication/22_prf_hlrm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A shallow physics-informed neural network for solving partial differential equations on surfaces</title>
+      <link>https://teshenglin.github.io/publication/22_jcp_hsll/</link>
+      <pubDate>Fri, 04 Mar 2022 00:00:00 +0000</pubDate>
+      <guid>https://teshenglin.github.io/publication/22_jcp_hsll/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Summer Research Internship</title>
@@ -313,9 +329,9 @@ plot(p1, p2, layout&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;(&lt;
     
     <item>
       <title>Thin liquid films in a funnel</title>
-      <link>https://teshenglin.github.io/publication/20_ldk/</link>
+      <link>https://teshenglin.github.io/publication/21_jfm_ldk/</link>
       <pubDate>Wed, 11 Aug 2021 00:00:00 +0000</pubDate>
-      <guid>https://teshenglin.github.io/publication/20_ldk/</guid>
+      <guid>https://teshenglin.github.io/publication/21_jfm_ldk/</guid>
       <description></description>
     </item>
     
@@ -1194,7 +1210,7 @@ scatter(B(1,:), B(2,:), [], (1:n)/n, &#39;fill&#39;)
 &lt;li&gt;鄭怡琳&lt;/li&gt;
 &lt;li&gt;Hau-An Kao (高浩恩) - graduated 2022-02&lt;/li&gt;
 &lt;li&gt;謝亞衛&lt;/li&gt;
-&lt;li&gt;Fang-Yu Lee (李芳妤) - graduated 2021-07&lt;/li&gt;
+&lt;li&gt;Fang-Yu Lee (李芳妤) (Co-advised with Prof. Chiun-Chang Li) - graduated 2021-07&lt;/li&gt;
 &lt;li&gt;Chien-Hao Wu (巫健豪)&lt;/li&gt;
 &lt;li&gt;Yun-Yu Wang (王云郁) - graduated 2020-02&lt;/li&gt;
 &lt;li&gt;Yi-Chen Chen (陳逸蓁) - graduated 2019-08&lt;/li&gt;

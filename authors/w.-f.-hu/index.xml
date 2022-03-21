@@ -5,12 +5,28 @@
     <link>https://teshenglin.github.io/authors/w.-f.-hu/</link>
       <atom:link href="https://teshenglin.github.io/authors/w.-f.-hu/index.xml" rel="self" type="application/rss+xml" />
     <description>W.-F. Hu</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 27 Jul 2021 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Thu, 17 Mar 2022 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
       <title>W.-F. Hu</title>
       <link>https://teshenglin.github.io/authors/w.-f.-hu/</link>
     </image>
+    
+    <item>
+      <title>Spontaneous locomotion of phoretic particles in three dimensions</title>
+      <link>https://teshenglin.github.io/publication/22_prf_hlrm/</link>
+      <pubDate>Thu, 17 Mar 2022 00:00:00 +0000</pubDate>
+      <guid>https://teshenglin.github.io/publication/22_prf_hlrm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A shallow physics-informed neural network for solving partial differential equations on surfaces</title>
+      <link>https://teshenglin.github.io/publication/22_jcp_hsll/</link>
+      <pubDate>Fri, 04 Mar 2022 00:00:00 +0000</pubDate>
+      <guid>https://teshenglin.github.io/publication/22_jcp_hsll/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>A Shallow Ritz Method for elliptic problems with Singular Sources</title>
