@@ -13,6 +13,14 @@
     </image>
     
     <item>
+      <title>A Shallow Ritz Method for elliptic problems with Singular Sources</title>
+      <link>https://teshenglin.github.io/publication/22_jcp_lclhl/</link>
+      <pubDate>Fri, 01 Jul 2022 00:00:00 +0000</pubDate>
+      <guid>https://teshenglin.github.io/publication/22_jcp_lclhl/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Spontaneous locomotion of phoretic particles in three dimensions</title>
       <link>https://teshenglin.github.io/publication/22_prf_hlrm/</link>
       <pubDate>Thu, 17 Mar 2022 00:00:00 +0000</pubDate>
@@ -37,18 +45,10 @@
     </item>
     
     <item>
-      <title>A Shallow Ritz Method for elliptic problems with Singular Sources</title>
-      <link>https://teshenglin.github.io/publication/21_jcp_lclhl/</link>
-      <pubDate>Tue, 27 Jul 2021 00:00:00 +0000</pubDate>
-      <guid>https://teshenglin.github.io/publication/21_jcp_lclhl/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>A Discontinuity Capturing Shallow Neural Network for Elliptic Interface Problems</title>
-      <link>https://teshenglin.github.io/publication/21_jcp_hll/</link>
+      <link>https://teshenglin.github.io/publication/22_jcp_hll/</link>
       <pubDate>Thu, 10 Jun 2021 00:00:00 +0000</pubDate>
-      <guid>https://teshenglin.github.io/publication/21_jcp_hll/</guid>
+      <guid>https://teshenglin.github.io/publication/22_jcp_hll/</guid>
       <description></description>
     </item>
     

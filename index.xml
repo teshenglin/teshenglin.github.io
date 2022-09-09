@@ -13,6 +13,14 @@
     </image>
     
     <item>
+      <title>A Shallow Ritz Method for elliptic problems with Singular Sources</title>
+      <link>https://teshenglin.github.io/publication/22_jcp_lclhl/</link>
+      <pubDate>Fri, 01 Jul 2022 00:00:00 +0000</pubDate>
+      <guid>https://teshenglin.github.io/publication/22_jcp_lclhl/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>2022 Summer Research Internship</title>
       <link>https://teshenglin.github.io/courses/2022_summer_research/</link>
       <pubDate>Wed, 04 May 2022 00:00:00 +0800</pubDate>
@@ -24,6 +32,8 @@
 &lt;a href=&#34;https://drive.google.com/file/d/1U7er4LhCEyp8abvv-bezEYjhHGbG4sVU/view?usp=sharing&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;海報&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;
 &lt;a href=&#34;https://drive.google.com/file/d/1BhapYq6SLe-7lzKSwpeSfCfDH72_AfWG/view?usp=sharing&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;研究實習辦法&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://hackmd.io/OUwIZ_7YQWW4SUJtFHykJQ&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;暑期專題研究成果海報展&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr&gt;
 &lt;h3 id=&#34;各研究團隊說明&#34;&gt;各研究團隊說明&lt;/h3&gt;
@@ -441,18 +451,10 @@ plot(p1, p2, layout&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;(&lt;
     </item>
     
     <item>
-      <title>A Shallow Ritz Method for elliptic problems with Singular Sources</title>
-      <link>https://teshenglin.github.io/publication/21_jcp_lclhl/</link>
-      <pubDate>Tue, 27 Jul 2021 00:00:00 +0000</pubDate>
-      <guid>https://teshenglin.github.io/publication/21_jcp_lclhl/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>A Discontinuity Capturing Shallow Neural Network for Elliptic Interface Problems</title>
-      <link>https://teshenglin.github.io/publication/21_jcp_hll/</link>
+      <link>https://teshenglin.github.io/publication/22_jcp_hll/</link>
       <pubDate>Thu, 10 Jun 2021 00:00:00 +0000</pubDate>
-      <guid>https://teshenglin.github.io/publication/21_jcp_hll/</guid>
+      <guid>https://teshenglin.github.io/publication/22_jcp_hll/</guid>
       <description></description>
     </item>
     
@@ -1301,12 +1303,12 @@ scatter(B(1,:), B(2,:), [], (1:n)/n, &#39;fill&#39;)
 &lt;ul&gt;
 &lt;li&gt;賴冠宇&lt;/li&gt;
 &lt;li&gt;鍾俊儒&lt;/li&gt;
-&lt;li&gt;何禹潔&lt;/li&gt;
-&lt;li&gt;曾堂軒&lt;/li&gt;
-&lt;li&gt;楊珈禎&lt;/li&gt;
-&lt;li&gt;鄭怡琳&lt;/li&gt;
+&lt;li&gt;Tang-Syuan Tseng (曾堂軒) - graduated 2022-08&lt;/li&gt;
+&lt;li&gt;Chia-Chen Yang (楊珈禎) - graduated 2022-08&lt;/li&gt;
+&lt;li&gt;Yu-Jie Ho (何禹潔) - graduated 2022-07&lt;/li&gt;
+&lt;li&gt;Yi-Lin Zheng (鄭怡琳) - graduated 2022-07&lt;/li&gt;
+&lt;li&gt;Ya-Wei Hseih (謝亞衛) - graduated 2022-07&lt;/li&gt;
 &lt;li&gt;Hau-An Kao (高浩恩) - graduated 2022-02&lt;/li&gt;
-&lt;li&gt;謝亞衛&lt;/li&gt;
 &lt;li&gt;Fang-Yu Lee (李芳妤) (Co-advised with Prof. Chiun-Chang Li) - graduated 2021-07&lt;/li&gt;
 &lt;li&gt;Chien-Hao Wu (巫健豪)&lt;/li&gt;
 &lt;li&gt;Yun-Yu Wang (王云郁) - graduated 2020-02&lt;/li&gt;
