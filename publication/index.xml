@@ -13,9 +13,17 @@
     </image>
     
     <item>
+      <title>A Discontinuity Capturing Shallow Neural Network for Elliptic Interface Problems</title>
+      <link>https://teshenglin.github.io/publication/22_jcp_hll/</link>
+      <pubDate>Thu, 08 Sep 2022 00:00:00 +0000</pubDate>
+      <guid>https://teshenglin.github.io/publication/22_jcp_hll/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>A Shallow Ritz Method for elliptic problems with Singular Sources</title>
       <link>https://teshenglin.github.io/publication/22_jcp_lclhl/</link>
-      <pubDate>Fri, 01 Jul 2022 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 22 Aug 2022 00:00:00 +0000</pubDate>
       <guid>https://teshenglin.github.io/publication/22_jcp_lclhl/</guid>
       <description></description>
     </item>
@@ -41,14 +49,6 @@
       <link>https://teshenglin.github.io/publication/21_jfm_ldk/</link>
       <pubDate>Wed, 11 Aug 2021 00:00:00 +0000</pubDate>
       <guid>https://teshenglin.github.io/publication/21_jfm_ldk/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>A Discontinuity Capturing Shallow Neural Network for Elliptic Interface Problems</title>
-      <link>https://teshenglin.github.io/publication/22_jcp_hll/</link>
-      <pubDate>Thu, 10 Jun 2021 00:00:00 +0000</pubDate>
-      <guid>https://teshenglin.github.io/publication/22_jcp_hll/</guid>
       <description></description>
     </item>
     

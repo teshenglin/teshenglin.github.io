@@ -13,9 +13,17 @@
     </image>
     
     <item>
+      <title>A Discontinuity Capturing Shallow Neural Network for Elliptic Interface Problems</title>
+      <link>https://teshenglin.github.io/publication/22_jcp_hll/</link>
+      <pubDate>Thu, 08 Sep 2022 00:00:00 +0000</pubDate>
+      <guid>https://teshenglin.github.io/publication/22_jcp_hll/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>A Shallow Ritz Method for elliptic problems with Singular Sources</title>
       <link>https://teshenglin.github.io/publication/22_jcp_lclhl/</link>
-      <pubDate>Fri, 01 Jul 2022 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 22 Aug 2022 00:00:00 +0000</pubDate>
       <guid>https://teshenglin.github.io/publication/22_jcp_lclhl/</guid>
       <description></description>
     </item>
@@ -447,14 +455,6 @@ plot(p1, p2, layout&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;(&lt;
       <link>https://teshenglin.github.io/publication/21_jfm_ldk/</link>
       <pubDate>Wed, 11 Aug 2021 00:00:00 +0000</pubDate>
       <guid>https://teshenglin.github.io/publication/21_jfm_ldk/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>A Discontinuity Capturing Shallow Neural Network for Elliptic Interface Problems</title>
-      <link>https://teshenglin.github.io/publication/22_jcp_hll/</link>
-      <pubDate>Thu, 10 Jun 2021 00:00:00 +0000</pubDate>
-      <guid>https://teshenglin.github.io/publication/22_jcp_hll/</guid>
       <description></description>
     </item>
     
@@ -1171,6 +1171,16 @@ scatter(B(1,:), B(2,:), [], (1:n)/n, &#39;fill&#39;)
       <pubDate>Mon, 29 Jun 2020 00:00:00 +0800</pubDate>
       <guid>https://teshenglin.github.io/courses/taught/</guid>
       <description>&lt;hr&gt;
+&lt;h2 id=&#34;2023-spring&#34;&gt;2023 Spring&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Computational Mathematics&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Applied Mathematics Methods&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;2022-fall&#34;&gt;2022 Fall&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Calculus (1)&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
 &lt;h2 id=&#34;2022-spring&#34;&gt;2022 Spring&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Calculus (2):&lt;/strong&gt; 
@@ -1178,7 +1188,6 @@ scatter(B(1,:), B(2,:), [], (1:n)/n, &#39;fill&#39;)
 &lt;li&gt;&lt;strong&gt;Computational Mathematics&lt;/strong&gt; 
 &lt;a href=&#34;https://tulip-stamp-c53.notion.site/Computational-Mathematics-3a67f78f167f4bbf950b9908be2811f3&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Notion&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;hr&gt;
 &lt;h2 id=&#34;2021-fall&#34;&gt;2021 Fall&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Calculus (1):&lt;/strong&gt; 
