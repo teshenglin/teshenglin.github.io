@@ -13,6 +13,38 @@
     </image>
     
     <item>
+      <title>A Reduced Model for a Phoretic Swimmer</title>
+      <link>https://teshenglin.github.io/publication/23_jfm_frhlrm/</link>
+      <pubDate>Fri, 28 Oct 2022 00:00:00 +0000</pubDate>
+      <guid>https://teshenglin.github.io/publication/23_jfm_frhlrm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>On the transition to dripping of an inverted liquid film</title>
+      <link>https://teshenglin.github.io/publication/23_jfm_blt/</link>
+      <pubDate>Fri, 28 Oct 2022 00:00:00 +0000</pubDate>
+      <guid>https://teshenglin.github.io/publication/23_jfm_blt/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A cusp-capturing PINN for elliptic interface problems</title>
+      <link>https://teshenglin.github.io/publication/23_jcp_tlhl/</link>
+      <pubDate>Mon, 17 Oct 2022 00:00:00 +0000</pubDate>
+      <guid>https://teshenglin.github.io/publication/23_jcp_tlhl/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A hybrid neural-network and finite-difference method for solving Poisson equation with jump discontinuities on interfaces</title>
+      <link>https://teshenglin.github.io/publication/23_jcp_hltl/</link>
+      <pubDate>Tue, 11 Oct 2022 00:00:00 +0000</pubDate>
+      <guid>https://teshenglin.github.io/publication/23_jcp_hltl/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>A Discontinuity Capturing Shallow Neural Network for Elliptic Interface Problems</title>
       <link>https://teshenglin.github.io/publication/22_jcp_hll/</link>
       <pubDate>Thu, 08 Sep 2022 00:00:00 +0000</pubDate>

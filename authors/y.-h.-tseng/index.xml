@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Y.-H. Tseng | Te-Sheng Lin</title>
+    <link>https://teshenglin.github.io/authors/y.-h.-tseng/</link>
+      <atom:link href="https://teshenglin.github.io/authors/y.-h.-tseng/index.xml" rel="self" type="application/rss+xml" />
+    <description>Y.-H. Tseng</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 17 Oct 2022 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>Y.-H. Tseng</title>
+      <link>https://teshenglin.github.io/authors/y.-h.-tseng/</link>
+    </image>
+    
+    <item>
+      <title>A cusp-capturing PINN for elliptic interface problems</title>
+      <link>https://teshenglin.github.io/publication/23_jcp_tlhl/</link>
+      <pubDate>Mon, 17 Oct 2022 00:00:00 +0000</pubDate>
+      <guid>https://teshenglin.github.io/publication/23_jcp_tlhl/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A hybrid neural-network and finite-difference method for solving Poisson equation with jump discontinuities on interfaces</title>
+      <link>https://teshenglin.github.io/publication/23_jcp_hltl/</link>
+      <pubDate>Tue, 11 Oct 2022 00:00:00 +0000</pubDate>
+      <guid>https://teshenglin.github.io/publication/23_jcp_hltl/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
