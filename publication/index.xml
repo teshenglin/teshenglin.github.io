@@ -13,10 +13,18 @@
     </image>
     
     <item>
+      <title>A shallow physics-informed neural network for solving partial differential equations on surfaces</title>
+      <link>https://teshenglin.github.io/publication/23_jcp_hsll/</link>
+      <pubDate>Fri, 20 Jan 2023 00:00:00 +0000</pubDate>
+      <guid>https://teshenglin.github.io/publication/23_jcp_hsll/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>A Reduced Model for a Phoretic Swimmer</title>
-      <link>https://teshenglin.github.io/publication/23_jfm_frhlrm/</link>
+      <link>https://teshenglin.github.io/publication/22_jfm_frhlrm/</link>
       <pubDate>Fri, 28 Oct 2022 00:00:00 +0000</pubDate>
-      <guid>https://teshenglin.github.io/publication/23_jfm_frhlrm/</guid>
+      <guid>https://teshenglin.github.io/publication/22_jfm_frhlrm/</guid>
       <description></description>
     </item>
     
@@ -65,14 +73,6 @@
       <link>https://teshenglin.github.io/publication/22_prf_hlrm/</link>
       <pubDate>Thu, 17 Mar 2022 00:00:00 +0000</pubDate>
       <guid>https://teshenglin.github.io/publication/22_prf_hlrm/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>A shallow physics-informed neural network for solving partial differential equations on surfaces</title>
-      <link>https://teshenglin.github.io/publication/22_jcp_hsll/</link>
-      <pubDate>Fri, 04 Mar 2022 00:00:00 +0000</pubDate>
-      <guid>https://teshenglin.github.io/publication/22_jcp_hsll/</guid>
       <description></description>
     </item>
     

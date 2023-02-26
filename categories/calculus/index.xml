@@ -6475,6 +6475,7 @@ $$
 \lim_{x\to\infty} [f(x) - mx] = b.
 $$
 利用這個式子就可以找到斜漸近線中的第二個參數 $b$.&lt;/p&gt;
+&lt;hr&gt;
 &lt;p&gt;我們以上面的 $g(x)$ 函數為例來找一下它的斜漸近線.&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;
@@ -6520,6 +6521,30 @@ $$
 \lim_{x\to\infty} [f(x) - (mx+b)] = 0.
 $$
 如果是對的, 你就得到它了.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;section-14-final-remark&#34;&gt;Section 1.4: Final remark&lt;/h2&gt;
+&lt;p&gt;在直接法理需要注意一下的是以下這個極限
+$$
+\lim_{x\to\infty} [f(x) - mx].
+$$
+這個極限一定要存在. 不然就沒有斜漸近線.&lt;/p&gt;
+&lt;p&gt;有一個有名的錯誤敘述:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;(&lt;em&gt;這是錯的&lt;/em&gt;) 若
+$$
+\lim_{x\to\infty} \frac{f(x)}{x} = m,
+$$
+則 $f(x)$ 在 $x\to\infty$ 有一條斜漸近線.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;一個簡單的反例是 $f(x)=x+\ln(x)$. 則
+$$
+\lim_{x\to\infty} \frac{f(x)}{x} = \lim_{x\to\infty} \frac{x + \ln(x)}{x} = 1.
+$$
+繼續找常數 $b$ 可以發現
+$$
+\lim_{x\to\infty} f(x)-x = \infty.
+$$
+所以沒有斜漸近線.&lt;/p&gt;
 &lt;hr&gt;
 </description>
     </item>
