@@ -218,8 +218,8 @@
   
 
   <link rel="manifest" href="/index.webmanifest">
-  <link rel="icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_2.png">
-  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_2.png">
+  <link rel="icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_3.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_3.png">
 
   <link rel="canonical" href="https://teshenglin.github.io/post/2020_cal_s3p4_ch/">
 
@@ -237,8 +237,8 @@
   <meta property="og:site_name" content="Te-Sheng Lin">
   <meta property="og:url" content="https://teshenglin.github.io/post/2020_cal_s3p4_ch/">
   <meta property="og:title" content="Sec.3.4 - 飛行員應該何時開始下降高度? | Te-Sheng Lin">
-  <meta property="og:description" content="Applied Project in Sec.3.4, Calculus by Stewart 英文版請見 Where should a pilot start descent? 上圖是一台飛行器的降落軌跡近似圖，它必須滿足以下條件： 巡航高度為$h$，而飛行器在與著陸地點(同時也是圖"><meta property="og:image" content="https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png">
-  <meta property="twitter:image" content="https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png"><meta property="og:locale" content="en-us">
+  <meta property="og:description" content="Applied Project in Sec.3.4, Calculus by Stewart 英文版請見 Where should a pilot start descent? 上圖是一台飛行器的降落軌跡近似圖，它必須滿足以下條件： 巡航高度為$h$，而飛行器在與著陸地點(同時也是圖"><meta property="og:image" content="https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png">
+  <meta property="twitter:image" content="https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png"><meta property="og:locale" content="en-us">
   
     
       <meta property="article:published_time" content="2020-03-08T00:00:00&#43;00:00">
@@ -284,7 +284,7 @@
     "name": "Te-Sheng Lin",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_2.png"
+      "url": "https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_3.png"
     }
   },
   "description": "Applied Project in Sec.3.4, Calculus by Stewart 英文版請見 Where should a pilot start descent? 上圖是一台飛行器的降落軌跡近似圖，它必須滿足以下條件： 巡航高度為$h$，而飛行器在與著陸地點(同時也是圖"
@@ -643,7 +643,7 @@ $$</p>
 <hr>
 <p><strong>問題肆：</strong> 請繪製近似圖(假設問題參當中的所有條件都被滿足)</p>
 <p><strong>解：</strong></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-julia" data-lang="julia"><span style="color:#75715e"># Example code in julia</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-julia" data-lang="julia"><span style="color:#75715e"># Example code in julia</span>
 <span style="color:#66d9ef">using</span> Plots
 v <span style="color:#f92672">=</span> <span style="color:#ae81ff">300</span>;
 h <span style="color:#f92672">=</span> <span style="color:#ae81ff">6.628</span>;
@@ -652,7 +652,7 @@ N <span style="color:#f92672">=</span> <span style="color:#ae81ff">100</span>;
 dx <span style="color:#f92672">=</span> l<span style="color:#f92672">/</span>N;
 x <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.0</span><span style="color:#f92672">:</span>N; x <span style="color:#f92672">=</span> dx<span style="color:#f92672">*</span>x;
 P <span style="color:#f92672">=</span> <span style="color:#f92672">-</span>(<span style="color:#ae81ff">2</span><span style="color:#f92672">*</span>h<span style="color:#f92672">/</span>l<span style="color:#f92672">^</span><span style="color:#ae81ff">3</span>)<span style="color:#f92672">*</span>x<span style="color:#f92672">.^</span><span style="color:#ae81ff">3</span> <span style="color:#f92672">+</span> (<span style="color:#ae81ff">3</span><span style="color:#f92672">*</span>h<span style="color:#f92672">/</span>l<span style="color:#f92672">^</span><span style="color:#ae81ff">2</span>)<span style="color:#f92672">*</span>x<span style="color:#f92672">.^</span><span style="color:#ae81ff">2</span>;
-plot(x, P, lw<span style="color:#f92672">=</span><span style="color:#ae81ff">3</span>, xlabel <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;x&#34;</span>, ylabel <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;y&#34;</span>, title<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;approach path&#34;</span>, legend<span style="color:#f92672">=</span><span style="color:#66d9ef">false</span>)
+plot(x, P, lw<span style="color:#f92672">=</span><span style="color:#ae81ff">3</span>, xlabel <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;x&#34;</span>, ylabel <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;y&#34;</span>, title<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;approach path&#34;</span>, legend<span style="color:#f92672">=</span>false)
 </code></pre></div>
 
 
@@ -955,7 +955,7 @@ plot(x, P, lw<span style="color:#f92672">=</span><span style="color:#ae81ff">3</
     
     
     
-    <script src="/js/academic.min.a8d7005002cb4a052fd6d721e83df9ba.js"></script>
+    <script src="/js/academic.min.d49475924c8a1000c804942d870fd31c.js"></script>
 
     
 
