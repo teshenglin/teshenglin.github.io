@@ -218,8 +218,8 @@
   
 
   <link rel="manifest" href="/index.webmanifest">
-  <link rel="icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_3.png">
-  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_3.png">
+  <link rel="icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_2.png">
 
   <link rel="canonical" href="https://teshenglin.github.io/post/2020_julia_timing/">
 
@@ -237,8 +237,8 @@
   <meta property="og:site_name" content="Te-Sheng Lin">
   <meta property="og:url" content="https://teshenglin.github.io/post/2020_julia_timing/">
   <meta property="og:title" content="Julia 學習筆記 - 計時 | Te-Sheng Lin">
-  <meta property="og:description" content="延伸閱讀: Julia 學習筆記 - 簡介, 畫圖, 計時 這裡我們要介紹 julia 計算程式執行時間的指令. 簡單來說，julia 計算程式運行效能有幾個指令： @time 顯示出程式運"><meta property="og:image" content="https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png">
-  <meta property="twitter:image" content="https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png"><meta property="og:locale" content="en-us">
+  <meta property="og:description" content="延伸閱讀: Julia 學習筆記 - 簡介, 畫圖, 計時 這裡我們要介紹 julia 計算程式執行時間的指令. 簡單來說，julia 計算程式運行效能有幾個指令： @time 顯示出程式運"><meta property="og:image" content="https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png">
+  <meta property="twitter:image" content="https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png"><meta property="og:locale" content="en-us">
   
     
       <meta property="article:published_time" content="2020-01-01T00:00:00&#43;00:00">
@@ -284,7 +284,7 @@
     "name": "Te-Sheng Lin",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_3.png"
+      "url": "https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_2.png"
     }
   },
   "description": "延伸閱讀: Julia 學習筆記 - 簡介, 畫圖, 計時 這裡我們要介紹 julia 計算程式執行時間的指令. 簡單來說，julia 計算程式運行效能有幾個指令： @time 顯示出程式運"
@@ -624,13 +624,13 @@
 </ul>
 <p><strong>BUT,</strong> 真正要計算程式效能, 還是推薦用 <code>BenchmarkTools.jl</code> 這個 package.</p>
 <p>以下範例中我們需要使用兩個 package: <code>LinearAlgebra</code> 以及 <code>BenchmarkTools</code></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-julia" data-lang="julia"><span style="color:#66d9ef">using</span> LinearAlgebra
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-julia" data-lang="julia"><span style="color:#66d9ef">using</span> LinearAlgebra
 <span style="color:#66d9ef">using</span> BenchmarkTools
 </code></pre></div><hr>
 <h2 id="example-1-matrix-matrix-multiplication">Example 1: Matrix-matrix multiplication</h2>
 <p>我們以矩陣乘法 $C=A\times B$ 為例：$A:n\times p$, $B:p\times m$, $C:n\times m$</p>
 <p>f1 這個函數會產生兩個隨機矩陣 $A$, $B$ 並且將他們相乘:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-julia" data-lang="julia"><span style="color:#66d9ef">function</span> f1(n, p, m)
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-julia" data-lang="julia"><span style="color:#66d9ef">function</span> f1(n, p, m)
    A<span style="color:#f92672">=</span>rand(n,p)
    B<span style="color:#f92672">=</span>rand(p,m)
    C<span style="color:#f92672">=</span>zeros(<span style="color:#66d9ef">Float64</span>,n,m)
@@ -645,13 +645,13 @@
 </code></pre></div><pre><code>f1 (generic function with 1 method)
 </code></pre>
 <p>我們先試試看以 julia 既有的計算時間指令來看結果如何</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-julia" data-lang="julia"><span style="color:#a6e22e">@time</span> f1(<span style="color:#ae81ff">100</span>,<span style="color:#ae81ff">10</span>,<span style="color:#ae81ff">200</span>)
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-julia" data-lang="julia"><span style="color:#a6e22e">@time</span> f1(<span style="color:#ae81ff">100</span>,<span style="color:#ae81ff">10</span>,<span style="color:#ae81ff">200</span>)
 </code></pre></div><pre><code>  0.076423 seconds (161.79 k allocations: 8.380 MiB)
 </code></pre>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-julia" data-lang="julia"><span style="color:#a6e22e">@timed</span> f1(<span style="color:#ae81ff">100</span>,<span style="color:#ae81ff">10</span>,<span style="color:#ae81ff">200</span>)
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-julia" data-lang="julia"><span style="color:#a6e22e">@timed</span> f1(<span style="color:#ae81ff">100</span>,<span style="color:#ae81ff">10</span>,<span style="color:#ae81ff">200</span>)
 </code></pre></div><pre><code>(nothing, 0.000448109, 184496, 0.0, Base.GC_Diff(184496, 1, 0, 5, 2, 0, 0, 0, 0))
 </code></pre>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-julia" data-lang="julia"><span style="color:#a6e22e">@timev</span> f1(<span style="color:#ae81ff">100</span>,<span style="color:#ae81ff">10</span>,<span style="color:#ae81ff">200</span>)
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-julia" data-lang="julia"><span style="color:#a6e22e">@timev</span> f1(<span style="color:#ae81ff">100</span>,<span style="color:#ae81ff">10</span>,<span style="color:#ae81ff">200</span>)
 </code></pre></div><pre><code>  0.005932 seconds (8 allocations: 180.172 KiB, 92.28% gc time)
 elapsed time (ns): 5931535
 gc time (ns):      5473727
@@ -661,13 +661,13 @@ non-pool GC allocs:2
 malloc() calls:    1
 GC pauses:         1
 </code></pre>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-julia" data-lang="julia"><span style="color:#a6e22e">@elapsed</span> f1(<span style="color:#ae81ff">100</span>,<span style="color:#ae81ff">10</span>,<span style="color:#ae81ff">200</span>)
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-julia" data-lang="julia"><span style="color:#a6e22e">@elapsed</span> f1(<span style="color:#ae81ff">100</span>,<span style="color:#ae81ff">10</span>,<span style="color:#ae81ff">200</span>)
 </code></pre></div><pre><code>0.000561533
 </code></pre>
 <p>這些指令的表現如同一開始我們所介紹的, 顯示出程式執行時間以及其他資訊.</p>
 <p>不過一般而言一個程式在第一次跑及之後幾次跑的運行效能會不同, 這是由於初始化的關係. 所以我們通常要跑好幾次來算平均, 已得知一個程式的真正效能.</p>
 <p><code>benchmark</code> 就提供了這樣的功用, 他會跑好幾次程式, 並且計算最大最小時間.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-julia" data-lang="julia"><span style="color:#a6e22e">@benchmark</span> f1(<span style="color:#ae81ff">100</span>,<span style="color:#ae81ff">10</span>,<span style="color:#ae81ff">200</span>)
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-julia" data-lang="julia"><span style="color:#a6e22e">@benchmark</span> f1(<span style="color:#ae81ff">100</span>,<span style="color:#ae81ff">10</span>,<span style="color:#ae81ff">200</span>)
 </code></pre></div><pre><code>BenchmarkTools.Trial:
   memory estimate:  180.02 KiB
   allocs estimate:  4
@@ -681,7 +681,7 @@ GC pauses:         1
   evals/sample:     1
 </code></pre>
 <p>接著我們看一下如果用 <code>LinearAlgebra</code> 裡的矩陣乘法指令效能如何.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-julia" data-lang="julia"><span style="color:#66d9ef">function</span> f2(n, p, m)
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-julia" data-lang="julia"><span style="color:#66d9ef">function</span> f2(n, p, m)
     A<span style="color:#f92672">=</span>rand(n,p)
     B<span style="color:#f92672">=</span>rand(p,m)
     C<span style="color:#f92672">=</span>zeros(<span style="color:#66d9ef">Float64</span>,n,m)
@@ -689,7 +689,7 @@ GC pauses:         1
 <span style="color:#66d9ef">end</span>
 </code></pre></div><pre><code>f2 (generic function with 1 method)
 </code></pre>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-julia" data-lang="julia"><span style="color:#a6e22e">@benchmark</span> f2(<span style="color:#ae81ff">100</span>,<span style="color:#ae81ff">10</span>,<span style="color:#ae81ff">200</span>)
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-julia" data-lang="julia"><span style="color:#a6e22e">@benchmark</span> f2(<span style="color:#ae81ff">100</span>,<span style="color:#ae81ff">10</span>,<span style="color:#ae81ff">200</span>)
 </code></pre></div><pre><code>BenchmarkTools.Trial:
   memory estimate:  180.02 KiB
   allocs estimate:  4
@@ -706,21 +706,21 @@ GC pauses:         1
 <hr>
 <h2 id="type-stability">type-stability</h2>
 <p>julia 語言號稱效能非常好, 不過常常我們自己寫一個 julia 程式發現跑得沒有很快, 這通常是由於所謂的 “型別穩定性 type-stability”. 這樣的問題可以藉由以下幾個 julia 內建的巨集程式來診斷.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-julia" data-lang="julia"><span style="color:#a6e22e">@code_warntype</span> f1(<span style="color:#ae81ff">10</span>,<span style="color:#ae81ff">10</span>,<span style="color:#ae81ff">10</span>)
-</code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-julia" data-lang="julia"><span style="color:#a6e22e">@code_typed</span> f1(<span style="color:#ae81ff">10</span>,<span style="color:#ae81ff">10</span>,<span style="color:#ae81ff">10</span>)
-</code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-julia" data-lang="julia"><span style="color:#a6e22e">@code_native</span> f1(<span style="color:#ae81ff">10</span>,<span style="color:#ae81ff">10</span>,<span style="color:#ae81ff">10</span>)
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-julia" data-lang="julia"><span style="color:#a6e22e">@code_warntype</span> f1(<span style="color:#ae81ff">10</span>,<span style="color:#ae81ff">10</span>,<span style="color:#ae81ff">10</span>)
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-julia" data-lang="julia"><span style="color:#a6e22e">@code_typed</span> f1(<span style="color:#ae81ff">10</span>,<span style="color:#ae81ff">10</span>,<span style="color:#ae81ff">10</span>)
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-julia" data-lang="julia"><span style="color:#a6e22e">@code_native</span> f1(<span style="color:#ae81ff">10</span>,<span style="color:#ae81ff">10</span>,<span style="color:#ae81ff">10</span>)
 </code></pre></div><p>這方面更深入的說明可見 
 <a href="https://docs.julialang.org/en/v1/manual/performance-tips/" target="_blank" rel="noopener">julia: performance tips</a></p>
 <hr>
 <h2 id="example-2-vector-2-norm">Example 2: Vector 2-norm</h2>
 <p>接著我們看一下算向量 2-norm 的效能, 一樣我們比較一下自己寫的以及 call 函數的方式.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-julia" data-lang="julia"><span style="color:#66d9ef">function</span> t1(n)
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-julia" data-lang="julia"><span style="color:#66d9ef">function</span> t1(n)
     vec <span style="color:#f92672">=</span> rand(<span style="color:#ae81ff">1</span>,n);
     vec<span style="color:#f92672">*</span>vec<span style="color:#f92672">&#39;</span>;
 <span style="color:#66d9ef">end</span>
 </code></pre></div><pre><code>t1 (generic function with 1 method)
 </code></pre>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-julia" data-lang="julia"><span style="color:#a6e22e">@benchmark</span> t1(<span style="color:#ae81ff">10</span><span style="color:#f92672">^</span><span style="color:#ae81ff">5</span>)
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-julia" data-lang="julia"><span style="color:#a6e22e">@benchmark</span> t1(<span style="color:#ae81ff">10</span><span style="color:#f92672">^</span><span style="color:#ae81ff">5</span>)
 </code></pre></div><pre><code>BenchmarkTools.Trial:
   memory estimate:  781.42 KiB
   allocs estimate:  3
@@ -733,13 +733,13 @@ GC pauses:         1
   samples:          8213
   evals/sample:     1
 </code></pre>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-julia" data-lang="julia"><span style="color:#66d9ef">function</span> t2(n)
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-julia" data-lang="julia"><span style="color:#66d9ef">function</span> t2(n)
     vec <span style="color:#f92672">=</span> rand(<span style="color:#ae81ff">1</span>,n);
     sum(abs2, vec);
 <span style="color:#66d9ef">end</span>
 </code></pre></div><pre><code>t2 (generic function with 1 method)
 </code></pre>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-julia" data-lang="julia"><span style="color:#a6e22e">@benchmark</span> t2(<span style="color:#ae81ff">10</span><span style="color:#f92672">^</span><span style="color:#ae81ff">5</span>)
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-julia" data-lang="julia"><span style="color:#a6e22e">@benchmark</span> t2(<span style="color:#ae81ff">10</span><span style="color:#f92672">^</span><span style="color:#ae81ff">5</span>)
 </code></pre></div><pre><code>BenchmarkTools.Trial:
   memory estimate:  781.33 KiB
   allocs estimate:  2
@@ -754,15 +754,15 @@ GC pauses:         1
 </code></pre>
 <hr>
 <h2 id="example-3-solving-linear-system">Example 3: Solving linear system</h2>
-<p>這裡我們看一下解線性系統, 也就是 matlab 常見的&quot;左除&quot;, 的效率如何.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-julia" data-lang="julia"><span style="color:#66d9ef">function</span> s1(n)
+<p>這裡我們看一下解線性系統, 也就是 matlab 常見的&quot;左除&rdquo;, 的效率如何.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-julia" data-lang="julia"><span style="color:#66d9ef">function</span> s1(n)
     A<span style="color:#f92672">=</span>rand(n,n);
     b<span style="color:#f92672">=</span>rand(n);
     A<span style="color:#f92672">\</span>b;
 <span style="color:#66d9ef">end</span>
 </code></pre></div><pre><code>s1 (generic function with 1 method)
 </code></pre>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-julia" data-lang="julia"><span style="color:#a6e22e">@benchmark</span> s1(<span style="color:#ae81ff">1000</span>)
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-julia" data-lang="julia"><span style="color:#a6e22e">@benchmark</span> s1(<span style="color:#ae81ff">1000</span>)
 </code></pre></div><pre><code>BenchmarkTools.Trial:
   memory estimate:  15.28 MiB
   allocs estimate:  8
@@ -1093,7 +1093,7 @@ GC pauses:         1
     
     
     
-    <script src="/js/academic.min.d49475924c8a1000c804942d870fd31c.js"></script>
+    <script src="/js/academic.min.a8d7005002cb4a052fd6d721e83df9ba.js"></script>
 
     
 
