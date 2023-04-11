@@ -29,7 +29,7 @@
 &lt;/li&gt;
 &lt;li&gt;說明會
 &lt;ul&gt;
-&lt;li&gt;訂於 4/19 (週三) 中午&lt;/li&gt;
+&lt;li&gt;訂於 4/19 (週三) 12:00-13:00 SC207&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;報名
@@ -76,7 +76,8 @@
 &lt;li&gt;吳昌鴻 - &lt;a href=&#34;mailto:changhong@math.nctu.edu.tw&#34;&gt;changhong@math.nctu.edu.tw&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;物理訊息神經網路
+&lt;li&gt;物理訊息神經網路 - 
+&lt;a href=&#34;https://drive.google.com/file/d/1NronWVEqkkcvf5ijBPd6r23sKl5R8-y6/view&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Physics-informed neural networks&lt;/a&gt;
 &lt;ul&gt;
 &lt;li&gt;林得勝 - &lt;a href=&#34;mailto:tslin@math.nctu.edu.tw&#34;&gt;tslin@math.nctu.edu.tw&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -87,6 +88,9 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;探索平面鋪砌的藝術與數學
+&lt;blockquote&gt;
+&lt;p&gt;在這個課程中，我們將深入探索平面鋪砌的有趣世界，探索藝術和數學的交集。我們將開始研究壁紙群的分類，學習如何構建和操作它們。接下來，我們將轉向非周期鋪砌，包括古典的彭羅斯鋪砌和最近剛被發現的愛因斯坦鋪砌，甚至設計我們自己的非周期鋪砌。這個課程的目標是深入理解平面鋪砌的數學概念，並與ChatGPT合作創造獨特而美麗的鋪砌設計。&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;ul&gt;
 &lt;li&gt;康明軒 - &lt;a href=&#34;mailto:mhkang@math.nctu.edu.tw&#34;&gt;mhkang@math.nctu.edu.tw&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -96,7 +100,8 @@
 &lt;li&gt;黃信元 - &lt;a href=&#34;mailto:hyhuang@math.nctu.edu.tw&#34;&gt;hyhuang@math.nctu.edu.tw&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;壓縮感知應用於影像
+&lt;li&gt;壓縮感知應用於影像 - 
+&lt;a href=&#34;https://youtu.be/SbU1pahbbkc&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Compressed Sensing: Overview by Steve Brunton&lt;/a&gt;
 &lt;ul&gt;
 &lt;li&gt;薛名成 - &lt;a href=&#34;mailto:mcshiue@nycu.edu.tw&#34;&gt;mcshiue@nycu.edu.tw&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -200,95 +205,18 @@
 &lt;li&gt;&lt;strong&gt;
 &lt;a href=&#34;https://teshenglin.github.io/courses/2023_summer_research&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;2023 Summer research internship&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;
-&lt;a href=&#34;https://teshenglin.github.io/courses/2022_summer_research&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;2022 Summer research internship&lt;/a&gt;&lt;/strong&gt;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure&gt;
-
-
-  &lt;a data-fancybox=&#34;&#34; href=&#34;https://teshenglin.github.io/courses/figs/2022_summer.jpg&#34; &gt;
-
-
-  &lt;img src=&#34;https://teshenglin.github.io/courses/figs/2022_summer.jpg&#34; alt=&#34;&#34; width=&#34;300px&#34; &gt;
-&lt;/a&gt;
-
-
-
-&lt;/figure&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;
-&lt;a href=&#34;https://teshenglin.github.io/courses/2021_summer_research&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;2021 Summer research internship&lt;/a&gt;&lt;/strong&gt;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure&gt;
-
-
-  &lt;a data-fancybox=&#34;&#34; href=&#34;https://teshenglin.github.io/courses/figs/2021_summer.jpg&#34; &gt;
-
-
-  &lt;img src=&#34;https://teshenglin.github.io/courses/figs/2021_summer.jpg&#34; alt=&#34;&#34; width=&#34;300px&#34; &gt;
-&lt;/a&gt;
-
-
-
-&lt;/figure&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;2020 Summer research internship&lt;/strong&gt;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure&gt;
-
-
-  &lt;a data-fancybox=&#34;&#34; href=&#34;https://teshenglin.github.io/courses/figs/2020_summer.png&#34; &gt;
-
-
-  &lt;img src=&#34;https://teshenglin.github.io/courses/figs/2020_summer.png&#34; alt=&#34;&#34; width=&#34;300px&#34; &gt;
-&lt;/a&gt;
-
-
-
-&lt;/figure&gt;
-&lt;/li&gt;
+&lt;a href=&#34;https://teshenglin.github.io/courses/2022_summer_research&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;2022 Summer research internship&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;
+&lt;a href=&#34;https://teshenglin.github.io/courses/2021_summer_research&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;2021 Summer research internship&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;2020 Summer research internship&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- raw HTML omitted --&gt;
 &lt;hr&gt;
 </description>
     </item>
