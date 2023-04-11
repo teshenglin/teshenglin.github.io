@@ -55,66 +55,77 @@
 &lt;/ul&gt;
 &lt;hr&gt;
 &lt;h3 id=&#34;各研究團隊主題&#34;&gt;各研究團隊主題&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Contact Process&lt;/li&gt;
+&lt;/ol&gt;
 &lt;ul&gt;
-&lt;li&gt;Contact Process
-&lt;ul&gt;
-&lt;li&gt;千野由喜 - &lt;a href=&#34;mailto:y.chino@math.nctu.edu.tw&#34;&gt;y.chino@math.nctu.edu.tw&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Advisor: 千野由喜 - &lt;a href=&#34;mailto:y.chino@math.nctu.edu.tw&#34;&gt;y.chino@math.nctu.edu.tw&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;矩陣的數值域
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;矩陣的數值域&lt;/li&gt;
+&lt;/ol&gt;
 &lt;ul&gt;
-&lt;li&gt;王國仲 - &lt;a href=&#34;mailto:kzwang@math.nctu.edu.tw&#34;&gt;kzwang@math.nctu.edu.tw&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Advisor: 王國仲 - &lt;a href=&#34;mailto:kzwang@math.nctu.edu.tw&#34;&gt;kzwang@math.nctu.edu.tw&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;機器人運動學
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;機器人運動學&lt;/li&gt;
+&lt;/ol&gt;
 &lt;ul&gt;
-&lt;li&gt;吳金典 - &lt;a href=&#34;mailto:ctw@math.nctu.edu.tw&#34;&gt;ctw@math.nctu.edu.tw&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Advisor: 吳金典 - &lt;a href=&#34;mailto:ctw@math.nctu.edu.tw&#34;&gt;ctw@math.nctu.edu.tw&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;神經場模型的模式生成
+&lt;ol start=&#34;4&#34;&gt;
+&lt;li&gt;神經場模型的模式生成&lt;/li&gt;
+&lt;/ol&gt;
 &lt;ul&gt;
-&lt;li&gt;吳昌鴻 - &lt;a href=&#34;mailto:changhong@math.nctu.edu.tw&#34;&gt;changhong@math.nctu.edu.tw&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Advisor: 吳昌鴻 - &lt;a href=&#34;mailto:changhong@math.nctu.edu.tw&#34;&gt;changhong@math.nctu.edu.tw&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;物理訊息神經網路
+&lt;ol start=&#34;5&#34;&gt;
+&lt;li&gt;物理訊息神經網路&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;Advisor: 林得勝 - &lt;a href=&#34;mailto:tslin@math.nctu.edu.tw&#34;&gt;tslin@math.nctu.edu.tw&lt;/a&gt;
 &lt;blockquote&gt;
 &lt;p&gt;
 &lt;a href=&#34;https://drive.google.com/file/d/1NronWVEqkkcvf5ijBPd6r23sKl5R8-y6/view&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Physics-informed neural networks&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;林得勝 - &lt;a href=&#34;mailto:tslin@math.nctu.edu.tw&#34;&gt;tslin@math.nctu.edu.tw&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;有效介質近似理論與超材料
-&lt;ul&gt;
-&lt;li&gt;林奕亘 - &lt;a href=&#34;mailto:yihsuanlin3@math.nctu.edu.tw&#34;&gt;yihsuanlin3@math.nctu.edu.tw&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;探索平面鋪砌的藝術與數學
+&lt;ol start=&#34;6&#34;&gt;
+&lt;li&gt;有效介質近似理論與超材料&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;Advisor: 林奕亘 - &lt;a href=&#34;mailto:yihsuanlin3@math.nctu.edu.tw&#34;&gt;yihsuanlin3@math.nctu.edu.tw&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&#34;7&#34;&gt;
+&lt;li&gt;探索平面鋪砌的藝術與數學&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;Advisor: 康明軒 - &lt;a href=&#34;mailto:mhkang@math.nctu.edu.tw&#34;&gt;mhkang@math.nctu.edu.tw&lt;/a&gt;
 &lt;blockquote&gt;
 &lt;p&gt;在這個課程中，我們將深入探索平面鋪砌的有趣世界，探索藝術和數學的交集。我們將開始研究壁紙群的分類，學習如何構建和操作它們。接下來，我們將轉向非周期鋪砌，包括古典的彭羅斯鋪砌和最近剛被發現的愛因斯坦鋪砌，甚至設計我們自己的非周期鋪砌。這個課程的目標是深入理解平面鋪砌的數學概念，並與ChatGPT合作創造獨特而美麗的鋪砌設計。&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;康明軒 - &lt;a href=&#34;mailto:mhkang@math.nctu.edu.tw&#34;&gt;mhkang@math.nctu.edu.tw&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;應用漸進分析
+&lt;/ul&gt;
+&lt;ol start=&#34;8&#34;&gt;
+&lt;li&gt;應用漸進分析&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;Advisor: 黃信元 - &lt;a href=&#34;mailto:hyhuang@math.nctu.edu.tw&#34;&gt;hyhuang@math.nctu.edu.tw&lt;/a&gt;
 &lt;blockquote&gt;
-&lt;p&gt;在此暑期計畫中，我們將學習主要研究當某些參數或變數趨於無窮大或某些特定值時，積分的漸近行為。更精確地說，我們將學習拉普拉斯方法、最陡下降法和 stationey phase method(穩相方法)，並應用於指數型積分的漸近分析。同學將選擇參考書目的題材做更近一步的學習。預備知識有複變函數為佳。
-參考書目: Applied Asymptotic Analysis (Graduate Studies in Mathematics,) By Peter Miller&lt;/p&gt;
+&lt;p&gt;在此暑期計畫中，我們將學習主要研究當某些參數或變數趨於無窮大或某些特定值時，積分的漸近行為。更精確地說，我們將學習拉普拉斯方法、最陡下降法和 stationey phase method(穩相方法)，並應用於指數型積分的漸近分析。同學將選擇參考書目的題材做更近一步的學習。預備知識有複變函數為佳。&lt;/p&gt;
+&lt;p&gt;參考書目: Applied Asymptotic Analysis (Graduate Studies in Mathematics,) By Peter Miller&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;黃信元 - &lt;a href=&#34;mailto:hyhuang@math.nctu.edu.tw&#34;&gt;hyhuang@math.nctu.edu.tw&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;壓縮感知應用於影像
+&lt;/ul&gt;
+&lt;ol start=&#34;9&#34;&gt;
+&lt;li&gt;壓縮感知應用於影像&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;Advisor: 薛名成 - &lt;a href=&#34;mailto:mcshiue@nycu.edu.tw&#34;&gt;mcshiue@nycu.edu.tw&lt;/a&gt;
 &lt;blockquote&gt;
 &lt;p&gt;
 &lt;a href=&#34;https://youtu.be/SbU1pahbbkc&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Compressed Sensing: Overview by Steve Brunton&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;薛名成 - &lt;a href=&#34;mailto:mcshiue@nycu.edu.tw&#34;&gt;mcshiue@nycu.edu.tw&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr&gt;
