@@ -7,7 +7,7 @@
     <description>Calculus</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 07 Sep 2020 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <url>https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
       <title>Calculus</title>
       <link>https://teshenglin.github.io/categories/calculus/</link>
     </image>
@@ -1894,15 +1894,15 @@ $$&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Problem 1&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Show that
 $$
-v^2=\frac{2gh}{1+I^*},\quad \text{where  } I^*=\frac{I}{mr^2}
+v^2=\frac{2gh}{1+I^&lt;em&gt;},\quad \text{where  } I^&lt;/em&gt;=\frac{I}{mr^2}
 $$&lt;/p&gt;
 &lt;!-- raw HTML omitted --&gt;
 &lt;!-- raw HTML omitted --&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Problem 2&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;If $y(t)$ is the vertical distance traveled at time $t$, then the same reasoning as used in Problem 1 shows that $v^2=2gy/(1+I^*)$ at any time t. Use this result to show that $y$ satisfies the differential equation
+&lt;p&gt;If $y(t)$ is the vertical distance traveled at time $t$, then the same reasoning as used in Problem 1 shows that $v^2=2gy/(1+I^&lt;em&gt;)$ at any time t. Use this result to show that $y$ satisfies the differential equation
 $$
-\frac{dy}{dt}= \sqrt{\frac{2g}{1+I^*}}(\sin{\alpha})\sqrt{y}
+\frac{dy}{dt}= \sqrt{\frac{2g}{1+I^&lt;/em&gt;}}(\sin{\alpha})\sqrt{y}
 $$
 where $\alpha$ is the angle of inclination of the plane.&lt;/p&gt;
 &lt;!-- raw HTML omitted --&gt;
@@ -1911,9 +1911,9 @@ where $\alpha$ is the angle of inclination of the plane.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Problem 3&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;By solving the equation in Problem 2, show that the total travel time is
 $$
-T=\sqrt{\frac{2h(1+I^*)}{g\sin^2\alpha}}
+T=\sqrt{\frac{2h(1+I^&lt;em&gt;)}{g\sin^2\alpha}}
 $$
-This shows that the object with the smallest value of $I^*$ wins the race.&lt;/p&gt;
+This shows that the object with the smallest value of $I^&lt;/em&gt;$ wins the race.&lt;/p&gt;
 &lt;!-- raw HTML omitted --&gt;
 &lt;!-- raw HTML omitted --&gt;
 &lt;hr&gt;
@@ -1957,15 +1957,15 @@ $$&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;問題 1&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;說明
 $$
-v^2=\frac{2gh}{1+I^*},\quad \text{其中  } I^*=\frac{I}{mr^2}
+v^2=\frac{2gh}{1+I^&lt;em&gt;},\quad \text{其中  } I^&lt;/em&gt;=\frac{I}{mr^2}
 $$&lt;/p&gt;
 &lt;!-- raw HTML omitted --&gt;
 &lt;!-- raw HTML omitted --&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;問題 2&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;$y(t)$ 為時間 $t$ 時的鉛直下落量。而由問題一可知在不論時間 $t$ 為何，皆有關係式： $v^2=2gy/(1+I^*)$。以此結果證明 $y$ 符合以下微分方程：
+&lt;p&gt;$y(t)$ 為時間 $t$ 時的鉛直下落量。而由問題一可知在不論時間 $t$ 為何，皆有關係式： $v^2=2gy/(1+I^&lt;em&gt;)$。以此結果證明 $y$ 符合以下微分方程：
 $$
-\frac{dy}{dt}= \sqrt{\frac{2g}{1+I^*}}(\sin{\alpha})\sqrt{y}
+\frac{dy}{dt}= \sqrt{\frac{2g}{1+I^&lt;/em&gt;}}(\sin{\alpha})\sqrt{y}
 $$
 其中 $\alpha$ 為斜面傾角。&lt;/p&gt;
 &lt;!-- raw HTML omitted --&gt;
@@ -1974,9 +1974,9 @@ $$
 &lt;p&gt;&lt;strong&gt;問題 3&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;藉由求解問題2之方程式，得出自斜面頂端滾至底端之時長 $T$ 為：
 $$
-T=\sqrt{\frac{2h(1+I^*)}{g\sin^2\alpha}}
+T=\sqrt{\frac{2h(1+I^&lt;em&gt;)}{g\sin^2\alpha}}
 $$
-亦即 $I^*$ 最小之物品將最先滾至底端。&lt;/p&gt;
+亦即 $I^&lt;/em&gt;$ 最小之物品將最先滾至底端。&lt;/p&gt;
 &lt;!-- raw HTML omitted --&gt;
 &lt;!-- raw HTML omitted --&gt;
 &lt;hr&gt;
@@ -2102,7 +2102,7 @@ A(x) = \int_{-1}^{x} (1+t^2)dt =\frac{t^3-(-1)^3}{3}+x+1
 $$&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Question 2(c):&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Find $A&amp;rsquo;(x)$. What do you notice?&lt;/p&gt;
+&lt;p&gt;Find $A&#39;(x)$. What do you notice?&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;$A’(x) = 1+t^2$, we can found that $A’(x)$ is the upper bound of the area of a region.&lt;/p&gt;
 &lt;hr&gt;
@@ -2227,50 +2227,50 @@ then $g(x)$ is the area under the graph of $f$ from $0$ to $x$ [until $f(x)$ bec
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
-&lt;th align=&#34;center&#34;&gt;&lt;strong&gt;x&lt;/strong&gt;&lt;/th&gt;
-&lt;th align=&#34;center&#34;&gt;&lt;strong&gt;g(x)&lt;/strong&gt;&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;&lt;strong&gt;x&lt;/strong&gt;&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;&lt;strong&gt;g(x)&lt;/strong&gt;&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
-&lt;td align=&#34;center&#34;&gt;0.2&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;0.2&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;0.2&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;0.2&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td align=&#34;center&#34;&gt;0.4&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;0.399&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;0.4&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;0.399&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td align=&#34;center&#34;&gt;0.6&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;0.5923&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;0.6&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;0.5923&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td align=&#34;center&#34;&gt;0.8&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;0.7678&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;0.8&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;0.7678&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;0.9045&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;1&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;0.9045&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td align=&#34;center&#34;&gt;1.2&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;0.9739&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;1.2&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;0.9739&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td align=&#34;center&#34;&gt;1.4&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;0.9498&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;1.4&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;0.9498&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td align=&#34;center&#34;&gt;1.6&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;0.8255&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;1.6&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;0.8255&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td align=&#34;center&#34;&gt;1.8&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;0.6354&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;1.8&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;0.6354&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td align=&#34;center&#34;&gt;2&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;0.4615&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;2&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;0.4615&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
@@ -2310,46 +2310,46 @@ then $g(x)$ is the area under the graph of $f$ from $0$ to $x$ [until $f(x)$ bec
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
-&lt;th align=&#34;center&#34;&gt;&lt;strong&gt;x&lt;/strong&gt;&lt;/th&gt;
-&lt;th align=&#34;center&#34;&gt;&lt;strong&gt;g’(x)&lt;/strong&gt;&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;&lt;strong&gt;x&lt;/strong&gt;&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;&lt;strong&gt;g’(x)&lt;/strong&gt;&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
-&lt;td align=&#34;center&#34;&gt;0.3&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;0.995&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;0.3&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;0.995&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td align=&#34;center&#34;&gt;0.5&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;0.9665&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;0.5&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;0.9665&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td align=&#34;center&#34;&gt;0.7&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;0.8775&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;0.7&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;0.8775&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td align=&#34;center&#34;&gt;0.9&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;0.6835&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;0.9&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;0.6835&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td align=&#34;center&#34;&gt;1.1&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;0.347&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;1.1&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;0.347&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td align=&#34;center&#34;&gt;1.3&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;-0.1205&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;1.3&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;-0.1205&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td align=&#34;center&#34;&gt;1.5&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;-0.6215&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;1.5&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;-0.6215&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td align=&#34;center&#34;&gt;1.7&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;-0.9505&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;1.7&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;-0.9505&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td align=&#34;center&#34;&gt;1.9&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;-0.8695&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;1.9&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;-0.8695&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
@@ -2493,7 +2493,7 @@ A(x) = \int_{-1}^{x} (1+t^2)dt =\frac{t^3-(-1)^3}{3}+x+1
 $$&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Question 2(c):&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;找出 $A&amp;rsquo;(x)$ ，你察覺到了什麼？&lt;/p&gt;
+&lt;p&gt;找出 $A&#39;(x)$ ，你察覺到了什麼？&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;由 $A’(x) = 1+t^2$ ，我們可以得知 $A’(x)$ 是所圍成區域的拋物線&lt;/p&gt;
 &lt;hr&gt;
@@ -2618,50 +2618,50 @@ $$
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
-&lt;th align=&#34;center&#34;&gt;&lt;strong&gt;x&lt;/strong&gt;&lt;/th&gt;
-&lt;th align=&#34;center&#34;&gt;&lt;strong&gt;g(x)&lt;/strong&gt;&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;&lt;strong&gt;x&lt;/strong&gt;&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;&lt;strong&gt;g(x)&lt;/strong&gt;&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
-&lt;td align=&#34;center&#34;&gt;0.2&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;0.2&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;0.2&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;0.2&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td align=&#34;center&#34;&gt;0.4&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;0.399&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;0.4&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;0.399&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td align=&#34;center&#34;&gt;0.6&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;0.5923&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;0.6&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;0.5923&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td align=&#34;center&#34;&gt;0.8&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;0.7678&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;0.8&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;0.7678&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;0.9045&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;1&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;0.9045&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td align=&#34;center&#34;&gt;1.2&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;0.9739&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;1.2&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;0.9739&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td align=&#34;center&#34;&gt;1.4&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;0.9498&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;1.4&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;0.9498&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td align=&#34;center&#34;&gt;1.6&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;0.8255&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;1.6&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;0.8255&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td align=&#34;center&#34;&gt;1.8&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;0.6354&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;1.8&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;0.6354&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td align=&#34;center&#34;&gt;2&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;0.4615&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;2&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;0.4615&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
@@ -2701,46 +2701,46 @@ $$
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
-&lt;th align=&#34;center&#34;&gt;&lt;strong&gt;x&lt;/strong&gt;&lt;/th&gt;
-&lt;th align=&#34;center&#34;&gt;&lt;strong&gt;g’(x)&lt;/strong&gt;&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;&lt;strong&gt;x&lt;/strong&gt;&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;&lt;strong&gt;g’(x)&lt;/strong&gt;&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
-&lt;td align=&#34;center&#34;&gt;0.3&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;0.995&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;0.3&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;0.995&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td align=&#34;center&#34;&gt;0.5&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;0.9665&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;0.5&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;0.9665&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td align=&#34;center&#34;&gt;0.7&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;0.8775&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;0.7&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;0.8775&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td align=&#34;center&#34;&gt;0.9&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;0.6835&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;0.9&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;0.6835&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td align=&#34;center&#34;&gt;1.1&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;0.347&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;1.1&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;0.347&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td align=&#34;center&#34;&gt;1.3&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;-0.1205&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;1.3&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;-0.1205&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td align=&#34;center&#34;&gt;1.5&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;-0.6215&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;1.5&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;-0.6215&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td align=&#34;center&#34;&gt;1.7&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;-0.9505&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;1.7&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;-0.9505&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td align=&#34;center&#34;&gt;1.9&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;-0.8695&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;1.9&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;-0.8695&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
@@ -4772,7 +4772,7 @@ $$&lt;/p&gt;
 &lt;!-- raw HTML omitted --&gt;
 &lt;!-- raw HTML omitted --&gt;
 &lt;hr&gt;
-&lt;p&gt;The significance of the minimum deviation is that when $\alpha\approx 59.4^{\circ}$ we have $D&amp;rsquo;(\alpha)\approx 0$, so $\frac{\Delta D}{\Delta \alpha}\approx 0.$ This means that many  rays with $\alpha\approx 59.4^{\circ}$ become deviated by approximately the same amount. It it the &lt;em&gt;concentration&lt;/em&gt; of rays coming from near the direction of minimum deviation that creates the brightness of the primary rainbow. The figure at the left shows that the angle of elevation from the observer up to the highest point on the rainbow is $180^{\circ}- 138^{\circ} = 42^{\circ}$. (This angle is called the &lt;em&gt;rainbow angle&lt;/em&gt; .)&lt;/p&gt;
+&lt;p&gt;The significance of the minimum deviation is that when $\alpha\approx 59.4^{\circ}$ we have $D&#39;(\alpha)\approx 0$, so $\frac{\Delta D}{\Delta \alpha}\approx 0.$ This means that many  rays with $\alpha\approx 59.4^{\circ}$ become deviated by approximately the same amount. It it the &lt;em&gt;concentration&lt;/em&gt; of rays coming from near the direction of minimum deviation that creates the brightness of the primary rainbow. The figure at the left shows that the angle of elevation from the observer up to the highest point on the rainbow is $180^{\circ}- 138^{\circ} = 42^{\circ}$. (This angle is called the &lt;em&gt;rainbow angle&lt;/em&gt; .)&lt;/p&gt;
 
 
 
@@ -4963,8 +4963,8 @@ Chinese version:
 &lt;p&gt;The tangent line approximation $L(x)$ is the best first-degree (linear) approximation to $f(x)$ near $x=a$ because $f(x)$ and $L(x)$ have the same rate of change (derivative) at $x=a$. For a better approximation than a linear one, let&amp;rsquo;s try a second-degree (quadratic) approximation $P(x)$. In other words, we approximate a curve by a parabola instead of a straight line. To make sure that the approximation is a good one, we stipulate the following:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;$P$ and $f$ should have the same value at $a$. ($P(a)=f(a)$)&lt;/li&gt;
-&lt;li&gt;$P$ and $f$ should have the same rate of change at $a$. ($P&amp;rsquo;(a)=f&amp;rsquo;(a)$)&lt;/li&gt;
-&lt;li&gt;The slopes of $P$ and $f$ should change at the same rate at $a$. ($P&amp;rsquo;&#39;(a)=f&amp;rsquo;&#39;(a)$)&lt;/li&gt;
+&lt;li&gt;$P$ and $f$ should have the same rate of change at $a$. ($P&#39;(a)=f&#39;(a)$)&lt;/li&gt;
+&lt;li&gt;The slopes of $P$ and $f$ should change at the same rate at $a$. ($P&#39;&#39;(a)=f&#39;&#39;(a)$)&lt;/li&gt;
 &lt;/ol&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Question 1：&lt;/strong&gt; Find the quadratic approximation $P(x)=A+Bx+Cx^{2}$ to the function $f(x)=cosx$ that satisfies conditions (i), (ii),and (iii) with $a=0$ . Graph $P$, $f$ and the linear approximation $L(x)=1$ on a common screen. Comment on how well the functions $P$ and $L$ approximate $f$.&lt;/p&gt;
@@ -5043,13 +5043,13 @@ P(x)=A+B(x-a)+C(x-a)^{2}。
 $$
 Show that the quadratic function that satisfies conditions (i), (ii), and (iii) is
 $$
-P(x)=f(a)+f&amp;rsquo;(a)(x-a)+\frac{1}{2} f&amp;rsquo;&#39;(a)(x-a)^{2}。
+P(x)=f(a)+f&#39;(a)(x-a)+\frac{1}{2} f&#39;&#39;(a)(x-a)^{2}。
 $$&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
 &lt;!-- raw HTML omitted --&gt;
 &lt;!-- raw HTML omitted --&gt;
 &lt;p&gt;$$
-P(x)=f(a)+f&amp;rsquo;(a)(x-a)+\frac{1}{2} f&amp;rsquo;&#39;(a)(x-a)^{2}.
+P(x)=f(a)+f&#39;(a)(x-a)+\frac{1}{2} f&#39;&#39;(a)(x-a)^{2}.
 $$&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Question 4:&lt;/strong&gt; Find the quadratic approximation to $F(x)=\sqrt{x+3}\quad$ near $a=1$. Graph $f$, the quadratic approximation, and the linear approximation from Example 3.10.2 on a common screen. What do you conclude?&lt;/p&gt;
@@ -5098,7 +5098,7 @@ $$
 Show that these conditions are satisfied if $c_{k}=\frac{f^{(k)}(a)}{k!}$.&lt;/p&gt;
 &lt;p&gt;The resulting polynomial:
 $$
-T_{n}(x)=f(a)+f&amp;rsquo;(a)(x-a)+\frac{f&amp;rsquo;&#39;(a)}{2!} (x-a)^{2}+&amp;hellip;+\frac{f^{(n)}(a)}{n!}(x-a)^{n}。
+T_{n}(x)=f(a)+f&#39;(a)(x-a)+\frac{f&#39;&#39;(a)}{2!} (x-a)^{2}+&amp;hellip;+\frac{f^{(n)}(a)}{n!}(x-a)^{n}。
 $$
 is called the nth-degree Taylor polynomial of $f$ centered at $a$.&lt;/p&gt;
 &lt;!-- raw HTML omitted --&gt;
@@ -5385,8 +5385,8 @@ $$&lt;/li&gt;
 &lt;p&gt;為了找尋比線性逼近更好的近似方式，我們嘗試利用二次逼近函數(quadratic approximation) $Q(x)$ 來做近似，換句話說，我們利用拋物線來逼近 $f(x)$ 的值而非直線。為了確定這樣的近似方式是合理的，我們規定以下條件：&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;$P(a)=f(a)$&lt;/li&gt;
-&lt;li&gt;$P&amp;rsquo;(a)=f&amp;rsquo;(a)$&lt;/li&gt;
-&lt;li&gt;$P&amp;rsquo;&#39;(a)=f&amp;rsquo;&#39;(a)$&lt;/li&gt;
+&lt;li&gt;$P&#39;(a)=f&#39;(a)$&lt;/li&gt;
+&lt;li&gt;$P&#39;&#39;(a)=f&#39;&#39;(a)$&lt;/li&gt;
 &lt;/ol&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;問題 1：&lt;/strong&gt; 對於函數 $f(x)=\cos(x)$，找尋它在 $a=0$ 時的二次逼近函數 $P(x)=A+Bx+Cx^2$，並且此函數須滿足上述介紹中的三個條件。接著對函數 $P,f$ 及線性逼近函數 $L(x)=1$ 作圖，比較 $P$ 和 $f$ 哪一個逼近函數比較精確。&lt;/p&gt;
@@ -5466,13 +5466,13 @@ P(x)=A+B(x-a)+C(x-a)^{2}。
 $$
 證明一個滿足專題介紹中3個條件的二次逼近函數$P(x)$可以表示為
 $$
-P(x)=f(a)+f&amp;rsquo;(a)(x-a)+\frac{1}{2} f&amp;rsquo;&#39;(a)(x-a)^{2}。
+P(x)=f(a)+f&#39;(a)(x-a)+\frac{1}{2} f&#39;&#39;(a)(x-a)^{2}。
 $$&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;解：&lt;/strong&gt;&lt;/p&gt;
 &lt;!-- raw HTML omitted --&gt;
 &lt;!-- raw HTML omitted --&gt;
 &lt;p&gt;$$
-P(x)=f(a)+f&amp;rsquo;(a)(x-a)+\frac{1}{2} f&amp;rsquo;&#39;(a)(x-a)^{2}。
+P(x)=f(a)+f&#39;(a)(x-a)+\frac{1}{2} f&#39;&#39;(a)(x-a)^{2}。
 $$&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;問題 4：&lt;/strong&gt; 找尋函數 $f(x)=\sqrt{x+3}$ 在 $a=1$ 時的二次逼近函數，接著對 $f$、二次逼近函數及線性逼近函數做圖。你能做怎樣的結論？&lt;/p&gt;
@@ -5520,7 +5520,7 @@ T_{n}^{(k)}(a)=f^{(k)}(a), \quad k=1, \cdots, n。
 $$
 證明：滿足上述條件的 $T_{n}(x)$ 其係數 $c_{k}=\frac{f^{(k)}(a)}{k!}$。(將係數 $c_{k}$ 代入函數 $T_{n}(x)$ 後，函數為
 $$
-T_{n}(x)=f(a)+f&amp;rsquo;(a)(x-a)+\frac{f&amp;rsquo;&#39;(a)}{2!} (x-a)^{2}+&amp;hellip;+\frac{f^{(n)}(a)}{n!}(x-a)^{n}。
+T_{n}(x)=f(a)+f&#39;(a)(x-a)+\frac{f&#39;&#39;(a)}{2!} (x-a)^{2}+&amp;hellip;+\frac{f^{(n)}(a)}{n!}(x-a)^{n}。
 $$
 此即為函數 $f$ 在點 $a$ 的 $n$ 階泰勒級數。)&lt;/p&gt;
 &lt;!-- raw HTML omitted --&gt;
@@ -5608,7 +5608,7 @@ $$&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;問題肆：&lt;/strong&gt; 請繪製近似圖(假設問題參當中的所有條件都被滿足)&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;解：&lt;/strong&gt;&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# Example code in julia&lt;/span&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# Example code in julia&lt;/span&gt;
 &lt;span style=&#34;color:#66d9ef&#34;&gt;using&lt;/span&gt; Plots
 v &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;300&lt;/span&gt;;
 h &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;6.628&lt;/span&gt;;
@@ -5617,7 +5617,7 @@ N &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;c
 dx &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; l&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;N;
 x &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0.0&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;N; x &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; dx&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;x;
 P &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;h&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;l&lt;span style=&#34;color:#f92672&#34;&gt;^&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;)&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;x&lt;span style=&#34;color:#f92672&#34;&gt;.^&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; (&lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;h&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;l&lt;span style=&#34;color:#f92672&#34;&gt;^&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;)&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;x&lt;span style=&#34;color:#f92672&#34;&gt;.^&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;;
-plot(x, P, lw&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;, xlabel &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;x&amp;#34;&lt;/span&gt;, ylabel &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;y&amp;#34;&lt;/span&gt;, title&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;approach path&amp;#34;&lt;/span&gt;, legend&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;false&lt;/span&gt;)
+plot(x, P, lw&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;, xlabel &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;x&amp;#34;&lt;/span&gt;, ylabel &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;y&amp;#34;&lt;/span&gt;, title&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;approach path&amp;#34;&lt;/span&gt;, legend&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;false)
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
@@ -5934,7 +5934,7 @@ $$&lt;/li&gt;
       <pubDate>Wed, 11 Dec 2019 00:00:00 +0000</pubDate>
       <guid>https://teshenglin.github.io/post/2019_numerical_integration/</guid>
       <description>&lt;blockquote&gt;
-&lt;p&gt;在微積分課程裡我們有學到積分的&#39;中點法&amp;rsquo;, &amp;lsquo;梯形法&#39;以及&#39;辛普森法&amp;rsquo;. 這裡我們簡介一些基本概念並且引進高斯積分法.&lt;/p&gt;
+&lt;p&gt;在微積分課程裡我們有學到積分的&amp;rsquo;中點法&#39;, &amp;lsquo;梯形法&amp;rsquo;以及&amp;rsquo;辛普森法&amp;rsquo;. 這裡我們簡介一些基本概念並且引進高斯積分法.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h4 id=&#34;goal-任意給定一可積分函數-fx-xin-1-1-我們想要算-int1_-1-fx-dx&#34;&gt;Goal: 任意給定一可積分函數 $f(x)$, $x\in[-1, 1]$, 我們想要算 $\int^1_{-1} f(x) dx$.&lt;/h4&gt;
 &lt;hr&gt;
@@ -5977,13 +5977,13 @@ $$&lt;/li&gt;
 &lt;/ol&gt;
 &lt;hr&gt;
 &lt;blockquote&gt;
-&lt;p&gt;接著我們稍微推廣一下, 並且介紹所謂的&#39;高斯積分&amp;rsquo;.&lt;/p&gt;
+&lt;p&gt;接著我們稍微推廣一下, 並且介紹所謂的&amp;rsquo;高斯積分&#39;.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;&lt;strong&gt;Question:&lt;/strong&gt; 假設我們現在想要用函數在 $x=0$ 這個點的值來估算積分, 那係數要取多少會最好?&lt;/p&gt;
 &lt;p&gt;也就是說我們假設
 $$\int^1_{-1}f(x),dx\approx A_0f(0),$$
 其中 $A_0$ 是個常數. 那 $A_0$ 要選哪個數字, 這個積分公式才會算的最準?&lt;/p&gt;
-&lt;p&gt;依照我們之前的想法, 要讓積分式準就是要讓他把多項式算準. 所以我們希望他至少能把常數函數算準. 這樣的話很容易就看出 $A_0=2$, 也就是&#39;中點法&amp;rsquo;.&lt;/p&gt;
+&lt;p&gt;依照我們之前的想法, 要讓積分式準就是要讓他把多項式算準. 所以我們希望他至少能把常數函數算準. 這樣的話很容易就看出 $A_0=2$, 也就是&amp;rsquo;中點法&#39;.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Question:&lt;/strong&gt; 假設我們現在想要用函數在 $x=-1$ 以及 $x=1$ 這兩個點的值來估算積分, 那係數要取多少會最好?&lt;/p&gt;
 &lt;p&gt;也就是說我們假設
 $$\int^1_{-1}f(x),dx\approx \alpha f(-1)+\beta f(1),$$
@@ -6139,7 +6139,7 @@ $$
 $$
 其中 $c$ 是任意常數. 那上列這個式子的等號是什麼意思?&lt;/p&gt;
 &lt;p&gt;我們都知道 $\sin(x)$ 加上任意常數, 其微分都會是 $\cos(x)$, 所以我們才有這個式子. 也就是說, 上面這個等號就是這個意思!!&lt;/p&gt;
-&lt;p&gt;再說清楚一點, 當我們寫 $\int f(x)\ dx = F(x)$ 時意思就是 $F&amp;rsquo;(x) = f(x)$.&lt;/p&gt;
+&lt;p&gt;再說清楚一點, 當我們寫 $\int f(x)\ dx = F(x)$ 時意思就是 $F&#39;(x) = f(x)$.&lt;/p&gt;
 &lt;p&gt;所以回到原文最後一個式子, 我把它在這裡重列一次
 $$
 \int \tan(x)\ dx  = -1 + \int\tan(x)\ dx.
@@ -6148,7 +6148,7 @@ $$
 $$
 \int \tan(x)\ dx  = -1 + F(x).
 $$
-我們知道這個式子也是對的因為 $(F(x)-1)&amp;rsquo; = \tan(x)$. 所以從這個角度來說, 這整個式子就都沒有問題了.&lt;/p&gt;
+我們知道這個式子也是對的因為 $(F(x)-1)&#39; = \tan(x)$. 所以從這個角度來說, 這整個式子就都沒有問題了.&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;所以最後一個問題是, 我們可以把東西減掉嗎? 舉例來說,
 $$
@@ -6204,7 +6204,7 @@ $$&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Question 4:&lt;/strong&gt; Graph the approach path if the conditions stated in Problem 3 are satisfied.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# Example code in julia&lt;/span&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# Example code in julia&lt;/span&gt;
 &lt;span style=&#34;color:#66d9ef&#34;&gt;using&lt;/span&gt; Plots
 v &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;300&lt;/span&gt;;
 h &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;6.628&lt;/span&gt;;
@@ -6213,7 +6213,7 @@ N &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;c
 dx &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; l&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;N;
 x &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0.0&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;N; x &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; dx&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;x;
 P &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;h&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;l&lt;span style=&#34;color:#f92672&#34;&gt;^&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;)&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;x&lt;span style=&#34;color:#f92672&#34;&gt;.^&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; (&lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;h&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;l&lt;span style=&#34;color:#f92672&#34;&gt;^&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;)&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;x&lt;span style=&#34;color:#f92672&#34;&gt;.^&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;;
-plot(x, P, lw&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;, xlabel &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;x&amp;#34;&lt;/span&gt;, ylabel &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;y&amp;#34;&lt;/span&gt;, title&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;approach path&amp;#34;&lt;/span&gt;, legend&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;false&lt;/span&gt;)
+plot(x, P, lw&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;, xlabel &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;x&amp;#34;&lt;/span&gt;, ylabel &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;y&amp;#34;&lt;/span&gt;, title&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;approach path&amp;#34;&lt;/span&gt;, legend&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;false)
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
@@ -6283,7 +6283,7 @@ $$&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;h2 id=&#34;theorem&#34;&gt;Theorem&lt;/h2&gt;
 &lt;p&gt;If $f:[a, b]\to [a,b]$ is a differentiable function such that
-$$ |f&amp;rsquo;(x)|\leq \alpha&amp;lt;1, \quad \forall x\in[a, b],$$
+$$ |f&#39;(x)|\leq \alpha&amp;lt;1, \quad \forall x\in[a, b],$$
 then $f$ has exactly one fixed point $c$ and the fixed point iteration converges to $c$.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;這個證明很簡單.&lt;/p&gt;
@@ -6293,10 +6293,10 @@ then $f$ has exactly one fixed point $c$ and the fixed point iteration converges
 &lt;h4 id=&#34;existence&#34;&gt;existence&lt;/h4&gt;
 &lt;p&gt;Since the domain and the range of $f$ are both $[a, b]$, by Intermediate Value Theorem, there exists $c$ such that $c=f(c ).$&lt;/p&gt;
 &lt;h4 id=&#34;uniqueness&#34;&gt;uniqueness&lt;/h4&gt;
-&lt;p&gt;If there exits another fixed point $\bar{c}$, $\bar{c}\ne c$, such that $\bar{c}=f(\bar{c} )$, then according to Mean Value Theorem(MVT), there exits $z$ between $c$ and $\bar{c}$ such that $$f&amp;rsquo;(z) = \frac{f(c ) - f(\bar{c})}{c-\bar{c}}=\frac{c - \bar{c}}{c-\bar{c}} = 1,$$ which violate the assumption that $|f&#39;|\leq \alpha&amp;lt;1$. So the fixed point is unique.&lt;/p&gt;
+&lt;p&gt;If there exits another fixed point $\bar{c}$, $\bar{c}\ne c$, such that $\bar{c}=f(\bar{c} )$, then according to Mean Value Theorem(MVT), there exits $z$ between $c$ and $\bar{c}$ such that $$f&#39;(z) = \frac{f(c ) - f(\bar{c})}{c-\bar{c}}=\frac{c - \bar{c}}{c-\bar{c}} = 1,$$ which violate the assumption that $|f&#39;|\leq \alpha&amp;lt;1$. So the fixed point is unique.&lt;/p&gt;
 &lt;h4 id=&#34;convergence-of-fixed-point-iteration&#34;&gt;convergence of fixed point iteration&lt;/h4&gt;
 &lt;p&gt;Based on MVT we have
-$$|x_{n+1} - c| = |f(x_n) - f(c )| = |f&amp;rsquo;(c_i)(x_n-c)|\leq\alpha |x_n-c|\leq\alpha^n|x_1-c|\to 0.$$&lt;/p&gt;
+$$|x_{n+1} - c| = |f(x_n) - f(c )| = |f&#39;(c_i)(x_n-c)|\leq\alpha |x_n-c|\leq\alpha^n|x_1-c|\to 0.$$&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;所以如果在函數固定點 $c$ 的微分小於 $1$, 那就存在一個包含 $c$ 的小區間使得函數的微分都在這區間內小於 $1$, 那根據這定理固定點迭代就會收斂.&lt;/p&gt;
 &lt;hr&gt;
@@ -6308,9 +6308,9 @@ $$
 &lt;p&gt;那要如何改寫才會比較好呢? 其中一個最有名的就是牛頓法 (Newton&amp;rsquo;s method):&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;h2 id=&#34;newtons-iteration&#34;&gt;Newton&amp;rsquo;s iteration&lt;/h2&gt;
-&lt;p&gt;$$x_{n+1} = x_n - \frac{g(x_n)}{g&amp;rsquo;(x_n)}.$$&lt;/p&gt;
+&lt;p&gt;$$x_{n+1} = x_n - \frac{g(x_n)}{g&#39;(x_n)}.$$&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;我們可以定義 $f(x) = x - \frac{g(x)}{g&amp;rsquo;(x)}$, 這樣上面這個式子就是個固定點迭代. 接著我們可以發現, 如果 $c$ 是 $g$ 函數的根, 也就是 $g(c )=0$, 那 $f&amp;rsquo;(c ) = 0$. 所以根據上面的定理就存在某個包含 $c$ 的小區間使得迭代會收斂.&lt;/p&gt;
+&lt;p&gt;我們可以定義 $f(x) = x - \frac{g(x)}{g&#39;(x)}$, 這樣上面這個式子就是個固定點迭代. 接著我們可以發現, 如果 $c$ 是 $g$ 函數的根, 也就是 $g(c )=0$, 那 $f&#39;(c ) = 0$. 所以根據上面的定理就存在某個包含 $c$ 的小區間使得迭代會收斂.&lt;/p&gt;
 &lt;p&gt;更進一步我們可以利用泰勒展開式(Taylor&amp;rsquo;s series expansion) 來證明牛頓法事實上有二次收斂,
 $$
 |x_{n+1} - c| \approx \beta |x_n-c|^2.
@@ -6366,7 +6366,7 @@ $$
 &lt;p&gt;固定點定理保證在區間裡任意取點當初使迭代都會收斂, 不過要滿足定理的條件很強, 實務上不容易做到.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;例如牛頓法, 我們能證明一定存在某個區間滿足固定點定理, 不過實際上這個區間有多大並不知道. 因此一般在討論牛頓法時都會要求初始值要離實際要求的固定點&amp;quot;夠近&amp;rdquo;. 至於&amp;quot;夠近&amp;quot;什麼意思就只能用嘗試的.&lt;/p&gt;
+&lt;p&gt;例如牛頓法, 我們能證明一定存在某個區間滿足固定點定理, 不過實際上這個區間有多大並不知道. 因此一般在討論牛頓法時都會要求初始值要離實際要求的固定點&amp;quot;夠近&amp;quot;. 至於&amp;quot;夠近&amp;quot;什麼意思就只能用嘗試的.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;由於牛頓法不保證收斂, 因此實務上要求根時會與一些保證收斂的方法, 如二分逼進法 
@@ -6562,14 +6562,14 @@ $$
 &lt;/blockquote&gt;
 &lt;p&gt;已知一個函數 $f(x)$ 在某個點 $a$ 的微分值定義是
 $$
-f&amp;rsquo;(a) = \lim_{h\to 0} \frac{f(a+h)-f(a)}{h}.
+f&#39;(a) = \lim_{h\to 0} \frac{f(a+h)-f(a)}{h}.
 $$&lt;/p&gt;
 &lt;p&gt;我們用一個簡單的例子試試看. 假設我們想求 $f(x)=x^2$ 在 $x=\pi$ 的微分. 根據定義我們有&lt;/p&gt;
 &lt;p&gt;$$
-f&amp;rsquo;(\pi) = \lim_{h\to 0} \frac{(\pi+h)^2-\pi^2}{h}.
+f&#39;(\pi) = \lim_{h\to 0} \frac{(\pi+h)^2-\pi^2}{h}.
 $$&lt;/p&gt;
 &lt;p&gt;接著我們將 $h$ 取靠近 $0$ 的 $11$ 的點並帶入上列這個式子試著來算其極限值. &lt;code&gt;Julia&lt;/code&gt; 程式如下&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;h &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; range(&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;0.01&lt;/span&gt;, length&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;11&lt;/span&gt;); h &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; h[&lt;span style=&#34;color:#ae81ff&#34;&gt;11&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;];
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;h &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; range(&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;0.01&lt;/span&gt;, length&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;11&lt;/span&gt;); h &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; h[&lt;span style=&#34;color:#ae81ff&#34;&gt;11&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;];
 fp &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; ((pi&lt;span style=&#34;color:#f92672&#34;&gt;.+&lt;/span&gt;h)&lt;span style=&#34;color:#f92672&#34;&gt;.^&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;.-&lt;/span&gt; pi&lt;span style=&#34;color:#f92672&#34;&gt;^&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;)&lt;span style=&#34;color:#f92672&#34;&gt;./&lt;/span&gt;h;
 hcat(h, fp, fp&lt;span style=&#34;color:#f92672&#34;&gt;.-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;pi)
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;結果如下:&lt;/p&gt;
@@ -6578,7 +6578,7 @@ hcat(h, fp, fp&lt;span style=&#34;color:#f92672&#34;&gt;.-&lt;/span&gt;&lt;span 
 &lt;tr&gt;
 &lt;th&gt;$h$&lt;/th&gt;
 &lt;th&gt;$f&#39;$&lt;/th&gt;
-&lt;th&gt;$f&amp;rsquo;-2\pi$&lt;/th&gt;
+&lt;th&gt;$f&#39;-2\pi$&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
 &lt;tbody&gt;
@@ -6638,7 +6638,7 @@ hcat(h, fp, fp&lt;span style=&#34;color:#f92672&#34;&gt;.-&lt;/span&gt;&lt;span 
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Question:&lt;/strong&gt; 用數值計算微分能有多精確? 這個誤差能不能一直遞減下去?&lt;/p&gt;
 &lt;p&gt;接著我們取更多靠近 $0$ 的點來計算微分的極限值, 我們列出其與真實值 $2\pi$ 之間的差, 並且把它畫出來.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;h &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; range(&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;16&lt;/span&gt;, length&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;16&lt;/span&gt;); h &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;10.0&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.^&lt;/span&gt;(&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;h[&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;16&lt;/span&gt;]);
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;h &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; range(&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;16&lt;/span&gt;, length&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;16&lt;/span&gt;); h &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;10.0&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.^&lt;/span&gt;(&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;h[&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;16&lt;/span&gt;]);
 fp &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; ((pi&lt;span style=&#34;color:#f92672&#34;&gt;.+&lt;/span&gt;h)&lt;span style=&#34;color:#f92672&#34;&gt;.^&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;.-&lt;/span&gt; pi&lt;span style=&#34;color:#f92672&#34;&gt;^&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;)&lt;span style=&#34;color:#f92672&#34;&gt;./&lt;/span&gt;h;
 hcat(h, fp, abs&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;(fp&lt;span style=&#34;color:#f92672&#34;&gt;.-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;pi))
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;結果如下:&lt;/p&gt;
@@ -6647,7 +6647,7 @@ hcat(h, fp, abs&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;(fp&lt;sp
 &lt;tr&gt;
 &lt;th&gt;$h$&lt;/th&gt;
 &lt;th&gt;$f&#39;$&lt;/th&gt;
-&lt;th&gt;$abs(f&amp;rsquo;-2\pi)$&lt;/th&gt;
+&lt;th&gt;$abs(f&#39;-2\pi)$&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
 &lt;tbody&gt;
@@ -6735,7 +6735,7 @@ hcat(h, fp, abs&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;(fp&lt;sp
 &lt;/table&gt;
 &lt;p&gt;觀察最後一下發現, 當 $h$ 很小時微分竟然與真實質差更多, 更不準了!! 比如說當 $h=10^{-14}$ 時, 誤差竟然大到約是 $10^{-1}$.&lt;/p&gt;
 &lt;p&gt;我們把它畫出來看看, &lt;code&gt;Julia&lt;/code&gt; code 如下:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;using&lt;/span&gt; Plots
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;using&lt;/span&gt; Plots
 plot(log10&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;(h), log10&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;(abs&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;(fp&lt;span style=&#34;color:#f92672&#34;&gt;.-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;pi)),label&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Error&amp;#34;&lt;/span&gt;)
 xlabel!(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;log10(h)&amp;#34;&lt;/span&gt;)
 ylabel!(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;log10(Error)&amp;#34;&lt;/span&gt;)
@@ -6784,27 +6784,27 @@ $$
 &lt;h4 id=&#34;泰勒展開式&#34;&gt;泰勒展開式&lt;/h4&gt;
 &lt;p&gt;再深一點來說, 我們可以利用泰勒展開式知道
 $$
-\frac{f(a+h)-f(a)}{h} = f&amp;rsquo;(a) + \frac{h}{2}f&amp;rsquo;&#39;(\xi), \quad a\leq \xi \leq a+h.
+\frac{f(a+h)-f(a)}{h} = f&#39;(a) + \frac{h}{2}f&#39;&#39;(\xi), \quad a\leq \xi \leq a+h.
 $$
-這個式子告訴我們, 用這方式算微分誤差應該是 $\frac{h}{2}f&amp;rsquo;&#39;(\xi) = O(h)$, 誤差會隨著 $h$ 減少而線性變小.&lt;/p&gt;
+這個式子告訴我們, 用這方式算微分誤差應該是 $\frac{h}{2}f&#39;&#39;(\xi) = O(h)$, 誤差會隨著 $h$ 減少而線性變小.&lt;/p&gt;
 &lt;p&gt;數學上我們有以上這個等式, 而數值計算上則是有以下這個等式
 $$
-\frac{f(a+h)-f(a) + \epsilon}{h} = f&amp;rsquo;(a) + \frac{h}{2}f&amp;rsquo;&#39;(\xi) + \frac{\epsilon}{h}, \quad a\leq \xi \leq a+h.
+\frac{f(a+h)-f(a) + \epsilon}{h} = f&#39;(a) + \frac{h}{2}f&#39;&#39;(\xi) + \frac{\epsilon}{h}, \quad a\leq \xi \leq a+h.
 $$
 也就是說, 真正的誤差公式應該是
 $$
-\frac{h}{2}f&amp;rsquo;&#39;(\xi) + \frac{\epsilon}{h},
+\frac{h}{2}f&#39;&#39;(\xi) + \frac{\epsilon}{h},
 $$
 當 $h$ 非常小的時候 $\frac{\epsilon}{h}$ 這項就會變很大.&lt;/p&gt;
 &lt;p&gt;比如說, 依我們之前所算的 $\epsilon\approx 10^{-16}$, 那當 $h=10^{-8}$ 時, 算出來的數字會多了大約 $\frac{10^{-16}}{10^{-8}} = 10^{-8}$.&lt;/p&gt;
 &lt;p&gt;而當 $h=10^{-14}$ 時, 算出來的數字會多了大約 $\frac{10^{-16}}{10^{-14}} = 10^{-2}$. 跟我們之前所發現的完全吻合!! 而這也就是為什麼當 $h$ 很靠近零的時候誤差會上升的原因.&lt;/p&gt;
 &lt;hr&gt;
 &lt;h4 id=&#34;optimal-h&#34;&gt;Optimal $h$&lt;/h4&gt;
-&lt;p&gt;那給定一個微分公式, 要怎麼知道 $h$ 能小到什麼程度呢? 一個簡單的感覺是這樣的, 由於誤差的第一項  $\frac{h}{2}f&amp;rsquo;&#39;(\xi)$ 會隨著 $h$ 變小而變小, 第二項 $\frac{\epsilon}{h}$ 則會變大, 因此整體最小值約會發生在兩項交叉時, 也就是當
+&lt;p&gt;那給定一個微分公式, 要怎麼知道 $h$ 能小到什麼程度呢? 一個簡單的感覺是這樣的, 由於誤差的第一項  $\frac{h}{2}f&#39;&#39;(\xi)$ 會隨著 $h$ 變小而變小, 第二項 $\frac{\epsilon}{h}$ 則會變大, 因此整體最小值約會發生在兩項交叉時, 也就是當
 $$
 h \sim \frac{\epsilon}{h},
 $$
-(由於我們不知道 $f&amp;rsquo;&#39;(\xi)/2$ 是多少, 簡單起見設成 1). 上式稍微計算一下發現誤差最小值約發生在 $h=10^{-8}$, 誤差最小值則約為 $10^{-8}$.&lt;/p&gt;
+(由於我們不知道 $f&#39;&#39;(\xi)/2$ 是多少, 簡單起見設成 1). 上式稍微計算一下發現誤差最小值約發生在 $h=10^{-8}$, 誤差最小值則約為 $10^{-8}$.&lt;/p&gt;
 &lt;hr&gt;
 &lt;h3 id=&#34;summary&#34;&gt;Summary:&lt;/h3&gt;
 &lt;p&gt;最後總結一下:&lt;/p&gt;
@@ -6812,7 +6812,7 @@ $$
 &lt;li&gt;
 &lt;p&gt;我們可以用數值計算來估計一個函數在某點的微分值
 $$
-f&amp;rsquo;(a) \approx \frac{f(a+h)-f(a)}{h}.
+f&#39;(a) \approx \frac{f(a+h)-f(a)}{h}.
 $$
 這樣的做法稱為&lt;strong&gt;有限差分法 (finite difference method)&lt;/strong&gt;.&lt;/p&gt;
 &lt;/li&gt;
@@ -6947,7 +6947,7 @@ $$&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;machine epsilon 的定義是, 考慮正數$\epsilon$, 使得 $ 1+ \epsilon \ge 1$ 中最小的那個稱之為 machine epsilon. 當然以數學來看這個 machine epsilon 必須等於零. 不過在電腦裡並不是這樣.&lt;/p&gt;
 &lt;p&gt;為了方便我們稍微改一下定義, 我們考慮 $\epsilon = 2^{-k}$ 這種形式, 然後 machine epsilon 一樣是使得 $ 1+ \epsilon \ge 1$ 中最小的那個. &lt;code&gt;julia&lt;/code&gt; 程式如下:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;s&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1.0&lt;/span&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;s&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1.0&lt;/span&gt;
 &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; k&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;100&lt;/span&gt;
     s &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; s&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2.0&lt;/span&gt;
     &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; (&lt;span style=&#34;color:#ae81ff&#34;&gt;1.0&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;s)&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1.0&lt;/span&gt;

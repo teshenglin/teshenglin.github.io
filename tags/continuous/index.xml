@@ -7,7 +7,7 @@
     <description>continuous</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 04 Nov 2019 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <url>https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
       <title>continuous</title>
       <link>https://teshenglin.github.io/tags/continuous/</link>
     </image>
@@ -49,7 +49,7 @@ $$&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;h2 id=&#34;theorem&#34;&gt;Theorem&lt;/h2&gt;
 &lt;p&gt;If $f:[a, b]\to [a,b]$ is a differentiable function such that
-$$ |f&amp;rsquo;(x)|\leq \alpha&amp;lt;1, \quad \forall x\in[a, b],$$
+$$ |f&#39;(x)|\leq \alpha&amp;lt;1, \quad \forall x\in[a, b],$$
 then $f$ has exactly one fixed point $c$ and the fixed point iteration converges to $c$.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;這個證明很簡單.&lt;/p&gt;
@@ -59,10 +59,10 @@ then $f$ has exactly one fixed point $c$ and the fixed point iteration converges
 &lt;h4 id=&#34;existence&#34;&gt;existence&lt;/h4&gt;
 &lt;p&gt;Since the domain and the range of $f$ are both $[a, b]$, by Intermediate Value Theorem, there exists $c$ such that $c=f(c ).$&lt;/p&gt;
 &lt;h4 id=&#34;uniqueness&#34;&gt;uniqueness&lt;/h4&gt;
-&lt;p&gt;If there exits another fixed point $\bar{c}$, $\bar{c}\ne c$, such that $\bar{c}=f(\bar{c} )$, then according to Mean Value Theorem(MVT), there exits $z$ between $c$ and $\bar{c}$ such that $$f&amp;rsquo;(z) = \frac{f(c ) - f(\bar{c})}{c-\bar{c}}=\frac{c - \bar{c}}{c-\bar{c}} = 1,$$ which violate the assumption that $|f&#39;|\leq \alpha&amp;lt;1$. So the fixed point is unique.&lt;/p&gt;
+&lt;p&gt;If there exits another fixed point $\bar{c}$, $\bar{c}\ne c$, such that $\bar{c}=f(\bar{c} )$, then according to Mean Value Theorem(MVT), there exits $z$ between $c$ and $\bar{c}$ such that $$f&#39;(z) = \frac{f(c ) - f(\bar{c})}{c-\bar{c}}=\frac{c - \bar{c}}{c-\bar{c}} = 1,$$ which violate the assumption that $|f&#39;|\leq \alpha&amp;lt;1$. So the fixed point is unique.&lt;/p&gt;
 &lt;h4 id=&#34;convergence-of-fixed-point-iteration&#34;&gt;convergence of fixed point iteration&lt;/h4&gt;
 &lt;p&gt;Based on MVT we have
-$$|x_{n+1} - c| = |f(x_n) - f(c )| = |f&amp;rsquo;(c_i)(x_n-c)|\leq\alpha |x_n-c|\leq\alpha^n|x_1-c|\to 0.$$&lt;/p&gt;
+$$|x_{n+1} - c| = |f(x_n) - f(c )| = |f&#39;(c_i)(x_n-c)|\leq\alpha |x_n-c|\leq\alpha^n|x_1-c|\to 0.$$&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;所以如果在函數固定點 $c$ 的微分小於 $1$, 那就存在一個包含 $c$ 的小區間使得函數的微分都在這區間內小於 $1$, 那根據這定理固定點迭代就會收斂.&lt;/p&gt;
 &lt;hr&gt;
@@ -74,9 +74,9 @@ $$
 &lt;p&gt;那要如何改寫才會比較好呢? 其中一個最有名的就是牛頓法 (Newton&amp;rsquo;s method):&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;h2 id=&#34;newtons-iteration&#34;&gt;Newton&amp;rsquo;s iteration&lt;/h2&gt;
-&lt;p&gt;$$x_{n+1} = x_n - \frac{g(x_n)}{g&amp;rsquo;(x_n)}.$$&lt;/p&gt;
+&lt;p&gt;$$x_{n+1} = x_n - \frac{g(x_n)}{g&#39;(x_n)}.$$&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;我們可以定義 $f(x) = x - \frac{g(x)}{g&amp;rsquo;(x)}$, 這樣上面這個式子就是個固定點迭代. 接著我們可以發現, 如果 $c$ 是 $g$ 函數的根, 也就是 $g(c )=0$, 那 $f&amp;rsquo;(c ) = 0$. 所以根據上面的定理就存在某個包含 $c$ 的小區間使得迭代會收斂.&lt;/p&gt;
+&lt;p&gt;我們可以定義 $f(x) = x - \frac{g(x)}{g&#39;(x)}$, 這樣上面這個式子就是個固定點迭代. 接著我們可以發現, 如果 $c$ 是 $g$ 函數的根, 也就是 $g(c )=0$, 那 $f&#39;(c ) = 0$. 所以根據上面的定理就存在某個包含 $c$ 的小區間使得迭代會收斂.&lt;/p&gt;
 &lt;p&gt;更進一步我們可以利用泰勒展開式(Taylor&amp;rsquo;s series expansion) 來證明牛頓法事實上有二次收斂,
 $$
 |x_{n+1} - c| \approx \beta |x_n-c|^2.
@@ -132,7 +132,7 @@ $$
 &lt;p&gt;固定點定理保證在區間裡任意取點當初使迭代都會收斂, 不過要滿足定理的條件很強, 實務上不容易做到.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;例如牛頓法, 我們能證明一定存在某個區間滿足固定點定理, 不過實際上這個區間有多大並不知道. 因此一般在討論牛頓法時都會要求初始值要離實際要求的固定點&amp;quot;夠近&amp;rdquo;. 至於&amp;quot;夠近&amp;quot;什麼意思就只能用嘗試的.&lt;/p&gt;
+&lt;p&gt;例如牛頓法, 我們能證明一定存在某個區間滿足固定點定理, 不過實際上這個區間有多大並不知道. 因此一般在討論牛頓法時都會要求初始值要離實際要求的固定點&amp;quot;夠近&amp;quot;. 至於&amp;quot;夠近&amp;quot;什麼意思就只能用嘗試的.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;由於牛頓法不保證收斂, 因此實務上要求根時會與一些保證收斂的方法, 如二分逼進法 

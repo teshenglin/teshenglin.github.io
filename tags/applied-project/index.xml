@@ -7,7 +7,7 @@
     <description>applied project</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 21 Jun 2020 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <url>https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
       <title>applied project</title>
       <link>https://teshenglin.github.io/tags/applied-project/</link>
     </image>
@@ -590,15 +590,15 @@ $$&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Problem 1&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Show that
 $$
-v^2=\frac{2gh}{1+I^*},\quad \text{where  } I^*=\frac{I}{mr^2}
+v^2=\frac{2gh}{1+I^&lt;em&gt;},\quad \text{where  } I^&lt;/em&gt;=\frac{I}{mr^2}
 $$&lt;/p&gt;
 &lt;!-- raw HTML omitted --&gt;
 &lt;!-- raw HTML omitted --&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Problem 2&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;If $y(t)$ is the vertical distance traveled at time $t$, then the same reasoning as used in Problem 1 shows that $v^2=2gy/(1+I^*)$ at any time t. Use this result to show that $y$ satisfies the differential equation
+&lt;p&gt;If $y(t)$ is the vertical distance traveled at time $t$, then the same reasoning as used in Problem 1 shows that $v^2=2gy/(1+I^&lt;em&gt;)$ at any time t. Use this result to show that $y$ satisfies the differential equation
 $$
-\frac{dy}{dt}= \sqrt{\frac{2g}{1+I^*}}(\sin{\alpha})\sqrt{y}
+\frac{dy}{dt}= \sqrt{\frac{2g}{1+I^&lt;/em&gt;}}(\sin{\alpha})\sqrt{y}
 $$
 where $\alpha$ is the angle of inclination of the plane.&lt;/p&gt;
 &lt;!-- raw HTML omitted --&gt;
@@ -607,9 +607,9 @@ where $\alpha$ is the angle of inclination of the plane.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Problem 3&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;By solving the equation in Problem 2, show that the total travel time is
 $$
-T=\sqrt{\frac{2h(1+I^*)}{g\sin^2\alpha}}
+T=\sqrt{\frac{2h(1+I^&lt;em&gt;)}{g\sin^2\alpha}}
 $$
-This shows that the object with the smallest value of $I^*$ wins the race.&lt;/p&gt;
+This shows that the object with the smallest value of $I^&lt;/em&gt;$ wins the race.&lt;/p&gt;
 &lt;!-- raw HTML omitted --&gt;
 &lt;!-- raw HTML omitted --&gt;
 &lt;hr&gt;
@@ -653,15 +653,15 @@ $$&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;問題 1&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;說明
 $$
-v^2=\frac{2gh}{1+I^*},\quad \text{其中  } I^*=\frac{I}{mr^2}
+v^2=\frac{2gh}{1+I^&lt;em&gt;},\quad \text{其中  } I^&lt;/em&gt;=\frac{I}{mr^2}
 $$&lt;/p&gt;
 &lt;!-- raw HTML omitted --&gt;
 &lt;!-- raw HTML omitted --&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;問題 2&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;$y(t)$ 為時間 $t$ 時的鉛直下落量。而由問題一可知在不論時間 $t$ 為何，皆有關係式： $v^2=2gy/(1+I^*)$。以此結果證明 $y$ 符合以下微分方程：
+&lt;p&gt;$y(t)$ 為時間 $t$ 時的鉛直下落量。而由問題一可知在不論時間 $t$ 為何，皆有關係式： $v^2=2gy/(1+I^&lt;em&gt;)$。以此結果證明 $y$ 符合以下微分方程：
 $$
-\frac{dy}{dt}= \sqrt{\frac{2g}{1+I^*}}(\sin{\alpha})\sqrt{y}
+\frac{dy}{dt}= \sqrt{\frac{2g}{1+I^&lt;/em&gt;}}(\sin{\alpha})\sqrt{y}
 $$
 其中 $\alpha$ 為斜面傾角。&lt;/p&gt;
 &lt;!-- raw HTML omitted --&gt;
@@ -670,9 +670,9 @@ $$
 &lt;p&gt;&lt;strong&gt;問題 3&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;藉由求解問題2之方程式，得出自斜面頂端滾至底端之時長 $T$ 為：
 $$
-T=\sqrt{\frac{2h(1+I^*)}{g\sin^2\alpha}}
+T=\sqrt{\frac{2h(1+I^&lt;em&gt;)}{g\sin^2\alpha}}
 $$
-亦即 $I^*$ 最小之物品將最先滾至底端。&lt;/p&gt;
+亦即 $I^&lt;/em&gt;$ 最小之物品將最先滾至底端。&lt;/p&gt;
 &lt;!-- raw HTML omitted --&gt;
 &lt;!-- raw HTML omitted --&gt;
 &lt;hr&gt;
@@ -798,7 +798,7 @@ A(x) = \int_{-1}^{x} (1+t^2)dt =\frac{t^3-(-1)^3}{3}+x+1
 $$&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Question 2(c):&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Find $A&amp;rsquo;(x)$. What do you notice?&lt;/p&gt;
+&lt;p&gt;Find $A&#39;(x)$. What do you notice?&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;$A’(x) = 1+t^2$, we can found that $A’(x)$ is the upper bound of the area of a region.&lt;/p&gt;
 &lt;hr&gt;
@@ -923,50 +923,50 @@ then $g(x)$ is the area under the graph of $f$ from $0$ to $x$ [until $f(x)$ bec
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
-&lt;th align=&#34;center&#34;&gt;&lt;strong&gt;x&lt;/strong&gt;&lt;/th&gt;
-&lt;th align=&#34;center&#34;&gt;&lt;strong&gt;g(x)&lt;/strong&gt;&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;&lt;strong&gt;x&lt;/strong&gt;&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;&lt;strong&gt;g(x)&lt;/strong&gt;&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
-&lt;td align=&#34;center&#34;&gt;0.2&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;0.2&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;0.2&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;0.2&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td align=&#34;center&#34;&gt;0.4&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;0.399&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;0.4&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;0.399&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td align=&#34;center&#34;&gt;0.6&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;0.5923&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;0.6&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;0.5923&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td align=&#34;center&#34;&gt;0.8&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;0.7678&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;0.8&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;0.7678&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;0.9045&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;1&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;0.9045&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td align=&#34;center&#34;&gt;1.2&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;0.9739&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;1.2&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;0.9739&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td align=&#34;center&#34;&gt;1.4&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;0.9498&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;1.4&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;0.9498&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td align=&#34;center&#34;&gt;1.6&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;0.8255&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;1.6&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;0.8255&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td align=&#34;center&#34;&gt;1.8&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;0.6354&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;1.8&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;0.6354&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td align=&#34;center&#34;&gt;2&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;0.4615&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;2&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;0.4615&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
@@ -1006,46 +1006,46 @@ then $g(x)$ is the area under the graph of $f$ from $0$ to $x$ [until $f(x)$ bec
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
-&lt;th align=&#34;center&#34;&gt;&lt;strong&gt;x&lt;/strong&gt;&lt;/th&gt;
-&lt;th align=&#34;center&#34;&gt;&lt;strong&gt;g’(x)&lt;/strong&gt;&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;&lt;strong&gt;x&lt;/strong&gt;&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;&lt;strong&gt;g’(x)&lt;/strong&gt;&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
-&lt;td align=&#34;center&#34;&gt;0.3&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;0.995&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;0.3&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;0.995&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td align=&#34;center&#34;&gt;0.5&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;0.9665&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;0.5&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;0.9665&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td align=&#34;center&#34;&gt;0.7&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;0.8775&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;0.7&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;0.8775&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td align=&#34;center&#34;&gt;0.9&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;0.6835&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;0.9&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;0.6835&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td align=&#34;center&#34;&gt;1.1&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;0.347&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;1.1&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;0.347&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td align=&#34;center&#34;&gt;1.3&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;-0.1205&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;1.3&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;-0.1205&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td align=&#34;center&#34;&gt;1.5&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;-0.6215&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;1.5&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;-0.6215&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td align=&#34;center&#34;&gt;1.7&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;-0.9505&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;1.7&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;-0.9505&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td align=&#34;center&#34;&gt;1.9&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;-0.8695&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;1.9&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;-0.8695&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
@@ -1189,7 +1189,7 @@ A(x) = \int_{-1}^{x} (1+t^2)dt =\frac{t^3-(-1)^3}{3}+x+1
 $$&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Question 2(c):&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;找出 $A&amp;rsquo;(x)$ ，你察覺到了什麼？&lt;/p&gt;
+&lt;p&gt;找出 $A&#39;(x)$ ，你察覺到了什麼？&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;由 $A’(x) = 1+t^2$ ，我們可以得知 $A’(x)$ 是所圍成區域的拋物線&lt;/p&gt;
 &lt;hr&gt;
@@ -1314,50 +1314,50 @@ $$
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
-&lt;th align=&#34;center&#34;&gt;&lt;strong&gt;x&lt;/strong&gt;&lt;/th&gt;
-&lt;th align=&#34;center&#34;&gt;&lt;strong&gt;g(x)&lt;/strong&gt;&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;&lt;strong&gt;x&lt;/strong&gt;&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;&lt;strong&gt;g(x)&lt;/strong&gt;&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
-&lt;td align=&#34;center&#34;&gt;0.2&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;0.2&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;0.2&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;0.2&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td align=&#34;center&#34;&gt;0.4&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;0.399&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;0.4&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;0.399&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td align=&#34;center&#34;&gt;0.6&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;0.5923&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;0.6&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;0.5923&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td align=&#34;center&#34;&gt;0.8&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;0.7678&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;0.8&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;0.7678&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;0.9045&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;1&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;0.9045&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td align=&#34;center&#34;&gt;1.2&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;0.9739&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;1.2&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;0.9739&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td align=&#34;center&#34;&gt;1.4&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;0.9498&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;1.4&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;0.9498&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td align=&#34;center&#34;&gt;1.6&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;0.8255&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;1.6&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;0.8255&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td align=&#34;center&#34;&gt;1.8&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;0.6354&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;1.8&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;0.6354&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td align=&#34;center&#34;&gt;2&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;0.4615&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;2&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;0.4615&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
@@ -1397,46 +1397,46 @@ $$
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
-&lt;th align=&#34;center&#34;&gt;&lt;strong&gt;x&lt;/strong&gt;&lt;/th&gt;
-&lt;th align=&#34;center&#34;&gt;&lt;strong&gt;g’(x)&lt;/strong&gt;&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;&lt;strong&gt;x&lt;/strong&gt;&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;&lt;strong&gt;g’(x)&lt;/strong&gt;&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
-&lt;td align=&#34;center&#34;&gt;0.3&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;0.995&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;0.3&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;0.995&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td align=&#34;center&#34;&gt;0.5&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;0.9665&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;0.5&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;0.9665&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td align=&#34;center&#34;&gt;0.7&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;0.8775&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;0.7&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;0.8775&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td align=&#34;center&#34;&gt;0.9&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;0.6835&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;0.9&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;0.6835&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td align=&#34;center&#34;&gt;1.1&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;0.347&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;1.1&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;0.347&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td align=&#34;center&#34;&gt;1.3&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;-0.1205&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;1.3&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;-0.1205&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td align=&#34;center&#34;&gt;1.5&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;-0.6215&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;1.5&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;-0.6215&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td align=&#34;center&#34;&gt;1.7&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;-0.9505&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;1.7&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;-0.9505&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td align=&#34;center&#34;&gt;1.9&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;-0.8695&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;1.9&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;-0.8695&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
@@ -3223,7 +3223,7 @@ $$&lt;/p&gt;
 &lt;!-- raw HTML omitted --&gt;
 &lt;!-- raw HTML omitted --&gt;
 &lt;hr&gt;
-&lt;p&gt;The significance of the minimum deviation is that when $\alpha\approx 59.4^{\circ}$ we have $D&amp;rsquo;(\alpha)\approx 0$, so $\frac{\Delta D}{\Delta \alpha}\approx 0.$ This means that many  rays with $\alpha\approx 59.4^{\circ}$ become deviated by approximately the same amount. It it the &lt;em&gt;concentration&lt;/em&gt; of rays coming from near the direction of minimum deviation that creates the brightness of the primary rainbow. The figure at the left shows that the angle of elevation from the observer up to the highest point on the rainbow is $180^{\circ}- 138^{\circ} = 42^{\circ}$. (This angle is called the &lt;em&gt;rainbow angle&lt;/em&gt; .)&lt;/p&gt;
+&lt;p&gt;The significance of the minimum deviation is that when $\alpha\approx 59.4^{\circ}$ we have $D&#39;(\alpha)\approx 0$, so $\frac{\Delta D}{\Delta \alpha}\approx 0.$ This means that many  rays with $\alpha\approx 59.4^{\circ}$ become deviated by approximately the same amount. It it the &lt;em&gt;concentration&lt;/em&gt; of rays coming from near the direction of minimum deviation that creates the brightness of the primary rainbow. The figure at the left shows that the angle of elevation from the observer up to the highest point on the rainbow is $180^{\circ}- 138^{\circ} = 42^{\circ}$. (This angle is called the &lt;em&gt;rainbow angle&lt;/em&gt; .)&lt;/p&gt;
 
 
 
@@ -3414,8 +3414,8 @@ Chinese version:
 &lt;p&gt;The tangent line approximation $L(x)$ is the best first-degree (linear) approximation to $f(x)$ near $x=a$ because $f(x)$ and $L(x)$ have the same rate of change (derivative) at $x=a$. For a better approximation than a linear one, let&amp;rsquo;s try a second-degree (quadratic) approximation $P(x)$. In other words, we approximate a curve by a parabola instead of a straight line. To make sure that the approximation is a good one, we stipulate the following:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;$P$ and $f$ should have the same value at $a$. ($P(a)=f(a)$)&lt;/li&gt;
-&lt;li&gt;$P$ and $f$ should have the same rate of change at $a$. ($P&amp;rsquo;(a)=f&amp;rsquo;(a)$)&lt;/li&gt;
-&lt;li&gt;The slopes of $P$ and $f$ should change at the same rate at $a$. ($P&amp;rsquo;&#39;(a)=f&amp;rsquo;&#39;(a)$)&lt;/li&gt;
+&lt;li&gt;$P$ and $f$ should have the same rate of change at $a$. ($P&#39;(a)=f&#39;(a)$)&lt;/li&gt;
+&lt;li&gt;The slopes of $P$ and $f$ should change at the same rate at $a$. ($P&#39;&#39;(a)=f&#39;&#39;(a)$)&lt;/li&gt;
 &lt;/ol&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Question 1：&lt;/strong&gt; Find the quadratic approximation $P(x)=A+Bx+Cx^{2}$ to the function $f(x)=cosx$ that satisfies conditions (i), (ii),and (iii) with $a=0$ . Graph $P$, $f$ and the linear approximation $L(x)=1$ on a common screen. Comment on how well the functions $P$ and $L$ approximate $f$.&lt;/p&gt;
@@ -3494,13 +3494,13 @@ P(x)=A+B(x-a)+C(x-a)^{2}。
 $$
 Show that the quadratic function that satisfies conditions (i), (ii), and (iii) is
 $$
-P(x)=f(a)+f&amp;rsquo;(a)(x-a)+\frac{1}{2} f&amp;rsquo;&#39;(a)(x-a)^{2}。
+P(x)=f(a)+f&#39;(a)(x-a)+\frac{1}{2} f&#39;&#39;(a)(x-a)^{2}。
 $$&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
 &lt;!-- raw HTML omitted --&gt;
 &lt;!-- raw HTML omitted --&gt;
 &lt;p&gt;$$
-P(x)=f(a)+f&amp;rsquo;(a)(x-a)+\frac{1}{2} f&amp;rsquo;&#39;(a)(x-a)^{2}.
+P(x)=f(a)+f&#39;(a)(x-a)+\frac{1}{2} f&#39;&#39;(a)(x-a)^{2}.
 $$&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Question 4:&lt;/strong&gt; Find the quadratic approximation to $F(x)=\sqrt{x+3}\quad$ near $a=1$. Graph $f$, the quadratic approximation, and the linear approximation from Example 3.10.2 on a common screen. What do you conclude?&lt;/p&gt;
@@ -3549,7 +3549,7 @@ $$
 Show that these conditions are satisfied if $c_{k}=\frac{f^{(k)}(a)}{k!}$.&lt;/p&gt;
 &lt;p&gt;The resulting polynomial:
 $$
-T_{n}(x)=f(a)+f&amp;rsquo;(a)(x-a)+\frac{f&amp;rsquo;&#39;(a)}{2!} (x-a)^{2}+&amp;hellip;+\frac{f^{(n)}(a)}{n!}(x-a)^{n}。
+T_{n}(x)=f(a)+f&#39;(a)(x-a)+\frac{f&#39;&#39;(a)}{2!} (x-a)^{2}+&amp;hellip;+\frac{f^{(n)}(a)}{n!}(x-a)^{n}。
 $$
 is called the nth-degree Taylor polynomial of $f$ centered at $a$.&lt;/p&gt;
 &lt;!-- raw HTML omitted --&gt;
@@ -3836,8 +3836,8 @@ $$&lt;/li&gt;
 &lt;p&gt;為了找尋比線性逼近更好的近似方式，我們嘗試利用二次逼近函數(quadratic approximation) $Q(x)$ 來做近似，換句話說，我們利用拋物線來逼近 $f(x)$ 的值而非直線。為了確定這樣的近似方式是合理的，我們規定以下條件：&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;$P(a)=f(a)$&lt;/li&gt;
-&lt;li&gt;$P&amp;rsquo;(a)=f&amp;rsquo;(a)$&lt;/li&gt;
-&lt;li&gt;$P&amp;rsquo;&#39;(a)=f&amp;rsquo;&#39;(a)$&lt;/li&gt;
+&lt;li&gt;$P&#39;(a)=f&#39;(a)$&lt;/li&gt;
+&lt;li&gt;$P&#39;&#39;(a)=f&#39;&#39;(a)$&lt;/li&gt;
 &lt;/ol&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;問題 1：&lt;/strong&gt; 對於函數 $f(x)=\cos(x)$，找尋它在 $a=0$ 時的二次逼近函數 $P(x)=A+Bx+Cx^2$，並且此函數須滿足上述介紹中的三個條件。接著對函數 $P,f$ 及線性逼近函數 $L(x)=1$ 作圖，比較 $P$ 和 $f$ 哪一個逼近函數比較精確。&lt;/p&gt;
@@ -3917,13 +3917,13 @@ P(x)=A+B(x-a)+C(x-a)^{2}。
 $$
 證明一個滿足專題介紹中3個條件的二次逼近函數$P(x)$可以表示為
 $$
-P(x)=f(a)+f&amp;rsquo;(a)(x-a)+\frac{1}{2} f&amp;rsquo;&#39;(a)(x-a)^{2}。
+P(x)=f(a)+f&#39;(a)(x-a)+\frac{1}{2} f&#39;&#39;(a)(x-a)^{2}。
 $$&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;解：&lt;/strong&gt;&lt;/p&gt;
 &lt;!-- raw HTML omitted --&gt;
 &lt;!-- raw HTML omitted --&gt;
 &lt;p&gt;$$
-P(x)=f(a)+f&amp;rsquo;(a)(x-a)+\frac{1}{2} f&amp;rsquo;&#39;(a)(x-a)^{2}。
+P(x)=f(a)+f&#39;(a)(x-a)+\frac{1}{2} f&#39;&#39;(a)(x-a)^{2}。
 $$&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;問題 4：&lt;/strong&gt; 找尋函數 $f(x)=\sqrt{x+3}$ 在 $a=1$ 時的二次逼近函數，接著對 $f$、二次逼近函數及線性逼近函數做圖。你能做怎樣的結論？&lt;/p&gt;
@@ -3971,7 +3971,7 @@ T_{n}^{(k)}(a)=f^{(k)}(a), \quad k=1, \cdots, n。
 $$
 證明：滿足上述條件的 $T_{n}(x)$ 其係數 $c_{k}=\frac{f^{(k)}(a)}{k!}$。(將係數 $c_{k}$ 代入函數 $T_{n}(x)$ 後，函數為
 $$
-T_{n}(x)=f(a)+f&amp;rsquo;(a)(x-a)+\frac{f&amp;rsquo;&#39;(a)}{2!} (x-a)^{2}+&amp;hellip;+\frac{f^{(n)}(a)}{n!}(x-a)^{n}。
+T_{n}(x)=f(a)+f&#39;(a)(x-a)+\frac{f&#39;&#39;(a)}{2!} (x-a)^{2}+&amp;hellip;+\frac{f^{(n)}(a)}{n!}(x-a)^{n}。
 $$
 此即為函數 $f$ 在點 $a$ 的 $n$ 階泰勒級數。)&lt;/p&gt;
 &lt;!-- raw HTML omitted --&gt;
@@ -4059,7 +4059,7 @@ $$&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;問題肆：&lt;/strong&gt; 請繪製近似圖(假設問題參當中的所有條件都被滿足)&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;解：&lt;/strong&gt;&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# Example code in julia&lt;/span&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# Example code in julia&lt;/span&gt;
 &lt;span style=&#34;color:#66d9ef&#34;&gt;using&lt;/span&gt; Plots
 v &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;300&lt;/span&gt;;
 h &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;6.628&lt;/span&gt;;
@@ -4068,7 +4068,7 @@ N &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;c
 dx &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; l&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;N;
 x &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0.0&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;N; x &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; dx&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;x;
 P &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;h&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;l&lt;span style=&#34;color:#f92672&#34;&gt;^&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;)&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;x&lt;span style=&#34;color:#f92672&#34;&gt;.^&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; (&lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;h&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;l&lt;span style=&#34;color:#f92672&#34;&gt;^&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;)&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;x&lt;span style=&#34;color:#f92672&#34;&gt;.^&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;;
-plot(x, P, lw&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;, xlabel &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;x&amp;#34;&lt;/span&gt;, ylabel &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;y&amp;#34;&lt;/span&gt;, title&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;approach path&amp;#34;&lt;/span&gt;, legend&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;false&lt;/span&gt;)
+plot(x, P, lw&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;, xlabel &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;x&amp;#34;&lt;/span&gt;, ylabel &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;y&amp;#34;&lt;/span&gt;, title&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;approach path&amp;#34;&lt;/span&gt;, legend&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;false)
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
@@ -4293,7 +4293,7 @@ $$&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Question 4:&lt;/strong&gt; Graph the approach path if the conditions stated in Problem 3 are satisfied.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# Example code in julia&lt;/span&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# Example code in julia&lt;/span&gt;
 &lt;span style=&#34;color:#66d9ef&#34;&gt;using&lt;/span&gt; Plots
 v &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;300&lt;/span&gt;;
 h &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;6.628&lt;/span&gt;;
@@ -4302,7 +4302,7 @@ N &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;c
 dx &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; l&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;N;
 x &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0.0&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;N; x &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; dx&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;x;
 P &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;h&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;l&lt;span style=&#34;color:#f92672&#34;&gt;^&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;)&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;x&lt;span style=&#34;color:#f92672&#34;&gt;.^&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; (&lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;h&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;l&lt;span style=&#34;color:#f92672&#34;&gt;^&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;)&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;x&lt;span style=&#34;color:#f92672&#34;&gt;.^&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;;
-plot(x, P, lw&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;, xlabel &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;x&amp;#34;&lt;/span&gt;, ylabel &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;y&amp;#34;&lt;/span&gt;, title&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;approach path&amp;#34;&lt;/span&gt;, legend&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;false&lt;/span&gt;)
+plot(x, P, lw&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;, xlabel &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;x&amp;#34;&lt;/span&gt;, ylabel &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;y&amp;#34;&lt;/span&gt;, title&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;approach path&amp;#34;&lt;/span&gt;, legend&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;false)
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 

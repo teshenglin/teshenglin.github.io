@@ -7,7 +7,7 @@
     <description>Teaching</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language>
     <image>
-      <url>https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <url>https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
       <title>Teaching</title>
       <link>https://teshenglin.github.io/courses/</link>
     </image>
@@ -58,27 +58,37 @@
 &lt;ol&gt;
 &lt;li&gt;Contact Process
 &lt;ul&gt;
-&lt;li&gt;Advisor: 千野由喜 - &lt;a href=&#34;mailto:y.chino@math.nctu.edu.tw&#34;&gt;y.chino@math.nctu.edu.tw&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Advisor: 千野由喜 - 
+&lt;a href=&#34;mailto:y.chino@math.nctu.edu.tw&#34;&gt;y.chino@math.nctu.edu.tw&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;矩陣的數值域
 &lt;ul&gt;
-&lt;li&gt;Advisor: 王國仲 - &lt;a href=&#34;mailto:kzwang@math.nctu.edu.tw&#34;&gt;kzwang@math.nctu.edu.tw&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Advisor: 王國仲 - 
+&lt;a href=&#34;mailto:kzwang@math.nctu.edu.tw&#34;&gt;kzwang@math.nctu.edu.tw&lt;/a&gt;
+&lt;blockquote&gt;
+&lt;p&gt;在這個暑期計畫中，我們將學習矩陣的數值域上重要的性質，其中包含Toeplitz-Hausdorff、Ando、Anderson定理和冪不等式。另一方面，同學也將學習2或3階矩陣的數值域。&lt;/p&gt;
+&lt;p&gt;預備知識:線性代數、分析導論。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;機器人運動學
 &lt;ul&gt;
-&lt;li&gt;Advisor: 吳金典 - &lt;a href=&#34;mailto:ctw@math.nctu.edu.tw&#34;&gt;ctw@math.nctu.edu.tw&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Advisor: 吳金典 - 
+&lt;a href=&#34;mailto:ctw@math.nctu.edu.tw&#34;&gt;ctw@math.nctu.edu.tw&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;神經場模型的模式生成
 &lt;ul&gt;
-&lt;li&gt;Advisor: 吳昌鴻 - &lt;a href=&#34;mailto:changhong@math.nctu.edu.tw&#34;&gt;changhong@math.nctu.edu.tw&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Advisor: 吳昌鴻 - 
+&lt;a href=&#34;mailto:changhong@math.nctu.edu.tw&#34;&gt;changhong@math.nctu.edu.tw&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;物理訊息神經網路
 &lt;ul&gt;
-&lt;li&gt;Advisor: 林得勝 - &lt;a href=&#34;mailto:tslin@math.nctu.edu.tw&#34;&gt;tslin@math.nctu.edu.tw&lt;/a&gt;
+&lt;li&gt;Advisor: 林得勝 - 
+&lt;a href=&#34;mailto:tslin@math.nctu.edu.tw&#34;&gt;tslin@math.nctu.edu.tw&lt;/a&gt;
 &lt;blockquote&gt;
 &lt;p&gt;
 &lt;a href=&#34;https://drive.google.com/file/d/1NronWVEqkkcvf5ijBPd6r23sKl5R8-y6/view&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Physics-informed neural networks&lt;/a&gt;&lt;/p&gt;
@@ -88,12 +98,14 @@
 &lt;/li&gt;
 &lt;li&gt;有效介質近似理論與超材料
 &lt;ul&gt;
-&lt;li&gt;Advisor: 林奕亘 - &lt;a href=&#34;mailto:yihsuanlin3@math.nctu.edu.tw&#34;&gt;yihsuanlin3@math.nctu.edu.tw&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Advisor: 林奕亘 - 
+&lt;a href=&#34;mailto:yihsuanlin3@math.nctu.edu.tw&#34;&gt;yihsuanlin3@math.nctu.edu.tw&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;探索平面鋪砌的藝術與數學
 &lt;ul&gt;
-&lt;li&gt;Advisor: 康明軒 - &lt;a href=&#34;mailto:mhkang@math.nctu.edu.tw&#34;&gt;mhkang@math.nctu.edu.tw&lt;/a&gt;
+&lt;li&gt;Advisor: 康明軒 - 
+&lt;a href=&#34;mailto:mhkang@math.nctu.edu.tw&#34;&gt;mhkang@math.nctu.edu.tw&lt;/a&gt;
 &lt;blockquote&gt;
 &lt;p&gt;在這個課程中，我們將深入探索平面鋪砌的有趣世界，探索藝術和數學的交集。我們將開始研究壁紙群的分類，學習如何構建和操作它們。接下來，我們將轉向非周期鋪砌，包括古典的彭羅斯鋪砌和最近剛被發現的愛因斯坦鋪砌，甚至設計我們自己的非周期鋪砌。這個課程的目標是深入理解平面鋪砌的數學概念，並與ChatGPT合作創造獨特而美麗的鋪砌設計。&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -102,17 +114,19 @@
 &lt;/li&gt;
 &lt;li&gt;應用漸進分析
 &lt;ul&gt;
-&lt;li&gt;Advisor: 黃信元 - &lt;a href=&#34;mailto:hyhuang@math.nctu.edu.tw&#34;&gt;hyhuang@math.nctu.edu.tw&lt;/a&gt;
+&lt;li&gt;Advisor: 黃信元 - 
+&lt;a href=&#34;mailto:hyhuang@math.nctu.edu.tw&#34;&gt;hyhuang@math.nctu.edu.tw&lt;/a&gt;
 &lt;blockquote&gt;
-&lt;p&gt;在此暑期計畫中，我們將學習主要研究當某些參數或變數趨於無窮大或某些特定值時，積分的漸近行為。更精確地說，我們將學習拉普拉斯方法、最陡下降法和 stationey phase method(穩相方法)，並應用於指數型積分的漸近分析。同學將選擇參考書目的題材做更近一步的學習。預備知識有複變函數為佳。&lt;/p&gt;
-&lt;p&gt;參考書目: Applied Asymptotic Analysis (Graduate Studies in Mathematics,) By Peter Miller&lt;/p&gt;
+&lt;p&gt;在此暑期計畫中，我們將主要研究當某些參數或變數趨於無窮大或某些特定值時，積分的漸近行為。更精確地說，我們將學習拉普拉斯方法、最陡下降法和 stationey phase method(穩相方法)，並應用於指數型積分的漸近分析。同學將選擇參考書目的題材做更近一步的學習。預備知識有複變函數為佳。&lt;/p&gt;
+&lt;p&gt;參考書目: Applied Asymptotic Analysis (Graduate Studies in Mathematics) By Peter Miller&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;壓縮感知應用於影像
 &lt;ul&gt;
-&lt;li&gt;Advisor: 薛名成 - &lt;a href=&#34;mailto:mcshiue@nycu.edu.tw&#34;&gt;mcshiue@nycu.edu.tw&lt;/a&gt;
+&lt;li&gt;Advisor: 薛名成 - 
+&lt;a href=&#34;mailto:mcshiue@nycu.edu.tw&#34;&gt;mcshiue@nycu.edu.tw&lt;/a&gt;
 &lt;blockquote&gt;
 &lt;p&gt;
 &lt;a href=&#34;https://youtu.be/SbU1pahbbkc&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Compressed Sensing: Overview by Steve Brunton&lt;/a&gt;&lt;/p&gt;
@@ -153,48 +167,56 @@
 &lt;li&gt;
 &lt;a href=&#34;https://drive.google.com/file/d/1DsFb21YWwVGvswV7Ntq6EA4C_q9KUoPU/view?usp=sharing&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Random walk and electrical network&lt;/a&gt;
 &lt;ul&gt;
-&lt;li&gt;千野由喜 - &lt;a href=&#34;mailto:y.chino@math.nctu.edu.tw&#34;&gt;y.chino@math.nctu.edu.tw&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;千野由喜 - 
+&lt;a href=&#34;mailto:y.chino@math.nctu.edu.tw&#34;&gt;y.chino@math.nctu.edu.tw&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;3D image processing
 &lt;ul&gt;
-&lt;li&gt;吳金典 - &lt;a href=&#34;mailto:ctw@math.nctu.edu.tw&#34;&gt;ctw@math.nctu.edu.tw&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;吳金典 - 
+&lt;a href=&#34;mailto:ctw@math.nctu.edu.tw&#34;&gt;ctw@math.nctu.edu.tw&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;a href=&#34;https://drive.google.com/file/d/1rCeDqggH1jSA3iiyzwKQzDm_WqgphKXK/view?usp=sharing&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Dynamical behavior of some continuous/discrete models in mathematical biology&lt;/a&gt;
 &lt;ul&gt;
-&lt;li&gt;吳昌鴻 - &lt;a href=&#34;mailto:changhong@math.nctu.edu.tw&#34;&gt;changhong@math.nctu.edu.tw&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;吳昌鴻 - 
+&lt;a href=&#34;mailto:changhong@math.nctu.edu.tw&#34;&gt;changhong@math.nctu.edu.tw&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;a href=&#34;https://drive.google.com/file/d/1nv0b-NSNj-tiEkFIdAbbu5p7kzc5oQ0v/view?usp=sharing&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Image segmentation&lt;/a&gt;
 &lt;ul&gt;
-&lt;li&gt;林得勝 - &lt;a href=&#34;mailto:tslin@math.nctu.edu.tw&#34;&gt;tslin@math.nctu.edu.tw&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;林得勝 - 
+&lt;a href=&#34;mailto:tslin@math.nctu.edu.tw&#34;&gt;tslin@math.nctu.edu.tw&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;a href=&#34;https://drive.google.com/file/d/1wJZ0l5WEuuPjywuFe4bmG2z6U6j1-xkX/view?usp=sharing&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Multiscale method, averaging and homogenization for differential equations&lt;/a&gt;
 &lt;ul&gt;
-&lt;li&gt;林奕亘 - &lt;a href=&#34;mailto:yihsuanlin3@math.nctu.edu.tw&#34;&gt;yihsuanlin3@math.nctu.edu.tw&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;林奕亘 - 
+&lt;a href=&#34;mailto:yihsuanlin3@math.nctu.edu.tw&#34;&gt;yihsuanlin3@math.nctu.edu.tw&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;a href=&#34;https://drive.google.com/file/d/1lt32kdVda4p07gscrIbSUVs4kk09ndf5/view?usp=sharing&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Hyperbolic Geometry&lt;/a&gt;
 &lt;ul&gt;
-&lt;li&gt;康明軒 - &lt;a href=&#34;mailto:mhkang@math.nctu.edu.tw&#34;&gt;mhkang@math.nctu.edu.tw&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;康明軒 - 
+&lt;a href=&#34;mailto:mhkang@math.nctu.edu.tw&#34;&gt;mhkang@math.nctu.edu.tw&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;a href=&#34;https://drive.google.com/file/d/1ISUtYEE2EGyaO-h4ioeup_aoPEZniNqH/view?usp=sharing&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Elliptic function and its application in differential equations&lt;/a&gt;
 &lt;ul&gt;
-&lt;li&gt;黃信元 - &lt;a href=&#34;mailto:hyhuang@math.nctu.edu.tw&#34;&gt;hyhuang@math.nctu.edu.tw&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;黃信元 - 
+&lt;a href=&#34;mailto:hyhuang@math.nctu.edu.tw&#34;&gt;hyhuang@math.nctu.edu.tw&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;a href=&#34;https://drive.google.com/file/d/1wv4hzFqzZ6a1-Nw4QHdSlOP1Na3l21-U/view?usp=sharing&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Isogeometric analysis applied to Poisson equations; Wigner&amp;rsquo;s semicircle law of random matrices&lt;/a&gt;
 &lt;ul&gt;
-&lt;li&gt;薛名成 - &lt;a href=&#34;mailto:mcshiue@nycu.edu.tw&#34;&gt;mcshiue@nycu.edu.tw&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;薛名成 - 
+&lt;a href=&#34;mailto:mcshiue@nycu.edu.tw&#34;&gt;mcshiue@nycu.edu.tw&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
@@ -256,34 +278,42 @@
 &lt;li&gt;
 &lt;a href=&#34;https://drive.google.com/file/d/1TKMdkvROkfCE-BtSqu-40O7JdOkPpn1I/view?usp=sharing&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;量子電腦投資組合最佳化&lt;/a&gt;
 &lt;ol&gt;
-&lt;li&gt;游家牧 - &lt;a href=&#34;mailto:chiamuyu@gmail.com&#34;&gt;chiamuyu@gmail.com&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;游家牧 - 
+&lt;a href=&#34;mailto:chiamuyu@gmail.com&#34;&gt;chiamuyu@gmail.com&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;a href=&#34;https://drive.google.com/file/d/1duzGRTSHBUBIdwtgzHhAzD-GroUp773c/view?usp=sharing&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;訊號與影像處理&lt;/a&gt;
 &lt;ol&gt;
-&lt;li&gt;薛名成 - &lt;a href=&#34;mailto:mshiue@math.nctu.edu.tw&#34;&gt;mshiue@math.nctu.edu.tw&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;吳金典 - &lt;a href=&#34;mailto:ctw@math.nctu.edu.tw&#34;&gt;ctw@math.nctu.edu.tw&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;薛名成 - 
+&lt;a href=&#34;mailto:mshiue@math.nctu.edu.tw&#34;&gt;mshiue@math.nctu.edu.tw&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;吳金典 - 
+&lt;a href=&#34;mailto:ctw@math.nctu.edu.tw&#34;&gt;ctw@math.nctu.edu.tw&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;a href=&#34;https://drive.google.com/file/d/1MIzVXC_qljcNoVXppBKve6OvF7LUbLTb/view?usp=sharing&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;數學建模與機器學習&lt;/a&gt;
 &lt;ol&gt;
-&lt;li&gt;吳昌鴻 - &lt;a href=&#34;mailto:changhong@math.nctu.edu.tw&#34;&gt;changhong@math.nctu.edu.tw&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;林得勝 - &lt;a href=&#34;mailto:tslin@math.nctu.edu.tw&#34;&gt;tslin@math.nctu.edu.tw&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;吳昌鴻 - 
+&lt;a href=&#34;mailto:changhong@math.nctu.edu.tw&#34;&gt;changhong@math.nctu.edu.tw&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;林得勝 - 
+&lt;a href=&#34;mailto:tslin@math.nctu.edu.tw&#34;&gt;tslin@math.nctu.edu.tw&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;a href=&#34;https://drive.google.com/file/d/1fO83ISqJizCJppeJ78XlaxUwwl65_jCW/view?usp=sharing&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;AI與量化投資交易&lt;/a&gt;
 &lt;ol&gt;
-&lt;li&gt;康明軒 - &lt;a href=&#34;mailto:mhkang@math.nctu.edu.tw&#34;&gt;mhkang@math.nctu.edu.tw&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;鄧惠文 - &lt;a href=&#34;mailto:venteng@gmail.com&#34;&gt;venteng@gmail.com&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;康明軒 - 
+&lt;a href=&#34;mailto:mhkang@math.nctu.edu.tw&#34;&gt;mhkang@math.nctu.edu.tw&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;鄧惠文 - 
+&lt;a href=&#34;mailto:venteng@gmail.com&#34;&gt;venteng@gmail.com&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;a href=&#34;https://drive.google.com/file/d/1qw5bEPD-7hXrmRCBxBCDHNvQx_9st1Oy/view?usp=sharing&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;可積系統專題&lt;/a&gt;
 &lt;ol&gt;
-&lt;li&gt;黃信元 - &lt;a href=&#34;mailto:hyhuang@math.nctu.edu.tw&#34;&gt;hyhuang@math.nctu.edu.tw&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;黃信元 - 
+&lt;a href=&#34;mailto:hyhuang@math.nctu.edu.tw&#34;&gt;hyhuang@math.nctu.edu.tw&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
@@ -505,30 +535,6 @@
 &lt;/ul&gt;
 &lt;hr&gt;
 </description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://teshenglin.github.io/courses/2016fall_colloquium/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://teshenglin.github.io/courses/2016fall_colloquium/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://teshenglin.github.io/courses/2016spring_colloquium/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://teshenglin.github.io/courses/2016spring_colloquium/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://teshenglin.github.io/courses/2019fall_colloquium/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://teshenglin.github.io/courses/2019fall_colloquium/</guid>
-      <description></description>
     </item>
     
   </channel>
