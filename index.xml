@@ -278,34 +278,38 @@
 &lt;/ul&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;錄取名單&#34;&gt;錄取名單&lt;/h2&gt;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure&gt;
-
-
-  &lt;a data-fancybox=&#34;&#34; href=&#34;https://teshenglin.github.io/courses/figs/2022_summer_people.jpg&#34; &gt;
-
-
-  &lt;img src=&#34;https://teshenglin.github.io/courses/figs/2022_summer_people.jpg&#34; alt=&#34;&#34; width=&#34;300px&#34; &gt;
-&lt;/a&gt;
-
-
-
-&lt;/figure&gt;
-
+&lt;ul&gt;
+&lt;li&gt;Random walk and electrical network
+&lt;ul&gt;
+&lt;li&gt;謝翊庭&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;3D image processing
+&lt;ul&gt;
+&lt;li&gt;陳俊瑋, 林宜柔&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Dynamical behavior of some continuous/discrete models in mathematical biology
+&lt;ul&gt;
+&lt;li&gt;謝心怡, 張凱智&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Image segmentation
+&lt;ul&gt;
+&lt;li&gt;陳明宏, 孫念慈&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Hyperbolic geometry
+&lt;ul&gt;
+&lt;li&gt;曹瑋, 張育浚, 陳羿愷&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Wigner&amp;rsquo;s semicircle law of random matrices
+&lt;ul&gt;
+&lt;li&gt;謝杰穎&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
 &lt;hr&gt;
 </description>
     </item>
@@ -645,34 +649,28 @@ plot(p1, p2, layout&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;(&lt;
 &lt;/ul&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;錄取名單&#34;&gt;錄取名單&lt;/h2&gt;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure&gt;
-
-
-  &lt;a data-fancybox=&#34;&#34; href=&#34;https://teshenglin.github.io/courses/figs/2021_summer_people.jpg&#34; &gt;
-
-
-  &lt;img src=&#34;https://teshenglin.github.io/courses/figs/2021_summer_people.jpg&#34; alt=&#34;&#34; width=&#34;300px&#34; &gt;
-&lt;/a&gt;
-
-
-
-&lt;/figure&gt;
-
+&lt;ul&gt;
+&lt;li&gt;量子電腦投資組合最佳化
+&lt;ul&gt;
+&lt;li&gt;施欣宜, 賴叡禹, 江皓霖, 翁翊豪, 張秀麗&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;數位訊號與影像處理
+&lt;ul&gt;
+&lt;li&gt;張詠瑄, 郭庭佑, 王怡智&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;數學建模與機器學習
+&lt;ul&gt;
+&lt;li&gt;白宜平, 陳文皓, 林沛霆, 周品萱&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;AI與量化投資交易
+&lt;ul&gt;
+&lt;li&gt;戴晨洋, 李國誠, 蔡博凱, 王宣瑋&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
 &lt;hr&gt;
 </description>
     </item>
@@ -5023,34 +5021,48 @@ $$&lt;/p&gt;
 &lt;/ul&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;錄取名單&#34;&gt;錄取名單&lt;/h2&gt;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure&gt;
-
-
-  &lt;a data-fancybox=&#34;&#34; href=&#34;https://teshenglin.github.io/courses/figs/2020_summer_people.jpg&#34; &gt;
-
-
-  &lt;img src=&#34;https://teshenglin.github.io/courses/figs/2020_summer_people.jpg&#34; alt=&#34;&#34; width=&#34;300px&#34; &gt;
-&lt;/a&gt;
-
-
-
-&lt;/figure&gt;
-
+&lt;ul&gt;
+&lt;li&gt;林得勝老師
+&lt;ul&gt;
+&lt;li&gt;陳品翰, 張富婷, 李秉諺, 蔡柏毅&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;游家牧老師
+&lt;ul&gt;
+&lt;li&gt;謝依玲, 何品萱&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;吳金典老師
+&lt;ul&gt;
+&lt;li&gt;胡嘉安, 周芷瑜&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;鄧惠文老師
+&lt;ul&gt;
+&lt;li&gt;陳彥廷, 黃麒軒, 宋佩芩, 黃俞翎&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;康明軒老師
+&lt;ul&gt;
+&lt;li&gt;林彥廷, 林恩衍, 張育浚&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;黃信元老師
+&lt;ul&gt;
+&lt;li&gt;許哲瑋&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;吳昌鴻老師
+&lt;ul&gt;
+&lt;li&gt;張詠瑄, 劉孟竹, 陳芊卉&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;薛名成老師
+&lt;ul&gt;
+&lt;li&gt;吳諒濬, 彭宇楨&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
 &lt;hr&gt;
 </description>
     </item>
