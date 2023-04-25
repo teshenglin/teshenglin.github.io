@@ -218,8 +218,8 @@
   
 
   <link rel="manifest" href="/index.webmanifest">
-  <link rel="icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_2.png">
-  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_2.png">
+  <link rel="icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_3.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_3.png">
 
   <link rel="canonical" href="https://teshenglin.github.io/post/2019_fixed_point/">
 
@@ -237,8 +237,8 @@
   <meta property="og:site_name" content="Te-Sheng Lin">
   <meta property="og:url" content="https://teshenglin.github.io/post/2019_fixed_point/">
   <meta property="og:title" content="Fixed point iteration | Te-Sheng Lin">
-  <meta property="og:description" content="這裡我們介紹固定點迭代法 (Fixed point iteration) 首先我們介紹什麼是固定點 (Fixed point) Definition: Fixed point A fixed point of a function $f(x)$ is a number $c$ in its domain such that $f(c)=c$. 所以簡單來說, 把固定點這個數字丟進函數後會"><meta property="og:image" content="https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png">
-  <meta property="twitter:image" content="https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png"><meta property="og:locale" content="en-us">
+  <meta property="og:description" content="這裡我們介紹固定點迭代法 (Fixed point iteration) 首先我們介紹什麼是固定點 (Fixed point) Definition: Fixed point A fixed point of a function $f(x)$ is a number $c$ in its domain such that $f(c)=c$. 所以簡單來說, 把固定點這個數字丟進函數後會"><meta property="og:image" content="https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png">
+  <meta property="twitter:image" content="https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png"><meta property="og:locale" content="en-us">
   
     
       <meta property="article:published_time" content="2019-11-04T00:00:00&#43;00:00">
@@ -284,7 +284,7 @@
     "name": "Te-Sheng Lin",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_2.png"
+      "url": "https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_3.png"
     }
   },
   "description": "這裡我們介紹固定點迭代法 (Fixed point iteration) 首先我們介紹什麼是固定點 (Fixed point) Definition: Fixed point A fixed point of a function $f(x)$ is a number $c$ in its domain such that $f(c)=c$. 所以簡單來說, 把固定點這個數字丟進函數後會"
@@ -636,7 +636,7 @@ $$</p>
 <blockquote>
 <h2 id="theorem">Theorem</h2>
 <p>If $f:[a, b]\to [a,b]$ is a differentiable function such that
-$$ |f&rsquo;(x)|\leq \alpha&lt;1, \quad \forall x\in[a, b],$$
+$$ |f'(x)|\leq \alpha&lt;1, \quad \forall x\in[a, b],$$
 then $f$ has exactly one fixed point $c$ and the fixed point iteration converges to $c$.</p>
 </blockquote>
 <p>這個證明很簡單.</p>
@@ -646,10 +646,10 @@ then $f$ has exactly one fixed point $c$ and the fixed point iteration converges
 <h4 id="existence">existence</h4>
 <p>Since the domain and the range of $f$ are both $[a, b]$, by Intermediate Value Theorem, there exists $c$ such that $c=f(c ).$</p>
 <h4 id="uniqueness">uniqueness</h4>
-<p>If there exits another fixed point $\bar{c}$, $\bar{c}\ne c$, such that $\bar{c}=f(\bar{c} )$, then according to Mean Value Theorem(MVT), there exits $z$ between $c$ and $\bar{c}$ such that $$f&rsquo;(z) = \frac{f(c ) - f(\bar{c})}{c-\bar{c}}=\frac{c - \bar{c}}{c-\bar{c}} = 1,$$ which violate the assumption that $|f'|\leq \alpha&lt;1$. So the fixed point is unique.</p>
+<p>If there exits another fixed point $\bar{c}$, $\bar{c}\ne c$, such that $\bar{c}=f(\bar{c} )$, then according to Mean Value Theorem(MVT), there exits $z$ between $c$ and $\bar{c}$ such that $$f'(z) = \frac{f(c ) - f(\bar{c})}{c-\bar{c}}=\frac{c - \bar{c}}{c-\bar{c}} = 1,$$ which violate the assumption that $|f'|\leq \alpha&lt;1$. So the fixed point is unique.</p>
 <h4 id="convergence-of-fixed-point-iteration">convergence of fixed point iteration</h4>
 <p>Based on MVT we have
-$$|x_{n+1} - c| = |f(x_n) - f(c )| = |f&rsquo;(c_i)(x_n-c)|\leq\alpha |x_n-c|\leq\alpha^n|x_1-c|\to 0.$$</p>
+$$|x_{n+1} - c| = |f(x_n) - f(c )| = |f'(c_i)(x_n-c)|\leq\alpha |x_n-c|\leq\alpha^n|x_1-c|\to 0.$$</p>
 </blockquote>
 <p>所以如果在函數固定點 $c$ 的微分小於 $1$, 那就存在一個包含 $c$ 的小區間使得函數的微分都在這區間內小於 $1$, 那根據這定理固定點迭代就會收斂.</p>
 <hr>
@@ -661,9 +661,9 @@ $$
 <p>那要如何改寫才會比較好呢? 其中一個最有名的就是牛頓法 (Newton&rsquo;s method):</p>
 <blockquote>
 <h2 id="newtons-iteration">Newton&rsquo;s iteration</h2>
-<p>$$x_{n+1} = x_n - \frac{g(x_n)}{g&rsquo;(x_n)}.$$</p>
+<p>$$x_{n+1} = x_n - \frac{g(x_n)}{g'(x_n)}.$$</p>
 </blockquote>
-<p>我們可以定義 $f(x) = x - \frac{g(x)}{g&rsquo;(x)}$, 這樣上面這個式子就是個固定點迭代. 接著我們可以發現, 如果 $c$ 是 $g$ 函數的根, 也就是 $g(c )=0$, 那 $f&rsquo;(c ) = 0$. 所以根據上面的定理就存在某個包含 $c$ 的小區間使得迭代會收斂.</p>
+<p>我們可以定義 $f(x) = x - \frac{g(x)}{g'(x)}$, 這樣上面這個式子就是個固定點迭代. 接著我們可以發現, 如果 $c$ 是 $g$ 函數的根, 也就是 $g(c )=0$, 那 $f'(c ) = 0$. 所以根據上面的定理就存在某個包含 $c$ 的小區間使得迭代會收斂.</p>
 <p>更進一步我們可以利用泰勒展開式(Taylor&rsquo;s series expansion) 來證明牛頓法事實上有二次收斂,
 $$
 |x_{n+1} - c| \approx \beta |x_n-c|^2.
@@ -719,7 +719,7 @@ $$
 <p>固定點定理保證在區間裡任意取點當初使迭代都會收斂, 不過要滿足定理的條件很強, 實務上不容易做到.</p>
 </li>
 <li>
-<p>例如牛頓法, 我們能證明一定存在某個區間滿足固定點定理, 不過實際上這個區間有多大並不知道. 因此一般在討論牛頓法時都會要求初始值要離實際要求的固定點&quot;夠近&rdquo;. 至於&quot;夠近&quot;什麼意思就只能用嘗試的.</p>
+<p>例如牛頓法, 我們能證明一定存在某個區間滿足固定點定理, 不過實際上這個區間有多大並不知道. 因此一般在討論牛頓法時都會要求初始值要離實際要求的固定點&quot;夠近&quot;. 至於&quot;夠近&quot;什麼意思就只能用嘗試的.</p>
 </li>
 <li>
 <p>由於牛頓法不保證收斂, 因此實務上要求根時會與一些保證收斂的方法, 如二分逼進法 
@@ -834,7 +834,7 @@ $$
     <div class="media-body">
       <h5 class="card-title"><a href="https://teshenglin.github.io/">Te-Sheng Lin (林得勝)</a></h5>
       <h6 class="card-subtitle">Associate Professor</h6>
-      <p class="card-text">The focus of my research is concerned with the development of analytical and computational tools for the problems that arises in fluid dynamics, currently in thin liquid films, and further to communicate with scientists from other disciplines to solve engineering problems in practice.</p>
+      <p class="card-text">The focus of my research is concerned with the development of analytical and computational tools, and further to communicate with scientists from other disciplines to solve engineering problems in practice.</p>
       <ul class="network-icon" aria-hidden="true">
   
     
@@ -1096,7 +1096,7 @@ $$
     
     
     
-    <script src="/js/academic.min.a8d7005002cb4a052fd6d721e83df9ba.js"></script>
+    <script src="/js/academic.min.d49475924c8a1000c804942d870fd31c.js"></script>
 
     
 
