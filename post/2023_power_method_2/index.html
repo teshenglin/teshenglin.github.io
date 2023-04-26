@@ -1,0 +1,1156 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 4.7.0">
+
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Te-Sheng Lin (林得勝)">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="Power method, Power method, 能找到一個矩陣最大的 eigenvalue. 這裡要介紹第二大的怎麼找. Deflation 對一方陣 $A$, 假設我們以 power iteration 找到了一組 eigenvalue/eigenvector, $\lambda$ and $v$, 使得 $Av = \lambda v$. 那要怎麼找下一組呢? Matrix tranformation 假設">
+
+  
+  <link rel="alternate" hreflang="en-us" href="https://teshenglin.github.io/post/2023_power_method_2/">
+
+  
+
+
+  
+  
+  
+  <meta name="theme-color" content="#2962ff">
+  
+
+  
+  
+  
+  <script src="/js/mathjax-config.js"></script>
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-1/css/all.min.css" integrity="sha256-4w9DunooKSr3MFXHXWyFER38WmPdm361bQS/2KUWZbU=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+        
+      
+    
+
+    
+
+    
+
+    
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.1.2/lazysizes.min.js" integrity="sha256-Md1qLToewPeKjfAHU1zyPwOutccPAm5tahnaw7Osw0A=" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CRoboto:400,400italic,700%7CRoboto+Mono&display=swap">
+  
+
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/academic.css">
+
+  
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-77TT93X4N1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-77TT93X4N1');
+</script>
+  
+
+
+  
+
+  <link rel="manifest" href="/index.webmanifest">
+  <link rel="icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_2.png">
+
+  <link rel="canonical" href="https://teshenglin.github.io/post/2023_power_method_2/">
+
+  
+  
+  
+  
+  
+    
+    
+  
+  
+  <meta property="twitter:card" content="summary">
+  
+  <meta property="og:site_name" content="Te-Sheng Lin">
+  <meta property="og:url" content="https://teshenglin.github.io/post/2023_power_method_2/">
+  <meta property="og:title" content="Power method - deflation | Te-Sheng Lin">
+  <meta property="og:description" content="Power method, Power method, 能找到一個矩陣最大的 eigenvalue. 這裡要介紹第二大的怎麼找. Deflation 對一方陣 $A$, 假設我們以 power iteration 找到了一組 eigenvalue/eigenvector, $\lambda$ and $v$, 使得 $Av = \lambda v$. 那要怎麼找下一組呢? Matrix tranformation 假設"><meta property="og:image" content="https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png">
+  <meta property="twitter:image" content="https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png"><meta property="og:locale" content="en-us">
+  
+    
+      <meta property="article:published_time" content="2023-04-26T00:00:00&#43;00:00">
+    
+    <meta property="article:modified_time" content="2023-04-26T20:31:56&#43;08:00">
+  
+
+  
+
+
+    
+
+
+
+
+
+
+  
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://teshenglin.github.io/post/2023_power_method_2/"
+  },
+  "headline": "Power method - deflation",
+  
+  "datePublished": "2023-04-26T00:00:00Z",
+  "dateModified": "2023-04-26T20:31:56+08:00",
+  
+  "author": {
+    "@type": "Person",
+    "name": "Te-Sheng Lin (林得勝)"
+  },
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "Te-Sheng Lin",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_2.png"
+    }
+  },
+  "description": "Power method, Power method, 能找到一個矩陣最大的 eigenvalue. 這裡要介紹第二大的怎麼找. Deflation 對一方陣 $A$, 假設我們以 power iteration 找到了一組 eigenvalue/eigenvector, $\\lambda$ and $v$, 使得 $Av = \\lambda v$. 那要怎麼找下一組呢? Matrix tranformation 假設"
+}
+</script>
+
+  
+
+  
+
+
+  
+
+
+  
+
+
+
+
+
+  <title>Power method - deflation | Te-Sheng Lin</title>
+
+</head>
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" >
+
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+  
+
+
+
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container">
+
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="/">Te-Sheng Lin</a>
+    </div>
+    
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/">Te-Sheng Lin</a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#about"><span>Home</span></a>
+        </li>
+
+        
+        
+
+        
+        <li class="nav-item dropdown">
+          <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"><span>Resume</span><span class="caret"></span>
+          </a>
+          <div class="dropdown-menu">
+            
+              <a class="dropdown-item" href="/#experience"><span>Appointments </span></a>
+            
+              <a class="dropdown-item" href="/#publications"><span>Publications</span></a>
+            
+              <a class="dropdown-item" href="/#cv"><span>CV</span></a>
+            
+          </div>
+        </li>
+
+        
+        
+
+        
+        <li class="nav-item dropdown">
+          <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"><span>Posts</span><span class="caret"></span>
+          </a>
+          <div class="dropdown-menu">
+            
+              <a class="dropdown-item" href="/#posts"><span>All posts</span></a>
+            
+              <a class="dropdown-item" href="/categories/calculus/"><span>Calculus 微積分</span></a>
+            
+              <a class="dropdown-item" href="/categories/computational-mathematics/"><span>Computational Mathematics 計算數學</span></a>
+            
+              <a class="dropdown-item" href="/categories/linear-algebra/"><span>Linear Algebra 線性代數</span></a>
+            
+              <a class="dropdown-item" href="/categories/notes/"><span>程式語言學習筆記</span></a>
+            
+          </div>
+        </li>
+
+        
+        
+
+        
+        <li class="nav-item dropdown">
+          <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"><span>Teaching</span><span class="caret"></span>
+          </a>
+          <div class="dropdown-menu">
+            
+              <a class="dropdown-item" href="/courses/taught"><span>Courses taught</span></a>
+            
+              <a class="dropdown-item" href="/courses/students"><span>Students supervised</span></a>
+            
+              <a class="dropdown-item" href="/courses/gsw"><span>Graduate student workshops</span></a>
+            
+              <a class="dropdown-item" href="/courses/summer_research"><span>Summer research internship</span></a>
+            
+          </div>
+        </li>
+
+        
+        
+
+      
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+      
+      <li class="nav-item">
+        <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+      <li class="nav-item">
+        <a class="nav-link js-dark-toggle" href="#"><i class="fas fa-moon" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+  <article class="article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+<div class="article-container pt-3">
+  <h1>Power method - deflation</h1>
+
+  
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+
+
+  
+  <span><a href="/authors/admin/">Te-Sheng Lin (林得勝)</a></span>
+
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+          Last updated on
+      
+    
+    Apr 26, 2023
+  </span>
+  
+
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    2 min read
+  </span>
+  
+
+  
+  
+  
+  <span class="middot-divider"></span>
+  <a href="/post/2023_power_method_2/#disqus_thread"></a>
+  
+
+  
+  
+  <span class="middot-divider"></span>
+  <span class="article-categories">
+    <i class="fas fa-folder mr-1"></i><a href="/categories/notes/">notes</a>, <a href="/categories/linear-algebra/">Linear algebra</a>, <a href="/categories/computational-mathematics/">Computational Mathematics</a></span>
+  
+
+</div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style">
+      <blockquote>
+<p>Power method, 
+<a href="/post/2023_power_method_1">Power method</a>, 能找到一個矩陣最大的 eigenvalue.</p>
+<p>這裡要介紹第二大的怎麼找.</p>
+</blockquote>
+<hr>
+<h1 id="deflation">Deflation</h1>
+<blockquote>
+<p>對一方陣 $A$, 假設我們以 power iteration 找到了一組 eigenvalue/eigenvector, $\lambda$ and $v$, 使得 $Av = \lambda v$. 那要怎麼找下一組呢?</p>
+</blockquote>
+<h2 id="matrix-tranformation">Matrix tranformation</h2>
+<p>假設能找到一個向量 $x$ 使 $x^T v = 1$, 則我們定義
+$$
+\tag{1} B = A - \lambda v x^T,
+$$
+並且以 $B$ 來找 eigenvalue/eigenvector. 那 $A$ 與 $B$ 之間有什麼關係呢?</p>
+<ol>
+<li>$B$ 的一組 eigenvalue/eigenvector 為 $0$ 與 $v$, 滿足 $Bv = 0v$.</li>
+<li>$B$ 其他所有的 eigenvalues 都跟 $A$ 一樣.</li>
+</ol>
+<h3 id="pf-of-1">pf of 1:</h3>
+<p>$$
+Bv = (A - \lambda v x^T)v = Av - \lambda v (x^Tv) = Av - \lambda v=0.
+$$</p>
+<h3 id="pf-of-2">pf of 2:</h3>
+<p>假設 $w$ 是 $A$ 的 left-eigenvector, 其 eigenvalue 為 $\lambda_2\ne \lambda$, 滿足 $w^TA = \lambda_2w^T$, 則我們知道 $w^Tv=0$, 並且
+$$
+w^TB = w^T(A - \lambda v x^T) = w^TA - \lambda (w^Tv)x^T = w^TA = \lambda_2w^T.
+$$
+因此 $\lambda_2$ 亦為 $B$ 的 eigenvalue.</p>
+<hr>
+<p>所以我們會利用找 $B$ 的 eigenvalue 來找 $A$ 的 eigenvalue.</p>
+<hr>
+<p>那假設我們找到 $B$ 的 eigenvalue 跟 eigenvector 了, 稱之為 $\lambda_2$ 以及 $u_2$, 那我們知道 $\lambda_2$ 也是 $A$ 的 eigenvalue, 不過其相對應的 eigenvector 是誰呢?</p>
+<p>若 $B$ 有 eigenvalues $0,\lambda_2, \cdots, \lambda_n$ 以及 eigenvectors $v, u_2, u_3, \cdots, u_n$, 則
+$$
+\tag{2} v_i = (\lambda_i-\lambda) u_i + \lambda (x^T u_i) v, \quad i=2,\cdots, n,
+$$
+並且 $Av_i = \lambda_i v_i$.</p>
+<h3 id="pf">pf</h3>
+<p>因為 $u_i$ 是 $B$ 的 eigenvector, 所以
+$$
+\lambda_i u_i = Bu_i = (A - \lambda v x^T)u_i = Au_i - \lambda(x^Tu_i)v.
+$$
+因此
+$$
+Au_i = \lambda_i u_i +\lambda(x^Tu_i)v.
+$$
+那麼
+$$
+\begin{aligned}
+Av_i &amp;= (\lambda_i-\lambda) Au_i + \lambda (x^T u_i) Av \\<br>
+&amp;= (\lambda_i-\lambda)(\lambda_i u_i +\lambda(x^Tu_i)v) + \lambda^2 (x^T u_i) v\\<br>
+&amp;= \lambda_i((\lambda_i-\lambda) u_i + \lambda (x^T u_i) v) \\<br>
+&amp;=\lambda_i v_i.
+\end{aligned}
+$$</p>
+<hr>
+<p>因此, 對 (1) 做 power iteration 可以找出下一個 eigenvalue, 並且利用 (2) 可以得到其 eigenvector.</p>
+<hr>
+<h2 id="eigen-decomposition">Eigen-decomposition</h2>
+<p>對一個方陣, 如果我們可以找到所有的 eigenvalues 跟 eigenvectors, 並且有以下關係
+$$
+A V = V\Lambda  \quad \longleftrightarrow \quad A = V\Lambda V^{-1}
+$$
+並且我們將 $V$, $\Lambda$, $V^{-1}$ 記為
+$$
+V = [v_1, v_2, \cdots, v_n], \quad \Lambda = \text{diag}\{\lambda_1, \lambda_2, \cdots, \lambda_n\},\quad
+V^{-1} = \begin{bmatrix}
+w^T_1 \\ w^T_2 \\ \vdots \\ w^T_n\end{bmatrix}.
+$$
+則
+$$
+A = \lambda_1 v^1w^T_1 + \lambda_2 v^2w^T_2 + \cdots + \lambda_n v^nw^T_n.
+$$</p>
+<p>有趣的是, 若我們定義
+$$
+\tag{3} B = A-\lambda_1 v^1w^T_1,
+$$
+則可以很輕易地看出 $B$ 的 eigenvectors 與 $A$ 的完全一樣, 而 eigenvalues 也幾乎完全一樣, 只有 $\lambda_1$ 被移到 $0$ 去了.</p>
+<hr>
+<p>因此, 若我們知道一個 eigenvalue, 以及其相對應的 left and right eigenvectors, 則可以用 (3) 來做 power iteration 找出下一個 eigenvalue, 並且它的 eigenvector 就會是 $A$ 的 eigenvector.</p>
+<p><strong>Note:</strong> 不過實務上 left eigenvector 比較難找, 需要先找出 linear operator 的 adjoint operator (也就是 $A^T$) 才有辦法做矩陣-向量乘法, 因此這個方法除了對稱的情況外幾乎不會被使用.</p>
+<p><strong>Note:</strong> 當 $A$ 是 symmetric, 則可以選擇 $v_i$ 使得 $w_i = v_i$, 在這時候我們就可以輕易地使用 (3) 來找下一組了.</p>
+<hr>
+<h2 id="annihilation">Annihilation</h2>
+<p>給定 $A$ 為一個 $n\times n$ 方陣. 我們做以下兩個假設</p>
+<ol>
+<li>它的 eigenvalues 滿足
+$$
+|\lambda_1| &gt; |\lambda_2| &gt; |\lambda_3| \cdots |\lambda_n|.
+$$</li>
+<li>相對應的 eigenvectors, $\{v_1, v_2, \cdots, v_n\}$, 會構成 $R^n$ 的一組基底.</li>
+</ol>
+<h4 id="observation">Observation</h4>
+<p>如果初始向量我們選擇 $y$ 使得
+$$
+\tag{4} y = \sum_{i=2}^n c_iv_i,
+$$
+也就是沒有 $v_1$ 的分量, 則 power iteration 會找到 $\lambda_2$ 以及 $v_2$.</p>
+<p>當然, 任意給一個向量並無法滿足 (4) 這個條件, 不過若我們定義
+$$
+\tag{5} y = A x - \lambda_1 x,
+$$
+則對任意一個向量 $x$, 這個 $y$ 就會滿足 (4).</p>
+<h3 id="pf-1">pf</h3>
+<p>Let $x = \sum^{n}_{i=1} c_iv_i$, then</p>
+<p>$$
+\begin{aligned}
+y &amp;= A x - \lambda_1 x \\<br>
+&amp;= \sum^n_{i=1} (c_iAv_i - c_i\lambda_1v_i) \\<br>
+&amp;= \sum^n_{i=2} c_i(\lambda_i-\lambda_1)v_i.
+\end{aligned}
+$$</p>
+<hr>
+<p>因此, 若我們知道一個 eigenvalue, 則可以任取一個向量 $x$ 再用 (5) 來做出 power iteration 的初始值, 這樣就可以找出下一個 eigenvalue, 並且它的 eigenvector 就會是 $A$ 的 eigenvector.</p>
+<p><strong>Note:</strong> 不過實際在做的時候, 由於 $\lambda_1$ 有數值誤差, 因此 (5) 並不會完全滿足 (4), 在設計 power iteration 的時候要小心這件事.</p>
+<hr>
+
+    </div>
+
+    
+
+
+
+
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/tags/power-method/">power method</a>
+  
+  <a class="badge badge-light" href="/tags/matrix-transformation/">matrix transformation</a>
+  
+  <a class="badge badge-light" href="/tags/eigendecomposition/">eigendecomposition</a>
+  
+  <a class="badge badge-light" href="/tags/annihilation/">annihilation</a>
+  
+</div>
+
+
+
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=https://teshenglin.github.io/post/2023_power_method_2/&amp;text=Power%20method%20-%20deflation" target="_blank" rel="noopener" class="share-btn-twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=https://teshenglin.github.io/post/2023_power_method_2/&amp;t=Power%20method%20-%20deflation" target="_blank" rel="noopener" class="share-btn-facebook">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="mailto:?subject=Power%20method%20-%20deflation&amp;body=https://teshenglin.github.io/post/2023_power_method_2/" target="_blank" rel="noopener" class="share-btn-email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+  
+
+
+
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  <div class="media author-card content-widget-hr">
+    
+      
+      <img class="avatar mr-3 avatar-circle" src="/authors/admin/avatar_hua0d4d4b24f4da3a102e4452ac738b95f_109236_270x270_fill_q90_lanczos_center.jpg" alt="Avatar">
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="https://teshenglin.github.io/">Te-Sheng Lin (林得勝)</a></h5>
+      <h6 class="card-subtitle">Associate Professor</h6>
+      <p class="card-text">The focus of my research is concerned with the development of analytical and computational tools, and further to communicate with scientists from other disciplines to solve engineering problems in practice.</p>
+      <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+    <li>
+      <a href="mailto:tslin@math.nctu.edu.tw" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://scholar.google.com.tw/citations?user=diXYXkwAAAAJ" target="_blank" rel="noopener">
+        <i class="ai ai-google-scholar"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://arxiv.org/a/0000-0002-5718-5048" target="_blank" rel="noopener">
+        <i class="ai ai-arxiv"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.researchgate.net/profile/Te-Sheng_Lin" target="_blank" rel="noopener">
+        <i class="ai ai-researchgate"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://github.com/teshenglin" target="_blank" rel="noopener">
+        <i class="fab fa-github"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="/cv/cv.pdf" >
+        <i class="ai ai-cv"></i>
+      </a>
+    </li>
+  
+</ul>
+
+    </div>
+  </div>
+
+
+
+
+<section id="comments">
+  
+    
+<div id="disqus_thread"></div>
+<script>
+  let disqus_config = function () {
+    
+    
+    
+  };
+  (function() {
+    if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+      document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+      return;
+    }
+    var d = document, s = d.createElement('script'); s.async = true;
+    s.src = 'https://' + "https-teshenglin-github-io" + '.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+  
+</section>
+
+
+
+
+
+
+  
+  
+  <div class="article-widget content-widget-hr">
+    <h3>Related</h3>
+    <ul>
+      
+      <li><a href="/post/2023_power_method_1/">Power method</a></li>
+      
+    </ul>
+  </div>
+  
+
+
+
+  </div>
+</article>
+
+      
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.4.4/mermaid.min.js" integrity="sha256-JEqEejGt4tR35L0a1zodzsV0/PJ6GIf7J4yDtywdrH8=" crossorigin="anonymous" title="mermaid"></script>
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js" integrity="sha256-eOgo0OtLL4cdq7RdwRUiGKLX9XsIJ7nGhWEKbohmVAQ=" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/languages/r.min.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/languages/julia.min.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/languages/python.min.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/languages/fortran.min.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/languages/matlab.min.js"></script>
+        
+      
+
+    
+
+    
+    
+
+    
+    
+    <script>const code_highlighting = true;</script>
+    
+
+    
+    
+    <script>const isSiteThemeDark = false;</script>
+    
+
+    
+    
+    
+    
+    
+    
+    <script>
+      const search_config = {"indexURI":"/index.json","minLength":1,"threshold":0.3};
+      const i18n = {"no_results":"No results found","placeholder":"Search...","results":"results found"};
+      const content_type = {
+        'post': "Posts",
+        'project': "Projects",
+        'publication' : "Publications",
+        'talk' : "Talks"
+        };
+    </script>
+    
+
+    
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+    <script id="dsq-count-scr" src="https://https-teshenglin-github-io.disqus.com/count.js" async></script>
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    <script src="/js/academic.min.a8d7005002cb4a052fd6d721e83df9ba.js"></script>
+
+    
+
+
+
+
+
+
+  
+  
+  <div class="container">
+    <footer class="site-footer">
+  
+
+  <p class="powered-by">
+    
+
+    Powered by the
+    <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
+    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+
+    
+    <span class="float-right" aria-hidden="true">
+      <a href="#" class="back-to-top">
+        <span class="button_icon">
+          <i class="fas fa-chevron-up fa-2x"></i>
+        </span>
+      </a>
+    </span>
+    
+  </p>
+</footer>
+
+  </div>
+  
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

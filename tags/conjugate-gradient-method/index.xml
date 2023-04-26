@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>conjugate gradient method | Te-Sheng Lin</title>
+    <link>https://teshenglin.github.io/tags/conjugate-gradient-method/</link>
+      <atom:link href="https://teshenglin.github.io/tags/conjugate-gradient-method/index.xml" rel="self" type="application/rss+xml" />
+    <description>conjugate gradient method</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Wed, 26 Apr 2023 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>conjugate gradient method</title>
+      <link>https://teshenglin.github.io/tags/conjugate-gradient-method/</link>
+    </image>
+    
+    <item>
+      <title>Conjugate gradient method</title>
+      <link>https://teshenglin.github.io/post/2023_conjugate_gradient_method_1/</link>
+      <pubDate>Wed, 26 Apr 2023 00:00:00 +0000</pubDate>
+      <guid>https://teshenglin.github.io/post/2023_conjugate_gradient_method_1/</guid>
+      <description>&lt;h1 id=&#34;conjugate-gradient-method-as-a-direct-method&#34;&gt;Conjugate Gradient Method as a direct method&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;For solving $Ax=b$, where $A$ is a square symmetric positive definite matrix.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;assumptions&#34;&gt;Assumptions:&lt;/h2&gt;
+&lt;p&gt;$A\in M_{n\times n}$ is a symmetric positive definite matrix.&lt;/p&gt;
+&lt;h2 id=&#34;definition&#34;&gt;Definition:&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;A-orthogonal (A-conjugate)
+假設有兩個向量 $u_1$ 跟 $u_2$ 皆非 $0$ 且 $u_1 \neq u_2$，若這兩個向量滿足
+$$
+\langle{u_1},A{u_2}\rangle = {u_1}^TA{u_2} = 0,
+$$
+則稱之為 A-orthogonal (或 A-conjugate).&lt;/li&gt;
+&lt;li&gt;A-orthonormal
+假設有兩個向量 $u_1$ 跟 $u_2$ 為 A-orthogonal, 並且 $\langle{u_i}, {u_i}\rangle_A = 1$ for $1\le i\le 2$, 則稱之為 A-orthonormal.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Recall :&lt;/strong&gt; ${u_1}$ and ${u_2}$ are orthogonal if ${u_1}^T{u_2} = 0$.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Note :&lt;/strong&gt; We can define
+$$
+\langle{u_1}, {u_2}\rangle_A = \langle{u_1},A{u_2}\rangle= \langle A{u_1},{u_2}\rangle,
+$$
+then $\langle \cdot\rangle_A$ is an inner product.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;lemma&#34;&gt;Lemma&lt;/h3&gt;
+&lt;p&gt;如果 ${u_0, \cdots, u_k}$ 是個 A-orthogonal set, 則 ${u_0, \cdots, u_k}$ 也是一個 linearly independent set.&lt;/p&gt;
+&lt;h4 id=&#34;pf&#34;&gt;pf:&lt;/h4&gt;
+&lt;p&gt;假設 $c_0 u_0 + \cdots c_ku_k =0$.&lt;/p&gt;
+&lt;p&gt;將此方程兩邊同時乘以 $u^T_j A$, 由於 $u_j^TAu_i=0$ for $i\ne j$, 因此得到 $c_j u^T_j Au_j = 0$. 此外, 由於 $A$ 是正定矩陣, $u^T_j Au_j &amp;gt; 0$, 因此 $c_j=0$.&lt;/p&gt;
+&lt;p&gt;由於以上論述對所有 $j$ 都對, 因此得到 $c_i=0$ $\forall i$, 因此 ${u_0, \cdots, u_k}$ 為線性獨立.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Note :&lt;/strong&gt;
+如果 ${u_0, \cdots, u_{n-1}}\subset\mathbb{R}^n$ 是個 A-orthogonal set, 則他們也是 $\mathbb{R}^n$ 的一組 basis.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;cgm-as-direct-method&#34;&gt;CGM as direct method&lt;/h2&gt;
+&lt;h3 id=&#34;theorem&#34;&gt;Theorem:&lt;/h3&gt;
+&lt;p&gt;假設對一個矩陣 A，我們可以找到一組 A-orthogonal set ${u_0, \ldots, u_{n-1}}$, 則線性系統 $Ax=b$ 的解為
+$$
+x = \sum^{n-1}_{j=0}\frac{u^T_j b}{u^T_jAu_j} u_j.
+$$&lt;/p&gt;
+&lt;h4 id=&#34;pf-1&#34;&gt;pf:&lt;/h4&gt;
+&lt;p&gt;假設 $x = \sum^{n-1}_{i=0} c_i u_i$, 則&lt;/p&gt;
+&lt;p&gt;$$
+Ax = \sum^{n-1}_{i=0} c_i Au_i.&lt;br&gt;
+$$&lt;/p&gt;
+&lt;p&gt;將之代入 $b = Ax$ 並將兩側同時乘以 $u^T_j$ 得到
+$$
+u^T_j b = \sum^{n-1}_{i=0} c_i u^T_jAu_i = c_ju^T_jAu_j.
+$$
+因此
+$$
+c_j = \frac{u^T_j b}{u^T_jAu_j}.
+$$&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;實作上我們需要以迭代來尋找 $A$-orthogonal set, 並以迭代法來解線性系統.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://en.wikipedia.org/wiki/Conjugate_gradient_method&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Conjugate gradient method - wiki&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;迭代法推導請見
+&lt;ul&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://hackmd.io/@teshenglin/cgm_iterative&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Hackmd: Conjugate Gradient Method as an iterative method&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

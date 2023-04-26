@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>eigendecomposition | Te-Sheng Lin</title>
+    <link>https://teshenglin.github.io/tags/eigendecomposition/</link>
+      <atom:link href="https://teshenglin.github.io/tags/eigendecomposition/index.xml" rel="self" type="application/rss+xml" />
+    <description>eigendecomposition</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Wed, 26 Apr 2023 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>eigendecomposition</title>
+      <link>https://teshenglin.github.io/tags/eigendecomposition/</link>
+    </image>
+    
+    <item>
+      <title>Power method - deflation</title>
+      <link>https://teshenglin.github.io/post/2023_power_method_2/</link>
+      <pubDate>Wed, 26 Apr 2023 00:00:00 +0000</pubDate>
+      <guid>https://teshenglin.github.io/post/2023_power_method_2/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;Power method, 
+&lt;a href=&#34;https://teshenglin.github.io/post/2023_power_method_1&#34;&gt;Power method&lt;/a&gt;, 能找到一個矩陣最大的 eigenvalue.&lt;/p&gt;
+&lt;p&gt;這裡要介紹第二大的怎麼找.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;deflation&#34;&gt;Deflation&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;對一方陣 $A$, 假設我們以 power iteration 找到了一組 eigenvalue/eigenvector, $\lambda$ and $v$, 使得 $Av = \lambda v$. 那要怎麼找下一組呢?&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;matrix-tranformation&#34;&gt;Matrix tranformation&lt;/h2&gt;
+&lt;p&gt;假設能找到一個向量 $x$ 使 $x^T v = 1$, 則我們定義
+$$
+\tag{1} B = A - \lambda v x^T,
+$$
+並且以 $B$ 來找 eigenvalue/eigenvector. 那 $A$ 與 $B$ 之間有什麼關係呢?&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;$B$ 的一組 eigenvalue/eigenvector 為 $0$ 與 $v$, 滿足 $Bv = 0v$.&lt;/li&gt;
+&lt;li&gt;$B$ 其他所有的 eigenvalues 都跟 $A$ 一樣.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;pf-of-1&#34;&gt;pf of 1:&lt;/h3&gt;
+&lt;p&gt;$$
+Bv = (A - \lambda v x^T)v = Av - \lambda v (x^Tv) = Av - \lambda v=0.
+$$&lt;/p&gt;
+&lt;h3 id=&#34;pf-of-2&#34;&gt;pf of 2:&lt;/h3&gt;
+&lt;p&gt;假設 $w$ 是 $A$ 的 left-eigenvector, 其 eigenvalue 為 $\lambda_2\ne \lambda$, 滿足 $w^TA = \lambda_2w^T$, 則我們知道 $w^Tv=0$, 並且
+$$
+w^TB = w^T(A - \lambda v x^T) = w^TA - \lambda (w^Tv)x^T = w^TA = \lambda_2w^T.
+$$
+因此 $\lambda_2$ 亦為 $B$ 的 eigenvalue.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;所以我們會利用找 $B$ 的 eigenvalue 來找 $A$ 的 eigenvalue.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;那假設我們找到 $B$ 的 eigenvalue 跟 eigenvector 了, 稱之為 $\lambda_2$ 以及 $u_2$, 那我們知道 $\lambda_2$ 也是 $A$ 的 eigenvalue, 不過其相對應的 eigenvector 是誰呢?&lt;/p&gt;
+&lt;p&gt;若 $B$ 有 eigenvalues $0,\lambda_2, \cdots, \lambda_n$ 以及 eigenvectors $v, u_2, u_3, \cdots, u_n$, 則
+$$
+\tag{2} v_i = (\lambda_i-\lambda) u_i + \lambda (x^T u_i) v, \quad i=2,\cdots, n,
+$$
+並且 $Av_i = \lambda_i v_i$.&lt;/p&gt;
+&lt;h3 id=&#34;pf&#34;&gt;pf&lt;/h3&gt;
+&lt;p&gt;因為 $u_i$ 是 $B$ 的 eigenvector, 所以
+$$
+\lambda_i u_i = Bu_i = (A - \lambda v x^T)u_i = Au_i - \lambda(x^Tu_i)v.
+$$
+因此
+$$
+Au_i = \lambda_i u_i +\lambda(x^Tu_i)v.
+$$
+那麼
+$$
+\begin{aligned}
+Av_i &amp;amp;= (\lambda_i-\lambda) Au_i + \lambda (x^T u_i) Av \\&lt;br&gt;
+&amp;amp;= (\lambda_i-\lambda)(\lambda_i u_i +\lambda(x^Tu_i)v) + \lambda^2 (x^T u_i) v\\&lt;br&gt;
+&amp;amp;= \lambda_i((\lambda_i-\lambda) u_i + \lambda (x^T u_i) v) \\&lt;br&gt;
+&amp;amp;=\lambda_i v_i.
+\end{aligned}
+$$&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;因此, 對 (1) 做 power iteration 可以找出下一個 eigenvalue, 並且利用 (2) 可以得到其 eigenvector.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;eigen-decomposition&#34;&gt;Eigen-decomposition&lt;/h2&gt;
+&lt;p&gt;對一個方陣, 如果我們可以找到所有的 eigenvalues 跟 eigenvectors, 並且有以下關係
+$$
+A V = V\Lambda  \quad \longleftrightarrow \quad A = V\Lambda V^{-1}
+$$
+並且我們將 $V$, $\Lambda$, $V^{-1}$ 記為
+$$
+V = [v_1, v_2, \cdots, v_n], \quad \Lambda = \text{diag}\{\lambda_1, \lambda_2, \cdots, \lambda_n\},\quad
+V^{-1} = \begin{bmatrix}
+w^T_1 \\ w^T_2 \\ \vdots \\ w^T_n\end{bmatrix}.
+$$
+則
+$$
+A = \lambda_1 v^1w^T_1 + \lambda_2 v^2w^T_2 + \cdots + \lambda_n v^nw^T_n.
+$$&lt;/p&gt;
+&lt;p&gt;有趣的是, 若我們定義
+$$
+\tag{3} B = A-\lambda_1 v^1w^T_1,
+$$
+則可以很輕易地看出 $B$ 的 eigenvectors 與 $A$ 的完全一樣, 而 eigenvalues 也幾乎完全一樣, 只有 $\lambda_1$ 被移到 $0$ 去了.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;因此, 若我們知道一個 eigenvalue, 以及其相對應的 left and right eigenvectors, 則可以用 (3) 來做 power iteration 找出下一個 eigenvalue, 並且它的 eigenvector 就會是 $A$ 的 eigenvector.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; 不過實務上 left eigenvector 比較難找, 需要先找出 linear operator 的 adjoint operator (也就是 $A^T$) 才有辦法做矩陣-向量乘法, 因此這個方法除了對稱的情況外幾乎不會被使用.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; 當 $A$ 是 symmetric, 則可以選擇 $v_i$ 使得 $w_i = v_i$, 在這時候我們就可以輕易地使用 (3) 來找下一組了.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;annihilation&#34;&gt;Annihilation&lt;/h2&gt;
+&lt;p&gt;給定 $A$ 為一個 $n\times n$ 方陣. 我們做以下兩個假設&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;它的 eigenvalues 滿足
+$$
+|\lambda_1| &amp;gt; |\lambda_2| &amp;gt; |\lambda_3| \cdots |\lambda_n|.
+$$&lt;/li&gt;
+&lt;li&gt;相對應的 eigenvectors, $\{v_1, v_2, \cdots, v_n\}$, 會構成 $R^n$ 的一組基底.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 id=&#34;observation&#34;&gt;Observation&lt;/h4&gt;
+&lt;p&gt;如果初始向量我們選擇 $y$ 使得
+$$
+\tag{4} y = \sum_{i=2}^n c_iv_i,
+$$
+也就是沒有 $v_1$ 的分量, 則 power iteration 會找到 $\lambda_2$ 以及 $v_2$.&lt;/p&gt;
+&lt;p&gt;當然, 任意給一個向量並無法滿足 (4) 這個條件, 不過若我們定義
+$$
+\tag{5} y = A x - \lambda_1 x,
+$$
+則對任意一個向量 $x$, 這個 $y$ 就會滿足 (4).&lt;/p&gt;
+&lt;h3 id=&#34;pf-1&#34;&gt;pf&lt;/h3&gt;
+&lt;p&gt;Let $x = \sum^{n}_{i=1} c_iv_i$, then&lt;/p&gt;
+&lt;p&gt;$$
+\begin{aligned}
+y &amp;amp;= A x - \lambda_1 x \\&lt;br&gt;
+&amp;amp;= \sum^n_{i=1} (c_iAv_i - c_i\lambda_1v_i) \\&lt;br&gt;
+&amp;amp;= \sum^n_{i=2} c_i(\lambda_i-\lambda_1)v_i.
+\end{aligned}
+$$&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;因此, 若我們知道一個 eigenvalue, 則可以任取一個向量 $x$ 再用 (5) 來做出 power iteration 的初始值, 這樣就可以找出下一個 eigenvalue, 並且它的 eigenvector 就會是 $A$ 的 eigenvector.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; 不過實際在做的時候, 由於 $\lambda_1$ 有數值誤差, 因此 (5) 並不會完全滿足 (4), 在設計 power iteration 的時候要小心這件事.&lt;/p&gt;
+&lt;hr&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
