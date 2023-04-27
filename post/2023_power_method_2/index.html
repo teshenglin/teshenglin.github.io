@@ -28,7 +28,7 @@
   
     
   
-  <meta name="description" content="Power method, Power method, 能找到一個矩陣最大的 eigenvalue. 這裡要介紹第二大的怎麼找. Deflation 對一方陣 $A$, 假設我們以 power iteration 找到了一組 eigenvalue/eigenvector, $\lambda$ and $v$, 使得 $Av = \lambda v$. 那要怎麼找下一組呢? Matrix tranformation 假設">
+  <meta name="description" content="Power method, 能找到一個矩陣最大的 eigenvalue. 這裡要介紹第二大的怎麼找. Deflation 對一方陣 $A$, 假設我們以 power iteration 找到了一組 eigenvalue/eigenvector, $\lambda$ and $v$, 使得 $Av = \lambda v$. 那要怎麼找下一組呢? Matrix tranformation 假設能找">
 
   
   <link rel="alternate" hreflang="en-us" href="https://teshenglin.github.io/post/2023_power_method_2/">
@@ -236,13 +236,13 @@
   <meta property="og:site_name" content="Te-Sheng Lin">
   <meta property="og:url" content="https://teshenglin.github.io/post/2023_power_method_2/">
   <meta property="og:title" content="Power method - deflation | Te-Sheng Lin">
-  <meta property="og:description" content="Power method, Power method, 能找到一個矩陣最大的 eigenvalue. 這裡要介紹第二大的怎麼找. Deflation 對一方陣 $A$, 假設我們以 power iteration 找到了一組 eigenvalue/eigenvector, $\lambda$ and $v$, 使得 $Av = \lambda v$. 那要怎麼找下一組呢? Matrix tranformation 假設"><meta property="og:image" content="https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png">
+  <meta property="og:description" content="Power method, 能找到一個矩陣最大的 eigenvalue. 這裡要介紹第二大的怎麼找. Deflation 對一方陣 $A$, 假設我們以 power iteration 找到了一組 eigenvalue/eigenvector, $\lambda$ and $v$, 使得 $Av = \lambda v$. 那要怎麼找下一組呢? Matrix tranformation 假設能找"><meta property="og:image" content="https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png">
   <meta property="twitter:image" content="https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png"><meta property="og:locale" content="en-us">
   
     
       <meta property="article:published_time" content="2023-04-26T00:00:00&#43;00:00">
     
-    <meta property="article:modified_time" content="2023-04-26T20:31:56&#43;08:00">
+    <meta property="article:modified_time" content="2023-04-27T21:44:03&#43;08:00">
   
 
   
@@ -271,7 +271,7 @@
   "headline": "Power method - deflation",
   
   "datePublished": "2023-04-26T00:00:00Z",
-  "dateModified": "2023-04-26T20:31:56+08:00",
+  "dateModified": "2023-04-27T21:44:03+08:00",
   
   "author": {
     "@type": "Person",
@@ -286,7 +286,7 @@
       "url": "https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_2.png"
     }
   },
-  "description": "Power method, Power method, 能找到一個矩陣最大的 eigenvalue. 這裡要介紹第二大的怎麼找. Deflation 對一方陣 $A$, 假設我們以 power iteration 找到了一組 eigenvalue/eigenvector, $\\lambda$ and $v$, 使得 $Av = \\lambda v$. 那要怎麼找下一組呢? Matrix tranformation 假設"
+  "description": "Power method, 能找到一個矩陣最大的 eigenvalue. 這裡要介紹第二大的怎麼找. Deflation 對一方陣 $A$, 假設我們以 power iteration 找到了一組 eigenvalue/eigenvector, $\\lambda$ and $v$, 使得 $Av = \\lambda v$. 那要怎麼找下一組呢? Matrix tranformation 假設能找"
 }
 </script>
 
@@ -551,7 +551,7 @@
           Last updated on
       
     
-    Apr 26, 2023
+    Apr 27, 2023
   </span>
   
 
@@ -604,7 +604,7 @@
 
     <div class="article-style">
       <blockquote>
-<p>Power method, 
+<p>
 <a href="/post/2023_power_method_1">Power method</a>, 能找到一個矩陣最大的 eigenvalue.</p>
 <p>這裡要介紹第二大的怎麼找.</p>
 </blockquote>
@@ -653,12 +653,12 @@ Au_i = \lambda_i u_i +\lambda(x^Tu_i)v.
 $$
 那麼
 $$
-\begin{aligned}
+\begin{align}
 Av_i &amp;= (\lambda_i-\lambda) Au_i + \lambda (x^T u_i) Av \\<br>
 &amp;= (\lambda_i-\lambda)(\lambda_i u_i +\lambda(x^Tu_i)v) + \lambda^2 (x^T u_i) v\\<br>
 &amp;= \lambda_i((\lambda_i-\lambda) u_i + \lambda (x^T u_i) v) \\<br>
 &amp;=\lambda_i v_i.
-\end{aligned}
+\end{align}
 $$</p>
 <hr>
 <p>因此, 對 (1) 做 power iteration 可以找出下一個 eigenvalue, 並且利用 (2) 可以得到其 eigenvector.</p>

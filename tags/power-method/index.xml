@@ -17,8 +17,7 @@
       <link>https://teshenglin.github.io/post/2023_power_method_1/</link>
       <pubDate>Wed, 26 Apr 2023 00:00:00 +0000</pubDate>
       <guid>https://teshenglin.github.io/post/2023_power_method_1/</guid>
-      <description>&lt;h1 id=&#34;power-method&#34;&gt;Power method&lt;/h1&gt;
-&lt;h2 id=&#34;基本-power-method&#34;&gt;基本 Power method&lt;/h2&gt;
+      <description>&lt;h2 id=&#34;基本-power-method&#34;&gt;基本 Power method&lt;/h2&gt;
 &lt;blockquote&gt;
 &lt;p&gt;求一個方陣最大(in magnitude) 的 eigenvalue.&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -156,7 +155,7 @@ $$
       <pubDate>Wed, 26 Apr 2023 00:00:00 +0000</pubDate>
       <guid>https://teshenglin.github.io/post/2023_power_method_2/</guid>
       <description>&lt;blockquote&gt;
-&lt;p&gt;Power method, 
+&lt;p&gt;
 &lt;a href=&#34;https://teshenglin.github.io/post/2023_power_method_1&#34;&gt;Power method&lt;/a&gt;, 能找到一個矩陣最大的 eigenvalue.&lt;/p&gt;
 &lt;p&gt;這裡要介紹第二大的怎麼找.&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -205,12 +204,12 @@ Au_i = \lambda_i u_i +\lambda(x^Tu_i)v.
 $$
 那麼
 $$
-\begin{aligned}
+\begin{align}
 Av_i &amp;amp;= (\lambda_i-\lambda) Au_i + \lambda (x^T u_i) Av \\&lt;br&gt;
 &amp;amp;= (\lambda_i-\lambda)(\lambda_i u_i +\lambda(x^Tu_i)v) + \lambda^2 (x^T u_i) v\\&lt;br&gt;
 &amp;amp;= \lambda_i((\lambda_i-\lambda) u_i + \lambda (x^T u_i) v) \\&lt;br&gt;
 &amp;amp;=\lambda_i v_i.
-\end{aligned}
+\end{align}
 $$&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;因此, 對 (1) 做 power iteration 可以找出下一個 eigenvalue, 並且利用 (2) 可以得到其 eigenvector.&lt;/p&gt;

@@ -17,8 +17,7 @@
       <link>https://teshenglin.github.io/post/2023_power_method_1/</link>
       <pubDate>Wed, 26 Apr 2023 00:00:00 +0000</pubDate>
       <guid>https://teshenglin.github.io/post/2023_power_method_1/</guid>
-      <description>&lt;h1 id=&#34;power-method&#34;&gt;Power method&lt;/h1&gt;
-&lt;h2 id=&#34;基本-power-method&#34;&gt;基本 Power method&lt;/h2&gt;
+      <description>&lt;h2 id=&#34;基本-power-method&#34;&gt;基本 Power method&lt;/h2&gt;
 &lt;blockquote&gt;
 &lt;p&gt;求一個方陣最大(in magnitude) 的 eigenvalue.&lt;/p&gt;
 &lt;/blockquote&gt;

@@ -17,8 +17,7 @@
       <link>https://teshenglin.github.io/post/2023_conjugate_gradient_method_1/</link>
       <pubDate>Wed, 26 Apr 2023 00:00:00 +0000</pubDate>
       <guid>https://teshenglin.github.io/post/2023_conjugate_gradient_method_1/</guid>
-      <description>&lt;h1 id=&#34;conjugate-gradient-method-as-a-direct-method&#34;&gt;Conjugate Gradient Method as a direct method&lt;/h1&gt;
-&lt;blockquote&gt;
+      <description>&lt;blockquote&gt;
 &lt;p&gt;For solving $Ax=b$, where $A$ is a square symmetric positive definite matrix.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h2 id=&#34;assumptions&#34;&gt;Assumptions:&lt;/h2&gt;
@@ -96,7 +95,6 @@ $$&lt;/p&gt;
 &lt;p&gt;這裡要介紹 CG method 迭代法的版本.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;hr&gt;
-&lt;h1 id=&#34;conjugate-gradient-method-as-an-iterative-method&#34;&gt;Conjugate Gradient Method as an iterative method&lt;/h1&gt;
 &lt;blockquote&gt;
 &lt;p&gt;For solving $Ax=b$, where $A$ is a square symmetric positive definite matrix.&lt;/p&gt;
 &lt;/blockquote&gt;

@@ -28,7 +28,7 @@
   
     
   
-  <meta name="description" content="Conjugate Gradient Method as a direct method For solving $Ax=b$, where $A$ is a square symmetric positive definite matrix. Assumptions: $A\in M_{n\times n}$ is a symmetric positive definite matrix. Definition: A-orthogonal (A-conjugate) 假設有兩個向量 $u_1$ 跟 $u_2$ 皆非 $0$ 且 $u_1 \neq u_2$，若這兩個向量滿足 $$ \langle{u_1},A{u_2}\rangle = {u_1}^TA{u_2} = 0, $$ 則稱">
+  <meta name="description" content="For solving $Ax=b$, where $A$ is a square symmetric positive definite matrix. Assumptions: $A\in M_{n\times n}$ is a symmetric positive definite matrix. Definition: A-orthogonal (A-conjugate) 假設有兩個向量 $u_1$ 跟 $u_2$ 皆非 $0$ 且 $u_1 \neq u_2$，若這兩個向量滿足 $$ \langle{u_1},A{u_2}\rangle = {u_1}^TA{u_2} = 0, $$ 則稱之為 A-orthogonal (或 A-conjugate). A-orthonormal">
 
   
   <link rel="alternate" hreflang="en-us" href="https://teshenglin.github.io/post/2023_conjugate_gradient_method_1/">
@@ -236,13 +236,13 @@
   <meta property="og:site_name" content="Te-Sheng Lin">
   <meta property="og:url" content="https://teshenglin.github.io/post/2023_conjugate_gradient_method_1/">
   <meta property="og:title" content="Conjugate gradient method - direct method | Te-Sheng Lin">
-  <meta property="og:description" content="Conjugate Gradient Method as a direct method For solving $Ax=b$, where $A$ is a square symmetric positive definite matrix. Assumptions: $A\in M_{n\times n}$ is a symmetric positive definite matrix. Definition: A-orthogonal (A-conjugate) 假設有兩個向量 $u_1$ 跟 $u_2$ 皆非 $0$ 且 $u_1 \neq u_2$，若這兩個向量滿足 $$ \langle{u_1},A{u_2}\rangle = {u_1}^TA{u_2} = 0, $$ 則稱"><meta property="og:image" content="https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png">
+  <meta property="og:description" content="For solving $Ax=b$, where $A$ is a square symmetric positive definite matrix. Assumptions: $A\in M_{n\times n}$ is a symmetric positive definite matrix. Definition: A-orthogonal (A-conjugate) 假設有兩個向量 $u_1$ 跟 $u_2$ 皆非 $0$ 且 $u_1 \neq u_2$，若這兩個向量滿足 $$ \langle{u_1},A{u_2}\rangle = {u_1}^TA{u_2} = 0, $$ 則稱之為 A-orthogonal (或 A-conjugate). A-orthonormal"><meta property="og:image" content="https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png">
   <meta property="twitter:image" content="https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png"><meta property="og:locale" content="en-us">
   
     
       <meta property="article:published_time" content="2023-04-26T00:00:00&#43;00:00">
     
-    <meta property="article:modified_time" content="2023-04-27T20:16:47&#43;08:00">
+    <meta property="article:modified_time" content="2023-04-27T21:44:03&#43;08:00">
   
 
   
@@ -271,7 +271,7 @@
   "headline": "Conjugate gradient method - direct method",
   
   "datePublished": "2023-04-26T00:00:00Z",
-  "dateModified": "2023-04-27T20:16:47+08:00",
+  "dateModified": "2023-04-27T21:44:03+08:00",
   
   "author": {
     "@type": "Person",
@@ -286,7 +286,7 @@
       "url": "https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_2.png"
     }
   },
-  "description": "Conjugate Gradient Method as a direct method For solving $Ax=b$, where $A$ is a square symmetric positive definite matrix. Assumptions: $A\\in M_{n\\times n}$ is a symmetric positive definite matrix. Definition: A-orthogonal (A-conjugate) 假設有兩個向量 $u_1$ 跟 $u_2$ 皆非 $0$ 且 $u_1 \\neq u_2$，若這兩個向量滿足 $$ \\langle{u_1},A{u_2}\\rangle = {u_1}^TA{u_2} = 0, $$ 則稱"
+  "description": "For solving $Ax=b$, where $A$ is a square symmetric positive definite matrix. Assumptions: $A\\in M_{n\\times n}$ is a symmetric positive definite matrix. Definition: A-orthogonal (A-conjugate) 假設有兩個向量 $u_1$ 跟 $u_2$ 皆非 $0$ 且 $u_1 \\neq u_2$，若這兩個向量滿足 $$ \\langle{u_1},A{u_2}\\rangle = {u_1}^TA{u_2} = 0, $$ 則稱之為 A-orthogonal (或 A-conjugate). A-orthonormal"
 }
 </script>
 
@@ -603,8 +603,7 @@
   <div class="article-container">
 
     <div class="article-style">
-      <h1 id="conjugate-gradient-method-as-a-direct-method">Conjugate Gradient Method as a direct method</h1>
-<blockquote>
+      <blockquote>
 <p>For solving $Ax=b$, where $A$ is a square symmetric positive definite matrix.</p>
 </blockquote>
 <h2 id="assumptions">Assumptions:</h2>
