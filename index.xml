@@ -13,7 +13,7 @@
     </image>
     
     <item>
-      <title>Conjugate gradient method</title>
+      <title>Conjugate gradient method - direct method</title>
       <link>https://teshenglin.github.io/post/2023_conjugate_gradient_method_1/</link>
       <pubDate>Wed, 26 Apr 2023 00:00:00 +0000</pubDate>
       <guid>https://teshenglin.github.io/post/2023_conjugate_gradient_method_1/</guid>
@@ -50,7 +50,7 @@ then $\langle \cdot\rangle_A$ is an inner product.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Note :&lt;/strong&gt;
 如果 ${u_0, \cdots, u_{n-1}}\subset\mathbb{R}^n$ 是個 A-orthogonal set, 則他們也是 $\mathbb{R}^n$ 的一組 basis.&lt;/p&gt;
 &lt;hr&gt;
-&lt;h2 id=&#34;cgm-as-direct-method&#34;&gt;CGM as direct method&lt;/h2&gt;
+&lt;h2 id=&#34;cg-as-a-direct-method&#34;&gt;CG as a direct method&lt;/h2&gt;
 &lt;h3 id=&#34;theorem&#34;&gt;Theorem:&lt;/h3&gt;
 &lt;p&gt;假設對一個矩陣 A，我們可以找到一組 A-orthogonal set ${u_0, \ldots, u_{n-1}}$, 則線性系統 $Ax=b$ 的解為
 $$
@@ -77,9 +77,211 @@ $$&lt;/p&gt;
 &lt;li&gt;迭代法推導請見
 &lt;ul&gt;
 &lt;li&gt;
-&lt;a href=&#34;https://hackmd.io/@teshenglin/cgm_iterative&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Hackmd: Conjugate Gradient Method as an iterative method&lt;/a&gt;.&lt;/li&gt;
+&lt;a href=&#34;https://teshenglin.github.io/post/2023_conjugate_gradient_method_2&#34;&gt;Conjugate gradient method - iterative method&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Conjugate gradient method - iterative method</title>
+      <link>https://teshenglin.github.io/post/2023_conjugate_gradient_method_2/</link>
+      <pubDate>Wed, 26 Apr 2023 00:00:00 +0000</pubDate>
+      <guid>https://teshenglin.github.io/post/2023_conjugate_gradient_method_2/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;共軛梯度法的直接法版本: 
+&lt;a href=&#34;https://teshenglin.github.io/post/2023_conjugate_gradient_method_1&#34;&gt;Conjugate Gradient (CG) Method as a direct method&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;這裡要介紹 CG method 迭代法的版本.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;conjugate-gradient-method-as-an-iterative-method&#34;&gt;Conjugate Gradient Method as an iterative method&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;For solving $Ax=b$, where $A$ is a square symmetric positive definite matrix.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;assumptions&#34;&gt;Assumptions:&lt;/h2&gt;
+&lt;p&gt;$A\in M_{n\times n}$ is a symmetric positive definite matrix.&lt;/p&gt;
+&lt;h2 id=&#34;definition&#34;&gt;Definition:&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;A-orthogonal (A-conjugate)
+假設有兩個向量 $u_1$ 跟 $u_2$ 皆非 $0$ 且 $u_1 \neq u_2$，若這兩個向量滿足
+$$
+\langle{u_1},A{u_2}\rangle = {u_1}^TA{u_2} = 0,
+$$
+則稱之為 A-orthogonal (或 A-conjugate).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Note :&lt;/strong&gt; We can define
+$$
+\langle{u_1}, {u_2}\rangle_A = \langle{u_1},A{u_2}\rangle= \langle A{u_1},{u_2}\rangle,
+$$
+then $\langle \cdot\rangle_A$ is an inner product.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;cg-as-an-iterative-method-first-attempt&#34;&gt;CG as an iterative method: First attempt&lt;/h2&gt;
+&lt;h3 id=&#34;theorem-1&#34;&gt;Theorem 1:&lt;/h3&gt;
+&lt;p&gt;假設對一個矩陣 A，我們可以找到一組 A-orthogonal set ${u_0, \ldots, u_{n-1}}$. 則給定一個初始值 $x_0$, 我們可定義一個迭代法: For $0\le i\le n-1$,
+$$
+\tag{1} x_{i+1}=x_i+t_{i}u_{i}, \quad
+t_{i}=\frac{\langle b-Ax_i,u_{i}\rangle}{\langle u_i,Au_{i}\rangle}.
+$$
+並且我們可以證明以下兩件事&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;定義第 $k$ 步的 residual, $r_k = b-Ax_k$, 我們有 $\langle r_k, u_{j}\rangle=0$, for $0\le j&amp;lt; k\le n$.&lt;/li&gt;
+&lt;li&gt;$Ax_n=b$, 也就是第 $n$ 次迭代保證得到解.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 id=&#34;pf-of-1&#34;&gt;pf of 1:&lt;/h4&gt;
+&lt;p&gt;首先我們可以推 residual 的迭代式
+$$
+\tag{2} \begin{align}
+r_{k+1} &amp;amp;= b - Ax_{k+1} \\
+&amp;amp;= b - A(x_k + t_ku_k) \\&lt;br&gt;
+&amp;amp;= (b-Ax_k)  - t_kAu_k \\&lt;br&gt;
+&amp;amp;= r_k  - t_kAu_k.
+\end{align}
+$$&lt;/p&gt;
+&lt;p&gt;接著, for $0\le j&amp;lt;k-1$, 由於 $u_{k-1}$ 與 $u_j$ 是 A-orthogonal, 因此
+$$
+\begin{align}
+\langle r_{k}, u_{j}\rangle
+&amp;amp;= \langle r_{k-1}, u_{j}\rangle-t_{k-1}\langle Au_{k-1}, u_{j}\rangle \\&lt;br&gt;
+&amp;amp;= \langle r_{k-1}, u_{j}\rangle.
+\end{align}
+$$
+同樣的理由可以一直使用得到
+$$
+\langle r_{k}, u_{j}\rangle
+= \langle r_{k-1}, u_{j}\rangle
+=\cdots
+= \langle r_{j+1}, u_{j}\rangle.
+$$&lt;/p&gt;
+&lt;p&gt;此外, 若 $j=k-1$, 則我們直接有 $\langle r_{k}, u_{j}\rangle  = \langle r_{j+1}, u_j\rangle$.&lt;/p&gt;
+&lt;p&gt;接著再用 (2) 一次, 並且用 (1) 裡 $t_j$ 的定義我們得到&lt;/p&gt;
+&lt;p&gt;$$
+\begin{align}
+\langle r_{j+1}, u_j\rangle
+&amp;amp;= \langle r_j, u_j\rangle-t_j\langle Au_j, u_j\rangle \\
+&amp;amp;= \langle r_j, u_j\rangle-\frac{\langle r_j,u_j\rangle}{\langle u_j,Au_j\rangle}\langle Au_j, u_j\rangle\\&lt;br&gt;
+&amp;amp;=0.
+\end{align}
+$$&lt;/p&gt;
+&lt;p&gt;因此, for $0\le j&amp;lt;k$, 我們有
+$$
+\langle r_{k}, u_{j}\rangle =0.
+$$&lt;/p&gt;
+&lt;h4 id=&#34;pf-of-2&#34;&gt;pf of 2:&lt;/h4&gt;
+&lt;p&gt;根據 1 我們有 $\langle r_n, u_{j}\rangle=0$ for $0\le j&amp;lt; n-1$, 也就是
+$$
+\langle b - Ax_n, u_{j}\rangle=0, \quad 0\le j&amp;lt; n-1.
+$$
+因為 $\{u_i\}^{n-1}_{i=0}$ span $\mathbb{R}^n$, 所以 $b - Ax_n$ 必為一個零向量, 也就是說 $Ax_n=b$.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;gram-schimidt-process-to-find-a-orthogonal-set&#34;&gt;Gram-Schimidt process to find A-orthogonal set&lt;/h2&gt;
+&lt;p&gt;不過這方法建立在一個重要假設之下, 就是一開始我們可以找到一組 A-orthogonal set $\{u_0, \ldots, u_{n-1}\}$. 不過在實際解問題是這顯然是不容易做到的, 因此我們會需要一步一步地將 $u_i$ 求出來.&lt;/p&gt;
+&lt;p&gt;這裡我們可以利用兩件事&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;The residual vector $r_k = b - Ax_k$.
+&lt;ul&gt;
+&lt;li&gt;每次迭代都會產生出一組新的 residual vector, 並且我們知道 residual 是下降最快的方向, 因此我們可以將下個搜尋方向設為 $r_k$, 只不過這並不滿足 A-orthogonal 的條件.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Gram-Schimidt process
+&lt;ul&gt;
+&lt;li&gt;線性代數裡告訴我們, 可以用 Gram-Schimidt process 將一組向量正交化. 因此我們就利用這方法來造出一組 A-orthogonal 的 basis.&lt;/li&gt;
+&lt;li&gt;若已經有 $\{u_0, \cdots, u_k\}$, 並且我們得到 $r_{k+1}$, 則 Gram-Schimidt process 告訴我們可以定義 $u_{k+1}$ 為
+$$
+u_{k+1} = r_{k+1} - \frac{\langle r_{k+1}, Au_0\rangle}{\langle u_0, Au_0\rangle}u_0 - \cdots - \frac{\langle r_{k+1}, Au_k\rangle}{\langle u_k, Au_k\rangle}u_k,
+$$
+並且 $u_{k+1}$ 會跟 $u_0, \cdots, u_k$ 是 A-orthogonal.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;cg-as-iterative-method-second-attempt&#34;&gt;CG as iterative method: Second attempt&lt;/h2&gt;
+&lt;p&gt;給一個初始猜測 $x_0$, 我們可以算 $r_0 = b-Ax_0$, 並且我們定義第一個方向為 $u_0 = r_0$.&lt;/p&gt;
+&lt;p&gt;接著我們可以往下做, for $k\ge 0$,
+$$
+\begin{align}
+t_{k} &amp;amp;=\frac{\langle b-Ax_k,u_{k}\rangle}{\langle u_k,Au_{k}\rangle}, \\&lt;br&gt;
+x_{k+1} &amp;amp;= x_k + t_k u_k, \\&lt;br&gt;
+r_{k+1} &amp;amp;= r_k - t_kAu_k, \\&lt;br&gt;
+u_{k+1} &amp;amp;= r_{k+1} - \frac{\langle r_{k+1}, Au_0\rangle}{\langle u_0, Au_0\rangle}u_0 - \cdots - \frac{\langle r_{k+1}, Au_k\rangle}{\langle u_k, Au_k\rangle}u_k.
+\end{align}
+$$
+這樣保證在第 $n$ 步得到解.&lt;/p&gt;
+&lt;p&gt;不過一般而言這是個迭代法, 我們在過程中會看 residual 的大小, $\|r_{k+1}\|^2_2$, 如果 residual 夠小就會停止整個迭代, 不需要真的做到第 $n$ 步.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Remark :&lt;/strong&gt;
+這樣子做有個很明顯的缺點, 就是為了求出 A-orthogonal set 我們需要把所有方向 $\{u_i\}$ 都一直記著. 這樣當問題維度非常大時會需要耗費大量記憶體在存這些方向.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;不過我們可以再觀察一下, 若使用 Gram-Schimidt process, 則這些 $\{u\}$ 都是從 $\{r\}$ 得來的, 因此這兩個所組出來的空間應該是一樣的, 也就是
+$$
+\text{span}\{u_0,\cdots, u_k\} = \text{span}\{r_0,\cdots, r_k\}.
+$$
+我們若定義 $V_k = \text{span}\{u_0,\cdots, u_k\}$, 則由 Theorem 1 我們知道,
+$$
+\langle r_{k+1}, u_{j}\rangle=0, \quad 0\le j\le k,
+$$&lt;/p&gt;
+&lt;p&gt;也就是 $r_{k+1}$ 這個向量會垂直於 $V_k$ 這個空間, 因此我們也有&lt;/p&gt;
+&lt;p&gt;$$
+\tag{3} \langle r_{k+1}, r_{j}\rangle=0, \quad 0\le j\le k.
+$$&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;事實上, 實作 second attempt 後會發現, 要算 $u_{k+1}$ 其實只需要他的前一項, $u_{k}$, 即可, 也就是
+$$
+\tag{4} u_{k+1} = r_{k+1}  + \beta_k u_k, \quad \beta_k =  -\frac{\langle r_{k+1}, Au_k\rangle}{\langle u_k, Au_k\rangle},
+$$
+因為其他項都自動為零了! 接著我們就來證明這件事.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;lemma-&#34;&gt;&lt;em&gt;&lt;strong&gt;Lemma :&lt;/strong&gt;&lt;/em&gt;&lt;/h3&gt;
+&lt;p&gt;$$
+\langle r_{k+1}, Au_j\rangle = 0, \quad 0\le j\le k-1.
+$$&lt;/p&gt;
+&lt;h4 id=&#34;pf&#34;&gt;pf:&lt;/h4&gt;
+&lt;p&gt;根據 (2), 我們可以得到 $Au_j = \frac{r_j - r_{j+1}}{t_j}$. 因此
+$$
+\tag{5} \langle r_{k+1}, Au_j\rangle = \frac{1}{t_j}\langle r_{k+1}, r_j - r_{j+1}\rangle= \frac{\langle r_{k+1}, r_j \rangle - \langle r_{k+1}, r_{j+1} \rangle}{t_j}.
+$$&lt;/p&gt;
+&lt;p&gt;接著我們利用 (3), 代入 (5) 我們就得到 $\langle r_{k+1}, Au_j\rangle=0$ for $0\le j\le k-1$.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Remark :&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;將 $j=k$ 代入 (5) 得到
+$$
+\tag{6}\langle r_{k+1}, Au_k\rangle =  \frac{\langle r_{k+1}, r_k \rangle - \langle r_{k+1}, r_{k+1} \rangle}{t_k} = \frac{ - \langle r_{k+1}, r_{k+1} \rangle}{t_k}.
+$$&lt;/p&gt;
+&lt;p&gt;利用 (1) 與 (4) $t_k$ 及 $u_k$ 的定義我們可以推得
+$$
+\tag{7}
+\begin{align}
+t_k &amp;amp;= \frac{\langle r_{k}, u_{k} \rangle}{\langle u_{k}, Au_{k} \rangle} = \frac{\langle r_{k}, r_{k} + \beta_{k-1}u_{k-1} \rangle}{\langle u_{k}, Au_{k} \rangle} \\&lt;br&gt;
+&amp;amp;= \frac{\langle r_{k}, r_{k}  \rangle}{\langle u_{k}, Au_{k} \rangle} + \frac{\langle r_{k}, \beta_{k-1}u_{k-1} \rangle}{\langle u_{k}, Au_{k} \rangle} \\&lt;br&gt;
+&amp;amp;= \frac{\langle r_{k}, r_{k}  \rangle}{\langle u_{k}, Au_{k} \rangle}.
+\end{align}
+$$
+最後一個等號我們用到了 Theorem 1 的結果. 因此 $t_k$ 可改為以 (7) 來做.&lt;/p&gt;
+&lt;p&gt;將 (7) 改寫一下我們得到
+$$
+\tag{8}\langle u_{k}, Au_{k} \rangle = \frac{\langle r_{k}, r_{k}  \rangle}{t_k}.
+$$&lt;/p&gt;
+&lt;p&gt;最後, 我們可以將 $\beta_k$ 重新計算一下, 利用 (6) 跟 (8) 得到
+$$
+\tag{9} \beta_k = -\frac{\langle r_{k+1}, Au_k\rangle}{\langle u_k, Au_k\rangle} = \frac{\langle r_{k+1}, r_{k+1}\rangle}{\langle r_{k}, r_{k}\rangle}.
+$$&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;cg-as-iterative-method-the-algorithm&#34;&gt;CG as iterative method: The algorithm&lt;/h2&gt;
+&lt;p&gt;給一個初始猜測 $x_0$, 我們可以算 $r_b = b-Ax_0$, 並且我們定義第一個方向為 $u_0 = r_0$.&lt;/p&gt;
+&lt;p&gt;接著我們可以往下做, for $k\ge 0$,
+$$
+\begin{align}
+t_{k} &amp;amp;=\frac{\langle r_k,r_{k}\rangle}{\langle u_k,Au_{k}\rangle},\\&lt;br&gt;
+x_{k+1} &amp;amp;= x_k + t_k u_k, \\&lt;br&gt;
+r_{k+1} &amp;amp;= r_k  - t_kAu_k, \\&lt;br&gt;
+\beta_k &amp;amp;= \frac{\langle r_{k+1}, r_{k+1}\rangle}{\langle r_{k}, r_{k}\rangle},\\&lt;br&gt;
+u_{k+1} &amp;amp;= r_{k+1} + \beta_k u_k.
+\end{align}
+$$&lt;/p&gt;
+&lt;p&gt;這樣保證在第 $n$ 步得到解, 而且每次迭代都只需要 &lt;em&gt;&lt;strong&gt;一個&lt;/strong&gt;&lt;/em&gt; 矩陣向量乘法.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Remark:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;不過一般而言這是個迭代法, 我們在過程中會看 residual 的大小, $\|r_{k+1}\|^2_2=\langle r_{k+1}, r_{k+1}\rangle$, 如果 residual 夠小就會停止整個迭代, 不需要真的做到第 $n$ 步. 而且這個量是在過程中會被計算出來的, 所以不需花費額外力氣.&lt;/li&gt;
+&lt;li&gt;Residual $r_{k+1}=r_k-t_kAu_k$ 這個式子可能會在迭代的過程由於誤差進來而越來越不準, 所以每隔一段時間要以原本公式重新更新一次, $r_{k+1} = b - Ax_{k+1}$.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr&gt;
 </description>
