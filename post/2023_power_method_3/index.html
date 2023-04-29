@@ -28,10 +28,10 @@
   
     
   
-  <meta name="description" content="Associate Professor">
+  <meta name="description" content="Power 迭代法目錄: 基本概念 Power iteration; inverse power method; shifted inver power method 找第二大的 eigenvalue deflation Rayleigh Quotient 迭代及其收斂性 Power method with Rayleigh Quotient 假設 $A$ 是一個對稱矩陣 演算法: Power method with Rayleigh Quotient Iterate until convergence: $$ \tag{1} \begin{align} \hat{x}^{(k&#43;1)} &amp;= Ax^{(k)}\\ \lambda^{(k&#43;1)}">
 
   
-  <link rel="alternate" hreflang="en-us" href="https://teshenglin.github.io/post/">
+  <link rel="alternate" hreflang="en-us" href="https://teshenglin.github.io/post/2023_power_method_3/">
 
   
 
@@ -215,14 +215,12 @@
 
 
   
-  <link rel="alternate" href="/post/index.xml" type="application/rss+xml" title="Te-Sheng Lin">
-  
 
   <link rel="manifest" href="/index.webmanifest">
   <link rel="icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_2.png">
   <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_2.png">
 
-  <link rel="canonical" href="https://teshenglin.github.io/post/">
+  <link rel="canonical" href="https://teshenglin.github.io/post/2023_power_method_3/">
 
   
   
@@ -236,18 +234,63 @@
   <meta property="twitter:card" content="summary">
   
   <meta property="og:site_name" content="Te-Sheng Lin">
-  <meta property="og:url" content="https://teshenglin.github.io/post/">
-  <meta property="og:title" content="Posts | Te-Sheng Lin">
-  <meta property="og:description" content="Associate Professor"><meta property="og:image" content="https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png">
+  <meta property="og:url" content="https://teshenglin.github.io/post/2023_power_method_3/">
+  <meta property="og:title" content="Power method with Rayleigh Quotient | Te-Sheng Lin">
+  <meta property="og:description" content="Power 迭代法目錄: 基本概念 Power iteration; inverse power method; shifted inver power method 找第二大的 eigenvalue deflation Rayleigh Quotient 迭代及其收斂性 Power method with Rayleigh Quotient 假設 $A$ 是一個對稱矩陣 演算法: Power method with Rayleigh Quotient Iterate until convergence: $$ \tag{1} \begin{align} \hat{x}^{(k&#43;1)} &amp;= Ax^{(k)}\\ \lambda^{(k&#43;1)}"><meta property="og:image" content="https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png">
   <meta property="twitter:image" content="https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png"><meta property="og:locale" content="en-us">
   
     
+      <meta property="article:published_time" content="2023-04-29T00:00:00&#43;00:00">
+    
+    <meta property="article:modified_time" content="2023-04-29T12:37:53&#43;08:00">
   
 
   
 
 
+    
 
+
+
+
+
+
+  
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://teshenglin.github.io/post/2023_power_method_3/"
+  },
+  "headline": "Power method with Rayleigh Quotient",
+  
+  "datePublished": "2023-04-29T00:00:00Z",
+  "dateModified": "2023-04-29T12:37:53+08:00",
+  
+  "author": {
+    "@type": "Person",
+    "name": "Te-Sheng Lin (林得勝)"
+  },
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "Te-Sheng Lin",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_2.png"
+    }
+  },
+  "description": "Power 迭代法目錄: 基本概念 Power iteration; inverse power method; shifted inver power method 找第二大的 eigenvalue deflation Rayleigh Quotient 迭代及其收斂性 Power method with Rayleigh Quotient 假設 $A$ 是一個對稱矩陣 演算法: Power method with Rayleigh Quotient Iterate until convergence: $$ \\tag{1} \\begin{align} \\hat{x}^{(k+1)} \u0026amp;= Ax^{(k)}\\\\ \\lambda^{(k+1)}"
+}
+</script>
+
+  
 
   
 
@@ -255,10 +298,13 @@
   
 
 
+  
 
 
 
-  <title>Posts | Te-Sheng Lin</title>
+
+
+  <title>Power method with Rayleigh Quotient | Te-Sheng Lin</title>
 
 </head>
 
@@ -450,78 +496,33 @@
 </nav>
 
 
-  
-
-
-
-
-
-
-
-
-
-
-
+  <article class="article">
 
   
 
+
+
+
+
+
+
+
+
+
+
+
+  
+
   
   
+  
+<div class="article-container pt-3">
+  <h1>Power method with Rayleigh Quotient</h1>
+
+  
+
   
     
-  
-<div class="universal-wrapper pt-3">
-  <h1>Posts</h1>
-
-  
-
-  
-</div>
-
-
-
-<div class="universal-wrapper">
-
-  
-
-  
-  
-    
-      
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-<div class="media stream-item">
-  <div class="media-body">
-
-    <h3 class="article-title mb-0 mt-0">
-      <a href="/post/2019_markdown/" >Markdown 學習筆記</a>
-    </h3>
-
-    
-    <div class="article-style">
-      這裡我們要介紹 markdown 這個語言. 它非常簡單易學, 有時我們只是想打個小文件, 就幾頁而已不想要開 latex 或是 word 之類的文字編輯軟體, 這時候就非常適合以 markdown 來編寫
-    </div>
-    
-
-    <div class="stream-meta article-metadata">
-
-      
-
-      
-        
 
 
 <div class="article-metadata">
@@ -550,7 +551,7 @@
           Last updated on
       
     
-    May 6, 2020
+    Apr 29, 2023
   </span>
   
 
@@ -559,7 +560,7 @@
   
   <span class="middot-divider"></span>
   <span class="article-reading-time">
-    3 min read
+    1 min read
   </span>
   
 
@@ -567,474 +568,392 @@
   
   
   <span class="middot-divider"></span>
-  <a href="/post/2019_markdown/#disqus_thread"></a>
+  <a href="/post/2023_power_method_3/#disqus_thread"></a>
   
 
   
   
   <span class="middot-divider"></span>
   <span class="article-categories">
-    <i class="fas fa-folder mr-1"></i><a href="/categories/notes/">notes</a></span>
+    <i class="fas fa-folder mr-1"></i><a href="/categories/notes/">notes</a>, <a href="/categories/linear-algebra/">Linear algebra</a>, <a href="/categories/computational-mathematics/">Computational Mathematics</a></span>
   
 
 </div>
 
-      
-    </div>
-
     
 
-  </div>
-  <div class="ml-3">
-    
-    
-  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
 </div>
 
-    
-  
-    
-      
 
 
+  <div class="article-container">
 
-
-
-
-
-
-
-
-
-
-  
-
-
-<div class="media stream-item">
-  <div class="media-body">
-
-    <h3 class="article-title mb-0 mt-0">
-      <a href="/post/2019_maxmin/" >Maximum and minimum of a function</a>
-    </h3>
-
-    
     <div class="article-style">
-      這裡我們要討論一個函數的最大值以及最小值. 首先我們有極值定理 Theorem: Extreme value theorem If $f$ is a real-valued continuous function on the closed interval …
+      <p>Power 迭代法目錄:</p>
+<ol>
+<li>
+<a href="/post/2023_power_method_1">基本概念</a>
+<blockquote>
+<p>Power iteration; inverse power method; shifted inver power method</p>
+</blockquote>
+</li>
+<li>
+<a href="/post/2023_power_method_2">找第二大的 eigenvalue</a>
+<blockquote>
+<p>deflation</p>
+</blockquote>
+</li>
+<li>
+<a href="/post/2023_power_method_3">Rayleigh Quotient 迭代及其收斂性</a>
+<blockquote>
+<p>Power method with Rayleigh Quotient</p>
+</blockquote>
+</li>
+</ol>
+<hr>
+<h2 id="假設">假設</h2>
+<ol>
+<li>$A$ 是一個對稱矩陣</li>
+</ol>
+<hr>
+<h2 id="演算法-power-method-with-rayleigh-quotient">演算法: Power method with Rayleigh Quotient</h2>
+<p>Iterate until convergence:
+$$
+\tag{1}
+\begin{align}
+\hat{x}^{(k+1)} &amp;= Ax^{(k)}\\<br>
+\lambda^{(k+1)} &amp;= x^{(k)T}\hat{x}^{(k+1)}\\<br>
+x^{(k+1)} &amp;= \hat{x}^{(k+1)}/|\hat{x}^{(k+1)}|_2
+\end{align}
+$$</p>
+<hr>
+<h2 id="收斂性證明">收斂性證明</h2>
+<p>由於 $A$ 是個對稱矩陣, 因此存在一組 orthonormal 的 eigenvectors $\{v_1, \cdots, v_n\}$, 使得 $v_i^Tv_j=0$ if $i\ne j$, and $v_i^Tv_i=0$.</p>
+<p>任意給定初始值 $x^{(0)}\ne 0$, 他可以被 eigenvectors 組出來, 因此我們有
+$$
+x^{(0)} = \alpha_1 v_1 + \sum^n_{i=2} \alpha_i v_i,
+$$
+並且
+$$
+\tag{2}A^kx^{(0)} = \lambda_1^k\left[\alpha_1 v_1 + \sum^n_{i=2} \alpha_i \left(\frac{\lambda_i}{\lambda_1}\right)^kv_i\right].
+$$
+另一方面, 從迭代式 (1) 可以看出我們一直不斷地把得到的向量 normalize, 使其為單位長, 因此我們必定有
+$$
+x^{(k)} = \frac{A^kx^{(0)}}{|A^kx^{(0)}|_2}.
+$$
+將 (2) 代入得到
+$$
+\tag{3}
+\begin{align}
+x^{(k)}
+&amp;= \frac{\lambda_1^k\left[\alpha_1v_1 + \sum^n_{i=2}\alpha_i \left(\frac{\lambda_i}{\lambda_1}\right)^kv_i\right]}{\sqrt{\lambda_1^{2k}\left[\alpha_1v_1 + \sum^n_{i=2}\alpha_i \left(\frac{\lambda_i}{\lambda_1}\right)^kv_i\right]^T\left[\alpha_1v_1 + \sum^n_{i=2}\alpha_i \left(\frac{\lambda_i}{\lambda_1}\right)^kv_i\right]}} \\<br>
+&amp;= \frac{\left[\alpha_1v_1 + \sum^n_{i=2}\alpha_i \left(\frac{\lambda_i}{\lambda_1}\right)^kv_i\right]}{\sqrt{\alpha^2_1 + \sum^n_{i=2}\alpha^2_i \left(\frac{\lambda_i}{\lambda_1}\right)^{2k}}}\\<br>
+&amp;=\frac{\left[v_1 + \sum^n_{i=2}\left(\frac{\alpha_i}{\alpha_1}\right) \left(\frac{\lambda_i}{\lambda_1}\right)^kv_i\right]}{\sqrt{1 + \sum^n_{i=2}\left(\frac{\alpha_i}{\alpha_1}\right)^2 \left(\frac{\lambda_i}{\lambda_1}\right)^{2k}}},
+\end{align}
+$$
+其中我們用到了 $\{v_1, \cdots, v_n\}$ 是 orthonormal basis 這個事實.</p>
+<p>接著我們可以算 eigenvalue, 將 (3) 代入:
+$$
+\begin{align}
+\lambda^{(k+1)} &amp;= x^{(k)T}\hat{x}^{(k+1)} = x^{(k)T}(Ax^{(k)}) \\<br>
+&amp;= \frac{\left[v_1 + \sum^n_{i=2}\left(\frac{\alpha_i}{\alpha_1}\right) \left(\frac{\lambda_i}{\lambda_1}\right)^kv_i\right]^T\left[\lambda_1v_1 + \sum^n_{i=2}\left(\frac{\alpha_i}{\alpha_1}\right) \lambda_i\left(\frac{\lambda_i}{\lambda_1}\right)^kv_i\right]}{1 + \sum^n_{i=2}\left(\frac{\alpha_i}{\alpha_1}\right)^2 \left(\frac{\lambda_i}{\lambda_1}\right)^{2k}} \\<br>
+&amp;= \lambda_1
+\frac{\left[v_1 + \sum^n_{i=2}\left(\frac{\alpha_i}{\alpha_1}\right) \left(\frac{\lambda_i}{\lambda_1}\right)^kv_i\right]^T\left[v_1 + \sum^n_{i=2}\left(\frac{\alpha_i}{\alpha_1}\right) \left(\frac{\lambda_i}{\lambda_1}\right)^{k+1}v_i\right]}{1 + \sum^n_{i=2}\left(\frac{\alpha_i}{\alpha_1}\right)^2 \left(\frac{\lambda_i}{\lambda_1}\right)^{2k}} \\<br>
+&amp;= \lambda_1
+\frac{\left[1 + \sum^n_{i=2}\left(\frac{\alpha_i}{\alpha_1}\right)^2 \left(\frac{\lambda_i}{\lambda_1}\right)^{2k+1}\right]}{1 + \sum^n_{i=2}\left(\frac{\alpha_i}{\alpha_1}\right)^2 \left(\frac{\lambda_i}{\lambda_1}\right)^{2k}} \\<br>
+&amp;= \lambda_1
+\frac{\left[1 + O \left(\epsilon^{2k+1}\right)\right]}{1 + O \left(\epsilon^{2k}\right)} \\<br>
+&amp;= \lambda_1 + O\left(\epsilon^{2k}\right),
+\end{align}
+$$
+where $\epsilon=|\lambda_2/\lambda_1|$.</p>
+<p>因此這個迭代式, <strong>power method with Rayleigh quotient for symmetric matrix</strong>, 會是線性收斂, 並且其 rate of convergence 是 $\left(\frac{\lambda_2}{\lambda_1}\right)^2$.</p>
+<hr>
+<h2 id="final-remark">Final remark</h2>
+<p>若使用基本的 power 迭代, 就是每次將得到得向量單位化, 如以下方式:</p>
+<p>Pseudo code:</p>
+<pre><code>while diff &gt; Tol
+    v = A*u
+    lambda = norm(v)
+    u = v/lambda
+end
+</code></pre><p>如果 $A$ 是個對稱矩陣, 會發現這個迭代式其收斂性為 $\left(\frac{\lambda_2}{\lambda_1}\right)^2$.</p>
+<p>這是因爲, 若 $Au=\lambda u$,
+$$
+\|v\|_2 = \|Au\|_2 = \sqrt{(Au)^T(Au)} = |\lambda|.
+$$
+利用跟上面類似的推導手法即可證明收斂性為 $\left(\frac{\lambda_2}{\lambda_1}\right)^2$.</p>
+<hr>
+
     </div>
+
     
 
-    <div class="stream-meta article-metadata">
 
+
+
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/tags/power-method/">power method</a>
+  
+  <a class="badge badge-light" href="/tags/rayleigh-quotient/">Rayleigh Quotient</a>
+  
+</div>
+
+
+
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    
       
-
+      
       
         
-
-
-<div class="article-metadata">
-
-  
-  
-  
-  
-  <div>
-    
-
-
-
-  
-  <span><a href="/authors/admin/">Te-Sheng Lin (林得勝)</a></span>
-
-  </div>
-  
-  
-
-  
-  <span class="article-date">
-    
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=https://teshenglin.github.io/post/2023_power_method_3/&amp;text=Power%20method%20with%20Rayleigh%20Quotient" target="_blank" rel="noopener" class="share-btn-twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
     
       
-          Last updated on
       
-    
-    Oct 30, 2019
-  </span>
-  
-
-  
-
-  
-  <span class="middot-divider"></span>
-  <span class="article-reading-time">
-    2 min read
-  </span>
-  
-
-  
-  
-  
-  <span class="middot-divider"></span>
-  <a href="/post/2019_maxmin/#disqus_thread"></a>
-  
-
-  
-  
-  <span class="middot-divider"></span>
-  <span class="article-categories">
-    <i class="fas fa-folder mr-1"></i><a href="/categories/calculus/">Calculus</a></span>
-  
-
-</div>
-
-      
-    </div>
-
-    
-
-  </div>
-  <div class="ml-3">
-    
-    
-  </div>
-</div>
-
-    
-  
-    
-      
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-<div class="media stream-item">
-  <div class="media-body">
-
-    <h3 class="article-title mb-0 mt-0">
-      <a href="/post/2019_slant_asymp/" >Slant asymptotes</a>
-    </h3>
-
-    
-    <div class="article-style">
-      這裡我們要介紹 slant asymptotes, 也就是所謂的斜漸近線. Section 1: slant asymptotes 斜漸近線定義如下: The line $y=mx+b$, $m\ne 0$, is called a slant asymptote of …
-    </div>
-    
-
-    <div class="stream-meta article-metadata">
-
-      
-
       
         
-
-
-<div class="article-metadata">
-
-  
-  
-  
-  
-  <div>
-    
-
-
-
-  
-  <span><a href="/authors/admin/">Te-Sheng Lin (林得勝)</a></span>
-
-  </div>
-  
-  
-
-  
-  <span class="article-date">
-    
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=https://teshenglin.github.io/post/2023_power_method_3/&amp;t=Power%20method%20with%20Rayleigh%20Quotient" target="_blank" rel="noopener" class="share-btn-facebook">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+      </li>
     
       
-          Last updated on
       
-    
-    Feb 26, 2023
-  </span>
-  
-
-  
-
-  
-  <span class="middot-divider"></span>
-  <span class="article-reading-time">
-    2 min read
-  </span>
-  
-
-  
-  
-  
-  <span class="middot-divider"></span>
-  <a href="/post/2019_slant_asymp/#disqus_thread"></a>
-  
-
-  
-  
-  <span class="middot-divider"></span>
-  <span class="article-categories">
-    <i class="fas fa-folder mr-1"></i><a href="/categories/calculus/">Calculus</a></span>
-  
-
-</div>
-
-      
-    </div>
-
-    
-
-  </div>
-  <div class="ml-3">
-    
-    
-  </div>
-</div>
-
-    
-  
-    
-      
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-<div class="media stream-item">
-  <div class="media-body">
-
-    <h3 class="article-title mb-0 mt-0">
-      <a href="/post/2019_derivate_evaluate/" >用電腦算微分</a>
-    </h3>
-
-    
-    <div class="article-style">
-      前情提要: 用電腦算極限 這裡我們要講的是用數值計算來算函數的微分值. 已知一個函數 $f(x)$ 在某個點 $a$ 的微分值定義是 $$ f&rsquo;(a) = \lim_{h\to 0} \frac{f(a+h)-f(a)}{h}. $$ 我們用一個簡單的例子試
-    </div>
-    
-
-    <div class="stream-meta article-metadata">
-
-      
-
       
         
-
-
-<div class="article-metadata">
-
-  
-  
-  
-  
-  <div>
-    
-
-
-
-  
-  <span><a href="/authors/admin/">Te-Sheng Lin (林得勝)</a></span>
-
-  </div>
-  
-  
-
-  
-  <span class="article-date">
-    
-    
       
-          Last updated on
       
-    
-    Jun 7, 2020
-  </span>
-  
-
-  
-
-  
-  <span class="middot-divider"></span>
-  <span class="article-reading-time">
-    3 min read
-  </span>
-  
-
-  
-  
-  
-  <span class="middot-divider"></span>
-  <a href="/post/2019_derivate_evaluate/#disqus_thread"></a>
-  
-
-  
-  
-  <span class="middot-divider"></span>
-  <span class="article-categories">
-    <i class="fas fa-folder mr-1"></i><a href="/categories/calculus/">Calculus</a>, <a href="/categories/computational-mathematics/">Computational Mathematics</a></span>
-  
-
-</div>
-
       
-    </div>
-
-    
-
-  </div>
-  <div class="ml-3">
-    
-    
-  </div>
-</div>
-
-    
-  
-    
-      
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-<div class="media stream-item">
-  <div class="media-body">
-
-    <h3 class="article-title mb-0 mt-0">
-      <a href="/post/2019_limit_evaluate/" >用電腦算極限</a>
-    </h3>
-
-    
-    <div class="article-style">
-      這裡我們要介紹如何用電腦算極限, 以及我們來看一下當我們真的這樣做的時候有可能會發生什麼問題. 我們以 $sinc$ 函數為例來做說明. sinc function 首先我們要介紹一個
-    </div>
-    
-
-    <div class="stream-meta article-metadata">
-
-      
-
-      
-        
-
-
-<div class="article-metadata">
-
-  
-  
-  
-  
-  <div>
-    
-
-
-
-  
-  <span><a href="/authors/admin/">Te-Sheng Lin (林得勝)</a></span>
-
-  </div>
-  
-  
-
-  
-  <span class="article-date">
-    
-    
-      
-          Last updated on
-      
-    
-    Jun 7, 2020
-  </span>
-  
-
-  
-
-  
-  <span class="middot-divider"></span>
-  <span class="article-reading-time">
-    3 min read
-  </span>
-  
-
-  
-  
-  
-  <span class="middot-divider"></span>
-  <a href="/post/2019_limit_evaluate/#disqus_thread"></a>
-  
-
-  
-  
-  <span class="middot-divider"></span>
-  <span class="article-categories">
-    <i class="fas fa-folder mr-1"></i><a href="/categories/calculus/">Calculus</a>, <a href="/categories/computational-mathematics/">Computational Mathematics</a></span>
-  
-
-</div>
-
-      
-    </div>
-
-    
-
-  </div>
-  <div class="ml-3">
-    
-    
-  </div>
-</div>
-
-    
-  
-
-  
-<nav>
-  <ul class="pagination justify-content-center">
-    
-    <li class="page-item"><a class="page-link" href="/post/page/6/">&laquo;</a></li>
-    
+      <li>
+        <a href="mailto:?subject=Power%20method%20with%20Rayleigh%20Quotient&amp;body=https://teshenglin.github.io/post/2023_power_method_3/" target="_blank" rel="noopener" class="share-btn-email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
     
   </ul>
-</nav>
-
-
-
 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+  
+
+
+
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  <div class="media author-card content-widget-hr">
+    
+      
+      <img class="avatar mr-3 avatar-circle" src="/authors/admin/avatar_hua0d4d4b24f4da3a102e4452ac738b95f_109236_270x270_fill_q90_lanczos_center.jpg" alt="Avatar">
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="https://teshenglin.github.io/">Te-Sheng Lin (林得勝)</a></h5>
+      <h6 class="card-subtitle">Associate Professor</h6>
+      <p class="card-text">The focus of my research is concerned with the development of analytical and computational tools, and further to communicate with scientists from other disciplines to solve engineering problems in practice.</p>
+      <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+    <li>
+      <a href="mailto:tslin@math.nctu.edu.tw" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://scholar.google.com.tw/citations?user=diXYXkwAAAAJ" target="_blank" rel="noopener">
+        <i class="ai ai-google-scholar"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://arxiv.org/a/0000-0002-5718-5048" target="_blank" rel="noopener">
+        <i class="ai ai-arxiv"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.researchgate.net/profile/Te-Sheng_Lin" target="_blank" rel="noopener">
+        <i class="ai ai-researchgate"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://github.com/teshenglin" target="_blank" rel="noopener">
+        <i class="fab fa-github"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="/cv/cv.pdf" >
+        <i class="ai ai-cv"></i>
+      </a>
+    </li>
+  
+</ul>
+
+    </div>
+  </div>
+
+
+
+
+<section id="comments">
+  
+    
+<div id="disqus_thread"></div>
+<script>
+  let disqus_config = function () {
+    
+    
+    
+  };
+  (function() {
+    if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+      document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+      return;
+    }
+    var d = document, s = d.createElement('script'); s.async = true;
+    s.src = 'https://' + "https-teshenglin-github-io" + '.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+  
+</section>
+
+
+
+
+
+
+  
+  
+  <div class="article-widget content-widget-hr">
+    <h3>Related</h3>
+    <ul>
+      
+      <li><a href="/post/2023_power_method_1/">Power method</a></li>
+      
+      <li><a href="/post/2023_power_method_2/">Power method - deflation</a></li>
+      
+    </ul>
+  </div>
+  
+
+
+
+  </div>
+</article>
 
       
 

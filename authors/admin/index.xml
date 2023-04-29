@@ -13,73 +13,104 @@
     </image>
     
     <item>
-      <title>Conjugate gradient method - direct method</title>
-      <link>https://teshenglin.github.io/post/2023_conjugate_gradient_method_1/</link>
-      <pubDate>Wed, 26 Apr 2023 00:00:00 +0000</pubDate>
-      <guid>https://teshenglin.github.io/post/2023_conjugate_gradient_method_1/</guid>
-      <description>&lt;blockquote&gt;
-&lt;p&gt;For solving $Ax=b$, where $A$ is a square symmetric positive definite matrix.&lt;/p&gt;
+      <title>Power method with Rayleigh Quotient</title>
+      <link>https://teshenglin.github.io/post/2023_power_method_3/</link>
+      <pubDate>Sat, 29 Apr 2023 00:00:00 +0000</pubDate>
+      <guid>https://teshenglin.github.io/post/2023_power_method_3/</guid>
+      <description>&lt;p&gt;Power 迭代法目錄:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://teshenglin.github.io/post/2023_power_method_1&#34;&gt;基本概念&lt;/a&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Power iteration; inverse power method; shifted inver power method&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h2 id=&#34;assumptions&#34;&gt;Assumptions:&lt;/h2&gt;
-&lt;p&gt;$A\in M_{n\times n}$ is a symmetric positive definite matrix.&lt;/p&gt;
-&lt;h2 id=&#34;definition&#34;&gt;Definition:&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;A-orthogonal (A-conjugate)
-假設有兩個向量 $u_1$ 跟 $u_2$ 皆非 $0$ 且 $u_1 \neq u_2$，若這兩個向量滿足
-$$
-\langle{u_1},A{u_2}\rangle = {u_1}^TA{u_2} = 0,
-$$
-則稱之為 A-orthogonal (或 A-conjugate).&lt;/li&gt;
-&lt;li&gt;A-orthonormal
-假設有兩個向量 $u_1$ 跟 $u_2$ 為 A-orthogonal, 並且 $\langle{u_i}, {u_i}\rangle_A = 1$ for $1\le i\le 2$, 則稱之為 A-orthonormal.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;Recall :&lt;/strong&gt; ${u_1}$ and ${u_2}$ are orthogonal if ${u_1}^T{u_2} = 0$.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Note :&lt;/strong&gt; We can define
-$$
-\langle{u_1}, {u_2}\rangle_A = \langle{u_1},A{u_2}\rangle= \langle A{u_1},{u_2}\rangle,
-$$
-then $\langle \cdot\rangle_A$ is an inner product.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h3 id=&#34;lemma&#34;&gt;Lemma&lt;/h3&gt;
-&lt;p&gt;如果 ${u_0, \cdots, u_k}$ 是個 A-orthogonal set, 則 ${u_0, \cdots, u_k}$ 也是一個 linearly independent set.&lt;/p&gt;
-&lt;h4 id=&#34;pf&#34;&gt;pf:&lt;/h4&gt;
-&lt;p&gt;假設 $c_0 u_0 + \cdots c_ku_k =0$.&lt;/p&gt;
-&lt;p&gt;將此方程兩邊同時乘以 $u^T_j A$, 由於 $u_j^TAu_i=0$ for $i\ne j$, 因此得到 $c_j u^T_j Au_j = 0$. 此外, 由於 $A$ 是正定矩陣, $u^T_j Au_j &amp;gt; 0$, 因此 $c_j=0$.&lt;/p&gt;
-&lt;p&gt;由於以上論述對所有 $j$ 都對, 因此得到 $c_i=0$ $\forall i$, 因此 ${u_0, \cdots, u_k}$ 為線性獨立.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Note :&lt;/strong&gt;
-如果 ${u_0, \cdots, u_{n-1}}\subset\mathbb{R}^n$ 是個 A-orthogonal set, 則他們也是 $\mathbb{R}^n$ 的一組 basis.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;cg-as-a-direct-method&#34;&gt;CG as a direct method&lt;/h2&gt;
-&lt;h3 id=&#34;theorem&#34;&gt;Theorem:&lt;/h3&gt;
-&lt;p&gt;假設對一個矩陣 A，我們可以找到一組 A-orthogonal set ${u_0, \ldots, u_{n-1}}$, 則線性系統 $Ax=b$ 的解為
-$$
-x = \sum^{n-1}_{j=0}\frac{u^T_j b}{u^T_jAu_j} u_j.
-$$&lt;/p&gt;
-&lt;h4 id=&#34;pf-1&#34;&gt;pf:&lt;/h4&gt;
-&lt;p&gt;假設 $x = \sum^{n-1}_{i=0} c_i u_i$, 則&lt;/p&gt;
-&lt;p&gt;$$
-Ax = \sum^{n-1}_{i=0} c_i Au_i.&lt;br&gt;
-$$&lt;/p&gt;
-&lt;p&gt;將之代入 $b = Ax$ 並將兩側同時乘以 $u^T_j$ 得到
-$$
-u^T_j b = \sum^{n-1}_{i=0} c_i u^T_jAu_i = c_ju^T_jAu_j.
-$$
-因此
-$$
-c_j = \frac{u^T_j b}{u^T_jAu_j}.
-$$&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;實作上我們需要以迭代來尋找 $A$-orthogonal set, 並以迭代法來解線性系統.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;a href=&#34;https://en.wikipedia.org/wiki/Conjugate_gradient_method&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Conjugate gradient method - wiki&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;迭代法推導請見
-&lt;ul&gt;
-&lt;li&gt;
-&lt;a href=&#34;https://teshenglin.github.io/post/2023_conjugate_gradient_method_2&#34;&gt;Conjugate gradient method - iterative method&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
 &lt;/li&gt;
-&lt;/ul&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://teshenglin.github.io/post/2023_power_method_2&#34;&gt;找第二大的 eigenvalue&lt;/a&gt;
+&lt;blockquote&gt;
+&lt;p&gt;deflation&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://teshenglin.github.io/post/2023_power_method_3&#34;&gt;Rayleigh Quotient 迭代及其收斂性&lt;/a&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Power method with Rayleigh Quotient&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;假設&#34;&gt;假設&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;$A$ 是一個對稱矩陣&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;演算法-power-method-with-rayleigh-quotient&#34;&gt;演算法: Power method with Rayleigh Quotient&lt;/h2&gt;
+&lt;p&gt;Iterate until convergence:
+$$
+\tag{1}
+\begin{align}
+\hat{x}^{(k+1)} &amp;amp;= Ax^{(k)}\\&lt;br&gt;
+\lambda^{(k+1)} &amp;amp;= x^{(k)T}\hat{x}^{(k+1)}\\&lt;br&gt;
+x^{(k+1)} &amp;amp;= \hat{x}^{(k+1)}/|\hat{x}^{(k+1)}|_2
+\end{align}
+$$&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;收斂性證明&#34;&gt;收斂性證明&lt;/h2&gt;
+&lt;p&gt;由於 $A$ 是個對稱矩陣, 因此存在一組 orthonormal 的 eigenvectors $\{v_1, \cdots, v_n\}$, 使得 $v_i^Tv_j=0$ if $i\ne j$, and $v_i^Tv_i=0$.&lt;/p&gt;
+&lt;p&gt;任意給定初始值 $x^{(0)}\ne 0$, 他可以被 eigenvectors 組出來, 因此我們有
+$$
+x^{(0)} = \alpha_1 v_1 + \sum^n_{i=2} \alpha_i v_i,
+$$
+並且
+$$
+\tag{2}A^kx^{(0)} = \lambda_1^k\left[\alpha_1 v_1 + \sum^n_{i=2} \alpha_i \left(\frac{\lambda_i}{\lambda_1}\right)^kv_i\right].
+$$
+另一方面, 從迭代式 (1) 可以看出我們一直不斷地把得到的向量 normalize, 使其為單位長, 因此我們必定有
+$$
+x^{(k)} = \frac{A^kx^{(0)}}{|A^kx^{(0)}|_2}.
+$$
+將 (2) 代入得到
+$$
+\tag{3}
+\begin{align}
+x^{(k)}
+&amp;amp;= \frac{\lambda_1^k\left[\alpha_1v_1 + \sum^n_{i=2}\alpha_i \left(\frac{\lambda_i}{\lambda_1}\right)^kv_i\right]}{\sqrt{\lambda_1^{2k}\left[\alpha_1v_1 + \sum^n_{i=2}\alpha_i \left(\frac{\lambda_i}{\lambda_1}\right)^kv_i\right]^T\left[\alpha_1v_1 + \sum^n_{i=2}\alpha_i \left(\frac{\lambda_i}{\lambda_1}\right)^kv_i\right]}} \\&lt;br&gt;
+&amp;amp;= \frac{\left[\alpha_1v_1 + \sum^n_{i=2}\alpha_i \left(\frac{\lambda_i}{\lambda_1}\right)^kv_i\right]}{\sqrt{\alpha^2_1 + \sum^n_{i=2}\alpha^2_i \left(\frac{\lambda_i}{\lambda_1}\right)^{2k}}}\\&lt;br&gt;
+&amp;amp;=\frac{\left[v_1 + \sum^n_{i=2}\left(\frac{\alpha_i}{\alpha_1}\right) \left(\frac{\lambda_i}{\lambda_1}\right)^kv_i\right]}{\sqrt{1 + \sum^n_{i=2}\left(\frac{\alpha_i}{\alpha_1}\right)^2 \left(\frac{\lambda_i}{\lambda_1}\right)^{2k}}},
+\end{align}
+$$
+其中我們用到了 $\{v_1, \cdots, v_n\}$ 是 orthonormal basis 這個事實.&lt;/p&gt;
+&lt;p&gt;接著我們可以算 eigenvalue, 將 (3) 代入:
+$$
+\begin{align}
+\lambda^{(k+1)} &amp;amp;= x^{(k)T}\hat{x}^{(k+1)} = x^{(k)T}(Ax^{(k)}) \\&lt;br&gt;
+&amp;amp;= \frac{\left[v_1 + \sum^n_{i=2}\left(\frac{\alpha_i}{\alpha_1}\right) \left(\frac{\lambda_i}{\lambda_1}\right)^kv_i\right]^T\left[\lambda_1v_1 + \sum^n_{i=2}\left(\frac{\alpha_i}{\alpha_1}\right) \lambda_i\left(\frac{\lambda_i}{\lambda_1}\right)^kv_i\right]}{1 + \sum^n_{i=2}\left(\frac{\alpha_i}{\alpha_1}\right)^2 \left(\frac{\lambda_i}{\lambda_1}\right)^{2k}} \\&lt;br&gt;
+&amp;amp;= \lambda_1
+\frac{\left[v_1 + \sum^n_{i=2}\left(\frac{\alpha_i}{\alpha_1}\right) \left(\frac{\lambda_i}{\lambda_1}\right)^kv_i\right]^T\left[v_1 + \sum^n_{i=2}\left(\frac{\alpha_i}{\alpha_1}\right) \left(\frac{\lambda_i}{\lambda_1}\right)^{k+1}v_i\right]}{1 + \sum^n_{i=2}\left(\frac{\alpha_i}{\alpha_1}\right)^2 \left(\frac{\lambda_i}{\lambda_1}\right)^{2k}} \\&lt;br&gt;
+&amp;amp;= \lambda_1
+\frac{\left[1 + \sum^n_{i=2}\left(\frac{\alpha_i}{\alpha_1}\right)^2 \left(\frac{\lambda_i}{\lambda_1}\right)^{2k+1}\right]}{1 + \sum^n_{i=2}\left(\frac{\alpha_i}{\alpha_1}\right)^2 \left(\frac{\lambda_i}{\lambda_1}\right)^{2k}} \\&lt;br&gt;
+&amp;amp;= \lambda_1
+\frac{\left[1 + O \left(\epsilon^{2k+1}\right)\right]}{1 + O \left(\epsilon^{2k}\right)} \\&lt;br&gt;
+&amp;amp;= \lambda_1 + O\left(\epsilon^{2k}\right),
+\end{align}
+$$
+where $\epsilon=|\lambda_2/\lambda_1|$.&lt;/p&gt;
+&lt;p&gt;因此這個迭代式, &lt;strong&gt;power method with Rayleigh quotient for symmetric matrix&lt;/strong&gt;, 會是線性收斂, 並且其 rate of convergence 是 $\left(\frac{\lambda_2}{\lambda_1}\right)^2$.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;final-remark&#34;&gt;Final remark&lt;/h2&gt;
+&lt;p&gt;若使用基本的 power 迭代, 就是每次將得到得向量單位化, 如以下方式:&lt;/p&gt;
+&lt;p&gt;Pseudo code:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;while diff &amp;gt; Tol
+    v = A*u
+    lambda = norm(v)
+    u = v/lambda
+end
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;如果 $A$ 是個對稱矩陣, 會發現這個迭代式其收斂性為 $\left(\frac{\lambda_2}{\lambda_1}\right)^2$.&lt;/p&gt;
+&lt;p&gt;這是因爲, 若 $Au=\lambda u$,
+$$
+\|v\|_2 = \|Au\|_2 = \sqrt{(Au)^T(Au)} = |\lambda|.
+$$
+利用跟上面類似的推導手法即可證明收斂性為 $\left(\frac{\lambda_2}{\lambda_1}\right)^2$.&lt;/p&gt;
 &lt;hr&gt;
 </description>
     </item>
@@ -87,13 +118,23 @@ $$&lt;/p&gt;
     <item>
       <title>Conjugate gradient method - iterative method</title>
       <link>https://teshenglin.github.io/post/2023_conjugate_gradient_method_2/</link>
-      <pubDate>Wed, 26 Apr 2023 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 27 Apr 2023 00:00:00 +0000</pubDate>
       <guid>https://teshenglin.github.io/post/2023_conjugate_gradient_method_2/</guid>
-      <description>&lt;blockquote&gt;
-&lt;p&gt;共軛梯度法的直接法版本: 
-&lt;a href=&#34;https://teshenglin.github.io/post/2023_conjugate_gradient_method_1&#34;&gt;Conjugate Gradient (CG) Method as a direct method&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;這裡要介紹 CG method 迭代法的版本.&lt;/p&gt;
+      <description>&lt;p&gt;共軛梯度法 (CG method,  conjugate gradient method) 目錄:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://teshenglin.github.io/post/2023_conjugate_gradient_method_1&#34;&gt;CG method - Direct mehtod&lt;/a&gt;
+&lt;blockquote&gt;
+&lt;p&gt;直接法&lt;/p&gt;
 &lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://teshenglin.github.io/post/2023_conjugate_gradient_method_2&#34;&gt;CG method - iterate mehtod&lt;/a&gt;
+&lt;blockquote&gt;
+&lt;p&gt;迭代法&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
 &lt;hr&gt;
 &lt;blockquote&gt;
 &lt;p&gt;For solving $Ax=b$, where $A$ is a square symmetric positive definite matrix.&lt;/p&gt;
@@ -286,11 +327,121 @@ $$&lt;/p&gt;
     </item>
     
     <item>
+      <title>Conjugate gradient method - direct method</title>
+      <link>https://teshenglin.github.io/post/2023_conjugate_gradient_method_1/</link>
+      <pubDate>Wed, 26 Apr 2023 00:00:00 +0000</pubDate>
+      <guid>https://teshenglin.github.io/post/2023_conjugate_gradient_method_1/</guid>
+      <description>&lt;p&gt;共軛梯度法 (CG method,  conjugate gradient method) 目錄:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://teshenglin.github.io/post/2023_conjugate_gradient_method_1&#34;&gt;CG method - Direct mehtod&lt;/a&gt;
+&lt;blockquote&gt;
+&lt;p&gt;直接法&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://teshenglin.github.io/post/2023_conjugate_gradient_method_2&#34;&gt;CG method - iterate mehtod&lt;/a&gt;
+&lt;blockquote&gt;
+&lt;p&gt;迭代法&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;blockquote&gt;
+&lt;p&gt;For solving $Ax=b$, where $A$ is a square symmetric positive definite matrix.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;assumptions&#34;&gt;Assumptions:&lt;/h2&gt;
+&lt;p&gt;$A\in M_{n\times n}$ is a symmetric positive definite matrix.&lt;/p&gt;
+&lt;h2 id=&#34;definition&#34;&gt;Definition:&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;A-orthogonal (A-conjugate)
+假設有兩個向量 $u_1$ 跟 $u_2$ 皆非 $0$ 且 $u_1 \neq u_2$，若這兩個向量滿足
+$$
+\langle{u_1},A{u_2}\rangle = {u_1}^TA{u_2} = 0,
+$$
+則稱之為 A-orthogonal (或 A-conjugate).&lt;/li&gt;
+&lt;li&gt;A-orthonormal
+假設有兩個向量 $u_1$ 跟 $u_2$ 為 A-orthogonal, 並且 $\langle{u_i}, {u_i}\rangle_A = 1$ for $1\le i\le 2$, 則稱之為 A-orthonormal.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Recall :&lt;/strong&gt; ${u_1}$ and ${u_2}$ are orthogonal if ${u_1}^T{u_2} = 0$.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Note :&lt;/strong&gt; We can define
+$$
+\langle{u_1}, {u_2}\rangle_A = \langle{u_1},A{u_2}\rangle= \langle A{u_1},{u_2}\rangle,
+$$
+then $\langle \cdot\rangle_A$ is an inner product.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;lemma&#34;&gt;Lemma&lt;/h3&gt;
+&lt;p&gt;如果 ${u_0, \cdots, u_k}$ 是個 A-orthogonal set, 則 ${u_0, \cdots, u_k}$ 也是一個 linearly independent set.&lt;/p&gt;
+&lt;h4 id=&#34;pf&#34;&gt;pf:&lt;/h4&gt;
+&lt;p&gt;假設 $c_0 u_0 + \cdots c_ku_k =0$.&lt;/p&gt;
+&lt;p&gt;將此方程兩邊同時乘以 $u^T_j A$, 由於 $u_j^TAu_i=0$ for $i\ne j$, 因此得到 $c_j u^T_j Au_j = 0$. 此外, 由於 $A$ 是正定矩陣, $u^T_j Au_j &amp;gt; 0$, 因此 $c_j=0$.&lt;/p&gt;
+&lt;p&gt;由於以上論述對所有 $j$ 都對, 因此得到 $c_i=0$ $\forall i$, 因此 ${u_0, \cdots, u_k}$ 為線性獨立.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Note :&lt;/strong&gt;
+如果 ${u_0, \cdots, u_{n-1}}\subset\mathbb{R}^n$ 是個 A-orthogonal set, 則他們也是 $\mathbb{R}^n$ 的一組 basis.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;cg-as-a-direct-method&#34;&gt;CG as a direct method&lt;/h2&gt;
+&lt;h3 id=&#34;theorem&#34;&gt;Theorem:&lt;/h3&gt;
+&lt;p&gt;假設對一個矩陣 A，我們可以找到一組 A-orthogonal set ${u_0, \ldots, u_{n-1}}$, 則線性系統 $Ax=b$ 的解為
+$$
+x = \sum^{n-1}_{j=0}\frac{u^T_j b}{u^T_jAu_j} u_j.
+$$&lt;/p&gt;
+&lt;h4 id=&#34;pf-1&#34;&gt;pf:&lt;/h4&gt;
+&lt;p&gt;假設 $x = \sum^{n-1}_{i=0} c_i u_i$, 則&lt;/p&gt;
+&lt;p&gt;$$
+Ax = \sum^{n-1}_{i=0} c_i Au_i.&lt;br&gt;
+$$&lt;/p&gt;
+&lt;p&gt;將之代入 $b = Ax$ 並將兩側同時乘以 $u^T_j$ 得到
+$$
+u^T_j b = \sum^{n-1}_{i=0} c_i u^T_jAu_i = c_ju^T_jAu_j.
+$$
+因此
+$$
+c_j = \frac{u^T_j b}{u^T_jAu_j}.
+$$&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;實作上我們需要以迭代來尋找 $A$-orthogonal set, 並以迭代法來解線性系統.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://en.wikipedia.org/wiki/Conjugate_gradient_method&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Conjugate gradient method - wiki&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;迭代法推導請見
+&lt;ul&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://teshenglin.github.io/post/2023_conjugate_gradient_method_2&#34;&gt;Conjugate gradient method - iterative method&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Power method</title>
       <link>https://teshenglin.github.io/post/2023_power_method_1/</link>
       <pubDate>Wed, 26 Apr 2023 00:00:00 +0000</pubDate>
       <guid>https://teshenglin.github.io/post/2023_power_method_1/</guid>
-      <description>&lt;h2 id=&#34;基本-power-method&#34;&gt;基本 Power method&lt;/h2&gt;
+      <description>&lt;p&gt;Power 迭代法目錄:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://teshenglin.github.io/post/2023_power_method_1&#34;&gt;基本概念&lt;/a&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Power iteration; inverse power method; shifted inver power method&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://teshenglin.github.io/post/2023_power_method_2&#34;&gt;找第二大的 eigenvalue&lt;/a&gt;
+&lt;blockquote&gt;
+&lt;p&gt;deflation&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://teshenglin.github.io/post/2023_power_method_3&#34;&gt;Rayleigh Quotient 迭代及其收斂性&lt;/a&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Power method with Rayleigh Quotient&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;基本-power-method&#34;&gt;基本 Power method&lt;/h2&gt;
 &lt;blockquote&gt;
 &lt;p&gt;求一個方陣最大(in magnitude) 的 eigenvalue.&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -336,8 +487,8 @@ $$&lt;/p&gt;
 &lt;p&gt;Input: A
 Output: (取絕對值後)最大的 eigenvalue $\lambda_1$ 以及 $v_1$&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;隨機選取一個向量 $u$, 並使 $|u|=1$&lt;/li&gt;
-&lt;li&gt;計算 $v = Au$, 並令 $\lambda=|v|$&lt;/li&gt;
+&lt;li&gt;隨機選取一個向量 $u$, 並使 $\|u\|=1$&lt;/li&gt;
+&lt;li&gt;計算 $v = Au$, 並令 $\lambda=\|v\|$&lt;/li&gt;
 &lt;li&gt;另 $u=v/\lambda$ 並重複步驟 2 直到 $\lambda$ 收斂為止&lt;/li&gt;
 &lt;/ol&gt;
 &lt;hr&gt;
@@ -427,17 +578,33 @@ $$
       <link>https://teshenglin.github.io/post/2023_power_method_2/</link>
       <pubDate>Wed, 26 Apr 2023 00:00:00 +0000</pubDate>
       <guid>https://teshenglin.github.io/post/2023_power_method_2/</guid>
-      <description>&lt;blockquote&gt;
-&lt;p&gt;
-&lt;a href=&#34;https://teshenglin.github.io/post/2023_power_method_1&#34;&gt;Power method&lt;/a&gt;, 能找到一個矩陣最大的 eigenvalue.&lt;/p&gt;
-&lt;p&gt;這裡要介紹第二大的怎麼找.&lt;/p&gt;
+      <description>&lt;p&gt;Power 迭代法目錄:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://teshenglin.github.io/post/2023_power_method_1&#34;&gt;基本概念&lt;/a&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Power iteration; inverse power method; shifted inver power method&lt;/p&gt;
 &lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://teshenglin.github.io/post/2023_power_method_2&#34;&gt;找第二大的 eigenvalue&lt;/a&gt;
+&lt;blockquote&gt;
+&lt;p&gt;deflation&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://teshenglin.github.io/post/2023_power_method_3&#34;&gt;Rayleigh Quotient 迭代及其收斂性&lt;/a&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Power method with Rayleigh Quotient&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
 &lt;hr&gt;
 &lt;h1 id=&#34;deflation&#34;&gt;Deflation&lt;/h1&gt;
 &lt;blockquote&gt;
 &lt;p&gt;對一方陣 $A$, 假設我們以 power iteration 找到了一組 eigenvalue/eigenvector, $\lambda$ and $v$, 使得 $Av = \lambda v$. 那要怎麼找下一組呢?&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h2 id=&#34;matrix-tranformation&#34;&gt;Matrix tranformation&lt;/h2&gt;
+&lt;h2 id=&#34;1-matrix-tranformation&#34;&gt;1. Matrix tranformation&lt;/h2&gt;
 &lt;p&gt;假設能找到一個向量 $x$ 使 $x^T v = 1$, 則我們定義
 $$
 \tag{1} B = A - \lambda v x^T,
@@ -487,7 +654,12 @@ $$&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;因此, 對 (1) 做 power iteration 可以找出下一個 eigenvalue, 並且利用 (2) 可以得到其 eigenvector.&lt;/p&gt;
 &lt;hr&gt;
-&lt;h2 id=&#34;eigen-decomposition&#34;&gt;Eigen-decomposition&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;接下來我們介紹兩種 &lt;em&gt;&lt;strong&gt;看起來似乎可以使用&lt;/strong&gt;&lt;/em&gt; 的 deflation 作法.
+不過實際使用起來有一些問題!&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;2-eigen-decomposition&#34;&gt;2. Eigen-decomposition&lt;/h2&gt;
 &lt;p&gt;對一個方陣, 如果我們可以找到所有的 eigenvalues 跟 eigenvectors, 並且有以下關係
 $$
 A V = V\Lambda  \quad \longleftrightarrow \quad A = V\Lambda V^{-1}
@@ -512,7 +684,7 @@ $$
 &lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; 不過實務上 left eigenvector 比較難找, 需要先找出 linear operator 的 adjoint operator (也就是 $A^T$) 才有辦法做矩陣-向量乘法, 因此這個方法除了對稱的情況外幾乎不會被使用.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; 當 $A$ 是 symmetric, 則可以選擇 $v_i$ 使得 $w_i = v_i$, 在這時候我們就可以輕易地使用 (3) 來找下一組了.&lt;/p&gt;
 &lt;hr&gt;
-&lt;h2 id=&#34;annihilation&#34;&gt;Annihilation&lt;/h2&gt;
+&lt;h2 id=&#34;3-annihilation&#34;&gt;3. Annihilation&lt;/h2&gt;
 &lt;p&gt;給定 $A$ 為一個 $n\times n$ 方陣. 我們做以下兩個假設&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;它的 eigenvalues 滿足

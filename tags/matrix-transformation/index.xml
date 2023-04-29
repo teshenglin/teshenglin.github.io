@@ -17,17 +17,33 @@
       <link>https://teshenglin.github.io/post/2023_power_method_2/</link>
       <pubDate>Wed, 26 Apr 2023 00:00:00 +0000</pubDate>
       <guid>https://teshenglin.github.io/post/2023_power_method_2/</guid>
-      <description>&lt;blockquote&gt;
-&lt;p&gt;
-&lt;a href=&#34;https://teshenglin.github.io/post/2023_power_method_1&#34;&gt;Power method&lt;/a&gt;, 能找到一個矩陣最大的 eigenvalue.&lt;/p&gt;
-&lt;p&gt;這裡要介紹第二大的怎麼找.&lt;/p&gt;
+      <description>&lt;p&gt;Power 迭代法目錄:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://teshenglin.github.io/post/2023_power_method_1&#34;&gt;基本概念&lt;/a&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Power iteration; inverse power method; shifted inver power method&lt;/p&gt;
 &lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://teshenglin.github.io/post/2023_power_method_2&#34;&gt;找第二大的 eigenvalue&lt;/a&gt;
+&lt;blockquote&gt;
+&lt;p&gt;deflation&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://teshenglin.github.io/post/2023_power_method_3&#34;&gt;Rayleigh Quotient 迭代及其收斂性&lt;/a&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Power method with Rayleigh Quotient&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
 &lt;hr&gt;
 &lt;h1 id=&#34;deflation&#34;&gt;Deflation&lt;/h1&gt;
 &lt;blockquote&gt;
 &lt;p&gt;對一方陣 $A$, 假設我們以 power iteration 找到了一組 eigenvalue/eigenvector, $\lambda$ and $v$, 使得 $Av = \lambda v$. 那要怎麼找下一組呢?&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h2 id=&#34;matrix-tranformation&#34;&gt;Matrix tranformation&lt;/h2&gt;
+&lt;h2 id=&#34;1-matrix-tranformation&#34;&gt;1. Matrix tranformation&lt;/h2&gt;
 &lt;p&gt;假設能找到一個向量 $x$ 使 $x^T v = 1$, 則我們定義
 $$
 \tag{1} B = A - \lambda v x^T,
@@ -77,7 +93,12 @@ $$&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;因此, 對 (1) 做 power iteration 可以找出下一個 eigenvalue, 並且利用 (2) 可以得到其 eigenvector.&lt;/p&gt;
 &lt;hr&gt;
-&lt;h2 id=&#34;eigen-decomposition&#34;&gt;Eigen-decomposition&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;接下來我們介紹兩種 &lt;em&gt;&lt;strong&gt;看起來似乎可以使用&lt;/strong&gt;&lt;/em&gt; 的 deflation 作法.
+不過實際使用起來有一些問題!&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;2-eigen-decomposition&#34;&gt;2. Eigen-decomposition&lt;/h2&gt;
 &lt;p&gt;對一個方陣, 如果我們可以找到所有的 eigenvalues 跟 eigenvectors, 並且有以下關係
 $$
 A V = V\Lambda  \quad \longleftrightarrow \quad A = V\Lambda V^{-1}
@@ -102,7 +123,7 @@ $$
 &lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; 不過實務上 left eigenvector 比較難找, 需要先找出 linear operator 的 adjoint operator (也就是 $A^T$) 才有辦法做矩陣-向量乘法, 因此這個方法除了對稱的情況外幾乎不會被使用.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; 當 $A$ 是 symmetric, 則可以選擇 $v_i$ 使得 $w_i = v_i$, 在這時候我們就可以輕易地使用 (3) 來找下一組了.&lt;/p&gt;
 &lt;hr&gt;
-&lt;h2 id=&#34;annihilation&#34;&gt;Annihilation&lt;/h2&gt;
+&lt;h2 id=&#34;3-annihilation&#34;&gt;3. Annihilation&lt;/h2&gt;
 &lt;p&gt;給定 $A$ 為一個 $n\times n$ 方陣. 我們做以下兩個假設&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;它的 eigenvalues 滿足

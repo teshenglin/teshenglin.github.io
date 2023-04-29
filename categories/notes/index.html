@@ -241,7 +241,7 @@
   <meta property="og:description" content="Associate Professor"><meta property="og:image" content="https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png">
   <meta property="twitter:image" content="https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png"><meta property="og:locale" content="en-us">
   
-    <meta property="og:updated_time" content="2023-04-26T00:00:00&#43;00:00">
+    <meta property="og:updated_time" content="2023-04-29T00:00:00&#43;00:00">
   
 
   
@@ -489,10 +489,10 @@
     
     
     <div>
-      <h2><a href="/post/2023_conjugate_gradient_method_1/" >Conjugate gradient method - direct method</a></h2>
+      <h2><a href="/post/2023_power_method_3/" >Power method with Rayleigh Quotient</a></h2>
       <div class="article-style">
         
-          For solving $Ax=b$, where $A$ is a square symmetric positive definite matrix. Assumptions: $A\in M_{n\times n}$ is a symmetric positive definite matrix. Definition: A-orthogonal (A-conjugate) 假設有兩個向量 $u_1$ 跟 $u_2$ 皆非 $0$ 且 $u_1 \neq u_2$，若這兩個向量滿足 $$ \langle{u_1},A{u_2}\rangle = {u_1}^TA{u_2} = 0, $$ 則稱之為 A-orthogonal (或 A-conjugate). A-orthonormal
+          Power 迭代法目錄: 基本概念 Power iteration; inverse power method; shifted inver power method 找第二大的 eigenvalue deflation Rayleigh Quotient 迭代及其收斂性 Power method with Rayleigh Quotient 假設 $A$ 是一個對稱矩陣 演算法: Power method with Rayleigh Quotient Iterate until convergence: $$ \tag{1} \begin{align} \hat{x}^{(k+1)} &amp;= Ax^{(k)}\\ \lambda^{(k+1)}
         
       </div>
     </div>
@@ -504,7 +504,19 @@
       <h2><a href="/post/2023_conjugate_gradient_method_2/" >Conjugate gradient method - iterative method</a></h2>
       <div class="article-style">
         
-          共軛梯度法的直接法版本: Conjugate Gradient (CG) Method as a direct method 這裡要介紹 CG method 迭代法的版本. For solving $Ax=b$, where $A$ is a square symmetric positive definite matrix. Assumptions: $A\in M_{n\times n}$ is a symmetric positive definite matrix. Definition: A-orthogonal (A-conjugate) 假設有兩個向量 $u_1$ 跟 $u_2$ 皆
+          共軛梯度法 (CG method, conjugate gradient method) 目錄: CG method - Direct mehtod 直接法 CG method - iterate mehtod 迭代法 For solving $Ax=b$, where $A$ is a square symmetric positive definite matrix. Assumptions: $A\in M_{n\times n}$ is a symmetric positive definite matrix. Definition: A-orthogonal (A-conjugate) 假設有兩個向量 $u_1$ 跟 $u_2$ 皆非 $0$ 且 $u_1 \neq
+        
+      </div>
+    </div>
+  
+    
+    
+    
+    <div>
+      <h2><a href="/post/2023_conjugate_gradient_method_1/" >Conjugate gradient method - direct method</a></h2>
+      <div class="article-style">
+        
+          共軛梯度法 (CG method, conjugate gradient method) 目錄: CG method - Direct mehtod 直接法 CG method - iterate mehtod 迭代法 For solving $Ax=b$, where $A$ is a square symmetric positive definite matrix. Assumptions: $A\in M_{n\times n}$ is a symmetric positive definite matrix. Definition: A-orthogonal (A-conjugate) 假設有兩個向量 $u_1$ 跟 $u_2$ 皆非 $0$ 且 $u_1 \neq
         
       </div>
     </div>
@@ -516,7 +528,7 @@
       <h2><a href="/post/2023_power_method_1/" >Power method</a></h2>
       <div class="article-style">
         
-          基本 Power method 求一個方陣最大(in magnitude) 的 eigenvalue. 給定 $A$ 為一個 $n\times n$ 方陣. 我們做以下兩個假設 它的 eigenvalues 滿足 $$ |\lambda_1| &gt; |\lambda_2| \ge |\lambda_3| \cdots |\lambda_n|. $$ 相對應的 eigenvectors, $\{v_1, , v_2, , \cdots, v_n\}$, 會構成 $R^n$ 的一組基
+          Power 迭代法目錄: 基本概念 Power iteration; inverse power method; shifted inver power method 找第二大的 eigenvalue deflation Rayleigh Quotient 迭代及其收斂性 Power method with Rayleigh Quotient 基本 Power method 求一個方陣最大(in magnitude) 的 eigenvalue. 給定 $A$ 為一個 $n\times n$ 方陣. 我
         
       </div>
     </div>
@@ -528,7 +540,7 @@
       <h2><a href="/post/2023_power_method_2/" >Power method - deflation</a></h2>
       <div class="article-style">
         
-          Power method, 能找到一個矩陣最大的 eigenvalue. 這裡要介紹第二大的怎麼找. Deflation 對一方陣 $A$, 假設我們以 power iteration 找到了一組 eigenvalue/eigenvector, $\lambda$ and $v$, 使得 $Av = \lambda v$. 那要怎麼找下一組呢? Matrix tranformation 假設能找
+          Power 迭代法目錄: 基本概念 Power iteration; inverse power method; shifted inver power method 找第二大的 eigenvalue deflation Rayleigh Quotient 迭代及其收斂性 Power method with Rayleigh Quotient Deflation 對一方陣 $A$, 假設我們以 power iteration 找到了一組 eigenvalue/eigenvector, $\lambda$ and $v$, 使得 $Av = \lambda v$. 那
         
       </div>
     </div>
@@ -593,20 +605,17 @@
       </div>
     </div>
   
-    
-    
-    
-    <div>
-      <h2><a href="/post/2019_markdown/" >Markdown 學習筆記</a></h2>
-      <div class="article-style">
-        
-          這裡我們要介紹 markdown 這個語言. 它非常簡單易學, 有時我們只是想打個小文件, 就幾頁而已不想要開 latex 或是 word 之類的文字編輯軟體, 這時候就非常適合以 markdown 來編寫
-        
-      </div>
-    </div>
-  
 
   
+<nav>
+  <ul class="pagination justify-content-center">
+    
+    
+    <li class="page-item"><a class="page-link" href="/categories/notes/page/2/">&raquo;</a></li>
+    
+  </ul>
+</nav>
+
 
 </div>
 

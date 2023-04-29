@@ -17,7 +17,29 @@
       <link>https://teshenglin.github.io/post/2023_power_method_1/</link>
       <pubDate>Wed, 26 Apr 2023 00:00:00 +0000</pubDate>
       <guid>https://teshenglin.github.io/post/2023_power_method_1/</guid>
-      <description>&lt;h2 id=&#34;基本-power-method&#34;&gt;基本 Power method&lt;/h2&gt;
+      <description>&lt;p&gt;Power 迭代法目錄:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://teshenglin.github.io/post/2023_power_method_1&#34;&gt;基本概念&lt;/a&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Power iteration; inverse power method; shifted inver power method&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://teshenglin.github.io/post/2023_power_method_2&#34;&gt;找第二大的 eigenvalue&lt;/a&gt;
+&lt;blockquote&gt;
+&lt;p&gt;deflation&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://teshenglin.github.io/post/2023_power_method_3&#34;&gt;Rayleigh Quotient 迭代及其收斂性&lt;/a&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Power method with Rayleigh Quotient&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;基本-power-method&#34;&gt;基本 Power method&lt;/h2&gt;
 &lt;blockquote&gt;
 &lt;p&gt;求一個方陣最大(in magnitude) 的 eigenvalue.&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -63,8 +85,8 @@ $$&lt;/p&gt;
 &lt;p&gt;Input: A
 Output: (取絕對值後)最大的 eigenvalue $\lambda_1$ 以及 $v_1$&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;隨機選取一個向量 $u$, 並使 $|u|=1$&lt;/li&gt;
-&lt;li&gt;計算 $v = Au$, 並令 $\lambda=|v|$&lt;/li&gt;
+&lt;li&gt;隨機選取一個向量 $u$, 並使 $\|u\|=1$&lt;/li&gt;
+&lt;li&gt;計算 $v = Au$, 並令 $\lambda=\|v\|$&lt;/li&gt;
 &lt;li&gt;另 $u=v/\lambda$ 並重複步驟 2 直到 $\lambda$ 收斂為止&lt;/li&gt;
 &lt;/ol&gt;
 &lt;hr&gt;
