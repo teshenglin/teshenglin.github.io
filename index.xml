@@ -2072,6 +2072,12 @@ scatter(B(1,:), B(2,:), [], (1:n)/n, &#39;fill&#39;)
       <pubDate>Mon, 29 Jun 2020 00:00:00 +0800</pubDate>
       <guid>https://teshenglin.github.io/courses/taught/</guid>
       <description>&lt;hr&gt;
+&lt;h2 id=&#34;2023-fall&#34;&gt;2023 Fall&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Linear algebra (1):&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Differential Equations:&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
 &lt;h2 id=&#34;2023-spring&#34;&gt;2023 Spring&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Computational Mathematics&lt;/strong&gt;&lt;/li&gt;
@@ -2211,13 +2217,14 @@ scatter(B(1,:), B(2,:), [], (1:n)/n, &#39;fill&#39;)
 &lt;hr&gt;
 &lt;h2 id=&#34;master-students&#34;&gt;Master students&lt;/h2&gt;
 &lt;ul&gt;
+&lt;li&gt;林顯堯&lt;/li&gt;
 &lt;li&gt;唐翊瑄 (Co-advised with Prof. Chiun-Chang Li)&lt;/li&gt;
 &lt;li&gt;楊家睿&lt;/li&gt;
 &lt;li&gt;蔡宛玲&lt;/li&gt;
 &lt;li&gt;陳重凱&lt;/li&gt;
 &lt;li&gt;官恩琳&lt;/li&gt;
-&lt;li&gt;賴冠宇&lt;/li&gt;
 &lt;li&gt;鍾俊儒&lt;/li&gt;
+&lt;li&gt;Guan-Yu Lai (賴冠宇)&lt;/li&gt;
 &lt;li&gt;Tang-Syuan Tseng (曾堂軒) - graduated 2022-08&lt;/li&gt;
 &lt;li&gt;Chia-Chen Yang (楊珈禎) - graduated 2022-08&lt;/li&gt;
 &lt;li&gt;Yu-Jie Ho (何禹潔) - graduated 2022-07&lt;/li&gt;
