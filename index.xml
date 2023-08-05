@@ -13,6 +13,22 @@
     </image>
     
     <item>
+      <title>A cusp-capturing PINN for elliptic interface problems</title>
+      <link>https://teshenglin.github.io/publication/23_jcp_tlhl/</link>
+      <pubDate>Thu, 13 Jul 2023 00:00:00 +0000</pubDate>
+      <guid>https://teshenglin.github.io/publication/23_jcp_tlhl/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Analysis and classification of coffee beans using single coffee bean mass spectrometry with machine learning strategy</title>
+      <link>https://teshenglin.github.io/publication/23_jc_tchlc/</link>
+      <pubDate>Mon, 12 Jun 2023 00:00:00 +0000</pubDate>
+      <guid>https://teshenglin.github.io/publication/23_jc_tchlc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>An efficient neural-network and finite-difference hybrid method for elliptic interface problems with applications</title>
       <link>https://teshenglin.github.io/publication/23_cicp_hltl/</link>
       <pubDate>Sun, 07 May 2023 00:00:00 +0000</pubDate>
@@ -923,14 +939,6 @@ $$&lt;/p&gt;
       <link>https://teshenglin.github.io/publication/22_jfm_frhlrm/</link>
       <pubDate>Fri, 28 Oct 2022 00:00:00 +0000</pubDate>
       <guid>https://teshenglin.github.io/publication/22_jfm_frhlrm/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>A cusp-capturing PINN for elliptic interface problems</title>
-      <link>https://teshenglin.github.io/publication/23_jcp_tlhl/</link>
-      <pubDate>Mon, 17 Oct 2022 00:00:00 +0000</pubDate>
-      <guid>https://teshenglin.github.io/publication/23_jcp_tlhl/</guid>
       <description></description>
     </item>
     
@@ -2224,7 +2232,7 @@ scatter(B(1,:), B(2,:), [], (1:n)/n, &#39;fill&#39;)
 &lt;li&gt;陳重凱&lt;/li&gt;
 &lt;li&gt;官恩琳&lt;/li&gt;
 &lt;li&gt;鍾俊儒&lt;/li&gt;
-&lt;li&gt;Guan-Yu Lai (賴冠宇)&lt;/li&gt;
+&lt;li&gt;Guan-Yu Lai (賴冠宇) - graduated 2022-07&lt;/li&gt;
 &lt;li&gt;Tang-Syuan Tseng (曾堂軒) - graduated 2022-08&lt;/li&gt;
 &lt;li&gt;Chia-Chen Yang (楊珈禎) - graduated 2022-08&lt;/li&gt;
 &lt;li&gt;Yu-Jie Ho (何禹潔) - graduated 2022-07&lt;/li&gt;

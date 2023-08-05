@@ -5,12 +5,28 @@
     <link>https://teshenglin.github.io/publication_types/2/</link>
       <atom:link href="https://teshenglin.github.io/publication_types/2/index.xml" rel="self" type="application/rss+xml" />
     <description>2</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 07 May 2023 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Thu, 13 Jul 2023 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
       <title>2</title>
       <link>https://teshenglin.github.io/publication_types/2/</link>
     </image>
+    
+    <item>
+      <title>A cusp-capturing PINN for elliptic interface problems</title>
+      <link>https://teshenglin.github.io/publication/23_jcp_tlhl/</link>
+      <pubDate>Thu, 13 Jul 2023 00:00:00 +0000</pubDate>
+      <guid>https://teshenglin.github.io/publication/23_jcp_tlhl/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Analysis and classification of coffee beans using single coffee bean mass spectrometry with machine learning strategy</title>
+      <link>https://teshenglin.github.io/publication/23_jc_tchlc/</link>
+      <pubDate>Mon, 12 Jun 2023 00:00:00 +0000</pubDate>
+      <guid>https://teshenglin.github.io/publication/23_jc_tchlc/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>An efficient neural-network and finite-difference hybrid method for elliptic interface problems with applications</title>
