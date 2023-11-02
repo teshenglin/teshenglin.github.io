@@ -7,7 +7,7 @@
     <description>series</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Wed, 18 Mar 2020 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <url>https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
       <title>series</title>
       <link>https://teshenglin.github.io/tags/series/</link>
     </image>
@@ -25,8 +25,8 @@ Chinese version:
 &lt;p&gt;The tangent line approximation $L(x)$ is the best first-degree (linear) approximation to $f(x)$ near $x=a$ because $f(x)$ and $L(x)$ have the same rate of change (derivative) at $x=a$. For a better approximation than a linear one, let&amp;rsquo;s try a second-degree (quadratic) approximation $P(x)$. In other words, we approximate a curve by a parabola instead of a straight line. To make sure that the approximation is a good one, we stipulate the following:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;$P$ and $f$ should have the same value at $a$. ($P(a)=f(a)$)&lt;/li&gt;
-&lt;li&gt;$P$ and $f$ should have the same rate of change at $a$. ($P&amp;rsquo;(a)=f&amp;rsquo;(a)$)&lt;/li&gt;
-&lt;li&gt;The slopes of $P$ and $f$ should change at the same rate at $a$. ($P&amp;rsquo;&#39;(a)=f&amp;rsquo;&#39;(a)$)&lt;/li&gt;
+&lt;li&gt;$P$ and $f$ should have the same rate of change at $a$. ($P&#39;(a)=f&#39;(a)$)&lt;/li&gt;
+&lt;li&gt;The slopes of $P$ and $f$ should change at the same rate at $a$. ($P&#39;&#39;(a)=f&#39;&#39;(a)$)&lt;/li&gt;
 &lt;/ol&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Question 1：&lt;/strong&gt; Find the quadratic approximation $P(x)=A+Bx+Cx^{2}$ to the function $f(x)=cosx$ that satisfies conditions (i), (ii),and (iii) with $a=0$ . Graph $P$, $f$ and the linear approximation $L(x)=1$ on a common screen. Comment on how well the functions $P$ and $L$ approximate $f$.&lt;/p&gt;
@@ -105,13 +105,13 @@ P(x)=A+B(x-a)+C(x-a)^{2}。
 $$
 Show that the quadratic function that satisfies conditions (i), (ii), and (iii) is
 $$
-P(x)=f(a)+f&amp;rsquo;(a)(x-a)+\frac{1}{2} f&amp;rsquo;&#39;(a)(x-a)^{2}。
+P(x)=f(a)+f&#39;(a)(x-a)+\frac{1}{2} f&#39;&#39;(a)(x-a)^{2}。
 $$&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
 &lt;!-- raw HTML omitted --&gt;
 &lt;!-- raw HTML omitted --&gt;
 &lt;p&gt;$$
-P(x)=f(a)+f&amp;rsquo;(a)(x-a)+\frac{1}{2} f&amp;rsquo;&#39;(a)(x-a)^{2}.
+P(x)=f(a)+f&#39;(a)(x-a)+\frac{1}{2} f&#39;&#39;(a)(x-a)^{2}.
 $$&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Question 4:&lt;/strong&gt; Find the quadratic approximation to $F(x)=\sqrt{x+3}\quad$ near $a=1$. Graph $f$, the quadratic approximation, and the linear approximation from Example 3.10.2 on a common screen. What do you conclude?&lt;/p&gt;
@@ -160,7 +160,7 @@ $$
 Show that these conditions are satisfied if $c_{k}=\frac{f^{(k)}(a)}{k!}$.&lt;/p&gt;
 &lt;p&gt;The resulting polynomial:
 $$
-T_{n}(x)=f(a)+f&amp;rsquo;(a)(x-a)+\frac{f&amp;rsquo;&#39;(a)}{2!} (x-a)^{2}+&amp;hellip;+\frac{f^{(n)}(a)}{n!}(x-a)^{n}。
+T_{n}(x)=f(a)+f&#39;(a)(x-a)+\frac{f&#39;&#39;(a)}{2!} (x-a)^{2}+&amp;hellip;+\frac{f^{(n)}(a)}{n!}(x-a)^{n}。
 $$
 is called the nth-degree Taylor polynomial of $f$ centered at $a$.&lt;/p&gt;
 &lt;!-- raw HTML omitted --&gt;
@@ -218,8 +218,8 @@ is called the nth-degree Taylor polynomial of $f$ centered at $a$.&lt;/p&gt;
 &lt;p&gt;為了找尋比線性逼近更好的近似方式，我們嘗試利用二次逼近函數(quadratic approximation) $Q(x)$ 來做近似，換句話說，我們利用拋物線來逼近 $f(x)$ 的值而非直線。為了確定這樣的近似方式是合理的，我們規定以下條件：&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;$P(a)=f(a)$&lt;/li&gt;
-&lt;li&gt;$P&amp;rsquo;(a)=f&amp;rsquo;(a)$&lt;/li&gt;
-&lt;li&gt;$P&amp;rsquo;&#39;(a)=f&amp;rsquo;&#39;(a)$&lt;/li&gt;
+&lt;li&gt;$P&#39;(a)=f&#39;(a)$&lt;/li&gt;
+&lt;li&gt;$P&#39;&#39;(a)=f&#39;&#39;(a)$&lt;/li&gt;
 &lt;/ol&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;問題 1：&lt;/strong&gt; 對於函數 $f(x)=\cos(x)$，找尋它在 $a=0$ 時的二次逼近函數 $P(x)=A+Bx+Cx^2$，並且此函數須滿足上述介紹中的三個條件。接著對函數 $P,f$ 及線性逼近函數 $L(x)=1$ 作圖，比較 $P$ 和 $f$ 哪一個逼近函數比較精確。&lt;/p&gt;
@@ -299,13 +299,13 @@ P(x)=A+B(x-a)+C(x-a)^{2}。
 $$
 證明一個滿足專題介紹中3個條件的二次逼近函數$P(x)$可以表示為
 $$
-P(x)=f(a)+f&amp;rsquo;(a)(x-a)+\frac{1}{2} f&amp;rsquo;&#39;(a)(x-a)^{2}。
+P(x)=f(a)+f&#39;(a)(x-a)+\frac{1}{2} f&#39;&#39;(a)(x-a)^{2}。
 $$&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;解：&lt;/strong&gt;&lt;/p&gt;
 &lt;!-- raw HTML omitted --&gt;
 &lt;!-- raw HTML omitted --&gt;
 &lt;p&gt;$$
-P(x)=f(a)+f&amp;rsquo;(a)(x-a)+\frac{1}{2} f&amp;rsquo;&#39;(a)(x-a)^{2}。
+P(x)=f(a)+f&#39;(a)(x-a)+\frac{1}{2} f&#39;&#39;(a)(x-a)^{2}。
 $$&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;問題 4：&lt;/strong&gt; 找尋函數 $f(x)=\sqrt{x+3}$ 在 $a=1$ 時的二次逼近函數，接著對 $f$、二次逼近函數及線性逼近函數做圖。你能做怎樣的結論？&lt;/p&gt;
@@ -353,7 +353,7 @@ T_{n}^{(k)}(a)=f^{(k)}(a), \quad k=1, \cdots, n。
 $$
 證明：滿足上述條件的 $T_{n}(x)$ 其係數 $c_{k}=\frac{f^{(k)}(a)}{k!}$。(將係數 $c_{k}$ 代入函數 $T_{n}(x)$ 後，函數為
 $$
-T_{n}(x)=f(a)+f&amp;rsquo;(a)(x-a)+\frac{f&amp;rsquo;&#39;(a)}{2!} (x-a)^{2}+&amp;hellip;+\frac{f^{(n)}(a)}{n!}(x-a)^{n}。
+T_{n}(x)=f(a)+f&#39;(a)(x-a)+\frac{f&#39;&#39;(a)}{2!} (x-a)^{2}+&amp;hellip;+\frac{f^{(n)}(a)}{n!}(x-a)^{n}。
 $$
 此即為函數 $f$ 在點 $a$ 的 $n$ 階泰勒級數。)&lt;/p&gt;
 &lt;!-- raw HTML omitted --&gt;

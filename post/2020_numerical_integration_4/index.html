@@ -217,8 +217,8 @@
   
 
   <link rel="manifest" href="/index.webmanifest">
-  <link rel="icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_2.png">
-  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_2.png">
+  <link rel="icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_3.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_3.png">
 
   <link rel="canonical" href="https://teshenglin.github.io/post/2020_numerical_integration_4/">
 
@@ -236,13 +236,13 @@
   <meta property="og:site_name" content="Te-Sheng Lin">
   <meta property="og:url" content="https://teshenglin.github.io/post/2020_numerical_integration_4/">
   <meta property="og:title" content="Clenshaw–Curtis quadrature | Te-Sheng Lin">
-  <meta property="og:description" content="前情提要: 數值積分初探 前情提要: 以內插多項式來做數值積分 前情提要: 高斯積分 我們想要利用 Chebyshev polynomial 來算積分 Goal: 任意給定一可積分函數 $f(x)$, $x\in[-1, 1]$, 我們想要算 $\int^1_{-1} f(x)"><meta property="og:image" content="https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png">
-  <meta property="twitter:image" content="https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png"><meta property="og:locale" content="en-us">
+  <meta property="og:description" content="前情提要: 數值積分初探 前情提要: 以內插多項式來做數值積分 前情提要: 高斯積分 我們想要利用 Chebyshev polynomial 來算積分 Goal: 任意給定一可積分函數 $f(x)$, $x\in[-1, 1]$, 我們想要算 $\int^1_{-1} f(x)"><meta property="og:image" content="https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png">
+  <meta property="twitter:image" content="https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png"><meta property="og:locale" content="en-us">
   
     
       <meta property="article:published_time" content="2020-06-19T00:00:00&#43;00:00">
     
-    <meta property="article:modified_time" content="2020-06-19T17:00:49&#43;08:00">
+    <meta property="article:modified_time" content="2023-11-02T10:41:03&#43;08:00">
   
 
   
@@ -271,7 +271,7 @@
   "headline": "Clenshaw–Curtis quadrature",
   
   "datePublished": "2020-06-19T00:00:00Z",
-  "dateModified": "2020-06-19T17:00:49+08:00",
+  "dateModified": "2023-11-02T10:41:03+08:00",
   
   "author": {
     "@type": "Person",
@@ -283,7 +283,7 @@
     "name": "Te-Sheng Lin",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_2.png"
+      "url": "https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_3.png"
     }
   },
   "description": "前情提要: 數值積分初探 前情提要: 以內插多項式來做數值積分 前情提要: 高斯積分 我們想要利用 Chebyshev polynomial 來算積分 Goal: 任意給定一可積分函數 $f(x)$, $x\\in[-1, 1]$, 我們想要算 $\\int^1_{-1} f(x)"
@@ -549,7 +549,7 @@
           Last updated on
       
     
-    Jun 19, 2020
+    Nov 2, 2023
   </span>
   
 
@@ -615,9 +615,9 @@
 $$
 \int^1_{-1} f(x) dx = \int^{\pi}_0 f(\cos\theta)\sin\theta d\theta.
 $$
-所以如果我能將 $f(x)$ 這個函數以 second kind Chebyshev polynomial 來做展開, i.e.,
+所以如果我能將 $f(x)$ 這個函數以 first kind Chebyshev polynomial 來做展開, i.e.,
 $$
-f(x) = \sum^N_{k=0} a_k T_k(x) = \sum^N_{k=0} a_k \cos(k\cos^{-1}x) = \sum^N_{k=0} a_k \cos(k\theta)=f(\cos\theta).
+f(x) = \sum^N_{k=0} a_k T_k(x) = \sum^N_{k=0} a_k \cos(k\cos^{-1}x).
 $$
 那代入後我們就有
 $$
@@ -631,7 +631,7 @@ N = 25;
 x = -sin((-N:2:N)'*pi/(2*N));
 
 % evaluate at grid points
-f = exp(sin(x));
+f = cos(x).*exp(sin(x));
 
 % extend the function and take scaled FFT
 f_extend = [f; f(N: -1:2)];
@@ -653,7 +653,11 @@ end
 w(1:2:end) = 2./(1-4*(0:M).^2);
 
 % Clenshaw–Curtis quadrature
-w*a
+cc_quad = w*a;
+
+% error
+exact_quad = exp(sin(1)) - exp(sin(-1));
+abs(cc_quad - exact_quad)
 </code></pre><hr>
 <p>以上做法是先將函數取值, 算其係數, 再求其積分.
 不過實際上我們應該能將積分權重直接算出來, 如此一來我們就能直接由函數值求積分了.
@@ -716,10 +720,47 @@ N = 25;
 x = -sin((-N:2:N)'*pi/(2*N));
 
 % evaluate at grid points
-f = exp(sin(x));
+f = cos(x).*exp(sin(x));
 
 % Clenshaw–Curtis quadrature
-CCW*f
+cc_quad2 = CCW*f;
+
+% error
+exact_quad = exp(sin(1)) - exp(sin(-1));
+abs(cc_quad2 - exact_quad)
+</code></pre><hr>
+<p>最後附上 <code>python</code> 程式:</p>
+<pre><code>import numpy as np
+from numpy.fft import fft,ifft,fftshift
+
+N = 25
+
+# Clenshaw–Curtis weights 
+if N % 2 ==0:
+    M= int(N/2)
+else:
+    M = int((N-1)/2)
+
+w = np.zeros(N+1)
+
+w[0:N+1:2] = 2./(1-4*np.linspace(0,M,M+1)**2);
+w2 = np.append(w, w[N-1:0:-1])
+CCW2 = np.real(ifft(w2))
+
+CCW = 2*CCW2[0:N+1]
+CCW[0] = CCW2[0]
+CCW[N] = CCW2[N]
+
+# Chebyshev points of the second kind
+x = -np.sin(np.arange(-N, N+1, 2)*np.pi/(2*N))
+
+#f = np.exp(np.sin(x));
+f = np.cos(x)*np.exp(np.sin(x))
+cc_quad2 = np.inner(CCW, f)
+
+# error
+exact_quad = np.exp(np.sin(1)) - np.exp(np.sin(-1));
+np.abs(cc_quad2 - exact_quad)
 </code></pre><hr>
 
     </div>
@@ -1029,7 +1070,7 @@ CCW*f
     
     
     
-    <script src="/js/academic.min.a8d7005002cb4a052fd6d721e83df9ba.js"></script>
+    <script src="/js/academic.min.d49475924c8a1000c804942d870fd31c.js"></script>
 
     
 

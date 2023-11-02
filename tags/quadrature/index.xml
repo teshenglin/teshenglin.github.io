@@ -7,7 +7,7 @@
     <description>quadrature</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 19 Jun 2020 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <url>https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
       <title>quadrature</title>
       <link>https://teshenglin.github.io/tags/quadrature/</link>
     </image>
@@ -34,9 +34,9 @@
 $$
 \int^1_{-1} f(x) dx = \int^{\pi}_0 f(\cos\theta)\sin\theta d\theta.
 $$
-所以如果我能將 $f(x)$ 這個函數以 second kind Chebyshev polynomial 來做展開, i.e.,
+所以如果我能將 $f(x)$ 這個函數以 first kind Chebyshev polynomial 來做展開, i.e.,
 $$
-f(x) = \sum^N_{k=0} a_k T_k(x) = \sum^N_{k=0} a_k \cos(k\cos^{-1}x) = \sum^N_{k=0} a_k \cos(k\theta)=f(\cos\theta).
+f(x) = \sum^N_{k=0} a_k T_k(x) = \sum^N_{k=0} a_k \cos(k\cos^{-1}x).
 $$
 那代入後我們就有
 $$
@@ -50,7 +50,7 @@ N = 25;
 x = -sin((-N:2:N)&#39;*pi/(2*N));
 
 % evaluate at grid points
-f = exp(sin(x));
+f = cos(x).*exp(sin(x));
 
 % extend the function and take scaled FFT
 f_extend = [f; f(N: -1:2)];
@@ -72,7 +72,11 @@ end
 w(1:2:end) = 2./(1-4*(0:M).^2);
 
 % Clenshaw–Curtis quadrature
-w*a
+cc_quad = w*a;
+
+% error
+exact_quad = exp(sin(1)) - exp(sin(-1));
+abs(cc_quad - exact_quad)
 &lt;/code&gt;&lt;/pre&gt;&lt;hr&gt;
 &lt;p&gt;以上做法是先將函數取值, 算其係數, 再求其積分.
 不過實際上我們應該能將積分權重直接算出來, 如此一來我們就能直接由函數值求積分了.
@@ -135,10 +139,47 @@ N = 25;
 x = -sin((-N:2:N)&#39;*pi/(2*N));
 
 % evaluate at grid points
-f = exp(sin(x));
+f = cos(x).*exp(sin(x));
 
 % Clenshaw–Curtis quadrature
-CCW*f
+cc_quad2 = CCW*f;
+
+% error
+exact_quad = exp(sin(1)) - exp(sin(-1));
+abs(cc_quad2 - exact_quad)
+&lt;/code&gt;&lt;/pre&gt;&lt;hr&gt;
+&lt;p&gt;最後附上 &lt;code&gt;python&lt;/code&gt; 程式:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;import numpy as np
+from numpy.fft import fft,ifft,fftshift
+
+N = 25
+
+# Clenshaw–Curtis weights 
+if N % 2 ==0:
+    M= int(N/2)
+else:
+    M = int((N-1)/2)
+
+w = np.zeros(N+1)
+
+w[0:N+1:2] = 2./(1-4*np.linspace(0,M,M+1)**2);
+w2 = np.append(w, w[N-1:0:-1])
+CCW2 = np.real(ifft(w2))
+
+CCW = 2*CCW2[0:N+1]
+CCW[0] = CCW2[0]
+CCW[N] = CCW2[N]
+
+# Chebyshev points of the second kind
+x = -np.sin(np.arange(-N, N+1, 2)*np.pi/(2*N))
+
+#f = np.exp(np.sin(x));
+f = np.cos(x)*np.exp(np.sin(x))
+cc_quad2 = np.inner(CCW, f)
+
+# error
+exact_quad = np.exp(np.sin(1)) - np.exp(np.sin(-1));
+np.abs(cc_quad2 - exact_quad)
 &lt;/code&gt;&lt;/pre&gt;&lt;hr&gt;
 </description>
     </item>
@@ -394,7 +435,7 @@ $$&lt;/p&gt;
       <pubDate>Wed, 11 Dec 2019 00:00:00 +0000</pubDate>
       <guid>https://teshenglin.github.io/post/2019_numerical_integration/</guid>
       <description>&lt;blockquote&gt;
-&lt;p&gt;在微積分課程裡我們有學到積分的&#39;中點法&amp;rsquo;, &amp;lsquo;梯形法&#39;以及&#39;辛普森法&amp;rsquo;. 這裡我們簡介一些基本概念並且引進高斯積分法.&lt;/p&gt;
+&lt;p&gt;在微積分課程裡我們有學到積分的&amp;rsquo;中點法&#39;, &amp;lsquo;梯形法&amp;rsquo;以及&amp;rsquo;辛普森法&amp;rsquo;. 這裡我們簡介一些基本概念並且引進高斯積分法.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h4 id=&#34;goal-任意給定一可積分函數-fx-xin-1-1-我們想要算-int1_-1-fx-dx&#34;&gt;Goal: 任意給定一可積分函數 $f(x)$, $x\in[-1, 1]$, 我們想要算 $\int^1_{-1} f(x) dx$.&lt;/h4&gt;
 &lt;hr&gt;
@@ -437,13 +478,13 @@ $$&lt;/p&gt;
 &lt;/ol&gt;
 &lt;hr&gt;
 &lt;blockquote&gt;
-&lt;p&gt;接著我們稍微推廣一下, 並且介紹所謂的&#39;高斯積分&amp;rsquo;.&lt;/p&gt;
+&lt;p&gt;接著我們稍微推廣一下, 並且介紹所謂的&amp;rsquo;高斯積分&#39;.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;&lt;strong&gt;Question:&lt;/strong&gt; 假設我們現在想要用函數在 $x=0$ 這個點的值來估算積分, 那係數要取多少會最好?&lt;/p&gt;
 &lt;p&gt;也就是說我們假設
 $$\int^1_{-1}f(x),dx\approx A_0f(0),$$
 其中 $A_0$ 是個常數. 那 $A_0$ 要選哪個數字, 這個積分公式才會算的最準?&lt;/p&gt;
-&lt;p&gt;依照我們之前的想法, 要讓積分式準就是要讓他把多項式算準. 所以我們希望他至少能把常數函數算準. 這樣的話很容易就看出 $A_0=2$, 也就是&#39;中點法&amp;rsquo;.&lt;/p&gt;
+&lt;p&gt;依照我們之前的想法, 要讓積分式準就是要讓他把多項式算準. 所以我們希望他至少能把常數函數算準. 這樣的話很容易就看出 $A_0=2$, 也就是&amp;rsquo;中點法&#39;.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Question:&lt;/strong&gt; 假設我們現在想要用函數在 $x=-1$ 以及 $x=1$ 這兩個點的值來估算積分, 那係數要取多少會最好?&lt;/p&gt;
 &lt;p&gt;也就是說我們假設
 $$\int^1_{-1}f(x),dx\approx \alpha f(-1)+\beta f(1),$$
