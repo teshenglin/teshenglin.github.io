@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>eigenvalue | Te-Sheng Lin</title>
+    <link>https://teshenglin.github.io/tags/eigenvalue/</link>
+      <atom:link href="https://teshenglin.github.io/tags/eigenvalue/index.xml" rel="self" type="application/rss+xml" />
+    <description>eigenvalue</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Thu, 16 Nov 2023 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>eigenvalue</title>
+      <link>https://teshenglin.github.io/tags/eigenvalue/</link>
+    </image>
+    
+    <item>
+      <title>Trace, determinant 與 eigenvalue 的關係</title>
+      <link>https://teshenglin.github.io/post/2023_la_det_trace_zh/</link>
+      <pubDate>Thu, 16 Nov 2023 00:00:00 +0000</pubDate>
+      <guid>https://teshenglin.github.io/post/2023_la_det_trace_zh/</guid>
+      <description>&lt;h2 id=&#34;方陣-a-的行列式等於其特徵值相乘&#34;&gt;方陣 A 的行列式等於其特徵值相乘&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Determinant of A equals to the product of its eigenvalues&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;給定一個 $n\times n$ 的方陣 $A$, 我們定義一個變數為 $\lambda$ 的函數 $P(\lambda)$ 如下:
+$$
+\tag{1}
+P(\lambda) = det(\lambda I-A).
+$$
+根據行列式的算法我們馬上知道 $P$ 其實就是個 $\lambda$ 的 $n$ 次多項式, 可以寫成
+$$
+\tag{2}
+P(\lambda) = \lambda^n + c_{n-1}\lambda^{n-1}\cdots + c_1\lambda + c_0.
+$$
+因此這個多項式必有 $n$ 個根 $\lambda_1, \cdots, \lambda_n$ (有可能是實根, 虛根, 或重根, 不過必有 $n$ 個), 所以我們可以將 $P$ 改寫為
+$$
+\tag{3}
+P(\lambda) = (\lambda - \lambda_1)\cdots (\lambda - \lambda_n).
+$$&lt;/p&gt;
+&lt;p&gt;最後, 我們算一下 $P(0)$.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;由 (1)
+$$
+\tag{4}
+P(0) = det(-A) = (-1)^n det(A).
+$$&lt;/li&gt;
+&lt;li&gt;由 (3)
+$$
+\tag{5}
+P(0) = (- \lambda_1)\cdots (- \lambda_n) = (-1)^n\lambda_1\cdots\lambda_n.
+$$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;因此, 由 (4) 以及 (5),
+$$
+det(A) = \lambda_1\cdots\lambda_n.
+$$&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;方陣-a-的跡httpszhwikipediaorgzh-tw跡等於其特徵值相加&#34;&gt;方陣 A 的
+&lt;a href=&#34;https://zh.wikipedia.org/zh-tw/%e8%b7%a1&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;跡&lt;/a&gt;等於其特徵值相加&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Trace of A equals to the sum of its eigenvalues&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;給定一個 $n\times n$ 的方陣 $A$:
+$$
+\tag{6}
+A = \begin{bmatrix}
+a_{11} &amp;amp; \cdots &amp;amp; a_{1n}\\&lt;br&gt;
+\vdots &amp;amp; \ddots &amp;amp; \vdots\\&lt;br&gt;
+a_{n1} &amp;amp; \cdots &amp;amp; a_{nn}
+\end{bmatrix}.
+$$&lt;/p&gt;
+&lt;p&gt;因此我們有
+$$
+\tag{7}
+\lambda I - A =
+\begin{bmatrix}
+\lambda - a_{11} &amp;amp; -a_{12} &amp;amp; \cdots &amp;amp; -a_{1n} \\&lt;br&gt;
+-a_{21} &amp;amp; \lambda-a_{22} &amp;amp; \cdots &amp;amp; -a_{2n} \\&lt;br&gt;
+\vdots &amp;amp; \vdots &amp;amp; \ddots &amp;amp; \vdots \\&lt;br&gt;
+-a_{n1} &amp;amp; -a_{n2} &amp;amp;  \cdots &amp;amp; \lambda - a_{nn}
+\end{bmatrix}.
+$$&lt;/p&gt;
+&lt;p&gt;接著我們來算 $det(\lambda I - A)$. 我們直接沿著第一行使用降階法 (
+&lt;a href=&#34;https://en.wikipedia.org/wiki/Laplace_expansion&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;cofactor expansion&lt;/a&gt;):
+$$
+\tag{8}
+det(\lambda I - A) =
+(\lambda - a_{11})C_{11} +(- a_{21}) C_{21}+ \cdots,
+$$
+其中
+$$
+\tag{9}
+C_{11} =
+\begin{bmatrix}
+\lambda-a_{22} &amp;amp; \cdots &amp;amp; -a_{2n}\\&lt;br&gt;
+\vdots &amp;amp; \ddots &amp;amp; \vdots\\&lt;br&gt;
+-a_{n2} &amp;amp;  \cdots &amp;amp; \lambda - a_{nn}
+\end{bmatrix}_{(n-1)\times(n-1)},
+$$
+以及
+$$
+\tag{10}
+C_{21} =
+\begin{bmatrix}
+-a_{12} &amp;amp; -a_{13} &amp;amp; \cdots &amp;amp; -a_{1n}\\&lt;br&gt;
+-a_{32} &amp;amp; \lambda-a_{33} &amp;amp; \cdots &amp;amp; -a_{3n}\\&lt;br&gt;
+\vdots &amp;amp;  \vdots &amp;amp; \ddots &amp;amp; \vdots\\&lt;br&gt;
+-a_{n2} &amp;amp; \cdots &amp;amp;  \cdots &amp;amp; \lambda - a_{nn}
+\end{bmatrix}_{(n-1)\times(n-1)}.
+$$&lt;/p&gt;
+&lt;p&gt;簡單觀察可以發現 $C_{21}$ 是個最多 $n-2$ 次的多項式. 並且對所有 $k&amp;gt;1$ 的 $C_{k1}$, 他們全都是最多 $n-2$ 次的多項式. 因此我們就有
+$$
+\tag{11}
+det(\lambda I - A) = (\lambda - a_{11})C_{11} + \hat{Q}_{n-2}(\lambda),
+$$
+其中 $\hat{Q}_{n-2}(\lambda)$ 是個最多 $n-2$ 次的多項式.&lt;/p&gt;
+&lt;p&gt;接著我們對 $C_{11}$ 做展開, 並且用以上的論述一直做下去. 最終我們就會得到
+$$
+\tag{12}
+det(\lambda I - A) = (\lambda - a_{11})(\lambda - a_{22})\cdots (\lambda - a_{nn}) + \tilde{Q}_{n-2}(\lambda),
+$$
+其中 $\tilde{Q}_{n-2}(\lambda)$ 是個最多 $n-2$ 次的多項式.&lt;/p&gt;
+&lt;p&gt;我們接著把 (12) 展開, 得到
+$$
+\tag{13}
+det(\lambda I - A) = \lambda^n - (a_{11} + a_{22} + \cdots + a_{nn})\lambda^{n-1}  + Q_{n-2}(\lambda),
+$$
+其中 $Q_{n-2}(\lambda)$ 是個最多 $n-2$ 次的多項式.&lt;/p&gt;
+&lt;p&gt;另一方面, 我們也可以同樣把 (3) 展開, 得到
+$$
+\tag{14}
+P(\lambda) = \lambda^n - (\lambda_1 + \lambda_2 + \cdots + \lambda_n)\lambda^{n-1}  + \cdots.
+$$
+因此, 由 (13) 以及 (14),
+$$
+a_{11} + a_{22} + \cdots + a_{nn} = \lambda_1 + \lambda_2 + \cdots + \lambda_n.
+$$&lt;/p&gt;
+&lt;hr&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -7,7 +7,7 @@
     <description>Computational Mathematics</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 29 Apr 2023 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <url>https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
       <title>Computational Mathematics</title>
       <link>https://teshenglin.github.io/categories/computational-mathematics/</link>
     </image>
@@ -2156,7 +2156,7 @@ $$&lt;/p&gt;
       <pubDate>Wed, 11 Dec 2019 00:00:00 +0000</pubDate>
       <guid>https://teshenglin.github.io/post/2019_numerical_integration/</guid>
       <description>&lt;blockquote&gt;
-&lt;p&gt;在微積分課程裡我們有學到積分的&amp;rsquo;中點法&#39;, &amp;lsquo;梯形法&amp;rsquo;以及&amp;rsquo;辛普森法&amp;rsquo;. 這裡我們簡介一些基本概念並且引進高斯積分法.&lt;/p&gt;
+&lt;p&gt;在微積分課程裡我們有學到積分的&#39;中點法&amp;rsquo;, &amp;lsquo;梯形法&#39;以及&#39;辛普森法&amp;rsquo;. 這裡我們簡介一些基本概念並且引進高斯積分法.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h4 id=&#34;goal-任意給定一可積分函數-fx-xin-1-1-我們想要算-int1_-1-fx-dx&#34;&gt;Goal: 任意給定一可積分函數 $f(x)$, $x\in[-1, 1]$, 我們想要算 $\int^1_{-1} f(x) dx$.&lt;/h4&gt;
 &lt;hr&gt;
@@ -2199,13 +2199,13 @@ $$&lt;/p&gt;
 &lt;/ol&gt;
 &lt;hr&gt;
 &lt;blockquote&gt;
-&lt;p&gt;接著我們稍微推廣一下, 並且介紹所謂的&amp;rsquo;高斯積分&#39;.&lt;/p&gt;
+&lt;p&gt;接著我們稍微推廣一下, 並且介紹所謂的&#39;高斯積分&amp;rsquo;.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;&lt;strong&gt;Question:&lt;/strong&gt; 假設我們現在想要用函數在 $x=0$ 這個點的值來估算積分, 那係數要取多少會最好?&lt;/p&gt;
 &lt;p&gt;也就是說我們假設
 $$\int^1_{-1}f(x),dx\approx A_0f(0),$$
 其中 $A_0$ 是個常數. 那 $A_0$ 要選哪個數字, 這個積分公式才會算的最準?&lt;/p&gt;
-&lt;p&gt;依照我們之前的想法, 要讓積分式準就是要讓他把多項式算準. 所以我們希望他至少能把常數函數算準. 這樣的話很容易就看出 $A_0=2$, 也就是&amp;rsquo;中點法&#39;.&lt;/p&gt;
+&lt;p&gt;依照我們之前的想法, 要讓積分式準就是要讓他把多項式算準. 所以我們希望他至少能把常數函數算準. 這樣的話很容易就看出 $A_0=2$, 也就是&#39;中點法&amp;rsquo;.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Question:&lt;/strong&gt; 假設我們現在想要用函數在 $x=-1$ 以及 $x=1$ 這兩個點的值來估算積分, 那係數要取多少會最好?&lt;/p&gt;
 &lt;p&gt;也就是說我們假設
 $$\int^1_{-1}f(x),dx\approx \alpha f(-1)+\beta f(1),$$
@@ -2358,7 +2358,7 @@ $$&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;h2 id=&#34;theorem&#34;&gt;Theorem&lt;/h2&gt;
 &lt;p&gt;If $f:[a, b]\to [a,b]$ is a differentiable function such that
-$$ |f&#39;(x)|\leq \alpha&amp;lt;1, \quad \forall x\in[a, b],$$
+$$ |f&amp;rsquo;(x)|\leq \alpha&amp;lt;1, \quad \forall x\in[a, b],$$
 then $f$ has exactly one fixed point $c$ and the fixed point iteration converges to $c$.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;這個證明很簡單.&lt;/p&gt;
@@ -2368,10 +2368,10 @@ then $f$ has exactly one fixed point $c$ and the fixed point iteration converges
 &lt;h4 id=&#34;existence&#34;&gt;existence&lt;/h4&gt;
 &lt;p&gt;Since the domain and the range of $f$ are both $[a, b]$, by Intermediate Value Theorem, there exists $c$ such that $c=f(c ).$&lt;/p&gt;
 &lt;h4 id=&#34;uniqueness&#34;&gt;uniqueness&lt;/h4&gt;
-&lt;p&gt;If there exits another fixed point $\bar{c}$, $\bar{c}\ne c$, such that $\bar{c}=f(\bar{c} )$, then according to Mean Value Theorem(MVT), there exits $z$ between $c$ and $\bar{c}$ such that $$f&#39;(z) = \frac{f(c ) - f(\bar{c})}{c-\bar{c}}=\frac{c - \bar{c}}{c-\bar{c}} = 1,$$ which violate the assumption that $|f&#39;|\leq \alpha&amp;lt;1$. So the fixed point is unique.&lt;/p&gt;
+&lt;p&gt;If there exits another fixed point $\bar{c}$, $\bar{c}\ne c$, such that $\bar{c}=f(\bar{c} )$, then according to Mean Value Theorem(MVT), there exits $z$ between $c$ and $\bar{c}$ such that $$f&amp;rsquo;(z) = \frac{f(c ) - f(\bar{c})}{c-\bar{c}}=\frac{c - \bar{c}}{c-\bar{c}} = 1,$$ which violate the assumption that $|f&#39;|\leq \alpha&amp;lt;1$. So the fixed point is unique.&lt;/p&gt;
 &lt;h4 id=&#34;convergence-of-fixed-point-iteration&#34;&gt;convergence of fixed point iteration&lt;/h4&gt;
 &lt;p&gt;Based on MVT we have
-$$|x_{n+1} - c| = |f(x_n) - f(c )| = |f&#39;(c_i)(x_n-c)|\leq\alpha |x_n-c|\leq\alpha^n|x_1-c|\to 0.$$&lt;/p&gt;
+$$|x_{n+1} - c| = |f(x_n) - f(c )| = |f&amp;rsquo;(c_i)(x_n-c)|\leq\alpha |x_n-c|\leq\alpha^n|x_1-c|\to 0.$$&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;所以如果在函數固定點 $c$ 的微分小於 $1$, 那就存在一個包含 $c$ 的小區間使得函數的微分都在這區間內小於 $1$, 那根據這定理固定點迭代就會收斂.&lt;/p&gt;
 &lt;hr&gt;
@@ -2383,9 +2383,9 @@ $$
 &lt;p&gt;那要如何改寫才會比較好呢? 其中一個最有名的就是牛頓法 (Newton&amp;rsquo;s method):&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;h2 id=&#34;newtons-iteration&#34;&gt;Newton&amp;rsquo;s iteration&lt;/h2&gt;
-&lt;p&gt;$$x_{n+1} = x_n - \frac{g(x_n)}{g&#39;(x_n)}.$$&lt;/p&gt;
+&lt;p&gt;$$x_{n+1} = x_n - \frac{g(x_n)}{g&amp;rsquo;(x_n)}.$$&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;我們可以定義 $f(x) = x - \frac{g(x)}{g&#39;(x)}$, 這樣上面這個式子就是個固定點迭代. 接著我們可以發現, 如果 $c$ 是 $g$ 函數的根, 也就是 $g(c )=0$, 那 $f&#39;(c ) = 0$. 所以根據上面的定理就存在某個包含 $c$ 的小區間使得迭代會收斂.&lt;/p&gt;
+&lt;p&gt;我們可以定義 $f(x) = x - \frac{g(x)}{g&amp;rsquo;(x)}$, 這樣上面這個式子就是個固定點迭代. 接著我們可以發現, 如果 $c$ 是 $g$ 函數的根, 也就是 $g(c )=0$, 那 $f&amp;rsquo;(c ) = 0$. 所以根據上面的定理就存在某個包含 $c$ 的小區間使得迭代會收斂.&lt;/p&gt;
 &lt;p&gt;更進一步我們可以利用泰勒展開式(Taylor&amp;rsquo;s series expansion) 來證明牛頓法事實上有二次收斂,
 $$
 |x_{n+1} - c| \approx \beta |x_n-c|^2.
@@ -2441,7 +2441,7 @@ $$
 &lt;p&gt;固定點定理保證在區間裡任意取點當初使迭代都會收斂, 不過要滿足定理的條件很強, 實務上不容易做到.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;例如牛頓法, 我們能證明一定存在某個區間滿足固定點定理, 不過實際上這個區間有多大並不知道. 因此一般在討論牛頓法時都會要求初始值要離實際要求的固定點&amp;quot;夠近&amp;quot;. 至於&amp;quot;夠近&amp;quot;什麼意思就只能用嘗試的.&lt;/p&gt;
+&lt;p&gt;例如牛頓法, 我們能證明一定存在某個區間滿足固定點定理, 不過實際上這個區間有多大並不知道. 因此一般在討論牛頓法時都會要求初始值要離實際要求的固定點&amp;quot;夠近&amp;rdquo;. 至於&amp;quot;夠近&amp;quot;什麼意思就只能用嘗試的.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;由於牛頓法不保證收斂, 因此實務上要求根時會與一些保證收斂的方法, 如二分逼進法 
@@ -2466,14 +2466,14 @@ $$
 &lt;/blockquote&gt;
 &lt;p&gt;已知一個函數 $f(x)$ 在某個點 $a$ 的微分值定義是
 $$
-f&#39;(a) = \lim_{h\to 0} \frac{f(a+h)-f(a)}{h}.
+f&amp;rsquo;(a) = \lim_{h\to 0} \frac{f(a+h)-f(a)}{h}.
 $$&lt;/p&gt;
 &lt;p&gt;我們用一個簡單的例子試試看. 假設我們想求 $f(x)=x^2$ 在 $x=\pi$ 的微分. 根據定義我們有&lt;/p&gt;
 &lt;p&gt;$$
-f&#39;(\pi) = \lim_{h\to 0} \frac{(\pi+h)^2-\pi^2}{h}.
+f&amp;rsquo;(\pi) = \lim_{h\to 0} \frac{(\pi+h)^2-\pi^2}{h}.
 $$&lt;/p&gt;
 &lt;p&gt;接著我們將 $h$ 取靠近 $0$ 的 $11$ 的點並帶入上列這個式子試著來算其極限值. &lt;code&gt;Julia&lt;/code&gt; 程式如下&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;h &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; range(&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;0.01&lt;/span&gt;, length&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;11&lt;/span&gt;); h &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; h[&lt;span style=&#34;color:#ae81ff&#34;&gt;11&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;];
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;h &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; range(&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;0.01&lt;/span&gt;, length&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;11&lt;/span&gt;); h &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; h[&lt;span style=&#34;color:#ae81ff&#34;&gt;11&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;];
 fp &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; ((pi&lt;span style=&#34;color:#f92672&#34;&gt;.+&lt;/span&gt;h)&lt;span style=&#34;color:#f92672&#34;&gt;.^&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;.-&lt;/span&gt; pi&lt;span style=&#34;color:#f92672&#34;&gt;^&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;)&lt;span style=&#34;color:#f92672&#34;&gt;./&lt;/span&gt;h;
 hcat(h, fp, fp&lt;span style=&#34;color:#f92672&#34;&gt;.-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;pi)
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;結果如下:&lt;/p&gt;
@@ -2482,7 +2482,7 @@ hcat(h, fp, fp&lt;span style=&#34;color:#f92672&#34;&gt;.-&lt;/span&gt;&lt;span 
 &lt;tr&gt;
 &lt;th&gt;$h$&lt;/th&gt;
 &lt;th&gt;$f&#39;$&lt;/th&gt;
-&lt;th&gt;$f&#39;-2\pi$&lt;/th&gt;
+&lt;th&gt;$f&amp;rsquo;-2\pi$&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
 &lt;tbody&gt;
@@ -2542,7 +2542,7 @@ hcat(h, fp, fp&lt;span style=&#34;color:#f92672&#34;&gt;.-&lt;/span&gt;&lt;span 
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Question:&lt;/strong&gt; 用數值計算微分能有多精確? 這個誤差能不能一直遞減下去?&lt;/p&gt;
 &lt;p&gt;接著我們取更多靠近 $0$ 的點來計算微分的極限值, 我們列出其與真實值 $2\pi$ 之間的差, 並且把它畫出來.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;h &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; range(&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;16&lt;/span&gt;, length&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;16&lt;/span&gt;); h &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;10.0&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.^&lt;/span&gt;(&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;h[&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;16&lt;/span&gt;]);
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;h &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; range(&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;16&lt;/span&gt;, length&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;16&lt;/span&gt;); h &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;10.0&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.^&lt;/span&gt;(&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;h[&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;16&lt;/span&gt;]);
 fp &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; ((pi&lt;span style=&#34;color:#f92672&#34;&gt;.+&lt;/span&gt;h)&lt;span style=&#34;color:#f92672&#34;&gt;.^&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;.-&lt;/span&gt; pi&lt;span style=&#34;color:#f92672&#34;&gt;^&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;)&lt;span style=&#34;color:#f92672&#34;&gt;./&lt;/span&gt;h;
 hcat(h, fp, abs&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;(fp&lt;span style=&#34;color:#f92672&#34;&gt;.-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;pi))
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;結果如下:&lt;/p&gt;
@@ -2551,7 +2551,7 @@ hcat(h, fp, abs&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;(fp&lt;sp
 &lt;tr&gt;
 &lt;th&gt;$h$&lt;/th&gt;
 &lt;th&gt;$f&#39;$&lt;/th&gt;
-&lt;th&gt;$abs(f&#39;-2\pi)$&lt;/th&gt;
+&lt;th&gt;$abs(f&amp;rsquo;-2\pi)$&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
 &lt;tbody&gt;
@@ -2639,7 +2639,7 @@ hcat(h, fp, abs&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;(fp&lt;sp
 &lt;/table&gt;
 &lt;p&gt;觀察最後一下發現, 當 $h$ 很小時微分竟然與真實質差更多, 更不準了!! 比如說當 $h=10^{-14}$ 時, 誤差竟然大到約是 $10^{-1}$.&lt;/p&gt;
 &lt;p&gt;我們把它畫出來看看, &lt;code&gt;Julia&lt;/code&gt; code 如下:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;using&lt;/span&gt; Plots
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;using&lt;/span&gt; Plots
 plot(log10&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;(h), log10&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;(abs&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;(fp&lt;span style=&#34;color:#f92672&#34;&gt;.-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;pi)),label&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Error&amp;#34;&lt;/span&gt;)
 xlabel!(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;log10(h)&amp;#34;&lt;/span&gt;)
 ylabel!(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;log10(Error)&amp;#34;&lt;/span&gt;)
@@ -2688,27 +2688,27 @@ $$
 &lt;h4 id=&#34;泰勒展開式&#34;&gt;泰勒展開式&lt;/h4&gt;
 &lt;p&gt;再深一點來說, 我們可以利用泰勒展開式知道
 $$
-\frac{f(a+h)-f(a)}{h} = f&#39;(a) + \frac{h}{2}f&#39;&#39;(\xi), \quad a\leq \xi \leq a+h.
+\frac{f(a+h)-f(a)}{h} = f&amp;rsquo;(a) + \frac{h}{2}f&amp;rsquo;&#39;(\xi), \quad a\leq \xi \leq a+h.
 $$
-這個式子告訴我們, 用這方式算微分誤差應該是 $\frac{h}{2}f&#39;&#39;(\xi) = O(h)$, 誤差會隨著 $h$ 減少而線性變小.&lt;/p&gt;
+這個式子告訴我們, 用這方式算微分誤差應該是 $\frac{h}{2}f&amp;rsquo;&#39;(\xi) = O(h)$, 誤差會隨著 $h$ 減少而線性變小.&lt;/p&gt;
 &lt;p&gt;數學上我們有以上這個等式, 而數值計算上則是有以下這個等式
 $$
-\frac{f(a+h)-f(a) + \epsilon}{h} = f&#39;(a) + \frac{h}{2}f&#39;&#39;(\xi) + \frac{\epsilon}{h}, \quad a\leq \xi \leq a+h.
+\frac{f(a+h)-f(a) + \epsilon}{h} = f&amp;rsquo;(a) + \frac{h}{2}f&amp;rsquo;&#39;(\xi) + \frac{\epsilon}{h}, \quad a\leq \xi \leq a+h.
 $$
 也就是說, 真正的誤差公式應該是
 $$
-\frac{h}{2}f&#39;&#39;(\xi) + \frac{\epsilon}{h},
+\frac{h}{2}f&amp;rsquo;&#39;(\xi) + \frac{\epsilon}{h},
 $$
 當 $h$ 非常小的時候 $\frac{\epsilon}{h}$ 這項就會變很大.&lt;/p&gt;
 &lt;p&gt;比如說, 依我們之前所算的 $\epsilon\approx 10^{-16}$, 那當 $h=10^{-8}$ 時, 算出來的數字會多了大約 $\frac{10^{-16}}{10^{-8}} = 10^{-8}$.&lt;/p&gt;
 &lt;p&gt;而當 $h=10^{-14}$ 時, 算出來的數字會多了大約 $\frac{10^{-16}}{10^{-14}} = 10^{-2}$. 跟我們之前所發現的完全吻合!! 而這也就是為什麼當 $h$ 很靠近零的時候誤差會上升的原因.&lt;/p&gt;
 &lt;hr&gt;
 &lt;h4 id=&#34;optimal-h&#34;&gt;Optimal $h$&lt;/h4&gt;
-&lt;p&gt;那給定一個微分公式, 要怎麼知道 $h$ 能小到什麼程度呢? 一個簡單的感覺是這樣的, 由於誤差的第一項  $\frac{h}{2}f&#39;&#39;(\xi)$ 會隨著 $h$ 變小而變小, 第二項 $\frac{\epsilon}{h}$ 則會變大, 因此整體最小值約會發生在兩項交叉時, 也就是當
+&lt;p&gt;那給定一個微分公式, 要怎麼知道 $h$ 能小到什麼程度呢? 一個簡單的感覺是這樣的, 由於誤差的第一項  $\frac{h}{2}f&amp;rsquo;&#39;(\xi)$ 會隨著 $h$ 變小而變小, 第二項 $\frac{\epsilon}{h}$ 則會變大, 因此整體最小值約會發生在兩項交叉時, 也就是當
 $$
 h \sim \frac{\epsilon}{h},
 $$
-(由於我們不知道 $f&#39;&#39;(\xi)/2$ 是多少, 簡單起見設成 1). 上式稍微計算一下發現誤差最小值約發生在 $h=10^{-8}$, 誤差最小值則約為 $10^{-8}$.&lt;/p&gt;
+(由於我們不知道 $f&amp;rsquo;&#39;(\xi)/2$ 是多少, 簡單起見設成 1). 上式稍微計算一下發現誤差最小值約發生在 $h=10^{-8}$, 誤差最小值則約為 $10^{-8}$.&lt;/p&gt;
 &lt;hr&gt;
 &lt;h3 id=&#34;summary&#34;&gt;Summary:&lt;/h3&gt;
 &lt;p&gt;最後總結一下:&lt;/p&gt;
@@ -2716,7 +2716,7 @@ $$
 &lt;li&gt;
 &lt;p&gt;我們可以用數值計算來估計一個函數在某點的微分值
 $$
-f&#39;(a) \approx \frac{f(a+h)-f(a)}{h}.
+f&amp;rsquo;(a) \approx \frac{f(a+h)-f(a)}{h}.
 $$
 這樣的做法稱為&lt;strong&gt;有限差分法 (finite difference method)&lt;/strong&gt;.&lt;/p&gt;
 &lt;/li&gt;
@@ -2851,7 +2851,7 @@ $$&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;machine epsilon 的定義是, 考慮正數$\epsilon$, 使得 $ 1+ \epsilon \ge 1$ 中最小的那個稱之為 machine epsilon. 當然以數學來看這個 machine epsilon 必須等於零. 不過在電腦裡並不是這樣.&lt;/p&gt;
 &lt;p&gt;為了方便我們稍微改一下定義, 我們考慮 $\epsilon = 2^{-k}$ 這種形式, 然後 machine epsilon 一樣是使得 $ 1+ \epsilon \ge 1$ 中最小的那個. &lt;code&gt;julia&lt;/code&gt; 程式如下:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;s&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1.0&lt;/span&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;s&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1.0&lt;/span&gt;
 &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; k&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;100&lt;/span&gt;
     s &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; s&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2.0&lt;/span&gt;
     &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; (&lt;span style=&#34;color:#ae81ff&#34;&gt;1.0&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;s)&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1.0&lt;/span&gt;

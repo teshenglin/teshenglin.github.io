@@ -217,8 +217,8 @@
   
 
   <link rel="manifest" href="/index.webmanifest">
-  <link rel="icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_3.png">
-  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_3.png">
+  <link rel="icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_2.png">
 
   <link rel="canonical" href="https://teshenglin.github.io/post/2019_limit_evaluate/">
 
@@ -236,8 +236,8 @@
   <meta property="og:site_name" content="Te-Sheng Lin">
   <meta property="og:url" content="https://teshenglin.github.io/post/2019_limit_evaluate/">
   <meta property="og:title" content="用電腦算極限 | Te-Sheng Lin">
-  <meta property="og:description" content="這裡我們要介紹如何用電腦算極限, 以及我們來看一下當我們真的這樣做的時候有可能會發生什麼問題. 我們以 $sinc$ 函數為例來做說明. sinc function 首先我們要介紹一個"><meta property="og:image" content="https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png">
-  <meta property="twitter:image" content="https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png"><meta property="og:locale" content="en-us">
+  <meta property="og:description" content="這裡我們要介紹如何用電腦算極限, 以及我們來看一下當我們真的這樣做的時候有可能會發生什麼問題. 我們以 $sinc$ 函數為例來做說明. sinc function 首先我們要介紹一個"><meta property="og:image" content="https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png">
+  <meta property="twitter:image" content="https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png"><meta property="og:locale" content="en-us">
   
     
       <meta property="article:published_time" content="2019-10-27T00:00:00&#43;00:00">
@@ -283,7 +283,7 @@
     "name": "Te-Sheng Lin",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_3.png"
+      "url": "https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_2.png"
     }
   },
   "description": "這裡我們要介紹如何用電腦算極限, 以及我們來看一下當我們真的這樣做的時候有可能會發生什麼問題. 我們以 $sinc$ 函數為例來做說明. sinc function 首先我們要介紹一個"
@@ -716,7 +716,7 @@ $$</p>
 </blockquote>
 <p>machine epsilon 的定義是, 考慮正數$\epsilon$, 使得 $ 1+ \epsilon \ge 1$ 中最小的那個稱之為 machine epsilon. 當然以數學來看這個 machine epsilon 必須等於零. 不過在電腦裡並不是這樣.</p>
 <p>為了方便我們稍微改一下定義, 我們考慮 $\epsilon = 2^{-k}$ 這種形式, 然後 machine epsilon 一樣是使得 $ 1+ \epsilon \ge 1$ 中最小的那個. <code>julia</code> 程式如下:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-julia" data-lang="julia">s<span style="color:#f92672">=</span><span style="color:#ae81ff">1.0</span>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-julia" data-lang="julia">s<span style="color:#f92672">=</span><span style="color:#ae81ff">1.0</span>
 <span style="color:#66d9ef">for</span> k<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span><span style="color:#f92672">:</span><span style="color:#ae81ff">100</span>
     s <span style="color:#f92672">=</span> s<span style="color:#f92672">/</span><span style="color:#ae81ff">2.0</span>
     <span style="color:#66d9ef">if</span> (<span style="color:#ae81ff">1.0</span><span style="color:#f92672">+</span>s)<span style="color:#f92672">&lt;=</span><span style="color:#ae81ff">1.0</span>
@@ -1064,7 +1064,7 @@ $$
     
     
     
-    <script src="/js/academic.min.d49475924c8a1000c804942d870fd31c.js"></script>
+    <script src="/js/academic.min.a8d7005002cb4a052fd6d721e83df9ba.js"></script>
 
     
 
