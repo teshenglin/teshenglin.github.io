@@ -5,12 +5,185 @@
     <link>https://teshenglin.github.io/categories/machine_learning/</link>
       <atom:link href="https://teshenglin.github.io/categories/machine_learning/index.xml" rel="self" type="application/rss+xml" />
     <description>Machine_learning</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 13 Aug 2021 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 18 Dec 2023 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
       <title>Machine_learning</title>
       <link>https://teshenglin.github.io/categories/machine_learning/</link>
     </image>
+    
+    <item>
+      <title>主成分分析 - 0</title>
+      <link>https://teshenglin.github.io/post/2023_principal_component_analysis_0/</link>
+      <pubDate>Mon, 18 Dec 2023 00:00:00 +0000</pubDate>
+      <guid>https://teshenglin.github.io/post/2023_principal_component_analysis_0/</guid>
+      <description>&lt;h2 id=&#34;1-一維資料的統計學&#34;&gt;1. 一維資料的統計學&lt;/h2&gt;
+&lt;p&gt;假設我們有 $n$ 筆資料, 每筆資料都是一個數字 (例如 $n$ 個學生的成績). 這 $n$ 筆資料我們設為 $x_1, \cdots, x_n$, 並且定義一個矩陣&lt;/p&gt;
+&lt;p&gt;$$
+\tag{1}
+A =
+\begin{bmatrix}
+x_1 &amp;amp; \cdots &amp;amp; x_n
+\end{bmatrix}\in M_{1\times n}.
+$$&lt;/p&gt;
+&lt;p&gt;那這些資料的平均數為&lt;/p&gt;
+&lt;p&gt;$$
+\tag{2}
+\mu = \frac{1}{n}(x_1+\cdots+x_n) = \frac{1}{n}\begin{bmatrix}
+1 &amp;amp; \cdots &amp;amp; 1
+\end{bmatrix}\begin{bmatrix}
+x_1\\
+\vdots\\&lt;br&gt;
+x_n
+\end{bmatrix} = \frac{1}{n}\mathbb{1}^TA^T,
+$$&lt;/p&gt;
+&lt;p&gt;其中 $\mathbb{1}^T = [1, \cdots, 1]$ 是個全為 $1$ 的向量.&lt;/p&gt;
+&lt;p&gt;資料的變異數 (variance) 則定義為&lt;/p&gt;
+&lt;p&gt;$$
+\tag{3}
+\text{Var}(A) = \sigma^2 = \frac{1}{n}\sum^n_{k=1} (x_i - \mu)^2,
+$$&lt;/p&gt;
+&lt;p&gt;而 $\sigma$ 則是標準差 (standard deviation, std).&lt;/p&gt;
+&lt;p&gt;要將之寫成矩陣形式首先我們定義置中矩陣 (centering matrix)&lt;/p&gt;
+&lt;p&gt;$$
+\tag{4}
+H = I - \frac{1}{n}\mathbb{1}\mathbb{1}^T.
+$$&lt;/p&gt;
+&lt;p&gt;計算一下可以發現&lt;/p&gt;
+&lt;p&gt;$$
+\tag{5}
+HA^T = (I - \frac{1}{n}\mathbb{1}\mathbb{1}^T)A^T = A^T - \mu\mathbb{1} = \begin{bmatrix}
+x_1 -\mu\\&lt;br&gt;
+\vdots\\&lt;br&gt;
+x_n -\mu
+\end{bmatrix} = Y^T,
+$$&lt;/p&gt;
+&lt;p&gt;其中我們將這些置中後的資料存為 $Y$ 矩陣. 接著我們就可以知道&lt;/p&gt;
+&lt;p&gt;$$
+\tag{6}
+\sigma^2 = \frac{1}{n}YY^T.
+$$&lt;/p&gt;
+&lt;h2 id=&#34;2-二維資料的統計學&#34;&gt;2. 二維資料的統計學&lt;/h2&gt;
+&lt;p&gt;假設我們有 $n$ 筆資料, 每筆資料都是 $2$ 個數字 (例如 $n$ 個學生在 $2$ 次考試的成績), 這兩個數字我們稱之為這筆資料的 features. 這 $n$ 筆資料我們設為 $(x_1, y_1), \cdots, (x_n, y_n)$, 並且定義一個矩陣&lt;/p&gt;
+&lt;p&gt;$$
+\tag{7}
+A =
+\begin{bmatrix}
+x_1 &amp;amp; \cdots &amp;amp; x_n\\&lt;br&gt;
+y_1 &amp;amp; \cdots &amp;amp; y_n
+\end{bmatrix}\in M_{2\times n}.
+$$&lt;/p&gt;
+&lt;p&gt;我們把每種資料都平移, 使其平均為 $0$, 並令平移後的資料為 $Y$. 簡單計算可以發現我們一樣可以用置中矩陣來做, $HA^T = Y^T$,&lt;/p&gt;
+&lt;p&gt;$$
+\tag{8}
+Y^T = \begin{bmatrix}
+x_1 -\mu_x &amp;amp; y_1 -\mu_y\\
+\vdots &amp;amp; \vdots\\&lt;br&gt;
+x_n -\mu_x &amp;amp; y_n -\mu_y
+\end{bmatrix}, \quad
+\mu_x = \frac{1}{n}\sum^n_{k=1} x_k, \quad
+\mu_y = \frac{1}{n}\sum^n_{k=1} y_k.
+$$&lt;/p&gt;
+&lt;p&gt;接著我們可以定義兩個變數的共變異數 (covariance),&lt;/p&gt;
+&lt;p&gt;$$
+\tag{9}
+\text{cov}(x, y) = \frac{1}{n}\sum^n_{k=1}(x_k - \mu_x)(y_k-\mu_y).
+$$&lt;/p&gt;
+&lt;p&gt;接著計算一下就可以發現&lt;/p&gt;
+&lt;p&gt;$$
+\tag{10}
+\frac{1}{n}YY^T = \begin{bmatrix}
+\text{cov}(x,x) &amp;amp; \text{cov}(x,y)\\
+\text{cov}(x,y) &amp;amp; \text{cov}(y,y)
+\end{bmatrix},
+$$&lt;/p&gt;
+&lt;p&gt;也就是所謂的共變異數矩陣. 這個矩陣的對角線元素代表每個 feature 自己的變異數, 而非對角線則是共變異數, 代表兩個 features 的相關程度.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;Remark&lt;/strong&gt;&lt;/em&gt;: 不過要真正算相關程度會更近一步的去計算相關係數 (correlation coefficients), 這邊就不再深入探討.&lt;/p&gt;
+&lt;h2 id=&#34;3-pca-maximize-variance&#34;&gt;3. PCA: maximize variance&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;我們想要找到一個方向, 使得資料投影上去之後, 新資料的變異數會最大.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;假設這個方向為 $v\in\mathbb{R}^2$, 那資料投影到 $v$ 所得的新資料就是 $v^TY \in M_{1\times n}$. 接著我們就來算這筆新資料的變異數.&lt;/p&gt;
+&lt;p&gt;第一步一樣先置中. 也就是計算 $HY^Tv$. 不過由於 $Y$ 是置中過的資料, 因此 $HY^T = Y^T$, 所以 $HY^Tv = Y^Tv$, 也就是說, 新資料 $v^TY$ 的平均一定是 $0$.&lt;/p&gt;
+&lt;p&gt;接著, 新資料的變異數就會是&lt;/p&gt;
+&lt;p&gt;$$
+\tag{11}
+\sigma^2 =\frac{1}{n}(v^TY)(v^TY)^T =\frac{1}{n}v^TYY^Tv.
+$$&lt;/p&gt;
+&lt;p&gt;所以統整一下, 若我們將資料投影到 $v$ 上, 那新資料的變異數就是 (11). 而PCA 所要找的方向就是使變異數最大的方向, 也就是&lt;/p&gt;
+&lt;p&gt;$$
+\tag{12}
+\hat{v} = \arg\max_{v\in\mathbb{R}^2} \left(v^TYY^Tv\right).
+$$&lt;/p&gt;
+&lt;p&gt;最後, 我們知道這個解可以由 $Y^T$ 這個矩陣的 SVD 得出.&lt;/p&gt;
+&lt;p&gt;假設 $Y^T = U\Sigma V^T$, 那  $\hat{v} = v_1$, 也就是第一個 singular vector.&lt;/p&gt;
+&lt;h2 id=&#34;4-pca-minimize-square-distance&#34;&gt;4. PCA: minimize square distance&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;我們想要找到一個方向, 使得資料投影上去之後, 新舊資料的距離平方和最小.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;假設這個方向為 $v\in\mathbb{R}^2$, 那資料投影到 $v$ 的投影點就是 $vv^TY \in M_{2\times n}$. 接著我們就來算新舊資料的距離平方和:&lt;/p&gt;
+&lt;p&gt;$$
+\tag{13}
+\begin{align}
+\sum^n_{k=1} d_k^2 &amp;amp;= \sum^n_{k=1}\|Y_k - vv^TY_k\|^2  \\&lt;br&gt;
+&amp;amp;= \sum^n_{k=1}&amp;lt;Y_k-vv^TY_k, Y_k-vv^TY_k&amp;gt; \\&lt;br&gt;
+&amp;amp;= \sum^n_{k=1}Y_k^TY_k -Y_k^Tvv^TY_k \\&lt;br&gt;
+&amp;amp;= \sum^n_{k=1}Y_k^TY_k -v^TY_kY_k^Tv \\&lt;br&gt;
+&amp;amp;= \sum^n_{k=1}(Y_k^TY_k) -v^TYY^Tv,
+\end{align}
+$$&lt;/p&gt;
+&lt;p&gt;其中我們用到了 $v^TY_k$ 是個數字以及 $\sum Y_kY_k^T = YY^T$ 這兩件事.&lt;/p&gt;
+&lt;p&gt;我們希望找到一個方向使得距離平方和最小, 也就是&lt;/p&gt;
+&lt;p&gt;$$
+\tag{14}
+\hat{v}=\arg\min_{v\in\mathbb{R}^2} \left(\sum^n_{k=1}(Y_k^TY_k) -v^TYY^Tv\right) = \arg\max_{v\in\mathbb{R}^2} \left(v^TYY^Tv\right).
+$$&lt;/p&gt;
+&lt;p&gt;觀察 (12) 與 (14) 發現他們一模一樣. 也就是這兩個問題的解會是一樣的, 最佳的方向都是第一個 singular vector.&lt;/p&gt;
+&lt;h2 id=&#34;5-conclusion&#34;&gt;5. Conclusion&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;PCA 想做的事就是找到一個仿射子空間 (affine subspace), 使得
+&lt;ul&gt;
+&lt;li&gt;投影下去之後的資料有最大的變異數&lt;/li&gt;
+&lt;li&gt;投影前後的資料距離平方合最小.
+&lt;blockquote&gt;
+&lt;p&gt;而這兩件事情是等價的.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;PCA 也是一種資料降維的工具, 而將資料投影到一維所出來的新資料就是 $v^TY$.&lt;/li&gt;
+&lt;li&gt;以上雖然是以二維資料為例, 不過若有 $m$ 維資料整個推導是一樣的.&lt;/li&gt;
+&lt;li&gt;以上是以投影到一維為例, 若投影到更高維度就是依序找第二, 三, 等等的 singular vectors. 不過推導會利用到矩陣 trace 的一些性質, 一些細節這裡就先跳過.&lt;/li&gt;
+&lt;li&gt;PCA 要找的是個仿射子空間, $V = \mu + \text{span}\{v\}$,  這裏我們都直接說 $\mu$ 就是資料的平均. 不過其實這是可以算出來的. 假設我們想要找一個點 $\mu$ 使得所有資料到這個點的距離和為最小, 也就是
+$$
+\tag{15}
+\mu = \arg\min \sum^n_{k=1}(x_k - \mu)^2.
+$$
+我們先定義 $f(\mu) = \sum^n_{k=1}(x_k - \mu)^2$. 這是個單變數函數, 而且其實就是個 $\mu$ 的二次多項式, 首項係數等於 $1$, 有一個最小值. 接著微分求極值得到
+$$
+\tag{16}
+\frac{d}{d\mu} f =  \sum^n_{k=1}(-2)(x_k - \mu) = (-2)\left[\sum^n_{k=1}x_k - n\mu\right]
+$$
+因此極值發生在 $\frac{d}{d\mu} f=0$, 也就是
+$$
+\tag{17}
+\mu = \frac{1}{n}\sum^n_{k=1}x_k.
+$$
+所以到所有資料點距離和最小的就是平均數.&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>主成分分析 - code</title>
+      <link>https://teshenglin.github.io/post/2023_principal_component_analysis_01/</link>
+      <pubDate>Mon, 18 Dec 2023 00:00:00 +0000</pubDate>
+      <guid>https://teshenglin.github.io/post/2023_principal_component_analysis_01/</guid>
+      <description>&lt;h3&gt;&lt;a href=&#34;https://teshenglin.github.io/pybooks/pca.html&#34;&gt;Click here to view this notebook in full screen&lt;/a&gt;&lt;/h3&gt;
+ &lt;iframe src=&#34;https://teshenglin.github.io/pybooks/pca.html&#34;
+        style=&#34;height:2750px;width:100%;border:none;overflow:hidden;&#34; scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;
+</description>
+    </item>
     
     <item>
       <title>Diffusion maps</title>
