@@ -5,7 +5,7 @@
     <link>https://teshenglin.github.io/categories/linear-algebra/</link>
       <atom:link href="https://teshenglin.github.io/categories/linear-algebra/index.xml" rel="self" type="application/rss+xml" />
     <description>Linear algebra</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 18 Dec 2023 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 19 Dec 2023 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
       <title>Linear algebra</title>
@@ -13,11 +13,173 @@
     </image>
     
     <item>
+      <title>Least square method 2</title>
+      <link>https://teshenglin.github.io/post/2023_la_least_square_2/</link>
+      <pubDate>Tue, 19 Dec 2023 00:00:00 +0000</pubDate>
+      <guid>https://teshenglin.github.io/post/2023_la_least_square_2/</guid>
+      <description>&lt;h1 id=&#34;最小平方法-2&#34;&gt;最小平方法 2&lt;/h1&gt;
+&lt;p&gt;給定一個矩陣 $A$ 以及一個向量 $b$, 我們想要找到一個向量 $x$ 使得 $\|Ax - b\|^2+\|x\|^2$ 最小.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;$$
+A\in M_{m\times n}, \quad b \in M_{m\times 1}, \quad x\in M_{n\times 1}.
+$$&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;1-motivation&#34;&gt;1. Motivation&lt;/h2&gt;
+&lt;h3 id=&#34;11-non-uniqueness&#34;&gt;1.1 Non-uniqueness&lt;/h3&gt;
+&lt;p&gt;最小平方法 $\|Ax-b\|^2$ 問題有時候解並不唯一, 常見的例子例如深度學習裡的神經網路, 他的參數數量通常都遠比資料點數量多非常多. 若我們把 $x$ 看成所有要找的參數的集合, 因此 $n$ 就是參數個數. 然後 $b$ 就是 target 資料集, 所以 $m$ 就是資料個數. 所以常常會有 $m \ll n$ 的情形. 這樣的話 $A$ 的 null space 不為零, 最小平方法的解空間變成了一個 affine subspace, 有無窮多組解.&lt;/p&gt;
+&lt;h4 id=&#34;111-sensitivity-in-prediction&#34;&gt;1.1.1 Sensitivity in prediction&lt;/h4&gt;
+&lt;p&gt;由於有無窮多組解, 因此選的解變異就非常大. 而最怕的情形就是某個參數非常的大. 這樣訓練出來的模型會很敏感, 一點點小擾動預測就差非常多.&lt;/p&gt;
+&lt;p&gt;舉個極端的例子, 比如說我們要找一個模型 $f(x,y) = ax+by$, 其中 $a, b$ 是參數. 假設我們只有一筆資料 $f(1,1) = 0$. 這樣的話我們就只有一個方程式, 也就是, 模型裡的參數必須滿足&lt;/p&gt;
+&lt;p&gt;$$
+a + b = 0,
+$$&lt;/p&gt;
+&lt;p&gt;有無窮多解!&lt;/p&gt;
+&lt;p&gt;如果我們選 $(a, b) = (10000, -10000)$. 那這樣我們的模型就是&lt;/p&gt;
+&lt;p&gt;$$
+f_1(x,y) = 10000x-10000y.
+$$&lt;/p&gt;
+&lt;p&gt;然後算一下 $f_1(0, 0)=0$ 以及 $f_1(1,0)=10000$, 初始值差 $1$ 不過預測值差 $10000$.&lt;/p&gt;
+&lt;p&gt;如果我們選 $(a, b) = (1, -1)$. 那這樣我們的模型就是&lt;/p&gt;
+&lt;p&gt;$$
+f_2(x,y) = x-y.
+$$&lt;/p&gt;
+&lt;p&gt;因此 $f_2(0, 0)=0$ 以及 $f_2(1,0)=1$, 初始值差 $1$ 預測值也差 $1$.&lt;/p&gt;
+&lt;p&gt;所以模型參數的大小會直接影響到模型預測的敏感度. 通常我們希望模型不要太敏感, 因此輸入的資料難免有誤差, 不要因為一點點的誤差就在預測差了十萬八千里. 而一個簡單的做法就是我們不僅要求 $\|Ax-b\|^2$ 要小, 我們也要求 $\|x\|^2$ 要小. 這樣子參數就不會太大了.&lt;/p&gt;
+&lt;h3 id=&#34;12-ill-conditioning&#34;&gt;1.2 Ill-conditioning&lt;/h3&gt;
+&lt;p&gt;在最小平方法的計算裡需要解 $A^TAx = A^Tb$ 這個系統. 不過 $A^TA$ 這矩陣我們只能保證半正定, 所以不一定可以解. 另外, 解這個矩陣也有可能會有很大的誤差 (在數值分析裡我們稱之為 ill-conditioned matrix). 簡單的說如果一個矩陣的 eigenvalue 離 $0$ 很靠近的話, 這個矩陣就會很像 singular matrix, 解起來就會有很大的誤差. 因此我們希望矩陣的 eigenvalue 遠離 $0$.&lt;/p&gt;
+&lt;p&gt;一個簡單的觀察是, $A^TA + I$ 這個矩陣是個正定矩陣, 並且他的 eigenvalues 全都大於等於 $1$. 所以 $(A^TA+I)x = A^Tb$ 這個系統就會 well-condition, 解起來誤差不會太大.&lt;/p&gt;
+&lt;h2 id=&#34;2-ridge-regression-and-its-dual-problem&#34;&gt;2. Ridge regression and its dual problem&lt;/h2&gt;
+&lt;p&gt;首先我們定義 $\hat{x}$ 為找到的那個解, 也就是說, 我們要解以下這個問題&lt;/p&gt;
+&lt;p&gt;$$
+\newcommand{\argmin}{\arg\min}
+\tag{1}
+\hat{x} = \argmin_{x\in\mathbb{R}^n}\left(\|Ax - b\|^2+\|x\|^2\right).
+$$&lt;/p&gt;
+&lt;p&gt;首先觀察可以發現&lt;/p&gt;
+&lt;p&gt;$$
+\tag{2}
+\|Ax - b\|^2+\|x\|^2 =
+\left\|\begin{bmatrix}A\\ I
+\end{bmatrix}x -
+\begin{bmatrix}b\\ 0
+\end{bmatrix}\right\|^2.
+$$&lt;/p&gt;
+&lt;p&gt;因此, (1) 其實就是個最小平方問題, 只是這個問題的系統變成加大的一個系統而已. 因此我們知道這個問題的解會滿足&lt;/p&gt;
+&lt;p&gt;$$
+\tag{3}
+\begin{bmatrix}A^T &amp;amp; I
+\end{bmatrix}
+\begin{bmatrix}A\\ I
+\end{bmatrix}\hat{x} =
+\begin{bmatrix}A^T &amp;amp; I
+\end{bmatrix}
+\begin{bmatrix}b\\ 0
+\end{bmatrix},
+$$&lt;/p&gt;
+&lt;p&gt;也就是&lt;/p&gt;
+&lt;p&gt;$$
+\tag{4}
+(A^TA + I)\hat{x} = A^Tb.
+$$&lt;/p&gt;
+&lt;p&gt;接著我們將 (4) 改寫成&lt;/p&gt;
+&lt;p&gt;$$
+\tag{5}
+\hat{x} = A^T(b-A\hat{x}),
+$$&lt;/p&gt;
+&lt;p&gt;並且我們定義一個新變數 $\alpha$ 為&lt;/p&gt;
+&lt;p&gt;$$
+\tag{6}
+\alpha = b-A\hat{x},
+$$&lt;/p&gt;
+&lt;p&gt;因此我們有&lt;/p&gt;
+&lt;p&gt;$$
+\tag{7}
+\hat{x} = A^T\alpha.
+$$&lt;/p&gt;
+&lt;p&gt;接著從 (6) 跟 (7) 我們可以得到&lt;/p&gt;
+&lt;p&gt;$$
+\tag{8}
+\alpha = b-A\hat{x} = b-AA^T\alpha,
+$$&lt;/p&gt;
+&lt;p&gt;整理一下得到 $\alpha$ 要滿足的方程式為&lt;/p&gt;
+&lt;p&gt;$$
+\tag{9}
+(AA^T+ I)\alpha = b.
+$$&lt;/p&gt;
+&lt;p&gt;最後, 由於 $\hat{x}=A^T\alpha$ 我們可以得到&lt;/p&gt;
+&lt;p&gt;$$
+\tag{10}
+\hat{x}  = A^T(AA^T + I)^{-1}b.
+$$&lt;/p&gt;
+&lt;h3 id=&#34;21-qr-decomposition&#34;&gt;2.1 QR decomposition&lt;/h3&gt;
+&lt;p&gt;我們對 $A$ 做 (reduced) QR 分解得到&lt;/p&gt;
+&lt;p&gt;$$
+\tag{11}
+A = QR,
+$$
+where $Q^TQ= I_{r\times r}$, $Q\in M_{m\times r}$ and $R\in M_{r\times n}$.&lt;/p&gt;
+&lt;p&gt;那 least square 問題的解 (4) 可以改寫成&lt;/p&gt;
+&lt;p&gt;$$
+\tag{12}
+(R^TR+I)\hat{x} = R^TQ^Tb.
+$$&lt;/p&gt;
+&lt;p&gt;而 (10) 則是寫成&lt;/p&gt;
+&lt;p&gt;$$
+\tag{13}
+\hat{x} = R^T(RR^T+I)^{-1}Q^Tb,
+$$&lt;/p&gt;
+&lt;h2 id=&#34;3-conclusion&#34;&gt;3. Conclusion&lt;/h2&gt;
+&lt;p&gt;我們考慮以下最小平方法問題&lt;/p&gt;
+&lt;p&gt;$$
+\min_{x\in\mathbb{R}^n}\left(\|Ax - b\|^2+\|x\|^2\right),
+$$&lt;/p&gt;
+&lt;p&gt;並且我們令最佳解為 $\hat{x}$.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;如果 $m&amp;gt;n$, 我們以下列式子來計算
+$$
+\hat{x} = (A^TA+I)^{-1}A^Tb.
+$$
+&lt;ul&gt;
+&lt;li&gt;如果對 $A$ 做 (reduced) QR, $A=QR$, 並且 $Q^TQ=I_{n\times n}$,
+$$
+\hat{x} = (R^TR+I)^{-1}R^TQ^Tb.
+$$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;如果 $m&amp;lt;n$, 我們以下列式子來計算
+$$
+\hat{x} = A^T(AA^T+I)^{-1}b.
+$$
+&lt;ul&gt;
+&lt;li&gt;如果對 $A$ 做 (reduced) QR, $A=QR$, 並且 $Q^TQ=I_{n\times n}$,
+$$
+\hat{x} = R^T(RR^T+I)^{-1}Q^Tb.
+$$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Gibbs_phenomenon - code</title>
+      <link>https://teshenglin.github.io/post/2023_gibbs_phenomenon/</link>
+      <pubDate>Mon, 18 Dec 2023 00:00:00 +0000</pubDate>
+      <guid>https://teshenglin.github.io/post/2023_gibbs_phenomenon/</guid>
+      <description>&lt;h3&gt;&lt;a href=&#34;https://teshenglin.github.io/pybooks/Gibbs_phenomenon.html&#34;&gt;Click here to view this notebook in full screen&lt;/a&gt;&lt;/h3&gt;
+ &lt;iframe src=&#34;https://teshenglin.github.io/pybooks/Gibbs_phenomenon.html&#34;
+        style=&#34;height:2750px;width:100%;border:none;overflow:hidden;&#34; scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;
+</description>
+    </item>
+    
+    <item>
       <title>主成分分析 - 0</title>
       <link>https://teshenglin.github.io/post/2023_principal_component_analysis_0/</link>
       <pubDate>Mon, 18 Dec 2023 00:00:00 +0000</pubDate>
       <guid>https://teshenglin.github.io/post/2023_principal_component_analysis_0/</guid>
-      <description>&lt;h2 id=&#34;1-一維資料的統計學&#34;&gt;1. 一維資料的統計學&lt;/h2&gt;
+      <description>&lt;h1 id=&#34;principle-component-analysis---0&#34;&gt;Principle component analysis - 0&lt;/h1&gt;
+&lt;h2 id=&#34;1-一維資料的統計學&#34;&gt;1. 一維資料的統計學&lt;/h2&gt;
 &lt;p&gt;假設我們有 $n$ 筆資料, 每筆資料都是一個數字 (例如 $n$ 個學生的成績). 這 $n$ 筆資料我們設為 $x_1, \cdots, x_n$, 並且定義一個矩陣&lt;/p&gt;
 &lt;p&gt;$$
 \tag{1}
@@ -103,7 +265,7 @@ $$&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;我們想要找到一個方向, 使得資料投影上去之後, 新資料的變異數會最大.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;假設這個方向為 $v\in\mathbb{R}^2$, 那資料投影到 $v$ 所得的新資料就是 $v^TY \in M_{1\times n}$. 接著我們就來算這筆新資料的變異數.&lt;/p&gt;
+&lt;p&gt;假設這個方向為 $v\in\mathbb{R}^2$, 並且 $\|v\|=1$, 那資料投影到 $v$ 所得的新資料就是 $v^TY \in M_{1\times n}$. 接著我們就來算這筆新資料的變異數.&lt;/p&gt;
 &lt;p&gt;第一步一樣先置中. 也就是計算 $HY^Tv$. 不過由於 $Y$ 是置中過的資料, 因此 $HY^T = Y^T$, 所以 $HY^Tv = Y^Tv$, 也就是說, 新資料 $v^TY$ 的平均一定是 $0$.&lt;/p&gt;
 &lt;p&gt;接著, 新資料的變異數就會是&lt;/p&gt;
 &lt;p&gt;$$
@@ -113,7 +275,7 @@ $$&lt;/p&gt;
 &lt;p&gt;所以統整一下, 若我們將資料投影到 $v$ 上, 那新資料的變異數就是 (11). 而PCA 所要找的方向就是使變異數最大的方向, 也就是&lt;/p&gt;
 &lt;p&gt;$$
 \tag{12}
-\hat{v} = \arg\max_{v\in\mathbb{R}^2} \left(v^TYY^Tv\right).
+\hat{v} = \arg\max_{v\in\mathbb{R}^2, \|v\|=1} \left(v^TYY^Tv\right).
 $$&lt;/p&gt;
 &lt;p&gt;最後, 我們知道這個解可以由 $Y^T$ 這個矩陣的 SVD 得出.&lt;/p&gt;
 &lt;p&gt;假設 $Y^T = U\Sigma V^T$, 那  $\hat{v} = v_1$, 也就是第一個 singular vector.&lt;/p&gt;
@@ -121,7 +283,7 @@ $$&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;我們想要找到一個方向, 使得資料投影上去之後, 新舊資料的距離平方和最小.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;假設這個方向為 $v\in\mathbb{R}^2$, 那資料投影到 $v$ 的投影點就是 $vv^TY \in M_{2\times n}$. 接著我們就來算新舊資料的距離平方和:&lt;/p&gt;
+&lt;p&gt;假設這個方向為 $v\in\mathbb{R}^2$, 並且 $\|v\|=1$, 那資料投影到 $v$ 的投影點就是 $vv^TY \in M_{2\times n}$. 接著我們就來算新舊資料的距離平方和:&lt;/p&gt;
 &lt;p&gt;$$
 \tag{13}
 \begin{align}
@@ -136,7 +298,7 @@ $$&lt;/p&gt;
 &lt;p&gt;我們希望找到一個方向使得距離平方和最小, 也就是&lt;/p&gt;
 &lt;p&gt;$$
 \tag{14}
-\hat{v}=\arg\min_{v\in\mathbb{R}^2} \left(\sum^n_{k=1}(Y_k^TY_k) -v^TYY^Tv\right) = \arg\max_{v\in\mathbb{R}^2} \left(v^TYY^Tv\right).
+\hat{v}=\arg\min_{v\in\mathbb{R}^2, \|v\|=1} \left(\sum^n_{k=1}(Y_k^TY_k) -v^TYY^Tv\right) = \arg\max_{v\in\mathbb{R}^2, \|v\|=1} \left(v^TYY^Tv\right).
 $$&lt;/p&gt;
 &lt;p&gt;觀察 (12) 與 (14) 發現他們一模一樣. 也就是這兩個問題的解會是一樣的, 最佳的方向都是第一個 singular vector.&lt;/p&gt;
 &lt;h2 id=&#34;5-conclusion&#34;&gt;5. Conclusion&lt;/h2&gt;
@@ -182,222 +344,6 @@ $$
       <description>&lt;h3&gt;&lt;a href=&#34;https://teshenglin.github.io/pybooks/pca.html&#34;&gt;Click here to view this notebook in full screen&lt;/a&gt;&lt;/h3&gt;
  &lt;iframe src=&#34;https://teshenglin.github.io/pybooks/pca.html&#34;
         style=&#34;height:2750px;width:100%;border:none;overflow:hidden;&#34; scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Least square method 1</title>
-      <link>https://teshenglin.github.io/post/2023_la_least_square_1/</link>
-      <pubDate>Sun, 03 Dec 2023 00:00:00 +0000</pubDate>
-      <guid>https://teshenglin.github.io/post/2023_la_least_square_1/</guid>
-      <description>&lt;h1 id=&#34;最小平方法-1&#34;&gt;最小平方法 1&lt;/h1&gt;
-&lt;p&gt;給定一個矩陣 $A$ 以及一個向量 $b$, 我們想要找到一個向量 $x$ 使得 $\|Ax - b\|^2$ 最小.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;$$
-A\in M_{m\times n}, \quad b \in M_{m\times 1}, \quad x\in M_{n\times 1}.
-$$&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;首先我們定義 $\hat{x}$ 為找到的那個解, 也就是說, 我們要解以下這個問題&lt;/p&gt;
-&lt;p&gt;$$
-\newcommand{\argmin}{\arg\min}
-\tag{1}
-\hat{x} = \argmin_{x\in\mathbb{R}^n}\|Ax - b\|^2.
-$$&lt;/p&gt;
-&lt;h2 id=&#34;1-notations&#34;&gt;1. Notations&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;$C(A)$: column space of $A$.
-$$
-C(A) = \{Ax  |  x\in\mathbb{R}^n\}\subseteq\mathbb{R}^m.
-$$&lt;/li&gt;
-&lt;li&gt;$N(A)$: null space of $A$.
-$$
-N(A) = \{x\in\mathbb{R}^n | Ax = 0\}\subseteq\mathbb{R}^n.
-$$&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;2-最小平方解與投影子空間&#34;&gt;2. 最小平方解與投影子空間&lt;/h2&gt;
-&lt;p&gt;要找到最小平方解首先我們做個重要的觀察.&lt;/p&gt;
-&lt;p&gt;事實上, 以下三件事是等價敘述:&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;給定 $A$ 與 $b$&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;找到一個向量 $\hat{x}\in\mathbb{R}^n$, 使得 $\|A\hat{x}-b\|^2$ 最小.&lt;/li&gt;
-&lt;li&gt;找到一個向量 $\hat{b}\in C(A)\subseteq\mathbb{R}^m$, 使得 $\|\hat{b}-b\|^2$ 最小.&lt;/li&gt;
-&lt;li&gt;將 $b$ 投影到 $C(A)$.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;blockquote&gt;
-&lt;p&gt;因為 $A\hat{x}$ 可以視為 $A$ 的 columns 的線性組合. 而任何在 column space $C(A)$ 裡的向量也都可以被寫成 $Ax$.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;所以若我們知道怎樣解其中一個, 另外兩個問題就同時解出來了. 我們先證明以下這個 lemma.&lt;/p&gt;
-&lt;h3 id=&#34;lemma&#34;&gt;Lemma&lt;/h3&gt;
-&lt;p&gt;任意給定一個向量 $b\in\mathbb{R}^m$, 如果我們能夠找到一個向量 $\hat{b}\in\mathbb{R}^m$ 滿足 $(\hat{b}-b)\perp C(A)$, 那這個向量就會是 $b$ 在 $C(A)$ 的投影向量,
-$$
-\tag{2}
-\hat{b} = \arg\min_{\hat{b}\in\mathbb{R}^m}\|\hat{b}-b\|^2.
-$$&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;pf:&lt;/p&gt;
-&lt;p&gt;Let $\hat{b}\in C(A)\subseteq\mathbb{R}^m$ such that $(\hat{b}-b)\perp C(A)$.&lt;/p&gt;
-&lt;p&gt;Given $p\in C(A)$, we define $e = p - \hat{b}$ and we have $e\in C(A)$.&lt;/p&gt;
-&lt;p&gt;$$
-\tag{3}
-\begin{align}
-\|p - b\|^2 &amp;amp;= &amp;lt;p-b, p-b&amp;gt; \\&lt;br&gt;
-&amp;amp;= &amp;lt;\hat{b} + e - b, \hat{b} + e - b&amp;gt;\\&lt;br&gt;
-&amp;amp;= \|\hat{b} - b\|^2 + 2&amp;lt;\hat{b} - b, e&amp;gt; + \|e\|^2\\&lt;br&gt;
-&amp;amp;= \|\hat{b} - b\|^2  + \|e\|^2,
-\end{align}
-$$&lt;/p&gt;
-&lt;p&gt;where we have used the fact that $(\hat{b}-b)\perp C(A)$ and $e\in C(A)$, so that $&amp;lt;\hat{b} - b, e&amp;gt;=0$.&lt;/p&gt;
-&lt;p&gt;Therefore, for any $p\in C(A)$, $\|p - b\|^2 \ge \|\hat{b} - b\|^2$, and the minimal of $\|p - b\|^2$ occurs when $\|e\|^2=0$, that is when $p=\hat{b}$.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;由這 lemma 我們知道 $\hat{b}$ 可以從 $(\hat{b}-b)\perp C(A)$ 這個條件下手, 也就是要找一個 $\hat{b}$ 滿足&lt;/p&gt;
-&lt;p&gt;$$
-\tag{4}
-A^T(\hat{b}-b)=0.
-$$&lt;/p&gt;
-&lt;p&gt;那因為 $\hat{b}\in C(A)$, 一定存在某個 $\hat{x}\in\mathbb{R}^n$ 使得 $A\hat{x}=\hat{b}$. 因此 (4) 就變成&lt;/p&gt;
-&lt;p&gt;$$
-\tag{5}
-A^T(A\hat{x}-b)=0.
-$$&lt;/p&gt;
-&lt;p&gt;展開就知道 $\hat{x}$ 要滿足&lt;/p&gt;
-&lt;p&gt;$$
-\tag{6}
-A^TA\hat{x}=A^Tb.
-$$&lt;/p&gt;
-&lt;p&gt;因此, 我們剛剛說的事其解就是:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;找到一個向量 $\hat{x}\subseteq\mathbb{R}^n$, 使得 $\|A\hat{x}-b\|^2$ 最小.
-&lt;ul&gt;
-&lt;li&gt;$\hat{x}$ 滿足 $A^TA\hat{x}=A^Tb$.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;找到一個向量 $\hat{b}\in C(A)\subseteq\mathbb{R}^m$, 使得 $\|\hat{b}-b\|^2$ 最小.
-&lt;ul&gt;
-&lt;li&gt;$\hat{b}$ 滿足 $(\hat{b}-b)\perp C(A)$, 或是 $A^T(\hat{b}-b)=0$.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;Remark:&lt;/strong&gt;&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;以上推導都是充分條件, 就是如果我們解出 (4) 或 (6), 那他們就一定是 (1) 的解.&lt;/li&gt;
-&lt;li&gt;以上推導跟 $A$ 的 column 有沒有 linearly independent 無關.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id=&#34;3-independent-columns&#34;&gt;3. Independent columns&lt;/h2&gt;
-&lt;p&gt;如果 $A$ 的 column 是 linearly independent, 那 $A^TA$ 就可逆, 然後我們就可以把 $\hat{x}$ 顯式的寫下來, 就得到
-$$
-\tag{7}
-\hat{x} = (A^TA)^{-1}A^Tb.
-$$
-在這情況下, $b$ 在 $C(A)$ 的投影也可以寫下來, 就是
-$$
-\tag{8}
-\hat{b} = A(A^TA)^{-1}A^Tb.
-$$
-或是我們可以更近一步定義投影到 $C(A)$ 的投影矩陣, 就是
-$$
-\tag{9}
-P = A(A^TA)^{-1}A^T.
-$$&lt;/p&gt;
-&lt;h2 id=&#34;4-independent-columns&#34;&gt;4. Independent columns&lt;/h2&gt;
-&lt;blockquote&gt;
-&lt;p&gt;$A^TA$ 不可逆&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h3 id=&#34;case-1&#34;&gt;Case 1&lt;/h3&gt;
-&lt;p&gt;假設 $m&amp;lt;n$ 並且 $\text{rank}(A)=n$.&lt;/p&gt;
-&lt;p&gt;在這情況下, $A$ 的 columns 不是 linearly independent, $A^TA$ 不可逆, 並且 $N(A)\ne{0}$. 所以若有一個最小平方解, 那就還會有無窮多個. 不過我們至少先找到一個再說.&lt;/p&gt;
-&lt;p&gt;因為 $A$ 的 rows 會線性獨立, 因此我們對 $A^T$ 做 (reduced) QR 分解得到&lt;/p&gt;
-&lt;p&gt;$$
-\tag{10}
-A^T = QR,
-$$
-where $Q^TQ= I$, $Q\in M_{n\times m}$ and $R\in M_{m\times m}$. 並且我們知道 $R$ 是可逆矩陣.&lt;/p&gt;
-&lt;p&gt;接著我們知道最小平方解必須滿足 (6), 也就是&lt;/p&gt;
-&lt;p&gt;$$
-\tag{11}
-QRR^TQ^T \hat{x} = QRb.
-$$&lt;/p&gt;
-&lt;p&gt;兩邊同乘 $(R^T)^{-1}R^{-1}Q^T$ 我們得到&lt;/p&gt;
-&lt;p&gt;$$
-\tag{12}
-Q^T \hat{x} = (R^T)^{-1}b.
-$$&lt;/p&gt;
-&lt;p&gt;最後, 如果我們選擇&lt;/p&gt;
-&lt;p&gt;$$
-\tag{13}
-\hat{x} = Q(R^T)^{-1}b,
-$$&lt;/p&gt;
-&lt;p&gt;那可以很容易驗證 (12) 是滿足的. 也就是說 (13) 會是這個問題的一個解.&lt;/p&gt;
-&lt;h3 id=&#34;case-2&#34;&gt;Case 2&lt;/h3&gt;
-&lt;p&gt;假設 $\text{rank}(A)=r$, 並且 $r&amp;lt;m$, $r&amp;lt;n$.&lt;/p&gt;
-&lt;p&gt;我們對 $A$ 做 (reduced) QR 分解得到&lt;/p&gt;
-&lt;p&gt;$$
-\tag{14}
-A = QR,
-$$
-where $Q^TQ= I$, $Q\in M_{m\times r}$ and $R\in M_{r\times n}$.&lt;/p&gt;
-&lt;p&gt;接著我們知道最小平方解必須滿足 (6), 也就是&lt;/p&gt;
-&lt;p&gt;$$
-\tag{15}
-R^TR \hat{x} = R^TQ^Tb.
-$$&lt;/p&gt;
-&lt;p&gt;不過要注意的是這裡 $R^TR\in M_{n\times n}$ 不是一個可逆矩陣, 所以操作上無法兩邊同乘其反矩陣. 但是好消息是 $R^T$ 的 columns 是線性獨立的, 所以我們會有&lt;/p&gt;
-&lt;p&gt;$$
-\tag{16}
-R \hat{x} = Q^Tb.
-$$&lt;/p&gt;
-&lt;p&gt;接著我們試著在 row space 裡找解. 假設 $\hat{x} = R^T \hat{y}$, $\hat{y}\in\mathbb{R}^r$, 那 (16) 可以改寫為&lt;/p&gt;
-&lt;p&gt;$$
-\tag{17}
-RR^T \hat{y} = Q^Tb.
-$$&lt;/p&gt;
-&lt;p&gt;這樣, 由於 $RR^T\in M_{r\times r}$ 並且可逆, 我們就有 $\hat{y} = (RR^T)^{-1}Q^Tb$. 最後&lt;/p&gt;
-&lt;p&gt;$$
-\tag{18}
-\hat{x} = R^T(RR^T)^{-1}Q^Tb.
-$$&lt;/p&gt;
-&lt;p&gt;一樣可以很容易驗證 (16) 是滿足的. 也就是說 (18) 會是這個問題的一個解.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Remark:&lt;/strong&gt; QR 的這整套做法也適用於 $A$ 的 columns 線性獨立的情形. 而且在這情形之下的 $R$ 矩陣會是個可逆方陣, 因此有 $(RR^T)^{-1} = (R^T)^{-1}R^{-1}$. 代入之後得到&lt;/p&gt;
-&lt;p&gt;$$
-\tag{19}
-\hat{x} = R^{-1}Q^Tb.
-$$&lt;/p&gt;
-&lt;h2 id=&#34;5-conclusion&#34;&gt;5. Conclusion&lt;/h2&gt;
-&lt;p&gt;我們考慮以下最小平方法問題&lt;/p&gt;
-&lt;p&gt;$$
-\min_{x\in\mathbb{R}^n}|Ax - b|^2.
-$$&lt;/p&gt;
-&lt;p&gt;並且我們令最佳解為 $\hat{x}$.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;如果 $A$ 的 columns 線性獨立
-$$
-\hat{x} = (A^TA)^{-1}A^Tb.
-$$
-&lt;ul&gt;
-&lt;li&gt;如果對 $A$ 做 (reduced) QR, $A=QR$, 並且 $Q^TQ=I_{n\times n}$,
-$$
-\hat{x} = R^{-1}Q^Tb.
-$$&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;如果 $A$ 的 columns 線性相依
-&lt;blockquote&gt;
-&lt;p&gt;則有無窮多解, 以下是一特解&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;對 $A$ 做 (reduced) QR, $A=QR$, 並且 $Q^TQ=I_{r\times r}$,
-$$
-\hat{x} = R^T(RR^T)^{-1}Q^Tb.
-$$&lt;/li&gt;
-&lt;li&gt;或是若 $\text{rank}(A)=n$, 則可對 $A^T$ 做 (reduced) QR, $A^T=QR$, 並且 $Q^TQ=I_{m\times m}$,
-$$
-\hat{x} = Q(R^T)^{-1}b.
-$$&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
 </description>
     </item>
     
@@ -604,7 +550,7 @@ $$&lt;/li&gt;
 &lt;/li&gt;
 &lt;li&gt;如果 $A$ 的 columns 線性相依
 &lt;blockquote&gt;
-&lt;p&gt;則有無窮多解, 以下是一特解&lt;/p&gt;
+&lt;p&gt;則有無窮多解, 以下是一特解 (並且是所有的解裡面長度最短的).&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;ul&gt;
 &lt;li&gt;對 $A$ 做 (reduced) QR, $A=QR$, 並且 $Q^TQ=I_{r\times r}$,

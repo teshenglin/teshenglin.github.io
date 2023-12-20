@@ -487,118 +487,10 @@
     
     
     <div>
-      <h2><a href="/post/2020_principal_component_analysis/" >主成分分析</a></h2>
+      <h2><a href="/post/2019_limit_evaluate/" >用電腦算極限</a></h2>
       <div class="article-style">
         
-          主成分分析, Principal component analysis, 簡稱 PCA, 是個資料分析或是資料降維的工具. 資料降維簡單來說, 假設我們有一些資料, 這資料中的每一筆維度都很高, 導致我們很難 &ld
-        
-      </div>
-    </div>
-  
-    
-    
-    
-    <div>
-      <h2><a href="/post/2020_numerical_integration_4/" >Clenshaw–Curtis quadrature</a></h2>
-      <div class="article-style">
-        
-          前情提要: 數值積分初探 前情提要: 以內插多項式來做數值積分 前情提要: 高斯積分 我們想要利用 Chebyshev polynomial 來算積分 Goal: 任意給定一可積分函數 $f(x)$, $x\in[-1, 1]$, 我們想要算 $\int^1_{-1} f(x)
-        
-      </div>
-    </div>
-  
-    
-    
-    
-    <div>
-      <h2><a href="/post/2020_lagrange_multiplier/" >Lagrange Multiplier - 01</a></h2>
-      <div class="article-style">
-        
-          在微積分課程裡我們有學到如何利用 Lagrange multiplier 來解 constraint optimization 問題. 這邊要介紹課本裡沒教的 Lagrangian function. Goal: 我們想要解以下這個問題 $$ \min_{x} f(x), \quad \text{subject to } \quad g(x)=0. $$ Observation 微積分課本告訴我們
-        
-      </div>
-    </div>
-  
-    
-    
-    
-    <div>
-      <h2><a href="/post/2020_lagrange_multiplier_2/" >Lagrange Multiplier - 02</a></h2>
-      <div class="article-style">
-        
-          這裡我們再多討論一點 Lagrangian function. 我們先看最簡單的一維問題, 求一個有限制式的函數最小值問題: $$ \min_{x} f(x), \quad \text{subject to } \quad g(x)=0. $$ 我們引進 Lagrangian function $$ L(x, \lambda) = f(x) + \lambda g(x) $$ 並且知道
-        
-      </div>
-    </div>
-  
-    
-    
-    
-    <div>
-      <h2><a href="/post/2020_lagrange_multiplier_3/" >Lagrange Multiplier - 03</a></h2>
-      <div class="article-style">
-        
-          這裡我們討論一下 Lagrange multiplier. 我們知道, 如果想要解以下這個有限制式的最佳化問題 $$ \min_{x} f(x), \quad \text{subject to } \quad g(x)=k, $$ 一個方式是引進 Lagrange multiplier, $\lambda$, 然後可以列出以下兩個式子 $$ \partial_x f +
-        
-      </div>
-    </div>
-  
-    
-    
-    
-    <div>
-      <h2><a href="/post/2020_numerical_integration_2/" >以內插多項式來做數值積分</a></h2>
-      <div class="article-style">
-        
-          前情提要: 數值積分初探 連續函數可以用多項式來逼近它, 因此直覺來講, 既然我們已經找到一個離給定函數&quot;很近&quot;的多項式了, 何不
-        
-      </div>
-    </div>
-  
-    
-    
-    
-    <div>
-      <h2><a href="/post/2020_numerical_integration_3/" >高斯積分</a></h2>
-      <div class="article-style">
-        
-          前情提要: 數值積分初探 前情提要: 以內插多項式來做數值積分 我們想要找到一些插值點使得以內插多項式來做數值積分會最準. 這就是高斯積分. Goal: 任意給定
-        
-      </div>
-    </div>
-  
-    
-    
-    
-    <div>
-      <h2><a href="/post/2019_numerical_integration/" >數值積分初探</a></h2>
-      <div class="article-style">
-        
-          在微積分課程裡我們有學到積分的&rsquo;中點法', &lsquo;梯形法&rsquo;以及&rsquo;辛普森法&rsquo;. 這裡我們簡
-        
-      </div>
-    </div>
-  
-    
-    
-    
-    <div>
-      <h2><a href="/post/2019_fixed_point/" >Fixed point iteration</a></h2>
-      <div class="article-style">
-        
-          這裡我們介紹固定點迭代法 (Fixed point iteration) 首先我們介紹什麼是固定點 (Fixed point) Definition: Fixed point A fixed point of a function $f(x)$ is a number $c$ in its domain such that $f(c)=c$. 所以簡單來說, 把固定點這個數字丟進函數後會
-        
-      </div>
-    </div>
-  
-    
-    
-    
-    <div>
-      <h2><a href="/post/2019_derivate_evaluate/" >用電腦算微分</a></h2>
-      <div class="article-style">
-        
-          前情提要: 用電腦算極限 這裡我們要講的是用數值計算來算函數的微分值. 已知一個函數 $f(x)$ 在某個點 $a$ 的微分值定義是 $$ f'(a) = \lim_{h\to 0} \frac{f(a+h)-f(a)}{h}. $$ 我們用一個簡單的例子試
+          這裡我們要介紹如何用電腦算極限, 以及我們來看一下當我們真的這樣做的時候有可能會發生什麼問題. 我們以 $sinc$ 函數為例來做說明. sinc function 首先我們要介紹一個
         
       </div>
     </div>
@@ -608,10 +500,8 @@
 <nav>
   <ul class="pagination justify-content-center">
     
-    <li class="page-item"><a class="page-link" href="/categories/computational-mathematics/">&laquo;</a></li>
+    <li class="page-item"><a class="page-link" href="/categories/computational-mathematics/page/2/">&laquo;</a></li>
     
-    
-    <li class="page-item"><a class="page-link" href="/categories/computational-mathematics/page/3/">&raquo;</a></li>
     
   </ul>
 </nav>

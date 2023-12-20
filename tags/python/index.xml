@@ -13,6 +13,17 @@
     </image>
     
     <item>
+      <title>Gibbs_phenomenon - code</title>
+      <link>https://teshenglin.github.io/post/2023_gibbs_phenomenon/</link>
+      <pubDate>Mon, 18 Dec 2023 00:00:00 +0000</pubDate>
+      <guid>https://teshenglin.github.io/post/2023_gibbs_phenomenon/</guid>
+      <description>&lt;h3&gt;&lt;a href=&#34;https://teshenglin.github.io/pybooks/Gibbs_phenomenon.html&#34;&gt;Click here to view this notebook in full screen&lt;/a&gt;&lt;/h3&gt;
+ &lt;iframe src=&#34;https://teshenglin.github.io/pybooks/Gibbs_phenomenon.html&#34;
+        style=&#34;height:2750px;width:100%;border:none;overflow:hidden;&#34; scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;
+</description>
+    </item>
+    
+    <item>
       <title>主成分分析 - code</title>
       <link>https://teshenglin.github.io/post/2023_principal_component_analysis_01/</link>
       <pubDate>Mon, 18 Dec 2023 00:00:00 +0000</pubDate>
