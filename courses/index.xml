@@ -13,6 +13,164 @@
     </image>
     
     <item>
+      <title>2024 Summer Research Internship</title>
+      <link>https://teshenglin.github.io/courses/2024_summer_research/</link>
+      <pubDate>Sat, 16 Mar 2024 00:00:00 +0800</pubDate>
+      <guid>https://teshenglin.github.io/courses/2024_summer_research/</guid>
+      <description>&lt;hr&gt;
+&lt;h2 id=&#34;2024-暑期研究實習&#34;&gt;2024 暑期研究實習&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;研究實習辦法
+&lt;ol&gt;
+&lt;li&gt;實習期間, 時間, 地點
+&lt;ul&gt;
+&lt;li&gt;六週, 具體時間各自與指導教授訂定&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;說明會
+&lt;ul&gt;
+&lt;li&gt;訂於 4/24 (週三) 12:00-13:00 SC207&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;報名
+&lt;ul&gt;
+&lt;li&gt;報名資格: 大學部就學中&lt;/li&gt;
+&lt;li&gt;報名截止: 5/3&lt;/li&gt;
+&lt;li&gt;報名方式: 與指導教授面談後填寫表單 - 
+&lt;a href=&#34;https://forms.gle/uZPyRkTanWMMajvB7&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;報名表單&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;經錄取, 在符合以下條件的情況下將補助兩萬元整
+&lt;ul&gt;
+&lt;li&gt;於實習期間協助團隊指導教授進行相關研究&lt;/li&gt;
+&lt;li&gt;研究成果海報展
+&lt;ul&gt;
+&lt;li&gt;每位參與實習的學生皆需參加研究成果海報展, 日期暫訂於 2024 FALL 開學前一週, 具體日期再另行通知.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;各研究團隊主題&#34;&gt;各研究團隊主題&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Before Finance
+&lt;ul&gt;
+&lt;li&gt;Advisor: 千野由喜 - 
+&lt;a href=&#34;mailto:y.chino@math.nctu.edu.tw&#34;&gt;y.chino@math.nctu.edu.tw&lt;/a&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Before starting mathematical finance, let&amp;rsquo;s think about basic. We learn the first step for random walk theory. Through Gambler&amp;rsquo;s ruin problem, we consider the concept of martingale.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;矩陣的數值域
+&lt;ul&gt;
+&lt;li&gt;Advisor: 王國仲 - 
+&lt;a href=&#34;mailto:kzwang@math.nctu.edu.tw&#34;&gt;kzwang@math.nctu.edu.tw&lt;/a&gt;
+&lt;blockquote&gt;
+&lt;p&gt;在這個暑期計畫中，我們將學習矩陣的數值域上重要的性質，其中包含Toeplitz-Hausdorff、Ando、Anderson定理和冪不等式。另一方面，同學也將學習2或3階矩陣的數值域。&lt;/p&gt;
+&lt;p&gt;先備知識: 線性代數、分析導論。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Parameters&#39; tuning in state dependent control
+&lt;ul&gt;
+&lt;li&gt;Advisor: 吳金典 - 
+&lt;a href=&#34;mailto:ctw@math.nctu.edu.tw&#34;&gt;ctw@math.nctu.edu.tw&lt;/a&gt;
+&lt;blockquote&gt;
+&lt;p&gt;在本專題中要處理的問題是對非線性動態系統如無人機的飛行，機器人運動等做飛行軌跡與運動狀態的控制。因為在計算控制像時常常需要調整控制參數，而控制參數又與目前狀態有關，如何能利用機器學習與人工智能來自動調整控制參數，應該是個相當有趣的問題。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;腦部皮層之波的傳遞與模式生成 (Wave Propagation and Pattern Formation in the Brain Cortex)
+&lt;ul&gt;
+&lt;li&gt;Advisor: 吳昌鴻 - 
+&lt;a href=&#34;mailto:changhong@math.nctu.edu.tw&#34;&gt;changhong@math.nctu.edu.tw&lt;/a&gt;
+&lt;blockquote&gt;
+&lt;p&gt;這個暑假我們想要透過神經元數學模型來了解腦部皮層中產生的波之傳遞現象與模式之生成。&lt;/p&gt;
+&lt;p&gt;我們這裡稱之為「神經元模型」並非「神經網路模型」。事實上，神經網路通常是指一個與演算法和計算有關之術語，而不是關於大腦如何運作的問題。我們研究的神經元模型與生物學相關，將強調動態和時空行為。我們將從經典的文獻，Amari (1977)的文章開始讀起，此文章討論具有兩側抑制型之神經場數學模型，並做一些數學分析得到模式生成與波的傳遞現象，其中仍有許多問題有待回答，我們希望能在這個暑假得到一些小成果。&lt;/p&gt;
+&lt;p&gt;先備知識: 微積分。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Exploring Graphs: From Critical Groups to Zeta Functions
+&lt;ul&gt;
+&lt;li&gt;Advisors (共同指導): 阮志豪(
+&lt;a href=&#34;mailto:chyuen@math.nctu.edu.tw&#34;&gt;chyuen@math.nctu.edu.tw&lt;/a&gt;), 康明軒(
+&lt;a href=&#34;mailto:mhkang@math.nctu.edu.tw&#34;&gt;mhkang@math.nctu.edu.tw&lt;/a&gt;)
+&lt;blockquote&gt;
+&lt;p&gt;這個主題帶領學生進入圖論的迷人領域，重點介紹兩個關鍵概念：Critical Group 和 Graph Zeta Function。通過引人入勝的遊戲和代數結構，研究 Critical Group 為理解圖開啟了一個新的視角。同時，Graph Zeta Function提供了一種計算圖中閉合路徑數量的方法，提供了一個直接與圖的拉普拉斯算子相聯繫的公式。學生將探索這些思想，從玩味十足的籌碼發射遊戲開始，到與拉普拉斯矩陣的更複雜關係。通過連接這些主題，參與者將發現看待和理解圖中錯綜複雜模式的新方式。
+This project invites students into the captivating realm of graph theory, highlighting two key concepts: critical groups and graph zeta functions. The study of critical groups opens a novel lens for understanding graphs through engaging games and algebraic structures. Meanwhile, graph zeta functions provide insight into counting the closed paths within a graph, offering a formula that directly ties back to the Laplacian. Students will explore these ideas, starting from the playful chip-firing game to the more complex relationships with the Laplacian matrix. By connecting these topics, participants will discover new ways to see and understand the intricate patterns within graphs.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;高維度函數的數值積分
+&lt;ul&gt;
+&lt;li&gt;Advisor: 林得勝 - 
+&lt;a href=&#34;mailto:teshenglin@nycu.edu.tw&#34;&gt;teshenglin@nycu.edu.tw&lt;/a&gt;
+&lt;blockquote&gt;
+&lt;p&gt;計算高維度物體的體積有所謂的&amp;quot;維度詛咒&amp;quot;, 當維度增加時計算複雜度顯著提升. 不過若函數有某些對稱性, 就可以有一些技巧來克服維度詛咒. 這個暑假我們計畫要研究幾種這類特殊的數值積分技巧.&lt;/p&gt;
+&lt;p&gt;參考文章：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;L. N. Trefethen, Cubature, Approximation, and Isotropy in the Hypercube, SIAM Rev., 59 (2017), 469-491.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Unified tranform method
+&lt;ul&gt;
+&lt;li&gt;Advisor: 黃信元 - 
+&lt;a href=&#34;mailto:hyhuang@math.nctu.edu.tw&#34;&gt;hyhuang@math.nctu.edu.tw&lt;/a&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Unified transform method 是一種基於 Fourier 變換的方法，專門用來處理半空間或線段的線性PDE問題。對於在半空間的線性PDE，當邊界條件即使是Robin邊界條件時，這方法依然有可能得到積分形式的解。我們可以利用得到的正解，去研究一些解的行為。&lt;/p&gt;
+&lt;p&gt;先備知識: 大學部的PDE與複變。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;如何使用FreeFem 軟體數值解偏微分方程式
+&lt;ul&gt;
+&lt;li&gt;Advisor: 薛名成 - 
+&lt;a href=&#34;mailto:mcshiue@nycu.edu.tw&#34;&gt;mcshiue@nycu.edu.tw&lt;/a&gt;
+&lt;blockquote&gt;
+&lt;p&gt;動機: 物理法則，如質量守恆或能量守恆等等，都可以用方程式描述寫下。然而，如何呈現或求出該方程式或系統的解或系統的解，則是科學計算重要的課題。&lt;/p&gt;
+&lt;p&gt;目標: 這暑假，期望學生可以學會FreeFem軟體，這軟體基本是使用有限元素法求解偏微分方程式。之後，進而了解有限元素法的內涵且數值解偏微分方程式。&lt;/p&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://youtu.be/Dxg-4asWuj0?si=kvbuVt85Igt74a0P&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;參考影片&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Quasi-inversion of Quantum Channels
+&lt;ul&gt;
+&lt;li&gt;Advisor: 蘇承芳 - 
+&lt;a href=&#34;mailto:scf1204@nycu.edu.tw&#34;&gt;scf1204@nycu.edu.tw&lt;/a&gt;
+&lt;blockquote&gt;
+&lt;p&gt;在封閉的量子系統裡，給定一個量子通道A，其反矩陣就能存在。但在開放量子系統中，由於環境的干擾，經過量子通道後的資訊可能會損失，所以我們試圖找到一個操作，使一個非可逆的量子通道變得可逆，或者，至少在某些特定的條件下能夠接近可逆，這就是所謂的擬逆（Quasi-inversion），然而，關鍵是，我們找到的擬逆也必須是一個量子通道。所以在此暑期專題中，我們首先要學習開放量子系統中有關量子通道的相關性質，針對給定任意的量子通道，選定一種度量方式，然後找出方法證明擬逆的存在性並找出它的矩陣形式。&lt;/p&gt;
+&lt;p&gt;參考文章：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Fereshte Shahbeigi, Koorosh Sadri1, Morteza Moradi1, Karol Z_ yczkowski, and Vahid Karimipour, Quasi-inversion of quantum and classical channels in finite dimensions.&lt;/li&gt;
+&lt;li&gt;Vahid Karimipour, Fabio Benatti, and Roberto Floreanin, Quasi inversion of qubit channels.&lt;/li&gt;
+&lt;li&gt;Ningping Cao, Junan Lin, David Kribs, Yiu-Tung Poon, Bei Zeng, and Raymond Laamme, NISQ: Error Correction, Mitigation, and Noise Simulation.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+</description>
+    </item>
+    
+    <item>
       <title>2023 Summer Research Internship</title>
       <link>https://teshenglin.github.io/courses/2023_summer_research/</link>
       <pubDate>Mon, 10 Apr 2023 00:00:00 +0800</pubDate>
@@ -316,36 +474,6 @@
     </item>
     
     <item>
-      <title>Summer Research Internship</title>
-      <link>https://teshenglin.github.io/courses/summer_research/</link>
-      <pubDate>Sun, 27 Feb 2022 00:00:00 +0800</pubDate>
-      <guid>https://teshenglin.github.io/courses/summer_research/</guid>
-      <description>&lt;hr&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;
-&lt;a href=&#34;https://teshenglin.github.io/courses/2023_summer_research/&#34;&gt;2023 Summer research internship&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;
-&lt;a href=&#34;https://teshenglin.github.io/courses/2022_summer_research/&#34;&gt;2022 Summer research internship&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;
-&lt;a href=&#34;https://teshenglin.github.io/courses/2021_summer_research/&#34;&gt;2021 Summer research internship&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;
-&lt;a href=&#34;https://teshenglin.github.io/courses/2020_summer_research/&#34;&gt;2020 Summer research internship&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;hr&gt;
-</description>
-    </item>
-    
-    <item>
       <title>2021 Summer Research Internship</title>
       <link>https://teshenglin.github.io/courses/2021_summer_research/</link>
       <pubDate>Wed, 19 May 2021 00:00:00 +0800</pubDate>
@@ -475,10 +603,15 @@
       <pubDate>Mon, 29 Jun 2020 00:00:00 +0800</pubDate>
       <guid>https://teshenglin.github.io/courses/taught/</guid>
       <description>&lt;hr&gt;
+&lt;h2 id=&#34;2024-spring&#34;&gt;2024 Spring&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Linear algebra (2)&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
 &lt;h2 id=&#34;2023-fall&#34;&gt;2023 Fall&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Linear algebra (1):&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Differential Equations:&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Linear algebra (1)&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Differential Equations&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;2023-spring&#34;&gt;2023 Spring&lt;/h2&gt;
@@ -741,6 +874,29 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
+&lt;hr&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Summer Research Internship</title>
+      <link>https://teshenglin.github.io/courses/summer_research/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://teshenglin.github.io/courses/summer_research/</guid>
+      <description>&lt;hr&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;
+&lt;a href=&#34;https://teshenglin.github.io/courses/2024_summer_research/&#34;&gt;2024 Summer research internship&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;
+&lt;a href=&#34;https://teshenglin.github.io/courses/2023_summer_research/&#34;&gt;2023 Summer research internship&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;
+&lt;a href=&#34;https://teshenglin.github.io/courses/2022_summer_research/&#34;&gt;2022 Summer research internship&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;
+&lt;a href=&#34;https://teshenglin.github.io/courses/2021_summer_research/&#34;&gt;2021 Summer research internship&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;
+&lt;a href=&#34;https://teshenglin.github.io/courses/2020_summer_research/&#34;&gt;2020 Summer research internship&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- raw HTML omitted --&gt;
 &lt;hr&gt;
 </description>
     </item>
