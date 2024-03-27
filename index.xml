@@ -83,6 +83,8 @@
 &lt;a href=&#34;mailto:ctw@math.nctu.edu.tw&#34;&gt;ctw@math.nctu.edu.tw&lt;/a&gt;
 &lt;blockquote&gt;
 &lt;p&gt;在本專題中要處理的問題是對非線性動態系統如無人機的飛行，機器人運動等做飛行軌跡與運動狀態的控制。因為在計算控制像時常常需要調整控制參數，而控制參數又與目前狀態有關，如何能利用機器學習與人工智能來自動調整控制參數，應該是個相當有趣的問題。&lt;/p&gt;
+&lt;p&gt;另外關於控制理論以下連結是一個不錯的線上課程同學可以參考: 
+&lt;a href=&#34;https://youtube.com/playlist?list=PLp8ijpvp8iCvFDYdcXqqYU5Ibl_aOqwjr&amp;amp;si=Bt9pGfsG7PRrjq8K&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Robot control Corsera&lt;/a&gt;.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
