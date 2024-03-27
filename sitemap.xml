@@ -1,770 +1,1295 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
   <url>
     <loc>https://teshenglin.github.io/courses/2024_summer_research/</loc>
-    <lastmod>2024-03-27T13:16:55+08:00</lastmod>
-  </url><url>
-    <loc>https://teshenglin.github.io/</loc>
-    <lastmod>2024-03-27T13:16:55+08:00</lastmod>
-  </url><url>
+    <lastmod>2024-03-27T21:35:35+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/publication_types/3/</loc>
     <lastmod>2024-03-27T08:38:16+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/publication/24_hlwcl/</loc>
     <lastmod>2024-03-27T08:38:16+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/authors/</loc>
     <lastmod>2024-03-27T08:38:16+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/authors/c.-c.-chang/</loc>
     <lastmod>2024-03-27T08:38:16+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/authors/c.-y.-dai/</loc>
     <lastmod>2024-03-27T08:38:16+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/authors/m.-c.-lai/</loc>
     <lastmod>2024-03-27T08:38:16+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/publication_types/</loc>
     <lastmod>2024-03-27T08:38:16+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/authors/t.-s.-lin/</loc>
     <lastmod>2024-03-27T08:38:16+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/authors/w.-f.-hu/</loc>
     <lastmod>2024-03-27T08:38:16+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/publication_types/2/</loc>
     <lastmod>2024-03-27T08:38:16+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/authors/a.-farutin/</loc>
     <lastmod>2024-03-27T08:38:16+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/authors/c.-misbah/</loc>
     <lastmod>2024-03-27T08:38:16+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/authors/m.s.-rizvi/</loc>
     <lastmod>2024-03-27T08:38:16+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/publication/23_epje_frhlrm/</loc>
     <lastmod>2024-03-27T08:38:16+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/authors/s.-rafai/</loc>
     <lastmod>2024-03-27T08:38:16+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/authors/t.s.-lin/</loc>
     <lastmod>2024-03-27T08:38:16+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/categories/</loc>
     <lastmod>2023-12-20T16:19:44+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/tags/least-square/</loc>
     <lastmod>2023-12-20T16:19:44+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/post/2023_la_least_square_2/</loc>
     <lastmod>2023-12-20T16:19:44+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/categories/linear-algebra/</loc>
     <lastmod>2023-12-20T16:19:44+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/categories/notes/</loc>
     <lastmod>2023-12-20T16:19:44+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/tags/</loc>
     <lastmod>2023-12-20T16:19:44+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/categories/calculus/</loc>
     <lastmod>2023-12-20T16:19:44+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/categories/computational-mathematics/</loc>
     <lastmod>2023-12-20T16:19:44+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/tags/dimension_reduction/</loc>
     <lastmod>2023-12-20T16:19:44+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/post/2023_gibbs_phenomenon/</loc>
     <lastmod>2023-12-20T16:19:44+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/categories/machine_learning/</loc>
     <lastmod>2023-12-20T16:19:44+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/tags/pca/</loc>
     <lastmod>2023-12-20T16:19:44+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/tags/python/</loc>
     <lastmod>2023-12-20T16:19:44+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/tags/unsupervised_learning/</loc>
     <lastmod>2023-12-20T16:19:44+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/post/2023_principal_component_analysis_0/</loc>
     <lastmod>2023-12-20T16:19:44+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/post/2023_principal_component_analysis_01/</loc>
     <lastmod>2023-12-20T16:19:44+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/post/2023_la_least_square_1/</loc>
     <lastmod>2023-12-20T16:19:44+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/authors/c.-s.-chang/</loc>
     <lastmod>2024-03-27T08:38:16+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/publication/24_hll/</loc>
     <lastmod>2024-03-27T08:38:16+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/authors/s.-c.-wang/</loc>
     <lastmod>2024-03-27T08:38:16+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/publication/24_cdhll/</loc>
     <lastmod>2024-03-27T08:38:16+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/authors/y.-c.-ho/</loc>
     <lastmod>2024-03-27T08:38:16+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/authors/y.-t.-lin/</loc>
     <lastmod>2024-03-27T08:38:16+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/tags/determinant/</loc>
     <lastmod>2023-11-16T20:35:50+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/tags/eigenvalue/</loc>
     <lastmod>2023-11-16T20:35:50+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/tags/trace/</loc>
     <lastmod>2023-11-16T20:35:50+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/post/2023_la_det_trace_zh/</loc>
     <lastmod>2023-11-16T20:35:50+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/tags/euler-equations/</loc>
     <lastmod>2023-11-16T20:35:50+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/post/2023_ode_euler_en/</loc>
     <lastmod>2023-11-16T20:35:50+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/post/2023_ode_euler_zh/</loc>
     <lastmod>2023-11-16T20:35:50+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/categories/ode/</loc>
     <lastmod>2023-11-16T20:35:50+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/tags/variation-of-parameters/</loc>
     <lastmod>2023-11-16T20:35:50+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/publication/23_jcp_tlhl/</loc>
     <lastmod>2023-08-05T23:53:53+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/authors/y.-h.-tseng/</loc>
     <lastmod>2023-08-05T23:53:53+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/publication/23_jc_tchlc/</loc>
     <lastmod>2023-08-05T23:53:53+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/authors/d.-y.-huang/</loc>
     <lastmod>2023-08-05T23:53:53+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/authors/j.-j.-tsai/</loc>
     <lastmod>2023-08-05T23:53:53+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/authors/y.-c.-chen/</loc>
     <lastmod>2023-08-05T23:53:53+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/publication/23_cicp_hltl/</loc>
     <lastmod>2023-08-05T23:53:53+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/tags/power-method/</loc>
     <lastmod>2023-05-24T21:33:53+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/post/2023_power_method_3/</loc>
     <lastmod>2023-04-29T12:37:53+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/tags/rayleigh-quotient/</loc>
     <lastmod>2023-04-29T12:37:53+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/tags/annihilation/</loc>
     <lastmod>2023-05-24T21:33:53+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/tags/eigendecomposition/</loc>
     <lastmod>2023-05-24T21:33:53+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/tags/matrix-transformation/</loc>
     <lastmod>2023-05-24T21:33:53+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/post/2023_power_method_2/</loc>
     <lastmod>2023-05-24T21:33:53+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/tags/conjugate-gradient-method/</loc>
     <lastmod>2023-04-29T12:37:53+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/post/2023_conjugate_gradient_method_2/</loc>
     <lastmod>2023-04-29T12:37:53+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/tags/inverse-power-method/</loc>
     <lastmod>2023-05-24T21:33:53+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/post/2023_power_method_1/</loc>
     <lastmod>2023-05-24T21:33:53+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/tags/shift-inverse-power-method/</loc>
     <lastmod>2023-05-24T21:33:53+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/post/2023_conjugate_gradient_method_1/</loc>
     <lastmod>2023-04-29T12:37:53+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/courses/2023_summer_research/</loc>
     <lastmod>2023-05-24T21:33:53+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/authors/d.-tseluiko/</loc>
     <lastmod>2023-08-05T23:53:53+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/authors/m.-blyth/</loc>
     <lastmod>2023-08-05T23:53:53+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/publication/23_jfm_blt/</loc>
     <lastmod>2023-08-05T23:53:53+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/publication/24_cmame_hsll/</loc>
     <lastmod>2023-12-19T18:31:49+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/authors/y.-j.-shih/</loc>
     <lastmod>2023-12-19T18:31:49+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/publication/22_jfm_frhlrm/</loc>
     <lastmod>2023-08-05T23:53:53+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/publication/22_jcp_hll/</loc>
     <lastmod>2023-08-05T23:53:53+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/publication/22_jcp_lclhl/</loc>
     <lastmod>2023-08-05T23:53:53+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/authors/w.-s.-lin/</loc>
     <lastmod>2023-08-05T23:53:53+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/courses/2022_summer_research/</loc>
     <lastmod>2023-04-15T08:00:00+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/publication/22_prf_hlrm/</loc>
     <lastmod>2023-08-05T23:53:53+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/post/2021_diffusion_maps/</loc>
     <lastmod>2021-08-14T13:06:03+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/tags/julia/</loc>
     <lastmod>2021-08-14T13:06:03+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/tags/manifold_learning/</loc>
     <lastmod>2021-08-14T13:06:03+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/categories/notes_julia/</loc>
     <lastmod>2021-08-14T13:06:03+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/authors/j.a.-dijksman/</loc>
     <lastmod>2023-08-05T23:53:53+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/authors/l.-kondic/</loc>
     <lastmod>2023-08-05T23:53:53+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/publication/21_jfm_ldk/</loc>
     <lastmod>2023-08-05T23:53:53+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/courses/2021_summer_research/</loc>
     <lastmod>2023-04-15T08:00:00+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/post/2020_principal_component_analysis_2/</loc>
     <lastmod>2020-12-22T15:24:32+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/tags/mds/</loc>
     <lastmod>2021-05-19T15:56:41+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/post/2020_multi_dimensional_scaling/</loc>
     <lastmod>2021-05-19T15:56:41+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/post/2020_principal_component_analysis/</loc>
     <lastmod>2020-12-22T15:24:32+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/courses/gsw/</loc>
     <lastmod>2020-12-22T15:24:32+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/publication/20_non_talt/</loc>
     <lastmod>2020-07-23T20:40:22+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/authors/m.-alesemi/</loc>
     <lastmod>2020-07-23T20:40:22+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/authors/u.-thiele/</loc>
     <lastmod>2020-07-23T20:40:22+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/courses/taught/</loc>
     <lastmod>2024-03-27T08:38:16+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/courses/students/</loc>
     <lastmod>2023-11-02T10:41:03+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/tags/applied-project/</loc>
     <lastmod>2021-01-06T20:32:48+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/tags/derivative/</loc>
     <lastmod>2021-01-06T20:32:48+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/tags/optimization/</loc>
     <lastmod>2021-07-08T01:53:31+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/post/2020_cal_s10p3_ch/</loc>
     <lastmod>2020-06-22T21:15:45+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/post/2020_cal_s14p7/</loc>
     <lastmod>2021-01-06T20:32:48+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/post/2020_cal_s14p7_ch/</loc>
     <lastmod>2021-01-06T20:32:48+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/authors/%E6%9D%8E%E5%AD%9F%E6%A3%8B/</loc>
     <lastmod>2021-01-06T20:32:48+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/authors/%E6%9F%AF%E5%AD%9F%E6%9D%B0/</loc>
     <lastmod>2021-01-06T20:32:48+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/authors/%E9%BB%83%E4%BB%95%E8%8C%B5/</loc>
     <lastmod>2021-01-06T20:32:48+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/post/2020_numerical_integration_4/</loc>
     <lastmod>2023-11-02T10:41:03+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/tags/numerical_integration/</loc>
     <lastmod>2023-11-02T10:41:03+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/tags/quadrature/</loc>
     <lastmod>2023-11-02T10:41:03+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/post/2020_cal_s3p5/</loc>
     <lastmod>2021-01-06T20:32:48+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/post/2020_cal_s3p5_ch/</loc>
     <lastmod>2021-01-06T20:32:48+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/authors/%E6%9E%97%E6%9B%B8%E7%B7%AF/</loc>
     <lastmod>2021-01-06T20:32:48+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/categories/probability/</loc>
     <lastmod>2020-08-03T22:32:19+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/post/2020_coin_problem/</loc>
     <lastmod>2020-08-03T22:32:19+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/authors/%E9%8D%BE%E4%BF%8A%E5%84%92/</loc>
     <lastmod>2020-08-03T22:32:19+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/tags/iteration/</loc>
     <lastmod>2021-07-08T01:53:31+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/post/2020_lagrange_multiplier/</loc>
     <lastmod>2021-04-16T08:47:24+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/post/2020_lagrange_multiplier_2/</loc>
     <lastmod>2021-07-08T01:53:31+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/post/2020_lagrange_multiplier_3/</loc>
     <lastmod>2021-04-16T08:47:24+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/tags/multiplier/</loc>
     <lastmod>2021-07-08T01:53:31+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/post/2020_cal_s15p8/</loc>
     <lastmod>2021-01-06T20:32:48+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/post/2020_cal_s15p8_ch/</loc>
     <lastmod>2021-01-06T20:32:48+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/authors/%E5%BC%B5%E5%89%B5%E6%B8%9D/</loc>
     <lastmod>2021-01-06T20:32:48+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/authors/%E6%9E%97%E8%83%A4%E8%BE%B0/</loc>
     <lastmod>2021-01-06T20:32:48+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/post/2020_cal_s5p2/</loc>
     <lastmod>2020-06-12T22:14:24+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/post/2020_cal_s5p2_ch/</loc>
     <lastmod>2020-06-12T22:14:24+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/authors/%E5%BD%AD%E6%9F%8F%E6%A3%A3/</loc>
     <lastmod>2020-06-12T22:14:24+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/authors/%E7%B0%A1%E7%91%80%E9%8B%85/</loc>
     <lastmod>2020-06-12T22:14:24+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/post/2020_numerical_integration_2/</loc>
     <lastmod>2020-06-03T09:21:29+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/post/2020_numerical_integration_3/</loc>
     <lastmod>2020-08-03T22:32:19+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/post/2020_cal_s13p4/</loc>
     <lastmod>2021-01-06T20:32:48+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/post/2020_cal_s13p4_ch/</loc>
     <lastmod>2021-01-06T20:32:48+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/authors/%E8%AC%9D%E6%89%BF%E4%BF%AE/</loc>
     <lastmod>2021-01-06T20:32:48+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/post/2020_cal_s14p4/</loc>
     <lastmod>2021-01-06T20:32:48+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/post/2020_cal_s14p4_ch/</loc>
     <lastmod>2021-01-06T20:32:48+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/authors/%E7%8E%8B%E6%98%B1%E7%BF%94/</loc>
     <lastmod>2021-01-06T20:32:48+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/post/2020_cal_s12p4/</loc>
     <lastmod>2021-01-06T20:32:48+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/post/2020_cal_s12p4_ch/</loc>
     <lastmod>2021-01-06T20:32:48+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/authors/%E6%9E%97%E7%B6%AD%E5%BE%B7/</loc>
     <lastmod>2021-01-06T20:32:48+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/post/2020_cal_s3p1_ch/</loc>
     <lastmod>2021-01-06T20:32:48+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/authors/%E9%99%B3%E6%98%B1%E6%8F%9A/</loc>
     <lastmod>2021-01-06T20:32:48+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/post/2020_cal_s6p5/</loc>
     <lastmod>2021-01-06T20:32:48+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/post/2020_cal_s6p5_ch/</loc>
     <lastmod>2021-01-06T20:32:48+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/authors/%E9%84%92%E7%BF%94%E5%82%91/</loc>
     <lastmod>2021-01-06T20:32:48+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/authors/%E9%BB%83%E7%AB%8B%E5%9D%87/</loc>
     <lastmod>2021-01-06T20:32:48+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/courses/2020_summer_research/</loc>
     <lastmod>2023-04-15T08:00:00+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/post/2020_cal_s11p11/</loc>
     <lastmod>2021-01-06T20:32:48+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/post/2020_cal_s11p11_ch/</loc>
     <lastmod>2021-01-06T20:32:48+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/authors/%E9%99%B3%E5%86%A0%E7%91%9C/</loc>
     <lastmod>2021-01-06T20:32:48+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/authors/%E9%99%B3%E9%BA%92%E8%81%BF/</loc>
     <lastmod>2021-01-06T20:32:48+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/post/2020_cal_s8p3_ch/</loc>
     <lastmod>2021-01-06T20:32:48+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/post/2020_cal_s9p3_2/</loc>
     <lastmod>2021-01-06T20:32:48+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/post/2020_cal_s9p3_2_ch/</loc>
     <lastmod>2021-01-06T20:32:48+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/authors/%E7%B0%A1%E5%AD%90%E8%88%9C/</loc>
     <lastmod>2021-01-06T20:32:48+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/authors/%E9%84%AD%E5%AE%87%E7%9A%93/</loc>
     <lastmod>2021-01-06T20:32:48+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/post/2020_cal_s4p1_ch/</loc>
     <lastmod>2021-01-06T20:32:48+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/authors/%E5%90%B3%E6%80%9D%E8%AB%AD/</loc>
     <lastmod>2021-01-06T20:32:48+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/post/2020_cal_s4p1/</loc>
     <lastmod>2021-01-06T20:32:48+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/post/2020_cal_s4p7_2_ch/</loc>
     <lastmod>2021-01-06T20:32:48+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/authors/%E6%9D%8E%E5%85%81%E6%B6%B5/</loc>
     <lastmod>2021-01-06T20:32:48+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/post/2020_cal_s3p10/</loc>
     <lastmod>2021-01-06T20:32:48+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/post/2020_cal_s8p3/</loc>
     <lastmod>2021-01-06T20:32:48+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/tags/series/</loc>
     <lastmod>2021-01-06T20:32:48+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/tags/taylor/</loc>
     <lastmod>2021-01-06T20:32:48+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/authors/%E5%8A%89%E7%A1%AF%E8%8A%B8/</loc>
     <lastmod>2021-01-06T20:32:48+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/post/2020_cal_s3p1/</loc>
     <lastmod>2021-01-06T20:32:48+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/post/2020_cal_s4p7_ch/</loc>
     <lastmod>2021-01-06T20:32:48+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/authors/%E6%A5%8A%E6%98%A0%E6%B8%9D/</loc>
     <lastmod>2021-01-06T20:32:48+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/post/2020_cal_s3p10_ch/</loc>
     <lastmod>2021-01-06T20:32:48+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/authors/%E6%9B%B9%E7%91%8B/</loc>
     <lastmod>2021-01-06T20:32:48+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/tags/polynomial/</loc>
     <lastmod>2021-01-06T20:32:48+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/post/2020_cal_s3p4_ch/</loc>
     <lastmod>2021-01-06T20:32:48+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/authors/%E5%91%82%E5%BB%BA%E9%9C%86/</loc>
     <lastmod>2021-01-06T20:32:48+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/post/2020_cal2_s11p1_e79/</loc>
     <lastmod>2020-03-06T20:28:57+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/tags/sequence/</loc>
     <lastmod>2020-03-06T20:28:57+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/tags/graph/</loc>
     <lastmod>2020-03-03T21:33:34+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/tags/polar/</loc>
     <lastmod>2020-03-03T21:33:34+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/post/2020_polar_graph_ex1/</loc>
     <lastmod>2020-03-03T21:33:34+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/publication/20_jcp_lhm/</loc>
     <lastmod>2023-08-05T23:53:53+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/publication_types/1/</loc>
     <lastmod>2020-03-02T19:56:58+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/authors/c.-y.-he/</loc>
     <lastmod>2020-03-02T19:56:58+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/publication/20_amsa_lhh/</loc>
     <lastmod>2020-03-02T19:56:58+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/post/2019_cal_s4p7_2/</loc>
     <lastmod>2021-01-06T20:32:48+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/authors/%E6%9F%B4%E4%BF%8A%E8%B1%AA/</loc>
     <lastmod>2021-01-06T20:32:48+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/post/2020_julia_plots/</loc>
     <lastmod>2020-06-03T09:21:29+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/post/2020_julia_timing/</loc>
     <lastmod>2020-06-03T09:21:29+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/post/2019_cal_s4p7/</loc>
     <lastmod>2021-01-06T20:32:48+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/post/2019_numerical_integration/</loc>
     <lastmod>2020-06-03T09:21:29+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/tags/antiderivative/</loc>
     <lastmod>2020-08-03T22:32:19+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/tags/indefinite-integral/</loc>
     <lastmod>2020-08-03T22:32:19+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/post/2019_indef_integ/</loc>
     <lastmod>2020-08-03T22:32:19+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/publication/19_prl_hlrm/</loc>
     <lastmod>2019-12-10T10:30:49+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/post/2019_cal_s3p4/</loc>
     <lastmod>2021-01-06T20:32:48+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/authors/%E9%BB%83%E7%AB%8B%E9%88%9E/</loc>
     <lastmod>2021-01-06T20:32:48+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/tags/continuous/</loc>
     <lastmod>2020-05-23T10:34:34+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/tags/differentiable/</loc>
     <lastmod>2020-05-23T10:34:34+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/post/2019_fixed_point/</loc>
     <lastmod>2020-05-23T10:34:34+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/tags/iteration_method/</loc>
     <lastmod>2020-05-23T10:34:34+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/tags/root_finding/</loc>
     <lastmod>2020-05-23T10:34:34+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/tags/git/</loc>
     <lastmod>2019-12-10T10:30:49+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/post/2019_git/</loc>
     <lastmod>2019-12-10T10:30:49+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/tags/asymptote/</loc>
     <lastmod>2023-02-26T11:03:17+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/tags/extreme/</loc>
     <lastmod>2019-10-30T16:06:12+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/tags/function/</loc>
     <lastmod>2020-06-07T22:45:19+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/post/2019_julia/</loc>
     <lastmod>2020-05-23T10:34:34+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/tags/latex/</loc>
     <lastmod>2020-05-06T12:16:23+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/tags/markdown/</loc>
     <lastmod>2020-05-06T12:16:23+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/post/2019_markdown/</loc>
     <lastmod>2020-05-06T12:16:23+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/post/2019_maxmin/</loc>
     <lastmod>2019-10-30T16:06:12+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/post/2019_slant_asymp/</loc>
     <lastmod>2023-02-26T11:03:17+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/tags/limit/</loc>
     <lastmod>2020-06-07T22:45:19+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/tags/rounding-error/</loc>
     <lastmod>2020-06-07T22:45:19+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/post/2019_derivate_evaluate/</loc>
     <lastmod>2020-06-07T22:45:19+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/post/2019_limit_evaluate/</loc>
     <lastmod>2020-06-07T22:45:19+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/authors/m.-g.-blyth/</loc>
     <lastmod>2019-12-10T10:30:49+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/authors/s.-kalliadasis/</loc>
     <lastmod>2020-03-02T19:56:58+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/publication/18_jfm_btlk/</loc>
     <lastmod>2019-12-10T10:30:49+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/publication/18_aml_ltbk/</loc>
     <lastmod>2019-12-10T10:30:49+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/publication/16_pof_lrtt/</loc>
     <lastmod>2019-12-10T10:30:49+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/authors/s.-rogers/</loc>
     <lastmod>2019-12-10T10:30:49+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/authors/a.-heuer/</loc>
     <lastmod>2019-10-30T09:09:14+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/authors/c.-honisch/</loc>
     <lastmod>2019-10-30T09:09:14+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/publication/15_lang_hlhtg/</loc>
     <lastmod>2019-10-30T09:09:14+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/authors/s.-gurevich/</loc>
     <lastmod>2019-10-30T09:09:14+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/authors/l.-j.-cummings/</loc>
     <lastmod>2019-10-30T09:09:14+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/authors/m.-a.-lam/</loc>
     <lastmod>2019-10-30T09:09:14+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/publication/15_ejam_lclk/</loc>
     <lastmod>2019-10-30T09:09:14+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/publication/15_sjam_lpkpt/</loc>
     <lastmod>2019-10-30T09:09:14+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/authors/d.-t.-papageorgiou/</loc>
     <lastmod>2019-10-30T09:09:14+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/authors/m.-pradas/</loc>
     <lastmod>2019-10-30T09:09:14+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/publication/14_jem_lclk/</loc>
     <lastmod>2019-10-30T09:09:14+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/publication/14_iutam_ltk/</loc>
     <lastmod>2020-03-02T19:56:58+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/authors/a.-j.-archer/</loc>
     <lastmod>2019-10-30T09:09:14+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/publication/13_pof_lcakt/</loc>
     <lastmod>2019-10-30T09:09:14+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/publication/13_jfm_lktc/</loc>
     <lastmod>2019-10-30T09:09:14+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/authors/a.-filippov/</loc>
     <lastmod>2020-07-04T10:51:36+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/publication/12_pof_lkf/</loc>
     <lastmod>2020-07-04T10:51:36+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/publication/12_pre_lkc/</loc>
     <lastmod>2019-10-30T09:09:14+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/tags/contact-line/</loc>
     <lastmod>2019-10-30T09:09:14+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/tags/lubrication-approximation/</loc>
     <lastmod>2019-10-30T09:09:14+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/publication/11_pof_clk/</loc>
     <lastmod>2019-10-30T09:09:14+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/tags/nematic-liquid-crystals/</loc>
     <lastmod>2019-10-30T09:09:14+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/tags/thin-films/</loc>
     <lastmod>2019-10-30T09:09:14+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/publication/10_pof_lk/</loc>
     <lastmod>2020-07-04T10:51:36+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/publication/04_nmpde_lhl/</loc>
     <lastmod>2020-07-04T10:51:36+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/authors/c.-y.-huang/</loc>
     <lastmod>2020-07-04T10:51:36+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/authors/admin/</loc>
     <lastmod>2024-03-27T08:38:16+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
+    <loc>https://teshenglin.github.io/courses/2016fall_colloquium/</loc>
+    <lastmod>2023-03-02T11:36:59+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://teshenglin.github.io/courses/2016spring_colloquium/</loc>
+    <lastmod>2023-03-02T11:36:59+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://teshenglin.github.io/courses/2019fall_colloquium/</loc>
+    <lastmod>2023-03-02T11:36:59+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/post/</loc>
     <lastmod>2019-05-06T17:54:11+01:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/publication/</loc>
     <lastmod>2019-10-29T01:04:41+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/talk/</loc>
     <lastmod>2019-05-06T17:54:11+01:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/courses/summer_research/</loc>
     <lastmod>2024-03-27T08:38:16+08:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
+    <loc>https://teshenglin.github.io/</loc>
+    <lastmod>2019-03-17T20:39:18+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/courses/</loc>
     <lastmod>2020-08-30T22:35:50+08:00</lastmod>
   </url>
+  
 </urlset>

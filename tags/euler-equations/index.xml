@@ -7,7 +7,7 @@
     <description>Euler equations</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 14 Nov 2023 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <url>https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
       <title>Euler equations</title>
       <link>https://teshenglin.github.io/tags/euler-equations/</link>
     </image>
@@ -21,7 +21,7 @@
 &lt;p&gt;Here, we consider Euler equations:
 $$
 \tag{1}
-x^2 y&#39;&#39; + a xy&#39; + by = 0, \quad x\ne 0,
+x^2 y&amp;rsquo;&amp;rsquo; + a xy&amp;rsquo; + by = 0, \quad x\ne 0,
 $$
 where $a$, $b$ are constants.&lt;/p&gt;
 &lt;h2 id=&#34;characteristic-polynomial&#34;&gt;characteristic polynomial&lt;/h2&gt;
@@ -68,7 +68,7 @@ where $c_1$, $c_2$ are constant.&lt;/p&gt;
 &lt;p&gt;Suppose there is only one root with multiplicity $2$, the characteristic polynomial must be in the form $(r-r_1)^2$, so that, by direct comparison with (2), we have $a = 1-2r_1$ and $b=r^2_1$. That is, Euler equation is given by&lt;/p&gt;
 &lt;p&gt;$$
 \tag{5}
-x^2 y&#39;&#39; + (1 - 2r_1) xy&#39; + r^2_1 y = 0.
+x^2 y&amp;rsquo;&amp;rsquo; + (1 - 2r_1) xy&amp;rsquo; + r^2_1 y = 0.
 $$&lt;/p&gt;
 &lt;p&gt;On the other hand, $y_1 = x^{r_1}$ must be a solution, and it is easy to check that $y_1$ satisfies the following 1st-order ODE:&lt;/p&gt;
 &lt;p&gt;$$
@@ -96,7 +96,7 @@ $$&lt;/p&gt;
 &lt;p&gt;Based on the idea of variation of parameters, since we have one solution being $x^{r_1}$, we can assume that $y_2 =  x^{r_1}u(x)$ and pluging-in to (8). It turns out that $u(x)$ should satisfy&lt;/p&gt;
 &lt;p&gt;$$
 \tag{9}
-xu&#39; = cu,
+xu&amp;rsquo; = cu,
 $$
 and the solution is $u(x) = c\ln(x)$. Therefore, we have $y_2=x^{r_1}\ln(x)$.&lt;/p&gt;
 &lt;p&gt;Finally, the general solution is&lt;/p&gt;
@@ -118,7 +118,7 @@ where $c_1$, $c_2$ are constant.&lt;/p&gt;
 &lt;p&gt;這裡我們想要解 Euler equations, 長相如下:
 $$
 \tag{1}
-x^2 y&#39;&#39; + a xy&#39; + by = 0,
+x^2 y&amp;rsquo;&amp;rsquo; + a xy&amp;rsquo; + by = 0,
 $$
 其中 $a$, $b$ 為常數.&lt;/p&gt;
 &lt;h2 id=&#34;characteristic-polynomial&#34;&gt;characteristic polynomial&lt;/h2&gt;
@@ -166,7 +166,7 @@ $$
 &lt;p&gt;假設 (2) 有一個重根, 那特徵多項式一定是長這樣 $(r-r_1)^2$. 直接跟 (2) 做比較我們就會發現 $a = 1-2r_1$, $b=r^2_1$. 也就是說, Euler equation 會長得像這樣子&lt;/p&gt;
 &lt;p&gt;$$
 \tag{5}
-x^2 y&#39;&#39; + (1 - 2r_1) xy&#39; + r^2_1 y = 0.
+x^2 y&amp;rsquo;&amp;rsquo; + (1 - 2r_1) xy&amp;rsquo; + r^2_1 y = 0.
 $$&lt;/p&gt;
 &lt;p&gt;接著我們來對這個式子做因式分解. 首先觀察, 由於 $y_1 = x^{r_1}$ 一定是個解, 因此我們來看一下這個解會滿足的方程式長怎樣. 直接微分得到&lt;/p&gt;
 &lt;p&gt;$$
@@ -198,7 +198,7 @@ $$&lt;/p&gt;
 &lt;p&gt;根據 method of variation of parameters 的想法, 如果我們已經得到一個解 $x^{r_1}$, 那另一個解可以直接假設為 $y_2 = x^{r_1}u(x)$. 將這個假設代入 (8) 得到 $u$ 所要滿足的方程為&lt;/p&gt;
 &lt;p&gt;$$
 \tag{9}
-xu&#39; = cu.
+xu&amp;rsquo; = cu.
 $$&lt;/p&gt;
 &lt;p&gt;這個方程的解為 $u(x) = c\ln(x)$. 因此, 我們得到 $y_2=x^{r_1}\ln(x)$.&lt;/p&gt;
 &lt;p&gt;最後, (1) 的通解就可以被寫為&lt;/p&gt;
