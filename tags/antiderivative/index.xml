@@ -7,7 +7,7 @@
     <description>antiderivative</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Wed, 04 Dec 2019 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <url>https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
       <title>antiderivative</title>
       <link>https://teshenglin.github.io/tags/antiderivative/</link>
     </image>
@@ -52,7 +52,7 @@ $$
 $$
 其中 $c$ 是任意常數. 那上列這個式子的等號是什麼意思?&lt;/p&gt;
 &lt;p&gt;我們都知道 $\sin(x)$ 加上任意常數, 其微分都會是 $\cos(x)$, 所以我們才有這個式子. 也就是說, 上面這個等號就是這個意思!!&lt;/p&gt;
-&lt;p&gt;再說清楚一點, 當我們寫 $\int f(x)\ dx = F(x)$ 時意思就是 $F&amp;rsquo;(x) = f(x)$.&lt;/p&gt;
+&lt;p&gt;再說清楚一點, 當我們寫 $\int f(x)\ dx = F(x)$ 時意思就是 $F&#39;(x) = f(x)$.&lt;/p&gt;
 &lt;p&gt;所以回到原文最後一個式子, 我把它在這裡重列一次
 $$
 \int \tan(x)\ dx  = -1 + \int\tan(x)\ dx.
@@ -61,7 +61,7 @@ $$
 $$
 \int \tan(x)\ dx  = -1 + F(x).
 $$
-我們知道這個式子也是對的因為 $(F(x)-1)&amp;rsquo; = \tan(x)$. 所以從這個角度來說, 這整個式子就都沒有問題了.&lt;/p&gt;
+我們知道這個式子也是對的因為 $(F(x)-1)&#39; = \tan(x)$. 所以從這個角度來說, 這整個式子就都沒有問題了.&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;所以最後一個問題是, 我們可以把東西減掉嗎? 舉例來說,
 $$
