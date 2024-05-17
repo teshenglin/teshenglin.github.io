@@ -217,8 +217,8 @@
   
 
   <link rel="manifest" href="/index.webmanifest">
-  <link rel="icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_3.png">
-  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_3.png">
+  <link rel="icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_2.png">
 
   <link rel="canonical" href="https://teshenglin.github.io/post/2020_julia_plots/">
 
@@ -236,8 +236,8 @@
   <meta property="og:site_name" content="Te-Sheng Lin">
   <meta property="og:url" content="https://teshenglin.github.io/post/2020_julia_plots/">
   <meta property="og:title" content="Julia 學習筆記 - 畫圖 | Te-Sheng Lin">
-  <meta property="og:description" content="延伸閱讀: Julia 學習筆記 - 簡介, 畫圖, 計時 底下的幾個例子我們將學習怎麼使用繪圖指令. 畫圖的時候我們會用到 Plots 這個 package，因此在第一行我們需"><meta property="og:image" content="https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png">
-  <meta property="twitter:image" content="https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png"><meta property="og:locale" content="en-us">
+  <meta property="og:description" content="延伸閱讀: Julia 學習筆記 - 簡介, 畫圖, 計時 底下的幾個例子我們將學習怎麼使用繪圖指令. 畫圖的時候我們會用到 Plots 這個 package，因此在第一行我們需"><meta property="og:image" content="https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png">
+  <meta property="twitter:image" content="https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png"><meta property="og:locale" content="en-us">
   
     
       <meta property="article:published_time" content="2020-01-01T00:00:00&#43;00:00">
@@ -283,7 +283,7 @@
     "name": "Te-Sheng Lin",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_3.png"
+      "url": "https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_2.png"
     }
   },
   "description": "延伸閱讀: Julia 學習筆記 - 簡介, 畫圖, 計時 底下的幾個例子我們將學習怎麼使用繪圖指令. 畫圖的時候我們會用到 Plots 這個 package，因此在第一行我們需"
@@ -417,7 +417,7 @@
             
               <a class="dropdown-item" href="/#experience"><span>Appointments </span></a>
             
-              <a class="dropdown-item" href="/#publications"><span>Publications</span></a>
+              <a class="dropdown-item" href="/publication"><span>Publications</span></a>
             
           </div>
         </li>
@@ -610,7 +610,7 @@
 <p>底下的幾個例子我們將學習怎麼使用繪圖指令.</p>
 </blockquote>
 <p>畫圖的時候我們會用到 <code>Plots</code> 這個 package，因此在第一行我們需要加上：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-julia" data-lang="julia"><span style="color:#66d9ef">using</span> Plots
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-julia" data-lang="julia"><span style="color:#66d9ef">using</span> Plots
 </code></pre></div><p>以下我們舉幾個簡單的範例來看看如何操作.</p>
 <p><strong>Remark:</strong> <code>Plots</code> 這個 package 完整的說明請見 
 <a href="http://docs.juliaplots.org/latest/" target="_blank" rel="noopener">Plots</a></p>
@@ -623,7 +623,7 @@
 <li>最後用 label 標註函數圖形。注意要把標註的文字放在 &quot; &quot; 中。</li>
 </ol>
 <p>另外，也可以畫 $e^x$、$arcsin(x)$ 這些基本函數。</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-julia" data-lang="julia">plot(sin, <span style="color:#f92672">-</span>pi, pi, label<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;sine function&#34;</span>)
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-julia" data-lang="julia">plot(sin, <span style="color:#f92672">-</span>pi, pi, label<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;sine function&#34;</span>)
 </code></pre></div>
 
 
@@ -658,7 +658,7 @@
 <li>$\sin(x)$ 的反函數 $arcsin(x)$ 的指令為 asin。</li>
 <li>函數的範圍為 $-1 &lt; x &lt; 1$。</li>
 </ol>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-julia" data-lang="julia">plot(asin, <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">1</span>, label<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;arcsine function&#34;</span>)
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-julia" data-lang="julia">plot(asin, <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">1</span>, label<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;arcsine function&#34;</span>)
 </code></pre></div>
 
 
@@ -704,23 +704,23 @@
 </ol>
 <p>由 (x,y,z) 的定義方式我們知道它是一個螺旋線，螺旋的半徑從 0 一直增加到 $8 \pi$。角度也是從 0 到 $8 \pi$，所以總共繞了4圈。
 在 plot 指令中我們用 marker 選擇圖形的樣式為圓圈(circle)，legend=false 代表不標記圖形。</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-julia" data-lang="julia">N <span style="color:#f92672">=</span> <span style="color:#ae81ff">200</span>;
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-julia" data-lang="julia">N <span style="color:#f92672">=</span> <span style="color:#ae81ff">200</span>;
 Δt <span style="color:#f92672">=</span> <span style="color:#ae81ff">8</span><span style="color:#f92672">*</span>π<span style="color:#f92672">/</span>N;
 n<span style="color:#f92672">=</span> <span style="color:#ae81ff">0.0</span><span style="color:#f92672">:</span>N;
 ti <span style="color:#f92672">=</span> Δt<span style="color:#f92672">*</span>n
 x <span style="color:#f92672">=</span> ti<span style="color:#f92672">.*</span>cos<span style="color:#f92672">.</span>(ti);
 y <span style="color:#f92672">=</span> ti<span style="color:#f92672">.*</span>sin<span style="color:#f92672">.</span>(ti);
 z <span style="color:#f92672">=</span> ti;
-plot(x, y, z, marker<span style="color:#f92672">=</span><span style="color:#e6db74">:circle</span>, legend<span style="color:#f92672">=</span>false)
+plot(x, y, z, marker<span style="color:#f92672">=:</span>circle, legend<span style="color:#f92672">=</span><span style="color:#66d9ef">false</span>)
 </code></pre></div><p><img src="/post/figs/output_9_0.svg" alt="svg"></p>
 <p>另外, 可以用 <code>camera</code> 這個指令來調整 3D 視角, 裡面數字是角度 (方位角azimuth, 高度角altitude).</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-julia" data-lang="julia">plot(x, y, z, marker<span style="color:#f92672">=</span><span style="color:#e6db74">:circle</span>, legend<span style="color:#f92672">=</span>false, camera <span style="color:#f92672">=</span> (<span style="color:#ae81ff">30</span>, <span style="color:#ae81ff">80</span>))
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-julia" data-lang="julia">plot(x, y, z, marker<span style="color:#f92672">=:</span>circle, legend<span style="color:#f92672">=</span><span style="color:#66d9ef">false</span>, camera <span style="color:#f92672">=</span> (<span style="color:#ae81ff">30</span>, <span style="color:#ae81ff">80</span>))
 </code></pre></div><p><img src="/post/figs/output_11_0.svg" alt="svg"></p>
 <p>我們也可以使用指令 <code>plotd3d</code>.</p>
 <ul>
 <li>我們設定 linewidth (lw) 等於 2 以及 legend (leg) 等於 false 表示不標記圖形.</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-julia" data-lang="julia">plot3d(x, y, z, lw<span style="color:#f92672">=</span><span style="color:#ae81ff">2</span>, leg<span style="color:#f92672">=</span>false)
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-julia" data-lang="julia">plot3d(x, y, z, lw<span style="color:#f92672">=</span><span style="color:#ae81ff">2</span>, leg<span style="color:#f92672">=</span><span style="color:#66d9ef">false</span>)
 </code></pre></div><p><img src="/post/figs/output_13_0.svg" alt="svg"></p>
 <hr>
 <h2 id="example-3">Example 3</h2>
@@ -730,7 +730,7 @@ plot(x, y, z, marker<span style="color:#f92672">=</span><span style="color:#e6db
 <li>第一個圖形，x 座標是取整數 1 到 10。y 軸取 0 到 1 之間的亂數，共十個小數。再來，用 plot 指令將第一個圖形畫出。</li>
 <li>第二個圖形，使用相同的 x 座標，函數值 z 取亂數。將第二個函數圖形與第一個圖形重疊，我們需要指令 plot!</li>
 </ol>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-julia" data-lang="julia">x <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span><span style="color:#f92672">:</span><span style="color:#ae81ff">10</span>; y <span style="color:#f92672">=</span> rand(<span style="color:#ae81ff">10</span>);
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-julia" data-lang="julia">x <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span><span style="color:#f92672">:</span><span style="color:#ae81ff">10</span>; y <span style="color:#f92672">=</span> rand(<span style="color:#ae81ff">10</span>);
 plot(x,y)
 z <span style="color:#f92672">=</span> rand(<span style="color:#ae81ff">10</span>)
 plot!(x,z)
@@ -774,10 +774,10 @@ plot!(x,z)
 Line 1 會標記 y 的第一個函數值，Line 2 會標記 y 的第二個函數值。</p>
 <p>x 軸的名稱有兩種設定方式，</p>
 <ol>
-<li>在 plot 指令中加入：xlabel = &ldquo;My x label&rdquo;。 (xlabel 後面不用&quot;!&quot;)</li>
-<li>或是在 plot 指令的下一行用 xlabel!(&ldquo;My x label&rdquo;) 加入。(xlabel! 後面要用&quot;!&quot;)</li>
+<li>在 plot 指令中加入：xlabel = &ldquo;My x label&rdquo;。 (xlabel 後面不用&rdquo;!&quot;)</li>
+<li>或是在 plot 指令的下一行用 xlabel!(&ldquo;My x label&rdquo;) 加入。(xlabel! 後面要用&rdquo;!&quot;)</li>
 </ol>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-julia" data-lang="julia">x <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span><span style="color:#f92672">:</span><span style="color:#ae81ff">10</span>; y <span style="color:#f92672">=</span> rand(<span style="color:#ae81ff">10</span>,<span style="color:#ae81ff">2</span>);
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-julia" data-lang="julia">x <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span><span style="color:#f92672">:</span><span style="color:#ae81ff">10</span>; y <span style="color:#f92672">=</span> rand(<span style="color:#ae81ff">10</span>,<span style="color:#ae81ff">2</span>);
 plot(x,y,title<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Two Lines&#34;</span>,label<span style="color:#f92672">=</span>[<span style="color:#e6db74">&#34;Line 1&#34;</span> <span style="color:#e6db74">&#34;Line 2&#34;</span>],lw<span style="color:#f92672">=</span><span style="color:#ae81ff">3</span>,xlabel <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;My x label&#34;</span>)
 </code></pre></div>
 
@@ -807,7 +807,7 @@ plot(x,y,title<span style="color:#f92672">=</span><span style="color:#e6db74">&#
 
 </figure>
 
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-julia" data-lang="julia">x <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span><span style="color:#f92672">:</span><span style="color:#ae81ff">10</span>; y <span style="color:#f92672">=</span> rand(<span style="color:#ae81ff">10</span>,<span style="color:#ae81ff">2</span>);
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-julia" data-lang="julia">x <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span><span style="color:#f92672">:</span><span style="color:#ae81ff">10</span>; y <span style="color:#f92672">=</span> rand(<span style="color:#ae81ff">10</span>,<span style="color:#ae81ff">2</span>);
 plot(x,y,title<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Two Lines&#34;</span>,label<span style="color:#f92672">=</span>[<span style="color:#e6db74">&#34;Line 1&#34;</span> <span style="color:#e6db74">&#34;Line 2&#34;</span>],lw<span style="color:#f92672">=</span><span style="color:#ae81ff">3</span>)
 xlabel!(<span style="color:#e6db74">&#34;My x label&#34;</span>)
 </code></pre></div>
@@ -846,7 +846,7 @@ xlabel!(<span style="color:#e6db74">&#34;My x label&#34;</span>)
 <li>y 這個矩陣裡包含兩筆資料，x 的取點都是整數 1 到 10。所以可以用 &ldquo;一個&rdquo; 指令把兩筆資料畫出來。令這張圖叫做 p</li>
 <li>z 這筆資料為 0 到 1 中的 19 個亂數，xx 的取點也是19個在 [1, 10] 的均勻取點。所以我們用 plot! 指令，先畫出 p, 再把 z 這筆資料畫上去。</li>
 </ol>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-julia" data-lang="julia">x <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span><span style="color:#f92672">:</span><span style="color:#ae81ff">10</span>; y <span style="color:#f92672">=</span> rand(<span style="color:#ae81ff">10</span>,<span style="color:#ae81ff">2</span>);
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-julia" data-lang="julia">x <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span><span style="color:#f92672">:</span><span style="color:#ae81ff">10</span>; y <span style="color:#f92672">=</span> rand(<span style="color:#ae81ff">10</span>,<span style="color:#ae81ff">2</span>);
 p <span style="color:#f92672">=</span> plot(x,y)
 
 xx <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span><span style="color:#f92672">:</span><span style="color:#ae81ff">19</span>
@@ -892,7 +892,7 @@ plot!(p,xx,z)
 <li>接著我們設定函數 &ldquo;h&rdquo;</li>
 <li>最後, 我們利用指令 <code>surface</code> 來畫曲面.</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-julia" data-lang="julia">x<span style="color:#f92672">=-</span><span style="color:#ae81ff">1</span><span style="color:#f92672">:</span><span style="color:#ae81ff">0.01</span><span style="color:#f92672">:</span><span style="color:#ae81ff">1</span>;
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-julia" data-lang="julia">x<span style="color:#f92672">=-</span><span style="color:#ae81ff">1</span><span style="color:#f92672">:</span><span style="color:#ae81ff">0.01</span><span style="color:#f92672">:</span><span style="color:#ae81ff">1</span>;
 y<span style="color:#f92672">=-</span><span style="color:#ae81ff">1</span><span style="color:#f92672">:</span><span style="color:#ae81ff">0.01</span><span style="color:#f92672">:</span><span style="color:#ae81ff">1</span>;
 h(x,y)<span style="color:#f92672">=</span>exp<span style="color:#f92672">.</span>(<span style="color:#f92672">-</span>(x<span style="color:#f92672">^</span><span style="color:#ae81ff">2</span><span style="color:#f92672">+</span>y<span style="color:#f92672">^</span><span style="color:#ae81ff">2</span>));
 surface(x,y,h)
@@ -929,7 +929,7 @@ surface(x,y,h)
 <p>如果要將很多圖片合在一起做成動畫也是可以, 以下這個簡單例子將動畫存成一個 gif 檔.</p>
 <p>更多細節請見 
 <a href="https://docs.juliaplots.org/latest/animations/" target="_blank" rel="noopener">julia_plots_animations</a></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-julia" data-lang="julia">p <span style="color:#f92672">=</span> plot([sin, cos], zeros(<span style="color:#ae81ff">0</span>), leg<span style="color:#f92672">=</span>false)
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-julia" data-lang="julia">p <span style="color:#f92672">=</span> plot([sin, cos], zeros(<span style="color:#ae81ff">0</span>), leg<span style="color:#f92672">=</span><span style="color:#66d9ef">false</span>)
 anim <span style="color:#f92672">=</span> Animation()
 <span style="color:#66d9ef">for</span> x <span style="color:#f92672">=</span> range(<span style="color:#ae81ff">0</span>, stop<span style="color:#f92672">=</span><span style="color:#ae81ff">10</span>π, length<span style="color:#f92672">=</span><span style="color:#ae81ff">100</span>)
     push!(p, x, <span style="color:#66d9ef">Float64</span>[sin(x), cos(x)])
@@ -1269,7 +1269,7 @@ gif(anim, <span style="color:#e6db74">&#34;sine_cosine.gif&#34;</span>)
     
     
     
-    <script src="/js/academic.min.d49475924c8a1000c804942d870fd31c.js"></script>
+    <script src="/js/academic.min.a8d7005002cb4a052fd6d721e83df9ba.js"></script>
 
     
 
