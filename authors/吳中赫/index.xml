@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>吳中赫 | Te-Sheng Lin</title>
+    <link>http://localhost:1313/authors/%E5%90%B3%E4%B8%AD%E8%B5%AB/</link>
+      <atom:link href="http://localhost:1313/authors/%E5%90%B3%E4%B8%AD%E8%B5%AB/index.xml" rel="self" type="application/rss+xml" />
+    <description>吳中赫</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 21 Apr 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>http://localhost:1313/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <title>吳中赫</title>
+      <link>http://localhost:1313/authors/%E5%90%B3%E4%B8%AD%E8%B5%AB/</link>
+    </image>
+    
+    <item>
+      <title>Sec.9.3 - 水箱排水有多快?</title>
+      <link>http://localhost:1313/post/2020_cal_s9p3_ch/</link>
+      <pubDate>Tue, 21 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/2020_cal_s9p3_ch/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;Applied Project in Sec.9.3, Calculus by Stewart &lt;br&gt;
+英文版請見 
+&lt;a href=&#34;http://localhost:1313/post/2020_cal_s9p3&#34;&gt;How fast does a tank drain?&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;If water (or other liquid) drains from a tank, we expect that the flow will be greatest at first (when the water depth is greatest) and will gradually decrease as the water level decreases. But we need a more precise mathematical description of how the flow decreases in order to answer the kinds of questions that engineers ask: How long does it take for a tank to drain completely? How much water should a tank hold in order to guarantee a certain minimum water pressure for a sprinkler system?&lt;/p&gt;
+&lt;p&gt;Let $h(t)$ and $V(t)$ be the height and volume of water in a tank at time $t$. If water leaks through a hole with area $a$ at the bottom of the tank, then Torricelli’s Law says that
+$$
+\frac{dV}{dt}=-a\sqrt{2gh}, \qquad \qquad \qquad (1)
+$$
+where $g$ is the acceleration due to gravity. So the rate at which water flows from the tank is proportional to the square root of the water height.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Question 1：&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;假設水箱是圓柱形，高 $2(m)$，底面半徑 $1(m)$，排水孔為圓形並且半徑為 $2(cm)$。 假設 $g = 10 (m/s^2)$，證明 $h$ 滿足此微分方程式：
+$$
+\frac{dh}{dt}=-0.0004\sqrt{20h}
+$$&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;假設水箱在 $t=0$ 時是滿的，解出這個方程式，找出在時間 $t$ 時水的高度。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;要花多少時間水才能完全排光?&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;我們知道 $V=\pi r^2h$, 所以
+$$
+\frac{dV}{dt}=\pi r^2\frac{dh}{dt}=\pi \times 1^2 \times \frac{dh}{dt}=\pi\frac{dh}{dt}.
+$$
+排水孔面積是 $2^2\pi (cm^2) = 0.0004\pi (m^2)$. 根據 Torricelli’s Law,
+$$
+\frac{dV}{dt}=-a\sqrt{2gh}=-0.0004\pi \sqrt{20 h}.
+$$
+因此,
+$$
+\pi\frac{dh}{dt}=-0.0004\pi\sqrt{20 h} \implies \frac{dh}{dt}=-0.0004\sqrt{20h}.
+$$&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;我們將原方程改寫為
+$$
+\int\frac{dh}{\sqrt{20h}}=-0.0004\int{dt}.
+$$
+因此,
+$$
+\frac{\sqrt{h}}{\sqrt{5}}=-0.0004t+C.
+$$
+我們知道 $h(0)=2(m)$, 解出 $C = \sqrt{10}/5$. 因此我們得到，在 $t$ 時水的高度為
+$$
+h(t)=\left({-0.0004\sqrt{5}t+\sqrt{2}}\right)^2.
+$$&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;若水箱為空，則 &lt;strong&gt;$h=0$&lt;/strong&gt;, 也就是說,
+$$
+\left({-0.0004\sqrt{5}t+\sqrt{2}}\right)^2=0.
+$$
+我們可以從解(2)解出
+$$
+t_0=\frac{\sqrt{2}}{0.0004\sqrt{5}}\approx 1581.133(s).
+$$&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Question 2：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Because of the rotation and viscosity of the liquid, the theoretical model given by Equation (1) is not quite accurate. Instead, the model
+$$
+\frac{dh}{dt}=k\sqrt{h}, \qquad \qquad \qquad (2)
+$$
+is often used and the constant $k$ (which depends on the physical properties of the liquid) is determined from data concerning the draining of the tank.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Suppose that a hole is drilled in the side of a cylindrical bottle and the height $h$ of the water (above the hole) decreases from $10(cm)$ to $3(cm)$ in $68(seconds)$. Use Equation (2) to find an expression for $h(t)$.  Evaluate $h(t)$ for $t = 10,20,30,40,50, 60$.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;假設排水孔在圓柱瓶的一側，水高(在排水孔之上)從10cm下降到3cm在68秒內。利用方程式2找出 h(t)。得出h(t)，對t = 10,20,30,40,50,60。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;TBF&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;為了得到上述方程式的解，我們必須將
+$$\frac{dh}{dt}=k\sqrt{h}$$ 變成
+$$h^{-1/2}dh=kdt$$
+將兩邊同時做積分，並各加上常數
+$$\int h^{-1/2}dh +C1=\int kdt+C2$$
+$$2h^{1/2}=kt+C$$
+$$h^{1/2}=1/2(kt+C)$$
+因此$$h(t)=1/4(kt+C)^2$$
+h(t)的值對 &lt;strong&gt;t=10,20,30,40,50,60&lt;/strong&gt;
+$$h(10)=1/4(10k+C)^2\space\space h(20)=1/4(20k+C)^2\space\space h(30)=1/4(30k+C)^2\space\space h(40)=1/4(40k+C)^2\space\space h(50)=1/4(50k+C)^2\space\space h(60)=1/4(60k+C)^2\space\space$$&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Question 3：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;在世界的每個角落，大飯店和醫院的撒水系統的水由在屋頂附近的圓柱型水塔藉著重力所供應。假設水塔半徑 $3m$，排水孔的直徑 $6cm$。工程師必續確保水壓最少為 $104kPa$，保持 $10$ 分鐘。(When a fire happens, the electrical system might fail and it could take up to $10(minutes)$ for the emergency generator and fire pump to be activated.) 為了確保，水塔的多少高度為工程師所需注意的? (Use the fact that the water pressure at a depth of $d(feet)$ is $P = 62.5(d)$. See Section 8.3)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;TBF&lt;/p&gt;
+&lt;p&gt;$$壓力 = Pa&lt;em&gt;g&lt;/em&gt;d$$&lt;/p&gt;
+&lt;p&gt;又 10 min=600sec
+$$P(t=600s)=10&lt;em&gt;h&lt;/em&gt;600&amp;gt;=104kPa$$
+=&amp;gt;$$h(600)&amp;gt;=104000/10$$&lt;/p&gt;
+&lt;h3 id=&#34;根據-torricellis-law&#34;&gt;根據 Torricelli&amp;rsquo;s Law:&lt;/h3&gt;
+&lt;p&gt;$$\frac{dV}{dt}=-a\sqrt{2gh}$$
+$$and \space\space V=9\pi h$$
+$$\frac{dV}{dt}=9\pi\frac{dh}{dt}$$
+=&amp;gt;
+$$9\pi\frac{dh}{dt}=-a\sqrt{2gh}$$
+where g=10 a=area of the hole
+$$9\pi\frac{dh}{dt}=-9\pi\sqrt{2&lt;em&gt;10&lt;/em&gt;h}$$
+$$\frac{dh}{dt}=-\sqrt{2&lt;em&gt;10&lt;/em&gt;h}$$
+$$\int \frac{dh}{\sqrt{h}}=\frac{-dt}{\sqrt{20}}=\frac{-t}{\sqrt{20}}+C1$$
+$$\int h^{-1/2}dh=2\sqrt{h}+C2$$
+=&amp;gt;
+$$2\sqrt{h}=\frac{-t}{\sqrt{20}}+C$$
+$$\sqrt{h}=\frac{-t}{2\sqrt{20}}+C/2$$&lt;/p&gt;
+&lt;h3 id=&#34;假設-kc2&#34;&gt;假設 k=C/2&lt;/h3&gt;
+&lt;p&gt;=&amp;gt;
+$$h(t)=(k-\frac{t}{2\sqrt{20}})^2$$
+$$h(600)=(k-\frac{600}{2\sqrt{20}})^2&amp;gt;=10400/10$$
+$$k&amp;gt;=1040+\frac{600}{2\sqrt{20}}$$
+$$h(0)=(k-\frac{0}{2\sqrt{20}})^2=k^2$$
+=&amp;gt;
+$$k^2&amp;gt;=(1040-\frac{600}{2\sqrt{20}})^2\approx1174.168$$
+因此水塔最少需要1174.168m&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Question 4：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Not all water tanks are shaped like cylinders. Suppose a tank has cress-sectional area $A(h)$ at height $h$. Then the volume of water up to height $h$ is $V=\int hA(u)du$ and so the Fundamental Theorem of Calculus gives $dV/dh=A(h)$. It follows that
+$$
+\frac{dV}{dt} = \frac{dV}{dh}\frac{dh}{dt} = A(h)\frac{dh}{dt},
+$$
+and so Torricelli’s Law becomes
+$$
+A(h) \frac{dh}{dt} = -a \sqrt{2gh}.
+$$&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;假設水塔有個半徑為 $2m$ 的球體，一開始裝了一半的水。假設圓形排水孔的半徑為 $1cm$，且 $g = 10m/s^2$，得出 $h$ 滿足此微分方程式。
+$$
+(4h-h^2)\frac{dh}{dt}=-0.0001\sqrt{20h}
+$$&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;水完全流光需花多少時間?&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;TBF&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;我們知道:&lt;/p&gt;
+&lt;p&gt;$$A(h)\frac{dh}{dt}=-a\sqrt{2gh}$$
+又 A(h)=pi r^2,r=f(h)
+$$\pi r^2\frac{dh}{dt}=-\pi(1/100)^2\sqrt{2&lt;em&gt;10&lt;/em&gt;h}$$&lt;/p&gt;
+&lt;h3 id=&#34;recall-rfhequation-of-a-circle&#34;&gt;Recall: r=f(h)&amp;amp;Equation of a circle&lt;/h3&gt;
+&lt;p&gt;$$r^2=4-(h-2)^2=4h-h^2$$
+因此
+$$(4h-h^2)\frac{dh}{dt}=-0.0001\sqrt{20h}$$&lt;/p&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;TBF&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;我們要t找的使得 h(t)=0m.
+$$(4h-h^2)\frac{dh}{dt}=-0.0001\sqrt{20h}$$
+$$(4h^{1/2}-h^{3/2})dh=-0.0001\sqrt{20}dt$$
+$$\int(4h^{1/2}-h^{3/2})dh=\int-0.0001\sqrt{20}dt$$&lt;/p&gt;
+&lt;p&gt;$$\frac{8}{3}h^{3/2}-\frac{2}{5}h^{5/2}=-0.0001\sqrt{20}t+C$$
+又 h(0)=2
+$$\frac{8}{3}2^{3/2}-\frac{2}{5}2^{5/2}=0+C$$
+$$C=\frac{56}{15}\sqrt{2}$$
+當h(t)=0
+$$0-0=-0.0001\sqrt{20}t+\frac{56}{15}\sqrt{2}$$
+$$t=\frac{56000}{15}\frac{\sqrt{2}}{\sqrt20}\approx11806s$$&lt;/p&gt;
+&lt;hr&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

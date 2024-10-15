@@ -2,23 +2,25 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>李亭萱 | Te-Sheng Lin</title>
-    <link>https://teshenglin.github.io/authors/%E6%9D%8E%E4%BA%AD%E8%90%B1/</link>
-      <atom:link href="https://teshenglin.github.io/authors/%E6%9D%8E%E4%BA%AD%E8%90%B1/index.xml" rel="self" type="application/rss+xml" />
+    <link>http://localhost:1313/authors/%E6%9D%8E%E4%BA%AD%E8%90%B1/</link>
+      <atom:link href="http://localhost:1313/authors/%E6%9D%8E%E4%BA%AD%E8%90%B1/index.xml" rel="self" type="application/rss+xml" />
     <description>李亭萱</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 22 Mar 2020 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <url>http://localhost:1313/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
       <title>李亭萱</title>
-      <link>https://teshenglin.github.io/authors/%E6%9D%8E%E4%BA%AD%E8%90%B1/</link>
+      <link>http://localhost:1313/authors/%E6%9D%8E%E4%BA%AD%E8%90%B1/</link>
     </image>
     
     <item>
       <title>Sec.9.3 - How fast does a tank drain?</title>
-      <link>https://teshenglin.github.io/post/2020_cal_s9p3/</link>
+      <link>http://localhost:1313/post/2020_cal_s9p3/</link>
       <pubDate>Sun, 22 Mar 2020 00:00:00 +0000</pubDate>
-      <guid>https://teshenglin.github.io/post/2020_cal_s9p3/</guid>
+      <guid>http://localhost:1313/post/2020_cal_s9p3/</guid>
       <description>&lt;blockquote&gt;
-&lt;p&gt;Applied Project in Sec.9.3, Calculus by Stewart&lt;/p&gt;
+&lt;p&gt;Applied Project in Sec.9.3, Calculus by Stewart &lt;br&gt;
+Chinese version: 
+&lt;a href=&#34;http://localhost:1313/post/2020_cal_s9p3_ch&#34;&gt;水箱排水有多快?&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;If water (or other liquid) drains from a tank, we expect that the flow will be greatest at first (when the water depth is greatest) and will gradually decrease as the water level decreases. But we need a more precise mathematical description of how the flow decreases in order to answer the kinds of questions that engineers ask: How long does it take for a tank to drain completely? How much water should a tank hold in order to guarantee a certain minimum water pressure for a sprinkler system?&lt;/p&gt;
 &lt;p&gt;Let $h(t)$ and $V(t)$ be the height and volume of water in a tank at time $t$. If water leaks through a hole with area $a$ at the bottom of the tank, then Torricelli’s Law says that
@@ -30,7 +32,7 @@ where $g$ is the acceleration due to gravity. So the rate at which water flows f
 &lt;p&gt;&lt;strong&gt;Question 1：&lt;/strong&gt;&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;
-&lt;p&gt;Suppose the tank is cylindrical with height $2(cm)$ and radius $1(m)$ and the hole is circular with radius $2(cm)$. If we take $g = 10 (m/s^2)$, show that $h$ satisfies the differential equation:
+&lt;p&gt;Suppose the tank is cylindrical with height $2(m)$ and radius $1(m)$ and the hole is circular with radius $2(cm)$. If we take $g = 10 (m/s^2)$, show that $h$ satisfies the differential equation:
 $$
 \frac{dh}{dt}=-0.0004\sqrt{20h}
 $$&lt;/p&gt;

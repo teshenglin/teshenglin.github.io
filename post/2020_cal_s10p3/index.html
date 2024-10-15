@@ -1,0 +1,974 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 4.7.0">
+
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Te-Sheng Lin (林得勝)">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="Laboratory Project in Sec.10.3, Calculus by Stewart Chinese version: 極座標曲線家族 In this project you will discover the interesting and beautiful shapes that members of families of polar curve can take. You will also see how the shape of the curve changes when you vary the constants. Question 1: a. Investigate the family of curve defined by the polar equation $r=\sin{n\theta}$, where $n$ is a">
+
+  
+  <link rel="alternate" hreflang="en-us" href="http://localhost:1313/post/2020_cal_s10p3/">
+
+  
+
+
+  
+  
+  
+  <meta name="theme-color" content="#2962ff">
+  
+
+  
+  
+  
+  <script src="/js/mathjax-config.js"></script>
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-1/css/all.min.css" integrity="sha256-4w9DunooKSr3MFXHXWyFER38WmPdm361bQS/2KUWZbU=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+        
+      
+    
+
+    
+
+    
+
+    
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.1.2/lazysizes.min.js" integrity="sha256-Md1qLToewPeKjfAHU1zyPwOutccPAm5tahnaw7Osw0A=" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CRoboto:400,400italic,700%7CRoboto+Mono&display=swap">
+  
+
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/academic.css">
+
+  
+
+
+
+
+  
+
+
+  
+
+  <link rel="manifest" href="/index.webmanifest">
+  <link rel="icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_3.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_3.png">
+
+  <link rel="canonical" href="http://localhost:1313/post/2020_cal_s10p3/">
+
+  
+  
+  
+  
+  
+    
+    
+  
+  
+  <meta property="twitter:card" content="summary">
+  
+  <meta property="og:site_name" content="Te-Sheng Lin">
+  <meta property="og:url" content="http://localhost:1313/post/2020_cal_s10p3/">
+  <meta property="og:title" content="Sec.10.3 - Families of Polar Curves | Te-Sheng Lin">
+  <meta property="og:description" content="Laboratory Project in Sec.10.3, Calculus by Stewart Chinese version: 極座標曲線家族 In this project you will discover the interesting and beautiful shapes that members of families of polar curve can take. You will also see how the shape of the curve changes when you vary the constants. Question 1: a. Investigate the family of curve defined by the polar equation $r=\sin{n\theta}$, where $n$ is a"><meta property="og:image" content="http://localhost:1313/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png">
+  <meta property="twitter:image" content="http://localhost:1313/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png"><meta property="og:locale" content="en-us">
+  
+    
+      <meta property="article:published_time" content="2020-04-23T00:00:00&#43;00:00">
+    
+    <meta property="article:modified_time" content="2020-06-22T21:15:45&#43;08:00">
+  
+
+  
+
+
+    
+
+
+
+
+
+
+  
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "http://localhost:1313/post/2020_cal_s10p3/"
+  },
+  "headline": "Sec.10.3 - Families of Polar Curves",
+  
+  "datePublished": "2020-04-23T00:00:00Z",
+  "dateModified": "2020-06-22T21:15:45+08:00",
+  
+  "author": {
+    "@type": "Person",
+    "name": "劉硯芸"
+  },
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "Te-Sheng Lin",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "http://localhost:1313/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_3.png"
+    }
+  },
+  "description": "Laboratory Project in Sec.10.3, Calculus by Stewart Chinese version: 極座標曲線家族 In this project you will discover the interesting and beautiful shapes that members of families of polar curve can take. You will also see how the shape of the curve changes when you vary the constants. Question 1: a. Investigate the family of curve defined by the polar equation $r=\\sin{n\\theta}$, where $n$ is a"
+}
+</script>
+
+  
+
+  
+
+
+  
+
+
+  
+
+
+
+
+
+  <title>Sec.10.3 - Families of Polar Curves | Te-Sheng Lin</title>
+
+</head>
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" >
+
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+  
+
+
+
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container">
+
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="/">Te-Sheng Lin</a>
+    </div>
+    
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/">Te-Sheng Lin</a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#about"><span>Home</span></a>
+        </li>
+
+        
+        
+
+        
+        <li class="nav-item dropdown">
+          <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"><span>Resume</span><span class="caret"></span>
+          </a>
+          <div class="dropdown-menu">
+            
+              <a class="dropdown-item" href="/courses/appointments"><span>Appointments </span></a>
+            
+              <a class="dropdown-item" href="/publication"><span>Publications</span></a>
+            
+          </div>
+        </li>
+
+        
+        
+
+        
+        <li class="nav-item dropdown">
+          <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"><span>Posts</span><span class="caret"></span>
+          </a>
+          <div class="dropdown-menu">
+            
+              <a class="dropdown-item" href="/#posts"><span>All posts</span></a>
+            
+              <a class="dropdown-item" href="/categories/calculus/"><span>Calculus 微積分</span></a>
+            
+              <a class="dropdown-item" href="/categories/computational-mathematics/"><span>Computational Mathematics 計算數學</span></a>
+            
+              <a class="dropdown-item" href="/categories/linear-algebra/"><span>Linear Algebra 線性代數</span></a>
+            
+              <a class="dropdown-item" href="/categories/notes/"><span>程式語言學習筆記</span></a>
+            
+          </div>
+        </li>
+
+        
+        
+
+        
+        <li class="nav-item dropdown">
+          <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"><span>Teaching</span><span class="caret"></span>
+          </a>
+          <div class="dropdown-menu">
+            
+              <a class="dropdown-item" href="/courses/taught"><span>Courses taught</span></a>
+            
+              <a class="dropdown-item" href="/courses/students"><span>Students supervised</span></a>
+            
+              <a class="dropdown-item" href="/courses/gsw"><span>Graduate student workshops</span></a>
+            
+              <a class="dropdown-item" href="/courses/summer_research"><span>Summer research internship</span></a>
+            
+          </div>
+        </li>
+
+        
+        
+
+      
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+      
+      <li class="nav-item">
+        <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+      <li class="nav-item">
+        <a class="nav-link js-dark-toggle" href="#"><i class="fas fa-moon" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+  <article class="article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+<div class="article-container pt-3">
+  <h1>Sec.10.3 - Families of Polar Curves</h1>
+
+  
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+
+
+  
+  <span><a href="/authors/%E5%8A%89%E7%A1%AF%E8%8A%B8/">劉硯芸</a></span>, <span><a href="/authors/admin/">Te-Sheng Lin (林得勝)</a></span>
+
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+          Last updated on
+      
+    
+    Jun 22, 2020
+  </span>
+  
+
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    2 min read
+  </span>
+  
+
+  
+  
+  
+
+  
+  
+  <span class="middot-divider"></span>
+  <span class="article-categories">
+    <i class="fas fa-folder mr-1"></i><a href="/categories/calculus/">Calculus</a></span>
+  
+
+</div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style">
+      <blockquote>
+<p>Laboratory Project in Sec.10.3, Calculus by Stewart
+Chinese version: 
+<a href="/post/2020_cal_s10p3_ch">極座標曲線家族</a></p>
+</blockquote>
+<p>In this project you will discover the interesting and beautiful shapes that members of families of polar curve can take. You will also see how the shape of the curve changes when you vary the constants.</p>
+<hr>
+<p><strong>Question 1:</strong></p>
+<p>a. Investigate the family of curve defined by the polar equation $r=\sin{n\theta}$, where $n$ is a positive integer. How is the number of loops related to $n$?</p>
+<p>b. What happens if the equation in part (a) is replaced by $r=\mid{\sin{n\theta}} \mid$?</p>
+<p><strong>Answer:</strong></p>
+<p>a. We first sketch the curve $r=\sin{n\theta}$ with $n=1,2,3,4$.
+For $r=\sin{n\theta}$, there are two situation. To calculate the loops of the curve, we should first find out when will you get a loop. For $r=\sin\theta$, you get a loop when $r=0$, while $\theta$ is increasing. This means for $r=\sin{n\theta}$ ($0\leq\theta\leq\pi$), there are $n$ loops.</p>
+<p>####Recall</p>
+<p>$r=\sin{\theta}$ means you move $r$ from $(0,0)$ toward $\theta$.
+When $0\leq\theta\leq\pi$, $r$ is positive, you can get $y\geq0$. When $\pi\leq\theta\leq2{\pi}$, you faced $y\leq0$. However, $r$ is negative, which means you move backward. You can still get $y\geq0$ in this case.</p>
+<p>####(1) $n$ is odd number</p>
+<p>Let $0\leq\theta\leq\pi$,$$\sin{n(\theta+\pi)}=\sin({n\theta+\pi})=-\sin{n\theta}$$
+We know that $\pi\leq\theta+\pi\leq2\pi$, which faced $y\leq0$. $r=-\sin{n\theta}$, opposite to the $r=\sin{n\theta}$. By  $\textbf{Recall}$, we get $y\geq0$. That is, the curve of $0\leq\theta\leq\pi$ is same as the curve of $\pi\leq\theta\leq2\pi$. You get $n$ loops for the curve.</p>
+<p>####(2) $n$ is even number</p>
+<p>Let $0\leq\theta\leq\pi$,$$\sin{n(\theta+\pi)}=\sin{n\theta}$$
+We know that $\pi\leq\theta+\pi\leq2\pi$, which faced $y\leq0$. $r=\sin{n\theta}$, same as the $r$ you get in $0\leq\theta\leq\pi$. That is, the curve of $0\leq\theta\leq\pi$ and the curve of $\pi\leq\theta\leq2\pi$ are symmetrical to the $x-axis$.You get $2n$ loops for the curve.</p>
+<p>b. For $r=\mid\sin(n\theta)\mid$, $r$ is always positive, so we know that the curve of $0\leq\theta\leq\pi$ and the curve of $\pi\leq\theta\leq2\pi$ are symmetrical to the $x-axis$. Same as question (a), there&rsquo;s $n$ loops for $r=\mid\sin(n\theta)\mid$, when $0\leq\theta\leq\pi$.In conclustion, the curve have $2n$ of loops.</p>
+<hr>
+<p><strong>Question 2:</strong></p>
+<p>A family of curves is given by the equations $r=1+c\sin{n\theta}$, where $c$ is a real number and $n$ is a positive integer. How does the graph change as $n$ increases? How does it changes as $c$ changes? Illustrate by graphing enough members of the family to support your conclusions.</p>
+<p><strong>Answer:</strong></p>
+<p>For any $n$,there&rsquo;s only a loop when $-1\leq{c}\leq1$.When $c&gt;1$ or $c&lt;-1$, we can separate them into two groups. When $n$ is a odd number, the shape of the curve looks like the shape of $r=\sin{n\theta}$, but there&rsquo;s two layers in every loops.When $n$ is a even number, the shape of the curve also looks like the shape of $r=\sin{n\theta}$, but the area of the loops are different when the direction is different.</p>
+<hr>
+<p><strong>Question 3:</strong></p>
+<p>A family of curves has polar equations $$r=\frac{1-a\cos{\theta}}{1+a\cos{\theta}}$$ Investigate how the graph changes as the number $a$ changes. In particular, you should identify the transitional values of $a$ for which the basic shape of the curve changes.</p>
+<p><strong>Answer:</strong></p>
+<p>When $-1&lt;a&lt;1$, the curve is a closed graph, and when $a\geq1$ or $a\leq-1$, there are two open curves. We can find this out from the graph. That is, the basic shape of the curve changes when $a=1$ and $a=-1$. We can explain this. The curve becomes opened means in some direction $r\to{\infty}$. For $$r=\frac{1-a\cos{\theta}}{1+a\cos{\theta}}$$ $r$ may approach to $\infty$ when $(1-a\cos{\theta})\to{\infty}$ or $(1+a\cos{\theta})\to0$
+####(1)$(1-a\cos{\theta})\to{\infty}$
+For $0\leq\theta\leq{2\pi}$,
+$$-1\leq\cos{\theta}\leq1$$
+Because $-1\leq\cos{\theta}\leq1$, $(1-a\cos{\theta})\to{\infty}$ when $a\to{-\infty}$ or $a\to{\infty}$.We can also get
+$$a\cos{\theta}\to{-\infty}\Rightarrow1+a\cos\theta\to-\infty$$
+Both fraction and denominator are approching $\infty$, by l&rsquo;hospital rule
+$$\lim\limits_{a\to\infty}\frac{1-a\cos{\theta}}{1+a\cos{\theta}}=\lim\limits_{a\to\infty}\frac{-a\sin{\theta}}{a\sin{\theta}}=\lim\limits_{a\to\infty}\frac{-a}{a}$$
+Used l&rsquo;hospital rule again,
+$$\lim\limits_{a\to\infty}\frac{-a}{a}=\lim\limits_{a\to\infty}\frac{-1}{1}=-1$$
+$r$ didn&rsquo;t approach to $\infty$ as we expect in this case.
+####(2)$(1+a\cos{\theta})\to0$
+This happened when
+$$a\cos\theta\to-1$$
+$$\cos\theta\to\frac{-1}{a}$$For $0\leq\theta\leq{2\pi}$,
+$$-1\leq\cos{\theta}\leq1$$
+That means $$-1\leq\frac{-1}{a}\Rightarrow{a}\geq1$$
+$$\frac{-1}{a}\leq1\Rightarrow{a}\leq-1$$
+By the result, we know that the basic shape of the curve changes when $a=1$ and $a=-1$.</p>
+<hr>
+<p><strong>Question 4:</strong></p>
+<p>The astronomer Giovanni Cassini (1625-1712) studies the family of curves with polar equations $$r^4-2c^2r^2\cos{2\theta}+c^4-a^4=0$$ where $A$ and $c$ are positive real numbers. These curves are called $\textbf{ovals of Cassini}$ even though they are oval shaped only for certain values of $a$ and $c$. (Cassini thought that these curves might represent planetary orbits better than Kepler&rsquo;s ellipses.) Investigate the variety of shapes that these curves may have. In particular, how are $a$ and $c$ related to each other when the curve splits into two parts?</p>
+<p><strong>Answer:</strong></p>
+<p>There are three kinds of shape, two disconnected loops, a sideways figure eight, a loop enclosing both foci. Curve splits into two parts when $r$ does not exist in some direction. Let $A=r^2$, we get $$A^2-2c^2(\cos{2\theta})A+c^4-a^4=0$$
+When $D&lt;0$, there&rsquo;s no any real root. In this case, $r$ does not exist.
+$$4c^4\cos^2{2\theta}-4c^4+4a^4&lt;0$$
+$$\Longrightarrow4a^4-4c^4\sin^2{2\theta}&lt;0$$
+$$\Longrightarrow{a}^4-c^4\sin^2{2\theta}&lt;0$$
+$$\Longrightarrow{a}^4&lt;c^4\sin^2{2\theta}$$
+For $0\leq\theta\leq2\pi$,
+$$-1\leq\sin{2\theta}\leq1\Rightarrow0\leq\sin^2{2\theta}\leq1$$
+The maximum of $c^4\sin^2{2\theta}$ is $c^4$. That means when $a^4&lt;c^4$, $r$ doesn&rsquo;t exist in some $\theta$.$$a^4&lt;c^4\Longrightarrow\mid{a}\mid&lt;\mid{c}\mid$$
+The curve splits into two parts when $\mid{a}\mid&lt;\mid{c}\mid$.</p>
+<hr>
+
+    </div>
+
+    
+
+
+
+
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/tags/derivative/">derivative</a>
+  
+  <a class="badge badge-light" href="/tags/optimization/">optimization</a>
+  
+  <a class="badge badge-light" href="/tags/applied-project/">applied project</a>
+  
+</div>
+
+
+
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=http://localhost:1313/post/2020_cal_s10p3/&amp;text=Sec.10.3%20-%20Families%20of%20Polar%20Curves" target="_blank" rel="noopener" class="share-btn-twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=http://localhost:1313/post/2020_cal_s10p3/&amp;t=Sec.10.3%20-%20Families%20of%20Polar%20Curves" target="_blank" rel="noopener" class="share-btn-facebook">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="mailto:?subject=Sec.10.3%20-%20Families%20of%20Polar%20Curves&amp;body=http://localhost:1313/post/2020_cal_s10p3/" target="_blank" rel="noopener" class="share-btn-email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+  
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  <div class="media author-card content-widget-hr">
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="/authors/%E5%8A%89%E7%A1%AF%E8%8A%B8/"></a></h5>
+      
+      
+      <ul class="network-icon" aria-hidden="true">
+  
+</ul>
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+  
+  
+  <div class="article-widget content-widget-hr">
+    <h3>Related</h3>
+    <ul>
+      
+      <li><a href="/post/2020_cal_s8p3_ch/">Sec.8.3 - Complementary Coffee Cups</a></li>
+      
+      <li><a href="/post/2020_cal_s4p1_ch/">Sec.4.1 - 彩虹的微積分學</a></li>
+      
+      <li><a href="/post/2020_cal_s4p1/">Sec.4.1 - The Calculus of ranbows</a></li>
+      
+      <li><a href="/post/2020_cal_s4p7_2_ch/">Sec.4.7 - 飛機和鳥：能量最小化</a></li>
+      
+      <li><a href="/post/2020_cal_s8p3/">Sec.8.3 - Complementary Coffee Cups</a></li>
+      
+    </ul>
+  </div>
+  
+
+
+
+  </div>
+</article>
+
+      
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.4.4/mermaid.min.js" integrity="sha256-JEqEejGt4tR35L0a1zodzsV0/PJ6GIf7J4yDtywdrH8=" crossorigin="anonymous" title="mermaid"></script>
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js" integrity="sha256-eOgo0OtLL4cdq7RdwRUiGKLX9XsIJ7nGhWEKbohmVAQ=" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/languages/r.min.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/languages/julia.min.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/languages/python.min.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/languages/fortran.min.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/languages/matlab.min.js"></script>
+        
+      
+
+    
+
+    
+    
+
+    
+    
+    <script>const code_highlighting = true;</script>
+    
+
+    
+    
+    <script>const isSiteThemeDark = false;</script>
+    
+
+    
+    
+    
+    
+    
+    
+    <script>
+      const search_config = {"indexURI":"/index.json","minLength":1,"threshold":0.3};
+      const i18n = {"no_results":"No results found","placeholder":"Search...","results":"results found"};
+      const content_type = {
+        'post': "Posts",
+        'project': "Projects",
+        'publication' : "Publications",
+        'talk' : "Talks"
+        };
+    </script>
+    
+
+    
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    <script src="/js/academic.min.df22e735169cca39ea07a999d8cba15f.js"></script>
+
+    
+
+
+
+
+
+
+  
+  
+  <div class="container">
+    <footer class="site-footer">
+  
+
+  <p class="powered-by">
+    
+
+    Powered by the
+    <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
+    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+
+    
+    <span class="float-right" aria-hidden="true">
+      <a href="#" class="back-to-top">
+        <span class="button_icon">
+          <i class="fas fa-chevron-up fa-2x"></i>
+        </span>
+      </a>
+    </span>
+    
+  </p>
+</footer>
+
+  </div>
+  
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
