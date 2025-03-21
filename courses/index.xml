@@ -13,6 +13,95 @@
     </image>
     
     <item>
+      <title>2025 Summer Research Internship</title>
+      <link>https://teshenglin.github.io/courses/2025_summer_research/</link>
+      <pubDate>Fri, 21 Mar 2025 00:00:00 +0800</pubDate>
+      <guid>https://teshenglin.github.io/courses/2025_summer_research/</guid>
+      <description>&lt;hr&gt;
+&lt;h2 id=&#34;2024-暑期研究實習&#34;&gt;2024 暑期研究實習&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;研究實習辦法
+&lt;ol&gt;
+&lt;li&gt;實習期間, 時間, 地點
+&lt;ul&gt;
+&lt;li&gt;六週, 具體時間各自與指導教授訂定&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;說明會
+&lt;ul&gt;
+&lt;li&gt;訂於 4/16 (週三) 12:00-13:00&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;各研究團隊主題&#34;&gt;各研究團隊主題&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;凸幾何學的理論與應用
+&lt;ul&gt;
+&lt;li&gt;Advisors (共同指導): 黃信元與神秘嘉賓 - 
+&lt;a href=&#34;mailto:hyhuang@math.nctu.edu.tw&#34;&gt;hyhuang@math.nctu.edu.tw&lt;/a&gt;,
+&lt;blockquote&gt;
+&lt;p&gt;凸幾何學(Convex Geometry)在機器學習和最佳化理論中佔有很重要的角色。這個暑假裡我們想要學習有關歐式空間中凸幾何學的幾個重要定理，並藉由電腦繪圖將定理視覺化呈現。首先我們會學習凸集合和凸函數的基本性質，接著寫一些程式讓電腦自行判斷給定的集合是否是一個凸體。後續也將學習Brunn-Minkowski Theorem、Steiner formula、及Isoperimetric Inequality。&lt;/p&gt;
+&lt;p&gt;參考書目：Lectures on Convex Geometry by Daniel Hug and Wolfgang Weil, Springer, GTM Vol 286, 2020.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;神經網路函數的逼近理論
+&lt;ul&gt;
+&lt;li&gt;Advisor: 薛名成 - 
+&lt;a href=&#34;mailto:mcshiue@nycu.edu.tw&#34;&gt;mcshiue@nycu.edu.tw&lt;/a&gt;
+&lt;blockquote&gt;
+&lt;p&gt;主要研究神經網路函數可以學習怎樣函數，如光滑函數，例如多項式等，更近一步，不光滑函數，如不連續函數等。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;光流影像於影像辨識與物件追蹤的應用
+&lt;ul&gt;
+&lt;li&gt;Advisor: 吳金典 - 
+&lt;a href=&#34;mailto:ctw@math.nctu.edu.tw&#34;&gt;ctw@math.nctu.edu.tw&lt;/a&gt;
+&lt;blockquote&gt;
+&lt;p&gt;光流影像（optical flow) 在影像處理與基於影像的運動估計有廣大的應用，本專題在利用廣義的光流影像，進行複雜環境中的小物件辨識與追蹤.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Application of Random Walk
+&lt;ul&gt;
+&lt;li&gt;Advisor: 千野由喜 - 
+&lt;a href=&#34;mailto:y.chino@math.nctu.edu.tw&#34;&gt;y.chino@math.nctu.edu.tw&lt;/a&gt;
+&lt;blockquote&gt;
+&lt;p&gt;We consider some applications of random walk. We focus on the connection to Brownian motion and a certain partial differential equation through several limit theorems in the random walk theory.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;碎形 fractal
+&lt;ul&gt;
+&lt;li&gt;Advisor: 方向 - 
+&lt;a href=&#34;mailto:xfang@nycu.edu.tw&#34;&gt;xfang@nycu.edu.tw&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;算子的數值域理論
+&lt;ul&gt;
+&lt;li&gt;Advisor: 王國仲 - 
+&lt;a href=&#34;mailto:kzwang@math.nctu.edu.tw&#34;&gt;kzwang@math.nctu.edu.tw&lt;/a&gt;
+&lt;blockquote&gt;
+&lt;p&gt;在這個暑期計畫中，為期7至8周的學習將專注於算子數值域的重要性質，並深入探討算子數值域的幾何結構。同學們將學習如何利用算子的性質來分析數值域的幾何結構，並通過相關定理來加深對這些概念的理解。具體的學習內容包括以下幾個核心定理：Toeplitz-Hausdorff、Ando、Anderson定理和冪不等式。此外，同學們還將學習二階、三階矩陣、或是一些特殊算子的數值域。&lt;/p&gt;
+&lt;p&gt;先備知識: 線性代數、分析導論。參考書: Pei Yuan Wu and Hwa-Long Gau, Numerical ranges of Hilbert space operators, Cambridge University Press, Cambridge, 2021.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Appointments</title>
       <link>https://teshenglin.github.io/courses/appointments/</link>
       <pubDate>Sun, 25 Aug 2024 00:00:00 +0800</pubDate>
@@ -698,6 +787,11 @@ This project invites students into the captivating realm of graph theory, highli
       <pubDate>Mon, 29 Jun 2020 00:00:00 +0800</pubDate>
       <guid>https://teshenglin.github.io/courses/taught/</guid>
       <description>&lt;hr&gt;
+&lt;h2 id=&#34;2025-spring&#34;&gt;2025 Spring&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Topics in Numerical Analysis and Scientific Computing&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
 &lt;h2 id=&#34;2024-spring&#34;&gt;2024 Spring&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Linear algebra (2)&lt;/strong&gt;&lt;/li&gt;
@@ -980,6 +1074,8 @@ This project invites students into the captivating realm of graph theory, highli
       <guid>https://teshenglin.github.io/courses/summer_research/</guid>
       <description>&lt;hr&gt;
 &lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;
+&lt;a href=&#34;https://teshenglin.github.io/courses/2025_summer_research/&#34;&gt;2025 Summer research internship&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;
 &lt;a href=&#34;https://teshenglin.github.io/courses/2024_summer_research/&#34;&gt;2024 Summer research internship&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;

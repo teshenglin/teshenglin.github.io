@@ -406,11 +406,11 @@ $$
 $$
 我們只要找出相對應的正交多項式, 我們一樣可以求出其高斯積分點以及權重.&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;舉例來說, $w(x)=\frac{1}{1+x^2}$&lt;/p&gt;
+&lt;p&gt;舉例來說, $w(x)=\frac{1}{\sqrt{1-x^2}}$&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;其相對應的內積以及積分為
 $$
-(f,g) = \int^1_{-1} \frac{1}{1+x^2}f(x)g(x)dx, \quad \int^1_{-1} \frac{1}{1+x^2}f(x)dx.
+(f,g) = \int^1_{-1} \frac{1}{\sqrt{1-x^2}}f(x)g(x)dx, \quad \int^1_{-1} \frac{1}{\sqrt{1-x^2}}f(x)dx.
 $$
 其正交多項式為 
 &lt;a href=&#34;https://en.wikipedia.org/wiki/Chebyshev_polynomials&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Chebyshev polynomials&lt;/a&gt;, $T_i(x)$, 前三項為:
