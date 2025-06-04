@@ -5,7 +5,7 @@
     <link>https://teshenglin.github.io/publication_types/2/</link>
       <atom:link href="https://teshenglin.github.io/publication_types/2/index.xml" rel="self" type="application/rss+xml" />
     <description>2</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Wed, 03 Apr 2024 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 16 Sep 2024 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
       <title>2</title>
@@ -13,10 +13,18 @@
     </image>
     
     <item>
+      <title>Variability of morphology in photoplethysmographic waveform quantified with unsupervised wave-shape manifold learning for clinical assessment</title>
+      <link>https://teshenglin.github.io/publication/24_pm_hlwcl/</link>
+      <pubDate>Mon, 16 Sep 2024 00:00:00 +0000</pubDate>
+      <guid>https://teshenglin.github.io/publication/24_pm_hlwcl/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>A hybrid neural-network and MAC scheme for Stokes interface problems</title>
-      <link>https://teshenglin.github.io/publication/24_eajam_hlwcl/</link>
+      <link>https://teshenglin.github.io/publication/24_eajam_cdhll/</link>
       <pubDate>Wed, 03 Apr 2024 00:00:00 +0000</pubDate>
-      <guid>https://teshenglin.github.io/publication/24_eajam_hlwcl/</guid>
+      <guid>https://teshenglin.github.io/publication/24_eajam_cdhll/</guid>
       <description></description>
     </item>
     

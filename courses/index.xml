@@ -122,6 +122,30 @@
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;hr&gt;
+&lt;h2 id=&#34;錄取名單&#34;&gt;錄取名單&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;黃信元
+&lt;ul&gt;
+&lt;li&gt;王彥皓, 張業叡&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;薛名成
+&lt;ul&gt;
+&lt;li&gt;王禹程, 孔德立&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;王國仲
+&lt;ul&gt;
+&lt;li&gt;李沅駿&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;方向
+&lt;ul&gt;
+&lt;li&gt;葉詔勛&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
 </description>
     </item>
     
@@ -818,18 +842,22 @@ This project invites students into the captivating realm of graph theory, highli
 &lt;hr&gt;
 &lt;h2 id=&#34;2024-spring&#34;&gt;2024 Spring&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Linear algebra (2)&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Linear algebra (2)&lt;/strong&gt; 
+&lt;a href=&#34;https://hackmd.io/@NYCUAM/2024LA2&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Syllabus&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;2023-fall&#34;&gt;2023 Fall&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Linear algebra (1)&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Differential Equations&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Linear algebra (1)&lt;/strong&gt; 
+&lt;a href=&#34;https://hackmd.io/@NYCUAM/2023LA1&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Syllabus&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Differential Equations&lt;/strong&gt; 
+&lt;a href=&#34;https://hackmd.io/@NYCUAM/2023ODE&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Syllabus&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;2023-spring&#34;&gt;2023 Spring&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Computational Mathematics&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Computational Mathematics&lt;/strong&gt; 
+&lt;a href=&#34;https://www.notion.so/2023-Computational-Mathematics-43d02c6ab18d4448992530d663c8ad0d?source=copy_link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Notion&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Applied Mathematics Methods&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;2022-fall&#34;&gt;2022 Fall&lt;/h2&gt;
@@ -842,7 +870,7 @@ This project invites students into the captivating realm of graph theory, highli
 &lt;li&gt;&lt;strong&gt;Calculus (2):&lt;/strong&gt; 
 &lt;a href=&#34;https://hackmd.io/@teshenglin/2021calculus2&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Syllabus&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Computational Mathematics&lt;/strong&gt; 
-&lt;a href=&#34;https://tulip-stamp-c53.notion.site/Computational-Mathematics-3a67f78f167f4bbf950b9908be2811f3&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Notion&lt;/a&gt;&lt;/li&gt;
+&lt;a href=&#34;https://www.notion.so/2022-Computational-Mathematics-3a67f78f167f4bbf950b9908be2811f3?source=copy_link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Notion&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;2021-fall&#34;&gt;2021 Fall&lt;/h2&gt;
 &lt;ul&gt;
