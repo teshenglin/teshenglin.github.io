@@ -28,10 +28,10 @@
   
     
   
-  <meta name="description" content="Principle component analysis - 0 1. 一維資料的統計學 假設我們有 $n$ 筆資料, 每筆資料都是一個數字 (例如 $n$ 個學生的成績). 這 $n$ 筆資料我們設為 $x_1, \cdots, x_n$, 並且定義一個矩陣 $$ \tag{1} X =">
+  <meta name="description" content="Gaussian Discriminant Analysis (GDA) - 2 這裡我們補充一下 GDA 裡的數學推導部分。 假設我們有一組已標記的資料 $(\mathbf{x}_i, y_i)$，其中： $\mathbf{x}_i \in \mathbb{R}^d$：第 $i$ 筆資料的 $">
 
   
-  <link rel="alternate" hreflang="en-us" href="https://teshenglin.github.io/post/2023_principal_component_analysis_0/">
+  <link rel="alternate" hreflang="en-us" href="https://teshenglin.github.io/post/2025_gaussian_discriminant_analysis_2/">
 
   
 
@@ -220,7 +220,7 @@
   <link rel="icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_2.png">
   <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_2.png">
 
-  <link rel="canonical" href="https://teshenglin.github.io/post/2023_principal_component_analysis_0/">
+  <link rel="canonical" href="https://teshenglin.github.io/post/2025_gaussian_discriminant_analysis_2/">
 
   
   
@@ -234,13 +234,13 @@
   <meta property="twitter:card" content="summary">
   
   <meta property="og:site_name" content="Te-Sheng Lin">
-  <meta property="og:url" content="https://teshenglin.github.io/post/2023_principal_component_analysis_0/">
-  <meta property="og:title" content="主成分分析 - 0 | Te-Sheng Lin">
-  <meta property="og:description" content="Principle component analysis - 0 1. 一維資料的統計學 假設我們有 $n$ 筆資料, 每筆資料都是一個數字 (例如 $n$ 個學生的成績). 這 $n$ 筆資料我們設為 $x_1, \cdots, x_n$, 並且定義一個矩陣 $$ \tag{1} X ="><meta property="og:image" content="https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png">
+  <meta property="og:url" content="https://teshenglin.github.io/post/2025_gaussian_discriminant_analysis_2/">
+  <meta property="og:title" content="高斯判別分析-2 | Te-Sheng Lin">
+  <meta property="og:description" content="Gaussian Discriminant Analysis (GDA) - 2 這裡我們補充一下 GDA 裡的數學推導部分。 假設我們有一組已標記的資料 $(\mathbf{x}_i, y_i)$，其中： $\mathbf{x}_i \in \mathbb{R}^d$：第 $i$ 筆資料的 $"><meta property="og:image" content="https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png">
   <meta property="twitter:image" content="https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png"><meta property="og:locale" content="en-us">
   
     
-      <meta property="article:published_time" content="2023-12-18T00:00:00&#43;00:00">
+      <meta property="article:published_time" content="2025-12-24T00:00:00&#43;00:00">
     
     <meta property="article:modified_time" content="2025-12-25T14:25:07&#43;08:00">
   
@@ -266,16 +266,16 @@
   "@type": "BlogPosting",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://teshenglin.github.io/post/2023_principal_component_analysis_0/"
+    "@id": "https://teshenglin.github.io/post/2025_gaussian_discriminant_analysis_2/"
   },
-  "headline": "主成分分析 - 0",
+  "headline": "高斯判別分析-2",
   
-  "datePublished": "2023-12-18T00:00:00Z",
+  "datePublished": "2025-12-24T00:00:00Z",
   "dateModified": "2025-12-25T14:25:07+08:00",
   
   "author": {
     "@type": "Person",
-    "name": "Te-Sheng Lin (林得勝)"
+    "name": "林琮詠"
   },
   
   "publisher": {
@@ -286,7 +286,7 @@
       "url": "https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_2.png"
     }
   },
-  "description": "Principle component analysis - 0 1. 一維資料的統計學 假設我們有 $n$ 筆資料, 每筆資料都是一個數字 (例如 $n$ 個學生的成績). 這 $n$ 筆資料我們設為 $x_1, \\cdots, x_n$, 並且定義一個矩陣 $$ \\tag{1} X ="
+  "description": "Gaussian Discriminant Analysis (GDA) - 2 這裡我們補充一下 GDA 裡的數學推導部分。 假設我們有一組已標記的資料 $(\\mathbf{x}_i, y_i)$，其中： $\\mathbf{x}_i \\in \\mathbb{R}^d$：第 $i$ 筆資料的 $"
 }
 </script>
 
@@ -304,7 +304,7 @@
 
 
 
-  <title>主成分分析 - 0 | Te-Sheng Lin</title>
+  <title>高斯判別分析-2 | Te-Sheng Lin</title>
 
 </head>
 
@@ -515,7 +515,7 @@
   
   
 <div class="article-container pt-3">
-  <h1>主成分分析 - 0</h1>
+  <h1>高斯判別分析-2</h1>
 
   
 
@@ -535,7 +535,7 @@
 
 
   
-  <span><a href="/authors/admin/">Te-Sheng Lin (林得勝)</a></span>
+  <span><a href="/authors/%E6%9E%97%E7%90%AE%E8%A9%A0/">林琮詠</a></span>, <span><a href="/authors/admin/">Te-Sheng Lin (林得勝)</a></span>
 
   </div>
   
@@ -558,7 +558,7 @@
   
   <span class="middot-divider"></span>
   <span class="article-reading-time">
-    3 min read
+    4 min read
   </span>
   
 
@@ -570,7 +570,7 @@
   
   <span class="middot-divider"></span>
   <span class="article-categories">
-    <i class="fas fa-folder mr-1"></i><a href="/categories/calculus/">Calculus</a>, <a href="/categories/computational-mathematics/">Computational Mathematics</a>, <a href="/categories/linear-algebra/">Linear algebra</a>, <a href="/categories/machine_learning/">Machine_learning</a></span>
+    <i class="fas fa-folder mr-1"></i><a href="/categories/machine_learning/">Machine_learning</a></span>
   
 
 </div>
@@ -598,159 +598,162 @@
   <div class="article-container">
 
     <div class="article-style">
-      <h1 id="principle-component-analysis---0">Principle component analysis - 0</h1>
-<h2 id="1-一維資料的統計學">1. 一維資料的統計學</h2>
-<p>假設我們有 $n$ 筆資料, 每筆資料都是一個數字 (例如 $n$ 個學生的成績). 這 $n$ 筆資料我們設為 $x_1, \cdots, x_n$, 並且定義一個矩陣</p>
-<p>$$
-\tag{1}
-X =
-\begin{bmatrix}
-x_1 &amp; \cdots &amp; x_n
-\end{bmatrix}\in M_{1\times n}.
-$$</p>
-<p>那這些資料的平均數為</p>
-<p>$$
-\tag{2}
-\mu = \frac{1}{n}(x_1+\cdots+x_n) = \frac{1}{n}\begin{bmatrix}
-x_1 &amp; \cdots &amp; x_n
-\end{bmatrix}\begin{bmatrix}
-1\\
-\vdots\\<br>
-1
-\end{bmatrix} = \frac{1}{n}X\mathbb{1},
-$$</p>
-<p>其中 $\mathbb{1} = [1, \cdots, 1]^T$ 是個全為 $1$ 的向量.</p>
-<p>資料的變異數 (variance) 則定義為</p>
-<p>$$
-\tag{3}
-\text{Var}(X) = \sigma^2 = \frac{1}{n}\sum^n_{k=1} (x_i - \mu)^2,
-$$</p>
-<p>而 $\sigma$ 則是標準差 (standard deviation, std).</p>
-<p>要將之寫成矩陣形式首先我們定義置中矩陣 (centering matrix)</p>
-<p>$$
-\tag{4}
-H = I - \frac{1}{n}\mathbb{1}\mathbb{1}^T.
-$$</p>
-<p>計算一下可以發現</p>
-<p>$$
-\tag{5}
-XH = X(I - \frac{1}{n}\mathbb{1}\mathbb{1}^T) = X - \mu\mathbb{1}^T = \begin{bmatrix}
-(x_1 -\mu) &amp; \cdots &amp; (x_n -\mu)
-\end{bmatrix} = Y,
-$$</p>
-<p>其中我們將這些置中後的資料存為 $Y$ 矩陣. 接著我們就可以知道</p>
-<p>$$
-\tag{6}
-\sigma^2 = \frac{1}{n}YY^T.
-$$</p>
-<h2 id="2-二維資料的統計學">2. 二維資料的統計學</h2>
-<p>假設我們有 $n$ 筆資料, 每筆資料都是 $2$ 個數字 (例如 $n$ 個學生在 $2$ 次考試的成績), 這兩個數字我們稱之為這筆資料的 features. 這 $n$ 筆資料我們設為 $(x_1, y_1), \cdots, (x_n, y_n)$, 並且定義一個矩陣</p>
-<p>$$
-\tag{7}
-A =
-\begin{bmatrix}
-x_1 &amp; \cdots &amp; x_n\\<br>
-y_1 &amp; \cdots &amp; y_n
-\end{bmatrix}\in M_{2\times n}.
-$$</p>
-<p>我們把每種資料都平移, 使其平均為 $0$, 並令平移後的資料為 $Y$. 簡單計算可以發現我們一樣可以用置中矩陣來做, $Y=XH$,</p>
-<p>$$
-\tag{8}
-Y = \begin{bmatrix}
-(x_1 -\mu_x) &amp; \cdots &amp; (x_n -\mu_x)\\
-(y_1 -\mu_y) &amp; \cdots &amp; (y_n -\mu_y)
-\end{bmatrix}, \quad
-\mu_x = \frac{1}{n}\sum^n_{k=1} x_k, \quad
-\mu_y = \frac{1}{n}\sum^n_{k=1} y_k.
-$$</p>
-<p>接著我們可以定義兩個變數的共變異數 (covariance),</p>
-<p>$$
-\tag{9}
-\text{cov}(x, y) = \frac{1}{n}\sum^n_{k=1}(x_k - \mu_x)(y_k-\mu_y).
-$$</p>
-<p>接著計算一下就可以發現</p>
-<p>$$
-\tag{10}
-\frac{1}{n}YY^T = \begin{bmatrix}
-\text{cov}(x,x) &amp; \text{cov}(x,y)\\
-\text{cov}(x,y) &amp; \text{cov}(y,y)
-\end{bmatrix},
-$$</p>
-<p>也就是所謂的共變異數矩陣. 這個矩陣的對角線元素代表每個 feature 自己的變異數, 而非對角線則是共變異數, 代表兩個 features 的相關程度.</p>
-<p><em><strong>Remark</strong></em>: 不過要真正算相關程度會更近一步的去計算相關係數 (correlation coefficients), 這邊就不再深入探討.</p>
-<h2 id="3-pca-maximize-variance">3. PCA: maximize variance</h2>
+      <h1 id="gaussian-discriminant-analysis-gda---2">Gaussian Discriminant Analysis (GDA) - 2</h1>
 <blockquote>
-<p>資料降到一維: 我們想要找到一個方向, 使得資料投影上去之後, 新資料的變異數會最大.</p>
-<p>資料我們會先置中, 所以處理的都是置中後的資料集 $Y$.</p>
+<p>這裡我們補充一下 GDA 裡的數學推導部分。</p>
 </blockquote>
-<p>假設這個方向為 $v\in\mathbb{R}^2$, 並且 $\|v\|=1$, 那資料投影到 $v$ 所得的新資料就是 $v^TY \in M_{1\times n}$. 接著我們就來算這筆新資料的變異數.</p>
-<p>算變異數的第一步一樣先算平均再把資料置中, 也就是計算 $v^TYH$. 不過由於 $Y$ 是置中過的資料, 因此 $YH = Y$, 所以 $v^TYH = v^TY$, 也就是說, 新資料 $v^TY$ 的平均已經是 $0$.</p>
-<p>接著, 新資料的變異數就會是</p>
-<p>$$
-\tag{11}
-\sigma^2 =\frac{1}{n}(v^TY)(v^TY)^T =\frac{1}{n}v^TYY^Tv.
-$$</p>
-<p>所以統整一下, 若我們將資料投影到 $v$ 上, 那新資料的變異數就是 (11). 而PCA 所要找的方向就是使變異數最大的方向, 也就是</p>
-<p>$$
-\tag{12}
-\hat{v} = \arg\max_{v\in\mathbb{R}^2, \|v\|=1} \left(v^TYY^Tv\right).
-$$</p>
-<p>最後, 我們知道這個解可以由 $Y^T$ 這個矩陣的 SVD 得出.</p>
-<p>假設 $Y^T = U\Sigma V^T$, 那  $\hat{v} = v_1$, 也就是第一個 singular vector.</p>
-<h2 id="4-pca-minimize-square-distance">4. PCA: minimize square distance</h2>
-<blockquote>
-<p>我們想要找到一個方向, 使得資料投影上去之後, 新舊資料的距離平方和最小.</p>
-</blockquote>
-<p>假設這個方向為 $v\in\mathbb{R}^2$, 並且 $\|v\|=1$, 那資料投影到 $v$ 的這個方向上的投影點就是 $vv^TY \in M_{2\times n}$. 接著我們就來算新舊資料的距離平方和:</p>
-<p>$$
-\tag{13}
-\begin{align}
-\sum^n_{k=1} d_k^2 &amp;= \sum^n_{k=1}\|Y_k - vv^TY_k\|^2  \\<br>
-&amp;= \sum^n_{k=1}&lt;Y_k-vv^TY_k, Y_k-vv^TY_k&gt; \\<br>
-&amp;= \sum^n_{k=1}Y_k^TY_k -Y_k^Tvv^TY_k \\<br>
-&amp;= \sum^n_{k=1}Y_k^TY_k -v^TY_kY_k^Tv \\<br>
-&amp;= \sum^n_{k=1}(Y_k^TY_k) -v^TYY^Tv,
-\end{align}
-$$</p>
-<p>其中我們用到了 $v^TY_k$ 是個數字以及 $\sum Y_kY_k^T = YY^T$ 這兩件事.</p>
-<p>我們希望找到一個方向使得距離平方和最小, 也就是</p>
-<p>$$
-\tag{14}
-\hat{v}=\arg\min_{v\in\mathbb{R}^2, \|v\|=1} \left(\sum^n_{k=1}(Y_k^TY_k) -v^TYY^Tv\right) = \arg\max_{v\in\mathbb{R}^2, \|v\|=1} \left(v^TYY^Tv\right).
-$$</p>
-<p>觀察 (12) 與 (14) 發現他們一模一樣. 也就是這兩個問題的解會是一樣的, 最佳的方向都是第一個 singular vector.</p>
-<h2 id="5-conclusion">5. Conclusion</h2>
-<ol>
-<li>PCA 想做的事就是找到一個仿射子空間 (affine subspace), 使得
+<p>假設我們有一組已標記的資料 $(\mathbf{x}_i, y_i)$，其中：</p>
 <ul>
-<li>投影下去之後的資料有最大的變異數</li>
-<li>投影前後的資料距離平方合最小.
-<blockquote>
-<p>而這兩件事情是等價的.</p>
-</blockquote>
-</li>
+<li>$\mathbf{x}_i \in \mathbb{R}^d$：第 $i$ 筆資料的 $d$-維特徵向量（例如身高和體重）。</li>
+<li>$y_i \in {0, 1}$：標示資料的類別（例如 0 表女生、1 表男生）。</li>
 </ul>
-</li>
-<li>PCA 也是一種資料降維的工具, 而將資料投影到一維所出來的新資料就是 $v^TY$.</li>
-<li>以上雖然是以二維資料為例, 不過若有 $m$ 維資料整個推導是一樣的.</li>
-<li>以上是以投影到一維為例, 若投影到更高維度就是依序找第二, 三, 等等的 singular vectors. 不過推導會利用到矩陣 trace 的一些性質, 一些細節這裡就先跳過.</li>
-<li>PCA 要找的是個仿射子空間, $V = \mu + \text{span}\{v\}$,  這裏我們都直接說 $\mu$ 就是資料的平均. 不過其實這是可以算出來的. 假設我們想要找一個點 $\mu$ 使得所有資料到這個點的距離和為最小, 也就是
+<p>我們的目標是：</p>
+<blockquote>
+<p>給定一筆新的資料 $\mathbf{x}$，判斷它屬於哪一個類別比較合理。</p>
+</blockquote>
+<p>在 GDA 中，這個判斷是透過<strong>貝式定理</strong>（Bayes&rsquo; theorem）來完成的，因此我們先回顧一下貝式定理的形式。</p>
+<p>對於一筆特徵向量 $\mathbf{x}$，它屬於類別 $y$ 的後驗概率為：
 $$
-\tag{15}
-\mu = \arg\min \sum^n_{k=1}(x_k - \mu)^2.
+P(y = 1 \mid \mathbf{x}) = \frac{P(\mathbf{x} \mid y = 1) P(y = 1)}{P(\mathbf{x})}.
 $$
-我們先定義 $f(\mu) = \sum^n_{k=1}(x_k - \mu)^2$. 這是個單變數函數, 而且其實就是個 $\mu$ 的二次多項式, 首項係數等於 $1$, 有一個最小值. 接著微分求極值得到
+這個公式告訴我們，要計算「在看到資料 $\mathbf{x}$ 之後，它是男生的可能性有多大」，我們需要三個量：</p>
+<ul>
+<li>$P(\mathbf{x} \mid y)$：在已知類別的情況下，資料長成 $\mathbf{x}$ 的機率（這是 GDA 的核心假設），</li>
+<li>$P(y)$：類別的先驗機率（例如男生、女生各自的比例），</li>
+<li>$P(\mathbf{x})$：資料 $\mathbf{x}$ 出現的總機率（作為正規化常數）。</li>
+</ul>
+<p>接下來，我們會一步步說明 GDA 是如何對這些機率做建模，以及最後如何得到分類的決策規則。</p>
+<hr>
+<h2 id="1-pmathbfx-mid-y">1. $P(\mathbf{x} \mid y)$</h2>
+<p>在 GDA 裡，我們假設每個類別的特徵向量都服從高斯分布：
 $$
-\tag{16}
-\frac{d}{d\mu} f =  \sum^n_{k=1}(-2)(x_k - \mu) = (-2)\left[\sum^n_{k=1}x_k - n\mu\right]
+\mathbf{x} \mid y = k\sim \mathcal{N}(\mu_k, \Sigma_k),
 $$
-因此極值發生在 $\frac{d}{d\mu} f=0$, 也就是
-$$
-\tag{17}
-\mu = \frac{1}{n}\sum^n_{k=1}x_k.
-$$
-所以到所有資料點距離和最小的就是平均數.</li>
+也就是說，對於每個類別，我們認為資料大致「長這個樣子」，由平均值 $\mu_k$ 描述中心位置，由共變異數矩陣 $\Sigma_k$ 描述資料的擴散與形狀。</p>
+<p>因此，計算 $P(\mathbf{x} \mid y)$ 就變成估計這兩個參數：</p>
+<ol>
+<li>將所有屬於類別 $y=k$ 的資料收集起來。</li>
+<li>計算它們的平均值 $\mu_k$ 和共變異數矩陣 $\Sigma_k$。</li>
+<li>代入高斯分布公式，就得到了 $P(\mathbf{x} \mid y)$。</li>
 </ol>
+<h3 id="11-共用共變異數矩陣lda-特例">1.1 共用共變異數矩陣（LDA 特例）</h3>
+<p>在 線性判別分析（LDA） 中，我們做了一個簡化假設：假設所有類別共享同一個共變異數矩陣
+$$
+\Sigma_k=\Sigma, \quad \forall k.
+$$
+這個假設帶來兩個好處：</p>
+<ul>
+<li>需要估計的參數變少，更穩定，尤其是資料量不大時。</li>
+<li>決策邊界變成線性的（直線或超平面），計算上更簡單。</li>
+</ul>
+<p>也就是說，LDA 是 GDA 的一個特例，它在假設更嚴格的情況下，把決策邊界從二次曲線簡化成線性曲線。</p>
+<hr>
+<h2 id="2-maximum-likelihood-estimation-mle">2. Maximum Likelihood Estimation (MLE)</h2>
+<h3 id="21-likelihood-function">2.1 Likelihood function</h3>
+<p>假設我們有二分類資料 $(\mathbf{x}_i, y_i)$，$i=1,\dots,n$，$y_i \in \{0,1\}$。</p>
+<ul>
+<li>類別先驗：
+$$
+P(y=1) = \phi, \quad P(y=0)=1-\phi.
+$$</li>
+<li>條件分布：
+$$
+\mathbf{x} \mid y = k\sim \mathcal{N}(\mu_k, \Sigma_k).
+$$</li>
+</ul>
+<p>則整體的 likelihood function 為
+$$
+L(\phi, \mu_k, \Sigma_k) = \prod^n_{i=1} P(\mathbf{x}_i, y_i)= \prod^n_{i=1} P(\mathbf{x}_i\mid y_i)P(y_i).
+$$
+展開後得到
+$$
+L = \prod_{i, y=1}\phi \mathcal{N}(\mathbf{x}_i \mid \mu_1, \Sigma_1)\prod_{i, y=0}(1-\phi) \mathcal{N}(\mathbf{x}_i \mid \mu_0, \Sigma_0).
+$$</p>
+<h3 id="22-log-likelihood">2.2 Log-Likelihood</h3>
+<p>取 $\log$ 之後得到 log-likelihood：
+$$
+\ell(\phi, \mu_k, \Sigma_k) = \sum_{i, y=1}\log\phi+\log\mathcal{N}(\mathbf{x}_i \mid \mu_1, \Sigma_1)+\sum_{i, y=0}\log(1-\phi)+\log\mathcal{N}(\mathbf{x}_i \mid \mu_0, \Sigma_0).
+$$</p>
+<h3 id="23-estimator">2.3 Estimator</h3>
+<ol>
+<li>將 log-likelihood 對 $\phi$ 微分求極值後就可以得到
+$$
+\phi = \frac{\text{類別 1 的樣本數}}{\text{總樣本數}}.
+$$</li>
+<li>將 log-likelihood 對 $\mu_k$ 求導並設為 $0$，得到：
+$$
+\mu_k= \frac{1}{n_k}\sum_{{i, y=k}}\mathbf{x}_i,
+$$
+其中 $n_k$ 是類別 $k$ 的樣本數。因此 $\mu_k$ 就是類別 $k$ 的平均值。</li>
+<li>將 log-likelihood 對 $\Sigma_k$ 求導並設為 $0$，得到：
+$$
+\Sigma_k = \frac{1}{n_k}\sum_{i, y=k}(\mathbf{x}_i - \mu_k)(\mathbf{x}_i - \mu_k)^T.
+$$
+因此 $\Sigma_k$ 就是類別 $k$ 的共變異數矩陣。</li>
+<li>在 LDA 這個特殊情況時，我們假設 $\Sigma_k=\Sigma$，一樣將 log-likelihood 對 $\Sigma$ 求導並設為 $0$，得到：
+$$
+\Sigma = \frac{n_0}{n} \Sigma_0 +  \frac{n_1}{n} \Sigma_1.
+$$
+也就是說，在這情況下共變異數矩陣是加權平均，按每個類別的樣本數加權。</li>
+</ol>
+<hr>
+<h2 id="3-優化與預測">3 優化與預測</h2>
+<p>最後總結一下，對於給定的分類資料，我們的訓練與預測流程如下：</p>
+<ol>
+<li>訓練：通過最大似然估計（Maximum Likelihood Estimation, MLE）計算模型參數
+$$
+(\phi, \mu_k, \Sigma_k).
+$$</li>
+<li>預測分類：對於新的資料點 $\mathbf{x}$，若
+$$
+P(y = 1 \mid \mathbf{x}) &gt; P(y = 0 \mid \mathbf{x}),
+$$
+則預測為 $y = 1$；反之為 $y = 0$。</li>
+</ol>
+<p><strong>備註</strong>: 在計算後驗機率 $P(y = k \mid \mathbf{x})$ 時，公式裡會有分母 $P(\mathbf{x})$，它表示「不管它屬於哪個類別，$\mathbf{x}$ 出現的總機率」。不過在實務上，我們不需要特別算它，因為在比較分類結果時，分母對所有類別都是一樣的，所以只要比較分子就可以直接做分類。</p>
+<hr>
+<h2 id="4-決策邊界">4. 決策邊界</h2>
+<h3 id="41-lda-決策邊界">4.1 LDA 決策邊界</h3>
+<p>假設二分類資料 $y \in \{0,1\}$，條件分布為
+$$
+\mathbf{x} \mid y=k \sim \mathcal{N}(\mu_k, \Sigma), \quad k=0,1,
+$$
+其中所有類別共享同一個共變異數矩陣 $\Sigma$。</p>
+<p>LDA 的決策規則很直觀：如果
+$$
+P(y=1 \mid \mathbf{x}) &gt; P(y=0 \mid \mathbf{x}),
+$$
+則預測 $y=1$。這決策規則也可以等價改寫成以下兩種形式：
+$$
+\frac{P(y=1 \mid \mathbf{x})}{P(y=0 \mid \mathbf{x})} &gt; 1, \quad
+\log \frac{P(y=1 \mid \mathbf{x})}{P(y=0 \mid \mathbf{x})} &gt; 0.
+$$</p>
+<p>具體而言，對數比（log-odds）可以展開為：
+$$
+\begin{align}
+\log \frac{P(y=1 \mid \mathbf{x})}{P(y=0 \mid \mathbf{x})} =&amp; \mathbf{x}^T \underbrace{\Sigma^{-1} (\mu_1 - \mu_0)}_{\mathbf{x}^T \mathbf{w}} \\<br>
+&amp;-\frac{1}{2} (\mu_1^T \Sigma^{-1} \mu_1 - \mu_0^T \Sigma^{-1} \mu_0) + \log \frac{\phi}{1-\phi}.
+\end{align}
+$$
+因此我們令
+$$
+\mathbf{w} = \Sigma^{-1} (\mu_1 - \mu_0), \quad
+b = - \frac{1}{2} (\mu_1^T \Sigma^{-1} \mu_1 - \mu_0^T \Sigma^{-1} \mu_0) + \log \frac{\phi}{1-\phi},
+$$
+則決策邊界可寫成簡單的線性形式：
+$$
+\mathbf{w}^T \mathbf{x} + b = 0
+$$
+這條超平面（在二維情況下就是直線）就是 LDA 的決策邊界。</p>
+<h3 id="42-gda-決策邊界">4.2 GDA 決策邊界</h3>
+<p>若我們假設每個類別有自己的共變異數矩陣，則對數比變成：</p>
+<p>$$
+\begin{align}
+\log \frac{P(y=1 \mid \mathbf{x})}{P(y=0 \mid \mathbf{x})} =&amp;-\frac{1}{2} \Big[ (\mathbf{x}-\mu_1)^T \Sigma_1^{-1} (\mathbf{x}-\mu_1) - (\mathbf{x}-\mu_0)^T \Sigma_0^{-1} (\mathbf{x}-\mu_0) \Big] \\<br>
+&amp; - \frac{1}{2} \log \frac{|\Sigma_1|}{|\Sigma_0|} + \log \frac{\phi}{1-\phi}.
+\end{align}
+$$
+因為共變異數矩陣不同，因此二次項不會抵銷，決策邊界是一條二次曲線（椭圓、拋物線或雙曲線），又稱為 Quadratic Discriminant Analysis (QDA)。</p>
 
     </div>
 
@@ -762,9 +765,7 @@ $$
 
 <div class="article-tags">
   
-  <a class="badge badge-light" href="/tags/dimension_reduction/">dimension_reduction</a>
-  
-  <a class="badge badge-light" href="/tags/pca/">PCA</a>
+  <a class="badge badge-light" href="/tags/gda/">GDA</a>
   
   <a class="badge badge-light" href="/tags/unsupervised_learning/">unsupervised_learning</a>
   
@@ -783,7 +784,7 @@ $$
       
       
       <li>
-        <a href="https://twitter.com/intent/tweet?url=https://teshenglin.github.io/post/2023_principal_component_analysis_0/&amp;text=%e4%b8%bb%e6%88%90%e5%88%86%e5%88%86%e6%9e%90%20-%200" target="_blank" rel="noopener" class="share-btn-twitter">
+        <a href="https://twitter.com/intent/tweet?url=https://teshenglin.github.io/post/2025_gaussian_discriminant_analysis_2/&amp;text=%e9%ab%98%e6%96%af%e5%88%a4%e5%88%a5%e5%88%86%e6%9e%90-2" target="_blank" rel="noopener" class="share-btn-twitter">
           <i class="fab fa-twitter"></i>
         </a>
       </li>
@@ -796,7 +797,7 @@ $$
       
       
       <li>
-        <a href="https://www.facebook.com/sharer.php?u=https://teshenglin.github.io/post/2023_principal_component_analysis_0/&amp;t=%e4%b8%bb%e6%88%90%e5%88%86%e5%88%86%e6%9e%90%20-%200" target="_blank" rel="noopener" class="share-btn-facebook">
+        <a href="https://www.facebook.com/sharer.php?u=https://teshenglin.github.io/post/2025_gaussian_discriminant_analysis_2/&amp;t=%e9%ab%98%e6%96%af%e5%88%a4%e5%88%a5%e5%88%86%e6%9e%90-2" target="_blank" rel="noopener" class="share-btn-facebook">
           <i class="fab fa-facebook-f"></i>
         </a>
       </li>
@@ -809,7 +810,7 @@ $$
       
       
       <li>
-        <a href="mailto:?subject=%e4%b8%bb%e6%88%90%e5%88%86%e5%88%86%e6%9e%90%20-%200&amp;body=https://teshenglin.github.io/post/2023_principal_component_analysis_0/" target="_blank" rel="noopener" class="share-btn-email">
+        <a href="mailto:?subject=%e9%ab%98%e6%96%af%e5%88%a4%e5%88%a5%e5%88%86%e6%9e%90-2&amp;body=https://teshenglin.github.io/post/2025_gaussian_discriminant_analysis_2/" target="_blank" rel="noopener" class="share-btn-email">
           <i class="fas fa-envelope"></i>
         </a>
       </li>
@@ -842,83 +843,16 @@ $$
   
   
   
-    
-  
   
   
   <div class="media author-card content-widget-hr">
     
-      
-      <img class="avatar mr-3 avatar-circle" src="/authors/admin/avatar_hua0d4d4b24f4da3a102e4452ac738b95f_109236_270x270_fill_q90_lanczos_center.jpg" alt="Avatar">
-    
 
     <div class="media-body">
-      <h5 class="card-title"><a href="https://teshenglin.github.io/">Te-Sheng Lin (林得勝)</a></h5>
-      <h6 class="card-subtitle">Professor</h6>
-      <p class="card-text">The focus of my research is concerned with the development of analytical and computational tools, and further to communicate with scientists from other disciplines to solve engineering problems in practice.</p>
+      <h5 class="card-title"><a href="/authors/%E6%9E%97%E7%90%AE%E8%A9%A0/"></a></h5>
+      
+      
       <ul class="network-icon" aria-hidden="true">
-  
-    
-    
-    
-      
-    
-    
-    
-    
-    
-    <li>
-      <a href="mailto:teshenglin@nycu.edu.tw" >
-        <i class="fas fa-envelope"></i>
-      </a>
-    </li>
-  
-    
-    
-    
-    
-    
-    
-    
-      
-    
-    <li>
-      <a href="https://www.researchgate.net/profile/Te-Sheng_Lin" target="_blank" rel="noopener">
-        <i class="ai ai-researchgate"></i>
-      </a>
-    </li>
-  
-    
-    
-    
-      
-    
-    
-    
-    
-    
-      
-    
-    <li>
-      <a href="https://github.com/teshenglin" target="_blank" rel="noopener">
-        <i class="fab fa-github"></i>
-      </a>
-    </li>
-  
-    
-    
-    
-    
-    
-    
-    
-      
-    
-    <li>
-      <a href="/cv/cv.pdf" >
-        <i class="ai ai-cv"></i>
-      </a>
-    </li>
   
 </ul>
 
@@ -939,15 +873,15 @@ $$
     <h3>Related</h3>
     <ul>
       
+      <li><a href="/post/2025_gaussian_discriminant_analysis/">高斯判別分析-1</a></li>
+      
+      <li><a href="/post/2023_principal_component_analysis_0/">主成分分析 - 0</a></li>
+      
       <li><a href="/post/2023_principal_component_analysis_01/">主成分分析 - code</a></li>
       
       <li><a href="/post/2021_diffusion_maps/">Diffusion maps</a></li>
       
       <li><a href="/post/2020_principal_component_analysis_2/">主成分分析 - 2</a></li>
-      
-      <li><a href="/post/2020_principal_component_analysis/">主成分分析</a></li>
-      
-      <li><a href="/post/2020_multi_dimensional_scaling/">Multidimensional scaling</a></li>
       
     </ul>
   </div>

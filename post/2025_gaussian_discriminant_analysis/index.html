@@ -28,10 +28,10 @@
   
     
   
-  <meta name="description" content="Principle component analysis - 0 1. 一維資料的統計學 假設我們有 $n$ 筆資料, 每筆資料都是一個數字 (例如 $n$ 個學生的成績). 這 $n$ 筆資料我們設為 $x_1, \cdots, x_n$, 並且定義一個矩陣 $$ \tag{1} X =">
+  <meta name="description" content="Gaussian Discriminant Analysis (GDA) - 1 1. 概述 高斯判別分析（GDA）是一種生成式分類模型，是機器學習中的概率模型。它假設每個類別的特徵都遵循高斯分佈，並利用貝式定理來進">
 
   
-  <link rel="alternate" hreflang="en-us" href="https://teshenglin.github.io/post/2023_principal_component_analysis_0/">
+  <link rel="alternate" hreflang="en-us" href="https://teshenglin.github.io/post/2025_gaussian_discriminant_analysis/">
 
   
 
@@ -220,7 +220,7 @@
   <link rel="icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_2.png">
   <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_2.png">
 
-  <link rel="canonical" href="https://teshenglin.github.io/post/2023_principal_component_analysis_0/">
+  <link rel="canonical" href="https://teshenglin.github.io/post/2025_gaussian_discriminant_analysis/">
 
   
   
@@ -234,13 +234,13 @@
   <meta property="twitter:card" content="summary">
   
   <meta property="og:site_name" content="Te-Sheng Lin">
-  <meta property="og:url" content="https://teshenglin.github.io/post/2023_principal_component_analysis_0/">
-  <meta property="og:title" content="主成分分析 - 0 | Te-Sheng Lin">
-  <meta property="og:description" content="Principle component analysis - 0 1. 一維資料的統計學 假設我們有 $n$ 筆資料, 每筆資料都是一個數字 (例如 $n$ 個學生的成績). 這 $n$ 筆資料我們設為 $x_1, \cdots, x_n$, 並且定義一個矩陣 $$ \tag{1} X ="><meta property="og:image" content="https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png">
+  <meta property="og:url" content="https://teshenglin.github.io/post/2025_gaussian_discriminant_analysis/">
+  <meta property="og:title" content="高斯判別分析-1 | Te-Sheng Lin">
+  <meta property="og:description" content="Gaussian Discriminant Analysis (GDA) - 1 1. 概述 高斯判別分析（GDA）是一種生成式分類模型，是機器學習中的概率模型。它假設每個類別的特徵都遵循高斯分佈，並利用貝式定理來進"><meta property="og:image" content="https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png">
   <meta property="twitter:image" content="https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png"><meta property="og:locale" content="en-us">
   
     
-      <meta property="article:published_time" content="2023-12-18T00:00:00&#43;00:00">
+      <meta property="article:published_time" content="2025-12-23T00:00:00&#43;00:00">
     
     <meta property="article:modified_time" content="2025-12-25T14:25:07&#43;08:00">
   
@@ -266,16 +266,16 @@
   "@type": "BlogPosting",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://teshenglin.github.io/post/2023_principal_component_analysis_0/"
+    "@id": "https://teshenglin.github.io/post/2025_gaussian_discriminant_analysis/"
   },
-  "headline": "主成分分析 - 0",
+  "headline": "高斯判別分析-1",
   
-  "datePublished": "2023-12-18T00:00:00Z",
+  "datePublished": "2025-12-23T00:00:00Z",
   "dateModified": "2025-12-25T14:25:07+08:00",
   
   "author": {
     "@type": "Person",
-    "name": "Te-Sheng Lin (林得勝)"
+    "name": "林琮詠"
   },
   
   "publisher": {
@@ -286,7 +286,7 @@
       "url": "https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_2.png"
     }
   },
-  "description": "Principle component analysis - 0 1. 一維資料的統計學 假設我們有 $n$ 筆資料, 每筆資料都是一個數字 (例如 $n$ 個學生的成績). 這 $n$ 筆資料我們設為 $x_1, \\cdots, x_n$, 並且定義一個矩陣 $$ \\tag{1} X ="
+  "description": "Gaussian Discriminant Analysis (GDA) - 1 1. 概述 高斯判別分析（GDA）是一種生成式分類模型，是機器學習中的概率模型。它假設每個類別的特徵都遵循高斯分佈，並利用貝式定理來進"
 }
 </script>
 
@@ -304,7 +304,7 @@
 
 
 
-  <title>主成分分析 - 0 | Te-Sheng Lin</title>
+  <title>高斯判別分析-1 | Te-Sheng Lin</title>
 
 </head>
 
@@ -515,7 +515,7 @@
   
   
 <div class="article-container pt-3">
-  <h1>主成分分析 - 0</h1>
+  <h1>高斯判別分析-1</h1>
 
   
 
@@ -535,7 +535,7 @@
 
 
   
-  <span><a href="/authors/admin/">Te-Sheng Lin (林得勝)</a></span>
+  <span><a href="/authors/%E6%9E%97%E7%90%AE%E8%A9%A0/">林琮詠</a></span>, <span><a href="/authors/admin/">Te-Sheng Lin (林得勝)</a></span>
 
   </div>
   
@@ -558,7 +558,7 @@
   
   <span class="middot-divider"></span>
   <span class="article-reading-time">
-    3 min read
+    6 min read
   </span>
   
 
@@ -570,7 +570,7 @@
   
   <span class="middot-divider"></span>
   <span class="article-categories">
-    <i class="fas fa-folder mr-1"></i><a href="/categories/calculus/">Calculus</a>, <a href="/categories/computational-mathematics/">Computational Mathematics</a>, <a href="/categories/linear-algebra/">Linear algebra</a>, <a href="/categories/machine_learning/">Machine_learning</a></span>
+    <i class="fas fa-folder mr-1"></i><a href="/categories/machine_learning/">Machine_learning</a></span>
   
 
 </div>
@@ -598,159 +598,162 @@
   <div class="article-container">
 
     <div class="article-style">
-      <h1 id="principle-component-analysis---0">Principle component analysis - 0</h1>
-<h2 id="1-一維資料的統計學">1. 一維資料的統計學</h2>
-<p>假設我們有 $n$ 筆資料, 每筆資料都是一個數字 (例如 $n$ 個學生的成績). 這 $n$ 筆資料我們設為 $x_1, \cdots, x_n$, 並且定義一個矩陣</p>
-<p>$$
-\tag{1}
-X =
-\begin{bmatrix}
-x_1 &amp; \cdots &amp; x_n
-\end{bmatrix}\in M_{1\times n}.
-$$</p>
-<p>那這些資料的平均數為</p>
-<p>$$
-\tag{2}
-\mu = \frac{1}{n}(x_1+\cdots+x_n) = \frac{1}{n}\begin{bmatrix}
-x_1 &amp; \cdots &amp; x_n
-\end{bmatrix}\begin{bmatrix}
-1\\
-\vdots\\<br>
-1
-\end{bmatrix} = \frac{1}{n}X\mathbb{1},
-$$</p>
-<p>其中 $\mathbb{1} = [1, \cdots, 1]^T$ 是個全為 $1$ 的向量.</p>
-<p>資料的變異數 (variance) 則定義為</p>
-<p>$$
-\tag{3}
-\text{Var}(X) = \sigma^2 = \frac{1}{n}\sum^n_{k=1} (x_i - \mu)^2,
-$$</p>
-<p>而 $\sigma$ 則是標準差 (standard deviation, std).</p>
-<p>要將之寫成矩陣形式首先我們定義置中矩陣 (centering matrix)</p>
-<p>$$
-\tag{4}
-H = I - \frac{1}{n}\mathbb{1}\mathbb{1}^T.
-$$</p>
-<p>計算一下可以發現</p>
-<p>$$
-\tag{5}
-XH = X(I - \frac{1}{n}\mathbb{1}\mathbb{1}^T) = X - \mu\mathbb{1}^T = \begin{bmatrix}
-(x_1 -\mu) &amp; \cdots &amp; (x_n -\mu)
-\end{bmatrix} = Y,
-$$</p>
-<p>其中我們將這些置中後的資料存為 $Y$ 矩陣. 接著我們就可以知道</p>
-<p>$$
-\tag{6}
-\sigma^2 = \frac{1}{n}YY^T.
-$$</p>
-<h2 id="2-二維資料的統計學">2. 二維資料的統計學</h2>
-<p>假設我們有 $n$ 筆資料, 每筆資料都是 $2$ 個數字 (例如 $n$ 個學生在 $2$ 次考試的成績), 這兩個數字我們稱之為這筆資料的 features. 這 $n$ 筆資料我們設為 $(x_1, y_1), \cdots, (x_n, y_n)$, 並且定義一個矩陣</p>
-<p>$$
-\tag{7}
-A =
-\begin{bmatrix}
-x_1 &amp; \cdots &amp; x_n\\<br>
-y_1 &amp; \cdots &amp; y_n
-\end{bmatrix}\in M_{2\times n}.
-$$</p>
-<p>我們把每種資料都平移, 使其平均為 $0$, 並令平移後的資料為 $Y$. 簡單計算可以發現我們一樣可以用置中矩陣來做, $Y=XH$,</p>
-<p>$$
-\tag{8}
-Y = \begin{bmatrix}
-(x_1 -\mu_x) &amp; \cdots &amp; (x_n -\mu_x)\\
-(y_1 -\mu_y) &amp; \cdots &amp; (y_n -\mu_y)
-\end{bmatrix}, \quad
-\mu_x = \frac{1}{n}\sum^n_{k=1} x_k, \quad
-\mu_y = \frac{1}{n}\sum^n_{k=1} y_k.
-$$</p>
-<p>接著我們可以定義兩個變數的共變異數 (covariance),</p>
-<p>$$
-\tag{9}
-\text{cov}(x, y) = \frac{1}{n}\sum^n_{k=1}(x_k - \mu_x)(y_k-\mu_y).
-$$</p>
-<p>接著計算一下就可以發現</p>
-<p>$$
-\tag{10}
-\frac{1}{n}YY^T = \begin{bmatrix}
-\text{cov}(x,x) &amp; \text{cov}(x,y)\\
-\text{cov}(x,y) &amp; \text{cov}(y,y)
-\end{bmatrix},
-$$</p>
-<p>也就是所謂的共變異數矩陣. 這個矩陣的對角線元素代表每個 feature 自己的變異數, 而非對角線則是共變異數, 代表兩個 features 的相關程度.</p>
-<p><em><strong>Remark</strong></em>: 不過要真正算相關程度會更近一步的去計算相關係數 (correlation coefficients), 這邊就不再深入探討.</p>
-<h2 id="3-pca-maximize-variance">3. PCA: maximize variance</h2>
+      <h1 id="gaussian-discriminant-analysis-gda---1">Gaussian Discriminant Analysis (GDA) - 1</h1>
+<h2 id="1-概述">1. 概述</h2>
+<p>高斯判別分析（GDA）是一種<strong>生成式分類模型</strong>，是機器學習中的概率模型。它假設每個類別的特徵都遵循高斯分佈，並利用貝式定理來進行分類。</p>
+<hr>
+<h2 id="2-簡單舉例">2. 簡單舉例</h2>
+<p>假設我們手上有一些男生與女生的身高與體重資料。我們的目標是：未來只要給定一個人的身高和體重，就能判斷他比較可能是男生還是女生。</p>
+<p>在 GDA（Gaussian Discriminant Analysis） 中，我們真正想回答的問題其實是：</p>
 <blockquote>
-<p>資料降到一維: 我們想要找到一個方向, 使得資料投影上去之後, 新資料的變異數會最大.</p>
-<p>資料我們會先置中, 所以處理的都是置中後的資料集 $Y$.</p>
+<p>在已知這個人的身高與體重之後，他是男生（或女生）的機率有多大？</p>
 </blockquote>
-<p>假設這個方向為 $v\in\mathbb{R}^2$, 並且 $\|v\|=1$, 那資料投影到 $v$ 所得的新資料就是 $v^TY \in M_{1\times n}$. 接著我們就來算這筆新資料的變異數.</p>
-<p>算變異數的第一步一樣先算平均再把資料置中, 也就是計算 $v^TYH$. 不過由於 $Y$ 是置中過的資料, 因此 $YH = Y$, 所以 $v^TYH = v^TY$, 也就是說, 新資料 $v^TY$ 的平均已經是 $0$.</p>
-<p>接著, 新資料的變異數就會是</p>
-<p>$$
-\tag{11}
-\sigma^2 =\frac{1}{n}(v^TY)(v^TY)^T =\frac{1}{n}v^TYY^Tv.
-$$</p>
-<p>所以統整一下, 若我們將資料投影到 $v$ 上, 那新資料的變異數就是 (11). 而PCA 所要找的方向就是使變異數最大的方向, 也就是</p>
-<p>$$
-\tag{12}
-\hat{v} = \arg\max_{v\in\mathbb{R}^2, \|v\|=1} \left(v^TYY^Tv\right).
-$$</p>
-<p>最後, 我們知道這個解可以由 $Y^T$ 這個矩陣的 SVD 得出.</p>
-<p>假設 $Y^T = U\Sigma V^T$, 那  $\hat{v} = v_1$, 也就是第一個 singular vector.</p>
-<h2 id="4-pca-minimize-square-distance">4. PCA: minimize square distance</h2>
-<blockquote>
-<p>我們想要找到一個方向, 使得資料投影上去之後, 新舊資料的距離平方和最小.</p>
-</blockquote>
-<p>假設這個方向為 $v\in\mathbb{R}^2$, 並且 $\|v\|=1$, 那資料投影到 $v$ 的這個方向上的投影點就是 $vv^TY \in M_{2\times n}$. 接著我們就來算新舊資料的距離平方和:</p>
-<p>$$
-\tag{13}
-\begin{align}
-\sum^n_{k=1} d_k^2 &amp;= \sum^n_{k=1}\|Y_k - vv^TY_k\|^2  \\<br>
-&amp;= \sum^n_{k=1}&lt;Y_k-vv^TY_k, Y_k-vv^TY_k&gt; \\<br>
-&amp;= \sum^n_{k=1}Y_k^TY_k -Y_k^Tvv^TY_k \\<br>
-&amp;= \sum^n_{k=1}Y_k^TY_k -v^TY_kY_k^Tv \\<br>
-&amp;= \sum^n_{k=1}(Y_k^TY_k) -v^TYY^Tv,
-\end{align}
-$$</p>
-<p>其中我們用到了 $v^TY_k$ 是個數字以及 $\sum Y_kY_k^T = YY^T$ 這兩件事.</p>
-<p>我們希望找到一個方向使得距離平方和最小, 也就是</p>
-<p>$$
-\tag{14}
-\hat{v}=\arg\min_{v\in\mathbb{R}^2, \|v\|=1} \left(\sum^n_{k=1}(Y_k^TY_k) -v^TYY^Tv\right) = \arg\max_{v\in\mathbb{R}^2, \|v\|=1} \left(v^TYY^Tv\right).
-$$</p>
-<p>觀察 (12) 與 (14) 發現他們一模一樣. 也就是這兩個問題的解會是一樣的, 最佳的方向都是第一個 singular vector.</p>
-<h2 id="5-conclusion">5. Conclusion</h2>
-<ol>
-<li>PCA 想做的事就是找到一個仿射子空間 (affine subspace), 使得
+<p>為了回答這個問題，GDA 假設男生與女生的身高–體重資料，各自來自不同的二維高斯分布。透過現有資料，我們可以分別估計出男生與女生的平均身高體重，以及資料的變異程度（也就是分布的形狀與擴散情況）。</p>
+<p>一旦這些分布被估計出來，對於任何一個給定的身高–體重組合，GDA 都可以計算：</p>
 <ul>
-<li>投影下去之後的資料有最大的變異數</li>
-<li>投影前後的資料距離平方合最小.
+<li>在男生分布下，出現這個資料點的可能性</li>
+<li>在女生分布下，出現這個資料點的可能性</li>
+</ul>
+<p>再結合各類別本身出現的比例，就能算出這個人屬於男生或女生的後驗機率。</p>
+<p>當某一點在「男生」與「女生」兩個類別下的機率剛好一樣時，這些點就形成了分類的分界線。把所有這樣的點連起來，就能在身高–體重平面上畫出一條決策邊界（decision boundary），用來區分男生與女生。</p>
+<p>因此，GDA 模型實際上做了兩件事情：</p>
+<ol>
+<li>對單一個體進行機率判斷：給定身高與體重，計算他屬於男生或女生的機率。</li>
+<li>在整個特徵空間中建立分類規則：由機率相等的條件導出決策邊界，之後可以直接用這條邊界進行分類。</li>
+</ol>
+<hr>
+<h2 id="3-為什麼-gda-被稱為生成式模型">3. 為什麼 GDA 被稱為生成式模型？</h2>
+<p>生成式模型的核心想法是：
+先學會每一類資料「長什麼樣子」，再用這個模型來做判斷。</p>
+<p>具體來說，它會關心三件事：</p>
+<ul>
+<li>這個點屬於哪一類？</li>
+<li>每一類的資料大致分布在哪個區域、形狀如何？</li>
+<li>如果只知道這一類的模型，甚至能不能「生成」看起來合理的新資料？</li>
+</ul>
+<p>也就是說，生成式模型不是只關心「怎麼分」，而是試著回答一個更根本的問題：</p>
 <blockquote>
-<p>而這兩件事情是等價的.</p>
+<p>現實世界中的資料是怎麼被產生出來的？</p>
+</blockquote>
+<h3 id="31-gda-如何體現生成式的想法">3.1 GDA 如何體現「生成式」的想法？</h3>
+<p>在 Gaussian Discriminant Analysis（GDA）中，我們直接假設資料的生成方式：</p>
+<blockquote>
+<p>每一個類別的資料，都是由某個高斯分布隨機產生的。</p>
+</blockquote>
+<p>回到身高–體重的例子，我們假設：</p>
+<ul>
+<li>男生的身高–體重資料來自一個二維高斯分布</li>
+<li>女生的身高–體重資料來自另一個二維高斯分布</li>
+</ul>
+<p>透過已知的資料，我們可以分別估計：</p>
+<ul>
+<li>每一類的平均位置（例如典型的身高與體重）</li>
+<li>資料的擴散程度與方向（變異數與相關性）</li>
+</ul>
+<p>一旦這些分布被學好，我們可以：</p>
+<ul>
+<li>計算「某個人屬於男生或女生的機率」</li>
+<li>畫出對應的決策邊界</li>
+<li>從模型中隨機產生新的身高–體重資料點</li>
+</ul>
+<p>這正是 GDA 被稱為生成式模型的原因：
+它先建立「資料如何生成」的模型，再由這個模型自然地導出分類結果。</p>
+<hr>
+<h2 id="4-與判別式模型的差別">4. 與判別式模型的差別</h2>
+<p>到目前為止，我們看到 GDA 是一種生成式模型：它先嘗試理解「每一類資料是怎麼產生的」，再利用這個對資料生成機制的理解來進行分類。</p>
+<p>那麼，另一大類在機器學習中同樣非常常見的方法——判別式模型（discriminative models）——又是在做什麼呢？</p>
+<h3 id="41-生成式-vs-判別式模型">4.1 生成式 vs. 判別式模型</h3>
+<p>判別式模型（例如 Logistic Regression）不關心資料是怎麼產生的，它只關心一個問題：</p>
+<blockquote>
+<p>給定一筆觀測到的資料，我要怎麼直接把它分到正確的類別？</p>
+</blockquote>
+<p>換句話說，假設資料為 $\mathbf{x}$, 相對應的類別為 $y$，判別式模型直接學習的是
+$$
+P(y\mid \mathbf{x}),
+$$
+也就是：在已經看到資料 $\mathbf{x}$ 的情況下，它屬於類別 $y$ 類別的機率有多大。</p>
+<p>相對地，生成式模型採取的是完全不同的觀點。它不直接問「這筆資料該分到哪一類」，而是先學習
+$$
+P(\mathbf{x} \mid y),
+$$
+也就是，如果資料真的來自類別 $y$，那我們觀察到 $\mathbf{x}$ 的機率會有多大？</p>
+<p>一旦我們知道了每個類別「會產生什麼樣的資料」，再搭配類別本身出現的機率 $P(y)$，就可以透過貝氏定理反推出 $P(y\mid \mathbf{x})$，進而完成分類。</p>
+<p>更白話一點的來說，GDA 關心的是「世界怎麼產生資料」，Logistic Regression 關心的是「邊界畫在哪裡」。</p>
+<hr>
+<h2 id="5-決策邊界長什麼樣">5. 決策邊界長什麼樣？</h2>
+<p>在 GDA 裡，模型最後畫出來的「分界線」長什麼樣子，其實取決於我們對資料分布做了多嚴格的假設。</p>
+<h3 id="51-情況一所有類別看起來形狀一樣">5.1 情況一：所有類別看起來「形狀一樣」</h3>
+<p>如果我們假設不同類別的資料只是中心點不同，但「散開的方向與程度」都一樣（也就是：所有類別共用同一個共變異數矩陣）。那麼模型畫出來的分界線就會是一條直線（在高維空間則是一個超平面）。</p>
+<p>在這種情況下，GDA 做出來的分類結果，其實和 Logistic Regression 非常接近，甚至在某些條件下是等價的。</p>
+<h3 id="52-情況二每一類都有自己的形狀">5.2 情況二：每一類都有自己的「形狀」</h3>
+<p>如果我們允許不同類別的資料有不同的擴散方向與形狀（也就是：每一類都有自己的共變異數矩陣）。那模型就能畫出更彎曲、彈性的分界線，例如橢圓、拋物線這類的二次曲線。</p>
+<p>這樣的 GDA 就能處理比較複雜、非線性的分類問題。</p>
+<h3 id="53-小總結">5.3 小總結</h3>
+<blockquote>
+<p>假設越簡單，邊界越直；假設越自由，邊界越彎。</p>
+</blockquote>
+<ul>
+<li>如果所有類別共用同一個共變異數矩陣
+<ul>
+<li>→ 決策邊界是線性的（一條直線 / 超平面）</li>
+<li>→ 這時其實等價於 Logistic Regression（在某些條件下）</li>
+</ul>
+</li>
+<li>如果每一類有自己的共變異數矩陣
+<ul>
+<li>→ 決策邊界 二次曲線（橢圓、拋物線等）</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="6-gda-的優點與限制">6. GDA 的優點與限制</h2>
+<p>為什麼大家會用 GDA？</p>
+<ul>
+<li>在資料量不大時，效果往往很好
+<blockquote>
+<p>當資料量還不大的時候，GDA 常常能用「比較少的參數」抓到整體結構，反而比複雜模型表現更好。</p>
+</blockquote>
+</li>
+<li>模型有清楚的機率意義、可解釋
+<blockquote>
+<p>GDA 不只告訴你「分到哪一類」，還能說「有多像這一類」。這在需要解釋模型判斷理由的情境（例如科學或醫療）特別重要。</p>
+</blockquote>
+</li>
+<li>類別不平衡也處理得很自然
+<blockquote>
+<p>如果某一類本來就比較少，GDA 可以直接把「這一類本來就少見」這件事放進模型裡（先驗機率），不需要額外技巧。</p>
 </blockquote>
 </li>
 </ul>
+<p>使用 GDA 時要注意什麼？</p>
+<ul>
+<li>高斯假設若不合理，效果會變差
+<blockquote>
+<p>GDA 假設資料「長得像高斯分布」，如果實際資料分布歪得很厲害，模型就容易判斷錯。</p>
+</blockquote>
 </li>
-<li>PCA 也是一種資料降維的工具, 而將資料投影到一維所出來的新資料就是 $v^TY$.</li>
-<li>以上雖然是以二維資料為例, 不過若有 $m$ 維資料整個推導是一樣的.</li>
-<li>以上是以投影到一維為例, 若投影到更高維度就是依序找第二, 三, 等等的 singular vectors. 不過推導會利用到矩陣 trace 的一些性質, 一些細節這裡就先跳過.</li>
-<li>PCA 要找的是個仿射子空間, $V = \mu + \text{span}\{v\}$,  這裏我們都直接說 $\mu$ 就是資料的平均. 不過其實這是可以算出來的. 假設我們想要找一個點 $\mu$ 使得所有資料到這個點的距離和為最小, 也就是
-$$
-\tag{15}
-\mu = \arg\min \sum^n_{k=1}(x_k - \mu)^2.
-$$
-我們先定義 $f(\mu) = \sum^n_{k=1}(x_k - \mu)^2$. 這是個單變數函數, 而且其實就是個 $\mu$ 的二次多項式, 首項係數等於 $1$, 有一個最小值. 接著微分求極值得到
-$$
-\tag{16}
-\frac{d}{d\mu} f =  \sum^n_{k=1}(-2)(x_k - \mu) = (-2)\left[\sum^n_{k=1}x_k - n\mu\right]
-$$
-因此極值發生在 $\frac{d}{d\mu} f=0$, 也就是
-$$
-\tag{17}
-\mu = \frac{1}{n}\sum^n_{k=1}x_k.
-$$
-所以到所有資料點距離和最小的就是平均數.</li>
-</ol>
+<li>對離群值（outliers）較敏感
+<blockquote>
+<p>少數特別奇怪的資料（離群值）可能會影響平均值和變異數，進而拉歪整個模型。</p>
+</blockquote>
+</li>
+<li>高維時，共變異數估計可能不穩定
+<blockquote>
+<p>當特徵很多、但資料又不夠多時，共變異數矩陣會很難估，模型容易變得不可靠。</p>
+</blockquote>
+</li>
+</ul>
+<hr>
+<h2 id="7-小總結">7. 小總結</h2>
+<p>Gaussian Discriminant Analysis（GDA）是一種以機率為核心的生成式分類方法。它不是直接學「怎麼分界」，而是先去理解每一類資料是怎麼產生的。</p>
+<p>在 GDA 中，我們假設每個類別的資料都來自一個高斯分布，並透過資料估計出各類別的平均值與分布形狀。當看到一筆新資料時，GDA 會利用貝氏定理，計算它在不同類別下出現的可能性，並選擇最有可能的那一類。因此，分類結果與決策邊界並不是硬設計出來的，而是自然地由資料分布決定：</p>
+<ul>
+<li>分布形狀相似時，邊界接近直線</li>
+<li>分布形狀不同時，邊界會變成彎曲的曲線</li>
+</ul>
+<p>整體而言，GDA 提供了一個直觀、可解釋、機率意義清楚的分類框架，也讓我們清楚看見「生成式模型」與「判別式模型」在思維上的根本差異。</p>
+<p><strong>備註</strong>：GDA 的數學推導部分請見 
+<a href="/post/2025_gaussian_discriminant_analysis_2">GDA - 2</a>。</p>
 
     </div>
 
@@ -762,9 +765,7 @@ $$
 
 <div class="article-tags">
   
-  <a class="badge badge-light" href="/tags/dimension_reduction/">dimension_reduction</a>
-  
-  <a class="badge badge-light" href="/tags/pca/">PCA</a>
+  <a class="badge badge-light" href="/tags/gda/">GDA</a>
   
   <a class="badge badge-light" href="/tags/unsupervised_learning/">unsupervised_learning</a>
   
@@ -783,7 +784,7 @@ $$
       
       
       <li>
-        <a href="https://twitter.com/intent/tweet?url=https://teshenglin.github.io/post/2023_principal_component_analysis_0/&amp;text=%e4%b8%bb%e6%88%90%e5%88%86%e5%88%86%e6%9e%90%20-%200" target="_blank" rel="noopener" class="share-btn-twitter">
+        <a href="https://twitter.com/intent/tweet?url=https://teshenglin.github.io/post/2025_gaussian_discriminant_analysis/&amp;text=%e9%ab%98%e6%96%af%e5%88%a4%e5%88%a5%e5%88%86%e6%9e%90-1" target="_blank" rel="noopener" class="share-btn-twitter">
           <i class="fab fa-twitter"></i>
         </a>
       </li>
@@ -796,7 +797,7 @@ $$
       
       
       <li>
-        <a href="https://www.facebook.com/sharer.php?u=https://teshenglin.github.io/post/2023_principal_component_analysis_0/&amp;t=%e4%b8%bb%e6%88%90%e5%88%86%e5%88%86%e6%9e%90%20-%200" target="_blank" rel="noopener" class="share-btn-facebook">
+        <a href="https://www.facebook.com/sharer.php?u=https://teshenglin.github.io/post/2025_gaussian_discriminant_analysis/&amp;t=%e9%ab%98%e6%96%af%e5%88%a4%e5%88%a5%e5%88%86%e6%9e%90-1" target="_blank" rel="noopener" class="share-btn-facebook">
           <i class="fab fa-facebook-f"></i>
         </a>
       </li>
@@ -809,7 +810,7 @@ $$
       
       
       <li>
-        <a href="mailto:?subject=%e4%b8%bb%e6%88%90%e5%88%86%e5%88%86%e6%9e%90%20-%200&amp;body=https://teshenglin.github.io/post/2023_principal_component_analysis_0/" target="_blank" rel="noopener" class="share-btn-email">
+        <a href="mailto:?subject=%e9%ab%98%e6%96%af%e5%88%a4%e5%88%a5%e5%88%86%e6%9e%90-1&amp;body=https://teshenglin.github.io/post/2025_gaussian_discriminant_analysis/" target="_blank" rel="noopener" class="share-btn-email">
           <i class="fas fa-envelope"></i>
         </a>
       </li>
@@ -842,83 +843,16 @@ $$
   
   
   
-    
-  
   
   
   <div class="media author-card content-widget-hr">
     
-      
-      <img class="avatar mr-3 avatar-circle" src="/authors/admin/avatar_hua0d4d4b24f4da3a102e4452ac738b95f_109236_270x270_fill_q90_lanczos_center.jpg" alt="Avatar">
-    
 
     <div class="media-body">
-      <h5 class="card-title"><a href="https://teshenglin.github.io/">Te-Sheng Lin (林得勝)</a></h5>
-      <h6 class="card-subtitle">Professor</h6>
-      <p class="card-text">The focus of my research is concerned with the development of analytical and computational tools, and further to communicate with scientists from other disciplines to solve engineering problems in practice.</p>
+      <h5 class="card-title"><a href="/authors/%E6%9E%97%E7%90%AE%E8%A9%A0/"></a></h5>
+      
+      
       <ul class="network-icon" aria-hidden="true">
-  
-    
-    
-    
-      
-    
-    
-    
-    
-    
-    <li>
-      <a href="mailto:teshenglin@nycu.edu.tw" >
-        <i class="fas fa-envelope"></i>
-      </a>
-    </li>
-  
-    
-    
-    
-    
-    
-    
-    
-      
-    
-    <li>
-      <a href="https://www.researchgate.net/profile/Te-Sheng_Lin" target="_blank" rel="noopener">
-        <i class="ai ai-researchgate"></i>
-      </a>
-    </li>
-  
-    
-    
-    
-      
-    
-    
-    
-    
-    
-      
-    
-    <li>
-      <a href="https://github.com/teshenglin" target="_blank" rel="noopener">
-        <i class="fab fa-github"></i>
-      </a>
-    </li>
-  
-    
-    
-    
-    
-    
-    
-    
-      
-    
-    <li>
-      <a href="/cv/cv.pdf" >
-        <i class="ai ai-cv"></i>
-      </a>
-    </li>
   
 </ul>
 
@@ -939,13 +873,13 @@ $$
     <h3>Related</h3>
     <ul>
       
+      <li><a href="/post/2023_principal_component_analysis_0/">主成分分析 - 0</a></li>
+      
       <li><a href="/post/2023_principal_component_analysis_01/">主成分分析 - code</a></li>
       
       <li><a href="/post/2021_diffusion_maps/">Diffusion maps</a></li>
       
       <li><a href="/post/2020_principal_component_analysis_2/">主成分分析 - 2</a></li>
-      
-      <li><a href="/post/2020_principal_component_analysis/">主成分分析</a></li>
       
       <li><a href="/post/2020_multi_dimensional_scaling/">Multidimensional scaling</a></li>
       

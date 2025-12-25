@@ -3,6 +3,51 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://teshenglin.github.io/authors/</loc>
+    <lastmod>2025-12-25T14:25:07+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://teshenglin.github.io/categories/</loc>
+    <lastmod>2025-12-25T14:25:07+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://teshenglin.github.io/tags/gda/</loc>
+    <lastmod>2025-12-25T14:25:07+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://teshenglin.github.io/categories/machine_learning/</loc>
+    <lastmod>2025-12-25T14:25:07+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://teshenglin.github.io/tags/</loc>
+    <lastmod>2025-12-25T14:25:07+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://teshenglin.github.io/tags/unsupervised_learning/</loc>
+    <lastmod>2025-12-25T14:25:07+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://teshenglin.github.io/authors/%E6%9E%97%E7%90%AE%E8%A9%A0/</loc>
+    <lastmod>2025-12-25T14:25:07+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://teshenglin.github.io/post/2025_gaussian_discriminant_analysis_2/</loc>
+    <lastmod>2025-12-25T14:25:07+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://teshenglin.github.io/post/2025_gaussian_discriminant_analysis/</loc>
+    <lastmod>2025-12-25T14:25:07+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://teshenglin.github.io/courses/2025_summer_research/</loc>
     <lastmod>2025-09-03T18:01:18+08:00</lastmod>
   </url>
@@ -10,11 +55,6 @@
   <url>
     <loc>https://teshenglin.github.io/publication_types/2/</loc>
     <lastmod>2025-06-04T17:22:40+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://teshenglin.github.io/authors/</loc>
-    <lastmod>2025-11-27T21:51:16+08:00</lastmod>
   </url>
   
   <url>
@@ -133,11 +173,6 @@
   </url>
   
   <url>
-    <loc>https://teshenglin.github.io/categories/</loc>
-    <lastmod>2025-11-27T21:51:16+08:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://teshenglin.github.io/tags/least-square/</loc>
     <lastmod>2023-12-20T16:19:44+08:00</lastmod>
   </url>
@@ -149,7 +184,7 @@
   
   <url>
     <loc>https://teshenglin.github.io/categories/linear-algebra/</loc>
-    <lastmod>2025-11-27T21:51:16+08:00</lastmod>
+    <lastmod>2025-12-25T14:25:07+08:00</lastmod>
   </url>
   
   <url>
@@ -158,23 +193,18 @@
   </url>
   
   <url>
-    <loc>https://teshenglin.github.io/tags/</loc>
-    <lastmod>2025-11-27T21:51:16+08:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://teshenglin.github.io/categories/calculus/</loc>
-    <lastmod>2025-11-27T21:51:16+08:00</lastmod>
+    <lastmod>2025-12-25T14:25:07+08:00</lastmod>
   </url>
   
   <url>
     <loc>https://teshenglin.github.io/categories/computational-mathematics/</loc>
-    <lastmod>2025-11-27T21:51:16+08:00</lastmod>
+    <lastmod>2025-12-25T14:25:07+08:00</lastmod>
   </url>
   
   <url>
     <loc>https://teshenglin.github.io/tags/dimension_reduction/</loc>
-    <lastmod>2025-11-27T21:51:16+08:00</lastmod>
+    <lastmod>2025-12-25T14:25:07+08:00</lastmod>
   </url>
   
   <url>
@@ -183,13 +213,8 @@
   </url>
   
   <url>
-    <loc>https://teshenglin.github.io/categories/machine_learning/</loc>
-    <lastmod>2025-11-27T21:51:16+08:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://teshenglin.github.io/tags/pca/</loc>
-    <lastmod>2025-11-27T21:51:16+08:00</lastmod>
+    <lastmod>2025-12-25T14:25:07+08:00</lastmod>
   </url>
   
   <url>
@@ -198,13 +223,8 @@
   </url>
   
   <url>
-    <loc>https://teshenglin.github.io/tags/unsupervised_learning/</loc>
-    <lastmod>2025-11-27T21:51:16+08:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://teshenglin.github.io/post/2023_principal_component_analysis_0/</loc>
-    <lastmod>2025-11-27T21:51:16+08:00</lastmod>
+    <lastmod>2025-12-25T14:25:07+08:00</lastmod>
   </url>
   
   <url>

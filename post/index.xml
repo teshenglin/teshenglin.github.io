@@ -13,6 +13,334 @@
     </image>
     
     <item>
+      <title>高斯判別分析-2</title>
+      <link>https://teshenglin.github.io/post/2025_gaussian_discriminant_analysis_2/</link>
+      <pubDate>Wed, 24 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>https://teshenglin.github.io/post/2025_gaussian_discriminant_analysis_2/</guid>
+      <description>&lt;h1 id=&#34;gaussian-discriminant-analysis-gda---2&#34;&gt;Gaussian Discriminant Analysis (GDA) - 2&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;這裡我們補充一下 GDA 裡的數學推導部分。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;假設我們有一組已標記的資料 $(\mathbf{x}_i, y_i)$，其中：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;$\mathbf{x}_i \in \mathbb{R}^d$：第 $i$ 筆資料的 $d$-維特徵向量（例如身高和體重）。&lt;/li&gt;
+&lt;li&gt;$y_i \in {0, 1}$：標示資料的類別（例如 0 表女生、1 表男生）。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;我們的目標是：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;給定一筆新的資料 $\mathbf{x}$，判斷它屬於哪一個類別比較合理。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;在 GDA 中，這個判斷是透過&lt;strong&gt;貝式定理&lt;/strong&gt;（Bayes&amp;rsquo; theorem）來完成的，因此我們先回顧一下貝式定理的形式。&lt;/p&gt;
+&lt;p&gt;對於一筆特徵向量 $\mathbf{x}$，它屬於類別 $y$ 的後驗概率為：
+$$
+P(y = 1 \mid \mathbf{x}) = \frac{P(\mathbf{x} \mid y = 1) P(y = 1)}{P(\mathbf{x})}.
+$$
+這個公式告訴我們，要計算「在看到資料 $\mathbf{x}$ 之後，它是男生的可能性有多大」，我們需要三個量：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;$P(\mathbf{x} \mid y)$：在已知類別的情況下，資料長成 $\mathbf{x}$ 的機率（這是 GDA 的核心假設），&lt;/li&gt;
+&lt;li&gt;$P(y)$：類別的先驗機率（例如男生、女生各自的比例），&lt;/li&gt;
+&lt;li&gt;$P(\mathbf{x})$：資料 $\mathbf{x}$ 出現的總機率（作為正規化常數）。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;接下來，我們會一步步說明 GDA 是如何對這些機率做建模，以及最後如何得到分類的決策規則。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;1-pmathbfx-mid-y&#34;&gt;1. $P(\mathbf{x} \mid y)$&lt;/h2&gt;
+&lt;p&gt;在 GDA 裡，我們假設每個類別的特徵向量都服從高斯分布：
+$$
+\mathbf{x} \mid y = k\sim \mathcal{N}(\mu_k, \Sigma_k),
+$$
+也就是說，對於每個類別，我們認為資料大致「長這個樣子」，由平均值 $\mu_k$ 描述中心位置，由共變異數矩陣 $\Sigma_k$ 描述資料的擴散與形狀。&lt;/p&gt;
+&lt;p&gt;因此，計算 $P(\mathbf{x} \mid y)$ 就變成估計這兩個參數：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;將所有屬於類別 $y=k$ 的資料收集起來。&lt;/li&gt;
+&lt;li&gt;計算它們的平均值 $\mu_k$ 和共變異數矩陣 $\Sigma_k$。&lt;/li&gt;
+&lt;li&gt;代入高斯分布公式，就得到了 $P(\mathbf{x} \mid y)$。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;11-共用共變異數矩陣lda-特例&#34;&gt;1.1 共用共變異數矩陣（LDA 特例）&lt;/h3&gt;
+&lt;p&gt;在 線性判別分析（LDA） 中，我們做了一個簡化假設：假設所有類別共享同一個共變異數矩陣
+$$
+\Sigma_k=\Sigma, \quad \forall k.
+$$
+這個假設帶來兩個好處：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;需要估計的參數變少，更穩定，尤其是資料量不大時。&lt;/li&gt;
+&lt;li&gt;決策邊界變成線性的（直線或超平面），計算上更簡單。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;也就是說，LDA 是 GDA 的一個特例，它在假設更嚴格的情況下，把決策邊界從二次曲線簡化成線性曲線。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;2-maximum-likelihood-estimation-mle&#34;&gt;2. Maximum Likelihood Estimation (MLE)&lt;/h2&gt;
+&lt;h3 id=&#34;21-likelihood-function&#34;&gt;2.1 Likelihood function&lt;/h3&gt;
+&lt;p&gt;假設我們有二分類資料 $(\mathbf{x}_i, y_i)$，$i=1,\dots,n$，$y_i \in \{0,1\}$。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;類別先驗：
+$$
+P(y=1) = \phi, \quad P(y=0)=1-\phi.
+$$&lt;/li&gt;
+&lt;li&gt;條件分布：
+$$
+\mathbf{x} \mid y = k\sim \mathcal{N}(\mu_k, \Sigma_k).
+$$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;則整體的 likelihood function 為
+$$
+L(\phi, \mu_k, \Sigma_k) = \prod^n_{i=1} P(\mathbf{x}_i, y_i)= \prod^n_{i=1} P(\mathbf{x}_i\mid y_i)P(y_i).
+$$
+展開後得到
+$$
+L = \prod_{i, y=1}\phi \mathcal{N}(\mathbf{x}_i \mid \mu_1, \Sigma_1)\prod_{i, y=0}(1-\phi) \mathcal{N}(\mathbf{x}_i \mid \mu_0, \Sigma_0).
+$$&lt;/p&gt;
+&lt;h3 id=&#34;22-log-likelihood&#34;&gt;2.2 Log-Likelihood&lt;/h3&gt;
+&lt;p&gt;取 $\log$ 之後得到 log-likelihood：
+$$
+\ell(\phi, \mu_k, \Sigma_k) = \sum_{i, y=1}\log\phi+\log\mathcal{N}(\mathbf{x}_i \mid \mu_1, \Sigma_1)+\sum_{i, y=0}\log(1-\phi)+\log\mathcal{N}(\mathbf{x}_i \mid \mu_0, \Sigma_0).
+$$&lt;/p&gt;
+&lt;h3 id=&#34;23-estimator&#34;&gt;2.3 Estimator&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;將 log-likelihood 對 $\phi$ 微分求極值後就可以得到
+$$
+\phi = \frac{\text{類別 1 的樣本數}}{\text{總樣本數}}.
+$$&lt;/li&gt;
+&lt;li&gt;將 log-likelihood 對 $\mu_k$ 求導並設為 $0$，得到：
+$$
+\mu_k= \frac{1}{n_k}\sum_{{i, y=k}}\mathbf{x}_i,
+$$
+其中 $n_k$ 是類別 $k$ 的樣本數。因此 $\mu_k$ 就是類別 $k$ 的平均值。&lt;/li&gt;
+&lt;li&gt;將 log-likelihood 對 $\Sigma_k$ 求導並設為 $0$，得到：
+$$
+\Sigma_k = \frac{1}{n_k}\sum_{i, y=k}(\mathbf{x}_i - \mu_k)(\mathbf{x}_i - \mu_k)^T.
+$$
+因此 $\Sigma_k$ 就是類別 $k$ 的共變異數矩陣。&lt;/li&gt;
+&lt;li&gt;在 LDA 這個特殊情況時，我們假設 $\Sigma_k=\Sigma$，一樣將 log-likelihood 對 $\Sigma$ 求導並設為 $0$，得到：
+$$
+\Sigma = \frac{n_0}{n} \Sigma_0 +  \frac{n_1}{n} \Sigma_1.
+$$
+也就是說，在這情況下共變異數矩陣是加權平均，按每個類別的樣本數加權。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;3-優化與預測&#34;&gt;3 優化與預測&lt;/h2&gt;
+&lt;p&gt;最後總結一下，對於給定的分類資料，我們的訓練與預測流程如下：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;訓練：通過最大似然估計（Maximum Likelihood Estimation, MLE）計算模型參數
+$$
+(\phi, \mu_k, \Sigma_k).
+$$&lt;/li&gt;
+&lt;li&gt;預測分類：對於新的資料點 $\mathbf{x}$，若
+$$
+P(y = 1 \mid \mathbf{x}) &amp;gt; P(y = 0 \mid \mathbf{x}),
+$$
+則預測為 $y = 1$；反之為 $y = 0$。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;備註&lt;/strong&gt;: 在計算後驗機率 $P(y = k \mid \mathbf{x})$ 時，公式裡會有分母 $P(\mathbf{x})$，它表示「不管它屬於哪個類別，$\mathbf{x}$ 出現的總機率」。不過在實務上，我們不需要特別算它，因為在比較分類結果時，分母對所有類別都是一樣的，所以只要比較分子就可以直接做分類。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;4-決策邊界&#34;&gt;4. 決策邊界&lt;/h2&gt;
+&lt;h3 id=&#34;41-lda-決策邊界&#34;&gt;4.1 LDA 決策邊界&lt;/h3&gt;
+&lt;p&gt;假設二分類資料 $y \in \{0,1\}$，條件分布為
+$$
+\mathbf{x} \mid y=k \sim \mathcal{N}(\mu_k, \Sigma), \quad k=0,1,
+$$
+其中所有類別共享同一個共變異數矩陣 $\Sigma$。&lt;/p&gt;
+&lt;p&gt;LDA 的決策規則很直觀：如果
+$$
+P(y=1 \mid \mathbf{x}) &amp;gt; P(y=0 \mid \mathbf{x}),
+$$
+則預測 $y=1$。這決策規則也可以等價改寫成以下兩種形式：
+$$
+\frac{P(y=1 \mid \mathbf{x})}{P(y=0 \mid \mathbf{x})} &amp;gt; 1, \quad
+\log \frac{P(y=1 \mid \mathbf{x})}{P(y=0 \mid \mathbf{x})} &amp;gt; 0.
+$$&lt;/p&gt;
+&lt;p&gt;具體而言，對數比（log-odds）可以展開為：
+$$
+\begin{align}
+\log \frac{P(y=1 \mid \mathbf{x})}{P(y=0 \mid \mathbf{x})} =&amp;amp; \mathbf{x}^T \underbrace{\Sigma^{-1} (\mu_1 - \mu_0)}_{\mathbf{x}^T \mathbf{w}} \\&lt;br&gt;
+&amp;amp;-\frac{1}{2} (\mu_1^T \Sigma^{-1} \mu_1 - \mu_0^T \Sigma^{-1} \mu_0) + \log \frac{\phi}{1-\phi}.
+\end{align}
+$$
+因此我們令
+$$
+\mathbf{w} = \Sigma^{-1} (\mu_1 - \mu_0), \quad
+b = - \frac{1}{2} (\mu_1^T \Sigma^{-1} \mu_1 - \mu_0^T \Sigma^{-1} \mu_0) + \log \frac{\phi}{1-\phi},
+$$
+則決策邊界可寫成簡單的線性形式：
+$$
+\mathbf{w}^T \mathbf{x} + b = 0
+$$
+這條超平面（在二維情況下就是直線）就是 LDA 的決策邊界。&lt;/p&gt;
+&lt;h3 id=&#34;42-gda-決策邊界&#34;&gt;4.2 GDA 決策邊界&lt;/h3&gt;
+&lt;p&gt;若我們假設每個類別有自己的共變異數矩陣，則對數比變成：&lt;/p&gt;
+&lt;p&gt;$$
+\begin{align}
+\log \frac{P(y=1 \mid \mathbf{x})}{P(y=0 \mid \mathbf{x})} =&amp;amp;-\frac{1}{2} \Big[ (\mathbf{x}-\mu_1)^T \Sigma_1^{-1} (\mathbf{x}-\mu_1) - (\mathbf{x}-\mu_0)^T \Sigma_0^{-1} (\mathbf{x}-\mu_0) \Big] \\&lt;br&gt;
+&amp;amp; - \frac{1}{2} \log \frac{|\Sigma_1|}{|\Sigma_0|} + \log \frac{\phi}{1-\phi}.
+\end{align}
+$$
+因為共變異數矩陣不同，因此二次項不會抵銷，決策邊界是一條二次曲線（椭圓、拋物線或雙曲線），又稱為 Quadratic Discriminant Analysis (QDA)。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>高斯判別分析-1</title>
+      <link>https://teshenglin.github.io/post/2025_gaussian_discriminant_analysis/</link>
+      <pubDate>Tue, 23 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>https://teshenglin.github.io/post/2025_gaussian_discriminant_analysis/</guid>
+      <description>&lt;h1 id=&#34;gaussian-discriminant-analysis-gda---1&#34;&gt;Gaussian Discriminant Analysis (GDA) - 1&lt;/h1&gt;
+&lt;h2 id=&#34;1-概述&#34;&gt;1. 概述&lt;/h2&gt;
+&lt;p&gt;高斯判別分析（GDA）是一種&lt;strong&gt;生成式分類模型&lt;/strong&gt;，是機器學習中的概率模型。它假設每個類別的特徵都遵循高斯分佈，並利用貝式定理來進行分類。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;2-簡單舉例&#34;&gt;2. 簡單舉例&lt;/h2&gt;
+&lt;p&gt;假設我們手上有一些男生與女生的身高與體重資料。我們的目標是：未來只要給定一個人的身高和體重，就能判斷他比較可能是男生還是女生。&lt;/p&gt;
+&lt;p&gt;在 GDA（Gaussian Discriminant Analysis） 中，我們真正想回答的問題其實是：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;在已知這個人的身高與體重之後，他是男生（或女生）的機率有多大？&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;為了回答這個問題，GDA 假設男生與女生的身高–體重資料，各自來自不同的二維高斯分布。透過現有資料，我們可以分別估計出男生與女生的平均身高體重，以及資料的變異程度（也就是分布的形狀與擴散情況）。&lt;/p&gt;
+&lt;p&gt;一旦這些分布被估計出來，對於任何一個給定的身高–體重組合，GDA 都可以計算：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;在男生分布下，出現這個資料點的可能性&lt;/li&gt;
+&lt;li&gt;在女生分布下，出現這個資料點的可能性&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;再結合各類別本身出現的比例，就能算出這個人屬於男生或女生的後驗機率。&lt;/p&gt;
+&lt;p&gt;當某一點在「男生」與「女生」兩個類別下的機率剛好一樣時，這些點就形成了分類的分界線。把所有這樣的點連起來，就能在身高–體重平面上畫出一條決策邊界（decision boundary），用來區分男生與女生。&lt;/p&gt;
+&lt;p&gt;因此，GDA 模型實際上做了兩件事情：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;對單一個體進行機率判斷：給定身高與體重，計算他屬於男生或女生的機率。&lt;/li&gt;
+&lt;li&gt;在整個特徵空間中建立分類規則：由機率相等的條件導出決策邊界，之後可以直接用這條邊界進行分類。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;3-為什麼-gda-被稱為生成式模型&#34;&gt;3. 為什麼 GDA 被稱為生成式模型？&lt;/h2&gt;
+&lt;p&gt;生成式模型的核心想法是：
+先學會每一類資料「長什麼樣子」，再用這個模型來做判斷。&lt;/p&gt;
+&lt;p&gt;具體來說，它會關心三件事：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;這個點屬於哪一類？&lt;/li&gt;
+&lt;li&gt;每一類的資料大致分布在哪個區域、形狀如何？&lt;/li&gt;
+&lt;li&gt;如果只知道這一類的模型，甚至能不能「生成」看起來合理的新資料？&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;也就是說，生成式模型不是只關心「怎麼分」，而是試著回答一個更根本的問題：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;現實世界中的資料是怎麼被產生出來的？&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;31-gda-如何體現生成式的想法&#34;&gt;3.1 GDA 如何體現「生成式」的想法？&lt;/h3&gt;
+&lt;p&gt;在 Gaussian Discriminant Analysis（GDA）中，我們直接假設資料的生成方式：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;每一個類別的資料，都是由某個高斯分布隨機產生的。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;回到身高–體重的例子，我們假設：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;男生的身高–體重資料來自一個二維高斯分布&lt;/li&gt;
+&lt;li&gt;女生的身高–體重資料來自另一個二維高斯分布&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;透過已知的資料，我們可以分別估計：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;每一類的平均位置（例如典型的身高與體重）&lt;/li&gt;
+&lt;li&gt;資料的擴散程度與方向（變異數與相關性）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;一旦這些分布被學好，我們可以：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;計算「某個人屬於男生或女生的機率」&lt;/li&gt;
+&lt;li&gt;畫出對應的決策邊界&lt;/li&gt;
+&lt;li&gt;從模型中隨機產生新的身高–體重資料點&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;這正是 GDA 被稱為生成式模型的原因：
+它先建立「資料如何生成」的模型，再由這個模型自然地導出分類結果。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;4-與判別式模型的差別&#34;&gt;4. 與判別式模型的差別&lt;/h2&gt;
+&lt;p&gt;到目前為止，我們看到 GDA 是一種生成式模型：它先嘗試理解「每一類資料是怎麼產生的」，再利用這個對資料生成機制的理解來進行分類。&lt;/p&gt;
+&lt;p&gt;那麼，另一大類在機器學習中同樣非常常見的方法——判別式模型（discriminative models）——又是在做什麼呢？&lt;/p&gt;
+&lt;h3 id=&#34;41-生成式-vs-判別式模型&#34;&gt;4.1 生成式 vs. 判別式模型&lt;/h3&gt;
+&lt;p&gt;判別式模型（例如 Logistic Regression）不關心資料是怎麼產生的，它只關心一個問題：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;給定一筆觀測到的資料，我要怎麼直接把它分到正確的類別？&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;換句話說，假設資料為 $\mathbf{x}$, 相對應的類別為 $y$，判別式模型直接學習的是
+$$
+P(y\mid \mathbf{x}),
+$$
+也就是：在已經看到資料 $\mathbf{x}$ 的情況下，它屬於類別 $y$ 類別的機率有多大。&lt;/p&gt;
+&lt;p&gt;相對地，生成式模型採取的是完全不同的觀點。它不直接問「這筆資料該分到哪一類」，而是先學習
+$$
+P(\mathbf{x} \mid y),
+$$
+也就是，如果資料真的來自類別 $y$，那我們觀察到 $\mathbf{x}$ 的機率會有多大？&lt;/p&gt;
+&lt;p&gt;一旦我們知道了每個類別「會產生什麼樣的資料」，再搭配類別本身出現的機率 $P(y)$，就可以透過貝氏定理反推出 $P(y\mid \mathbf{x})$，進而完成分類。&lt;/p&gt;
+&lt;p&gt;更白話一點的來說，GDA 關心的是「世界怎麼產生資料」，Logistic Regression 關心的是「邊界畫在哪裡」。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;5-決策邊界長什麼樣&#34;&gt;5. 決策邊界長什麼樣？&lt;/h2&gt;
+&lt;p&gt;在 GDA 裡，模型最後畫出來的「分界線」長什麼樣子，其實取決於我們對資料分布做了多嚴格的假設。&lt;/p&gt;
+&lt;h3 id=&#34;51-情況一所有類別看起來形狀一樣&#34;&gt;5.1 情況一：所有類別看起來「形狀一樣」&lt;/h3&gt;
+&lt;p&gt;如果我們假設不同類別的資料只是中心點不同，但「散開的方向與程度」都一樣（也就是：所有類別共用同一個共變異數矩陣）。那麼模型畫出來的分界線就會是一條直線（在高維空間則是一個超平面）。&lt;/p&gt;
+&lt;p&gt;在這種情況下，GDA 做出來的分類結果，其實和 Logistic Regression 非常接近，甚至在某些條件下是等價的。&lt;/p&gt;
+&lt;h3 id=&#34;52-情況二每一類都有自己的形狀&#34;&gt;5.2 情況二：每一類都有自己的「形狀」&lt;/h3&gt;
+&lt;p&gt;如果我們允許不同類別的資料有不同的擴散方向與形狀（也就是：每一類都有自己的共變異數矩陣）。那模型就能畫出更彎曲、彈性的分界線，例如橢圓、拋物線這類的二次曲線。&lt;/p&gt;
+&lt;p&gt;這樣的 GDA 就能處理比較複雜、非線性的分類問題。&lt;/p&gt;
+&lt;h3 id=&#34;53-小總結&#34;&gt;5.3 小總結&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;假設越簡單，邊界越直；假設越自由，邊界越彎。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;如果所有類別共用同一個共變異數矩陣
+&lt;ul&gt;
+&lt;li&gt;→ 決策邊界是線性的（一條直線 / 超平面）&lt;/li&gt;
+&lt;li&gt;→ 這時其實等價於 Logistic Regression（在某些條件下）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;如果每一類有自己的共變異數矩陣
+&lt;ul&gt;
+&lt;li&gt;→ 決策邊界 二次曲線（橢圓、拋物線等）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;6-gda-的優點與限制&#34;&gt;6. GDA 的優點與限制&lt;/h2&gt;
+&lt;p&gt;為什麼大家會用 GDA？&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;在資料量不大時，效果往往很好
+&lt;blockquote&gt;
+&lt;p&gt;當資料量還不大的時候，GDA 常常能用「比較少的參數」抓到整體結構，反而比複雜模型表現更好。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;模型有清楚的機率意義、可解釋
+&lt;blockquote&gt;
+&lt;p&gt;GDA 不只告訴你「分到哪一類」，還能說「有多像這一類」。這在需要解釋模型判斷理由的情境（例如科學或醫療）特別重要。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;類別不平衡也處理得很自然
+&lt;blockquote&gt;
+&lt;p&gt;如果某一類本來就比較少，GDA 可以直接把「這一類本來就少見」這件事放進模型裡（先驗機率），不需要額外技巧。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;使用 GDA 時要注意什麼？&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;高斯假設若不合理，效果會變差
+&lt;blockquote&gt;
+&lt;p&gt;GDA 假設資料「長得像高斯分布」，如果實際資料分布歪得很厲害，模型就容易判斷錯。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;對離群值（outliers）較敏感
+&lt;blockquote&gt;
+&lt;p&gt;少數特別奇怪的資料（離群值）可能會影響平均值和變異數，進而拉歪整個模型。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;高維時，共變異數估計可能不穩定
+&lt;blockquote&gt;
+&lt;p&gt;當特徵很多、但資料又不夠多時，共變異數矩陣會很難估，模型容易變得不可靠。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;7-小總結&#34;&gt;7. 小總結&lt;/h2&gt;
+&lt;p&gt;Gaussian Discriminant Analysis（GDA）是一種以機率為核心的生成式分類方法。它不是直接學「怎麼分界」，而是先去理解每一類資料是怎麼產生的。&lt;/p&gt;
+&lt;p&gt;在 GDA 中，我們假設每個類別的資料都來自一個高斯分布，並透過資料估計出各類別的平均值與分布形狀。當看到一筆新資料時，GDA 會利用貝氏定理，計算它在不同類別下出現的可能性，並選擇最有可能的那一類。因此，分類結果與決策邊界並不是硬設計出來的，而是自然地由資料分布決定：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;分布形狀相似時，邊界接近直線&lt;/li&gt;
+&lt;li&gt;分布形狀不同時，邊界會變成彎曲的曲線&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;整體而言，GDA 提供了一個直觀、可解釋、機率意義清楚的分類框架，也讓我們清楚看見「生成式模型」與「判別式模型」在思維上的根本差異。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;備註&lt;/strong&gt;：GDA 的數學推導部分請見 
+&lt;a href=&#34;https://teshenglin.github.io/post/2025_gaussian_discriminant_analysis_2&#34;&gt;GDA - 2&lt;/a&gt;。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Least square method 2</title>
       <link>https://teshenglin.github.io/post/2023_la_least_square_2/</link>
       <pubDate>Tue, 19 Dec 2023 00:00:00 +0000</pubDate>
@@ -196,7 +524,7 @@ x_1 &amp;amp; \cdots &amp;amp; x_n
 \end{bmatrix}\begin{bmatrix}
 1\\
 \vdots\\&lt;br&gt;
-n
+1
 \end{bmatrix} = \frac{1}{n}X\mathbb{1},
 $$&lt;/p&gt;
 &lt;p&gt;其中 $\mathbb{1} = [1, \cdots, 1]^T$ 是個全為 $1$ 的向量.&lt;/p&gt;
@@ -260,10 +588,11 @@ $$&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;&lt;strong&gt;Remark&lt;/strong&gt;&lt;/em&gt;: 不過要真正算相關程度會更近一步的去計算相關係數 (correlation coefficients), 這邊就不再深入探討.&lt;/p&gt;
 &lt;h2 id=&#34;3-pca-maximize-variance&#34;&gt;3. PCA: maximize variance&lt;/h2&gt;
 &lt;blockquote&gt;
-&lt;p&gt;我們想要找到一個方向, 使得資料投影上去之後, 新資料的變異數會最大.&lt;/p&gt;
+&lt;p&gt;資料降到一維: 我們想要找到一個方向, 使得資料投影上去之後, 新資料的變異數會最大.&lt;/p&gt;
+&lt;p&gt;資料我們會先置中, 所以處理的都是置中後的資料集 $Y$.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;假設這個方向為 $v\in\mathbb{R}^2$, 並且 $\|v\|=1$, 那資料投影到 $v$ 所得的新資料就是 $v^TY \in M_{1\times n}$. 接著我們就來算這筆新資料的變異數.&lt;/p&gt;
-&lt;p&gt;第一步一樣先置中. 也就是計算 $v^TYH$. 不過由於 $Y$ 是置中過的資料, 因此 $YH = Y$, 所以 $v^TYH = v^TY$, 也就是說, 新資料 $v^TY$ 的平均一定是 $0$.&lt;/p&gt;
+&lt;p&gt;算變異數的第一步一樣先算平均再把資料置中, 也就是計算 $v^TYH$. 不過由於 $Y$ 是置中過的資料, 因此 $YH = Y$, 所以 $v^TYH = v^TY$, 也就是說, 新資料 $v^TY$ 的平均已經是 $0$.&lt;/p&gt;
 &lt;p&gt;接著, 新資料的變異數就會是&lt;/p&gt;
 &lt;p&gt;$$
 \tag{11}
@@ -280,7 +609,7 @@ $$&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;我們想要找到一個方向, 使得資料投影上去之後, 新舊資料的距離平方和最小.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;假設這個方向為 $v\in\mathbb{R}^2$, 並且 $\|v\|=1$, 那資料投影到 $v$ 的投影點就是 $vv^TY \in M_{2\times n}$. 接著我們就來算新舊資料的距離平方和:&lt;/p&gt;
+&lt;p&gt;假設這個方向為 $v\in\mathbb{R}^2$, 並且 $\|v\|=1$, 那資料投影到 $v$ 的這個方向上的投影點就是 $vv^TY \in M_{2\times n}$. 接著我們就來算新舊資料的距離平方和:&lt;/p&gt;
 &lt;p&gt;$$
 \tag{13}
 \begin{align}
