@@ -13,6 +13,30 @@
     </image>
     
     <item>
+      <title>TINNs: Time-Induced Neural Networks for Solving Time-Dependent PDEs</title>
+      <link>https://teshenglin.github.io/publication/26_dclll/</link>
+      <pubDate>Wed, 28 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>https://teshenglin.github.io/publication/26_dclll/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Physics-Informed Machine Learning for Two-Phase Moving-Interface and Stefan Problems</title>
+      <link>https://teshenglin.github.io/publication/26_cll/</link>
+      <pubDate>Tue, 16 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>https://teshenglin.github.io/publication/26_cll/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A categorical embedding discontinuity-capturing shallow neural network for anisotropic elliptic interface problems</title>
+      <link>https://teshenglin.github.io/publication/26_hll/</link>
+      <pubDate>Sat, 27 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>https://teshenglin.github.io/publication/26_hll/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Variability of morphology in photoplethysmographic waveform quantified with unsupervised wave-shape manifold learning for clinical assessment</title>
       <link>https://teshenglin.github.io/publication/24_pm_hlwcl/</link>
       <pubDate>Mon, 16 Sep 2024 00:00:00 +0000</pubDate>
@@ -41,14 +65,6 @@
       <link>https://teshenglin.github.io/publication/23_epje_frhlrm/</link>
       <pubDate>Tue, 26 Dec 2023 00:00:00 +0000</pubDate>
       <guid>https://teshenglin.github.io/publication/23_epje_frhlrm/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>A discontinuity-capturing neural network with categorical embedding and its application to anisotropic elliptic interface problems</title>
-      <link>https://teshenglin.github.io/publication/25_hll/</link>
-      <pubDate>Thu, 30 Nov 2023 00:00:00 +0000</pubDate>
-      <guid>https://teshenglin.github.io/publication/25_hll/</guid>
       <description></description>
     </item>
     

@@ -13,6 +13,14 @@
     </image>
     
     <item>
+      <title>TINNs: Time-Induced Neural Networks for Solving Time-Dependent PDEs</title>
+      <link>https://teshenglin.github.io/publication/26_dclll/</link>
+      <pubDate>Wed, 28 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>https://teshenglin.github.io/publication/26_dclll/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>高斯判別分析-2</title>
       <link>https://teshenglin.github.io/post/2025_gaussian_discriminant_analysis_2/</link>
       <pubDate>Wed, 24 Dec 2025 00:00:00 +0000</pubDate>
@@ -338,6 +346,22 @@ $$
 &lt;p&gt;&lt;strong&gt;備註&lt;/strong&gt;：GDA 的數學推導部分請見 
 &lt;a href=&#34;https://teshenglin.github.io/post/2025_gaussian_discriminant_analysis_2&#34;&gt;GDA - 2&lt;/a&gt;。&lt;/p&gt;
 </description>
+    </item>
+    
+    <item>
+      <title>Physics-Informed Machine Learning for Two-Phase Moving-Interface and Stefan Problems</title>
+      <link>https://teshenglin.github.io/publication/26_cll/</link>
+      <pubDate>Tue, 16 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>https://teshenglin.github.io/publication/26_cll/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A categorical embedding discontinuity-capturing shallow neural network for anisotropic elliptic interface problems</title>
+      <link>https://teshenglin.github.io/publication/26_hll/</link>
+      <pubDate>Sat, 27 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>https://teshenglin.github.io/publication/26_hll/</guid>
+      <description></description>
     </item>
     
     <item>
@@ -1298,14 +1322,6 @@ $$&lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr&gt;
 </description>
-    </item>
-    
-    <item>
-      <title>A discontinuity-capturing neural network with categorical embedding and its application to anisotropic elliptic interface problems</title>
-      <link>https://teshenglin.github.io/publication/25_hll/</link>
-      <pubDate>Thu, 30 Nov 2023 00:00:00 +0000</pubDate>
-      <guid>https://teshenglin.github.io/publication/25_hll/</guid>
-      <description></description>
     </item>
     
     <item>
