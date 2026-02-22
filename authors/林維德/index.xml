@@ -2,25 +2,25 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>林維德 | Te-Sheng Lin</title>
-    <link>https://teshenglin.github.io/authors/%E6%9E%97%E7%B6%AD%E5%BE%B7/</link>
-      <atom:link href="https://teshenglin.github.io/authors/%E6%9E%97%E7%B6%AD%E5%BE%B7/index.xml" rel="self" type="application/rss+xml" />
+    <link>http://localhost:1313/authors/%E6%9E%97%E7%B6%AD%E5%BE%B7/</link>
+      <atom:link href="http://localhost:1313/authors/%E6%9E%97%E7%B6%AD%E5%BE%B7/index.xml" rel="self" type="application/rss+xml" />
     <description>林維德</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 29 May 2020 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <url>http://localhost:1313/images/icon_hu10226378635250344412.png</url>
       <title>林維德</title>
-      <link>https://teshenglin.github.io/authors/%E6%9E%97%E7%B6%AD%E5%BE%B7/</link>
+      <link>http://localhost:1313/authors/%E6%9E%97%E7%B6%AD%E5%BE%B7/</link>
     </image>
     
     <item>
       <title>Sec.12.4 - The Geometry of a Tetrahedron</title>
-      <link>https://teshenglin.github.io/post/2020_cal_s12p4/</link>
+      <link>http://localhost:1313/post/2020_cal_s12p4/</link>
       <pubDate>Fri, 29 May 2020 00:00:00 +0000</pubDate>
-      <guid>https://teshenglin.github.io/post/2020_cal_s12p4/</guid>
+      <guid>http://localhost:1313/post/2020_cal_s12p4/</guid>
       <description>&lt;blockquote&gt;
-&lt;p&gt;Discovery Project in Sec.12.4, Calculus by Stewart&lt;br&gt;
+&lt;p&gt;Discovery Project in Sec.12.4, Calculus by Stewart &lt;br&gt;
 Chinese version 
-&lt;a href=&#34;https://teshenglin.github.io/post/2020_cal_s12p4_ch&#34;&gt;四面體的幾何學&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;http://localhost:1313/post/2020_cal_s12p4_ch&#34;&gt;四面體的幾何學&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;A tetrahedron is a solid with four vertices, &lt;em&gt;P&lt;/em&gt; ,&lt;em&gt;Q&lt;/em&gt; , &lt;em&gt;R&lt;/em&gt; and &lt;em&gt;S&lt;/em&gt; ,and four triangular faces, as shown in the figure.&lt;/p&gt;
 
@@ -41,10 +41,10 @@ Chinese version
 &lt;figure&gt;
 
 
-  &lt;a data-fancybox=&#34;&#34; href=&#34;https://teshenglin.github.io/post/figs/2020_cal_s12p4_1.png&#34; &gt;
+  &lt;a data-fancybox=&#34;&#34; href=&#34;http://localhost:1313/post/figs/2020_cal_s12p4_1.png&#34; &gt;
 
 
-  &lt;img src=&#34;https://teshenglin.github.io/post/figs/2020_cal_s12p4_1.png&#34; alt=&#34;&#34; width=&#34;400px&#34; &gt;
+  &lt;img src=&#34;http://localhost:1313/post/figs/2020_cal_s12p4_1.png&#34; alt=&#34;&#34; width=&#34;400px&#34; &gt;
 &lt;/a&gt;
 
 
@@ -73,9 +73,9 @@ $$&lt;/p&gt;
 $$
 V=\frac{\left |
 \begin{array}{ccc}
-0 &amp;amp; 1 &amp;amp;  2 \\&lt;br&gt;
-0 &amp;amp; 0 &amp;amp; 1 \\&lt;br&gt;
-2 &amp;amp; -2 &amp;amp; 1 \\&lt;br&gt;
+0 &amp;amp; 1 &amp;amp;  2 \\
+0 &amp;amp; 0 &amp;amp; 1 \\
+2 &amp;amp; -2 &amp;amp; 1 \\
 \end{array}\right |}{6}=\frac{1}{3}
 $$&lt;/p&gt;
 &lt;hr&gt;
@@ -93,13 +93,13 @@ $$
     
     <item>
       <title>Sec.12.4 - 四面體的幾何學</title>
-      <link>https://teshenglin.github.io/post/2020_cal_s12p4_ch/</link>
+      <link>http://localhost:1313/post/2020_cal_s12p4_ch/</link>
       <pubDate>Fri, 29 May 2020 00:00:00 +0000</pubDate>
-      <guid>https://teshenglin.github.io/post/2020_cal_s12p4_ch/</guid>
+      <guid>http://localhost:1313/post/2020_cal_s12p4_ch/</guid>
       <description>&lt;blockquote&gt;
-&lt;p&gt;Discovery Project in Sec.12.4, Calculus by Stewart&lt;br&gt;
+&lt;p&gt;Discovery Project in Sec.12.4, Calculus by Stewart &lt;br&gt;
 英文版請見 
-&lt;a href=&#34;https://teshenglin.github.io/post/2020_cal_s12p4&#34;&gt;The Geometry of a Tetrahedron&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;http://localhost:1313/post/2020_cal_s12p4&#34;&gt;The Geometry of a Tetrahedron&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;如圖所示，四面體是一個擁有4個頂點(P,Q,R,S)和四個三角面的固體。&lt;/p&gt;
 
@@ -120,10 +120,10 @@ $$
 &lt;figure&gt;
 
 
-  &lt;a data-fancybox=&#34;&#34; href=&#34;https://teshenglin.github.io/post/figs/2020_cal_s12p4_1.png&#34; &gt;
+  &lt;a data-fancybox=&#34;&#34; href=&#34;http://localhost:1313/post/figs/2020_cal_s12p4_1.png&#34; &gt;
 
 
-  &lt;img src=&#34;https://teshenglin.github.io/post/figs/2020_cal_s12p4_1.png&#34; alt=&#34;&#34; width=&#34;400px&#34; &gt;
+  &lt;img src=&#34;http://localhost:1313/post/figs/2020_cal_s12p4_1.png&#34; alt=&#34;&#34; width=&#34;400px&#34; &gt;
 &lt;/a&gt;
 
 
@@ -152,9 +152,9 @@ $$&lt;/p&gt;
 $$
 V=\frac{\left |
 \begin{array}{ccc}
-0 &amp;amp; 1 &amp;amp;  2 \\&lt;br&gt;
-0 &amp;amp; 0 &amp;amp; 1 \\&lt;br&gt;
-2 &amp;amp; -2 &amp;amp; 1 \\&lt;br&gt;
+0 &amp;amp; 1 &amp;amp;  2 \\
+0 &amp;amp; 0 &amp;amp; 1 \\
+2 &amp;amp; -2 &amp;amp; 1 \\
 \end{array}\right |}{6}=\frac{1}{3}
 $$&lt;/p&gt;
 &lt;hr&gt;

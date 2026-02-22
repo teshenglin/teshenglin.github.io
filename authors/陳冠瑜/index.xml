@@ -2,25 +2,25 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>陳冠瑜 | Te-Sheng Lin</title>
-    <link>https://teshenglin.github.io/authors/%E9%99%B3%E5%86%A0%E7%91%9C/</link>
-      <atom:link href="https://teshenglin.github.io/authors/%E9%99%B3%E5%86%A0%E7%91%9C/index.xml" rel="self" type="application/rss+xml" />
+    <link>http://localhost:1313/authors/%E9%99%B3%E5%86%A0%E7%91%9C/</link>
+      <atom:link href="http://localhost:1313/authors/%E9%99%B3%E5%86%A0%E7%91%9C/index.xml" rel="self" type="application/rss+xml" />
     <description>陳冠瑜</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 26 Apr 2020 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <url>http://localhost:1313/images/icon_hu10226378635250344412.png</url>
       <title>陳冠瑜</title>
-      <link>https://teshenglin.github.io/authors/%E9%99%B3%E5%86%A0%E7%91%9C/</link>
+      <link>http://localhost:1313/authors/%E9%99%B3%E5%86%A0%E7%91%9C/</link>
     </image>
     
     <item>
       <title>Sec.11.11 - Radiation From The Stars</title>
-      <link>https://teshenglin.github.io/post/2020_cal_s11p11/</link>
+      <link>http://localhost:1313/post/2020_cal_s11p11/</link>
       <pubDate>Sun, 26 Apr 2020 00:00:00 +0000</pubDate>
-      <guid>https://teshenglin.github.io/post/2020_cal_s11p11/</guid>
+      <guid>http://localhost:1313/post/2020_cal_s11p11/</guid>
       <description>&lt;blockquote&gt;
-&lt;p&gt;Applied Project in Sec.11.11, Calculus by Stewart&lt;br&gt;
+&lt;p&gt;Applied Project in Sec.11.11, Calculus by Stewart &lt;br&gt;
 Chinese version 
-&lt;a href=&#34;https://teshenglin.github.io/post/2020_cal_s11p11_ch&#34;&gt;恆星的輻射&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;http://localhost:1313/post/2020_cal_s11p11_ch&#34;&gt;恆星的輻射&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;Any object emits radiation when heated. A &lt;strong&gt;blackbody&lt;/strong&gt; is a system that absorbs all the radiation that falls on it. For instance, a matte black surface or a large cavity with a small hole in its wall (like a blastfurnace) is a blackbody and emits blackbody radiation. Even the radiation from the sun is close to being a blackbody radiation.&lt;/p&gt;
 &lt;p&gt;Proposed in the late 19th century, the Rayleigh-Jeans Law expresses the energy density of blackbody radiation of wavelength $\lambda$ as
@@ -79,10 +79,10 @@ $$&lt;/p&gt;
 &lt;figure&gt;
 
 
-  &lt;a data-fancybox=&#34;&#34; href=&#34;https://teshenglin.github.io/post/figs/2020_cal_s11p11_2.png&#34; &gt;
+  &lt;a data-fancybox=&#34;&#34; href=&#34;http://localhost:1313/post/figs/2020_cal_s11p11_2.png&#34; &gt;
 
 
-  &lt;img src=&#34;https://teshenglin.github.io/post/figs/2020_cal_s11p11_2.png&#34; alt=&#34;&#34; width=&#34;600px&#34; &gt;
+  &lt;img src=&#34;http://localhost:1313/post/figs/2020_cal_s11p11_2.png&#34; alt=&#34;&#34; width=&#34;600px&#34; &gt;
 &lt;/a&gt;
 
 
@@ -124,10 +124,10 @@ $$&lt;/p&gt;
 &lt;figure&gt;
 
 
-  &lt;a data-fancybox=&#34;&#34; href=&#34;https://teshenglin.github.io/post/figs/2020_cal_s11p11_1.png&#34; &gt;
+  &lt;a data-fancybox=&#34;&#34; href=&#34;http://localhost:1313/post/figs/2020_cal_s11p11_1.png&#34; &gt;
 
 
-  &lt;img src=&#34;https://teshenglin.github.io/post/figs/2020_cal_s11p11_1.png&#34; alt=&#34;&#34; width=&#34;600px&#34; &gt;
+  &lt;img src=&#34;http://localhost:1313/post/figs/2020_cal_s11p11_1.png&#34; alt=&#34;&#34; width=&#34;600px&#34; &gt;
 &lt;/a&gt;
 
 
@@ -140,13 +140,13 @@ $$&lt;/p&gt;
     
     <item>
       <title>Sec.11.11 - 恆星的輻射</title>
-      <link>https://teshenglin.github.io/post/2020_cal_s11p11_ch/</link>
+      <link>http://localhost:1313/post/2020_cal_s11p11_ch/</link>
       <pubDate>Sun, 26 Apr 2020 00:00:00 +0000</pubDate>
-      <guid>https://teshenglin.github.io/post/2020_cal_s11p11_ch/</guid>
+      <guid>http://localhost:1313/post/2020_cal_s11p11_ch/</guid>
       <description>&lt;blockquote&gt;
-&lt;p&gt;Applied Project in Sec.11.11, Calculus by Stewart&lt;br&gt;
+&lt;p&gt;Applied Project in Sec.11.11, Calculus by Stewart &lt;br&gt;
 英文版請見 
-&lt;a href=&#34;https://teshenglin.github.io/post/2020_cal_s11p11&#34;&gt;Radiation From The Stars&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;http://localhost:1313/post/2020_cal_s11p11&#34;&gt;Radiation From The Stars&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;任何物件在被加熱時會散發輻射. 而 &lt;strong&gt;黑體&lt;/strong&gt; 則是一個會吸收所有經過他的輻射的一個系統. 舉例來說, 一個表面黑色且沒有光澤或著有一個大的空腔但只有一個小孔洞在牆壁上(像是煉鐵的高爐)可以視為一個黑體, 而他們會散發黑體輻射. 甚至從太陽散發出來的輻射也可以視作為一種黑體輻射.&lt;/p&gt;
 &lt;p&gt;19世紀時, 瑞立-金斯定律(Rayleigh-Jeans Law)被提出來, 用來描述黑體輻射的能量密度和波長 $\lambda$ 的關系:
@@ -205,10 +205,10 @@ $$
 &lt;figure&gt;
 
 
-  &lt;a data-fancybox=&#34;&#34; href=&#34;https://teshenglin.github.io/post/figs/2020_cal_s11p11_2.png&#34; &gt;
+  &lt;a data-fancybox=&#34;&#34; href=&#34;http://localhost:1313/post/figs/2020_cal_s11p11_2.png&#34; &gt;
 
 
-  &lt;img src=&#34;https://teshenglin.github.io/post/figs/2020_cal_s11p11_2.png&#34; alt=&#34;&#34; width=&#34;600px&#34; &gt;
+  &lt;img src=&#34;http://localhost:1313/post/figs/2020_cal_s11p11_2.png&#34; alt=&#34;&#34; width=&#34;600px&#34; &gt;
 &lt;/a&gt;
 
 
@@ -250,10 +250,10 @@ $$
 &lt;figure&gt;
 
 
-  &lt;a data-fancybox=&#34;&#34; href=&#34;https://teshenglin.github.io/post/figs/2020_cal_s11p11_1.png&#34; &gt;
+  &lt;a data-fancybox=&#34;&#34; href=&#34;http://localhost:1313/post/figs/2020_cal_s11p11_1.png&#34; &gt;
 
 
-  &lt;img src=&#34;https://teshenglin.github.io/post/figs/2020_cal_s11p11_1.png&#34; alt=&#34;&#34; width=&#34;600px&#34; &gt;
+  &lt;img src=&#34;http://localhost:1313/post/figs/2020_cal_s11p11_1.png&#34; alt=&#34;&#34; width=&#34;600px&#34; &gt;
 &lt;/a&gt;
 
 
@@ -266,13 +266,13 @@ $$
     
     <item>
       <title>Sec.4.1 - The Calculus of ranbows</title>
-      <link>https://teshenglin.github.io/post/2020_cal_s4p1/</link>
+      <link>http://localhost:1313/post/2020_cal_s4p1/</link>
       <pubDate>Mon, 23 Mar 2020 00:00:00 +0000</pubDate>
-      <guid>https://teshenglin.github.io/post/2020_cal_s4p1/</guid>
+      <guid>http://localhost:1313/post/2020_cal_s4p1/</guid>
       <description>&lt;blockquote&gt;
-&lt;p&gt;Applied Project in Sec.4.1, Calculus by Stewart&lt;br&gt;
+&lt;p&gt;Applied Project in Sec.4.1, Calculus by Stewart &lt;br&gt;
 Chinese version: 
-&lt;a href=&#34;https://teshenglin.github.io/post/2020_cal_s4p1_ch&#34;&gt;彩虹的微積分學&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;http://localhost:1313/post/2020_cal_s4p1_ch&#34;&gt;彩虹的微積分學&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;Rainbows are created when raindrops scatter sunlight. They have fascinated mankind since ancient times and have inspired attempts at scientific explanation since the time of Aristotle. In this project we use the ideas of Descartes and Newton to explain the shape, location, and colors of rainbows.&lt;/p&gt;
 &lt;hr&gt;
@@ -299,10 +299,10 @@ $$&lt;/p&gt;
 &lt;figure&gt;
 
 
-  &lt;a data-fancybox=&#34;&#34; href=&#34;https://teshenglin.github.io/post/figs/2020_cal_s4p1_01.jpg&#34; &gt;
+  &lt;a data-fancybox=&#34;&#34; href=&#34;http://localhost:1313/post/figs/2020_cal_s4p1_01.jpg&#34; &gt;
 
 
-  &lt;img src=&#34;https://teshenglin.github.io/post/figs/2020_cal_s4p1_01.jpg&#34; alt=&#34;&#34; width=&#34;300px&#34; &gt;
+  &lt;img src=&#34;http://localhost:1313/post/figs/2020_cal_s4p1_01.jpg&#34; alt=&#34;&#34; width=&#34;300px&#34; &gt;
 &lt;/a&gt;
 
 
@@ -313,7 +313,7 @@ $$&lt;/p&gt;
 &lt;!-- raw HTML omitted --&gt;
 &lt;!-- raw HTML omitted --&gt;
 &lt;hr&gt;
-&lt;p&gt;The significance of the minimum deviation is that when $\alpha\approx 59.4^{\circ}$ we have $D&#39;(\alpha)\approx 0$, so $\frac{\Delta D}{\Delta \alpha}\approx 0.$ This means that many  rays with $\alpha\approx 59.4^{\circ}$ become deviated by approximately the same amount. It it the &lt;em&gt;concentration&lt;/em&gt; of rays coming from near the direction of minimum deviation that creates the brightness of the primary rainbow. The figure at the left shows that the angle of elevation from the observer up to the highest point on the rainbow is $180^{\circ}- 138^{\circ} = 42^{\circ}$. (This angle is called the &lt;em&gt;rainbow angle&lt;/em&gt; .)&lt;/p&gt;
+&lt;p&gt;The significance of the minimum deviation is that when $\alpha\approx 59.4^{\circ}$ we have $D&amp;rsquo;(\alpha)\approx 0$, so $\frac{\Delta D}{\Delta \alpha}\approx 0.$ This means that many  rays with $\alpha\approx 59.4^{\circ}$ become deviated by approximately the same amount. It it the &lt;em&gt;concentration&lt;/em&gt; of rays coming from near the direction of minimum deviation that creates the brightness of the primary rainbow. The figure at the left shows that the angle of elevation from the observer up to the highest point on the rainbow is $180^{\circ}- 138^{\circ} = 42^{\circ}$. (This angle is called the &lt;em&gt;rainbow angle&lt;/em&gt; .)&lt;/p&gt;
 
 
 
@@ -332,10 +332,10 @@ $$&lt;/p&gt;
 &lt;figure&gt;
 
 
-  &lt;a data-fancybox=&#34;&#34; href=&#34;https://teshenglin.github.io/post/figs/2020_cal_s4p1_02.jpg&#34; &gt;
+  &lt;a data-fancybox=&#34;&#34; href=&#34;http://localhost:1313/post/figs/2020_cal_s4p1_02.jpg&#34; &gt;
 
 
-  &lt;img src=&#34;https://teshenglin.github.io/post/figs/2020_cal_s4p1_02.jpg&#34; alt=&#34;&#34; width=&#34;300px&#34; &gt;
+  &lt;img src=&#34;http://localhost:1313/post/figs/2020_cal_s4p1_02.jpg&#34; alt=&#34;&#34; width=&#34;300px&#34; &gt;
 &lt;/a&gt;
 
 
@@ -367,10 +367,10 @@ $$&lt;/p&gt;
 &lt;figure&gt;
 
 
-  &lt;a data-fancybox=&#34;&#34; href=&#34;https://teshenglin.github.io/post/figs/2020_cal_s4p1_03.jpg&#34; &gt;
+  &lt;a data-fancybox=&#34;&#34; href=&#34;http://localhost:1313/post/figs/2020_cal_s4p1_03.jpg&#34; &gt;
 
 
-  &lt;img src=&#34;https://teshenglin.github.io/post/figs/2020_cal_s4p1_03.jpg&#34; alt=&#34;&#34; width=&#34;300px&#34; &gt;
+  &lt;img src=&#34;http://localhost:1313/post/figs/2020_cal_s4p1_03.jpg&#34; alt=&#34;&#34; width=&#34;300px&#34; &gt;
 &lt;/a&gt;
 
 
@@ -397,10 +397,10 @@ $$&lt;/p&gt;
 &lt;figure&gt;
 
 
-  &lt;a data-fancybox=&#34;&#34; href=&#34;https://teshenglin.github.io/post/figs/2020_cal_s4p1_04.jpg&#34; &gt;
+  &lt;a data-fancybox=&#34;&#34; href=&#34;http://localhost:1313/post/figs/2020_cal_s4p1_04.jpg&#34; &gt;
 
 
-  &lt;img src=&#34;https://teshenglin.github.io/post/figs/2020_cal_s4p1_04.jpg&#34; alt=&#34;&#34; width=&#34;300px&#34; &gt;
+  &lt;img src=&#34;http://localhost:1313/post/figs/2020_cal_s4p1_04.jpg&#34; alt=&#34;&#34; width=&#34;300px&#34; &gt;
 &lt;/a&gt;
 
 
@@ -420,16 +420,16 @@ $$&lt;/p&gt;
     
     <item>
       <title>Sec.4.7 - Planes and birds: Minimizing energy</title>
-      <link>https://teshenglin.github.io/post/2019_cal_s4p7_2/</link>
+      <link>http://localhost:1313/post/2019_cal_s4p7_2/</link>
       <pubDate>Wed, 08 Jan 2020 00:00:00 +0000</pubDate>
-      <guid>https://teshenglin.github.io/post/2019_cal_s4p7_2/</guid>
+      <guid>http://localhost:1313/post/2019_cal_s4p7_2/</guid>
       <description>&lt;blockquote&gt;
-&lt;p&gt;Applied Project 2 in Sec.4.7, Calculus by Stewart&lt;br&gt;
+&lt;p&gt;Applied Project 2 in Sec.4.7, Calculus by Stewart &lt;br&gt;
 Chinese version: 
-&lt;a href=&#34;https://teshenglin.github.io/post/2020_cal_s4p7_2_ch&#34;&gt;飛機和鳥：能量最小化&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;http://localhost:1313/post/2020_cal_s4p7_2_ch&#34;&gt;飛機和鳥：能量最小化&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;Small birds like finches alternate between flapping their wings and keeping them folded while gliding. In this project we analyze this phenomenon and try to determine how frequently a bird should flap its wings. Some of the principles are the same as for fixed-wing aircraft and so we begin by considering how required power and energy depend on the speed of airplanes.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://media.cheggcdn.com/study/ad0/ad0cd741-aa85-4256-a058-b49a8ef42198/715030-4.7-4IAP21.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://media.cheggcdn.com/study/ad0/ad0cd741-aa85-4256-a058-b49a8ef42198/715030-4.7-4IAP21.png&#34;&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Question 1:&lt;/strong&gt; The power needed to propel an airplane forward at velocity​ $v$ is&lt;/p&gt;
 &lt;p&gt;$$

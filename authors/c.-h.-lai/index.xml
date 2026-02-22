@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>C.-H. Lai | Te-Sheng Lin</title>
+    <link>http://localhost:1313/authors/c.-h.-lai/</link>
+      <atom:link href="http://localhost:1313/authors/c.-h.-lai/index.xml" rel="self" type="application/rss+xml" />
+    <description>C.-H. Lai</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Wed, 28 Jan 2026 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>http://localhost:1313/images/icon_hu10226378635250344412.png</url>
+      <title>C.-H. Lai</title>
+      <link>http://localhost:1313/authors/c.-h.-lai/</link>
+    </image>
+    
+    <item>
+      <title>TINNs: Time-Induced Neural Networks for Solving Time-Dependent PDEs</title>
+      <link>http://localhost:1313/publication/26_dclll/</link>
+      <pubDate>Wed, 28 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publication/26_dclll/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

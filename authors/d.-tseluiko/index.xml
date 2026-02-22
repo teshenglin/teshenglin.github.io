@@ -2,69 +2,69 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>D. Tseluiko | Te-Sheng Lin</title>
-    <link>https://teshenglin.github.io/authors/d.-tseluiko/</link>
-      <atom:link href="https://teshenglin.github.io/authors/d.-tseluiko/index.xml" rel="self" type="application/rss+xml" />
+    <link>http://localhost:1313/authors/d.-tseluiko/</link>
+      <atom:link href="http://localhost:1313/authors/d.-tseluiko/index.xml" rel="self" type="application/rss+xml" />
     <description>D. Tseluiko</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 14 Mar 2023 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <url>http://localhost:1313/images/icon_hu10226378635250344412.png</url>
       <title>D. Tseluiko</title>
-      <link>https://teshenglin.github.io/authors/d.-tseluiko/</link>
+      <link>http://localhost:1313/authors/d.-tseluiko/</link>
     </image>
     
     <item>
       <title>On the transition to dripping of an inverted liquid film</title>
-      <link>https://teshenglin.github.io/publication/23_jfm_blt/</link>
+      <link>http://localhost:1313/publication/23_jfm_blt/</link>
       <pubDate>Tue, 14 Mar 2023 00:00:00 +0000</pubDate>
-      <guid>https://teshenglin.github.io/publication/23_jfm_blt/</guid>
+      <guid>http://localhost:1313/publication/23_jfm_blt/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Effect of driving on coarsening dynamics in phase-separating systems</title>
-      <link>https://teshenglin.github.io/publication/20_non_talt/</link>
+      <link>http://localhost:1313/publication/20_non_talt/</link>
       <pubDate>Tue, 21 Jul 2020 00:00:00 +0000</pubDate>
-      <guid>https://teshenglin.github.io/publication/20_non_talt/</guid>
+      <guid>http://localhost:1313/publication/20_non_talt/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Two-dimensional pulse dynamics and the formation of bound states on electrified falling films</title>
-      <link>https://teshenglin.github.io/publication/18_jfm_btlk/</link>
+      <link>http://localhost:1313/publication/18_jfm_btlk/</link>
       <pubDate>Fri, 27 Jul 2018 17:59:48 +0800</pubDate>
-      <guid>https://teshenglin.github.io/publication/18_jfm_btlk/</guid>
+      <guid>http://localhost:1313/publication/18_jfm_btlk/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Continuation methods for time-periodic travelling-wave solutions to evolution equations</title>
-      <link>https://teshenglin.github.io/publication/18_aml_ltbk/</link>
+      <link>http://localhost:1313/publication/18_aml_ltbk/</link>
       <pubDate>Wed, 27 Jun 2018 17:59:41 +0800</pubDate>
-      <guid>https://teshenglin.github.io/publication/18_aml_ltbk/</guid>
+      <guid>http://localhost:1313/publication/18_aml_ltbk/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Bifurcation analysis of the behavior of partially wetting liquids on a rotating cylinder</title>
-      <link>https://teshenglin.github.io/publication/16_pof_lrtt/</link>
+      <link>http://localhost:1313/publication/16_pof_lrtt/</link>
       <pubDate>Sat, 27 Aug 2016 17:59:32 +0800</pubDate>
-      <guid>https://teshenglin.github.io/publication/16_pof_lrtt/</guid>
+      <guid>http://localhost:1313/publication/16_pof_lrtt/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Coherent structures in non-local dispersive active-dissipative systems</title>
-      <link>https://teshenglin.github.io/publication/15_sjam_lpkpt/</link>
+      <link>http://localhost:1313/publication/15_sjam_lpkpt/</link>
       <pubDate>Fri, 27 Mar 2015 17:59:24 +0800</pubDate>
-      <guid>https://teshenglin.github.io/publication/15_sjam_lpkpt/</guid>
+      <guid>http://localhost:1313/publication/15_sjam_lpkpt/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Numerical study of a non-local weakly nonlinear model for a liquid film sheared by a turbulent gas</title>
-      <link>https://teshenglin.github.io/publication/14_iutam_ltk/</link>
+      <link>http://localhost:1313/publication/14_iutam_ltk/</link>
       <pubDate>Mon, 27 Jan 2014 00:00:00 +0000</pubDate>
-      <guid>https://teshenglin.github.io/publication/14_iutam_ltk/</guid>
+      <guid>http://localhost:1313/publication/14_iutam_ltk/</guid>
       <description></description>
     </item>
     

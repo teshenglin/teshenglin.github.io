@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>graph | Te-Sheng Lin</title>
-    <link>https://teshenglin.github.io/tags/graph/</link>
-      <atom:link href="https://teshenglin.github.io/tags/graph/index.xml" rel="self" type="application/rss+xml" />
-    <description>graph</description>
+    <title>Graph | Te-Sheng Lin</title>
+    <link>http://localhost:1313/tags/graph/</link>
+      <atom:link href="http://localhost:1313/tags/graph/index.xml" rel="self" type="application/rss+xml" />
+    <description>Graph</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 03 Mar 2020 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
-      <title>graph</title>
-      <link>https://teshenglin.github.io/tags/graph/</link>
+      <url>http://localhost:1313/images/icon_hu10226378635250344412.png</url>
+      <title>Graph</title>
+      <link>http://localhost:1313/tags/graph/</link>
     </image>
     
     <item>
       <title>Polar curve - Example</title>
-      <link>https://teshenglin.github.io/post/2020_polar_graph_ex1/</link>
+      <link>http://localhost:1313/post/2020_polar_graph_ex1/</link>
       <pubDate>Tue, 03 Mar 2020 00:00:00 +0000</pubDate>
-      <guid>https://teshenglin.github.io/post/2020_polar_graph_ex1/</guid>
+      <guid>http://localhost:1313/post/2020_polar_graph_ex1/</guid>
       <description>&lt;blockquote&gt;
 &lt;p&gt;這裡我們要介紹 $r^2=\cos(4\theta)$ 這個方程式的圖形怎麼畫.&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -53,7 +53,7 @@ $$&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;想要驗證自己畫得對不對可以對照以下圖形&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://teshenglin.github.io/post/figs/r2cos4theta.png&#34; alt=&#34;png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;png&#34; src=&#34;http://localhost:1313/post/figs/r2cos4theta.png&#34;&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;這個圖形我有點偷懶是用線上做圖畫的

@@ -1,38 +1,38 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>inverse power method | Te-Sheng Lin</title>
-    <link>https://teshenglin.github.io/tags/inverse-power-method/</link>
-      <atom:link href="https://teshenglin.github.io/tags/inverse-power-method/index.xml" rel="self" type="application/rss+xml" />
-    <description>inverse power method</description>
+    <title>Inverse Power Method | Te-Sheng Lin</title>
+    <link>http://localhost:1313/tags/inverse-power-method/</link>
+      <atom:link href="http://localhost:1313/tags/inverse-power-method/index.xml" rel="self" type="application/rss+xml" />
+    <description>Inverse Power Method</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Thu, 27 Apr 2023 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
-      <title>inverse power method</title>
-      <link>https://teshenglin.github.io/tags/inverse-power-method/</link>
+      <url>http://localhost:1313/images/icon_hu10226378635250344412.png</url>
+      <title>Inverse Power Method</title>
+      <link>http://localhost:1313/tags/inverse-power-method/</link>
     </image>
     
     <item>
       <title>Power method</title>
-      <link>https://teshenglin.github.io/post/2023_power_method_1/</link>
+      <link>http://localhost:1313/post/2023_power_method_1/</link>
       <pubDate>Thu, 27 Apr 2023 00:00:00 +0000</pubDate>
-      <guid>https://teshenglin.github.io/post/2023_power_method_1/</guid>
+      <guid>http://localhost:1313/post/2023_power_method_1/</guid>
       <description>&lt;p&gt;Power 迭代法目錄:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;
-&lt;a href=&#34;https://teshenglin.github.io/post/2023_power_method_1&#34;&gt;基本概念&lt;/a&gt;
+&lt;a href=&#34;http://localhost:1313/post/2023_power_method_1&#34;&gt;基本概念&lt;/a&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Power iteration; inverse power method; shifted inver power method&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;a href=&#34;https://teshenglin.github.io/post/2023_power_method_2&#34;&gt;找第二大的 eigenvalue&lt;/a&gt;
+&lt;a href=&#34;http://localhost:1313/post/2023_power_method_2&#34;&gt;找第二大的 eigenvalue&lt;/a&gt;
 &lt;blockquote&gt;
 &lt;p&gt;deflation&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;a href=&#34;https://teshenglin.github.io/post/2023_power_method_3&#34;&gt;Rayleigh Quotient 迭代及其收斂性&lt;/a&gt;
+&lt;a href=&#34;http://localhost:1313/post/2023_power_method_3&#34;&gt;Rayleigh Quotient 迭代及其收斂性&lt;/a&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Power method with Rayleigh Quotient&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -91,7 +91,7 @@ Output: (取絕對值後)最大的 eigenvalue $\lambda_1$ 以及 $v_1$&lt;/p&gt;
 &lt;/ol&gt;
 &lt;hr&gt;
 &lt;p&gt;Pseudo code:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;Input: matrix A
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Input: matrix A
 Output: lambda1, u
 
 u = random(size(A,1),1)
@@ -122,7 +122,7 @@ end
 &lt;hr&gt;
 &lt;p&gt;事實上我們的目標只是不要讓向量爆掉或趨近於零, 所以可以簡單的把某個位置的值固定住, 比如說我們強迫 $v_1$ 的第一個位置等於 $1$, 這樣就沒問題了.&lt;/p&gt;
 &lt;p&gt;Pseudo code:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;while diff &amp;gt; Tol
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;while diff &amp;gt; Tol
     v = A*u
     lambda1 = v(1)
     u = v/lambda1
@@ -138,7 +138,7 @@ b. 這樣拿到的 eigenvalue 就是 $\lambda_1$, 沒有絕對值.&lt;/li&gt;
 &lt;hr&gt;
 &lt;blockquote&gt;
 &lt;p&gt;若要找第二大的 eigenvalue 可以利用 deflation: 
-&lt;a href=&#34;https://teshenglin.github.io/post/2023_power_method_2&#34;&gt;Power method with deflation&lt;/a&gt;.&lt;/p&gt;
+&lt;a href=&#34;http://localhost:1313/post/2023_power_method_2&#34;&gt;Power method with deflation&lt;/a&gt;.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;inverse-power-method&#34;&gt;Inverse power method&lt;/h2&gt;

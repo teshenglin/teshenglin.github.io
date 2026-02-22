@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>markdown | Te-Sheng Lin</title>
-    <link>https://teshenglin.github.io/tags/markdown/</link>
-      <atom:link href="https://teshenglin.github.io/tags/markdown/index.xml" rel="self" type="application/rss+xml" />
-    <description>markdown</description>
+    <title>Markdown | Te-Sheng Lin</title>
+    <link>http://localhost:1313/tags/markdown/</link>
+      <atom:link href="http://localhost:1313/tags/markdown/index.xml" rel="self" type="application/rss+xml" />
+    <description>Markdown</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 29 Oct 2019 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
-      <title>markdown</title>
-      <link>https://teshenglin.github.io/tags/markdown/</link>
+      <url>http://localhost:1313/images/icon_hu10226378635250344412.png</url>
+      <title>Markdown</title>
+      <link>http://localhost:1313/tags/markdown/</link>
     </image>
     
     <item>
       <title>Markdown 學習筆記</title>
-      <link>https://teshenglin.github.io/post/2019_markdown/</link>
+      <link>http://localhost:1313/post/2019_markdown/</link>
       <pubDate>Tue, 29 Oct 2019 00:00:00 +0000</pubDate>
-      <guid>https://teshenglin.github.io/post/2019_markdown/</guid>
+      <guid>http://localhost:1313/post/2019_markdown/</guid>
       <description>&lt;blockquote&gt;
 &lt;p&gt;這裡我們要介紹 markdown 這個語言. 它非常簡單易學, 有時我們只是想打個小文件, 就幾頁而已不想要開 latex 或是 word 之類的文字編輯軟體, 這時候就非常適合以 markdown 來編寫. 另外其實越來越多的程式語言也支援 markdown 編寫. 比如這個網頁裡的 post 就都是以 markdown 做的.&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -116,7 +116,7 @@
 &lt;a href=&#34;https://en.wikibooks.org/wiki/LaTeX/Mathematics#Matrices_and_arrays&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;matrices and arrays&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;所有介於兩個 &lt;code&gt;$&lt;/code&gt; 字元之間的內容將會被視為 TeX 數學公式處理。開頭的 &lt;code&gt;$&lt;/code&gt; 右側必須立刻接上任意文字，而結尾 &lt;code&gt;$&lt;/code&gt; 的左側同樣也必須緊挨著文字。如果使用兩個&lt;code&gt;$$&lt;/code&gt;則會將數學公式換行居中. 例如以下 markdown 程式碼&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;$$\frac{\sin(x)}{x}$$
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$$\frac{\sin(x)}{x}$$
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;顯示為
 $$\frac{\sin(x)}{x}$$&lt;/p&gt;
 &lt;hr&gt;

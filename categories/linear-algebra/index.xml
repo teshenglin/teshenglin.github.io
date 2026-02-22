@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Linear algebra | Te-Sheng Lin</title>
-    <link>https://teshenglin.github.io/categories/linear-algebra/</link>
-      <atom:link href="https://teshenglin.github.io/categories/linear-algebra/index.xml" rel="self" type="application/rss+xml" />
-    <description>Linear algebra</description>
+    <title>Linear Algebra | Te-Sheng Lin</title>
+    <link>http://localhost:1313/categories/linear-algebra/</link>
+      <atom:link href="http://localhost:1313/categories/linear-algebra/index.xml" rel="self" type="application/rss+xml" />
+    <description>Linear Algebra</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 19 Dec 2023 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
-      <title>Linear algebra</title>
-      <link>https://teshenglin.github.io/categories/linear-algebra/</link>
+      <url>http://localhost:1313/images/icon_hu10226378635250344412.png</url>
+      <title>Linear Algebra</title>
+      <link>http://localhost:1313/categories/linear-algebra/</link>
     </image>
     
     <item>
       <title>Least square method 2</title>
-      <link>https://teshenglin.github.io/post/2023_la_least_square_2/</link>
+      <link>http://localhost:1313/post/2023_la_least_square_2/</link>
       <pubDate>Tue, 19 Dec 2023 00:00:00 +0000</pubDate>
-      <guid>https://teshenglin.github.io/post/2023_la_least_square_2/</guid>
+      <guid>http://localhost:1313/post/2023_la_least_square_2/</guid>
       <description>&lt;h1 id=&#34;最小平方法-2&#34;&gt;最小平方法 2&lt;/h1&gt;
 &lt;p&gt;給定一個矩陣 $A$ 以及一個向量 $b$, 我們想要找到一個向量 $x$ 使得 $\|Ax - b\|^2+\|x\|^2$ 最小.&lt;/p&gt;
 &lt;blockquote&gt;
@@ -164,26 +164,26 @@ $$&lt;/li&gt;
     
     <item>
       <title>Gibbs_phenomenon - code</title>
-      <link>https://teshenglin.github.io/post/2023_gibbs_phenomenon/</link>
+      <link>http://localhost:1313/post/2023_gibbs_phenomenon/</link>
       <pubDate>Mon, 18 Dec 2023 00:00:00 +0000</pubDate>
-      <guid>https://teshenglin.github.io/post/2023_gibbs_phenomenon/</guid>
-      <description>&lt;h3&gt;&lt;a href=&#34;https://teshenglin.github.io/pybooks/Gibbs_phenomenon.html&#34;&gt;Click here to view this notebook in full screen&lt;/a&gt;&lt;/h3&gt;
- &lt;iframe src=&#34;https://teshenglin.github.io/pybooks/Gibbs_phenomenon.html&#34;
+      <guid>http://localhost:1313/post/2023_gibbs_phenomenon/</guid>
+      <description>&lt;h3&gt;&lt;a href=&#34;http://localhost:1313/pybooks/Gibbs_phenomenon.html&#34;&gt;Click here to view this notebook in full screen&lt;/a&gt;&lt;/h3&gt;
+ &lt;iframe src=&#34;http://localhost:1313/pybooks/Gibbs_phenomenon.html&#34;
         style=&#34;height:2750px;width:100%;border:none;overflow:hidden;&#34; scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;
 </description>
     </item>
     
     <item>
       <title>主成分分析 - 0</title>
-      <link>https://teshenglin.github.io/post/2023_principal_component_analysis_0/</link>
+      <link>http://localhost:1313/post/2023_principal_component_analysis_0/</link>
       <pubDate>Mon, 18 Dec 2023 00:00:00 +0000</pubDate>
-      <guid>https://teshenglin.github.io/post/2023_principal_component_analysis_0/</guid>
+      <guid>http://localhost:1313/post/2023_principal_component_analysis_0/</guid>
       <description>&lt;h1 id=&#34;principle-component-analysis---0&#34;&gt;Principle component analysis - 0&lt;/h1&gt;
 &lt;h2 id=&#34;1-一維資料的統計學&#34;&gt;1. 一維資料的統計學&lt;/h2&gt;
 &lt;p&gt;假設我們有 $n$ 筆資料, 每筆資料都是一個數字 (例如 $n$ 個學生的成績). 這 $n$ 筆資料我們設為 $x_1, \cdots, x_n$, 並且定義一個矩陣&lt;/p&gt;
 &lt;p&gt;$$
 \tag{1}
-A =
+X =
 \begin{bmatrix}
 x_1 &amp;amp; \cdots &amp;amp; x_n
 \end{bmatrix}\in M_{1\times n}.
@@ -192,18 +192,18 @@ $$&lt;/p&gt;
 &lt;p&gt;$$
 \tag{2}
 \mu = \frac{1}{n}(x_1+\cdots+x_n) = \frac{1}{n}\begin{bmatrix}
-1 &amp;amp; \cdots &amp;amp; 1
+x_1 &amp;amp; \cdots &amp;amp; x_n
 \end{bmatrix}\begin{bmatrix}
-x_1\\
-\vdots\\&lt;br&gt;
-x_n
-\end{bmatrix} = \frac{1}{n}\mathbb{1}^TA^T,
+1\\
+\vdots\\
+1
+\end{bmatrix} = \frac{1}{n}X\mathbb{1},
 $$&lt;/p&gt;
-&lt;p&gt;其中 $\mathbb{1}^T = [1, \cdots, 1]$ 是個全為 $1$ 的向量.&lt;/p&gt;
+&lt;p&gt;其中 $\mathbb{1} = [1, \cdots, 1]^T$ 是個全為 $1$ 的向量.&lt;/p&gt;
 &lt;p&gt;資料的變異數 (variance) 則定義為&lt;/p&gt;
 &lt;p&gt;$$
 \tag{3}
-\text{Var}(A) = \sigma^2 = \frac{1}{n}\sum^n_{k=1} (x_i - \mu)^2,
+\text{Var}(X) = \sigma^2 = \frac{1}{n}\sum^n_{k=1} (x_i - \mu)^2,
 $$&lt;/p&gt;
 &lt;p&gt;而 $\sigma$ 則是標準差 (standard deviation, std).&lt;/p&gt;
 &lt;p&gt;要將之寫成矩陣形式首先我們定義置中矩陣 (centering matrix)&lt;/p&gt;
@@ -214,11 +214,9 @@ $$&lt;/p&gt;
 &lt;p&gt;計算一下可以發現&lt;/p&gt;
 &lt;p&gt;$$
 \tag{5}
-HA^T = (I - \frac{1}{n}\mathbb{1}\mathbb{1}^T)A^T = A^T - \mu\mathbb{1} = \begin{bmatrix}
-x_1 -\mu\\&lt;br&gt;
-\vdots\\&lt;br&gt;
-x_n -\mu
-\end{bmatrix} = Y^T,
+XH = X(I - \frac{1}{n}\mathbb{1}\mathbb{1}^T) = X - \mu\mathbb{1}^T = \begin{bmatrix}
+(x_1 -\mu) &amp;amp; \cdots &amp;amp; (x_n -\mu)
+\end{bmatrix} = Y,
 $$&lt;/p&gt;
 &lt;p&gt;其中我們將這些置中後的資料存為 $Y$ 矩陣. 接著我們就可以知道&lt;/p&gt;
 &lt;p&gt;$$
@@ -231,17 +229,16 @@ $$&lt;/p&gt;
 \tag{7}
 A =
 \begin{bmatrix}
-x_1 &amp;amp; \cdots &amp;amp; x_n\\&lt;br&gt;
+x_1 &amp;amp; \cdots &amp;amp; x_n\\
 y_1 &amp;amp; \cdots &amp;amp; y_n
 \end{bmatrix}\in M_{2\times n}.
 $$&lt;/p&gt;
-&lt;p&gt;我們把每種資料都平移, 使其平均為 $0$, 並令平移後的資料為 $Y$. 簡單計算可以發現我們一樣可以用置中矩陣來做, $HA^T = Y^T$,&lt;/p&gt;
+&lt;p&gt;我們把每種資料都平移, 使其平均為 $0$, 並令平移後的資料為 $Y$. 簡單計算可以發現我們一樣可以用置中矩陣來做, $Y=XH$,&lt;/p&gt;
 &lt;p&gt;$$
 \tag{8}
-Y^T = \begin{bmatrix}
-x_1 -\mu_x &amp;amp; y_1 -\mu_y\\
-\vdots &amp;amp; \vdots\\&lt;br&gt;
-x_n -\mu_x &amp;amp; y_n -\mu_y
+Y = \begin{bmatrix}
+(x_1 -\mu_x) &amp;amp; \cdots &amp;amp; (x_n -\mu_x)\\
+(y_1 -\mu_y) &amp;amp; \cdots &amp;amp; (y_n -\mu_y)
 \end{bmatrix}, \quad
 \mu_x = \frac{1}{n}\sum^n_{k=1} x_k, \quad
 \mu_y = \frac{1}{n}\sum^n_{k=1} y_k.
@@ -263,10 +260,11 @@ $$&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;&lt;strong&gt;Remark&lt;/strong&gt;&lt;/em&gt;: 不過要真正算相關程度會更近一步的去計算相關係數 (correlation coefficients), 這邊就不再深入探討.&lt;/p&gt;
 &lt;h2 id=&#34;3-pca-maximize-variance&#34;&gt;3. PCA: maximize variance&lt;/h2&gt;
 &lt;blockquote&gt;
-&lt;p&gt;我們想要找到一個方向, 使得資料投影上去之後, 新資料的變異數會最大.&lt;/p&gt;
+&lt;p&gt;資料降到一維: 我們想要找到一個方向, 使得資料投影上去之後, 新資料的變異數會最大.&lt;/p&gt;
+&lt;p&gt;資料我們會先置中, 所以處理的都是置中後的資料集 $Y$.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;假設這個方向為 $v\in\mathbb{R}^2$, 並且 $\|v\|=1$, 那資料投影到 $v$ 所得的新資料就是 $v^TY \in M_{1\times n}$. 接著我們就來算這筆新資料的變異數.&lt;/p&gt;
-&lt;p&gt;第一步一樣先置中. 也就是計算 $HY^Tv$. 不過由於 $Y$ 是置中過的資料, 因此 $HY^T = Y^T$, 所以 $HY^Tv = Y^Tv$, 也就是說, 新資料 $v^TY$ 的平均一定是 $0$.&lt;/p&gt;
+&lt;p&gt;算變異數的第一步一樣先算平均再把資料置中, 也就是計算 $v^TYH$. 不過由於 $Y$ 是置中過的資料, 因此 $YH = Y$, 所以 $v^TYH = v^TY$, 也就是說, 新資料 $v^TY$ 的平均已經是 $0$.&lt;/p&gt;
 &lt;p&gt;接著, 新資料的變異數就會是&lt;/p&gt;
 &lt;p&gt;$$
 \tag{11}
@@ -283,14 +281,14 @@ $$&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;我們想要找到一個方向, 使得資料投影上去之後, 新舊資料的距離平方和最小.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;假設這個方向為 $v\in\mathbb{R}^2$, 並且 $\|v\|=1$, 那資料投影到 $v$ 的投影點就是 $vv^TY \in M_{2\times n}$. 接著我們就來算新舊資料的距離平方和:&lt;/p&gt;
+&lt;p&gt;假設這個方向為 $v\in\mathbb{R}^2$, 並且 $\|v\|=1$, 那資料投影到 $v$ 的這個方向上的投影點就是 $vv^TY \in M_{2\times n}$. 接著我們就來算新舊資料的距離平方和:&lt;/p&gt;
 &lt;p&gt;$$
 \tag{13}
 \begin{align}
-\sum^n_{k=1} d_k^2 &amp;amp;= \sum^n_{k=1}\|Y_k - vv^TY_k\|^2  \\&lt;br&gt;
-&amp;amp;= \sum^n_{k=1}&amp;lt;Y_k-vv^TY_k, Y_k-vv^TY_k&amp;gt; \\&lt;br&gt;
-&amp;amp;= \sum^n_{k=1}Y_k^TY_k -Y_k^Tvv^TY_k \\&lt;br&gt;
-&amp;amp;= \sum^n_{k=1}Y_k^TY_k -v^TY_kY_k^Tv \\&lt;br&gt;
+\sum^n_{k=1} d_k^2 &amp;amp;= \sum^n_{k=1}\|Y_k - vv^TY_k\|^2  \\
+&amp;amp;= \sum^n_{k=1}&amp;lt;Y_k-vv^TY_k, Y_k-vv^TY_k&amp;gt; \\
+&amp;amp;= \sum^n_{k=1}Y_k^TY_k -Y_k^Tvv^TY_k \\
+&amp;amp;= \sum^n_{k=1}Y_k^TY_k -v^TY_kY_k^Tv \\
 &amp;amp;= \sum^n_{k=1}(Y_k^TY_k) -v^TYY^Tv,
 \end{align}
 $$&lt;/p&gt;
@@ -338,20 +336,20 @@ $$
     
     <item>
       <title>主成分分析 - code</title>
-      <link>https://teshenglin.github.io/post/2023_principal_component_analysis_01/</link>
+      <link>http://localhost:1313/post/2023_principal_component_analysis_01/</link>
       <pubDate>Mon, 18 Dec 2023 00:00:00 +0000</pubDate>
-      <guid>https://teshenglin.github.io/post/2023_principal_component_analysis_01/</guid>
-      <description>&lt;h3&gt;&lt;a href=&#34;https://teshenglin.github.io/pybooks/pca.html&#34;&gt;Click here to view this notebook in full screen&lt;/a&gt;&lt;/h3&gt;
- &lt;iframe src=&#34;https://teshenglin.github.io/pybooks/pca.html&#34;
+      <guid>http://localhost:1313/post/2023_principal_component_analysis_01/</guid>
+      <description>&lt;h3&gt;&lt;a href=&#34;http://localhost:1313/pybooks/pca.html&#34;&gt;Click here to view this notebook in full screen&lt;/a&gt;&lt;/h3&gt;
+ &lt;iframe src=&#34;http://localhost:1313/pybooks/pca.html&#34;
         style=&#34;height:2750px;width:100%;border:none;overflow:hidden;&#34; scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;
 </description>
     </item>
     
     <item>
       <title>Least square method 1</title>
-      <link>https://teshenglin.github.io/post/2023_la_least_square_1/</link>
+      <link>http://localhost:1313/post/2023_la_least_square_1/</link>
       <pubDate>Sun, 03 Dec 2023 00:00:00 +0000</pubDate>
-      <guid>https://teshenglin.github.io/post/2023_la_least_square_1/</guid>
+      <guid>http://localhost:1313/post/2023_la_least_square_1/</guid>
       <description>&lt;h1 id=&#34;最小平方法-1&#34;&gt;最小平方法 1&lt;/h1&gt;
 &lt;p&gt;給定一個矩陣 $A$ 以及一個向量 $b$, 我們想要找到一個向量 $x$ 使得 $\|Ax - b\|^2$ 最小.&lt;/p&gt;
 &lt;blockquote&gt;
@@ -409,9 +407,9 @@ $$&lt;/p&gt;
 &lt;p&gt;$$
 \tag{3}
 \begin{align}
-\|p - b\|^2 &amp;amp;= &amp;lt;p-b, p-b&amp;gt; \\&lt;br&gt;
-&amp;amp;= &amp;lt;\hat{b} + e - b, \hat{b} + e - b&amp;gt;\\&lt;br&gt;
-&amp;amp;= \|\hat{b} - b\|^2 + 2&amp;lt;\hat{b} - b, e&amp;gt; + \|e\|^2\\&lt;br&gt;
+\|p - b\|^2 &amp;amp;= &amp;lt;p-b, p-b&amp;gt; \\
+&amp;amp;= &amp;lt;\hat{b} + e - b, \hat{b} + e - b&amp;gt;\\
+&amp;amp;= \|\hat{b} - b\|^2 + 2&amp;lt;\hat{b} - b, e&amp;gt; + \|e\|^2\\
 &amp;amp;= \|\hat{b} - b\|^2  + \|e\|^2,
 \end{align}
 $$&lt;/p&gt;
@@ -570,9 +568,9 @@ $$&lt;/li&gt;
     
     <item>
       <title>Trace, determinant 與 eigenvalue 的關係</title>
-      <link>https://teshenglin.github.io/post/2023_la_det_trace_zh/</link>
+      <link>http://localhost:1313/post/2023_la_det_trace_zh/</link>
       <pubDate>Thu, 16 Nov 2023 00:00:00 +0000</pubDate>
-      <guid>https://teshenglin.github.io/post/2023_la_det_trace_zh/</guid>
+      <guid>http://localhost:1313/post/2023_la_det_trace_zh/</guid>
       <description>&lt;h2 id=&#34;方陣-a-的行列式等於其特徵值相乘&#34;&gt;方陣 A 的行列式等於其特徵值相乘&lt;/h2&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Determinant of A equals to the product of its eigenvalues&lt;/p&gt;
@@ -619,8 +617,8 @@ $$&lt;/p&gt;
 $$
 \tag{6}
 A = \begin{bmatrix}
-a_{11} &amp;amp; \cdots &amp;amp; a_{1n}\\&lt;br&gt;
-\vdots &amp;amp; \ddots &amp;amp; \vdots\\&lt;br&gt;
+a_{11} &amp;amp; \cdots &amp;amp; a_{1n}\\
+\vdots &amp;amp; \ddots &amp;amp; \vdots\\
 a_{n1} &amp;amp; \cdots &amp;amp; a_{nn}
 \end{bmatrix}.
 $$&lt;/p&gt;
@@ -629,9 +627,9 @@ $$
 \tag{7}
 \lambda I - A =
 \begin{bmatrix}
-\lambda - a_{11} &amp;amp; -a_{12} &amp;amp; \cdots &amp;amp; -a_{1n} \\&lt;br&gt;
--a_{21} &amp;amp; \lambda-a_{22} &amp;amp; \cdots &amp;amp; -a_{2n} \\&lt;br&gt;
-\vdots &amp;amp; \vdots &amp;amp; \ddots &amp;amp; \vdots \\&lt;br&gt;
+\lambda - a_{11} &amp;amp; -a_{12} &amp;amp; \cdots &amp;amp; -a_{1n} \\
+-a_{21} &amp;amp; \lambda-a_{22} &amp;amp; \cdots &amp;amp; -a_{2n} \\
+\vdots &amp;amp; \vdots &amp;amp; \ddots &amp;amp; \vdots \\
 -a_{n1} &amp;amp; -a_{n2} &amp;amp;  \cdots &amp;amp; \lambda - a_{nn}
 \end{bmatrix}.
 $$&lt;/p&gt;
@@ -647,34 +645,34 @@ $$
 \tag{9}
 C_{11} =
 \begin{bmatrix}
-\lambda-a_{22} &amp;amp; \cdots &amp;amp; -a_{2n}\\&lt;br&gt;
-\vdots &amp;amp; \ddots &amp;amp; \vdots\\&lt;br&gt;
+\lambda-a_{22} &amp;amp; \cdots &amp;amp; -a_{2n}\\
+\vdots &amp;amp; \ddots &amp;amp; \vdots\\
 -a_{n2} &amp;amp;  \cdots &amp;amp; \lambda - a_{nn}
-\end{bmatrix}_{(n-1)\times(n-1)},
+\end{bmatrix}&lt;em&gt;{(n-1)\times(n-1)},
 $$
 以及
 $$
 \tag{10}
-C_{21} =
+C&lt;/em&gt;{21} =
 \begin{bmatrix}
--a_{12} &amp;amp; -a_{13} &amp;amp; \cdots &amp;amp; -a_{1n}\\&lt;br&gt;
--a_{32} &amp;amp; \lambda-a_{33} &amp;amp; \cdots &amp;amp; -a_{3n}\\&lt;br&gt;
-\vdots &amp;amp;  \vdots &amp;amp; \ddots &amp;amp; \vdots\\&lt;br&gt;
+-a_{12} &amp;amp; -a_{13} &amp;amp; \cdots &amp;amp; -a_{1n}\\
+-a_{32} &amp;amp; \lambda-a_{33} &amp;amp; \cdots &amp;amp; -a_{3n}\\
+\vdots &amp;amp;  \vdots &amp;amp; \ddots &amp;amp; \vdots\\
 -a_{n2} &amp;amp; \cdots &amp;amp;  \cdots &amp;amp; \lambda - a_{nn}
 \end{bmatrix}_{(n-1)\times(n-1)}.
 $$&lt;/p&gt;
 &lt;p&gt;簡單觀察可以發現 $C_{21}$ 是個最多 $n-2$ 次的多項式. 並且對所有 $k&amp;gt;1$ 的 $C_{k1}$, 他們全都是最多 $n-2$ 次的多項式. 因此我們就有
 $$
 \tag{11}
-det(\lambda I - A) = (\lambda - a_{11})C_{11} + \hat{Q}_{n-2}(\lambda),
+det(\lambda I - A) = (\lambda - a_{11})C_{11} + \hat{Q}&lt;em&gt;{n-2}(\lambda),
 $$
-其中 $\hat{Q}_{n-2}(\lambda)$ 是個最多 $n-2$ 次的多項式.&lt;/p&gt;
+其中 $\hat{Q}&lt;/em&gt;{n-2}(\lambda)$ 是個最多 $n-2$ 次的多項式.&lt;/p&gt;
 &lt;p&gt;接著我們對 $C_{11}$ 做展開, 並且用以上的論述一直做下去. 最終我們就會得到
 $$
 \tag{12}
-det(\lambda I - A) = (\lambda - a_{11})(\lambda - a_{22})\cdots (\lambda - a_{nn}) + \tilde{Q}_{n-2}(\lambda),
+det(\lambda I - A) = (\lambda - a_{11})(\lambda - a_{22})\cdots (\lambda - a_{nn}) + \tilde{Q}&lt;em&gt;{n-2}(\lambda),
 $$
-其中 $\tilde{Q}_{n-2}(\lambda)$ 是個最多 $n-2$ 次的多項式.&lt;/p&gt;
+其中 $\tilde{Q}&lt;/em&gt;{n-2}(\lambda)$ 是個最多 $n-2$ 次的多項式.&lt;/p&gt;
 &lt;p&gt;我們接著把 (12) 展開, 得到
 $$
 \tag{13}
@@ -696,25 +694,25 @@ $$&lt;/p&gt;
     
     <item>
       <title>Power method with Rayleigh Quotient</title>
-      <link>https://teshenglin.github.io/post/2023_power_method_3/</link>
+      <link>http://localhost:1313/post/2023_power_method_3/</link>
       <pubDate>Sat, 29 Apr 2023 00:00:00 +0000</pubDate>
-      <guid>https://teshenglin.github.io/post/2023_power_method_3/</guid>
+      <guid>http://localhost:1313/post/2023_power_method_3/</guid>
       <description>&lt;p&gt;Power 迭代法目錄:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;
-&lt;a href=&#34;https://teshenglin.github.io/post/2023_power_method_1&#34;&gt;基本概念&lt;/a&gt;
+&lt;a href=&#34;http://localhost:1313/post/2023_power_method_1&#34;&gt;基本概念&lt;/a&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Power iteration; inverse power method; shifted inver power method&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;a href=&#34;https://teshenglin.github.io/post/2023_power_method_2&#34;&gt;找第二大的 eigenvalue&lt;/a&gt;
+&lt;a href=&#34;http://localhost:1313/post/2023_power_method_2&#34;&gt;找第二大的 eigenvalue&lt;/a&gt;
 &lt;blockquote&gt;
 &lt;p&gt;deflation&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;a href=&#34;https://teshenglin.github.io/post/2023_power_method_3&#34;&gt;Rayleigh Quotient 迭代及其收斂性&lt;/a&gt;
+&lt;a href=&#34;http://localhost:1313/post/2023_power_method_3&#34;&gt;Rayleigh Quotient 迭代及其收斂性&lt;/a&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Power method with Rayleigh Quotient&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -731,8 +729,8 @@ $$&lt;/p&gt;
 $$
 \tag{1}
 \begin{align}
-\hat{x}^{(k+1)} &amp;amp;= Ax^{(k)}\\&lt;br&gt;
-\lambda^{(k+1)} &amp;amp;= x^{(k)T}\hat{x}^{(k+1)}\\&lt;br&gt;
+\hat{x}^{(k+1)} &amp;amp;= Ax^{(k)}\\
+\lambda^{(k+1)} &amp;amp;= x^{(k)T}\hat{x}^{(k+1)}\\
 x^{(k+1)} &amp;amp;= \hat{x}^{(k+1)}/|\hat{x}^{(k+1)}|_2
 \end{align}
 $$&lt;/p&gt;
@@ -749,15 +747,15 @@ $$
 $$
 另一方面, 從迭代式 (1) 可以看出我們一直不斷地把得到的向量 normalize, 使其為單位長, 因此我們必定有
 $$
-x^{(k)} = \frac{A^kx^{(0)}}{|A^kx^{(0)}|_2}.
+x^{(k)} = \frac{A^kx^{(0)}}{|A^kx^{(0)}|&lt;em&gt;2}.
 $$
 將 (2) 代入得到
 $$
 \tag{3}
 \begin{align}
 x^{(k)}
-&amp;amp;= \frac{\lambda_1^k\left[\alpha_1v_1 + \sum^n_{i=2}\alpha_i \left(\frac{\lambda_i}{\lambda_1}\right)^kv_i\right]}{\sqrt{\lambda_1^{2k}\left[\alpha_1v_1 + \sum^n_{i=2}\alpha_i \left(\frac{\lambda_i}{\lambda_1}\right)^kv_i\right]^T\left[\alpha_1v_1 + \sum^n_{i=2}\alpha_i \left(\frac{\lambda_i}{\lambda_1}\right)^kv_i\right]}} \\&lt;br&gt;
-&amp;amp;= \frac{\left[\alpha_1v_1 + \sum^n_{i=2}\alpha_i \left(\frac{\lambda_i}{\lambda_1}\right)^kv_i\right]}{\sqrt{\alpha^2_1 + \sum^n_{i=2}\alpha^2_i \left(\frac{\lambda_i}{\lambda_1}\right)^{2k}}}\\&lt;br&gt;
+&amp;amp;= \frac{\lambda_1^k\left[\alpha_1v_1 + \sum^n&lt;/em&gt;{i=2}\alpha_i \left(\frac{\lambda_i}{\lambda_1}\right)^kv_i\right]}{\sqrt{\lambda_1^{2k}\left[\alpha_1v_1 + \sum^n_{i=2}\alpha_i \left(\frac{\lambda_i}{\lambda_1}\right)^kv_i\right]^T\left[\alpha_1v_1 + \sum^n_{i=2}\alpha_i \left(\frac{\lambda_i}{\lambda_1}\right)^kv_i\right]}} \\
+&amp;amp;= \frac{\left[\alpha_1v_1 + \sum^n_{i=2}\alpha_i \left(\frac{\lambda_i}{\lambda_1}\right)^kv_i\right]}{\sqrt{\alpha^2_1 + \sum^n_{i=2}\alpha^2_i \left(\frac{\lambda_i}{\lambda_1}\right)^{2k}}}\\
 &amp;amp;=\frac{\left[v_1 + \sum^n_{i=2}\left(\frac{\alpha_i}{\alpha_1}\right) \left(\frac{\lambda_i}{\lambda_1}\right)^kv_i\right]}{\sqrt{1 + \sum^n_{i=2}\left(\frac{\alpha_i}{\alpha_1}\right)^2 \left(\frac{\lambda_i}{\lambda_1}\right)^{2k}}},
 \end{align}
 $$
@@ -765,14 +763,14 @@ $$
 &lt;p&gt;接著我們可以算 eigenvalue, 將 (3) 代入:
 $$
 \begin{align}
-\lambda^{(k+1)} &amp;amp;= x^{(k)T}\hat{x}^{(k+1)} = x^{(k)T}(Ax^{(k)}) \\&lt;br&gt;
-&amp;amp;= \frac{\left[v_1 + \sum^n_{i=2}\left(\frac{\alpha_i}{\alpha_1}\right) \left(\frac{\lambda_i}{\lambda_1}\right)^kv_i\right]^T\left[\lambda_1v_1 + \sum^n_{i=2}\left(\frac{\alpha_i}{\alpha_1}\right) \lambda_i\left(\frac{\lambda_i}{\lambda_1}\right)^kv_i\right]}{1 + \sum^n_{i=2}\left(\frac{\alpha_i}{\alpha_1}\right)^2 \left(\frac{\lambda_i}{\lambda_1}\right)^{2k}} \\&lt;br&gt;
+\lambda^{(k+1)} &amp;amp;= x^{(k)T}\hat{x}^{(k+1)} = x^{(k)T}(Ax^{(k)}) \\
+&amp;amp;= \frac{\left[v_1 + \sum^n_{i=2}\left(\frac{\alpha_i}{\alpha_1}\right) \left(\frac{\lambda_i}{\lambda_1}\right)^kv_i\right]^T\left[\lambda_1v_1 + \sum^n_{i=2}\left(\frac{\alpha_i}{\alpha_1}\right) \lambda_i\left(\frac{\lambda_i}{\lambda_1}\right)^kv_i\right]}{1 + \sum^n_{i=2}\left(\frac{\alpha_i}{\alpha_1}\right)^2 \left(\frac{\lambda_i}{\lambda_1}\right)^{2k}} \\
 &amp;amp;= \lambda_1
-\frac{\left[v_1 + \sum^n_{i=2}\left(\frac{\alpha_i}{\alpha_1}\right) \left(\frac{\lambda_i}{\lambda_1}\right)^kv_i\right]^T\left[v_1 + \sum^n_{i=2}\left(\frac{\alpha_i}{\alpha_1}\right) \left(\frac{\lambda_i}{\lambda_1}\right)^{k+1}v_i\right]}{1 + \sum^n_{i=2}\left(\frac{\alpha_i}{\alpha_1}\right)^2 \left(\frac{\lambda_i}{\lambda_1}\right)^{2k}} \\&lt;br&gt;
+\frac{\left[v_1 + \sum^n_{i=2}\left(\frac{\alpha_i}{\alpha_1}\right) \left(\frac{\lambda_i}{\lambda_1}\right)^kv_i\right]^T\left[v_1 + \sum^n_{i=2}\left(\frac{\alpha_i}{\alpha_1}\right) \left(\frac{\lambda_i}{\lambda_1}\right)^{k+1}v_i\right]}{1 + \sum^n_{i=2}\left(\frac{\alpha_i}{\alpha_1}\right)^2 \left(\frac{\lambda_i}{\lambda_1}\right)^{2k}} \\
 &amp;amp;= \lambda_1
-\frac{\left[1 + \sum^n_{i=2}\left(\frac{\alpha_i}{\alpha_1}\right)^2 \left(\frac{\lambda_i}{\lambda_1}\right)^{2k+1}\right]}{1 + \sum^n_{i=2}\left(\frac{\alpha_i}{\alpha_1}\right)^2 \left(\frac{\lambda_i}{\lambda_1}\right)^{2k}} \\&lt;br&gt;
+\frac{\left[1 + \sum^n_{i=2}\left(\frac{\alpha_i}{\alpha_1}\right)^2 \left(\frac{\lambda_i}{\lambda_1}\right)^{2k+1}\right]}{1 + \sum^n_{i=2}\left(\frac{\alpha_i}{\alpha_1}\right)^2 \left(\frac{\lambda_i}{\lambda_1}\right)^{2k}} \\
 &amp;amp;= \lambda_1
-\frac{\left[1 + O \left(\epsilon^{2k+1}\right)\right]}{1 + O \left(\epsilon^{2k}\right)} \\&lt;br&gt;
+\frac{\left[1 + O \left(\epsilon^{2k+1}\right)\right]}{1 + O \left(\epsilon^{2k}\right)} \\
 &amp;amp;= \lambda_1 + O\left(\epsilon^{2k}\right),
 \end{align}
 $$
@@ -782,7 +780,7 @@ where $\epsilon=|\lambda_2/\lambda_1|$.&lt;/p&gt;
 &lt;h2 id=&#34;final-remark&#34;&gt;Final remark&lt;/h2&gt;
 &lt;p&gt;若使用基本的 power 迭代, 就是每次將得到得向量單位化, 如以下方式:&lt;/p&gt;
 &lt;p&gt;Pseudo code:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;while diff &amp;gt; Tol
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;while diff &amp;gt; Tol
     v = A*u
     lambda = norm(v)
     u = v/lambda
@@ -799,25 +797,25 @@ $$
     
     <item>
       <title>Power method - deflation</title>
-      <link>https://teshenglin.github.io/post/2023_power_method_2/</link>
+      <link>http://localhost:1313/post/2023_power_method_2/</link>
       <pubDate>Fri, 28 Apr 2023 00:00:00 +0000</pubDate>
-      <guid>https://teshenglin.github.io/post/2023_power_method_2/</guid>
+      <guid>http://localhost:1313/post/2023_power_method_2/</guid>
       <description>&lt;p&gt;Power 迭代法目錄:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;
-&lt;a href=&#34;https://teshenglin.github.io/post/2023_power_method_1&#34;&gt;基本概念&lt;/a&gt;
+&lt;a href=&#34;http://localhost:1313/post/2023_power_method_1&#34;&gt;基本概念&lt;/a&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Power iteration; inverse power method; shifted inver power method&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;a href=&#34;https://teshenglin.github.io/post/2023_power_method_2&#34;&gt;找第二大的 eigenvalue&lt;/a&gt;
+&lt;a href=&#34;http://localhost:1313/post/2023_power_method_2&#34;&gt;找第二大的 eigenvalue&lt;/a&gt;
 &lt;blockquote&gt;
 &lt;p&gt;deflation&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;a href=&#34;https://teshenglin.github.io/post/2023_power_method_3&#34;&gt;Rayleigh Quotient 迭代及其收斂性&lt;/a&gt;
+&lt;a href=&#34;http://localhost:1313/post/2023_power_method_3&#34;&gt;Rayleigh Quotient 迭代及其收斂性&lt;/a&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Power method with Rayleigh Quotient&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -869,9 +867,9 @@ $$
 那麼
 $$
 \begin{align}
-Av_i &amp;amp;= (\lambda_i-\lambda) Au_i + \lambda (x^T u_i) Av \\&lt;br&gt;
-&amp;amp;= (\lambda_i-\lambda)(\lambda_i u_i +\lambda(x^Tu_i)v) + \lambda^2 (x^T u_i) v\\&lt;br&gt;
-&amp;amp;= \lambda_i((\lambda_i-\lambda) u_i + \lambda (x^T u_i) v) \\&lt;br&gt;
+Av_i &amp;amp;= (\lambda_i-\lambda) Au_i + \lambda (x^T u_i) Av \\
+&amp;amp;= (\lambda_i-\lambda)(\lambda_i u_i +\lambda(x^Tu_i)v) + \lambda^2 (x^T u_i) v\\
+&amp;amp;= \lambda_i((\lambda_i-\lambda) u_i + \lambda (x^T u_i) v) \\
 &amp;amp;=\lambda_i v_i.
 \end{align}
 $$&lt;/p&gt;
@@ -932,8 +930,8 @@ $$
 &lt;p&gt;Let $x = \sum^{n}_{i=1} c_iv_i$, then&lt;/p&gt;
 &lt;p&gt;$$
 \begin{aligned}
-y &amp;amp;= A x - \lambda_1 x \\&lt;br&gt;
-&amp;amp;= \sum^n_{i=1} (c_iAv_i - c_i\lambda_1v_i) \\&lt;br&gt;
+y &amp;amp;= A x - \lambda_1 x \\
+&amp;amp;= \sum^n_{i=1} (c_iAv_i - c_i\lambda_1v_i) \\
 &amp;amp;= \sum^n_{i=2} c_i(\lambda_i-\lambda_1)v_i.
 \end{aligned}
 $$&lt;/p&gt;
@@ -946,19 +944,19 @@ $$&lt;/p&gt;
     
     <item>
       <title>Conjugate gradient method - iterative method</title>
-      <link>https://teshenglin.github.io/post/2023_conjugate_gradient_method_2/</link>
+      <link>http://localhost:1313/post/2023_conjugate_gradient_method_2/</link>
       <pubDate>Thu, 27 Apr 2023 00:00:00 +0000</pubDate>
-      <guid>https://teshenglin.github.io/post/2023_conjugate_gradient_method_2/</guid>
+      <guid>http://localhost:1313/post/2023_conjugate_gradient_method_2/</guid>
       <description>&lt;p&gt;共軛梯度法 (CG method,  conjugate gradient method) 目錄:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;
-&lt;a href=&#34;https://teshenglin.github.io/post/2023_conjugate_gradient_method_1&#34;&gt;CG method - Direct mehtod&lt;/a&gt;
+&lt;a href=&#34;http://localhost:1313/post/2023_conjugate_gradient_method_1&#34;&gt;CG method - Direct mehtod&lt;/a&gt;
 &lt;blockquote&gt;
 &lt;p&gt;直接法&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;a href=&#34;https://teshenglin.github.io/post/2023_conjugate_gradient_method_2&#34;&gt;CG method - iterate mehtod&lt;/a&gt;
+&lt;a href=&#34;http://localhost:1313/post/2023_conjugate_gradient_method_2&#34;&gt;CG method - iterate mehtod&lt;/a&gt;
 &lt;blockquote&gt;
 &lt;p&gt;迭代法&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -1002,8 +1000,8 @@ $$
 $$
 \tag{2} \begin{align}
 r_{k+1} &amp;amp;= b - Ax_{k+1} \\
-&amp;amp;= b - A(x_k + t_ku_k) \\&lt;br&gt;
-&amp;amp;= (b-Ax_k)  - t_kAu_k \\&lt;br&gt;
+&amp;amp;= b - A(x_k + t_ku_k) \\
+&amp;amp;= (b-Ax_k)  - t_kAu_k \\
 &amp;amp;= r_k  - t_kAu_k.
 \end{align}
 $$&lt;/p&gt;
@@ -1011,7 +1009,7 @@ $$&lt;/p&gt;
 $$
 \begin{align}
 \langle r_{k}, u_{j}\rangle
-&amp;amp;= \langle r_{k-1}, u_{j}\rangle-t_{k-1}\langle Au_{k-1}, u_{j}\rangle \\&lt;br&gt;
+&amp;amp;= \langle r_{k-1}, u_{j}\rangle-t_{k-1}\langle Au_{k-1}, u_{j}\rangle \\
 &amp;amp;= \langle r_{k-1}, u_{j}\rangle.
 \end{align}
 $$
@@ -1028,7 +1026,7 @@ $$&lt;/p&gt;
 \begin{align}
 \langle r_{j+1}, u_j\rangle
 &amp;amp;= \langle r_j, u_j\rangle-t_j\langle Au_j, u_j\rangle \\
-&amp;amp;= \langle r_j, u_j\rangle-\frac{\langle r_j,u_j\rangle}{\langle u_j,Au_j\rangle}\langle Au_j, u_j\rangle\\&lt;br&gt;
+&amp;amp;= \langle r_j, u_j\rangle-\frac{\langle r_j,u_j\rangle}{\langle u_j,Au_j\rangle}\langle Au_j, u_j\rangle\\
 &amp;amp;=0.
 \end{align}
 $$&lt;/p&gt;
@@ -1069,9 +1067,9 @@ $$
 &lt;p&gt;接著我們可以往下做, for $k\ge 0$,
 $$
 \begin{align}
-t_{k} &amp;amp;=\frac{\langle b-Ax_k,u_{k}\rangle}{\langle u_k,Au_{k}\rangle}, \\&lt;br&gt;
-x_{k+1} &amp;amp;= x_k + t_k u_k, \\&lt;br&gt;
-r_{k+1} &amp;amp;= r_k - t_kAu_k, \\&lt;br&gt;
+t_{k} &amp;amp;=\frac{\langle b-Ax_k,u_{k}\rangle}{\langle u_k,Au_{k}\rangle}, \\
+x_{k+1} &amp;amp;= x_k + t_k u_k, \\
+r_{k+1} &amp;amp;= r_k - t_kAu_k, \\
 u_{k+1} &amp;amp;= r_{k+1} - \frac{\langle r_{k+1}, Au_0\rangle}{\langle u_0, Au_0\rangle}u_0 - \cdots - \frac{\langle r_{k+1}, Au_k\rangle}{\langle u_k, Au_k\rangle}u_k.
 \end{align}
 $$
@@ -1118,8 +1116,8 @@ $$&lt;/p&gt;
 $$
 \tag{7}
 \begin{align}
-t_k &amp;amp;= \frac{\langle r_{k}, u_{k} \rangle}{\langle u_{k}, Au_{k} \rangle} = \frac{\langle r_{k}, r_{k} + \beta_{k-1}u_{k-1} \rangle}{\langle u_{k}, Au_{k} \rangle} \\&lt;br&gt;
-&amp;amp;= \frac{\langle r_{k}, r_{k}  \rangle}{\langle u_{k}, Au_{k} \rangle} + \frac{\langle r_{k}, \beta_{k-1}u_{k-1} \rangle}{\langle u_{k}, Au_{k} \rangle} \\&lt;br&gt;
+t_k &amp;amp;= \frac{\langle r_{k}, u_{k} \rangle}{\langle u_{k}, Au_{k} \rangle} = \frac{\langle r_{k}, r_{k} + \beta_{k-1}u_{k-1} \rangle}{\langle u_{k}, Au_{k} \rangle} \\
+&amp;amp;= \frac{\langle r_{k}, r_{k}  \rangle}{\langle u_{k}, Au_{k} \rangle} + \frac{\langle r_{k}, \beta_{k-1}u_{k-1} \rangle}{\langle u_{k}, Au_{k} \rangle} \\
 &amp;amp;= \frac{\langle r_{k}, r_{k}  \rangle}{\langle u_{k}, Au_{k} \rangle}.
 \end{align}
 $$
@@ -1138,10 +1136,10 @@ $$&lt;/p&gt;
 &lt;p&gt;接著我們可以往下做, for $k\ge 0$,
 $$
 \begin{align}
-t_{k} &amp;amp;=\frac{\langle r_k,r_{k}\rangle}{\langle u_k,Au_{k}\rangle},\\&lt;br&gt;
-x_{k+1} &amp;amp;= x_k + t_k u_k, \\&lt;br&gt;
-r_{k+1} &amp;amp;= r_k  - t_kAu_k, \\&lt;br&gt;
-\beta_k &amp;amp;= \frac{\langle r_{k+1}, r_{k+1}\rangle}{\langle r_{k}, r_{k}\rangle},\\&lt;br&gt;
+t_{k} &amp;amp;=\frac{\langle r_k,r_{k}\rangle}{\langle u_k,Au_{k}\rangle},\\
+x_{k+1} &amp;amp;= x_k + t_k u_k, \\
+r_{k+1} &amp;amp;= r_k  - t_kAu_k, \\
+\beta_k &amp;amp;= \frac{\langle r_{k+1}, r_{k+1}\rangle}{\langle r_{k}, r_{k}\rangle},\\
 u_{k+1} &amp;amp;= r_{k+1} + \beta_k u_k.
 \end{align}
 $$&lt;/p&gt;
@@ -1157,25 +1155,25 @@ $$&lt;/p&gt;
     
     <item>
       <title>Power method</title>
-      <link>https://teshenglin.github.io/post/2023_power_method_1/</link>
+      <link>http://localhost:1313/post/2023_power_method_1/</link>
       <pubDate>Thu, 27 Apr 2023 00:00:00 +0000</pubDate>
-      <guid>https://teshenglin.github.io/post/2023_power_method_1/</guid>
+      <guid>http://localhost:1313/post/2023_power_method_1/</guid>
       <description>&lt;p&gt;Power 迭代法目錄:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;
-&lt;a href=&#34;https://teshenglin.github.io/post/2023_power_method_1&#34;&gt;基本概念&lt;/a&gt;
+&lt;a href=&#34;http://localhost:1313/post/2023_power_method_1&#34;&gt;基本概念&lt;/a&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Power iteration; inverse power method; shifted inver power method&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;a href=&#34;https://teshenglin.github.io/post/2023_power_method_2&#34;&gt;找第二大的 eigenvalue&lt;/a&gt;
+&lt;a href=&#34;http://localhost:1313/post/2023_power_method_2&#34;&gt;找第二大的 eigenvalue&lt;/a&gt;
 &lt;blockquote&gt;
 &lt;p&gt;deflation&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;a href=&#34;https://teshenglin.github.io/post/2023_power_method_3&#34;&gt;Rayleigh Quotient 迭代及其收斂性&lt;/a&gt;
+&lt;a href=&#34;http://localhost:1313/post/2023_power_method_3&#34;&gt;Rayleigh Quotient 迭代及其收斂性&lt;/a&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Power method with Rayleigh Quotient&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -1234,7 +1232,7 @@ Output: (取絕對值後)最大的 eigenvalue $\lambda_1$ 以及 $v_1$&lt;/p&gt;
 &lt;/ol&gt;
 &lt;hr&gt;
 &lt;p&gt;Pseudo code:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;Input: matrix A
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Input: matrix A
 Output: lambda1, u
 
 u = random(size(A,1),1)
@@ -1265,7 +1263,7 @@ end
 &lt;hr&gt;
 &lt;p&gt;事實上我們的目標只是不要讓向量爆掉或趨近於零, 所以可以簡單的把某個位置的值固定住, 比如說我們強迫 $v_1$ 的第一個位置等於 $1$, 這樣就沒問題了.&lt;/p&gt;
 &lt;p&gt;Pseudo code:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;while diff &amp;gt; Tol
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;while diff &amp;gt; Tol
     v = A*u
     lambda1 = v(1)
     u = v/lambda1
@@ -1281,7 +1279,7 @@ b. 這樣拿到的 eigenvalue 就是 $\lambda_1$, 沒有絕對值.&lt;/li&gt;
 &lt;hr&gt;
 &lt;blockquote&gt;
 &lt;p&gt;若要找第二大的 eigenvalue 可以利用 deflation: 
-&lt;a href=&#34;https://teshenglin.github.io/post/2023_power_method_2&#34;&gt;Power method with deflation&lt;/a&gt;.&lt;/p&gt;
+&lt;a href=&#34;http://localhost:1313/post/2023_power_method_2&#34;&gt;Power method with deflation&lt;/a&gt;.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;inverse-power-method&#34;&gt;Inverse power method&lt;/h2&gt;
@@ -1316,19 +1314,19 @@ $$
     
     <item>
       <title>Conjugate gradient method - direct method</title>
-      <link>https://teshenglin.github.io/post/2023_conjugate_gradient_method_1/</link>
+      <link>http://localhost:1313/post/2023_conjugate_gradient_method_1/</link>
       <pubDate>Wed, 26 Apr 2023 00:00:00 +0000</pubDate>
-      <guid>https://teshenglin.github.io/post/2023_conjugate_gradient_method_1/</guid>
+      <guid>http://localhost:1313/post/2023_conjugate_gradient_method_1/</guid>
       <description>&lt;p&gt;共軛梯度法 (CG method,  conjugate gradient method) 目錄:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;
-&lt;a href=&#34;https://teshenglin.github.io/post/2023_conjugate_gradient_method_1&#34;&gt;CG method - Direct mehtod&lt;/a&gt;
+&lt;a href=&#34;http://localhost:1313/post/2023_conjugate_gradient_method_1&#34;&gt;CG method - Direct mehtod&lt;/a&gt;
 &lt;blockquote&gt;
 &lt;p&gt;直接法&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;a href=&#34;https://teshenglin.github.io/post/2023_conjugate_gradient_method_2&#34;&gt;CG method - iterate mehtod&lt;/a&gt;
+&lt;a href=&#34;http://localhost:1313/post/2023_conjugate_gradient_method_2&#34;&gt;CG method - iterate mehtod&lt;/a&gt;
 &lt;blockquote&gt;
 &lt;p&gt;迭代法&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -1394,7 +1392,7 @@ $$&lt;/p&gt;
 &lt;li&gt;迭代法推導請見
 &lt;ul&gt;
 &lt;li&gt;
-&lt;a href=&#34;https://teshenglin.github.io/post/2023_conjugate_gradient_method_2&#34;&gt;Conjugate gradient method - iterative method&lt;/a&gt;&lt;/li&gt;
+&lt;a href=&#34;http://localhost:1313/post/2023_conjugate_gradient_method_2&#34;&gt;Conjugate gradient method - iterative method&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
@@ -1404,9 +1402,9 @@ $$&lt;/p&gt;
     
     <item>
       <title>Diffusion maps</title>
-      <link>https://teshenglin.github.io/post/2021_diffusion_maps/</link>
+      <link>http://localhost:1313/post/2021_diffusion_maps/</link>
       <pubDate>Fri, 13 Aug 2021 00:00:00 +0000</pubDate>
-      <guid>https://teshenglin.github.io/post/2021_diffusion_maps/</guid>
+      <guid>http://localhost:1313/post/2021_diffusion_maps/</guid>
       <description>&lt;blockquote&gt;
 &lt;p&gt;擴散映射, 
 &lt;a href=&#34;https://en.wikipedia.org/wiki/Diffusion_map&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Diffusion maps&lt;/a&gt; (以下簡稱 DM), 是個資料分析, 流型學習或是資料降維的工具.&lt;/p&gt;
@@ -1468,27 +1466,27 @@ $$
 &lt;h2 id=&#34;implementation-in-julia&#34;&gt;Implementation in &lt;code&gt;julia&lt;/code&gt;&lt;/h2&gt;
 &lt;p&gt;接著我們就可以來看要怎樣以 &lt;code&gt;julia&lt;/code&gt; 來做 diffusion maps.&lt;/p&gt;
 &lt;p&gt;我們需要以下幾個 packages:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;using&lt;/span&gt; Plots
-&lt;span style=&#34;color:#66d9ef&#34;&gt;using&lt;/span&gt; Distances
-&lt;span style=&#34;color:#66d9ef&#34;&gt;using&lt;/span&gt; LinearAlgebra
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;using&lt;/span&gt; Plots
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;using&lt;/span&gt; Distances
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;using&lt;/span&gt; LinearAlgebra
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
 &lt;p&gt;以下例子為一個 spiral curve, 我們想要看經過 diffusion maps 的投射到二或三維後會長什麼樣子.&lt;/p&gt;
 &lt;p&gt;我們先把 spiral curve 上面的點造出來 (取 $300$ 個點)&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# generating the data - a spiral curve&lt;/span&gt;
-&lt;span style=&#34;color:#75715e&#34;&gt;# n: number of sampling&lt;/span&gt;
-n &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;300&lt;/span&gt;;
-
-theta &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; range(&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;,stop&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;6&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;pi,length&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;n);
-r &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; range(&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;,stop&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;, length&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;n);
-&lt;span style=&#34;color:#75715e&#34;&gt;# x and y-coordinates&lt;/span&gt;
-x &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; r&lt;span style=&#34;color:#f92672&#34;&gt;.*&lt;/span&gt;cos&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;(theta);
-y &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; r&lt;span style=&#34;color:#f92672&#34;&gt;.*&lt;/span&gt;sin&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;(theta);
-&lt;span style=&#34;color:#75715e&#34;&gt;# X is a n-by-2 data matrix&lt;/span&gt;
-X &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; [x y];
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# generating the data - a spiral curve&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# n: number of sampling&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;n &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;300&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;theta &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; range(&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;,stop&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;6&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;pi,length&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;n);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;r &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; range(&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;,stop&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;, length&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;n);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# x and y-coordinates&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;x &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; r&lt;span style=&#34;color:#f92672&#34;&gt;.*&lt;/span&gt;cos&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;(theta);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;y &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; r&lt;span style=&#34;color:#f92672&#34;&gt;.*&lt;/span&gt;sin&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;(theta);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# X is a n-by-2 data matrix&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;X &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; [x y];
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
 &lt;p&gt;畫出來看看原始 data 長怎樣. 我們照順序將點標為藍色, 紅色以及綠色.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;plot(reshape(X[&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;], &lt;span style=&#34;color:#ae81ff&#34;&gt;100&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;), reshape(X[&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;], &lt;span style=&#34;color:#ae81ff&#34;&gt;100&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;), aspect_ratio&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;:equal&lt;/span&gt;, leg&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;false)
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;plot(reshape(X[&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;], &lt;span style=&#34;color:#ae81ff&#34;&gt;100&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;), reshape(X[&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;], &lt;span style=&#34;color:#ae81ff&#34;&gt;100&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;), aspect_ratio&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;:equal&lt;/span&gt;, leg&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;false)
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
 
@@ -1506,10 +1504,10 @@ X &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; [x y];
 &lt;figure&gt;
 
 
-  &lt;a data-fancybox=&#34;&#34; href=&#34;https://teshenglin.github.io/post/figs/DM_spiral_01.png&#34; &gt;
+  &lt;a data-fancybox=&#34;&#34; href=&#34;http://localhost:1313/post/figs/DM_spiral_01.png&#34; &gt;
 
 
-  &lt;img src=&#34;https://teshenglin.github.io/post/figs/DM_spiral_01.png&#34; alt=&#34;&#34; width=&#34;500px&#34; &gt;
+  &lt;img src=&#34;http://localhost:1313/post/figs/DM_spiral_01.png&#34; alt=&#34;&#34; width=&#34;500px&#34; &gt;
 &lt;/a&gt;
 
 
@@ -1519,13 +1517,13 @@ X &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; [x y];
 &lt;hr&gt;
 &lt;h4 id=&#34;1-affinity-matrix-k-1&#34;&gt;1. Affinity matrix $K$&lt;/h4&gt;
 &lt;p&gt;先來造出 $K$ 矩陣:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;E &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; pairwise(Euclidean(), X, dims&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;);
-sigma &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0.1&lt;/span&gt;;
-K &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; exp&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;(&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;(E&lt;span style=&#34;color:#f92672&#34;&gt;.^&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;)&lt;span style=&#34;color:#f92672&#34;&gt;./&lt;/span&gt;(sigma&lt;span style=&#34;color:#f92672&#34;&gt;^&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;));
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;E &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; pairwise(Euclidean(), X, dims&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sigma &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0.1&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;K &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; exp&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;(&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;(E&lt;span style=&#34;color:#f92672&#34;&gt;.^&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;)&lt;span style=&#34;color:#f92672&#34;&gt;./&lt;/span&gt;(sigma&lt;span style=&#34;color:#f92672&#34;&gt;^&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;));
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
 &lt;h4 id=&#34;2-normalized-affinity-matrix-q-1&#34;&gt;2. Normalized affinity matrix $Q$&lt;/h4&gt;
 &lt;p&gt;接著造出 $Q$ 矩陣, 並求出其 eigenvalues 跟 eigenvectors.&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;Q = zeros(n,n);
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Q = zeros(n,n);
 d_sq = zeros(n);
 for ii = 1:n
     d_sq[ii] = sqrt(sum(K[ii,:]));
@@ -1539,15 +1537,15 @@ U,S,V = svd(Q);
 &lt;/code&gt;&lt;/pre&gt;&lt;hr&gt;
 &lt;h4 id=&#34;3-求出-p-矩陣的-eigenvalues-跟-eigenvectors-1&#34;&gt;3. 求出 $P$ 矩陣的 eigenvalues 跟 eigenvectors&lt;/h4&gt;
 &lt;p&gt;$P$ 矩陣的 eigenvalues 跟 $Q$ 一樣, eigenvectors 也可以依公式得到:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; ii &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; n
-    V[ii,&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;] &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; V[ii,&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;]&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;d_sq[ii];
-&lt;span style=&#34;color:#66d9ef&#34;&gt;end&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; ii &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; n
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    V[ii,&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;] &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; V[ii,&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;]&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;d_sq[ii];
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;end&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
 &lt;p&gt;將 eigenvalues 畫出來看看. 左圖是第 $2$ 到第 $11$ 個, 右圖則是以 semilogy 畫出全部的 eigenvalues. 可以看出 eigenvalues 遞減的非常快, 所以其實 embedding 不需要取到全部 $(n-1)$ 維.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;p1 &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; scatter(S[&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;11&lt;/span&gt;], title&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;eigenvalues 2:11&amp;#34;&lt;/span&gt;, leg&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;false);
-p2 &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; plot(log&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;(S), title&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;eigenvalues in log&amp;#34;&lt;/span&gt;, leg&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;false);
-plot(p1, p2, layout&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;, fmt&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;:png&lt;/span&gt;)
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;p1 &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; scatter(S[&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;11&lt;/span&gt;], title&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;eigenvalues 2:11&amp;#34;&lt;/span&gt;, leg&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;false);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;p2 &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; plot(log&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;(S), title&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;eigenvalues in log&amp;#34;&lt;/span&gt;, leg&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;false);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;plot(p1, p2, layout&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;, fmt&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;:png&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
 
@@ -1565,10 +1563,10 @@ plot(p1, p2, layout&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;s
 &lt;figure&gt;
 
 
-  &lt;a data-fancybox=&#34;&#34; href=&#34;https://teshenglin.github.io/post/figs/DM_spiral_02.png&#34; &gt;
+  &lt;a data-fancybox=&#34;&#34; href=&#34;http://localhost:1313/post/figs/DM_spiral_02.png&#34; &gt;
 
 
-  &lt;img src=&#34;https://teshenglin.github.io/post/figs/DM_spiral_02.png&#34; alt=&#34;&#34; width=&#34;500px&#34; &gt;
+  &lt;img src=&#34;http://localhost:1313/post/figs/DM_spiral_02.png&#34; alt=&#34;&#34; width=&#34;500px&#34; &gt;
 &lt;/a&gt;
 
 
@@ -1578,17 +1576,17 @@ plot(p1, p2, layout&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;s
 &lt;hr&gt;
 &lt;h4 id=&#34;4-define-diffusion-map-y-1&#34;&gt;4. Define diffusion map $Y$&lt;/h4&gt;
 &lt;p&gt;最後我們定義 embedding $Y$:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;Y &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; zeros(n,&lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;);
-&lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; ii &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;
-    Y[&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;,ii] &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; V[&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;,ii&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;]&lt;span style=&#34;color:#f92672&#34;&gt;.*&lt;/span&gt;S[ii&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;];
-&lt;span style=&#34;color:#66d9ef&#34;&gt;end&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;我們知道 $Y$ 的每個 row 就是這個 embedding 的座標.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Y &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; zeros(n,&lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; ii &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    Y[&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;,ii] &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; V[&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;,ii&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;]&lt;span style=&#34;color:#f92672&#34;&gt;.*&lt;/span&gt;S[ii&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;];
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;end&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;我們知道 $Y$ 的每個 row 就是這個 embedding 的座標.&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;我們將 embedding 畫出來看看. 左圖是 embed 到二維, 右圖則是 embed 到三維.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;p1 &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; plot(reshape(Y[&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;], &lt;span style=&#34;color:#ae81ff&#34;&gt;100&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;), reshape(Y[&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;], &lt;span style=&#34;color:#ae81ff&#34;&gt;100&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;), title&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;2D&amp;#34;&lt;/span&gt;, leg&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;false)
-p2 &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; plot(reshape(Y[&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;], &lt;span style=&#34;color:#ae81ff&#34;&gt;100&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;), reshape(Y[&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;], &lt;span style=&#34;color:#ae81ff&#34;&gt;100&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;), reshape(Y[&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;], &lt;span style=&#34;color:#ae81ff&#34;&gt;100&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;), title&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;3D&amp;#34;&lt;/span&gt;, leg&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;false)
-plot(p1, p2, layout&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;), fmt&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;:png&lt;/span&gt;)
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;我們一樣照順序將點標為藍色, 紅色以及綠色. 有趣的是, 我們發現這個 embedding 將整個 spiral curve &lt;strong&gt;打開了&lt;/strong&gt;. 因此, 經由 diffusion maps 投射之後我們比較榮以可以看出點資料真正在整個曲線上彼此間距離的遠近.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;p1 &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; plot(reshape(Y[&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;], &lt;span style=&#34;color:#ae81ff&#34;&gt;100&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;), reshape(Y[&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;], &lt;span style=&#34;color:#ae81ff&#34;&gt;100&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;), title&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;2D&amp;#34;&lt;/span&gt;, leg&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;false)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;p2 &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; plot(reshape(Y[&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;], &lt;span style=&#34;color:#ae81ff&#34;&gt;100&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;), reshape(Y[&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;], &lt;span style=&#34;color:#ae81ff&#34;&gt;100&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;), reshape(Y[&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;], &lt;span style=&#34;color:#ae81ff&#34;&gt;100&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;), title&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;3D&amp;#34;&lt;/span&gt;, leg&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;false)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;plot(p1, p2, layout&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;), fmt&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;:png&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;我們一樣照順序將點標為藍色, 紅色以及綠色. 有趣的是, 我們發現這個 embedding 將整個 spiral curve &lt;strong&gt;打開了&lt;/strong&gt;. 因此, 經由 diffusion maps 投射之後我們比較榮以可以看出點資料真正在整個曲線上彼此間距離的遠近.&lt;/p&gt;
 
 
 
@@ -1607,10 +1605,10 @@ plot(p1, p2, layout&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;(&lt;
 &lt;figure&gt;
 
 
-  &lt;a data-fancybox=&#34;&#34; href=&#34;https://teshenglin.github.io/post/figs/DM_spiral_03.png&#34; &gt;
+  &lt;a data-fancybox=&#34;&#34; href=&#34;http://localhost:1313/post/figs/DM_spiral_03.png&#34; &gt;
 
 
-  &lt;img src=&#34;https://teshenglin.github.io/post/figs/DM_spiral_03.png&#34; alt=&#34;&#34; width=&#34;500px&#34; &gt;
+  &lt;img src=&#34;http://localhost:1313/post/figs/DM_spiral_03.png&#34; alt=&#34;&#34; width=&#34;500px&#34; &gt;
 &lt;/a&gt;
 
 
@@ -1632,9 +1630,9 @@ plot(p1, p2, layout&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;(&lt;
     
     <item>
       <title>主成分分析 - 2</title>
-      <link>https://teshenglin.github.io/post/2020_principal_component_analysis_2/</link>
+      <link>http://localhost:1313/post/2020_principal_component_analysis_2/</link>
       <pubDate>Mon, 07 Sep 2020 00:00:00 +0000</pubDate>
-      <guid>https://teshenglin.github.io/post/2020_principal_component_analysis_2/</guid>
+      <guid>http://localhost:1313/post/2020_principal_component_analysis_2/</guid>
       <description>&lt;blockquote&gt;
 &lt;p&gt;這裡我們補充一下主成分分析裡的證明部分.&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -1740,9 +1738,9 @@ $$&lt;/p&gt;
     
     <item>
       <title>Multidimensional scaling</title>
-      <link>https://teshenglin.github.io/post/2020_multi_dimensional_scaling/</link>
+      <link>http://localhost:1313/post/2020_multi_dimensional_scaling/</link>
       <pubDate>Mon, 31 Aug 2020 00:00:00 +0000</pubDate>
-      <guid>https://teshenglin.github.io/post/2020_multi_dimensional_scaling/</guid>
+      <guid>http://localhost:1313/post/2020_multi_dimensional_scaling/</guid>
       <description>&lt;blockquote&gt;
 &lt;p&gt;Multidimensional scaling, 簡稱 MDS, 是個資料分析或是資料降維的工具.&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -1758,9 +1756,9 @@ $$
 &lt;hr&gt;
 &lt;h5 id=&#34;舉例來說&#34;&gt;舉例來說&lt;/h5&gt;
 &lt;p&gt;以下我們用 Matlab 隨機生出 $R^2$ 空間中的 $5$ 個點, 並求出他的 EDM:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;% Matlab program
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;% Matlab program
 X = rand(2,5);                                  % R^2 中的 5 個點
-D = squareform(pdist(X&#39;, &#39;squaredeuclidean&#39;));  % 求出其 EDM
+D = squareform(pdist(X&amp;#39;, &amp;#39;squaredeuclidean&amp;#39;));  % 求出其 EDM
 &lt;/code&gt;&lt;/pre&gt;&lt;pre&gt;&lt;code&gt;D =
      0    0.3839    0.2333    0.2675    0.6373
 0.3839         0    0.1571    0.1272    0.0470
@@ -1855,7 +1853,7 @@ $$
 &lt;hr&gt;
 &lt;p&gt;一般來說我們會將 MDS 當成一個降維的工具, 希望在低維度(二或三, 或 $k$)找到一組資料使得其 EDM 與原始資料的 EDM 最像. 而作法就是保留前 $k$ 個特徵值及其特徵向量.&lt;/p&gt;
 &lt;p&gt;給定一個 $n\times n$ 的 EDM 以及欲投影的維度 $k$, MDS 簡單的程式如下:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;% Matlab program
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;% Matlab program
 function Y = multidimensional_scaling(D, k)
 
 %   Input: D, n*n EDM 矩陣, 元素為距離平方
@@ -1866,11 +1864,11 @@ function Y = multidimensional_scaling(D, k)
     mu = sum(D, 1)/n; D = D - mu;           %
     mu = sum(D, 2)/n; B = D - mu;           %
     B = -0.5*B;                             % B = -0.5*H*D*H
-    [V, D] = eig(B, &#39;vector&#39;);              % 求出特徵值及特徵向量
-    [sqD, ind] = sort(sqrt(D), &#39;descend&#39;);  % 將特徵值按大小排列
+    [V, D] = eig(B, &amp;#39;vector&amp;#39;);              % 求出特徵值及特徵向量
+    [sqD, ind] = sort(sqrt(D), &amp;#39;descend&amp;#39;);  % 將特徵值按大小排列
     sqD = sqD(1:k);                         % 取前 k 個
     V = V(:, ind(1:k));                     % 取相對應的特徵向量
-    Y = V&#39;.*(sqD*ones(1,n));                % 求出 k 維資料點
+    Y = V&amp;#39;.*(sqD*ones(1,n));                % 求出 k 維資料點
 end
 &lt;/code&gt;&lt;/pre&gt;&lt;hr&gt;
 &lt;h2 id=&#34;extension&#34;&gt;Extension&lt;/h2&gt;
@@ -1902,7 +1900,7 @@ $$&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;我們可以造出其 EDM, 再用 classical MDS 投影到 $k$ 維.&lt;/li&gt;
 &lt;li&gt;我們也可以直接用 
-&lt;a href=&#34;https://teshenglin.github.io/post/2020_principal_component_analysis&#34;&gt;PCA&lt;/a&gt; 投影到 $k$ 維.&lt;/li&gt;
+&lt;a href=&#34;http://localhost:1313/post/2020_principal_component_analysis&#34;&gt;PCA&lt;/a&gt; 投影到 $k$ 維.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;有趣的是以上兩個做法得到完全相同的結果.&lt;/p&gt;
 &lt;blockquote&gt;
@@ -1937,9 +1935,9 @@ $$&lt;/p&gt;
     
     <item>
       <title>主成分分析</title>
-      <link>https://teshenglin.github.io/post/2020_principal_component_analysis/</link>
+      <link>http://localhost:1313/post/2020_principal_component_analysis/</link>
       <pubDate>Thu, 27 Aug 2020 00:00:00 +0000</pubDate>
-      <guid>https://teshenglin.github.io/post/2020_principal_component_analysis/</guid>
+      <guid>http://localhost:1313/post/2020_principal_component_analysis/</guid>
       <description>&lt;blockquote&gt;
 &lt;p&gt;主成分分析, Principal component analysis, 簡稱 PCA, 是個資料分析或是資料降維的工具.&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -2007,10 +2005,10 @@ $$
 &lt;figure&gt;
 
 
-  &lt;a data-fancybox=&#34;&#34; href=&#34;https://teshenglin.github.io/post/figs/2020_pca_01.png&#34; &gt;
+  &lt;a data-fancybox=&#34;&#34; href=&#34;http://localhost:1313/post/figs/2020_pca_01.png&#34; &gt;
 
 
-  &lt;img src=&#34;https://teshenglin.github.io/post/figs/2020_pca_01.png&#34; alt=&#34;&#34; width=&#34;600px&#34; &gt;
+  &lt;img src=&#34;http://localhost:1313/post/figs/2020_pca_01.png&#34; alt=&#34;&#34; width=&#34;600px&#34; &gt;
 &lt;/a&gt;
 
 
@@ -2048,7 +2046,7 @@ $$
 &lt;p&gt;這問題可以被完全解出來, 也就是說給定 $x_i$, 我們可以決定出最佳的 $\mu$, $U$ 以及 $\beta_i$ 使得上式的值為最小.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;推導過程我們在這先省略, 有興趣的請見 references, 或是 
-&lt;a href=&#34;https://teshenglin.github.io/post/2020_principal_component_analysis_2&#34;&gt;主成分分析 - 2&lt;/a&gt;.&lt;/p&gt;
+&lt;a href=&#34;http://localhost:1313/post/2020_principal_component_analysis_2&#34;&gt;主成分分析 - 2&lt;/a&gt;.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;其最佳解整理如下:&lt;/p&gt;
 &lt;ol&gt;
@@ -2078,7 +2076,7 @@ $$&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;投影到 $k$ 維子空間, 投影後得到 $B$, 為 $k\times n$ 的 data matrix.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;pre&gt;&lt;code&gt;% Matlab program
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;% Matlab program
 function B = principal_component_analysis(X, k)
 
 %   Input: X, p*n data matrix, p 個 features 以及 n 個 samples
@@ -2088,11 +2086,11 @@ function B = principal_component_analysis(X, k)
     [p, n] = size(X);               % p 個 features 以及 n 個 samples
     mu = sum(X, 2)/n;               % 計算 sample 的平均 mu
     Y = X - mu*ones(1,n);           % 資料平移得到 Y
-    S = Y*Y&#39;;                       % 求出共變異數矩陣 S
-    [U, D] = eig(S, &#39;vector&#39;);      % 求出特徵值 D 及特徵向量 U
-    [D, ind] = sort(D, &#39;descend&#39;);  % 將特徵值由大到小排列
+    S = Y*Y&amp;#39;;                       % 求出共變異數矩陣 S
+    [U, D] = eig(S, &amp;#39;vector&amp;#39;);      % 求出特徵值 D 及特徵向量 U
+    [D, ind] = sort(D, &amp;#39;descend&amp;#39;);  % 將特徵值由大到小排列
     U = U(:, ind);                  % 將特徵向量照樣排列
-    B = U(:,1:k)&#39;*Y;                % 投影到前 k 個組成的空間中並求出係數 B
+    B = U(:,1:k)&amp;#39;*Y;                % 投影到前 k 個組成的空間中並求出係數 B
 end
 &lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&#34;remark-2&#34;&gt;Remark:&lt;/h4&gt;
 &lt;p&gt;這做法會造出一個 $p\times p$ 的共變異數矩陣 $\Sigma$, 並且算出全部的特徵值及特徵向量. 不過其實我們只需要前 $k$ 個. 所以多出來的部分會丟掉, 有點浪費.&lt;/p&gt;
@@ -2124,10 +2122,10 @@ $$
 &lt;h4 id=&#34;remark-3&#34;&gt;Remark:&lt;/h4&gt;
 &lt;p&gt;以上這式子很有趣, 告訴我們投影之後的座標 $B$ 與投影之前的座標 $Y$ 的 SVD 之間的關係.
 另一種降維方法: 
-&lt;a href=&#34;https://teshenglin.github.io/post/2020_multi_dimensional_scaling&#34;&gt;Multidimensional scaling (MDS)&lt;/a&gt; 在某些情況下會有一模一樣的關係. 這樣就把兩種方法 PCA 跟 MDS 連在一起了. 雖然出發點不一樣, 竟然(在某些情況下)結果是一樣的!&lt;/p&gt;
+&lt;a href=&#34;http://localhost:1313/post/2020_multi_dimensional_scaling&#34;&gt;Multidimensional scaling (MDS)&lt;/a&gt; 在某些情況下會有一模一樣的關係. 這樣就把兩種方法 PCA 跟 MDS 連在一起了. 雖然出發點不一樣, 竟然(在某些情況下)結果是一樣的!&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;利用以上關係我們可以將程式改寫如下:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;% Matlab program
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;% Matlab program
 function B = principal_component_analysis2(X, k)
 
 %   Input: X, p*n data matrix, p 個 features 以及 n 個 samples
@@ -2138,24 +2136,24 @@ function B = principal_component_analysis2(X, k)
     mu = sum(X, 2)/n;               % 計算 sample 的平均, mu
     Y = X - mu*ones(1,n);           % 資料平移得到 Y
     [~, S, V] = svds(Y, k);         % 將 Y 做奇異值分解並取前 k 個 eigenvectors
-    B = S*V&#39;;                       % 求出投影後的係數
+    B = S*V&amp;#39;;                       % 求出投影後的係數
 end
 &lt;/code&gt;&lt;/pre&gt;&lt;hr&gt;
 &lt;p&gt;而事實上, matlab 已經內建 PCA 程式了, 所以其實完全不用自己寫. 只是要注意一下 matlab 裡 PCA 的輸入 sample points 是 $n\times p$, 由於我們以上都是將 $X$ 設成 $p\times n$ 的矩陣, 所以要轉置一下, 程式只有兩行, 如下:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;% Matlab program
-[U, B] = pca(X&#39;);
-B = B(:,1:k)&#39;;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;% Matlab program
+[U, B] = pca(X&amp;#39;);
+B = B(:,1:k)&amp;#39;;
 &lt;/code&gt;&lt;/pre&gt;&lt;hr&gt;
 &lt;h1 id=&#34;working-example&#34;&gt;Working example&lt;/h1&gt;
 &lt;p&gt;這裡我們舉一個例子, 我們先構造 sample points, 是一個類似螺旋狀結構, 程式如下:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;% Matlab program
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;% Matlab program
 n = 1000;                                   % 取 n 個點
 t = 3*pi*(1:n)/n;                           % 利用參數化來構造, 取 t\in[0, 3*pi]
 X = [t.*cos(t); 5*rand(1,n); t.*sin(t)];    % 先利用 random 構造三圍中的一個面
-M = makehgtform(&#39;axisrotate&#39;,[1 1 1], 30);  % 構造旋轉矩陣
+M = makehgtform(&amp;#39;axisrotate&amp;#39;,[1 1 1], 30);  % 構造旋轉矩陣
 X = M(1:3, 1:3)*X + 10*rand(3,1)*ones(1,n); % 將 sample 旋轉並且隨機平移
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;其圖形長這樣:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;scatter3(X(1,:), X(2,:), X(3,:), [], (1:n)/n, &#39;fill&#39;)
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;scatter3(X(1,:), X(2,:), X(3,:), [], (1:n)/n, &amp;#39;fill&amp;#39;)
 &lt;/code&gt;&lt;/pre&gt;
 
 
@@ -2174,10 +2172,10 @@ X = M(1:3, 1:3)*X + 10*rand(3,1)*ones(1,n); % 將 sample 旋轉並且隨機平�
 &lt;figure&gt;
 
 
-  &lt;a data-fancybox=&#34;&#34; href=&#34;https://teshenglin.github.io/post/figs/2020_pca_02.png&#34; &gt;
+  &lt;a data-fancybox=&#34;&#34; href=&#34;http://localhost:1313/post/figs/2020_pca_02.png&#34; &gt;
 
 
-  &lt;img src=&#34;https://teshenglin.github.io/post/figs/2020_pca_02.png&#34; alt=&#34;&#34; width=&#34;600px&#34; &gt;
+  &lt;img src=&#34;http://localhost:1313/post/figs/2020_pca_02.png&#34; alt=&#34;&#34; width=&#34;600px&#34; &gt;
 &lt;/a&gt;
 
 
@@ -2185,9 +2183,9 @@ X = M(1:3, 1:3)*X + 10*rand(3,1)*ones(1,n); % 將 sample 旋轉並且隨機平�
 &lt;/figure&gt;
 
 &lt;p&gt;接著我們用 PCA 投影到二維, 圖形長這樣:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;[~, B] = pca(X&#39;);
-B=B&#39;;
-scatter(B(1,:), B(2,:), [], (1:n)/n, &#39;fill&#39;)
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;[~, B] = pca(X&amp;#39;);
+B=B&amp;#39;;
+scatter(B(1,:), B(2,:), [], (1:n)/n, &amp;#39;fill&amp;#39;)
 &lt;/code&gt;&lt;/pre&gt;
 
 
@@ -2206,10 +2204,10 @@ scatter(B(1,:), B(2,:), [], (1:n)/n, &#39;fill&#39;)
 &lt;figure&gt;
 
 
-  &lt;a data-fancybox=&#34;&#34; href=&#34;https://teshenglin.github.io/post/figs/2020_pca_03.png&#34; &gt;
+  &lt;a data-fancybox=&#34;&#34; href=&#34;http://localhost:1313/post/figs/2020_pca_03.png&#34; &gt;
 
 
-  &lt;img src=&#34;https://teshenglin.github.io/post/figs/2020_pca_03.png&#34; alt=&#34;&#34; width=&#34;600px&#34; &gt;
+  &lt;img src=&#34;http://localhost:1313/post/figs/2020_pca_03.png&#34; alt=&#34;&#34; width=&#34;600px&#34; &gt;
 &lt;/a&gt;
 
 
@@ -2221,9 +2219,9 @@ scatter(B(1,:), B(2,:), [], (1:n)/n, &#39;fill&#39;)
 &lt;h2 id=&#34;extension&#34;&gt;Extension&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;另一種降維方法: 
-&lt;a href=&#34;https://teshenglin.github.io/post/2020_multi_dimensional_scaling&#34;&gt;Multidimensional scaling (MDS)&lt;/a&gt;.&lt;/li&gt;
+&lt;a href=&#34;http://localhost:1313/post/2020_multi_dimensional_scaling&#34;&gt;Multidimensional scaling (MDS)&lt;/a&gt;.&lt;/li&gt;
 &lt;li&gt;PCA 推導過程及證明: 
-&lt;a href=&#34;https://teshenglin.github.io/post/2020_principal_component_analysis_2&#34;&gt;主成分分析 - 2&lt;/a&gt;&lt;/li&gt;
+&lt;a href=&#34;http://localhost:1313/post/2020_principal_component_analysis_2&#34;&gt;主成分分析 - 2&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;references&#34;&gt;References:&lt;/h2&gt;
@@ -2239,9 +2237,9 @@ scatter(B(1,:), B(2,:), [], (1:n)/n, &#39;fill&#39;)
     
     <item>
       <title>擲硬幣問題</title>
-      <link>https://teshenglin.github.io/post/2020_coin_problem/</link>
+      <link>http://localhost:1313/post/2020_coin_problem/</link>
       <pubDate>Sun, 14 Jun 2020 00:00:00 +0000</pubDate>
-      <guid>https://teshenglin.github.io/post/2020_coin_problem/</guid>
+      <guid>http://localhost:1313/post/2020_coin_problem/</guid>
       <description>&lt;blockquote&gt;
 &lt;p&gt;重複擲一枚硬幣, 當出現連續兩次為正時停止, 平均要扔幾次?&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -2333,7 +2331,7 @@ $$&lt;/p&gt;
 &lt;li&gt;
 &lt;p&gt;因此
 $$
-E = \frac{3+\sqrt{5}}{16\sqrt{5}} \underbrace{\sum_{k=0}^{\infty}(k+2)\cdot(\frac{1+\sqrt{5}}{4})^{k-1}}_{(a)} - \frac{3-\sqrt{5}}{16\sqrt{5}} \underbrace{\sum_{k=0}^{\infty}(k+2)\cdot(\frac{1-\sqrt{5}}{4})^{k-1}}_{(b)}
+E = \frac{3+\sqrt{5}}{16\sqrt{5}} \underbrace{\sum_{k=0}^{\infty}(k+2)\cdot(\frac{1+\sqrt{5}}{4})^{k-1}}&lt;em&gt;{(a)} - \frac{3-\sqrt{5}}{16\sqrt{5}} \underbrace{\sum&lt;/em&gt;{k=0}^{\infty}(k+2)\cdot(\frac{1-\sqrt{5}}{4})^{k-1}}_{(b)}
 $$&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
@@ -2372,7 +2370,7 @@ $$&lt;/p&gt;
 也就是 $0.5$ 機率會是到 &lt;code&gt;1正&lt;/code&gt; 這狀態以及 $0.5$ 機率回到 &lt;code&gt;0正&lt;/code&gt; 這狀態.&lt;/p&gt;
 &lt;p&gt;假設目前連續投擲出 1 個正, 那下一投則 $0.5$ 機率會是到 &lt;code&gt;2正&lt;/code&gt; 這狀態以及 $0.5$ 機率回到 &lt;code&gt;0正&lt;/code&gt; 這狀態.&lt;/p&gt;
 &lt;p&gt;根據這些觀察我們可以做出以下的 diagram:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-mermaid&#34; data-lang=&#34;mermaid&#34;&gt;graph LR;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-mermaid&#34; data-lang=&#34;mermaid&#34;&gt;graph LR;
 A[0 正] -- 0.5 --&amp;gt;B(1 正)
   B -- 0.5 --&amp;gt; C(2 正)
   A -- 0.5 --&amp;gt; A

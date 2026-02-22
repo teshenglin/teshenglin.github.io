@@ -2,77 +2,93 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>M.-C. Lai | Te-Sheng Lin</title>
-    <link>https://teshenglin.github.io/authors/m.-c.-lai/</link>
-      <atom:link href="https://teshenglin.github.io/authors/m.-c.-lai/index.xml" rel="self" type="application/rss+xml" />
+    <link>http://localhost:1313/authors/m.-c.-lai/</link>
+      <atom:link href="http://localhost:1313/authors/m.-c.-lai/index.xml" rel="self" type="application/rss+xml" />
     <description>M.-C. Lai</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Wed, 03 Apr 2024 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Wed, 28 Jan 2026 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <url>http://localhost:1313/images/icon_hu10226378635250344412.png</url>
       <title>M.-C. Lai</title>
-      <link>https://teshenglin.github.io/authors/m.-c.-lai/</link>
+      <link>http://localhost:1313/authors/m.-c.-lai/</link>
     </image>
     
     <item>
-      <title>A hybrid neural-network and MAC scheme for Stokes interface problems</title>
-      <link>https://teshenglin.github.io/publication/24_eajam_cdhll/</link>
-      <pubDate>Wed, 03 Apr 2024 00:00:00 +0000</pubDate>
-      <guid>https://teshenglin.github.io/publication/24_eajam_cdhll/</guid>
+      <title>TINNs: Time-Induced Neural Networks for Solving Time-Dependent PDEs</title>
+      <link>http://localhost:1313/publication/26_dclll/</link>
+      <pubDate>Wed, 28 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publication/26_dclll/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>A discontinuity-capturing neural network with categorical embedding and its application to anisotropic elliptic interface problems</title>
-      <link>https://teshenglin.github.io/publication/25_hll/</link>
-      <pubDate>Thu, 30 Nov 2023 00:00:00 +0000</pubDate>
-      <guid>https://teshenglin.github.io/publication/25_hll/</guid>
+      <title>Physics-Informed Machine Learning for Two-Phase Moving-Interface and Stefan Problems</title>
+      <link>http://localhost:1313/publication/26_cll/</link>
+      <pubDate>Tue, 16 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publication/26_cll/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A categorical embedding discontinuity-capturing shallow neural network for anisotropic elliptic interface problems</title>
+      <link>http://localhost:1313/publication/26_hll/</link>
+      <pubDate>Sat, 27 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publication/26_hll/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A hybrid neural-network and MAC scheme for Stokes interface problems</title>
+      <link>http://localhost:1313/publication/24_eajam_cdhll/</link>
+      <pubDate>Wed, 03 Apr 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publication/24_eajam_cdhll/</guid>
       <description></description>
     </item>
     
     <item>
       <title>A shallow physics-informed neural network for solving partial differential equations on surfaces</title>
-      <link>https://teshenglin.github.io/publication/24_cmame_hsll/</link>
+      <link>http://localhost:1313/publication/24_cmame_hsll/</link>
       <pubDate>Tue, 03 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>https://teshenglin.github.io/publication/24_cmame_hsll/</guid>
+      <guid>http://localhost:1313/publication/24_cmame_hsll/</guid>
       <description></description>
     </item>
     
     <item>
       <title>A cusp-capturing PINN for elliptic interface problems</title>
-      <link>https://teshenglin.github.io/publication/23_jcp_tlhl/</link>
+      <link>http://localhost:1313/publication/23_jcp_tlhl/</link>
       <pubDate>Thu, 13 Jul 2023 00:00:00 +0000</pubDate>
-      <guid>https://teshenglin.github.io/publication/23_jcp_tlhl/</guid>
+      <guid>http://localhost:1313/publication/23_jcp_tlhl/</guid>
       <description></description>
     </item>
     
     <item>
       <title>An efficient neural-network and finite-difference hybrid method for elliptic interface problems with applications</title>
-      <link>https://teshenglin.github.io/publication/23_cicp_hltl/</link>
+      <link>http://localhost:1313/publication/23_cicp_hltl/</link>
       <pubDate>Sun, 07 May 2023 00:00:00 +0000</pubDate>
-      <guid>https://teshenglin.github.io/publication/23_cicp_hltl/</guid>
+      <guid>http://localhost:1313/publication/23_cicp_hltl/</guid>
       <description></description>
     </item>
     
     <item>
       <title>A Discontinuity Capturing Shallow Neural Network for Elliptic Interface Problems</title>
-      <link>https://teshenglin.github.io/publication/22_jcp_hll/</link>
+      <link>http://localhost:1313/publication/22_jcp_hll/</link>
       <pubDate>Thu, 08 Sep 2022 00:00:00 +0000</pubDate>
-      <guid>https://teshenglin.github.io/publication/22_jcp_hll/</guid>
+      <guid>http://localhost:1313/publication/22_jcp_hll/</guid>
       <description></description>
     </item>
     
     <item>
       <title>A Shallow Ritz Method for elliptic problems with Singular Sources</title>
-      <link>https://teshenglin.github.io/publication/22_jcp_lclhl/</link>
+      <link>http://localhost:1313/publication/22_jcp_lclhl/</link>
       <pubDate>Mon, 22 Aug 2022 00:00:00 +0000</pubDate>
-      <guid>https://teshenglin.github.io/publication/22_jcp_lclhl/</guid>
+      <guid>http://localhost:1313/publication/22_jcp_lclhl/</guid>
       <description></description>
     </item>
     
     <item>
       <title>A simple Dufort-Frankel type scheme for the Gross-Pitaevskii equation of Bose-Einstein condensates on different geometries</title>
-      <link>https://teshenglin.github.io/publication/04_nmpde_lhl/</link>
+      <link>http://localhost:1313/publication/04_nmpde_lhl/</link>
       <pubDate>Thu, 26 Feb 2004 00:00:00 +0000</pubDate>
-      <guid>https://teshenglin.github.io/publication/04_nmpde_lhl/</guid>
+      <guid>http://localhost:1313/publication/04_nmpde_lhl/</guid>
       <description></description>
     </item>
     

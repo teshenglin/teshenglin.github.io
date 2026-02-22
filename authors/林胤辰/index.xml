@@ -2,25 +2,25 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>林胤辰 | Te-Sheng Lin</title>
-    <link>https://teshenglin.github.io/authors/%E6%9E%97%E8%83%A4%E8%BE%B0/</link>
-      <atom:link href="https://teshenglin.github.io/authors/%E6%9E%97%E8%83%A4%E8%BE%B0/index.xml" rel="self" type="application/rss+xml" />
+    <link>http://localhost:1313/authors/%E6%9E%97%E8%83%A4%E8%BE%B0/</link>
+      <atom:link href="http://localhost:1313/authors/%E6%9E%97%E8%83%A4%E8%BE%B0/index.xml" rel="self" type="application/rss+xml" />
     <description>林胤辰</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Thu, 11 Jun 2020 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <url>http://localhost:1313/images/icon_hu10226378635250344412.png</url>
       <title>林胤辰</title>
-      <link>https://teshenglin.github.io/authors/%E6%9E%97%E8%83%A4%E8%BE%B0/</link>
+      <link>http://localhost:1313/authors/%E6%9E%97%E8%83%A4%E8%BE%B0/</link>
     </image>
     
     <item>
       <title>Sec.15.8 - Roller Derby</title>
-      <link>https://teshenglin.github.io/post/2020_cal_s15p8/</link>
+      <link>http://localhost:1313/post/2020_cal_s15p8/</link>
       <pubDate>Thu, 11 Jun 2020 00:00:00 +0000</pubDate>
-      <guid>https://teshenglin.github.io/post/2020_cal_s15p8/</guid>
+      <guid>http://localhost:1313/post/2020_cal_s15p8/</guid>
       <description>&lt;blockquote&gt;
-&lt;p&gt;Applied Project in Sec.15.8, Calculus by Stewart&lt;br&gt;
+&lt;p&gt;Applied Project in Sec.15.8, Calculus by Stewart &lt;br&gt;
 Chinese version 
-&lt;a href=&#34;https://teshenglin.github.io/post/2020_cal_s15p8_ch&#34;&gt;滾動競賽&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;http://localhost:1313/post/2020_cal_s15p8_ch&#34;&gt;滾動競賽&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;Suppose that a solid ball(a marble), a hollow ball (a squash ball), a solid cylinder (a steel bar), and a hollow cylinder (a lead pipe) roll down a slope. Which of these objects reaches the bottom first?&lt;/p&gt;
 &lt;p&gt;To answer this question, we consider a ball or cylinder with mass $m$, radius $r$, and moment of inertia $I$ (about the axis of rotation). If the vertical drop is $h$, then the potential energy at the top is $mgh$. Suppose the object reaches the bottom with velocity $v$ and angular velocity $\omega$, so $v=\omega r$. The kinetic energy at the bottom consists of two parts: $\frac{1}{2}mv^2$ from translation (moving down the slope) and $\frac{1}{2}I\omega ^2$ from rotation. If we assume that energy loss from rolling friction is negligible, the conservation of energy gives
@@ -77,13 +77,13 @@ This shows that the object with the smallest value of $I^&lt;/em&gt;$ wins the r
     
     <item>
       <title>Sec.15.8 - 滾動競賽</title>
-      <link>https://teshenglin.github.io/post/2020_cal_s15p8_ch/</link>
+      <link>http://localhost:1313/post/2020_cal_s15p8_ch/</link>
       <pubDate>Thu, 11 Jun 2020 00:00:00 +0000</pubDate>
-      <guid>https://teshenglin.github.io/post/2020_cal_s15p8_ch/</guid>
+      <guid>http://localhost:1313/post/2020_cal_s15p8_ch/</guid>
       <description>&lt;blockquote&gt;
-&lt;p&gt;Applied Project in Sec.15.8, Calculus by Stewart&lt;br&gt;
+&lt;p&gt;Applied Project in Sec.15.8, Calculus by Stewart &lt;br&gt;
 英文版請見 
-&lt;a href=&#34;https://teshenglin.github.io/post/2020_cal_s15p8&#34;&gt;Roller Derby&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;http://localhost:1313/post/2020_cal_s15p8&#34;&gt;Roller Derby&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;假設有一實心圓球(如一顆彈珠)、一空心圓球 (如一顆壁球)、一實心圓柱(如一根鋼條)、與一空心圓柱(如一根鉛管)同時由一斜面滾下，何者會最先到達斜面底端?&lt;/p&gt;
 &lt;p&gt;為了回答此問題，我們考慮一質量為 $m$，半徑為 $r$ 的圓柱體或球體，其對轉軸之轉動慣量為 $I$。設滾落過程的鉛直高度變化為 $h$，故其位能之變化量為 $mgh$。再設其到達斜面底端時速度為 $v$，角速度為 $\omega$，有關係式 $v=\omega r$。其在斜面底部的動能由兩部分組成：移動動能 $\frac{1}{2}mv^2$ 與轉動動能 $\frac{1}{2}I\omega ^2$。假設在滾落過程中的能量損失可忽略，根據能量守恆定律可得：
@@ -140,16 +140,16 @@ $$
     
     <item>
       <title>Sec.8.3 - Complementary Coffee Cups</title>
-      <link>https://teshenglin.github.io/post/2020_cal_s8p3_ch/</link>
+      <link>http://localhost:1313/post/2020_cal_s8p3_ch/</link>
       <pubDate>Thu, 23 Apr 2020 00:00:00 +0000</pubDate>
-      <guid>https://teshenglin.github.io/post/2020_cal_s8p3_ch/</guid>
+      <guid>http://localhost:1313/post/2020_cal_s8p3_ch/</guid>
       <description>&lt;blockquote&gt;
 &lt;p&gt;Applied Project in Sec.8.3, Calculus by Stewart
 英文版請見 
-&lt;a href=&#34;https://teshenglin.github.io/post/2020_cal_s8p3&#34;&gt;Complementary Coffee Cups&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;http://localhost:1313/post/2020_cal_s8p3&#34;&gt;Complementary Coffee Cups&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;假設你選擇了兩種形狀的咖啡杯，一種向外彎曲，另一種向內彎曲，你會注意到它們具有相同的高度，並且形狀可以緊密地貼合在一起。你想知道哪個杯子可以容納更多咖啡。當然，你可以將一個杯子裝滿水，然後倒入另一個杯子中來測量容量。但是，作為一名微積分學生，你決定採用一種更數學的方法：忽略手柄，會發現兩個杯子的表面可由旋轉而得，因此可以旋轉體計算咖啡杯之體積。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://media.cheggcdn.com/media%2Ff10%2Ff10af759-2600-468a-af6c-20a3854ee028%2FphpbqXd4u.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://media.cheggcdn.com/media%2Ff10%2Ff10af759-2600-468a-af6c-20a3854ee028%2FphpbqXd4u.png&#34;&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;問題 1:&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;假定杯子的高度為 $h$，杯子A的形狀可由 $x=f(y)$ 對 $y$ 軸旋轉而得， 而杯子B則是由同一個曲線對 $x=k$ 旋轉而得。 求$k$使得兩個杯子可裝的咖啡量一樣多。&lt;/p&gt;

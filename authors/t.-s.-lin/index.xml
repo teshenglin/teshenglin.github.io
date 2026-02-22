@@ -2,269 +2,285 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>T.-S. Lin | Te-Sheng Lin</title>
-    <link>https://teshenglin.github.io/authors/t.-s.-lin/</link>
-      <atom:link href="https://teshenglin.github.io/authors/t.-s.-lin/index.xml" rel="self" type="application/rss+xml" />
+    <link>http://localhost:1313/authors/t.-s.-lin/</link>
+      <atom:link href="http://localhost:1313/authors/t.-s.-lin/index.xml" rel="self" type="application/rss+xml" />
     <description>T.-S. Lin</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 16 Sep 2024 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Wed, 28 Jan 2026 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <url>http://localhost:1313/images/icon_hu10226378635250344412.png</url>
       <title>T.-S. Lin</title>
-      <link>https://teshenglin.github.io/authors/t.-s.-lin/</link>
+      <link>http://localhost:1313/authors/t.-s.-lin/</link>
     </image>
     
     <item>
+      <title>TINNs: Time-Induced Neural Networks for Solving Time-Dependent PDEs</title>
+      <link>http://localhost:1313/publication/26_dclll/</link>
+      <pubDate>Wed, 28 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publication/26_dclll/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Physics-Informed Machine Learning for Two-Phase Moving-Interface and Stefan Problems</title>
+      <link>http://localhost:1313/publication/26_cll/</link>
+      <pubDate>Tue, 16 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publication/26_cll/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A categorical embedding discontinuity-capturing shallow neural network for anisotropic elliptic interface problems</title>
+      <link>http://localhost:1313/publication/26_hll/</link>
+      <pubDate>Sat, 27 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publication/26_hll/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Variability of morphology in photoplethysmographic waveform quantified with unsupervised wave-shape manifold learning for clinical assessment</title>
-      <link>https://teshenglin.github.io/publication/24_pm_hlwcl/</link>
+      <link>http://localhost:1313/publication/24_pm_hlwcl/</link>
       <pubDate>Mon, 16 Sep 2024 00:00:00 +0000</pubDate>
-      <guid>https://teshenglin.github.io/publication/24_pm_hlwcl/</guid>
+      <guid>http://localhost:1313/publication/24_pm_hlwcl/</guid>
       <description></description>
     </item>
     
     <item>
       <title>A hybrid neural-network and MAC scheme for Stokes interface problems</title>
-      <link>https://teshenglin.github.io/publication/24_eajam_cdhll/</link>
+      <link>http://localhost:1313/publication/24_eajam_cdhll/</link>
       <pubDate>Wed, 03 Apr 2024 00:00:00 +0000</pubDate>
-      <guid>https://teshenglin.github.io/publication/24_eajam_cdhll/</guid>
+      <guid>http://localhost:1313/publication/24_eajam_cdhll/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Distinguishing Methicillin-resistant Staphylococcus aureus from Methicillin-sensitive Strains by Combining Fe3O4 Magnetic Nanoparticle-based Affinity Mass Spectrometry with A Machine Learning Strategy</title>
-      <link>https://teshenglin.github.io/publication/24_ma_mclc/</link>
+      <link>http://localhost:1313/publication/24_ma_mclc/</link>
       <pubDate>Sat, 30 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>https://teshenglin.github.io/publication/24_ma_mclc/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>A discontinuity-capturing neural network with categorical embedding and its application to anisotropic elliptic interface problems</title>
-      <link>https://teshenglin.github.io/publication/25_hll/</link>
-      <pubDate>Thu, 30 Nov 2023 00:00:00 +0000</pubDate>
-      <guid>https://teshenglin.github.io/publication/25_hll/</guid>
+      <guid>http://localhost:1313/publication/24_ma_mclc/</guid>
       <description></description>
     </item>
     
     <item>
       <title>A shallow physics-informed neural network for solving partial differential equations on surfaces</title>
-      <link>https://teshenglin.github.io/publication/24_cmame_hsll/</link>
+      <link>http://localhost:1313/publication/24_cmame_hsll/</link>
       <pubDate>Tue, 03 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>https://teshenglin.github.io/publication/24_cmame_hsll/</guid>
+      <guid>http://localhost:1313/publication/24_cmame_hsll/</guid>
       <description></description>
     </item>
     
     <item>
       <title>A cusp-capturing PINN for elliptic interface problems</title>
-      <link>https://teshenglin.github.io/publication/23_jcp_tlhl/</link>
+      <link>http://localhost:1313/publication/23_jcp_tlhl/</link>
       <pubDate>Thu, 13 Jul 2023 00:00:00 +0000</pubDate>
-      <guid>https://teshenglin.github.io/publication/23_jcp_tlhl/</guid>
+      <guid>http://localhost:1313/publication/23_jcp_tlhl/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Analysis and classification of coffee beans using single coffee bean mass spectrometry with machine learning strategy</title>
-      <link>https://teshenglin.github.io/publication/23_fc_tchlc/</link>
+      <link>http://localhost:1313/publication/23_fc_tchlc/</link>
       <pubDate>Mon, 12 Jun 2023 00:00:00 +0000</pubDate>
-      <guid>https://teshenglin.github.io/publication/23_fc_tchlc/</guid>
+      <guid>http://localhost:1313/publication/23_fc_tchlc/</guid>
       <description></description>
     </item>
     
     <item>
       <title>An efficient neural-network and finite-difference hybrid method for elliptic interface problems with applications</title>
-      <link>https://teshenglin.github.io/publication/23_cicp_hltl/</link>
+      <link>http://localhost:1313/publication/23_cicp_hltl/</link>
       <pubDate>Sun, 07 May 2023 00:00:00 +0000</pubDate>
-      <guid>https://teshenglin.github.io/publication/23_cicp_hltl/</guid>
+      <guid>http://localhost:1313/publication/23_cicp_hltl/</guid>
       <description></description>
     </item>
     
     <item>
       <title>On the transition to dripping of an inverted liquid film</title>
-      <link>https://teshenglin.github.io/publication/23_jfm_blt/</link>
+      <link>http://localhost:1313/publication/23_jfm_blt/</link>
       <pubDate>Tue, 14 Mar 2023 00:00:00 +0000</pubDate>
-      <guid>https://teshenglin.github.io/publication/23_jfm_blt/</guid>
+      <guid>http://localhost:1313/publication/23_jfm_blt/</guid>
       <description></description>
     </item>
     
     <item>
       <title>A Discontinuity Capturing Shallow Neural Network for Elliptic Interface Problems</title>
-      <link>https://teshenglin.github.io/publication/22_jcp_hll/</link>
+      <link>http://localhost:1313/publication/22_jcp_hll/</link>
       <pubDate>Thu, 08 Sep 2022 00:00:00 +0000</pubDate>
-      <guid>https://teshenglin.github.io/publication/22_jcp_hll/</guid>
+      <guid>http://localhost:1313/publication/22_jcp_hll/</guid>
       <description></description>
     </item>
     
     <item>
       <title>A Shallow Ritz Method for elliptic problems with Singular Sources</title>
-      <link>https://teshenglin.github.io/publication/22_jcp_lclhl/</link>
+      <link>http://localhost:1313/publication/22_jcp_lclhl/</link>
       <pubDate>Mon, 22 Aug 2022 00:00:00 +0000</pubDate>
-      <guid>https://teshenglin.github.io/publication/22_jcp_lclhl/</guid>
+      <guid>http://localhost:1313/publication/22_jcp_lclhl/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Spontaneous locomotion of phoretic particles in three dimensions</title>
-      <link>https://teshenglin.github.io/publication/22_prf_hlrm/</link>
+      <link>http://localhost:1313/publication/22_prf_hlrm/</link>
       <pubDate>Thu, 17 Mar 2022 00:00:00 +0000</pubDate>
-      <guid>https://teshenglin.github.io/publication/22_prf_hlrm/</guid>
+      <guid>http://localhost:1313/publication/22_prf_hlrm/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Thin liquid films in a funnel</title>
-      <link>https://teshenglin.github.io/publication/21_jfm_ldk/</link>
+      <link>http://localhost:1313/publication/21_jfm_ldk/</link>
       <pubDate>Wed, 11 Aug 2021 00:00:00 +0000</pubDate>
-      <guid>https://teshenglin.github.io/publication/21_jfm_ldk/</guid>
+      <guid>http://localhost:1313/publication/21_jfm_ldk/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Effect of driving on coarsening dynamics in phase-separating systems</title>
-      <link>https://teshenglin.github.io/publication/20_non_talt/</link>
+      <link>http://localhost:1313/publication/20_non_talt/</link>
       <pubDate>Tue, 21 Jul 2020 00:00:00 +0000</pubDate>
-      <guid>https://teshenglin.github.io/publication/20_non_talt/</guid>
+      <guid>http://localhost:1313/publication/20_non_talt/</guid>
       <description></description>
     </item>
     
     <item>
       <title>A direct Poisson solver in spherical geometry with an application to diffusiophoretic problems</title>
-      <link>https://teshenglin.github.io/publication/20_jcp_lhm/</link>
+      <link>http://localhost:1313/publication/20_jcp_lhm/</link>
       <pubDate>Sun, 01 Mar 2020 00:00:00 +0000</pubDate>
-      <guid>https://teshenglin.github.io/publication/20_jcp_lhm/</guid>
+      <guid>http://localhost:1313/publication/20_jcp_lhm/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Fast spectral solver for Poisson equation in an annular domain</title>
-      <link>https://teshenglin.github.io/publication/20_amsa_lhh/</link>
+      <link>http://localhost:1313/publication/20_amsa_lhh/</link>
       <pubDate>Mon, 17 Feb 2020 00:00:00 +0000</pubDate>
-      <guid>https://teshenglin.github.io/publication/20_amsa_lhh/</guid>
+      <guid>http://localhost:1313/publication/20_amsa_lhh/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Chaotic swimming of phoretic self-propelled particles</title>
-      <link>https://teshenglin.github.io/publication/19_prl_hlrm/</link>
+      <link>http://localhost:1313/publication/19_prl_hlrm/</link>
       <pubDate>Tue, 03 Dec 2019 00:00:00 +0000</pubDate>
-      <guid>https://teshenglin.github.io/publication/19_prl_hlrm/</guid>
+      <guid>http://localhost:1313/publication/19_prl_hlrm/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Two-dimensional pulse dynamics and the formation of bound states on electrified falling films</title>
-      <link>https://teshenglin.github.io/publication/18_jfm_btlk/</link>
+      <link>http://localhost:1313/publication/18_jfm_btlk/</link>
       <pubDate>Fri, 27 Jul 2018 17:59:48 +0800</pubDate>
-      <guid>https://teshenglin.github.io/publication/18_jfm_btlk/</guid>
+      <guid>http://localhost:1313/publication/18_jfm_btlk/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Continuation methods for time-periodic travelling-wave solutions to evolution equations</title>
-      <link>https://teshenglin.github.io/publication/18_aml_ltbk/</link>
+      <link>http://localhost:1313/publication/18_aml_ltbk/</link>
       <pubDate>Wed, 27 Jun 2018 17:59:41 +0800</pubDate>
-      <guid>https://teshenglin.github.io/publication/18_aml_ltbk/</guid>
+      <guid>http://localhost:1313/publication/18_aml_ltbk/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Bifurcation analysis of the behavior of partially wetting liquids on a rotating cylinder</title>
-      <link>https://teshenglin.github.io/publication/16_pof_lrtt/</link>
+      <link>http://localhost:1313/publication/16_pof_lrtt/</link>
       <pubDate>Sat, 27 Aug 2016 17:59:32 +0800</pubDate>
-      <guid>https://teshenglin.github.io/publication/16_pof_lrtt/</guid>
+      <guid>http://localhost:1313/publication/16_pof_lrtt/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Instabilities of layers of deposited molecules on chemically stripe patterned substrates: Ridges vs. drops</title>
-      <link>https://teshenglin.github.io/publication/15_lang_hlhtg/</link>
+      <link>http://localhost:1313/publication/15_lang_hlhtg/</link>
       <pubDate>Sun, 27 Sep 2015 17:59:16 +0800</pubDate>
-      <guid>https://teshenglin.github.io/publication/15_lang_hlhtg/</guid>
+      <guid>http://localhost:1313/publication/15_lang_hlhtg/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Three-dimensional coating flow of nematic liquid crystal on an inclined substrate</title>
-      <link>https://teshenglin.github.io/publication/15_ejam_lclk/</link>
+      <link>http://localhost:1313/publication/15_ejam_lclk/</link>
       <pubDate>Mon, 27 Apr 2015 17:59:06 +0800</pubDate>
-      <guid>https://teshenglin.github.io/publication/15_ejam_lclk/</guid>
+      <guid>http://localhost:1313/publication/15_ejam_lclk/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Coherent structures in non-local dispersive active-dissipative systems</title>
-      <link>https://teshenglin.github.io/publication/15_sjam_lpkpt/</link>
+      <link>http://localhost:1313/publication/15_sjam_lpkpt/</link>
       <pubDate>Fri, 27 Mar 2015 17:59:24 +0800</pubDate>
-      <guid>https://teshenglin.github.io/publication/15_sjam_lpkpt/</guid>
+      <guid>http://localhost:1313/publication/15_sjam_lpkpt/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Modeling flow of nematic liquid crystal down an incline</title>
-      <link>https://teshenglin.github.io/publication/14_jem_lclk/</link>
+      <link>http://localhost:1313/publication/14_jem_lclk/</link>
       <pubDate>Thu, 27 Mar 2014 17:58:56 +0800</pubDate>
-      <guid>https://teshenglin.github.io/publication/14_jem_lclk/</guid>
+      <guid>http://localhost:1313/publication/14_jem_lclk/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Numerical study of a non-local weakly nonlinear model for a liquid film sheared by a turbulent gas</title>
-      <link>https://teshenglin.github.io/publication/14_iutam_ltk/</link>
+      <link>http://localhost:1313/publication/14_iutam_ltk/</link>
       <pubDate>Mon, 27 Jan 2014 00:00:00 +0000</pubDate>
-      <guid>https://teshenglin.github.io/publication/14_iutam_ltk/</guid>
+      <guid>http://localhost:1313/publication/14_iutam_ltk/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Note on the hydrodynamic description of thin nematic films: strong anchoring model</title>
-      <link>https://teshenglin.github.io/publication/13_pof_lcakt/</link>
+      <link>http://localhost:1313/publication/13_pof_lcakt/</link>
       <pubDate>Tue, 27 Aug 2013 18:17:07 +0800</pubDate>
-      <guid>https://teshenglin.github.io/publication/13_pof_lcakt/</guid>
+      <guid>http://localhost:1313/publication/13_pof_lcakt/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Modelling spreading dynamics of nematic liquid crystals in three spatial dimensions</title>
-      <link>https://teshenglin.github.io/publication/13_jfm_lktc/</link>
+      <link>http://localhost:1313/publication/13_jfm_lktc/</link>
       <pubDate>Thu, 27 Jun 2013 17:58:35 +0800</pubDate>
-      <guid>https://teshenglin.github.io/publication/13_jfm_lktc/</guid>
+      <guid>http://localhost:1313/publication/13_jfm_lktc/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Thin films flowing down inverted substrates: Three-dimensional flow</title>
-      <link>https://teshenglin.github.io/publication/12_pof_lkf/</link>
+      <link>http://localhost:1313/publication/12_pof_lkf/</link>
       <pubDate>Mon, 27 Feb 2012 17:49:39 +0800</pubDate>
-      <guid>https://teshenglin.github.io/publication/12_pof_lkf/</guid>
+      <guid>http://localhost:1313/publication/12_pof_lkf/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Defect modeling in spreading nematic droplets</title>
-      <link>https://teshenglin.github.io/publication/12_pre_lkc/</link>
+      <link>http://localhost:1313/publication/12_pre_lkc/</link>
       <pubDate>Fri, 27 Jan 2012 17:49:39 +0800</pubDate>
-      <guid>https://teshenglin.github.io/publication/12_pre_lkc/</guid>
+      <guid>http://localhost:1313/publication/12_pre_lkc/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Modeling and simulations of the spreading and destabilization of nematic droplets</title>
-      <link>https://teshenglin.github.io/publication/11_pof_clk/</link>
+      <link>http://localhost:1313/publication/11_pof_clk/</link>
       <pubDate>Fri, 01 Apr 2011 00:00:00 +0000</pubDate>
-      <guid>https://teshenglin.github.io/publication/11_pof_clk/</guid>
+      <guid>http://localhost:1313/publication/11_pof_clk/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Thin films flowing down inverted substrates: two dimensional flow</title>
-      <link>https://teshenglin.github.io/publication/10_pof_lk/</link>
+      <link>http://localhost:1313/publication/10_pof_lk/</link>
       <pubDate>Mon, 24 May 2010 00:00:00 +0000</pubDate>
-      <guid>https://teshenglin.github.io/publication/10_pof_lk/</guid>
+      <guid>http://localhost:1313/publication/10_pof_lk/</guid>
       <description></description>
     </item>
     
     <item>
       <title>A simple Dufort-Frankel type scheme for the Gross-Pitaevskii equation of Bose-Einstein condensates on different geometries</title>
-      <link>https://teshenglin.github.io/publication/04_nmpde_lhl/</link>
+      <link>http://localhost:1313/publication/04_nmpde_lhl/</link>
       <pubDate>Thu, 26 Feb 2004 00:00:00 +0000</pubDate>
-      <guid>https://teshenglin.github.io/publication/04_nmpde_lhl/</guid>
+      <guid>http://localhost:1313/publication/04_nmpde_lhl/</guid>
       <description></description>
     </item>
     

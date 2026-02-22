@@ -2,53 +2,53 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>C. Misbah | Te-Sheng Lin</title>
-    <link>https://teshenglin.github.io/authors/c.-misbah/</link>
-      <atom:link href="https://teshenglin.github.io/authors/c.-misbah/index.xml" rel="self" type="application/rss+xml" />
+    <link>http://localhost:1313/authors/c.-misbah/</link>
+      <atom:link href="http://localhost:1313/authors/c.-misbah/index.xml" rel="self" type="application/rss+xml" />
     <description>C. Misbah</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 26 Dec 2023 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <url>http://localhost:1313/images/icon_hu10226378635250344412.png</url>
       <title>C. Misbah</title>
-      <link>https://teshenglin.github.io/authors/c.-misbah/</link>
+      <link>http://localhost:1313/authors/c.-misbah/</link>
     </image>
     
     <item>
       <title>Motility and swimming: universal description and generic trajectories</title>
-      <link>https://teshenglin.github.io/publication/23_epje_frhlrm/</link>
+      <link>http://localhost:1313/publication/23_epje_frhlrm/</link>
       <pubDate>Tue, 26 Dec 2023 00:00:00 +0000</pubDate>
-      <guid>https://teshenglin.github.io/publication/23_epje_frhlrm/</guid>
+      <guid>http://localhost:1313/publication/23_epje_frhlrm/</guid>
       <description></description>
     </item>
     
     <item>
       <title>A Reduced Model for a Phoretic Swimmer</title>
-      <link>https://teshenglin.github.io/publication/22_jfm_frhlrm/</link>
+      <link>http://localhost:1313/publication/22_jfm_frhlrm/</link>
       <pubDate>Fri, 28 Oct 2022 00:00:00 +0000</pubDate>
-      <guid>https://teshenglin.github.io/publication/22_jfm_frhlrm/</guid>
+      <guid>http://localhost:1313/publication/22_jfm_frhlrm/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Spontaneous locomotion of phoretic particles in three dimensions</title>
-      <link>https://teshenglin.github.io/publication/22_prf_hlrm/</link>
+      <link>http://localhost:1313/publication/22_prf_hlrm/</link>
       <pubDate>Thu, 17 Mar 2022 00:00:00 +0000</pubDate>
-      <guid>https://teshenglin.github.io/publication/22_prf_hlrm/</guid>
+      <guid>http://localhost:1313/publication/22_prf_hlrm/</guid>
       <description></description>
     </item>
     
     <item>
       <title>A direct Poisson solver in spherical geometry with an application to diffusiophoretic problems</title>
-      <link>https://teshenglin.github.io/publication/20_jcp_lhm/</link>
+      <link>http://localhost:1313/publication/20_jcp_lhm/</link>
       <pubDate>Sun, 01 Mar 2020 00:00:00 +0000</pubDate>
-      <guid>https://teshenglin.github.io/publication/20_jcp_lhm/</guid>
+      <guid>http://localhost:1313/publication/20_jcp_lhm/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Chaotic swimming of phoretic self-propelled particles</title>
-      <link>https://teshenglin.github.io/publication/19_prl_hlrm/</link>
+      <link>http://localhost:1313/publication/19_prl_hlrm/</link>
       <pubDate>Tue, 03 Dec 2019 00:00:00 +0000</pubDate>
-      <guid>https://teshenglin.github.io/publication/19_prl_hlrm/</guid>
+      <guid>http://localhost:1313/publication/19_prl_hlrm/</guid>
       <description></description>
     </item>
     

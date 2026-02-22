@@ -9918,16 +9918,16 @@ $$
       <pubDate>Sun, 27 Oct 2019 00:00:00 +0000</pubDate>
       <guid>https://teshenglin.github.io/post/2019_limit_evaluate/</guid>
       <description>&lt;blockquote&gt;
-&lt;p&gt;這裡我們要介紹如何用電腦算極限, 以及我們來看一下當我們真的這樣做的時候有可能會發生什麼問題. 我們以 $sinc$ 函數為例來做說明.&lt;/p&gt;
+&lt;p&gt;這裡我們要介紹如何用電腦算極限, 以及我們來看一下當我們真的這樣實作的時候有可能會發生什麼問題. 我們以 $sinc$ 函數為例來做說明.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h3 id=&#34;sinc-function&#34;&gt;sinc function&lt;/h3&gt;
 &lt;p&gt;首先我們要介紹一個特別的函數, $sinc(x)$, 定義如下:
 $$
 sinc(x) = \frac{\sin(x)}{x}, \quad x\ne 0.
 $$
-很明顯可以看出來當 $x=0$ 的時候分母會等於零, 是一件壞事, 所以把 $x=0$ 這個點先拿掉.&lt;/p&gt;
-&lt;p&gt;比較有趣的是我們可以把這個函數畫出來. 首先我們在 $[-20, 20]$ 這個區間取 $1000$ 個點, 然後帶入上面 $sinc$ 函數的定義, 再把所有點連起來看看.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Remark:&lt;/strong&gt; 有件事需要先說明一下, 由於我們是在 $[-20, 20]$ 這個區間均勻的取偶數個點, 所以會有 $500$ 個正數以及 $500$ 個負數, 重點是保證不會取到 $x=0$ 這個點, 所以沒有問題. 相反的, 如果取奇數個點就一定會取到 $x=0$, 那就會有函數無定義的問題了.&lt;/p&gt;
+很明顯可以看出來當 $x=0$ 的時候分母會等於零, 在數學定義上是不確定的, 所以把 $x=0$ 這個點先拿掉.&lt;/p&gt;
+&lt;p&gt;為了觀察這個函數的行為我們可以把這個函數畫出來. 首先我們在 $[-20, 20]$ 這個區間取 $1000$ 個點, 然後帶入上面 $sinc$ 函數的定義, 再把所有點連起來看看.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Remark:&lt;/strong&gt; 有件事需要先說明一下, 由於我們是在 $[-20, 20]$ 這個區間均勻的取偶數個點, 所以會有 $500$ 個正數以及 $500$ 個負數, 重點是保證不會取到 $x=0$ 這個點, 所以沒有問題, 避免了程式出現 &lt;code&gt;DivisionByZero&lt;/code&gt; 的錯誤. 相反的, 如果取奇數個點就一定會取到 $x=0$, 那就會有函數無定義的問題了.&lt;/p&gt;
 
 
 
@@ -9956,7 +9956,8 @@ $$
 
 &lt;/figure&gt;
 
-&lt;p&gt;我們很輕易可以看出來, 連起來的線還蠻&amp;quot;光滑&amp;quot;的. 函數值在 $x=0$ 附近似乎不會趨近正無窮大或負無窮大, 也沒有跳躍的現象. 接著我們試著在 $x=0$ 附近放大一點看看, 我們在 $[-0.1, 0.1]$ 這個區間取 $1000$ 個點, 然後帶入 $sinc$ 函數的定義再把它畫出來:&lt;/p&gt;
+&lt;p&gt;我們很輕易可以看出來, 連起來的線還蠻&amp;quot;光滑&amp;quot;的. 函數值在 $x=0$ 附近似乎不會趨近正無窮大或負無窮大, 也沒有跳躍的現象. 這暗示了雖然 $x=0$ 處於分母, 但該處可能存在一個有限的極限值.&lt;/p&gt;
+&lt;p&gt;接著我們試著在 $x=0$ 附近放大一點看看, 我們在 $[-0.1, 0.1]$ 這個區間取 $1000$ 個點, 然後帶入 $sinc$ 函數的定義再把它畫出來:&lt;/p&gt;
 
 
 
@@ -10014,8 +10015,9 @@ $$
 &lt;p&gt;$$
 \lim_{x\to 0} sinc(x) = \lim_{x\to 0} \frac{\sin(x)}{x} = 1.
 $$&lt;/p&gt;
-&lt;p&gt;不過有一點點詭異的是, 在剛剛的計算裡我們最多也只是取到離 $0$ 很近的點而已, 但是算出來的結果卻是 $1$. 難道不只是 $sinc(0)=1$, 我們也有 $sinc(2.061153622438558 *10^{-9})=1$ 嗎?&lt;/p&gt;
-&lt;p&gt;事實上並不是這樣. 電腦有所謂的捨入誤差(rounding error). 這是因為電腦需要用有限位數來表達無窮小數, 所以一定要捨棄後面的位數. 我們把算出來的數字減去 $1$ 看看:&lt;/p&gt;
+&lt;p&gt;不過有一點點詭異的是, 在剛剛的計算裡我們最多也只是取到離 $0$ 很近的點而已, 但是算出來的結果卻是 $1$. 難道不只是 $sinc(0)=1$, 我們也有 $sinc(2.061153622438558\times 10^{-9})=1$ 嗎?&lt;/p&gt;
+&lt;p&gt;事實上並不是這樣.&lt;/p&gt;
+&lt;p&gt;在數學上, $sinc(x)=1$ 只會在極限意義下成立(或是定義擴充後), 但在電腦的輸出中, 我們看到 $sinc(2.06\times 10^{-9})$ 竟然精確地等於 $1$. 這並不是因為數學公式變了, 而是因為電腦的精度限制. 電腦有所謂的捨入誤差(rounding error), 因為電腦需要用有限位數來表達無窮小數, 所以一定要捨棄後面的位數. 我們把算出來的數字減去 $1$ 看看:&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt; -4.649114426769074e-11
  -6.291855925155687e-12
  -8.515410598874951e-13
@@ -10033,7 +10035,7 @@ $$&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;一般我們會用 machine epsilon 這個數字來量化在電腦裡浮點運算的捨入誤差.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;machine epsilon 的定義是, 考慮正數$\epsilon$, 使得 $ 1+ \epsilon \ge 1$ 中最小的那個稱之為 machine epsilon. 當然以數學來看這個 machine epsilon 必須等於零. 不過在電腦裡並不是這樣.&lt;/p&gt;
+&lt;p&gt;machine epsilon 的定義是, 考慮正數$\epsilon$, 使得 $ 1+ \epsilon &amp;gt; 1$ 中最小的那個稱之為 machine epsilon. 當然以數學來看這個 machine epsilon 必須等於零. 不過在電腦裡並不是這樣.&lt;/p&gt;
 &lt;p&gt;為了方便我們稍微改一下定義, 我們考慮 $\epsilon = 2^{-k}$ 這種形式, 然後 machine epsilon 一樣是使得 $ 1+ \epsilon \ge 1$ 中最小的那個. &lt;code&gt;julia&lt;/code&gt; 程式如下:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;s&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1.0&lt;/span&gt;
 &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; k&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;100&lt;/span&gt;
@@ -10049,11 +10051,34 @@ $$&lt;/p&gt;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;所以的確捨入誤差大約是 $10^{-16}$ 這個等級.&lt;/p&gt;
 &lt;hr&gt;
+&lt;h3 id=&#34;taylors-expansion&#34;&gt;Taylor&amp;rsquo;s expansion&lt;/h3&gt;
+&lt;p&gt;為什麼當 $x\to 0$ 的時候 $sinc(x)\to 1$ 而不是別的數字? 我們可以用 Taylor&amp;rsquo;s expansion 來看.&lt;/p&gt;
+&lt;p&gt;當 $x$ 很小時,
+$$
+\sin(x)= x - \frac{x^3}{6} + O(x^5).
+$$
+因此, 當 $x$ 很小時,
+$$
+sinc(x)=\frac{\sin(x)}{x} \approx 1 - \frac{x^2}{6}.
+$$
+所以可以清楚地看到 $sinc(x)\to 1$ for $x\to 0$.&lt;/p&gt;
+&lt;p&gt;而從電腦的角度來說, 如果 $x\approx 4\times 10^{-8}$, 那&lt;/p&gt;
+&lt;p&gt;$$
+\frac{x^2}{6}=\frac{(4\times 10^{-8})^2}{6} = \frac{16}{6}10^{-16},
+$$
+比 machine epsilon 還要大一點點.&lt;/p&gt;
+&lt;p&gt;不過如果 $x\approx 2\times 10^{-8}$, 那&lt;/p&gt;
+&lt;p&gt;$$
+\frac{x^2}{6}= \frac{(2\times 10^{-8})^2}{6} = \frac{4}{6}10^{-16}\approx 0.66\times 10^{-16},
+$$&lt;/p&gt;
+&lt;p&gt;就比 machine epsilon 還要小. 在雙精度浮點數的運算中, 以 $1$ 減去這數字就沒有任何作用, 導致結果依然精確等於 $1$.&lt;/p&gt;
+&lt;p&gt;這完美解釋了為什麼在之前的數列計算中, 當 $x$ 足夠小時, 我們會赫然發現 $sinc(x)$ 的輸出變成了連續的三個 $1.0$.&lt;/p&gt;
+&lt;hr&gt;
 &lt;h3 id=&#34;summary&#34;&gt;Summary:&lt;/h3&gt;
 &lt;p&gt;稍微總結一下目前我們看到的:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;我們用程式跑數值發現 $sinc(x\to 0)=1$, 所以我們可以定義 sinc 函數為
+&lt;p&gt;我們在微積分裡學過 $sinc(x\to 0)=1$, 所以我們可以定義 sinc 函數為
 $$
 sinc(x) =
 \begin{cases}
@@ -10063,6 +10088,7 @@ sinc(x) =
 $$
 在這樣的定義之下 $sinc$ 函數是個&lt;code&gt;連續函數&lt;/code&gt;.&lt;/p&gt;
 &lt;ul&gt;
+&lt;li&gt;用程式跑數值發現類似的結果 $sinc(x\to 0)=1$, 不過這只能告訴我們觀察到的趨勢, 要有確定的答案還是需要更嚴謹的數學證明才能下結論.&lt;/li&gt;
 &lt;li&gt;更多關於 $sinc$ 函數的性質可以參考 
 &lt;a href=&#34;https://en.wikipedia.org/wiki/Sinc_function&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;wiki&lt;/a&gt; 上的介紹.&lt;/li&gt;
 &lt;/ul&gt;
