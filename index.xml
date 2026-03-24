@@ -13,6 +13,188 @@
     </image>
     
     <item>
+      <title>2026 Summer Research Internship</title>
+      <link>https://teshenglin.github.io/courses/2026_summer_research/</link>
+      <pubDate>Thu, 19 Mar 2026 00:00:00 +0800</pubDate>
+      <guid>https://teshenglin.github.io/courses/2026_summer_research/</guid>
+      <description>&lt;hr&gt;
+&lt;h2 id=&#34;2026-暑期研究實習&#34;&gt;2026 暑期研究實習&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;研究實習辦法
+&lt;ol&gt;
+&lt;li&gt;實習期間, 時間, 地點
+&lt;ul&gt;
+&lt;li&gt;六週, 具體時間各自與指導教授訂定&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;說明會
+&lt;ul&gt;
+&lt;li&gt;訂於 4/8 (週三) 12:00-13:00&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;報名
+&lt;ul&gt;
+&lt;li&gt;報名資格: 大學部就學中&lt;/li&gt;
+&lt;li&gt;報名截止: TBA&lt;/li&gt;
+&lt;li&gt;報名方式: TBA&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;經錄取, 在符合以下條件的情況下將補助最高一萬六千元整
+&lt;ul&gt;
+&lt;li&gt;於實習期間協助團隊指導教授進行相關研究&lt;/li&gt;
+&lt;li&gt;研究成果海報展
+&lt;ul&gt;
+&lt;li&gt;每位參與實習的學生皆需參加研究成果展, 具體日期再另行通知.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;各研究團隊主題&#34;&gt;各研究團隊主題&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Painleve方程理論中的等單法( The Isomonodromy  Method in the Theory of Painleve Equations)
+&lt;ul&gt;
+&lt;li&gt;Advisor: 黃信元 - &lt;a href=&#34;mailto:hyhuang@nycu.edu.tw&#34;&gt;hyhuang@nycu.edu.tw&lt;/a&gt;
+&lt;blockquote&gt;
+&lt;p&gt;我們想要用 isomonodromy method去了解Painleve 方程的漸進行為。Isomonodromy method是數學物理與可積系統（Integrable Systems）中一種極具威力的解析工具，主要用於求解特定的非線性微分方程。它的核心思想是：將一個難以求解的非線性問題，轉化為研究一個線性常微分方程的「單值性（Monodromy）」如何隨參數變化而保持不變的問題。 主要應用領域為 Painlevé Equations、Random Matrix Theory等。 但這專題我們只關注與Painleve方程的關聯。我們將研讀參考書中的前幾個章節。&lt;/p&gt;
+&lt;p&gt;預備知識:微分方程（特別是級數解）、複變函數&lt;/p&gt;
+&lt;p&gt;參考書：The Isomonodromic Deformation Method in the Theory of Painleve Equations by Alexander R. Its, Victor Yu. Novokshenov&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;圖拓樸與拉普拉斯矩陣
+&lt;ul&gt;
+&lt;li&gt;Advisor: 林晉宏 - &lt;a href=&#34;mailto:jephianlin@nycu.edu.tw&#34;&gt;jephianlin@nycu.edu.tw&lt;/a&gt;
+&lt;blockquote&gt;
+&lt;p&gt;圖的拉普拉斯矩陣揭露了圖的大量訊息，它的行列式值可以計算生成數的個數、特徵值可以評估圖的連通性、而特徵向量可以用來將圖分割。在這個專題中你將學到不同面向的線性代數技巧（如 Cauchy–Binet formula、Rayleigh quotient、Sylvester&amp;rsquo;s law of inertia 等），並用其來探索圖上的各種拓樸性質，進而了解網路分析的理論基礎。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;無人機飛行控制
+&lt;ul&gt;
+&lt;li&gt;Advisor: 吳金典 - &lt;a href=&#34;mailto:ctw@math.nctu.edu.tw&#34;&gt;ctw@math.nctu.edu.tw&lt;/a&gt;
+&lt;blockquote&gt;
+&lt;p&gt;本專題需要基礎是微積分，線性代數，與微分方程。&lt;/p&gt;
+&lt;p&gt;學生可以自習 robotic dynamics and control theory 並練習程式寫作。程式能力佳的話，可以在 Parrot Bebop2 等平台練習實作。&lt;/p&gt;
+&lt;p&gt;對用程式控制 bebop2, 可以參考以下連結: 
+&lt;a href=&#34;https://pyparrot.readthedocs.io/en/latest/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;pyparrot&lt;/a&gt;。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;生態數學中自由邊界問題的建模與分析
+&lt;ul&gt;
+&lt;li&gt;Advisor: 吳昌鴻 - &lt;a href=&#34;mailto:changhong@math.nctu.edu.tw&#34;&gt;changhong@math.nctu.edu.tw&lt;/a&gt;
+&lt;blockquote&gt;
+&lt;p&gt;我們將探討自由邊界問題於生態數學中的應用，主要以偏微分方程描述物種入侵、棲地擴張與族群傳播等現象。
+透過建立具移動邊界的生態模型，我們將一同研究解的長時間行為與對應的擴張速度，理解環境與物種交互作用對生態動態的影響。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;不耗散的動態與酉演化的量子世界：用線代透視保結構的動力系統
+&lt;ul&gt;
+&lt;li&gt;Advisor: 蘇承芳 - &lt;a href=&#34;mailto:scf1204@nycu.edu.tw&#34;&gt;scf1204@nycu.edu.tw&lt;/a&gt;
+&lt;blockquote&gt;
+&lt;p&gt;同學是否曾想過，
+(1) 為什麼有些連續時間模型在長時間演化下會變得不穩定？
+(2) 為什麼某些數學結構可以讓系統不爆炸，也不衰減？
+(3) 而這樣的結構，竟然和量子力學中的酉演化（unitary evolution）有直接關係？&lt;/p&gt;
+&lt;p&gt;近年來，為了理解並改善連續時間模型（例如Neural ODE）在長時間演化下可能出現的數值不穩定現象，研究者開始重新檢視保結構（structure-preserving）的觀點，而從應用數學的視角來看，我們想知道，一個動力系統在演化過程中，是否能保持某種範數、幾何結構或守恆性質，不會因為模型設計或數值離散而失真。&lt;/p&gt;
+&lt;p&gt;本專題將從線性代數與常微分方程出發，帶同學拆解這些模型背後的數學引擎；首先我們將分析反對稱矩陣所生成的動力系統，討論它為何具有保範數與非耗散的特性，接著再延伸到量子哈密頓演化，進一步認識Hermitian矩陣、酉演化與薛丁格方程式之間的數學連結。&lt;/p&gt;
+&lt;p&gt;參考文獻：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Ricky T. Q. Chen, Yulia Rubanova, Jesse Bettencourt, David Duvenaud, Neural Ordinary Differential Equations. &lt;a href=&#34;https://arxiv.org/abs/1806.07366&#34;&gt;https://arxiv.org/abs/1806.07366&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Bo Chang, Minmin Chen, Eldad Haber, Ed H. Chi, AntisymmetricRNN: A Dynamical System View on Recurrent Neural Networks. &lt;a href=&#34;https://arxiv.org/abs/1902.09689&#34;&gt;https://arxiv.org/abs/1902.09689&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Random Conductance Model
+&lt;ul&gt;
+&lt;li&gt;Advisor: Yuki Chino - &lt;a href=&#34;mailto:y.chino@math.nctu.edu.tw&#34;&gt;y.chino@math.nctu.edu.tw&lt;/a&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The RCM is one of disordered systems. The model is a class of random walk in random environments, which have been studied energetically. Many of interesting problems are embedded into the model, such as harmonic analysis and homogenization. It would be a good introduction to learn stochastic processes in random media.&lt;/p&gt;
+&lt;p&gt;Requirements: Measure-Theory-based Probability Theory, some parts of Fourier Analysis, Stochastic Process&lt;/p&gt;
+&lt;p&gt;Reference: Biskup, M. Recent progress on the Random Conductance Model, &lt;a href=&#34;https://arxiv.org/abs/1112.0104&#34;&gt;https://arxiv.org/abs/1112.0104&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;從對偶到最優界：編碼理論中的結構與優化方法
+&lt;ul&gt;
+&lt;li&gt;Advisor: 康明軒 - &lt;a href=&#34;mailto:mhkang@math.nctu.edu.tw&#34;&gt;mhkang@math.nctu.edu.tw&lt;/a&gt;
+&lt;blockquote&gt;
+&lt;p&gt;這次的專題聚焦於現代編碼理論中的核心議題，主要探討線性規劃（Linear Programming, LP）與半正定規劃（Semidefinite Programming, SDP）在碼（codes）界限問題中的應用，以及MacWilliams 恆等式所揭示之碼與其對偶碼之間的結構關係。&lt;/p&gt;
+&lt;p&gt;學習有限域與線性碼的基本概念、碼的權重分佈（weight distribution）及其性質，並進一步理解如何利用 Delsarte 線性規劃方法建立碼的上界，以及 SDP 方法在改進界限上的角色。此外，也將探討 MacWilliams 恆等式及其在理解對偶碼與對稱結構中的重要性。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;從缺失資料中重建世界：數學 × AI × 真實應用
+&lt;ul&gt;
+&lt;li&gt;Advisors: 薛名成 - &lt;a href=&#34;mailto:mshiue@math.nctu.edu.tw&#34;&gt;mshiue@math.nctu.edu.tw&lt;/a&gt;
+&lt;blockquote&gt;
+&lt;p&gt;你將探索：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Netflix / AI 如何預測你的喜好&lt;/li&gt;
+&lt;li&gt;電腦如何修復破損圖片&lt;/li&gt;
+&lt;li&gt;為什麼少量資料可以重建完整資訊&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;核心數學工具是：SVD（奇異值分解）與低秩模型，可從不完整資料中重建整體結構。&lt;/p&gt;
+&lt;p&gt;你將學到：Python、機器學習、數據分析、現代線性代數&lt;/p&gt;
+&lt;p&gt;參考資料: 
+&lt;a href=&#34;https://link.springer.com/article/10.1007/s10994-026-06995-2&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Randomized Approach to Matrix Completion: Applications in Recommendation Systems and Image Inpainting&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Instant Concept Erasure for Diffusion Models
+&lt;ul&gt;
+&lt;li&gt;Advisors: 林得勝 - &lt;a href=&#34;mailto:teshenglin@nycu.edu.tw&#34;&gt;teshenglin@nycu.edu.tw&lt;/a&gt;；
+&lt;a href=&#34;https://jwliao1209.github.io&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;廖家緯&lt;/a&gt;
+&lt;blockquote&gt;
+&lt;p&gt;本專題旨在研究 Machine Unlearning 的方法與理論。隨著各類機器學習技術的發展，模型已能學習並表徵大量概念；以生成式 AI 為例，模型在訓練過程中會內化豐富的語義與結構資訊。然而，在實務應用中，部分已學得的內容可能因隱私（如個資與人像資料）或法規等因素需要被移除。
+最直接的做法是重新訓練模型，但此方法在計算成本與時間上皆相當昂貴，缺乏實用性。因此，本專題的核心目標在於探討如何在不重新訓練整個模型的情況下，有效且快速地移除特定知識或概念，並進一步分析其背後的數學結構與理論基礎。&lt;/p&gt;
+&lt;p&gt;預備知識: Linear Algebra (SVD, linear subspace)&lt;/p&gt;
+&lt;p&gt;參考論文:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://arxiv.org/abs/2511.18684&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Now You See It, Now You Don&amp;rsquo;t - Instant Concept Erasure for Safe Text-to-Image and Video Generation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://arxiv.org/abs/2412.08629&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;FlowEdit: Inversion-Free Text-Based Editing Using Pre-Trained Flow Models&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;平坦空間中封閉曲面的測度集中現象
+&lt;ul&gt;
+&lt;li&gt;Advisor: 黃彥彰 - &lt;a href=&#34;mailto:ychuang0802@nycu.edu.tw&#34;&gt;ychuang0802@nycu.edu.tw&lt;/a&gt;
+&lt;blockquote&gt;
+&lt;p&gt;在三維空間中，考慮球面赤道附近一條固定寬度的帶狀區域，比較其面積與整體球表面積的比例。此問題可推廣至高維：在 n 維空間的  (n−1) 維球面上，分析赤道帶狀區域和整體所占面積比值。當 n 趨近於無限大時，該比值趨近於 1。我們將以分析的方法來探討其背後的幾何與機率意義。&lt;/p&gt;
+&lt;p&gt;NOTE: 此計劃為 NCTS 2026 大學部學生暑期研究計畫，欲參與此計劃者請至 
+&lt;a href=&#34;https://ncts.ntu.edu.tw/news_detail.php?nid=232&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;NCTS&lt;/a&gt; 報名。截止日期 2026年4月13日(一)。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+</description>
+    </item>
+    
+    <item>
       <title>TINNs: Time-Induced Neural Networks for Solving Time-Dependent PDEs</title>
       <link>https://teshenglin.github.io/publication/26_dclll/</link>
       <pubDate>Wed, 28 Jan 2026 00:00:00 +0000</pubDate>
@@ -11500,6 +11682,8 @@ $$
       <guid>https://teshenglin.github.io/courses/summer_research/</guid>
       <description>&lt;hr&gt;
 &lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;
+&lt;a href=&#34;https://teshenglin.github.io/courses/2026_summer_research/&#34;&gt;2026 Summer research internship&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;
 &lt;a href=&#34;https://teshenglin.github.io/courses/2025_summer_research/&#34;&gt;2025 Summer research internship&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;
