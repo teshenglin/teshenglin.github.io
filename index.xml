@@ -57,11 +57,12 @@
 &lt;ol&gt;
 &lt;li&gt;Painleve方程理論中的等單法( The Isomonodromy  Method in the Theory of Painleve Equations)
 &lt;ul&gt;
-&lt;li&gt;Advisor: 黃信元 - &lt;a href=&#34;mailto:hyhuang@nycu.edu.tw&#34;&gt;hyhuang@nycu.edu.tw&lt;/a&gt;
+&lt;li&gt;Advisor: 黃信元 - &lt;a href=&#34;mailto:hyhuang@nycu.edu.tw&#34;&gt;hyhuang@nycu.edu.tw&lt;/a&gt;; 郭庭榕 (國立師範大學數學系)
 &lt;blockquote&gt;
 &lt;p&gt;我們想要用 isomonodromy method去了解Painleve 方程的漸進行為。Isomonodromy method是數學物理與可積系統（Integrable Systems）中一種極具威力的解析工具，主要用於求解特定的非線性微分方程。它的核心思想是：將一個難以求解的非線性問題，轉化為研究一個線性常微分方程的「單值性（Monodromy）」如何隨參數變化而保持不變的問題。 主要應用領域為 Painlevé Equations、Random Matrix Theory等。 但這專題我們只關注與Painleve方程的關聯。我們將研讀參考書中的前幾個章節。&lt;/p&gt;
 &lt;p&gt;預備知識:微分方程（特別是級數解）、複變函數&lt;/p&gt;
 &lt;p&gt;參考書：The Isomonodromic Deformation Method in the Theory of Painleve Equations by Alexander R. Its, Victor Yu. Novokshenov&lt;/p&gt;
+&lt;p&gt;本暑期專題與師大數學系合辦。&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
