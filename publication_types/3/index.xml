@@ -2,37 +2,37 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>3 | Te-Sheng Lin</title>
-    <link>http://localhost:1313/publication_types/3/</link>
-      <atom:link href="http://localhost:1313/publication_types/3/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://teshenglin.github.io/publication_types/3/</link>
+      <atom:link href="https://teshenglin.github.io/publication_types/3/index.xml" rel="self" type="application/rss+xml" />
     <description>3</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Wed, 28 Jan 2026 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>http://localhost:1313/images/icon_hu10226378635250344412.png</url>
+      <url>https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
       <title>3</title>
-      <link>http://localhost:1313/publication_types/3/</link>
+      <link>https://teshenglin.github.io/publication_types/3/</link>
     </image>
     
     <item>
       <title>TINNs: Time-Induced Neural Networks for Solving Time-Dependent PDEs</title>
-      <link>http://localhost:1313/publication/26_dclll/</link>
+      <link>https://teshenglin.github.io/publication/26_dclll/</link>
       <pubDate>Wed, 28 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/publication/26_dclll/</guid>
+      <guid>https://teshenglin.github.io/publication/26_dclll/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Physics-Informed Machine Learning for Two-Phase Moving-Interface and Stefan Problems</title>
-      <link>http://localhost:1313/publication/26_cll/</link>
+      <link>https://teshenglin.github.io/publication/26_cll/</link>
       <pubDate>Tue, 16 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/publication/26_cll/</guid>
+      <guid>https://teshenglin.github.io/publication/26_cll/</guid>
       <description></description>
     </item>
     
     <item>
       <title>A categorical embedding discontinuity-capturing shallow neural network for anisotropic elliptic interface problems</title>
-      <link>http://localhost:1313/publication/26_hll/</link>
+      <link>https://teshenglin.github.io/publication/26_hll/</link>
       <pubDate>Sat, 27 Sep 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/publication/26_hll/</guid>
+      <guid>https://teshenglin.github.io/publication/26_hll/</guid>
       <description></description>
     </item>
     

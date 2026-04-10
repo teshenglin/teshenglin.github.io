@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Quadrature | Te-Sheng Lin</title>
-    <link>http://localhost:1313/tags/quadrature/</link>
-      <atom:link href="http://localhost:1313/tags/quadrature/index.xml" rel="self" type="application/rss+xml" />
-    <description>Quadrature</description>
+    <title>quadrature | Te-Sheng Lin</title>
+    <link>https://teshenglin.github.io/tags/quadrature/</link>
+      <atom:link href="https://teshenglin.github.io/tags/quadrature/index.xml" rel="self" type="application/rss+xml" />
+    <description>quadrature</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 19 Jun 2020 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>http://localhost:1313/images/icon_hu10226378635250344412.png</url>
-      <title>Quadrature</title>
-      <link>http://localhost:1313/tags/quadrature/</link>
+      <url>https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <title>quadrature</title>
+      <link>https://teshenglin.github.io/tags/quadrature/</link>
     </image>
     
     <item>
       <title>Clenshaw–Curtis quadrature</title>
-      <link>http://localhost:1313/post/2020_numerical_integration_4/</link>
+      <link>https://teshenglin.github.io/post/2020_numerical_integration_4/</link>
       <pubDate>Fri, 19 Jun 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/2020_numerical_integration_4/</guid>
+      <guid>https://teshenglin.github.io/post/2020_numerical_integration_4/</guid>
       <description>&lt;p&gt;前情提要: 
-&lt;a href=&#34;http://localhost:1313/post/2019_numerical_integration&#34;&gt;數值積分初探&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;https://teshenglin.github.io/post/2019_numerical_integration&#34;&gt;數值積分初探&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;前情提要: 
-&lt;a href=&#34;http://localhost:1313/post/2020_numerical_integration_2&#34;&gt;以內插多項式來做數值積分&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;https://teshenglin.github.io/post/2020_numerical_integration_2&#34;&gt;以內插多項式來做數值積分&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;前情提要: 
-&lt;a href=&#34;http://localhost:1313/post/2020_numerical_integration_3&#34;&gt;高斯積分&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;https://teshenglin.github.io/post/2020_numerical_integration_3&#34;&gt;高斯積分&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;blockquote&gt;
 &lt;p&gt;我們想要利用 Chebyshev polynomial 來算積分&lt;/p&gt;
@@ -32,22 +32,22 @@
 &lt;h4 id=&#34;idea&#34;&gt;Idea:&lt;/h4&gt;
 &lt;p&gt;我們簡單做個變數變換 $x = \cos\theta$ 可以得到
 $$
-\int^1_{-1} f(x) dx = \int^{\pi}&lt;em&gt;0 f(\cos\theta)\sin\theta d\theta.
+\int^1_{-1} f(x) dx = \int^{\pi}_0 f(\cos\theta)\sin\theta d\theta.
 $$
 所以如果我能將 $f(x)$ 這個函數以 first kind Chebyshev polynomial 來做展開, i.e.,
 $$
-f(x) = \sum^N&lt;/em&gt;{k=0} a_k T_k(x) = \sum^N_{k=0} a_k \cos(k\cos^{-1}x).
+f(x) = \sum^N_{k=0} a_k T_k(x) = \sum^N_{k=0} a_k \cos(k\cos^{-1}x).
 $$
 那代入後我們就有
 $$
-\int^1_{-1} f(x) dx = \int^{\pi}&lt;em&gt;0 \sum^N&lt;/em&gt;{k=0} a_k \cos(k\theta)\sin\theta d\theta = \sum^{N/2}&lt;em&gt;{k=0}\frac{2 a&lt;/em&gt;{2k}}{1-(2k)^2}.
+\int^1_{-1} f(x) dx = \int^{\pi}_0 \sum^N_{k=0} a_k \cos(k\theta)\sin\theta d\theta = \sum^{N/2}_{k=0}\frac{2 a_{2k}}{1-(2k)^2}.
 $$&lt;/p&gt;
 &lt;p&gt;因此, 若我們知道如何求一個函數的 Chebyshev coefficients, $a_k$, 那我們很容易就可以計算 $\int^1_{-1}f(x)dx$.&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;簡單的 Matlab 程式如下:&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;% generate grid points
+&lt;pre&gt;&lt;code&gt;% generate grid points
 N = 25;
-x = -sin((-N:2:N)&amp;#39;*pi/(2*N));
+x = -sin((-N:2:N)&#39;*pi/(2*N));
 
 % evaluate at grid points
 f = cos(x).*exp(sin(x));
@@ -120,7 +120,7 @@ $$
 $$
 其中 $[\pmb{F}]^T$ 這個矩陣乘法則是以 iFFT 來加速計算.&lt;/p&gt;
 &lt;p&gt;簡單的 Matlab 程式如下:&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;N=25;
+&lt;pre&gt;&lt;code&gt;N=25;
 
 w = zeros(1,N+1);
 if(mod(N,2)==0)
@@ -131,12 +131,12 @@ end
 w(1:2:end) = 2./(1-4*(0:M).^2);
 
 w2 = [w, w(N: -1:2)];
-CCW = ifft(w2&amp;#39;);
-CCW = [CCW(1), 2*CCW(2:N)&amp;#39;, CCW(N+1)];
+CCW = ifft(w2&#39;);
+CCW = [CCW(1), 2*CCW(2:N)&#39;, CCW(N+1)];
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;有了權重後即可由函數值直接求得積分值:&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;% generate grid points
+&lt;pre&gt;&lt;code&gt;% generate grid points
 N = 25;
-x = -sin((-N:2:N)&amp;#39;*pi/(2*N));
+x = -sin((-N:2:N)&#39;*pi/(2*N));
 
 % evaluate at grid points
 f = cos(x).*exp(sin(x));
@@ -149,7 +149,7 @@ exact_quad = exp(sin(1)) - exp(sin(-1));
 abs(cc_quad2 - exact_quad)
 &lt;/code&gt;&lt;/pre&gt;&lt;hr&gt;
 &lt;p&gt;最後附上 &lt;code&gt;python&lt;/code&gt; 程式:&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;import numpy as np
+&lt;pre&gt;&lt;code&gt;import numpy as np
 from numpy.fft import fft,ifft,fftshift
 
 N = 25
@@ -186,11 +186,11 @@ np.abs(cc_quad2 - exact_quad)
     
     <item>
       <title>以內插多項式來做數值積分</title>
-      <link>http://localhost:1313/post/2020_numerical_integration_2/</link>
+      <link>https://teshenglin.github.io/post/2020_numerical_integration_2/</link>
       <pubDate>Tue, 02 Jun 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/2020_numerical_integration_2/</guid>
+      <guid>https://teshenglin.github.io/post/2020_numerical_integration_2/</guid>
       <description>&lt;p&gt;前情提要: 
-&lt;a href=&#34;http://localhost:1313/post/2019_numerical_integration&#34;&gt;數值積分初探&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;https://teshenglin.github.io/post/2019_numerical_integration&#34;&gt;數值積分初探&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;blockquote&gt;
 &lt;p&gt;連續函數可以用多項式來逼近它, 因此直覺來講, 既然我們已經找到一個離給定函數&amp;quot;很近&amp;quot;的多項式了, 何不就以這個多項式的積分值來當成原函數積分值的一個逼近呢.&lt;/p&gt;
@@ -258,20 +258,20 @@ $$
 得到所謂的梯形法!&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;延伸閱讀: 
-&lt;a href=&#34;http://localhost:1313/post/2020_numerical_integration_3&#34;&gt;高斯積分&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;https://teshenglin.github.io/post/2020_numerical_integration_3&#34;&gt;高斯積分&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
 </description>
     </item>
     
     <item>
       <title>高斯積分</title>
-      <link>http://localhost:1313/post/2020_numerical_integration_3/</link>
+      <link>https://teshenglin.github.io/post/2020_numerical_integration_3/</link>
       <pubDate>Tue, 02 Jun 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/2020_numerical_integration_3/</guid>
+      <guid>https://teshenglin.github.io/post/2020_numerical_integration_3/</guid>
       <description>&lt;p&gt;前情提要: 
-&lt;a href=&#34;http://localhost:1313/post/2019_numerical_integration&#34;&gt;數值積分初探&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;https://teshenglin.github.io/post/2019_numerical_integration&#34;&gt;數值積分初探&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;前情提要: 
-&lt;a href=&#34;http://localhost:1313/post/2020_numerical_integration_2&#34;&gt;以內插多項式來做數值積分&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;https://teshenglin.github.io/post/2020_numerical_integration_2&#34;&gt;以內插多項式來做數值積分&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;blockquote&gt;
 &lt;p&gt;我們想要找到一些插值點使得以內插多項式來做數值積分會最準. 這就是高斯積分.&lt;/p&gt;
@@ -330,7 +330,7 @@ $$&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;$P_i(x)$ 是一個 $i$次多項式&lt;/li&gt;
 &lt;li&gt;$(P_i(x), P_j(x)) = \delta_{ij} = \begin{cases}
-0, \quad i\ne j, \\
+0, \quad i\ne j, \\&lt;br&gt;
 1, \quad i=j.
 \end{cases}$
 &lt;ul&gt;
@@ -431,11 +431,11 @@ $$&lt;/p&gt;
     
     <item>
       <title>數值積分初探</title>
-      <link>http://localhost:1313/post/2019_numerical_integration/</link>
+      <link>https://teshenglin.github.io/post/2019_numerical_integration/</link>
       <pubDate>Wed, 11 Dec 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/2019_numerical_integration/</guid>
+      <guid>https://teshenglin.github.io/post/2019_numerical_integration/</guid>
       <description>&lt;blockquote&gt;
-&lt;p&gt;在微積分課程裡我們有學到積分的&amp;rsquo;中點法&amp;rsquo;, &amp;lsquo;梯形法&amp;rsquo;以及&amp;rsquo;辛普森法&amp;rsquo;. 這裡我們簡介一些基本概念並且引進高斯積分法.&lt;/p&gt;
+&lt;p&gt;在微積分課程裡我們有學到積分的&amp;rsquo;中點法&#39;, &amp;lsquo;梯形法&amp;rsquo;以及&amp;rsquo;辛普森法&amp;rsquo;. 這裡我們簡介一些基本概念並且引進高斯積分法.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h4 id=&#34;goal-任意給定一可積分函數-fx-xin-1-1-我們想要算-int1_-1-fx-dx&#34;&gt;Goal: 任意給定一可積分函數 $f(x)$, $x\in[-1, 1]$, 我們想要算 $\int^1_{-1} f(x) dx$.&lt;/h4&gt;
 &lt;hr&gt;
@@ -478,7 +478,7 @@ $$&lt;/p&gt;
 &lt;/ol&gt;
 &lt;hr&gt;
 &lt;blockquote&gt;
-&lt;p&gt;接著我們稍微推廣一下, 並且介紹所謂的&amp;rsquo;高斯積分&amp;rsquo;.&lt;/p&gt;
+&lt;p&gt;接著我們稍微推廣一下, 並且介紹所謂的&amp;rsquo;高斯積分&#39;.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;&lt;strong&gt;Question:&lt;/strong&gt; 假設我們現在想要用函數在 $x=0$ 這個點的值來估算積分, 那係數要取多少會最好?&lt;/p&gt;
 &lt;p&gt;也就是說我們假設
@@ -501,9 +501,9 @@ $$\int^1_{-1}f(x),dx\approx A_0 f(x_0)+A_1 f(x_1),$$
 &lt;p&gt;我們有四個未知數, 所以理想狀況下應該能從常數到三次多項式都能算準, 依此可以列出四個方程式:
 $$
 \begin{aligned}
-A_0 + A_1 &amp;amp;= 2 \\\
-A_0x_0 + A_1x_1 &amp;amp;= 0 \\\
-A_0x^2_0 + A_1x^2_1 &amp;amp;= \frac{2}{3} \\\
+A_0 + A_1 &amp;amp;= 2 \\\&lt;br&gt;
+A_0x_0 + A_1x_1 &amp;amp;= 0 \\\&lt;br&gt;
+A_0x^2_0 + A_1x^2_1 &amp;amp;= \frac{2}{3} \\\&lt;br&gt;
 A_0x^3_0 + A_1x^3_1 &amp;amp;= 0.
 \end{aligned}
 $$
@@ -520,82 +520,82 @@ $$
 &lt;p&gt;&lt;strong&gt;Remark:&lt;/strong&gt; 一般來說我們會先將所要積分的範圍分成 $n$ 等分, 接著在每一等分上使用上列積分法. 這就是微積分課本中所介紹的合成積分法 (composite integral rules). 實作上的細節我們就不在這裡討論.&lt;/p&gt;
 &lt;p&gt;我們將 $[-1, 1]$ 區間均勻分成 $n$ 等分, 再用三種不同積分法來估算積分值. 下表列出不同積分法在不同區間數所得之值與實際值之間的絕對誤差.&lt;/p&gt;
 &lt;table&gt;
-  &lt;thead&gt;
-      &lt;tr&gt;
-          &lt;th&gt;n\Method&lt;/th&gt;
-          &lt;th&gt;Midpoint&lt;/th&gt;
-          &lt;th&gt;Trapezoidal&lt;/th&gt;
-          &lt;th&gt;Simpson&amp;rsquo;s&lt;/th&gt;
-      &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-      &lt;tr&gt;
-          &lt;td&gt;10&lt;/td&gt;
-          &lt;td&gt;3.91e-3&lt;/td&gt;
-          &lt;td&gt;7.83e-3&lt;/td&gt;
-          &lt;td&gt;2.08e-5&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;100&lt;/td&gt;
-          &lt;td&gt;3.92e-5&lt;/td&gt;
-          &lt;td&gt;7.83e-5&lt;/td&gt;
-          &lt;td&gt;2.09e-9&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;1000&lt;/td&gt;
-          &lt;td&gt;3.92e-7&lt;/td&gt;
-          &lt;td&gt;7.83e-7&lt;/td&gt;
-          &lt;td&gt;2.10e-13&lt;/td&gt;
-      &lt;/tr&gt;
-  &lt;/tbody&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;n\Method&lt;/th&gt;
+&lt;th&gt;Midpoint&lt;/th&gt;
+&lt;th&gt;Trapezoidal&lt;/th&gt;
+&lt;th&gt;Simpson&amp;rsquo;s&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;10&lt;/td&gt;
+&lt;td&gt;3.91e-3&lt;/td&gt;
+&lt;td&gt;7.83e-3&lt;/td&gt;
+&lt;td&gt;2.08e-5&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;100&lt;/td&gt;
+&lt;td&gt;3.92e-5&lt;/td&gt;
+&lt;td&gt;7.83e-5&lt;/td&gt;
+&lt;td&gt;2.09e-9&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;1000&lt;/td&gt;
+&lt;td&gt;3.92e-7&lt;/td&gt;
+&lt;td&gt;7.83e-7&lt;/td&gt;
+&lt;td&gt;2.10e-13&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
 &lt;/table&gt;
 &lt;p&gt;我們可以看到, 中點以及梯形法誤差皆是以 $O(n^{-2})$ 來下降, 也就是點數變十倍時誤差會降一百倍, 而辛普森法則是 $O(n^{-4})$.&lt;/p&gt;
 &lt;p&gt;接著我們試試看用高斯積分來做, 這裡我們就不分小區間, 直接做整個 $[-1, 1]$ 區間. 多個點的高斯積分的公式可在 
 &lt;a href=&#34;https://en.wikipedia.org/wiki/Gaussian_quadrature&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;wiki&lt;/a&gt; 找到. 我們將 $m$-point 高斯積分所得之值與實際值之間的絕對誤差列於下表&lt;/p&gt;
 &lt;table&gt;
-  &lt;thead&gt;
-      &lt;tr&gt;
-          &lt;th&gt;m\Method&lt;/th&gt;
-          &lt;th&gt;Gaussian quadrature rule&lt;/th&gt;
-      &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-      &lt;tr&gt;
-          &lt;td&gt;2&lt;/td&gt;
-          &lt;td&gt;7.71e-3&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;3&lt;/td&gt;
-          &lt;td&gt;6.55e-5&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;4&lt;/td&gt;
-          &lt;td&gt;2.95e-7&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;5&lt;/td&gt;
-          &lt;td&gt;8.25e-10&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;6&lt;/td&gt;
-          &lt;td&gt;1.56e-12&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;7&lt;/td&gt;
-          &lt;td&gt;2.66e-15&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;8&lt;/td&gt;
-          &lt;td&gt;4.44e-16&lt;/td&gt;
-      &lt;/tr&gt;
-  &lt;/tbody&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;m\Method&lt;/th&gt;
+&lt;th&gt;Gaussian quadrature rule&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;td&gt;7.71e-3&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;3&lt;/td&gt;
+&lt;td&gt;6.55e-5&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;4&lt;/td&gt;
+&lt;td&gt;2.95e-7&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;5&lt;/td&gt;
+&lt;td&gt;8.25e-10&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;6&lt;/td&gt;
+&lt;td&gt;1.56e-12&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;7&lt;/td&gt;
+&lt;td&gt;2.66e-15&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;8&lt;/td&gt;
+&lt;td&gt;4.44e-16&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
 &lt;/table&gt;
 &lt;p&gt;可以看到我們用 8 個點就可以將這個積分準確估計到誤差接近機器的捨入誤差 (rounding error).&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;延伸閱讀: 
-&lt;a href=&#34;http://localhost:1313/post/2020_numerical_integration_2&#34;&gt;以內差多項式來做數值積分&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;https://teshenglin.github.io/post/2020_numerical_integration_2&#34;&gt;以內差多項式來做數值積分&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;延伸閱讀: 
-&lt;a href=&#34;http://localhost:1313/post/2020_numerical_integration_3&#34;&gt;高斯積分&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;https://teshenglin.github.io/post/2020_numerical_integration_3&#34;&gt;高斯積分&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
 </description>
     </item>

@@ -2,32 +2,32 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>鄭宇皓 | Te-Sheng Lin</title>
-    <link>http://localhost:1313/authors/%E9%84%AD%E5%AE%87%E7%9A%93/</link>
-      <atom:link href="http://localhost:1313/authors/%E9%84%AD%E5%AE%87%E7%9A%93/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://teshenglin.github.io/authors/%E9%84%AD%E5%AE%87%E7%9A%93/</link>
+      <atom:link href="https://teshenglin.github.io/authors/%E9%84%AD%E5%AE%87%E7%9A%93/index.xml" rel="self" type="application/rss+xml" />
     <description>鄭宇皓</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Thu, 23 Apr 2020 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>http://localhost:1313/images/icon_hu10226378635250344412.png</url>
+      <url>https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
       <title>鄭宇皓</title>
-      <link>http://localhost:1313/authors/%E9%84%AD%E5%AE%87%E7%9A%93/</link>
+      <link>https://teshenglin.github.io/authors/%E9%84%AD%E5%AE%87%E7%9A%93/</link>
     </image>
     
     <item>
       <title>Sec.9.3.2 - Which is faster, going up or going down?</title>
-      <link>http://localhost:1313/post/2020_cal_s9p3_2/</link>
+      <link>https://teshenglin.github.io/post/2020_cal_s9p3_2/</link>
       <pubDate>Thu, 23 Apr 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/2020_cal_s9p3_2/</guid>
+      <guid>https://teshenglin.github.io/post/2020_cal_s9p3_2/</guid>
       <description>&lt;blockquote&gt;
-&lt;p&gt;Applied Project in Sec.9.3, Calculus by Stewart &lt;br&gt;
+&lt;p&gt;Applied Project in Sec.9.3, Calculus by Stewart&lt;br&gt;
 Chinese version: 
-&lt;a href=&#34;http://localhost:1313/post/2020_cal_s9p3_2_ch&#34;&gt;上升快，還是下降快?&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;https://teshenglin.github.io/post/2020_cal_s9p3_2_ch&#34;&gt;上升快，還是下降快?&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;Suppose you throw a ball into the air. Do you think it takes longer to reach its maximum height or to fall back to earth from its maximum height? We will solve the problem in this project, but before getting started, think about that situation and make a guess based on your physical intuition.&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Question 1：&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;A ball with mass $m$ is projected vertically upward from the earth’s surface with a positive initial velocity $v_0$. We assume the forces acting on the ball are the force of gravity and a retarding force of air resistance with direction opposite to the direction of motion and with magnitude $p|v(t)|$, where $p$ is a positive constant and $v(t)$ is the velocity of the ball at time $t$. In both the ascent and the descent, the total force acting on the ball is $-pv-mg$. [During ascent, $v(t)$ is positive and the resistance acts downward; during descent, $v(t)$ is negative and the resistance acts upward.] So, by Newton’s Second Law, the equation of motion is
 $$
-mv&amp;rsquo;=-pv-mg
+mv&#39;=-pv-mg
 $$
 Solve this differential equation to show that the velocity is
 $$
@@ -69,7 +69,7 @@ $$&lt;/li&gt;
 &lt;p&gt;&lt;strong&gt;Question 4：&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Let $t_2$ be the time at which the ball falls back to earth. For the particular ball in Problem 3, estimate $t_2$ by using a graph of the height function $y(t)$. Which is faster, going up or coming down?&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Answer：&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;Imgur&#34; src=&#34;https://i.imgur.com/C4svFLG.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.imgur.com/C4svFLG.png&#34; alt=&#34;Imgur&#34;&gt;&lt;/p&gt;
 &lt;p&gt;because the time of the ball going up is shorter than the ball coming down, the speed of the ball going up is faster than the coming down.&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Question 5：&lt;/strong&gt;&lt;/p&gt;
@@ -102,20 +102,20 @@ is increasing for $x &amp;gt; 1$.&lt;/p&gt;
     
     <item>
       <title>Sec.9.3.2 - 上升快，還是下降快?</title>
-      <link>http://localhost:1313/post/2020_cal_s9p3_2_ch/</link>
+      <link>https://teshenglin.github.io/post/2020_cal_s9p3_2_ch/</link>
       <pubDate>Thu, 23 Apr 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/2020_cal_s9p3_2_ch/</guid>
+      <guid>https://teshenglin.github.io/post/2020_cal_s9p3_2_ch/</guid>
       <description>&lt;blockquote&gt;
-&lt;p&gt;Applied Project in Sec.9.3, Calculus by Stewart &lt;br&gt;
+&lt;p&gt;Applied Project in Sec.9.3, Calculus by Stewart&lt;br&gt;
 英文版請見 
-&lt;a href=&#34;http://localhost:1313/post/2020_cal_s9p3_2&#34;&gt;Which is faster, going up or going down?&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;https://teshenglin.github.io/post/2020_cal_s9p3_2&#34;&gt;Which is faster, going up or going down?&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;假設你在空氣中將一顆球向上拋。你認為球從地表到最高高度和從最高處落回地面哪一個所耗的時間較長? 我們將在這個研究中探討這個問題，但，在我們開始前，先思考整個情況，接著根據你的物理直覺做出猜想。&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;問題1：&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;一顆質量為 $m$ 的球以初速為 $v_0$ 的速度鉛直上拋，我們假設作用在球上的力為地球給球的重力和相反於運動方向的空氣阻力 $p|v(t)|$ ， $p$ 為一個正的常數， $v(t)$ 為球在時間為 $t$ 時的速度。綜合正向和負向的力，球所受到的總合力為 $-pv-mg$，(在球上升階段，$v(t)$ 為正而阻力為向下；在球下降時， $v(t)$ 為負且阻力向上)。因此，根據牛頓第二運動定律，我們可得知移動的等式為
 $$
-mv&amp;rsquo;=-pv-mg
+mv&#39;=-pv-mg
 $$&lt;/p&gt;
 &lt;p&gt;解出此微分方程來說明速度為
 $$
@@ -157,7 +157,7 @@ $$&lt;/li&gt;
 &lt;p&gt;&lt;strong&gt;問題 4：&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;當 $t_2$ 為球落回最低點的時間。特別指在問題3中的情況中的球，使用高度函數 $y(t)$ 的圖形計算。哪一個情況的時間較短，上升還是落下?&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;解答：&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;Imgur&#34; src=&#34;https://i.imgur.com/C4svFLG.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.imgur.com/C4svFLG.png&#34; alt=&#34;Imgur&#34;&gt;&lt;/p&gt;
 &lt;p&gt;因為上升所耗的時間比下降的時間短，因此上升比下降快。&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;問題 5：&lt;/strong&gt;&lt;/p&gt;

@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>林琮詠 | Te-Sheng Lin</title>
-    <link>http://localhost:1313/authors/%E6%9E%97%E7%90%AE%E8%A9%A0/</link>
-      <atom:link href="http://localhost:1313/authors/%E6%9E%97%E7%90%AE%E8%A9%A0/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://teshenglin.github.io/authors/%E6%9E%97%E7%90%AE%E8%A9%A0/</link>
+      <atom:link href="https://teshenglin.github.io/authors/%E6%9E%97%E7%90%AE%E8%A9%A0/index.xml" rel="self" type="application/rss+xml" />
     <description>林琮詠</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Wed, 24 Dec 2025 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>http://localhost:1313/images/icon_hu10226378635250344412.png</url>
+      <url>https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
       <title>林琮詠</title>
-      <link>http://localhost:1313/authors/%E6%9E%97%E7%90%AE%E8%A9%A0/</link>
+      <link>https://teshenglin.github.io/authors/%E6%9E%97%E7%90%AE%E8%A9%A0/</link>
     </image>
     
     <item>
       <title>高斯判別分析-2</title>
-      <link>http://localhost:1313/post/2025_gaussian_discriminant_analysis_2/</link>
+      <link>https://teshenglin.github.io/post/2025_gaussian_discriminant_analysis_2/</link>
       <pubDate>Wed, 24 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/2025_gaussian_discriminant_analysis_2/</guid>
+      <guid>https://teshenglin.github.io/post/2025_gaussian_discriminant_analysis_2/</guid>
       <description>&lt;h1 id=&#34;gaussian-discriminant-analysis-gda---2&#34;&gt;Gaussian Discriminant Analysis (GDA) - 2&lt;/h1&gt;
 &lt;blockquote&gt;
 &lt;p&gt;這裡我們補充一下 GDA 裡的數學推導部分。&lt;/p&gt;
@@ -30,7 +30,7 @@
 &lt;blockquote&gt;
 &lt;p&gt;給定一筆新的資料 $\mathbf{x}$，判斷它屬於哪一個類別比較合理。&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;在 GDA 中，這個判斷是透過&lt;strong&gt;貝式定理&lt;/strong&gt;（Bayes&amp;rsquo; theorem）來完成的，因此我們先回顧一下貝式定理的形式。&lt;/p&gt;
+&lt;p&gt;在 GDA 中，這個判斷是透過&lt;strong&gt;貝式定理&lt;/strong&gt;（Bayes&#39; theorem）來完成的，因此我們先回顧一下貝式定理的形式。&lt;/p&gt;
 &lt;p&gt;對於一筆特徵向量 $\mathbf{x}$，它屬於類別 $y$ 的後驗概率為：
 $$
 P(y = 1 \mid \mathbf{x}) = \frac{P(\mathbf{x} \mid y = 1) P(y = 1)}{P(\mathbf{x})}.
@@ -82,16 +82,16 @@ $$&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;則整體的 likelihood function 為
 $$
-L(\phi, \mu_k, \Sigma_k) = \prod^n_{i=1} P(\mathbf{x}&lt;em&gt;i, y_i)= \prod^n&lt;/em&gt;{i=1} P(\mathbf{x}&lt;em&gt;i\mid y_i)P(y_i).
+L(\phi, \mu_k, \Sigma_k) = \prod^n_{i=1} P(\mathbf{x}_i, y_i)= \prod^n_{i=1} P(\mathbf{x}_i\mid y_i)P(y_i).
 $$
 展開後得到
 $$
-L = \prod&lt;/em&gt;{i, y=1}\phi \mathcal{N}(\mathbf{x}&lt;em&gt;i \mid \mu_1, \Sigma_1)\prod&lt;/em&gt;{i, y=0}(1-\phi) \mathcal{N}(\mathbf{x}_i \mid \mu_0, \Sigma_0).
+L = \prod_{i, y=1}\phi \mathcal{N}(\mathbf{x}_i \mid \mu_1, \Sigma_1)\prod_{i, y=0}(1-\phi) \mathcal{N}(\mathbf{x}_i \mid \mu_0, \Sigma_0).
 $$&lt;/p&gt;
 &lt;h3 id=&#34;22-log-likelihood&#34;&gt;2.2 Log-Likelihood&lt;/h3&gt;
 &lt;p&gt;取 $\log$ 之後得到 log-likelihood：
 $$
-\ell(\phi, \mu_k, \Sigma_k) = \sum_{i, y=1}\log\phi+\log\mathcal{N}(\mathbf{x}&lt;em&gt;i \mid \mu_1, \Sigma_1)+\sum&lt;/em&gt;{i, y=0}\log(1-\phi)+\log\mathcal{N}(\mathbf{x}_i \mid \mu_0, \Sigma_0).
+\ell(\phi, \mu_k, \Sigma_k) = \sum_{i, y=1}\log\phi+\log\mathcal{N}(\mathbf{x}_i \mid \mu_1, \Sigma_1)+\sum_{i, y=0}\log(1-\phi)+\log\mathcal{N}(\mathbf{x}_i \mid \mu_0, \Sigma_0).
 $$&lt;/p&gt;
 &lt;h3 id=&#34;23-estimator&#34;&gt;2.3 Estimator&lt;/h3&gt;
 &lt;ol&gt;
@@ -150,7 +150,7 @@ $$&lt;/p&gt;
 &lt;p&gt;具體而言，對數比（log-odds）可以展開為：
 $$
 \begin{align}
-\log \frac{P(y=1 \mid \mathbf{x})}{P(y=0 \mid \mathbf{x})} =&amp;amp; \mathbf{x}^T \underbrace{\Sigma^{-1} (\mu_1 - \mu_0)}_{\mathbf{x}^T \mathbf{w}} \\
+\log \frac{P(y=1 \mid \mathbf{x})}{P(y=0 \mid \mathbf{x})} =&amp;amp; \mathbf{x}^T \underbrace{\Sigma^{-1} (\mu_1 - \mu_0)}_{\mathbf{x}^T \mathbf{w}} \\&lt;br&gt;
 &amp;amp;-\frac{1}{2} (\mu_1^T \Sigma^{-1} \mu_1 - \mu_0^T \Sigma^{-1} \mu_0) + \log \frac{\phi}{1-\phi}.
 \end{align}
 $$
@@ -168,7 +168,7 @@ $$
 &lt;p&gt;若我們假設每個類別有自己的共變異數矩陣，則對數比變成：&lt;/p&gt;
 &lt;p&gt;$$
 \begin{align}
-\log \frac{P(y=1 \mid \mathbf{x})}{P(y=0 \mid \mathbf{x})} =&amp;amp;-\frac{1}{2} \Big[ (\mathbf{x}-\mu_1)^T \Sigma_1^{-1} (\mathbf{x}-\mu_1) - (\mathbf{x}-\mu_0)^T \Sigma_0^{-1} (\mathbf{x}-\mu_0) \Big] \\
+\log \frac{P(y=1 \mid \mathbf{x})}{P(y=0 \mid \mathbf{x})} =&amp;amp;-\frac{1}{2} \Big[ (\mathbf{x}-\mu_1)^T \Sigma_1^{-1} (\mathbf{x}-\mu_1) - (\mathbf{x}-\mu_0)^T \Sigma_0^{-1} (\mathbf{x}-\mu_0) \Big] \\&lt;br&gt;
 &amp;amp; - \frac{1}{2} \log \frac{|\Sigma_1|}{|\Sigma_0|} + \log \frac{\phi}{1-\phi}.
 \end{align}
 $$
@@ -178,9 +178,9 @@ $$
     
     <item>
       <title>高斯判別分析-1</title>
-      <link>http://localhost:1313/post/2025_gaussian_discriminant_analysis/</link>
+      <link>https://teshenglin.github.io/post/2025_gaussian_discriminant_analysis/</link>
       <pubDate>Tue, 23 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/2025_gaussian_discriminant_analysis/</guid>
+      <guid>https://teshenglin.github.io/post/2025_gaussian_discriminant_analysis/</guid>
       <description>&lt;h1 id=&#34;gaussian-discriminant-analysis-gda---1&#34;&gt;Gaussian Discriminant Analysis (GDA) - 1&lt;/h1&gt;
 &lt;h2 id=&#34;1-概述&#34;&gt;1. 概述&lt;/h2&gt;
 &lt;p&gt;高斯判別分析（GDA）是一種&lt;strong&gt;生成式分類模型&lt;/strong&gt;，是機器學習中的概率模型。它假設每個類別的特徵都遵循高斯分佈，並利用貝式定理來進行分類。&lt;/p&gt;
@@ -336,7 +336,7 @@ $$
 &lt;/ul&gt;
 &lt;p&gt;整體而言，GDA 提供了一個直觀、可解釋、機率意義清楚的分類框架，也讓我們清楚看見「生成式模型」與「判別式模型」在思維上的根本差異。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;備註&lt;/strong&gt;：GDA 的數學推導部分請見 
-&lt;a href=&#34;http://localhost:1313/post/2025_gaussian_discriminant_analysis_2&#34;&gt;GDA - 2&lt;/a&gt;。&lt;/p&gt;
+&lt;a href=&#34;https://teshenglin.github.io/post/2025_gaussian_discriminant_analysis_2&#34;&gt;GDA - 2&lt;/a&gt;。&lt;/p&gt;
 </description>
     </item>
     

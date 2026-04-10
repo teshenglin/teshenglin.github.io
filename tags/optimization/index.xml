@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Optimization | Te-Sheng Lin</title>
-    <link>http://localhost:1313/tags/optimization/</link>
-      <atom:link href="http://localhost:1313/tags/optimization/index.xml" rel="self" type="application/rss+xml" />
-    <description>Optimization</description>
+    <title>optimization | Te-Sheng Lin</title>
+    <link>https://teshenglin.github.io/tags/optimization/</link>
+      <atom:link href="https://teshenglin.github.io/tags/optimization/index.xml" rel="self" type="application/rss+xml" />
+    <description>optimization</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 21 Jun 2020 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>http://localhost:1313/images/icon_hu10226378635250344412.png</url>
-      <title>Optimization</title>
-      <link>http://localhost:1313/tags/optimization/</link>
+      <url>https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <title>optimization</title>
+      <link>https://teshenglin.github.io/tags/optimization/</link>
     </image>
     
     <item>
       <title>Sec.10.3 - 極座標曲線家族</title>
-      <link>http://localhost:1313/post/2020_cal_s10p3_ch/</link>
+      <link>https://teshenglin.github.io/post/2020_cal_s10p3_ch/</link>
       <pubDate>Sun, 21 Jun 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/2020_cal_s10p3_ch/</guid>
+      <guid>https://teshenglin.github.io/post/2020_cal_s10p3_ch/</guid>
       <description>&lt;blockquote&gt;
 &lt;p&gt;Laboratory Project in Sec.10.3, Calculus by Stewart
 English version: 
-&lt;a href=&#34;http://localhost:1313/post/2020_cal_s10p3&#34;&gt;Families of Polar Curves&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;https://teshenglin.github.io/post/2020_cal_s10p3&#34;&gt;Families of Polar Curves&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;在這個研究中，你將發現極座標曲線家族有趣又漂亮的形狀。同時，當常數改變時，你也會觀察到曲線形狀的變化。&lt;/p&gt;
 &lt;hr&gt;
@@ -47,10 +47,10 @@ English version:
 &lt;figure&gt;
 
 
-  &lt;a data-fancybox=&#34;&#34; href=&#34;http://localhost:1313/post/figs/2020_cal_s10p3_1.png&#34; &gt;
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://teshenglin.github.io/post/figs/2020_cal_s10p3_1.png&#34; &gt;
 
 
-  &lt;img src=&#34;http://localhost:1313/post/figs/2020_cal_s10p3_1.png&#34; alt=&#34;&#34; width=&#34;400px&#34; &gt;
+  &lt;img src=&#34;https://teshenglin.github.io/post/figs/2020_cal_s10p3_1.png&#34; alt=&#34;&#34; width=&#34;400px&#34; &gt;
 &lt;/a&gt;
 
 
@@ -75,10 +75,10 @@ English version:
 &lt;figure&gt;
 
 
-  &lt;a data-fancybox=&#34;&#34; href=&#34;http://localhost:1313/post/figs/2020_cal_s10p3_2.png&#34; &gt;
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://teshenglin.github.io/post/figs/2020_cal_s10p3_2.png&#34; &gt;
 
 
-  &lt;img src=&#34;http://localhost:1313/post/figs/2020_cal_s10p3_2.png&#34; alt=&#34;&#34; width=&#34;400px&#34; &gt;
+  &lt;img src=&#34;https://teshenglin.github.io/post/figs/2020_cal_s10p3_2.png&#34; alt=&#34;&#34; width=&#34;400px&#34; &gt;
 &lt;/a&gt;
 
 
@@ -105,10 +105,10 @@ English version:
 &lt;figure&gt;
 
 
-  &lt;a data-fancybox=&#34;&#34; href=&#34;http://localhost:1313/post/figs/2020_cal_s10p3_3.png&#34; &gt;
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://teshenglin.github.io/post/figs/2020_cal_s10p3_3.png&#34; &gt;
 
 
-  &lt;img src=&#34;http://localhost:1313/post/figs/2020_cal_s10p3_3.png&#34; alt=&#34;&#34; width=&#34;400px&#34; &gt;
+  &lt;img src=&#34;https://teshenglin.github.io/post/figs/2020_cal_s10p3_3.png&#34; alt=&#34;&#34; width=&#34;400px&#34; &gt;
 &lt;/a&gt;
 
 
@@ -124,94 +124,94 @@ English version:
 &lt;li&gt;
 &lt;p&gt;$c=1$, $n=1$
 
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   &lt;figure&gt;
-   
-   
-     &lt;a data-fancybox=&#34;&#34; href=&#34;http://localhost:1313/post/figs/2020_cal_s10p3_4.png&#34; &gt;
-   
-   
-     &lt;img src=&#34;http://localhost:1313/post/figs/2020_cal_s10p3_4.png&#34; alt=&#34;&#34; width=&#34;400px&#34; &gt;
-   &lt;/a&gt;
-   
-   
-   
-   &lt;/figure&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://teshenglin.github.io/post/figs/2020_cal_s10p3_4.png&#34; &gt;
+
+
+  &lt;img src=&#34;https://teshenglin.github.io/post/figs/2020_cal_s10p3_4.png&#34; alt=&#34;&#34; width=&#34;400px&#34; &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
 &lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;$c=1$, $n=2$
 
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   &lt;figure&gt;
-   
-   
-     &lt;a data-fancybox=&#34;&#34; href=&#34;http://localhost:1313/post/figs/2020_cal_s10p3_9.png&#34; &gt;
-   
-   
-     &lt;img src=&#34;http://localhost:1313/post/figs/2020_cal_s10p3_9.png&#34; alt=&#34;&#34; width=&#34;400px&#34; &gt;
-   &lt;/a&gt;
-   
-   
-   
-   &lt;/figure&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://teshenglin.github.io/post/figs/2020_cal_s10p3_9.png&#34; &gt;
+
+
+  &lt;img src=&#34;https://teshenglin.github.io/post/figs/2020_cal_s10p3_9.png&#34; alt=&#34;&#34; width=&#34;400px&#34; &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
 &lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;$c=1$, $n=3$
 
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   &lt;figure&gt;
-   
-   
-     &lt;a data-fancybox=&#34;&#34; href=&#34;http://localhost:1313/post/figs/2020_cal_s10p3_10.png&#34; &gt;
-   
-   
-     &lt;img src=&#34;http://localhost:1313/post/figs/2020_cal_s10p3_10.png&#34; alt=&#34;&#34; width=&#34;400px&#34; &gt;
-   &lt;/a&gt;
-   
-   
-   
-   &lt;/figure&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://teshenglin.github.io/post/figs/2020_cal_s10p3_10.png&#34; &gt;
+
+
+  &lt;img src=&#34;https://teshenglin.github.io/post/figs/2020_cal_s10p3_10.png&#34; alt=&#34;&#34; width=&#34;400px&#34; &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
 &lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -225,34 +225,25 @@ English version:
 &lt;li&gt;
 &lt;p&gt;$n=1$
 
-
-    
-    &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-      &lt;iframe allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&#34; allowfullscreen=&#34;allowfullscreen&#34; loading=&#34;eager&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; src=&#34;https://www.youtube.com/embed/iGdYNHExGj4?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;YouTube video&#34;
-      &gt;&lt;/iframe&gt;
-    &lt;/div&gt;
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/iGdYNHExGj4&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
 &lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;$n=2$
 
-
-    
-    &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-      &lt;iframe allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&#34; allowfullscreen=&#34;allowfullscreen&#34; loading=&#34;eager&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; src=&#34;https://www.youtube.com/embed/pSkd6K3psHw?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;YouTube video&#34;
-      &gt;&lt;/iframe&gt;
-    &lt;/div&gt;
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/pSkd6K3psHw&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
 &lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;$n=3$
 
-
-    
-    &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-      &lt;iframe allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&#34; allowfullscreen=&#34;allowfullscreen&#34; loading=&#34;eager&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; src=&#34;https://www.youtube.com/embed/VXR2MjaYQjc?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;YouTube video&#34;
-      &gt;&lt;/iframe&gt;
-    &lt;/div&gt;
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/VXR2MjaYQjc&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
 &lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
@@ -262,12 +253,9 @@ English version:
 &lt;p&gt;&lt;strong&gt;解答:&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;隨著 $a$ 絕對值增加，圓形逐漸變桃型，當$|a|&amp;gt;1$ ，桃型尖端向內形成另一小環。隨 $a$ 值增加，小環逐漸變大。&lt;/p&gt;
 
-
-    
-    &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-      &lt;iframe allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&#34; allowfullscreen=&#34;allowfullscreen&#34; loading=&#34;eager&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; src=&#34;https://www.youtube.com/embed/wogB45xcXdA?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;YouTube video&#34;
-      &gt;&lt;/iframe&gt;
-    &lt;/div&gt;
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/wogB45xcXdA&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
 
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;問題 4:&lt;/strong&gt;&lt;/p&gt;
@@ -277,23 +265,17 @@ English version:
 &lt;li&gt;
 &lt;p&gt;$a=1$
 
-
-    
-    &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-      &lt;iframe allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&#34; allowfullscreen=&#34;allowfullscreen&#34; loading=&#34;eager&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; src=&#34;https://www.youtube.com/embed/NUpHIoy9dsc?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;YouTube video&#34;
-      &gt;&lt;/iframe&gt;
-    &lt;/div&gt;
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/NUpHIoy9dsc&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
 &lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;$c=1$
 
-
-    
-    &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-      &lt;iframe allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&#34; allowfullscreen=&#34;allowfullscreen&#34; loading=&#34;eager&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; src=&#34;https://www.youtube.com/embed/6kNj_GaEeUo?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;YouTube video&#34;
-      &gt;&lt;/iframe&gt;
-    &lt;/div&gt;
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/6kNj_GaEeUo&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
 &lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
@@ -309,9 +291,9 @@ $$
     
     <item>
       <title>Lagrange Multiplier - 01</title>
-      <link>http://localhost:1313/post/2020_lagrange_multiplier/</link>
+      <link>https://teshenglin.github.io/post/2020_lagrange_multiplier/</link>
       <pubDate>Fri, 12 Jun 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/2020_lagrange_multiplier/</guid>
+      <guid>https://teshenglin.github.io/post/2020_lagrange_multiplier/</guid>
       <description>&lt;blockquote&gt;
 &lt;p&gt;在微積分課程裡我們有學到如何利用 Lagrange multiplier 來解 constraint optimization 問題. 這邊要介紹課本裡沒教的 Lagrangian function.&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -377,11 +359,11 @@ $$&lt;/p&gt;
 &lt;li&gt;
 &lt;p&gt;引進 Lagrangian function 最明顯的好處是&lt;strong&gt;比較好記&lt;/strong&gt;, 不管是&lt;code&gt;記&lt;/code&gt;在頭腦裡或是做筆&lt;code&gt;記&lt;/code&gt;寫下來. 整個問題很輕易的就記成 $\nabla L=0$.&lt;/p&gt;
 &lt;p&gt;當然還有其他更重要的好處, 就是可以推導出所謂的 dual optimization problem: 
-&lt;a href=&#34;http://localhost:1313/post/2020_lagrange_multiplier_2&#34;&gt;Lagrange Multiplier - 02&lt;/a&gt;.&lt;/p&gt;
+&lt;a href=&#34;https://teshenglin.github.io/post/2020_lagrange_multiplier_2&#34;&gt;Lagrange Multiplier - 02&lt;/a&gt;.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;Lagrange multiplier $\lambda$ 感覺起來很像一點用都沒有, 就是為了解出問題過程所引進的虛擬變數. 其實它還是有一點意義的, 可見: 
-&lt;a href=&#34;http://localhost:1313/post/2020_lagrange_multiplier_3&#34;&gt;Lagrange Multiplier - 03&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;https://teshenglin.github.io/post/2020_lagrange_multiplier_3&#34;&gt;Lagrange Multiplier - 03&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr&gt;
@@ -390,9 +372,9 @@ $$&lt;/p&gt;
     
     <item>
       <title>Lagrange Multiplier - 02</title>
-      <link>http://localhost:1313/post/2020_lagrange_multiplier_2/</link>
+      <link>https://teshenglin.github.io/post/2020_lagrange_multiplier_2/</link>
       <pubDate>Fri, 12 Jun 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/2020_lagrange_multiplier_2/</guid>
+      <guid>https://teshenglin.github.io/post/2020_lagrange_multiplier_2/</guid>
       <description>&lt;blockquote&gt;
 &lt;p&gt;這裡我們再多討論一點 Lagrangian function.&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -586,9 +568,9 @@ $$&lt;/p&gt;
     
     <item>
       <title>Lagrange Multiplier - 03</title>
-      <link>http://localhost:1313/post/2020_lagrange_multiplier_3/</link>
+      <link>https://teshenglin.github.io/post/2020_lagrange_multiplier_3/</link>
       <pubDate>Fri, 12 Jun 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/2020_lagrange_multiplier_3/</guid>
+      <guid>https://teshenglin.github.io/post/2020_lagrange_multiplier_3/</guid>
       <description>&lt;blockquote&gt;
 &lt;p&gt;這裡我們討論一下 Lagrange multiplier.&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -715,13 +697,13 @@ $$
     
     <item>
       <title>Sec.5.2 - Area functions</title>
-      <link>http://localhost:1313/post/2020_cal_s5p2/</link>
+      <link>https://teshenglin.github.io/post/2020_cal_s5p2/</link>
       <pubDate>Wed, 10 Jun 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/2020_cal_s5p2/</guid>
+      <guid>https://teshenglin.github.io/post/2020_cal_s5p2/</guid>
       <description>&lt;blockquote&gt;
-&lt;p&gt;Discovery Project in Sec.5.2, Calculus by Stewart &lt;br&gt;
+&lt;p&gt;Discovery Project in Sec.5.2, Calculus by Stewart&lt;br&gt;
 Chinese version 
-&lt;a href=&#34;http://localhost:1313/post/2020_cal_s5p2_ch&#34;&gt;面積函數&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;https://teshenglin.github.io/post/2020_cal_s5p2_ch&#34;&gt;面積函數&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Question 1(a):&lt;/strong&gt;&lt;/p&gt;
@@ -747,10 +729,10 @@ Chinese version
 &lt;figure&gt;
 
 
-  &lt;a data-fancybox=&#34;&#34; href=&#34;http://localhost:1313/post/figs/cals5p2_1.png&#34; &gt;
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://teshenglin.github.io/post/figs/cals5p2_1.png&#34; &gt;
 
 
-  &lt;img src=&#34;http://localhost:1313/post/figs/cals5p2_1.png&#34; alt=&#34;&#34; width=&#34;600px&#34; &gt;
+  &lt;img src=&#34;https://teshenglin.github.io/post/figs/cals5p2_1.png&#34; alt=&#34;&#34; width=&#34;600px&#34; &gt;
 &lt;/a&gt;
 
 
@@ -795,10 +777,10 @@ $A(x)$ represents the area of a region. Sketch that region.&lt;/p&gt;
 &lt;figure&gt;
 
 
-  &lt;a data-fancybox=&#34;&#34; href=&#34;http://localhost:1313/post/figs/cals5p2_2.png&#34; &gt;
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://teshenglin.github.io/post/figs/cals5p2_2.png&#34; &gt;
 
 
-  &lt;img src=&#34;http://localhost:1313/post/figs/cals5p2_2.png&#34; alt=&#34;&#34; width=&#34;600px&#34; &gt;
+  &lt;img src=&#34;https://teshenglin.github.io/post/figs/cals5p2_2.png&#34; alt=&#34;&#34; width=&#34;600px&#34; &gt;
 &lt;/a&gt;
 
 
@@ -814,7 +796,7 @@ A(x) = \int_{-1}^{x} (1+t^2)dt =\frac{t^3-(-1)^3}{3}+x+1
 $$&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Question 2(c):&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Find $A&amp;rsquo;(x)$. What do you notice?&lt;/p&gt;
+&lt;p&gt;Find $A&#39;(x)$. What do you notice?&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;$A’(x) = 1+t^2$, we can found that $A’(x)$ is the upper bound of the area of a region.&lt;/p&gt;
 &lt;hr&gt;
@@ -840,10 +822,10 @@ $$&lt;/p&gt;
 &lt;figure&gt;
 
 
-  &lt;a data-fancybox=&#34;&#34; href=&#34;http://localhost:1313/post/figs/cals5p2_3.png&#34; &gt;
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://teshenglin.github.io/post/figs/cals5p2_3.png&#34; &gt;
 
 
-  &lt;img src=&#34;http://localhost:1313/post/figs/cals5p2_3.png&#34; alt=&#34;&#34; width=&#34;600px&#34; &gt;
+  &lt;img src=&#34;https://teshenglin.github.io/post/figs/cals5p2_3.png&#34; alt=&#34;&#34; width=&#34;600px&#34; &gt;
 &lt;/a&gt;
 
 
@@ -875,10 +857,10 @@ $$&lt;/p&gt;
 &lt;figure&gt;
 
 
-  &lt;a data-fancybox=&#34;&#34; href=&#34;http://localhost:1313/post/figs/cals5p2_4.png&#34; &gt;
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://teshenglin.github.io/post/figs/cals5p2_4.png&#34; &gt;
 
 
-  &lt;img src=&#34;http://localhost:1313/post/figs/cals5p2_4.png&#34; alt=&#34;&#34; width=&#34;600px&#34; &gt;
+  &lt;img src=&#34;https://teshenglin.github.io/post/figs/cals5p2_4.png&#34; alt=&#34;&#34; width=&#34;600px&#34; &gt;
 &lt;/a&gt;
 
 
@@ -912,10 +894,10 @@ $$&lt;/p&gt;
 &lt;figure&gt;
 
 
-  &lt;a data-fancybox=&#34;&#34; href=&#34;http://localhost:1313/post/figs/cals5p2_5.png&#34; &gt;
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://teshenglin.github.io/post/figs/cals5p2_5.png&#34; &gt;
 
 
-  &lt;img src=&#34;http://localhost:1313/post/figs/cals5p2_5.png&#34; alt=&#34;&#34; width=&#34;600px&#34; &gt;
+  &lt;img src=&#34;https://teshenglin.github.io/post/figs/cals5p2_5.png&#34; alt=&#34;&#34; width=&#34;600px&#34; &gt;
 &lt;/a&gt;
 
 
@@ -937,54 +919,54 @@ then $g(x)$ is the area under the graph of $f$ from $0$ to $x$ [until $f(x)$ bec
 &lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;$g(x)$ is the blue line in the graph.&lt;/p&gt;
 &lt;table&gt;
-  &lt;thead&gt;
-      &lt;tr&gt;
-          &lt;th style=&#34;text-align: center&#34;&gt;&lt;strong&gt;x&lt;/strong&gt;&lt;/th&gt;
-          &lt;th style=&#34;text-align: center&#34;&gt;&lt;strong&gt;g(x)&lt;/strong&gt;&lt;/th&gt;
-      &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-      &lt;tr&gt;
-          &lt;td style=&#34;text-align: center&#34;&gt;0.2&lt;/td&gt;
-          &lt;td style=&#34;text-align: center&#34;&gt;0.2&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td style=&#34;text-align: center&#34;&gt;0.4&lt;/td&gt;
-          &lt;td style=&#34;text-align: center&#34;&gt;0.399&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td style=&#34;text-align: center&#34;&gt;0.6&lt;/td&gt;
-          &lt;td style=&#34;text-align: center&#34;&gt;0.5923&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td style=&#34;text-align: center&#34;&gt;0.8&lt;/td&gt;
-          &lt;td style=&#34;text-align: center&#34;&gt;0.7678&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td style=&#34;text-align: center&#34;&gt;1&lt;/td&gt;
-          &lt;td style=&#34;text-align: center&#34;&gt;0.9045&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td style=&#34;text-align: center&#34;&gt;1.2&lt;/td&gt;
-          &lt;td style=&#34;text-align: center&#34;&gt;0.9739&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td style=&#34;text-align: center&#34;&gt;1.4&lt;/td&gt;
-          &lt;td style=&#34;text-align: center&#34;&gt;0.9498&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td style=&#34;text-align: center&#34;&gt;1.6&lt;/td&gt;
-          &lt;td style=&#34;text-align: center&#34;&gt;0.8255&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td style=&#34;text-align: center&#34;&gt;1.8&lt;/td&gt;
-          &lt;td style=&#34;text-align: center&#34;&gt;0.6354&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td style=&#34;text-align: center&#34;&gt;2&lt;/td&gt;
-          &lt;td style=&#34;text-align: center&#34;&gt;0.4615&lt;/td&gt;
-      &lt;/tr&gt;
-  &lt;/tbody&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;&lt;strong&gt;x&lt;/strong&gt;&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;&lt;strong&gt;g(x)&lt;/strong&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;0.2&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;0.2&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;0.4&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;0.399&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;0.6&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;0.5923&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;0.8&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;0.7678&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;1&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;0.9045&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;1.2&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;0.9739&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;1.4&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;0.9498&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;1.6&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;0.8255&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;1.8&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;0.6354&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;2&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;0.4615&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
 &lt;/table&gt;
 
 
@@ -1004,10 +986,10 @@ then $g(x)$ is the area under the graph of $f$ from $0$ to $x$ [until $f(x)$ bec
 &lt;figure&gt;
 
 
-  &lt;a data-fancybox=&#34;&#34; href=&#34;http://localhost:1313/post/figs/cals5p2_6.png&#34; &gt;
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://teshenglin.github.io/post/figs/cals5p2_6.png&#34; &gt;
 
 
-  &lt;img src=&#34;http://localhost:1313/post/figs/cals5p2_6.png&#34; alt=&#34;&#34; width=&#34;600px&#34; &gt;
+  &lt;img src=&#34;https://teshenglin.github.io/post/figs/cals5p2_6.png&#34; alt=&#34;&#34; width=&#34;600px&#34; &gt;
 &lt;/a&gt;
 
 
@@ -1020,50 +1002,50 @@ then $g(x)$ is the area under the graph of $f$ from $0$ to $x$ [until $f(x)$ bec
 &lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;We can found that $g’(x)$ is almost the same with the graph of $f$.&lt;/p&gt;
 &lt;table&gt;
-  &lt;thead&gt;
-      &lt;tr&gt;
-          &lt;th style=&#34;text-align: center&#34;&gt;&lt;strong&gt;x&lt;/strong&gt;&lt;/th&gt;
-          &lt;th style=&#34;text-align: center&#34;&gt;&lt;strong&gt;g’(x)&lt;/strong&gt;&lt;/th&gt;
-      &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-      &lt;tr&gt;
-          &lt;td style=&#34;text-align: center&#34;&gt;0.3&lt;/td&gt;
-          &lt;td style=&#34;text-align: center&#34;&gt;0.995&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td style=&#34;text-align: center&#34;&gt;0.5&lt;/td&gt;
-          &lt;td style=&#34;text-align: center&#34;&gt;0.9665&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td style=&#34;text-align: center&#34;&gt;0.7&lt;/td&gt;
-          &lt;td style=&#34;text-align: center&#34;&gt;0.8775&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td style=&#34;text-align: center&#34;&gt;0.9&lt;/td&gt;
-          &lt;td style=&#34;text-align: center&#34;&gt;0.6835&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td style=&#34;text-align: center&#34;&gt;1.1&lt;/td&gt;
-          &lt;td style=&#34;text-align: center&#34;&gt;0.347&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td style=&#34;text-align: center&#34;&gt;1.3&lt;/td&gt;
-          &lt;td style=&#34;text-align: center&#34;&gt;-0.1205&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td style=&#34;text-align: center&#34;&gt;1.5&lt;/td&gt;
-          &lt;td style=&#34;text-align: center&#34;&gt;-0.6215&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td style=&#34;text-align: center&#34;&gt;1.7&lt;/td&gt;
-          &lt;td style=&#34;text-align: center&#34;&gt;-0.9505&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td style=&#34;text-align: center&#34;&gt;1.9&lt;/td&gt;
-          &lt;td style=&#34;text-align: center&#34;&gt;-0.8695&lt;/td&gt;
-      &lt;/tr&gt;
-  &lt;/tbody&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;&lt;strong&gt;x&lt;/strong&gt;&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;&lt;strong&gt;g’(x)&lt;/strong&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;0.3&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;0.995&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;0.5&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;0.9665&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;0.7&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;0.8775&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;0.9&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;0.6835&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;1.1&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;0.347&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;1.3&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;-0.1205&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;1.5&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;-0.6215&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;1.7&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;-0.9505&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;1.9&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;-0.8695&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
 &lt;/table&gt;
 
 
@@ -1083,10 +1065,10 @@ then $g(x)$ is the area under the graph of $f$ from $0$ to $x$ [until $f(x)$ bec
 &lt;figure&gt;
 
 
-  &lt;a data-fancybox=&#34;&#34; href=&#34;http://localhost:1313/post/figs/cals5p2_7.png&#34; &gt;
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://teshenglin.github.io/post/figs/cals5p2_7.png&#34; &gt;
 
 
-  &lt;img src=&#34;http://localhost:1313/post/figs/cals5p2_7.png&#34; alt=&#34;&#34; width=&#34;600px&#34; &gt;
+  &lt;img src=&#34;https://teshenglin.github.io/post/figs/cals5p2_7.png&#34; alt=&#34;&#34; width=&#34;600px&#34; &gt;
 &lt;/a&gt;
 
 
@@ -1108,13 +1090,13 @@ Based on your result in Problem 1-3, conjecture an expression for $g’(x)$.&lt;
     
     <item>
       <title>Sec.5.2 - 面積函數</title>
-      <link>http://localhost:1313/post/2020_cal_s5p2_ch/</link>
+      <link>https://teshenglin.github.io/post/2020_cal_s5p2_ch/</link>
       <pubDate>Wed, 10 Jun 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/2020_cal_s5p2_ch/</guid>
+      <guid>https://teshenglin.github.io/post/2020_cal_s5p2_ch/</guid>
       <description>&lt;blockquote&gt;
-&lt;p&gt;Discovery Project in Sec.5.2, Calculus by Stewart &lt;br&gt;
+&lt;p&gt;Discovery Project in Sec.5.2, Calculus by Stewart&lt;br&gt;
 英文版請見 
-&lt;a href=&#34;http://localhost:1313/post/2020_cal_s5p2&#34;&gt;Area functions&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;https://teshenglin.github.io/post/2020_cal_s5p2&#34;&gt;Area functions&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Question 1(a):&lt;/strong&gt;&lt;/p&gt;
@@ -1139,10 +1121,10 @@ Based on your result in Problem 1-3, conjecture an expression for $g’(x)$.&lt;
 &lt;figure&gt;
 
 
-  &lt;a data-fancybox=&#34;&#34; href=&#34;http://localhost:1313/post/figs/cals5p2_1.png&#34; &gt;
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://teshenglin.github.io/post/figs/cals5p2_1.png&#34; &gt;
 
 
-  &lt;img src=&#34;http://localhost:1313/post/figs/cals5p2_1.png&#34; alt=&#34;&#34; width=&#34;600px&#34; &gt;
+  &lt;img src=&#34;https://teshenglin.github.io/post/figs/cals5p2_1.png&#34; alt=&#34;&#34; width=&#34;600px&#34; &gt;
 &lt;/a&gt;
 
 
@@ -1186,10 +1168,10 @@ $A(x)$ 代表所圍成的面積， 畫出此區域&lt;/p&gt;
 &lt;figure&gt;
 
 
-  &lt;a data-fancybox=&#34;&#34; href=&#34;http://localhost:1313/post/figs/cals5p2_2.png&#34; &gt;
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://teshenglin.github.io/post/figs/cals5p2_2.png&#34; &gt;
 
 
-  &lt;img src=&#34;http://localhost:1313/post/figs/cals5p2_2.png&#34; alt=&#34;&#34; width=&#34;600px&#34; &gt;
+  &lt;img src=&#34;https://teshenglin.github.io/post/figs/cals5p2_2.png&#34; alt=&#34;&#34; width=&#34;600px&#34; &gt;
 &lt;/a&gt;
 
 
@@ -1205,7 +1187,7 @@ A(x) = \int_{-1}^{x} (1+t^2)dt =\frac{t^3-(-1)^3}{3}+x+1
 $$&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Question 2(c):&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;找出 $A&amp;rsquo;(x)$ ，你察覺到了什麼？&lt;/p&gt;
+&lt;p&gt;找出 $A&#39;(x)$ ，你察覺到了什麼？&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;由 $A’(x) = 1+t^2$ ，我們可以得知 $A’(x)$ 是所圍成區域的拋物線&lt;/p&gt;
 &lt;hr&gt;
@@ -1231,10 +1213,10 @@ $$&lt;/p&gt;
 &lt;figure&gt;
 
 
-  &lt;a data-fancybox=&#34;&#34; href=&#34;http://localhost:1313/post/figs/cals5p2_3.png&#34; &gt;
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://teshenglin.github.io/post/figs/cals5p2_3.png&#34; &gt;
 
 
-  &lt;img src=&#34;http://localhost:1313/post/figs/cals5p2_3.png&#34; alt=&#34;&#34; width=&#34;600px&#34; &gt;
+  &lt;img src=&#34;https://teshenglin.github.io/post/figs/cals5p2_3.png&#34; alt=&#34;&#34; width=&#34;600px&#34; &gt;
 &lt;/a&gt;
 
 
@@ -1266,10 +1248,10 @@ $$&lt;/p&gt;
 &lt;figure&gt;
 
 
-  &lt;a data-fancybox=&#34;&#34; href=&#34;http://localhost:1313/post/figs/cals5p2_4.png&#34; &gt;
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://teshenglin.github.io/post/figs/cals5p2_4.png&#34; &gt;
 
 
-  &lt;img src=&#34;http://localhost:1313/post/figs/cals5p2_4.png&#34; alt=&#34;&#34; width=&#34;600px&#34; &gt;
+  &lt;img src=&#34;https://teshenglin.github.io/post/figs/cals5p2_4.png&#34; alt=&#34;&#34; width=&#34;600px&#34; &gt;
 &lt;/a&gt;
 
 
@@ -1303,10 +1285,10 @@ $$&lt;/p&gt;
 &lt;figure&gt;
 
 
-  &lt;a data-fancybox=&#34;&#34; href=&#34;http://localhost:1313/post/figs/cals5p2_5.png&#34; &gt;
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://teshenglin.github.io/post/figs/cals5p2_5.png&#34; &gt;
 
 
-  &lt;img src=&#34;http://localhost:1313/post/figs/cals5p2_5.png&#34; alt=&#34;&#34; width=&#34;600px&#34; &gt;
+  &lt;img src=&#34;https://teshenglin.github.io/post/figs/cals5p2_5.png&#34; alt=&#34;&#34; width=&#34;600px&#34; &gt;
 &lt;/a&gt;
 
 
@@ -1328,54 +1310,54 @@ $$
 &lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;$g(x)$ 為圖中的藍線&lt;/p&gt;
 &lt;table&gt;
-  &lt;thead&gt;
-      &lt;tr&gt;
-          &lt;th style=&#34;text-align: center&#34;&gt;&lt;strong&gt;x&lt;/strong&gt;&lt;/th&gt;
-          &lt;th style=&#34;text-align: center&#34;&gt;&lt;strong&gt;g(x)&lt;/strong&gt;&lt;/th&gt;
-      &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-      &lt;tr&gt;
-          &lt;td style=&#34;text-align: center&#34;&gt;0.2&lt;/td&gt;
-          &lt;td style=&#34;text-align: center&#34;&gt;0.2&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td style=&#34;text-align: center&#34;&gt;0.4&lt;/td&gt;
-          &lt;td style=&#34;text-align: center&#34;&gt;0.399&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td style=&#34;text-align: center&#34;&gt;0.6&lt;/td&gt;
-          &lt;td style=&#34;text-align: center&#34;&gt;0.5923&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td style=&#34;text-align: center&#34;&gt;0.8&lt;/td&gt;
-          &lt;td style=&#34;text-align: center&#34;&gt;0.7678&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td style=&#34;text-align: center&#34;&gt;1&lt;/td&gt;
-          &lt;td style=&#34;text-align: center&#34;&gt;0.9045&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td style=&#34;text-align: center&#34;&gt;1.2&lt;/td&gt;
-          &lt;td style=&#34;text-align: center&#34;&gt;0.9739&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td style=&#34;text-align: center&#34;&gt;1.4&lt;/td&gt;
-          &lt;td style=&#34;text-align: center&#34;&gt;0.9498&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td style=&#34;text-align: center&#34;&gt;1.6&lt;/td&gt;
-          &lt;td style=&#34;text-align: center&#34;&gt;0.8255&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td style=&#34;text-align: center&#34;&gt;1.8&lt;/td&gt;
-          &lt;td style=&#34;text-align: center&#34;&gt;0.6354&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td style=&#34;text-align: center&#34;&gt;2&lt;/td&gt;
-          &lt;td style=&#34;text-align: center&#34;&gt;0.4615&lt;/td&gt;
-      &lt;/tr&gt;
-  &lt;/tbody&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;&lt;strong&gt;x&lt;/strong&gt;&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;&lt;strong&gt;g(x)&lt;/strong&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;0.2&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;0.2&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;0.4&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;0.399&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;0.6&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;0.5923&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;0.8&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;0.7678&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;1&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;0.9045&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;1.2&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;0.9739&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;1.4&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;0.9498&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;1.6&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;0.8255&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;1.8&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;0.6354&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;2&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;0.4615&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
 &lt;/table&gt;
 
 
@@ -1395,10 +1377,10 @@ $$
 &lt;figure&gt;
 
 
-  &lt;a data-fancybox=&#34;&#34; href=&#34;http://localhost:1313/post/figs/cals5p2_6.png&#34; &gt;
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://teshenglin.github.io/post/figs/cals5p2_6.png&#34; &gt;
 
 
-  &lt;img src=&#34;http://localhost:1313/post/figs/cals5p2_6.png&#34; alt=&#34;&#34; width=&#34;600px&#34; &gt;
+  &lt;img src=&#34;https://teshenglin.github.io/post/figs/cals5p2_6.png&#34; alt=&#34;&#34; width=&#34;600px&#34; &gt;
 &lt;/a&gt;
 
 
@@ -1411,50 +1393,50 @@ $$
 &lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;我們可以看出 $g’(x)$ 幾乎和  $f$ 相同&lt;/p&gt;
 &lt;table&gt;
-  &lt;thead&gt;
-      &lt;tr&gt;
-          &lt;th style=&#34;text-align: center&#34;&gt;&lt;strong&gt;x&lt;/strong&gt;&lt;/th&gt;
-          &lt;th style=&#34;text-align: center&#34;&gt;&lt;strong&gt;g’(x)&lt;/strong&gt;&lt;/th&gt;
-      &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-      &lt;tr&gt;
-          &lt;td style=&#34;text-align: center&#34;&gt;0.3&lt;/td&gt;
-          &lt;td style=&#34;text-align: center&#34;&gt;0.995&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td style=&#34;text-align: center&#34;&gt;0.5&lt;/td&gt;
-          &lt;td style=&#34;text-align: center&#34;&gt;0.9665&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td style=&#34;text-align: center&#34;&gt;0.7&lt;/td&gt;
-          &lt;td style=&#34;text-align: center&#34;&gt;0.8775&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td style=&#34;text-align: center&#34;&gt;0.9&lt;/td&gt;
-          &lt;td style=&#34;text-align: center&#34;&gt;0.6835&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td style=&#34;text-align: center&#34;&gt;1.1&lt;/td&gt;
-          &lt;td style=&#34;text-align: center&#34;&gt;0.347&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td style=&#34;text-align: center&#34;&gt;1.3&lt;/td&gt;
-          &lt;td style=&#34;text-align: center&#34;&gt;-0.1205&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td style=&#34;text-align: center&#34;&gt;1.5&lt;/td&gt;
-          &lt;td style=&#34;text-align: center&#34;&gt;-0.6215&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td style=&#34;text-align: center&#34;&gt;1.7&lt;/td&gt;
-          &lt;td style=&#34;text-align: center&#34;&gt;-0.9505&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td style=&#34;text-align: center&#34;&gt;1.9&lt;/td&gt;
-          &lt;td style=&#34;text-align: center&#34;&gt;-0.8695&lt;/td&gt;
-      &lt;/tr&gt;
-  &lt;/tbody&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;&lt;strong&gt;x&lt;/strong&gt;&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;&lt;strong&gt;g’(x)&lt;/strong&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;0.3&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;0.995&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;0.5&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;0.9665&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;0.7&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;0.8775&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;0.9&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;0.6835&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;1.1&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;0.347&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;1.3&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;-0.1205&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;1.5&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;-0.6215&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;1.7&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;-0.9505&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;1.9&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;-0.8695&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
 &lt;/table&gt;
 
 
@@ -1474,10 +1456,10 @@ $$
 &lt;figure&gt;
 
 
-  &lt;a data-fancybox=&#34;&#34; href=&#34;http://localhost:1313/post/figs/cals5p2_7.png&#34; &gt;
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://teshenglin.github.io/post/figs/cals5p2_7.png&#34; &gt;
 
 
-  &lt;img src=&#34;http://localhost:1313/post/figs/cals5p2_7.png&#34; alt=&#34;&#34; width=&#34;600px&#34; &gt;
+  &lt;img src=&#34;https://teshenglin.github.io/post/figs/cals5p2_7.png&#34; alt=&#34;&#34; width=&#34;600px&#34; &gt;
 &lt;/a&gt;
 
 
@@ -1499,16 +1481,16 @@ $$
     
     <item>
       <title>Sec.3.1 - 建造較佳的雲霄飛車</title>
-      <link>http://localhost:1313/post/2020_cal_s3p1_ch/</link>
+      <link>https://teshenglin.github.io/post/2020_cal_s3p1_ch/</link>
       <pubDate>Fri, 22 May 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/2020_cal_s3p1_ch/</guid>
+      <guid>https://teshenglin.github.io/post/2020_cal_s3p1_ch/</guid>
       <description>&lt;blockquote&gt;
 &lt;p&gt;Applied Project in Sec.3.1, Calculus by Stewart&lt;br&gt;
 英文版請見 
-&lt;a href=&#34;http://localhost:1313/post/2020_cal_s3p1&#34;&gt;Building a better roller coaster&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;https://teshenglin.github.io/post/2020_cal_s3p1&#34;&gt;Building a better roller coaster&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;假設你被要求設計一架新的雲霄飛車的第一個上升與下降。在研究你最喜歡的雲霄飛車的圖片後，你決定新的雲霄飛車先以 0.8 的斜率上升然後再以 -1.6 的斜率下降。你決定以二次曲線 $y=f(x)=ax^2+bx+c$ 的一部份去連接上升與下降的直線 $y=L_1(x)$、$y=L_2(x)$，$x$和$f(x)$的單位為公尺。為了維持軌道的平滑性，因此軌道的方向上不能有明顯的變化，所以你要求兩條直線 $L_1$ 和 $L_2$ 應在交接點 $P$ 和 $Q$ 與二次曲線 $y=f(x)$ 相切（如圖）。你將起點定在 $P$ 以簡化方程式。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://media.cheggcdn.com/media%2Fa1a%2Fa1a173e3-a2b4-46ea-835c-dc7ca2977f57%2FphpNfXwqZ.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://media.cheggcdn.com/media%2Fa1a%2Fa1a173e3-a2b4-46ea-835c-dc7ca2977f57%2FphpNfXwqZ.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;問題 1:&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;(a) 假設 $P$ 和 $Q$ 之間的水平距離是 30 公尺。請寫出以$a$、$b$、和$c$構成的等式使得軌道與軌道之間的接點是平滑的。&lt;/p&gt;
@@ -1537,10 +1519,10 @@ $$
 &lt;figure&gt;
 
 
-  &lt;a data-fancybox=&#34;&#34; href=&#34;http://localhost:1313/post/figs/2020_cal_s4p1_1.jpg&#34; &gt;
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://teshenglin.github.io/post/figs/2020_cal_s4p1_1.jpg&#34; &gt;
 
 
-  &lt;img src=&#34;http://localhost:1313/post/figs/2020_cal_s4p1_1.jpg&#34; alt=&#34;&#34; width=&#34;600px&#34; &gt;
+  &lt;img src=&#34;https://teshenglin.github.io/post/figs/2020_cal_s4p1_1.jpg&#34; alt=&#34;&#34; width=&#34;600px&#34; &gt;
 &lt;/a&gt;
 
 
@@ -1582,10 +1564,10 @@ $$&lt;/p&gt;
 &lt;figure&gt;
 
 
-  &lt;a data-fancybox=&#34;&#34; href=&#34;http://localhost:1313/post/figs/2020_cal_s4p1_2.png&#34; &gt;
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://teshenglin.github.io/post/figs/2020_cal_s4p1_2.png&#34; &gt;
 
 
-  &lt;img src=&#34;http://localhost:1313/post/figs/2020_cal_s4p1_2.png&#34; alt=&#34;&#34; width=&#34;600px&#34; &gt;
+  &lt;img src=&#34;https://teshenglin.github.io/post/figs/2020_cal_s4p1_2.png&#34; alt=&#34;&#34; width=&#34;600px&#34; &gt;
 &lt;/a&gt;
 
 
@@ -1601,13 +1583,13 @@ $$&lt;/p&gt;
     
     <item>
       <title>Sec.6.5 - Where to Sit at the Movies</title>
-      <link>http://localhost:1313/post/2020_cal_s6p5/</link>
+      <link>https://teshenglin.github.io/post/2020_cal_s6p5/</link>
       <pubDate>Thu, 21 May 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/2020_cal_s6p5/</guid>
+      <guid>https://teshenglin.github.io/post/2020_cal_s6p5/</guid>
       <description>&lt;blockquote&gt;
-&lt;p&gt;Applied Project in Sec.6.5, Calculus by Stewart &lt;br&gt;
+&lt;p&gt;Applied Project in Sec.6.5, Calculus by Stewart&lt;br&gt;
 Chinese version 
-&lt;a href=&#34;http://localhost:1313/post/2020_cal_s6p5_ch&#34;&gt;電影院要坐哪?&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;https://teshenglin.github.io/post/2020_cal_s6p5_ch&#34;&gt;電影院要坐哪?&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;A movie theater has a screen that is positioned $3$m off the floor and is $10$m high. The first row of seats is placed $3$m from the screen and the rows are set $1$m apart. The floor of the seating area is inclined at an angle of $\alpha=20^{\circ}$ above the horizontal and the distance up the incline that you sit is $x$. The theater has $21$ rows of seats, so $0 \leq x \leq 20$. Suppose you decide that the best place to sit is in the row where the angle $\theta$ subtended by the screen at your eyes is a maximum. Let&amp;rsquo;s also suppose that your eye are $1.2$m above the floor.&lt;/p&gt;
 &lt;hr&gt;
@@ -1655,82 +1637,82 @@ $$&lt;/p&gt;
 &lt;/figure&gt;
 
 &lt;table&gt;
-  &lt;thead&gt;
-      &lt;tr&gt;
-          &lt;th&gt;$x$&lt;/th&gt;
-          &lt;th&gt;$\theta$&lt;/th&gt;
-          &lt;th&gt;$x$&lt;/th&gt;
-          &lt;th&gt;$\theta$&lt;/th&gt;
-      &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-      &lt;tr&gt;
-          &lt;td&gt;0&lt;/td&gt;
-          &lt;td&gt;0.781414&lt;/td&gt;
-          &lt;td&gt;11&lt;/td&gt;
-          &lt;td&gt;0.688473&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;1&lt;/td&gt;
-          &lt;td&gt;0.885175&lt;/td&gt;
-          &lt;td&gt;12&lt;/td&gt;
-          &lt;td&gt;0.654426&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;2&lt;/td&gt;
-          &lt;td&gt;0.932324&lt;/td&gt;
-          &lt;td&gt;13&lt;/td&gt;
-          &lt;td&gt;0.622381&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;3&lt;/td&gt;
-          &lt;td&gt;0.943356&lt;/td&gt;
-          &lt;td&gt;14&lt;/td&gt;
-          &lt;td&gt;0.592377&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;4&lt;/td&gt;
-          &lt;td&gt;0.932085&lt;/td&gt;
-          &lt;td&gt;15&lt;/td&gt;
-          &lt;td&gt;0.564380&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;5&lt;/td&gt;
-          &lt;td&gt;0.907358&lt;/td&gt;
-          &lt;td&gt;16&lt;/td&gt;
-          &lt;td&gt;0.538310&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;6&lt;/td&gt;
-          &lt;td&gt;0.874860&lt;/td&gt;
-          &lt;td&gt;17&lt;/td&gt;
-          &lt;td&gt;0.514061&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;7&lt;/td&gt;
-          &lt;td&gt;0.838292&lt;/td&gt;
-          &lt;td&gt;18&lt;/td&gt;
-          &lt;td&gt;0.491514&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;8&lt;/td&gt;
-          &lt;td&gt;0.800070&lt;/td&gt;
-          &lt;td&gt;19&lt;/td&gt;
-          &lt;td&gt;0.470546&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;9&lt;/td&gt;
-          &lt;td&gt;0.761763&lt;/td&gt;
-          &lt;td&gt;20&lt;/td&gt;
-          &lt;td&gt;0.451038&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;10&lt;/td&gt;
-          &lt;td&gt;0.724364&lt;/td&gt;
-          &lt;td&gt;&lt;/td&gt;
-          &lt;td&gt;&lt;/td&gt;
-      &lt;/tr&gt;
-  &lt;/tbody&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;$x$&lt;/th&gt;
+&lt;th&gt;$\theta$&lt;/th&gt;
+&lt;th&gt;$x$&lt;/th&gt;
+&lt;th&gt;$\theta$&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;td&gt;0.781414&lt;/td&gt;
+&lt;td&gt;11&lt;/td&gt;
+&lt;td&gt;0.688473&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;0.885175&lt;/td&gt;
+&lt;td&gt;12&lt;/td&gt;
+&lt;td&gt;0.654426&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;td&gt;0.932324&lt;/td&gt;
+&lt;td&gt;13&lt;/td&gt;
+&lt;td&gt;0.622381&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;3&lt;/td&gt;
+&lt;td&gt;0.943356&lt;/td&gt;
+&lt;td&gt;14&lt;/td&gt;
+&lt;td&gt;0.592377&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;4&lt;/td&gt;
+&lt;td&gt;0.932085&lt;/td&gt;
+&lt;td&gt;15&lt;/td&gt;
+&lt;td&gt;0.564380&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;5&lt;/td&gt;
+&lt;td&gt;0.907358&lt;/td&gt;
+&lt;td&gt;16&lt;/td&gt;
+&lt;td&gt;0.538310&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;6&lt;/td&gt;
+&lt;td&gt;0.874860&lt;/td&gt;
+&lt;td&gt;17&lt;/td&gt;
+&lt;td&gt;0.514061&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;7&lt;/td&gt;
+&lt;td&gt;0.838292&lt;/td&gt;
+&lt;td&gt;18&lt;/td&gt;
+&lt;td&gt;0.491514&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;8&lt;/td&gt;
+&lt;td&gt;0.800070&lt;/td&gt;
+&lt;td&gt;19&lt;/td&gt;
+&lt;td&gt;0.470546&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;9&lt;/td&gt;
+&lt;td&gt;0.761763&lt;/td&gt;
+&lt;td&gt;20&lt;/td&gt;
+&lt;td&gt;0.451038&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;10&lt;/td&gt;
+&lt;td&gt;0.724364&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
 &lt;/table&gt;
 &lt;p&gt;The maximum of $\theta$ is 0.943356, you should sit at third row.&lt;/p&gt;
 &lt;hr&gt;
@@ -1811,13 +1793,13 @@ $$&lt;/p&gt;
     
     <item>
       <title>Sec.6.5 - 電影院要坐哪?</title>
-      <link>http://localhost:1313/post/2020_cal_s6p5_ch/</link>
+      <link>https://teshenglin.github.io/post/2020_cal_s6p5_ch/</link>
       <pubDate>Thu, 21 May 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/2020_cal_s6p5_ch/</guid>
+      <guid>https://teshenglin.github.io/post/2020_cal_s6p5_ch/</guid>
       <description>&lt;blockquote&gt;
-&lt;p&gt;Applied Project in Sec.6.5, Calculus by Stewart &lt;br&gt;
+&lt;p&gt;Applied Project in Sec.6.5, Calculus by Stewart&lt;br&gt;
 English version 
-&lt;a href=&#34;http://localhost:1313/post/2020_cal_s6p5&#34;&gt;Where to Sit at the Movies?&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;https://teshenglin.github.io/post/2020_cal_s6p5&#34;&gt;Where to Sit at the Movies?&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;有家電影院的螢幕高10米且離地3公尺，第一排的位子距離螢幕3公尺且每排間隔1公尺，座位區的地板以與水平20度夾角向上傾斜，而你的座位在斜坡上的距離是 $x$。電影院有21排位子，因此 $0 \leq x \leq 20$。假設你認為最好的位子是眼睛與螢幕上下緣連線的夾角 $\theta$ 為最大值時，同時假設你的眼睛距離地面1.2公尺。&lt;/p&gt;
 &lt;hr&gt;
@@ -1865,82 +1847,82 @@ $$&lt;/p&gt;
 &lt;/figure&gt;
 
 &lt;table&gt;
-  &lt;thead&gt;
-      &lt;tr&gt;
-          &lt;th&gt;$x$&lt;/th&gt;
-          &lt;th&gt;$\theta$&lt;/th&gt;
-          &lt;th&gt;$x$&lt;/th&gt;
-          &lt;th&gt;$\theta$&lt;/th&gt;
-      &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-      &lt;tr&gt;
-          &lt;td&gt;0&lt;/td&gt;
-          &lt;td&gt;0.781414&lt;/td&gt;
-          &lt;td&gt;11&lt;/td&gt;
-          &lt;td&gt;0.688473&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;1&lt;/td&gt;
-          &lt;td&gt;0.885175&lt;/td&gt;
-          &lt;td&gt;12&lt;/td&gt;
-          &lt;td&gt;0.654426&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;2&lt;/td&gt;
-          &lt;td&gt;0.932324&lt;/td&gt;
-          &lt;td&gt;13&lt;/td&gt;
-          &lt;td&gt;0.622381&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;3&lt;/td&gt;
-          &lt;td&gt;0.943356&lt;/td&gt;
-          &lt;td&gt;14&lt;/td&gt;
-          &lt;td&gt;0.592377&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;4&lt;/td&gt;
-          &lt;td&gt;0.932085&lt;/td&gt;
-          &lt;td&gt;15&lt;/td&gt;
-          &lt;td&gt;0.564380&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;5&lt;/td&gt;
-          &lt;td&gt;0.907358&lt;/td&gt;
-          &lt;td&gt;16&lt;/td&gt;
-          &lt;td&gt;0.538310&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;6&lt;/td&gt;
-          &lt;td&gt;0.874860&lt;/td&gt;
-          &lt;td&gt;17&lt;/td&gt;
-          &lt;td&gt;0.514061&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;7&lt;/td&gt;
-          &lt;td&gt;0.838292&lt;/td&gt;
-          &lt;td&gt;18&lt;/td&gt;
-          &lt;td&gt;0.491514&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;8&lt;/td&gt;
-          &lt;td&gt;0.800070&lt;/td&gt;
-          &lt;td&gt;19&lt;/td&gt;
-          &lt;td&gt;0.470546&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;9&lt;/td&gt;
-          &lt;td&gt;0.761763&lt;/td&gt;
-          &lt;td&gt;20&lt;/td&gt;
-          &lt;td&gt;0.451038&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;10&lt;/td&gt;
-          &lt;td&gt;0.724364&lt;/td&gt;
-          &lt;td&gt;&lt;/td&gt;
-          &lt;td&gt;&lt;/td&gt;
-      &lt;/tr&gt;
-  &lt;/tbody&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;$x$&lt;/th&gt;
+&lt;th&gt;$\theta$&lt;/th&gt;
+&lt;th&gt;$x$&lt;/th&gt;
+&lt;th&gt;$\theta$&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;td&gt;0.781414&lt;/td&gt;
+&lt;td&gt;11&lt;/td&gt;
+&lt;td&gt;0.688473&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;0.885175&lt;/td&gt;
+&lt;td&gt;12&lt;/td&gt;
+&lt;td&gt;0.654426&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;td&gt;0.932324&lt;/td&gt;
+&lt;td&gt;13&lt;/td&gt;
+&lt;td&gt;0.622381&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;3&lt;/td&gt;
+&lt;td&gt;0.943356&lt;/td&gt;
+&lt;td&gt;14&lt;/td&gt;
+&lt;td&gt;0.592377&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;4&lt;/td&gt;
+&lt;td&gt;0.932085&lt;/td&gt;
+&lt;td&gt;15&lt;/td&gt;
+&lt;td&gt;0.564380&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;5&lt;/td&gt;
+&lt;td&gt;0.907358&lt;/td&gt;
+&lt;td&gt;16&lt;/td&gt;
+&lt;td&gt;0.538310&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;6&lt;/td&gt;
+&lt;td&gt;0.874860&lt;/td&gt;
+&lt;td&gt;17&lt;/td&gt;
+&lt;td&gt;0.514061&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;7&lt;/td&gt;
+&lt;td&gt;0.838292&lt;/td&gt;
+&lt;td&gt;18&lt;/td&gt;
+&lt;td&gt;0.491514&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;8&lt;/td&gt;
+&lt;td&gt;0.800070&lt;/td&gt;
+&lt;td&gt;19&lt;/td&gt;
+&lt;td&gt;0.470546&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;9&lt;/td&gt;
+&lt;td&gt;0.761763&lt;/td&gt;
+&lt;td&gt;20&lt;/td&gt;
+&lt;td&gt;0.451038&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;10&lt;/td&gt;
+&lt;td&gt;0.724364&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
 &lt;/table&gt;
 &lt;p&gt;$\theta$ 的最大值為 $0.943356$，你應該坐在第3排的位置。&lt;/p&gt;
 &lt;hr&gt;
@@ -2022,13 +2004,13 @@ $$&lt;/p&gt;
     
     <item>
       <title>Sec.11.11 - Radiation From The Stars</title>
-      <link>http://localhost:1313/post/2020_cal_s11p11/</link>
+      <link>https://teshenglin.github.io/post/2020_cal_s11p11/</link>
       <pubDate>Sun, 26 Apr 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/2020_cal_s11p11/</guid>
+      <guid>https://teshenglin.github.io/post/2020_cal_s11p11/</guid>
       <description>&lt;blockquote&gt;
-&lt;p&gt;Applied Project in Sec.11.11, Calculus by Stewart &lt;br&gt;
+&lt;p&gt;Applied Project in Sec.11.11, Calculus by Stewart&lt;br&gt;
 Chinese version 
-&lt;a href=&#34;http://localhost:1313/post/2020_cal_s11p11_ch&#34;&gt;恆星的輻射&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;https://teshenglin.github.io/post/2020_cal_s11p11_ch&#34;&gt;恆星的輻射&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;Any object emits radiation when heated. A &lt;strong&gt;blackbody&lt;/strong&gt; is a system that absorbs all the radiation that falls on it. For instance, a matte black surface or a large cavity with a small hole in its wall (like a blastfurnace) is a blackbody and emits blackbody radiation. Even the radiation from the sun is close to being a blackbody radiation.&lt;/p&gt;
 &lt;p&gt;Proposed in the late 19th century, the Rayleigh-Jeans Law expresses the energy density of blackbody radiation of wavelength $\lambda$ as
@@ -2087,10 +2069,10 @@ $$&lt;/p&gt;
 &lt;figure&gt;
 
 
-  &lt;a data-fancybox=&#34;&#34; href=&#34;http://localhost:1313/post/figs/2020_cal_s11p11_2.png&#34; &gt;
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://teshenglin.github.io/post/figs/2020_cal_s11p11_2.png&#34; &gt;
 
 
-  &lt;img src=&#34;http://localhost:1313/post/figs/2020_cal_s11p11_2.png&#34; alt=&#34;&#34; width=&#34;600px&#34; &gt;
+  &lt;img src=&#34;https://teshenglin.github.io/post/figs/2020_cal_s11p11_2.png&#34; alt=&#34;&#34; width=&#34;600px&#34; &gt;
 &lt;/a&gt;
 
 
@@ -2132,10 +2114,10 @@ $$&lt;/p&gt;
 &lt;figure&gt;
 
 
-  &lt;a data-fancybox=&#34;&#34; href=&#34;http://localhost:1313/post/figs/2020_cal_s11p11_1.png&#34; &gt;
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://teshenglin.github.io/post/figs/2020_cal_s11p11_1.png&#34; &gt;
 
 
-  &lt;img src=&#34;http://localhost:1313/post/figs/2020_cal_s11p11_1.png&#34; alt=&#34;&#34; width=&#34;600px&#34; &gt;
+  &lt;img src=&#34;https://teshenglin.github.io/post/figs/2020_cal_s11p11_1.png&#34; alt=&#34;&#34; width=&#34;600px&#34; &gt;
 &lt;/a&gt;
 
 
@@ -2148,16 +2130,16 @@ $$&lt;/p&gt;
     
     <item>
       <title>Sec.8.3 - Complementary Coffee Cups</title>
-      <link>http://localhost:1313/post/2020_cal_s8p3_ch/</link>
+      <link>https://teshenglin.github.io/post/2020_cal_s8p3_ch/</link>
       <pubDate>Thu, 23 Apr 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/2020_cal_s8p3_ch/</guid>
+      <guid>https://teshenglin.github.io/post/2020_cal_s8p3_ch/</guid>
       <description>&lt;blockquote&gt;
 &lt;p&gt;Applied Project in Sec.8.3, Calculus by Stewart
 英文版請見 
-&lt;a href=&#34;http://localhost:1313/post/2020_cal_s8p3&#34;&gt;Complementary Coffee Cups&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;https://teshenglin.github.io/post/2020_cal_s8p3&#34;&gt;Complementary Coffee Cups&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;假設你選擇了兩種形狀的咖啡杯，一種向外彎曲，另一種向內彎曲，你會注意到它們具有相同的高度，並且形狀可以緊密地貼合在一起。你想知道哪個杯子可以容納更多咖啡。當然，你可以將一個杯子裝滿水，然後倒入另一個杯子中來測量容量。但是，作為一名微積分學生，你決定採用一種更數學的方法：忽略手柄，會發現兩個杯子的表面可由旋轉而得，因此可以旋轉體計算咖啡杯之體積。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://media.cheggcdn.com/media%2Ff10%2Ff10af759-2600-468a-af6c-20a3854ee028%2FphpbqXd4u.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://media.cheggcdn.com/media%2Ff10%2Ff10af759-2600-468a-af6c-20a3854ee028%2FphpbqXd4u.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;問題 1:&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;假定杯子的高度為 $h$，杯子A的形狀可由 $x=f(y)$ 對 $y$ 軸旋轉而得， 而杯子B則是由同一個曲線對 $x=k$ 旋轉而得。 求$k$使得兩個杯子可裝的咖啡量一樣多。&lt;/p&gt;
@@ -2189,13 +2171,13 @@ $$&lt;/p&gt;
     
     <item>
       <title>Sec.4.1 - 彩虹的微積分學</title>
-      <link>http://localhost:1313/post/2020_cal_s4p1_ch/</link>
+      <link>https://teshenglin.github.io/post/2020_cal_s4p1_ch/</link>
       <pubDate>Sat, 11 Apr 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/2020_cal_s4p1_ch/</guid>
+      <guid>https://teshenglin.github.io/post/2020_cal_s4p1_ch/</guid>
       <description>&lt;blockquote&gt;
-&lt;p&gt;Applied Project in Sec.4.1, Calculus by Stewart &lt;br&gt;
+&lt;p&gt;Applied Project in Sec.4.1, Calculus by Stewart&lt;br&gt;
 英文版請見 
-&lt;a href=&#34;http://localhost:1313/post/2020_cal_s4p1&#34;&gt;The Calculus of ranbows&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;https://teshenglin.github.io/post/2020_cal_s4p1&#34;&gt;The Calculus of ranbows&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;當陽光照射到半空中的雨滴，光線被散射就會形成彩虹。彩虹自古以來就被人類著迷著，且早在亞里士多德時代以來激發許多人們進行科學的探討，並嘗試找到解釋。在這份專題裡，我們使用笛卡爾和牛頓的思想來解釋彩虹的形狀、位置和顏色。&lt;/p&gt;
 &lt;hr&gt;
@@ -2222,10 +2204,10 @@ $$&lt;/p&gt;
 &lt;figure&gt;
 
 
-  &lt;a data-fancybox=&#34;&#34; href=&#34;http://localhost:1313/post/figs/2020_cal_s4p1_01.jpg&#34; &gt;
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://teshenglin.github.io/post/figs/2020_cal_s4p1_01.jpg&#34; &gt;
 
 
-  &lt;img src=&#34;http://localhost:1313/post/figs/2020_cal_s4p1_01.jpg&#34; alt=&#34;&#34; width=&#34;300px&#34; &gt;
+  &lt;img src=&#34;https://teshenglin.github.io/post/figs/2020_cal_s4p1_01.jpg&#34; alt=&#34;&#34; width=&#34;300px&#34; &gt;
 &lt;/a&gt;
 
 
@@ -2255,10 +2237,10 @@ $$&lt;/p&gt;
 &lt;figure&gt;
 
 
-  &lt;a data-fancybox=&#34;&#34; href=&#34;http://localhost:1313/post/figs/2020_cal_s4p1_02.jpg&#34; &gt;
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://teshenglin.github.io/post/figs/2020_cal_s4p1_02.jpg&#34; &gt;
 
 
-  &lt;img src=&#34;http://localhost:1313/post/figs/2020_cal_s4p1_02.jpg&#34; alt=&#34;&#34; width=&#34;300px&#34; &gt;
+  &lt;img src=&#34;https://teshenglin.github.io/post/figs/2020_cal_s4p1_02.jpg&#34; alt=&#34;&#34; width=&#34;300px&#34; &gt;
 &lt;/a&gt;
 
 
@@ -2290,10 +2272,10 @@ $$&lt;/p&gt;
 &lt;figure&gt;
 
 
-  &lt;a data-fancybox=&#34;&#34; href=&#34;http://localhost:1313/post/figs/2020_cal_s4p1_03.jpg&#34; &gt;
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://teshenglin.github.io/post/figs/2020_cal_s4p1_03.jpg&#34; &gt;
 
 
-  &lt;img src=&#34;http://localhost:1313/post/figs/2020_cal_s4p1_03.jpg&#34; alt=&#34;&#34; width=&#34;300px&#34; &gt;
+  &lt;img src=&#34;https://teshenglin.github.io/post/figs/2020_cal_s4p1_03.jpg&#34; alt=&#34;&#34; width=&#34;300px&#34; &gt;
 &lt;/a&gt;
 
 
@@ -2320,10 +2302,10 @@ $$&lt;/p&gt;
 &lt;figure&gt;
 
 
-  &lt;a data-fancybox=&#34;&#34; href=&#34;http://localhost:1313/post/figs/2020_cal_s4p1_04.jpg&#34; &gt;
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://teshenglin.github.io/post/figs/2020_cal_s4p1_04.jpg&#34; &gt;
 
 
-  &lt;img src=&#34;http://localhost:1313/post/figs/2020_cal_s4p1_04.jpg&#34; alt=&#34;&#34; width=&#34;300px&#34; &gt;
+  &lt;img src=&#34;https://teshenglin.github.io/post/figs/2020_cal_s4p1_04.jpg&#34; alt=&#34;&#34; width=&#34;300px&#34; &gt;
 &lt;/a&gt;
 
 
@@ -2343,13 +2325,13 @@ $$&lt;/p&gt;
     
     <item>
       <title>Sec.4.1 - The Calculus of ranbows</title>
-      <link>http://localhost:1313/post/2020_cal_s4p1/</link>
+      <link>https://teshenglin.github.io/post/2020_cal_s4p1/</link>
       <pubDate>Mon, 23 Mar 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/2020_cal_s4p1/</guid>
+      <guid>https://teshenglin.github.io/post/2020_cal_s4p1/</guid>
       <description>&lt;blockquote&gt;
-&lt;p&gt;Applied Project in Sec.4.1, Calculus by Stewart &lt;br&gt;
+&lt;p&gt;Applied Project in Sec.4.1, Calculus by Stewart&lt;br&gt;
 Chinese version: 
-&lt;a href=&#34;http://localhost:1313/post/2020_cal_s4p1_ch&#34;&gt;彩虹的微積分學&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;https://teshenglin.github.io/post/2020_cal_s4p1_ch&#34;&gt;彩虹的微積分學&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;Rainbows are created when raindrops scatter sunlight. They have fascinated mankind since ancient times and have inspired attempts at scientific explanation since the time of Aristotle. In this project we use the ideas of Descartes and Newton to explain the shape, location, and colors of rainbows.&lt;/p&gt;
 &lt;hr&gt;
@@ -2376,10 +2358,10 @@ $$&lt;/p&gt;
 &lt;figure&gt;
 
 
-  &lt;a data-fancybox=&#34;&#34; href=&#34;http://localhost:1313/post/figs/2020_cal_s4p1_01.jpg&#34; &gt;
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://teshenglin.github.io/post/figs/2020_cal_s4p1_01.jpg&#34; &gt;
 
 
-  &lt;img src=&#34;http://localhost:1313/post/figs/2020_cal_s4p1_01.jpg&#34; alt=&#34;&#34; width=&#34;300px&#34; &gt;
+  &lt;img src=&#34;https://teshenglin.github.io/post/figs/2020_cal_s4p1_01.jpg&#34; alt=&#34;&#34; width=&#34;300px&#34; &gt;
 &lt;/a&gt;
 
 
@@ -2390,7 +2372,7 @@ $$&lt;/p&gt;
 &lt;!-- raw HTML omitted --&gt;
 &lt;!-- raw HTML omitted --&gt;
 &lt;hr&gt;
-&lt;p&gt;The significance of the minimum deviation is that when $\alpha\approx 59.4^{\circ}$ we have $D&amp;rsquo;(\alpha)\approx 0$, so $\frac{\Delta D}{\Delta \alpha}\approx 0.$ This means that many  rays with $\alpha\approx 59.4^{\circ}$ become deviated by approximately the same amount. It it the &lt;em&gt;concentration&lt;/em&gt; of rays coming from near the direction of minimum deviation that creates the brightness of the primary rainbow. The figure at the left shows that the angle of elevation from the observer up to the highest point on the rainbow is $180^{\circ}- 138^{\circ} = 42^{\circ}$. (This angle is called the &lt;em&gt;rainbow angle&lt;/em&gt; .)&lt;/p&gt;
+&lt;p&gt;The significance of the minimum deviation is that when $\alpha\approx 59.4^{\circ}$ we have $D&#39;(\alpha)\approx 0$, so $\frac{\Delta D}{\Delta \alpha}\approx 0.$ This means that many  rays with $\alpha\approx 59.4^{\circ}$ become deviated by approximately the same amount. It it the &lt;em&gt;concentration&lt;/em&gt; of rays coming from near the direction of minimum deviation that creates the brightness of the primary rainbow. The figure at the left shows that the angle of elevation from the observer up to the highest point on the rainbow is $180^{\circ}- 138^{\circ} = 42^{\circ}$. (This angle is called the &lt;em&gt;rainbow angle&lt;/em&gt; .)&lt;/p&gt;
 
 
 
@@ -2409,10 +2391,10 @@ $$&lt;/p&gt;
 &lt;figure&gt;
 
 
-  &lt;a data-fancybox=&#34;&#34; href=&#34;http://localhost:1313/post/figs/2020_cal_s4p1_02.jpg&#34; &gt;
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://teshenglin.github.io/post/figs/2020_cal_s4p1_02.jpg&#34; &gt;
 
 
-  &lt;img src=&#34;http://localhost:1313/post/figs/2020_cal_s4p1_02.jpg&#34; alt=&#34;&#34; width=&#34;300px&#34; &gt;
+  &lt;img src=&#34;https://teshenglin.github.io/post/figs/2020_cal_s4p1_02.jpg&#34; alt=&#34;&#34; width=&#34;300px&#34; &gt;
 &lt;/a&gt;
 
 
@@ -2444,10 +2426,10 @@ $$&lt;/p&gt;
 &lt;figure&gt;
 
 
-  &lt;a data-fancybox=&#34;&#34; href=&#34;http://localhost:1313/post/figs/2020_cal_s4p1_03.jpg&#34; &gt;
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://teshenglin.github.io/post/figs/2020_cal_s4p1_03.jpg&#34; &gt;
 
 
-  &lt;img src=&#34;http://localhost:1313/post/figs/2020_cal_s4p1_03.jpg&#34; alt=&#34;&#34; width=&#34;300px&#34; &gt;
+  &lt;img src=&#34;https://teshenglin.github.io/post/figs/2020_cal_s4p1_03.jpg&#34; alt=&#34;&#34; width=&#34;300px&#34; &gt;
 &lt;/a&gt;
 
 
@@ -2474,10 +2456,10 @@ $$&lt;/p&gt;
 &lt;figure&gt;
 
 
-  &lt;a data-fancybox=&#34;&#34; href=&#34;http://localhost:1313/post/figs/2020_cal_s4p1_04.jpg&#34; &gt;
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://teshenglin.github.io/post/figs/2020_cal_s4p1_04.jpg&#34; &gt;
 
 
-  &lt;img src=&#34;http://localhost:1313/post/figs/2020_cal_s4p1_04.jpg&#34; alt=&#34;&#34; width=&#34;300px&#34; &gt;
+  &lt;img src=&#34;https://teshenglin.github.io/post/figs/2020_cal_s4p1_04.jpg&#34; alt=&#34;&#34; width=&#34;300px&#34; &gt;
 &lt;/a&gt;
 
 
@@ -2497,16 +2479,16 @@ $$&lt;/p&gt;
     
     <item>
       <title>Sec.4.7 - 飛機和鳥：能量最小化</title>
-      <link>http://localhost:1313/post/2020_cal_s4p7_2_ch/</link>
+      <link>https://teshenglin.github.io/post/2020_cal_s4p7_2_ch/</link>
       <pubDate>Mon, 23 Mar 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/2020_cal_s4p7_2_ch/</guid>
+      <guid>https://teshenglin.github.io/post/2020_cal_s4p7_2_ch/</guid>
       <description>&lt;blockquote&gt;
-&lt;p&gt;Applied Project 2 in Sec.4.7, Calculus by Stewart &lt;br&gt;
+&lt;p&gt;Applied Project 2 in Sec.4.7, Calculus by Stewart&lt;br&gt;
 英文版請見 
-&lt;a href=&#34;http://localhost:1313/post/2019_cal_s4p7_2&#34;&gt;Planes and birds: Minimizing energy&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;https://teshenglin.github.io/post/2019_cal_s4p7_2&#34;&gt;Planes and birds: Minimizing energy&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;像雀科這樣的小鳥滑翔時，會在拍打翅膀和保持翅膀折疊之間進行交替。在這裡，我們觀察這種現象並試著找出鳥類拍動翅膀的頻率。而其中的一些原理與固定翼飛機相同，因此我們先依照飛機的速度去考慮其所需的功率及能量。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://media.cheggcdn.com/study/ad0/ad0cd741-aa85-4256-a058-b49a8ef42198/715030-4.7-4IAP21.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://media.cheggcdn.com/study/ad0/ad0cd741-aa85-4256-a058-b49a8ef42198/715030-4.7-4IAP21.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;問題 1:&lt;/strong&gt; 在速度為 $v$ 時，推動飛機前進所需的功率為
 $$
@@ -2570,16 +2552,16 @@ $$&lt;/p&gt;
     
     <item>
       <title>Sec.8.3 - Complementary Coffee Cups</title>
-      <link>http://localhost:1313/post/2020_cal_s8p3/</link>
+      <link>https://teshenglin.github.io/post/2020_cal_s8p3/</link>
       <pubDate>Wed, 18 Mar 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/2020_cal_s8p3/</guid>
+      <guid>https://teshenglin.github.io/post/2020_cal_s8p3/</guid>
       <description>&lt;blockquote&gt;
 &lt;p&gt;Applied Project in Sec.8.3, Calculus by Stewart
 Chinese version: 
-&lt;a href=&#34;http://localhost:1313/post/2020_cal_s8p3_ch&#34;&gt;Complementary Coffee Cups&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;https://teshenglin.github.io/post/2020_cal_s8p3_ch&#34;&gt;Complementary Coffee Cups&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;Suppose you have a choice of two coffee cups of the type shown, one that bends outward and one inward, and you notice that they have the same height and their shapes fit together snugly. You wonder which cup holds more coffee. Of corse you could fill one cup with water and pour it into the other one but, being a calculus student, you decide on a more mathematical approach. Ignoring the handles, you observe that both cups are surfaces of revolution, so you can think of the coffee as a volume of revolution.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://media.cheggcdn.com/media%2Ff10%2Ff10af759-2600-468a-af6c-20a3854ee028%2FphpbqXd4u.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://media.cheggcdn.com/media%2Ff10%2Ff10af759-2600-468a-af6c-20a3854ee028%2FphpbqXd4u.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Question 1:&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Suppose the cups have height $h$, cup A is formed by rotating the curve $x=f(y)$ about the $y$-axis, and cup B is formed by rotating the same curve about the $x=k$. Find the value of $k$ such that two cups hold the same amount of coffee.&lt;/p&gt;
@@ -2611,16 +2593,16 @@ $$&lt;/p&gt;
     
     <item>
       <title>Sec.3.1 - Building a better roller coaster</title>
-      <link>http://localhost:1313/post/2020_cal_s3p1/</link>
+      <link>https://teshenglin.github.io/post/2020_cal_s3p1/</link>
       <pubDate>Wed, 11 Mar 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/2020_cal_s3p1/</guid>
+      <guid>https://teshenglin.github.io/post/2020_cal_s3p1/</guid>
       <description>&lt;blockquote&gt;
 &lt;p&gt;Applied Project in Sec.3.1, Calculus by Stewart
 Chinese version: 
-&lt;a href=&#34;http://localhost:1313/post/2020_cal_s3p1_ch&#34;&gt;建造較佳的雲霄飛車&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;https://teshenglin.github.io/post/2020_cal_s3p1_ch&#34;&gt;建造較佳的雲霄飛車&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;Suppose you are asked to design the first ascent and drop for a new roller coaster. By studying the photographs of your favorite coasters, you decide to make the slope of the ascent $0.8$ and the slope of the drops $-1.6$. You decide to connect these two straight stretches $y=L_1(x)$ and $y=L_2(x)$ with part of a parabola $y=f(x) = ax^2+bx+c$, where $x$ and $f(x)$ are measured in meters. For the track to be smooth there can&amp;rsquo;t be abrupt changes in direction, so you want the linear segments $L_1$ and $L_2$ to be tangent to the parabola at the points $P$ and $Q$. To simplify the equations, you decide to place the origin at $P$.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://media.cheggcdn.com/media%2Fa1a%2Fa1a173e3-a2b4-46ea-835c-dc7ca2977f57%2FphpNfXwqZ.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://media.cheggcdn.com/media%2Fa1a%2Fa1a173e3-a2b4-46ea-835c-dc7ca2977f57%2FphpNfXwqZ.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Question 1:&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;(a) Suppose the horizontal distance between $P$ and $Q$ is 30 m. Write equations in $a$, $b$, and $c$ that will ensure that the track is smooth at the transition points.&lt;/p&gt;
@@ -2649,10 +2631,10 @@ Chinese version:
 &lt;figure&gt;
 
 
-  &lt;a data-fancybox=&#34;&#34; href=&#34;http://localhost:1313/post/figs/2020_cal_s4p1_1.jpg&#34; &gt;
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://teshenglin.github.io/post/figs/2020_cal_s4p1_1.jpg&#34; &gt;
 
 
-  &lt;img src=&#34;http://localhost:1313/post/figs/2020_cal_s4p1_1.jpg&#34; alt=&#34;&#34; width=&#34;600px&#34; &gt;
+  &lt;img src=&#34;https://teshenglin.github.io/post/figs/2020_cal_s4p1_1.jpg&#34; alt=&#34;&#34; width=&#34;600px&#34; &gt;
 &lt;/a&gt;
 
 
@@ -2694,10 +2676,10 @@ $$&lt;/p&gt;
 &lt;figure&gt;
 
 
-  &lt;a data-fancybox=&#34;&#34; href=&#34;http://localhost:1313/post/figs/2020_cal_s4p1_2.png&#34; &gt;
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://teshenglin.github.io/post/figs/2020_cal_s4p1_2.png&#34; &gt;
 
 
-  &lt;img src=&#34;http://localhost:1313/post/figs/2020_cal_s4p1_2.png&#34; alt=&#34;&#34; width=&#34;600px&#34; &gt;
+  &lt;img src=&#34;https://teshenglin.github.io/post/figs/2020_cal_s4p1_2.png&#34; alt=&#34;&#34; width=&#34;600px&#34; &gt;
 &lt;/a&gt;
 
 
@@ -2713,19 +2695,19 @@ The red one is the graph of $g(x)$, the blue one is the graph of $q(x)$, and the
     
     <item>
       <title>Sec.4.7 - 罐頭的形狀</title>
-      <link>http://localhost:1313/post/2020_cal_s4p7_ch/</link>
+      <link>https://teshenglin.github.io/post/2020_cal_s4p7_ch/</link>
       <pubDate>Tue, 10 Mar 2020 12:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/2020_cal_s4p7_ch/</guid>
+      <guid>https://teshenglin.github.io/post/2020_cal_s4p7_ch/</guid>
       <description>&lt;blockquote&gt;
-&lt;p&gt;Applied Project 1 in Sec.4.7, Calculus by Stewart &lt;br&gt;
+&lt;p&gt;Applied Project 1 in Sec.4.7, Calculus by Stewart&lt;br&gt;
 英文版請見 
-&lt;a href=&#34;http://localhost:1313/post/2019_cal_s4p7&#34;&gt;The shape of a can&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;https://teshenglin.github.io/post/2019_cal_s4p7&#34;&gt;The shape of a can&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;給定一個體積為 $v$ 的圓柱體罐頭，我們想找到一個高 $h$ 和半徑 $r$ ，將製成罐頭的金屬量減到最小。&lt;/p&gt;
 &lt;p&gt;如果我們將製程中金屬的浪費忽略，那麼這個問題就是在找圓柱的最小表面積。計算之後發現這個問題的解是 $h=2r$ ，也就是說，高必須相等於直徑。&lt;/p&gt;
 &lt;p&gt;然而，去超市晃晃會發現一般而言市面上的罐頭的高都大於直徑， $h/r$ 的比例可以從 $2$ 到大約 $3.8$。讓我們來看看是否可以解釋這個現象。&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;img src=&#34;https://media.cheggcdn.com/study/e3e/e3e1a59a-d0be-46e7-8557-07e775d84b81/715030-4.7-1IAP11.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://media.cheggcdn.com/study/e3e/e3e1a59a-d0be-46e7-8557-07e775d84b81/715030-4.7-1IAP11.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;問題 1:&lt;/strong&gt; 罐頭的原料是從金屬板上切割下來的，它(圓柱)的邊是由彎曲的矩形組成，而這些矩形也是從板上切成且過程中幾乎沒有浪費。&lt;/p&gt;
 &lt;p&gt;然而，如果圓柱上下的圓面是由邊為 $2r$ 的正方形切割的，那麼一定會有大量的金屬浪費，儘管它可以回收再利用，但對罐頭製造商來說是幾乎沒有任何價值的。&lt;/p&gt;
 &lt;p&gt;因此，如果是這樣的話，我們就需要找到一組 $h/r$ 比例來最小化金屬的使用。&lt;/p&gt;
@@ -2799,16 +2781,16 @@ $$&lt;/li&gt;
     
     <item>
       <title>Sec.4.7 - Planes and birds: Minimizing energy</title>
-      <link>http://localhost:1313/post/2019_cal_s4p7_2/</link>
+      <link>https://teshenglin.github.io/post/2019_cal_s4p7_2/</link>
       <pubDate>Wed, 08 Jan 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/2019_cal_s4p7_2/</guid>
+      <guid>https://teshenglin.github.io/post/2019_cal_s4p7_2/</guid>
       <description>&lt;blockquote&gt;
-&lt;p&gt;Applied Project 2 in Sec.4.7, Calculus by Stewart &lt;br&gt;
+&lt;p&gt;Applied Project 2 in Sec.4.7, Calculus by Stewart&lt;br&gt;
 Chinese version: 
-&lt;a href=&#34;http://localhost:1313/post/2020_cal_s4p7_2_ch&#34;&gt;飛機和鳥：能量最小化&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;https://teshenglin.github.io/post/2020_cal_s4p7_2_ch&#34;&gt;飛機和鳥：能量最小化&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;Small birds like finches alternate between flapping their wings and keeping them folded while gliding. In this project we analyze this phenomenon and try to determine how frequently a bird should flap its wings. Some of the principles are the same as for fixed-wing aircraft and so we begin by considering how required power and energy depend on the speed of airplanes.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://media.cheggcdn.com/study/ad0/ad0cd741-aa85-4256-a058-b49a8ef42198/715030-4.7-4IAP21.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://media.cheggcdn.com/study/ad0/ad0cd741-aa85-4256-a058-b49a8ef42198/715030-4.7-4IAP21.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Question 1:&lt;/strong&gt; The power needed to propel an airplane forward at velocity​ $v$ is&lt;/p&gt;
 &lt;p&gt;$$
@@ -2872,19 +2854,19 @@ $$&lt;/p&gt;
     
     <item>
       <title>Sec.4.7 - The shape of a can</title>
-      <link>http://localhost:1313/post/2019_cal_s4p7/</link>
+      <link>https://teshenglin.github.io/post/2019_cal_s4p7/</link>
       <pubDate>Wed, 11 Dec 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/2019_cal_s4p7/</guid>
+      <guid>https://teshenglin.github.io/post/2019_cal_s4p7/</guid>
       <description>&lt;blockquote&gt;
-&lt;p&gt;Applied Project 1 in Sec.4.7, Calculus by Stewart &lt;br&gt;
+&lt;p&gt;Applied Project 1 in Sec.4.7, Calculus by Stewart&lt;br&gt;
 Chinese version: 
-&lt;a href=&#34;http://localhost:1313/post/2020_cal_s4p7_ch&#34;&gt;罐頭的形狀&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;https://teshenglin.github.io/post/2020_cal_s4p7_ch&#34;&gt;罐頭的形狀&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;Given a cylindrical can with fixed volume $v$, we want to find the height $h$ and radius $r$ that minimize the cost of metal to make the can.&lt;/p&gt;
 &lt;p&gt;If we disregard any waste metal in the manufacturing process, then the problem is to minimize the surface area of the cylinder. It can be found that the solution of this problem is $h=2r$; this is, the height should be the same as the diameter.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;But,&lt;/strong&gt; for most of the cans in the supermarket, the height is usually greater than the diameter and the ratio $h/r$ varies from $2$ up to about $3.8$. Let&amp;rsquo;s see if we can explain this phenomenon.&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;img src=&#34;https://media.cheggcdn.com/study/e3e/e3e1a59a-d0be-46e7-8557-07e775d84b81/715030-4.7-1IAP11.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://media.cheggcdn.com/study/e3e/e3e1a59a-d0be-46e7-8557-07e775d84b81/715030-4.7-1IAP11.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Question 1:&lt;/strong&gt; The material for the cans is cut from sheets of metal. The cylindrical sides are formed by bending rectangles; these rectangles are cut from the sheet with little or no waste.&lt;/p&gt;
 &lt;p&gt;But if the top and bottom discs are cut from squares of side $2r$, this leaves considerable waste metal, which may be recycled but has little or no value to the can makers. If this is the case, find the ratio $h/r$ for which the amount of metal used is minimized.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;

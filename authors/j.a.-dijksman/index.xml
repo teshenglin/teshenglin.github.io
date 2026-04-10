@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>J.A. Dijksman | Te-Sheng Lin</title>
-    <link>http://localhost:1313/authors/j.a.-dijksman/</link>
-      <atom:link href="http://localhost:1313/authors/j.a.-dijksman/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://teshenglin.github.io/authors/j.a.-dijksman/</link>
+      <atom:link href="https://teshenglin.github.io/authors/j.a.-dijksman/index.xml" rel="self" type="application/rss+xml" />
     <description>J.A. Dijksman</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Wed, 11 Aug 2021 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>http://localhost:1313/images/icon_hu10226378635250344412.png</url>
+      <url>https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
       <title>J.A. Dijksman</title>
-      <link>http://localhost:1313/authors/j.a.-dijksman/</link>
+      <link>https://teshenglin.github.io/authors/j.a.-dijksman/</link>
     </image>
     
     <item>
       <title>Thin liquid films in a funnel</title>
-      <link>http://localhost:1313/publication/21_jfm_ldk/</link>
+      <link>https://teshenglin.github.io/publication/21_jfm_ldk/</link>
       <pubDate>Wed, 11 Aug 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/publication/21_jfm_ldk/</guid>
+      <guid>https://teshenglin.github.io/publication/21_jfm_ldk/</guid>
       <description></description>
     </item>
     

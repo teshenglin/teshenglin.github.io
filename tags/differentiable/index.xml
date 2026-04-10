@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Differentiable | Te-Sheng Lin</title>
-    <link>http://localhost:1313/tags/differentiable/</link>
-      <atom:link href="http://localhost:1313/tags/differentiable/index.xml" rel="self" type="application/rss+xml" />
-    <description>Differentiable</description>
+    <title>differentiable | Te-Sheng Lin</title>
+    <link>https://teshenglin.github.io/tags/differentiable/</link>
+      <atom:link href="https://teshenglin.github.io/tags/differentiable/index.xml" rel="self" type="application/rss+xml" />
+    <description>differentiable</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 04 Nov 2019 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>http://localhost:1313/images/icon_hu10226378635250344412.png</url>
-      <title>Differentiable</title>
-      <link>http://localhost:1313/tags/differentiable/</link>
+      <url>https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <title>differentiable</title>
+      <link>https://teshenglin.github.io/tags/differentiable/</link>
     </image>
     
     <item>
       <title>Fixed point iteration</title>
-      <link>http://localhost:1313/post/2019_fixed_point/</link>
+      <link>https://teshenglin.github.io/post/2019_fixed_point/</link>
       <pubDate>Mon, 04 Nov 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/2019_fixed_point/</guid>
+      <guid>https://teshenglin.github.io/post/2019_fixed_point/</guid>
       <description>&lt;blockquote&gt;
 &lt;p&gt;這裡我們介紹固定點迭代法 (Fixed point iteration)&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -49,7 +49,7 @@ $$&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;h2 id=&#34;theorem&#34;&gt;Theorem&lt;/h2&gt;
 &lt;p&gt;If $f:[a, b]\to [a,b]$ is a differentiable function such that
-$$ |f&amp;rsquo;(x)|\leq \alpha&amp;lt;1, \quad \forall x\in[a, b],$$
+$$ |f&#39;(x)|\leq \alpha&amp;lt;1, \quad \forall x\in[a, b],$$
 then $f$ has exactly one fixed point $c$ and the fixed point iteration converges to $c$.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;這個證明很簡單.&lt;/p&gt;
@@ -59,10 +59,10 @@ then $f$ has exactly one fixed point $c$ and the fixed point iteration converges
 &lt;h4 id=&#34;existence&#34;&gt;existence&lt;/h4&gt;
 &lt;p&gt;Since the domain and the range of $f$ are both $[a, b]$, by Intermediate Value Theorem, there exists $c$ such that $c=f(c ).$&lt;/p&gt;
 &lt;h4 id=&#34;uniqueness&#34;&gt;uniqueness&lt;/h4&gt;
-&lt;p&gt;If there exits another fixed point $\bar{c}$, $\bar{c}\ne c$, such that $\bar{c}=f(\bar{c} )$, then according to Mean Value Theorem(MVT), there exits $z$ between $c$ and $\bar{c}$ such that $$f&amp;rsquo;(z) = \frac{f(c ) - f(\bar{c})}{c-\bar{c}}=\frac{c - \bar{c}}{c-\bar{c}} = 1,$$ which violate the assumption that $|f&amp;rsquo;|\leq \alpha&amp;lt;1$. So the fixed point is unique.&lt;/p&gt;
+&lt;p&gt;If there exits another fixed point $\bar{c}$, $\bar{c}\ne c$, such that $\bar{c}=f(\bar{c} )$, then according to Mean Value Theorem(MVT), there exits $z$ between $c$ and $\bar{c}$ such that $$f&#39;(z) = \frac{f(c ) - f(\bar{c})}{c-\bar{c}}=\frac{c - \bar{c}}{c-\bar{c}} = 1,$$ which violate the assumption that $|f&#39;|\leq \alpha&amp;lt;1$. So the fixed point is unique.&lt;/p&gt;
 &lt;h4 id=&#34;convergence-of-fixed-point-iteration&#34;&gt;convergence of fixed point iteration&lt;/h4&gt;
 &lt;p&gt;Based on MVT we have
-$$|x_{n+1} - c| = |f(x_n) - f(c )| = |f&amp;rsquo;(c_i)(x_n-c)|\leq\alpha |x_n-c|\leq\alpha^n|x_1-c|\to 0.$$&lt;/p&gt;
+$$|x_{n+1} - c| = |f(x_n) - f(c )| = |f&#39;(c_i)(x_n-c)|\leq\alpha |x_n-c|\leq\alpha^n|x_1-c|\to 0.$$&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;所以如果在函數固定點 $c$ 的微分小於 $1$, 那就存在一個包含 $c$ 的小區間使得函數的微分都在這區間內小於 $1$, 那根據這定理固定點迭代就會收斂.&lt;/p&gt;
 &lt;hr&gt;
@@ -74,9 +74,9 @@ $$
 &lt;p&gt;那要如何改寫才會比較好呢? 其中一個最有名的就是牛頓法 (Newton&amp;rsquo;s method):&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;h2 id=&#34;newtons-iteration&#34;&gt;Newton&amp;rsquo;s iteration&lt;/h2&gt;
-&lt;p&gt;$$x_{n+1} = x_n - \frac{g(x_n)}{g&amp;rsquo;(x_n)}.$$&lt;/p&gt;
+&lt;p&gt;$$x_{n+1} = x_n - \frac{g(x_n)}{g&#39;(x_n)}.$$&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;我們可以定義 $f(x) = x - \frac{g(x)}{g&amp;rsquo;(x)}$, 這樣上面這個式子就是個固定點迭代. 接著我們可以發現, 如果 $c$ 是 $g$ 函數的根, 也就是 $g(c )=0$, 那 $f&amp;rsquo;(c ) = 0$. 所以根據上面的定理就存在某個包含 $c$ 的小區間使得迭代會收斂.&lt;/p&gt;
+&lt;p&gt;我們可以定義 $f(x) = x - \frac{g(x)}{g&#39;(x)}$, 這樣上面這個式子就是個固定點迭代. 接著我們可以發現, 如果 $c$ 是 $g$ 函數的根, 也就是 $g(c )=0$, 那 $f&#39;(c ) = 0$. 所以根據上面的定理就存在某個包含 $c$ 的小區間使得迭代會收斂.&lt;/p&gt;
 &lt;p&gt;更進一步我們可以利用泰勒展開式(Taylor&amp;rsquo;s series expansion) 來證明牛頓法事實上有二次收斂,
 $$
 |x_{n+1} - c| \approx \beta |x_n-c|^2.
@@ -88,7 +88,7 @@ $$
 x_{n+1} = \cos(x_n),
 $$
 也就是求 $g(x) = \cos(x)-x$ 的根. 我們以 $x_0=1$ 當初始值, 發現需要 $80$ 個迭代才能使誤差在 $10^{-14}$ 之下.&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;    x_new= 0.5403023058681398		error= 0.31725090997825367
+&lt;pre&gt;&lt;code&gt;    x_new= 0.5403023058681398		error= 0.31725090997825367
     x_new= 0.8575532158463934		error= 0.2032634253486143
     x_new= 0.6542897904977791		error= 0.13919056824478648
     x_new= 0.7934803587425656		error= 0.0921115851198091
@@ -105,7 +105,7 @@ $$
 x_{n+1} = x_n + \frac{cos(x_n)- x_n}{\sin(x_n)+1}.
 $$
 一樣以 $x_0=1$ 當初始值, 發現只需要 $4$ 個迭代就能使誤差在 $10^{-14}$ 之下. 比上個例子快上許多.&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;    x_new= 0.7503638678402439		error= 0.018923073822117442
+&lt;pre&gt;&lt;code&gt;    x_new= 0.7503638678402439		error= 0.018923073822117442
     x_new= 0.7391128909113617		error= 4.6455898990771516e-5
     x_new= 0.739085133385284		error= 2.847205804457076e-10
     x_new= 0.7390851332151607		error= 0.0
@@ -146,9 +146,9 @@ $$
     
     <item>
       <title>Maximum and minimum of a function</title>
-      <link>http://localhost:1313/post/2019_maxmin/</link>
+      <link>https://teshenglin.github.io/post/2019_maxmin/</link>
       <pubDate>Tue, 29 Oct 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/2019_maxmin/</guid>
+      <guid>https://teshenglin.github.io/post/2019_maxmin/</guid>
       <description>&lt;blockquote&gt;
 &lt;p&gt;這裡我們要討論一個函數的最大值以及最小值.&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -160,11 +160,11 @@ $$
 &lt;p&gt;所以對於定義在封閉區間的連續函數, 必定會有極值. 接下來我們看一下實際上我們怎麼把極值找出來.&lt;/p&gt;
 &lt;p&gt;在微積分課本裡有所謂的封閉區間法, 如下:&lt;/p&gt;
 &lt;h2 id=&#34;the-closed-interval-method&#34;&gt;The closed interval method&lt;/h2&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-mermaid&#34; data-lang=&#34;mermaid&#34;&gt;graph TD;
+&lt;pre&gt;&lt;code class=&#34;language-mermaid&#34; data-lang=&#34;mermaid&#34;&gt;graph TD;
   B[f is `continuous` on a `closed interval`]--&amp;gt;A;
   B--&amp;gt;C;
-  A[Determine the critical points]--&amp;gt;|f&amp;#39;=0| D(The largest value at these points is the abs. max. and the smallest value is the abs. min.);
-  A--&amp;gt;|f&amp;#39; not exists| D;
+  A[Determine the critical points]--&amp;gt;|f&#39;=0| D(The largest value at these points is the abs. max. and the smallest value is the abs. min.);
+  A--&amp;gt;|f&#39; not exists| D;
   C[Determine the end points]--&amp;gt;D;
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;這個方法的原理跟做法都很簡單, 我這邊就不多做說明.&lt;/p&gt;
 &lt;p&gt;不過我要做一些補充. 事實上這個方法要能用還有一個很重要的假設是&lt;code&gt;假設這個函數只在有限個地方微分不存在&lt;/code&gt;. 如果一個函數在無窮多地方微分不存在, 雖然最大值還會是 &amp;ldquo;微分等於 0&amp;rdquo;, &amp;ldquo;微分不存在&amp;rdquo;, &amp;ldquo;端點&amp;rdquo; 這些地方的函數值中找最大的. 不過實作上會找不完. 所以等於是沒有用.&lt;/p&gt;

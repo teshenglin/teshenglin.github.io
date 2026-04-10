@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Least Square | Te-Sheng Lin</title>
-    <link>http://localhost:1313/tags/least-square/</link>
-      <atom:link href="http://localhost:1313/tags/least-square/index.xml" rel="self" type="application/rss+xml" />
-    <description>Least Square</description>
+    <title>Least square | Te-Sheng Lin</title>
+    <link>https://teshenglin.github.io/tags/least-square/</link>
+      <atom:link href="https://teshenglin.github.io/tags/least-square/index.xml" rel="self" type="application/rss+xml" />
+    <description>Least square</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 19 Dec 2023 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>http://localhost:1313/images/icon_hu10226378635250344412.png</url>
-      <title>Least Square</title>
-      <link>http://localhost:1313/tags/least-square/</link>
+      <url>https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <title>Least square</title>
+      <link>https://teshenglin.github.io/tags/least-square/</link>
     </image>
     
     <item>
       <title>Least square method 2</title>
-      <link>http://localhost:1313/post/2023_la_least_square_2/</link>
+      <link>https://teshenglin.github.io/post/2023_la_least_square_2/</link>
       <pubDate>Tue, 19 Dec 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/2023_la_least_square_2/</guid>
+      <guid>https://teshenglin.github.io/post/2023_la_least_square_2/</guid>
       <description>&lt;h1 id=&#34;最小平方法-2&#34;&gt;最小平方法 2&lt;/h1&gt;
 &lt;p&gt;給定一個矩陣 $A$ 以及一個向量 $b$, 我們想要找到一個向量 $x$ 使得 $\|Ax - b\|^2+\|x\|^2$ 最小.&lt;/p&gt;
 &lt;blockquote&gt;
@@ -164,9 +164,9 @@ $$&lt;/li&gt;
     
     <item>
       <title>Least square method 1</title>
-      <link>http://localhost:1313/post/2023_la_least_square_1/</link>
+      <link>https://teshenglin.github.io/post/2023_la_least_square_1/</link>
       <pubDate>Sun, 03 Dec 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/2023_la_least_square_1/</guid>
+      <guid>https://teshenglin.github.io/post/2023_la_least_square_1/</guid>
       <description>&lt;h1 id=&#34;最小平方法-1&#34;&gt;最小平方法 1&lt;/h1&gt;
 &lt;p&gt;給定一個矩陣 $A$ 以及一個向量 $b$, 我們想要找到一個向量 $x$ 使得 $\|Ax - b\|^2$ 最小.&lt;/p&gt;
 &lt;blockquote&gt;
@@ -224,9 +224,9 @@ $$&lt;/p&gt;
 &lt;p&gt;$$
 \tag{3}
 \begin{align}
-\|p - b\|^2 &amp;amp;= &amp;lt;p-b, p-b&amp;gt; \\
-&amp;amp;= &amp;lt;\hat{b} + e - b, \hat{b} + e - b&amp;gt;\\
-&amp;amp;= \|\hat{b} - b\|^2 + 2&amp;lt;\hat{b} - b, e&amp;gt; + \|e\|^2\\
+\|p - b\|^2 &amp;amp;= &amp;lt;p-b, p-b&amp;gt; \\&lt;br&gt;
+&amp;amp;= &amp;lt;\hat{b} + e - b, \hat{b} + e - b&amp;gt;\\&lt;br&gt;
+&amp;amp;= \|\hat{b} - b\|^2 + 2&amp;lt;\hat{b} - b, e&amp;gt; + \|e\|^2\\&lt;br&gt;
 &amp;amp;= \|\hat{b} - b\|^2  + \|e\|^2,
 \end{align}
 $$&lt;/p&gt;

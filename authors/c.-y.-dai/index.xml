@@ -2,29 +2,29 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>C.-Y. Dai | Te-Sheng Lin</title>
-    <link>http://localhost:1313/authors/c.-y.-dai/</link>
-      <atom:link href="http://localhost:1313/authors/c.-y.-dai/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://teshenglin.github.io/authors/c.-y.-dai/</link>
+      <atom:link href="https://teshenglin.github.io/authors/c.-y.-dai/index.xml" rel="self" type="application/rss+xml" />
     <description>C.-Y. Dai</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Wed, 28 Jan 2026 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>http://localhost:1313/images/icon_hu10226378635250344412.png</url>
+      <url>https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
       <title>C.-Y. Dai</title>
-      <link>http://localhost:1313/authors/c.-y.-dai/</link>
+      <link>https://teshenglin.github.io/authors/c.-y.-dai/</link>
     </image>
     
     <item>
       <title>TINNs: Time-Induced Neural Networks for Solving Time-Dependent PDEs</title>
-      <link>http://localhost:1313/publication/26_dclll/</link>
+      <link>https://teshenglin.github.io/publication/26_dclll/</link>
       <pubDate>Wed, 28 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/publication/26_dclll/</guid>
+      <guid>https://teshenglin.github.io/publication/26_dclll/</guid>
       <description></description>
     </item>
     
     <item>
       <title>A hybrid neural-network and MAC scheme for Stokes interface problems</title>
-      <link>http://localhost:1313/publication/24_eajam_cdhll/</link>
+      <link>https://teshenglin.github.io/publication/24_eajam_cdhll/</link>
       <pubDate>Wed, 03 Apr 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/publication/24_eajam_cdhll/</guid>
+      <guid>https://teshenglin.github.io/publication/24_eajam_cdhll/</guid>
       <description></description>
     </item>
     

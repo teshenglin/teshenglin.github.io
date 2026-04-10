@@ -2,37 +2,37 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Rayleigh Quotient | Te-Sheng Lin</title>
-    <link>http://localhost:1313/tags/rayleigh-quotient/</link>
-      <atom:link href="http://localhost:1313/tags/rayleigh-quotient/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://teshenglin.github.io/tags/rayleigh-quotient/</link>
+      <atom:link href="https://teshenglin.github.io/tags/rayleigh-quotient/index.xml" rel="self" type="application/rss+xml" />
     <description>Rayleigh Quotient</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 29 Apr 2023 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>http://localhost:1313/images/icon_hu10226378635250344412.png</url>
+      <url>https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
       <title>Rayleigh Quotient</title>
-      <link>http://localhost:1313/tags/rayleigh-quotient/</link>
+      <link>https://teshenglin.github.io/tags/rayleigh-quotient/</link>
     </image>
     
     <item>
       <title>Power method with Rayleigh Quotient</title>
-      <link>http://localhost:1313/post/2023_power_method_3/</link>
+      <link>https://teshenglin.github.io/post/2023_power_method_3/</link>
       <pubDate>Sat, 29 Apr 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/2023_power_method_3/</guid>
+      <guid>https://teshenglin.github.io/post/2023_power_method_3/</guid>
       <description>&lt;p&gt;Power 迭代法目錄:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;
-&lt;a href=&#34;http://localhost:1313/post/2023_power_method_1&#34;&gt;基本概念&lt;/a&gt;
+&lt;a href=&#34;https://teshenglin.github.io/post/2023_power_method_1&#34;&gt;基本概念&lt;/a&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Power iteration; inverse power method; shifted inver power method&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;a href=&#34;http://localhost:1313/post/2023_power_method_2&#34;&gt;找第二大的 eigenvalue&lt;/a&gt;
+&lt;a href=&#34;https://teshenglin.github.io/post/2023_power_method_2&#34;&gt;找第二大的 eigenvalue&lt;/a&gt;
 &lt;blockquote&gt;
 &lt;p&gt;deflation&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;a href=&#34;http://localhost:1313/post/2023_power_method_3&#34;&gt;Rayleigh Quotient 迭代及其收斂性&lt;/a&gt;
+&lt;a href=&#34;https://teshenglin.github.io/post/2023_power_method_3&#34;&gt;Rayleigh Quotient 迭代及其收斂性&lt;/a&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Power method with Rayleigh Quotient&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -49,8 +49,8 @@
 $$
 \tag{1}
 \begin{align}
-\hat{x}^{(k+1)} &amp;amp;= Ax^{(k)}\\
-\lambda^{(k+1)} &amp;amp;= x^{(k)T}\hat{x}^{(k+1)}\\
+\hat{x}^{(k+1)} &amp;amp;= Ax^{(k)}\\&lt;br&gt;
+\lambda^{(k+1)} &amp;amp;= x^{(k)T}\hat{x}^{(k+1)}\\&lt;br&gt;
 x^{(k+1)} &amp;amp;= \hat{x}^{(k+1)}/|\hat{x}^{(k+1)}|_2
 \end{align}
 $$&lt;/p&gt;
@@ -67,15 +67,15 @@ $$
 $$
 另一方面, 從迭代式 (1) 可以看出我們一直不斷地把得到的向量 normalize, 使其為單位長, 因此我們必定有
 $$
-x^{(k)} = \frac{A^kx^{(0)}}{|A^kx^{(0)}|&lt;em&gt;2}.
+x^{(k)} = \frac{A^kx^{(0)}}{|A^kx^{(0)}|_2}.
 $$
 將 (2) 代入得到
 $$
 \tag{3}
 \begin{align}
 x^{(k)}
-&amp;amp;= \frac{\lambda_1^k\left[\alpha_1v_1 + \sum^n&lt;/em&gt;{i=2}\alpha_i \left(\frac{\lambda_i}{\lambda_1}\right)^kv_i\right]}{\sqrt{\lambda_1^{2k}\left[\alpha_1v_1 + \sum^n_{i=2}\alpha_i \left(\frac{\lambda_i}{\lambda_1}\right)^kv_i\right]^T\left[\alpha_1v_1 + \sum^n_{i=2}\alpha_i \left(\frac{\lambda_i}{\lambda_1}\right)^kv_i\right]}} \\
-&amp;amp;= \frac{\left[\alpha_1v_1 + \sum^n_{i=2}\alpha_i \left(\frac{\lambda_i}{\lambda_1}\right)^kv_i\right]}{\sqrt{\alpha^2_1 + \sum^n_{i=2}\alpha^2_i \left(\frac{\lambda_i}{\lambda_1}\right)^{2k}}}\\
+&amp;amp;= \frac{\lambda_1^k\left[\alpha_1v_1 + \sum^n_{i=2}\alpha_i \left(\frac{\lambda_i}{\lambda_1}\right)^kv_i\right]}{\sqrt{\lambda_1^{2k}\left[\alpha_1v_1 + \sum^n_{i=2}\alpha_i \left(\frac{\lambda_i}{\lambda_1}\right)^kv_i\right]^T\left[\alpha_1v_1 + \sum^n_{i=2}\alpha_i \left(\frac{\lambda_i}{\lambda_1}\right)^kv_i\right]}} \\&lt;br&gt;
+&amp;amp;= \frac{\left[\alpha_1v_1 + \sum^n_{i=2}\alpha_i \left(\frac{\lambda_i}{\lambda_1}\right)^kv_i\right]}{\sqrt{\alpha^2_1 + \sum^n_{i=2}\alpha^2_i \left(\frac{\lambda_i}{\lambda_1}\right)^{2k}}}\\&lt;br&gt;
 &amp;amp;=\frac{\left[v_1 + \sum^n_{i=2}\left(\frac{\alpha_i}{\alpha_1}\right) \left(\frac{\lambda_i}{\lambda_1}\right)^kv_i\right]}{\sqrt{1 + \sum^n_{i=2}\left(\frac{\alpha_i}{\alpha_1}\right)^2 \left(\frac{\lambda_i}{\lambda_1}\right)^{2k}}},
 \end{align}
 $$
@@ -83,14 +83,14 @@ $$
 &lt;p&gt;接著我們可以算 eigenvalue, 將 (3) 代入:
 $$
 \begin{align}
-\lambda^{(k+1)} &amp;amp;= x^{(k)T}\hat{x}^{(k+1)} = x^{(k)T}(Ax^{(k)}) \\
-&amp;amp;= \frac{\left[v_1 + \sum^n_{i=2}\left(\frac{\alpha_i}{\alpha_1}\right) \left(\frac{\lambda_i}{\lambda_1}\right)^kv_i\right]^T\left[\lambda_1v_1 + \sum^n_{i=2}\left(\frac{\alpha_i}{\alpha_1}\right) \lambda_i\left(\frac{\lambda_i}{\lambda_1}\right)^kv_i\right]}{1 + \sum^n_{i=2}\left(\frac{\alpha_i}{\alpha_1}\right)^2 \left(\frac{\lambda_i}{\lambda_1}\right)^{2k}} \\
+\lambda^{(k+1)} &amp;amp;= x^{(k)T}\hat{x}^{(k+1)} = x^{(k)T}(Ax^{(k)}) \\&lt;br&gt;
+&amp;amp;= \frac{\left[v_1 + \sum^n_{i=2}\left(\frac{\alpha_i}{\alpha_1}\right) \left(\frac{\lambda_i}{\lambda_1}\right)^kv_i\right]^T\left[\lambda_1v_1 + \sum^n_{i=2}\left(\frac{\alpha_i}{\alpha_1}\right) \lambda_i\left(\frac{\lambda_i}{\lambda_1}\right)^kv_i\right]}{1 + \sum^n_{i=2}\left(\frac{\alpha_i}{\alpha_1}\right)^2 \left(\frac{\lambda_i}{\lambda_1}\right)^{2k}} \\&lt;br&gt;
 &amp;amp;= \lambda_1
-\frac{\left[v_1 + \sum^n_{i=2}\left(\frac{\alpha_i}{\alpha_1}\right) \left(\frac{\lambda_i}{\lambda_1}\right)^kv_i\right]^T\left[v_1 + \sum^n_{i=2}\left(\frac{\alpha_i}{\alpha_1}\right) \left(\frac{\lambda_i}{\lambda_1}\right)^{k+1}v_i\right]}{1 + \sum^n_{i=2}\left(\frac{\alpha_i}{\alpha_1}\right)^2 \left(\frac{\lambda_i}{\lambda_1}\right)^{2k}} \\
+\frac{\left[v_1 + \sum^n_{i=2}\left(\frac{\alpha_i}{\alpha_1}\right) \left(\frac{\lambda_i}{\lambda_1}\right)^kv_i\right]^T\left[v_1 + \sum^n_{i=2}\left(\frac{\alpha_i}{\alpha_1}\right) \left(\frac{\lambda_i}{\lambda_1}\right)^{k+1}v_i\right]}{1 + \sum^n_{i=2}\left(\frac{\alpha_i}{\alpha_1}\right)^2 \left(\frac{\lambda_i}{\lambda_1}\right)^{2k}} \\&lt;br&gt;
 &amp;amp;= \lambda_1
-\frac{\left[1 + \sum^n_{i=2}\left(\frac{\alpha_i}{\alpha_1}\right)^2 \left(\frac{\lambda_i}{\lambda_1}\right)^{2k+1}\right]}{1 + \sum^n_{i=2}\left(\frac{\alpha_i}{\alpha_1}\right)^2 \left(\frac{\lambda_i}{\lambda_1}\right)^{2k}} \\
+\frac{\left[1 + \sum^n_{i=2}\left(\frac{\alpha_i}{\alpha_1}\right)^2 \left(\frac{\lambda_i}{\lambda_1}\right)^{2k+1}\right]}{1 + \sum^n_{i=2}\left(\frac{\alpha_i}{\alpha_1}\right)^2 \left(\frac{\lambda_i}{\lambda_1}\right)^{2k}} \\&lt;br&gt;
 &amp;amp;= \lambda_1
-\frac{\left[1 + O \left(\epsilon^{2k+1}\right)\right]}{1 + O \left(\epsilon^{2k}\right)} \\
+\frac{\left[1 + O \left(\epsilon^{2k+1}\right)\right]}{1 + O \left(\epsilon^{2k}\right)} \\&lt;br&gt;
 &amp;amp;= \lambda_1 + O\left(\epsilon^{2k}\right),
 \end{align}
 $$
@@ -100,7 +100,7 @@ where $\epsilon=|\lambda_2/\lambda_1|$.&lt;/p&gt;
 &lt;h2 id=&#34;final-remark&#34;&gt;Final remark&lt;/h2&gt;
 &lt;p&gt;若使用基本的 power 迭代, 就是每次將得到得向量單位化, 如以下方式:&lt;/p&gt;
 &lt;p&gt;Pseudo code:&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;while diff &amp;gt; Tol
+&lt;pre&gt;&lt;code&gt;while diff &amp;gt; Tol
     v = A*u
     lambda = norm(v)
     u = v/lambda
