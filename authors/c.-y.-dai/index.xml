@@ -5,7 +5,7 @@
     <link>https://teshenglin.github.io/authors/c.-y.-dai/</link>
       <atom:link href="https://teshenglin.github.io/authors/c.-y.-dai/index.xml" rel="self" type="application/rss+xml" />
     <description>C.-Y. Dai</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Wed, 28 Jan 2026 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 28 Jun 2026 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
       <title>C.-Y. Dai</title>
@@ -13,10 +13,18 @@
     </image>
     
     <item>
+      <title>Stabilizing Physics-Informed Consistency Models via Structure-Preserving Training</title>
+      <link>https://teshenglin.github.io/publication/26_kdd_cdlll/</link>
+      <pubDate>Sun, 28 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://teshenglin.github.io/publication/26_kdd_cdlll/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>TINNs: Time-Induced Neural Networks for Solving Time-Dependent PDEs</title>
-      <link>https://teshenglin.github.io/publication/26_dclll/</link>
+      <link>https://teshenglin.github.io/publication/26_icml_dclll/</link>
       <pubDate>Wed, 28 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>https://teshenglin.github.io/publication/26_dclll/</guid>
+      <guid>https://teshenglin.github.io/publication/26_icml_dclll/</guid>
       <description></description>
     </item>
     

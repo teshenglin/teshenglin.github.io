@@ -217,8 +217,8 @@
   
 
   <link rel="manifest" href="/index.webmanifest">
-  <link rel="icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_2.png">
-  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_2.png">
+  <link rel="icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_3.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_3.png">
 
   <link rel="canonical" href="https://teshenglin.github.io/post/2020_cal_s3p10_ch/">
 
@@ -236,8 +236,8 @@
   <meta property="og:site_name" content="Te-Sheng Lin">
   <meta property="og:url" content="https://teshenglin.github.io/post/2020_cal_s3p10_ch/">
   <meta property="og:title" content="Sec.3.10 - 泰勒級數 | Te-Sheng Lin">
-  <meta property="og:description" content="Laboratory Project in Sec.3.10, Calculus by Stewart 英文版請見 Taylor polynomials 在近似函數 $f(x)$ 在 $x=a$ 的值時，切線逼近函數(tangent line approximation) $L(x)$ 是線性逼近(linear approximation)中"><meta property="og:image" content="https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png">
-  <meta property="twitter:image" content="https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png"><meta property="og:locale" content="en-us">
+  <meta property="og:description" content="Laboratory Project in Sec.3.10, Calculus by Stewart 英文版請見 Taylor polynomials 在近似函數 $f(x)$ 在 $x=a$ 的值時，切線逼近函數(tangent line approximation) $L(x)$ 是線性逼近(linear approximation)中"><meta property="og:image" content="https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png">
+  <meta property="twitter:image" content="https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png"><meta property="og:locale" content="en-us">
   
     
       <meta property="article:published_time" content="2020-03-10T00:00:00&#43;00:00">
@@ -283,7 +283,7 @@
     "name": "Te-Sheng Lin",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_2.png"
+      "url": "https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_3.png"
     }
   },
   "description": "Laboratory Project in Sec.3.10, Calculus by Stewart 英文版請見 Taylor polynomials 在近似函數 $f(x)$ 在 $x=a$ 的值時，切線逼近函數(tangent line approximation) $L(x)$ 是線性逼近(linear approximation)中"
@@ -607,8 +607,8 @@
 <p>為了找尋比線性逼近更好的近似方式，我們嘗試利用二次逼近函數(quadratic approximation) $Q(x)$ 來做近似，換句話說，我們利用拋物線來逼近 $f(x)$ 的值而非直線。為了確定這樣的近似方式是合理的，我們規定以下條件：</p>
 <ol>
 <li>$P(a)=f(a)$</li>
-<li>$P&rsquo;(a)=f&rsquo;(a)$</li>
-<li>$P&rsquo;'(a)=f&rsquo;'(a)$</li>
+<li>$P'(a)=f'(a)$</li>
+<li>$P''(a)=f''(a)$</li>
 </ol>
 <hr>
 <p><strong>問題 1：</strong> 對於函數 $f(x)=\cos(x)$，找尋它在 $a=0$ 時的二次逼近函數 $P(x)=A+Bx+Cx^2$，並且此函數須滿足上述介紹中的三個條件。接著對函數 $P,f$ 及線性逼近函數 $L(x)=1$ 作圖，比較 $P$ 和 $f$ 哪一個逼近函數比較精確。</p>
@@ -688,13 +688,13 @@ P(x)=A+B(x-a)+C(x-a)^{2}。
 $$
 證明一個滿足專題介紹中3個條件的二次逼近函數$P(x)$可以表示為
 $$
-P(x)=f(a)+f&rsquo;(a)(x-a)+\frac{1}{2} f&rsquo;'(a)(x-a)^{2}。
+P(x)=f(a)+f'(a)(x-a)+\frac{1}{2} f''(a)(x-a)^{2}。
 $$</p>
 <p><strong>解：</strong></p>
 <!-- raw HTML omitted -->
 <!-- raw HTML omitted -->
 <p>$$
-P(x)=f(a)+f&rsquo;(a)(x-a)+\frac{1}{2} f&rsquo;'(a)(x-a)^{2}。
+P(x)=f(a)+f'(a)(x-a)+\frac{1}{2} f''(a)(x-a)^{2}。
 $$</p>
 <hr>
 <p><strong>問題 4：</strong> 找尋函數 $f(x)=\sqrt{x+3}$ 在 $a=1$ 時的二次逼近函數，接著對 $f$、二次逼近函數及線性逼近函數做圖。你能做怎樣的結論？</p>
@@ -742,7 +742,7 @@ T_{n}^{(k)}(a)=f^{(k)}(a), \quad k=1, \cdots, n。
 $$
 證明：滿足上述條件的 $T_{n}(x)$ 其係數 $c_{k}=\frac{f^{(k)}(a)}{k!}$。(將係數 $c_{k}$ 代入函數 $T_{n}(x)$ 後，函數為
 $$
-T_{n}(x)=f(a)+f&rsquo;(a)(x-a)+\frac{f&rsquo;'(a)}{2!} (x-a)^{2}+&hellip;+\frac{f^{(n)}(a)}{n!}(x-a)^{n}。
+T_{n}(x)=f(a)+f'(a)(x-a)+\frac{f''(a)}{2!} (x-a)^{2}+&hellip;+\frac{f^{(n)}(a)}{n!}(x-a)^{n}。
 $$
 此即為函數 $f$ 在點 $a$ 的 $n$ 階泰勒級數。)</p>
 <!-- raw HTML omitted -->
@@ -1028,7 +1028,7 @@ $$
     
     
     
-    <script src="/js/academic.min.a8d7005002cb4a052fd6d721e83df9ba.js"></script>
+    <script src="/js/academic.min.d49475924c8a1000c804942d870fd31c.js"></script>
 
     
 

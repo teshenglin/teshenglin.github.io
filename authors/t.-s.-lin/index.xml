@@ -5,7 +5,7 @@
     <link>https://teshenglin.github.io/authors/t.-s.-lin/</link>
       <atom:link href="https://teshenglin.github.io/authors/t.-s.-lin/index.xml" rel="self" type="application/rss+xml" />
     <description>T.-S. Lin</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Wed, 28 Jan 2026 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 28 Jun 2026 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
       <title>T.-S. Lin</title>
@@ -13,10 +13,26 @@
     </image>
     
     <item>
+      <title>Stabilizing Physics-Informed Consistency Models via Structure-Preserving Training</title>
+      <link>https://teshenglin.github.io/publication/26_kdd_cdlll/</link>
+      <pubDate>Sun, 28 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://teshenglin.github.io/publication/26_kdd_cdlll/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A categorical embedding discontinuity-capturing shallow neural network for anisotropic elliptic interface problems</title>
+      <link>https://teshenglin.github.io/publication/26_jcp_hltl/</link>
+      <pubDate>Sat, 27 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://teshenglin.github.io/publication/26_jcp_hltl/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>TINNs: Time-Induced Neural Networks for Solving Time-Dependent PDEs</title>
-      <link>https://teshenglin.github.io/publication/26_dclll/</link>
+      <link>https://teshenglin.github.io/publication/26_icml_dclll/</link>
       <pubDate>Wed, 28 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>https://teshenglin.github.io/publication/26_dclll/</guid>
+      <guid>https://teshenglin.github.io/publication/26_icml_dclll/</guid>
       <description></description>
     </item>
     
@@ -25,14 +41,6 @@
       <link>https://teshenglin.github.io/publication/26_cll/</link>
       <pubDate>Tue, 16 Dec 2025 00:00:00 +0000</pubDate>
       <guid>https://teshenglin.github.io/publication/26_cll/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>A categorical embedding discontinuity-capturing shallow neural network for anisotropic elliptic interface problems</title>
-      <link>https://teshenglin.github.io/publication/26_hll/</link>
-      <pubDate>Sat, 27 Sep 2025 00:00:00 +0000</pubDate>
-      <guid>https://teshenglin.github.io/publication/26_hll/</guid>
       <description></description>
     </item>
     
