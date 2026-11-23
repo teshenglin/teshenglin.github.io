@@ -28,7 +28,20 @@
   
     
   
-  <meta name="description" content="擴散映射, Diffusion maps (以下簡稱 DM), 是個資料分析, 流型學習或是資料降維的工具. 這裡我們要介紹以 julia 來做 diffusion maps 降維. Algorithm - diffusion maps embeding 先簡單介紹一下作法. 假設我們有">
+  <meta name="description" content="
+擴散映射, 
+Diffusion maps (以下簡稱 DM), 是個資料分析, 流型學習或是資料降維的工具.
+
+
+這裡我們要介紹以 julia 來做 diffusion maps 降維.
+
+
+Algorithm - diffusion maps embeding
+先簡單介紹一下作法.
+假設我們有 $n$ 筆 $d$ 維的資料,
+$$
+\{x_1, x_2, \cdots, x_n\} \in R^d.
+$$">
 
   
   <link rel="alternate" hreflang="en-us" href="https://teshenglin.github.io/post/2021_diffusion_maps/">
@@ -217,8 +230,8 @@
   
 
   <link rel="manifest" href="/index.webmanifest">
-  <link rel="icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_3.png">
-  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_3.png">
+  <link rel="icon" type="image/png" href="/images/icon_hu_549a1db3558c2382.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu_227762f9926463f1.png">
 
   <link rel="canonical" href="https://teshenglin.github.io/post/2021_diffusion_maps/">
 
@@ -236,8 +249,21 @@
   <meta property="og:site_name" content="Te-Sheng Lin">
   <meta property="og:url" content="https://teshenglin.github.io/post/2021_diffusion_maps/">
   <meta property="og:title" content="Diffusion maps | Te-Sheng Lin">
-  <meta property="og:description" content="擴散映射, Diffusion maps (以下簡稱 DM), 是個資料分析, 流型學習或是資料降維的工具. 這裡我們要介紹以 julia 來做 diffusion maps 降維. Algorithm - diffusion maps embeding 先簡單介紹一下作法. 假設我們有"><meta property="og:image" content="https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png">
-  <meta property="twitter:image" content="https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png"><meta property="og:locale" content="en-us">
+  <meta property="og:description" content="
+擴散映射, 
+Diffusion maps (以下簡稱 DM), 是個資料分析, 流型學習或是資料降維的工具.
+
+
+這裡我們要介紹以 julia 來做 diffusion maps 降維.
+
+
+Algorithm - diffusion maps embeding
+先簡單介紹一下作法.
+假設我們有 $n$ 筆 $d$ 維的資料,
+$$
+\{x_1, x_2, \cdots, x_n\} \in R^d.
+$$"><meta property="og:image" content="https://teshenglin.github.io/images/icon_hu_c6eb360240c7098d.png">
+  <meta property="twitter:image" content="https://teshenglin.github.io/images/icon_hu_c6eb360240c7098d.png"><meta property="og:locale" content="en-us">
   
     
       <meta property="article:published_time" content="2021-08-13T00:00:00&#43;00:00">
@@ -283,10 +309,10 @@
     "name": "Te-Sheng Lin",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_3.png"
+      "url": "https://teshenglin.github.io/images/icon_hu_227762f9926463f1.png"
     }
   },
-  "description": "擴散映射, Diffusion maps (以下簡稱 DM), 是個資料分析, 流型學習或是資料降維的工具. 這裡我們要介紹以 julia 來做 diffusion maps 降維. Algorithm - diffusion maps embeding 先簡單介紹一下作法. 假設我們有"
+  "description": "\u003cblockquote\u003e\n\u003cp\u003e擴散映射, \n\u003ca href=\"https://en.wikipedia.org/wiki/Diffusion_map\" target=\"_blank\" rel=\"noopener\"\u003eDiffusion maps\u003c/a\u003e (以下簡稱 DM), 是個資料分析, 流型學習或是資料降維的工具.\u003c/p\u003e\n\u003c/blockquote\u003e\n\u003cblockquote\u003e\n\u003cp\u003e這裡我們要介紹以 \u003ccode\u003ejulia\u003c/code\u003e 來做 diffusion maps 降維.\u003c/p\u003e\n\u003c/blockquote\u003e\n\u003chr\u003e\n\u003ch2 id=\"algorithm---diffusion-maps-embeding\"\u003eAlgorithm - diffusion maps embeding\u003c/h2\u003e\n\u003cp\u003e先簡單介紹一下作法.\u003c/p\u003e\n\u003cp\u003e假設我們有 $n$ 筆 $d$ 維的資料,\n$$\n\\{x_1, x_2, \\cdots, x_n\\} \\in R^d.\n$$\u003c/p\u003e"
 }
 </script>
 
@@ -659,27 +685,27 @@ $$
 <h2 id="implementation-in-julia">Implementation in <code>julia</code></h2>
 <p>接著我們就可以來看要怎樣以 <code>julia</code> 來做 diffusion maps.</p>
 <p>我們需要以下幾個 packages:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-julia" data-lang="julia"><span style="color:#66d9ef">using</span> Plots
-<span style="color:#66d9ef">using</span> Distances
-<span style="color:#66d9ef">using</span> LinearAlgebra
-</code></pre></div><hr>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-julia" data-lang="julia"><span style="display:flex;"><span><span style="color:#66d9ef">using</span> Plots
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">using</span> Distances
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">using</span> LinearAlgebra
+</span></span></code></pre></div><hr>
 <p>以下例子為一個 spiral curve, 我們想要看經過 diffusion maps 的投射到二或三維後會長什麼樣子.</p>
 <p>我們先把 spiral curve 上面的點造出來 (取 $300$ 個點)</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-julia" data-lang="julia"><span style="color:#75715e"># generating the data - a spiral curve</span>
-<span style="color:#75715e"># n: number of sampling</span>
-n <span style="color:#f92672">=</span> <span style="color:#ae81ff">300</span>;
-
-theta <span style="color:#f92672">=</span> range(<span style="color:#ae81ff">0</span>,stop<span style="color:#f92672">=</span><span style="color:#ae81ff">6</span><span style="color:#f92672">*</span>pi,length<span style="color:#f92672">=</span>n);
-r <span style="color:#f92672">=</span> range(<span style="color:#ae81ff">0</span>,stop<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>, length<span style="color:#f92672">=</span>n);
-<span style="color:#75715e"># x and y-coordinates</span>
-x <span style="color:#f92672">=</span> r<span style="color:#f92672">.*</span>cos<span style="color:#f92672">.</span>(theta);
-y <span style="color:#f92672">=</span> r<span style="color:#f92672">.*</span>sin<span style="color:#f92672">.</span>(theta);
-<span style="color:#75715e"># X is a n-by-2 data matrix</span>
-X <span style="color:#f92672">=</span> [x y];
-</code></pre></div><hr>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-julia" data-lang="julia"><span style="display:flex;"><span><span style="color:#75715e"># generating the data - a spiral curve</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># n: number of sampling</span>
+</span></span><span style="display:flex;"><span>n <span style="color:#f92672">=</span> <span style="color:#ae81ff">300</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>theta <span style="color:#f92672">=</span> range(<span style="color:#ae81ff">0</span>,stop<span style="color:#f92672">=</span><span style="color:#ae81ff">6</span><span style="color:#f92672">*</span>pi,length<span style="color:#f92672">=</span>n);
+</span></span><span style="display:flex;"><span>r <span style="color:#f92672">=</span> range(<span style="color:#ae81ff">0</span>,stop<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>, length<span style="color:#f92672">=</span>n);
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># x and y-coordinates</span>
+</span></span><span style="display:flex;"><span>x <span style="color:#f92672">=</span> r<span style="color:#f92672">.*</span>cos<span style="color:#f92672">.</span>(theta);
+</span></span><span style="display:flex;"><span>y <span style="color:#f92672">=</span> r<span style="color:#f92672">.*</span>sin<span style="color:#f92672">.</span>(theta);
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># X is a n-by-2 data matrix</span>
+</span></span><span style="display:flex;"><span>X <span style="color:#f92672">=</span> [x y];
+</span></span></code></pre></div><hr>
 <p>畫出來看看原始 data 長怎樣. 我們照順序將點標為藍色, 紅色以及綠色.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-julia" data-lang="julia">plot(reshape(X[<span style="color:#f92672">:</span>,<span style="color:#ae81ff">1</span>], <span style="color:#ae81ff">100</span>, <span style="color:#ae81ff">3</span>), reshape(X[<span style="color:#f92672">:</span>,<span style="color:#ae81ff">2</span>], <span style="color:#ae81ff">100</span>, <span style="color:#ae81ff">3</span>), aspect_ratio<span style="color:#f92672">=</span><span style="color:#e6db74">:equal</span>, leg<span style="color:#f92672">=</span>false)
-</code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-julia" data-lang="julia"><span style="display:flex;"><span>plot(reshape(X[<span style="color:#f92672">:</span>,<span style="color:#ae81ff">1</span>], <span style="color:#ae81ff">100</span>, <span style="color:#ae81ff">3</span>), reshape(X[<span style="color:#f92672">:</span>,<span style="color:#ae81ff">2</span>], <span style="color:#ae81ff">100</span>, <span style="color:#ae81ff">3</span>), aspect_ratio<span style="color:#f92672">=</span><span style="color:#e6db74">:equal</span>, leg<span style="color:#f92672">=</span>false)
+</span></span></code></pre></div>
 
 
 
@@ -710,13 +736,13 @@ X <span style="color:#f92672">=</span> [x y];
 <hr>
 <h4 id="1-affinity-matrix-k-1">1. Affinity matrix $K$</h4>
 <p>先來造出 $K$ 矩陣:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-julia" data-lang="julia">E <span style="color:#f92672">=</span> pairwise(Euclidean(), X, dims<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>);
-sigma <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.1</span>;
-K <span style="color:#f92672">=</span> exp<span style="color:#f92672">.</span>(<span style="color:#f92672">-</span>(E<span style="color:#f92672">.^</span><span style="color:#ae81ff">2</span>)<span style="color:#f92672">./</span>(sigma<span style="color:#f92672">^</span><span style="color:#ae81ff">2</span>));
-</code></pre></div><hr>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-julia" data-lang="julia"><span style="display:flex;"><span>E <span style="color:#f92672">=</span> pairwise(Euclidean(), X, dims<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>);
+</span></span><span style="display:flex;"><span>sigma <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.1</span>;
+</span></span><span style="display:flex;"><span>K <span style="color:#f92672">=</span> exp<span style="color:#f92672">.</span>(<span style="color:#f92672">-</span>(E<span style="color:#f92672">.^</span><span style="color:#ae81ff">2</span>)<span style="color:#f92672">./</span>(sigma<span style="color:#f92672">^</span><span style="color:#ae81ff">2</span>));
+</span></span></code></pre></div><hr>
 <h4 id="2-normalized-affinity-matrix-q-1">2. Normalized affinity matrix $Q$</h4>
 <p>接著造出 $Q$ 矩陣, 並求出其 eigenvalues 跟 eigenvectors.</p>
-<pre><code>Q = zeros(n,n);
+<pre tabindex="0"><code>Q = zeros(n,n);
 d_sq = zeros(n);
 for ii = 1:n
     d_sq[ii] = sqrt(sum(K[ii,:]));
@@ -730,15 +756,15 @@ U,S,V = svd(Q);
 </code></pre><hr>
 <h4 id="3-求出-p-矩陣的-eigenvalues-跟-eigenvectors-1">3. 求出 $P$ 矩陣的 eigenvalues 跟 eigenvectors</h4>
 <p>$P$ 矩陣的 eigenvalues 跟 $Q$ 一樣, eigenvectors 也可以依公式得到:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-julia" data-lang="julia"><span style="color:#66d9ef">for</span> ii <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span> <span style="color:#f92672">:</span> n
-    V[ii,<span style="color:#f92672">:</span>] <span style="color:#f92672">=</span> V[ii,<span style="color:#f92672">:</span>]<span style="color:#f92672">/</span>d_sq[ii];
-<span style="color:#66d9ef">end</span>
-</code></pre></div><hr>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-julia" data-lang="julia"><span style="display:flex;"><span><span style="color:#66d9ef">for</span> ii <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span> <span style="color:#f92672">:</span> n
+</span></span><span style="display:flex;"><span>    V[ii,<span style="color:#f92672">:</span>] <span style="color:#f92672">=</span> V[ii,<span style="color:#f92672">:</span>]<span style="color:#f92672">/</span>d_sq[ii];
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">end</span>
+</span></span></code></pre></div><hr>
 <p>將 eigenvalues 畫出來看看. 左圖是第 $2$ 到第 $11$ 個, 右圖則是以 semilogy 畫出全部的 eigenvalues. 可以看出 eigenvalues 遞減的非常快, 所以其實 embedding 不需要取到全部 $(n-1)$ 維.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-julia" data-lang="julia">p1 <span style="color:#f92672">=</span> scatter(S[<span style="color:#ae81ff">2</span><span style="color:#f92672">:</span><span style="color:#ae81ff">11</span>], title<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;eigenvalues 2:11&#34;</span>, leg<span style="color:#f92672">=</span>false);
-p2 <span style="color:#f92672">=</span> plot(log<span style="color:#f92672">.</span>(S), title<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;eigenvalues in log&#34;</span>, leg<span style="color:#f92672">=</span>false);
-plot(p1, p2, layout<span style="color:#f92672">=</span><span style="color:#ae81ff">2</span>, fmt<span style="color:#f92672">=</span><span style="color:#e6db74">:png</span>)
-</code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-julia" data-lang="julia"><span style="display:flex;"><span>p1 <span style="color:#f92672">=</span> scatter(S[<span style="color:#ae81ff">2</span><span style="color:#f92672">:</span><span style="color:#ae81ff">11</span>], title<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;eigenvalues 2:11&#34;</span>, leg<span style="color:#f92672">=</span>false);
+</span></span><span style="display:flex;"><span>p2 <span style="color:#f92672">=</span> plot(log<span style="color:#f92672">.</span>(S), title<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;eigenvalues in log&#34;</span>, leg<span style="color:#f92672">=</span>false);
+</span></span><span style="display:flex;"><span>plot(p1, p2, layout<span style="color:#f92672">=</span><span style="color:#ae81ff">2</span>, fmt<span style="color:#f92672">=</span><span style="color:#e6db74">:png</span>)
+</span></span></code></pre></div>
 
 
 
@@ -769,17 +795,17 @@ plot(p1, p2, layout<span style="color:#f92672">=</span><span style="color:#ae81f
 <hr>
 <h4 id="4-define-diffusion-map-y-1">4. Define diffusion map $Y$</h4>
 <p>最後我們定義 embedding $Y$:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-julia" data-lang="julia">Y <span style="color:#f92672">=</span> zeros(n,<span style="color:#ae81ff">3</span>);
-<span style="color:#66d9ef">for</span> ii <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span><span style="color:#f92672">:</span><span style="color:#ae81ff">3</span>
-    Y[<span style="color:#f92672">:</span>,ii] <span style="color:#f92672">=</span> V[<span style="color:#f92672">:</span>,ii<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>]<span style="color:#f92672">.*</span>S[ii<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>];
-<span style="color:#66d9ef">end</span>
-</code></pre></div><p>我們知道 $Y$ 的每個 row 就是這個 embedding 的座標.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-julia" data-lang="julia"><span style="display:flex;"><span>Y <span style="color:#f92672">=</span> zeros(n,<span style="color:#ae81ff">3</span>);
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> ii <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span><span style="color:#f92672">:</span><span style="color:#ae81ff">3</span>
+</span></span><span style="display:flex;"><span>    Y[<span style="color:#f92672">:</span>,ii] <span style="color:#f92672">=</span> V[<span style="color:#f92672">:</span>,ii<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>]<span style="color:#f92672">.*</span>S[ii<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>];
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">end</span>
+</span></span></code></pre></div><p>我們知道 $Y$ 的每個 row 就是這個 embedding 的座標.</p>
 <hr>
 <p>我們將 embedding 畫出來看看. 左圖是 embed 到二維, 右圖則是 embed 到三維.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-julia" data-lang="julia">p1 <span style="color:#f92672">=</span> plot(reshape(Y[<span style="color:#f92672">:</span>,<span style="color:#ae81ff">1</span>], <span style="color:#ae81ff">100</span>, <span style="color:#ae81ff">3</span>), reshape(Y[<span style="color:#f92672">:</span>,<span style="color:#ae81ff">2</span>], <span style="color:#ae81ff">100</span>, <span style="color:#ae81ff">3</span>), title<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;2D&#34;</span>, leg<span style="color:#f92672">=</span>false)
-p2 <span style="color:#f92672">=</span> plot(reshape(Y[<span style="color:#f92672">:</span>,<span style="color:#ae81ff">1</span>], <span style="color:#ae81ff">100</span>, <span style="color:#ae81ff">3</span>), reshape(Y[<span style="color:#f92672">:</span>,<span style="color:#ae81ff">2</span>], <span style="color:#ae81ff">100</span>, <span style="color:#ae81ff">3</span>), reshape(Y[<span style="color:#f92672">:</span>,<span style="color:#ae81ff">3</span>], <span style="color:#ae81ff">100</span>, <span style="color:#ae81ff">3</span>), title<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;3D&#34;</span>, leg<span style="color:#f92672">=</span>false)
-plot(p1, p2, layout<span style="color:#f92672">=</span>(<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">2</span>), fmt<span style="color:#f92672">=</span><span style="color:#e6db74">:png</span>)
-</code></pre></div><p>我們一樣照順序將點標為藍色, 紅色以及綠色. 有趣的是, 我們發現這個 embedding 將整個 spiral curve <strong>打開了</strong>. 因此, 經由 diffusion maps 投射之後我們比較榮以可以看出點資料真正在整個曲線上彼此間距離的遠近.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-julia" data-lang="julia"><span style="display:flex;"><span>p1 <span style="color:#f92672">=</span> plot(reshape(Y[<span style="color:#f92672">:</span>,<span style="color:#ae81ff">1</span>], <span style="color:#ae81ff">100</span>, <span style="color:#ae81ff">3</span>), reshape(Y[<span style="color:#f92672">:</span>,<span style="color:#ae81ff">2</span>], <span style="color:#ae81ff">100</span>, <span style="color:#ae81ff">3</span>), title<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;2D&#34;</span>, leg<span style="color:#f92672">=</span>false)
+</span></span><span style="display:flex;"><span>p2 <span style="color:#f92672">=</span> plot(reshape(Y[<span style="color:#f92672">:</span>,<span style="color:#ae81ff">1</span>], <span style="color:#ae81ff">100</span>, <span style="color:#ae81ff">3</span>), reshape(Y[<span style="color:#f92672">:</span>,<span style="color:#ae81ff">2</span>], <span style="color:#ae81ff">100</span>, <span style="color:#ae81ff">3</span>), reshape(Y[<span style="color:#f92672">:</span>,<span style="color:#ae81ff">3</span>], <span style="color:#ae81ff">100</span>, <span style="color:#ae81ff">3</span>), title<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;3D&#34;</span>, leg<span style="color:#f92672">=</span>false)
+</span></span><span style="display:flex;"><span>plot(p1, p2, layout<span style="color:#f92672">=</span>(<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">2</span>), fmt<span style="color:#f92672">=</span><span style="color:#e6db74">:png</span>)
+</span></span></code></pre></div><p>我們一樣照順序將點標為藍色, 紅色以及綠色. 有趣的是, 我們發現這個 embedding 將整個 spiral curve <strong>打開了</strong>. 因此, 經由 diffusion maps 投射之後我們比較榮以可以看出點資料真正在整個曲線上彼此間距離的遠近.</p>
 
 
 
@@ -920,7 +946,7 @@ plot(p1, p2, layout<span style="color:#f92672">=</span>(<span style="color:#ae81
   <div class="media author-card content-widget-hr">
     
       
-      <img class="avatar mr-3 avatar-circle" src="/authors/admin/avatar_hua0d4d4b24f4da3a102e4452ac738b95f_109236_270x270_fill_q90_lanczos_center.jpg" alt="Avatar">
+      <img class="avatar mr-3 avatar-circle" src="/authors/admin/avatar_hu_969ce894fa15fbce.jpg" alt="Avatar">
     
 
     <div class="media-body">
@@ -1136,7 +1162,7 @@ plot(p1, p2, layout<span style="color:#f92672">=</span>(<span style="color:#ae81
     
     
     
-    <script src="/js/academic.min.d49475924c8a1000c804942d870fd31c.js"></script>
+    <script src="/js/academic.min.b19faee487e6d1ec7e9bdaffdcf537a6.js"></script>
 
     
 

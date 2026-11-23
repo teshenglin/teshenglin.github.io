@@ -28,7 +28,45 @@
   
     
   
-  <meta name="description" content="Power 迭代法目錄: 基本概念 Power iteration; inverse power method; shifted inver power method 找第二大的 eigenvalue deflation Rayleigh Quotient 迭代及其收斂性 Power method with Rayleigh Quotient 基本 Power method 求一個方陣最大(in magnitude) 的 eigenvalue. 給定 $A$ 為一個 $n\times n$ 方陣. 我">
+  <meta name="description" content="Power 迭代法目錄:
+
+
+基本概念
+
+Power iteration; inverse power method; shifted inver power method
+
+
+
+找第二大的 eigenvalue
+
+deflation
+
+
+
+Rayleigh Quotient 迭代及其收斂性
+
+Power method with Rayleigh Quotient
+
+
+
+
+基本 Power method
+
+求一個方陣最大(in magnitude) 的 eigenvalue.
+
+給定 $A$ 為一個 $n\times n$ 方陣. 我們做以下兩個假設
+
+它的 eigenvalues 滿足
+$$
+|\lambda_1| &gt; |\lambda_2| \ge |\lambda_3| \cdots |\lambda_n|.
+$$
+相對應的 eigenvectors, $\{v_1, , v_2, , \cdots, v_n\}$, 會構成 $R^n$ 的一組基底.
+
+
+則若我們任意取一個 $n\times 1$ 向量 $u$, 它能被寫成 (根據假設 2)
+$$
+u =\sum^{n}_{i=1} c_iv_i.
+$$">
 
   
   <link rel="alternate" hreflang="en-us" href="https://teshenglin.github.io/post/2023_power_method_1/">
@@ -217,8 +255,8 @@
   
 
   <link rel="manifest" href="/index.webmanifest">
-  <link rel="icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_3.png">
-  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_3.png">
+  <link rel="icon" type="image/png" href="/images/icon_hu_549a1db3558c2382.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu_227762f9926463f1.png">
 
   <link rel="canonical" href="https://teshenglin.github.io/post/2023_power_method_1/">
 
@@ -236,8 +274,46 @@
   <meta property="og:site_name" content="Te-Sheng Lin">
   <meta property="og:url" content="https://teshenglin.github.io/post/2023_power_method_1/">
   <meta property="og:title" content="Power method | Te-Sheng Lin">
-  <meta property="og:description" content="Power 迭代法目錄: 基本概念 Power iteration; inverse power method; shifted inver power method 找第二大的 eigenvalue deflation Rayleigh Quotient 迭代及其收斂性 Power method with Rayleigh Quotient 基本 Power method 求一個方陣最大(in magnitude) 的 eigenvalue. 給定 $A$ 為一個 $n\times n$ 方陣. 我"><meta property="og:image" content="https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png">
-  <meta property="twitter:image" content="https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png"><meta property="og:locale" content="en-us">
+  <meta property="og:description" content="Power 迭代法目錄:
+
+
+基本概念
+
+Power iteration; inverse power method; shifted inver power method
+
+
+
+找第二大的 eigenvalue
+
+deflation
+
+
+
+Rayleigh Quotient 迭代及其收斂性
+
+Power method with Rayleigh Quotient
+
+
+
+
+基本 Power method
+
+求一個方陣最大(in magnitude) 的 eigenvalue.
+
+給定 $A$ 為一個 $n\times n$ 方陣. 我們做以下兩個假設
+
+它的 eigenvalues 滿足
+$$
+|\lambda_1| &gt; |\lambda_2| \ge |\lambda_3| \cdots |\lambda_n|.
+$$
+相對應的 eigenvectors, $\{v_1, , v_2, , \cdots, v_n\}$, 會構成 $R^n$ 的一組基底.
+
+
+則若我們任意取一個 $n\times 1$ 向量 $u$, 它能被寫成 (根據假設 2)
+$$
+u =\sum^{n}_{i=1} c_iv_i.
+$$"><meta property="og:image" content="https://teshenglin.github.io/images/icon_hu_c6eb360240c7098d.png">
+  <meta property="twitter:image" content="https://teshenglin.github.io/images/icon_hu_c6eb360240c7098d.png"><meta property="og:locale" content="en-us">
   
     
       <meta property="article:published_time" content="2023-04-27T00:00:00&#43;00:00">
@@ -283,10 +359,10 @@
     "name": "Te-Sheng Lin",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_3.png"
+      "url": "https://teshenglin.github.io/images/icon_hu_227762f9926463f1.png"
     }
   },
-  "description": "Power 迭代法目錄: 基本概念 Power iteration; inverse power method; shifted inver power method 找第二大的 eigenvalue deflation Rayleigh Quotient 迭代及其收斂性 Power method with Rayleigh Quotient 基本 Power method 求一個方陣最大(in magnitude) 的 eigenvalue. 給定 $A$ 為一個 $n\\times n$ 方陣. 我"
+  "description": "\u003cp\u003ePower 迭代法目錄:\u003c/p\u003e\n\u003col\u003e\n\u003cli\u003e\n\u003ca href=\"/post/2023_power_method_1\"\u003e基本概念\u003c/a\u003e\n\u003cblockquote\u003e\n\u003cp\u003ePower iteration; inverse power method; shifted inver power method\u003c/p\u003e\n\u003c/blockquote\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003ca href=\"/post/2023_power_method_2\"\u003e找第二大的 eigenvalue\u003c/a\u003e\n\u003cblockquote\u003e\n\u003cp\u003edeflation\u003c/p\u003e\n\u003c/blockquote\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003ca href=\"/post/2023_power_method_3\"\u003eRayleigh Quotient 迭代及其收斂性\u003c/a\u003e\n\u003cblockquote\u003e\n\u003cp\u003ePower method with Rayleigh Quotient\u003c/p\u003e\n\u003c/blockquote\u003e\n\u003c/li\u003e\n\u003c/ol\u003e\n\u003chr\u003e\n\u003ch2 id=\"基本-power-method\"\u003e基本 Power method\u003c/h2\u003e\n\u003cblockquote\u003e\n\u003cp\u003e求一個方陣最大(in magnitude) 的 eigenvalue.\u003c/p\u003e\n\u003c/blockquote\u003e\n\u003cp\u003e給定 $A$ 為一個 $n\\times n$ 方陣. 我們做以下兩個假設\u003c/p\u003e\n\u003col\u003e\n\u003cli\u003e它的 eigenvalues 滿足\n$$\n|\\lambda_1| \u0026gt; |\\lambda_2| \\ge |\\lambda_3| \\cdots |\\lambda_n|.\n$$\u003c/li\u003e\n\u003cli\u003e相對應的 eigenvectors, $\\{v_1, , v_2, , \\cdots, v_n\\}$, 會構成 $R^n$ 的一組基底.\u003c/li\u003e\n\u003c/ol\u003e\n\u003chr\u003e\n\u003cp\u003e則若我們\u003cem\u003e\u003cstrong\u003e任意取\u003c/strong\u003e\u003c/em\u003e一個 $n\\times 1$ 向量 $u$, 它能被寫成 (根據假設 2)\n$$\nu =\\sum^{n}_{i=1} c_iv_i.\n$$\u003c/p\u003e"
 }
 </script>
 
@@ -672,7 +748,7 @@ Output: (取絕對值後)最大的 eigenvalue $\lambda_1$ 以及 $v_1$</p>
 </ol>
 <hr>
 <p>Pseudo code:</p>
-<pre><code>Input: matrix A
+<pre tabindex="0"><code>Input: matrix A
 Output: lambda1, u
 
 u = random(size(A,1),1)
@@ -703,7 +779,7 @@ end
 <hr>
 <p>事實上我們的目標只是不要讓向量爆掉或趨近於零, 所以可以簡單的把某個位置的值固定住, 比如說我們強迫 $v_1$ 的第一個位置等於 $1$, 這樣就沒問題了.</p>
 <p>Pseudo code:</p>
-<pre><code>while diff &gt; Tol
+<pre tabindex="0"><code>while diff &gt; Tol
     v = A*u
     lambda1 = v(1)
     u = v/lambda1
@@ -847,7 +923,7 @@ $$
   <div class="media author-card content-widget-hr">
     
       
-      <img class="avatar mr-3 avatar-circle" src="/authors/admin/avatar_hua0d4d4b24f4da3a102e4452ac738b95f_109236_270x270_fill_q90_lanczos_center.jpg" alt="Avatar">
+      <img class="avatar mr-3 avatar-circle" src="/authors/admin/avatar_hu_969ce894fa15fbce.jpg" alt="Avatar">
     
 
     <div class="media-body">
@@ -1046,7 +1122,7 @@ $$
     
     
     
-    <script src="/js/academic.min.d49475924c8a1000c804942d870fd31c.js"></script>
+    <script src="/js/academic.min.b19faee487e6d1ec7e9bdaffdcf537a6.js"></script>
 
     
 

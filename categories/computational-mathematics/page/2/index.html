@@ -219,8 +219,8 @@
   
 
   <link rel="manifest" href="/index.webmanifest">
-  <link rel="icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_3.png">
-  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_3.png">
+  <link rel="icon" type="image/png" href="/images/icon_hu_549a1db3558c2382.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu_227762f9926463f1.png">
 
   <link rel="canonical" href="https://teshenglin.github.io/categories/computational-mathematics/">
 
@@ -238,8 +238,8 @@
   <meta property="og:site_name" content="Te-Sheng Lin">
   <meta property="og:url" content="https://teshenglin.github.io/categories/computational-mathematics/">
   <meta property="og:title" content="Computational Mathematics | Te-Sheng Lin">
-  <meta property="og:description" content="Professor"><meta property="og:image" content="https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png">
-  <meta property="twitter:image" content="https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png"><meta property="og:locale" content="en-us">
+  <meta property="og:description" content="Professor"><meta property="og:image" content="https://teshenglin.github.io/images/icon_hu_c6eb360240c7098d.png">
+  <meta property="twitter:image" content="https://teshenglin.github.io/images/icon_hu_c6eb360240c7098d.png"><meta property="og:locale" content="en-us">
   
     <meta property="og:updated_time" content="2023-12-18T00:00:00&#43;00:00">
   
@@ -490,7 +490,9 @@
       <h2><a href="/post/2020_principal_component_analysis/" >主成分分析</a></h2>
       <div class="article-style">
         
-          主成分分析, Principal component analysis, 簡稱 PCA, 是個資料分析或是資料降維的工具. 資料降維簡單來說, 假設我們有一些資料, 這資料中的每一筆維度都很高, 導致我們很難 &ld
+           主成分分析, Principal component analysis, 簡稱 PCA, 是個資料分析或是資料降維的工具.
+資料降維簡單來說, 假設我們有一些資料, 這資料中的每一筆維度都很高, 導致我們很難 &ldquo;看出&rdquo; 或 &ldquo;分析&rdquo; 這資料集的特性, 這時候我們就會想要在低維度空間裡(通常三維以下)建構一組點資料, 並且想辦法使新的這組點資料在某些程度上能表示出原本高維度的點資料, 或保有某種特性. 這種將高維度資料在低維度表現出來的方式就稱為資料降維. 而 PCA 就是其中一種線性降維的方式.
+
         
       </div>
     </div>
@@ -502,7 +504,12 @@
       <h2><a href="/post/2020_numerical_integration_4/" >Clenshaw–Curtis quadrature</a></h2>
       <div class="article-style">
         
-          前情提要: 數值積分初探 前情提要: 以內插多項式來做數值積分 前情提要: 高斯積分 我們想要利用 Chebyshev polynomial 來算積分 Goal: 任意給定一可積分函數 $f(x)$, $x\in[-1, 1]$, 我們想要算 $\int^1_{-1} f(x)
+          前情提要: 數值積分初探
+前情提要: 以內插多項式來做數值積分
+前情提要: 高斯積分
+我們想要利用 Chebyshev polynomial 來算積分
+Goal: 任意給定一可積分函數 $f(x)$, $x\in[-1, 1]$, 我們想要算 $\int^1_{-1} f(x) dx$. Idea: 我們簡單做個變數變換 $x = \cos\theta$ 可以得到 $$ \int^1_{-1} f(x) dx = \int^{\pi}0 f(\cos\theta)\sin\theta d\theta. $$ 所以如果我能將 $f(x)$ 這個函數以 first kind Chebyshev polynomial 來做展開, i.e., $$ f(x) = \sum^N{k=0} a_k T_k(x) = \sum^N_{k=0} a_k \cos(k\cos^{-1}x). $$ 那代入後我們就有 $$ \int^1_{-1} f(x) dx = \int^{\pi}0 \sum^N{k=0} a_k \cos(k\theta)\sin\theta d\theta = \sum^{N/2}{k=0}\frac{2 a{2k}}{1-(2k)^2}. $$
+
         
       </div>
     </div>
@@ -514,7 +521,11 @@
       <h2><a href="/post/2020_lagrange_multiplier/" >Lagrange Multiplier - 01</a></h2>
       <div class="article-style">
         
-          在微積分課程裡我們有學到如何利用 Lagrange multiplier 來解 constraint optimization 問題. 這邊要介紹課本裡沒教的 Lagrangian function. Goal: 我們想要解以下這個問題 $$ \min_{x} f(x), \quad \text{subject to } \quad g(x)=0. $$ Observation 微積分課本告訴我們
+           在微積分課程裡我們有學到如何利用 Lagrange multiplier 來解 constraint optimization 問題. 這邊要介紹課本裡沒教的 Lagrangian function.
+Goal: 我們想要解以下這個問題 $$ \min_{x} f(x), \quad \text{subject to } \quad g(x)=0. $$
+Observation
+微積分課本告訴我們一個相對好懂的直觀, 就是這個解會發生在兩個等高線相切的地方, 因此在這個問題的解那個點的位置, 兩個函數 $f$ 與 $g$ 等高線的法向量會平行, 因此可以列出以下兩個式子 $$ \partial_x f + \lambda \partial_x g = 0, \quad g(x)=0. $$ 這裡我們引進一個新的未知數 $\lambda$, 即稱為 Lagrange multiplier. 因為有兩個方程式, 因此我們可以解出兩個未知數 $x$ 以及 $\lambda$.
+
         
       </div>
     </div>
@@ -526,7 +537,10 @@
       <h2><a href="/post/2020_lagrange_multiplier_2/" >Lagrange Multiplier - 02</a></h2>
       <div class="article-style">
         
-          這裡我們再多討論一點 Lagrangian function. 我們先看最簡單的一維問題, 求一個有限制式的函數最小值問題: $$ \min_{x} f(x), \quad \text{subject to } \quad g(x)=0. $$ 我們引進 Lagrangian function $$ L(x, \lambda) = f(x) + \lambda g(x) $$ 並且知道
+           這裡我們再多討論一點 Lagrangian function.
+我們先看最簡單的一維問題, 求一個有限制式的函數最小值問題: $$ \min_{x} f(x), \quad \text{subject to } \quad g(x)=0. $$
+我們引進 Lagrangian function $$ L(x, \lambda) = f(x) + \lambda g(x) $$ 並且知道原問題的解發生在 $\nabla L=0$ 的地方.
+
         
       </div>
     </div>
@@ -538,7 +552,9 @@
       <h2><a href="/post/2020_lagrange_multiplier_3/" >Lagrange Multiplier - 03</a></h2>
       <div class="article-style">
         
-          這裡我們討論一下 Lagrange multiplier. 我們知道, 如果想要解以下這個有限制式的最佳化問題 $$ \min_{x} f(x), \quad \text{subject to } \quad g(x)=k, $$ 一個方式是引進 Lagrange multiplier, $\lambda$, 然後可以列出以下兩個式子 $$ \partial_x f +
+           這裡我們討論一下 Lagrange multiplier.
+我們知道, 如果想要解以下這個有限制式的最佳化問題 $$ \min_{x} f(x), \quad \text{subject to } \quad g(x)=k, $$ 一個方式是引進 Lagrange multiplier, $\lambda$, 然後可以列出以下兩個式子 $$ \partial_x f + \lambda \partial_x g = 0, \quad g(x)=k. $$
+
         
       </div>
     </div>
@@ -550,7 +566,9 @@
       <h2><a href="/post/2020_numerical_integration_2/" >以內插多項式來做數值積分</a></h2>
       <div class="article-style">
         
-          前情提要: 數值積分初探 連續函數可以用多項式來逼近它, 因此直覺來講, 既然我們已經找到一個離給定函數&quot;很近&quot;的多項式了, 何不
+          前情提要: 數值積分初探
+連續函數可以用多項式來逼近它, 因此直覺來講, 既然我們已經找到一個離給定函數&quot;很近&quot;的多項式了, 何不就以這個多項式的積分值來當成原函數積分值的一個逼近呢.
+
         
       </div>
     </div>
@@ -562,7 +580,11 @@
       <h2><a href="/post/2020_numerical_integration_3/" >高斯積分</a></h2>
       <div class="article-style">
         
-          前情提要: 數值積分初探 前情提要: 以內插多項式來做數值積分 我們想要找到一些插值點使得以內插多項式來做數值積分會最準. 這就是高斯積分. Goal: 任意給定
+          前情提要: 數值積分初探
+前情提要: 以內插多項式來做數值積分
+我們想要找到一些插值點使得以內插多項式來做數值積分會最準. 這就是高斯積分.
+Goal: 任意給定一可積分函數 $f(x)$, $x\in[-1, 1]$, 我們想要算 $\int^1_{-1} f(x) dx$. 複習一下內插多項式的積分
+
         
       </div>
     </div>
@@ -574,7 +596,8 @@
       <h2><a href="/post/2019_numerical_integration/" >數值積分初探</a></h2>
       <div class="article-style">
         
-          在微積分課程裡我們有學到積分的&rsquo;中點法', &lsquo;梯形法&rsquo;以及&rsquo;辛普森法&rsquo;. 這裡我們簡
+           在微積分課程裡我們有學到積分的&rsquo;中點法&rsquo;, &lsquo;梯形法&rsquo;以及&rsquo;辛普森法&rsquo;. 這裡我們簡介一些基本概念並且引進高斯積分法.
+
         
       </div>
     </div>
@@ -586,7 +609,11 @@
       <h2><a href="/post/2019_fixed_point/" >Fixed point iteration</a></h2>
       <div class="article-style">
         
-          這裡我們介紹固定點迭代法 (Fixed point iteration) 首先我們介紹什麼是固定點 (Fixed point) Definition: Fixed point A fixed point of a function $f(x)$ is a number $c$ in its domain such that $f(c)=c$. 所以簡單來說, 把固定點這個數字丟進函數後會
+           這裡我們介紹固定點迭代法 (Fixed point iteration)
+首先我們介紹什麼是固定點 (Fixed point)
+Definition: Fixed point A fixed point of a function $f(x)$ is a number $c$ in its domain such that $f(c)=c$.
+所以簡單來說, 把固定點這個數字丟進函數後會得到同樣的一個數字. 所以稱之為固定點.
+
         
       </div>
     </div>
@@ -598,7 +625,11 @@
       <h2><a href="/post/2019_derivate_evaluate/" >用電腦算微分</a></h2>
       <div class="article-style">
         
-          前情提要: 用電腦算極限 這裡我們要講的是用數值計算來算函數的微分值. 已知一個函數 $f(x)$ 在某個點 $a$ 的微分值定義是 $$ f'(a) = \lim_{h\to 0} \frac{f(a+h)-f(a)}{h}. $$ 我們用一個簡單的例子試
+          前情提要: 用電腦算極限
+這裡我們要講的是用數值計算來算函數的微分值.
+已知一個函數 $f(x)$ 在某個點 $a$ 的微分值定義是 $$ f&rsquo;(a) = \lim_{h\to 0} \frac{f(a+h)-f(a)}{h}. $$
+我們用一個簡單的例子試試看. 假設我們想求 $f(x)=x^2$ 在 $x=\pi$ 的微分. 根據定義我們有
+
         
       </div>
     </div>
@@ -726,7 +757,7 @@
     
     
     
-    <script src="/js/academic.min.d49475924c8a1000c804942d870fd31c.js"></script>
+    <script src="/js/academic.min.b19faee487e6d1ec7e9bdaffdcf537a6.js"></script>
 
     
 

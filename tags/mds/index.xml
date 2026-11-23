@@ -7,7 +7,7 @@
     <description>MDS</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 31 Aug 2020 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <url>https://teshenglin.github.io/images/icon_hu_c6eb360240c7098d.png</url>
       <title>MDS</title>
       <link>https://teshenglin.github.io/tags/mds/</link>
     </image>
@@ -32,9 +32,9 @@ $$
 &lt;hr&gt;
 &lt;h5 id=&#34;舉例來說&#34;&gt;舉例來說&lt;/h5&gt;
 &lt;p&gt;以下我們用 Matlab 隨機生出 $R^2$ 空間中的 $5$ 個點, 並求出他的 EDM:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;% Matlab program
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;% Matlab program
 X = rand(2,5);                                  % R^2 中的 5 個點
-D = squareform(pdist(X&#39;, &#39;squaredeuclidean&#39;));  % 求出其 EDM
+D = squareform(pdist(X&amp;#39;, &amp;#39;squaredeuclidean&amp;#39;));  % 求出其 EDM
 &lt;/code&gt;&lt;/pre&gt;&lt;pre&gt;&lt;code&gt;D =
      0    0.3839    0.2333    0.2675    0.6373
 0.3839         0    0.1571    0.1272    0.0470
@@ -129,7 +129,7 @@ $$
 &lt;hr&gt;
 &lt;p&gt;一般來說我們會將 MDS 當成一個降維的工具, 希望在低維度(二或三, 或 $k$)找到一組資料使得其 EDM 與原始資料的 EDM 最像. 而作法就是保留前 $k$ 個特徵值及其特徵向量.&lt;/p&gt;
 &lt;p&gt;給定一個 $n\times n$ 的 EDM 以及欲投影的維度 $k$, MDS 簡單的程式如下:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;% Matlab program
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;% Matlab program
 function Y = multidimensional_scaling(D, k)
 
 %   Input: D, n*n EDM 矩陣, 元素為距離平方
@@ -140,11 +140,11 @@ function Y = multidimensional_scaling(D, k)
     mu = sum(D, 1)/n; D = D - mu;           %
     mu = sum(D, 2)/n; B = D - mu;           %
     B = -0.5*B;                             % B = -0.5*H*D*H
-    [V, D] = eig(B, &#39;vector&#39;);              % 求出特徵值及特徵向量
-    [sqD, ind] = sort(sqrt(D), &#39;descend&#39;);  % 將特徵值按大小排列
+    [V, D] = eig(B, &amp;#39;vector&amp;#39;);              % 求出特徵值及特徵向量
+    [sqD, ind] = sort(sqrt(D), &amp;#39;descend&amp;#39;);  % 將特徵值按大小排列
     sqD = sqD(1:k);                         % 取前 k 個
     V = V(:, ind(1:k));                     % 取相對應的特徵向量
-    Y = V&#39;.*(sqD*ones(1,n));                % 求出 k 維資料點
+    Y = V&amp;#39;.*(sqD*ones(1,n));                % 求出 k 維資料點
 end
 &lt;/code&gt;&lt;/pre&gt;&lt;hr&gt;
 &lt;h2 id=&#34;extension&#34;&gt;Extension&lt;/h2&gt;

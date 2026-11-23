@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>conjugate gradient method | Te-Sheng Lin</title>
+    <title>Conjugate Gradient Method | Te-Sheng Lin</title>
     <link>https://teshenglin.github.io/tags/conjugate-gradient-method/</link>
       <atom:link href="https://teshenglin.github.io/tags/conjugate-gradient-method/index.xml" rel="self" type="application/rss+xml" />
-    <description>conjugate gradient method</description>
+    <description>Conjugate Gradient Method</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Thu, 27 Apr 2023 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
-      <title>conjugate gradient method</title>
+      <url>https://teshenglin.github.io/images/icon_hu_c6eb360240c7098d.png</url>
+      <title>Conjugate Gradient Method</title>
       <link>https://teshenglin.github.io/tags/conjugate-gradient-method/</link>
     </image>
     
@@ -70,8 +70,8 @@ $$
 $$
 \tag{2} \begin{align}
 r_{k+1} &amp;amp;= b - Ax_{k+1} \\
-&amp;amp;= b - A(x_k + t_ku_k) \\&lt;br&gt;
-&amp;amp;= (b-Ax_k)  - t_kAu_k \\&lt;br&gt;
+&amp;amp;= b - A(x_k + t_ku_k) \\
+&amp;amp;= (b-Ax_k)  - t_kAu_k \\
 &amp;amp;= r_k  - t_kAu_k.
 \end{align}
 $$&lt;/p&gt;
@@ -79,7 +79,7 @@ $$&lt;/p&gt;
 $$
 \begin{align}
 \langle r_{k}, u_{j}\rangle
-&amp;amp;= \langle r_{k-1}, u_{j}\rangle-t_{k-1}\langle Au_{k-1}, u_{j}\rangle \\&lt;br&gt;
+&amp;amp;= \langle r_{k-1}, u_{j}\rangle-t_{k-1}\langle Au_{k-1}, u_{j}\rangle \\
 &amp;amp;= \langle r_{k-1}, u_{j}\rangle.
 \end{align}
 $$
@@ -96,7 +96,7 @@ $$&lt;/p&gt;
 \begin{align}
 \langle r_{j+1}, u_j\rangle
 &amp;amp;= \langle r_j, u_j\rangle-t_j\langle Au_j, u_j\rangle \\
-&amp;amp;= \langle r_j, u_j\rangle-\frac{\langle r_j,u_j\rangle}{\langle u_j,Au_j\rangle}\langle Au_j, u_j\rangle\\&lt;br&gt;
+&amp;amp;= \langle r_j, u_j\rangle-\frac{\langle r_j,u_j\rangle}{\langle u_j,Au_j\rangle}\langle Au_j, u_j\rangle\\
 &amp;amp;=0.
 \end{align}
 $$&lt;/p&gt;
@@ -137,9 +137,9 @@ $$
 &lt;p&gt;接著我們可以往下做, for $k\ge 0$,
 $$
 \begin{align}
-t_{k} &amp;amp;=\frac{\langle b-Ax_k,u_{k}\rangle}{\langle u_k,Au_{k}\rangle}, \\&lt;br&gt;
-x_{k+1} &amp;amp;= x_k + t_k u_k, \\&lt;br&gt;
-r_{k+1} &amp;amp;= r_k - t_kAu_k, \\&lt;br&gt;
+t_{k} &amp;amp;=\frac{\langle b-Ax_k,u_{k}\rangle}{\langle u_k,Au_{k}\rangle}, \\
+x_{k+1} &amp;amp;= x_k + t_k u_k, \\
+r_{k+1} &amp;amp;= r_k - t_kAu_k, \\
 u_{k+1} &amp;amp;= r_{k+1} - \frac{\langle r_{k+1}, Au_0\rangle}{\langle u_0, Au_0\rangle}u_0 - \cdots - \frac{\langle r_{k+1}, Au_k\rangle}{\langle u_k, Au_k\rangle}u_k.
 \end{align}
 $$
@@ -186,8 +186,8 @@ $$&lt;/p&gt;
 $$
 \tag{7}
 \begin{align}
-t_k &amp;amp;= \frac{\langle r_{k}, u_{k} \rangle}{\langle u_{k}, Au_{k} \rangle} = \frac{\langle r_{k}, r_{k} + \beta_{k-1}u_{k-1} \rangle}{\langle u_{k}, Au_{k} \rangle} \\&lt;br&gt;
-&amp;amp;= \frac{\langle r_{k}, r_{k}  \rangle}{\langle u_{k}, Au_{k} \rangle} + \frac{\langle r_{k}, \beta_{k-1}u_{k-1} \rangle}{\langle u_{k}, Au_{k} \rangle} \\&lt;br&gt;
+t_k &amp;amp;= \frac{\langle r_{k}, u_{k} \rangle}{\langle u_{k}, Au_{k} \rangle} = \frac{\langle r_{k}, r_{k} + \beta_{k-1}u_{k-1} \rangle}{\langle u_{k}, Au_{k} \rangle} \\
+&amp;amp;= \frac{\langle r_{k}, r_{k}  \rangle}{\langle u_{k}, Au_{k} \rangle} + \frac{\langle r_{k}, \beta_{k-1}u_{k-1} \rangle}{\langle u_{k}, Au_{k} \rangle} \\
 &amp;amp;= \frac{\langle r_{k}, r_{k}  \rangle}{\langle u_{k}, Au_{k} \rangle}.
 \end{align}
 $$
@@ -206,10 +206,10 @@ $$&lt;/p&gt;
 &lt;p&gt;接著我們可以往下做, for $k\ge 0$,
 $$
 \begin{align}
-t_{k} &amp;amp;=\frac{\langle r_k,r_{k}\rangle}{\langle u_k,Au_{k}\rangle},\\&lt;br&gt;
-x_{k+1} &amp;amp;= x_k + t_k u_k, \\&lt;br&gt;
-r_{k+1} &amp;amp;= r_k  - t_kAu_k, \\&lt;br&gt;
-\beta_k &amp;amp;= \frac{\langle r_{k+1}, r_{k+1}\rangle}{\langle r_{k}, r_{k}\rangle},\\&lt;br&gt;
+t_{k} &amp;amp;=\frac{\langle r_k,r_{k}\rangle}{\langle u_k,Au_{k}\rangle},\\
+x_{k+1} &amp;amp;= x_k + t_k u_k, \\
+r_{k+1} &amp;amp;= r_k  - t_kAu_k, \\
+\beta_k &amp;amp;= \frac{\langle r_{k+1}, r_{k+1}\rangle}{\langle r_{k}, r_{k}\rangle},\\
 u_{k+1} &amp;amp;= r_{k+1} + \beta_k u_k.
 \end{align}
 $$&lt;/p&gt;

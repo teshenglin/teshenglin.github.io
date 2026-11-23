@@ -7,7 +7,7 @@
     <description>陳昱揚</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 22 May 2020 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <url>https://teshenglin.github.io/images/icon_hu_c6eb360240c7098d.png</url>
       <title>陳昱揚</title>
       <link>https://teshenglin.github.io/authors/%E9%99%B3%E6%98%B1%E6%8F%9A/</link>
     </image>
@@ -31,8 +31,6 @@
 &lt;p&gt;(c) 畫出$L_1$、$f$和 $L_2$，以圖形證實軌道之間的接點是平滑的。&lt;/p&gt;
 &lt;p&gt;(d) 找出$P$和$Q$之間的垂直距離。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;解答:&lt;/strong&gt;&lt;/p&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;!-- raw HTML omitted --&gt;
 &lt;p&gt;下圖是這些函數的圖形：&lt;/p&gt;
 
 
@@ -76,8 +74,6 @@ $$&lt;/p&gt;
 &lt;p&gt;(b) 利用電腦計算系統解出第(a)小題的等式，以找出$q(x)$、$g(x)$和$h(x)$的方程式。&lt;/p&gt;
 &lt;p&gt;(c) 畫出 $L_1$、 $g$、 $q$、 $h$和 $L_2$，並與問題一的第(c)小題的圖形相互比較。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;解答:&lt;/strong&gt;&lt;/p&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;!-- raw HTML omitted --&gt;
 &lt;p&gt;以下為更加平滑的軌道的圖形：
 
 
@@ -108,8 +104,6 @@ $$&lt;/p&gt;
 &lt;/figure&gt;
 
 紅線是$g(x)$的圖形，藍線是$q(x)$的圖形，綠線是$h(x)$的圖形。&lt;/p&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;!-- raw HTML omitted --&gt;
 &lt;hr&gt;
 </description>
     </item>
@@ -133,8 +127,6 @@ Chinese version:
 &lt;p&gt;(c) Plot $L_1$, $f$, and $L_2$ to verify graphically that the transitions are smooth.&lt;/p&gt;
 &lt;p&gt;(d) Find the difference in elevation between $P$ and $Q$.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;!-- raw HTML omitted --&gt;
 &lt;p&gt;Below is the graph of these formula:
 
 
@@ -178,8 +170,6 @@ $$&lt;/p&gt;
 &lt;p&gt;(b) Solve the equations in part (a) with a computer algebra system to find formulas for $q(x)$, $g(x)$, and $h(x)$.&lt;/p&gt;
 &lt;p&gt;(c) Plot $L_1$, $g$, $q$, $h$, and $L_2$, and compare with the plot in Problem1(c).&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;!-- raw HTML omitted --&gt;
 &lt;p&gt;Below is the graph of the smoother roller coaster:
 
 
@@ -210,8 +200,6 @@ $$&lt;/p&gt;
 &lt;/figure&gt;
 
 The red one is the graph of $g(x)$, the blue one is the graph of $q(x)$, and the green one is the graph of $h(x)$.&lt;/p&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;!-- raw HTML omitted --&gt;
 &lt;hr&gt;
 </description>
     </item>

@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>inverse power method | Te-Sheng Lin</title>
+    <title>Inverse Power Method | Te-Sheng Lin</title>
     <link>https://teshenglin.github.io/tags/inverse-power-method/</link>
       <atom:link href="https://teshenglin.github.io/tags/inverse-power-method/index.xml" rel="self" type="application/rss+xml" />
-    <description>inverse power method</description>
+    <description>Inverse Power Method</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Thu, 27 Apr 2023 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
-      <title>inverse power method</title>
+      <url>https://teshenglin.github.io/images/icon_hu_c6eb360240c7098d.png</url>
+      <title>Inverse Power Method</title>
       <link>https://teshenglin.github.io/tags/inverse-power-method/</link>
     </image>
     
@@ -91,7 +91,7 @@ Output: (取絕對值後)最大的 eigenvalue $\lambda_1$ 以及 $v_1$&lt;/p&gt;
 &lt;/ol&gt;
 &lt;hr&gt;
 &lt;p&gt;Pseudo code:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;Input: matrix A
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Input: matrix A
 Output: lambda1, u
 
 u = random(size(A,1),1)
@@ -122,7 +122,7 @@ end
 &lt;hr&gt;
 &lt;p&gt;事實上我們的目標只是不要讓向量爆掉或趨近於零, 所以可以簡單的把某個位置的值固定住, 比如說我們強迫 $v_1$ 的第一個位置等於 $1$, 這樣就沒問題了.&lt;/p&gt;
 &lt;p&gt;Pseudo code:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;while diff &amp;gt; Tol
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;while diff &amp;gt; Tol
     v = A*u
     lambda1 = v(1)
     u = v/lambda1

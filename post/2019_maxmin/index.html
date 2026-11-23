@@ -28,7 +28,15 @@
   
     
   
-  <meta name="description" content="這裡我們要討論一個函數的最大值以及最小值. 首先我們有極值定理 Theorem: Extreme value theorem If $f$ is a real-valued continuous function on the closed interval $[a,b]$, then $f$ must attain a maximum and a minimum. 所以對於定義在封閉區間的連續函">
+  <meta name="description" content="
+這裡我們要討論一個函數的最大值以及最小值.
+
+首先我們有極值定理
+
+Theorem: Extreme value theorem
+If $f$ is a real-valued continuous function on the closed interval $[a,b]$, then $f$ must attain a maximum and a minimum.
+
+所以對於定義在封閉區間的連續函數, 必定會有極值. 接下來我們看一下實際上我們怎麼把極值找出來.">
 
   
   <link rel="alternate" hreflang="en-us" href="https://teshenglin.github.io/post/2019_maxmin/">
@@ -217,8 +225,8 @@
   
 
   <link rel="manifest" href="/index.webmanifest">
-  <link rel="icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_3.png">
-  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_3.png">
+  <link rel="icon" type="image/png" href="/images/icon_hu_549a1db3558c2382.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu_227762f9926463f1.png">
 
   <link rel="canonical" href="https://teshenglin.github.io/post/2019_maxmin/">
 
@@ -236,8 +244,16 @@
   <meta property="og:site_name" content="Te-Sheng Lin">
   <meta property="og:url" content="https://teshenglin.github.io/post/2019_maxmin/">
   <meta property="og:title" content="Maximum and minimum of a function | Te-Sheng Lin">
-  <meta property="og:description" content="這裡我們要討論一個函數的最大值以及最小值. 首先我們有極值定理 Theorem: Extreme value theorem If $f$ is a real-valued continuous function on the closed interval $[a,b]$, then $f$ must attain a maximum and a minimum. 所以對於定義在封閉區間的連續函"><meta property="og:image" content="https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png">
-  <meta property="twitter:image" content="https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png"><meta property="og:locale" content="en-us">
+  <meta property="og:description" content="
+這裡我們要討論一個函數的最大值以及最小值.
+
+首先我們有極值定理
+
+Theorem: Extreme value theorem
+If $f$ is a real-valued continuous function on the closed interval $[a,b]$, then $f$ must attain a maximum and a minimum.
+
+所以對於定義在封閉區間的連續函數, 必定會有極值. 接下來我們看一下實際上我們怎麼把極值找出來."><meta property="og:image" content="https://teshenglin.github.io/images/icon_hu_c6eb360240c7098d.png">
+  <meta property="twitter:image" content="https://teshenglin.github.io/images/icon_hu_c6eb360240c7098d.png"><meta property="og:locale" content="en-us">
   
     
       <meta property="article:published_time" content="2019-10-29T00:00:00&#43;00:00">
@@ -283,10 +299,10 @@
     "name": "Te-Sheng Lin",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_3.png"
+      "url": "https://teshenglin.github.io/images/icon_hu_227762f9926463f1.png"
     }
   },
-  "description": "這裡我們要討論一個函數的最大值以及最小值. 首先我們有極值定理 Theorem: Extreme value theorem If $f$ is a real-valued continuous function on the closed interval $[a,b]$, then $f$ must attain a maximum and a minimum. 所以對於定義在封閉區間的連續函"
+  "description": "\u003cblockquote\u003e\n\u003cp\u003e這裡我們要討論一個函數的最大值以及最小值.\u003c/p\u003e\n\u003c/blockquote\u003e\n\u003cp\u003e首先我們有極值定理\u003c/p\u003e\n\u003cblockquote\u003e\n\u003ch2 id=\"theorem-extreme-value-theorem\"\u003eTheorem: Extreme value theorem\u003c/h2\u003e\n\u003cp\u003eIf $f$ is a real-valued continuous function on the closed interval $[a,b]$, then $f$ must attain a maximum and a minimum.\u003c/p\u003e\n\u003c/blockquote\u003e\n\u003cp\u003e所以對於定義在封閉區間的連續函數, 必定會有極值. 接下來我們看一下實際上我們怎麼把極值找出來.\u003c/p\u003e"
 }
 </script>
 
@@ -609,11 +625,11 @@
 <p>所以對於定義在封閉區間的連續函數, 必定會有極值. 接下來我們看一下實際上我們怎麼把極值找出來.</p>
 <p>在微積分課本裡有所謂的封閉區間法, 如下:</p>
 <h2 id="the-closed-interval-method">The closed interval method</h2>
-<pre><code class="language-mermaid" data-lang="mermaid">graph TD;
+<pre tabindex="0"><code class="language-mermaid" data-lang="mermaid">graph TD;
   B[f is `continuous` on a `closed interval`]--&gt;A;
   B--&gt;C;
-  A[Determine the critical points]--&gt;|f'=0| D(The largest value at these points is the abs. max. and the smallest value is the abs. min.);
-  A--&gt;|f' not exists| D;
+  A[Determine the critical points]--&gt;|f&#39;=0| D(The largest value at these points is the abs. max. and the smallest value is the abs. min.);
+  A--&gt;|f&#39; not exists| D;
   C[Determine the end points]--&gt;D;
 </code></pre><p>這個方法的原理跟做法都很簡單, 我這邊就不多做說明.</p>
 <p>不過我要做一些補充. 事實上這個方法要能用還有一個很重要的假設是<code>假設這個函數只在有限個地方微分不存在</code>. 如果一個函數在無窮多地方微分不存在, 雖然最大值還會是 &ldquo;微分等於 0&rdquo;, &ldquo;微分不存在&rdquo;, &ldquo;端點&rdquo; 這些地方的函數值中找最大的. 不過實作上會找不完. 所以等於是沒有用.</p>
@@ -737,7 +753,7 @@
   <div class="media author-card content-widget-hr">
     
       
-      <img class="avatar mr-3 avatar-circle" src="/authors/admin/avatar_hua0d4d4b24f4da3a102e4452ac738b95f_109236_270x270_fill_q90_lanczos_center.jpg" alt="Avatar">
+      <img class="avatar mr-3 avatar-circle" src="/authors/admin/avatar_hu_969ce894fa15fbce.jpg" alt="Avatar">
     
 
     <div class="media-body">
@@ -947,7 +963,7 @@
     
     
     
-    <script src="/js/academic.min.d49475924c8a1000c804942d870fd31c.js"></script>
+    <script src="/js/academic.min.b19faee487e6d1ec7e9bdaffdcf537a6.js"></script>
 
     
 

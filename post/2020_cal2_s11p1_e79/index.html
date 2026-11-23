@@ -28,7 +28,50 @@
   
     
   
-  <meta name="description" content="Section 11.1, exercise 79: Find the limit of $$ \{\sqrt{2}, \sqrt{2\sqrt{2}}, \sqrt{2\sqrt{2\sqrt{2}}}, \cdots\} $$ Remark: 這個數列也可以用以下表示方式 $$ a_1 = \sqrt{2}, \quad a_{n&#43;1} = \sqrt{2 a_n}, \quad n\in \mathbb{N}, \quad n&gt;1. $$ Method 1 我們首先證明它有極限 $a_n&lt;2$ (我們使用數學歸納法) 已知">
+  <meta name="description" content="Section 11.1, exercise 79: Find the limit of
+$$
+\{\sqrt{2}, \sqrt{2\sqrt{2}}, \sqrt{2\sqrt{2\sqrt{2}}}, \cdots\}
+$$
+
+Remark: 這個數列也可以用以下表示方式
+$$
+a_1 = \sqrt{2}, \quad a_{n&#43;1} = \sqrt{2 a_n}, \quad n\in \mathbb{N}, \quad n&gt;1.
+$$
+
+Method 1
+
+
+我們首先證明它有極限
+
+$a_n&lt;2$ (我們使用數學歸納法)
+
+已知 $a_1=\sqrt{2}&lt;2$, 成立.
+假設 $a_k&lt;2$, 則 $a_{k&#43;1} = \sqrt{2a_k} &lt; \sqrt{2\times 2} = 2$, 亦成立.
+根據數學歸納法我們得到 $a_n&lt;2$, $\forall n$.
+
+
+$a_n&gt;0$
+
+這個顯然
+
+
+claim: $a_{n&#43;1}&gt;a_n$
+
+由於 $0&lt;a_n&lt;2$, 我們可以得到 $a_n(a_n-2)&lt;0$, 移項並兩邊同時開根號得到 $a_{n&#43;1}=\sqrt{2a_n} &gt; a_n$.
+
+
+因為數列 $\{a_n\}$ 遞增且有界, 根據 Monotone sequence theorem 此數列收斂.
+
+
+
+我們接著求此數列極限值
+假設 $\lim_{n\to\infty} a_n=L$, 則
+$$
+\lim_{n\to\infty} a_{n&#43;1} = \lim_{n\to\infty} \sqrt{2 a_n}, \quad \Longrightarrow \quad L = \sqrt{2L}.
+$$
+所以 $L=0$ 或 $L=2$. 我們知道 $a_n$ 為遞增數列所以 $L = 2$.
+
+">
 
   
   <link rel="alternate" hreflang="en-us" href="https://teshenglin.github.io/post/2020_cal2_s11p1_e79/">
@@ -217,8 +260,8 @@
   
 
   <link rel="manifest" href="/index.webmanifest">
-  <link rel="icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_3.png">
-  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_3.png">
+  <link rel="icon" type="image/png" href="/images/icon_hu_549a1db3558c2382.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu_227762f9926463f1.png">
 
   <link rel="canonical" href="https://teshenglin.github.io/post/2020_cal2_s11p1_e79/">
 
@@ -236,8 +279,51 @@
   <meta property="og:site_name" content="Te-Sheng Lin">
   <meta property="og:url" content="https://teshenglin.github.io/post/2020_cal2_s11p1_e79/">
   <meta property="og:title" content="Limit of a sequence - Example | Te-Sheng Lin">
-  <meta property="og:description" content="Section 11.1, exercise 79: Find the limit of $$ \{\sqrt{2}, \sqrt{2\sqrt{2}}, \sqrt{2\sqrt{2\sqrt{2}}}, \cdots\} $$ Remark: 這個數列也可以用以下表示方式 $$ a_1 = \sqrt{2}, \quad a_{n&#43;1} = \sqrt{2 a_n}, \quad n\in \mathbb{N}, \quad n&gt;1. $$ Method 1 我們首先證明它有極限 $a_n&lt;2$ (我們使用數學歸納法) 已知"><meta property="og:image" content="https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png">
-  <meta property="twitter:image" content="https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png"><meta property="og:locale" content="en-us">
+  <meta property="og:description" content="Section 11.1, exercise 79: Find the limit of
+$$
+\{\sqrt{2}, \sqrt{2\sqrt{2}}, \sqrt{2\sqrt{2\sqrt{2}}}, \cdots\}
+$$
+
+Remark: 這個數列也可以用以下表示方式
+$$
+a_1 = \sqrt{2}, \quad a_{n&#43;1} = \sqrt{2 a_n}, \quad n\in \mathbb{N}, \quad n&gt;1.
+$$
+
+Method 1
+
+
+我們首先證明它有極限
+
+$a_n&lt;2$ (我們使用數學歸納法)
+
+已知 $a_1=\sqrt{2}&lt;2$, 成立.
+假設 $a_k&lt;2$, 則 $a_{k&#43;1} = \sqrt{2a_k} &lt; \sqrt{2\times 2} = 2$, 亦成立.
+根據數學歸納法我們得到 $a_n&lt;2$, $\forall n$.
+
+
+$a_n&gt;0$
+
+這個顯然
+
+
+claim: $a_{n&#43;1}&gt;a_n$
+
+由於 $0&lt;a_n&lt;2$, 我們可以得到 $a_n(a_n-2)&lt;0$, 移項並兩邊同時開根號得到 $a_{n&#43;1}=\sqrt{2a_n} &gt; a_n$.
+
+
+因為數列 $\{a_n\}$ 遞增且有界, 根據 Monotone sequence theorem 此數列收斂.
+
+
+
+我們接著求此數列極限值
+假設 $\lim_{n\to\infty} a_n=L$, 則
+$$
+\lim_{n\to\infty} a_{n&#43;1} = \lim_{n\to\infty} \sqrt{2 a_n}, \quad \Longrightarrow \quad L = \sqrt{2L}.
+$$
+所以 $L=0$ 或 $L=2$. 我們知道 $a_n$ 為遞增數列所以 $L = 2$.
+
+"><meta property="og:image" content="https://teshenglin.github.io/images/icon_hu_c6eb360240c7098d.png">
+  <meta property="twitter:image" content="https://teshenglin.github.io/images/icon_hu_c6eb360240c7098d.png"><meta property="og:locale" content="en-us">
   
     
       <meta property="article:published_time" content="2020-03-06T00:00:00&#43;00:00">
@@ -283,10 +369,10 @@
     "name": "Te-Sheng Lin",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_3.png"
+      "url": "https://teshenglin.github.io/images/icon_hu_227762f9926463f1.png"
     }
   },
-  "description": "Section 11.1, exercise 79: Find the limit of $$ \\{\\sqrt{2}, \\sqrt{2\\sqrt{2}}, \\sqrt{2\\sqrt{2\\sqrt{2}}}, \\cdots\\} $$ Remark: 這個數列也可以用以下表示方式 $$ a_1 = \\sqrt{2}, \\quad a_{n+1} = \\sqrt{2 a_n}, \\quad n\\in \\mathbb{N}, \\quad n\u0026gt;1. $$ Method 1 我們首先證明它有極限 $a_n\u0026lt;2$ (我們使用數學歸納法) 已知"
+  "description": "\u003cp\u003eSection 11.1, exercise 79: Find the limit of\n$$\n\\{\\sqrt{2}, \\sqrt{2\\sqrt{2}}, \\sqrt{2\\sqrt{2\\sqrt{2}}}, \\cdots\\}\n$$\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003e\u003cstrong\u003eRemark:\u003c/strong\u003e 這個數列也可以用以下表示方式\n$$\na_1 = \\sqrt{2}, \\quad a_{n+1} = \\sqrt{2 a_n}, \\quad n\\in \\mathbb{N}, \\quad n\u0026gt;1.\n$$\u003c/p\u003e\n\u003chr\u003e\n\u003ch2 id=\"method-1\"\u003eMethod 1\u003c/h2\u003e\n\u003col\u003e\n\u003cli\u003e\n\u003cp\u003e我們首先證明它有極限\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e$a_n\u0026lt;2$ (我們使用數學歸納法)\n\u003col\u003e\n\u003cli\u003e已知 $a_1=\\sqrt{2}\u0026lt;2$, 成立.\u003c/li\u003e\n\u003cli\u003e假設 $a_k\u0026lt;2$, 則 $a_{k+1} = \\sqrt{2a_k} \u0026lt; \\sqrt{2\\times 2} = 2$, 亦成立.\u003c/li\u003e\n\u003cli\u003e根據數學歸納法我們得到 $a_n\u0026lt;2$, $\\forall n$.\u003c/li\u003e\n\u003c/ol\u003e\n\u003c/li\u003e\n\u003cli\u003e$a_n\u0026gt;0$\n\u003cblockquote\u003e\n\u003cp\u003e這個顯然\u003c/p\u003e\n\u003c/blockquote\u003e\n\u003c/li\u003e\n\u003cli\u003eclaim: $a_{n+1}\u0026gt;a_n$\n\u003cblockquote\u003e\n\u003cp\u003e由於 $0\u0026lt;a_n\u0026lt;2$, 我們可以得到 $a_n(a_n-2)\u0026lt;0$, 移項並兩邊同時開根號得到 $a_{n+1}=\\sqrt{2a_n} \u0026gt; a_n$.\u003c/p\u003e\n\u003c/blockquote\u003e\n\u003c/li\u003e\n\u003cli\u003e因為數列 $\\{a_n\\}$ 遞增且有界, 根據 Monotone sequence theorem 此數列收斂.\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e我們接著求此數列極限值\u003c/p\u003e\n\u003cp\u003e假設 $\\lim_{n\\to\\infty} a_n=L$, 則\n$$\n\\lim_{n\\to\\infty} a_{n+1} = \\lim_{n\\to\\infty} \\sqrt{2 a_n}, \\quad \\Longrightarrow \\quad L = \\sqrt{2L}.\n$$\n所以 $L=0$ 或 $L=2$. 我們知道 $a_n$ 為遞增數列所以 $L = 2$.\u003c/p\u003e\n\u003c/li\u003e\n\u003c/ol\u003e"
 }
 </script>
 
@@ -752,7 +838,7 @@ $$</p>
   <div class="media author-card content-widget-hr">
     
       
-      <img class="avatar mr-3 avatar-circle" src="/authors/admin/avatar_hua0d4d4b24f4da3a102e4452ac738b95f_109236_270x270_fill_q90_lanczos_center.jpg" alt="Avatar">
+      <img class="avatar mr-3 avatar-circle" src="/authors/admin/avatar_hu_969ce894fa15fbce.jpg" alt="Avatar">
     
 
     <div class="media-body">
@@ -951,7 +1037,7 @@ $$</p>
     
     
     
-    <script src="/js/academic.min.d49475924c8a1000c804942d870fd31c.js"></script>
+    <script src="/js/academic.min.b19faee487e6d1ec7e9bdaffdcf537a6.js"></script>
 
     
 

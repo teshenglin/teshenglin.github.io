@@ -219,8 +219,8 @@
   
 
   <link rel="manifest" href="/index.webmanifest">
-  <link rel="icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_3.png">
-  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_3.png">
+  <link rel="icon" type="image/png" href="/images/icon_hu_549a1db3558c2382.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu_227762f9926463f1.png">
 
   <link rel="canonical" href="https://teshenglin.github.io/tags/conjugate-gradient-method/">
 
@@ -237,9 +237,9 @@
   
   <meta property="og:site_name" content="Te-Sheng Lin">
   <meta property="og:url" content="https://teshenglin.github.io/tags/conjugate-gradient-method/">
-  <meta property="og:title" content="conjugate gradient method | Te-Sheng Lin">
-  <meta property="og:description" content="Professor"><meta property="og:image" content="https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png">
-  <meta property="twitter:image" content="https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png"><meta property="og:locale" content="en-us">
+  <meta property="og:title" content="Conjugate Gradient Method | Te-Sheng Lin">
+  <meta property="og:description" content="Professor"><meta property="og:image" content="https://teshenglin.github.io/images/icon_hu_c6eb360240c7098d.png">
+  <meta property="twitter:image" content="https://teshenglin.github.io/images/icon_hu_c6eb360240c7098d.png"><meta property="og:locale" content="en-us">
   
     <meta property="og:updated_time" content="2023-04-27T00:00:00&#43;00:00">
   
@@ -258,7 +258,7 @@
 
 
 
-  <title>conjugate gradient method | Te-Sheng Lin</title>
+  <title>Conjugate Gradient Method | Te-Sheng Lin</title>
 
 </head>
 
@@ -469,7 +469,7 @@
     
   
 <div class="universal-wrapper pt-3">
-  <h1>conjugate gradient method</h1>
+  <h1>Conjugate Gradient Method</h1>
 
   
 
@@ -490,7 +490,13 @@
       <h2><a href="/post/2023_conjugate_gradient_method_2/" >Conjugate gradient method - iterative method</a></h2>
       <div class="article-style">
         
-          共軛梯度法 (CG method, conjugate gradient method) 目錄: CG method - Direct mehtod 直接法 CG method - iterate mehtod 迭代法 For solving $Ax=b$, where $A$ is a square symmetric positive definite matrix. Assumptions: $A\in M_{n\times n}$ is a symmetric positive definite matrix. Definition: A-orthogonal (A-conjugate) 假設有兩個向量 $u_1$ 跟 $u_2$ 皆非 $0$ 且 $u_1 \neq
+          共軛梯度法 (CG method, conjugate gradient method) 目錄:
+CG method - Direct mehtod 直接法
+CG method - iterate mehtod 迭代法
+For solving $Ax=b$, where $A$ is a square symmetric positive definite matrix.
+Assumptions: $A\in M_{n\times n}$ is a symmetric positive definite matrix.
+Definition: A-orthogonal (A-conjugate) 假設有兩個向量 $u_1$ 跟 $u_2$ 皆非 $0$ 且 $u_1 \neq u_2$，若這兩個向量滿足 $$ \langle{u_1},A{u_2}\rangle = {u_1}^TA{u_2} = 0, $$ 則稱之為 A-orthogonal (或 A-conjugate). Note : We can define $$ \langle{u_1}, {u_2}\rangle_A = \langle{u_1},A{u_2}\rangle= \langle A{u_1},{u_2}\rangle, $$ then $\langle \cdot\rangle_A$ is an inner product.
+
         
       </div>
     </div>
@@ -502,7 +508,13 @@
       <h2><a href="/post/2023_conjugate_gradient_method_1/" >Conjugate gradient method - direct method</a></h2>
       <div class="article-style">
         
-          共軛梯度法 (CG method, conjugate gradient method) 目錄: CG method - Direct mehtod 直接法 CG method - iterate mehtod 迭代法 For solving $Ax=b$, where $A$ is a square symmetric positive definite matrix. Assumptions: $A\in M_{n\times n}$ is a symmetric positive definite matrix. Definition: A-orthogonal (A-conjugate) 假設有兩個向量 $u_1$ 跟 $u_2$ 皆非 $0$ 且 $u_1 \neq
+          共軛梯度法 (CG method, conjugate gradient method) 目錄:
+CG method - Direct mehtod 直接法
+CG method - iterate mehtod 迭代法
+For solving $Ax=b$, where $A$ is a square symmetric positive definite matrix.
+Assumptions: $A\in M_{n\times n}$ is a symmetric positive definite matrix.
+Definition: A-orthogonal (A-conjugate) 假設有兩個向量 $u_1$ 跟 $u_2$ 皆非 $0$ 且 $u_1 \neq u_2$，若這兩個向量滿足 $$ \langle{u_1},A{u_2}\rangle = {u_1}^TA{u_2} = 0, $$ 則稱之為 A-orthogonal (或 A-conjugate). A-orthonormal 假設有兩個向量 $u_1$ 跟 $u_2$ 為 A-orthogonal, 並且 $\langle{u_i}, {u_i}\rangle_A = 1$ for $1\le i\le 2$, 則稱之為 A-orthonormal. Recall : ${u_1}$ and ${u_2}$ are orthogonal if ${u_1}^T{u_2} = 0$.
+
         
       </div>
     </div>
@@ -619,7 +631,7 @@
     
     
     
-    <script src="/js/academic.min.d49475924c8a1000c804942d870fd31c.js"></script>
+    <script src="/js/academic.min.b19faee487e6d1ec7e9bdaffdcf537a6.js"></script>
 
     
 

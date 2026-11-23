@@ -219,8 +219,8 @@
   
 
   <link rel="manifest" href="/index.webmanifest">
-  <link rel="icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_3.png">
-  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_3.png">
+  <link rel="icon" type="image/png" href="/images/icon_hu_549a1db3558c2382.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu_227762f9926463f1.png">
 
   <link rel="canonical" href="https://teshenglin.github.io/categories/computational-mathematics/">
 
@@ -238,8 +238,8 @@
   <meta property="og:site_name" content="Te-Sheng Lin">
   <meta property="og:url" content="https://teshenglin.github.io/categories/computational-mathematics/">
   <meta property="og:title" content="Computational Mathematics | Te-Sheng Lin">
-  <meta property="og:description" content="Professor"><meta property="og:image" content="https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png">
-  <meta property="twitter:image" content="https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png"><meta property="og:locale" content="en-us">
+  <meta property="og:description" content="Professor"><meta property="og:image" content="https://teshenglin.github.io/images/icon_hu_c6eb360240c7098d.png">
+  <meta property="twitter:image" content="https://teshenglin.github.io/images/icon_hu_c6eb360240c7098d.png"><meta property="og:locale" content="en-us">
   
     <meta property="og:updated_time" content="2023-12-18T00:00:00&#43;00:00">
   
@@ -490,7 +490,7 @@
       <h2><a href="/post/2023_gibbs_phenomenon/" >Gibbs_phenomenon - code</a></h2>
       <div class="article-style">
         
-          Click here to view this notebook in full screen  
+          Click here to view this notebook in full screen 
         
       </div>
     </div>
@@ -502,7 +502,9 @@
       <h2><a href="/post/2023_principal_component_analysis_0/" >主成分分析 - 0</a></h2>
       <div class="article-style">
         
-          Principle component analysis - 0 1. 一維資料的統計學 假設我們有 $n$ 筆資料, 每筆資料都是一個數字 (例如 $n$ 個學生的成績). 這 $n$ 筆資料我們設為 $x_1, \cdots, x_n$, 並且定義一個矩陣 $$ \tag{1} X =
+          Principle component analysis - 0 1. 一維資料的統計學 假設我們有 $n$ 筆資料, 每筆資料都是一個數字 (例如 $n$ 個學生的成績). 這 $n$ 筆資料我們設為 $x_1, \cdots, x_n$, 並且定義一個矩陣
+$$ \tag{1} X = \begin{bmatrix} x_1 &amp; \cdots &amp; x_n \end{bmatrix}\in M_{1\times n}. $$
+
         
       </div>
     </div>
@@ -514,7 +516,7 @@
       <h2><a href="/post/2023_principal_component_analysis_01/" >主成分分析 - code</a></h2>
       <div class="article-style">
         
-          Click here to view this notebook in full screen
+          Click here to view this notebook in full screen 
         
       </div>
     </div>
@@ -526,7 +528,13 @@
       <h2><a href="/post/2023_power_method_3/" >Power method with Rayleigh Quotient</a></h2>
       <div class="article-style">
         
-          Power 迭代法目錄: 基本概念 Power iteration; inverse power method; shifted inver power method 找第二大的 eigenvalue deflation Rayleigh Quotient 迭代及其收斂性 Power method with Rayleigh Quotient 假設 $A$ 是一個對稱矩陣 演算法: Power method with Rayleigh Quotient Iterate until convergence: $$ \tag{1} \begin{align} \hat{x}^{(k+1)} &amp;= Ax^{(k)}\\ \lambda^{(k+1)}
+          Power 迭代法目錄:
+基本概念 Power iteration; inverse power method; shifted inver power method
+找第二大的 eigenvalue deflation
+Rayleigh Quotient 迭代及其收斂性 Power method with Rayleigh Quotient
+假設 $A$ 是一個對稱矩陣 演算法: Power method with Rayleigh Quotient Iterate until convergence: $$ \tag{1} \begin{align} \hat{x}^{(k+1)} &amp;= Ax^{(k)}\\ \lambda^{(k+1)} &amp;= x^{(k)T}\hat{x}^{(k+1)}\\ x^{(k+1)} &amp;= \hat{x}^{(k+1)}/|\hat{x}^{(k+1)}|_2 \end{align} $$
+收斂性證明 由於 $A$ 是個對稱矩陣, 因此存在一組 orthonormal 的 eigenvectors $\{v_1, \cdots, v_n\}$, 使得 $v_i^Tv_j=0$ if $i\ne j$, and $v_i^Tv_i=0$.
+
         
       </div>
     </div>
@@ -538,7 +546,13 @@
       <h2><a href="/post/2023_power_method_2/" >Power method - deflation</a></h2>
       <div class="article-style">
         
-          Power 迭代法目錄: 基本概念 Power iteration; inverse power method; shifted inver power method 找第二大的 eigenvalue deflation Rayleigh Quotient 迭代及其收斂性 Power method with Rayleigh Quotient Deflation 對一方陣 $A$, 假設我們以 power iteration 找到了一組 eigenvalue/eigenvector, $\lambda$ and $v$, 使得 $Av = \lambda v$. 那
+          Power 迭代法目錄:
+基本概念 Power iteration; inverse power method; shifted inver power method
+找第二大的 eigenvalue deflation
+Rayleigh Quotient 迭代及其收斂性 Power method with Rayleigh Quotient
+Deflation 對一方陣 $A$, 假設我們以 power iteration 找到了一組 eigenvalue/eigenvector, $\lambda$ and $v$, 使得 $Av = \lambda v$. 那要怎麼找下一組呢?
+1. Matrix tranformation 假設能找到一個向量 $x$ 使 $x^T v = 1$, 則我們定義 $$ \tag{1} B = A - \lambda v x^T, $$ 並且以 $B$ 來找 eigenvalue/eigenvector. 那 $A$ 與 $B$ 之間有什麼關係呢?
+
         
       </div>
     </div>
@@ -550,7 +564,13 @@
       <h2><a href="/post/2023_conjugate_gradient_method_2/" >Conjugate gradient method - iterative method</a></h2>
       <div class="article-style">
         
-          共軛梯度法 (CG method, conjugate gradient method) 目錄: CG method - Direct mehtod 直接法 CG method - iterate mehtod 迭代法 For solving $Ax=b$, where $A$ is a square symmetric positive definite matrix. Assumptions: $A\in M_{n\times n}$ is a symmetric positive definite matrix. Definition: A-orthogonal (A-conjugate) 假設有兩個向量 $u_1$ 跟 $u_2$ 皆非 $0$ 且 $u_1 \neq
+          共軛梯度法 (CG method, conjugate gradient method) 目錄:
+CG method - Direct mehtod 直接法
+CG method - iterate mehtod 迭代法
+For solving $Ax=b$, where $A$ is a square symmetric positive definite matrix.
+Assumptions: $A\in M_{n\times n}$ is a symmetric positive definite matrix.
+Definition: A-orthogonal (A-conjugate) 假設有兩個向量 $u_1$ 跟 $u_2$ 皆非 $0$ 且 $u_1 \neq u_2$，若這兩個向量滿足 $$ \langle{u_1},A{u_2}\rangle = {u_1}^TA{u_2} = 0, $$ 則稱之為 A-orthogonal (或 A-conjugate). Note : We can define $$ \langle{u_1}, {u_2}\rangle_A = \langle{u_1},A{u_2}\rangle= \langle A{u_1},{u_2}\rangle, $$ then $\langle \cdot\rangle_A$ is an inner product.
+
         
       </div>
     </div>
@@ -562,7 +582,14 @@
       <h2><a href="/post/2023_power_method_1/" >Power method</a></h2>
       <div class="article-style">
         
-          Power 迭代法目錄: 基本概念 Power iteration; inverse power method; shifted inver power method 找第二大的 eigenvalue deflation Rayleigh Quotient 迭代及其收斂性 Power method with Rayleigh Quotient 基本 Power method 求一個方陣最大(in magnitude) 的 eigenvalue. 給定 $A$ 為一個 $n\times n$ 方陣. 我
+          Power 迭代法目錄:
+基本概念 Power iteration; inverse power method; shifted inver power method
+找第二大的 eigenvalue deflation
+Rayleigh Quotient 迭代及其收斂性 Power method with Rayleigh Quotient
+基本 Power method 求一個方陣最大(in magnitude) 的 eigenvalue.
+給定 $A$ 為一個 $n\times n$ 方陣. 我們做以下兩個假設
+它的 eigenvalues 滿足 $$ |\lambda_1| &gt; |\lambda_2| \ge |\lambda_3| \cdots |\lambda_n|. $$ 相對應的 eigenvectors, $\{v_1, , v_2, , \cdots, v_n\}$, 會構成 $R^n$ 的一組基底. 則若我們任意取一個 $n\times 1$ 向量 $u$, 它能被寫成 (根據假設 2) $$ u =\sum^{n}_{i=1} c_iv_i. $$
+
         
       </div>
     </div>
@@ -574,7 +601,13 @@
       <h2><a href="/post/2023_conjugate_gradient_method_1/" >Conjugate gradient method - direct method</a></h2>
       <div class="article-style">
         
-          共軛梯度法 (CG method, conjugate gradient method) 目錄: CG method - Direct mehtod 直接法 CG method - iterate mehtod 迭代法 For solving $Ax=b$, where $A$ is a square symmetric positive definite matrix. Assumptions: $A\in M_{n\times n}$ is a symmetric positive definite matrix. Definition: A-orthogonal (A-conjugate) 假設有兩個向量 $u_1$ 跟 $u_2$ 皆非 $0$ 且 $u_1 \neq
+          共軛梯度法 (CG method, conjugate gradient method) 目錄:
+CG method - Direct mehtod 直接法
+CG method - iterate mehtod 迭代法
+For solving $Ax=b$, where $A$ is a square symmetric positive definite matrix.
+Assumptions: $A\in M_{n\times n}$ is a symmetric positive definite matrix.
+Definition: A-orthogonal (A-conjugate) 假設有兩個向量 $u_1$ 跟 $u_2$ 皆非 $0$ 且 $u_1 \neq u_2$，若這兩個向量滿足 $$ \langle{u_1},A{u_2}\rangle = {u_1}^TA{u_2} = 0, $$ 則稱之為 A-orthogonal (或 A-conjugate). A-orthonormal 假設有兩個向量 $u_1$ 跟 $u_2$ 為 A-orthogonal, 並且 $\langle{u_i}, {u_i}\rangle_A = 1$ for $1\le i\le 2$, 則稱之為 A-orthonormal. Recall : ${u_1}$ and ${u_2}$ are orthogonal if ${u_1}^T{u_2} = 0$.
+
         
       </div>
     </div>
@@ -586,7 +619,9 @@
       <h2><a href="/post/2020_principal_component_analysis_2/" >主成分分析 - 2</a></h2>
       <div class="article-style">
         
-          這裡我們補充一下主成分分析裡的證明部分. 假設我們有 $n$ 筆 $p$ 維的資料, 記成 $$ \{x_1, x_2, \cdots, x_n\} \in R^p. $$ 假設想要投影到 $k$ 維, $k\le p$, 數學上來說就是想要找到 $\mu$, $U$ 以及
+           這裡我們補充一下主成分分析裡的證明部分.
+假設我們有 $n$ 筆 $p$ 維的資料, 記成 $$ \{x_1, x_2, \cdots, x_n\} \in R^p. $$ 假設想要投影到 $k$ 維, $k\le p$, 數學上來說就是想要找到 $\mu$, $U$ 以及 $\beta_i$ 使得下式 $E$ 有最小值 $$ E = \sum_{i=1}^n \|x_i - (\mu + U\beta_i)\|^2, $$ 其中有兩個條件, $U^TU=I_k$, 以及 $\sum^n_{i=1} \beta_i=\vec{0}$.
+
         
       </div>
     </div>
@@ -598,7 +633,10 @@
       <h2><a href="/post/2020_multi_dimensional_scaling/" >Multidimensional scaling</a></h2>
       <div class="article-style">
         
-          Multidimensional scaling, 簡稱 MDS, 是個資料分析或是資料降維的工具. 這裡我們要談一下從數學角度來說 MDS 的原理及做法, 更精確的說, 這裡講的是 classical MDS. 假設我們有 $n$ 筆 $p$ 維的資料,
+           Multidimensional scaling, 簡稱 MDS, 是個資料分析或是資料降維的工具.
+這裡我們要談一下從數學角度來說 MDS 的原理及做法, 更精確的說, 這裡講的是 classical MDS.
+假設我們有 $n$ 筆 $p$ 維的資料, 記成 $$ \{x_1, x_2, \cdots, x_n\} \in \mathbb{R}^p $$ 那我們可以據此構造出一個距離平方矩陣 $D$, Euclidian distance matrix, 簡稱 EDM, 其中 $D_{ij} = \|x_i-x_j\|^2$, 也就是 $(x_i)$ 及 $x_j$ 這兩個點距離的平方.
+
         
       </div>
     </div>
@@ -724,7 +762,7 @@
     
     
     
-    <script src="/js/academic.min.d49475924c8a1000c804942d870fd31c.js"></script>
+    <script src="/js/academic.min.b19faee487e6d1ec7e9bdaffdcf537a6.js"></script>
 
     
 

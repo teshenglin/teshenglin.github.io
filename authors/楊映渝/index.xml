@@ -7,7 +7,7 @@
     <description>楊映渝</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 10 Mar 2020 12:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <url>https://teshenglin.github.io/images/icon_hu_c6eb360240c7098d.png</url>
       <title>楊映渝</title>
       <link>https://teshenglin.github.io/authors/%E6%A5%8A%E6%98%A0%E6%B8%9D/</link>
     </image>
@@ -18,7 +18,7 @@
       <pubDate>Tue, 10 Mar 2020 12:00:00 +0000</pubDate>
       <guid>https://teshenglin.github.io/post/2020_cal_s4p7_ch/</guid>
       <description>&lt;blockquote&gt;
-&lt;p&gt;Applied Project 1 in Sec.4.7, Calculus by Stewart&lt;br&gt;
+&lt;p&gt;Applied Project 1 in Sec.4.7, Calculus by Stewart &lt;br&gt;
 英文版請見 
 &lt;a href=&#34;https://teshenglin.github.io/post/2019_cal_s4p7&#34;&gt;The shape of a can&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -31,16 +31,12 @@
 &lt;p&gt;然而，如果圓柱上下的圓面是由邊為 $2r$ 的正方形切割的，那麼一定會有大量的金屬浪費，儘管它可以回收再利用，但對罐頭製造商來說是幾乎沒有任何價值的。&lt;/p&gt;
 &lt;p&gt;因此，如果是這樣的話，我們就需要找到一組 $h/r$ 比例來最小化金屬的使用。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;答案:&lt;/strong&gt;&lt;/p&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;!-- raw HTML omitted --&gt;
 &lt;p&gt;$$
 \frac{h}{r} = \frac{8}{\pi}\approx 2.55
 $$&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;問題 2:&lt;/strong&gt; 若將金屬板劃分為六邊形並從六邊形切下圓形的蓋子和底座，可以更有效地填充圓盤。如果採用這個方法，要找到能讓使用的金屬量最小化的 $h/r$ 的比例。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;答案:&lt;/strong&gt;&lt;/p&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;!-- raw HTML omitted --&gt;
 &lt;p&gt;$$
 \frac{h}{r} = \frac{4\sqrt{3}}{\pi}\approx 2.21
 $$&lt;/p&gt;
@@ -52,8 +48,6 @@ $$&lt;/p&gt;
 &lt;p&gt;製作一圓柱罐，首先我們彎曲一矩形並將邊與邊黏接在一起以製成圓柱殼（高度為 $ h $）；接著，將兩個圓盤與圓柱殼黏接（圓盤長度為$2πr$）。 由上可知，黏接成本為 $ k(h+4πr) $， $k$ 為單位面積金屬成本可黏接長度的倒數。&lt;/p&gt;
 &lt;p&gt;同問題二，圓盤由一正六邊形切割而成，所以總成本包括金屬成本和黏接的成本，與$4\sqrt{3}r^2 + 2\pi r h + k(4\pi r + h) $成正比。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;答案：&lt;/strong&gt;&lt;/p&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;!-- raw HTML omitted --&gt;
 &lt;p&gt;發生最小值時圓柱體的高度與半徑比為:
 $$
 \frac{h}{r} = \frac{4\sqrt{3}r + 2k\pi}{\pi r + k}

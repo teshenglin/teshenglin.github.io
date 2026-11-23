@@ -219,8 +219,8 @@
   
 
   <link rel="manifest" href="/index.webmanifest">
-  <link rel="icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_3.png">
-  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_3.png">
+  <link rel="icon" type="image/png" href="/images/icon_hu_549a1db3558c2382.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu_227762f9926463f1.png">
 
   <link rel="canonical" href="https://teshenglin.github.io/tags/numerical_integration/">
 
@@ -237,9 +237,9 @@
   
   <meta property="og:site_name" content="Te-Sheng Lin">
   <meta property="og:url" content="https://teshenglin.github.io/tags/numerical_integration/">
-  <meta property="og:title" content="numerical_integration | Te-Sheng Lin">
-  <meta property="og:description" content="Professor"><meta property="og:image" content="https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png">
-  <meta property="twitter:image" content="https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png"><meta property="og:locale" content="en-us">
+  <meta property="og:title" content="Numerical_integration | Te-Sheng Lin">
+  <meta property="og:description" content="Professor"><meta property="og:image" content="https://teshenglin.github.io/images/icon_hu_c6eb360240c7098d.png">
+  <meta property="twitter:image" content="https://teshenglin.github.io/images/icon_hu_c6eb360240c7098d.png"><meta property="og:locale" content="en-us">
   
     <meta property="og:updated_time" content="2020-06-19T00:00:00&#43;00:00">
   
@@ -258,7 +258,7 @@
 
 
 
-  <title>numerical_integration | Te-Sheng Lin</title>
+  <title>Numerical_integration | Te-Sheng Lin</title>
 
 </head>
 
@@ -469,7 +469,7 @@
     
   
 <div class="universal-wrapper pt-3">
-  <h1>numerical_integration</h1>
+  <h1>Numerical_integration</h1>
 
   
 
@@ -490,7 +490,12 @@
       <h2><a href="/post/2020_numerical_integration_4/" >Clenshaw–Curtis quadrature</a></h2>
       <div class="article-style">
         
-          前情提要: 數值積分初探 前情提要: 以內插多項式來做數值積分 前情提要: 高斯積分 我們想要利用 Chebyshev polynomial 來算積分 Goal: 任意給定一可積分函數 $f(x)$, $x\in[-1, 1]$, 我們想要算 $\int^1_{-1} f(x)
+          前情提要: 數值積分初探
+前情提要: 以內插多項式來做數值積分
+前情提要: 高斯積分
+我們想要利用 Chebyshev polynomial 來算積分
+Goal: 任意給定一可積分函數 $f(x)$, $x\in[-1, 1]$, 我們想要算 $\int^1_{-1} f(x) dx$. Idea: 我們簡單做個變數變換 $x = \cos\theta$ 可以得到 $$ \int^1_{-1} f(x) dx = \int^{\pi}0 f(\cos\theta)\sin\theta d\theta. $$ 所以如果我能將 $f(x)$ 這個函數以 first kind Chebyshev polynomial 來做展開, i.e., $$ f(x) = \sum^N{k=0} a_k T_k(x) = \sum^N_{k=0} a_k \cos(k\cos^{-1}x). $$ 那代入後我們就有 $$ \int^1_{-1} f(x) dx = \int^{\pi}0 \sum^N{k=0} a_k \cos(k\theta)\sin\theta d\theta = \sum^{N/2}{k=0}\frac{2 a{2k}}{1-(2k)^2}. $$
+
         
       </div>
     </div>
@@ -502,7 +507,9 @@
       <h2><a href="/post/2020_numerical_integration_2/" >以內插多項式來做數值積分</a></h2>
       <div class="article-style">
         
-          前情提要: 數值積分初探 連續函數可以用多項式來逼近它, 因此直覺來講, 既然我們已經找到一個離給定函數&quot;很近&quot;的多項式了, 何不
+          前情提要: 數值積分初探
+連續函數可以用多項式來逼近它, 因此直覺來講, 既然我們已經找到一個離給定函數&quot;很近&quot;的多項式了, 何不就以這個多項式的積分值來當成原函數積分值的一個逼近呢.
+
         
       </div>
     </div>
@@ -514,7 +521,11 @@
       <h2><a href="/post/2020_numerical_integration_3/" >高斯積分</a></h2>
       <div class="article-style">
         
-          前情提要: 數值積分初探 前情提要: 以內插多項式來做數值積分 我們想要找到一些插值點使得以內插多項式來做數值積分會最準. 這就是高斯積分. Goal: 任意給定
+          前情提要: 數值積分初探
+前情提要: 以內插多項式來做數值積分
+我們想要找到一些插值點使得以內插多項式來做數值積分會最準. 這就是高斯積分.
+Goal: 任意給定一可積分函數 $f(x)$, $x\in[-1, 1]$, 我們想要算 $\int^1_{-1} f(x) dx$. 複習一下內插多項式的積分
+
         
       </div>
     </div>
@@ -526,7 +537,8 @@
       <h2><a href="/post/2019_numerical_integration/" >數值積分初探</a></h2>
       <div class="article-style">
         
-          在微積分課程裡我們有學到積分的&rsquo;中點法', &lsquo;梯形法&rsquo;以及&rsquo;辛普森法&rsquo;. 這裡我們簡
+           在微積分課程裡我們有學到積分的&rsquo;中點法&rsquo;, &lsquo;梯形法&rsquo;以及&rsquo;辛普森法&rsquo;. 這裡我們簡介一些基本概念並且引進高斯積分法.
+
         
       </div>
     </div>
@@ -643,7 +655,7 @@
     
     
     
-    <script src="/js/academic.min.d49475924c8a1000c804942d870fd31c.js"></script>
+    <script src="/js/academic.min.b19faee487e6d1ec7e9bdaffdcf537a6.js"></script>
 
     
 

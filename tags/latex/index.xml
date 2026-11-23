@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>latex | Te-Sheng Lin</title>
+    <title>Latex | Te-Sheng Lin</title>
     <link>https://teshenglin.github.io/tags/latex/</link>
       <atom:link href="https://teshenglin.github.io/tags/latex/index.xml" rel="self" type="application/rss+xml" />
-    <description>latex</description>
+    <description>Latex</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 29 Oct 2019 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
-      <title>latex</title>
+      <url>https://teshenglin.github.io/images/icon_hu_c6eb360240c7098d.png</url>
+      <title>Latex</title>
       <link>https://teshenglin.github.io/tags/latex/</link>
     </image>
     
@@ -116,7 +116,7 @@
 &lt;a href=&#34;https://en.wikibooks.org/wiki/LaTeX/Mathematics#Matrices_and_arrays&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;matrices and arrays&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;所有介於兩個 &lt;code&gt;$&lt;/code&gt; 字元之間的內容將會被視為 TeX 數學公式處理。開頭的 &lt;code&gt;$&lt;/code&gt; 右側必須立刻接上任意文字，而結尾 &lt;code&gt;$&lt;/code&gt; 的左側同樣也必須緊挨著文字。如果使用兩個&lt;code&gt;$$&lt;/code&gt;則會將數學公式換行居中. 例如以下 markdown 程式碼&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;$$\frac{\sin(x)}{x}$$
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$$\frac{\sin(x)}{x}$$
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;顯示為
 $$\frac{\sin(x)}{x}$$&lt;/p&gt;
 &lt;hr&gt;

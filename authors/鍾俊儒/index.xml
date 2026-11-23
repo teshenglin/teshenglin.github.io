@@ -7,7 +7,7 @@
     <description>鍾俊儒</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 14 Jun 2020 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <url>https://teshenglin.github.io/images/icon_hu_c6eb360240c7098d.png</url>
       <title>鍾俊儒</title>
       <link>https://teshenglin.github.io/authors/%E9%8D%BE%E4%BF%8A%E5%84%92/</link>
     </image>
@@ -108,7 +108,7 @@ $$&lt;/p&gt;
 &lt;li&gt;
 &lt;p&gt;因此
 $$
-E = \frac{3+\sqrt{5}}{16\sqrt{5}} \underbrace{\sum_{k=0}^{\infty}(k+2)\cdot(\frac{1+\sqrt{5}}{4})^{k-1}}_{(a)} - \frac{3-\sqrt{5}}{16\sqrt{5}} \underbrace{\sum_{k=0}^{\infty}(k+2)\cdot(\frac{1-\sqrt{5}}{4})^{k-1}}_{(b)}
+E = \frac{3+\sqrt{5}}{16\sqrt{5}} \underbrace{\sum_{k=0}^{\infty}(k+2)\cdot(\frac{1+\sqrt{5}}{4})^{k-1}}&lt;em&gt;{(a)} - \frac{3-\sqrt{5}}{16\sqrt{5}} \underbrace{\sum&lt;/em&gt;{k=0}^{\infty}(k+2)\cdot(\frac{1-\sqrt{5}}{4})^{k-1}}_{(b)}
 $$&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
@@ -147,7 +147,7 @@ $$&lt;/p&gt;
 也就是 $0.5$ 機率會是到 &lt;code&gt;1正&lt;/code&gt; 這狀態以及 $0.5$ 機率回到 &lt;code&gt;0正&lt;/code&gt; 這狀態.&lt;/p&gt;
 &lt;p&gt;假設目前連續投擲出 1 個正, 那下一投則 $0.5$ 機率會是到 &lt;code&gt;2正&lt;/code&gt; 這狀態以及 $0.5$ 機率回到 &lt;code&gt;0正&lt;/code&gt; 這狀態.&lt;/p&gt;
 &lt;p&gt;根據這些觀察我們可以做出以下的 diagram:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-mermaid&#34; data-lang=&#34;mermaid&#34;&gt;graph LR;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-mermaid&#34; data-lang=&#34;mermaid&#34;&gt;graph LR;
 A[0 正] -- 0.5 --&amp;gt;B(1 正)
   B -- 0.5 --&amp;gt; C(2 正)
   A -- 0.5 --&amp;gt; A

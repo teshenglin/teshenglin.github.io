@@ -28,7 +28,16 @@
   
     
   
-  <meta name="description" content="Principle component analysis - 0 1. 一維資料的統計學 假設我們有 $n$ 筆資料, 每筆資料都是一個數字 (例如 $n$ 個學生的成績). 這 $n$ 筆資料我們設為 $x_1, \cdots, x_n$, 並且定義一個矩陣 $$ \tag{1} X =">
+  <meta name="description" content="Principle component analysis - 0
+1. 一維資料的統計學
+假設我們有 $n$ 筆資料, 每筆資料都是一個數字 (例如 $n$ 個學生的成績). 這 $n$ 筆資料我們設為 $x_1, \cdots, x_n$, 並且定義一個矩陣
+$$
+\tag{1}
+X =
+\begin{bmatrix}
+x_1 &amp; \cdots &amp; x_n
+\end{bmatrix}\in M_{1\times n}.
+$$">
 
   
   <link rel="alternate" hreflang="en-us" href="https://teshenglin.github.io/post/2023_principal_component_analysis_0/">
@@ -217,8 +226,8 @@
   
 
   <link rel="manifest" href="/index.webmanifest">
-  <link rel="icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_3.png">
-  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_3.png">
+  <link rel="icon" type="image/png" href="/images/icon_hu_549a1db3558c2382.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu_227762f9926463f1.png">
 
   <link rel="canonical" href="https://teshenglin.github.io/post/2023_principal_component_analysis_0/">
 
@@ -236,8 +245,17 @@
   <meta property="og:site_name" content="Te-Sheng Lin">
   <meta property="og:url" content="https://teshenglin.github.io/post/2023_principal_component_analysis_0/">
   <meta property="og:title" content="主成分分析 - 0 | Te-Sheng Lin">
-  <meta property="og:description" content="Principle component analysis - 0 1. 一維資料的統計學 假設我們有 $n$ 筆資料, 每筆資料都是一個數字 (例如 $n$ 個學生的成績). 這 $n$ 筆資料我們設為 $x_1, \cdots, x_n$, 並且定義一個矩陣 $$ \tag{1} X ="><meta property="og:image" content="https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png">
-  <meta property="twitter:image" content="https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png"><meta property="og:locale" content="en-us">
+  <meta property="og:description" content="Principle component analysis - 0
+1. 一維資料的統計學
+假設我們有 $n$ 筆資料, 每筆資料都是一個數字 (例如 $n$ 個學生的成績). 這 $n$ 筆資料我們設為 $x_1, \cdots, x_n$, 並且定義一個矩陣
+$$
+\tag{1}
+X =
+\begin{bmatrix}
+x_1 &amp; \cdots &amp; x_n
+\end{bmatrix}\in M_{1\times n}.
+$$"><meta property="og:image" content="https://teshenglin.github.io/images/icon_hu_c6eb360240c7098d.png">
+  <meta property="twitter:image" content="https://teshenglin.github.io/images/icon_hu_c6eb360240c7098d.png"><meta property="og:locale" content="en-us">
   
     
       <meta property="article:published_time" content="2023-12-18T00:00:00&#43;00:00">
@@ -283,10 +301,10 @@
     "name": "Te-Sheng Lin",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_3.png"
+      "url": "https://teshenglin.github.io/images/icon_hu_227762f9926463f1.png"
     }
   },
-  "description": "Principle component analysis - 0 1. 一維資料的統計學 假設我們有 $n$ 筆資料, 每筆資料都是一個數字 (例如 $n$ 個學生的成績). 這 $n$ 筆資料我們設為 $x_1, \\cdots, x_n$, 並且定義一個矩陣 $$ \\tag{1} X ="
+  "description": "\u003ch1 id=\"principle-component-analysis---0\"\u003ePrinciple component analysis - 0\u003c/h1\u003e\n\u003ch2 id=\"1-一維資料的統計學\"\u003e1. 一維資料的統計學\u003c/h2\u003e\n\u003cp\u003e假設我們有 $n$ 筆資料, 每筆資料都是一個數字 (例如 $n$ 個學生的成績). 這 $n$ 筆資料我們設為 $x_1, \\cdots, x_n$, 並且定義一個矩陣\u003c/p\u003e\n\u003cp\u003e$$\n\\tag{1}\nX =\n\\begin{bmatrix}\nx_1 \u0026amp; \\cdots \u0026amp; x_n\n\\end{bmatrix}\\in M_{1\\times n}.\n$$\u003c/p\u003e"
 }
 </script>
 
@@ -615,7 +633,7 @@ $$</p>
 x_1 &amp; \cdots &amp; x_n
 \end{bmatrix}\begin{bmatrix}
 1\\
-\vdots\\<br>
+\vdots\\
 1
 \end{bmatrix} = \frac{1}{n}X\mathbb{1},
 $$</p>
@@ -649,7 +667,7 @@ $$</p>
 \tag{7}
 A =
 \begin{bmatrix}
-x_1 &amp; \cdots &amp; x_n\\<br>
+x_1 &amp; \cdots &amp; x_n\\
 y_1 &amp; \cdots &amp; y_n
 \end{bmatrix}\in M_{2\times n}.
 $$</p>
@@ -705,10 +723,10 @@ $$</p>
 <p>$$
 \tag{13}
 \begin{align}
-\sum^n_{k=1} d_k^2 &amp;= \sum^n_{k=1}\|Y_k - vv^TY_k\|^2  \\<br>
-&amp;= \sum^n_{k=1}&lt;Y_k-vv^TY_k, Y_k-vv^TY_k&gt; \\<br>
-&amp;= \sum^n_{k=1}Y_k^TY_k -Y_k^Tvv^TY_k \\<br>
-&amp;= \sum^n_{k=1}Y_k^TY_k -v^TY_kY_k^Tv \\<br>
+\sum^n_{k=1} d_k^2 &amp;= \sum^n_{k=1}\|Y_k - vv^TY_k\|^2  \\
+&amp;= \sum^n_{k=1}&lt;Y_k-vv^TY_k, Y_k-vv^TY_k&gt; \\
+&amp;= \sum^n_{k=1}Y_k^TY_k -Y_k^Tvv^TY_k \\
+&amp;= \sum^n_{k=1}Y_k^TY_k -v^TY_kY_k^Tv \\
 &amp;= \sum^n_{k=1}(Y_k^TY_k) -v^TYY^Tv,
 \end{align}
 $$</p>
@@ -849,7 +867,7 @@ $$
   <div class="media author-card content-widget-hr">
     
       
-      <img class="avatar mr-3 avatar-circle" src="/authors/admin/avatar_hua0d4d4b24f4da3a102e4452ac738b95f_109236_270x270_fill_q90_lanczos_center.jpg" alt="Avatar">
+      <img class="avatar mr-3 avatar-circle" src="/authors/admin/avatar_hu_969ce894fa15fbce.jpg" alt="Avatar">
     
 
     <div class="media-body">
@@ -1065,7 +1083,7 @@ $$
     
     
     
-    <script src="/js/academic.min.d49475924c8a1000c804942d870fd31c.js"></script>
+    <script src="/js/academic.min.b19faee487e6d1ec7e9bdaffdcf537a6.js"></script>
 
     
 

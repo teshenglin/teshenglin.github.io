@@ -28,7 +28,46 @@
   
     
   
-  <meta name="description" content="Power 迭代法目錄: 基本概念 Power iteration; inverse power method; shifted inver power method 找第二大的 eigenvalue deflation Rayleigh Quotient 迭代及其收斂性 Power method with Rayleigh Quotient 假設 $A$ 是一個對稱矩陣 演算法: Power method with Rayleigh Quotient Iterate until convergence: $$ \tag{1} \begin{align} \hat{x}^{(k&#43;1)} &amp;= Ax^{(k)}\\ \lambda^{(k&#43;1)}">
+  <meta name="description" content="Power 迭代法目錄:
+
+
+基本概念
+
+Power iteration; inverse power method; shifted inver power method
+
+
+
+找第二大的 eigenvalue
+
+deflation
+
+
+
+Rayleigh Quotient 迭代及其收斂性
+
+Power method with Rayleigh Quotient
+
+
+
+
+假設
+
+$A$ 是一個對稱矩陣
+
+
+演算法: Power method with Rayleigh Quotient
+Iterate until convergence:
+$$
+\tag{1}
+\begin{align}
+\hat{x}^{(k&#43;1)} &amp;= Ax^{(k)}\\
+\lambda^{(k&#43;1)} &amp;= x^{(k)T}\hat{x}^{(k&#43;1)}\\
+x^{(k&#43;1)} &amp;= \hat{x}^{(k&#43;1)}/|\hat{x}^{(k&#43;1)}|_2
+\end{align}
+$$
+
+收斂性證明
+由於 $A$ 是個對稱矩陣, 因此存在一組 orthonormal 的 eigenvectors $\{v_1, \cdots, v_n\}$, 使得 $v_i^Tv_j=0$ if $i\ne j$, and $v_i^Tv_i=0$.">
 
   
   <link rel="alternate" hreflang="en-us" href="https://teshenglin.github.io/post/2023_power_method_3/">
@@ -217,8 +256,8 @@
   
 
   <link rel="manifest" href="/index.webmanifest">
-  <link rel="icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_3.png">
-  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_3.png">
+  <link rel="icon" type="image/png" href="/images/icon_hu_549a1db3558c2382.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu_227762f9926463f1.png">
 
   <link rel="canonical" href="https://teshenglin.github.io/post/2023_power_method_3/">
 
@@ -236,8 +275,47 @@
   <meta property="og:site_name" content="Te-Sheng Lin">
   <meta property="og:url" content="https://teshenglin.github.io/post/2023_power_method_3/">
   <meta property="og:title" content="Power method with Rayleigh Quotient | Te-Sheng Lin">
-  <meta property="og:description" content="Power 迭代法目錄: 基本概念 Power iteration; inverse power method; shifted inver power method 找第二大的 eigenvalue deflation Rayleigh Quotient 迭代及其收斂性 Power method with Rayleigh Quotient 假設 $A$ 是一個對稱矩陣 演算法: Power method with Rayleigh Quotient Iterate until convergence: $$ \tag{1} \begin{align} \hat{x}^{(k&#43;1)} &amp;= Ax^{(k)}\\ \lambda^{(k&#43;1)}"><meta property="og:image" content="https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png">
-  <meta property="twitter:image" content="https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png"><meta property="og:locale" content="en-us">
+  <meta property="og:description" content="Power 迭代法目錄:
+
+
+基本概念
+
+Power iteration; inverse power method; shifted inver power method
+
+
+
+找第二大的 eigenvalue
+
+deflation
+
+
+
+Rayleigh Quotient 迭代及其收斂性
+
+Power method with Rayleigh Quotient
+
+
+
+
+假設
+
+$A$ 是一個對稱矩陣
+
+
+演算法: Power method with Rayleigh Quotient
+Iterate until convergence:
+$$
+\tag{1}
+\begin{align}
+\hat{x}^{(k&#43;1)} &amp;= Ax^{(k)}\\
+\lambda^{(k&#43;1)} &amp;= x^{(k)T}\hat{x}^{(k&#43;1)}\\
+x^{(k&#43;1)} &amp;= \hat{x}^{(k&#43;1)}/|\hat{x}^{(k&#43;1)}|_2
+\end{align}
+$$
+
+收斂性證明
+由於 $A$ 是個對稱矩陣, 因此存在一組 orthonormal 的 eigenvectors $\{v_1, \cdots, v_n\}$, 使得 $v_i^Tv_j=0$ if $i\ne j$, and $v_i^Tv_i=0$."><meta property="og:image" content="https://teshenglin.github.io/images/icon_hu_c6eb360240c7098d.png">
+  <meta property="twitter:image" content="https://teshenglin.github.io/images/icon_hu_c6eb360240c7098d.png"><meta property="og:locale" content="en-us">
   
     
       <meta property="article:published_time" content="2023-04-29T00:00:00&#43;00:00">
@@ -283,10 +361,10 @@
     "name": "Te-Sheng Lin",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_3.png"
+      "url": "https://teshenglin.github.io/images/icon_hu_227762f9926463f1.png"
     }
   },
-  "description": "Power 迭代法目錄: 基本概念 Power iteration; inverse power method; shifted inver power method 找第二大的 eigenvalue deflation Rayleigh Quotient 迭代及其收斂性 Power method with Rayleigh Quotient 假設 $A$ 是一個對稱矩陣 演算法: Power method with Rayleigh Quotient Iterate until convergence: $$ \\tag{1} \\begin{align} \\hat{x}^{(k+1)} \u0026amp;= Ax^{(k)}\\\\ \\lambda^{(k+1)}"
+  "description": "\u003cp\u003ePower 迭代法目錄:\u003c/p\u003e\n\u003col\u003e\n\u003cli\u003e\n\u003ca href=\"/post/2023_power_method_1\"\u003e基本概念\u003c/a\u003e\n\u003cblockquote\u003e\n\u003cp\u003ePower iteration; inverse power method; shifted inver power method\u003c/p\u003e\n\u003c/blockquote\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003ca href=\"/post/2023_power_method_2\"\u003e找第二大的 eigenvalue\u003c/a\u003e\n\u003cblockquote\u003e\n\u003cp\u003edeflation\u003c/p\u003e\n\u003c/blockquote\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003ca href=\"/post/2023_power_method_3\"\u003eRayleigh Quotient 迭代及其收斂性\u003c/a\u003e\n\u003cblockquote\u003e\n\u003cp\u003ePower method with Rayleigh Quotient\u003c/p\u003e\n\u003c/blockquote\u003e\n\u003c/li\u003e\n\u003c/ol\u003e\n\u003chr\u003e\n\u003ch2 id=\"假設\"\u003e假設\u003c/h2\u003e\n\u003col\u003e\n\u003cli\u003e$A$ 是一個對稱矩陣\u003c/li\u003e\n\u003c/ol\u003e\n\u003chr\u003e\n\u003ch2 id=\"演算法-power-method-with-rayleigh-quotient\"\u003e演算法: Power method with Rayleigh Quotient\u003c/h2\u003e\n\u003cp\u003eIterate until convergence:\n$$\n\\tag{1}\n\\begin{align}\n\\hat{x}^{(k+1)} \u0026amp;= Ax^{(k)}\\\\\n\\lambda^{(k+1)} \u0026amp;= x^{(k)T}\\hat{x}^{(k+1)}\\\\\nx^{(k+1)} \u0026amp;= \\hat{x}^{(k+1)}/|\\hat{x}^{(k+1)}|_2\n\\end{align}\n$$\u003c/p\u003e\n\u003chr\u003e\n\u003ch2 id=\"收斂性證明\"\u003e收斂性證明\u003c/h2\u003e\n\u003cp\u003e由於 $A$ 是個對稱矩陣, 因此存在一組 orthonormal 的 eigenvectors $\\{v_1, \\cdots, v_n\\}$, 使得 $v_i^Tv_j=0$ if $i\\ne j$, and $v_i^Tv_i=0$.\u003c/p\u003e"
 }
 </script>
 
@@ -630,8 +708,8 @@
 $$
 \tag{1}
 \begin{align}
-\hat{x}^{(k+1)} &amp;= Ax^{(k)}\\<br>
-\lambda^{(k+1)} &amp;= x^{(k)T}\hat{x}^{(k+1)}\\<br>
+\hat{x}^{(k+1)} &amp;= Ax^{(k)}\\
+\lambda^{(k+1)} &amp;= x^{(k)T}\hat{x}^{(k+1)}\\
 x^{(k+1)} &amp;= \hat{x}^{(k+1)}/|\hat{x}^{(k+1)}|_2
 \end{align}
 $$</p>
@@ -648,15 +726,15 @@ $$
 $$
 另一方面, 從迭代式 (1) 可以看出我們一直不斷地把得到的向量 normalize, 使其為單位長, 因此我們必定有
 $$
-x^{(k)} = \frac{A^kx^{(0)}}{|A^kx^{(0)}|_2}.
+x^{(k)} = \frac{A^kx^{(0)}}{|A^kx^{(0)}|<em>2}.
 $$
 將 (2) 代入得到
 $$
 \tag{3}
 \begin{align}
 x^{(k)}
-&amp;= \frac{\lambda_1^k\left[\alpha_1v_1 + \sum^n_{i=2}\alpha_i \left(\frac{\lambda_i}{\lambda_1}\right)^kv_i\right]}{\sqrt{\lambda_1^{2k}\left[\alpha_1v_1 + \sum^n_{i=2}\alpha_i \left(\frac{\lambda_i}{\lambda_1}\right)^kv_i\right]^T\left[\alpha_1v_1 + \sum^n_{i=2}\alpha_i \left(\frac{\lambda_i}{\lambda_1}\right)^kv_i\right]}} \\<br>
-&amp;= \frac{\left[\alpha_1v_1 + \sum^n_{i=2}\alpha_i \left(\frac{\lambda_i}{\lambda_1}\right)^kv_i\right]}{\sqrt{\alpha^2_1 + \sum^n_{i=2}\alpha^2_i \left(\frac{\lambda_i}{\lambda_1}\right)^{2k}}}\\<br>
+&amp;= \frac{\lambda_1^k\left[\alpha_1v_1 + \sum^n</em>{i=2}\alpha_i \left(\frac{\lambda_i}{\lambda_1}\right)^kv_i\right]}{\sqrt{\lambda_1^{2k}\left[\alpha_1v_1 + \sum^n_{i=2}\alpha_i \left(\frac{\lambda_i}{\lambda_1}\right)^kv_i\right]^T\left[\alpha_1v_1 + \sum^n_{i=2}\alpha_i \left(\frac{\lambda_i}{\lambda_1}\right)^kv_i\right]}} \\
+&amp;= \frac{\left[\alpha_1v_1 + \sum^n_{i=2}\alpha_i \left(\frac{\lambda_i}{\lambda_1}\right)^kv_i\right]}{\sqrt{\alpha^2_1 + \sum^n_{i=2}\alpha^2_i \left(\frac{\lambda_i}{\lambda_1}\right)^{2k}}}\\
 &amp;=\frac{\left[v_1 + \sum^n_{i=2}\left(\frac{\alpha_i}{\alpha_1}\right) \left(\frac{\lambda_i}{\lambda_1}\right)^kv_i\right]}{\sqrt{1 + \sum^n_{i=2}\left(\frac{\alpha_i}{\alpha_1}\right)^2 \left(\frac{\lambda_i}{\lambda_1}\right)^{2k}}},
 \end{align}
 $$
@@ -664,14 +742,14 @@ $$
 <p>接著我們可以算 eigenvalue, 將 (3) 代入:
 $$
 \begin{align}
-\lambda^{(k+1)} &amp;= x^{(k)T}\hat{x}^{(k+1)} = x^{(k)T}(Ax^{(k)}) \\<br>
-&amp;= \frac{\left[v_1 + \sum^n_{i=2}\left(\frac{\alpha_i}{\alpha_1}\right) \left(\frac{\lambda_i}{\lambda_1}\right)^kv_i\right]^T\left[\lambda_1v_1 + \sum^n_{i=2}\left(\frac{\alpha_i}{\alpha_1}\right) \lambda_i\left(\frac{\lambda_i}{\lambda_1}\right)^kv_i\right]}{1 + \sum^n_{i=2}\left(\frac{\alpha_i}{\alpha_1}\right)^2 \left(\frac{\lambda_i}{\lambda_1}\right)^{2k}} \\<br>
+\lambda^{(k+1)} &amp;= x^{(k)T}\hat{x}^{(k+1)} = x^{(k)T}(Ax^{(k)}) \\
+&amp;= \frac{\left[v_1 + \sum^n_{i=2}\left(\frac{\alpha_i}{\alpha_1}\right) \left(\frac{\lambda_i}{\lambda_1}\right)^kv_i\right]^T\left[\lambda_1v_1 + \sum^n_{i=2}\left(\frac{\alpha_i}{\alpha_1}\right) \lambda_i\left(\frac{\lambda_i}{\lambda_1}\right)^kv_i\right]}{1 + \sum^n_{i=2}\left(\frac{\alpha_i}{\alpha_1}\right)^2 \left(\frac{\lambda_i}{\lambda_1}\right)^{2k}} \\
 &amp;= \lambda_1
-\frac{\left[v_1 + \sum^n_{i=2}\left(\frac{\alpha_i}{\alpha_1}\right) \left(\frac{\lambda_i}{\lambda_1}\right)^kv_i\right]^T\left[v_1 + \sum^n_{i=2}\left(\frac{\alpha_i}{\alpha_1}\right) \left(\frac{\lambda_i}{\lambda_1}\right)^{k+1}v_i\right]}{1 + \sum^n_{i=2}\left(\frac{\alpha_i}{\alpha_1}\right)^2 \left(\frac{\lambda_i}{\lambda_1}\right)^{2k}} \\<br>
+\frac{\left[v_1 + \sum^n_{i=2}\left(\frac{\alpha_i}{\alpha_1}\right) \left(\frac{\lambda_i}{\lambda_1}\right)^kv_i\right]^T\left[v_1 + \sum^n_{i=2}\left(\frac{\alpha_i}{\alpha_1}\right) \left(\frac{\lambda_i}{\lambda_1}\right)^{k+1}v_i\right]}{1 + \sum^n_{i=2}\left(\frac{\alpha_i}{\alpha_1}\right)^2 \left(\frac{\lambda_i}{\lambda_1}\right)^{2k}} \\
 &amp;= \lambda_1
-\frac{\left[1 + \sum^n_{i=2}\left(\frac{\alpha_i}{\alpha_1}\right)^2 \left(\frac{\lambda_i}{\lambda_1}\right)^{2k+1}\right]}{1 + \sum^n_{i=2}\left(\frac{\alpha_i}{\alpha_1}\right)^2 \left(\frac{\lambda_i}{\lambda_1}\right)^{2k}} \\<br>
+\frac{\left[1 + \sum^n_{i=2}\left(\frac{\alpha_i}{\alpha_1}\right)^2 \left(\frac{\lambda_i}{\lambda_1}\right)^{2k+1}\right]}{1 + \sum^n_{i=2}\left(\frac{\alpha_i}{\alpha_1}\right)^2 \left(\frac{\lambda_i}{\lambda_1}\right)^{2k}} \\
 &amp;= \lambda_1
-\frac{\left[1 + O \left(\epsilon^{2k+1}\right)\right]}{1 + O \left(\epsilon^{2k}\right)} \\<br>
+\frac{\left[1 + O \left(\epsilon^{2k+1}\right)\right]}{1 + O \left(\epsilon^{2k}\right)} \\
 &amp;= \lambda_1 + O\left(\epsilon^{2k}\right),
 \end{align}
 $$
@@ -681,7 +759,7 @@ where $\epsilon=|\lambda_2/\lambda_1|$.</p>
 <h2 id="final-remark">Final remark</h2>
 <p>若使用基本的 power 迭代, 就是每次將得到得向量單位化, 如以下方式:</p>
 <p>Pseudo code:</p>
-<pre><code>while diff &gt; Tol
+<pre tabindex="0"><code>while diff &gt; Tol
     v = A*u
     lambda = norm(v)
     u = v/lambda
@@ -789,7 +867,7 @@ $$
   <div class="media author-card content-widget-hr">
     
       
-      <img class="avatar mr-3 avatar-circle" src="/authors/admin/avatar_hua0d4d4b24f4da3a102e4452ac738b95f_109236_270x270_fill_q90_lanczos_center.jpg" alt="Avatar">
+      <img class="avatar mr-3 avatar-circle" src="/authors/admin/avatar_hu_969ce894fa15fbce.jpg" alt="Avatar">
     
 
     <div class="media-body">
@@ -999,7 +1077,7 @@ $$
     
     
     
-    <script src="/js/academic.min.d49475924c8a1000c804942d870fd31c.js"></script>
+    <script src="/js/academic.min.b19faee487e6d1ec7e9bdaffdcf537a6.js"></script>
 
     
 

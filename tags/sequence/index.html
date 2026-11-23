@@ -219,8 +219,8 @@
   
 
   <link rel="manifest" href="/index.webmanifest">
-  <link rel="icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_3.png">
-  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_3.png">
+  <link rel="icon" type="image/png" href="/images/icon_hu_549a1db3558c2382.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu_227762f9926463f1.png">
 
   <link rel="canonical" href="https://teshenglin.github.io/tags/sequence/">
 
@@ -237,9 +237,9 @@
   
   <meta property="og:site_name" content="Te-Sheng Lin">
   <meta property="og:url" content="https://teshenglin.github.io/tags/sequence/">
-  <meta property="og:title" content="sequence | Te-Sheng Lin">
-  <meta property="og:description" content="Professor"><meta property="og:image" content="https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png">
-  <meta property="twitter:image" content="https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png"><meta property="og:locale" content="en-us">
+  <meta property="og:title" content="Sequence | Te-Sheng Lin">
+  <meta property="og:description" content="Professor"><meta property="og:image" content="https://teshenglin.github.io/images/icon_hu_c6eb360240c7098d.png">
+  <meta property="twitter:image" content="https://teshenglin.github.io/images/icon_hu_c6eb360240c7098d.png"><meta property="og:locale" content="en-us">
   
     <meta property="og:updated_time" content="2020-03-06T00:00:00&#43;00:00">
   
@@ -258,7 +258,7 @@
 
 
 
-  <title>sequence | Te-Sheng Lin</title>
+  <title>Sequence | Te-Sheng Lin</title>
 
 </head>
 
@@ -469,7 +469,7 @@
     
   
 <div class="universal-wrapper pt-3">
-  <h1>sequence</h1>
+  <h1>Sequence</h1>
 
   
 
@@ -490,7 +490,14 @@
       <h2><a href="/post/2020_cal2_s11p1_e79/" >Limit of a sequence - Example</a></h2>
       <div class="article-style">
         
-          Section 11.1, exercise 79: Find the limit of $$ \{\sqrt{2}, \sqrt{2\sqrt{2}}, \sqrt{2\sqrt{2\sqrt{2}}}, \cdots\} $$ Remark: 這個數列也可以用以下表示方式 $$ a_1 = \sqrt{2}, \quad a_{n+1} = \sqrt{2 a_n}, \quad n\in \mathbb{N}, \quad n&gt;1. $$ Method 1 我們首先證明它有極限 $a_n&lt;2$ (我們使用數學歸納法) 已知
+          Section 11.1, exercise 79: Find the limit of $$ \{\sqrt{2}, \sqrt{2\sqrt{2}}, \sqrt{2\sqrt{2\sqrt{2}}}, \cdots\} $$
+Remark: 這個數列也可以用以下表示方式 $$ a_1 = \sqrt{2}, \quad a_{n+1} = \sqrt{2 a_n}, \quad n\in \mathbb{N}, \quad n&gt;1. $$
+Method 1 我們首先證明它有極限
+$a_n&lt;2$ (我們使用數學歸納法) 已知 $a_1=\sqrt{2}&lt;2$, 成立. 假設 $a_k&lt;2$, 則 $a_{k+1} = \sqrt{2a_k} &lt; \sqrt{2\times 2} = 2$, 亦成立. 根據數學歸納法我們得到 $a_n&lt;2$, $\forall n$. $a_n&gt;0$ 這個顯然
+claim: $a_{n+1}&gt;a_n$ 由於 $0&lt;a_n&lt;2$, 我們可以得到 $a_n(a_n-2)&lt;0$, 移項並兩邊同時開根號得到 $a_{n+1}=\sqrt{2a_n} &gt; a_n$.
+因為數列 $\{a_n\}$ 遞增且有界, 根據 Monotone sequence theorem 此數列收斂. 我們接著求此數列極限值
+假設 $\lim_{n\to\infty} a_n=L$, 則 $$ \lim_{n\to\infty} a_{n+1} = \lim_{n\to\infty} \sqrt{2 a_n}, \quad \Longrightarrow \quad L = \sqrt{2L}. $$ 所以 $L=0$ 或 $L=2$. 我們知道 $a_n$ 為遞增數列所以 $L = 2$.
+
         
       </div>
     </div>
@@ -607,7 +614,7 @@
     
     
     
-    <script src="/js/academic.min.d49475924c8a1000c804942d870fd31c.js"></script>
+    <script src="/js/academic.min.b19faee487e6d1ec7e9bdaffdcf537a6.js"></script>
 
     
 

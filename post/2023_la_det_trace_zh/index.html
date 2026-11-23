@@ -28,7 +28,25 @@
   
     
   
-  <meta name="description" content="方陣 A 的行列式等於其特徵值相乘 Determinant of A equals to the product of its eigenvalues 給定一個 $n\times n$ 的方陣 $A$, 我們定義一個變數為 $\lambda$ 的函數 $P(\lambda)$ 如下: $$ \tag{1} P(\lambda) = det(\lambda I-A). $$ 根據行列式的算法我們馬">
+  <meta name="description" content="方陣 A 的行列式等於其特徵值相乘
+
+Determinant of A equals to the product of its eigenvalues
+
+給定一個 $n\times n$ 的方陣 $A$, 我們定義一個變數為 $\lambda$ 的函數 $P(\lambda)$ 如下:
+$$
+\tag{1}
+P(\lambda) = det(\lambda I-A).
+$$
+根據行列式的算法我們馬上知道 $P$ 其實就是個 $\lambda$ 的 $n$ 次多項式, 可以寫成
+$$
+\tag{2}
+P(\lambda) = \lambda^n &#43; c_{n-1}\lambda^{n-1}\cdots &#43; c_1\lambda &#43; c_0.
+$$
+因此這個多項式必有 $n$ 個根 $\lambda_1, \cdots, \lambda_n$ (有可能是實根, 虛根, 或重根, 不過必有 $n$ 個), 所以我們可以將 $P$ 改寫為
+$$
+\tag{3}
+P(\lambda) = (\lambda - \lambda_1)\cdots (\lambda - \lambda_n).
+$$">
 
   
   <link rel="alternate" hreflang="en-us" href="https://teshenglin.github.io/post/2023_la_det_trace_zh/">
@@ -217,8 +235,8 @@
   
 
   <link rel="manifest" href="/index.webmanifest">
-  <link rel="icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_3.png">
-  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_3.png">
+  <link rel="icon" type="image/png" href="/images/icon_hu_549a1db3558c2382.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu_227762f9926463f1.png">
 
   <link rel="canonical" href="https://teshenglin.github.io/post/2023_la_det_trace_zh/">
 
@@ -236,8 +254,26 @@
   <meta property="og:site_name" content="Te-Sheng Lin">
   <meta property="og:url" content="https://teshenglin.github.io/post/2023_la_det_trace_zh/">
   <meta property="og:title" content="Trace, determinant 與 eigenvalue 的關係 | Te-Sheng Lin">
-  <meta property="og:description" content="方陣 A 的行列式等於其特徵值相乘 Determinant of A equals to the product of its eigenvalues 給定一個 $n\times n$ 的方陣 $A$, 我們定義一個變數為 $\lambda$ 的函數 $P(\lambda)$ 如下: $$ \tag{1} P(\lambda) = det(\lambda I-A). $$ 根據行列式的算法我們馬"><meta property="og:image" content="https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png">
-  <meta property="twitter:image" content="https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png"><meta property="og:locale" content="en-us">
+  <meta property="og:description" content="方陣 A 的行列式等於其特徵值相乘
+
+Determinant of A equals to the product of its eigenvalues
+
+給定一個 $n\times n$ 的方陣 $A$, 我們定義一個變數為 $\lambda$ 的函數 $P(\lambda)$ 如下:
+$$
+\tag{1}
+P(\lambda) = det(\lambda I-A).
+$$
+根據行列式的算法我們馬上知道 $P$ 其實就是個 $\lambda$ 的 $n$ 次多項式, 可以寫成
+$$
+\tag{2}
+P(\lambda) = \lambda^n &#43; c_{n-1}\lambda^{n-1}\cdots &#43; c_1\lambda &#43; c_0.
+$$
+因此這個多項式必有 $n$ 個根 $\lambda_1, \cdots, \lambda_n$ (有可能是實根, 虛根, 或重根, 不過必有 $n$ 個), 所以我們可以將 $P$ 改寫為
+$$
+\tag{3}
+P(\lambda) = (\lambda - \lambda_1)\cdots (\lambda - \lambda_n).
+$$"><meta property="og:image" content="https://teshenglin.github.io/images/icon_hu_c6eb360240c7098d.png">
+  <meta property="twitter:image" content="https://teshenglin.github.io/images/icon_hu_c6eb360240c7098d.png"><meta property="og:locale" content="en-us">
   
     
       <meta property="article:published_time" content="2023-11-16T00:00:00&#43;00:00">
@@ -283,10 +319,10 @@
     "name": "Te-Sheng Lin",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_3.png"
+      "url": "https://teshenglin.github.io/images/icon_hu_227762f9926463f1.png"
     }
   },
-  "description": "方陣 A 的行列式等於其特徵值相乘 Determinant of A equals to the product of its eigenvalues 給定一個 $n\\times n$ 的方陣 $A$, 我們定義一個變數為 $\\lambda$ 的函數 $P(\\lambda)$ 如下: $$ \\tag{1} P(\\lambda) = det(\\lambda I-A). $$ 根據行列式的算法我們馬"
+  "description": "\u003ch2 id=\"方陣-a-的行列式等於其特徵值相乘\"\u003e方陣 A 的行列式等於其特徵值相乘\u003c/h2\u003e\n\u003cblockquote\u003e\n\u003cp\u003eDeterminant of A equals to the product of its eigenvalues\u003c/p\u003e\n\u003c/blockquote\u003e\n\u003cp\u003e給定一個 $n\\times n$ 的方陣 $A$, 我們定義一個變數為 $\\lambda$ 的函數 $P(\\lambda)$ 如下:\n$$\n\\tag{1}\nP(\\lambda) = det(\\lambda I-A).\n$$\n根據行列式的算法我們馬上知道 $P$ 其實就是個 $\\lambda$ 的 $n$ 次多項式, 可以寫成\n$$\n\\tag{2}\nP(\\lambda) = \\lambda^n + c_{n-1}\\lambda^{n-1}\\cdots + c_1\\lambda + c_0.\n$$\n因此這個多項式必有 $n$ 個根 $\\lambda_1, \\cdots, \\lambda_n$ (有可能是實根, 虛根, 或重根, 不過必有 $n$ 個), 所以我們可以將 $P$ 改寫為\n$$\n\\tag{3}\nP(\\lambda) = (\\lambda - \\lambda_1)\\cdots (\\lambda - \\lambda_n).\n$$\u003c/p\u003e"
 }
 </script>
 
@@ -635,7 +671,7 @@ $$
 det(A) = \lambda_1\cdots\lambda_n.
 $$</p>
 <hr>
-<h2 id="方陣-a-的跡httpszhwikipediaorgzh-tw跡等於其特徵值相加">方陣 A 的
+<h2 id="方陣-a-的跡等於其特徵值相加">方陣 A 的
 <a href="https://zh.wikipedia.org/zh-tw/%e8%b7%a1" target="_blank" rel="noopener">跡</a>等於其特徵值相加</h2>
 <blockquote>
 <p>Trace of A equals to the sum of its eigenvalues</p>
@@ -644,8 +680,8 @@ $$</p>
 $$
 \tag{6}
 A = \begin{bmatrix}
-a_{11} &amp; \cdots &amp; a_{1n}\\<br>
-\vdots &amp; \ddots &amp; \vdots\\<br>
+a_{11} &amp; \cdots &amp; a_{1n}\\
+\vdots &amp; \ddots &amp; \vdots\\
 a_{n1} &amp; \cdots &amp; a_{nn}
 \end{bmatrix}.
 $$</p>
@@ -654,9 +690,9 @@ $$
 \tag{7}
 \lambda I - A =
 \begin{bmatrix}
-\lambda - a_{11} &amp; -a_{12} &amp; \cdots &amp; -a_{1n} \\<br>
--a_{21} &amp; \lambda-a_{22} &amp; \cdots &amp; -a_{2n} \\<br>
-\vdots &amp; \vdots &amp; \ddots &amp; \vdots \\<br>
+\lambda - a_{11} &amp; -a_{12} &amp; \cdots &amp; -a_{1n} \\
+-a_{21} &amp; \lambda-a_{22} &amp; \cdots &amp; -a_{2n} \\
+\vdots &amp; \vdots &amp; \ddots &amp; \vdots \\
 -a_{n1} &amp; -a_{n2} &amp;  \cdots &amp; \lambda - a_{nn}
 \end{bmatrix}.
 $$</p>
@@ -672,34 +708,34 @@ $$
 \tag{9}
 C_{11} =
 \begin{bmatrix}
-\lambda-a_{22} &amp; \cdots &amp; -a_{2n}\\<br>
-\vdots &amp; \ddots &amp; \vdots\\<br>
+\lambda-a_{22} &amp; \cdots &amp; -a_{2n}\\
+\vdots &amp; \ddots &amp; \vdots\\
 -a_{n2} &amp;  \cdots &amp; \lambda - a_{nn}
-\end{bmatrix}_{(n-1)\times(n-1)},
+\end{bmatrix}<em>{(n-1)\times(n-1)},
 $$
 以及
 $$
 \tag{10}
-C_{21} =
+C</em>{21} =
 \begin{bmatrix}
--a_{12} &amp; -a_{13} &amp; \cdots &amp; -a_{1n}\\<br>
--a_{32} &amp; \lambda-a_{33} &amp; \cdots &amp; -a_{3n}\\<br>
-\vdots &amp;  \vdots &amp; \ddots &amp; \vdots\\<br>
+-a_{12} &amp; -a_{13} &amp; \cdots &amp; -a_{1n}\\
+-a_{32} &amp; \lambda-a_{33} &amp; \cdots &amp; -a_{3n}\\
+\vdots &amp;  \vdots &amp; \ddots &amp; \vdots\\
 -a_{n2} &amp; \cdots &amp;  \cdots &amp; \lambda - a_{nn}
 \end{bmatrix}_{(n-1)\times(n-1)}.
 $$</p>
 <p>簡單觀察可以發現 $C_{21}$ 是個最多 $n-2$ 次的多項式. 並且對所有 $k&gt;1$ 的 $C_{k1}$, 他們全都是最多 $n-2$ 次的多項式. 因此我們就有
 $$
 \tag{11}
-det(\lambda I - A) = (\lambda - a_{11})C_{11} + \hat{Q}_{n-2}(\lambda),
+det(\lambda I - A) = (\lambda - a_{11})C_{11} + \hat{Q}<em>{n-2}(\lambda),
 $$
-其中 $\hat{Q}_{n-2}(\lambda)$ 是個最多 $n-2$ 次的多項式.</p>
+其中 $\hat{Q}</em>{n-2}(\lambda)$ 是個最多 $n-2$ 次的多項式.</p>
 <p>接著我們對 $C_{11}$ 做展開, 並且用以上的論述一直做下去. 最終我們就會得到
 $$
 \tag{12}
-det(\lambda I - A) = (\lambda - a_{11})(\lambda - a_{22})\cdots (\lambda - a_{nn}) + \tilde{Q}_{n-2}(\lambda),
+det(\lambda I - A) = (\lambda - a_{11})(\lambda - a_{22})\cdots (\lambda - a_{nn}) + \tilde{Q}<em>{n-2}(\lambda),
 $$
-其中 $\tilde{Q}_{n-2}(\lambda)$ 是個最多 $n-2$ 次的多項式.</p>
+其中 $\tilde{Q}</em>{n-2}(\lambda)$ 是個最多 $n-2$ 次的多項式.</p>
 <p>我們接著把 (12) 展開, 得到
 $$
 \tag{13}
@@ -814,7 +850,7 @@ $$</p>
   <div class="media author-card content-widget-hr">
     
       
-      <img class="avatar mr-3 avatar-circle" src="/authors/admin/avatar_hua0d4d4b24f4da3a102e4452ac738b95f_109236_270x270_fill_q90_lanczos_center.jpg" alt="Avatar">
+      <img class="avatar mr-3 avatar-circle" src="/authors/admin/avatar_hu_969ce894fa15fbce.jpg" alt="Avatar">
     
 
     <div class="media-body">
@@ -1013,7 +1049,7 @@ $$</p>
     
     
     
-    <script src="/js/academic.min.d49475924c8a1000c804942d870fd31c.js"></script>
+    <script src="/js/academic.min.b19faee487e6d1ec7e9bdaffdcf537a6.js"></script>
 
     
 

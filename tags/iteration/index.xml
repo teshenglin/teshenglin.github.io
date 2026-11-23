@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>iteration | Te-Sheng Lin</title>
+    <title>Iteration | Te-Sheng Lin</title>
     <link>https://teshenglin.github.io/tags/iteration/</link>
       <atom:link href="https://teshenglin.github.io/tags/iteration/index.xml" rel="self" type="application/rss+xml" />
-    <description>iteration</description>
+    <description>Iteration</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 12 Jun 2020 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
-      <title>iteration</title>
+      <url>https://teshenglin.github.io/images/icon_hu_c6eb360240c7098d.png</url>
+      <title>Iteration</title>
       <link>https://teshenglin.github.io/tags/iteration/</link>
     </image>
     
@@ -140,8 +140,8 @@ then it is a solution of $P$.&lt;/p&gt;
 &lt;p&gt;根據不等式第一個部分
 $$\forall\lambda\ge 0, \quad L(x^+, \lambda)\le L(x^+, \lambda^+)$$
 帶入 $L$ 我們得到 $\lambda g(x^+) \le \lambda^+ g(x^+)$.&lt;/p&gt;
-&lt;p&gt;由於對所有 $\lambda\ge 0$ 都對, 我們讓 $\lambda\to\infty$ 得到 $g(x^+)\le 0$.
-接著讓 $\lambda\to 0$ 我們得到 $0\le \lambda^+ g(x^+)\le 0$, 因此 $\lambda^+ g(x^+)=0$.&lt;/p&gt;
+&lt;p&gt;由於對所有 $\lambda\ge 0$ 都對, 我們讓 $\lambda=\lambda^++1$ 得到 $g(x^+)\le 0$, 因此 $\lambda^+ g(x^+)\le 0$.
+接著讓 $\lambda=0$ 我們得到 $0\le \lambda^+ g(x^+)$, 因此 $\lambda^+ g(x^+)=0$. 此外我們還有 $L(x^+, \lambda^+)=f(x^+)$.&lt;/p&gt;
 &lt;p&gt;有這件事後我們再看不等式第二部分, $L(x^+, \lambda^+)\le L(x, \lambda^+)$.
 代入 $L$ 以及以上結果我們有 $f(x^+)\le f(x) + \lambda^+ g(x)$.&lt;/p&gt;
 &lt;p&gt;因此, 若 $g(x)\le 0$, 我們必定有 $f(x^+)\le f(x)$.&lt;/p&gt;

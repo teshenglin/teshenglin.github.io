@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>determinant | Te-Sheng Lin</title>
+    <title>Determinant | Te-Sheng Lin</title>
     <link>https://teshenglin.github.io/tags/determinant/</link>
       <atom:link href="https://teshenglin.github.io/tags/determinant/index.xml" rel="self" type="application/rss+xml" />
-    <description>determinant</description>
+    <description>Determinant</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Thu, 16 Nov 2023 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
-      <title>determinant</title>
+      <url>https://teshenglin.github.io/images/icon_hu_c6eb360240c7098d.png</url>
+      <title>Determinant</title>
       <link>https://teshenglin.github.io/tags/determinant/</link>
     </image>
     
@@ -54,7 +54,7 @@ $$
 det(A) = \lambda_1\cdots\lambda_n.
 $$&lt;/p&gt;
 &lt;hr&gt;
-&lt;h2 id=&#34;方陣-a-的跡httpszhwikipediaorgzh-tw跡等於其特徵值相加&#34;&gt;方陣 A 的
+&lt;h2 id=&#34;方陣-a-的跡等於其特徵值相加&#34;&gt;方陣 A 的
 &lt;a href=&#34;https://zh.wikipedia.org/zh-tw/%e8%b7%a1&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;跡&lt;/a&gt;等於其特徵值相加&lt;/h2&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Trace of A equals to the sum of its eigenvalues&lt;/p&gt;
@@ -63,8 +63,8 @@ $$&lt;/p&gt;
 $$
 \tag{6}
 A = \begin{bmatrix}
-a_{11} &amp;amp; \cdots &amp;amp; a_{1n}\\&lt;br&gt;
-\vdots &amp;amp; \ddots &amp;amp; \vdots\\&lt;br&gt;
+a_{11} &amp;amp; \cdots &amp;amp; a_{1n}\\
+\vdots &amp;amp; \ddots &amp;amp; \vdots\\
 a_{n1} &amp;amp; \cdots &amp;amp; a_{nn}
 \end{bmatrix}.
 $$&lt;/p&gt;
@@ -73,9 +73,9 @@ $$
 \tag{7}
 \lambda I - A =
 \begin{bmatrix}
-\lambda - a_{11} &amp;amp; -a_{12} &amp;amp; \cdots &amp;amp; -a_{1n} \\&lt;br&gt;
--a_{21} &amp;amp; \lambda-a_{22} &amp;amp; \cdots &amp;amp; -a_{2n} \\&lt;br&gt;
-\vdots &amp;amp; \vdots &amp;amp; \ddots &amp;amp; \vdots \\&lt;br&gt;
+\lambda - a_{11} &amp;amp; -a_{12} &amp;amp; \cdots &amp;amp; -a_{1n} \\
+-a_{21} &amp;amp; \lambda-a_{22} &amp;amp; \cdots &amp;amp; -a_{2n} \\
+\vdots &amp;amp; \vdots &amp;amp; \ddots &amp;amp; \vdots \\
 -a_{n1} &amp;amp; -a_{n2} &amp;amp;  \cdots &amp;amp; \lambda - a_{nn}
 \end{bmatrix}.
 $$&lt;/p&gt;
@@ -91,34 +91,34 @@ $$
 \tag{9}
 C_{11} =
 \begin{bmatrix}
-\lambda-a_{22} &amp;amp; \cdots &amp;amp; -a_{2n}\\&lt;br&gt;
-\vdots &amp;amp; \ddots &amp;amp; \vdots\\&lt;br&gt;
+\lambda-a_{22} &amp;amp; \cdots &amp;amp; -a_{2n}\\
+\vdots &amp;amp; \ddots &amp;amp; \vdots\\
 -a_{n2} &amp;amp;  \cdots &amp;amp; \lambda - a_{nn}
-\end{bmatrix}_{(n-1)\times(n-1)},
+\end{bmatrix}&lt;em&gt;{(n-1)\times(n-1)},
 $$
 以及
 $$
 \tag{10}
-C_{21} =
+C&lt;/em&gt;{21} =
 \begin{bmatrix}
--a_{12} &amp;amp; -a_{13} &amp;amp; \cdots &amp;amp; -a_{1n}\\&lt;br&gt;
--a_{32} &amp;amp; \lambda-a_{33} &amp;amp; \cdots &amp;amp; -a_{3n}\\&lt;br&gt;
-\vdots &amp;amp;  \vdots &amp;amp; \ddots &amp;amp; \vdots\\&lt;br&gt;
+-a_{12} &amp;amp; -a_{13} &amp;amp; \cdots &amp;amp; -a_{1n}\\
+-a_{32} &amp;amp; \lambda-a_{33} &amp;amp; \cdots &amp;amp; -a_{3n}\\
+\vdots &amp;amp;  \vdots &amp;amp; \ddots &amp;amp; \vdots\\
 -a_{n2} &amp;amp; \cdots &amp;amp;  \cdots &amp;amp; \lambda - a_{nn}
 \end{bmatrix}_{(n-1)\times(n-1)}.
 $$&lt;/p&gt;
 &lt;p&gt;簡單觀察可以發現 $C_{21}$ 是個最多 $n-2$ 次的多項式. 並且對所有 $k&amp;gt;1$ 的 $C_{k1}$, 他們全都是最多 $n-2$ 次的多項式. 因此我們就有
 $$
 \tag{11}
-det(\lambda I - A) = (\lambda - a_{11})C_{11} + \hat{Q}_{n-2}(\lambda),
+det(\lambda I - A) = (\lambda - a_{11})C_{11} + \hat{Q}&lt;em&gt;{n-2}(\lambda),
 $$
-其中 $\hat{Q}_{n-2}(\lambda)$ 是個最多 $n-2$ 次的多項式.&lt;/p&gt;
+其中 $\hat{Q}&lt;/em&gt;{n-2}(\lambda)$ 是個最多 $n-2$ 次的多項式.&lt;/p&gt;
 &lt;p&gt;接著我們對 $C_{11}$ 做展開, 並且用以上的論述一直做下去. 最終我們就會得到
 $$
 \tag{12}
-det(\lambda I - A) = (\lambda - a_{11})(\lambda - a_{22})\cdots (\lambda - a_{nn}) + \tilde{Q}_{n-2}(\lambda),
+det(\lambda I - A) = (\lambda - a_{11})(\lambda - a_{22})\cdots (\lambda - a_{nn}) + \tilde{Q}&lt;em&gt;{n-2}(\lambda),
 $$
-其中 $\tilde{Q}_{n-2}(\lambda)$ 是個最多 $n-2$ 次的多項式.&lt;/p&gt;
+其中 $\tilde{Q}&lt;/em&gt;{n-2}(\lambda)$ 是個最多 $n-2$ 次的多項式.&lt;/p&gt;
 &lt;p&gt;我們接著把 (12) 展開, 得到
 $$
 \tag{13}

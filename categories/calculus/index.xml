@@ -7,7 +7,7 @@
     <description>Calculus</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 18 Dec 2023 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <url>https://teshenglin.github.io/images/icon_hu_c6eb360240c7098d.png</url>
       <title>Calculus</title>
       <link>https://teshenglin.github.io/categories/calculus/</link>
     </image>
@@ -34,7 +34,7 @@ $$&lt;/p&gt;
 x_1 &amp;amp; \cdots &amp;amp; x_n
 \end{bmatrix}\begin{bmatrix}
 1\\
-\vdots\\&lt;br&gt;
+\vdots\\
 1
 \end{bmatrix} = \frac{1}{n}X\mathbb{1},
 $$&lt;/p&gt;
@@ -68,7 +68,7 @@ $$&lt;/p&gt;
 \tag{7}
 A =
 \begin{bmatrix}
-x_1 &amp;amp; \cdots &amp;amp; x_n\\&lt;br&gt;
+x_1 &amp;amp; \cdots &amp;amp; x_n\\
 y_1 &amp;amp; \cdots &amp;amp; y_n
 \end{bmatrix}\in M_{2\times n}.
 $$&lt;/p&gt;
@@ -124,10 +124,10 @@ $$&lt;/p&gt;
 &lt;p&gt;$$
 \tag{13}
 \begin{align}
-\sum^n_{k=1} d_k^2 &amp;amp;= \sum^n_{k=1}\|Y_k - vv^TY_k\|^2  \\&lt;br&gt;
-&amp;amp;= \sum^n_{k=1}&amp;lt;Y_k-vv^TY_k, Y_k-vv^TY_k&amp;gt; \\&lt;br&gt;
-&amp;amp;= \sum^n_{k=1}Y_k^TY_k -Y_k^Tvv^TY_k \\&lt;br&gt;
-&amp;amp;= \sum^n_{k=1}Y_k^TY_k -v^TY_kY_k^Tv \\&lt;br&gt;
+\sum^n_{k=1} d_k^2 &amp;amp;= \sum^n_{k=1}\|Y_k - vv^TY_k\|^2  \\
+&amp;amp;= \sum^n_{k=1}&amp;lt;Y_k-vv^TY_k, Y_k-vv^TY_k&amp;gt; \\
+&amp;amp;= \sum^n_{k=1}Y_k^TY_k -Y_k^Tvv^TY_k \\
+&amp;amp;= \sum^n_{k=1}Y_k^TY_k -v^TY_kY_k^Tv \\
 &amp;amp;= \sum^n_{k=1}(Y_k^TY_k) -v^TYY^Tv,
 \end{align}
 $$&lt;/p&gt;
@@ -312,9 +312,9 @@ $$
 &lt;hr&gt;
 &lt;h5 id=&#34;舉例來說&#34;&gt;舉例來說&lt;/h5&gt;
 &lt;p&gt;以下我們用 Matlab 隨機生出 $R^2$ 空間中的 $5$ 個點, 並求出他的 EDM:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;% Matlab program
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;% Matlab program
 X = rand(2,5);                                  % R^2 中的 5 個點
-D = squareform(pdist(X&#39;, &#39;squaredeuclidean&#39;));  % 求出其 EDM
+D = squareform(pdist(X&amp;#39;, &amp;#39;squaredeuclidean&amp;#39;));  % 求出其 EDM
 &lt;/code&gt;&lt;/pre&gt;&lt;pre&gt;&lt;code&gt;D =
      0    0.3839    0.2333    0.2675    0.6373
 0.3839         0    0.1571    0.1272    0.0470
@@ -409,7 +409,7 @@ $$
 &lt;hr&gt;
 &lt;p&gt;一般來說我們會將 MDS 當成一個降維的工具, 希望在低維度(二或三, 或 $k$)找到一組資料使得其 EDM 與原始資料的 EDM 最像. 而作法就是保留前 $k$ 個特徵值及其特徵向量.&lt;/p&gt;
 &lt;p&gt;給定一個 $n\times n$ 的 EDM 以及欲投影的維度 $k$, MDS 簡單的程式如下:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;% Matlab program
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;% Matlab program
 function Y = multidimensional_scaling(D, k)
 
 %   Input: D, n*n EDM 矩陣, 元素為距離平方
@@ -420,11 +420,11 @@ function Y = multidimensional_scaling(D, k)
     mu = sum(D, 1)/n; D = D - mu;           %
     mu = sum(D, 2)/n; B = D - mu;           %
     B = -0.5*B;                             % B = -0.5*H*D*H
-    [V, D] = eig(B, &#39;vector&#39;);              % 求出特徵值及特徵向量
-    [sqD, ind] = sort(sqrt(D), &#39;descend&#39;);  % 將特徵值按大小排列
+    [V, D] = eig(B, &amp;#39;vector&amp;#39;);              % 求出特徵值及特徵向量
+    [sqD, ind] = sort(sqrt(D), &amp;#39;descend&amp;#39;);  % 將特徵值按大小排列
     sqD = sqD(1:k);                         % 取前 k 個
     V = V(:, ind(1:k));                     % 取相對應的特徵向量
-    Y = V&#39;.*(sqD*ones(1,n));                % 求出 k 維資料點
+    Y = V&amp;#39;.*(sqD*ones(1,n));                % 求出 k 維資料點
 end
 &lt;/code&gt;&lt;/pre&gt;&lt;hr&gt;
 &lt;h2 id=&#34;extension&#34;&gt;Extension&lt;/h2&gt;
@@ -632,7 +632,7 @@ $$&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;投影到 $k$ 維子空間, 投影後得到 $B$, 為 $k\times n$ 的 data matrix.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;pre&gt;&lt;code&gt;% Matlab program
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;% Matlab program
 function B = principal_component_analysis(X, k)
 
 %   Input: X, p*n data matrix, p 個 features 以及 n 個 samples
@@ -642,11 +642,11 @@ function B = principal_component_analysis(X, k)
     [p, n] = size(X);               % p 個 features 以及 n 個 samples
     mu = sum(X, 2)/n;               % 計算 sample 的平均 mu
     Y = X - mu*ones(1,n);           % 資料平移得到 Y
-    S = Y*Y&#39;;                       % 求出共變異數矩陣 S
-    [U, D] = eig(S, &#39;vector&#39;);      % 求出特徵值 D 及特徵向量 U
-    [D, ind] = sort(D, &#39;descend&#39;);  % 將特徵值由大到小排列
+    S = Y*Y&amp;#39;;                       % 求出共變異數矩陣 S
+    [U, D] = eig(S, &amp;#39;vector&amp;#39;);      % 求出特徵值 D 及特徵向量 U
+    [D, ind] = sort(D, &amp;#39;descend&amp;#39;);  % 將特徵值由大到小排列
     U = U(:, ind);                  % 將特徵向量照樣排列
-    B = U(:,1:k)&#39;*Y;                % 投影到前 k 個組成的空間中並求出係數 B
+    B = U(:,1:k)&amp;#39;*Y;                % 投影到前 k 個組成的空間中並求出係數 B
 end
 &lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&#34;remark-2&#34;&gt;Remark:&lt;/h4&gt;
 &lt;p&gt;這做法會造出一個 $p\times p$ 的共變異數矩陣 $\Sigma$, 並且算出全部的特徵值及特徵向量. 不過其實我們只需要前 $k$ 個. 所以多出來的部分會丟掉, 有點浪費.&lt;/p&gt;
@@ -681,7 +681,7 @@ $$
 &lt;a href=&#34;https://teshenglin.github.io/post/2020_multi_dimensional_scaling&#34;&gt;Multidimensional scaling (MDS)&lt;/a&gt; 在某些情況下會有一模一樣的關係. 這樣就把兩種方法 PCA 跟 MDS 連在一起了. 雖然出發點不一樣, 竟然(在某些情況下)結果是一樣的!&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;利用以上關係我們可以將程式改寫如下:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;% Matlab program
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;% Matlab program
 function B = principal_component_analysis2(X, k)
 
 %   Input: X, p*n data matrix, p 個 features 以及 n 個 samples
@@ -692,24 +692,24 @@ function B = principal_component_analysis2(X, k)
     mu = sum(X, 2)/n;               % 計算 sample 的平均, mu
     Y = X - mu*ones(1,n);           % 資料平移得到 Y
     [~, S, V] = svds(Y, k);         % 將 Y 做奇異值分解並取前 k 個 eigenvectors
-    B = S*V&#39;;                       % 求出投影後的係數
+    B = S*V&amp;#39;;                       % 求出投影後的係數
 end
 &lt;/code&gt;&lt;/pre&gt;&lt;hr&gt;
 &lt;p&gt;而事實上, matlab 已經內建 PCA 程式了, 所以其實完全不用自己寫. 只是要注意一下 matlab 裡 PCA 的輸入 sample points 是 $n\times p$, 由於我們以上都是將 $X$ 設成 $p\times n$ 的矩陣, 所以要轉置一下, 程式只有兩行, 如下:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;% Matlab program
-[U, B] = pca(X&#39;);
-B = B(:,1:k)&#39;;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;% Matlab program
+[U, B] = pca(X&amp;#39;);
+B = B(:,1:k)&amp;#39;;
 &lt;/code&gt;&lt;/pre&gt;&lt;hr&gt;
 &lt;h1 id=&#34;working-example&#34;&gt;Working example&lt;/h1&gt;
 &lt;p&gt;這裡我們舉一個例子, 我們先構造 sample points, 是一個類似螺旋狀結構, 程式如下:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;% Matlab program
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;% Matlab program
 n = 1000;                                   % 取 n 個點
 t = 3*pi*(1:n)/n;                           % 利用參數化來構造, 取 t\in[0, 3*pi]
 X = [t.*cos(t); 5*rand(1,n); t.*sin(t)];    % 先利用 random 構造三圍中的一個面
-M = makehgtform(&#39;axisrotate&#39;,[1 1 1], 30);  % 構造旋轉矩陣
+M = makehgtform(&amp;#39;axisrotate&amp;#39;,[1 1 1], 30);  % 構造旋轉矩陣
 X = M(1:3, 1:3)*X + 10*rand(3,1)*ones(1,n); % 將 sample 旋轉並且隨機平移
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;其圖形長這樣:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;scatter3(X(1,:), X(2,:), X(3,:), [], (1:n)/n, &#39;fill&#39;)
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;scatter3(X(1,:), X(2,:), X(3,:), [], (1:n)/n, &amp;#39;fill&amp;#39;)
 &lt;/code&gt;&lt;/pre&gt;
 
 
@@ -739,9 +739,9 @@ X = M(1:3, 1:3)*X + 10*rand(3,1)*ones(1,n); % 將 sample 旋轉並且隨機平�
 &lt;/figure&gt;
 
 &lt;p&gt;接著我們用 PCA 投影到二維, 圖形長這樣:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;[~, B] = pca(X&#39;);
-B=B&#39;;
-scatter(B(1,:), B(2,:), [], (1:n)/n, &#39;fill&#39;)
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;[~, B] = pca(X&amp;#39;);
+B=B&amp;#39;;
+scatter(B(1,:), B(2,:), [], (1:n)/n, &amp;#39;fill&amp;#39;)
 &lt;/code&gt;&lt;/pre&gt;
 
 
@@ -903,94 +903,94 @@ English version:
 &lt;li&gt;
 &lt;p&gt;$c=1$, $n=1$
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure&gt;
-
-
-  &lt;a data-fancybox=&#34;&#34; href=&#34;https://teshenglin.github.io/post/figs/2020_cal_s10p3_4.png&#34; &gt;
-
-
-  &lt;img src=&#34;https://teshenglin.github.io/post/figs/2020_cal_s10p3_4.png&#34; alt=&#34;&#34; width=&#34;400px&#34; &gt;
-&lt;/a&gt;
-
-
-
-&lt;/figure&gt;
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   &lt;figure&gt;
+   
+   
+     &lt;a data-fancybox=&#34;&#34; href=&#34;https://teshenglin.github.io/post/figs/2020_cal_s10p3_4.png&#34; &gt;
+   
+   
+     &lt;img src=&#34;https://teshenglin.github.io/post/figs/2020_cal_s10p3_4.png&#34; alt=&#34;&#34; width=&#34;400px&#34; &gt;
+   &lt;/a&gt;
+   
+   
+   
+   &lt;/figure&gt;
 &lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;$c=1$, $n=2$
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure&gt;
-
-
-  &lt;a data-fancybox=&#34;&#34; href=&#34;https://teshenglin.github.io/post/figs/2020_cal_s10p3_9.png&#34; &gt;
-
-
-  &lt;img src=&#34;https://teshenglin.github.io/post/figs/2020_cal_s10p3_9.png&#34; alt=&#34;&#34; width=&#34;400px&#34; &gt;
-&lt;/a&gt;
-
-
-
-&lt;/figure&gt;
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   &lt;figure&gt;
+   
+   
+     &lt;a data-fancybox=&#34;&#34; href=&#34;https://teshenglin.github.io/post/figs/2020_cal_s10p3_9.png&#34; &gt;
+   
+   
+     &lt;img src=&#34;https://teshenglin.github.io/post/figs/2020_cal_s10p3_9.png&#34; alt=&#34;&#34; width=&#34;400px&#34; &gt;
+   &lt;/a&gt;
+   
+   
+   
+   &lt;/figure&gt;
 &lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;$c=1$, $n=3$
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure&gt;
-
-
-  &lt;a data-fancybox=&#34;&#34; href=&#34;https://teshenglin.github.io/post/figs/2020_cal_s10p3_10.png&#34; &gt;
-
-
-  &lt;img src=&#34;https://teshenglin.github.io/post/figs/2020_cal_s10p3_10.png&#34; alt=&#34;&#34; width=&#34;400px&#34; &gt;
-&lt;/a&gt;
-
-
-
-&lt;/figure&gt;
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   &lt;figure&gt;
+   
+   
+     &lt;a data-fancybox=&#34;&#34; href=&#34;https://teshenglin.github.io/post/figs/2020_cal_s10p3_10.png&#34; &gt;
+   
+   
+     &lt;img src=&#34;https://teshenglin.github.io/post/figs/2020_cal_s10p3_10.png&#34; alt=&#34;&#34; width=&#34;400px&#34; &gt;
+   &lt;/a&gt;
+   
+   
+   
+   &lt;/figure&gt;
 &lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -1003,26 +1003,23 @@ English version:
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;$n=1$
-
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/iGdYNHExGj4&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
+			&lt;iframe allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen&#34; loading=&#34;eager&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; src=&#34;https://www.youtube.com/embed/iGdYNHExGj4?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;YouTube video&#34;&gt;&lt;/iframe&gt;
+		&lt;/div&gt;
 &lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;$n=2$
-
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/pSkd6K3psHw&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
+			&lt;iframe allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen&#34; loading=&#34;eager&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; src=&#34;https://www.youtube.com/embed/pSkd6K3psHw?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;YouTube video&#34;&gt;&lt;/iframe&gt;
+		&lt;/div&gt;
 &lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;$n=3$
-
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/VXR2MjaYQjc&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
+			&lt;iframe allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen&#34; loading=&#34;eager&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; src=&#34;https://www.youtube.com/embed/VXR2MjaYQjc?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;YouTube video&#34;&gt;&lt;/iframe&gt;
+		&lt;/div&gt;
 &lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
@@ -1031,10 +1028,9 @@ English version:
 &lt;p&gt;有一曲線家族有極座標方程式 $r= \frac{1-acos\theta}{1+acos\theta}$, 探討隨$a$ 值改變，圖形會如何改變。你應該特別辨別曲線基本形狀改變時的$a$ 值。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;解答:&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;隨著 $a$ 絕對值增加，圓形逐漸變桃型，當$|a|&amp;gt;1$ ，桃型尖端向內形成另一小環。隨 $a$ 值增加，小環逐漸變大。&lt;/p&gt;
-
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/wogB45xcXdA&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
+			&lt;iframe allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen&#34; loading=&#34;eager&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; src=&#34;https://www.youtube.com/embed/wogB45xcXdA?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;YouTube video&#34;&gt;&lt;/iframe&gt;
+		&lt;/div&gt;
 
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;問題 4:&lt;/strong&gt;&lt;/p&gt;
@@ -1043,18 +1039,16 @@ English version:
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;$a=1$
-
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/NUpHIoy9dsc&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
+			&lt;iframe allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen&#34; loading=&#34;eager&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; src=&#34;https://www.youtube.com/embed/NUpHIoy9dsc?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;YouTube video&#34;&gt;&lt;/iframe&gt;
+		&lt;/div&gt;
 &lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;$c=1$
-
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/6kNj_GaEeUo&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
+			&lt;iframe allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen&#34; loading=&#34;eager&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; src=&#34;https://www.youtube.com/embed/6kNj_GaEeUo?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;YouTube video&#34;&gt;&lt;/iframe&gt;
+		&lt;/div&gt;
 &lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
@@ -1074,7 +1068,7 @@ $$
       <pubDate>Sun, 21 Jun 2020 00:00:00 +0000</pubDate>
       <guid>https://teshenglin.github.io/post/2020_cal_s14p7/</guid>
       <description>&lt;blockquote&gt;
-&lt;p&gt;Applied Project in Sec.14.7, Calculus by Stewart&lt;br&gt;
+&lt;p&gt;Applied Project in Sec.14.7, Calculus by Stewart &lt;br&gt;
 Chinese version 
 &lt;a href=&#34;https://teshenglin.github.io/post/2020_cal_s14p7_ch&#34;&gt;設計垃圾桶&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -1144,7 +1138,7 @@ f=0.24\left(\frac{1}{x}+\frac{1}{y}\right)+10xy+50+1.2x+1.2y+\frac{0.036}{xy}
 $$
 To have a minimum we should have $f_x=f_y=0$ where
 $$
-f_x=\frac{-0.24}{x^2}+10y+1.2-\frac{0.036}{x^2y}\&lt;br&gt;
+f_x=\frac{-0.24}{x^2}+10y+1.2-\frac{0.036}{x^2y}\
 f_y=\frac{-0.24}{y^2}+10x+1.2-\frac{0.036}{xy^2}
 $$
 Since $x$ and $y$ must be positive in this problem, we have $x=y$. We then get $10x^4+ 1.2x^3 -0.24x -0.036=0$ that has only one positive root $x\approx 0.295$.&lt;/p&gt;
@@ -1169,7 +1163,7 @@ Since $x$ and $y$ must be positive in this problem, we have $x=y$. We then get $
       <pubDate>Sun, 21 Jun 2020 00:00:00 +0000</pubDate>
       <guid>https://teshenglin.github.io/post/2020_cal_s14p7_ch/</guid>
       <description>&lt;blockquote&gt;
-&lt;p&gt;Applied Project in Sec.14.7, Calculus by Stewart&lt;br&gt;
+&lt;p&gt;Applied Project in Sec.14.7, Calculus by Stewart &lt;br&gt;
 English version 
 &lt;a href=&#34;https://teshenglin.github.io/post/2020_cal_s14p7&#34;&gt;Designing a dumpster&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -1239,13 +1233,13 @@ f=0.24\left(\frac{1}{x}+\frac{1}{y}\right)+10xy+50+1.2x+1.2y+\frac{0.036}{xy}
 $$
 如果$f$要是最小值，那 $f_x=f_y=0$, 其中
 $$
-f_x=\frac{-0.24}{x^2}+10y+1.2-\frac{0.036}{x^2y}\&lt;br&gt;
+f_x=\frac{-0.24}{x^2}+10y+1.2-\frac{0.036}{x^2y}\
 f_y=\frac{-0.24}{y^2}+10x+1.2-\frac{0.036}{xy^2}
 $$
 但是x 和y 一定是正數，所以 x=y。接著，將x=y 帶入偏微分的式子，可以得到 $10x^4+ 1.2x^3 -0.24x -0.036=0$，能夠找出長方體容器的長寬高：
 $$
-x=寬=y=長\approx0.295\&lt;br&gt;
-z=高\approx0.172\&lt;br&gt;
+x=寬=y=長\approx0.295\
+z=高\approx0.172\
 $$
 總花費=TotalCost=$53.61473&lt;/p&gt;
 &lt;hr&gt;
@@ -1282,22 +1276,22 @@ $$
 &lt;h4 id=&#34;idea&#34;&gt;Idea:&lt;/h4&gt;
 &lt;p&gt;我們簡單做個變數變換 $x = \cos\theta$ 可以得到
 $$
-\int^1_{-1} f(x) dx = \int^{\pi}_0 f(\cos\theta)\sin\theta d\theta.
+\int^1_{-1} f(x) dx = \int^{\pi}&lt;em&gt;0 f(\cos\theta)\sin\theta d\theta.
 $$
 所以如果我能將 $f(x)$ 這個函數以 first kind Chebyshev polynomial 來做展開, i.e.,
 $$
-f(x) = \sum^N_{k=0} a_k T_k(x) = \sum^N_{k=0} a_k \cos(k\cos^{-1}x).
+f(x) = \sum^N&lt;/em&gt;{k=0} a_k T_k(x) = \sum^N_{k=0} a_k \cos(k\cos^{-1}x).
 $$
 那代入後我們就有
 $$
-\int^1_{-1} f(x) dx = \int^{\pi}_0 \sum^N_{k=0} a_k \cos(k\theta)\sin\theta d\theta = \sum^{N/2}_{k=0}\frac{2 a_{2k}}{1-(2k)^2}.
+\int^1_{-1} f(x) dx = \int^{\pi}&lt;em&gt;0 \sum^N&lt;/em&gt;{k=0} a_k \cos(k\theta)\sin\theta d\theta = \sum^{N/2}&lt;em&gt;{k=0}\frac{2 a&lt;/em&gt;{2k}}{1-(2k)^2}.
 $$&lt;/p&gt;
 &lt;p&gt;因此, 若我們知道如何求一個函數的 Chebyshev coefficients, $a_k$, 那我們很容易就可以計算 $\int^1_{-1}f(x)dx$.&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;簡單的 Matlab 程式如下:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;% generate grid points
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;% generate grid points
 N = 25;
-x = -sin((-N:2:N)&#39;*pi/(2*N));
+x = -sin((-N:2:N)&amp;#39;*pi/(2*N));
 
 % evaluate at grid points
 f = cos(x).*exp(sin(x));
@@ -1370,7 +1364,7 @@ $$
 $$
 其中 $[\pmb{F}]^T$ 這個矩陣乘法則是以 iFFT 來加速計算.&lt;/p&gt;
 &lt;p&gt;簡單的 Matlab 程式如下:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;N=25;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;N=25;
 
 w = zeros(1,N+1);
 if(mod(N,2)==0)
@@ -1381,12 +1375,12 @@ end
 w(1:2:end) = 2./(1-4*(0:M).^2);
 
 w2 = [w, w(N: -1:2)];
-CCW = ifft(w2&#39;);
-CCW = [CCW(1), 2*CCW(2:N)&#39;, CCW(N+1)];
+CCW = ifft(w2&amp;#39;);
+CCW = [CCW(1), 2*CCW(2:N)&amp;#39;, CCW(N+1)];
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;有了權重後即可由函數值直接求得積分值:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;% generate grid points
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;% generate grid points
 N = 25;
-x = -sin((-N:2:N)&#39;*pi/(2*N));
+x = -sin((-N:2:N)&amp;#39;*pi/(2*N));
 
 % evaluate at grid points
 f = cos(x).*exp(sin(x));
@@ -1399,7 +1393,7 @@ exact_quad = exp(sin(1)) - exp(sin(-1));
 abs(cc_quad2 - exact_quad)
 &lt;/code&gt;&lt;/pre&gt;&lt;hr&gt;
 &lt;p&gt;最後附上 &lt;code&gt;python&lt;/code&gt; 程式:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;import numpy as np
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;import numpy as np
 from numpy.fft import fft,ifft,fftshift
 
 N = 25
@@ -1440,7 +1434,7 @@ np.abs(cc_quad2 - exact_quad)
       <pubDate>Mon, 15 Jun 2020 00:00:00 +0000</pubDate>
       <guid>https://teshenglin.github.io/post/2020_cal_s3p5/</guid>
       <description>&lt;blockquote&gt;
-&lt;p&gt;Applied Project in Sec.3.5, Calculus by Stewart&lt;br&gt;
+&lt;p&gt;Applied Project in Sec.3.5, Calculus by Stewart &lt;br&gt;
 Chinese version 
 &lt;a href=&#34;https://teshenglin.github.io/post/2020_cal_s3p5_ch&#34;&gt;隱式曲線集合&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -1466,14 +1460,12 @@ x^2+y^2+cx^2 y^2=1
 $$
 Describe how the graph changes as you change the value of $c$.&lt;/p&gt;
 &lt;p&gt;(b) What happens to the curve when $c=-1$? Describe what appears on the screen. Can you prove it algebraically?&lt;/p&gt;
-&lt;p&gt;(c) Find $y&#39;$ by implicit differentiation. For the case $c=-1$, is your expression for $y&#39;$ consistent with what you discovered in part (b)?&lt;/p&gt;
+&lt;p&gt;(c) Find $y&amp;rsquo;$ by implicit differentiation. For the case $c=-1$, is your expression for $y&amp;rsquo;$ consistent with what you discovered in part (b)?&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Solution&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;(a)&lt;/strong&gt; If $c=0$, the graph is the unit circle. As $c$ increases, the graph looks more diamondlike and more crosslike (see the graph for $c\geq 0$)&lt;/p&gt;
 &lt;p&gt;For $-1&amp;lt;c&amp;lt;0$(see the graph), there are four hyperboliclike branches as well as an ellipticlike curve bounded by $|x|\leq1$ and $|y|\leq1$ for values of $c$ close to $0$. As $c$ gets closer to $-1$, the branches and the curve become more rectangular, approaching the lines $|x|=1$ and $|y|=1$.&lt;/p&gt;
 &lt;p&gt;For $c=-1$, we get the lines $x=\pm1$ and $y=\pm1$. As $c$ decreases, we get four test-tubelike curves (see the graph) that are bounded by $|x|=1$ and $|y|=1$, and get thinner as $|c|$ gets larger.
 &lt;img src=&#34;https://i.imgur.com/8MuCqVK.png&#34; alt=&#34;2(a)&#34;&gt;&lt;/p&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;!-- raw HTML omitted --&gt;
 &lt;hr&gt;
 </description>
     </item>
@@ -1484,7 +1476,7 @@ Describe how the graph changes as you change the value of $c$.&lt;/p&gt;
       <pubDate>Mon, 15 Jun 2020 00:00:00 +0000</pubDate>
       <guid>https://teshenglin.github.io/post/2020_cal_s3p5_ch/</guid>
       <description>&lt;blockquote&gt;
-&lt;p&gt;Applied Project in Sec.3.5, Calculus by Stewart&lt;br&gt;
+&lt;p&gt;Applied Project in Sec.3.5, Calculus by Stewart &lt;br&gt;
 英文版請見 
 &lt;a href=&#34;https://teshenglin.github.io/post/2020_cal_s3p5&#34;&gt;Families of Implicit Curves&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -1510,14 +1502,12 @@ x^2+y^2+cx^2 y^2=1
 $$
 曲線集合中的數個成員，並描述當你改變$c$的值，曲線的圖形出現了什麼改變？&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;(b)&lt;/strong&gt; 當$c=-1$會發生什麼事?描述螢幕上發生了什麼事？你能夠代數性的證明它嗎？&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;(c)&lt;/strong&gt; 使用隱微分找到 $y&#39;$ 。當$c=-1$,你寫的 $y&#39;$ 與你在 &lt;strong&gt;(b)&lt;/strong&gt; 發現的相符嗎?&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;(c)&lt;/strong&gt; 使用隱微分找到 $y&amp;rsquo;$ 。當$c=-1$,你寫的 $y&amp;rsquo;$ 與你在 &lt;strong&gt;(b)&lt;/strong&gt; 發現的相符嗎?&lt;/p&gt;
 &lt;h2 id=&#34;解答-1&#34;&gt;解答&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;(a)&lt;/strong&gt; 當 $c=0$圖形為單位圓。當 $c$ 增加，圖形看起來越來越像寶石和十字架 (看 $c\geq0$的圖)&lt;/p&gt;
 &lt;p&gt;當 $-1&amp;lt;c&amp;lt;0$(看圖), $c$ 靠近 $0$ 時有四個部分的雙曲線和一個由 $|x|\leq1$ 和 $|y|\leq1$ 圍出的橢圓。$c$ 越靠近 $-1$, 橢圓和曲線就變得越方正, 靠近 $|x|=1$和$|y|=1$。&lt;/p&gt;
 &lt;p&gt;當$c=-1$, 我們得到直線 $x=\pm1$ 和 $y=\pm1$。當 $c$ 減少,我們得到四個試管形狀的曲線(看圖) 由 $|x|=1$ 和 $|y|=1$ 圍出，當$|c|$越大，圖形就變得越小。
 &lt;img src=&#34;https://i.imgur.com/8MuCqVK.png&#34; alt=&#34;2(a)&#34;&gt;&lt;/p&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;!-- raw HTML omitted --&gt;
 &lt;hr&gt;
 </description>
     </item>
@@ -1618,7 +1608,7 @@ $$&lt;/p&gt;
 &lt;li&gt;
 &lt;p&gt;因此
 $$
-E = \frac{3+\sqrt{5}}{16\sqrt{5}} \underbrace{\sum_{k=0}^{\infty}(k+2)\cdot(\frac{1+\sqrt{5}}{4})^{k-1}}_{(a)} - \frac{3-\sqrt{5}}{16\sqrt{5}} \underbrace{\sum_{k=0}^{\infty}(k+2)\cdot(\frac{1-\sqrt{5}}{4})^{k-1}}_{(b)}
+E = \frac{3+\sqrt{5}}{16\sqrt{5}} \underbrace{\sum_{k=0}^{\infty}(k+2)\cdot(\frac{1+\sqrt{5}}{4})^{k-1}}&lt;em&gt;{(a)} - \frac{3-\sqrt{5}}{16\sqrt{5}} \underbrace{\sum&lt;/em&gt;{k=0}^{\infty}(k+2)\cdot(\frac{1-\sqrt{5}}{4})^{k-1}}_{(b)}
 $$&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
@@ -1657,7 +1647,7 @@ $$&lt;/p&gt;
 也就是 $0.5$ 機率會是到 &lt;code&gt;1正&lt;/code&gt; 這狀態以及 $0.5$ 機率回到 &lt;code&gt;0正&lt;/code&gt; 這狀態.&lt;/p&gt;
 &lt;p&gt;假設目前連續投擲出 1 個正, 那下一投則 $0.5$ 機率會是到 &lt;code&gt;2正&lt;/code&gt; 這狀態以及 $0.5$ 機率回到 &lt;code&gt;0正&lt;/code&gt; 這狀態.&lt;/p&gt;
 &lt;p&gt;根據這些觀察我們可以做出以下的 diagram:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-mermaid&#34; data-lang=&#34;mermaid&#34;&gt;graph LR;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-mermaid&#34; data-lang=&#34;mermaid&#34;&gt;graph LR;
 A[0 正] -- 0.5 --&amp;gt;B(1 正)
   B -- 0.5 --&amp;gt; C(2 正)
   A -- 0.5 --&amp;gt; A
@@ -1810,8 +1800,8 @@ then it is a solution of $P$.&lt;/p&gt;
 &lt;p&gt;根據不等式第一個部分
 $$\forall\lambda\ge 0, \quad L(x^+, \lambda)\le L(x^+, \lambda^+)$$
 帶入 $L$ 我們得到 $\lambda g(x^+) \le \lambda^+ g(x^+)$.&lt;/p&gt;
-&lt;p&gt;由於對所有 $\lambda\ge 0$ 都對, 我們讓 $\lambda\to\infty$ 得到 $g(x^+)\le 0$.
-接著讓 $\lambda\to 0$ 我們得到 $0\le \lambda^+ g(x^+)\le 0$, 因此 $\lambda^+ g(x^+)=0$.&lt;/p&gt;
+&lt;p&gt;由於對所有 $\lambda\ge 0$ 都對, 我們讓 $\lambda=\lambda^++1$ 得到 $g(x^+)\le 0$, 因此 $\lambda^+ g(x^+)\le 0$.
+接著讓 $\lambda=0$ 我們得到 $0\le \lambda^+ g(x^+)$, 因此 $\lambda^+ g(x^+)=0$. 此外我們還有 $L(x^+, \lambda^+)=f(x^+)$.&lt;/p&gt;
 &lt;p&gt;有這件事後我們再看不等式第二部分, $L(x^+, \lambda^+)\le L(x, \lambda^+)$.
 代入 $L$ 以及以上結果我們有 $f(x^+)\le f(x) + \lambda^+ g(x)$.&lt;/p&gt;
 &lt;p&gt;因此, 若 $g(x)\le 0$, 我們必定有 $f(x^+)\le f(x)$.&lt;/p&gt;
@@ -2094,7 +2084,7 @@ $$
       <pubDate>Thu, 11 Jun 2020 00:00:00 +0000</pubDate>
       <guid>https://teshenglin.github.io/post/2020_cal_s15p8/</guid>
       <description>&lt;blockquote&gt;
-&lt;p&gt;Applied Project in Sec.15.8, Calculus by Stewart&lt;br&gt;
+&lt;p&gt;Applied Project in Sec.15.8, Calculus by Stewart &lt;br&gt;
 Chinese version 
 &lt;a href=&#34;https://teshenglin.github.io/post/2020_cal_s15p8_ch&#34;&gt;滾動競賽&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -2109,8 +2099,6 @@ $$&lt;/p&gt;
 $$
 v^2=\frac{2gh}{1+I^&lt;em&gt;},\quad \text{where  } I^&lt;/em&gt;=\frac{I}{mr^2}
 $$&lt;/p&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;!-- raw HTML omitted --&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Problem 2&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;If $y(t)$ is the vertical distance traveled at time $t$, then the same reasoning as used in Problem 1 shows that $v^2=2gy/(1+I^&lt;em&gt;)$ at any time t. Use this result to show that $y$ satisfies the differential equation
@@ -2118,8 +2106,6 @@ $$
 \frac{dy}{dt}= \sqrt{\frac{2g}{1+I^&lt;/em&gt;}}(\sin{\alpha})\sqrt{y}
 $$
 where $\alpha$ is the angle of inclination of the plane.&lt;/p&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;!-- raw HTML omitted --&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Problem 3&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;By solving the equation in Problem 2, show that the total travel time is
@@ -2127,18 +2113,12 @@ $$
 T=\sqrt{\frac{2h(1+I^&lt;em&gt;)}{g\sin^2\alpha}}
 $$
 This shows that the object with the smallest value of $I^&lt;/em&gt;$ wins the race.&lt;/p&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;!-- raw HTML omitted --&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Problem 4&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Show that $I^*=1/2$ for a solid cylinder and $I^*=1$ for a hollow cylinder&lt;/p&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;!-- raw HTML omitted --&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Problem 5&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Calculate $I^*$ for a partly hollow ball with inner radius $a$ and outer radius $r$. Express your answer in terms of $b=a/r$. What happened when as $a\to 0$ and as $a\to r$?&lt;/p&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;!-- raw HTML omitted --&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Problem 6&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Show that $I^*=2/5$ for a solid ball and $I^*=2/3$ for a hollow ball. Thus the objects finish in following order: solid ball, solid cylinder, hollow ball, hollow cylinder.&lt;/p&gt;
@@ -2157,7 +2137,7 @@ This shows that the object with the smallest value of $I^&lt;/em&gt;$ wins the r
       <pubDate>Thu, 11 Jun 2020 00:00:00 +0000</pubDate>
       <guid>https://teshenglin.github.io/post/2020_cal_s15p8_ch/</guid>
       <description>&lt;blockquote&gt;
-&lt;p&gt;Applied Project in Sec.15.8, Calculus by Stewart&lt;br&gt;
+&lt;p&gt;Applied Project in Sec.15.8, Calculus by Stewart &lt;br&gt;
 英文版請見 
 &lt;a href=&#34;https://teshenglin.github.io/post/2020_cal_s15p8&#34;&gt;Roller Derby&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -2172,8 +2152,6 @@ $$&lt;/p&gt;
 $$
 v^2=\frac{2gh}{1+I^&lt;em&gt;},\quad \text{其中  } I^&lt;/em&gt;=\frac{I}{mr^2}
 $$&lt;/p&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;!-- raw HTML omitted --&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;問題 2&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;$y(t)$ 為時間 $t$ 時的鉛直下落量。而由問題一可知在不論時間 $t$ 為何，皆有關係式： $v^2=2gy/(1+I^&lt;em&gt;)$。以此結果證明 $y$ 符合以下微分方程：
@@ -2181,8 +2159,6 @@ $$
 \frac{dy}{dt}= \sqrt{\frac{2g}{1+I^&lt;/em&gt;}}(\sin{\alpha})\sqrt{y}
 $$
 其中 $\alpha$ 為斜面傾角。&lt;/p&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;!-- raw HTML omitted --&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;問題 3&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;藉由求解問題2之方程式，得出自斜面頂端滾至底端之時長 $T$ 為：
@@ -2190,18 +2166,12 @@ $$
 T=\sqrt{\frac{2h(1+I^&lt;em&gt;)}{g\sin^2\alpha}}
 $$
 亦即 $I^&lt;/em&gt;$ 最小之物品將最先滾至底端。&lt;/p&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;!-- raw HTML omitted --&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;問題 4&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;證明實心圓柱之 $I^*=1/2$，空心圓柱之 $I^*=1$。&lt;/p&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;!-- raw HTML omitted --&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;問題 5&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;計算內徑 $a$，外徑 $r$ 之部分空心球體之 $I^&lt;em&gt;$。答案以 $b$ 表示，其中 $b=a/r$。求當 $a\to 0$ 或當 $a\to r$ 時的 $I^&lt;/em&gt;$。&lt;/p&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;!-- raw HTML omitted --&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;問題 6&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;說明實心球體的 $I^*=2/5$，而空心球體的 $I^*=2/3$。因此滾至斜面底部的順序為實心球體、實心柱體、空心球體、空心柱體。&lt;/p&gt;
@@ -2220,7 +2190,7 @@ $$
       <pubDate>Wed, 10 Jun 2020 00:00:00 +0000</pubDate>
       <guid>https://teshenglin.github.io/post/2020_cal_s5p2/</guid>
       <description>&lt;blockquote&gt;
-&lt;p&gt;Discovery Project in Sec.5.2, Calculus by Stewart&lt;br&gt;
+&lt;p&gt;Discovery Project in Sec.5.2, Calculus by Stewart &lt;br&gt;
 Chinese version 
 &lt;a href=&#34;https://teshenglin.github.io/post/2020_cal_s5p2_ch&#34;&gt;面積函數&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -2315,7 +2285,7 @@ A(x) = \int_{-1}^{x} (1+t^2)dt =\frac{t^3-(-1)^3}{3}+x+1
 $$&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Question 2(c):&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Find $A&#39;(x)$. What do you notice?&lt;/p&gt;
+&lt;p&gt;Find $A&amp;rsquo;(x)$. What do you notice?&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;$A’(x) = 1+t^2$, we can found that $A’(x)$ is the upper bound of the area of a region.&lt;/p&gt;
 &lt;hr&gt;
@@ -2438,54 +2408,54 @@ then $g(x)$ is the area under the graph of $f$ from $0$ to $x$ [until $f(x)$ bec
 &lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;$g(x)$ is the blue line in the graph.&lt;/p&gt;
 &lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th style=&#34;text-align:center&#34;&gt;&lt;strong&gt;x&lt;/strong&gt;&lt;/th&gt;
-&lt;th style=&#34;text-align:center&#34;&gt;&lt;strong&gt;g(x)&lt;/strong&gt;&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;0.2&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;0.2&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;0.4&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;0.399&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;0.6&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;0.5923&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;0.8&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;0.7678&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;1&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;0.9045&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;1.2&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;0.9739&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;1.4&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;0.9498&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;1.6&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;0.8255&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;1.8&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;0.6354&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;2&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;0.4615&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
+	&lt;thead&gt;
+			&lt;tr&gt;
+					&lt;th style=&#34;text-align: center&#34;&gt;&lt;strong&gt;x&lt;/strong&gt;&lt;/th&gt;
+					&lt;th style=&#34;text-align: center&#34;&gt;&lt;strong&gt;g(x)&lt;/strong&gt;&lt;/th&gt;
+			&lt;/tr&gt;
+	&lt;/thead&gt;
+	&lt;tbody&gt;
+			&lt;tr&gt;
+					&lt;td style=&#34;text-align: center&#34;&gt;0.2&lt;/td&gt;
+					&lt;td style=&#34;text-align: center&#34;&gt;0.2&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td style=&#34;text-align: center&#34;&gt;0.4&lt;/td&gt;
+					&lt;td style=&#34;text-align: center&#34;&gt;0.399&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td style=&#34;text-align: center&#34;&gt;0.6&lt;/td&gt;
+					&lt;td style=&#34;text-align: center&#34;&gt;0.5923&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td style=&#34;text-align: center&#34;&gt;0.8&lt;/td&gt;
+					&lt;td style=&#34;text-align: center&#34;&gt;0.7678&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td style=&#34;text-align: center&#34;&gt;1&lt;/td&gt;
+					&lt;td style=&#34;text-align: center&#34;&gt;0.9045&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td style=&#34;text-align: center&#34;&gt;1.2&lt;/td&gt;
+					&lt;td style=&#34;text-align: center&#34;&gt;0.9739&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td style=&#34;text-align: center&#34;&gt;1.4&lt;/td&gt;
+					&lt;td style=&#34;text-align: center&#34;&gt;0.9498&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td style=&#34;text-align: center&#34;&gt;1.6&lt;/td&gt;
+					&lt;td style=&#34;text-align: center&#34;&gt;0.8255&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td style=&#34;text-align: center&#34;&gt;1.8&lt;/td&gt;
+					&lt;td style=&#34;text-align: center&#34;&gt;0.6354&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td style=&#34;text-align: center&#34;&gt;2&lt;/td&gt;
+					&lt;td style=&#34;text-align: center&#34;&gt;0.4615&lt;/td&gt;
+			&lt;/tr&gt;
+	&lt;/tbody&gt;
 &lt;/table&gt;
 
 
@@ -2521,50 +2491,50 @@ then $g(x)$ is the area under the graph of $f$ from $0$ to $x$ [until $f(x)$ bec
 &lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;We can found that $g’(x)$ is almost the same with the graph of $f$.&lt;/p&gt;
 &lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th style=&#34;text-align:center&#34;&gt;&lt;strong&gt;x&lt;/strong&gt;&lt;/th&gt;
-&lt;th style=&#34;text-align:center&#34;&gt;&lt;strong&gt;g’(x)&lt;/strong&gt;&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;0.3&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;0.995&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;0.5&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;0.9665&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;0.7&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;0.8775&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;0.9&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;0.6835&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;1.1&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;0.347&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;1.3&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;-0.1205&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;1.5&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;-0.6215&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;1.7&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;-0.9505&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;1.9&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;-0.8695&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
+	&lt;thead&gt;
+			&lt;tr&gt;
+					&lt;th style=&#34;text-align: center&#34;&gt;&lt;strong&gt;x&lt;/strong&gt;&lt;/th&gt;
+					&lt;th style=&#34;text-align: center&#34;&gt;&lt;strong&gt;g’(x)&lt;/strong&gt;&lt;/th&gt;
+			&lt;/tr&gt;
+	&lt;/thead&gt;
+	&lt;tbody&gt;
+			&lt;tr&gt;
+					&lt;td style=&#34;text-align: center&#34;&gt;0.3&lt;/td&gt;
+					&lt;td style=&#34;text-align: center&#34;&gt;0.995&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td style=&#34;text-align: center&#34;&gt;0.5&lt;/td&gt;
+					&lt;td style=&#34;text-align: center&#34;&gt;0.9665&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td style=&#34;text-align: center&#34;&gt;0.7&lt;/td&gt;
+					&lt;td style=&#34;text-align: center&#34;&gt;0.8775&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td style=&#34;text-align: center&#34;&gt;0.9&lt;/td&gt;
+					&lt;td style=&#34;text-align: center&#34;&gt;0.6835&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td style=&#34;text-align: center&#34;&gt;1.1&lt;/td&gt;
+					&lt;td style=&#34;text-align: center&#34;&gt;0.347&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td style=&#34;text-align: center&#34;&gt;1.3&lt;/td&gt;
+					&lt;td style=&#34;text-align: center&#34;&gt;-0.1205&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td style=&#34;text-align: center&#34;&gt;1.5&lt;/td&gt;
+					&lt;td style=&#34;text-align: center&#34;&gt;-0.6215&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td style=&#34;text-align: center&#34;&gt;1.7&lt;/td&gt;
+					&lt;td style=&#34;text-align: center&#34;&gt;-0.9505&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td style=&#34;text-align: center&#34;&gt;1.9&lt;/td&gt;
+					&lt;td style=&#34;text-align: center&#34;&gt;-0.8695&lt;/td&gt;
+			&lt;/tr&gt;
+	&lt;/tbody&gt;
 &lt;/table&gt;
 
 
@@ -2613,7 +2583,7 @@ Based on your result in Problem 1-3, conjecture an expression for $g’(x)$.&lt;
       <pubDate>Wed, 10 Jun 2020 00:00:00 +0000</pubDate>
       <guid>https://teshenglin.github.io/post/2020_cal_s5p2_ch/</guid>
       <description>&lt;blockquote&gt;
-&lt;p&gt;Discovery Project in Sec.5.2, Calculus by Stewart&lt;br&gt;
+&lt;p&gt;Discovery Project in Sec.5.2, Calculus by Stewart &lt;br&gt;
 英文版請見 
 &lt;a href=&#34;https://teshenglin.github.io/post/2020_cal_s5p2&#34;&gt;Area functions&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -2706,7 +2676,7 @@ A(x) = \int_{-1}^{x} (1+t^2)dt =\frac{t^3-(-1)^3}{3}+x+1
 $$&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Question 2(c):&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;找出 $A&#39;(x)$ ，你察覺到了什麼？&lt;/p&gt;
+&lt;p&gt;找出 $A&amp;rsquo;(x)$ ，你察覺到了什麼？&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;由 $A’(x) = 1+t^2$ ，我們可以得知 $A’(x)$ 是所圍成區域的拋物線&lt;/p&gt;
 &lt;hr&gt;
@@ -2829,54 +2799,54 @@ $$
 &lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;$g(x)$ 為圖中的藍線&lt;/p&gt;
 &lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th style=&#34;text-align:center&#34;&gt;&lt;strong&gt;x&lt;/strong&gt;&lt;/th&gt;
-&lt;th style=&#34;text-align:center&#34;&gt;&lt;strong&gt;g(x)&lt;/strong&gt;&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;0.2&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;0.2&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;0.4&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;0.399&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;0.6&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;0.5923&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;0.8&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;0.7678&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;1&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;0.9045&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;1.2&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;0.9739&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;1.4&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;0.9498&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;1.6&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;0.8255&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;1.8&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;0.6354&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;2&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;0.4615&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
+	&lt;thead&gt;
+			&lt;tr&gt;
+					&lt;th style=&#34;text-align: center&#34;&gt;&lt;strong&gt;x&lt;/strong&gt;&lt;/th&gt;
+					&lt;th style=&#34;text-align: center&#34;&gt;&lt;strong&gt;g(x)&lt;/strong&gt;&lt;/th&gt;
+			&lt;/tr&gt;
+	&lt;/thead&gt;
+	&lt;tbody&gt;
+			&lt;tr&gt;
+					&lt;td style=&#34;text-align: center&#34;&gt;0.2&lt;/td&gt;
+					&lt;td style=&#34;text-align: center&#34;&gt;0.2&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td style=&#34;text-align: center&#34;&gt;0.4&lt;/td&gt;
+					&lt;td style=&#34;text-align: center&#34;&gt;0.399&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td style=&#34;text-align: center&#34;&gt;0.6&lt;/td&gt;
+					&lt;td style=&#34;text-align: center&#34;&gt;0.5923&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td style=&#34;text-align: center&#34;&gt;0.8&lt;/td&gt;
+					&lt;td style=&#34;text-align: center&#34;&gt;0.7678&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td style=&#34;text-align: center&#34;&gt;1&lt;/td&gt;
+					&lt;td style=&#34;text-align: center&#34;&gt;0.9045&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td style=&#34;text-align: center&#34;&gt;1.2&lt;/td&gt;
+					&lt;td style=&#34;text-align: center&#34;&gt;0.9739&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td style=&#34;text-align: center&#34;&gt;1.4&lt;/td&gt;
+					&lt;td style=&#34;text-align: center&#34;&gt;0.9498&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td style=&#34;text-align: center&#34;&gt;1.6&lt;/td&gt;
+					&lt;td style=&#34;text-align: center&#34;&gt;0.8255&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td style=&#34;text-align: center&#34;&gt;1.8&lt;/td&gt;
+					&lt;td style=&#34;text-align: center&#34;&gt;0.6354&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td style=&#34;text-align: center&#34;&gt;2&lt;/td&gt;
+					&lt;td style=&#34;text-align: center&#34;&gt;0.4615&lt;/td&gt;
+			&lt;/tr&gt;
+	&lt;/tbody&gt;
 &lt;/table&gt;
 
 
@@ -2912,50 +2882,50 @@ $$
 &lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;我們可以看出 $g’(x)$ 幾乎和  $f$ 相同&lt;/p&gt;
 &lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th style=&#34;text-align:center&#34;&gt;&lt;strong&gt;x&lt;/strong&gt;&lt;/th&gt;
-&lt;th style=&#34;text-align:center&#34;&gt;&lt;strong&gt;g’(x)&lt;/strong&gt;&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;0.3&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;0.995&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;0.5&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;0.9665&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;0.7&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;0.8775&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;0.9&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;0.6835&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;1.1&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;0.347&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;1.3&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;-0.1205&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;1.5&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;-0.6215&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;1.7&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;-0.9505&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;1.9&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;-0.8695&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
+	&lt;thead&gt;
+			&lt;tr&gt;
+					&lt;th style=&#34;text-align: center&#34;&gt;&lt;strong&gt;x&lt;/strong&gt;&lt;/th&gt;
+					&lt;th style=&#34;text-align: center&#34;&gt;&lt;strong&gt;g’(x)&lt;/strong&gt;&lt;/th&gt;
+			&lt;/tr&gt;
+	&lt;/thead&gt;
+	&lt;tbody&gt;
+			&lt;tr&gt;
+					&lt;td style=&#34;text-align: center&#34;&gt;0.3&lt;/td&gt;
+					&lt;td style=&#34;text-align: center&#34;&gt;0.995&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td style=&#34;text-align: center&#34;&gt;0.5&lt;/td&gt;
+					&lt;td style=&#34;text-align: center&#34;&gt;0.9665&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td style=&#34;text-align: center&#34;&gt;0.7&lt;/td&gt;
+					&lt;td style=&#34;text-align: center&#34;&gt;0.8775&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td style=&#34;text-align: center&#34;&gt;0.9&lt;/td&gt;
+					&lt;td style=&#34;text-align: center&#34;&gt;0.6835&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td style=&#34;text-align: center&#34;&gt;1.1&lt;/td&gt;
+					&lt;td style=&#34;text-align: center&#34;&gt;0.347&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td style=&#34;text-align: center&#34;&gt;1.3&lt;/td&gt;
+					&lt;td style=&#34;text-align: center&#34;&gt;-0.1205&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td style=&#34;text-align: center&#34;&gt;1.5&lt;/td&gt;
+					&lt;td style=&#34;text-align: center&#34;&gt;-0.6215&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td style=&#34;text-align: center&#34;&gt;1.7&lt;/td&gt;
+					&lt;td style=&#34;text-align: center&#34;&gt;-0.9505&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td style=&#34;text-align: center&#34;&gt;1.9&lt;/td&gt;
+					&lt;td style=&#34;text-align: center&#34;&gt;-0.8695&lt;/td&gt;
+			&lt;/tr&gt;
+	&lt;/tbody&gt;
 &lt;/table&gt;
 
 
@@ -3144,7 +3114,7 @@ $$&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;$P_i(x)$ 是一個 $i$次多項式&lt;/li&gt;
 &lt;li&gt;$(P_i(x), P_j(x)) = \delta_{ij} = \begin{cases}
-0, \quad i\ne j, \\&lt;br&gt;
+0, \quad i\ne j, \\
 1, \quad i=j.
 \end{cases}$
 &lt;ul&gt;
@@ -3249,7 +3219,7 @@ $$&lt;/p&gt;
       <pubDate>Mon, 01 Jun 2020 00:00:00 +0000</pubDate>
       <guid>https://teshenglin.github.io/post/2020_cal_s13p4/</guid>
       <description>&lt;blockquote&gt;
-&lt;p&gt;Applied Project in Sec.13.4, Calculus by Stewart&lt;br&gt;
+&lt;p&gt;Applied Project in Sec.13.4, Calculus by Stewart &lt;br&gt;
 Chinese version 
 &lt;a href=&#34;https://teshenglin.github.io/post/2020_cal_s13p4_ch&#34;&gt;克卜勒定律&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -3273,8 +3243,6 @@ $$
 \frac{dA}{dt}=\frac{1}{2}h= c,
 $$
 where $c$ is a constant. This says that the rate at which $A$ is swept out is constant and proves Kepler’s Second Law.&lt;/p&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;!-- raw HTML omitted --&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Question 2&lt;/strong&gt;： Let $T$ be the period of a planet about the sun; that is, $T$ is the time required for it to travel once around its elliptical orbit. Suppose that the lengths of the major and minor axes of the ellipse are $2a$ and $2b$.&lt;/p&gt;
 &lt;p&gt;(a) Use part (d) of Problem 1 to show that $T =2\pi ab h$.&lt;/p&gt;
@@ -3287,8 +3255,6 @@ $$
 T^2=\frac{4\pi^2}{GM}a^3
 $$&lt;/p&gt;
 &lt;p&gt;This proves Kepler’s Third Law. [Notice that the proportionality constant $\frac{4\pi^2}{GM}$ is independent of the planet.]&lt;/p&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;!-- raw HTML omitted --&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Quesion 3&lt;/strong&gt;： The period of the earth’s orbit is approximately 365.25 days. Use this fact and Kepler’s Third Law to find the length of the major axis of the earth’s orbit. You will need the mass of the sun, $M=1.99\times 10^{30}kg$, and the gravitational constant, $G=6.67\times10^{-11}N-m^2/kg^2$.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Solution&lt;/strong&gt; ：&lt;/p&gt;
@@ -3314,7 +3280,7 @@ $$&lt;/p&gt;
       <pubDate>Mon, 01 Jun 2020 00:00:00 +0000</pubDate>
       <guid>https://teshenglin.github.io/post/2020_cal_s13p4_ch/</guid>
       <description>&lt;blockquote&gt;
-&lt;p&gt;Applied Project in Sec.13.4, Calculus by Stewart&lt;br&gt;
+&lt;p&gt;Applied Project in Sec.13.4, Calculus by Stewart &lt;br&gt;
 英文版請見 
 &lt;a href=&#34;https://teshenglin.github.io/post/2020_cal_s13p4&#34;&gt;Kepler’s Laws&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -3338,8 +3304,6 @@ $$
 \frac{dA}{dt}=\frac{1}{2}h=c,
 $$
 其中 $c$ 是常數. 如此證明了克卜勒第二定律，即面積速率為定值。&lt;/p&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;!-- raw HTML omitted --&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;問題 2&lt;/strong&gt;： 令 $T$ 是行星繞日之週期，$2a$ 為橢圓軌道長軸，$2b$ 為短軸。&lt;/p&gt;
 &lt;p&gt;(a)利用上題(d)小題證明 $T =2\pi ab /h$.&lt;/p&gt;
@@ -3352,8 +3316,6 @@ $$
 T^2=\frac{4\pi^2}{GM}a^3
 $$&lt;/p&gt;
 &lt;p&gt;這證明了克卜勒第三定律. [注意比例常數 $\frac{4\pi^2}{GM}$ 與行星無關.]&lt;/p&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;!-- raw HTML omitted --&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;問題 3&lt;/strong&gt;： 地球公轉周期約為 365.25 天.利用克卜勒第三定律找出半長軸. 其中太陽質量為 $M=1.99\times 10^{30}kg$, 重力常數為 $G=6.67\times10^{-11}N-m^2/kg^2$.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;解&lt;/strong&gt;：&lt;/p&gt;
@@ -3379,7 +3341,7 @@ $$&lt;/p&gt;
       <pubDate>Sun, 31 May 2020 00:00:00 +0000</pubDate>
       <guid>https://teshenglin.github.io/post/2020_cal_s14p4/</guid>
       <description>&lt;blockquote&gt;
-&lt;p&gt;Applied Project in Sec.14.4, Calculus by Stewart&lt;br&gt;
+&lt;p&gt;Applied Project in Sec.14.4, Calculus by Stewart &lt;br&gt;
 Chinese version 
 &lt;a href=&#34;https://teshenglin.github.io/post/2020_cal_s14p4_ch&#34;&gt;速比濤鯊魚皮系列第四代泳裝&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -3431,8 +3393,6 @@ f(x,y)=\left(\frac{1+x}{1+y}\right)^{\frac{1}{3}}-1.
 $$
 Given the context, what is the domain of $f$?&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;!-- raw HTML omitted --&gt;
 &lt;p&gt;The domain of $f$ is
 $$
 {(x,y)\mid x\geq-1,\quad y&amp;gt;-1}
@@ -3441,8 +3401,6 @@ $$&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Question 2:&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Suppose that the possible changes in power $x$ and drag $y$ are small. Find the linear approximation to the function $f(x, y)$. What does this approximation tell you about the effect of a small increase in power versus a small decrease in drag?&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;!-- raw HTML omitted --&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;The effect of a small increase in power vs. a small decrease in drag&lt;/p&gt;
@@ -3452,14 +3410,10 @@ $$&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Question 3:&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Calculate $f_{xx}(x, y)$ and $f_{yy}(x, y)$. Based on the signs of these derivatives, does the linear approximation in Problem 2 result in an overestimate or an underestimate for an increase in power? What about for a decrease in drag? Use your answer to explain why, for changes in power or drag that are not very small, a decrease in drag is more effective.&lt;/p&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;!-- raw HTML omitted --&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Question 4:&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Graph the level curves of $f(x, y)$. Explain how the shapes of these curves relate to your answers to Problems 2 and 3.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;!-- raw HTML omitted --&gt;
 &lt;p&gt;Graph the level curve with h= -0.75, -0.5, -0.25, 0, 0.05, 0.25, 0.5, 0.75, 1&lt;/p&gt;
 
 
@@ -3509,7 +3463,7 @@ $$&lt;/p&gt;
       <pubDate>Sun, 31 May 2020 00:00:00 +0000</pubDate>
       <guid>https://teshenglin.github.io/post/2020_cal_s14p4_ch/</guid>
       <description>&lt;blockquote&gt;
-&lt;p&gt;Applied Project in Sec.14.4, Calculus by Stewart&lt;br&gt;
+&lt;p&gt;Applied Project in Sec.14.4, Calculus by Stewart &lt;br&gt;
 英文版請見 
 &lt;a href=&#34;https://teshenglin.github.io/post/2020_cal_s14p4&#34;&gt;The speedo LZR razer&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -3561,8 +3515,6 @@ f(x,y)=\left(\frac{1+x}{1+y}\right)^{\frac{1}{3}}-1
 $$
 由文字給定的敘述中, 請問函數 $f$ 的定義域為何?&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;解&lt;/strong&gt;&lt;/p&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;!-- raw HTML omitted --&gt;
 &lt;p&gt;$f$ 的定義域為
 $$
 \{ (x,y)\mid x\geq-1,\quad y&amp;gt;-1 \}
@@ -3571,8 +3523,6 @@ $$&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;問題 2:&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;假設功率的改變比例 $x$ 和阻力的改變比例 $y$ 很小, 找出 $f(x, y)$ 的線性近似. 請問這個近似告訴你關於「增加功率」和「減少阻力」的影響存在哪些差異?&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;解&lt;/strong&gt;&lt;/p&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;!-- raw HTML omitted --&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;比較「增加功率」和「減少阻力」的影響&lt;/p&gt;
@@ -3582,14 +3532,10 @@ $$&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;問題 3:&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;計算 $f_{xx}(x, y)$ 和 $f_{yy}(x, y)$. 根據這些導數的正負號, 請問題目2的線性近似對於「增加功率」是低估還是高估呢? 那麼對於「減少阻力」呢? 利用你的答案解釋為什麼在功率或阻力的變化量不小的情況下, 「減少阻力」比較有效率?&lt;/p&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;!-- raw HTML omitted --&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;問題 4:&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;畫出 $f(x, y)$ 的等高線圖, 解釋這些等高線的形狀和問題 2 和 3 有哪些關聯性.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;解&lt;/strong&gt;&lt;/p&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;!-- raw HTML omitted --&gt;
 &lt;p&gt;畫出在 h= -0.75, -0.5, -0.25, 0, 0.05, 0.25, 0.5, 0.75, 1的等高線&lt;/p&gt;
 
 
@@ -3639,7 +3585,7 @@ $$&lt;/p&gt;
       <pubDate>Fri, 29 May 2020 00:00:00 +0000</pubDate>
       <guid>https://teshenglin.github.io/post/2020_cal_s12p4/</guid>
       <description>&lt;blockquote&gt;
-&lt;p&gt;Discovery Project in Sec.12.4, Calculus by Stewart&lt;br&gt;
+&lt;p&gt;Discovery Project in Sec.12.4, Calculus by Stewart &lt;br&gt;
 Chinese version 
 &lt;a href=&#34;https://teshenglin.github.io/post/2020_cal_s12p4_ch&#34;&gt;四面體的幾何學&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -3678,25 +3624,21 @@ Chinese version
 $$
 v_1+v_2+v_3+v_4=0
 $$&lt;/p&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;!-- raw HTML omitted --&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Question 2:&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;The volume &lt;em&gt;V&lt;/em&gt; of a tetrahedron is one-third the distance from a vertex to the opposite face, times the area of the face.&lt;/p&gt;
 &lt;p&gt;(a)Find a formula for the volume of a tetrahedron in terms of the coordination of its vertices &lt;em&gt;P&lt;/em&gt; ,&lt;em&gt;Q&lt;/em&gt; , &lt;em&gt;R&lt;/em&gt; and &lt;em&gt;S&lt;/em&gt;.&lt;/p&gt;
 &lt;p&gt;(b)Find the volume of the tetrahedron whose vertices are &lt;em&gt;P&lt;/em&gt;(1,1,1), &lt;em&gt;Q&lt;/em&gt;(1,2,3), &lt;em&gt;R&lt;/em&gt;(1,1,2), and &lt;em&gt;S&lt;/em&gt;(3,-1,2).&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;!-- raw HTML omitted --&gt;
 &lt;p&gt;&lt;strong&gt;(b)&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;By (a),  a=(0,1,2), b=(0,0,1), c=(2,-2,1).&lt;/p&gt;
 &lt;p&gt;So
 $$
 V=\frac{\left |
 \begin{array}{ccc}
-0 &amp;amp; 1 &amp;amp;  2 \\&lt;br&gt;
-0 &amp;amp; 0 &amp;amp; 1 \\&lt;br&gt;
-2 &amp;amp; -2 &amp;amp; 1 \\&lt;br&gt;
+0 &amp;amp; 1 &amp;amp;  2 \\
+0 &amp;amp; 0 &amp;amp; 1 \\
+2 &amp;amp; -2 &amp;amp; 1 \\
 \end{array}\right |}{6}=\frac{1}{3}
 $$&lt;/p&gt;
 &lt;hr&gt;
@@ -3706,8 +3648,6 @@ $$
 D^{2}=A^{2}+B^{2}+C^{2}
 $$
 (This is a three-dimensional version of the Pythagorean Theorem.)&lt;/p&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;!-- raw HTML omitted --&gt;
 &lt;hr&gt;
 </description>
     </item>
@@ -3718,7 +3658,7 @@ $$
       <pubDate>Fri, 29 May 2020 00:00:00 +0000</pubDate>
       <guid>https://teshenglin.github.io/post/2020_cal_s12p4_ch/</guid>
       <description>&lt;blockquote&gt;
-&lt;p&gt;Discovery Project in Sec.12.4, Calculus by Stewart&lt;br&gt;
+&lt;p&gt;Discovery Project in Sec.12.4, Calculus by Stewart &lt;br&gt;
 英文版請見 
 &lt;a href=&#34;https://teshenglin.github.io/post/2020_cal_s12p4&#34;&gt;The Geometry of a Tetrahedron&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -3757,25 +3697,21 @@ $$
 $$
 v_1+v_2+v_3+v_4=0
 $$&lt;/p&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;!-- raw HTML omitted --&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;問題2：&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;四面體的體積&lt;em&gt;V&lt;/em&gt;是其一頂點到其對面的距離乘以該面的面積，再乘以三分之一倍。&lt;/p&gt;
 &lt;p&gt;(a)找出一個計算四面體體積的公式，以頂點 &lt;em&gt;P&lt;/em&gt;，&lt;em&gt;Q&lt;/em&gt;，&lt;em&gt;R&lt;/em&gt;，&lt;em&gt;S&lt;/em&gt; 的座標表達。&lt;/p&gt;
 &lt;p&gt;(b)算出四頂點分別為 &lt;em&gt;P&lt;/em&gt;(1,1,1)，&lt;em&gt;Q&lt;/em&gt;(1,2,3)，&lt;em&gt;R&lt;/em&gt;(1,1,2)，&lt;em&gt;S&lt;/em&gt;(3,-1,2) 的四面體的體積。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;解答:&lt;/strong&gt;&lt;/p&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;!-- raw HTML omitted --&gt;
 &lt;p&gt;&lt;strong&gt;(b)&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;由 (a),  a=(0,1,2), b=(0,0,1), c=(2,-2,1).&lt;/p&gt;
 &lt;p&gt;所以
 $$
 V=\frac{\left |
 \begin{array}{ccc}
-0 &amp;amp; 1 &amp;amp;  2 \\&lt;br&gt;
-0 &amp;amp; 0 &amp;amp; 1 \\&lt;br&gt;
-2 &amp;amp; -2 &amp;amp; 1 \\&lt;br&gt;
+0 &amp;amp; 1 &amp;amp;  2 \\
+0 &amp;amp; 0 &amp;amp; 1 \\
+2 &amp;amp; -2 &amp;amp; 1 \\
 \end{array}\right |}{6}=\frac{1}{3}
 $$&lt;/p&gt;
 &lt;hr&gt;
@@ -3785,8 +3721,6 @@ $$
 D^{2}=A^{2}+B^{2}+C^{2}
 $$
 (這是一個三維版本的勾股定理。)&lt;/p&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;!-- raw HTML omitted --&gt;
 &lt;hr&gt;
 </description>
     </item>
@@ -3810,8 +3744,6 @@ $$
 &lt;p&gt;(c) 畫出$L_1$、$f$和 $L_2$，以圖形證實軌道之間的接點是平滑的。&lt;/p&gt;
 &lt;p&gt;(d) 找出$P$和$Q$之間的垂直距離。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;解答:&lt;/strong&gt;&lt;/p&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;!-- raw HTML omitted --&gt;
 &lt;p&gt;下圖是這些函數的圖形：&lt;/p&gt;
 
 
@@ -3855,8 +3787,6 @@ $$&lt;/p&gt;
 &lt;p&gt;(b) 利用電腦計算系統解出第(a)小題的等式，以找出$q(x)$、$g(x)$和$h(x)$的方程式。&lt;/p&gt;
 &lt;p&gt;(c) 畫出 $L_1$、 $g$、 $q$、 $h$和 $L_2$，並與問題一的第(c)小題的圖形相互比較。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;解答:&lt;/strong&gt;&lt;/p&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;!-- raw HTML omitted --&gt;
 &lt;p&gt;以下為更加平滑的軌道的圖形：
 
 
@@ -3887,8 +3817,6 @@ $$&lt;/p&gt;
 &lt;/figure&gt;
 
 紅線是$g(x)$的圖形，藍線是$q(x)$的圖形，綠線是$h(x)$的圖形。&lt;/p&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;!-- raw HTML omitted --&gt;
 &lt;hr&gt;
 </description>
     </item>
@@ -3899,7 +3827,7 @@ $$&lt;/p&gt;
       <pubDate>Thu, 21 May 2020 00:00:00 +0000</pubDate>
       <guid>https://teshenglin.github.io/post/2020_cal_s6p5/</guid>
       <description>&lt;blockquote&gt;
-&lt;p&gt;Applied Project in Sec.6.5, Calculus by Stewart&lt;br&gt;
+&lt;p&gt;Applied Project in Sec.6.5, Calculus by Stewart &lt;br&gt;
 Chinese version 
 &lt;a href=&#34;https://teshenglin.github.io/post/2020_cal_s6p5_ch&#34;&gt;電影院要坐哪?&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -3914,8 +3842,6 @@ and
 $$
 b^2 = (3+x\cos{\alpha})^2+(x\sin{\alpha} - 1.8)^2
 $$&lt;/p&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;!-- raw HTML omitted --&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Question 2:&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Use a graph of $\theta$ as a function of $x$ to estimate the value of $x$ that maximizes $\theta$. In which row should you sit? What is the viewing angle $\theta$ in this row? What is the angle $\theta$ subtended by the screen at your eyes?&lt;/p&gt;
@@ -3949,82 +3875,82 @@ $$&lt;/p&gt;
 &lt;/figure&gt;
 
 &lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;$x$&lt;/th&gt;
-&lt;th&gt;$\theta$&lt;/th&gt;
-&lt;th&gt;$x$&lt;/th&gt;
-&lt;th&gt;$\theta$&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;0&lt;/td&gt;
-&lt;td&gt;0.781414&lt;/td&gt;
-&lt;td&gt;11&lt;/td&gt;
-&lt;td&gt;0.688473&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;1&lt;/td&gt;
-&lt;td&gt;0.885175&lt;/td&gt;
-&lt;td&gt;12&lt;/td&gt;
-&lt;td&gt;0.654426&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;2&lt;/td&gt;
-&lt;td&gt;0.932324&lt;/td&gt;
-&lt;td&gt;13&lt;/td&gt;
-&lt;td&gt;0.622381&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;3&lt;/td&gt;
-&lt;td&gt;0.943356&lt;/td&gt;
-&lt;td&gt;14&lt;/td&gt;
-&lt;td&gt;0.592377&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;4&lt;/td&gt;
-&lt;td&gt;0.932085&lt;/td&gt;
-&lt;td&gt;15&lt;/td&gt;
-&lt;td&gt;0.564380&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;5&lt;/td&gt;
-&lt;td&gt;0.907358&lt;/td&gt;
-&lt;td&gt;16&lt;/td&gt;
-&lt;td&gt;0.538310&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;6&lt;/td&gt;
-&lt;td&gt;0.874860&lt;/td&gt;
-&lt;td&gt;17&lt;/td&gt;
-&lt;td&gt;0.514061&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;7&lt;/td&gt;
-&lt;td&gt;0.838292&lt;/td&gt;
-&lt;td&gt;18&lt;/td&gt;
-&lt;td&gt;0.491514&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;8&lt;/td&gt;
-&lt;td&gt;0.800070&lt;/td&gt;
-&lt;td&gt;19&lt;/td&gt;
-&lt;td&gt;0.470546&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;9&lt;/td&gt;
-&lt;td&gt;0.761763&lt;/td&gt;
-&lt;td&gt;20&lt;/td&gt;
-&lt;td&gt;0.451038&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;10&lt;/td&gt;
-&lt;td&gt;0.724364&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
+	&lt;thead&gt;
+			&lt;tr&gt;
+					&lt;th&gt;$x$&lt;/th&gt;
+					&lt;th&gt;$\theta$&lt;/th&gt;
+					&lt;th&gt;$x$&lt;/th&gt;
+					&lt;th&gt;$\theta$&lt;/th&gt;
+			&lt;/tr&gt;
+	&lt;/thead&gt;
+	&lt;tbody&gt;
+			&lt;tr&gt;
+					&lt;td&gt;0&lt;/td&gt;
+					&lt;td&gt;0.781414&lt;/td&gt;
+					&lt;td&gt;11&lt;/td&gt;
+					&lt;td&gt;0.688473&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;1&lt;/td&gt;
+					&lt;td&gt;0.885175&lt;/td&gt;
+					&lt;td&gt;12&lt;/td&gt;
+					&lt;td&gt;0.654426&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;2&lt;/td&gt;
+					&lt;td&gt;0.932324&lt;/td&gt;
+					&lt;td&gt;13&lt;/td&gt;
+					&lt;td&gt;0.622381&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;3&lt;/td&gt;
+					&lt;td&gt;0.943356&lt;/td&gt;
+					&lt;td&gt;14&lt;/td&gt;
+					&lt;td&gt;0.592377&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;4&lt;/td&gt;
+					&lt;td&gt;0.932085&lt;/td&gt;
+					&lt;td&gt;15&lt;/td&gt;
+					&lt;td&gt;0.564380&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;5&lt;/td&gt;
+					&lt;td&gt;0.907358&lt;/td&gt;
+					&lt;td&gt;16&lt;/td&gt;
+					&lt;td&gt;0.538310&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;6&lt;/td&gt;
+					&lt;td&gt;0.874860&lt;/td&gt;
+					&lt;td&gt;17&lt;/td&gt;
+					&lt;td&gt;0.514061&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;7&lt;/td&gt;
+					&lt;td&gt;0.838292&lt;/td&gt;
+					&lt;td&gt;18&lt;/td&gt;
+					&lt;td&gt;0.491514&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;8&lt;/td&gt;
+					&lt;td&gt;0.800070&lt;/td&gt;
+					&lt;td&gt;19&lt;/td&gt;
+					&lt;td&gt;0.470546&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;9&lt;/td&gt;
+					&lt;td&gt;0.761763&lt;/td&gt;
+					&lt;td&gt;20&lt;/td&gt;
+					&lt;td&gt;0.451038&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;10&lt;/td&gt;
+					&lt;td&gt;0.724364&lt;/td&gt;
+					&lt;td&gt;&lt;/td&gt;
+					&lt;td&gt;&lt;/td&gt;
+			&lt;/tr&gt;
+	&lt;/tbody&gt;
 &lt;/table&gt;
 &lt;p&gt;The maximum of $\theta$ is 0.943356, you should sit at third row.&lt;/p&gt;
 &lt;hr&gt;
@@ -4109,7 +4035,7 @@ $$&lt;/p&gt;
       <pubDate>Thu, 21 May 2020 00:00:00 +0000</pubDate>
       <guid>https://teshenglin.github.io/post/2020_cal_s6p5_ch/</guid>
       <description>&lt;blockquote&gt;
-&lt;p&gt;Applied Project in Sec.6.5, Calculus by Stewart&lt;br&gt;
+&lt;p&gt;Applied Project in Sec.6.5, Calculus by Stewart &lt;br&gt;
 English version 
 &lt;a href=&#34;https://teshenglin.github.io/post/2020_cal_s6p5&#34;&gt;Where to Sit at the Movies?&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -4124,8 +4050,6 @@ $$
 $$
 b^2 = (3+x\cos{\alpha})^2+(x\sin{\alpha} - 1.8)^2
 $$&lt;/p&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;!-- raw HTML omitted --&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;問題 2:&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;利用 $\theta$ 與 $x$ 的函數圖形找出 $\theta$ 的最大值。你該坐在哪一排? 你在那一排的視角 $\theta$ 是幾度?&lt;/p&gt;
@@ -4159,82 +4083,82 @@ $$&lt;/p&gt;
 &lt;/figure&gt;
 
 &lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;$x$&lt;/th&gt;
-&lt;th&gt;$\theta$&lt;/th&gt;
-&lt;th&gt;$x$&lt;/th&gt;
-&lt;th&gt;$\theta$&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;0&lt;/td&gt;
-&lt;td&gt;0.781414&lt;/td&gt;
-&lt;td&gt;11&lt;/td&gt;
-&lt;td&gt;0.688473&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;1&lt;/td&gt;
-&lt;td&gt;0.885175&lt;/td&gt;
-&lt;td&gt;12&lt;/td&gt;
-&lt;td&gt;0.654426&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;2&lt;/td&gt;
-&lt;td&gt;0.932324&lt;/td&gt;
-&lt;td&gt;13&lt;/td&gt;
-&lt;td&gt;0.622381&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;3&lt;/td&gt;
-&lt;td&gt;0.943356&lt;/td&gt;
-&lt;td&gt;14&lt;/td&gt;
-&lt;td&gt;0.592377&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;4&lt;/td&gt;
-&lt;td&gt;0.932085&lt;/td&gt;
-&lt;td&gt;15&lt;/td&gt;
-&lt;td&gt;0.564380&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;5&lt;/td&gt;
-&lt;td&gt;0.907358&lt;/td&gt;
-&lt;td&gt;16&lt;/td&gt;
-&lt;td&gt;0.538310&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;6&lt;/td&gt;
-&lt;td&gt;0.874860&lt;/td&gt;
-&lt;td&gt;17&lt;/td&gt;
-&lt;td&gt;0.514061&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;7&lt;/td&gt;
-&lt;td&gt;0.838292&lt;/td&gt;
-&lt;td&gt;18&lt;/td&gt;
-&lt;td&gt;0.491514&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;8&lt;/td&gt;
-&lt;td&gt;0.800070&lt;/td&gt;
-&lt;td&gt;19&lt;/td&gt;
-&lt;td&gt;0.470546&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;9&lt;/td&gt;
-&lt;td&gt;0.761763&lt;/td&gt;
-&lt;td&gt;20&lt;/td&gt;
-&lt;td&gt;0.451038&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;10&lt;/td&gt;
-&lt;td&gt;0.724364&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
+	&lt;thead&gt;
+			&lt;tr&gt;
+					&lt;th&gt;$x$&lt;/th&gt;
+					&lt;th&gt;$\theta$&lt;/th&gt;
+					&lt;th&gt;$x$&lt;/th&gt;
+					&lt;th&gt;$\theta$&lt;/th&gt;
+			&lt;/tr&gt;
+	&lt;/thead&gt;
+	&lt;tbody&gt;
+			&lt;tr&gt;
+					&lt;td&gt;0&lt;/td&gt;
+					&lt;td&gt;0.781414&lt;/td&gt;
+					&lt;td&gt;11&lt;/td&gt;
+					&lt;td&gt;0.688473&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;1&lt;/td&gt;
+					&lt;td&gt;0.885175&lt;/td&gt;
+					&lt;td&gt;12&lt;/td&gt;
+					&lt;td&gt;0.654426&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;2&lt;/td&gt;
+					&lt;td&gt;0.932324&lt;/td&gt;
+					&lt;td&gt;13&lt;/td&gt;
+					&lt;td&gt;0.622381&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;3&lt;/td&gt;
+					&lt;td&gt;0.943356&lt;/td&gt;
+					&lt;td&gt;14&lt;/td&gt;
+					&lt;td&gt;0.592377&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;4&lt;/td&gt;
+					&lt;td&gt;0.932085&lt;/td&gt;
+					&lt;td&gt;15&lt;/td&gt;
+					&lt;td&gt;0.564380&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;5&lt;/td&gt;
+					&lt;td&gt;0.907358&lt;/td&gt;
+					&lt;td&gt;16&lt;/td&gt;
+					&lt;td&gt;0.538310&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;6&lt;/td&gt;
+					&lt;td&gt;0.874860&lt;/td&gt;
+					&lt;td&gt;17&lt;/td&gt;
+					&lt;td&gt;0.514061&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;7&lt;/td&gt;
+					&lt;td&gt;0.838292&lt;/td&gt;
+					&lt;td&gt;18&lt;/td&gt;
+					&lt;td&gt;0.491514&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;8&lt;/td&gt;
+					&lt;td&gt;0.800070&lt;/td&gt;
+					&lt;td&gt;19&lt;/td&gt;
+					&lt;td&gt;0.470546&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;9&lt;/td&gt;
+					&lt;td&gt;0.761763&lt;/td&gt;
+					&lt;td&gt;20&lt;/td&gt;
+					&lt;td&gt;0.451038&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;10&lt;/td&gt;
+					&lt;td&gt;0.724364&lt;/td&gt;
+					&lt;td&gt;&lt;/td&gt;
+					&lt;td&gt;&lt;/td&gt;
+			&lt;/tr&gt;
+	&lt;/tbody&gt;
 &lt;/table&gt;
 &lt;p&gt;$\theta$ 的最大值為 $0.943356$，你應該坐在第3排的位置。&lt;/p&gt;
 &lt;hr&gt;
@@ -4320,7 +4244,7 @@ $$&lt;/p&gt;
       <pubDate>Sun, 26 Apr 2020 00:00:00 +0000</pubDate>
       <guid>https://teshenglin.github.io/post/2020_cal_s11p11/</guid>
       <description>&lt;blockquote&gt;
-&lt;p&gt;Applied Project in Sec.11.11, Calculus by Stewart&lt;br&gt;
+&lt;p&gt;Applied Project in Sec.11.11, Calculus by Stewart &lt;br&gt;
 Chinese version 
 &lt;a href=&#34;https://teshenglin.github.io/post/2020_cal_s11p11_ch&#34;&gt;恆星的輻射&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -4351,13 +4275,9 @@ $$
 \lim_{\lambda\to\infty} f(\lambda) = 0
 $$&lt;/p&gt;
 &lt;p&gt;for Planck&amp;rsquo;s Law. So this law models blackbody radiation better than the Rayleigh-Jeans Law for short wavelengths.&lt;/p&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;!-- raw HTML omitted --&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Question 2:&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Use a Taylor polynomial to show that, for large wavelengths, Planck&amp;rsquo;s Law gives approximately the same values as the Rayleigh-Jeans Law.&lt;/p&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;!-- raw HTML omitted --&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Question 3:&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Graph $f$ as given by both laws on the same screen and comment on the similarities and differences. Use $T=5700$K (the temperature of the Sun ). (You may want to change from meters to the more convenient unit of micrometers: $1\mu$m $=10^{-6}$m.)&lt;/p&gt;
@@ -4446,7 +4366,7 @@ $$&lt;/p&gt;
       <pubDate>Sun, 26 Apr 2020 00:00:00 +0000</pubDate>
       <guid>https://teshenglin.github.io/post/2020_cal_s11p11_ch/</guid>
       <description>&lt;blockquote&gt;
-&lt;p&gt;Applied Project in Sec.11.11, Calculus by Stewart&lt;br&gt;
+&lt;p&gt;Applied Project in Sec.11.11, Calculus by Stewart &lt;br&gt;
 英文版請見 
 &lt;a href=&#34;https://teshenglin.github.io/post/2020_cal_s11p11&#34;&gt;Radiation From The Stars&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -4477,13 +4397,9 @@ $$
 \lim_{\lambda\to\infty} f(\lambda) = 0
 $$
 此結果說明為何對短波長的黑體輻射普朗克的模型比瑞立-金斯的定理更好.&lt;/p&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;!-- raw HTML omitted --&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Question 2：&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;用泰勒展開式(Taylor polynomial) 說明在長波長時,普朗克定律 和 瑞立-金斯定理的結果會大致相同.&lt;/p&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;!-- raw HTML omitted --&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Question 3：&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;分別用兩個函式在同一個座標平面上劃出圖形, 並且說明相同和相異之處. $T$  用 5700K (太陽表面溫度) 帶入. (為了更方便計算 可以把長度單位從公尺換成微米: $1\mu$m = $10^{-6}$ m.)&lt;/p&gt;
@@ -4582,8 +4498,6 @@ $$
 &lt;p&gt;&lt;strong&gt;問題 1:&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;假定杯子的高度為 $h$，杯子A的形狀可由 $x=f(y)$ 對 $y$ 軸旋轉而得， 而杯子B則是由同一個曲線對 $x=k$ 旋轉而得。 求$k$使得兩個杯子可裝的咖啡量一樣多。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;解答:&lt;/strong&gt;&lt;/p&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;!-- raw HTML omitted --&gt;
 &lt;p&gt;$$
 k=\frac{2\int_0^{h}f(y)dy}{h}.
 $$&lt;/p&gt;
@@ -4591,8 +4505,6 @@ $$&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;問題 2:&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;請問問題1的結果與圖中的 $A_1$ and $A_2$ 有何關聯?&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;解答:&lt;/strong&gt;&lt;/p&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;!-- raw HTML omitted --&gt;
 &lt;p&gt;當杯子A之容積與杯子B相等時，$A_1$ 的面積與 $A_2$相等。&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;問題3:&lt;/strong&gt;&lt;/p&gt;
@@ -4601,8 +4513,6 @@ $$&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;使$R$為一個平面區域，在這個區域外有同一平面上的一條直線$I$。若$R$以$I$為軸旋轉時，產生的旋轉體體積為$R$的面積$A$和區域重心的所經過的路徑長$d$的乘積。&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;!-- raw HTML omitted --&gt;
 &lt;hr&gt;
 </description>
     </item>
@@ -4613,7 +4523,7 @@ $$&lt;/p&gt;
       <pubDate>Thu, 23 Apr 2020 00:00:00 +0000</pubDate>
       <guid>https://teshenglin.github.io/post/2020_cal_s9p3_2/</guid>
       <description>&lt;blockquote&gt;
-&lt;p&gt;Applied Project in Sec.9.3, Calculus by Stewart&lt;br&gt;
+&lt;p&gt;Applied Project in Sec.9.3, Calculus by Stewart &lt;br&gt;
 Chinese version: 
 &lt;a href=&#34;https://teshenglin.github.io/post/2020_cal_s9p3_2_ch&#34;&gt;上升快，還是下降快?&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -4622,22 +4532,18 @@ Chinese version:
 &lt;p&gt;&lt;strong&gt;Question 1：&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;A ball with mass $m$ is projected vertically upward from the earth’s surface with a positive initial velocity $v_0$. We assume the forces acting on the ball are the force of gravity and a retarding force of air resistance with direction opposite to the direction of motion and with magnitude $p|v(t)|$, where $p$ is a positive constant and $v(t)$ is the velocity of the ball at time $t$. In both the ascent and the descent, the total force acting on the ball is $-pv-mg$. [During ascent, $v(t)$ is positive and the resistance acts downward; during descent, $v(t)$ is negative and the resistance acts upward.] So, by Newton’s Second Law, the equation of motion is
 $$
-mv&#39;=-pv-mg
+mv&amp;rsquo;=-pv-mg
 $$
 Solve this differential equation to show that the velocity is
 $$
 v(t)=(v_0+\frac{mg}{p})e^{-pt/m}-\frac{mg}{p}
 $$&lt;/p&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;!-- raw HTML omitted --&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Question 2：&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Show that the height of the ball, until it hits the ground, is
 $$
 y(t)=(v_0+\frac{mg}{p})\frac{m}{p}(1-e^{-pt/m})-\frac{mgt}{p}
 $$&lt;/p&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;!-- raw HTML omitted --&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Question 3：&lt;/strong&gt;&lt;/p&gt;
 &lt;ol&gt;
@@ -4652,8 +4558,6 @@ $$&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;&lt;strong&gt;Answer：&lt;/strong&gt;&lt;/p&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;!-- raw HTML omitted --&gt;
 &lt;ol start=&#34;2&#34;&gt;
 &lt;li&gt;with the ball with mass $m=1kg$, initial velocity $v_0=20m/s$, gravity $g=9.8m/s$, and air resistance $p=\frac{1}{10}$.
 $$
@@ -4689,8 +4593,6 @@ is increasing for $x &amp;gt; 1$.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;&lt;strong&gt;Answer：&lt;/strong&gt;&lt;/p&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;!-- raw HTML omitted --&gt;
 &lt;hr&gt;
 </description>
     </item>
@@ -4701,7 +4603,7 @@ is increasing for $x &amp;gt; 1$.&lt;/p&gt;
       <pubDate>Thu, 23 Apr 2020 00:00:00 +0000</pubDate>
       <guid>https://teshenglin.github.io/post/2020_cal_s9p3_2_ch/</guid>
       <description>&lt;blockquote&gt;
-&lt;p&gt;Applied Project in Sec.9.3, Calculus by Stewart&lt;br&gt;
+&lt;p&gt;Applied Project in Sec.9.3, Calculus by Stewart &lt;br&gt;
 英文版請見 
 &lt;a href=&#34;https://teshenglin.github.io/post/2020_cal_s9p3_2&#34;&gt;Which is faster, going up or going down?&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -4710,22 +4612,18 @@ is increasing for $x &amp;gt; 1$.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;問題1：&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;一顆質量為 $m$ 的球以初速為 $v_0$ 的速度鉛直上拋，我們假設作用在球上的力為地球給球的重力和相反於運動方向的空氣阻力 $p|v(t)|$ ， $p$ 為一個正的常數， $v(t)$ 為球在時間為 $t$ 時的速度。綜合正向和負向的力，球所受到的總合力為 $-pv-mg$，(在球上升階段，$v(t)$ 為正而阻力為向下；在球下降時， $v(t)$ 為負且阻力向上)。因此，根據牛頓第二運動定律，我們可得知移動的等式為
 $$
-mv&#39;=-pv-mg
+mv&amp;rsquo;=-pv-mg
 $$&lt;/p&gt;
 &lt;p&gt;解出此微分方程來說明速度為
 $$
 v(t)=(v_0+\frac{mg}{p})e^{-pt/m}-\frac{mg}{p}
 $$&lt;/p&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;!-- raw HTML omitted --&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;問題 2：&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;解出直到球落地之前的高度為
 $$
 y(t)=(v_0+\frac{mg}{p})\frac{m}{p}(1-e^{-pt/m})-\frac{mgt}{p}
 $$&lt;/p&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;!-- raw HTML omitted --&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;問題 3：&lt;/strong&gt;&lt;/p&gt;
 &lt;ol&gt;
@@ -4740,8 +4638,6 @@ $$&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;&lt;strong&gt;解答：&lt;/strong&gt;&lt;/p&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;!-- raw HTML omitted --&gt;
 &lt;ol start=&#34;2&#34;&gt;
 &lt;li&gt;當球的質量 $m=1kg$，向上的速度 $v_0=20m/s$，重力 $g=9.8m/s$，空氣阻力 $p=\frac{1}{10}$
 $$
@@ -4776,8 +4672,6 @@ $$
 &lt;p&gt;使用這項結果來決定 $y(2t_1)$ 何時為正，何時為負。你能推斷出甚麼結果?上升還是下降比較快?&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;!-- raw HTML omitted --&gt;
 &lt;hr&gt;
 </description>
     </item>
@@ -4788,7 +4682,7 @@ $$
       <pubDate>Sat, 11 Apr 2020 00:00:00 +0000</pubDate>
       <guid>https://teshenglin.github.io/post/2020_cal_s4p1_ch/</guid>
       <description>&lt;blockquote&gt;
-&lt;p&gt;Applied Project in Sec.4.1, Calculus by Stewart&lt;br&gt;
+&lt;p&gt;Applied Project in Sec.4.1, Calculus by Stewart &lt;br&gt;
 英文版請見 
 &lt;a href=&#34;https://teshenglin.github.io/post/2020_cal_s4p1&#34;&gt;The Calculus of ranbows&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -4828,8 +4722,6 @@ $$&lt;/p&gt;
 &lt;/figure&gt;
 
 &lt;p&gt;證明偏差角在 $\alpha\approx 59.4^{\circ}$ 時會有最小值 $\alpha\approx 59.4^{\circ}$。&lt;/p&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;!-- raw HTML omitted --&gt;
 &lt;hr&gt;
 &lt;p&gt;最小偏差角的意義是當$\alpha\approx 59.4^{\circ}$ 時，我們知道 $D’(\alpha)\approx 0$，則 $\frac{\Delta D}{\Delta \alpha}\approx 0$ 。這代表當很多光束在 $\alpha\approx 59.4^{\circ}$ 時偏差大約相同，而正是因為接近最小偏差方向的光線集中產生主彩虹的亮度。下面這張圖顯示了從觀察者到彩虹最高點的仰角為 $180^{\circ}- 138^{\circ} = 42^{\circ}$（這個角度就叫做彩虹角）。&lt;/p&gt;
 
@@ -4862,8 +4754,6 @@ $$&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;問題二：&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;問題1解釋了主彩虹的位置，那我們要如何解釋顏色呢？陽光的波長範圍從紅色到橙色，黃色，綠色，藍色，靛藍和紫色。正如牛頓在1666年的棱鏡實驗中發現的那樣，每種顏色的折射率都不同（這種效果稱為色散）。紅光的折射率為 $k \approx 1.3318$，紫光的折射率為 $k\approx 1.3435$。透過對的這些值 $k$ 重複問題1的計算，證明紅色光道的彩虹角是 $42.3^{\circ}$ 而紫色光道的彩虹角是 $40.6^{\circ}$ 。因此，彩虹實際上是由對應於這七個顏色的七個單獨的光道組成的。&lt;/p&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;!-- raw HTML omitted --&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;問題三：&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;或許你曾經看過主彩虹上較暗的次彩虹。這是由於光線進入雨滴並在A處折射、反射兩次（在B和C處）以及在D處離開雨滴而折射的那部分光束所致（如下圖）。這次偏差角$D(\alpha)$是射線在此四階段過程中經歷的逆時針旋轉的總量。&lt;/p&gt;
@@ -4925,13 +4815,9 @@ $$&lt;/p&gt;
 
 &lt;/figure&gt;
 
-&lt;!-- raw HTML omitted --&gt;
-&lt;!-- raw HTML omitted --&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;問題四：&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;證明次彩虹中的顏色以與主要彩虹中的顏色相反的順序顯現。&lt;/p&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;!-- raw HTML omitted --&gt;
 &lt;hr&gt;
 </description>
     </item>
@@ -4942,7 +4828,7 @@ $$&lt;/p&gt;
       <pubDate>Mon, 23 Mar 2020 00:00:00 +0000</pubDate>
       <guid>https://teshenglin.github.io/post/2020_cal_s4p1/</guid>
       <description>&lt;blockquote&gt;
-&lt;p&gt;Applied Project in Sec.4.1, Calculus by Stewart&lt;br&gt;
+&lt;p&gt;Applied Project in Sec.4.1, Calculus by Stewart &lt;br&gt;
 Chinese version: 
 &lt;a href=&#34;https://teshenglin.github.io/post/2020_cal_s4p1_ch&#34;&gt;彩虹的微積分學&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -4982,10 +4868,8 @@ $$&lt;/p&gt;
 &lt;/figure&gt;
 
 &lt;p&gt;Show that the minimum value of deviation is $D(\alpha)\approx 138^{\circ}$; and occurs when $\alpha\approx 59.4^{\circ}$.&lt;/p&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;!-- raw HTML omitted --&gt;
 &lt;hr&gt;
-&lt;p&gt;The significance of the minimum deviation is that when $\alpha\approx 59.4^{\circ}$ we have $D&#39;(\alpha)\approx 0$, so $\frac{\Delta D}{\Delta \alpha}\approx 0.$ This means that many  rays with $\alpha\approx 59.4^{\circ}$ become deviated by approximately the same amount. It it the &lt;em&gt;concentration&lt;/em&gt; of rays coming from near the direction of minimum deviation that creates the brightness of the primary rainbow. The figure at the left shows that the angle of elevation from the observer up to the highest point on the rainbow is $180^{\circ}- 138^{\circ} = 42^{\circ}$. (This angle is called the &lt;em&gt;rainbow angle&lt;/em&gt; .)&lt;/p&gt;
+&lt;p&gt;The significance of the minimum deviation is that when $\alpha\approx 59.4^{\circ}$ we have $D&amp;rsquo;(\alpha)\approx 0$, so $\frac{\Delta D}{\Delta \alpha}\approx 0.$ This means that many  rays with $\alpha\approx 59.4^{\circ}$ become deviated by approximately the same amount. It it the &lt;em&gt;concentration&lt;/em&gt; of rays coming from near the direction of minimum deviation that creates the brightness of the primary rainbow. The figure at the left shows that the angle of elevation from the observer up to the highest point on the rainbow is $180^{\circ}- 138^{\circ} = 42^{\circ}$. (This angle is called the &lt;em&gt;rainbow angle&lt;/em&gt; .)&lt;/p&gt;
 
 
 
@@ -5016,8 +4900,6 @@ $$&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Question 2:&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Problem 1 explains the location of the primary rainbow, but how do we explain the colors? Sunlight comprises a range of wavelengths, from the red range through orange, yellow, green, blue, indigo, and violet. As Newton discovered in his prism experiments of 1666, the index of refraction is different for each color, (The effect is called &lt;em&gt;dispersion&lt;/em&gt;.) For red light the refractive index $k \approx 1.3318$,  whereas for violet light it is $k\approx 1.3435$. By repeating the calculation of Problem 1 for these values of $k$, show that the rainbow angle is about $42.3^{\circ}$ for red bow and $40.6^{\circ}$ for the violet bow. So the rainbow really consists of seven individual bows corresponding to the seven colors.&lt;/p&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;!-- raw HTML omitted --&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Question 3:&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Perhaps you have seen a fainter secondary rainbow above the primary bow. That results from the part of a ray that enters a raindrop and is refracted at A, reflected twice (at B and C), and refracted as it leaves the drop at D (see the figure at the left). This time the deviation angle $D(\alpha)$ is the total amount of counterclockwise rotation that the ray undergoes in this four-stage process.&lt;/p&gt;
@@ -5079,13 +4961,9 @@ $$&lt;/p&gt;
 
 &lt;/figure&gt;
 
-&lt;!-- raw HTML omitted --&gt;
-&lt;!-- raw HTML omitted --&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Question 4:&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Show that the colors in the secondary rainbow appear in the opposite order from those in the primary rainbow.&lt;/p&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;!-- raw HTML omitted --&gt;
 &lt;hr&gt;
 </description>
     </item>
@@ -5096,7 +4974,7 @@ $$&lt;/p&gt;
       <pubDate>Mon, 23 Mar 2020 00:00:00 +0000</pubDate>
       <guid>https://teshenglin.github.io/post/2020_cal_s4p7_2_ch/</guid>
       <description>&lt;blockquote&gt;
-&lt;p&gt;Applied Project 2 in Sec.4.7, Calculus by Stewart&lt;br&gt;
+&lt;p&gt;Applied Project 2 in Sec.4.7, Calculus by Stewart &lt;br&gt;
 英文版請見 
 &lt;a href=&#34;https://teshenglin.github.io/post/2019_cal_s4p7_2&#34;&gt;Planes and birds: Minimizing energy&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -5109,16 +4987,12 @@ P = Av^3 + \frac{BL^2}{v}
 $$
 其中 $A$ 和 $B$ 是特定飛機的參數，恆為正，$L$ 是升力，即為支撐飛機重量的向上力。 找出使其所需功率最小的速度。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;答案:&lt;/strong&gt;&lt;/p&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;!-- raw HTML omitted --&gt;
 &lt;p&gt;$$
 v_P = \sqrt[4]{\frac{BL^2}{3A}}
 $$&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;問題 2:&lt;/strong&gt;	在問題 1 中找到的速度可將功率降至最低，但較快的速度可能會消耗較少的燃料。推動飛機每單位距離所需的能量為 $E=P/v$， 在什麼速度下能使能量最小？&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;答案:&lt;/strong&gt;&lt;/p&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;!-- raw HTML omitted --&gt;
 &lt;p&gt;$$
 v_E = \sqrt[4]{\frac{BL^2}{A}}
 $$&lt;/p&gt;
@@ -5141,8 +5015,6 @@ $$&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;問題 5:&lt;/strong&gt;  在最小平均功率下$x$的值是多少？ 如果鳥飛得慢，你能得出什麼結論？ 如果這隻鳥飛得越來越快，你能得出什麼結論？&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;答案:&lt;/strong&gt;&lt;/p&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;!-- raw HTML omitted --&gt;
 &lt;p&gt;$$
 x = \frac{mg}{v^2}\sqrt{\frac{B}{A_w}}
 $$&lt;/p&gt;
@@ -5154,8 +5026,6 @@ $$&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;問題 6:&lt;/strong&gt;  一個週期的平均能量為 $E_a=P_a/v$. 試問 $x$ 的值為多少可以使$E_a$最小？&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;答案:&lt;/strong&gt;&lt;/p&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;!-- raw HTML omitted --&gt;
 &lt;p&gt;$$
 x = \frac{mg}{v^2}\sqrt{\frac{B}{A_w}}
 $$&lt;/p&gt;
@@ -5169,21 +5039,19 @@ $$&lt;/p&gt;
       <pubDate>Wed, 18 Mar 2020 00:00:00 +0000</pubDate>
       <guid>https://teshenglin.github.io/post/2020_cal_s3p10/</guid>
       <description>&lt;blockquote&gt;
-&lt;p&gt;Laboratory Project in Sec.3.10, Calculus by Stewart&lt;br&gt;
+&lt;p&gt;Laboratory Project in Sec.3.10, Calculus by Stewart &lt;br&gt;
 Chinese version: 
 &lt;a href=&#34;https://teshenglin.github.io/post/2020_cal_s3p10_ch&#34;&gt;泰勒級數&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;The tangent line approximation $L(x)$ is the best first-degree (linear) approximation to $f(x)$ near $x=a$ because $f(x)$ and $L(x)$ have the same rate of change (derivative) at $x=a$. For a better approximation than a linear one, let&amp;rsquo;s try a second-degree (quadratic) approximation $P(x)$. In other words, we approximate a curve by a parabola instead of a straight line. To make sure that the approximation is a good one, we stipulate the following:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;$P$ and $f$ should have the same value at $a$. ($P(a)=f(a)$)&lt;/li&gt;
-&lt;li&gt;$P$ and $f$ should have the same rate of change at $a$. ($P&#39;(a)=f&#39;(a)$)&lt;/li&gt;
-&lt;li&gt;The slopes of $P$ and $f$ should change at the same rate at $a$. ($P&#39;&#39;(a)=f&#39;&#39;(a)$)&lt;/li&gt;
+&lt;li&gt;$P$ and $f$ should have the same rate of change at $a$. ($P&amp;rsquo;(a)=f&amp;rsquo;(a)$)&lt;/li&gt;
+&lt;li&gt;The slopes of $P$ and $f$ should change at the same rate at $a$. ($P&amp;rsquo;&amp;rsquo;(a)=f&amp;rsquo;&amp;rsquo;(a)$)&lt;/li&gt;
 &lt;/ol&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Question 1：&lt;/strong&gt; Find the quadratic approximation $P(x)=A+Bx+Cx^{2}$ to the function $f(x)=cosx$ that satisfies conditions (i), (ii),and (iii) with $a=0$ . Graph $P$, $f$ and the linear approximation $L(x)=1$ on a common screen. Comment on how well the functions $P$ and $L$ approximate $f$.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;!-- raw HTML omitted --&gt;
 &lt;p&gt;$P(x)=1-\frac{1}{2}x^{2}$, and the graph shows:&lt;/p&gt;
 
 
@@ -5217,8 +5085,6 @@ Chinese version:
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Question 2：&lt;/strong&gt; Determine the values of $x$ for which the quadratic approximation $f(x)\approx P(x)$ in Problem 1 is accurate to within $0.1$.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;!-- raw HTML omitted --&gt;
 &lt;p&gt;We draw the graph of $g(x),P(x),h(x)$:&lt;/p&gt;
 
 
@@ -5256,19 +5122,15 @@ P(x)=A+B(x-a)+C(x-a)^{2}。
 $$
 Show that the quadratic function that satisfies conditions (i), (ii), and (iii) is
 $$
-P(x)=f(a)+f&#39;(a)(x-a)+\frac{1}{2} f&#39;&#39;(a)(x-a)^{2}。
+P(x)=f(a)+f&amp;rsquo;(a)(x-a)+\frac{1}{2} f&amp;rsquo;&amp;rsquo;(a)(x-a)^{2}。
 $$&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;!-- raw HTML omitted --&gt;
 &lt;p&gt;$$
-P(x)=f(a)+f&#39;(a)(x-a)+\frac{1}{2} f&#39;&#39;(a)(x-a)^{2}.
+P(x)=f(a)+f&amp;rsquo;(a)(x-a)+\frac{1}{2} f&amp;rsquo;&amp;rsquo;(a)(x-a)^{2}.
 $$&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Question 4:&lt;/strong&gt; Find the quadratic approximation to $F(x)=\sqrt{x+3}\quad$ near $a=1$. Graph $f$, the quadratic approximation, and the linear approximation from Example 3.10.2 on a common screen. What do you conclude?&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;!-- raw HTML omitted --&gt;
 &lt;p&gt;We draw the graph of $f(x),P(x)$ and the linear approximation from Example 3.10.2：&lt;/p&gt;
 
 
@@ -5311,16 +5173,12 @@ $$
 Show that these conditions are satisfied if $c_{k}=\frac{f^{(k)}(a)}{k!}$.&lt;/p&gt;
 &lt;p&gt;The resulting polynomial:
 $$
-T_{n}(x)=f(a)+f&#39;(a)(x-a)+\frac{f&#39;&#39;(a)}{2!} (x-a)^{2}+&amp;hellip;+\frac{f^{(n)}(a)}{n!}(x-a)^{n}。
+T_{n}(x)=f(a)+f&amp;rsquo;(a)(x-a)+\frac{f&amp;rsquo;&amp;rsquo;(a)}{2!} (x-a)^{2}+&amp;hellip;+\frac{f^{(n)}(a)}{n!}(x-a)^{n}。
 $$
 is called the nth-degree Taylor polynomial of $f$ centered at $a$.&lt;/p&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;!-- raw HTML omitted --&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Question 6:&lt;/strong&gt; Find the 8th-degree Taylor polynomial centered at $a=0$ for the function $f(x)=\cos x$. Graph $f$ together with the Taylor polynomials $T_{2},T_{4},T_{6},T_{8}$ in the viewing rectangle $x=[-5,5]$ by $y=[-1.4,1.4]$  and comment how well they approximate $f$.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;!-- raw HTML omitted --&gt;
 &lt;p&gt;We draw the graph of$f$ and $T_{2},T_{4},T_{6},T_{8}$, and the rectangle $x=[-5,5]$ by $y=[-1.4,1.4]$&lt;/p&gt;
 
 
@@ -5371,8 +5229,6 @@ Chinese version:
 &lt;p&gt;&lt;strong&gt;Question 1:&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Suppose the cups have height $h$, cup A is formed by rotating the curve $x=f(y)$ about the $y$-axis, and cup B is formed by rotating the same curve about the $x=k$. Find the value of $k$ such that two cups hold the same amount of coffee.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;!-- raw HTML omitted --&gt;
 &lt;p&gt;$$
 k=\frac{2\int_0^{h}f(y)dy}{h}.
 $$&lt;/p&gt;
@@ -5380,8 +5236,6 @@ $$&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Question 2:&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;What does your result from Problem 1 say about the areas $A_1$ and $A_2$ shown in the figure?&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;!-- raw HTML omitted --&gt;
 &lt;p&gt;when Cup A&amp;rsquo;s volume equals Cup B&amp;rsquo;s, the area of $A_1$ is the same as $A_2$.&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Question 3:&lt;/strong&gt;&lt;/p&gt;
@@ -5390,8 +5244,6 @@ $$&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Let $R$ be a plane region that lies entirely on one side of a line $l$ in the plane. If $R$ is rotated about $l$, then the volume of the resulting solid is the product of the area $A$ of $R$ and the distance $d$ travled by the centroid of $R$.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;!-- raw HTML omitted --&gt;
 &lt;hr&gt;
 </description>
     </item>
@@ -5415,8 +5267,6 @@ Chinese version:
 &lt;p&gt;(c) Plot $L_1$, $f$, and $L_2$ to verify graphically that the transitions are smooth.&lt;/p&gt;
 &lt;p&gt;(d) Find the difference in elevation between $P$ and $Q$.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;!-- raw HTML omitted --&gt;
 &lt;p&gt;Below is the graph of these formula:
 
 
@@ -5460,8 +5310,6 @@ $$&lt;/p&gt;
 &lt;p&gt;(b) Solve the equations in part (a) with a computer algebra system to find formulas for $q(x)$, $g(x)$, and $h(x)$.&lt;/p&gt;
 &lt;p&gt;(c) Plot $L_1$, $g$, $q$, $h$, and $L_2$, and compare with the plot in Problem1(c).&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;!-- raw HTML omitted --&gt;
 &lt;p&gt;Below is the graph of the smoother roller coaster:
 
 
@@ -5492,8 +5340,6 @@ $$&lt;/p&gt;
 &lt;/figure&gt;
 
 The red one is the graph of $g(x)$, the blue one is the graph of $q(x)$, and the green one is the graph of $h(x)$.&lt;/p&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;!-- raw HTML omitted --&gt;
 &lt;hr&gt;
 </description>
     </item>
@@ -5504,7 +5350,7 @@ The red one is the graph of $g(x)$, the blue one is the graph of $q(x)$, and the
       <pubDate>Tue, 10 Mar 2020 12:00:00 +0000</pubDate>
       <guid>https://teshenglin.github.io/post/2020_cal_s4p7_ch/</guid>
       <description>&lt;blockquote&gt;
-&lt;p&gt;Applied Project 1 in Sec.4.7, Calculus by Stewart&lt;br&gt;
+&lt;p&gt;Applied Project 1 in Sec.4.7, Calculus by Stewart &lt;br&gt;
 英文版請見 
 &lt;a href=&#34;https://teshenglin.github.io/post/2019_cal_s4p7&#34;&gt;The shape of a can&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -5517,16 +5363,12 @@ The red one is the graph of $g(x)$, the blue one is the graph of $q(x)$, and the
 &lt;p&gt;然而，如果圓柱上下的圓面是由邊為 $2r$ 的正方形切割的，那麼一定會有大量的金屬浪費，儘管它可以回收再利用，但對罐頭製造商來說是幾乎沒有任何價值的。&lt;/p&gt;
 &lt;p&gt;因此，如果是這樣的話，我們就需要找到一組 $h/r$ 比例來最小化金屬的使用。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;答案:&lt;/strong&gt;&lt;/p&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;!-- raw HTML omitted --&gt;
 &lt;p&gt;$$
 \frac{h}{r} = \frac{8}{\pi}\approx 2.55
 $$&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;問題 2:&lt;/strong&gt; 若將金屬板劃分為六邊形並從六邊形切下圓形的蓋子和底座，可以更有效地填充圓盤。如果採用這個方法，要找到能讓使用的金屬量最小化的 $h/r$ 的比例。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;答案:&lt;/strong&gt;&lt;/p&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;!-- raw HTML omitted --&gt;
 &lt;p&gt;$$
 \frac{h}{r} = \frac{4\sqrt{3}}{\pi}\approx 2.21
 $$&lt;/p&gt;
@@ -5538,8 +5380,6 @@ $$&lt;/p&gt;
 &lt;p&gt;製作一圓柱罐，首先我們彎曲一矩形並將邊與邊黏接在一起以製成圓柱殼（高度為 $ h $）；接著，將兩個圓盤與圓柱殼黏接（圓盤長度為$2πr$）。 由上可知，黏接成本為 $ k(h+4πr) $， $k$ 為單位面積金屬成本可黏接長度的倒數。&lt;/p&gt;
 &lt;p&gt;同問題二，圓盤由一正六邊形切割而成，所以總成本包括金屬成本和黏接的成本，與$4\sqrt{3}r^2 + 2\pi r h + k(4\pi r + h) $成正比。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;答案：&lt;/strong&gt;&lt;/p&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;!-- raw HTML omitted --&gt;
 &lt;p&gt;發生最小值時圓柱體的高度與半徑比為:
 $$
 \frac{h}{r} = \frac{4\sqrt{3}r + 2k\pi}{\pi r + k}
@@ -5590,7 +5430,7 @@ $$&lt;/li&gt;
       <pubDate>Tue, 10 Mar 2020 00:00:00 +0000</pubDate>
       <guid>https://teshenglin.github.io/post/2020_cal_s3p10_ch/</guid>
       <description>&lt;blockquote&gt;
-&lt;p&gt;Laboratory Project in Sec.3.10, Calculus by Stewart&lt;br&gt;
+&lt;p&gt;Laboratory Project in Sec.3.10, Calculus by Stewart &lt;br&gt;
 英文版請見 
 &lt;a href=&#34;https://teshenglin.github.io/post/2020_cal_s3p10&#34;&gt;Taylor polynomials&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -5598,14 +5438,12 @@ $$&lt;/li&gt;
 &lt;p&gt;為了找尋比線性逼近更好的近似方式，我們嘗試利用二次逼近函數(quadratic approximation) $Q(x)$ 來做近似，換句話說，我們利用拋物線來逼近 $f(x)$ 的值而非直線。為了確定這樣的近似方式是合理的，我們規定以下條件：&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;$P(a)=f(a)$&lt;/li&gt;
-&lt;li&gt;$P&#39;(a)=f&#39;(a)$&lt;/li&gt;
-&lt;li&gt;$P&#39;&#39;(a)=f&#39;&#39;(a)$&lt;/li&gt;
+&lt;li&gt;$P&amp;rsquo;(a)=f&amp;rsquo;(a)$&lt;/li&gt;
+&lt;li&gt;$P&amp;rsquo;&amp;rsquo;(a)=f&amp;rsquo;&amp;rsquo;(a)$&lt;/li&gt;
 &lt;/ol&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;問題 1：&lt;/strong&gt; 對於函數 $f(x)=\cos(x)$，找尋它在 $a=0$ 時的二次逼近函數 $P(x)=A+Bx+Cx^2$，並且此函數須滿足上述介紹中的三個條件。接著對函數 $P,f$ 及線性逼近函數 $L(x)=1$ 作圖，比較 $P$ 和 $f$ 哪一個逼近函數比較精確。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;解：&lt;/strong&gt;&lt;/p&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;!-- raw HTML omitted --&gt;
 &lt;p&gt;$P(x)=1-\frac{1}{2}x^{2}$&lt;/p&gt;
 &lt;p&gt;函數 $P,f$ 及線性逼近函數 $L(x)=1$ 作圖如下：&lt;/p&gt;
 
@@ -5640,8 +5478,6 @@ $$&lt;/li&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;問題 2：&lt;/strong&gt; 延續題1，試求符合條件的 $x$ 滿足 $P(x)$ 及 $f(x)$ 的差值在 $0.1$ 內。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;解：&lt;/strong&gt;&lt;/p&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;!-- raw HTML omitted --&gt;
 &lt;p&gt;對 $g(x),P(x),h(x)$ 作圖如下：&lt;/p&gt;
 
 
@@ -5679,19 +5515,15 @@ P(x)=A+B(x-a)+C(x-a)^{2}。
 $$
 證明一個滿足專題介紹中3個條件的二次逼近函數$P(x)$可以表示為
 $$
-P(x)=f(a)+f&#39;(a)(x-a)+\frac{1}{2} f&#39;&#39;(a)(x-a)^{2}。
+P(x)=f(a)+f&amp;rsquo;(a)(x-a)+\frac{1}{2} f&amp;rsquo;&amp;rsquo;(a)(x-a)^{2}。
 $$&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;解：&lt;/strong&gt;&lt;/p&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;!-- raw HTML omitted --&gt;
 &lt;p&gt;$$
-P(x)=f(a)+f&#39;(a)(x-a)+\frac{1}{2} f&#39;&#39;(a)(x-a)^{2}。
+P(x)=f(a)+f&amp;rsquo;(a)(x-a)+\frac{1}{2} f&amp;rsquo;&amp;rsquo;(a)(x-a)^{2}。
 $$&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;問題 4：&lt;/strong&gt; 找尋函數 $f(x)=\sqrt{x+3}$ 在 $a=1$ 時的二次逼近函數，接著對 $f$、二次逼近函數及線性逼近函數做圖。你能做怎樣的結論？&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;解：&lt;/strong&gt;&lt;/p&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;!-- raw HTML omitted --&gt;
 &lt;p&gt;對函數 $f(x),P(x)$ 及線性逼近函數作圖如下：&lt;/p&gt;
 
 
@@ -5733,16 +5565,12 @@ T_{n}^{(k)}(a)=f^{(k)}(a), \quad k=1, \cdots, n。
 $$
 證明：滿足上述條件的 $T_{n}(x)$ 其係數 $c_{k}=\frac{f^{(k)}(a)}{k!}$。(將係數 $c_{k}$ 代入函數 $T_{n}(x)$ 後，函數為
 $$
-T_{n}(x)=f(a)+f&#39;(a)(x-a)+\frac{f&#39;&#39;(a)}{2!} (x-a)^{2}+&amp;hellip;+\frac{f^{(n)}(a)}{n!}(x-a)^{n}。
+T_{n}(x)=f(a)+f&amp;rsquo;(a)(x-a)+\frac{f&amp;rsquo;&amp;rsquo;(a)}{2!} (x-a)^{2}+&amp;hellip;+\frac{f^{(n)}(a)}{n!}(x-a)^{n}。
 $$
 此即為函數 $f$ 在點 $a$ 的 $n$ 階泰勒級數。)&lt;/p&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;!-- raw HTML omitted --&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;問題 6：&lt;/strong&gt; 試求函數 $f(x)=\cos(x)$ 在點 $a=0$ 的8階泰勒級數。除此之外，對函數 $f$ 及 $T_{2},T_{4},T_{6},T_{8}$ 做圖，考慮範圍為 $x=[-5,5],y=[-1.4,1.4]$ 之長方形，評論對於函數 $f$，4條逼近函數 $T$ 的近似程度。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;解：&lt;/strong&gt;&lt;/p&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;!-- raw HTML omitted --&gt;
 &lt;p&gt;對函數 $f$ 及 $T_{2},T_{4},T_{6},T_{8}$ 做圖，黑色框線為題目要求 $x=[-5,5],y=[-1.4,1.4]$ 之長方形。&lt;/p&gt;
 
 
@@ -5783,7 +5611,7 @@ $$
       <pubDate>Sun, 08 Mar 2020 00:00:00 +0000</pubDate>
       <guid>https://teshenglin.github.io/post/2020_cal_s3p4_ch/</guid>
       <description>&lt;blockquote&gt;
-&lt;p&gt;Applied Project in Sec.3.4, Calculus by Stewart&lt;br&gt;
+&lt;p&gt;Applied Project in Sec.3.4, Calculus by Stewart &lt;br&gt;
 英文版請見 
 &lt;a href=&#34;https://teshenglin.github.io/post/2019_cal_s3p4&#34;&gt;Where should a pilot start descent?&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -5803,35 +5631,29 @@ $$
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;問題壹：&lt;/strong&gt; 請透過加適當條件在「開始下降」和「著陸」這兩個時間點的$P(x)$和$P’(x)$上，來找到一個滿足條件(1.)的三次多項式 $P(x) = ax^3 + bx^2 + cx + d$。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;解：&lt;/strong&gt;&lt;/p&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;!-- raw HTML omitted --&gt;
 &lt;p&gt;$$
 P(x) = −\frac{2h}{\ell^3}x^3 + \frac{3h}{\ell^2}x^2。
 $$&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;問題貳：&lt;/strong&gt; 用條件(2.)和(3.)來證明$\frac{6hv^2}{\ell^2}\le k$。&lt;/p&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;!-- raw HTML omitted --&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;問題參：&lt;/strong&gt; 假設某航空公司決定不讓飛機的鉛直加速度達到$k = 860(英里/小時^2)$。如果飛機的巡航高度是$35,000$(英尺)且速度是$300$(英里/小時)，飛行員該在距離機場多遠的地方開始下降？&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;解：&lt;/strong&gt;&lt;/p&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;!-- raw HTML omitted --&gt;
 &lt;p&gt;飛行員應該在距離機場$64.511$(英里)的地方開始下降。&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;問題肆：&lt;/strong&gt; 請繪製近似圖(假設問題參當中的所有條件都被滿足)&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;解：&lt;/strong&gt;&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# Example code in julia&lt;/span&gt;
-&lt;span style=&#34;color:#66d9ef&#34;&gt;using&lt;/span&gt; Plots
-v &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;300&lt;/span&gt;;
-h &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;6.628&lt;/span&gt;;
-l &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;65&lt;/span&gt;;
-N &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;100&lt;/span&gt;;
-dx &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; l&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;N;
-x &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0.0&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;N; x &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; dx&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;x;
-P &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;h&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;l&lt;span style=&#34;color:#f92672&#34;&gt;^&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;)&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;x&lt;span style=&#34;color:#f92672&#34;&gt;.^&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; (&lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;h&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;l&lt;span style=&#34;color:#f92672&#34;&gt;^&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;)&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;x&lt;span style=&#34;color:#f92672&#34;&gt;.^&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;;
-plot(x, P, lw&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;, xlabel &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;x&amp;#34;&lt;/span&gt;, ylabel &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;y&amp;#34;&lt;/span&gt;, title&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;approach path&amp;#34;&lt;/span&gt;, legend&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;false)
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# Example code in julia&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;using&lt;/span&gt; Plots
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;v &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;300&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;h &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;6.628&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;l &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;65&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;N &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;100&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;dx &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; l&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;N;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;x &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0.0&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;N; x &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; dx&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;x;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;P &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;h&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;l&lt;span style=&#34;color:#f92672&#34;&gt;^&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;)&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;x&lt;span style=&#34;color:#f92672&#34;&gt;.^&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; (&lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;h&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;l&lt;span style=&#34;color:#f92672&#34;&gt;^&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;)&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;x&lt;span style=&#34;color:#f92672&#34;&gt;.^&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;plot(x, P, lw&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;, xlabel &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;x&amp;#34;&lt;/span&gt;, ylabel &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;y&amp;#34;&lt;/span&gt;, title&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;approach path&amp;#34;&lt;/span&gt;, legend&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;false)
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
 
@@ -5992,7 +5814,7 @@ $$&lt;/p&gt;
       <pubDate>Wed, 08 Jan 2020 00:00:00 +0000</pubDate>
       <guid>https://teshenglin.github.io/post/2019_cal_s4p7_2/</guid>
       <description>&lt;blockquote&gt;
-&lt;p&gt;Applied Project 2 in Sec.4.7, Calculus by Stewart&lt;br&gt;
+&lt;p&gt;Applied Project 2 in Sec.4.7, Calculus by Stewart &lt;br&gt;
 Chinese version: 
 &lt;a href=&#34;https://teshenglin.github.io/post/2020_cal_s4p7_2_ch&#34;&gt;飛機和鳥：能量最小化&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -6005,16 +5827,12 @@ P = Av^3 + \frac{BL^2}{v}
 $$&lt;/p&gt;
 &lt;p&gt;where $A$ and $B$ are positive constants specific to the particular aircraft and $L$ is the lift, the upward force supporting the weight of the plane. Find the speed that minimizes the required power.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;!-- raw HTML omitted --&gt;
 &lt;p&gt;$$
 v_P = \sqrt[4]{\frac{BL^2}{3A}}
 $$&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Question 2:&lt;/strong&gt;	The speed found in Problem 1 minimizes power but a faster speed might use less fuel. The energy needed to propel the airplane a unit distance is​ $E = P/v$ . At what speed is energy minimized?&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;!-- raw HTML omitted --&gt;
 &lt;p&gt;$$
 v_E = \sqrt[4]{\frac{BL^2}{A}}
 $$&lt;/p&gt;
@@ -6037,8 +5855,6 @@ $$&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Question 5:&lt;/strong&gt;  For what value of​ $x$ is the average power a minimum? What can you conclude if the bird flies slowly? What can you conclude if the bird flies faster and faster?&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;!-- raw HTML omitted --&gt;
 &lt;p&gt;$$
 x = \frac{mg}{v^2}\sqrt{\frac{B}{A_w}}
 $$&lt;/p&gt;
@@ -6050,8 +5866,6 @@ $$&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Question 6:&lt;/strong&gt;  The average energy over a cycle is $E_a = P_a/v$. What value of $x$​ minimizes $E_a$?&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;!-- raw HTML omitted --&gt;
 &lt;p&gt;$$
 x = \frac{mg}{v^2}\sqrt{\frac{B}{A_w}}
 $$&lt;/p&gt;
@@ -6065,7 +5879,7 @@ $$&lt;/p&gt;
       <pubDate>Wed, 11 Dec 2019 00:00:00 +0000</pubDate>
       <guid>https://teshenglin.github.io/post/2019_cal_s4p7/</guid>
       <description>&lt;blockquote&gt;
-&lt;p&gt;Applied Project 1 in Sec.4.7, Calculus by Stewart&lt;br&gt;
+&lt;p&gt;Applied Project 1 in Sec.4.7, Calculus by Stewart &lt;br&gt;
 Chinese version: 
 &lt;a href=&#34;https://teshenglin.github.io/post/2020_cal_s4p7_ch&#34;&gt;罐頭的形狀&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -6077,16 +5891,12 @@ Chinese version:
 &lt;p&gt;&lt;strong&gt;Question 1:&lt;/strong&gt; The material for the cans is cut from sheets of metal. The cylindrical sides are formed by bending rectangles; these rectangles are cut from the sheet with little or no waste.&lt;/p&gt;
 &lt;p&gt;But if the top and bottom discs are cut from squares of side $2r$, this leaves considerable waste metal, which may be recycled but has little or no value to the can makers. If this is the case, find the ratio $h/r$ for which the amount of metal used is minimized.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;!-- raw HTML omitted --&gt;
 &lt;p&gt;$$
 \frac{h}{r} = \frac{8}{\pi}\approx 2.55
 $$&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Question 2:&lt;/strong&gt;	A more efficient packing of the discs is obtained by dividing the metal sheet into hexagons and cutting the circular lids and bases from the hexagons. If this strategy is adopted, find the ratio $h/r$ for which the amount of metal used is minimized.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;!-- raw HTML omitted --&gt;
 &lt;p&gt;$$
 \frac{h}{r} = \frac{4\sqrt{3}}{\pi}\approx 2.21
 $$&lt;/p&gt;
@@ -6098,8 +5908,6 @@ $$&lt;/p&gt;
 &lt;p&gt;For a cylindrical can, we need to bend a rectangle and joinging the sides together (with length $h$) to make the cylindrical shell. Also we need to join the two discs to the shell (each disc with length $2\pi r$). So the cost in joining is $k(h + 4\pi r)$ where $k$ is the reciprocal of the length that can be joined for the cost of one unit area of metal.&lt;/p&gt;
 &lt;p&gt;If we cut the discs from hexagons as in Question 2, then the total cost consists of the cost of the metal and the cost in joinging the sides, that is proportional to $4\sqrt{3}r^2 + 2\pi r h + k(4\pi r + h)$.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;!-- raw HTML omitted --&gt;
 &lt;p&gt;with the minimum metal used,&lt;/p&gt;
 &lt;p&gt;$$
 \frac{h}{r} = \frac{4\sqrt{3}r + 2k\pi}{\pi r + k}.
@@ -6147,7 +5955,7 @@ $$&lt;/li&gt;
       <pubDate>Wed, 11 Dec 2019 00:00:00 +0000</pubDate>
       <guid>https://teshenglin.github.io/post/2019_numerical_integration/</guid>
       <description>&lt;blockquote&gt;
-&lt;p&gt;在微積分課程裡我們有學到積分的&amp;rsquo;中點法&#39;, &amp;lsquo;梯形法&amp;rsquo;以及&amp;rsquo;辛普森法&amp;rsquo;. 這裡我們簡介一些基本概念並且引進高斯積分法.&lt;/p&gt;
+&lt;p&gt;在微積分課程裡我們有學到積分的&amp;rsquo;中點法&amp;rsquo;, &amp;lsquo;梯形法&amp;rsquo;以及&amp;rsquo;辛普森法&amp;rsquo;. 這裡我們簡介一些基本概念並且引進高斯積分法.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h4 id=&#34;goal-任意給定一可積分函數-fx-xin-1-1-我們想要算-int1_-1-fx-dx&#34;&gt;Goal: 任意給定一可積分函數 $f(x)$, $x\in[-1, 1]$, 我們想要算 $\int^1_{-1} f(x) dx$.&lt;/h4&gt;
 &lt;hr&gt;
@@ -6190,7 +5998,7 @@ $$&lt;/li&gt;
 &lt;/ol&gt;
 &lt;hr&gt;
 &lt;blockquote&gt;
-&lt;p&gt;接著我們稍微推廣一下, 並且介紹所謂的&amp;rsquo;高斯積分&#39;.&lt;/p&gt;
+&lt;p&gt;接著我們稍微推廣一下, 並且介紹所謂的&amp;rsquo;高斯積分&amp;rsquo;.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;&lt;strong&gt;Question:&lt;/strong&gt; 假設我們現在想要用函數在 $x=0$ 這個點的值來估算積分, 那係數要取多少會最好?&lt;/p&gt;
 &lt;p&gt;也就是說我們假設
@@ -6213,9 +6021,9 @@ $$\int^1_{-1}f(x),dx\approx A_0 f(x_0)+A_1 f(x_1),$$
 &lt;p&gt;我們有四個未知數, 所以理想狀況下應該能從常數到三次多項式都能算準, 依此可以列出四個方程式:
 $$
 \begin{aligned}
-A_0 + A_1 &amp;amp;= 2 \\\&lt;br&gt;
-A_0x_0 + A_1x_1 &amp;amp;= 0 \\\&lt;br&gt;
-A_0x^2_0 + A_1x^2_1 &amp;amp;= \frac{2}{3} \\\&lt;br&gt;
+A_0 + A_1 &amp;amp;= 2 \\\
+A_0x_0 + A_1x_1 &amp;amp;= 0 \\\
+A_0x^2_0 + A_1x^2_1 &amp;amp;= \frac{2}{3} \\\
 A_0x^3_0 + A_1x^3_1 &amp;amp;= 0.
 \end{aligned}
 $$
@@ -6232,75 +6040,75 @@ $$
 &lt;p&gt;&lt;strong&gt;Remark:&lt;/strong&gt; 一般來說我們會先將所要積分的範圍分成 $n$ 等分, 接著在每一等分上使用上列積分法. 這就是微積分課本中所介紹的合成積分法 (composite integral rules). 實作上的細節我們就不在這裡討論.&lt;/p&gt;
 &lt;p&gt;我們將 $[-1, 1]$ 區間均勻分成 $n$ 等分, 再用三種不同積分法來估算積分值. 下表列出不同積分法在不同區間數所得之值與實際值之間的絕對誤差.&lt;/p&gt;
 &lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;n\Method&lt;/th&gt;
-&lt;th&gt;Midpoint&lt;/th&gt;
-&lt;th&gt;Trapezoidal&lt;/th&gt;
-&lt;th&gt;Simpson&amp;rsquo;s&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;10&lt;/td&gt;
-&lt;td&gt;3.91e-3&lt;/td&gt;
-&lt;td&gt;7.83e-3&lt;/td&gt;
-&lt;td&gt;2.08e-5&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;100&lt;/td&gt;
-&lt;td&gt;3.92e-5&lt;/td&gt;
-&lt;td&gt;7.83e-5&lt;/td&gt;
-&lt;td&gt;2.09e-9&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;1000&lt;/td&gt;
-&lt;td&gt;3.92e-7&lt;/td&gt;
-&lt;td&gt;7.83e-7&lt;/td&gt;
-&lt;td&gt;2.10e-13&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
+	&lt;thead&gt;
+			&lt;tr&gt;
+					&lt;th&gt;n\Method&lt;/th&gt;
+					&lt;th&gt;Midpoint&lt;/th&gt;
+					&lt;th&gt;Trapezoidal&lt;/th&gt;
+					&lt;th&gt;Simpson&amp;rsquo;s&lt;/th&gt;
+			&lt;/tr&gt;
+	&lt;/thead&gt;
+	&lt;tbody&gt;
+			&lt;tr&gt;
+					&lt;td&gt;10&lt;/td&gt;
+					&lt;td&gt;3.91e-3&lt;/td&gt;
+					&lt;td&gt;7.83e-3&lt;/td&gt;
+					&lt;td&gt;2.08e-5&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;100&lt;/td&gt;
+					&lt;td&gt;3.92e-5&lt;/td&gt;
+					&lt;td&gt;7.83e-5&lt;/td&gt;
+					&lt;td&gt;2.09e-9&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;1000&lt;/td&gt;
+					&lt;td&gt;3.92e-7&lt;/td&gt;
+					&lt;td&gt;7.83e-7&lt;/td&gt;
+					&lt;td&gt;2.10e-13&lt;/td&gt;
+			&lt;/tr&gt;
+	&lt;/tbody&gt;
 &lt;/table&gt;
 &lt;p&gt;我們可以看到, 中點以及梯形法誤差皆是以 $O(n^{-2})$ 來下降, 也就是點數變十倍時誤差會降一百倍, 而辛普森法則是 $O(n^{-4})$.&lt;/p&gt;
 &lt;p&gt;接著我們試試看用高斯積分來做, 這裡我們就不分小區間, 直接做整個 $[-1, 1]$ 區間. 多個點的高斯積分的公式可在 
 &lt;a href=&#34;https://en.wikipedia.org/wiki/Gaussian_quadrature&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;wiki&lt;/a&gt; 找到. 我們將 $m$-point 高斯積分所得之值與實際值之間的絕對誤差列於下表&lt;/p&gt;
 &lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;m\Method&lt;/th&gt;
-&lt;th&gt;Gaussian quadrature rule&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;2&lt;/td&gt;
-&lt;td&gt;7.71e-3&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;3&lt;/td&gt;
-&lt;td&gt;6.55e-5&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;4&lt;/td&gt;
-&lt;td&gt;2.95e-7&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;5&lt;/td&gt;
-&lt;td&gt;8.25e-10&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;6&lt;/td&gt;
-&lt;td&gt;1.56e-12&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;7&lt;/td&gt;
-&lt;td&gt;2.66e-15&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;8&lt;/td&gt;
-&lt;td&gt;4.44e-16&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
+	&lt;thead&gt;
+			&lt;tr&gt;
+					&lt;th&gt;m\Method&lt;/th&gt;
+					&lt;th&gt;Gaussian quadrature rule&lt;/th&gt;
+			&lt;/tr&gt;
+	&lt;/thead&gt;
+	&lt;tbody&gt;
+			&lt;tr&gt;
+					&lt;td&gt;2&lt;/td&gt;
+					&lt;td&gt;7.71e-3&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;3&lt;/td&gt;
+					&lt;td&gt;6.55e-5&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;4&lt;/td&gt;
+					&lt;td&gt;2.95e-7&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;5&lt;/td&gt;
+					&lt;td&gt;8.25e-10&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;6&lt;/td&gt;
+					&lt;td&gt;1.56e-12&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;7&lt;/td&gt;
+					&lt;td&gt;2.66e-15&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;8&lt;/td&gt;
+					&lt;td&gt;4.44e-16&lt;/td&gt;
+			&lt;/tr&gt;
+	&lt;/tbody&gt;
 &lt;/table&gt;
 &lt;p&gt;可以看到我們用 8 個點就可以將這個積分準確估計到誤差接近機器的捨入誤差 (rounding error).&lt;/p&gt;
 &lt;hr&gt;
@@ -6352,7 +6160,7 @@ $$
 $$
 其中 $c$ 是任意常數. 那上列這個式子的等號是什麼意思?&lt;/p&gt;
 &lt;p&gt;我們都知道 $\sin(x)$ 加上任意常數, 其微分都會是 $\cos(x)$, 所以我們才有這個式子. 也就是說, 上面這個等號就是這個意思!!&lt;/p&gt;
-&lt;p&gt;再說清楚一點, 當我們寫 $\int f(x)\ dx = F(x)$ 時意思就是 $F&#39;(x) = f(x)$.&lt;/p&gt;
+&lt;p&gt;再說清楚一點, 當我們寫 $\int f(x)\ dx = F(x)$ 時意思就是 $F&amp;rsquo;(x) = f(x)$.&lt;/p&gt;
 &lt;p&gt;所以回到原文最後一個式子, 我把它在這裡重列一次
 $$
 \int \tan(x)\ dx  = -1 + \int\tan(x)\ dx.
@@ -6361,12 +6169,12 @@ $$
 $$
 \int \tan(x)\ dx  = -1 + F(x).
 $$
-我們知道這個式子也是對的因為 $(F(x)-1)&#39; = \tan(x)$. 所以從這個角度來說, 這整個式子就都沒有問題了.&lt;/p&gt;
+我們知道這個式子也是對的因為 $(F(x)-1)&amp;rsquo; = \tan(x)$. 所以從這個角度來說, 這整個式子就都沒有問題了.&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;所以最後一個問題是, 我們可以把東西減掉嗎? 舉例來說,
 $$
 \begin{aligned}
-\int\cos(x)\ dx &amp;amp;= \sin(x)+1, \\\&lt;br&gt;
+\int\cos(x)\ dx &amp;amp;= \sin(x)+1, \\\
 \int\cos(x)\ dx &amp;amp;= \sin(x).
 \end{aligned}
 $$
@@ -6386,7 +6194,7 @@ $$
       <pubDate>Thu, 21 Nov 2019 00:00:00 +0000</pubDate>
       <guid>https://teshenglin.github.io/post/2019_cal_s3p4/</guid>
       <description>&lt;blockquote&gt;
-&lt;p&gt;Applied Project in Sec.3.4, Calculus by Stewart&lt;br&gt;
+&lt;p&gt;Applied Project in Sec.3.4, Calculus by Stewart &lt;br&gt;
 Chinese version: 
 &lt;a href=&#34;https://teshenglin.github.io/post/2020_cal_s3p4_ch&#34;&gt;飛行員應該何時開始下降高度?&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -6399,35 +6207,29 @@ constant $k$ (which is much less than the acceleration due to gravity)&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Question 1:&lt;/strong&gt; Find a cubic polynomial $P(x) = ax^3 + bx^2 + cx + d$ that satisfies condition (i) by imposing suitable conditions on $P(x)$ and $P’(x)$ at the start of descent and at touchdown.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;!-- raw HTML omitted --&gt;
 &lt;p&gt;$$
 P(x) = −\frac{2h}{\ell^3}x^3 + \frac{3h}{\ell^2}x^2.
 $$&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Question 2:&lt;/strong&gt; Use conditions (ii) and (iii) to show that $\frac{6hv^2}{\ell^2}\le k$.&lt;/p&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;!-- raw HTML omitted --&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Question 3:&lt;/strong&gt; Suppose that an airline decides not to allow vertical acceleration of a plane to exceed $k = 860$(mi/h$^2$). If the cruising altitude of a plane is $35,000$(ft) and the speed is $300$(mi/h), how far away from the airport should the pilot start descent?&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;!-- raw HTML omitted --&gt;
 &lt;p&gt;The pilot should start to decend when the plane is $64.511$(mi) away from the airport.&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Question 4:&lt;/strong&gt; Graph the approach path if the conditions stated in Problem 3 are satisfied.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# Example code in julia&lt;/span&gt;
-&lt;span style=&#34;color:#66d9ef&#34;&gt;using&lt;/span&gt; Plots
-v &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;300&lt;/span&gt;;
-h &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;6.628&lt;/span&gt;;
-l &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;65&lt;/span&gt;;
-N &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;100&lt;/span&gt;;
-dx &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; l&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;N;
-x &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0.0&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;N; x &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; dx&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;x;
-P &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;h&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;l&lt;span style=&#34;color:#f92672&#34;&gt;^&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;)&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;x&lt;span style=&#34;color:#f92672&#34;&gt;.^&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; (&lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;h&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;l&lt;span style=&#34;color:#f92672&#34;&gt;^&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;)&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;x&lt;span style=&#34;color:#f92672&#34;&gt;.^&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;;
-plot(x, P, lw&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;, xlabel &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;x&amp;#34;&lt;/span&gt;, ylabel &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;y&amp;#34;&lt;/span&gt;, title&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;approach path&amp;#34;&lt;/span&gt;, legend&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;false)
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# Example code in julia&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;using&lt;/span&gt; Plots
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;v &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;300&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;h &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;6.628&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;l &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;65&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;N &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;100&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;dx &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; l&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;N;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;x &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0.0&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;N; x &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; dx&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;x;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;P &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;h&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;l&lt;span style=&#34;color:#f92672&#34;&gt;^&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;)&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;x&lt;span style=&#34;color:#f92672&#34;&gt;.^&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; (&lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;h&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;l&lt;span style=&#34;color:#f92672&#34;&gt;^&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;)&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;x&lt;span style=&#34;color:#f92672&#34;&gt;.^&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;plot(x, P, lw&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;, xlabel &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;x&amp;#34;&lt;/span&gt;, ylabel &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;y&amp;#34;&lt;/span&gt;, title&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;approach path&amp;#34;&lt;/span&gt;, legend&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;false)
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
 
@@ -6496,7 +6298,7 @@ $$&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;h2 id=&#34;theorem&#34;&gt;Theorem&lt;/h2&gt;
 &lt;p&gt;If $f:[a, b]\to [a,b]$ is a differentiable function such that
-$$ |f&#39;(x)|\leq \alpha&amp;lt;1, \quad \forall x\in[a, b],$$
+$$ |f&amp;rsquo;(x)|\leq \alpha&amp;lt;1, \quad \forall x\in[a, b],$$
 then $f$ has exactly one fixed point $c$ and the fixed point iteration converges to $c$.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;這個證明很簡單.&lt;/p&gt;
@@ -6506,10 +6308,10 @@ then $f$ has exactly one fixed point $c$ and the fixed point iteration converges
 &lt;h4 id=&#34;existence&#34;&gt;existence&lt;/h4&gt;
 &lt;p&gt;Since the domain and the range of $f$ are both $[a, b]$, by Intermediate Value Theorem, there exists $c$ such that $c=f(c ).$&lt;/p&gt;
 &lt;h4 id=&#34;uniqueness&#34;&gt;uniqueness&lt;/h4&gt;
-&lt;p&gt;If there exits another fixed point $\bar{c}$, $\bar{c}\ne c$, such that $\bar{c}=f(\bar{c} )$, then according to Mean Value Theorem(MVT), there exits $z$ between $c$ and $\bar{c}$ such that $$f&#39;(z) = \frac{f(c ) - f(\bar{c})}{c-\bar{c}}=\frac{c - \bar{c}}{c-\bar{c}} = 1,$$ which violate the assumption that $|f&#39;|\leq \alpha&amp;lt;1$. So the fixed point is unique.&lt;/p&gt;
+&lt;p&gt;If there exits another fixed point $\bar{c}$, $\bar{c}\ne c$, such that $\bar{c}=f(\bar{c} )$, then according to Mean Value Theorem(MVT), there exits $z$ between $c$ and $\bar{c}$ such that $$f&amp;rsquo;(z) = \frac{f(c ) - f(\bar{c})}{c-\bar{c}}=\frac{c - \bar{c}}{c-\bar{c}} = 1,$$ which violate the assumption that $|f&amp;rsquo;|\leq \alpha&amp;lt;1$. So the fixed point is unique.&lt;/p&gt;
 &lt;h4 id=&#34;convergence-of-fixed-point-iteration&#34;&gt;convergence of fixed point iteration&lt;/h4&gt;
 &lt;p&gt;Based on MVT we have
-$$|x_{n+1} - c| = |f(x_n) - f(c )| = |f&#39;(c_i)(x_n-c)|\leq\alpha |x_n-c|\leq\alpha^n|x_1-c|\to 0.$$&lt;/p&gt;
+$$|x_{n+1} - c| = |f(x_n) - f(c )| = |f&amp;rsquo;(c_i)(x_n-c)|\leq\alpha |x_n-c|\leq\alpha^n|x_1-c|\to 0.$$&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;所以如果在函數固定點 $c$ 的微分小於 $1$, 那就存在一個包含 $c$ 的小區間使得函數的微分都在這區間內小於 $1$, 那根據這定理固定點迭代就會收斂.&lt;/p&gt;
 &lt;hr&gt;
@@ -6521,9 +6323,9 @@ $$
 &lt;p&gt;那要如何改寫才會比較好呢? 其中一個最有名的就是牛頓法 (Newton&amp;rsquo;s method):&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;h2 id=&#34;newtons-iteration&#34;&gt;Newton&amp;rsquo;s iteration&lt;/h2&gt;
-&lt;p&gt;$$x_{n+1} = x_n - \frac{g(x_n)}{g&#39;(x_n)}.$$&lt;/p&gt;
+&lt;p&gt;$$x_{n+1} = x_n - \frac{g(x_n)}{g&amp;rsquo;(x_n)}.$$&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;我們可以定義 $f(x) = x - \frac{g(x)}{g&#39;(x)}$, 這樣上面這個式子就是個固定點迭代. 接著我們可以發現, 如果 $c$ 是 $g$ 函數的根, 也就是 $g(c )=0$, 那 $f&#39;(c ) = 0$. 所以根據上面的定理就存在某個包含 $c$ 的小區間使得迭代會收斂.&lt;/p&gt;
+&lt;p&gt;我們可以定義 $f(x) = x - \frac{g(x)}{g&amp;rsquo;(x)}$, 這樣上面這個式子就是個固定點迭代. 接著我們可以發現, 如果 $c$ 是 $g$ 函數的根, 也就是 $g(c )=0$, 那 $f&amp;rsquo;(c ) = 0$. 所以根據上面的定理就存在某個包含 $c$ 的小區間使得迭代會收斂.&lt;/p&gt;
 &lt;p&gt;更進一步我們可以利用泰勒展開式(Taylor&amp;rsquo;s series expansion) 來證明牛頓法事實上有二次收斂,
 $$
 |x_{n+1} - c| \approx \beta |x_n-c|^2.
@@ -6535,7 +6337,7 @@ $$
 x_{n+1} = \cos(x_n),
 $$
 也就是求 $g(x) = \cos(x)-x$ 的根. 我們以 $x_0=1$ 當初始值, 發現需要 $80$ 個迭代才能使誤差在 $10^{-14}$ 之下.&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;    x_new= 0.5403023058681398		error= 0.31725090997825367
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;    x_new= 0.5403023058681398		error= 0.31725090997825367
     x_new= 0.8575532158463934		error= 0.2032634253486143
     x_new= 0.6542897904977791		error= 0.13919056824478648
     x_new= 0.7934803587425656		error= 0.0921115851198091
@@ -6552,7 +6354,7 @@ $$
 x_{n+1} = x_n + \frac{cos(x_n)- x_n}{\sin(x_n)+1}.
 $$
 一樣以 $x_0=1$ 當初始值, 發現只需要 $4$ 個迭代就能使誤差在 $10^{-14}$ 之下. 比上個例子快上許多.&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;    x_new= 0.7503638678402439		error= 0.018923073822117442
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;    x_new= 0.7503638678402439		error= 0.018923073822117442
     x_new= 0.7391128909113617		error= 4.6455898990771516e-5
     x_new= 0.739085133385284		error= 2.847205804457076e-10
     x_new= 0.7390851332151607		error= 0.0
@@ -6607,11 +6409,11 @@ $$
 &lt;p&gt;所以對於定義在封閉區間的連續函數, 必定會有極值. 接下來我們看一下實際上我們怎麼把極值找出來.&lt;/p&gt;
 &lt;p&gt;在微積分課本裡有所謂的封閉區間法, 如下:&lt;/p&gt;
 &lt;h2 id=&#34;the-closed-interval-method&#34;&gt;The closed interval method&lt;/h2&gt;
-&lt;pre&gt;&lt;code class=&#34;language-mermaid&#34; data-lang=&#34;mermaid&#34;&gt;graph TD;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-mermaid&#34; data-lang=&#34;mermaid&#34;&gt;graph TD;
   B[f is `continuous` on a `closed interval`]--&amp;gt;A;
   B--&amp;gt;C;
-  A[Determine the critical points]--&amp;gt;|f&#39;=0| D(The largest value at these points is the abs. max. and the smallest value is the abs. min.);
-  A--&amp;gt;|f&#39; not exists| D;
+  A[Determine the critical points]--&amp;gt;|f&amp;#39;=0| D(The largest value at these points is the abs. max. and the smallest value is the abs. min.);
+  A--&amp;gt;|f&amp;#39; not exists| D;
   C[Determine the end points]--&amp;gt;D;
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;這個方法的原理跟做法都很簡單, 我這邊就不多做說明.&lt;/p&gt;
 &lt;p&gt;不過我要做一些補充. 事實上這個方法要能用還有一個很重要的假設是&lt;code&gt;假設這個函數只在有限個地方微分不存在&lt;/code&gt;. 如果一個函數在無窮多地方微分不存在, 雖然最大值還會是 &amp;ldquo;微分等於 0&amp;rdquo;, &amp;ldquo;微分不存在&amp;rdquo;, &amp;ldquo;端點&amp;rdquo; 這些地方的函數值中找最大的. 不過實作上會找不完. 所以等於是沒有用.&lt;/p&gt;
@@ -6775,184 +6577,184 @@ $$
 &lt;/blockquote&gt;
 &lt;p&gt;已知一個函數 $f(x)$ 在某個點 $a$ 的微分值定義是
 $$
-f&#39;(a) = \lim_{h\to 0} \frac{f(a+h)-f(a)}{h}.
+f&amp;rsquo;(a) = \lim_{h\to 0} \frac{f(a+h)-f(a)}{h}.
 $$&lt;/p&gt;
 &lt;p&gt;我們用一個簡單的例子試試看. 假設我們想求 $f(x)=x^2$ 在 $x=\pi$ 的微分. 根據定義我們有&lt;/p&gt;
 &lt;p&gt;$$
-f&#39;(\pi) = \lim_{h\to 0} \frac{(\pi+h)^2-\pi^2}{h}.
+f&amp;rsquo;(\pi) = \lim_{h\to 0} \frac{(\pi+h)^2-\pi^2}{h}.
 $$&lt;/p&gt;
 &lt;p&gt;接著我們將 $h$ 取靠近 $0$ 的 $11$ 的點並帶入上列這個式子試著來算其極限值. &lt;code&gt;Julia&lt;/code&gt; 程式如下&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;h &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; range(&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;0.01&lt;/span&gt;, length&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;11&lt;/span&gt;); h &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; h[&lt;span style=&#34;color:#ae81ff&#34;&gt;11&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;];
-fp &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; ((pi&lt;span style=&#34;color:#f92672&#34;&gt;.+&lt;/span&gt;h)&lt;span style=&#34;color:#f92672&#34;&gt;.^&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;.-&lt;/span&gt; pi&lt;span style=&#34;color:#f92672&#34;&gt;^&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;)&lt;span style=&#34;color:#f92672&#34;&gt;./&lt;/span&gt;h;
-hcat(h, fp, fp&lt;span style=&#34;color:#f92672&#34;&gt;.-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;pi)
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;結果如下:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;h &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; range(&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;0.01&lt;/span&gt;, length&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;11&lt;/span&gt;); h &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; h[&lt;span style=&#34;color:#ae81ff&#34;&gt;11&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;];
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;fp &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; ((pi&lt;span style=&#34;color:#f92672&#34;&gt;.+&lt;/span&gt;h)&lt;span style=&#34;color:#f92672&#34;&gt;.^&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;.-&lt;/span&gt; pi&lt;span style=&#34;color:#f92672&#34;&gt;^&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;)&lt;span style=&#34;color:#f92672&#34;&gt;./&lt;/span&gt;h;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;hcat(h, fp, fp&lt;span style=&#34;color:#f92672&#34;&gt;.-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;pi)
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;結果如下:&lt;/p&gt;
 &lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;$h$&lt;/th&gt;
-&lt;th&gt;$f&#39;$&lt;/th&gt;
-&lt;th&gt;$f&#39;-2\pi$&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;0.01&lt;/td&gt;
-&lt;td&gt;6.29319&lt;/td&gt;
-&lt;td&gt;0.01&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;0.009&lt;/td&gt;
-&lt;td&gt;6.29219&lt;/td&gt;
-&lt;td&gt;0.009&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;0.008&lt;/td&gt;
-&lt;td&gt;6.29119&lt;/td&gt;
-&lt;td&gt;0.008&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;0.007&lt;/td&gt;
-&lt;td&gt;6.29019&lt;/td&gt;
-&lt;td&gt;0.007&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;0.006&lt;/td&gt;
-&lt;td&gt;6.28919&lt;/td&gt;
-&lt;td&gt;0.006&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;0.005&lt;/td&gt;
-&lt;td&gt;6.28819&lt;/td&gt;
-&lt;td&gt;0.005&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;0.004&lt;/td&gt;
-&lt;td&gt;6.28719&lt;/td&gt;
-&lt;td&gt;0.004&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;0.003&lt;/td&gt;
-&lt;td&gt;6.28619&lt;/td&gt;
-&lt;td&gt;0.003&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;0.002&lt;/td&gt;
-&lt;td&gt;6.28519&lt;/td&gt;
-&lt;td&gt;0.002&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;0.001&lt;/td&gt;
-&lt;td&gt;6.28419&lt;/td&gt;
-&lt;td&gt;0.001&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
+	&lt;thead&gt;
+			&lt;tr&gt;
+					&lt;th&gt;$h$&lt;/th&gt;
+					&lt;th&gt;$f&#39;$&lt;/th&gt;
+					&lt;th&gt;$f&amp;rsquo;-2\pi$&lt;/th&gt;
+			&lt;/tr&gt;
+	&lt;/thead&gt;
+	&lt;tbody&gt;
+			&lt;tr&gt;
+					&lt;td&gt;0.01&lt;/td&gt;
+					&lt;td&gt;6.29319&lt;/td&gt;
+					&lt;td&gt;0.01&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;0.009&lt;/td&gt;
+					&lt;td&gt;6.29219&lt;/td&gt;
+					&lt;td&gt;0.009&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;0.008&lt;/td&gt;
+					&lt;td&gt;6.29119&lt;/td&gt;
+					&lt;td&gt;0.008&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;0.007&lt;/td&gt;
+					&lt;td&gt;6.29019&lt;/td&gt;
+					&lt;td&gt;0.007&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;0.006&lt;/td&gt;
+					&lt;td&gt;6.28919&lt;/td&gt;
+					&lt;td&gt;0.006&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;0.005&lt;/td&gt;
+					&lt;td&gt;6.28819&lt;/td&gt;
+					&lt;td&gt;0.005&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;0.004&lt;/td&gt;
+					&lt;td&gt;6.28719&lt;/td&gt;
+					&lt;td&gt;0.004&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;0.003&lt;/td&gt;
+					&lt;td&gt;6.28619&lt;/td&gt;
+					&lt;td&gt;0.003&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;0.002&lt;/td&gt;
+					&lt;td&gt;6.28519&lt;/td&gt;
+					&lt;td&gt;0.002&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;0.001&lt;/td&gt;
+					&lt;td&gt;6.28419&lt;/td&gt;
+					&lt;td&gt;0.001&lt;/td&gt;
+			&lt;/tr&gt;
+	&lt;/tbody&gt;
 &lt;/table&gt;
 &lt;p&gt;上列數字最左邊是 $h$ 值, 中間為估計的微分值. 我們發現的確這個數字會越來越接近真實的解, 也就是 $2\pi$, 約等於 $6.283185307179586$. 最右邊為這個估算值與真實值 $2\pi$ 之間的差. 的確, 當 $h$ 越接近零, 這個估計出來的微分值離 $2\pi$ 的距離越來越小.&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Question:&lt;/strong&gt; 用數值計算微分能有多精確? 這個誤差能不能一直遞減下去?&lt;/p&gt;
 &lt;p&gt;接著我們取更多靠近 $0$ 的點來計算微分的極限值, 我們列出其與真實值 $2\pi$ 之間的差, 並且把它畫出來.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;h &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; range(&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;16&lt;/span&gt;, length&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;16&lt;/span&gt;); h &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;10.0&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.^&lt;/span&gt;(&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;h[&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;16&lt;/span&gt;]);
-fp &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; ((pi&lt;span style=&#34;color:#f92672&#34;&gt;.+&lt;/span&gt;h)&lt;span style=&#34;color:#f92672&#34;&gt;.^&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;.-&lt;/span&gt; pi&lt;span style=&#34;color:#f92672&#34;&gt;^&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;)&lt;span style=&#34;color:#f92672&#34;&gt;./&lt;/span&gt;h;
-hcat(h, fp, abs&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;(fp&lt;span style=&#34;color:#f92672&#34;&gt;.-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;pi))
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;結果如下:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;h &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; range(&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;16&lt;/span&gt;, length&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;16&lt;/span&gt;); h &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;10.0&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.^&lt;/span&gt;(&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;h[&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;16&lt;/span&gt;]);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;fp &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; ((pi&lt;span style=&#34;color:#f92672&#34;&gt;.+&lt;/span&gt;h)&lt;span style=&#34;color:#f92672&#34;&gt;.^&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;.-&lt;/span&gt; pi&lt;span style=&#34;color:#f92672&#34;&gt;^&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;)&lt;span style=&#34;color:#f92672&#34;&gt;./&lt;/span&gt;h;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;hcat(h, fp, abs&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;(fp&lt;span style=&#34;color:#f92672&#34;&gt;.-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;pi))
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;結果如下:&lt;/p&gt;
 &lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;$h$&lt;/th&gt;
-&lt;th&gt;$f&#39;$&lt;/th&gt;
-&lt;th&gt;$abs(f&#39;-2\pi)$&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;0.1&lt;/td&gt;
-&lt;td&gt;6.38319&lt;/td&gt;
-&lt;td&gt;0.1&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;0.01&lt;/td&gt;
-&lt;td&gt;6.29319&lt;/td&gt;
-&lt;td&gt;0.01&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;0.001&lt;/td&gt;
-&lt;td&gt;6.28419&lt;/td&gt;
-&lt;td&gt;0.001&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;0.0001&lt;/td&gt;
-&lt;td&gt;6.28329&lt;/td&gt;
-&lt;td&gt;0.0001&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;1.0e-5&lt;/td&gt;
-&lt;td&gt;6.2832&lt;/td&gt;
-&lt;td&gt;9.99998e-6&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;1.0e-6&lt;/td&gt;
-&lt;td&gt;6.28319&lt;/td&gt;
-&lt;td&gt;1.00006e-6&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;1.0e-7&lt;/td&gt;
-&lt;td&gt;6.28319&lt;/td&gt;
-&lt;td&gt;9.5898e-8&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;1.0e-8&lt;/td&gt;
-&lt;td&gt;6.28319&lt;/td&gt;
-&lt;td&gt;4.26073e-8&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;1.0e-9&lt;/td&gt;
-&lt;td&gt;6.28319&lt;/td&gt;
-&lt;td&gt;2.20243e-7&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;1.0e-10&lt;/td&gt;
-&lt;td&gt;6.28319&lt;/td&gt;
-&lt;td&gt;1.9966e-6&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;1.0e-11&lt;/td&gt;
-&lt;td&gt;6.28315&lt;/td&gt;
-&lt;td&gt;3.35305e-5&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;1.0e-12&lt;/td&gt;
-&lt;td&gt;6.28297&lt;/td&gt;
-&lt;td&gt;0.000211166&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;1.0e-13&lt;/td&gt;
-&lt;td&gt;6.27054&lt;/td&gt;
-&lt;td&gt;0.0126457&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;1.0e-14&lt;/td&gt;
-&lt;td&gt;6.39488&lt;/td&gt;
-&lt;td&gt;0.111699&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;1.0e-15&lt;/td&gt;
-&lt;td&gt;5.32907&lt;/td&gt;
-&lt;td&gt;0.954115&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;1.0e-16&lt;/td&gt;
-&lt;td&gt;0.0&lt;/td&gt;
-&lt;td&gt;6.28319&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
+	&lt;thead&gt;
+			&lt;tr&gt;
+					&lt;th&gt;$h$&lt;/th&gt;
+					&lt;th&gt;$f&#39;$&lt;/th&gt;
+					&lt;th&gt;$abs(f&amp;rsquo;-2\pi)$&lt;/th&gt;
+			&lt;/tr&gt;
+	&lt;/thead&gt;
+	&lt;tbody&gt;
+			&lt;tr&gt;
+					&lt;td&gt;0.1&lt;/td&gt;
+					&lt;td&gt;6.38319&lt;/td&gt;
+					&lt;td&gt;0.1&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;0.01&lt;/td&gt;
+					&lt;td&gt;6.29319&lt;/td&gt;
+					&lt;td&gt;0.01&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;0.001&lt;/td&gt;
+					&lt;td&gt;6.28419&lt;/td&gt;
+					&lt;td&gt;0.001&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;0.0001&lt;/td&gt;
+					&lt;td&gt;6.28329&lt;/td&gt;
+					&lt;td&gt;0.0001&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;1.0e-5&lt;/td&gt;
+					&lt;td&gt;6.2832&lt;/td&gt;
+					&lt;td&gt;9.99998e-6&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;1.0e-6&lt;/td&gt;
+					&lt;td&gt;6.28319&lt;/td&gt;
+					&lt;td&gt;1.00006e-6&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;1.0e-7&lt;/td&gt;
+					&lt;td&gt;6.28319&lt;/td&gt;
+					&lt;td&gt;9.5898e-8&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;1.0e-8&lt;/td&gt;
+					&lt;td&gt;6.28319&lt;/td&gt;
+					&lt;td&gt;4.26073e-8&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;1.0e-9&lt;/td&gt;
+					&lt;td&gt;6.28319&lt;/td&gt;
+					&lt;td&gt;2.20243e-7&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;1.0e-10&lt;/td&gt;
+					&lt;td&gt;6.28319&lt;/td&gt;
+					&lt;td&gt;1.9966e-6&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;1.0e-11&lt;/td&gt;
+					&lt;td&gt;6.28315&lt;/td&gt;
+					&lt;td&gt;3.35305e-5&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;1.0e-12&lt;/td&gt;
+					&lt;td&gt;6.28297&lt;/td&gt;
+					&lt;td&gt;0.000211166&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;1.0e-13&lt;/td&gt;
+					&lt;td&gt;6.27054&lt;/td&gt;
+					&lt;td&gt;0.0126457&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;1.0e-14&lt;/td&gt;
+					&lt;td&gt;6.39488&lt;/td&gt;
+					&lt;td&gt;0.111699&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;1.0e-15&lt;/td&gt;
+					&lt;td&gt;5.32907&lt;/td&gt;
+					&lt;td&gt;0.954115&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;1.0e-16&lt;/td&gt;
+					&lt;td&gt;0.0&lt;/td&gt;
+					&lt;td&gt;6.28319&lt;/td&gt;
+			&lt;/tr&gt;
+	&lt;/tbody&gt;
 &lt;/table&gt;
 &lt;p&gt;觀察最後一下發現, 當 $h$ 很小時微分竟然與真實質差更多, 更不準了!! 比如說當 $h=10^{-14}$ 時, 誤差竟然大到約是 $10^{-1}$.&lt;/p&gt;
 &lt;p&gt;我們把它畫出來看看, &lt;code&gt;Julia&lt;/code&gt; code 如下:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;using&lt;/span&gt; Plots
-plot(log10&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;(h), log10&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;(abs&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;(fp&lt;span style=&#34;color:#f92672&#34;&gt;.-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;pi)),label&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Error&amp;#34;&lt;/span&gt;)
-xlabel!(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;log10(h)&amp;#34;&lt;/span&gt;)
-ylabel!(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;log10(Error)&amp;#34;&lt;/span&gt;)
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;發現雖然誤差在 $h$ 大的時候遞減, 不過當 $h$ 接近零的時候卻又遞增上去了.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;using&lt;/span&gt; Plots
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;plot(log10&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;(h), log10&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;(abs&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;(fp&lt;span style=&#34;color:#f92672&#34;&gt;.-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;pi)),label&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Error&amp;#34;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;xlabel!(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;log10(h)&amp;#34;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;ylabel!(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;log10(Error)&amp;#34;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;發現雖然誤差在 $h$ 大的時候遞減, 不過當 $h$ 接近零的時候卻又遞增上去了.&lt;/p&gt;
 
 
 
@@ -6997,27 +6799,27 @@ $$
 &lt;h4 id=&#34;泰勒展開式&#34;&gt;泰勒展開式&lt;/h4&gt;
 &lt;p&gt;再深一點來說, 我們可以利用泰勒展開式知道
 $$
-\frac{f(a+h)-f(a)}{h} = f&#39;(a) + \frac{h}{2}f&#39;&#39;(\xi), \quad a\leq \xi \leq a+h.
+\frac{f(a+h)-f(a)}{h} = f&amp;rsquo;(a) + \frac{h}{2}f&amp;rsquo;&amp;rsquo;(\xi), \quad a\leq \xi \leq a+h.
 $$
-這個式子告訴我們, 用這方式算微分誤差應該是 $\frac{h}{2}f&#39;&#39;(\xi) = O(h)$, 誤差會隨著 $h$ 減少而線性變小.&lt;/p&gt;
+這個式子告訴我們, 用這方式算微分誤差應該是 $\frac{h}{2}f&amp;rsquo;&amp;rsquo;(\xi) = O(h)$, 誤差會隨著 $h$ 減少而線性變小.&lt;/p&gt;
 &lt;p&gt;數學上我們有以上這個等式, 而數值計算上則是有以下這個等式
 $$
-\frac{f(a+h)-f(a) + \epsilon}{h} = f&#39;(a) + \frac{h}{2}f&#39;&#39;(\xi) + \frac{\epsilon}{h}, \quad a\leq \xi \leq a+h.
+\frac{f(a+h)-f(a) + \epsilon}{h} = f&amp;rsquo;(a) + \frac{h}{2}f&amp;rsquo;&amp;rsquo;(\xi) + \frac{\epsilon}{h}, \quad a\leq \xi \leq a+h.
 $$
 也就是說, 真正的誤差公式應該是
 $$
-\frac{h}{2}f&#39;&#39;(\xi) + \frac{\epsilon}{h},
+\frac{h}{2}f&amp;rsquo;&amp;rsquo;(\xi) + \frac{\epsilon}{h},
 $$
 當 $h$ 非常小的時候 $\frac{\epsilon}{h}$ 這項就會變很大.&lt;/p&gt;
 &lt;p&gt;比如說, 依我們之前所算的 $\epsilon\approx 10^{-16}$, 那當 $h=10^{-8}$ 時, 算出來的數字會多了大約 $\frac{10^{-16}}{10^{-8}} = 10^{-8}$.&lt;/p&gt;
 &lt;p&gt;而當 $h=10^{-14}$ 時, 算出來的數字會多了大約 $\frac{10^{-16}}{10^{-14}} = 10^{-2}$. 跟我們之前所發現的完全吻合!! 而這也就是為什麼當 $h$ 很靠近零的時候誤差會上升的原因.&lt;/p&gt;
 &lt;hr&gt;
 &lt;h4 id=&#34;optimal-h&#34;&gt;Optimal $h$&lt;/h4&gt;
-&lt;p&gt;那給定一個微分公式, 要怎麼知道 $h$ 能小到什麼程度呢? 一個簡單的感覺是這樣的, 由於誤差的第一項  $\frac{h}{2}f&#39;&#39;(\xi)$ 會隨著 $h$ 變小而變小, 第二項 $\frac{\epsilon}{h}$ 則會變大, 因此整體最小值約會發生在兩項交叉時, 也就是當
+&lt;p&gt;那給定一個微分公式, 要怎麼知道 $h$ 能小到什麼程度呢? 一個簡單的感覺是這樣的, 由於誤差的第一項  $\frac{h}{2}f&amp;rsquo;&amp;rsquo;(\xi)$ 會隨著 $h$ 變小而變小, 第二項 $\frac{\epsilon}{h}$ 則會變大, 因此整體最小值約會發生在兩項交叉時, 也就是當
 $$
 h \sim \frac{\epsilon}{h},
 $$
-(由於我們不知道 $f&#39;&#39;(\xi)/2$ 是多少, 簡單起見設成 1). 上式稍微計算一下發現誤差最小值約發生在 $h=10^{-8}$, 誤差最小值則約為 $10^{-8}$.&lt;/p&gt;
+(由於我們不知道 $f&amp;rsquo;&amp;rsquo;(\xi)/2$ 是多少, 簡單起見設成 1). 上式稍微計算一下發現誤差最小值約發生在 $h=10^{-8}$, 誤差最小值則約為 $10^{-8}$.&lt;/p&gt;
 &lt;hr&gt;
 &lt;h3 id=&#34;summary&#34;&gt;Summary:&lt;/h3&gt;
 &lt;p&gt;最後總結一下:&lt;/p&gt;
@@ -7025,7 +6827,7 @@ $$
 &lt;li&gt;
 &lt;p&gt;我們可以用數值計算來估計一個函數在某點的微分值
 $$
-f&#39;(a) \approx \frac{f(a+h)-f(a)}{h}.
+f&amp;rsquo;(a) \approx \frac{f(a+h)-f(a)}{h}.
 $$
 這樣的做法稱為&lt;strong&gt;有限差分法 (finite difference method)&lt;/strong&gt;.&lt;/p&gt;
 &lt;/li&gt;
@@ -7162,16 +6964,16 @@ $$&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;machine epsilon 的定義是, 考慮正數$\epsilon$, 使得 $ 1+ \epsilon &amp;gt; 1$ 中最小的那個稱之為 machine epsilon. 當然以數學來看這個 machine epsilon 必須等於零. 不過在電腦裡並不是這樣.&lt;/p&gt;
 &lt;p&gt;為了方便我們稍微改一下定義, 我們考慮 $\epsilon = 2^{-k}$ 這種形式, 然後 machine epsilon 一樣是使得 $ 1+ \epsilon \ge 1$ 中最小的那個. &lt;code&gt;julia&lt;/code&gt; 程式如下:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;s&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1.0&lt;/span&gt;
-&lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; k&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;100&lt;/span&gt;
-    s &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; s&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2.0&lt;/span&gt;
-    &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; (&lt;span style=&#34;color:#ae81ff&#34;&gt;1.0&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;s)&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1.0&lt;/span&gt;
-        s &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;2.0&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;s
-        println(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;k=&amp;#34;&lt;/span&gt;, k&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;,  eps=&amp;#34;&lt;/span&gt;, s)
-        &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt;
-    &lt;span style=&#34;color:#66d9ef&#34;&gt;end&lt;/span&gt;
-&lt;span style=&#34;color:#66d9ef&#34;&gt;end&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;在我的電腦上我發現 $\epsilon = 2^{-52} = 2.220446049250313e-16$.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;s&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1.0&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; k&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;100&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    s &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; s&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2.0&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; (&lt;span style=&#34;color:#ae81ff&#34;&gt;1.0&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;s)&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1.0&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        s &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;2.0&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;s
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        println(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;k=&amp;#34;&lt;/span&gt;, k&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;,  eps=&amp;#34;&lt;/span&gt;, s)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;end&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;end&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;在我的電腦上我發現 $\epsilon = 2^{-52} = 2.220446049250313e-16$.&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;k=52,  eps=2.220446049250313e-16
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;所以的確捨入誤差大約是 $10^{-16}$ 這個等級.&lt;/p&gt;
@@ -7207,7 +7009,7 @@ $$&lt;/p&gt;
 $$
 sinc(x) =
 \begin{cases}
-\frac{\sin(x)}{x}, \quad x\ne 0, \\\&lt;br&gt;
+\frac{\sin(x)}{x}, \quad x\ne 0, \\\
 1, \quad x=0.
 \end{cases}
 $$

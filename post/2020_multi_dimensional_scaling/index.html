@@ -28,7 +28,18 @@
   
     
   
-  <meta name="description" content="Multidimensional scaling, 簡稱 MDS, 是個資料分析或是資料降維的工具. 這裡我們要談一下從數學角度來說 MDS 的原理及做法, 更精確的說, 這裡講的是 classical MDS. 假設我們有 $n$ 筆 $p$ 維的資料,">
+  <meta name="description" content="
+Multidimensional scaling, 簡稱 MDS, 是個資料分析或是資料降維的工具.
+
+
+這裡我們要談一下從數學角度來說 MDS 的原理及做法, 更精確的說, 這裡講的是 classical MDS.
+
+
+假設我們有 $n$ 筆 $p$ 維的資料, 記成
+$$
+\{x_1, x_2, \cdots, x_n\} \in \mathbb{R}^p
+$$
+那我們可以據此構造出一個距離平方矩陣 $D$, Euclidian distance matrix, 簡稱 EDM, 其中 $D_{ij} = \|x_i-x_j\|^2$, 也就是 $(x_i)$ 及 $x_j$ 這兩個點距離的平方.">
 
   
   <link rel="alternate" hreflang="en-us" href="https://teshenglin.github.io/post/2020_multi_dimensional_scaling/">
@@ -217,8 +228,8 @@
   
 
   <link rel="manifest" href="/index.webmanifest">
-  <link rel="icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_3.png">
-  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_3.png">
+  <link rel="icon" type="image/png" href="/images/icon_hu_549a1db3558c2382.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu_227762f9926463f1.png">
 
   <link rel="canonical" href="https://teshenglin.github.io/post/2020_multi_dimensional_scaling/">
 
@@ -236,8 +247,19 @@
   <meta property="og:site_name" content="Te-Sheng Lin">
   <meta property="og:url" content="https://teshenglin.github.io/post/2020_multi_dimensional_scaling/">
   <meta property="og:title" content="Multidimensional scaling | Te-Sheng Lin">
-  <meta property="og:description" content="Multidimensional scaling, 簡稱 MDS, 是個資料分析或是資料降維的工具. 這裡我們要談一下從數學角度來說 MDS 的原理及做法, 更精確的說, 這裡講的是 classical MDS. 假設我們有 $n$ 筆 $p$ 維的資料,"><meta property="og:image" content="https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png">
-  <meta property="twitter:image" content="https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png"><meta property="og:locale" content="en-us">
+  <meta property="og:description" content="
+Multidimensional scaling, 簡稱 MDS, 是個資料分析或是資料降維的工具.
+
+
+這裡我們要談一下從數學角度來說 MDS 的原理及做法, 更精確的說, 這裡講的是 classical MDS.
+
+
+假設我們有 $n$ 筆 $p$ 維的資料, 記成
+$$
+\{x_1, x_2, \cdots, x_n\} \in \mathbb{R}^p
+$$
+那我們可以據此構造出一個距離平方矩陣 $D$, Euclidian distance matrix, 簡稱 EDM, 其中 $D_{ij} = \|x_i-x_j\|^2$, 也就是 $(x_i)$ 及 $x_j$ 這兩個點距離的平方."><meta property="og:image" content="https://teshenglin.github.io/images/icon_hu_c6eb360240c7098d.png">
+  <meta property="twitter:image" content="https://teshenglin.github.io/images/icon_hu_c6eb360240c7098d.png"><meta property="og:locale" content="en-us">
   
     
       <meta property="article:published_time" content="2020-08-31T00:00:00&#43;00:00">
@@ -283,10 +305,10 @@
     "name": "Te-Sheng Lin",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_3.png"
+      "url": "https://teshenglin.github.io/images/icon_hu_227762f9926463f1.png"
     }
   },
-  "description": "Multidimensional scaling, 簡稱 MDS, 是個資料分析或是資料降維的工具. 這裡我們要談一下從數學角度來說 MDS 的原理及做法, 更精確的說, 這裡講的是 classical MDS. 假設我們有 $n$ 筆 $p$ 維的資料,"
+  "description": "\u003cblockquote\u003e\n\u003cp\u003eMultidimensional scaling, 簡稱 MDS, 是個資料分析或是資料降維的工具.\u003c/p\u003e\n\u003c/blockquote\u003e\n\u003cblockquote\u003e\n\u003cp\u003e這裡我們要談一下從數學角度來說 MDS 的原理及做法, 更精確的說, 這裡講的是 classical MDS.\u003c/p\u003e\n\u003c/blockquote\u003e\n\u003chr\u003e\n\u003cp\u003e假設我們有 $n$ 筆 $p$ 維的資料, 記成\n$$\n\\{x_1, x_2, \\cdots, x_n\\} \\in \\mathbb{R}^p\n$$\n那我們可以據此構造出一個距離平方矩陣 $D$, Euclidian distance matrix, 簡稱 EDM, 其中 $D_{ij} = \\|x_i-x_j\\|^2$, 也就是 $(x_i)$ 及 $x_j$ 這兩個點距離的平方.\u003c/p\u003e"
 }
 </script>
 
@@ -613,9 +635,9 @@ $$
 <hr>
 <h5 id="舉例來說">舉例來說</h5>
 <p>以下我們用 Matlab 隨機生出 $R^2$ 空間中的 $5$ 個點, 並求出他的 EDM:</p>
-<pre><code>% Matlab program
+<pre tabindex="0"><code>% Matlab program
 X = rand(2,5);                                  % R^2 中的 5 個點
-D = squareform(pdist(X', 'squaredeuclidean'));  % 求出其 EDM
+D = squareform(pdist(X&#39;, &#39;squaredeuclidean&#39;));  % 求出其 EDM
 </code></pre><pre><code>D =
      0    0.3839    0.2333    0.2675    0.6373
 0.3839         0    0.1571    0.1272    0.0470
@@ -710,7 +732,7 @@ $$
 <hr>
 <p>一般來說我們會將 MDS 當成一個降維的工具, 希望在低維度(二或三, 或 $k$)找到一組資料使得其 EDM 與原始資料的 EDM 最像. 而作法就是保留前 $k$ 個特徵值及其特徵向量.</p>
 <p>給定一個 $n\times n$ 的 EDM 以及欲投影的維度 $k$, MDS 簡單的程式如下:</p>
-<pre><code>% Matlab program
+<pre tabindex="0"><code>% Matlab program
 function Y = multidimensional_scaling(D, k)
 
 %   Input: D, n*n EDM 矩陣, 元素為距離平方
@@ -721,11 +743,11 @@ function Y = multidimensional_scaling(D, k)
     mu = sum(D, 1)/n; D = D - mu;           %
     mu = sum(D, 2)/n; B = D - mu;           %
     B = -0.5*B;                             % B = -0.5*H*D*H
-    [V, D] = eig(B, 'vector');              % 求出特徵值及特徵向量
-    [sqD, ind] = sort(sqrt(D), 'descend');  % 將特徵值按大小排列
+    [V, D] = eig(B, &#39;vector&#39;);              % 求出特徵值及特徵向量
+    [sqD, ind] = sort(sqrt(D), &#39;descend&#39;);  % 將特徵值按大小排列
     sqD = sqD(1:k);                         % 取前 k 個
     V = V(:, ind(1:k));                     % 取相對應的特徵向量
-    Y = V'.*(sqD*ones(1,n));                % 求出 k 維資料點
+    Y = V&#39;.*(sqD*ones(1,n));                % 求出 k 維資料點
 end
 </code></pre><hr>
 <h2 id="extension">Extension</h2>
@@ -885,7 +907,7 @@ $$</p>
   <div class="media author-card content-widget-hr">
     
       
-      <img class="avatar mr-3 avatar-circle" src="/authors/admin/avatar_hua0d4d4b24f4da3a102e4452ac738b95f_109236_270x270_fill_q90_lanczos_center.jpg" alt="Avatar">
+      <img class="avatar mr-3 avatar-circle" src="/authors/admin/avatar_hu_969ce894fa15fbce.jpg" alt="Avatar">
     
 
     <div class="media-body">
@@ -1093,7 +1115,7 @@ $$</p>
     
     
     
-    <script src="/js/academic.min.d49475924c8a1000c804942d870fd31c.js"></script>
+    <script src="/js/academic.min.b19faee487e6d1ec7e9bdaffdcf537a6.js"></script>
 
     
 

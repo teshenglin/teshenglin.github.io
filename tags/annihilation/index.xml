@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>annihilation | Te-Sheng Lin</title>
+    <title>Annihilation | Te-Sheng Lin</title>
     <link>https://teshenglin.github.io/tags/annihilation/</link>
       <atom:link href="https://teshenglin.github.io/tags/annihilation/index.xml" rel="self" type="application/rss+xml" />
-    <description>annihilation</description>
+    <description>Annihilation</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 28 Apr 2023 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
-      <title>annihilation</title>
+      <url>https://teshenglin.github.io/images/icon_hu_c6eb360240c7098d.png</url>
+      <title>Annihilation</title>
       <link>https://teshenglin.github.io/tags/annihilation/</link>
     </image>
     
@@ -84,9 +84,9 @@ $$
 那麼
 $$
 \begin{align}
-Av_i &amp;amp;= (\lambda_i-\lambda) Au_i + \lambda (x^T u_i) Av \\&lt;br&gt;
-&amp;amp;= (\lambda_i-\lambda)(\lambda_i u_i +\lambda(x^Tu_i)v) + \lambda^2 (x^T u_i) v\\&lt;br&gt;
-&amp;amp;= \lambda_i((\lambda_i-\lambda) u_i + \lambda (x^T u_i) v) \\&lt;br&gt;
+Av_i &amp;amp;= (\lambda_i-\lambda) Au_i + \lambda (x^T u_i) Av \\
+&amp;amp;= (\lambda_i-\lambda)(\lambda_i u_i +\lambda(x^Tu_i)v) + \lambda^2 (x^T u_i) v\\
+&amp;amp;= \lambda_i((\lambda_i-\lambda) u_i + \lambda (x^T u_i) v) \\
 &amp;amp;=\lambda_i v_i.
 \end{align}
 $$&lt;/p&gt;
@@ -147,8 +147,8 @@ $$
 &lt;p&gt;Let $x = \sum^{n}_{i=1} c_iv_i$, then&lt;/p&gt;
 &lt;p&gt;$$
 \begin{aligned}
-y &amp;amp;= A x - \lambda_1 x \\&lt;br&gt;
-&amp;amp;= \sum^n_{i=1} (c_iAv_i - c_i\lambda_1v_i) \\&lt;br&gt;
+y &amp;amp;= A x - \lambda_1 x \\
+&amp;amp;= \sum^n_{i=1} (c_iAv_i - c_i\lambda_1v_i) \\
 &amp;amp;= \sum^n_{i=2} c_i(\lambda_i-\lambda_1)v_i.
 \end{aligned}
 $$&lt;/p&gt;

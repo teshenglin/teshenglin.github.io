@@ -28,7 +28,15 @@
   
     
   
-  <meta name="description" content="這裡我們要介紹如何用電腦算極限, 以及我們來看一下當我們真的這樣實作的時候有可能會發生什麼問題. 我們以 $sinc$ 函數為例來做說明. sinc function 首先我們要介紹一">
+  <meta name="description" content="
+這裡我們要介紹如何用電腦算極限, 以及我們來看一下當我們真的這樣實作的時候有可能會發生什麼問題. 我們以 $sinc$ 函數為例來做說明.
+
+sinc function
+首先我們要介紹一個特別的函數, $sinc(x)$, 定義如下:
+$$
+sinc(x) = \frac{\sin(x)}{x}, \quad x\ne 0.
+$$
+很明顯可以看出來當 $x=0$ 的時候分母會等於零, 在數學定義上是不確定的, 所以把 $x=0$ 這個點先拿掉.">
 
   
   <link rel="alternate" hreflang="en-us" href="https://teshenglin.github.io/post/2019_limit_evaluate/">
@@ -217,8 +225,8 @@
   
 
   <link rel="manifest" href="/index.webmanifest">
-  <link rel="icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_3.png">
-  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_3.png">
+  <link rel="icon" type="image/png" href="/images/icon_hu_549a1db3558c2382.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu_227762f9926463f1.png">
 
   <link rel="canonical" href="https://teshenglin.github.io/post/2019_limit_evaluate/">
 
@@ -236,8 +244,16 @@
   <meta property="og:site_name" content="Te-Sheng Lin">
   <meta property="og:url" content="https://teshenglin.github.io/post/2019_limit_evaluate/">
   <meta property="og:title" content="用電腦算極限 | Te-Sheng Lin">
-  <meta property="og:description" content="這裡我們要介紹如何用電腦算極限, 以及我們來看一下當我們真的這樣實作的時候有可能會發生什麼問題. 我們以 $sinc$ 函數為例來做說明. sinc function 首先我們要介紹一"><meta property="og:image" content="https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png">
-  <meta property="twitter:image" content="https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png"><meta property="og:locale" content="en-us">
+  <meta property="og:description" content="
+這裡我們要介紹如何用電腦算極限, 以及我們來看一下當我們真的這樣實作的時候有可能會發生什麼問題. 我們以 $sinc$ 函數為例來做說明.
+
+sinc function
+首先我們要介紹一個特別的函數, $sinc(x)$, 定義如下:
+$$
+sinc(x) = \frac{\sin(x)}{x}, \quad x\ne 0.
+$$
+很明顯可以看出來當 $x=0$ 的時候分母會等於零, 在數學定義上是不確定的, 所以把 $x=0$ 這個點先拿掉."><meta property="og:image" content="https://teshenglin.github.io/images/icon_hu_c6eb360240c7098d.png">
+  <meta property="twitter:image" content="https://teshenglin.github.io/images/icon_hu_c6eb360240c7098d.png"><meta property="og:locale" content="en-us">
   
     
       <meta property="article:published_time" content="2019-10-27T00:00:00&#43;00:00">
@@ -283,10 +299,10 @@
     "name": "Te-Sheng Lin",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_3.png"
+      "url": "https://teshenglin.github.io/images/icon_hu_227762f9926463f1.png"
     }
   },
-  "description": "這裡我們要介紹如何用電腦算極限, 以及我們來看一下當我們真的這樣實作的時候有可能會發生什麼問題. 我們以 $sinc$ 函數為例來做說明. sinc function 首先我們要介紹一"
+  "description": "\u003cblockquote\u003e\n\u003cp\u003e這裡我們要介紹如何用電腦算極限, 以及我們來看一下當我們真的這樣實作的時候有可能會發生什麼問題. 我們以 $sinc$ 函數為例來做說明.\u003c/p\u003e\n\u003c/blockquote\u003e\n\u003ch3 id=\"sinc-function\"\u003esinc function\u003c/h3\u003e\n\u003cp\u003e首先我們要介紹一個特別的函數, $sinc(x)$, 定義如下:\n$$\nsinc(x) = \\frac{\\sin(x)}{x}, \\quad x\\ne 0.\n$$\n很明顯可以看出來當 $x=0$ 的時候分母會等於零, 在數學定義上是不確定的, 所以把 $x=0$ 這個點先拿掉.\u003c/p\u003e"
 }
 </script>
 
@@ -718,16 +734,16 @@ $$</p>
 </blockquote>
 <p>machine epsilon 的定義是, 考慮正數$\epsilon$, 使得 $ 1+ \epsilon &gt; 1$ 中最小的那個稱之為 machine epsilon. 當然以數學來看這個 machine epsilon 必須等於零. 不過在電腦裡並不是這樣.</p>
 <p>為了方便我們稍微改一下定義, 我們考慮 $\epsilon = 2^{-k}$ 這種形式, 然後 machine epsilon 一樣是使得 $ 1+ \epsilon \ge 1$ 中最小的那個. <code>julia</code> 程式如下:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-julia" data-lang="julia">s<span style="color:#f92672">=</span><span style="color:#ae81ff">1.0</span>
-<span style="color:#66d9ef">for</span> k<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span><span style="color:#f92672">:</span><span style="color:#ae81ff">100</span>
-    s <span style="color:#f92672">=</span> s<span style="color:#f92672">/</span><span style="color:#ae81ff">2.0</span>
-    <span style="color:#66d9ef">if</span> (<span style="color:#ae81ff">1.0</span><span style="color:#f92672">+</span>s)<span style="color:#f92672">&lt;=</span><span style="color:#ae81ff">1.0</span>
-        s <span style="color:#f92672">=</span> <span style="color:#ae81ff">2.0</span><span style="color:#f92672">*</span>s
-        println(<span style="color:#e6db74">&#34;k=&#34;</span>, k<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>, <span style="color:#e6db74">&#34;,  eps=&#34;</span>, s)
-        <span style="color:#66d9ef">return</span>
-    <span style="color:#66d9ef">end</span>
-<span style="color:#66d9ef">end</span>
-</code></pre></div><p>在我的電腦上我發現 $\epsilon = 2^{-52} = 2.220446049250313e-16$.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-julia" data-lang="julia"><span style="display:flex;"><span>s<span style="color:#f92672">=</span><span style="color:#ae81ff">1.0</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> k<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span><span style="color:#f92672">:</span><span style="color:#ae81ff">100</span>
+</span></span><span style="display:flex;"><span>    s <span style="color:#f92672">=</span> s<span style="color:#f92672">/</span><span style="color:#ae81ff">2.0</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> (<span style="color:#ae81ff">1.0</span><span style="color:#f92672">+</span>s)<span style="color:#f92672">&lt;=</span><span style="color:#ae81ff">1.0</span>
+</span></span><span style="display:flex;"><span>        s <span style="color:#f92672">=</span> <span style="color:#ae81ff">2.0</span><span style="color:#f92672">*</span>s
+</span></span><span style="display:flex;"><span>        println(<span style="color:#e6db74">&#34;k=&#34;</span>, k<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>, <span style="color:#e6db74">&#34;,  eps=&#34;</span>, s)
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">end</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">end</span>
+</span></span></code></pre></div><p>在我的電腦上我發現 $\epsilon = 2^{-52} = 2.220446049250313e-16$.</p>
 <pre><code>k=52,  eps=2.220446049250313e-16
 </code></pre>
 <p>所以的確捨入誤差大約是 $10^{-16}$ 這個等級.</p>
@@ -763,7 +779,7 @@ $$</p>
 $$
 sinc(x) =
 \begin{cases}
-\frac{\sin(x)}{x}, \quad x\ne 0, \\\<br>
+\frac{\sin(x)}{x}, \quad x\ne 0, \\\
 1, \quad x=0.
 \end{cases}
 $$
@@ -882,7 +898,7 @@ $$
   <div class="media author-card content-widget-hr">
     
       
-      <img class="avatar mr-3 avatar-circle" src="/authors/admin/avatar_hua0d4d4b24f4da3a102e4452ac738b95f_109236_270x270_fill_q90_lanczos_center.jpg" alt="Avatar">
+      <img class="avatar mr-3 avatar-circle" src="/authors/admin/avatar_hu_969ce894fa15fbce.jpg" alt="Avatar">
     
 
     <div class="media-body">
@@ -1090,7 +1106,7 @@ $$
     
     
     
-    <script src="/js/academic.min.d49475924c8a1000c804942d870fd31c.js"></script>
+    <script src="/js/academic.min.b19faee487e6d1ec7e9bdaffdcf537a6.js"></script>
 
     
 

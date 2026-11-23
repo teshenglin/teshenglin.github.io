@@ -28,7 +28,9 @@
   
     
   
-  <meta name="description" content="這裡我們要介紹 git 這個分散式版本控制軟體. 有人可能會聽過 &lsquo;github&rsquo;. 不過這邊要提醒一下 git 跟 github 是不一樣的兩件事. 簡單的說 git 是一個軟體, 而 github 則是提供線上 git 服">
+  <meta name="description" content="
+這裡我們要介紹 git 這個分散式版本控制軟體. 有人可能會聽過 &lsquo;github&rsquo;. 不過這邊要提醒一下 git 跟 github 是不一樣的兩件事. 簡單的說 git 是一個軟體, 而 github 則是提供線上 git 服務的公司.
+">
 
   
   <link rel="alternate" hreflang="en-us" href="https://teshenglin.github.io/post/2019_git/">
@@ -217,8 +219,8 @@
   
 
   <link rel="manifest" href="/index.webmanifest">
-  <link rel="icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_3.png">
-  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_3.png">
+  <link rel="icon" type="image/png" href="/images/icon_hu_549a1db3558c2382.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu_227762f9926463f1.png">
 
   <link rel="canonical" href="https://teshenglin.github.io/post/2019_git/">
 
@@ -236,8 +238,10 @@
   <meta property="og:site_name" content="Te-Sheng Lin">
   <meta property="og:url" content="https://teshenglin.github.io/post/2019_git/">
   <meta property="og:title" content="git 學習筆記 | Te-Sheng Lin">
-  <meta property="og:description" content="這裡我們要介紹 git 這個分散式版本控制軟體. 有人可能會聽過 &lsquo;github&rsquo;. 不過這邊要提醒一下 git 跟 github 是不一樣的兩件事. 簡單的說 git 是一個軟體, 而 github 則是提供線上 git 服"><meta property="og:image" content="https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png">
-  <meta property="twitter:image" content="https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png"><meta property="og:locale" content="en-us">
+  <meta property="og:description" content="
+這裡我們要介紹 git 這個分散式版本控制軟體. 有人可能會聽過 &lsquo;github&rsquo;. 不過這邊要提醒一下 git 跟 github 是不一樣的兩件事. 簡單的說 git 是一個軟體, 而 github 則是提供線上 git 服務的公司.
+"><meta property="og:image" content="https://teshenglin.github.io/images/icon_hu_c6eb360240c7098d.png">
+  <meta property="twitter:image" content="https://teshenglin.github.io/images/icon_hu_c6eb360240c7098d.png"><meta property="og:locale" content="en-us">
   
     
       <meta property="article:published_time" content="2019-10-31T00:00:00&#43;00:00">
@@ -283,10 +287,10 @@
     "name": "Te-Sheng Lin",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_3.png"
+      "url": "https://teshenglin.github.io/images/icon_hu_227762f9926463f1.png"
     }
   },
-  "description": "這裡我們要介紹 git 這個分散式版本控制軟體. 有人可能會聽過 \u0026lsquo;github\u0026rsquo;. 不過這邊要提醒一下 git 跟 github 是不一樣的兩件事. 簡單的說 git 是一個軟體, 而 github 則是提供線上 git 服"
+  "description": "\u003cblockquote\u003e\n\u003cp\u003e這裡我們要介紹 git 這個分散式版本控制軟體. 有人可能會聽過 \u0026lsquo;github\u0026rsquo;. 不過這邊要提醒一下 git 跟 github 是不一樣的兩件事. 簡單的說 git 是一個軟體, 而 github 則是提供線上 git 服務的公司.\u003c/p\u003e\n\u003c/blockquote\u003e"
 }
 </script>
 
@@ -621,12 +625,12 @@
 <ul>
 <li>做完某個段落後, 將檔案 XXX 移進暫存區</li>
 </ul>
-<pre><code>git add XXX
+<pre tabindex="0"><code>git add XXX
 </code></pre><p>或是將剛剛所有編輯過的檔案一起移
 進暫存區</p>
-<pre><code>git add .
+<pre tabindex="0"><code>git add .
 </code></pre><p>接著將暫存區的檔案移至儲存褲 (repo), 並且記註做了什麼事</p>
-<pre><code>git commit -m &quot;我做了XXX&quot;
+<pre tabindex="0"><code>git commit -m &#34;我做了XXX&#34;
 </code></pre><hr>
 <h2 id="支援-git-的網站">支援 git 的網站</h2>
 <h3 id="github">github</h3>
@@ -645,14 +649,14 @@
 <ul>
 <li>丟上雲端 (github 或 bitbucket)</li>
 </ul>
-<pre><code>git push
+<pre tabindex="0"><code>git push
 </code></pre><ul>
 <li>從雲端下載最新版本</li>
 </ul>
-<pre><code>git pull
+<pre tabindex="0"><code>git pull
 </code></pre><hr>
 <p>簡單工作示意圖:</p>
-<pre><code class="language-mermaid" data-lang="mermaid">graph TD;
+<pre tabindex="0"><code class="language-mermaid" data-lang="mermaid">graph TD;
   A[工作資料夾]--&gt;|add| B;
   B(本機 local 暫存區)--&gt;|commit| C;
   D--&gt;|pull| C;
@@ -758,7 +762,7 @@
   <div class="media author-card content-widget-hr">
     
       
-      <img class="avatar mr-3 avatar-circle" src="/authors/admin/avatar_hua0d4d4b24f4da3a102e4452ac738b95f_109236_270x270_fill_q90_lanczos_center.jpg" alt="Avatar">
+      <img class="avatar mr-3 avatar-circle" src="/authors/admin/avatar_hu_969ce894fa15fbce.jpg" alt="Avatar">
     
 
     <div class="media-body">
@@ -957,7 +961,7 @@
     
     
     
-    <script src="/js/academic.min.d49475924c8a1000c804942d870fd31c.js"></script>
+    <script src="/js/academic.min.b19faee487e6d1ec7e9bdaffdcf537a6.js"></script>
 
     
 

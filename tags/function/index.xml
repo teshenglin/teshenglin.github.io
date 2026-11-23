@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>function | Te-Sheng Lin</title>
+    <title>Function | Te-Sheng Lin</title>
     <link>https://teshenglin.github.io/tags/function/</link>
       <atom:link href="https://teshenglin.github.io/tags/function/index.xml" rel="self" type="application/rss+xml" />
-    <description>function</description>
+    <description>Function</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 29 Oct 2019 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
-      <title>function</title>
+      <url>https://teshenglin.github.io/images/icon_hu_c6eb360240c7098d.png</url>
+      <title>Function</title>
       <link>https://teshenglin.github.io/tags/function/</link>
     </image>
     
@@ -28,11 +28,11 @@
 &lt;p&gt;所以對於定義在封閉區間的連續函數, 必定會有極值. 接下來我們看一下實際上我們怎麼把極值找出來.&lt;/p&gt;
 &lt;p&gt;在微積分課本裡有所謂的封閉區間法, 如下:&lt;/p&gt;
 &lt;h2 id=&#34;the-closed-interval-method&#34;&gt;The closed interval method&lt;/h2&gt;
-&lt;pre&gt;&lt;code class=&#34;language-mermaid&#34; data-lang=&#34;mermaid&#34;&gt;graph TD;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-mermaid&#34; data-lang=&#34;mermaid&#34;&gt;graph TD;
   B[f is `continuous` on a `closed interval`]--&amp;gt;A;
   B--&amp;gt;C;
-  A[Determine the critical points]--&amp;gt;|f&#39;=0| D(The largest value at these points is the abs. max. and the smallest value is the abs. min.);
-  A--&amp;gt;|f&#39; not exists| D;
+  A[Determine the critical points]--&amp;gt;|f&amp;#39;=0| D(The largest value at these points is the abs. max. and the smallest value is the abs. min.);
+  A--&amp;gt;|f&amp;#39; not exists| D;
   C[Determine the end points]--&amp;gt;D;
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;這個方法的原理跟做法都很簡單, 我這邊就不多做說明.&lt;/p&gt;
 &lt;p&gt;不過我要做一些補充. 事實上這個方法要能用還有一個很重要的假設是&lt;code&gt;假設這個函數只在有限個地方微分不存在&lt;/code&gt;. 如果一個函數在無窮多地方微分不存在, 雖然最大值還會是 &amp;ldquo;微分等於 0&amp;rdquo;, &amp;ldquo;微分不存在&amp;rdquo;, &amp;ldquo;端點&amp;rdquo; 這些地方的函數值中找最大的. 不過實作上會找不完. 所以等於是沒有用.&lt;/p&gt;
@@ -72,184 +72,184 @@
 &lt;/blockquote&gt;
 &lt;p&gt;已知一個函數 $f(x)$ 在某個點 $a$ 的微分值定義是
 $$
-f&#39;(a) = \lim_{h\to 0} \frac{f(a+h)-f(a)}{h}.
+f&amp;rsquo;(a) = \lim_{h\to 0} \frac{f(a+h)-f(a)}{h}.
 $$&lt;/p&gt;
 &lt;p&gt;我們用一個簡單的例子試試看. 假設我們想求 $f(x)=x^2$ 在 $x=\pi$ 的微分. 根據定義我們有&lt;/p&gt;
 &lt;p&gt;$$
-f&#39;(\pi) = \lim_{h\to 0} \frac{(\pi+h)^2-\pi^2}{h}.
+f&amp;rsquo;(\pi) = \lim_{h\to 0} \frac{(\pi+h)^2-\pi^2}{h}.
 $$&lt;/p&gt;
 &lt;p&gt;接著我們將 $h$ 取靠近 $0$ 的 $11$ 的點並帶入上列這個式子試著來算其極限值. &lt;code&gt;Julia&lt;/code&gt; 程式如下&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;h &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; range(&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;0.01&lt;/span&gt;, length&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;11&lt;/span&gt;); h &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; h[&lt;span style=&#34;color:#ae81ff&#34;&gt;11&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;];
-fp &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; ((pi&lt;span style=&#34;color:#f92672&#34;&gt;.+&lt;/span&gt;h)&lt;span style=&#34;color:#f92672&#34;&gt;.^&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;.-&lt;/span&gt; pi&lt;span style=&#34;color:#f92672&#34;&gt;^&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;)&lt;span style=&#34;color:#f92672&#34;&gt;./&lt;/span&gt;h;
-hcat(h, fp, fp&lt;span style=&#34;color:#f92672&#34;&gt;.-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;pi)
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;結果如下:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;h &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; range(&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;0.01&lt;/span&gt;, length&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;11&lt;/span&gt;); h &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; h[&lt;span style=&#34;color:#ae81ff&#34;&gt;11&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;];
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;fp &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; ((pi&lt;span style=&#34;color:#f92672&#34;&gt;.+&lt;/span&gt;h)&lt;span style=&#34;color:#f92672&#34;&gt;.^&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;.-&lt;/span&gt; pi&lt;span style=&#34;color:#f92672&#34;&gt;^&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;)&lt;span style=&#34;color:#f92672&#34;&gt;./&lt;/span&gt;h;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;hcat(h, fp, fp&lt;span style=&#34;color:#f92672&#34;&gt;.-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;pi)
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;結果如下:&lt;/p&gt;
 &lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;$h$&lt;/th&gt;
-&lt;th&gt;$f&#39;$&lt;/th&gt;
-&lt;th&gt;$f&#39;-2\pi$&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;0.01&lt;/td&gt;
-&lt;td&gt;6.29319&lt;/td&gt;
-&lt;td&gt;0.01&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;0.009&lt;/td&gt;
-&lt;td&gt;6.29219&lt;/td&gt;
-&lt;td&gt;0.009&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;0.008&lt;/td&gt;
-&lt;td&gt;6.29119&lt;/td&gt;
-&lt;td&gt;0.008&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;0.007&lt;/td&gt;
-&lt;td&gt;6.29019&lt;/td&gt;
-&lt;td&gt;0.007&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;0.006&lt;/td&gt;
-&lt;td&gt;6.28919&lt;/td&gt;
-&lt;td&gt;0.006&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;0.005&lt;/td&gt;
-&lt;td&gt;6.28819&lt;/td&gt;
-&lt;td&gt;0.005&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;0.004&lt;/td&gt;
-&lt;td&gt;6.28719&lt;/td&gt;
-&lt;td&gt;0.004&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;0.003&lt;/td&gt;
-&lt;td&gt;6.28619&lt;/td&gt;
-&lt;td&gt;0.003&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;0.002&lt;/td&gt;
-&lt;td&gt;6.28519&lt;/td&gt;
-&lt;td&gt;0.002&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;0.001&lt;/td&gt;
-&lt;td&gt;6.28419&lt;/td&gt;
-&lt;td&gt;0.001&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
+	&lt;thead&gt;
+			&lt;tr&gt;
+					&lt;th&gt;$h$&lt;/th&gt;
+					&lt;th&gt;$f&#39;$&lt;/th&gt;
+					&lt;th&gt;$f&amp;rsquo;-2\pi$&lt;/th&gt;
+			&lt;/tr&gt;
+	&lt;/thead&gt;
+	&lt;tbody&gt;
+			&lt;tr&gt;
+					&lt;td&gt;0.01&lt;/td&gt;
+					&lt;td&gt;6.29319&lt;/td&gt;
+					&lt;td&gt;0.01&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;0.009&lt;/td&gt;
+					&lt;td&gt;6.29219&lt;/td&gt;
+					&lt;td&gt;0.009&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;0.008&lt;/td&gt;
+					&lt;td&gt;6.29119&lt;/td&gt;
+					&lt;td&gt;0.008&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;0.007&lt;/td&gt;
+					&lt;td&gt;6.29019&lt;/td&gt;
+					&lt;td&gt;0.007&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;0.006&lt;/td&gt;
+					&lt;td&gt;6.28919&lt;/td&gt;
+					&lt;td&gt;0.006&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;0.005&lt;/td&gt;
+					&lt;td&gt;6.28819&lt;/td&gt;
+					&lt;td&gt;0.005&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;0.004&lt;/td&gt;
+					&lt;td&gt;6.28719&lt;/td&gt;
+					&lt;td&gt;0.004&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;0.003&lt;/td&gt;
+					&lt;td&gt;6.28619&lt;/td&gt;
+					&lt;td&gt;0.003&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;0.002&lt;/td&gt;
+					&lt;td&gt;6.28519&lt;/td&gt;
+					&lt;td&gt;0.002&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;0.001&lt;/td&gt;
+					&lt;td&gt;6.28419&lt;/td&gt;
+					&lt;td&gt;0.001&lt;/td&gt;
+			&lt;/tr&gt;
+	&lt;/tbody&gt;
 &lt;/table&gt;
 &lt;p&gt;上列數字最左邊是 $h$ 值, 中間為估計的微分值. 我們發現的確這個數字會越來越接近真實的解, 也就是 $2\pi$, 約等於 $6.283185307179586$. 最右邊為這個估算值與真實值 $2\pi$ 之間的差. 的確, 當 $h$ 越接近零, 這個估計出來的微分值離 $2\pi$ 的距離越來越小.&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Question:&lt;/strong&gt; 用數值計算微分能有多精確? 這個誤差能不能一直遞減下去?&lt;/p&gt;
 &lt;p&gt;接著我們取更多靠近 $0$ 的點來計算微分的極限值, 我們列出其與真實值 $2\pi$ 之間的差, 並且把它畫出來.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;h &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; range(&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;16&lt;/span&gt;, length&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;16&lt;/span&gt;); h &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;10.0&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.^&lt;/span&gt;(&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;h[&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;16&lt;/span&gt;]);
-fp &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; ((pi&lt;span style=&#34;color:#f92672&#34;&gt;.+&lt;/span&gt;h)&lt;span style=&#34;color:#f92672&#34;&gt;.^&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;.-&lt;/span&gt; pi&lt;span style=&#34;color:#f92672&#34;&gt;^&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;)&lt;span style=&#34;color:#f92672&#34;&gt;./&lt;/span&gt;h;
-hcat(h, fp, abs&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;(fp&lt;span style=&#34;color:#f92672&#34;&gt;.-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;pi))
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;結果如下:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;h &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; range(&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;16&lt;/span&gt;, length&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;16&lt;/span&gt;); h &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;10.0&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.^&lt;/span&gt;(&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;h[&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;16&lt;/span&gt;]);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;fp &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; ((pi&lt;span style=&#34;color:#f92672&#34;&gt;.+&lt;/span&gt;h)&lt;span style=&#34;color:#f92672&#34;&gt;.^&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;.-&lt;/span&gt; pi&lt;span style=&#34;color:#f92672&#34;&gt;^&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;)&lt;span style=&#34;color:#f92672&#34;&gt;./&lt;/span&gt;h;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;hcat(h, fp, abs&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;(fp&lt;span style=&#34;color:#f92672&#34;&gt;.-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;pi))
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;結果如下:&lt;/p&gt;
 &lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;$h$&lt;/th&gt;
-&lt;th&gt;$f&#39;$&lt;/th&gt;
-&lt;th&gt;$abs(f&#39;-2\pi)$&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;0.1&lt;/td&gt;
-&lt;td&gt;6.38319&lt;/td&gt;
-&lt;td&gt;0.1&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;0.01&lt;/td&gt;
-&lt;td&gt;6.29319&lt;/td&gt;
-&lt;td&gt;0.01&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;0.001&lt;/td&gt;
-&lt;td&gt;6.28419&lt;/td&gt;
-&lt;td&gt;0.001&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;0.0001&lt;/td&gt;
-&lt;td&gt;6.28329&lt;/td&gt;
-&lt;td&gt;0.0001&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;1.0e-5&lt;/td&gt;
-&lt;td&gt;6.2832&lt;/td&gt;
-&lt;td&gt;9.99998e-6&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;1.0e-6&lt;/td&gt;
-&lt;td&gt;6.28319&lt;/td&gt;
-&lt;td&gt;1.00006e-6&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;1.0e-7&lt;/td&gt;
-&lt;td&gt;6.28319&lt;/td&gt;
-&lt;td&gt;9.5898e-8&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;1.0e-8&lt;/td&gt;
-&lt;td&gt;6.28319&lt;/td&gt;
-&lt;td&gt;4.26073e-8&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;1.0e-9&lt;/td&gt;
-&lt;td&gt;6.28319&lt;/td&gt;
-&lt;td&gt;2.20243e-7&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;1.0e-10&lt;/td&gt;
-&lt;td&gt;6.28319&lt;/td&gt;
-&lt;td&gt;1.9966e-6&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;1.0e-11&lt;/td&gt;
-&lt;td&gt;6.28315&lt;/td&gt;
-&lt;td&gt;3.35305e-5&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;1.0e-12&lt;/td&gt;
-&lt;td&gt;6.28297&lt;/td&gt;
-&lt;td&gt;0.000211166&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;1.0e-13&lt;/td&gt;
-&lt;td&gt;6.27054&lt;/td&gt;
-&lt;td&gt;0.0126457&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;1.0e-14&lt;/td&gt;
-&lt;td&gt;6.39488&lt;/td&gt;
-&lt;td&gt;0.111699&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;1.0e-15&lt;/td&gt;
-&lt;td&gt;5.32907&lt;/td&gt;
-&lt;td&gt;0.954115&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;1.0e-16&lt;/td&gt;
-&lt;td&gt;0.0&lt;/td&gt;
-&lt;td&gt;6.28319&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
+	&lt;thead&gt;
+			&lt;tr&gt;
+					&lt;th&gt;$h$&lt;/th&gt;
+					&lt;th&gt;$f&#39;$&lt;/th&gt;
+					&lt;th&gt;$abs(f&amp;rsquo;-2\pi)$&lt;/th&gt;
+			&lt;/tr&gt;
+	&lt;/thead&gt;
+	&lt;tbody&gt;
+			&lt;tr&gt;
+					&lt;td&gt;0.1&lt;/td&gt;
+					&lt;td&gt;6.38319&lt;/td&gt;
+					&lt;td&gt;0.1&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;0.01&lt;/td&gt;
+					&lt;td&gt;6.29319&lt;/td&gt;
+					&lt;td&gt;0.01&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;0.001&lt;/td&gt;
+					&lt;td&gt;6.28419&lt;/td&gt;
+					&lt;td&gt;0.001&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;0.0001&lt;/td&gt;
+					&lt;td&gt;6.28329&lt;/td&gt;
+					&lt;td&gt;0.0001&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;1.0e-5&lt;/td&gt;
+					&lt;td&gt;6.2832&lt;/td&gt;
+					&lt;td&gt;9.99998e-6&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;1.0e-6&lt;/td&gt;
+					&lt;td&gt;6.28319&lt;/td&gt;
+					&lt;td&gt;1.00006e-6&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;1.0e-7&lt;/td&gt;
+					&lt;td&gt;6.28319&lt;/td&gt;
+					&lt;td&gt;9.5898e-8&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;1.0e-8&lt;/td&gt;
+					&lt;td&gt;6.28319&lt;/td&gt;
+					&lt;td&gt;4.26073e-8&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;1.0e-9&lt;/td&gt;
+					&lt;td&gt;6.28319&lt;/td&gt;
+					&lt;td&gt;2.20243e-7&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;1.0e-10&lt;/td&gt;
+					&lt;td&gt;6.28319&lt;/td&gt;
+					&lt;td&gt;1.9966e-6&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;1.0e-11&lt;/td&gt;
+					&lt;td&gt;6.28315&lt;/td&gt;
+					&lt;td&gt;3.35305e-5&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;1.0e-12&lt;/td&gt;
+					&lt;td&gt;6.28297&lt;/td&gt;
+					&lt;td&gt;0.000211166&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;1.0e-13&lt;/td&gt;
+					&lt;td&gt;6.27054&lt;/td&gt;
+					&lt;td&gt;0.0126457&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;1.0e-14&lt;/td&gt;
+					&lt;td&gt;6.39488&lt;/td&gt;
+					&lt;td&gt;0.111699&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;1.0e-15&lt;/td&gt;
+					&lt;td&gt;5.32907&lt;/td&gt;
+					&lt;td&gt;0.954115&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;1.0e-16&lt;/td&gt;
+					&lt;td&gt;0.0&lt;/td&gt;
+					&lt;td&gt;6.28319&lt;/td&gt;
+			&lt;/tr&gt;
+	&lt;/tbody&gt;
 &lt;/table&gt;
 &lt;p&gt;觀察最後一下發現, 當 $h$ 很小時微分竟然與真實質差更多, 更不準了!! 比如說當 $h=10^{-14}$ 時, 誤差竟然大到約是 $10^{-1}$.&lt;/p&gt;
 &lt;p&gt;我們把它畫出來看看, &lt;code&gt;Julia&lt;/code&gt; code 如下:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;using&lt;/span&gt; Plots
-plot(log10&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;(h), log10&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;(abs&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;(fp&lt;span style=&#34;color:#f92672&#34;&gt;.-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;pi)),label&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Error&amp;#34;&lt;/span&gt;)
-xlabel!(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;log10(h)&amp;#34;&lt;/span&gt;)
-ylabel!(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;log10(Error)&amp;#34;&lt;/span&gt;)
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;發現雖然誤差在 $h$ 大的時候遞減, 不過當 $h$ 接近零的時候卻又遞增上去了.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;using&lt;/span&gt; Plots
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;plot(log10&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;(h), log10&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;(abs&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;(fp&lt;span style=&#34;color:#f92672&#34;&gt;.-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;pi)),label&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Error&amp;#34;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;xlabel!(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;log10(h)&amp;#34;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;ylabel!(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;log10(Error)&amp;#34;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;發現雖然誤差在 $h$ 大的時候遞減, 不過當 $h$ 接近零的時候卻又遞增上去了.&lt;/p&gt;
 
 
 
@@ -294,27 +294,27 @@ $$
 &lt;h4 id=&#34;泰勒展開式&#34;&gt;泰勒展開式&lt;/h4&gt;
 &lt;p&gt;再深一點來說, 我們可以利用泰勒展開式知道
 $$
-\frac{f(a+h)-f(a)}{h} = f&#39;(a) + \frac{h}{2}f&#39;&#39;(\xi), \quad a\leq \xi \leq a+h.
+\frac{f(a+h)-f(a)}{h} = f&amp;rsquo;(a) + \frac{h}{2}f&amp;rsquo;&amp;rsquo;(\xi), \quad a\leq \xi \leq a+h.
 $$
-這個式子告訴我們, 用這方式算微分誤差應該是 $\frac{h}{2}f&#39;&#39;(\xi) = O(h)$, 誤差會隨著 $h$ 減少而線性變小.&lt;/p&gt;
+這個式子告訴我們, 用這方式算微分誤差應該是 $\frac{h}{2}f&amp;rsquo;&amp;rsquo;(\xi) = O(h)$, 誤差會隨著 $h$ 減少而線性變小.&lt;/p&gt;
 &lt;p&gt;數學上我們有以上這個等式, 而數值計算上則是有以下這個等式
 $$
-\frac{f(a+h)-f(a) + \epsilon}{h} = f&#39;(a) + \frac{h}{2}f&#39;&#39;(\xi) + \frac{\epsilon}{h}, \quad a\leq \xi \leq a+h.
+\frac{f(a+h)-f(a) + \epsilon}{h} = f&amp;rsquo;(a) + \frac{h}{2}f&amp;rsquo;&amp;rsquo;(\xi) + \frac{\epsilon}{h}, \quad a\leq \xi \leq a+h.
 $$
 也就是說, 真正的誤差公式應該是
 $$
-\frac{h}{2}f&#39;&#39;(\xi) + \frac{\epsilon}{h},
+\frac{h}{2}f&amp;rsquo;&amp;rsquo;(\xi) + \frac{\epsilon}{h},
 $$
 當 $h$ 非常小的時候 $\frac{\epsilon}{h}$ 這項就會變很大.&lt;/p&gt;
 &lt;p&gt;比如說, 依我們之前所算的 $\epsilon\approx 10^{-16}$, 那當 $h=10^{-8}$ 時, 算出來的數字會多了大約 $\frac{10^{-16}}{10^{-8}} = 10^{-8}$.&lt;/p&gt;
 &lt;p&gt;而當 $h=10^{-14}$ 時, 算出來的數字會多了大約 $\frac{10^{-16}}{10^{-14}} = 10^{-2}$. 跟我們之前所發現的完全吻合!! 而這也就是為什麼當 $h$ 很靠近零的時候誤差會上升的原因.&lt;/p&gt;
 &lt;hr&gt;
 &lt;h4 id=&#34;optimal-h&#34;&gt;Optimal $h$&lt;/h4&gt;
-&lt;p&gt;那給定一個微分公式, 要怎麼知道 $h$ 能小到什麼程度呢? 一個簡單的感覺是這樣的, 由於誤差的第一項  $\frac{h}{2}f&#39;&#39;(\xi)$ 會隨著 $h$ 變小而變小, 第二項 $\frac{\epsilon}{h}$ 則會變大, 因此整體最小值約會發生在兩項交叉時, 也就是當
+&lt;p&gt;那給定一個微分公式, 要怎麼知道 $h$ 能小到什麼程度呢? 一個簡單的感覺是這樣的, 由於誤差的第一項  $\frac{h}{2}f&amp;rsquo;&amp;rsquo;(\xi)$ 會隨著 $h$ 變小而變小, 第二項 $\frac{\epsilon}{h}$ 則會變大, 因此整體最小值約會發生在兩項交叉時, 也就是當
 $$
 h \sim \frac{\epsilon}{h},
 $$
-(由於我們不知道 $f&#39;&#39;(\xi)/2$ 是多少, 簡單起見設成 1). 上式稍微計算一下發現誤差最小值約發生在 $h=10^{-8}$, 誤差最小值則約為 $10^{-8}$.&lt;/p&gt;
+(由於我們不知道 $f&amp;rsquo;&amp;rsquo;(\xi)/2$ 是多少, 簡單起見設成 1). 上式稍微計算一下發現誤差最小值約發生在 $h=10^{-8}$, 誤差最小值則約為 $10^{-8}$.&lt;/p&gt;
 &lt;hr&gt;
 &lt;h3 id=&#34;summary&#34;&gt;Summary:&lt;/h3&gt;
 &lt;p&gt;最後總結一下:&lt;/p&gt;
@@ -322,7 +322,7 @@ $$
 &lt;li&gt;
 &lt;p&gt;我們可以用數值計算來估計一個函數在某點的微分值
 $$
-f&#39;(a) \approx \frac{f(a+h)-f(a)}{h}.
+f&amp;rsquo;(a) \approx \frac{f(a+h)-f(a)}{h}.
 $$
 這樣的做法稱為&lt;strong&gt;有限差分法 (finite difference method)&lt;/strong&gt;.&lt;/p&gt;
 &lt;/li&gt;
@@ -459,16 +459,16 @@ $$&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;machine epsilon 的定義是, 考慮正數$\epsilon$, 使得 $ 1+ \epsilon &amp;gt; 1$ 中最小的那個稱之為 machine epsilon. 當然以數學來看這個 machine epsilon 必須等於零. 不過在電腦裡並不是這樣.&lt;/p&gt;
 &lt;p&gt;為了方便我們稍微改一下定義, 我們考慮 $\epsilon = 2^{-k}$ 這種形式, 然後 machine epsilon 一樣是使得 $ 1+ \epsilon \ge 1$ 中最小的那個. &lt;code&gt;julia&lt;/code&gt; 程式如下:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;s&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1.0&lt;/span&gt;
-&lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; k&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;100&lt;/span&gt;
-    s &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; s&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2.0&lt;/span&gt;
-    &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; (&lt;span style=&#34;color:#ae81ff&#34;&gt;1.0&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;s)&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1.0&lt;/span&gt;
-        s &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;2.0&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;s
-        println(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;k=&amp;#34;&lt;/span&gt;, k&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;,  eps=&amp;#34;&lt;/span&gt;, s)
-        &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt;
-    &lt;span style=&#34;color:#66d9ef&#34;&gt;end&lt;/span&gt;
-&lt;span style=&#34;color:#66d9ef&#34;&gt;end&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;在我的電腦上我發現 $\epsilon = 2^{-52} = 2.220446049250313e-16$.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;s&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1.0&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; k&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;100&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    s &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; s&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2.0&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; (&lt;span style=&#34;color:#ae81ff&#34;&gt;1.0&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;s)&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1.0&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        s &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;2.0&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;s
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        println(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;k=&amp;#34;&lt;/span&gt;, k&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;,  eps=&amp;#34;&lt;/span&gt;, s)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;end&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;end&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;在我的電腦上我發現 $\epsilon = 2^{-52} = 2.220446049250313e-16$.&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;k=52,  eps=2.220446049250313e-16
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;所以的確捨入誤差大約是 $10^{-16}$ 這個等級.&lt;/p&gt;
@@ -504,7 +504,7 @@ $$&lt;/p&gt;
 $$
 sinc(x) =
 \begin{cases}
-\frac{\sin(x)}{x}, \quad x\ne 0, \\\&lt;br&gt;
+\frac{\sin(x)}{x}, \quad x\ne 0, \\\
 1, \quad x=0.
 \end{cases}
 $$

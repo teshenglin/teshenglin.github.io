@@ -28,7 +28,39 @@
   
     
   
-  <meta name="description" content="共軛梯度法 (CG method, conjugate gradient method) 目錄: CG method - Direct mehtod 直接法 CG method - iterate mehtod 迭代法 For solving $Ax=b$, where $A$ is a square symmetric positive definite matrix. Assumptions: $A\in M_{n\times n}$ is a symmetric positive definite matrix. Definition: A-orthogonal (A-conjugate) 假設有兩個向量 $u_1$ 跟 $u_2$ 皆非 $0$ 且 $u_1 \neq">
+  <meta name="description" content="共軛梯度法 (CG method,  conjugate gradient method) 目錄:
+
+
+CG method - Direct mehtod
+
+直接法
+
+
+
+CG method - iterate mehtod
+
+迭代法
+
+
+
+
+
+For solving $Ax=b$, where $A$ is a square symmetric positive definite matrix.
+
+Assumptions:
+$A\in M_{n\times n}$ is a symmetric positive definite matrix.
+Definition:
+
+A-orthogonal (A-conjugate)
+假設有兩個向量 $u_1$ 跟 $u_2$ 皆非 $0$ 且 $u_1 \neq u_2$，若這兩個向量滿足
+$$
+\langle{u_1},A{u_2}\rangle = {u_1}^TA{u_2} = 0,
+$$
+則稱之為 A-orthogonal (或 A-conjugate).
+A-orthonormal
+假設有兩個向量 $u_1$ 跟 $u_2$ 為 A-orthogonal, 並且 $\langle{u_i}, {u_i}\rangle_A = 1$ for $1\le i\le 2$, 則稱之為 A-orthonormal.
+
+Recall : ${u_1}$ and ${u_2}$ are orthogonal if ${u_1}^T{u_2} = 0$.">
 
   
   <link rel="alternate" hreflang="en-us" href="https://teshenglin.github.io/post/2023_conjugate_gradient_method_1/">
@@ -217,8 +249,8 @@
   
 
   <link rel="manifest" href="/index.webmanifest">
-  <link rel="icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_3.png">
-  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_3.png">
+  <link rel="icon" type="image/png" href="/images/icon_hu_549a1db3558c2382.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu_227762f9926463f1.png">
 
   <link rel="canonical" href="https://teshenglin.github.io/post/2023_conjugate_gradient_method_1/">
 
@@ -236,8 +268,40 @@
   <meta property="og:site_name" content="Te-Sheng Lin">
   <meta property="og:url" content="https://teshenglin.github.io/post/2023_conjugate_gradient_method_1/">
   <meta property="og:title" content="Conjugate gradient method - direct method | Te-Sheng Lin">
-  <meta property="og:description" content="共軛梯度法 (CG method, conjugate gradient method) 目錄: CG method - Direct mehtod 直接法 CG method - iterate mehtod 迭代法 For solving $Ax=b$, where $A$ is a square symmetric positive definite matrix. Assumptions: $A\in M_{n\times n}$ is a symmetric positive definite matrix. Definition: A-orthogonal (A-conjugate) 假設有兩個向量 $u_1$ 跟 $u_2$ 皆非 $0$ 且 $u_1 \neq"><meta property="og:image" content="https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png">
-  <meta property="twitter:image" content="https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png"><meta property="og:locale" content="en-us">
+  <meta property="og:description" content="共軛梯度法 (CG method,  conjugate gradient method) 目錄:
+
+
+CG method - Direct mehtod
+
+直接法
+
+
+
+CG method - iterate mehtod
+
+迭代法
+
+
+
+
+
+For solving $Ax=b$, where $A$ is a square symmetric positive definite matrix.
+
+Assumptions:
+$A\in M_{n\times n}$ is a symmetric positive definite matrix.
+Definition:
+
+A-orthogonal (A-conjugate)
+假設有兩個向量 $u_1$ 跟 $u_2$ 皆非 $0$ 且 $u_1 \neq u_2$，若這兩個向量滿足
+$$
+\langle{u_1},A{u_2}\rangle = {u_1}^TA{u_2} = 0,
+$$
+則稱之為 A-orthogonal (或 A-conjugate).
+A-orthonormal
+假設有兩個向量 $u_1$ 跟 $u_2$ 為 A-orthogonal, 並且 $\langle{u_i}, {u_i}\rangle_A = 1$ for $1\le i\le 2$, 則稱之為 A-orthonormal.
+
+Recall : ${u_1}$ and ${u_2}$ are orthogonal if ${u_1}^T{u_2} = 0$."><meta property="og:image" content="https://teshenglin.github.io/images/icon_hu_c6eb360240c7098d.png">
+  <meta property="twitter:image" content="https://teshenglin.github.io/images/icon_hu_c6eb360240c7098d.png"><meta property="og:locale" content="en-us">
   
     
       <meta property="article:published_time" content="2023-04-26T00:00:00&#43;00:00">
@@ -283,10 +347,10 @@
     "name": "Te-Sheng Lin",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_3.png"
+      "url": "https://teshenglin.github.io/images/icon_hu_227762f9926463f1.png"
     }
   },
-  "description": "共軛梯度法 (CG method, conjugate gradient method) 目錄: CG method - Direct mehtod 直接法 CG method - iterate mehtod 迭代法 For solving $Ax=b$, where $A$ is a square symmetric positive definite matrix. Assumptions: $A\\in M_{n\\times n}$ is a symmetric positive definite matrix. Definition: A-orthogonal (A-conjugate) 假設有兩個向量 $u_1$ 跟 $u_2$ 皆非 $0$ 且 $u_1 \\neq"
+  "description": "\u003cp\u003e共軛梯度法 (CG method,  conjugate gradient method) 目錄:\u003c/p\u003e\n\u003col\u003e\n\u003cli\u003e\n\u003ca href=\"/post/2023_conjugate_gradient_method_1\"\u003eCG method - Direct mehtod\u003c/a\u003e\n\u003cblockquote\u003e\n\u003cp\u003e直接法\u003c/p\u003e\n\u003c/blockquote\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003ca href=\"/post/2023_conjugate_gradient_method_2\"\u003eCG method - iterate mehtod\u003c/a\u003e\n\u003cblockquote\u003e\n\u003cp\u003e迭代法\u003c/p\u003e\n\u003c/blockquote\u003e\n\u003c/li\u003e\n\u003c/ol\u003e\n\u003chr\u003e\n\u003cblockquote\u003e\n\u003cp\u003eFor solving $Ax=b$, where $A$ is a square symmetric positive definite matrix.\u003c/p\u003e\n\u003c/blockquote\u003e\n\u003ch2 id=\"assumptions\"\u003eAssumptions:\u003c/h2\u003e\n\u003cp\u003e$A\\in M_{n\\times n}$ is a symmetric positive definite matrix.\u003c/p\u003e\n\u003ch2 id=\"definition\"\u003eDefinition:\u003c/h2\u003e\n\u003cul\u003e\n\u003cli\u003eA-orthogonal (A-conjugate)\n假設有兩個向量 $u_1$ 跟 $u_2$ 皆非 $0$ 且 $u_1 \\neq u_2$，若這兩個向量滿足\n$$\n\\langle{u_1},A{u_2}\\rangle = {u_1}^TA{u_2} = 0,\n$$\n則稱之為 A-orthogonal (或 A-conjugate).\u003c/li\u003e\n\u003cli\u003eA-orthonormal\n假設有兩個向量 $u_1$ 跟 $u_2$ 為 A-orthogonal, 並且 $\\langle{u_i}, {u_i}\\rangle_A = 1$ for $1\\le i\\le 2$, 則稱之為 A-orthonormal.\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e\u003cstrong\u003eRecall :\u003c/strong\u003e ${u_1}$ and ${u_2}$ are orthogonal if ${u_1}^T{u_2} = 0$.\u003c/p\u003e"
 }
 </script>
 
@@ -772,7 +836,7 @@ $$</p>
   <div class="media author-card content-widget-hr">
     
       
-      <img class="avatar mr-3 avatar-circle" src="/authors/admin/avatar_hua0d4d4b24f4da3a102e4452ac738b95f_109236_270x270_fill_q90_lanczos_center.jpg" alt="Avatar">
+      <img class="avatar mr-3 avatar-circle" src="/authors/admin/avatar_hu_969ce894fa15fbce.jpg" alt="Avatar">
     
 
     <div class="media-body">
@@ -971,7 +1035,7 @@ $$</p>
     
     
     
-    <script src="/js/academic.min.d49475924c8a1000c804942d870fd31c.js"></script>
+    <script src="/js/academic.min.b19faee487e6d1ec7e9bdaffdcf537a6.js"></script>
 
     
 

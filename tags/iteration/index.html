@@ -219,8 +219,8 @@
   
 
   <link rel="manifest" href="/index.webmanifest">
-  <link rel="icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_3.png">
-  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_3.png">
+  <link rel="icon" type="image/png" href="/images/icon_hu_549a1db3558c2382.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu_227762f9926463f1.png">
 
   <link rel="canonical" href="https://teshenglin.github.io/tags/iteration/">
 
@@ -237,9 +237,9 @@
   
   <meta property="og:site_name" content="Te-Sheng Lin">
   <meta property="og:url" content="https://teshenglin.github.io/tags/iteration/">
-  <meta property="og:title" content="iteration | Te-Sheng Lin">
-  <meta property="og:description" content="Professor"><meta property="og:image" content="https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png">
-  <meta property="twitter:image" content="https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png"><meta property="og:locale" content="en-us">
+  <meta property="og:title" content="Iteration | Te-Sheng Lin">
+  <meta property="og:description" content="Professor"><meta property="og:image" content="https://teshenglin.github.io/images/icon_hu_c6eb360240c7098d.png">
+  <meta property="twitter:image" content="https://teshenglin.github.io/images/icon_hu_c6eb360240c7098d.png"><meta property="og:locale" content="en-us">
   
     <meta property="og:updated_time" content="2020-06-12T00:00:00&#43;00:00">
   
@@ -258,7 +258,7 @@
 
 
 
-  <title>iteration | Te-Sheng Lin</title>
+  <title>Iteration | Te-Sheng Lin</title>
 
 </head>
 
@@ -469,7 +469,7 @@
     
   
 <div class="universal-wrapper pt-3">
-  <h1>iteration</h1>
+  <h1>Iteration</h1>
 
   
 
@@ -490,7 +490,11 @@
       <h2><a href="/post/2020_lagrange_multiplier/" >Lagrange Multiplier - 01</a></h2>
       <div class="article-style">
         
-          在微積分課程裡我們有學到如何利用 Lagrange multiplier 來解 constraint optimization 問題. 這邊要介紹課本裡沒教的 Lagrangian function. Goal: 我們想要解以下這個問題 $$ \min_{x} f(x), \quad \text{subject to } \quad g(x)=0. $$ Observation 微積分課本告訴我們
+           在微積分課程裡我們有學到如何利用 Lagrange multiplier 來解 constraint optimization 問題. 這邊要介紹課本裡沒教的 Lagrangian function.
+Goal: 我們想要解以下這個問題 $$ \min_{x} f(x), \quad \text{subject to } \quad g(x)=0. $$
+Observation
+微積分課本告訴我們一個相對好懂的直觀, 就是這個解會發生在兩個等高線相切的地方, 因此在這個問題的解那個點的位置, 兩個函數 $f$ 與 $g$ 等高線的法向量會平行, 因此可以列出以下兩個式子 $$ \partial_x f + \lambda \partial_x g = 0, \quad g(x)=0. $$ 這裡我們引進一個新的未知數 $\lambda$, 即稱為 Lagrange multiplier. 因為有兩個方程式, 因此我們可以解出兩個未知數 $x$ 以及 $\lambda$.
+
         
       </div>
     </div>
@@ -502,7 +506,10 @@
       <h2><a href="/post/2020_lagrange_multiplier_2/" >Lagrange Multiplier - 02</a></h2>
       <div class="article-style">
         
-          這裡我們再多討論一點 Lagrangian function. 我們先看最簡單的一維問題, 求一個有限制式的函數最小值問題: $$ \min_{x} f(x), \quad \text{subject to } \quad g(x)=0. $$ 我們引進 Lagrangian function $$ L(x, \lambda) = f(x) + \lambda g(x) $$ 並且知道
+           這裡我們再多討論一點 Lagrangian function.
+我們先看最簡單的一維問題, 求一個有限制式的函數最小值問題: $$ \min_{x} f(x), \quad \text{subject to } \quad g(x)=0. $$
+我們引進 Lagrangian function $$ L(x, \lambda) = f(x) + \lambda g(x) $$ 並且知道原問題的解發生在 $\nabla L=0$ 的地方.
+
         
       </div>
     </div>
@@ -514,7 +521,9 @@
       <h2><a href="/post/2020_lagrange_multiplier_3/" >Lagrange Multiplier - 03</a></h2>
       <div class="article-style">
         
-          這裡我們討論一下 Lagrange multiplier. 我們知道, 如果想要解以下這個有限制式的最佳化問題 $$ \min_{x} f(x), \quad \text{subject to } \quad g(x)=k, $$ 一個方式是引進 Lagrange multiplier, $\lambda$, 然後可以列出以下兩個式子 $$ \partial_x f +
+           這裡我們討論一下 Lagrange multiplier.
+我們知道, 如果想要解以下這個有限制式的最佳化問題 $$ \min_{x} f(x), \quad \text{subject to } \quad g(x)=k, $$ 一個方式是引進 Lagrange multiplier, $\lambda$, 然後可以列出以下兩個式子 $$ \partial_x f + \lambda \partial_x g = 0, \quad g(x)=k. $$
+
         
       </div>
     </div>
@@ -631,7 +640,7 @@
     
     
     
-    <script src="/js/academic.min.d49475924c8a1000c804942d870fd31c.js"></script>
+    <script src="/js/academic.min.b19faee487e6d1ec7e9bdaffdcf537a6.js"></script>
 
     
 

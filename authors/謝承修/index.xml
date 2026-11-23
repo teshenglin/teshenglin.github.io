@@ -7,7 +7,7 @@
     <description>謝承修</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 01 Jun 2020 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://teshenglin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <url>https://teshenglin.github.io/images/icon_hu_c6eb360240c7098d.png</url>
       <title>謝承修</title>
       <link>https://teshenglin.github.io/authors/%E8%AC%9D%E6%89%BF%E4%BF%AE/</link>
     </image>
@@ -18,7 +18,7 @@
       <pubDate>Mon, 01 Jun 2020 00:00:00 +0000</pubDate>
       <guid>https://teshenglin.github.io/post/2020_cal_s13p4/</guid>
       <description>&lt;blockquote&gt;
-&lt;p&gt;Applied Project in Sec.13.4, Calculus by Stewart&lt;br&gt;
+&lt;p&gt;Applied Project in Sec.13.4, Calculus by Stewart &lt;br&gt;
 Chinese version 
 &lt;a href=&#34;https://teshenglin.github.io/post/2020_cal_s13p4_ch&#34;&gt;克卜勒定律&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -42,8 +42,6 @@ $$
 \frac{dA}{dt}=\frac{1}{2}h= c,
 $$
 where $c$ is a constant. This says that the rate at which $A$ is swept out is constant and proves Kepler’s Second Law.&lt;/p&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;!-- raw HTML omitted --&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Question 2&lt;/strong&gt;： Let $T$ be the period of a planet about the sun; that is, $T$ is the time required for it to travel once around its elliptical orbit. Suppose that the lengths of the major and minor axes of the ellipse are $2a$ and $2b$.&lt;/p&gt;
 &lt;p&gt;(a) Use part (d) of Problem 1 to show that $T =2\pi ab h$.&lt;/p&gt;
@@ -56,8 +54,6 @@ $$
 T^2=\frac{4\pi^2}{GM}a^3
 $$&lt;/p&gt;
 &lt;p&gt;This proves Kepler’s Third Law. [Notice that the proportionality constant $\frac{4\pi^2}{GM}$ is independent of the planet.]&lt;/p&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;!-- raw HTML omitted --&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Quesion 3&lt;/strong&gt;： The period of the earth’s orbit is approximately 365.25 days. Use this fact and Kepler’s Third Law to find the length of the major axis of the earth’s orbit. You will need the mass of the sun, $M=1.99\times 10^{30}kg$, and the gravitational constant, $G=6.67\times10^{-11}N-m^2/kg^2$.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Solution&lt;/strong&gt; ：&lt;/p&gt;
@@ -83,7 +79,7 @@ $$&lt;/p&gt;
       <pubDate>Mon, 01 Jun 2020 00:00:00 +0000</pubDate>
       <guid>https://teshenglin.github.io/post/2020_cal_s13p4_ch/</guid>
       <description>&lt;blockquote&gt;
-&lt;p&gt;Applied Project in Sec.13.4, Calculus by Stewart&lt;br&gt;
+&lt;p&gt;Applied Project in Sec.13.4, Calculus by Stewart &lt;br&gt;
 英文版請見 
 &lt;a href=&#34;https://teshenglin.github.io/post/2020_cal_s13p4&#34;&gt;Kepler’s Laws&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -107,8 +103,6 @@ $$
 \frac{dA}{dt}=\frac{1}{2}h=c,
 $$
 其中 $c$ 是常數. 如此證明了克卜勒第二定律，即面積速率為定值。&lt;/p&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;!-- raw HTML omitted --&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;問題 2&lt;/strong&gt;： 令 $T$ 是行星繞日之週期，$2a$ 為橢圓軌道長軸，$2b$ 為短軸。&lt;/p&gt;
 &lt;p&gt;(a)利用上題(d)小題證明 $T =2\pi ab /h$.&lt;/p&gt;
@@ -121,8 +115,6 @@ $$
 T^2=\frac{4\pi^2}{GM}a^3
 $$&lt;/p&gt;
 &lt;p&gt;這證明了克卜勒第三定律. [注意比例常數 $\frac{4\pi^2}{GM}$ 與行星無關.]&lt;/p&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;!-- raw HTML omitted --&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;問題 3&lt;/strong&gt;： 地球公轉周期約為 365.25 天.利用克卜勒第三定律找出半長軸. 其中太陽質量為 $M=1.99\times 10^{30}kg$, 重力常數為 $G=6.67\times10^{-11}N-m^2/kg^2$.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;解&lt;/strong&gt;：&lt;/p&gt;
